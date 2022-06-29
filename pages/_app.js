@@ -1,7 +1,38 @@
-import '../styles/globals.css'
+import Head from 'next/head';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from '../components/footer';
+import Header from '../components/header';
+import '../styles/globals.scss';
+// import i18n from 'i18next'
+// import {initReactI18next} from 'react-i18next'
+
+// i18n.use(initReactI18next).init({
+//     resources: {
+
+//     }
+// })
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+	return (
+		<div>
+			<Head>
+				<title>Airnet.uz - Виртуальный хостинг в TAS-IX, домена, VDS-сервера, Ташкент</title>
+				<meta
+					name="description"
+					content="Виртуальный хостинг, хостинг в Ташкенте, реселлинг хостинга, дешевые VDS, VPS-сервера, VDS в Ташкенте, виртуальные сервера, выделенные сервера, доменные имена"
+				/>
+				<link rel="icon" href="/favicon.ico" />
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+				<link
+					href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+					rel="stylesheet"></link>
+			</Head>
+			<Header />
+			<Component {...pageProps} />
+			<Footer />
+		</div>
+	);
 }
 
-export default MyApp
+export default MyApp;
