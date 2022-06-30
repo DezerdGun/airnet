@@ -1,7 +1,18 @@
+$white: #fff;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+
 html,
 body {
 	padding: 0;
 	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
 }
 
 a {
@@ -9,8 +20,125 @@ a {
 	text-decoration: none;
 }
 
-* {
-	box-sizing: border-box;
-	font-family: 'PT Sans', sans-serif;
-	font-size: 16px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 55px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 34px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 22px;
+}
+
+h6 {
+	font-size: 20px;
+}
+
+.app {
+	padding-top: 85px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+	color: $white;
+}
+
+@media (max-width: 1040px) {
+	h1 {
+		font-size: 50px;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	h3 {
+		font-size: 32px;
+	}
+
+	h4 {
+		font-size: 22px;
+	}
+
+	h5 {
+		font-size: 20px;
+	}
+
+	h6 {
+		font-size: 18px;
+	}
+
+	.app {
+		padding-top: 70px;
+	}
+}
+
+@media (max-width: 880px) {
+	h1 {
+		font-size: 44px;
+	}
+
+	h2 {
+		font-size: 32px;
+	}
+
+	h3 {
+		font-size: 26px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	h5 {
+		font-size: 18px;
+	}
+
+	h6 {
+		font-size: 16px;
+	}
+
+	.app {
+		padding-top: 70px;
+	}
+
+	.swiper-button-prev:after,
+	.swiper-button-next:after {
+		font-size: 32px !important;
+	}
+}
+
+@media (max-width: 550px) {
+	.swiper-button-prev {
+		left: 0px !important;
+	}
+
+	.swiper-button-next {
+		right: 0px !important;
+	}
+
+	.swiper-button-prev:after,
+	.swiper-button-next:after {
+		font-size: 24px !important;
+	}
 }

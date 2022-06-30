@@ -28,7 +28,9 @@ function MyApp({ Component, pageProps }) {
 			</Head>
 			<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
 			<Header />
-			<Component {...pageProps} />
+			<div className="app">
+				<Component {...pageProps} />
+			</div>
 			<Footer />
 		</div>
 	);
