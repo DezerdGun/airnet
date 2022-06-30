@@ -1,13 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import { Navigation, Autoplay } from 'swiper';
+import Container from '../container';
 import st from './swiper.module.scss';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import Image from 'next/image';
-import Container from '../container';
 
 export default () => {
 	return (
@@ -19,10 +15,10 @@ export default () => {
 				slidesPerView={1}
 				navigation
 				loop={true}
-				// autoplay={{
-				// 	delay: 5000,
-				// 	disableOnInteraction: false,
-				// }}
+				autoplay={{
+					delay: 5000,
+					disableOnInteraction: false,
+				}}
 				className={st.swiper__swiper}>
 				<SwiperSlide>
 					<div className={st.swiper__block} style={{ background: `url('/banner.webp') no-repeat` }}>
