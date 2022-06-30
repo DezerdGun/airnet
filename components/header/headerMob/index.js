@@ -8,12 +8,9 @@ export default function HeaderMob({ isOpen, setIsOpen, menu }) {
 		let coll = document.querySelectorAll(`.${st.headerMob__collapse}`);
 		let i;
 
-		console.log(icon);
-
 		for (i = 0; i < icon.length; i++) {
 			((j) =>
 				icon[j].addEventListener('click', function () {
-					console.log('sdfsdf', j, icon.classList, coll.classList);
 					icon[j].classList.toggle(st.headerMob__block__icon__active);
 					coll[j].classList.toggle(st.headerMob__collapse__active);
 				}))(i);
@@ -48,8 +45,6 @@ export default function HeaderMob({ isOpen, setIsOpen, menu }) {
 							<ul className={st.headerMob__collapse}>
 								{item.children.map((link) => (
 									<li key={link.title}>
-										{console.log(link)}
-
 										<Link href={link.link}>
 											<a onClick={() => setIsOpen(false)}>{link.title}</a>
 										</Link>

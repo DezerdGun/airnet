@@ -130,10 +130,9 @@ export default function Header() {
 
 	return (
 		<div className={st.header}>
-			{console.log('222')}
 			<Container className="py-0">
 				<div className={st.header__main}>
-					{/* <div className={st.header__main__logo}>
+					<div className={st.header__main__logo}>
 						<Link href={LINKS.HOME}>
 							<a>
 								<svg
@@ -410,8 +409,8 @@ uOcAAAAASUVORK5CYII="
 								</svg>
 							</a>
 						</Link>
-					</div> */}
-					{/* <nav className={st.header__main__nav}>
+					</div>
+					<nav className={st.header__main__nav}>
 						{menu.map((item) => (
 							<div key={item.title} className={st.header__main__nav__item}>
 								<Link href={item.link}>
@@ -422,7 +421,7 @@ uOcAAAAASUVORK5CYII="
 								{item?.children && <NavItem key={item.title} nav={item} />}
 							</div>
 						))}
-					</nav> */}
+					</nav>
 					<div className={st.header__main__right}>
 						<div className={st.header__main__right__lang}>
 							<div

@@ -14,10 +14,6 @@ import { useEffect } from 'react';
 // })
 
 function MyApp({ Component, pageProps }) {
-	useEffect(() => {
-		console.log('555');
-	}, []);
-
 	return (
 		<div>
 			<Head>
@@ -31,7 +27,6 @@ function MyApp({ Component, pageProps }) {
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
 			</Head>
 			<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
-			{console.log('111')}
 			<Header />
 			<Component {...pageProps} />
 			<Footer />
