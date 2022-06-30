@@ -22,9 +22,9 @@ $gray: #c2c2c2;
 				display: flex;
 				align-items: center;
 
-				img {
-					width: 175px !important;
-					height: 85px !important;
+				svg {
+					width: 130px !important;
+					height: auto;
 				}
 			}
 		}
@@ -158,7 +158,6 @@ $gray: #c2c2c2;
 				height: 25px;
 				background-color: transparent;
 				border: 0;
-				display: flex;
 				align-items: center;
 				justify-content: center;
 				padding: 0;
@@ -188,9 +187,8 @@ $gray: #c2c2c2;
 		&__main {
 			&__logo {
 				a {
-					img {
-						width: 140px !important;
-						height: auto !important;
+					svg {
+						width: 110px !important;
 					}
 				}
 			}
@@ -216,7 +214,6 @@ $gray: #c2c2c2;
 			&__right {
 				&__burger {
 					display: flex;
-					align-items: center;
 				}
 			}
 		}
@@ -232,13 +229,12 @@ $gray: #c2c2c2;
 		}
 	}
 
-	@media (max-width: 450px) {
+	@media (max-width: 350px) {
 		&__main {
 			&__logo {
 				a {
-					img {
-						width: 110px !important;
-						left: -15px !important;
+					svg {
+						width: 90px !important;
 					}
 				}
 			}

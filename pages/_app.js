@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import '../styles/globals.scss';
+import { useEffect } from 'react';
 // import i18n from 'i18next'
 // import {initReactI18next} from 'react-i18next'
 
@@ -13,6 +14,10 @@ import '../styles/globals.scss';
 // })
 
 function MyApp({ Component, pageProps }) {
+	useEffect(() => {
+		console.log('555');
+	}, []);
+
 	return (
 		<div>
 			<Head>
@@ -23,11 +28,10 @@ function MyApp({ Component, pageProps }) {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-				<link
-					href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
-					rel="stylesheet"></link>
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
 			</Head>
+			<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+			{console.log('111')}
 			<Header />
 			<Component {...pageProps} />
 			<Footer />
