@@ -12,13 +12,13 @@ $white: #fff;
 			width: 65%;
 			padding: 0 30px;
 
-			h1 {
+			h2 {
 				margin-bottom: 30px;
 				color: $white;
 				line-height: 100%;
 			}
 
-			h3 {
+			h4 {
 				color: $white;
 				font-weight: 400;
 			}
@@ -32,7 +32,7 @@ $white: #fff;
 			&__item {
 				width: 77%;
 
-				h1 {
+				h2 {
 					margin-bottom: 20px;
 				}
 			}
@@ -63,17 +63,22 @@ $white: #fff;
 				width: 100%;
 				padding: 0 20px;
 
-				h3:nth-child(2) {
-					display: none;
+				h2,
+				h4 {
+					margin-bottom: 10px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
 				}
 			}
 		}
 	}
 
-	@media (max-width: 450px) {
+	@media (max-width: 350px) {
 		&__block {
 			&__item {
-				h3 {
+				h4:nth-child(2) {
 					display: none;
 				}
 			}

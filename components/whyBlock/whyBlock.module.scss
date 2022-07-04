@@ -1,2 +1,35 @@
+$dark_gray: #666;
+
 .whyBlock {
+	&__block {
+		display: flex;
+		padding: 0 35px;
+
+		&__img {
+			width: 80px;
+			height: 80px;
+
+			img {
+				width: 80px;
+				height: auto;
+			}
+			margin-right: 10px;
+		}
+
+		&__content {
+			h6 {
+				margin-bottom: 4px;
+			}
+
+			p {
+				font-size: 14px;
+				margin-bottom: 0;
+				color: $dark_gray;
+
+				a {
+					font-size: inherit;
+				}
+			}
+		}
+	}
 }

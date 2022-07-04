@@ -1,0 +1,138 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #eeebee;
+
+.footer {
+	padding-top: 10px;
+	background-color: $dark_green;
+
+	a,
+	p,
+	span {
+		color: $white;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	a:hover {
+		color: $gray;
+	}
+
+	&__block {
+		display: flex;
+		justify-content: space-between;
+
+		&__head {
+			width: 17%;
+
+			&__logo {
+				a {
+					height: fit-content;
+
+					svg {
+						width: 150px;
+						height: auto;
+					}
+				}
+			}
+
+			&__phone {
+				margin: 10px 0 20px;
+
+				a {
+					font-size: 22px;
+				}
+
+				p {
+					line-height: 100%;
+					margin-bottom: 0;
+				}
+			}
+
+			&__social,
+			&__payment {
+				margin-bottom: 20px;
+
+				h6 {
+					font-size: 18px;
+					color: $white;
+				}
+
+				ul {
+					display: flex;
+					align-items: center;
+					margin-bottom: 0;
+
+					li {
+						margin-right: 10px;
+
+						svg {
+							width: auto;
+							height: 25px;
+							fill: $white;
+
+							&:hover {
+								fill: $gray;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&__nav {
+			width: 75%;
+
+			&__ul {
+				display: flex;
+				justify-content: space-between;
+
+				&__li {
+					font-size: 18px;
+					color: $white;
+					font-weight: 600;
+
+					a {
+						font-weight: 400;
+					}
+
+					&__vps {
+						width: 21%;
+					}
+
+					&__uslugi {
+						width: 22%;
+					}
+
+					&__help {
+						width: 15%;
+					}
+				}
+
+				&__div {
+					width: 20%;
+
+					&__clients {
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	&__bottom {
+		padding-top: 20px;
+		margin-top: 20px;
+		border-top: 1px solid $white;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}

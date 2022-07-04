@@ -1,0 +1,25 @@
+$dark_gray: #666;
+
+.notifications {
+	&__block {
+		padding: 0 35px;
+
+		h6 {
+			margin-bottom: 4px;
+		}
+
+		p {
+			font-size: 14px;
+			margin-bottom: 8px;
+			color: $dark_gray;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			a {
+				font-size: inherit;
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+import st from './trust.module.scss';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper';
+import Container from '../container';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import Link from 'next/link';
+
+export default function Trust() {
+	const content = [
+		'/trust/coca.jpg',
+		'/trust/FED.png',
+		'/trust/ipoteka.jpg',
+		'/trust/leader-school.jpg',
+		'/trust/paynet.jpg',
+		'/trust/pepsi.jpg',
+		'/trust/silkroad.jpg',
+		'/trust/skillbox.jpg',
+		'/trust/tld.jpg',
+		'/trust/ttz.jpg',
+		'/trust/universal-bank.jpg',
+		'/trust/uzb-abroad.jpg',
+		'/trust/yapona-mama.jpg',
+	];
+
+	return (
+		<div className={`${st.trust} trust-swiper`}>
+			<Container title="Нам доверяют" clNh3="text-center text-uppercase">
+				<Swiper
+					cssMode={true}
+					modules={[Autoplay, Navigation]}
+					spaceBetween={0}
+					slidesPerView={6}
+					navigation
+					loop={true}
+					autoplay={{
+						delay: 2000,
+						disableOnInteraction: false,
+					}}
+					className={st.swiper__swiper}>
+					{content.map((item) => (
+						<SwiperSlide>
+							<div className={st.trust__block}>
+								<img src={item} />
+							</div>
+						</SwiperSlide>
+					))}
+				</Swiper>
+			</Container>
+		</div>
+	);
+}

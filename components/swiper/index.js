@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 
 export default () => {
 	return (
-		<div className={st.swiper}>
+		<div className={`${st.swiper} head-swiper`}>
 			<Swiper
 				cssMode={true}
 				modules={[Autoplay, Navigation]}
@@ -24,11 +24,11 @@ export default () => {
 					<div className={st.swiper__block} style={{ background: `url('/banner.webp') no-repeat` }}>
 						<Container>
 							<div className={st.swiper__block__item}>
-								<h1>Ваши сайты будут работать всегда</h1>
-								<h3>
+								<h2>Ваши сайты будут работать всегда</h2>
+								<h4>
 									Сервер любой конфигурации под Ваши задачи. Надежность и безопасность Вашего бизнеса!
-								</h3>
-								<h3>Доступность в сети TAS-IX - 1 Гбит/с для всех клиентов AIRNET</h3>
+								</h4>
+								<h4>Доступность в сети TAS-IX - 1 Гбит/с для всех клиентов AIRNET</h4>
 							</div>
 						</Container>
 					</div>
@@ -37,11 +37,11 @@ export default () => {
 					<div className={st.swiper__block} style={{ background: `url('/banner.webp') no-repeat` }}>
 						<Container>
 							<div className={st.swiper__block__item}>
-								<h1>Ваши сайты будут работать всегда</h1>
-								<h3>
+								<h2>Ваши сайты будут работать всегда</h2>
+								<h4>
 									Сервер любой конфигурации под Ваши задачи. Надежность и безопасность Вашего бизнеса!
-								</h3>
-								<h3>Доступность в сети TAS-IX - 1 Гбит/с для всех клиентов AIRNET</h3>
+								</h4>
+								<h4>Доступность в сети TAS-IX - 1 Гбит/с для всех клиентов AIRNET</h4>
 							</div>
 						</Container>
 					</div>

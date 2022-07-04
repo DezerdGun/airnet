@@ -1,0 +1,153 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #eeebee;
+
+.faq {
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		&s {
+			width: 100%;
+			// margin: 0 auto;
+
+			&__block {
+				overflow: hidden;
+				background: $light_gray;
+				border-radius: 5px;
+				margin-bottom: 20px;
+				transition: all 0.2s ease;
+
+				&__heading {
+					width: 100%;
+					padding: 20px;
+					padding-right: 44px;
+					border: none !important;
+					cursor: pointer;
+					text-align: left;
+					font-size: 20px;
+					-moz-box-align: center;
+					align-items: center;
+					font-weight: 400 !important;
+					position: relative;
+
+					h2 {
+						font-size: 20px !important;
+						margin: 0;
+						transition: all 0.3s ease;
+					}
+
+					span {
+						position: absolute;
+						top: 50%;
+						margin-top: -10.5px;
+						right: 15px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						transition: all 0.3s ease;
+
+						svg {
+							rect {
+								fill: $black;
+							}
+						}
+					}
+				}
+
+				&__active {
+					.faq__items__block__text {
+						height: fit-content;
+						z-index: 1;
+						visibility: visible;
+						padding: 0 20px 20px;
+					}
+					.faq__items__block__heading {
+						h2 {
+							color: $green !important;
+						}
+
+						span {
+							svg {
+								rect {
+									fill: $green;
+								}
+							}
+							transform: rotate(225deg);
+						}
+					}
+				}
+				&__text {
+					height: 0;
+					position: relative;
+					visibility: hidden;
+					z-index: -1;
+					font-weight: 400 !important;
+
+					&__list {
+						position: absolute;
+						top: 10px;
+						left: 30px;
+						width: 100px;
+						height: 2px;
+						background-color: #fb534a;
+					}
+
+					p {
+						border-left: 5px solid $green;
+						padding: 0 20px;
+						font-size: 17px;
+					}
+
+					p,
+					pre {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 990px) {
+		&__item {
+			&s {
+				width: 100%;
+			}
+		}
+	}
+
+	@media (max-width: 550px) {
+		margin: 0px auto;
+
+		&__item {
+			&s {
+				&__block {
+					&__heading {
+						// padding-bottom: 0;
+						h2 {
+							font-size: 18px !important;
+						}
+					}
+
+					&__active {
+						.faq__items__block__text {
+							padding: 10px 0;
+							padding-left: 0;
+
+							p {
+								font-size: 16px;
+								padding: 0;
+								padding-left: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,7 +1,10 @@
 $white: #fff;
+$black: #000;
 $green: #006a4d;
 $dark_green: #00402e;
 $gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #eeebee;
 
 html,
 body {
@@ -13,11 +16,13 @@ body {
 	box-sizing: border-box;
 	font-family: 'PT Sans', sans-serif;
 	font-size: 16px;
+	color: $black;
 }
 
 a {
 	color: inherit;
 	text-decoration: none;
+	color: $green;
 }
 
 h1,
@@ -58,9 +63,30 @@ h6 {
 	padding-top: 85px;
 }
 
-.swiper-button-prev:after,
-.swiper-button-next:after {
-	color: $white;
+.head-swiper {
+	.swiper-button-prev:after,
+	.swiper-button-next:after {
+		color: $white;
+	}
+}
+
+.whyBlock-swiper,
+.partners-swiper,
+.trust-swiper,
+.notifications-swiper {
+	.swiper-button-prev:after,
+	.swiper-button-next:after {
+		color: $green;
+		font-size: 30px;
+	}
+
+	.swiper-button-prev {
+		left: 0;
+	}
+
+	.swiper-button-next {
+		right: 0;
+	}
 }
 
 @media (max-width: 1040px) {
@@ -122,9 +148,11 @@ h6 {
 		padding-top: 70px;
 	}
 
-	.swiper-button-prev:after,
-	.swiper-button-next:after {
-		font-size: 32px !important;
+	.head-swiper {
+		.swiper-button-prev:after,
+		.swiper-button-next:after {
+			font-size: 32px !important;
+		}
 	}
 }
 
@@ -137,8 +165,10 @@ h6 {
 		right: 0px !important;
 	}
 
-	.swiper-button-prev:after,
-	.swiper-button-next:after {
-		font-size: 24px !important;
+	.head-swiper {
+		.swiper-button-prev:after,
+		.swiper-button-next:after {
+			font-size: 24px !important;
+		}
 	}
 }
