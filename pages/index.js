@@ -94,7 +94,6 @@ export default function Home() {
 			<Partners />
 			<FAQ faq={faqHome} faqHead={faqGenerate(faqHome)} title="НАС ЧАСТО СПРАШИВАЮТ" />
 			<Notifications />
-			<Container></Container>
 		</div>
 	);
 }

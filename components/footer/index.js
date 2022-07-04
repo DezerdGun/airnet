@@ -402,7 +402,7 @@ export default function Footer() {
 								{vps_vds.title}
 								<ul>
 									{vps_vds.children.map((i) => (
-										<li key={item.link}>
+										<li key={i.link}>
 											<Link href={i.link}>
 												<a>{i.title}</a>
 											</Link>
@@ -414,7 +414,7 @@ export default function Footer() {
 								{uslugi.title}
 								<ul>
 									{uslugi.children.map((i) => (
-										<li key={item.link}>
+										<li key={i.link}>
 											<Link href={i.link}>
 												<a>{i.title}</a>
 											</Link>
@@ -428,7 +428,7 @@ export default function Footer() {
 									{clients.title}
 									<ul>
 										{clients.children.map((i) => (
-											<li key={item.link}>
+											<li key={i.link}>
 												<Link href={i.link}>
 													<a>{i.title}</a>
 												</Link>
@@ -441,7 +441,7 @@ export default function Footer() {
 									{partners.title}
 									<ul>
 										{partners.children.map((i) => (
-											<li key={item.link}>
+											<li key={i.link}>
 												<Link href={i.link}>
 													<a>{i.title}</a>
 												</Link>
@@ -454,7 +454,7 @@ export default function Footer() {
 								{help.title}
 								<ul>
 									{help.children.map((i) => (
-										<li key={item.link}>
+										<li key={i.link}>
 											<Link href={i.link}>
 												<a>{i.title}</a>
 											</Link>
@@ -462,33 +462,6 @@ export default function Footer() {
 									))}
 								</ul>
 							</li>
-							{/*
-							<li className={st.footer__block__nav__ul__li}>
-								{item.title}
-								<ul>
-									{item.children.map((i) => (
-										<li>
-											<Link href={i.link}>
-												<a>{i.title}</a>
-											</Link>
-										</li>
-									))}
-								</ul>
-							</li> */}
-							{/* {menu.map((item) => (
-								<li className={st.footer__block__nav__ul__li} key={item.title}>
-									{item.title}
-									<ul>
-										{item.children.map((i) => (
-											<li>
-												<Link href={i.link}>
-													<a>{i.title}</a>
-												</Link>
-											</li>
-										))}
-									</ul>
-								</li>
-							))} */}
 						</ul>
 					</nav>
 				</div>
