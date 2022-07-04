@@ -35,7 +35,7 @@ export default function Partners() {
 					}}
 					className={st.swiper__swiper}>
 					{content.map((item) => (
-						<SwiperSlide>
+						<SwiperSlide key={item.title}>
 							<div className={st.partners__block}>
 								<img src={item} />
 							</div>

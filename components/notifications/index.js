@@ -13,10 +13,10 @@ export default function Notifications() {
 			decsription: (
 				<>
 					<p>
-						В связи с аварийной ситуацией на сети ННО ЦВСПД "TAS-IX" 15.02.2022 г. с 00:30 по 10:00 (ТШК)
-						могли наблюдаться ухудшения качества и перерывы в предоставлении услуги сети TAS-IX.
+						В связи с аварийной ситуацией на сети ННО ЦВСПД &quot;TAS-IX&quot; 15.02.2022 г. с 00:30 по
+						10:00 (ТШК) могли наблюдаться ухудшения качества и перерывы в предоставлении услуги сети TAS-IX.
 					</p>
-					<p>ННО ЦВСПД "TAS-IX" приносит свои извинения за предоставленные неудобства.</p>
+					<p>ННО ЦВСПД &quot;TAS-IX&quot; приносит свои извинения за предоставленные неудобства.</p>
 				</>
 			),
 		},
@@ -42,7 +42,7 @@ export default function Notifications() {
 					</p>
 					<p>
 						В этот период наблюдались кратковременные прерывания связи и ухудшение качества предоставляемых
-						услуг фиксированной связи на сети OOO "AIRNET".
+						услуг фиксированной связи на сети OOO &quot;AIRNET&quot;.
 					</p>
 				</>
 			),
@@ -65,7 +65,7 @@ export default function Notifications() {
 					}}
 					className={st.swiper__swiper}>
 					{content.map((item) => (
-						<SwiperSlide>
+						<SwiperSlide key={item.title}>
 							<div className={st.notifications__block}>
 								<h6>{item.title}</h6>
 								{item.decsription}

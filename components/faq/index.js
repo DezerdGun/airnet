@@ -34,7 +34,7 @@ export default function FAQ({ faq, faqHead, title }) {
 					<div className={st.faq__item}>
 						<div className={st.faq__items}>
 							{faq.map((item, i) => (
-								<div className={st.faq__items__block}>
+								<div key={item.title} className={st.faq__items__block}>
 									<div className={st.faq__items__block__heading} onClick={() => active(i)}>
 										<h2>{item.title}</h2>
 										<span>

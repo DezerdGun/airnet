@@ -59,7 +59,7 @@ export default function WhyBlock() {
 					}}
 					className={st.swiper__swiper}>
 					{content.map((item) => (
-						<SwiperSlide>
+						<SwiperSlide key={item.title}>
 							<div className={st.whyBlock__block}>
 								<div className={st.whyBlock__block__img}>
 									<img src={item.img} />

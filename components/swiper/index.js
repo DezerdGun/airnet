@@ -5,7 +5,7 @@ import st from './swiper.module.scss';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-export default () => {
+export default function CustomSwiper() {
 	return (
 		<div className={`${st.swiper} head-swiper`}>
 			<Swiper
@@ -49,4 +49,4 @@ export default () => {
 			</Swiper>
 		</div>
 	);
-};
+}

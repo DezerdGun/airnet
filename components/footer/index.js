@@ -376,7 +376,7 @@ export default function Footer() {
 							<h6>Присоединяйтесь</h6>
 							<ul>
 								{social.map((item) => (
-									<li>
+									<li key={item.link}>
 										<a href={item.link}>{item.img}</a>
 									</li>
 								))}
@@ -386,7 +386,7 @@ export default function Footer() {
 							<h6>Принимаем к оплате</h6>
 							<ul>
 								{payment.map((item) => (
-									<li>
+									<li key={item.link}>
 										<a href={item.link}>{item.img}</a>
 									</li>
 								))}
@@ -402,7 +402,7 @@ export default function Footer() {
 								{vps_vds.title}
 								<ul>
 									{vps_vds.children.map((i) => (
-										<li>
+										<li key={item.link}>
 											<Link href={i.link}>
 												<a>{i.title}</a>
 											</Link>
@@ -414,7 +414,7 @@ export default function Footer() {
 								{uslugi.title}
 								<ul>
 									{uslugi.children.map((i) => (
-										<li>
+										<li key={item.link}>
 											<Link href={i.link}>
 												<a>{i.title}</a>
 											</Link>
@@ -428,7 +428,7 @@ export default function Footer() {
 									{clients.title}
 									<ul>
 										{clients.children.map((i) => (
-											<li>
+											<li key={item.link}>
 												<Link href={i.link}>
 													<a>{i.title}</a>
 												</Link>
@@ -441,7 +441,7 @@ export default function Footer() {
 									{partners.title}
 									<ul>
 										{partners.children.map((i) => (
-											<li>
+											<li key={item.link}>
 												<Link href={i.link}>
 													<a>{i.title}</a>
 												</Link>
@@ -454,7 +454,7 @@ export default function Footer() {
 								{help.title}
 								<ul>
 									{help.children.map((i) => (
-										<li>
+										<li key={item.link}>
 											<Link href={i.link}>
 												<a>{i.title}</a>
 											</Link>

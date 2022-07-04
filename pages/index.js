@@ -2,7 +2,7 @@ import Container from '../components/container';
 import FAQ from '../components/faq';
 import Notifications from '../components/notifications';
 import Partners from '../components/partners';
-import Swiper from '../components/swiper';
+import CustomSwiper from '../components/swiper';
 import Trust from '../components/trust';
 import TrustPilot from '../components/trustpilot';
 import { faqGenerate } from '../components/utils';
@@ -88,7 +88,7 @@ export default function Home() {
 
 	return (
 		<div className={st.home}>
-			<Swiper />
+			<CustomSwiper />
 			<WhyBlock />
 			<TrustPilot />
 			<Trust />

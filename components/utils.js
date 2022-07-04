@@ -7,7 +7,7 @@ export const LOGO = (
 		width="512px"
 		height="250px"
 		viewBox="0 0 512 250"
-		enable-background="new 0 0 512 250">
+		enableBackground="new 0 0 512 250">
 		<image
 			id="image0"
 			width="512"
