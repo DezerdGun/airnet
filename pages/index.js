@@ -85,7 +85,6 @@ export default function Home() {
 			),
 		},
 	];
-
 	return (
 		<div className={st.home}>
 			<CustomSwiper />
