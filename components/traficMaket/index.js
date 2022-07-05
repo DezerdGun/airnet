@@ -12,7 +12,7 @@ export default function TraficMaket({ title, description, bgImg, table, endText 
 				</div>
 				<div className={st.traficMaket__table}>
 					{table.map((item, i) => (
-						<CustomTable key={i} table={item} />
+						<CustomTable key={`table${i}`} table={item} />
 					))}
 				</div>
 				{endText ? <p className={st.traficMaket__endText}>{endText}</p> : null}

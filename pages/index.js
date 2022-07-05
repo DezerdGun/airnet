@@ -96,7 +96,7 @@ export default function Home() {
 				description="Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости до 1 Gbps"
 				bgImg="/servers.jpg"
 				table={[
-					<table>
+					<table key="table-1">
 						<tr>
 							<th colSpan={2}>VDS/VPS «Strong»</th>
 						</tr>
@@ -134,7 +134,7 @@ export default function Home() {
 							</td>
 						</tr>
 					</table>,
-					<table>
+					<table key="table-2">
 						<tr>
 							<th colSpan={2}>VDS/VPS «VIP+»</th>
 						</tr>
@@ -172,7 +172,7 @@ export default function Home() {
 							</td>
 						</tr>
 					</table>,
-					<table>
+					<table key="table-3">
 						<tr>
 							<th colSpan={2}>VDS/VPS «Advanced»</th>
 						</tr>
@@ -210,7 +210,7 @@ export default function Home() {
 							</td>
 						</tr>
 					</table>,
-					<table>
+					<table key="table-4">
 						<tr>
 							<th colSpan={2}>VDS/VPS «Ultra»</th>
 						</tr>
@@ -256,7 +256,7 @@ export default function Home() {
 				endText="*При оплате за хостинг от 6 месяцев!"
 				bgImg="/servers-2.jpg"
 				table={[
-					<table>
+					<table key="table-5">
 						<tr>
 							<th colSpan={2}>Cpanel «Старт»</th>
 						</tr>
@@ -286,7 +286,7 @@ export default function Home() {
 							</td>
 						</tr>
 					</table>,
-					<table>
+					<table key="table-6">
 						<tr>
 							<th colSpan={2}>Cpanel «Простой»</th>
 						</tr>
@@ -316,7 +316,7 @@ export default function Home() {
 							</td>
 						</tr>
 					</table>,
-					<table>
+					<table key="table-7">
 						<tr>
 							<th colSpan={2}>Cpanel «Стандарт»</th>
 						</tr>
@@ -346,7 +346,7 @@ export default function Home() {
 							</td>
 						</tr>
 					</table>,
-					<table>
+					<table key="table-8">
 						<tr>
 							<th colSpan={2}>Cpanel «Доступный»</th>
 						</tr>
