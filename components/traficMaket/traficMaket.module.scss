@@ -7,20 +7,16 @@ $dark_gray: #666;
 $light_gray: #eeebee;
 
 .traficMaket {
-	padding: 20px 0;
+	padding: 0 40px;
 
-	&__block {
-		padding: 0 40px;
-		h3,
-		p {
-			color: $white;
-		}
+	h3,
+	p {
+		color: $white;
 	}
 
 	&__table {
 		display: flex;
 		justify-content: space-between;
-		padding: 0 40px;
 
 		table {
 			box-shadow: 0 0 10px $dark_gray;
@@ -28,8 +24,7 @@ $light_gray: #eeebee;
 	}
 
 	&__endText {
-		padding: 10px 40px 0;
+		margin-top: 10px;
 		margin-bottom: 0;
-		color: $white;
 	}
 }

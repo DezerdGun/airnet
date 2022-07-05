@@ -1,0 +1,55 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #eeebee;
+
+.sitepad {
+	padding: 0 40px;
+
+	h3,
+	p,
+	span {
+		color: $white;
+	}
+
+	p {
+		margin-bottom: 5px;
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		margin: 10px 0;
+
+		button {
+			background-color: $green;
+			padding: 0 60px;
+			margin-right: 20px;
+			height: 40px;
+			border: 1px solid $white;
+
+			a {
+				color: $white;
+				font-weight: 700;
+				font-size: 20px;
+			}
+
+			&:hover {
+				background-color: $dark_green;
+			}
+		}
+	}
+
+	&__img {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 0;
+
+		img {
+			width: 24%;
+		}
+	}
+}

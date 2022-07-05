@@ -5,6 +5,7 @@ $dark_green: #00402e;
 $gray: #c2c2c2;
 $dark_gray: #666;
 $light_gray: #eeebee;
+$red: #f00;
 
 html,
 body {
@@ -17,6 +18,16 @@ body {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 16px;
 	color: $black;
+	transition: all 0.2s ease;
+}
+
+input,
+select {
+	&:focus,
+	&:focus-within {
+		outline: none;
+		border: 1px solid $green !important;
+	}
 }
 
 a {
@@ -63,6 +74,12 @@ h6 {
 	padding-top: 85px;
 }
 
+.text-red {
+	color: $red;
+}
+
+/* ----------------------------- swipers -------------------------- */
+
 .head-swiper {
 	.swiper-button-prev:after,
 	.swiper-button-next:after {
@@ -88,6 +105,25 @@ h6 {
 		right: 0;
 	}
 }
+
+.stock-swiper {
+	.swiper-pagination {
+		text-align: right;
+		left: unset !important;
+		right: 20px;
+	}
+
+	.swiper-pagination-bullet {
+		width: 15px;
+		height: 15px;
+
+		&-active {
+			background-color: $white;
+		}
+	}
+}
+
+/* ------------------------------ table ----------------------------*/
 
 .customTable {
 	table {

@@ -1,0 +1,77 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #eeebee;
+
+.regDomain {
+	padding: 0 40px;
+
+	h3,
+	p,
+	span {
+		color: $white;
+	}
+
+	&__block {
+		background-color: $white;
+		padding: 20px;
+		margin: 20px 0;
+
+		p,
+		span {
+			color: $black;
+		}
+
+		&__input {
+			display: flex;
+			align-items: center;
+
+			span,
+			input,
+			select,
+			option {
+				font-size: 18px;
+			}
+
+			input,
+			select {
+				height: 40px;
+				margin: 0 2px;
+				border: 1px solid $gray;
+			}
+
+			input {
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+			}
+
+			select {
+				padding-right: 5px;
+				cursor: pointer;
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+
+			button {
+				height: 40px;
+				border-radius: 5px;
+				margin: 0 10px;
+				background-color: $green;
+				color: $white;
+				border: 0;
+				padding: 0 20px;
+			}
+		}
+	}
+
+	&__endText {
+		margin-bottom: 5px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

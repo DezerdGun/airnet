@@ -10,6 +10,9 @@ import { faqGenerate } from '../components/utils';
 import WhyBlock from '../components/whyBlock';
 import st from './index.module.scss';
 import CustomTableBottom from '../components/customTableBottom';
+import RegDomain from '../components/regDomain';
+import Sitepad from '../components/sitepad';
+import Stock from '../components/stock';
 
 export default function Home() {
 	const faqHome = [
@@ -378,6 +381,9 @@ export default function Home() {
 					</table>,
 				]}
 			/>
+			<RegDomain />
+			<Sitepad />
+			<Stock />
 			<TrustPilot />
 			<Trust />
 			<Partners />
