@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper';
 import Container from '../container';
-import st from './swiper.module.scss';
+import st from './customSwiper.module.scss';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -16,7 +16,7 @@ export default function CustomSwiper() {
 				navigation
 				loop={true}
 				autoplay={{
-					delay: 5000,
+					delay: 10000,
 					disableOnInteraction: false,
 				}}
 				className={st.swiper__swiper}>

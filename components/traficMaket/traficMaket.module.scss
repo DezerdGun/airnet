@@ -1,0 +1,35 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #eeebee;
+
+.traficMaket {
+	padding: 20px 0;
+
+	&__block {
+		padding: 0 40px;
+		h3,
+		p {
+			color: $white;
+		}
+	}
+
+	&__table {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 40px;
+
+		table {
+			box-shadow: 0 0 10px $dark_gray;
+		}
+	}
+
+	&__endText {
+		padding: 10px 40px 0;
+		margin-bottom: 0;
+		color: $white;
+	}
+}

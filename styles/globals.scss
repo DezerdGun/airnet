@@ -89,6 +89,52 @@ h6 {
 	}
 }
 
+.customTable {
+	table {
+		width: 100%;
+		td,
+		th {
+			color: $black;
+			background-color: $gray;
+			padding: 10px 13px;
+			font-size: 14px;
+			white-space: nowrap;
+
+			&:nth-child(even) {
+				font-weight: 600 !important;
+				text-align: right;
+			}
+		}
+
+		th {
+			color: $white;
+			font-size: 15px;
+			background-color: $green !important;
+			text-align: center;
+		}
+
+		tr {
+			&:nth-child(odd) {
+				td,
+				th {
+					background-color: $light_gray;
+				}
+			}
+
+			&:last-child {
+				td {
+					background-color: $white;
+				}
+			}
+		}
+	}
+
+	.bg-green {
+		color: $white !important;
+		background-color: $green !important;
+	}
+}
+
 @media (max-width: 1040px) {
 	h1 {
 		font-size: 50px;

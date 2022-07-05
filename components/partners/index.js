@@ -30,7 +30,7 @@ export default function Partners() {
 					navigation
 					loop={true}
 					autoplay={{
-						delay: 2000,
+						delay: 10000,
 						disableOnInteraction: false,
 					}}
 					className={st.swiper__swiper}>
