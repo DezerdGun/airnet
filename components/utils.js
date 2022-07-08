@@ -274,11 +274,12 @@ uOcAAAAASUVORK5CYII="
 );
 
 export const faqGenerateText = (text) => {
-	console.log('text', text);
 	if (Array.isArray(text)) {
 		const temp = text.map((item) =>
 			Array.isArray(item?.props?.children)
 				? faqGenerateText(item.props.children)
+				: item?.props?.children?.props
+				? item.props.children.props.children
 				: item?.props?.children
 				? item.props.children
 				: item

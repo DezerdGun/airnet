@@ -92,7 +92,7 @@ export default function Home() {
 	];
 	return (
 		<div className={st.home}>
-			<CustomSwiper />
+			{/* <CustomSwiper />
 			<WhyBlock />
 			<TraficMaket
 				title="Популярные тарифы - Виртуальный сервер в Ташкенте"
@@ -387,8 +387,8 @@ export default function Home() {
 			<TrustPilot />
 			<Trust />
 			<Partners />
-			<FAQ faq={faqHome} faqHead={faqGenerate(faqHome)} title="НАС ЧАСТО СПРАШИВАЮТ" />
-			<Notifications />
+			<FAQ faq={faqHome} title="НАС ЧАСТО СПРАШИВАЮТ" />
+			<Notifications /> */}
 		</div>
 	);
 }

@@ -1,16 +1,11 @@
 import st from './faq.module.scss';
 import Head from 'next/head';
 import Container from '../container';
+import { faqGenerate } from '../utils';
 
-export default function FAQ({ faq, faqHead, title }) {
+export default function FAQ({ faq, title }) {
 	const active = (i) => {
 		const blocks = document.querySelectorAll(`.${st.faq__items__block}`);
-		// blocks.forEach((item) =>
-		// 	item.classList.contains(st.faq__items__block__active)
-		// 		? item?.classList.toggle(st.faq__items__block__active)
-		// 		: null
-		// );
-		// blocks[i].classList.toggle(st.faq__items__block__active);
 
 		blocks.forEach((item, index) =>
 			i !== index
@@ -25,7 +20,7 @@ export default function FAQ({ faq, faqHead, title }) {
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(faqHead, null, 2),
+						__html: JSON.stringify(faqGenerate(faq), null, 2),
 					}}
 				/>
 			</Head>
