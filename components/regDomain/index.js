@@ -3,19 +3,20 @@ import st from './regDomain.module.scss';
 
 export default function RegDomain() {
 	return (
-		<Container style={{ background: `url('/domains.jpg') no-repeat` }}>
+		<Container style={{ background: `url('/domains.jpg') no-repeat` }} title="Регистрация доменов">
 			<div className={st.regDomain}>
-				<h3>Регистрация доменов</h3>
 				<div className={st.regDomain__block}>
 					<p>Проверьте доступно доменное имя в зоне «UZ» для регистрации</p>
 					<div className={st.regDomain__block__input}>
-						<span>www.</span>
-						<input />
-						<span>.</span>
-						<select>
-							<option>uz</option>
-							<option>Все</option>
-						</select>
+						<div className={st.regDomain__block__input__block}>
+							<span>www.</span>
+							<input />
+							<span>.</span>
+							<select>
+								<option>uz</option>
+								<option>Все</option>
+							</select>
+						</div>
 						<button>Проверить</button>
 					</div>
 				</div>

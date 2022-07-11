@@ -7,8 +7,6 @@ $dark_gray: #666;
 $light_gray: #eeebee;
 
 .regDomain {
-	padding: 0 40px;
-
 	h3,
 	p,
 	span {
@@ -36,29 +34,35 @@ $light_gray: #eeebee;
 				font-size: 18px;
 			}
 
-			input,
-			select {
-				height: 40px;
-				margin: 0 2px;
-				border: 1px solid $gray;
-			}
+			&__block {
+				display: flex;
+				align-items: center;
 
-			input {
-				border-top-left-radius: 5px;
-				border-bottom-left-radius: 5px;
-			}
+				input,
+				select {
+					height: 40px;
+					margin: 0 2px;
+					border: 1px solid $gray;
+				}
 
-			select {
-				padding-right: 5px;
-				cursor: pointer;
-				border-top-right-radius: 5px;
-				border-bottom-right-radius: 5px;
+				input {
+					width: calc(100% - 110px);
+					border-top-left-radius: 5px;
+					border-bottom-left-radius: 5px;
+				}
+
+				select {
+					padding-right: 5px;
+					cursor: pointer;
+					border-top-right-radius: 5px;
+					border-bottom-right-radius: 5px;
+				}
 			}
 
 			button {
 				height: 40px;
 				border-radius: 5px;
-				margin: 0 10px;
+				margin-left: 10px;
 				background-color: $green;
 				color: $white;
 				border: 0;
@@ -72,6 +76,37 @@ $light_gray: #eeebee;
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+	}
+
+	@media (max-width: 550px) {
+		&__block {
+			padding: 20px;
+			margin: 10px 0;
+
+			&__input {
+				flex-wrap: wrap;
+
+				button {
+					width: 100%;
+					margin-left: 0;
+					margin-top: 10px;
+				}
+			}
+		}
+
+		&__endText {
+			margin-bottom: 2px;
+		}
+	}
+
+	@media (max-width: 450px) {
+		&__block {
+			padding: 10px;
+
+			p {
+				margin-bottom: 8px;
+			}
 		}
 	}
 }

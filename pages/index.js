@@ -381,8 +381,8 @@ export default function Home() {
 					</table>,
 				]}
 			/>
-			{/*<RegDomain />
-			<Sitepad />
+			<RegDomain />
+			{/*<Sitepad />
 			<Stock />
 			<TrustPilot />
 			<Trust />
