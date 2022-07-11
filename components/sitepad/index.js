@@ -6,9 +6,10 @@ import Link from 'next/dist/client/link';
 export default function Sitepad() {
 	const content = ['/art-const-1.jpg', '/art-const-2.jpg', '/art-const-3.jpg', '/art-const-4.jpg'];
 	return (
-		<Container style={{ background: `url('/laptop.jpg') no-repeat`, backgroundSize: 'cover' }}>
+		<Container
+			style={{ background: `url('/laptop.jpg') no-repeat`, backgroundSize: 'cover' }}
+			title="Конструктор сайтов SitePad">
 			<div className={st.sitepad}>
-				<h3>Конструктор сайтов SitePad</h3>
 				<p>
 					Для того чтобы воспользоваться конструктором сайта где более 750 разных тем, вам необходимо{' '}
 					<Link href={LINKS.HOSTING}>

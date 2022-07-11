@@ -7,8 +7,6 @@ $dark_gray: #666;
 $light_gray: #eeebee;
 
 .sitepad {
-	padding: 0 40px;
-
 	h3,
 	p,
 	span {
@@ -22,7 +20,7 @@ $light_gray: #eeebee;
 	&__button {
 		display: flex;
 		align-items: center;
-		margin: 10px 0;
+		margin: 10px 0 20px;
 
 		button {
 			background-color: $green;
@@ -40,16 +38,96 @@ $light_gray: #eeebee;
 			&:hover {
 				background-color: $dark_green;
 			}
+
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 	}
 
 	&__img {
 		display: flex;
 		justify-content: space-between;
-		padding: 20px 0;
 
 		img {
 			width: 24%;
+		}
+	}
+
+	@media (max-width: 1040px) {
+		&__button {
+			button {
+				padding: 0 10px;
+			}
+		}
+	}
+
+	@media (max-width: 770px) {
+		&__button {
+			justify-content: space-between;
+
+			button {
+				width: 200px;
+				height: 62px;
+				padding: 0 10px;
+				margin-right: 0;
+
+				a {
+					font-size: 18px;
+				}
+
+				&:last-child {
+					width: calc(100% - 220px);
+				}
+			}
+		}
+
+		&__img {
+			flex-wrap: wrap;
+
+			img {
+				width: 49%;
+				margin-bottom: 10px;
+
+				&:nth-child(3),
+				&:nth-child(4) {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 550px) {
+		&__button {
+			flex-wrap: wrap;
+			margin-bottom: 10px;
+
+			button {
+				width: 100% !important;
+				height: fit-content;
+				padding: 10px;
+				margin-bottom: 10px;
+
+				a {
+					font-size: 16px;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 450px) {
+		&__img {
+			img {
+				width: 100%;
+
+				&:nth-child(3) {
+					margin-bottom: 10px;
+				}
+			}
 		}
 	}
 }

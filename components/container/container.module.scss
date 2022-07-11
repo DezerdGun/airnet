@@ -30,7 +30,10 @@ $white: #fff;
 
 	@media (max-width: 1240px) {
 		width: 1150px;
-		padding: 20px;
+
+		&__bg {
+			padding: 20px;
+		}
 	}
 
 	@media (max-width: 1170px) {
