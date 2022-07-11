@@ -29,6 +29,13 @@
 		padding: 20px;
 	}
 
+	@media (max-width: 550px) {
+		&__title {
+			font-size: 22px;
+			margin-bottom: 20px;
+		}
+	}
+
 	@media (max-width: 450px) {
 		padding: 20px 10px;
 	}

@@ -50,12 +50,17 @@ export default function WhyBlock() {
 					cssMode={true}
 					modules={[Autoplay, Navigation]}
 					spaceBetween={0}
-					slidesPerView={2}
+					slidesPerView={1}
 					navigation
 					loop={true}
 					autoplay={{
 						delay: 10000,
 						disableOnInteraction: false,
+					}}
+					breakpoints={{
+						770: {
+							slidesPerView: 2,
+						},
 					}}
 					className={st.swiper__swiper}>
 					{content.map((item) => (

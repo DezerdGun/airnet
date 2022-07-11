@@ -92,9 +92,9 @@ export default function Home() {
 	];
 	return (
 		<div className={st.home}>
-			{/* <CustomSwiper />
+			<CustomSwiper />
 			<WhyBlock />
-			<TraficMaket
+			{/*<TraficMaket
 				title="Популярные тарифы - Виртуальный сервер в Ташкенте"
 				description="Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости до 1 Gbps"
 				bgImg="/servers.jpg"

@@ -7,7 +7,6 @@ $dark_gray: #666;
 
 		&__img {
 			width: 80px;
-			height: 80px;
 
 			img {
 				width: 80px;
@@ -29,6 +28,44 @@ $dark_gray: #666;
 				a {
 					font-size: inherit;
 				}
+			}
+		}
+	}
+
+	@media (max-width: 1040px) {
+		&__block {
+			padding: 0 20px;
+
+			&__img {
+				width: 60px;
+
+				img {
+					width: 60px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 550px) {
+		&__block {
+			padding: 0 25px;
+
+			&__img {
+				width: 55px;
+
+				img {
+					width: 55px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 450px) {
+		&__block {
+			flex-wrap: wrap;
+
+			&__img {
+				display: none;
 			}
 		}
 	}
