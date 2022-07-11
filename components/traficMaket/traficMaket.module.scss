@@ -16,6 +16,11 @@ $light_gray: #eeebee;
 		display: flex;
 		justify-content: space-between;
 
+		&__item {
+			min-width: 270px;
+			max-width: 270px;
+		}
+
 		table {
 			box-shadow: 0 0 10px $dark_gray;
 		}
