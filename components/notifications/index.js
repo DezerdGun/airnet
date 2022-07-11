@@ -56,12 +56,20 @@ export default function Notifications() {
 					cssMode={true}
 					modules={[Autoplay, Navigation]}
 					spaceBetween={0}
-					slidesPerView={3}
+					slidesPerView={1}
 					navigation
 					loop={true}
 					autoplay={{
 						delay: 10000,
 						disableOnInteraction: false,
+					}}
+					breakpoints={{
+						660: {
+							slidesPerView: 2,
+						},
+						1040: {
+							slidesPerView: 3,
+						},
 					}}
 					className={st.swiper__swiper}>
 					{content.map((item) => (

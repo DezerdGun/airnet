@@ -3,10 +3,13 @@ import Container from '../container';
 
 export default function TrustPilot() {
 	return (
-		<div className={st.trustpilot}>
-			<Container title="Отзывы клиентов" clNh3="text-center text-uppercase">
+		<Container
+			title="Отзывы клиентов"
+			style={{ backgroundColor: '#eeebee' }}
+			clNh3="text-center text-uppercase text-black">
+			<div className={st.trustpilot}>
 				<div></div>
-			</Container>
-		</div>
+			</div>
+		</Container>
 	);
 }

@@ -16,4 +16,26 @@ $green: #006a4d;
 			filter: contrast(0) brightness(10);
 		}
 	}
+
+	@media (max-width: 1040px) {
+		&__block {
+			width: 120px;
+			height: 100px;
+
+			img {
+				width: 120px;
+			}
+		}
+	}
+
+	@media (max-width: 350px) {
+		&__block {
+			width: 100px;
+			height: 80px;
+
+			img {
+				width: 100px;
+			}
+		}
+	}
 }

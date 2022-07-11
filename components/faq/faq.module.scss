@@ -60,6 +60,11 @@ $light_gray: #eeebee;
 					}
 				}
 
+				// &__text,
+				// p {
+				// 	transition: none;
+				// }
+
 				&__active {
 					.faq__items__block__text {
 						height: fit-content;
@@ -127,8 +132,11 @@ $light_gray: #eeebee;
 		&__item {
 			&s {
 				&__block {
+					margin-bottom: 10px;
+
 					&__heading {
-						// padding-bottom: 0;
+						padding: 15px;
+						padding-right: 44px;
 						h2 {
 							font-size: 18px !important;
 						}
@@ -136,8 +144,8 @@ $light_gray: #eeebee;
 
 					&__active {
 						.faq__items__block__text {
-							padding: 10px 0;
-							padding-left: 0;
+							padding: 15px;
+							padding-top: 0;
 
 							p {
 								font-size: 16px;

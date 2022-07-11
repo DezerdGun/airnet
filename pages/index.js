@@ -94,7 +94,7 @@ export default function Home() {
 		<div className={st.home}>
 			<CustomSwiper />
 			<WhyBlock />
-			<TraficMaket
+			{/* <TraficMaket
 				title="Популярные тарифы - Виртуальный сервер в Ташкенте"
 				description="Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости до 1 Gbps"
 				bgImg="/servers.jpg"
@@ -384,11 +384,11 @@ export default function Home() {
 			<RegDomain />
 			<Sitepad />
 			<Stock />
-			{/*<TrustPilot />
+			<TrustPilot />
 			<Trust />
-			<Partners />
+			<Partners />*/}
 			<FAQ faq={faqHome} title="НАС ЧАСТО СПРАШИВАЮТ" />
-			<Notifications /> */}
+			<Notifications />
 		</div>
 	);
 }

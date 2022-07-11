@@ -26,12 +26,26 @@ export default function Partners() {
 					cssMode={true}
 					modules={[Autoplay, Navigation]}
 					spaceBetween={0}
-					slidesPerView={6}
+					slidesPerView={2}
 					navigation
 					loop={true}
 					autoplay={{
 						delay: 10000,
 						disableOnInteraction: false,
+					}}
+					breakpoints={{
+						550: {
+							slidesPerView: 3,
+						},
+						660: {
+							slidesPerView: 4,
+						},
+						990: {
+							slidesPerView: 5,
+						},
+						1100: {
+							slidesPerView: 6,
+						},
 					}}
 					className={st.swiper__swiper}>
 					{content.map((item) => (

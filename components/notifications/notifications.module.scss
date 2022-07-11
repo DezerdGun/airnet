@@ -22,4 +22,10 @@ $dark_gray: #666;
 			}
 		}
 	}
+
+	@media (max-width: 1040px) {
+		&__block {
+			padding: 0 20px;
+		}
+	}
 }

@@ -15,4 +15,13 @@ $green: #006a4d;
 			max-height: 110px;
 		}
 	}
+
+	@media (max-width: 350px) {
+		&__block {
+			img {
+				max-width: 110px;
+				max-height: 90px;
+			}
+		}
+	}
 }

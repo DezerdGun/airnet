@@ -171,6 +171,21 @@ h6 {
 	}
 }
 
+@media (max-width: 1170px) {
+	.whyBlock-swiper,
+	.partners-swiper,
+	.trust-swiper,
+	.notifications-swiper {
+		.swiper-button-prev {
+			left: -6px !important;
+		}
+
+		.swiper-button-next {
+			right: -6px !important;
+		}
+	}
+}
+
 @media (max-width: 1040px) {
 	h1 {
 		font-size: 50px;
@@ -207,14 +222,6 @@ h6 {
 		.swiper-button-prev:after,
 		.swiper-button-next:after {
 			font-size: 25px;
-		}
-
-		.swiper-button-prev {
-			left: -6px !important;
-		}
-
-		.swiper-button-next {
-			right: -6px !important;
 		}
 	}
 }
