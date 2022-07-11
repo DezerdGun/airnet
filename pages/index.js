@@ -383,8 +383,8 @@ export default function Home() {
 			/>
 			<RegDomain />
 			<Sitepad />
-			{/*<Stock />
-			<TrustPilot />
+			<Stock />
+			{/*<TrustPilot />
 			<Trust />
 			<Partners />
 			<FAQ faq={faqHome} title="НАС ЧАСТО СПРАШИВАЮТ" />
