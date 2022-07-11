@@ -27,4 +27,38 @@ $light_gray: #eeebee;
 		margin-top: 10px;
 		margin-bottom: 0;
 	}
+
+	@media (max-width: 1240px) {
+		padding: 0 20px;
+	}
+
+	@media (max-width: 1170px) {
+		&__table {
+			overflow-x: scroll;
+
+			&__item {
+				margin-right: 10px;
+				padding-bottom: 10px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+
+			&::-webkit-scrollbar {
+				height: 8px;
+				background-color: $dark_green;
+				border-radius: 10px;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background-color: $white;
+				border-radius: 10px;
+			}
+		}
+	}
+
+	@media (max-width: 1040px) {
+		padding: 0;
+	}
 }
