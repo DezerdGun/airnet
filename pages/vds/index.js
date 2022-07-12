@@ -196,7 +196,7 @@ export default function VDS() {
 				endText="Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 4-х часов, в зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации оборудования после оплаты - 1-2 часа. Мы делам всё возможное, чтобы уменьшить время ожидания. Срок действия услуги начнется с момента её активации."
 				bgImg="/servers-2.jpg"
 				table={[
-					<table>
+					<table key="table-1">
 						<tr>
 							<th colSpan={2}>VDS/VPS «Strong»</th>
 						</tr>
@@ -238,7 +238,7 @@ export default function VDS() {
 							</td>
 						</tr>
 					</table>,
-					<table>
+					<table key="table-2">
 						<tr>
 							<th colSpan={2}>VDS/VPS «VIP»</th>
 						</tr>
@@ -280,7 +280,7 @@ export default function VDS() {
 							</td>
 						</tr>
 					</table>,
-					<table>
+					<table key="table-3">
 						<tr>
 							<th colSpan={2}>VDS/VPS «VIP+»</th>
 						</tr>
@@ -322,7 +322,7 @@ export default function VDS() {
 							</td>
 						</tr>
 					</table>,
-					<table>
+					<table key="table-4">
 						<tr>
 							<th colSpan={2}>VDS/VPS «Nano»</th>
 						</tr>
@@ -364,7 +364,7 @@ export default function VDS() {
 							</td>
 						</tr>
 					</table>,
-					<table>
+					<table key="table-5">
 						<tr>
 							<th colSpan={2}>VDS/VPS «Advanced»</th>
 						</tr>
