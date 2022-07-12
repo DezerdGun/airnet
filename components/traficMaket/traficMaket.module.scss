@@ -15,10 +15,28 @@ $light_gray: #eeebee;
 	&__table {
 		display: flex;
 		justify-content: space-between;
+		overflow-x: scroll;
+
+		&::-webkit-scrollbar {
+			height: 8px;
+			background-color: $dark_green;
+			border-radius: 10px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: $white;
+			border-radius: 10px;
+		}
 
 		&__item {
 			min-width: 270px;
 			max-width: 270px;
+			padding-bottom: 10px;
+			margin-right: 10px;
+
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 
 		table {
@@ -26,34 +44,22 @@ $light_gray: #eeebee;
 		}
 	}
 
+	&__customTable {
+		.traficMaket__table__item {
+			table {
+				tr:first-child {
+					th,
+					td {
+						padding: 20px 10px;
+					}
+				}
+			}
+		}
+	}
+
 	&__endText {
 		margin-top: 10px;
 		margin-bottom: 0;
-	}
-
-	@media (max-width: 1170px) {
-		&__table {
-			overflow-x: scroll;
-
-			&__item {
-				margin-right: 10px;
-				padding-bottom: 10px;
-
-				&:last-child {
-					margin-right: 0;
-				}
-			}
-
-			&::-webkit-scrollbar {
-				height: 8px;
-				background-color: $dark_green;
-				border-radius: 10px;
-			}
-
-			&::-webkit-scrollbar-thumb {
-				background-color: $white;
-				border-radius: 10px;
-			}
-		}
+		line-height: 120%;
 	}
 }
