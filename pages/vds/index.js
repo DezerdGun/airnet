@@ -412,7 +412,7 @@ export default function VDS() {
 			<Container>
 				<div className={st.vds__block}>
 					{block.map((item) => (
-						<div className={st.vds__block__item}>
+						<div key={item.title} className={st.vds__block__item}>
 							<div className={st.vds__block__item__img}>{item.img}</div>
 							<h6>{item.title}</h6>
 							<p>{item.description}</p>
