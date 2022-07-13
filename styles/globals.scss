@@ -19,6 +19,7 @@ body {
 	font-size: 16px;
 	color: $black;
 	transition: all 0.2s ease;
+	line-height: 120% !important;
 }
 
 input,
@@ -44,6 +45,7 @@ h5,
 h6,
 strong {
 	font-weight: 700;
+	line-height: 110% !important;
 }
 
 h1 {

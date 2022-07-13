@@ -16,7 +16,7 @@ $light_gray: #eeebee;
 	&__block {
 		background-color: $white;
 		padding: 20px;
-		margin: 20px 0;
+		margin-bottom: 10px;
 
 		p,
 		span {
@@ -73,17 +73,17 @@ $light_gray: #eeebee;
 	}
 
 	&__endText {
-		margin-bottom: 5px;
+		margin-bottom: 5px !important;
 
 		&:last-child {
-			margin-bottom: 0;
+			margin-bottom: 0 !important;
 		}
 	}
 
 	@media (max-width: 550px) {
 		&__block {
-			padding: 20px;
-			margin: 10px 0;
+			padding: 10px;
+			margin-bottom: 10px;
 
 			&__input {
 				flex-wrap: wrap;
@@ -97,7 +97,7 @@ $light_gray: #eeebee;
 		}
 
 		&__endText {
-			margin-bottom: 2px;
+			margin-bottom: 2px !important;
 		}
 	}
 

@@ -24,7 +24,7 @@ $red: #f00;
 				margin-right: 20px;
 
 				img {
-					width: 70px;
+					width: 60px;
 				}
 			}
 
@@ -32,7 +32,7 @@ $red: #f00;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
-				min-height: 230px;
+				min-height: 190px;
 
 				h6,
 				p {
@@ -42,6 +42,7 @@ $red: #f00;
 				h6 {
 					margin-bottom: 10px;
 				}
+
 				p {
 					margin-bottom: 0;
 				}
@@ -60,7 +61,7 @@ $red: #f00;
 						font-weight: 700;
 
 						svg {
-							width: 20px;
+							width: 17px;
 							height: auto;
 							margin-right: 5px;
 						}
@@ -92,6 +93,7 @@ $red: #f00;
 			&__content {
 				h6 {
 					font-size: 16px;
+					margin-bottom: 5px;
 				}
 
 				p {
@@ -107,19 +109,25 @@ $red: #f00;
 		}
 	}
 
+	@media (max-width: 1170px) {
+		&__content {
+			&__block {
+				&__content {
+					min-height: 200px;
+				}
+			}
+		}
+	}
+
 	@media (max-width: 1040px) {
 		&__content {
 			width: 50%;
 
 			&__block {
-				padding: 10px;
+				padding: 15px;
 
 				&__img {
 					margin-right: 10px;
-
-					img {
-						width: 60px;
-					}
 				}
 
 				&__content {
@@ -165,14 +173,10 @@ $red: #f00;
 
 			&__block {
 				&__content {
-					min-height: fit-content;
+					min-height: 100px;
 
 					h6 {
-						margin-bottom: 4px;
-					}
-
-					p {
-						margin-bottom: 20px;
+						margin-bottom: 5px;
 					}
 				}
 			}
@@ -183,14 +187,41 @@ $red: #f00;
 		}
 	}
 
+	@media (max-width: 660px) {
+		&__content {
+			&__block {
+				&__content {
+					height: 160px;
+				}
+			}
+		}
+	}
+
 	@media (max-width: 550px) {
+		&__content {
+			margin-bottom: 10px;
+
+			&__block {
+				padding: 10px;
+				&__img {
+					img {
+						width: 40px;
+					}
+				}
+
+				&__content {
+					height: 170px;
+				}
+			}
+		}
 		&__content2 {
 			flex-wrap: wrap;
 			&__block {
 				width: 100%;
+				margin-bottom: 10px;
 
 				&:nth-child(3) {
-					margin-bottom: 20px;
+					margin-bottom: 10px;
 				}
 			}
 		}
@@ -198,22 +229,39 @@ $red: #f00;
 
 	@media (max-width: 450px) {
 		&__content {
-			margin-bottom: 10px;
-
 			&__block {
-				&__img {
-					img {
-						width: 40px;
-					}
+				&__content {
+					height: 180px;
 				}
 			}
 		}
-		&__content2 {
-			&__block {
-				margin-bottom: 10px;
+	}
 
-				&:nth-child(3) {
-					margin-bottom: 10px;
+	@media (max-width: 420px) {
+		&__content {
+			&__block {
+				&__content {
+					height: 200px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 360px) {
+		&__content {
+			&__block {
+				&__content {
+					height: 220px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 340px) {
+		&__content {
+			&__block {
+				&__content {
+					height: 240px;
 				}
 			}
 		}

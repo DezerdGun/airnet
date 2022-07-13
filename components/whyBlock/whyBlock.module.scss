@@ -6,13 +6,15 @@ $dark_gray: #666;
 		padding: 0 35px;
 
 		&__img {
-			width: 80px;
+			margin-right: 10px;
+			display: flex;
+			align-items: center;
+			height: fit-content;
 
 			img {
 				width: 80px;
-				height: auto;
+				margin-top: 1px;
 			}
-			margin-right: 10px;
 		}
 
 		&__content {

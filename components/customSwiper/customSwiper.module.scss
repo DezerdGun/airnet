@@ -12,15 +12,23 @@ $white: #fff;
 			width: 65%;
 			padding: 0 30px;
 
-			h2 {
-				margin-bottom: 30px;
+			h2,
+			h4 {
 				color: $white;
-				line-height: 100%;
+			}
+
+			h2 {
+				font-size: 60px;
+				margin-bottom: 20px;
 			}
 
 			h4 {
-				color: $white;
+				font-size: 26px;
 				font-weight: 400;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
 			}
 		}
 	}
@@ -30,10 +38,14 @@ $white: #fff;
 			height: 450px;
 
 			&__item {
-				width: 77%;
+				width: 65%;
 
 				h2 {
-					margin-bottom: 20px;
+					font-size: 50px;
+				}
+
+				h4 {
+					font-size: 22px;
 				}
 			}
 		}
@@ -45,6 +57,21 @@ $white: #fff;
 
 			&__item {
 				width: 90%;
+			}
+		}
+	}
+
+	@media (max-width: 990px) {
+		&__block {
+			&__item {
+				h2,
+				h4 {
+					margin-bottom: 10px;
+				}
+
+				h2 {
+					font-size: 40px;
+				}
 			}
 		}
 	}
@@ -63,13 +90,28 @@ $white: #fff;
 				width: 100%;
 				padding: 0 20px;
 
-				h2,
-				h4 {
-					margin-bottom: 10px;
+				h2 {
+					font-size: 30px;
+				}
 
-					&:last-child {
-						margin-bottom: 0;
-					}
+				h4 {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 450px) {
+		&__block {
+			height: 200px;
+
+			&__item {
+				h2 {
+					font-size: 24px;
+				}
+
+				h4 {
+					font-size: 18px;
 				}
 			}
 		}
@@ -77,6 +119,8 @@ $white: #fff;
 
 	@media (max-width: 350px) {
 		&__block {
+			height: 180px;
+
 			&__item {
 				h4:nth-child(2) {
 					display: none;

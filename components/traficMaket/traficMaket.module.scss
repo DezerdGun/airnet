@@ -59,7 +59,6 @@ $light_gray: #eeebee;
 
 	&__endText {
 		margin-top: 10px;
-		margin-bottom: 0;
-		line-height: 120%;
+		margin-bottom: 0 !important;
 	}
 }

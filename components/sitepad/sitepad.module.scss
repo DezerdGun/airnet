@@ -14,13 +14,13 @@ $light_gray: #eeebee;
 	}
 
 	p {
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 	}
 
 	&__button {
 		display: flex;
 		align-items: center;
-		margin: 10px 0 20px;
+		margin-bottom: 10px;
 
 		button {
 			background-color: $green;
@@ -69,7 +69,6 @@ $light_gray: #eeebee;
 			button {
 				width: 200px;
 				height: 62px;
-				padding: 0 10px;
 				margin-right: 0;
 
 				a {
@@ -100,7 +99,6 @@ $light_gray: #eeebee;
 	@media (max-width: 550px) {
 		&__button {
 			flex-wrap: wrap;
-			margin-bottom: 10px;
 
 			button {
 				width: 100% !important;
