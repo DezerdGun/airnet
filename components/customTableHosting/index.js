@@ -17,7 +17,7 @@ export default function CustomTableHosting({ table }) {
 
 	return (
 		<div className={st.customTableHosting}>
-			<table>
+			<table className={st.customTableHosting__table}>
 				<tr>
 					<td>Основные характеристики:</td>
 					{table.map((item, i) => (
@@ -46,86 +46,88 @@ export default function CustomTableHosting({ table }) {
 					))}
 					<div
 						className={`${st.customTableHosting__block} ${isOpen && st.customTableHosting__block__active}`}>
-						<div className={st.customTableHosting__block__head}>
-							<h6>Подробные характеристики</h6>
-							<svg
-								onClick={() => setIsOpen(null)}
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 320 512">
-								<path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
-							</svg>
-						</div>
-						<div className={st.customTableHosting__block__content}>
-							<table>
-								<tr>
-									<th>Место на SSD</th>
-									<td>{table[isOpen - 1]?.ssd} Mb</td>
-								</tr>
-								<tr>
-									<th>Количество сайтов</th>
-									<td>{table[isOpen - 1]?.sites}</td>
-								</tr>
-								<tr>
-									<th>Поддоменов</th>
-									<td>{table[isOpen - 1]?.sites}</td>
-								</tr>
-								<tr>
-									<th>Баз данных</th>
-									<td>{table[isOpen - 1]?.sites}</td>
-								</tr>
-								<tr>
-									<th>Конструктор SitePad</th>
-									<td>Бесплатно</td>
-								</tr>
-							</table>
-							<ul>
-								<li>
-									{checkedCircle}CPU Intel Xeon - <strong>8 ядра</strong>
-								</li>
-								<li>
-									{checkedCircle}Панель: <strong>Cpanel</strong>
-								</li>
-								<li>
-									{checkedCircle}Ограничение на пропускную способность данных (IO) -{' '}
-									<strong>100 МБ/сек</strong>
-								</li>
-								<li>{checkedCircle}MySQL (phpMyAdmin)</li>
-								<li>
-									{checkedCircle}Количество операций чтения и записи в секунду (IOPS) -{' '}
-									<strong>2000</strong>
-								</li>
-								<li>{checkedCircle}PHP: 7.1, 7.2, 7.3, 7.4, 8.0</li>
-								<li>
-									{checkedCircle}Физическая память <strong>4096 МБ</strong>
-								</li>
-								<li>{checkedCircle}ionCube Loader, CURL, Zend, Cron</li>
-								<li>
-									{checkedCircle}TAS-IX - <strong>1 Gbps</strong>
-								</li>
-							</ul>
-							<table>
-								<tr>
-									<th>1 месяц</th>
-									<td>{table[isOpen - 1]?.month1} сум</td>
-								</tr>
-								<tr>
-									<th>3 месяца</th>
-									<td>{table[isOpen - 1]?.month3} сум</td>
-								</tr>
-								<tr>
-									<th>6 месяцев</th>
-									<td>{table[isOpen - 1]?.month6} сум</td>
-								</tr>
-								<tr>
-									<th>1 год</th>
-									<td>{table[isOpen - 1]?.month12} сум</td>
-								</tr>
-								<tr>
-									<td colSpan={2}>
-										<a href={table[isOpen - 1]?.buyLink}>Купить хостинг</a>
-									</td>
-								</tr>
-							</table>
+						<div className={st.customTableHosting__block__scroll}>
+							<div className={st.customTableHosting__block__scroll__head}>
+								<h6>Подробные характеристики</h6>
+								<svg
+									onClick={() => setIsOpen(null)}
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 320 512">
+									<path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
+								</svg>
+							</div>
+							<div className={st.customTableHosting__block__scroll__content}>
+								<table>
+									<tr>
+										<th>Место на SSD</th>
+										<td>{table[isOpen - 1]?.ssd} Mb</td>
+									</tr>
+									<tr>
+										<th>Количество сайтов</th>
+										<td>{table[isOpen - 1]?.sites}</td>
+									</tr>
+									<tr>
+										<th>Поддоменов</th>
+										<td>{table[isOpen - 1]?.sites}</td>
+									</tr>
+									<tr>
+										<th>Баз данных</th>
+										<td>{table[isOpen - 1]?.sites}</td>
+									</tr>
+									<tr>
+										<th>Конструктор SitePad</th>
+										<td>Бесплатно</td>
+									</tr>
+								</table>
+								<ul>
+									<li>
+										{checkedCircle}CPU Intel Xeon - <strong>8 ядра</strong>
+									</li>
+									<li>
+										{checkedCircle}Панель: <strong>Cpanel</strong>
+									</li>
+									<li>
+										{checkedCircle}Ограничение на пропускную способность данных (IO) -{' '}
+										<strong>100 МБ/сек</strong>
+									</li>
+									<li>{checkedCircle}MySQL (phpMyAdmin)</li>
+									<li>
+										{checkedCircle}Количество операций чтения и записи в секунду (IOPS) -{' '}
+										<strong>2000</strong>
+									</li>
+									<li>{checkedCircle}PHP: 7.1, 7.2, 7.3, 7.4, 8.0</li>
+									<li>
+										{checkedCircle}Физическая память <strong>4096 МБ</strong>
+									</li>
+									<li>{checkedCircle}ionCube Loader, CURL, Zend, Cron</li>
+									<li>
+										{checkedCircle}TAS-IX - <strong>1 Gbps</strong>
+									</li>
+								</ul>
+								<table>
+									<tr>
+										<th>1 месяц</th>
+										<td>{table[isOpen - 1]?.month1} сум</td>
+									</tr>
+									<tr>
+										<th>3 месяца</th>
+										<td>{table[isOpen - 1]?.month3} сум</td>
+									</tr>
+									<tr>
+										<th>6 месяцев</th>
+										<td>{table[isOpen - 1]?.month6} сум</td>
+									</tr>
+									<tr>
+										<th>1 год</th>
+										<td>{table[isOpen - 1]?.month12} сум</td>
+									</tr>
+									<tr>
+										<td colSpan={2}>
+											<a href={table[isOpen - 1]?.buyLink}>Купить хостинг</a>
+										</td>
+									</tr>
+								</table>
+							</div>
 						</div>
 					</div>
 				</tr>

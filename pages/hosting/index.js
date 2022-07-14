@@ -175,7 +175,7 @@ const block = [
 export default function Hosting() {
 	return (
 		<div className={st.hosting}>
-			{/* <Container
+			<Container
 				className="mt-0"
 				title="Быстрый и надежный виртуальный хостинг Cpanel в Ташкенте"
 				style={{ background: "url('/servers-2.jpg') no-repeat" }}>
@@ -193,7 +193,7 @@ export default function Hosting() {
 					<CustomTableHosting table={table1} />
 					<CustomTableHosting table={table2} />
 				</div>
-			</Container> */}
+			</Container>
 
 			<Container title="Ваш хостинг будет размещен на сервере с конфигурацией:" clNh3="text-center">
 				<div className={st.hosting__block}>
@@ -210,7 +210,7 @@ export default function Hosting() {
 					))}
 				</div>
 			</Container>
-			{/* <Container
+			<Container
 				title="На всех тарифных планах"
 				clNh3="text-black text-center"
 				style={{ background: "url('/hosting/server.jpg') no-repeat" }}>
@@ -254,8 +254,7 @@ export default function Hosting() {
 						</div>
 					))}
 				</div>
-			</Container> */}
-
+			</Container>
 			<FAQ faq={faq} title="НАС ЧАСТО СПРАШИВАЮТ" />
 			<Partners />
 		</div>
