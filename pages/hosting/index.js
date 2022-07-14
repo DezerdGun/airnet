@@ -7,46 +7,194 @@ import { LINKS } from '../../components/requirements';
 import Container from '../../components/container';
 import CustomTable from '../../components/customTable';
 import FAQ from '../../components/faq';
+import CustomTableHosting from '../../components/customTableHosting';
 
 const block = [
-	{
-		title: 'Жесткие диски',
-		description: '12 x 1ТB SSD',
-		img: '/hosting/ssd.png',
-	},
-	{
-		title: 'Оперативная память',
-		description: '256 GB DDR4 ECC',
-		img: '/hosting/ram.png',
-	},
-	{
-		title: 'Процессор',
-		description: '2 x Intel Xeon',
-		img: '/hosting/processor.png',
-	},
-	{
-		title: 'Массив RAID',
-		description: 'Аппаратный RAID5',
-		img: '/hosting/raid.png',
-	},
-];
+		{
+			title: 'Жесткие диски',
+			description: '12 x 1ТB SSD',
+			img: '/hosting/ssd.png',
+		},
+		{
+			title: 'Оперативная память',
+			description: '256 GB DDR4 ECC',
+			img: '/hosting/ram.png',
+		},
+		{
+			title: 'Процессор',
+			description: '2 x Intel Xeon',
+			img: '/hosting/processor.png',
+		},
+		{
+			title: 'Массив RAID',
+			description: 'Аппаратный RAID5',
+			img: '/hosting/raid.png',
+		},
+	],
+	cms = [
+		'Блоги',
+		'Порталы и CMS',
+		'Форумы',
+		'Галереи изображений',
+		'Социальные сети',
+		'Голосования и опросы',
+		'Интернет-магазины',
+		'Файловые менеджеры',
+	],
+	checkedCircle = (
+		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				fill-rule="evenodd"
+				clip-rule="evenodd"
+				d="M12 1C5.925 1 1 5.925 1 12C1 18.075 5.925 23 12 23C18.075 23 23 18.075 23 12C23 5.925 18.075 1 12 1ZM16.768 10.14C16.8558 10.0396 16.9226 9.92274 16.9646 9.79617C17.0065 9.6696 17.0227 9.53591 17.0123 9.40298C17.0018 9.27005 16.9648 9.14056 16.9036 9.02213C16.8423 8.90369 16.758 8.79871 16.6555 8.71334C16.5531 8.62798 16.4346 8.56396 16.3071 8.52506C16.1796 8.48616 16.0455 8.47316 15.9129 8.48683C15.7802 8.50049 15.6517 8.54055 15.5347 8.60463C15.4178 8.66872 15.3149 8.75554 15.232 8.86L10.932 14.019L8.707 11.793C8.5184 11.6108 8.2658 11.51 8.0036 11.5123C7.7414 11.5146 7.49059 11.6198 7.30518 11.8052C7.11977 11.9906 7.0146 12.2414 7.01233 12.5036C7.01005 12.7658 7.11084 13.0184 7.293 13.207L10.293 16.207C10.3913 16.3052 10.5089 16.3818 10.6384 16.4321C10.7679 16.4823 10.9065 16.505 11.0453 16.4986C11.184 16.4923 11.32 16.4572 11.4444 16.3954C11.5688 16.3337 11.6791 16.2467 11.768 16.14L16.768 10.14Z"
+				fill="#006a4d"
+			/>
+		</svg>
+	),
+	table1 = [
+		{
+			title: 'Старт',
+			price: '10 000',
+			ssd: 250,
+			sites: 5,
+			present: '',
+			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=32',
+			month1: '10 000',
+			month3: '30 000',
+			month6: '57 000',
+			month12: '108 000',
+			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=1',
+		},
+		{
+			title: 'Простой',
+			price: '15 000',
+			ssd: 500,
+			sites: 10,
+			present: '',
+			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=31',
+			month1: '15 000',
+			month3: '45 000',
+			month6: '85 500',
+			month12: '162 000',
+			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=2',
+		},
+		{
+			title: 'Стандарт',
+			price: '25 000',
+			ssd: '1 000',
+			sites: 15,
+			present: '',
+			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=33',
+			month1: '25 000',
+			month3: '75 000',
+			month6: '142 500',
+			month12: '270 000',
+			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=3',
+		},
+		{
+			title: 'Доступный',
+			price: '60 000',
+			ssd: '3 000',
+			sites: 20,
+			present: '',
+			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=34',
+			month1: '60 000',
+			month3: '180 000',
+			month6: '342 000',
+			month12: '648 000',
+			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=4',
+		},
+	],
+	table2 = [
+		{
+			title: 'Оптимальный',
+			price: '90 000',
+			ssd: '5 000',
+			sites: '∞',
+			present: '(2шт)',
+			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=37',
+			month1: '90 000',
+			month3: '270 000',
+			month6: '513 000',
+			month12: '972 000',
+			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=36',
+		},
+		{
+			title: 'Выгодный',
+			price: '150 000',
+			ssd: '10 000',
+			sites: '∞',
+			present: '(2шт)',
+			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38',
+			month1: '150 000',
+			month3: '450 000',
+			month6: '855 000',
+			month12: '1 620 000',
+			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38',
+		},
+		{
+			title: 'Офис',
+			price: '250 000',
+			ssd: '15 000',
+			sites: '∞',
+			present: '(2шт)',
+			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39',
+			month1: '250 000',
+			month3: '750 000',
+			month6: '1 425 000',
+			month12: '2 700 000',
+			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39',
+		},
+		{
+			title: 'Корпоративный',
+			price: '350 000',
+			ssd: '20 000',
+			sites: '∞',
+			present: '(2шт)',
+			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40',
+			month1: '350 000',
+			month3: '1 050 000',
+			month6: '1 995 000',
+			month12: '3 780 000',
+			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40',
+		},
+	],
+	faq = [
+		{
+			title: 'Как скоро можно начать пользоваться услугой?',
+			description: (
+				<>
+					<p>Пользовательский аккаунт открывается сразу после подачи заявки.</p>
 
-const faq = [
-	{
-		title: 'Как скоро можно начать пользоваться услугой?',
-		description: (
-			<>
-				<p>Пользовательский аккаунт открывается сразу после подачи заявки.</p>
-
-				<p>Сразу после произведения оплаты, вы можете начать сразу же пользоваться услугой.</p>
-			</>
-		),
-	},
-];
+					<p>Сразу после произведения оплаты, вы можете начать сразу же пользоваться услугой.</p>
+				</>
+			),
+		},
+	];
 
 export default function Hosting() {
 	return (
 		<div className={st.hosting}>
+			{/* <Container
+				className="mt-0"
+				title="Быстрый и надежный виртуальный хостинг Cpanel в Ташкенте"
+				style={{ background: "url('/servers-2.jpg') no-repeat" }}>
+				<div className={st.hosting__traficMaket}>
+					<p>
+						Ежедневно, клиентами AirNet становятся десятки компаний и частных веб-мастеров. Многие уже
+						оценили преимущества современных технологий, стабильность, скорость и безопасность нашего
+						хостинга. Оборудование мы размещаем в высокотехнологичном, современном, надёжном Дата-Центре. Не
+						теряйте время, оцените наш хостинг и профессиональную поддержку прямо сейчас.
+					</p>
+					<p className={st.hosting__traficMaket__speed}>
+						Наши сервера расположены на территории Узбекистана, в сети TAS-IX и доступны на скорости -{' '}
+						<span>1 Gbps</span>
+					</p>
+					<CustomTableHosting table={table1} />
+					<CustomTableHosting table={table2} />
+				</div>
+			</Container> */}
+
 			<Container title="Ваш хостинг будет размещен на сервере с конфигурацией:" clNh3="text-center">
 				<div className={st.hosting__block}>
 					{block.map((item) => (
@@ -62,294 +210,52 @@ export default function Hosting() {
 					))}
 				</div>
 			</Container>
-			{/* <TraficMaket
-				title="VDS/VPS — сервера на базе быстрых SSD-дисков"
-				description="Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости 1 Gbps"
-				endText="Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 4-х часов, в зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации оборудования после оплаты - 1-2 часа. Мы делам всё возможное, чтобы уменьшить время ожидания. Срок действия услуги начнется с момента её активации."
-				bgImg="/servers-2.jpg"
-				table={[
-					<table key="table-1">
-						<tr>
-							<th colSpan={2}>VDS/VPS «Strong»</th>
-						</tr>
-						<tr>
-							<td>Процессор</td>
-							<td>2 ядра - 2.6 GHz</td>
-						</tr>
-						<tr>
-							<td>ОЗУ</td>
-							<td>4 Gb</td>
-						</tr>
-						<tr>
-							<td>SSD-диск</td>
-							<td>50 Gb</td>
-						</tr>
-						<tr>
-							<td>Интернет</td>
-							<td>15 Mbps</td>
-						</tr>
-						<tr>
-							<td>Канал TAS-IX</td>
-							<td>1 Gbps</td>
-						</tr>
-						<tr>
-							<td>Статичный ip</td>
-							<td>Бесплатно</td>
-						</tr>
-						<tr>
-							<td className="bg-green">ОС</td>
-							<td className="bg-green">Windows или Linux</td>
-						</tr>
-						<tr>
-							<td colSpan={2}>
-								<CustomTableBottom
-									price="200 000 сум/мес."
-									link="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14"
-									text="Купить хостинг"
-								/>
-							</td>
-						</tr>
-					</table>,
-					<table key="table-2">
-						<tr>
-							<th colSpan={2}>VDS/VPS «VIP»</th>
-						</tr>
-						<tr>
-							<td>Процессор</td>
-							<td>4 ядра - 2.6 GHz</td>
-						</tr>
-						<tr>
-							<td>ОЗУ</td>
-							<td>4 Gb</td>
-						</tr>
-						<tr>
-							<td>SSD-диск</td>
-							<td>100 Gb</td>
-						</tr>
-						<tr>
-							<td>Интернет</td>
-							<td>15 Mbps</td>
-						</tr>
-						<tr>
-							<td>Канал TAS-IX</td>
-							<td>1 Gbps</td>
-						</tr>
-						<tr>
-							<td>Статичный ip</td>
-							<td>Бесплатно</td>
-						</tr>
-						<tr>
-							<td className="bg-green">ОС</td>
-							<td className="bg-green">Windows или Linux</td>
-						</tr>
-						<tr>
-							<td colSpan={2}>
-								<CustomTableBottom
-									price="250 000 сум/мес."
-									link="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=15"
-									text="Купить хостинг"
-								/>
-							</td>
-						</tr>
-					</table>,
-					<table key="table-3">
-						<tr>
-							<th colSpan={2}>VDS/VPS «VIP+»</th>
-						</tr>
-						<tr>
-							<td>Процессор</td>
-							<td>4 ядра - 2.6 GHz</td>
-						</tr>
-						<tr>
-							<td>ОЗУ</td>
-							<td>6 Gb</td>
-						</tr>
-						<tr>
-							<td>SSD-диск</td>
-							<td>150 Gb</td>
-						</tr>
-						<tr>
-							<td>Интернет</td>
-							<td>15 Mbps</td>
-						</tr>
-						<tr>
-							<td>Канал TAS-IX</td>
-							<td>1 Gbps</td>
-						</tr>
-						<tr>
-							<td>Статичный ip</td>
-							<td>Бесплатно</td>
-						</tr>
-						<tr>
-							<td className="bg-green">ОС</td>
-							<td className="bg-green">Windows или Linux</td>
-						</tr>
-						<tr>
-							<td colSpan={2}>
-								<CustomTableBottom
-									price="300 000 сум/мес."
-									link="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16"
-									text="Купить хостинг"
-								/>
-							</td>
-						</tr>
-					</table>,
-					<table key="table-4">
-						<tr>
-							<th colSpan={2}>VDS/VPS «Nano»</th>
-						</tr>
-						<tr>
-							<td>Процессор</td>
-							<td>4 ядра - 2.6 GHz</td>
-						</tr>
-						<tr>
-							<td>ОЗУ</td>
-							<td>8 Gb</td>
-						</tr>
-						<tr>
-							<td>SSD-диск</td>
-							<td>100 Gb</td>
-						</tr>
-						<tr>
-							<td>Интернет</td>
-							<td>15 Mbps</td>
-						</tr>
-						<tr>
-							<td>Канал TAS-IX</td>
-							<td>1 Gbps</td>
-						</tr>
-						<tr>
-							<td>Статичный ip</td>
-							<td>Бесплатно</td>
-						</tr>
-						<tr>
-							<td className="bg-green">ОС</td>
-							<td className="bg-green">Windows или Linux</td>
-						</tr>
-						<tr>
-							<td colSpan={2}>
-								<CustomTableBottom
-									price="400 000 сум/мес."
-									link="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=49"
-									text="Купить хостинг"
-								/>
-							</td>
-						</tr>
-					</table>,
-					<table key="table-5">
-						<tr>
-							<th colSpan={2}>VDS/VPS «Advanced»</th>
-						</tr>
-						<tr>
-							<td>Процессор</td>
-							<td>6 ядра - 2.6 GHz</td>
-						</tr>
-						<tr>
-							<td>ОЗУ</td>
-							<td>10 Gb</td>
-						</tr>
-						<tr>
-							<td>SSD-диск</td>
-							<td>150 Gb</td>
-						</tr>
-						<tr>
-							<td>Интернет</td>
-							<td>15 Mbps</td>
-						</tr>
-						<tr>
-							<td>Канал TAS-IX</td>
-							<td>1 Gbps</td>
-						</tr>
-						<tr>
-							<td>Статичный ip</td>
-							<td>Бесплатно</td>
-						</tr>
-						<tr>
-							<td className="bg-green">ОС</td>
-							<td className="bg-green">Windows или Linux</td>
-						</tr>
-						<tr>
-							<td colSpan={2}>
-								<CustomTableBottom
-									price="550 000 сум/мес."
-									link="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50"
-									text="Купить хостинг"
-								/>
-							</td>
-						</tr>
-					</table>,
-				]}
-				className="mt-0"
-			/>
-			<Container>
-				<div className={st.vds__block}>
-					{block.map((item) => (
-						<div key={item.title} className={st.vds__block__item}>
-							<div className={st.vds__block__item__img}>{item.img}</div>
-							<h6>{item.title}</h6>
-							<p>{item.description}</p>
-							{item.link ? (
-								<button>
-									<Link href={item.link}>
-										<a>{item.linkTitle}</a>
-									</Link>
-								</button>
-							) : null}
-						</div>
-					))}
+			{/* <Container
+				title="На всех тарифных планах"
+				clNh3="text-black text-center"
+				style={{ background: "url('/hosting/server.jpg') no-repeat" }}>
+				<div className={st.hosting__plan}>
+					<div className={st.hosting__plan__content}>
+						<p>
+							<strong>Безлимитный трафик</strong> — никаких ограничений на соотношение входящего /
+							исходящего трафика.
+						</p>
+						<p>
+							<strong>Скорость в TAS-IX</strong> — 1 Gbps
+						</p>
+						<p>
+							<strong>Скорость в Интернет</strong> — 100 Mbps
+						</p>
+						<p>
+							<strong>Безлимитные FTP-аккаунты</strong> — для своего удобства работы с файлами, Вы можете
+							создавать неограниченное количество FTP-аккаунтов, например, для каждого проекта - отдельный
+							доступ.
+						</p>
+						<p>
+							<strong>Без жестких ограничений ресурсов</strong> — у нас нет жестких лимитов аппаратных
+							ресурсов. Если вдруг на Ваш сайт придет большое количество человек, то все они увидят Ваш
+							сайт. Гарантировано посещение - 2500 человек в сутки.
+						</p>
+					</div>
+					<div className={st.hosting__plan__img}>
+						<img src="/hosting/unlim.png" />
+					</div>
 				</div>
 			</Container>
 			<Container
-				title="Стоимость международного интернет-канала без ограничения трафика"
-				description="Внешний трафик и трафик в сети «TAS-IX» не тарифицируется.">
-				<div className={st.vds__table}>
-					<CustomTable
-						table={
-							<table>
-								<thead>
-									<tr>
-										<th>Тариф</th>
-										<th>Скорость доступа в Интернет</th>
-										<th>Скорость доступа в «TAS-IX»</th>
-										<th>Тарификация</th>
-										<th>Абонентская плата в месяц</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Unlim 5M</td>
-										<td>15 мбит/с</td>
-										<td>1 Гбит/с</td>
-										<td>Без ограничений</td>
-										<td>Бесплатно</td>
-									</tr>
-									<tr>
-										<td>Unlim 25M</td>
-										<td>25 мбит/с</td>
-										<td>1 Гбит/с</td>
-										<td>Без ограничений</td>
-										<td>500 000 сум/мес.</td>
-									</tr>
-									<tr>
-										<td>Unlim 50M</td>
-										<td>50 мбит/с</td>
-										<td>1 Гбит/с</td>
-										<td>Без ограничений</td>
-										<td>1 000 000 сум/мес.</td>
-									</tr>
-									<tr>
-										<td>Unlim 100M</td>
-										<td>100 мбит/с</td>
-										<td>1 Гбит/с</td>
-										<td>Без ограничений</td>
-										<td>2 000 000 сум/мес.</td>
-									</tr>
-								</tbody>
-							</table>
-						}
-					/>
+				title="Быстрая установка Wordpress и популярных CMS в 1 клик!"
+				description="Установка CMS-установщика в 1 клик — Вашему вниманию предлагаются более 100 БЕСПЛАТНЫХ CMS-установщиков различных категорий от Softaculous:"
+				className="text-center">
+				<div className={st.hosting__cms}>
+					{cms.map((item) => (
+						<div key={item} className={st.hosting__cms__item}>
+							{checkedCircle}
+							<p>{item}</p>
+						</div>
+					))}
 				</div>
 			</Container> */}
+
 			<FAQ faq={faq} title="НАС ЧАСТО СПРАШИВАЮТ" />
 			<Partners />
 		</div>

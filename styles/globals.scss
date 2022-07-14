@@ -37,6 +37,14 @@ a {
 	color: $green;
 }
 
+p {
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
 h1,
 h2,
 h3,
@@ -58,6 +66,7 @@ h2 {
 
 h3 {
 	font-size: 34px;
+	margin-bottom: 10px;
 }
 
 h4 {
@@ -70,6 +79,7 @@ h5 {
 
 h6 {
 	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 .app {
@@ -78,6 +88,10 @@ h6 {
 
 .text-red {
 	color: $red;
+}
+
+.text-green {
+	color: $green;
 }
 
 /* ----------------------------- swipers -------------------------- */

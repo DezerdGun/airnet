@@ -13,9 +13,9 @@ $white: #fff;
 	// font-size: 26px;
 	// }
 
-	// &__description {
-	// 	margin-bottom: 20px;
-	// }
+	&__description {
+		margin-bottom: 0;
+	}
 
 	&__bg {
 		margin: 20px auto;
@@ -26,8 +26,8 @@ $white: #fff;
 			margin-bottom: 0;
 		}
 
-		h3,
-		p {
+		.container__title,
+		.container__description {
 			color: $white;
 			margin-bottom: 10px;
 		}

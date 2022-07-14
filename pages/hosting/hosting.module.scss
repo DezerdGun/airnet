@@ -1,4 +1,22 @@
+$white: #fff;
+$black: #000;
+
 .hosting {
+	&__traficMaket {
+		p,
+		span {
+			color: $white;
+		}
+
+		&__speed {
+			font-weight: 700;
+
+			span {
+				font-size: 22px;
+			}
+		}
+	}
+
 	&__block {
 		display: flex;
 		align-items: center;
@@ -10,14 +28,51 @@
 			&__img {
 				margin-right: 10px;
 			}
+		}
+	}
 
-			&__content {
-				h6 {
-					margin-bottom: 10px;
-				}
-				p {
-					margin-bottom: 0;
-				}
+	&__plan {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&__content {
+			width: 75%;
+			p {
+				color: $black;
+			}
+		}
+
+		&__img {
+			width: 25%;
+			text-align: center;
+			img {
+				width: 200px;
+			}
+		}
+	}
+
+	&__cms {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		&__item {
+			display: flex;
+			align-items: center;
+			width: 25%;
+			margin-bottom: 10px;
+
+			p {
+				margin-left: 5px;
+			}
+
+			&:nth-child(5),
+			&:nth-child(6),
+			&:nth-child(7),
+			&:nth-child(8) {
+				margin-bottom: 0;
 			}
 		}
 	}
