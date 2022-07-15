@@ -28,11 +28,11 @@ export default function Domains() {
 				style={{ background: "url('/servers-2.jpg') no-repeat" }}>
 				<div className={st.domains__head}>
 					<p>
-						Компания "AIRNET" является официальным{' '}
+						Компания &quot;AIRNET&quot; является официальным{' '}
 						<a href="https://cctld.uz/reg/">регистратором домен в зоне UZ</a>
 					</p>
 					<div className={st.domains__head__block}>
-						<h3>Введите название доменного имени и нажмите на кнопку "Проверить".</h3>
+						<h3>Введите название доменного имени и нажмите на кнопку &quot;Проверить&quot;.</h3>
 						<p>
 							Перед регистрацией просим вас ознакомиться с{' '}
 							<a href="https://cctld.uz/info/polru/">
