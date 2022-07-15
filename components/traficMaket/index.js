@@ -2,11 +2,12 @@ import Container from '../container';
 import CustomTable from '../customTable';
 import st from './traficMaket.module.scss';
 
-export default function TraficMaket({ title, description, bgImg, className, table, endText }) {
+export default function TraficMaket({ title, headTitle, description, bgImg, className, table, endText }) {
 	return (
 		<Container
 			style={{ background: `url('${bgImg}') no-repeat` }}
 			className={className}
+			headTitle={headTitle}
 			title={title}
 			description={description}>
 			<div className={st.traficMaket}>

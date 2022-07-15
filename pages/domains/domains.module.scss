@@ -1,0 +1,157 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #eeebee;
+$red: #f00;
+
+.domains {
+	&__head {
+		p {
+			color: $white;
+		}
+
+		&__block {
+			padding: 20px;
+			background-color: $white;
+			margin-bottom: 10px;
+
+			h3 {
+				font-weight: 400;
+			}
+
+			p {
+				color: $black;
+			}
+
+			&__input {
+				display: flex;
+				align-items: center;
+				margin-bottom: 10px;
+
+				span,
+				input,
+				select,
+				option {
+					font-size: 18px;
+				}
+
+				&__block {
+					display: flex;
+					align-items: center;
+
+					input,
+					select {
+						height: 40px;
+						margin: 0 2px;
+						border: 1px solid $gray;
+						background-color: transparent;
+					}
+
+					input {
+						width: calc(100% - 110px);
+						border-top-left-radius: 5px;
+						border-bottom-left-radius: 5px;
+					}
+
+					select {
+						padding-right: 5px;
+						cursor: pointer;
+						border-top-right-radius: 5px;
+						border-bottom-right-radius: 5px;
+					}
+				}
+
+				button {
+					height: 40px;
+					border-radius: 5px;
+					margin-left: 10px;
+					background-color: $green;
+					color: $white;
+					border: 0;
+					padding: 0 20px;
+				}
+			}
+
+			&__table {
+				table {
+					width: 100%;
+
+					tr {
+						td,
+						th {
+							padding: 10px;
+							text-align: center;
+							border-right: 1px solid $light_gray;
+
+							a {
+								text-decoration: underline;
+							}
+
+							&:last-child {
+								border-right: none;
+
+								a {
+									display: block;
+									padding: 10px;
+									color: $white;
+									background-color: $green;
+									text-decoration: none;
+								}
+							}
+						}
+
+						&:first-child {
+							th {
+								color: $white;
+								background-color: $green;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 880px) {
+		&__head {
+			&__block {
+				&__table {
+					overflow-x: scroll;
+
+					table {
+						width: 790px;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 550px) {
+		&__head {
+			&__block {
+				padding: 10px;
+
+				&__input {
+					flex-wrap: wrap;
+
+					button {
+						width: 100%;
+						margin-left: 0;
+						margin-top: 10px;
+					}
+				}
+
+				&__table {
+					overflow-x: scroll;
+
+					table {
+						width: 790px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -177,7 +177,7 @@ export default function Hosting() {
 		<div className={st.hosting}>
 			<Container
 				className="mt-0"
-				title="Быстрый и надежный виртуальный хостинг Cpanel в Ташкенте"
+				headTitle="Быстрый и надежный виртуальный хостинг Cpanel в Ташкенте"
 				style={{ background: "url('/servers-2.jpg') no-repeat" }}>
 				<div className={st.hosting__traficMaket}>
 					<p>
