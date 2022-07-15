@@ -2,16 +2,23 @@ import Container from '../../components/container';
 import Partners from '../../components/partners';
 import st from './domains.module.scss';
 import Link from 'next/dist/client/link';
+import { useRef, useState } from 'react';
 
 export default function Domains() {
-	// const checkDomain = async (val)=>{
-	//     const res = await fetch({
-	//         method:'POST',
-	//         url: '',
-	//         body: ''
-	//     })
+	const [isDomainFree, setIsDomainFree] = useState(undefined),
+		domainName = useRef();
 
-	// }
+	const checkDomain = (e) => {
+		e.preventDefault();
+		fetch(
+			`https://api.whoisfreaks.com/v1.0/whois?apiKey=6e967135ca21493f85f7070ec981e67e&whois=live&domainName=${
+				document.querySelector('#domainName').value
+			}.uz`
+		).then((res) => {
+			console.log(res);
+			return res.domain_registered === 'yes' ? setIsDomainFree('yes') : setIsDomainFree('no');
+		});
+	};
 
 	return (
 		<div className={st.domains}>
@@ -32,18 +39,39 @@ export default function Domains() {
 								Положением о порядке регистрации и пользования доменными именами в домене «UZ»
 							</a>
 						</p>
-						<div className={st.domains__head__block__input}>
+						<form onSubmit={checkDomain} className={st.domains__head__block__input}>
 							<div className={st.domains__head__block__input__block}>
 								<span>www.</span>
-								<input />
+								<input ref={domainName} id="domainName" placeholder="Например: airnet.uz" required />
 								<span>.</span>
 								<select>
 									<option>uz</option>
-									<option>Все</option>
+									{/* <option>Все</option> */}
 								</select>
 							</div>
-							<button>Проверить</button>
-						</div>
+							<button type="submit">Проверить</button>
+						</form>
+						{isDomainFree && (
+							<p className={st.domains__head__block__text}>
+								<strong>{domainName.current.value}.uz</strong>{' '}
+								{isDomainFree === 'yes' ? (
+									<span className={st.domains__head__block__text__red}>
+										доменное имя в данное время недоступно для регистрации.
+									</span>
+								) : (
+									<>
+										<span className={st.domains__head__block__text__green}>
+											доменное имя в данное время недоступно для регистрации.
+										</span>{' '}
+										Нажмите{' '}
+										<a href="https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=airnet22">
+											Заказать
+										</a>{' '}
+										для регистрации доменного имени.
+									</>
+								)}
+							</p>
+						)}
 						<div className={st.domains__head__block__table}>
 							<table>
 								<tr>

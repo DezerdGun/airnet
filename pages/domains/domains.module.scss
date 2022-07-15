@@ -13,6 +13,10 @@ $red: #f00;
 			color: $white;
 		}
 
+		a {
+			text-decoration: underline;
+		}
+
 		&__block {
 			padding: 20px;
 			background-color: $white;
@@ -75,6 +79,16 @@ $red: #f00;
 				}
 			}
 
+			&__text {
+				&__red {
+					color: $red;
+				}
+
+				&__green {
+					color: $green;
+				}
+			}
+
 			&__table {
 				table {
 					width: 100%;
@@ -85,10 +99,6 @@ $red: #f00;
 							padding: 10px;
 							text-align: center;
 							border-right: 1px solid $light_gray;
-
-							a {
-								text-decoration: underline;
-							}
 
 							&:last-child {
 								border-right: none;
