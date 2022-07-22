@@ -1,25 +1,26 @@
 {
-  "name": "airnet",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "bootstrap": "^5.1.3",
-    "i18next": "^21.8.11",
-    "next": "12.2.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-i18next": "^11.17.3",
-    "sass": "^1.53.0",
-    "swiper": "^8.2.6"
-  },
-  "devDependencies": {
-    "eslint": "8.18.0",
-    "eslint-config-next": "12.2.0"
-  }
+	"name": "airnet",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"bootstrap": "^5.1.3",
+		"i18next": "^21.8.11",
+		"next": "11.1.2",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"react-i18next": "^11.17.3",
+		"react-yandex-maps": "^4.6.0",
+		"sass": "^1.53.0",
+		"swiper": "^8.2.6"
+	},
+	"devDependencies": {
+		"eslint": "^7.23.0",
+		"eslint-config-next": "11.1.2"
+	}
 }
