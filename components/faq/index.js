@@ -65,9 +65,12 @@ export default function FAQ({ faq, title }) {
 
 const faqGenerateText = (text) => {
 	if (Array.isArray(text)) {
-		const temp = text.map((item) => faqGenerateText(item.props.children));
+		const temp = text.map((item) => (typeof item === 'object' ? faqGenerateText(item.props.children) : item));
 
-		return temp.filter((item) => item !== ' ').join(' ');
+		return temp
+			.filter((item) => item !== ' ')
+			.join(' ')
+			.replaceAll('  ', ' ');
 	} else if (typeof text === 'object') {
 		return faqGenerateText(text.props.children);
 	} else return text;

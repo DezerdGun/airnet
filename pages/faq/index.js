@@ -9,25 +9,23 @@ const faq = [
 	{
 		title: 'Документы',
 		description: (
-			<>
-				<ul>
-					<li>
-						<Link href="/faq/kak-zaklyuchit-dogovor">
-							<a>Как заключить договор?</a>
-						</Link>
-					</li>
-					<li>
-						<Link href={LINKS.LICENSE}>
-							<a>Лицензия на предоставление услуг хостинга</a>
-						</Link>
-					</li>
-					<li>
-						<Link href={LINKS.FAQ}>
-							<a>Смотреть все "Документы"</a>
-						</Link>
-					</li>
-				</ul>
-			</>
+			<ul>
+				<li>
+					<Link href="/faq/kak-zaklyuchit-dogovor">
+						<a>Как заключить договор?</a>
+					</Link>
+				</li>
+				<li>
+					<Link href={LINKS.LICENSE}>
+						<a>Лицензия на предоставление услуг хостинга</a>
+					</Link>
+				</li>
+				<li>
+					<Link href={LINKS.FAQ}>
+						<a>Смотреть все &quot;Документы&quot;</a>
+					</Link>
+				</li>
+			</ul>
 		),
 	},
 	{
@@ -81,7 +79,7 @@ const faq = [
 				</li>
 				<li>
 					<Link href={LINKS.FAQ}>
-						<a>Смотреть все "Вопрос-Ответ"</a>
+						<a>Смотреть все &quot;Вопрос-Ответ&quot;</a>
 					</Link>
 				</li>
 			</ul>
