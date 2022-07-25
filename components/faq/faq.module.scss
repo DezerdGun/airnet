@@ -87,6 +87,7 @@ $light_gray: #eeebee;
 						}
 					}
 				}
+
 				&__text {
 					height: 0;
 					position: relative;
@@ -112,6 +113,34 @@ $light_gray: #eeebee;
 					p,
 					pre {
 						margin-bottom: 0;
+					}
+
+					ul {
+						list-style: none;
+						padding: 0;
+
+						li {
+							padding-left: 5px;
+							padding-bottom: 5px;
+							margin-bottom: 10px;
+							border-bottom: 1px solid $gray;
+
+							a {
+								color: $black;
+							}
+
+							&:last-child {
+								margin-bottom: 0;
+
+								a {
+									color: $green;
+								}
+							}
+						}
+
+						&:last-child {
+							margin-bottom: 0;
+						}
 					}
 				}
 			}

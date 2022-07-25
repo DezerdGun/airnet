@@ -272,37 +272,3 @@ uOcAAAAASUVORK5CYII="
 		/>
 	</svg>
 );
-
-export const faqGenerateText = (text) => {
-	if (Array.isArray(text)) {
-		const temp = text.map((item) =>
-			Array.isArray(item?.props?.children)
-				? faqGenerateText(item.props.children)
-				: item?.props?.children?.props
-				? item.props.children.props.children
-				: item?.props?.children
-				? item.props.children
-				: item
-		);
-		return temp.join(' ');
-	} else return text;
-};
-
-export const faqGenerate = (faq) => {
-	const temp = {
-		'@context': 'https://schema.org',
-		'@type': 'FAQPage',
-		mainEntity: [],
-	};
-
-	temp.mainEntity = faq.map((item) => ({
-		'@type': 'Question',
-		name: item.title,
-		acceptedAnswer: {
-			'@type': 'Answer',
-			text: faqGenerateText(item.description.props.children),
-		},
-	}));
-
-	return temp;
-};

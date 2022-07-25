@@ -1,7 +1,6 @@
 import st from './faq.module.scss';
 import Head from 'next/head';
 import Container from '../container';
-import { faqGenerate } from '../utils';
 
 export default function FAQ({ faq, title }) {
 	const active = (i) => {
@@ -63,3 +62,32 @@ export default function FAQ({ faq, title }) {
 		</>
 	);
 }
+
+const faqGenerateText = (text) => {
+	if (Array.isArray(text)) {
+		const temp = text.map((item) => faqGenerateText(item.props.children));
+
+		return temp.filter((item) => item !== ' ').join(' ');
+	} else if (typeof text === 'object') {
+		return faqGenerateText(text.props.children);
+	} else return text;
+};
+
+const faqGenerate = (faq) => {
+	const temp = {
+		'@context': 'https://schema.org',
+		'@type': 'FAQPage',
+		mainEntity: [],
+	};
+
+	temp.mainEntity = faq.map((item) => ({
+		'@type': 'Question',
+		name: item.title,
+		acceptedAnswer: {
+			'@type': 'Answer',
+			text: faqGenerateText(item.description.props.children),
+		},
+	}));
+
+	return temp;
+};

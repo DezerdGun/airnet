@@ -14,13 +14,13 @@ import RegDomain from '../components/regDomain';
 import Sitepad from '../components/sitepad';
 import Stock from '../components/stock';
 
-const faqHome = [
+const faq = [
 	{
 		title: 'Есть ли возможность протестировать услуги? ✔',
 		description: (
 			<>
 				<p>
-					Чтобы протестировать сервис, сначала нужно <a href="">зарегистрироваться.</a>
+					Чтобы протестировать сервис, сначала нужно <a href="#">зарегистрироваться.</a>
 				</p>
 
 				<p>Вам нужен VDS сервер? - Выполните 5 простых шагов, описанных здесь</p>
@@ -387,7 +387,7 @@ export default function Home() {
 			<TrustPilot />
 			<Trust />
 			<Partners />
-			<FAQ faq={faqHome} title="НАС ЧАСТО СПРАШИВАЮТ" />
+			<FAQ faq={faq} title="НАС ЧАСТО СПРАШИВАЮТ" />
 			<Notifications />
 		</div>
 	);
