@@ -1,0 +1,11 @@
+.faqInside {
+	&__content {
+		padding: 0 20px;
+	}
+
+	@media (max-width: 1040px) {
+		&__content {
+			padding: 0;
+		}
+	}
+}
