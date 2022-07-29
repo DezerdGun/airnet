@@ -9,16 +9,10 @@ $white: #fff;
 		font-size: 34px;
 	}
 
-	&__content {
-		margin-bottom: 30px;
-	}
-
-	// &__title {
-	// font-size: 26px;
-	// }
-
+	&__headTitle,
+	&__title,
 	&__description {
-		margin-bottom: 0;
+		margin-bottom: 20px;
 	}
 
 	&__bg {
@@ -26,14 +20,19 @@ $white: #fff;
 		padding: 20px;
 		background-size: cover !important;
 
-		.container__content {
-			margin-bottom: 0;
-		}
-
 		.container__title,
 		.container__description,
 		.container__headTitle {
 			color: $white;
+			margin-bottom: 15px;
+
+			p {
+				color: $white;
+			}
+		}
+
+		.container__title,
+		.container__headTitle {
 			margin-bottom: 10px;
 		}
 	}

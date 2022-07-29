@@ -178,24 +178,29 @@ export default function Hosting() {
 			<Container
 				className="mt-0"
 				headTitle="Быстрый и надежный виртуальный хостинг Cpanel в Ташкенте"
+				description={
+					<>
+						<p>
+							Ежедневно, клиентами AirNet становятся десятки компаний и частных веб-мастеров. Многие уже
+							оценили преимущества современных технологий, стабильность, скорость и безопасность нашего
+							хостинга. Оборудование мы размещаем в высокотехнологичном, современном, надёжном
+							Дата-Центре. Не теряйте время, оцените наш хостинг и профессиональную поддержку прямо
+							сейчас.
+						</p>
+						<p className={st.hosting__traficMaket__speed}>
+							Наши сервера расположены на территории Узбекистана, в сети TAS-IX и доступны на скорости -{' '}
+							<span>1 Gbps</span>
+						</p>
+					</>
+				}
 				style={{ background: "url('/servers-2.jpg') no-repeat" }}>
 				<div className={st.hosting__traficMaket}>
-					<p>
-						Ежедневно, клиентами AirNet становятся десятки компаний и частных веб-мастеров. Многие уже
-						оценили преимущества современных технологий, стабильность, скорость и безопасность нашего
-						хостинга. Оборудование мы размещаем в высокотехнологичном, современном, надёжном Дата-Центре. Не
-						теряйте время, оцените наш хостинг и профессиональную поддержку прямо сейчас.
-					</p>
-					<p className={st.hosting__traficMaket__speed}>
-						Наши сервера расположены на территории Узбекистана, в сети TAS-IX и доступны на скорости -{' '}
-						<span>1 Gbps</span>
-					</p>
 					<CustomTableHosting table={table1} />
 					<CustomTableHosting table={table2} />
 				</div>
 			</Container>
 
-			<Container title="Ваш хостинг будет размещен на сервере с конфигурацией:" clNh3="text-center">
+			<Container title="Ваш хостинг будет размещен на сервере с конфигурацией:" clNTitle="text-center">
 				<div className={st.hosting__block}>
 					{block.map((item) => (
 						<div key={item.title} className={st.hosting__block__item}>
@@ -212,7 +217,7 @@ export default function Hosting() {
 			</Container>
 			<Container
 				title="На всех тарифных планах"
-				clNh3="text-black text-center"
+				clNTitle="text-black text-center"
 				style={{ background: "url('/hosting/server.jpg') no-repeat" }}>
 				<div className={st.hosting__plan}>
 					<div className={st.hosting__plan__content}>
@@ -244,7 +249,12 @@ export default function Hosting() {
 			</Container>
 			<Container
 				title="Быстрая установка Wordpress и популярных CMS в 1 клик!"
-				description="Установка CMS-установщика в 1 клик — Вашему вниманию предлагаются более 100 БЕСПЛАТНЫХ CMS-установщиков различных категорий от Softaculous:"
+				description={
+					<p>
+						Установка CMS-установщика в 1 клик — Вашему вниманию предлагаются более 100 БЕСПЛАТНЫХ
+						CMS-установщиков различных категорий от Softaculous:
+					</p>
+				}
 				className="text-center">
 				<div className={st.hosting__cms}>
 					{cms.map((item) => (

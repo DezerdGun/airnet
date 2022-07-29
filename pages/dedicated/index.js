@@ -184,8 +184,9 @@ export default function Hosting() {
 		<div className={st.dedicated}>
 			<Container
 				className="mt-0"
+				style={{ background: "url('/servers.jpg') no-repeat" }}
 				headTitle="Выделенные сервера"
-				style={{ background: "url('/servers.jpg') no-repeat" }}>
+				clNTitle="mb-4">
 				<>
 					<div className={st.dedicated__table}>
 						<table>
@@ -234,9 +235,9 @@ export default function Hosting() {
 			</Container>
 
 			<Container
+				style={{ background: "url('/hosting/server.jpg') no-repeat" }}
 				title="Что входит в услугу аренды сервера"
-				clNh3="text-black text-center"
-				style={{ background: "url('/hosting/server.jpg') no-repeat" }}>
+				clNTitle="text-black text-center">
 				<ul className={st.dedicated__plan}>
 					<li>
 						<span>{checkedCircle}</span>Бесплатная настройка и установка сервера

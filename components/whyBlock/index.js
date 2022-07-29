@@ -45,7 +45,7 @@ export default function WhyBlock() {
 
 	return (
 		<div className={`${st.whyBlock} whyBlock-swiper`}>
-			<Container title="Почему выбирают Airnet" clNh3="text-center text-uppercase">
+			<Container title="Почему выбирают Airnet" clNTitle="text-center text-uppercase">
 				<Swiper
 					cssMode={true}
 					modules={[Autoplay, Navigation]}

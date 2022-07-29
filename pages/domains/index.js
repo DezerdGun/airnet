@@ -24,13 +24,15 @@ export default function Domains() {
 		<div className={st.domains}>
 			<Container
 				className="mt-0"
+				style={{ background: "url('/servers-2.jpg') no-repeat" }}
 				headTitle="Регистрация доменных имен в зоне UZ"
-				style={{ background: "url('/servers-2.jpg') no-repeat" }}>
-				<div className={st.domains__head}>
+				description={
 					<p>
 						Компания &quot;AIRNET&quot; является официальным{' '}
 						<a href="https://cctld.uz/reg/">регистратором домен в зоне UZ</a>
 					</p>
+				}>
+				<div className={st.domains__head}>
 					<div className={st.domains__head__block}>
 						<h3>Введите название доменного имени и нажмите на кнопку &quot;Проверить&quot;.</h3>
 						<p>

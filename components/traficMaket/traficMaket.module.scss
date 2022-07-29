@@ -41,6 +41,42 @@ $light_gray: #eeebee;
 
 		table {
 			box-shadow: 0 0 10px $dark_gray;
+
+			td,
+			th {
+				color: $black;
+				background-color: $white;
+				padding: 10px;
+				font-size: 14px;
+				white-space: nowrap;
+
+				&:nth-child(even) {
+					font-weight: 600 !important;
+					text-align: right;
+				}
+			}
+
+			th {
+				color: $white;
+				font-size: 15px;
+				background-color: $green !important;
+				text-align: center;
+			}
+
+			tr {
+				&:nth-child(odd) {
+					td,
+					th {
+						background-color: $light_gray;
+					}
+				}
+
+				&:last-child {
+					td {
+						background-color: $white;
+					}
+				}
+			}
 		}
 	}
 

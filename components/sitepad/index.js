@@ -8,20 +8,24 @@ export default function Sitepad() {
 	return (
 		<Container
 			style={{ background: `url('/laptop.jpg') no-repeat`, backgroundSize: 'cover' }}
-			title="Конструктор сайтов SitePad">
+			title="Конструктор сайтов SitePad"
+			description={
+				<>
+					<p>
+						Для того чтобы воспользоваться конструктором сайта где более 750 разных тем, вам необходимо{' '}
+						<Link href={LINKS.HOSTING}>
+							<a className="text-red">заказать любой хостинг</a>
+						</Link>{' '}
+						на тарифных планах Cpanel.
+					</p>
+					<p>
+						После оплаты за услугу хостинг, вы получите доступы к панели управления cPanel по эл.почте.
+						Внутри cPanel вы сможете создавать профессиональные сайт с помощью конструктора, без навыков
+						программирования.
+					</p>
+				</>
+			}>
 			<div className={st.sitepad}>
-				<p>
-					Для того чтобы воспользоваться конструктором сайта где более 750 разных тем, вам необходимо{' '}
-					<Link href={LINKS.HOSTING}>
-						<a className="text-red">заказать любой хостинг</a>
-					</Link>{' '}
-					на тарифных планах Cpanel.
-				</p>
-				<p>
-					После оплаты за услугу хостинг, вы получите доступы к панели управления cPanel по эл.почте. Внутри
-					cPanel вы сможете создавать профессиональные сайт с помощью конструктора, без навыков
-					программирования.
-				</p>
 				<div className={st.sitepad__button}>
 					<button>
 						<Link href={LINKS.HOSTING}>

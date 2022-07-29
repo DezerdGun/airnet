@@ -28,7 +28,7 @@ export default function Contacts() {
 					</div>
 				</div>
 			</Container>
-			<Container title="Пишите по любым вопросам" clNh3="text-center">
+			<Container title="Пишите по любым вопросам" clNTitle="text-center">
 				<div className={st.contacts__questions}>
 					<div className={st.contacts__questions__block}>
 						<div className={st.contacts__questions__block__item}>
@@ -60,9 +60,9 @@ export default function Contacts() {
 				</div>
 			</Container>
 			<Container
-				title="Приходите к нам в Ташкенте"
 				style={{ backgroundColor: '#eeebee' }}
-				clNh3="text-black text-center">
+				title="Приходите к нам в Ташкенте"
+				clNTitle="text-black text-center">
 				<p className="text-center">Узбекистан, г. Ташкент, ул. Матбуотчилар, 32</p>
 				<YMaps>
 					<Map width="100%" height="300px" defaultState={{ center: [41.3102896, 69.2759416], zoom: 17 }} />

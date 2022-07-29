@@ -60,11 +60,6 @@ $light_gray: #eeebee;
 					}
 				}
 
-				// &__text,
-				// p {
-				// 	transition: none;
-				// }
-
 				&__active {
 					.faq__items__block__text {
 						height: fit-content;
@@ -142,6 +137,10 @@ $light_gray: #eeebee;
 							margin-bottom: 0;
 						}
 					}
+				}
+
+				&:last-child {
+					margin-bottom: 0;
 				}
 			}
 		}

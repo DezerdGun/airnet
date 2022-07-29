@@ -3,16 +3,12 @@ $black: #000;
 
 .hosting {
 	&__traficMaket {
-		p,
-		span {
-			color: $white;
-		}
-
 		&__speed {
 			font-weight: 700;
 
 			span {
 				font-size: 22px;
+				color: $white;
 			}
 		}
 	}

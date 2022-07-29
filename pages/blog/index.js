@@ -37,7 +37,7 @@ export const blog = [
 
 export default function Blog() {
 	return (
-		<Container headTitle="Новости" clNh3="text-center">
+		<Container headTitle="Новости" clNTitle="text-center">
 			<div className={st.blog}>
 				{blog.map((item) => (
 					<div key={item.title} className={st.blog__item}>

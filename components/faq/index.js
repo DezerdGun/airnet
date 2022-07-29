@@ -24,7 +24,7 @@ export default function FAQ({ faq, title }) {
 				/>
 			</Head>
 			<div className={st.faq}>
-				<Container title={title} clNh3="text-center text-uppercase">
+				<Container title={title} clNTitle="text-center text-uppercase">
 					<div className={st.faq__item}>
 						<div className={st.faq__items}>
 							{faq.map((item, i) => (

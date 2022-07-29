@@ -96,7 +96,12 @@ export default function Home() {
 			<WhyBlock />
 			<TraficMaket
 				title="Популярные тарифы - Виртуальный сервер в Ташкенте"
-				description="Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости до 1 Gbps"
+				description={
+					<p>
+						Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости до 1
+						Gbps
+					</p>
+				}
 				bgImg="/servers.jpg"
 				table={[
 					<table key="table-1">
@@ -252,6 +257,7 @@ export default function Home() {
 						</tr>
 					</table>,
 				]}
+				className="text-white"
 			/>
 			<TraficMaket
 				title="Популярные тарифы Виртуальный хостинг Cpanel в Ташкенте"

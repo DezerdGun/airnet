@@ -25,7 +25,7 @@ export default function Trust() {
 
 	return (
 		<div className={`${st.trust} trust-swiper`}>
-			<Container title="Нам доверяют" clNh3="text-center text-uppercase">
+			<Container title="Нам доверяют" clNTitle="text-center text-uppercase">
 				<Swiper
 					cssMode={true}
 					modules={[Autoplay, Navigation]}
