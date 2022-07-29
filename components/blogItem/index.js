@@ -13,7 +13,7 @@ export default function BlogItem({ data }) {
 				<h1>{data.title}</h1>
 				<div className={st.blogItem__details}>
 					<div className={st.blogItem__details__author}>
-						<Image src="/user.png" width={50} height={50} alt="user" />
+						<Image src="/user.png" width={50} height={50} alt="user" blurDataURL placeholder="blur" />
 						<span>Airnet</span>
 					</div>
 					<div className={st.blogItem__details__date}>
