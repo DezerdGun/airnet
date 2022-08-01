@@ -39,8 +39,7 @@ const data = {
 			</p>
 		</>
 	),
-	prev: '/blog/telegram-voice-chat',
-	next: '/',
+	next: '/blog/telegram-voice-chat',
 };
 
 export default function CyberPunk2077() {
