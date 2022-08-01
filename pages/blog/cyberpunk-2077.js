@@ -2,7 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'Акции разработчика игры Cyberpunk 2077 рухнули на 20%',
-	date: '24 Dec 2020',
+	date: '24 Дек 2020',
 	img: '/blog/cyberpunk.jpg',
 	content: (
 		<>
@@ -32,7 +32,10 @@ const data = {
 				людей только на платформе Steam превысило 1 млн, что стало рекордом для однопользовательских проектов.
 			</p>
 			<p>
-				Ссылка на источник <a href="https://www.spot.uz/ru">Spot</a>
+				Ссылка на источник{' '}
+				<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
+					Spot
+				</a>
 			</p>
 		</>
 	),

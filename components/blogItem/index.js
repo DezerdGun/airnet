@@ -25,16 +25,18 @@ export default function BlogItem({ data }) {
 					<Image src={data.img} width={560} height={300} blurDataURL placeholder="blur" />
 				</div>
 				{data.content}
-				{data?.prev && (
-					<Link href={data.prev}>
-						<a className="me-2">&laquo; Предыдущий пост</a>
-					</Link>
-				)}
-				{data?.next && (
-					<Link href={data.next}>
-						<a>Следующий пост &raquo;</a>
-					</Link>
-				)}
+				<div className={st.blogItem__links}>
+					{data?.prev && (
+						<Link href={data.prev}>
+							<a className="me-2">&laquo; Предыдущий пост</a>
+						</Link>
+					)}
+					{data?.next && (
+						<Link href={data.next}>
+							<a>Следующий пост &raquo;</a>
+						</Link>
+					)}
+				</div>
 			</div>
 		</Container>
 	);

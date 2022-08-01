@@ -59,6 +59,10 @@ $red: #f00;
 		}
 	}
 
+	&__links {
+		margin: 20px 0;
+	}
+
 	@media (max-width: 770px) {
 		width: 100%;
 	}

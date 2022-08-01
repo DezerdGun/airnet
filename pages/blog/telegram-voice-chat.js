@@ -2,7 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'В Telegram появились голосовые чаты и другие новые возможности',
-	date: '24 Dec 2020',
+	date: '24 Дек 2020',
 	img: '/blog/audio-call.jpg',
 	content: (
 		<>
@@ -32,11 +32,14 @@ const data = {
 				или ⋮) {'>'} «Голосовой чат».
 			</p>
 			<p>
-				Ссылка на источник <a href="https://www.spot.uz/ru">Spot</a>
+				Ссылка на источник{' '}
+				<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
+					Spot
+				</a>
 			</p>
 		</>
 	),
-	prev: '/',
+	prev: '',
 	next: '/blog/cyberpunk-2077',
 };
 
