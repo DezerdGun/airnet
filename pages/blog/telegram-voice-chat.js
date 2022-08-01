@@ -39,8 +39,8 @@ const data = {
 			</p>
 		</>
 	),
-	prev: '',
-	next: '/blog/cyberpunk-2077',
+	prev: '/blog/cyberpunk-2077',
+	next: '/blog/2019-god-obyavlen-godom-aktivnyx-investicij-i-socialnogo-razvitiya',
 };
 
 export default function TelegramVoiceChat() {
