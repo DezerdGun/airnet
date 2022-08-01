@@ -43,6 +43,6 @@ const data = {
 	next: '/blog/yandeks-muzyka-i-beeline-zapustili-sovmestnyj-proekt',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

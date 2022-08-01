@@ -53,6 +53,6 @@ const data = {
 	next: '/blog/financial-times-soobshhaet-chto-majnery-zakryvayut-biznes-tak-kak-bitkoin-stal-deshevle-stoimosti-ego-dobychi',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

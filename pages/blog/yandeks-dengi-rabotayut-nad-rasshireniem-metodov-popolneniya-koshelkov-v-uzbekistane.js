@@ -59,6 +59,6 @@ const data = {
 	next: '/blog/facebook-soobshhil-ob-oshibke',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

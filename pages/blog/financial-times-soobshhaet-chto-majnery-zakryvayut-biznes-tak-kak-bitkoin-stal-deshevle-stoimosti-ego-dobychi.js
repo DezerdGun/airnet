@@ -63,6 +63,6 @@ const data = {
 	next: '/blog/centralnyj-bank-opublikoval-proekt-zakona-o-platezhax-i-elektronnyx-dengax-v-uzbekistane',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

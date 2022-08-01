@@ -33,6 +33,6 @@ const data = {
 	next: '/blog/k-chemu-priveli-nepoladki-s-facebook-i-youtube',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

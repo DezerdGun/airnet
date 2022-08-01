@@ -47,6 +47,6 @@ const data = {
 	next: '/blog/vpervye-vpn-prilozheniya-stali-samymi-skachivaemymi-v-uzbekistane-kak-dlya-ios-tak-i-dlya-android',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

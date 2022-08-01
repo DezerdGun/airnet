@@ -60,6 +60,6 @@ const data = {
 	next: '/blog/deputaty-nachali-obsuzhdenie-zakonoproekta-o-personalnyx-dannyx',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

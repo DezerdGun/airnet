@@ -45,6 +45,6 @@ const data = {
 	next: '/blog/karty-uzcard-teper-mozhno-popolnyat-nalichnymi',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

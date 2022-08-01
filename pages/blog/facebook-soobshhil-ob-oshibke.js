@@ -60,6 +60,6 @@ const data = {
 	next: '/blog/speedtest-nebolshoj-rost-skorosti-interneta-v-uzbekistane',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

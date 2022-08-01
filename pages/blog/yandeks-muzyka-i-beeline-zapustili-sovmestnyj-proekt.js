@@ -57,6 +57,6 @@ const data = {
 	next: '/blog/v-uzbekistane-razreshat-soxranyat-nomer-pri-smene-operatora',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

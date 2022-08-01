@@ -39,6 +39,6 @@ const data = {
 	next: '/blog/v-telegram-poyavilis-vstroennye-oprosy',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

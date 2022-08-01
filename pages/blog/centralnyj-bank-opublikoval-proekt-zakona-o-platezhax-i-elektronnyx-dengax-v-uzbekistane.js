@@ -90,6 +90,6 @@ const data = {
 	next: '/blog/ilon-mask-xochet-privlech-500-mln-na-sozdanie-mirovogo-interneta',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

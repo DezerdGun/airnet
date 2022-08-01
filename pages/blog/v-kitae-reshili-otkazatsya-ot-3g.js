@@ -41,6 +41,6 @@ const data = {
 	next: '/blog/yandeks-dengi-rabotayut-nad-rasshireniem-metodov-popolneniya-koshelkov-v-uzbekistane',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

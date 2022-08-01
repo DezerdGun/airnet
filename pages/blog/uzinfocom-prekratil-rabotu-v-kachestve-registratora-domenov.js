@@ -43,6 +43,6 @@ const data = {
 	next: '/',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

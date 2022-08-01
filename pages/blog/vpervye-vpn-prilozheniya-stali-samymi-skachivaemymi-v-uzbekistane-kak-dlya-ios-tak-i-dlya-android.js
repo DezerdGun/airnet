@@ -60,6 +60,6 @@ const data = {
 	next: '/blog/v-kitae-reshili-otkazatsya-ot-3g',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

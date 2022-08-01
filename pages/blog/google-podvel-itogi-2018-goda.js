@@ -52,6 +52,6 @@ const data = {
 	next: '/blog/uzinfocom-prekratil-rabotu-v-kachestve-registratora-domenov',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

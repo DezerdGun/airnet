@@ -58,6 +58,6 @@ const data = {
 	next: '/blog/vkontakte-zavela-profil-v-instagram',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

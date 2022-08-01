@@ -47,6 +47,6 @@ const data = {
 	next: '/blog/lenovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }

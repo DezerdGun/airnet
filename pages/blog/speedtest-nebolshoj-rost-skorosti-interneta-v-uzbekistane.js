@@ -45,6 +45,6 @@ const data = {
 	next: '/blog/google-podvel-itogi-2018-goda',
 };
 
-export default function () {
+export default function Blog() {
 	return <BlogItem data={data} />;
 }
