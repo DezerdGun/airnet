@@ -99,7 +99,7 @@ export const blog = [
 		),
 	},
 	{
-		img: '/blog/facebok.jpg',
+		img: '/blog/facebook.jpg',
 		link: '/blog/facebook-soobshhil-ob-oshibke',
 		date: '16 Дек 2018',
 		title: 'Facebook сообщил об ошибке',
