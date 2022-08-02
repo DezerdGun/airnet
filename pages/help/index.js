@@ -256,7 +256,7 @@ export default function Help() {
 					<div className={st.help__block}>
 						<ul>
 							{data.map((item, i) => (
-								<li>
+								<li key={item.title}>
 									<h2>
 										{i + 1}.{' '}
 										{item.link ? (
@@ -269,7 +269,7 @@ export default function Help() {
 									</h2>
 									<ul>
 										{item.children.map((item, j) => (
-											<li>
+											<li key={item.id}>
 												<h3>
 													{item?.children && (
 														<span
@@ -290,7 +290,7 @@ export default function Help() {
 												{item?.children && (
 													<ol id={item.id} className={st.help__block__content}>
 														{item.children.map((item) => (
-															<li>
+															<li key={item.link}>
 																<Link href={item.link}>
 																	<a>{item.title}</a>
 																</Link>
