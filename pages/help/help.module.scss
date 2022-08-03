@@ -11,48 +11,6 @@ $red: #f00;
 	border-top: 1px solid $light_gray;
 
 	&__block {
-		border: 1px solid $light_gray;
-		padding: 20px 0;
-		margin-top: 20px;
-
-		h2 {
-			font-size: 22px;
-		}
-
-		h3 {
-			font-size: 18px;
-			margin-bottom: 0;
-			position: relative;
-			font-weight: 400;
-		}
-
-		a {
-			font-size: inherit;
-			text-decoration: underline;
-
-			&:hover {
-				text-decoration: none;
-			}
-		}
-
-		ul {
-			list-style: none;
-		}
-
-		ul,
-		ol {
-			padding-left: 20px;
-			margin-bottom: 10px;
-
-			ul {
-				padding-left: 30px;
-			}
-
-			li {
-				margin-bottom: 5px;
-			}
-		}
-
 		&__content {
 			display: none;
 			margin-top: 5px;

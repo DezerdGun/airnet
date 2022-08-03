@@ -1,0 +1,52 @@
+import Link from 'next/link';
+import HelpItem from '../../../components/helpItem';
+import st from '../help.module.scss';
+
+const data = {
+		id: 'vds',
+		title: 'VDS',
+		children: [
+			{
+				title: 'Необходимые навыки для работы с VDS',
+				link: '/help/vds/neobhodimye-navyki-dlya-raboty-s-vds',
+			},
+			{
+				title: 'Смена тарифного плана на VDS',
+				link: '/help/vds/smena-tarifnogo-plana-na-vds',
+			},
+			{
+				title: 'Как долго хранятся учётные записи VDS?',
+				link: '/help/vds/kak-dolgo-hranyatsya-uchyotnye-zapisi-vds',
+			},
+			{
+				title: 'Восстановление root пароля от VDS',
+				link: '/help/vds/vosstanovlenie-root-parolya-ot-vds',
+			},
+			{
+				title: 'Перенос аккаунта на VDS',
+				link: '/help/vds/perenos-akkaunta-na-vds',
+			},
+			{
+				title: 'Преимущества VDS и VPS-серверов',
+				link: '/help/vds/preimushhestva-vds-i-vps-serverov',
+			},
+		],
+	},
+	mainData = {
+		headTitle: data.title,
+		content: (
+			<ol id={data.id} className={st.help__block__content__active}>
+				{data.children.map((item) => (
+					<li key={item.link}>
+						<Link href={item.link}>
+							<a>{item.title}</a>
+						</Link>
+					</li>
+				))}
+			</ol>
+		),
+	};
+
+export default function HelpInner() {
+	return <HelpItem data={mainData} />;
+}

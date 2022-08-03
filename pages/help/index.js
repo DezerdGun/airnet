@@ -1,10 +1,8 @@
-import FAQ from '../../components/faq';
 import Partners from '../../components/partners';
 import Image from 'next/image';
 import Link from 'next/link';
 import st from './help.module.scss';
-import Container from '../../components/container';
-import { useEffect } from 'react';
+import HelpItem from '../../components/helpItem';
 
 const data = [
 		{
@@ -193,72 +191,38 @@ const data = [
 			<path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z" />
 		</svg>
 	),
-	faq = [
-		{
-			title: 'Как пополнить баланс в биллинг системе?',
-			description: (
-				<>
-					<p>
-						Чтобы пополнить баланс зайдите в биллинг систему, кликните на ваш баланс (правая графа сверху)
-					</p>
-					<Image src="/help/balance.jpg" width={1160} height={511} blurDataURL placeholder="blur" />
-				</>
-			),
+	mainData = {
+		headTitle: 'База знаний',
+		active: (i) => {
+			document.querySelector(`#${i}`).classList.toggle(st.help__block__content__active);
+			document.querySelector(`#${i}Collapse`).classList.toggle(st.help__block__collapse__active);
 		},
-		{
-			title: 'Как изменить личные данные в биллинг системе?',
-			description: (
-				<>
-					<p>Как изменить личные данные в биллинг системе?</p>
-					<Image src="/help/profile.jpg" width={1160} height={422} blurDataURL placeholder="blur" />
-				</>
-			),
-		},
-		{
-			title: 'В настройках можно изменить язык панели.',
-			description: (
-				<>
-					<p>Для выбора вам предоставляется 6 языков</p>
-					<Image src="/help/lang.jpg" width={1160} height={422} blurDataURL placeholder="blur" />
-				</>
-			),
-		},
-		{
-			title: 'Где я могу увидеть SSL- сертификат?',
-			description: (
-				<>
-					<p>SSL сертификат можно увидеть в графе «товары»</p>
-					<Image src="/help/ssl.jpg" width={1160} height={592} blurDataURL placeholder="blur" />
-				</>
-			),
-		},
-		{
-			title: 'Как ознакомится с тарифными планами VDS/VPS',
-			description: (
-				<>
-					<p>C тарифными планами можно также ознакомится и приобрести в биллинг системе.</p>
-					<Image src="/help/tarif.jpg" width={1160} height={563} blurDataURL placeholder="blur" />
-				</>
-			),
-		},
-	];
-
-export default function Help() {
-	const active = (i) => {
-		document.querySelector(`#${i}`).classList.toggle(st.help__block__content__active);
-		document.querySelector(`#${i}Collapse`).classList.toggle(st.help__block__collapse__active);
-	};
-
-	return (
-		<>
-			<Container headTitle="База знаний">
-				<div className={st.help}>
-					<div className={st.help__block}>
+		content: (
+			<ul>
+				{data.map((item, i) => (
+					<li key={item.title}>
+						<h2>
+							{i + 1}.{' '}
+							{item.link ? (
+								<Link href={item.link}>
+									<a>{item.title}</a>
+								</Link>
+							) : (
+								item.title
+							)}
+						</h2>
 						<ul>
-							{data.map((item, i) => (
-								<li key={item.title}>
-									<h2>
-										{i + 1}.{' '}
+							{item.children.map((item, j) => (
+								<li key={item.id}>
+									<h3>
+										{item?.children && (
+											<span
+												id={`${item.id}Collapse`}
+												className={st.help__block__collapse}
+												onClick={() => mainData.active(item.id)}>
+												{chevron}
+											</span>
+										)}
 										{item.link ? (
 											<Link href={item.link}>
 												<a>{item.title}</a>
@@ -266,49 +230,82 @@ export default function Help() {
 										) : (
 											item.title
 										)}
-									</h2>
-									<ul>
-										{item.children.map((item, j) => (
-											<li key={item.id}>
-												<h3>
-													{item?.children && (
-														<span
-															id={`${item.id}Collapse`}
-															className={st.help__block__collapse}
-															onClick={() => active(item.id)}>
-															{chevron}
-														</span>
-													)}
-													{item.link ? (
-														<Link href={item.link}>
-															<a>{item.title}</a>
-														</Link>
-													) : (
-														item.title
-													)}
-												</h3>
-												{item?.children && (
-													<ol id={item.id} className={st.help__block__content}>
-														{item.children.map((item) => (
-															<li key={item.link}>
-																<Link href={item.link}>
-																	<a>{item.title}</a>
-																</Link>
-															</li>
-														))}
-													</ol>
-												)}
-											</li>
-										))}
-									</ul>
+									</h3>
+									{item?.children && (
+										<ol id={item.id} className={st.help__block__content}>
+											{item.children.map((item) => (
+												<li key={item.link}>
+													<Link href={item.link}>
+														<a>{item.title}</a>
+													</Link>
+												</li>
+											))}
+										</ol>
+									)}
 								</li>
 							))}
 						</ul>
-					</div>
-				</div>
-			</Container>
-			<FAQ faq={faq} title="НАС ЧАСТО СПРАШИВАЮТ БИЛЛИНГ-ПАНЕЛЬ" />
+					</li>
+				))}
+			</ul>
+		),
+		faq: [
+			{
+				title: 'Как пополнить баланс в биллинг системе?',
+				description: (
+					<>
+						<p>
+							Чтобы пополнить баланс зайдите в биллинг систему, кликните на ваш баланс (правая графа
+							сверху)
+						</p>
+						<Image src="/help/balance.jpg" width={1160} height={511} blurDataURL placeholder="blur" />
+					</>
+				),
+			},
+			{
+				title: 'Как изменить личные данные в биллинг системе?',
+				description: (
+					<>
+						<p>Как изменить личные данные в биллинг системе?</p>
+						<Image src="/help/profile.jpg" width={1160} height={422} blurDataURL placeholder="blur" />
+					</>
+				),
+			},
+			{
+				title: 'В настройках можно изменить язык панели.',
+				description: (
+					<>
+						<p>Для выбора вам предоставляется 6 языков</p>
+						<Image src="/help/lang.jpg" width={1160} height={422} blurDataURL placeholder="blur" />
+					</>
+				),
+			},
+			{
+				title: 'Где я могу увидеть SSL- сертификат?',
+				description: (
+					<>
+						<p>SSL сертификат можно увидеть в графе «товары»</p>
+						<Image src="/help/ssl.jpg" width={1160} height={592} blurDataURL placeholder="blur" />
+					</>
+				),
+			},
+			{
+				title: 'Как ознакомится с тарифными планами VDS/VPS',
+				description: (
+					<>
+						<p>C тарифными планами можно также ознакомится и приобрести в биллинг системе.</p>
+						<Image src="/help/tarif.jpg" width={1160} height={563} blurDataURL placeholder="blur" />
+					</>
+				),
+			},
+		],
+	};
+
+export default function Help() {
+	return (
+		<div className={st.help}>
+			<HelpItem data={mainData} />
 			<Partners />
-		</>
+		</div>
 	);
 }
