@@ -1,6 +1,18 @@
 .faqInside {
 	&__content {
 		padding: 0 20px;
+
+		h2 {
+			font-size: 24px;
+		}
+
+		h3 {
+			font-size: 20px;
+		}
+
+		a {
+			text-decoration: underline;
+		}
 	}
 
 	@media (max-width: 1040px) {

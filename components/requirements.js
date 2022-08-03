@@ -35,4 +35,5 @@ export const LINKS = {
 	LOYALS: '/',
 	PARTNERS: '/partners',
 	PRIVACY_POLICY: '/privacy-policy',
+	OFERTA: '/oferta',
 };
