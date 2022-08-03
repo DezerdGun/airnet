@@ -40,7 +40,6 @@ const mainData = {
 				<strong>Ограничение и разрешение доступа к сайту с определённых </strong>
 				<strong>ip</strong>
 				<strong>-адресов</strong>
-				<strong></strong>
 			</p>
 			<p>Чтобы ограничить доступа к сайту с определённых IP-адресов в файл .htaccess нужно добавить следующее:</p>
 			<p>Order Allow,Deny</p>
