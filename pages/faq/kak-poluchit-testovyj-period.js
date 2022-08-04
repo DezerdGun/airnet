@@ -3,9 +3,9 @@ import { LINKS } from '../../components/requirements';
 import Link from 'next/link';
 
 const data = {
-	title: '',
+	title: 'Как получить тестовый период?',
 	description: '',
-	content: <></>,
+	content: <p>Мы предоставляем тестовый период автоматически, сразу после регистрации аккаунта у нас:</p>,
 };
 
 export default function FAQ() {
