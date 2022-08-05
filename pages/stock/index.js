@@ -144,7 +144,7 @@ export default function Stock() {
 			<hr />
 			<div className={st.stock}>
 				{data.map((item) => (
-					<div className={st.stock__item}>
+					<div key={item.title} className={st.stock__item}>
 						<div className={st.stock__item__img}>
 							<Image src={item.img} width={170} height={170} blurDataURL placeholder="blur" />
 						</div>

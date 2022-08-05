@@ -48,11 +48,15 @@ $light_gray: #eeebee;
 				background-color: $white;
 				padding: 10px;
 				font-size: 14px;
-				white-space: nowrap;
 
 				&:nth-child(even) {
 					font-weight: 600 !important;
 					text-align: right;
+					white-space: nowrap;
+				}
+
+				sup {
+					color: inherit;
 				}
 			}
 
