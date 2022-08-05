@@ -65,24 +65,24 @@ strong {
 }
 
 h1 {
-	font-size: 55px;
+	font-size: 24px;
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 22px;
 }
 
 h3 {
-	font-size: 26px;
+	font-size: 20px;
 	margin-bottom: 10px;
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 18px;
 }
 
 h5 {
-	font-size: 22px;
+	font-size: 18px;
 }
 
 h6 {
@@ -211,30 +211,6 @@ h6 {
 }
 
 @media (max-width: 1040px) {
-	h1 {
-		font-size: 50px;
-	}
-
-	h2 {
-		font-size: 36px;
-	}
-
-	h3 {
-		font-size: 32px;
-	}
-
-	h4 {
-		font-size: 22px;
-	}
-
-	h5 {
-		font-size: 20px;
-	}
-
-	h6 {
-		font-size: 18px;
-	}
-
 	.app {
 		padding-top: 70px;
 	}
@@ -251,30 +227,6 @@ h6 {
 }
 
 @media (max-width: 880px) {
-	h1 {
-		font-size: 44px;
-	}
-
-	h2 {
-		font-size: 32px;
-	}
-
-	h3 {
-		font-size: 26px;
-	}
-
-	h4 {
-		font-size: 20px;
-	}
-
-	h5 {
-		font-size: 18px;
-	}
-
-	h6 {
-		font-size: 16px;
-	}
-
 	.app {
 		padding-top: 70px;
 	}
