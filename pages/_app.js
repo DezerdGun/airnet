@@ -4,6 +4,7 @@ import Footer from '../components/footer';
 import Header from '../components/header';
 import '../styles/globals.scss';
 import { useEffect } from 'react';
+import Cookies from '../components/cookies';
 // import i18n from 'i18next'
 // import {initReactI18next} from 'react-i18next'
 
@@ -30,6 +31,7 @@ function MyApp({ Component, pageProps }) {
 			<Header />
 			<div className="app">
 				<Component {...pageProps} />
+				<Cookies />
 			</div>
 			<Footer />
 		</div>

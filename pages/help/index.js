@@ -1,4 +1,3 @@
-import Partners from '../../components/partners';
 import Image from 'next/image';
 import Link from 'next/link';
 import st from './help.module.scss';
@@ -305,7 +304,6 @@ export default function Help() {
 	return (
 		<div className={st.help}>
 			<HelpItem data={mainData} />
-			<Partners />
 		</div>
 	);
 }
