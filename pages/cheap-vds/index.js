@@ -54,7 +54,8 @@ export default function CheapVds() {
 						</h3>
 						<a
 							href="https://billing.airnet.uz/billing.php?do=order&amp;vid=vds&amp;tarif=17"
-							target="_blank">
+							target="_blank"
+							rel="noopener noreferrer">
 							Заказать сервер
 						</a>
 					</div>
