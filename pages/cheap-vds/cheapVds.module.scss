@@ -1,0 +1,54 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #eeebee;
+$red: #f00;
+
+.cheapVds {
+	&__header {
+		h1,
+		h2,
+		h3,
+		p,
+		span,
+		a {
+			color: $white;
+		}
+
+		display: flex;
+		justify-content: space-between;
+		&__left {
+			padding: 30px 0;
+
+			h2 {
+				font-size: 20px;
+				font-weight: 400;
+				margin-bottom: 20px;
+			}
+		}
+
+		&__right {
+			padding: 30px 50px;
+			background-color: #eeebee55;
+			text-align: center;
+
+			h3 {
+				font-size: 24px;
+				margin-bottom: 20px;
+			}
+
+			a {
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+				padding: 10px 20px;
+				text-transform: uppercase;
+				font-weight: 700;
+				background-color: $green;
+			}
+		}
+	}
+}
