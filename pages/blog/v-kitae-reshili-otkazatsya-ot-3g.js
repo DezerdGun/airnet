@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'В Китае решили отказаться от 3G',
+	decs: 'В прошлом году страна отказалась от 2G, а в этом году решила сделать то же самое с 3G.',
 	date: '18 Дек 2018',
 	img: '/blog/google-5g.jpg',
 	content: (

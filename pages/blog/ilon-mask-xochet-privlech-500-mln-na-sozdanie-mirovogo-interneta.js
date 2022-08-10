@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'Илон Маск хочет привлечь $500 млн на создание мирового интернета',
+	decs: 'Проект Starlink предполагает создание обширной сети спутников, способных передавать интернет-трафик.',
 	date: '24 Дек 2018',
 	img: '/blog/spacex.jpg',
 	content: (

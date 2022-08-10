@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'Lenovo представила первый в мире смартфон с 12 ГБ оперативной памяти',
+	decs: 'Lenovo Z5 Pro GT первым в мире получил 12 ГБ оперативной памяти и новейший процессор Snapdragon 855.',
 	date: '21 Дек 2018',
 	img: '/blog/lenovo-phone.jpg',
 	content: (

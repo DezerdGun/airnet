@@ -2,6 +2,7 @@ import Container from '../../components/container';
 import Partners from '../../components/partners';
 import st from './contacts.module.scss';
 import { YMaps, Map } from 'react-yandex-maps';
+import SEO from '../../components/seo';
 
 const phone = (
 	<span>
@@ -13,62 +14,69 @@ const phone = (
 
 export default function Contacts() {
 	return (
-		<div className={st.contacts}>
-			<Container className="mt-0" style={{ background: "url('/contact.jpg') no-repeat" }}>
-				<div className={st.contacts__phones}>
-					<div className={st.contacts__phones__item}>
-						<span>Абонентский отдел</span>
-						<h3>{phone}+998 (71) 200-87-00</h3>
-						<p>(русский-узбекский язык)</p>
-					</div>
-					<div className={st.contacts__phones__item}>
-						<span>Техническая поддержка</span>
-						<h3>{phone}+998 (90) 324-30-80</h3>
-						<p>(телеграм)</p>
-					</div>
-				</div>
-			</Container>
-			<Container title="Пишите по любым вопросам" clNTitle="text-center">
-				<div className={st.contacts__questions}>
-					<div className={st.contacts__questions__block}>
-						<div className={st.contacts__questions__block__item}>
-							<h3>По всем техническим вопросам:</h3>
-							<a href="mailto:info@airnet.uz">info@airnet.uz</a>
+		<>
+			<SEO title="Контактная информация | Airnet" desc="Контактная информация компании Airnet" />
+			<div className={st.contacts}>
+				<Container className="mt-0" style={{ background: "url('/contact.jpg') no-repeat" }}>
+					<div className={st.contacts__phones}>
+						<div className={st.contacts__phones__item}>
+							<span>Абонентский отдел</span>
+							<h3>{phone}+998 (71) 200-87-00</h3>
+							<p>(русский-узбекский язык)</p>
 						</div>
-						<div className={st.contacts__questions__block__item}>
-							<h3>По финансовым, предпродажным и организационным вопросам:</h3>
-							<a href="mailto:info@airnet.uz">info@airnet.uz</a>
-						</div>
-						<div className={st.contacts__questions__block__item}>
-							<h3>По поводу жалоб и предложений:</h3>
-							<a href="mailto:admin@airnet.uz">admin@airnet.uz</a>
+						<div className={st.contacts__phones__item}>
+							<span>Техническая поддержка</span>
+							<h3>{phone}+998 (90) 324-30-80</h3>
+							<p>(телеграм)</p>
 						</div>
 					</div>
-					<div className={st.contacts__questions__footer}>
-						<span>
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-								<path d="M256 31.1c-141.4 0-255.1 93.12-255.1 208c0 49.62 21.35 94.98 56.97 130.7c-12.5 50.37-54.27 95.27-54.77 95.77c-2.25 2.25-2.875 5.734-1.5 8.734c1.249 3 4.021 4.766 7.271 4.766c66.25 0 115.1-31.76 140.6-51.39c32.63 12.25 69.02 19.39 107.4 19.39c141.4 0 255.1-93.13 255.1-207.1S397.4 31.1 256 31.1zM127.1 271.1c-17.75 0-32-14.25-32-31.1s14.25-32 32-32s32 14.25 32 32S145.7 271.1 127.1 271.1zM256 271.1c-17.75 0-31.1-14.25-31.1-31.1s14.25-32 31.1-32s31.1 14.25 31.1 32S273.8 271.1 256 271.1zM383.1 271.1c-17.75 0-32-14.25-32-31.1s14.25-32 32-32s32 14.25 32 32S401.7 271.1 383.1 271.1z" />
-							</svg>
-						</span>
-						<p>
-							Если Вы уже являетесь нашим клиентом, самый простой и быстрый способ связи — посредством
-							тикет-системы в биллинге. Обращения через тикет систему рассматриваются с наиболее высоким
-							приоритетом и максимально быстро.
-						</p>
-						<a href="https://billing.airnet.uz/billing.php">Личный кабинет</a>
+				</Container>
+				<Container title="Пишите по любым вопросам" clNTitle="text-center">
+					<div className={st.contacts__questions}>
+						<div className={st.contacts__questions__block}>
+							<div className={st.contacts__questions__block__item}>
+								<h3>По всем техническим вопросам:</h3>
+								<a href="mailto:info@airnet.uz">info@airnet.uz</a>
+							</div>
+							<div className={st.contacts__questions__block__item}>
+								<h3>По финансовым, предпродажным и организационным вопросам:</h3>
+								<a href="mailto:info@airnet.uz">info@airnet.uz</a>
+							</div>
+							<div className={st.contacts__questions__block__item}>
+								<h3>По поводу жалоб и предложений:</h3>
+								<a href="mailto:admin@airnet.uz">admin@airnet.uz</a>
+							</div>
+						</div>
+						<div className={st.contacts__questions__footer}>
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<path d="M256 31.1c-141.4 0-255.1 93.12-255.1 208c0 49.62 21.35 94.98 56.97 130.7c-12.5 50.37-54.27 95.27-54.77 95.77c-2.25 2.25-2.875 5.734-1.5 8.734c1.249 3 4.021 4.766 7.271 4.766c66.25 0 115.1-31.76 140.6-51.39c32.63 12.25 69.02 19.39 107.4 19.39c141.4 0 255.1-93.13 255.1-207.1S397.4 31.1 256 31.1zM127.1 271.1c-17.75 0-32-14.25-32-31.1s14.25-32 32-32s32 14.25 32 32S145.7 271.1 127.1 271.1zM256 271.1c-17.75 0-31.1-14.25-31.1-31.1s14.25-32 31.1-32s31.1 14.25 31.1 32S273.8 271.1 256 271.1zM383.1 271.1c-17.75 0-32-14.25-32-31.1s14.25-32 32-32s32 14.25 32 32S401.7 271.1 383.1 271.1z" />
+								</svg>
+							</span>
+							<p>
+								Если Вы уже являетесь нашим клиентом, самый простой и быстрый способ связи — посредством
+								тикет-системы в биллинге. Обращения через тикет систему рассматриваются с наиболее
+								высоким приоритетом и максимально быстро.
+							</p>
+							<a href="https://billing.airnet.uz/billing.php">Личный кабинет</a>
+						</div>
 					</div>
-				</div>
-			</Container>
-			<Container
-				style={{ backgroundColor: '#eeebee' }}
-				title="Приходите к нам в Ташкенте"
-				clNTitle="text-black text-center">
-				<p className="text-center">Узбекистан, г. Ташкент, ул. Матбуотчилар, 32</p>
-				<YMaps>
-					<Map width="100%" height="300px" defaultState={{ center: [41.3102896, 69.2759416], zoom: 17 }} />
-				</YMaps>
-			</Container>
-			<Partners />
-		</div>
+				</Container>
+				<Container
+					style={{ backgroundColor: '#eeebee' }}
+					title="Приходите к нам в Ташкенте"
+					clNTitle="text-black text-center">
+					<p className="text-center">Узбекистан, г. Ташкент, ул. Матбуотчилар, 32</p>
+					<YMaps>
+						<Map
+							width="100%"
+							height="300px"
+							defaultState={{ center: [41.3102896, 69.2759416], zoom: 17 }}
+						/>
+					</YMaps>
+				</Container>
+				<Partners />
+			</div>
+		</>
 	);
 }

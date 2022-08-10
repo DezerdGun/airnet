@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'Депутаты начали обсуждение законопроекта «О персональных данных»',
+	decs: 'Сейчас персональные данные в Узбекистане слабо защищены, но скоро это изменится.',
 	date: '29 Дек 2018',
 	img: '/blog/personal-security.jpg',
 	content: (

@@ -8,6 +8,7 @@ import Container from '../../components/container';
 import CustomTable from '../../components/customTable';
 import FAQ from '../../components/faq';
 import CustomTableHosting from '../../components/customTableHosting';
+import SEO from '../../components/seo';
 
 const checkedCircle = (
 		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,87 +180,94 @@ const checkedCircle = (
 		},
 	];
 
-export default function Hosting() {
+export default function Dedicated() {
 	return (
-		<div className={st.dedicated}>
-			<Container
-				className="mt-0"
-				style={{ background: "url('/servers.jpg') no-repeat" }}
-				headTitle="Выделенные сервера"
-				clNTitle="mb-4">
-				<>
-					<div className={st.dedicated__table}>
-						<table>
-							<thead>
-								<tr>
-									<th></th>
-									<th>Процессор</th>
-									<th>Оперативная память</th>
-									<th>Жесткие диски</th>
-									<th>Порт</th>
-									<th>Локация</th>
-									<th>Стоимость</th>
-								</tr>
-							</thead>
-							<tbody>
-								{table.map((item) => (
-									<tr key={item.proc}>
-										<td>{item.img}</td>
-										<td>{item.proc}</td>
-										<td>{item.ram} GB</td>
-										<td>{item.ssd}</td>
-										<td>100 Mbit/s., неограниченный</td>
-										<td>Ташкент</td>
-										<td>Ожидается</td>
+		<>
+			<SEO
+				title="Выделенные сервера | Хостинг TAS-IX в Ташкенте, Узбекистане"
+				desc="Выделенные сервера в сети TAS-IX в Ташкенте с бесплатной установкой и настройкой, круглосуточной поддержкой"
+			/>
+			<div className={st.dedicated}>
+				<Container
+					className="mt-0"
+					style={{ background: "url('/servers.jpg') no-repeat" }}
+					headTitle="Выделенные сервера"
+					clNTitle="mb-4">
+					<>
+						<div className={st.dedicated__table}>
+							<table>
+								<thead>
+									<tr>
+										<th></th>
+										<th>Процессор</th>
+										<th>Оперативная память</th>
+										<th>Жесткие диски</th>
+										<th>Порт</th>
+										<th>Локация</th>
+										<th>Стоимость</th>
 									</tr>
-								))}
-							</tbody>
-						</table>
-					</div>
-					<a href="" className={st.dedicated__link}>
-						Арендовать сервер
-					</a>
-				</>
-			</Container>
+								</thead>
+								<tbody>
+									{table.map((item) => (
+										<tr key={item.proc}>
+											<td>{item.img}</td>
+											<td>{item.proc}</td>
+											<td>{item.ram} GB</td>
+											<td>{item.ssd}</td>
+											<td>100 Mbit/s., неограниченный</td>
+											<td>Ташкент</td>
+											<td>Ожидается</td>
+										</tr>
+									))}
+								</tbody>
+							</table>
+						</div>
+						<a href="" className={st.dedicated__link}>
+							Арендовать сервер
+						</a>
+					</>
+				</Container>
 
-			<Container>
-				<p className={st.dedicated__text}>
-					{infoCircle}Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 3-х
-					рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического персонала.
-					Среднее время активации оборудования - 24 часа. <br /> Мы делам всё возможное, чтобы уменьшить время
-					ожидания. Срок действия услуги начнется с момента её активации.
-				</p>
-				<p className={st.dedicated__text}>
-					{infoCircle}Цены привязаны и указаны в сумах, корректировка курса выполняется раз в сутки.
-				</p>
-			</Container>
+				<Container>
+					<p className={st.dedicated__text}>
+						{infoCircle}Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до
+						3-х рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического
+						персонала. Среднее время активации оборудования - 24 часа. <br /> Мы делам всё возможное, чтобы
+						уменьшить время ожидания. Срок действия услуги начнется с момента её активации.
+					</p>
+					<p className={st.dedicated__text}>
+						{infoCircle}Цены привязаны и указаны в сумах, корректировка курса выполняется раз в сутки.
+					</p>
+				</Container>
 
-			<Container
-				style={{ background: "url('/hosting/server.jpg') no-repeat" }}
-				title="Что входит в услугу аренды сервера"
-				clNTitle="text-black text-center">
-				<ul className={st.dedicated__plan}>
-					<li>
-						<span>{checkedCircle}</span>Бесплатная настройка и установка сервера
-					</li>
-					<li>
-						<span>{checkedCircle}</span>Все сервера подключаются к порту 1 Gbps., трафик на скорости до 25
-						Mbit/s без ограничений
-					</li>
-					<li>
-						<span>{checkedCircle}</span>
-						На каждый сервер бесплатно выделяется 1 IPv4 адрес., стоимость дополнительного IP - 15 000 сум
-					</li>
-					<li>
-						<span>{checkedCircle}</span>Все серверы поддерживают как 32-х так и 64-х битные системы
-					</li>
-					<li>
-						<span>{checkedCircle}</span>Операционные системы для установки: Linux и Windows Server (доступен
-						не на всех конфигурациях)
-					</li>
-				</ul>
-			</Container>
-			<Partners />
-		</div>
+				<Container
+					style={{ background: "url('/hosting/server.jpg') no-repeat" }}
+					title="Что входит в услугу аренды сервера"
+					clNTitle="text-black text-center">
+					<ul className={st.dedicated__plan}>
+						<li>
+							<span>{checkedCircle}</span>Бесплатная настройка и установка сервера
+						</li>
+						<li>
+							<span>{checkedCircle}</span>Все сервера подключаются к порту 1 Gbps., трафик на скорости до
+							25 Mbit/s без ограничений
+						</li>
+						<li>
+							<span>{checkedCircle}</span>
+							На каждый сервер бесплатно выделяется 1 IPv4 адрес., стоимость дополнительного IP - 15 000
+							сум
+						</li>
+						<li>
+							<span>{checkedCircle}</span>Все серверы поддерживают как 32-х так и 64-х битные системы
+						</li>
+						<li>
+							<span>{checkedCircle}</span>Операционные системы для установки: Linux и Windows Server
+							(доступен не на всех конфигурациях)
+						</li>
+					</ul>
+				</Container>
+				<Partners />
+			</div>
+		</>
 	);
 }

@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'Впервые VPN-приложения стали самыми скачиваемыми в Узбекистане как для iOS, так и для Android',
+	decs: 'Первое место по количеству скачиваний в Google Play занял Secure VPN, а в App Store — VPN Proxy Master.',
 	date: '19 Дек 2018',
 	img: '/blog/phone-vpn.jpg',
 	content: (

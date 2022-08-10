@@ -4,6 +4,7 @@ import st from './faq.module.scss';
 import Link from 'next/link';
 import FAQ from '../../components/faq';
 import Partners from '../../components/partners';
+import SEO from '../../components/seo';
 
 const faq = [
 	{
@@ -113,13 +114,19 @@ const faq = [
 
 export default function FAQPage() {
 	return (
-		<div className={st.faq}>
-			<Container
-				style={{ background: "url('/servers-2.jpg') no-repeat" }}
-				title="Информация"
-				className="my-0"></Container>
-			<FAQ faq={faq} />
-			<Partners />
-		</div>
+		<>
+			<SEO
+				title="Часто задаваемые вопросы | Хостинг TAS-IX в Ташкенте, Узбекистане"
+				desc="Информация и документы AIRNET.uz"
+			/>
+			<div className={st.faq}>
+				<Container
+					style={{ background: "url('/servers-2.jpg') no-repeat" }}
+					title="Информация"
+					className="my-0"></Container>
+				<FAQ faq={faq} />
+				<Partners />
+			</div>
+		</>
 	);
 }

@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'Карты UzCard теперь можно пополнять наличными',
+	decs: 'В компании сообщили, что запустили в банкоматах функцию cash-in. Пока такую функцию поддерживают банкоматы пяти банков.',
 	date: '27 Дек 2018',
 	img: '/blog/uzcard.jpg',
 	content: (

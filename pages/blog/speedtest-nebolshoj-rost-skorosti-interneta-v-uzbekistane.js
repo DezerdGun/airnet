@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'Speedtest небольшой рост скорости интернета в Узбекистане',
+	decs: 'По итогам ноября Узбекистан занял 108 место по скорости мобильного интернета и 111 по скорости проводного.',
 	date: '14 Дек 2018',
 	img: '/blog/speedtest.jpg',
 	content: (

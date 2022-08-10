@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: '«Яндекс.Музыка» и Beeline запустили совместный проект',
+	decs: 'Мобильные операторы все активнее сотрудничают с поставщиками аудиоконтента — ранее похожие проекты запустили Ucell и Zvooq, UMS и Lamuz.',
 	date: '23 Дек 2018',
 	img: '/blog/yandex-musics.jpg',
 	content: (

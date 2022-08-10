@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'Financial Times сообщает, что майнеры закрывают бизнес, так как биткоин стал дешевле стоимости его добычи',
+	decs: 'Летом Узбекистан официально взял курс на развитие майнинга и собирался запустить пилотный проект.',
 	date: '26 Дек 2018',
 	img: '/blog/bitcoin.jpg',
 	content: (

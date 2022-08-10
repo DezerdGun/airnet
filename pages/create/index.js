@@ -2,6 +2,7 @@ import Container from '../../components/container';
 import CustomTable from '../../components/customTable';
 import st from './create.module.scss';
 import ft from '../hosting/hosting.module.scss';
+import SEO from '../../components/seo';
 
 const block = [
 	{
@@ -29,6 +30,10 @@ const block = [
 export default function Create() {
 	return (
 		<>
+			<SEO
+				title="Разработка сайтов | Хостинг TAS-IX в Ташкенте, Узбекистане"
+				desc="Создание сайтов в Ташкенте от AIRNET.uz"
+			/>
 			<Container
 				style={{ background: `url('/servers-4.jpg') no-repeat` }}
 				className="mt-0"

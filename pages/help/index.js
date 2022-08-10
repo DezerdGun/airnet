@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import st from './help.module.scss';
 import HelpItem from '../../components/helpItem';
+import SEO from '../../components/seo';
 
 const data = [
 		{
@@ -302,8 +303,14 @@ const data = [
 
 export default function Help() {
 	return (
-		<div className={st.help}>
-			<HelpItem data={mainData} />
-		</div>
+		<>
+			<SEO
+				title="База знаний | Airnet"
+				desc="Ответы на часто задаваемые вопросы, вы можете найти ответы на интересующие вопросы по хостингу, домену и VDS серверам от AIRNET"
+			/>
+			<div className={st.help}>
+				<HelpItem data={mainData} />
+			</div>
+		</>
 	);
 }

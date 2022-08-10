@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: '«ВКонтакте» завела профиль в Instagram',
+	decs: 'Раньше «ВКонтакте» активно боролась с Instagram — отключала ссылки на сервис и пыталась создать конкурента.',
 	date: '28 Дек 2018',
 	img: '/blog/vk.jpg',
 	content: (

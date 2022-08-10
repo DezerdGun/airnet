@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: '2019 год объявлен Годом активных инвестиций и социального развития',
+	decs: 'Президент подчеркнул, что благоприятная инвестиционная среда приведет к развитию всех сфер.',
 	date: '31 Дек 2018',
 	img: '/blog/president.jpg',
 	content: (

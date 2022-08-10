@@ -3,10 +3,12 @@ import FAQ from '../faq';
 import Partners from '../partners';
 import st from './helpItem.module.scss';
 import Link from 'next/link';
+import SEO from '../seo';
 
 export default function HelpItem({ data }) {
 	return (
 		<>
+			<SEO title={`${data.headTitle} | Airnet`} desc={data.desc} />
 			<Container headTitle={data.headTitle}>
 				<div className={st.helpItem}>
 					<div className={st.helpItem__block}>{data.content}</div>

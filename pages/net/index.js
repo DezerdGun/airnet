@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { LINKS } from '../../components/requirements';
 import Container from '../../components/container';
 import CustomTable from '../../components/customTable';
+import SEO from '../../components/seo';
 
 const block = [
 	{
@@ -189,192 +190,198 @@ const block = [
 
 export default function Net() {
 	return (
-		<div className={st.vds}>
-			<TraficMaket
-				headTitle="AIRNET — Unlim интернет"
-				endText="1 Скорость от оператора до АТС, 2 Скорость от оператора до АТС трафик не тарифицируется, 3 Внутренние ресурсы не тарифицируются и скорость TAS-IX от абонента, 4 Скорость доступа в сеть интернет снижается до указанный в выбранных тарифных планах."
-				bgImg="/servers-3.jpg"
-				table={[
-					<table key="table-1">
-						<tr>
-							<th colSpan={2}>AIRNET «Unlim 1»</th>
-						</tr>
-						<tr>
-							<td>Объем трафика</td>
-							<td>ထ</td>
-						</tr>
-						<tr>
-							<td>
-								Скорость<sup>1</sup>
-							</td>
-							<td>5 Мбит/с</td>
-						</tr>
-						<tr>
-							<td>
-								Требуемая скорость TAS-IX<sup>2</sup>
-							</td>
-							<td>10 Мбит/с</td>
-						</tr>
-						<tr>
-							<td className="bg-green">При превышении порога трафика</td>
-							<td className="bg-green">ထ</td>
-						</tr>
-						<tr>
-							<td colSpan={2}>
-								<CustomTableBottom price="200 000 сум/мес." link="/" text="Заказать трафик" />
-							</td>
-						</tr>
-					</table>,
-					<table key="table-2">
-						<tr>
-							<th colSpan={2}>AIRNET «Unlim 2»</th>
-						</tr>
-						<tr>
-							<td>Объем трафика</td>
-							<td>ထ</td>
-						</tr>
-						<tr>
-							<td>
-								Скорость<sup>1</sup>
-							</td>
-							<td>10 Мбит/с</td>
-						</tr>
-						<tr>
-							<td>
-								Требуемая скорость TAS-IX<sup>2</sup>
-							</td>
-							<td>15 Мбит/с</td>
-						</tr>
-						<tr>
-							<td className="bg-green">
-								При превышении порога трафика<sup>4</sup>
-							</td>
-							<td className="bg-green">ထ</td>
-						</tr>
-						<tr>
-							<td colSpan={2}>
-								<CustomTableBottom price="350 000 сум/мес." link="/" text="Заказать трафик" />
-							</td>
-						</tr>
-					</table>,
-					<table key="table-3">
-						<tr>
-							<th colSpan={2}>AIRNET «Unlim 3»</th>
-						</tr>
-						<tr>
-							<td>Объем трафика</td>
-							<td>ထ</td>
-						</tr>
-						<tr>
-							<td>
-								Скорость<sup>1</sup>
-							</td>
-							<td>15 Мбит/с</td>
-						</tr>
-						<tr>
-							<td>
-								Требуемая скорость TAS-IX<sup>2</sup>
-							</td>
-							<td>20 Мбит/с</td>
-						</tr>
-						<tr>
-							<td className="bg-green">
-								При превышении порога трафика<sup>4</sup>
-							</td>
-							<td className="bg-green">ထ</td>
-						</tr>
-						<tr>
-							<td colSpan={2}>
-								<CustomTableBottom price="500 000 сум/мес." link="/" text="Заказать трафик" />
-							</td>
-						</tr>
-					</table>,
-					<table key="table-4">
-						<tr>
-							<th colSpan={2}>AIRNET «Unlim 4»</th>
-						</tr>
-						<tr>
-							<td>Объем трафика</td>
-							<td>ထ</td>
-						</tr>
-						<tr>
-							<td>
-								Скорость<sup>1</sup>
-							</td>
-							<td>20 Мбит/с</td>
-						</tr>
-						<tr>
-							<td>
-								Требуемая скорость TAS-IX<sup>2</sup>
-							</td>
-							<td>25 Мбит/с</td>
-						</tr>
-						<tr>
-							<td className="bg-green">
-								При превышении порога трафика<sup>4</sup>
-							</td>
-							<td className="bg-green">ထ</td>
-						</tr>
-						<tr>
-							<td colSpan={2}>
-								<CustomTableBottom price="650 000 сум/мес." link="/" text="Заказать трафик" />
-							</td>
-						</tr>
-					</table>,
-					<table key="table-5">
-						<tr>
-							<th colSpan={2}>AIRNET «Unlim 5»</th>
-						</tr>
-						<tr>
-							<td>Объем трафика</td>
-							<td>ထ</td>
-						</tr>
-						<tr>
-							<td>
-								Скорость<sup>1</sup>
-							</td>
-							<td>25 Мбит/с</td>
-						</tr>
-						<tr>
-							<td>
-								Требуемая скорость TAS-IX<sup>2</sup>
-							</td>
-							<td>30 Мбит/с</td>
-						</tr>
-						<tr>
-							<td className="bg-green">
-								При превышении порога трафика<sup>4</sup>
-							</td>
-							<td className="bg-green">ထ</td>
-						</tr>
-						<tr>
-							<td colSpan={2}>
-								<CustomTableBottom price="800 000 сум/мес." link="/" text="Заказать трафик" />
-							</td>
-						</tr>
-					</table>,
-				]}
-				className="mt-0"
+		<>
+			<SEO
+				title="Интернет пакеты | Airnet"
+				desc="Подключение интернет пакетов в сети TAS-IX в Ташкенте по самым низким ценам в Узбекистане"
 			/>
-			<Container>
-				<div className={st.vds__block}>
-					{block.map((item) => (
-						<div key={item.title} className={st.vds__block__item}>
-							<div className={st.vds__block__item__img}>{item.img}</div>
-							<h6>{item.title}</h6>
-							<p>{item.description}</p>
-							{item.link ? (
-								<button>
-									<Link href={item.link}>
-										<a>{item.linkTitle}</a>
-									</Link>
-								</button>
-							) : null}
-						</div>
-					))}
-				</div>
-			</Container>
-			<Partners />
-		</div>
+			<div className={st.vds}>
+				<TraficMaket
+					headTitle="AIRNET — Unlim интернет"
+					endText="1 Скорость от оператора до АТС, 2 Скорость от оператора до АТС трафик не тарифицируется, 3 Внутренние ресурсы не тарифицируются и скорость TAS-IX от абонента, 4 Скорость доступа в сеть интернет снижается до указанный в выбранных тарифных планах."
+					bgImg="/servers-3.jpg"
+					table={[
+						<table key="table-1">
+							<tr>
+								<th colSpan={2}>AIRNET «Unlim 1»</th>
+							</tr>
+							<tr>
+								<td>Объем трафика</td>
+								<td>ထ</td>
+							</tr>
+							<tr>
+								<td>
+									Скорость<sup>1</sup>
+								</td>
+								<td>5 Мбит/с</td>
+							</tr>
+							<tr>
+								<td>
+									Требуемая скорость TAS-IX<sup>2</sup>
+								</td>
+								<td>10 Мбит/с</td>
+							</tr>
+							<tr>
+								<td className="bg-green">При превышении порога трафика</td>
+								<td className="bg-green">ထ</td>
+							</tr>
+							<tr>
+								<td colSpan={2}>
+									<CustomTableBottom price="200 000 сум/мес." link="/" text="Заказать трафик" />
+								</td>
+							</tr>
+						</table>,
+						<table key="table-2">
+							<tr>
+								<th colSpan={2}>AIRNET «Unlim 2»</th>
+							</tr>
+							<tr>
+								<td>Объем трафика</td>
+								<td>ထ</td>
+							</tr>
+							<tr>
+								<td>
+									Скорость<sup>1</sup>
+								</td>
+								<td>10 Мбит/с</td>
+							</tr>
+							<tr>
+								<td>
+									Требуемая скорость TAS-IX<sup>2</sup>
+								</td>
+								<td>15 Мбит/с</td>
+							</tr>
+							<tr>
+								<td className="bg-green">
+									При превышении порога трафика<sup>4</sup>
+								</td>
+								<td className="bg-green">ထ</td>
+							</tr>
+							<tr>
+								<td colSpan={2}>
+									<CustomTableBottom price="350 000 сум/мес." link="/" text="Заказать трафик" />
+								</td>
+							</tr>
+						</table>,
+						<table key="table-3">
+							<tr>
+								<th colSpan={2}>AIRNET «Unlim 3»</th>
+							</tr>
+							<tr>
+								<td>Объем трафика</td>
+								<td>ထ</td>
+							</tr>
+							<tr>
+								<td>
+									Скорость<sup>1</sup>
+								</td>
+								<td>15 Мбит/с</td>
+							</tr>
+							<tr>
+								<td>
+									Требуемая скорость TAS-IX<sup>2</sup>
+								</td>
+								<td>20 Мбит/с</td>
+							</tr>
+							<tr>
+								<td className="bg-green">
+									При превышении порога трафика<sup>4</sup>
+								</td>
+								<td className="bg-green">ထ</td>
+							</tr>
+							<tr>
+								<td colSpan={2}>
+									<CustomTableBottom price="500 000 сум/мес." link="/" text="Заказать трафик" />
+								</td>
+							</tr>
+						</table>,
+						<table key="table-4">
+							<tr>
+								<th colSpan={2}>AIRNET «Unlim 4»</th>
+							</tr>
+							<tr>
+								<td>Объем трафика</td>
+								<td>ထ</td>
+							</tr>
+							<tr>
+								<td>
+									Скорость<sup>1</sup>
+								</td>
+								<td>20 Мбит/с</td>
+							</tr>
+							<tr>
+								<td>
+									Требуемая скорость TAS-IX<sup>2</sup>
+								</td>
+								<td>25 Мбит/с</td>
+							</tr>
+							<tr>
+								<td className="bg-green">
+									При превышении порога трафика<sup>4</sup>
+								</td>
+								<td className="bg-green">ထ</td>
+							</tr>
+							<tr>
+								<td colSpan={2}>
+									<CustomTableBottom price="650 000 сум/мес." link="/" text="Заказать трафик" />
+								</td>
+							</tr>
+						</table>,
+						<table key="table-5">
+							<tr>
+								<th colSpan={2}>AIRNET «Unlim 5»</th>
+							</tr>
+							<tr>
+								<td>Объем трафика</td>
+								<td>ထ</td>
+							</tr>
+							<tr>
+								<td>
+									Скорость<sup>1</sup>
+								</td>
+								<td>25 Мбит/с</td>
+							</tr>
+							<tr>
+								<td>
+									Требуемая скорость TAS-IX<sup>2</sup>
+								</td>
+								<td>30 Мбит/с</td>
+							</tr>
+							<tr>
+								<td className="bg-green">
+									При превышении порога трафика<sup>4</sup>
+								</td>
+								<td className="bg-green">ထ</td>
+							</tr>
+							<tr>
+								<td colSpan={2}>
+									<CustomTableBottom price="800 000 сум/мес." link="/" text="Заказать трафик" />
+								</td>
+							</tr>
+						</table>,
+					]}
+					className="mt-0"
+				/>
+				<Container>
+					<div className={st.vds__block}>
+						{block.map((item) => (
+							<div key={item.title} className={st.vds__block__item}>
+								<div className={st.vds__block__item__img}>{item.img}</div>
+								<h6>{item.title}</h6>
+								<p>{item.description}</p>
+								{item.link ? (
+									<button>
+										<Link href={item.link}>
+											<a>{item.linkTitle}</a>
+										</Link>
+									</button>
+								) : null}
+							</div>
+						))}
+					</div>
+				</Container>
+				<Partners />
+			</div>
+		</>
 	);
 }

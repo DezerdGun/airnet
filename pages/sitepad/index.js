@@ -1,10 +1,15 @@
 import Container from '../../components/container';
 import Image from 'next/image';
 import Partners from '../../components/partners';
+import SEO from '../../components/seo';
 
 export default function SitePad() {
 	return (
 		<>
+			<SEO
+				title="Бесплатный Конструктор сайтов SitePad | Хостинг TAS-IX в Ташкенте, Узбекистане"
+				desc="Простой и быстрый бесплатный конструктор сайтов в Ташкенте SitePad, создайте профессиональный сайт без навыком программированя в зоне TAS-IX"
+			/>
 			<Container
 				style={{ background: "url('/servers-2.jpg') no-repeat" }}
 				title="Конструктор сайтов SitePad"

@@ -4,6 +4,7 @@ import ft from '../vds/vds.module.scss';
 import TraficMaket from '../../components/traficMaket';
 import CustomTableBottom from '../../components/customTableBottom';
 import Partners from '../../components/partners';
+import SEO from '../../components/seo';
 
 const block = [
 	{
@@ -37,181 +38,187 @@ const block = [
 
 export default function CheapVds() {
 	return (
-		<div className={st.cheapVds}>
-			<Container style={{ background: `url('/servers-5.jpg') no-repeat` }} className="mt-0 py-0">
-				<div className={st.cheapVds__header}>
-					<div className={st.cheapVds__header__left}>
-						<h1>БЮДЖЕТНЫЕ VDS/VPS</h1>
-						<h2>САМЫЕ ДЕШЕВЫЕ VDS/VPS-СЕРВЕРА В ТАШКЕНТЕ</h2>
-						<p>
-							Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости 1
-							Gbps
-						</p>
-					</div>
-					<div className={st.cheapVds__header__right}>
-						<h3>
-							ВСЕГО 100 000 СУМ <br /> <span>в месяц!</span>
-						</h3>
-						<a
-							href="https://billing.airnet.uz/billing.php?do=order&amp;vid=vds&amp;tarif=17"
-							target="_blank"
-							rel="noopener noreferrer">
-							Заказать сервер
-						</a>
-					</div>
-				</div>
-			</Container>
-			<Container>
-				<div className={ft.vds__block}>
-					{block.map((item) => (
-						<div key={item.title} className={ft.vds__block__item}>
-							<div className={ft.vds__block__item__img}>{item.img}</div>
-							<h6>{item.title}</h6>
-							<p>{item.description}</p>
-						</div>
-					))}
-				</div>
-			</Container>
-			<TraficMaket
-				bgImg="/servers-2.jpg"
-				endText={
-					<ul className="list text-white mb-0">
-						<li>Владелец самостоятельно управляет сервером.</li>
-						<li>На тариф не распространяются никакие скидки или специальные цены.</li>
-						<li>Услуга администрирования не оказывается.</li>
-					</ul>
-				}
-				table={[
-					<table key="table-1">
-						<tr>
-							<th colSpan={2}>VDS/VPS «Micro»</th>
-						</tr>
-						<tr>
-							<td>Процессор</td>
-							<td>1 ядро - 2.6 GHz</td>
-						</tr>
-						<tr>
-							<td>ОЗУ</td>
-							<td>1 Gb</td>
-						</tr>
-						<tr>
-							<td>SSD-диск</td>
-							<td>25 Gb</td>
-						</tr>
-						<tr>
-							<td>Интернет</td>
-							<td>10 Mbps</td>
-						</tr>
-						<tr>
-							<td>Канал TAS-IX</td>
-							<td>1 Gbps</td>
-						</tr>
-						<tr>
-							<td>Статичный ip</td>
-							<td>Бесплатно</td>
-						</tr>
-						<tr>
-							<td className="bg-green">ОС</td>
-							<td className="bg-green">Linux</td>
-						</tr>
-						<tr>
-							<td colSpan={2}>
-								<CustomTableBottom
-									price="100 000 сум/мес."
-									link="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
-									text="Заказать сервер"
-								/>
-							</td>
-						</tr>
-					</table>,
-					<table key="table-2">
-						<tr>
-							<th colSpan={2}>VDS/VPS «Platinum»</th>
-						</tr>
-						<tr>
-							<td>Процессор</td>
-							<td>2 ядра - 2.6 GHz</td>
-						</tr>
-						<tr>
-							<td>ОЗУ</td>
-							<td>2 Gb</td>
-						</tr>
-						<tr>
-							<td>SSD-диск</td>
-							<td>40 Gb</td>
-						</tr>
-						<tr>
-							<td>Интернет</td>
-							<td>10 Mbps</td>
-						</tr>
-						<tr>
-							<td>Канал TAS-IX</td>
-							<td>1 Gbps</td>
-						</tr>
-						<tr>
-							<td>Статичный ip</td>
-							<td>Бесплатно</td>
-						</tr>
-						<tr>
-							<td className="bg-green">ОС</td>
-							<td className="bg-green">Linux</td>
-						</tr>
-						<tr>
-							<td colSpan={2}>
-								<CustomTableBottom
-									price="150 000 сум/мес."
-									link="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=13"
-									text="Заказать сервер"
-								/>
-							</td>
-						</tr>
-					</table>,
-					<table key="table-3">
-						<tr>
-							<th colSpan={2}>VDS/VPS «Strong»</th>
-						</tr>
-						<tr>
-							<td>Процессор</td>
-							<td>2 ядра - 2.6 GHz</td>
-						</tr>
-						<tr>
-							<td>ОЗУ</td>
-							<td>4 Gb</td>
-						</tr>
-						<tr>
-							<td>SSD-диск</td>
-							<td>50 Gb</td>
-						</tr>
-						<tr>
-							<td>Интернет</td>
-							<td>15 Mbps</td>
-						</tr>
-						<tr>
-							<td>Канал TAS-IX</td>
-							<td>1 Gbps</td>
-						</tr>
-						<tr>
-							<td>Статичный ip</td>
-							<td>Бесплатно</td>
-						</tr>
-						<tr>
-							<td className="bg-green">ОС</td>
-							<td className="bg-green">Windows или Linux</td>
-						</tr>
-						<tr>
-							<td colSpan={2}>
-								<CustomTableBottom
-									price="200 000 сум/мес."
-									link="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14"
-									text="Заказать сервер"
-								/>
-							</td>
-						</tr>
-					</table>,
-				]}
-				className="mt-0"
+		<>
+			<SEO
+				title="Бюджетные VDS/VPS | Хостинг TAS-IX в Ташкенте, Узбекистане"
+				desc="Дешевые и бесплатные VDS/VPS на быстрых SSD-дисках в сети TAS-IX в Ташкенте"
 			/>
-			<Partners />
-		</div>
+			<div className={st.cheapVds}>
+				<Container style={{ background: `url('/servers-5.jpg') no-repeat` }} className="mt-0 py-0">
+					<div className={st.cheapVds__header}>
+						<div className={st.cheapVds__header__left}>
+							<h1>БЮДЖЕТНЫЕ VDS/VPS</h1>
+							<h2>САМЫЕ ДЕШЕВЫЕ VDS/VPS-СЕРВЕРА В ТАШКЕНТЕ</h2>
+							<p>
+								Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости
+								1 Gbps
+							</p>
+						</div>
+						<div className={st.cheapVds__header__right}>
+							<h3>
+								ВСЕГО 100 000 СУМ <br /> <span>в месяц!</span>
+							</h3>
+							<a
+								href="https://billing.airnet.uz/billing.php?do=order&amp;vid=vds&amp;tarif=17"
+								target="_blank"
+								rel="noopener noreferrer">
+								Заказать сервер
+							</a>
+						</div>
+					</div>
+				</Container>
+				<Container>
+					<div className={ft.vds__block}>
+						{block.map((item) => (
+							<div key={item.title} className={ft.vds__block__item}>
+								<div className={ft.vds__block__item__img}>{item.img}</div>
+								<h6>{item.title}</h6>
+								<p>{item.description}</p>
+							</div>
+						))}
+					</div>
+				</Container>
+				<TraficMaket
+					bgImg="/servers-2.jpg"
+					endText={
+						<ul className="list text-white mb-0">
+							<li>Владелец самостоятельно управляет сервером.</li>
+							<li>На тариф не распространяются никакие скидки или специальные цены.</li>
+							<li>Услуга администрирования не оказывается.</li>
+						</ul>
+					}
+					table={[
+						<table key="table-1">
+							<tr>
+								<th colSpan={2}>VDS/VPS «Micro»</th>
+							</tr>
+							<tr>
+								<td>Процессор</td>
+								<td>1 ядро - 2.6 GHz</td>
+							</tr>
+							<tr>
+								<td>ОЗУ</td>
+								<td>1 Gb</td>
+							</tr>
+							<tr>
+								<td>SSD-диск</td>
+								<td>25 Gb</td>
+							</tr>
+							<tr>
+								<td>Интернет</td>
+								<td>10 Mbps</td>
+							</tr>
+							<tr>
+								<td>Канал TAS-IX</td>
+								<td>1 Gbps</td>
+							</tr>
+							<tr>
+								<td>Статичный ip</td>
+								<td>Бесплатно</td>
+							</tr>
+							<tr>
+								<td className="bg-green">ОС</td>
+								<td className="bg-green">Linux</td>
+							</tr>
+							<tr>
+								<td colSpan={2}>
+									<CustomTableBottom
+										price="100 000 сум/мес."
+										link="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+										text="Заказать сервер"
+									/>
+								</td>
+							</tr>
+						</table>,
+						<table key="table-2">
+							<tr>
+								<th colSpan={2}>VDS/VPS «Platinum»</th>
+							</tr>
+							<tr>
+								<td>Процессор</td>
+								<td>2 ядра - 2.6 GHz</td>
+							</tr>
+							<tr>
+								<td>ОЗУ</td>
+								<td>2 Gb</td>
+							</tr>
+							<tr>
+								<td>SSD-диск</td>
+								<td>40 Gb</td>
+							</tr>
+							<tr>
+								<td>Интернет</td>
+								<td>10 Mbps</td>
+							</tr>
+							<tr>
+								<td>Канал TAS-IX</td>
+								<td>1 Gbps</td>
+							</tr>
+							<tr>
+								<td>Статичный ip</td>
+								<td>Бесплатно</td>
+							</tr>
+							<tr>
+								<td className="bg-green">ОС</td>
+								<td className="bg-green">Linux</td>
+							</tr>
+							<tr>
+								<td colSpan={2}>
+									<CustomTableBottom
+										price="150 000 сум/мес."
+										link="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=13"
+										text="Заказать сервер"
+									/>
+								</td>
+							</tr>
+						</table>,
+						<table key="table-3">
+							<tr>
+								<th colSpan={2}>VDS/VPS «Strong»</th>
+							</tr>
+							<tr>
+								<td>Процессор</td>
+								<td>2 ядра - 2.6 GHz</td>
+							</tr>
+							<tr>
+								<td>ОЗУ</td>
+								<td>4 Gb</td>
+							</tr>
+							<tr>
+								<td>SSD-диск</td>
+								<td>50 Gb</td>
+							</tr>
+							<tr>
+								<td>Интернет</td>
+								<td>15 Mbps</td>
+							</tr>
+							<tr>
+								<td>Канал TAS-IX</td>
+								<td>1 Gbps</td>
+							</tr>
+							<tr>
+								<td>Статичный ip</td>
+								<td>Бесплатно</td>
+							</tr>
+							<tr>
+								<td className="bg-green">ОС</td>
+								<td className="bg-green">Windows или Linux</td>
+							</tr>
+							<tr>
+								<td colSpan={2}>
+									<CustomTableBottom
+										price="200 000 сум/мес."
+										link="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14"
+										text="Заказать сервер"
+									/>
+								</td>
+							</tr>
+						</table>,
+					]}
+					className="mt-0"
+				/>
+				<Partners />
+			</div>
+		</>
 	);
 }

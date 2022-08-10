@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'Facebook сообщил об ошибке',
+	decs: 'Из-за ошибки в API сторонние приложения могли получить доступ к закрытым и даже неопубликованным фотографиям.',
 	date: '16 Дек 2018',
 	img: '/blog/facebook.jpg',
 	content: (

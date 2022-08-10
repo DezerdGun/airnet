@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'В Telegram появились встроенные опросы',
+	decs: 'В новом обновлении мессенджера для создания опроса теперь не надо пользоваться сторонними решениями.',
 	date: '20 Дек 2018',
 	img: '/blog/santa.jpg',
 	content: (

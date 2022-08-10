@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'Google подвел итоги 2018 года',
+	decs: 'Google подвел итоги года, проанализировав поисковые запросы пользователей со всего мира.',
 	date: '13 Дек 2018',
 	img: '/blog/google-5g.jpg',
 	content: (

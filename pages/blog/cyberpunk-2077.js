@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'Акции разработчика игры Cyberpunk 2077 рухнули на 20%',
+	decs: 'Котировки польской студии CD Projekt Red резко подешевели на фоне удаления игры Cyberpunk 2077 из магазина Sony.',
 	date: '24 Дек 2020',
 	img: '/blog/cyberpunk.jpg',
 	content: (

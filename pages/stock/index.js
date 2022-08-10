@@ -1,6 +1,7 @@
 import Container from '../../components/container';
 import st from './stock.module.scss';
 import Image from 'next/image';
+import SEO from '../../components/seo';
 
 const data = [
 	{
@@ -140,27 +141,33 @@ const data = [
 
 export default function Stock() {
 	return (
-		<Container headTitle="Действующие акции">
-			<hr />
-			<div className={st.stock}>
-				{data.map((item) => (
-					<div key={item.title} className={st.stock__item}>
-						<div className={st.stock__item__img}>
-							<Image src={item.img} width={170} height={170} blurDataURL placeholder="blur" />
-						</div>
-						<div className={st.stock__item__content}>
-							<div className={st.stock__item__content__header}>
-								<h3>{item.title}</h3>
-								<div>
-									<span>{item.isStock ? 'Акция действует:' : 'Розыгрыш действует:'}</span>
-									<span>{item.date}</span>
-								</div>
+		<>
+			<SEO
+				title="Акции и скидки | Хостинг TAS-IX в Ташкенте, Узбекистане"
+				desc="Выгодные акции от компании Airnet"
+			/>
+			<Container headTitle="Действующие акции">
+				<hr />
+				<div className={st.stock}>
+					{data.map((item) => (
+						<div key={item.title} className={st.stock__item}>
+							<div className={st.stock__item__img}>
+								<Image src={item.img} width={170} height={170} blurDataURL placeholder="blur" />
 							</div>
-							{item.description}
+							<div className={st.stock__item__content}>
+								<div className={st.stock__item__content__header}>
+									<h3>{item.title}</h3>
+									<div>
+										<span>{item.isStock ? 'Акция действует:' : 'Розыгрыш действует:'}</span>
+										<span>{item.date}</span>
+									</div>
+								</div>
+								{item.description}
+							</div>
 						</div>
-					</div>
-				))}
-			</div>
-		</Container>
+					))}
+				</div>
+			</Container>
+		</>
 	);
 }

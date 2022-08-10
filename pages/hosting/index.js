@@ -8,6 +8,7 @@ import Container from '../../components/container';
 import CustomTable from '../../components/customTable';
 import FAQ from '../../components/faq';
 import CustomTableHosting from '../../components/customTableHosting';
+import SEO from '../../components/seo';
 
 const block = [
 		{
@@ -174,99 +175,105 @@ const block = [
 
 export default function Hosting() {
 	return (
-		<div className={st.hosting}>
-			<Container
-				className="mt-0"
-				headTitle="Быстрый и надежный виртуальный хостинг Cpanel в Ташкенте"
-				description={
-					<>
-						<p>
-							Ежедневно, клиентами AirNet становятся десятки компаний и частных веб-мастеров. Многие уже
-							оценили преимущества современных технологий, стабильность, скорость и безопасность нашего
-							хостинга. Оборудование мы размещаем в высокотехнологичном, современном, надёжном
-							Дата-Центре. Не теряйте время, оцените наш хостинг и профессиональную поддержку прямо
-							сейчас.
-						</p>
-						<p className={st.hosting__traficMaket__speed}>
-							Наши сервера расположены на территории Узбекистана, в сети TAS-IX и доступны на скорости -{' '}
-							<span>1 Gbps</span>
-						</p>
-					</>
-				}
-				style={{ background: "url('/servers-2.jpg') no-repeat" }}>
-				<div className={st.hosting__traficMaket}>
-					<CustomTableHosting table={table1} />
-					<CustomTableHosting table={table2} />
-				</div>
-			</Container>
+		<>
+			<SEO
+				title="Cpanel хостинг | Хостинг TAS-IX в Ташкенте, Узбекистане"
+				desc="Виртуальный хостинг Cpanel в сети TAS-IX с круглосуточной поддержкой, хостинг в Ташкенте, недорогой хостинг, хостинг в Узбекистане"
+			/>
+			<div className={st.hosting}>
+				<Container
+					className="mt-0"
+					headTitle="Быстрый и надежный виртуальный хостинг Cpanel в Ташкенте"
+					description={
+						<>
+							<p>
+								Ежедневно, клиентами AirNet становятся десятки компаний и частных веб-мастеров. Многие
+								уже оценили преимущества современных технологий, стабильность, скорость и безопасность
+								нашего хостинга. Оборудование мы размещаем в высокотехнологичном, современном, надёжном
+								Дата-Центре. Не теряйте время, оцените наш хостинг и профессиональную поддержку прямо
+								сейчас.
+							</p>
+							<p className={st.hosting__traficMaket__speed}>
+								Наши сервера расположены на территории Узбекистана, в сети TAS-IX и доступны на скорости
+								- <span>1 Gbps</span>
+							</p>
+						</>
+					}
+					style={{ background: "url('/servers-2.jpg') no-repeat" }}>
+					<div className={st.hosting__traficMaket}>
+						<CustomTableHosting table={table1} />
+						<CustomTableHosting table={table2} />
+					</div>
+				</Container>
 
-			<Container title="Ваш хостинг будет размещен на сервере с конфигурацией:" clNTitle="text-center">
-				<div className={st.hosting__block}>
-					{block.map((item) => (
-						<div key={item.title} className={st.hosting__block__item}>
-							<div className={st.hosting__block__item__img}>
-								<img src={item.img} />
+				<Container title="Ваш хостинг будет размещен на сервере с конфигурацией:" clNTitle="text-center">
+					<div className={st.hosting__block}>
+						{block.map((item) => (
+							<div key={item.title} className={st.hosting__block__item}>
+								<div className={st.hosting__block__item__img}>
+									<img src={item.img} />
+								</div>
+								<div className={st.hosting__block__item__content}>
+									<h6>{item.title}</h6>
+									<p>{item.description}</p>
+								</div>
 							</div>
-							<div className={st.hosting__block__item__content}>
-								<h6>{item.title}</h6>
-								<p>{item.description}</p>
+						))}
+					</div>
+				</Container>
+				<Container
+					title="На всех тарифных планах"
+					clNTitle="text-black text-center"
+					style={{ background: "url('/hosting/server.jpg') no-repeat" }}>
+					<div className={st.hosting__plan}>
+						<div className={st.hosting__plan__content}>
+							<p>
+								<strong>Безлимитный трафик</strong> — никаких ограничений на соотношение входящего /
+								исходящего трафика.
+							</p>
+							<p>
+								<strong>Скорость в TAS-IX</strong> — 1 Gbps
+							</p>
+							<p>
+								<strong>Скорость в Интернет</strong> — 100 Mbps
+							</p>
+							<p>
+								<strong>Безлимитные FTP-аккаунты</strong> — для своего удобства работы с файлами, Вы
+								можете создавать неограниченное количество FTP-аккаунтов, например, для каждого проекта
+								- отдельный доступ.
+							</p>
+							<p>
+								<strong>Без жестких ограничений ресурсов</strong> — у нас нет жестких лимитов аппаратных
+								ресурсов. Если вдруг на Ваш сайт придет большое количество человек, то все они увидят
+								Ваш сайт. Гарантировано посещение - 2500 человек в сутки.
+							</p>
+						</div>
+						<div className={st.hosting__plan__img}>
+							<img src="/hosting/unlim.png" />
+						</div>
+					</div>
+				</Container>
+				<Container
+					title="Быстрая установка Wordpress и популярных CMS в 1 клик!"
+					description={
+						<p>
+							Установка CMS-установщика в 1 клик — Вашему вниманию предлагаются более 100 БЕСПЛАТНЫХ
+							CMS-установщиков различных категорий от Softaculous:
+						</p>
+					}
+					className="text-center">
+					<div className={st.hosting__cms}>
+						{cms.map((item) => (
+							<div key={item} className={st.hosting__cms__item}>
+								{checkedCircle}
+								<p>{item}</p>
 							</div>
-						</div>
-					))}
-				</div>
-			</Container>
-			<Container
-				title="На всех тарифных планах"
-				clNTitle="text-black text-center"
-				style={{ background: "url('/hosting/server.jpg') no-repeat" }}>
-				<div className={st.hosting__plan}>
-					<div className={st.hosting__plan__content}>
-						<p>
-							<strong>Безлимитный трафик</strong> — никаких ограничений на соотношение входящего /
-							исходящего трафика.
-						</p>
-						<p>
-							<strong>Скорость в TAS-IX</strong> — 1 Gbps
-						</p>
-						<p>
-							<strong>Скорость в Интернет</strong> — 100 Mbps
-						</p>
-						<p>
-							<strong>Безлимитные FTP-аккаунты</strong> — для своего удобства работы с файлами, Вы можете
-							создавать неограниченное количество FTP-аккаунтов, например, для каждого проекта - отдельный
-							доступ.
-						</p>
-						<p>
-							<strong>Без жестких ограничений ресурсов</strong> — у нас нет жестких лимитов аппаратных
-							ресурсов. Если вдруг на Ваш сайт придет большое количество человек, то все они увидят Ваш
-							сайт. Гарантировано посещение - 2500 человек в сутки.
-						</p>
+						))}
 					</div>
-					<div className={st.hosting__plan__img}>
-						<img src="/hosting/unlim.png" />
-					</div>
-				</div>
-			</Container>
-			<Container
-				title="Быстрая установка Wordpress и популярных CMS в 1 клик!"
-				description={
-					<p>
-						Установка CMS-установщика в 1 клик — Вашему вниманию предлагаются более 100 БЕСПЛАТНЫХ
-						CMS-установщиков различных категорий от Softaculous:
-					</p>
-				}
-				className="text-center">
-				<div className={st.hosting__cms}>
-					{cms.map((item) => (
-						<div key={item} className={st.hosting__cms__item}>
-							{checkedCircle}
-							<p>{item}</p>
-						</div>
-					))}
-				</div>
-			</Container>
-			<FAQ faq={faq} title="НАС ЧАСТО СПРАШИВАЮТ" />
-			<Partners />
-		</div>
+				</Container>
+				<FAQ faq={faq} title="НАС ЧАСТО СПРАШИВАЮТ" />
+				<Partners />
+			</div>
+		</>
 	);
 }

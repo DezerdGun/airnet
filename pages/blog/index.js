@@ -2,6 +2,7 @@ import st from './blog.module.scss';
 import Container from '../../components/container';
 import Image from 'next/image';
 import Link from 'next/link';
+import SEO from '../../components/seo';
 
 export const blog = [
 	{
@@ -141,44 +142,53 @@ export const blog = [
 
 export default function Blog() {
 	return (
-		<Container headTitle="Новости" clNTitle="text-center">
-			<div className={st.blog}>
-				<div className={st.blog__block}>
-					{blog.map((item) => (
-						<div key={item.title} className={st.blog__block__item}>
-							<Link href={item.link}>
-								<a>
-									<div className={st.blog__block__item__img}>
-										<Image src={item.img} width={560} height={300} blurDataURL placeholder="blur" />
-									</div>
-									<div className={st.blog__block__item__content}>
-										<div className={st.blog__block__item__content__header}>
-											<h2>{item.title}</h2>
-											<span>{item.date}</span>
+		<>
+			<SEO title="Новости | Airnet" desc="Новости компании Airnet" />
+			<Container headTitle="Новости" clNTitle="text-center">
+				<div className={st.blog}>
+					<div className={st.blog__block}>
+						{blog.map((item) => (
+							<div key={item.title} className={st.blog__block__item}>
+								<Link href={item.link}>
+									<a>
+										<div className={st.blog__block__item__img}>
+											<Image
+												src={item.img}
+												width={560}
+												height={300}
+												blurDataURL
+												placeholder="blur"
+											/>
 										</div>
-										{item.description}
-									</div>
-								</a>
-							</Link>
-						</div>
-					))}
+										<div className={st.blog__block__item__content}>
+											<div className={st.blog__block__item__content__header}>
+												<h2>{item.title}</h2>
+												<span>{item.date}</span>
+											</div>
+											{item.description}
+										</div>
+									</a>
+								</Link>
+							</div>
+						))}
+					</div>
+					<div className={st.blog__links}>
+						<a className={st.blog__links__active} disabled>
+							&laquo; Предыдущий пост
+						</a>
+						<a className={st.blog__links__active}>1</a>
+						<Link href="/blog/page/2">
+							<a>2</a>
+						</Link>
+						<Link href="/blog/page/3">
+							<a>3</a>
+						</Link>
+						<Link href="/blog/page/2">
+							<a>Следующий пост &raquo;</a>
+						</Link>
+					</div>
 				</div>
-				<div className={st.blog__links}>
-					<a className={st.blog__links__active} disabled>
-						&laquo; Предыдущий пост
-					</a>
-					<a className={st.blog__links__active}>1</a>
-					<Link href="/blog/page/2">
-						<a>2</a>
-					</Link>
-					<Link href="/blog/page/3">
-						<a>3</a>
-					</Link>
-					<Link href="/blog/page/2">
-						<a>Следующий пост &raquo;</a>
-					</Link>
-				</div>
-			</div>
-		</Container>
+			</Container>
+		</>
 	);
 }

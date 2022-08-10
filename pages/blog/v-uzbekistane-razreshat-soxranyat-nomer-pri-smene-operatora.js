@@ -2,6 +2,7 @@ import BlogItem from '../../components/blogItem';
 
 const data = {
 	title: 'В Узбекистане разрешат сохранять номер при смене оператора',
+	decs: 'Услуга будет платной, а переносить номер можно будет не чаще одного раза в 180 дней.',
 	date: '22 Дек 2018',
 	img: '/blog/sim-card.jpg',
 	content: (
