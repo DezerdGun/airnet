@@ -240,6 +240,7 @@ const block = [
 			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50',
 		},
 	];
+
 export default function VDS() {
 	return (
 		<>
@@ -293,8 +294,8 @@ export default function VDS() {
 						}}
 						className="tarifSwiper">
 						{tarif.map((item) => (
-							<SwiperSlide>
-								<div key={item.title} className="w-95">
+							<SwiperSlide key={item.title}>
+								<div className="w-95">
 									<TarifCard tarif={item} />
 								</div>
 							</SwiperSlide>

@@ -141,8 +141,8 @@ export default function CheapVds() {
 						}}
 						className="tarifSwiper">
 						{tarif.map((item) => (
-							<SwiperSlide>
-								<div key={item.title} className="w-95">
+							<SwiperSlide key={item.title}>
+								<div className="w-95">
 									<TarifCard tarif={item} />
 								</div>
 							</SwiperSlide>

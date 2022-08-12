@@ -213,8 +213,8 @@ export default function Home() {
 					}}
 					className="tarifSwiper">
 					{tarif.map((item) => (
-						<SwiperSlide>
-							<div key={item.title} className="w-95">
+						<SwiperSlide key={item.title}>
+							<div className="w-95">
 								<TarifCard tarif={item} />
 							</div>
 						</SwiperSlide>
@@ -253,8 +253,8 @@ export default function Home() {
 					}}
 					className="tarifSwiper">
 					{tarif2.map((item) => (
-						<SwiperSlide>
-							<div key={item.title} className="w-95">
+						<SwiperSlide key={item.title}>
+							<div className="w-95">
 								<TarifCard2 tarif={item} />
 							</div>
 						</SwiperSlide>
