@@ -51,6 +51,21 @@ $red: #f00;
 		}
 	}
 
+	&__scroll {
+		overflow-x: scroll;
+
+		&::-webkit-scrollbar {
+			height: 8px;
+			background-color: $dark_green;
+			border-radius: 10px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: $gray;
+			border-radius: 10px;
+		}
+	}
+
 	&__table {
 		box-shadow: 0 0 10px $gray;
 

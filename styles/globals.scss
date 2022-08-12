@@ -128,7 +128,10 @@ h6 {
 .whyBlock-swiper,
 .partners-swiper,
 .trust-swiper,
-.notifications-swiper {
+.notifications-swiper,
+.tarifSwiper {
+	// padding: 0 40px;
+
 	.swiper-button-prev:after,
 	.swiper-button-next:after {
 		color: $green;
@@ -144,7 +147,8 @@ h6 {
 	}
 }
 
-.stock-swiper {
+.stock-swiper,
+.tarifSwiper {
 	.swiper-pagination {
 		text-align: right;
 		left: unset !important;
@@ -158,6 +162,23 @@ h6 {
 		&-active {
 			background-color: $white;
 		}
+	}
+}
+
+.tarifSwiper {
+	padding: 0 20px !important;
+
+	.swiper-button-prev:after,
+	.swiper-button-next:after {
+		color: $white;
+	}
+
+	.swiper-button-prev {
+		left: -5px;
+	}
+
+	.swiper-button-next {
+		right: -5px;
 	}
 }
 
@@ -196,6 +217,11 @@ h6 {
 	}
 }
 
+.w-95 {
+	width: 95%;
+	margin: 0 auto;
+}
+
 @media (max-width: 1170px) {
 	.whyBlock-swiper,
 	.partners-swiper,
@@ -219,7 +245,8 @@ h6 {
 	.whyBlock-swiper,
 	.partners-swiper,
 	.trust-swiper,
-	.notifications-swiper {
+	.notifications-swiper,
+	.tarifSwiper {
 		.swiper-button-prev:after,
 		.swiper-button-next:after {
 			font-size: 25px;
@@ -261,7 +288,8 @@ h6 {
 	.whyBlock-swiper,
 	.partners-swiper,
 	.trust-swiper,
-	.notifications-swiper {
+	.notifications-swiper,
+	.tarifSwiper {
 		.swiper-button-prev:after,
 		.swiper-button-next:after {
 			font-size: 20px;
