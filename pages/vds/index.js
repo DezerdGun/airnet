@@ -274,7 +274,7 @@ export default function VDS() {
 						cssMode={true}
 						modules={[Autoplay, Navigation]}
 						spaceBetween={0}
-						slidesPerView={2}
+						slidesPerView={1}
 						navigation
 						loop={true}
 						autoplay={{
@@ -290,6 +290,9 @@ export default function VDS() {
 							},
 							770: {
 								slidesPerView: 3,
+							},
+							500: {
+								slidesPerView: 2,
 							},
 						}}
 						className="tarifSwiper">

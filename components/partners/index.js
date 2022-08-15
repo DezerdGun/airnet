@@ -9,13 +9,13 @@ import Link from 'next/link';
 export default function Partners() {
 	const content = [
 		'/partners/bitrix.svg',
-		'/partners/cloudlinux.webp',
-		'/partners/comodo.webp',
+		'/partners/cloudlinux.png',
+		'/partners/comodo.png',
 		'/partners/cPanel.png',
 		'/partners/google.png',
 		'/partners/plesk.svg',
-		'/partners/rapidssl.webp',
-		'/partners/ripe.webp',
+		'/partners/rapidssl.png',
+		'/partners/ripe.png',
 		'/partners/yandex.svg',
 	];
 

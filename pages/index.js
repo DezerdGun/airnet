@@ -196,7 +196,7 @@ export default function Home() {
 					cssMode={true}
 					modules={[Autoplay, Navigation]}
 					spaceBetween={0}
-					slidesPerView={2}
+					slidesPerView={1}
 					navigation
 					loop={true}
 					autoplay={{
@@ -209,6 +209,9 @@ export default function Home() {
 						},
 						770: {
 							slidesPerView: 3,
+						},
+						500: {
+							slidesPerView: 2,
 						},
 					}}
 					className="tarifSwiper">
@@ -236,7 +239,7 @@ export default function Home() {
 					cssMode={true}
 					modules={[Autoplay, Navigation]}
 					spaceBetween={0}
-					slidesPerView={2}
+					slidesPerView={1}
 					navigation
 					loop={true}
 					autoplay={{
@@ -250,6 +253,9 @@ export default function Home() {
 						770: {
 							slidesPerView: 3,
 						},
+						500: {
+							slidesPerView: 2,
+						},
 					}}
 					className="tarifSwiper">
 					{tarif2.map((item) => (
@@ -261,7 +267,6 @@ export default function Home() {
 					))}
 				</Swiper>
 			</TarifMaket>
-
 			<RegDomain />
 			<Sitepad />
 			<Stock />

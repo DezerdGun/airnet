@@ -7,7 +7,8 @@ import 'swiper/css/navigation';
 
 const content = [
 	{
-		title: 'УВАЖАЕМЫЕ АБОНЕНТЫ!',
+		title: 'AIRNET',
+		date: '10.02.2022',
 		decsription: (
 			<>
 				<p>
@@ -19,7 +20,8 @@ const content = [
 		),
 	},
 	{
-		title: 'УВАЖАЕМЫЕ АБОНЕНТЫ!',
+		title: 'AIRNET',
+		date: '8.02.2022',
 		decsription: (
 			<>
 				<p>
@@ -31,7 +33,8 @@ const content = [
 		),
 	},
 	{
-		title: 'УВАЖАЕМЫЕ АБОНЕНТЫ!',
+		title: 'AIRNET',
+		date: '5.01.2022',
 		decsription: (
 			<>
 				<p>
@@ -50,7 +53,7 @@ const content = [
 export default function Notifications() {
 	return (
 		<div className={`${st.notifications} notifications-swiper`}>
-			<Container title="ОПОВЕЩЕНИЯ" clNTitle="text-center text-uppercase">
+			<Container title="ОПОВЕЩЕНИЯ" clNTitle="text-center text-uppercase mb-0">
 				<Swiper
 					cssMode={true}
 					modules={[Autoplay, Navigation]}
@@ -59,23 +62,34 @@ export default function Notifications() {
 					navigation
 					loop={true}
 					autoplay={{
-						delay: 10000,
+						delay: 1000000,
 						disableOnInteraction: false,
 					}}
 					breakpoints={{
-						660: {
+						560: {
 							slidesPerView: 2,
 						},
-						1040: {
+						770: {
 							slidesPerView: 3,
+						},
+						1040: {
+							slidesPerView: 4,
 						},
 					}}
 					className={st.swiper__swiper}>
 					{content.map((item) => (
 						<SwiperSlide key={item.title}>
 							<div className={st.notifications__block}>
-								<h6>{item.title}</h6>
-								{item.decsription}
+								<div className={st.notifications__block__item}>
+									<div className={st.notifications__block__item__header}>
+										<div className={st.notifications__block__item__header__author}>AN</div>
+										<div className={st.notifications__block__item__header__content}>
+											<span>{item.date}</span>
+											<h6>{item.title}</h6>
+										</div>
+									</div>
+									{item.decsription}
+								</div>
 							</div>
 						</SwiperSlide>
 					))}

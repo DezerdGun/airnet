@@ -4,25 +4,24 @@ import { Navigation, Autoplay } from 'swiper';
 import Container from '../container';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import Link from 'next/link';
+
+const content = [
+	'/trust/coca.jpg',
+	'/trust/FED.png',
+	'/trust/ipoteka.jpg',
+	'/trust/leader-school.jpg',
+	'/trust/paynet.jpg',
+	'/trust/pepsi.jpg',
+	'/trust/silkroad.jpg',
+	'/trust/skillbox.jpg',
+	'/trust/tld.jpg',
+	'/trust/ttz.jpg',
+	'/trust/universal-bank.jpg',
+	'/trust/uzb-abroad.jpg',
+	'/trust/yapona-mama.jpg',
+];
 
 export default function Trust() {
-	const content = [
-		'/trust/coca.jpg',
-		'/trust/FED.png',
-		'/trust/ipoteka.jpg',
-		'/trust/leader-school.jpg',
-		'/trust/paynet.jpg',
-		'/trust/pepsi.jpg',
-		'/trust/silkroad.jpg',
-		'/trust/skillbox.jpg',
-		'/trust/tld.jpg',
-		'/trust/ttz.jpg',
-		'/trust/universal-bank.jpg',
-		'/trust/uzb-abroad.jpg',
-		'/trust/yapona-mama.jpg',
-	];
-
 	return (
 		<div className={`${st.trust} trust-swiper`}>
 			<Container title="Нам доверяют" clNTitle="text-center text-uppercase">

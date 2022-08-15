@@ -9,11 +9,15 @@ $green: #006a4d;
 		align-items: center;
 		justify-content: center;
 		border-radius: 10px;
-		background-color: $green;
+		// background-color: $green;
 
 		img {
 			width: 130px;
-			filter: contrast(0) brightness(10);
+			filter: grayscale(100%);
+
+			&:hover {
+				filter: unset;
+			}
 		}
 	}
 

@@ -1,3 +1,36 @@
 .tarifMaket {
 	background-size: cover !important;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+
+	&__item,
+	&__children {
+		width: 1200px;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 1240px) {
+		&__item,
+		&__children {
+			width: 1150px;
+		}
+	}
+
+	@media (max-width: 1170px) {
+		&__item,
+		&__children {
+			width: 1000px;
+		}
+	}
+
+	@media (max-width: 1040px) {
+		&__item {
+			width: 100%;
+			padding: 0 20px;
+		}
+
+		&__children {
+			width: 99%;
+		}
+	}
 }
