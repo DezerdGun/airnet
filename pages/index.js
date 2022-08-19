@@ -21,6 +21,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import TarifMaket from '../components/tarifMaket';
 import TarifCard2 from '../components/tarifCard2';
+import Reviews from '../components/reviews';
 
 const faq = [
 		{
@@ -268,7 +269,7 @@ export default function Home() {
 			<RegDomain />
 			<Sitepad />
 			<Stock />
-			<TrustPilot />
+			<Reviews />
 			<Trust />
 			<Partners />
 			<FAQ faq={faq} title="НАС ЧАСТО СПРАШИВАЮТ" />

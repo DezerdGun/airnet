@@ -132,7 +132,8 @@ h6 {
 .partners-swiper,
 .trust-swiper,
 .notifications-swiper,
-.tarifSwiper {
+.tarifSwiper,
+.reviews-swiper {
 	// padding: 0 40px;
 
 	.swiper-button-prev:after,
@@ -187,7 +188,8 @@ h6 {
 
 .notifications-swiper,
 .tarifSlider,
-.whyBlock-swiper {
+.whyBlock-swiper,
+.reviews-swiper {
 	.swiper-button-prev {
 		top: 20px;
 		left: unset !important;
@@ -201,10 +203,15 @@ h6 {
 }
 
 .tarifSwiper,
-.whyBlock-swiper {
+.whyBlock-swiper,
+.reviews-swiper {
 	.swiper-wrapper {
 		padding-top: 50px;
 	}
+}
+
+.reviews-swiper {
+	margin-top: -40px;
 }
 
 /* ------------------------------ table ----------------------------*/
@@ -270,7 +277,8 @@ h6 {
 	.partners-swiper,
 	.trust-swiper,
 	.notifications-swiper,
-	.tarifSwiper {
+	.tarifSwiper,
+	.reviews-swiper {
 		.swiper-button-prev:after,
 		.swiper-button-next:after {
 			font-size: 25px;
@@ -332,7 +340,8 @@ h6 {
 	}
 
 	.notifications-swiper,
-	.tarifSlider {
+	.tarifSlider,
+	.reviews-swiper {
 		.swiper-button-prev {
 			top: 30px;
 			right: 35px !important;
