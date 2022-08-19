@@ -196,19 +196,6 @@ export default function Footer() {
 				},
 			],
 		},
-		partners = {
-			title: 'Партнёрам',
-			children: [
-				{
-					link: LINKS.PARTNERS,
-					title: 'Реферальная программа',
-				},
-				{
-					link: LINKS.RESELLING,
-					title: 'Программа реселлинга',
-				},
-			],
-		},
 		help = {
 			title: 'Помощь',
 			children: [
@@ -223,6 +210,19 @@ export default function Footer() {
 				{
 					link: LINKS.AUTO_PAY,
 					title: 'Автоплатёж',
+				},
+			],
+		},
+		partners = {
+			title: 'Партнёрам',
+			children: [
+				{
+					link: LINKS.PARTNERS,
+					title: 'Реферальная программа',
+				},
+				{
+					link: LINKS.RESELLING,
+					title: 'Программа реселлинга',
 				},
 			],
 		};
@@ -399,7 +399,7 @@ export default function Footer() {
 					<nav className={st.footer__block__nav}>
 						<ul className={st.footer__block__nav__ul}>
 							<li className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__li__vps}`}>
-								{vps_vds.title}
+								<h3>{vps_vds.title}</h3>
 								<ul>
 									{vps_vds.children.map((i) => (
 										<li key={i.link}>
@@ -411,7 +411,7 @@ export default function Footer() {
 								</ul>
 							</li>
 							<li className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__li__uslugi}`}>
-								{uslugi.title}
+								<h3>{uslugi.title}</h3>
 								<ul>
 									{uslugi.children.map((i) => (
 										<li key={i.link}>
@@ -425,7 +425,7 @@ export default function Footer() {
 							<div className={st.footer__block__nav__ul__div}>
 								<li
 									className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__div__clients}`}>
-									{clients.title}
+									<h3>{clients.title}</h3>
 									<ul>
 										{clients.children.map((i) => (
 											<li key={i.link}>
@@ -438,7 +438,7 @@ export default function Footer() {
 								</li>
 								<li
 									className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__div__partners}`}>
-									{partners.title}
+									<h3>{partners.title}</h3>
 									<ul>
 										{partners.children.map((i) => (
 											<li key={i.link}>
@@ -451,7 +451,7 @@ export default function Footer() {
 								</li>
 							</div>
 							<li className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__li__help}`}>
-								{help.title}
+								<h3>{help.title}</h3>
 								<ul>
 									{help.children.map((i) => (
 										<li key={i.link}>
