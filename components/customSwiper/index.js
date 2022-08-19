@@ -24,11 +24,13 @@ export default function CustomSwiper() {
 					<div className={st.swiper__block} style={{ background: `url('/banner.webp') no-repeat` }}>
 						<Container>
 							<div className={st.swiper__block__item}>
-								<h2>Ваши сайты будут работать всегда</h2>
+								<h2>Ваши сайты<br /> будут работать всегда</h2>
 								<h4>
-									Сервер любой конфигурации под Ваши задачи. Надежность и безопасность Вашего бизнеса!
+									Сервер любой конфигурации под Ваши задачи.<br /> Надежность и безопасность Вашего бизнеса!
 								</h4>
+								<br />
 								<h4>Доступность в сети TAS-IX - 1 Гбит/с для всех клиентов AIRNET</h4>
+								<div className={st.swiper__block__item__bg}></div>
 							</div>
 						</Container>
 					</div>
@@ -37,11 +39,13 @@ export default function CustomSwiper() {
 					<div className={st.swiper__block} style={{ background: `url('/banner.webp') no-repeat` }}>
 						<Container>
 							<div className={st.swiper__block__item}>
-								<h2>Ваши сайты будут работать всегда</h2>
+								<h2>Ваши сайты<br /> будут работать всегда</h2>
 								<h4>
-									Сервер любой конфигурации под Ваши задачи. Надежность и безопасность Вашего бизнеса!
+									Сервер любой конфигурации под Ваши задачи.<br /> Надежность и безопасность Вашего бизнеса!
 								</h4>
+								<br />
 								<h4>Доступность в сети TAS-IX - 1 Гбит/с для всех клиентов AIRNET</h4>
+								<div className={st.swiper__block__item__bg}></div>
 							</div>
 						</Container>
 					</div>

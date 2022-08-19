@@ -21,7 +21,7 @@ export default function TarifCard2({ tarif }) {
 				</tr>
 				<tr>
 					<th>{tarif.ssd} МБ</th>
-					<th>{tarif.sites} ядро</th>
+					<th>{tarif.sites}</th>
 				</tr>
 			</table>
 			<table>
@@ -32,6 +32,26 @@ export default function TarifCard2({ tarif }) {
 				<tr>
 					<th>Бесплатно</th>
 					<th>В Подарок*</th>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td>Объем трафика</td>
+					<td>SitePad</td>
+				</tr>
+				<tr>
+					<th>∞</th>
+					<th>Бесплатно</th>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td>Канал</td>
+					<td>TAS-IX</td>
+				</tr>
+				<tr>
+					<th>100 Мбит/сек</th>
+					<th>1 Гбит/сек</th>
 				</tr>
 			</table>
 			<hr />

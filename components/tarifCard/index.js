@@ -18,20 +18,12 @@ export default function TarifCard({ tarif }) {
 				<tr>
 					<td>CPU</td>
 					<td>RAM</td>
-				</tr>
-				<tr>
-					<th>{tarif.cpu} ядро</th>
-					<th>{tarif.ram} ГБ</th>
-				</tr>
-			</table>
-			<table>
-				<tr>
 					<td>SSD</td>
-					<td>IP адресов</td>
 				</tr>
 				<tr>
+					<th>{tarif.cpu} ядра</th>
+					<th>{tarif.ram} ГБ</th>
 					<th>{tarif.ssd} ГБ</th>
-					<th>1 адрес</th>
 				</tr>
 			</table>
 			<table>
@@ -40,6 +32,16 @@ export default function TarifCard({ tarif }) {
 				</tr>
 				<tr>
 					<th colSpan={2}>Windows или Linux</th>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td>IP адресов</td>
+					<td>Виртуализация</td>
+				</tr>
+				<tr>
+					<th>1 адрес</th>
+					<th>VMware</th>
 				</tr>
 			</table>
 			<table>

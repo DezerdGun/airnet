@@ -2,7 +2,7 @@ $white: #fff;
 
 .container {
 	width: 1200px;
-	padding: 20px 0;
+	padding: 40px 0;
 	margin: 0 auto;
 
 	&__headTitle {
@@ -12,7 +12,8 @@ $white: #fff;
 	&__headTitle,
 	&__title,
 	&__description {
-		margin-bottom: 20px;
+		margin-bottom: 40px;
+		font-size: 32px;
 	}
 
 	&__bg {

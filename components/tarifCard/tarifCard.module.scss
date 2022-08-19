@@ -4,17 +4,17 @@ $green: #006a4d;
 $dark_green: #00402e;
 $gray: #c2c2c2;
 $dark_gray: #666;
-$light_gray: #eeebee;
+$light_gray: #f2f2f2;
 $red: #f00;
 
 .tarifCard {
-	background-color: $white;
-	border-radius: 5px;
-	padding: 10px;
+	background-color: $light_gray;
+	border-radius: 15px;
+	padding: 15px;
 
 	&__header {
-		padding: 10px;
-		border-radius: 5px;
+		padding: 25px 15px;
+		border-radius: 8px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -22,7 +22,7 @@ $red: #f00;
 		background: radial-gradient(circle, rgba(0, 106, 77, 1) 0%, rgba(0, 106, 77, 1) 100%);
 
 		h4 {
-			font-size: 18px;
+			font-size: 22px;
 			margin-bottom: 0;
 			color: $white;
 			word-spacing: 20px;
@@ -36,7 +36,7 @@ $red: #f00;
 				color: $white;
 
 				&:first-child {
-					font-size: 18px;
+					font-size: 22px;
 					font-weight: 700;
 				}
 
@@ -50,10 +50,10 @@ $red: #f00;
 
 					hr {
 						display: block;
-						width: 13px;
+						width: 20px;
 						color: $white;
 						opacity: 1;
-						margin: 5px 0 3px;
+						margin: 3px 0 1px;
 					}
 				}
 			}
@@ -67,7 +67,7 @@ $red: #f00;
 		tr {
 			th,
 			td {
-				font-size: 14px;
+				font-size: 16px;
 				width: 50%;
 				white-space: nowrap;
 
@@ -86,11 +86,15 @@ $red: #f00;
 		width: 100%;
 		border: none;
 		color: $white;
-		height: 40px;
+		height: 50px;
 		font-weight: 700;
 		background-color: $green;
-		border-radius: 5px;
+		border-radius: 8px;
 		padding: 0;
+		
+		&:hover{
+			background-color: #00402e;
+		}
 
 		a {
 			display: flex;

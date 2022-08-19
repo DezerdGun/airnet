@@ -173,7 +173,7 @@ export default function Home() {
 			<CustomSwiper />
 			<WhyBlock />
 			<TarifMaket
-				bgImg={'/servers.jpg'}
+				// bgImg={'/servers.jpg'}
 				title="Популярные тарифы - Виртуальный сервер в Ташкенте"
 				description={
 					<p>
@@ -182,7 +182,7 @@ export default function Home() {
 					</p>
 				}
 				endText={
-					<div className="text-white mt-2">
+					<div className="text-white text-center mt-2">
 						<p>
 							Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2-х
 							рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического
@@ -224,8 +224,9 @@ export default function Home() {
 					))}
 				</Swiper>
 			</TarifMaket>
+			<RegDomain />
 			<TarifMaket
-				bgImg={'/servers-2.jpg'}
+				// bgImg={'/servers-2.jpg'}
 				title="Популярные тарифы Виртуальный хостинг Cpanel в Ташкенте"
 				description={
 					<p>
@@ -233,7 +234,7 @@ export default function Home() {
 						Gbps
 					</p>
 				}
-				endText={<p className="text-white mt-2">*При оплате за хостинг от 6 месяцев!</p>}>
+				endText={<p className="text-white text-center mt-2">*При оплате за хостинг от 6 месяцев!</p>}>
 				<Swiper
 					cssMode={true}
 					modules={[Autoplay, Navigation]}
@@ -266,14 +267,13 @@ export default function Home() {
 					))}
 				</Swiper>
 			</TarifMaket>
-			<RegDomain />
 			<Sitepad />
 			<Stock />
 			<Reviews />
 			<Trust />
-			<Partners />
-			<FAQ faq={faq} title="НАС ЧАСТО СПРАШИВАЮТ" />
+			<FAQ faq={faq} title="Нас часто спрашивают" />
 			<Notifications />
+			<Partners />
 		</div>
 	);
 }

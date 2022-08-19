@@ -21,7 +21,7 @@ export default function Partners() {
 
 	return (
 		<div className={`${st.partners} partners-swiper`}>
-			<Container title="Наши партнеры" clNTitle="text-center text-uppercase">
+			<Container title="Наши партнеры" clNTitle="text-center">
 				<Swiper
 					cssMode={true}
 					modules={[Autoplay, Navigation]}

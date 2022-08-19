@@ -9,13 +9,13 @@ import Link from 'next/link';
 export default function WhyBlock() {
 	const content = [
 		{
-			title: 'СЛУЖБА ПОДДЕРЖКИ 24/7',
+			title: 'Служба поддержки 24/7',
 			decsription:
 				'В случае возникновения каких-либо вопросов, Вы всегда можете рассчитывать на нашу квалифицированную помощь с индивидуальным подходом, по телефону, e-mail, telegram, а также в онлайн чате - в любое время суток!',
 			img: '/phone.png',
 		},
 		{
-			title: 'СТАБИЛЬНОСТЬ',
+			title: 'Стабильность',
 			decsription: (
 				<>
 					Мы обеспечиваем гарантированную доступность сервиса 99%. Круглосуточно, за всеми системами следят
@@ -30,13 +30,13 @@ export default function WhyBlock() {
 			img: '/search.png',
 		},
 		{
-			title: 'НИЗКАЯ ЦЕНА',
+			title: 'Низкая цена',
 			decsription:
 				'Мы предоставляем услуги по самым "низким" ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.',
 			img: '/wallet.png',
 		},
 		{
-			title: 'СОБСТВЕННЫЕ IP-АДРЕСА',
+			title: 'Собственные ip-адреса',
 			decsription:
 				'Мы предоставляем услуги по собственной BGP протоколу (Border Gateway Protocol) для всех блоков IP-адресов. Подключенныe напрямую к автономной системе (AS) АК "Узтелеком", а также являемся участниками зоны TAS-IX.',
 			img: '/wallet.png',
@@ -45,7 +45,7 @@ export default function WhyBlock() {
 
 	return (
 		<div className={`${st.whyBlock} whyBlock-swiper`}>
-			<Container title="Почему выбирают Airnet?" clNTitle="text-center text-uppercase">
+			<Container title="Почему выбирают AIRNET?" clNTitle="text-center">
 				<div className={st.whyBlock__block}>
 					{content.map((item) => (
 						<div

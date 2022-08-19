@@ -4,20 +4,25 @@ $green: #006a4d;
 $dark_green: #00402e;
 $gray: #c2c2c2;
 $dark_gray: #666;
-$light_gray: #eeebee;
+$light_gray: #f2f2f2;
 
 .regDomain {
+	background-color: $light_gray;
+	text-align: center;
+
 	h3,
 	p,
 	span {
-		color: $white;
+		color: $black;
 	}
 
 	&__block {
-		margin-bottom: 10px;
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 20px;
 
 		input {
-			width: 350px;
+			width: 370px;
 			margin-right: 20px;
 			height: 51.6px;
 			border-radius: 10px;
@@ -31,15 +36,22 @@ $light_gray: #eeebee;
 			color: $white;
 			background-color: $green;
 			border: none;
+			
+			&:hover{
+				background-color: #00402e;
+			}
 		}
 	}
 
 	&__price {
-		width: fit-content;
-		padding: 10px;
-		border-radius: 10px;
+		// width: fit-content;
+		margin-left: 20px;
+		padding: 17px;
+		border-radius: 8px;
 		font-weight: 700;
-		background-color: #ffffff33;
+		background-color: #fff;
+		min-width: 170px;
+		display: inline-block;
 	}
 
 	&__endText {

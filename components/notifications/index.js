@@ -53,7 +53,7 @@ const content = [
 export default function Notifications() {
 	return (
 		<div className={`${st.notifications} notifications-swiper`}>
-			<Container title="ОПОВЕЩЕНИЯ" clNTitle="text-center text-uppercase mb-0">
+			<Container title="Оповещения" clNTitle="text-center mb-0">
 				<Swiper
 					cssMode={true}
 					modules={[Autoplay, Navigation]}

@@ -6,7 +6,7 @@ export default function TrustPilot() {
 		<Container
 			title="Отзывы клиентов"
 			style={{ backgroundColor: '#eeebee' }}
-			clNTitle="text-center text-uppercase text-black">
+			clNTitle="text-center text-black">
 			<div className={st.trustpilot}>
 				<div></div>
 			</div>

@@ -34,9 +34,8 @@ const data = [
 
 export default function Reviews() {
 	return (
-		<Container>
+		<Container title="Отзывы о нас" clNTitle="text-center">
 			<div className={st.reviews}>
-				<h3>Отзывы о нас</h3>
 				<Swiper
 					cssMode={true}
 					modules={[Autoplay, Navigation]}
