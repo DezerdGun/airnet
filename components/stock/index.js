@@ -46,7 +46,7 @@ export default function Stock() {
 			},
 		];
 	return (
-		<Container>
+		<Container> 
 			<div className={`${st.stock} stock-swiper`}>
 				<div className={st.stock__content}>
 					<Swiper
