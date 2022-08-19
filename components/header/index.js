@@ -109,7 +109,21 @@ export default function Header() {
 							<div key={item.title} className={st.header__main__nav__item}>
 								<Link href={item.link}>
 									<a className={st.header__main__nav__item__a} onClick={() => setIsOpen(false)}>
-										{item.title}
+										{item.title}{' '}
+										{item?.children && (
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="12"
+												height="8"
+												viewBox="0 0 12 8"
+												fill="none">
+												<path
+													d="M11.3359 1.33366L6.0026 6.66699L0.669271 1.33366"
+													stroke="#F8F8F8"
+													strokeLinecap="round"
+													strokeLinejoin="round"></path>
+											</svg>
+										)}
 									</a>
 								</Link>
 								{item?.children && <NavItem key={item.title} nav={item} />}
