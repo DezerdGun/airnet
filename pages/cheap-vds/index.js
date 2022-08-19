@@ -115,7 +115,7 @@ export default function CheapVds() {
 				</Container>
 				<TarifMaket
 					bgImg={'/servers-2.jpg'}
-					className="mt-0 px-0"
+					className="mb-4"
 					endText={
 						<ul className="list text-white mt-2 mb-0">
 							<li>Владелец самостоятельно управляет сервером.</li>

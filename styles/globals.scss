@@ -166,7 +166,7 @@ h6 {
 }
 
 .tarifSwiper {
-	padding: 0 20px !important;
+	// padding: 0 20px !important;
 
 	.swiper-button-prev:after,
 	.swiper-button-next:after {
@@ -182,7 +182,8 @@ h6 {
 	}
 }
 
-.notifications-swiper {
+.notifications-swiper,
+.tarifSlider {
 	.swiper-button-prev {
 		top: 20px;
 		left: unset !important;
@@ -192,6 +193,12 @@ h6 {
 	.swiper-button-next {
 		top: 20px;
 		right: 10px;
+	}
+}
+
+.tarifSwiper {
+	.swiper-wrapper {
+		padding-top: 50px;
 	}
 }
 
@@ -280,6 +287,10 @@ h6 {
 }
 
 @media (max-width: 550px) {
+	.w-95 {
+		width: 100%;
+	}
+
 	.swiper-button-prev {
 		left: 0px !important;
 	}
@@ -295,7 +306,8 @@ h6 {
 		}
 	}
 
-	.notifications-swiper {
+	.notifications-swiper,
+	.tarifSlider {
 		.swiper-button-prev {
 			right: 40px !important;
 		}
@@ -311,6 +323,18 @@ h6 {
 		.swiper-button-prev:after,
 		.swiper-button-next:after {
 			font-size: 20px;
+		}
+	}
+
+	.notifications-swiper,
+	.tarifSlider {
+		.swiper-button-prev {
+			top: 30px;
+			right: 35px !important;
+		}
+
+		.swiper-button-next {
+			top: 30px;
 		}
 	}
 }

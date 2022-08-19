@@ -173,14 +173,13 @@ export default function Home() {
 			<WhyBlock />
 			<TarifMaket
 				bgImg={'/servers.jpg'}
-				headTitle="Популярные тарифы - Виртуальный сервер в Ташкенте"
+				title="Популярные тарифы - Виртуальный сервер в Ташкенте"
 				description={
 					<p>
 						Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости до 1
 						Gbps
 					</p>
 				}
-				className="mt-0 px-0"
 				endText={
 					<div className="text-white mt-2">
 						<p>
@@ -226,14 +225,13 @@ export default function Home() {
 			</TarifMaket>
 			<TarifMaket
 				bgImg={'/servers-2.jpg'}
-				headTitle="Популярные тарифы Виртуальный хостинг Cpanel в Ташкенте"
+				title="Популярные тарифы Виртуальный хостинг Cpanel в Ташкенте"
 				description={
 					<p>
 						Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости до 1
 						Gbps
 					</p>
 				}
-				className="mt-0 px-0"
 				endText={<p className="text-white mt-2">*При оплате за хостинг от 6 месяцев!</p>}>
 				<Swiper
 					cssMode={true}

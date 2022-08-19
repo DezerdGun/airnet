@@ -1,19 +1,17 @@
 import Container from '../container';
 import st from './tarifMaket.module.scss';
 
-export default function TarifMaket({ headTitle, bgImg, description, className, endText, children }) {
+export default function TarifMaket({ headTitle, title, bgImg, description, className, endText, children }) {
 	return (
 		<div className={st.tarifMaket} style={{ background: `url('${bgImg}') no-repeat` }}>
-			<div className={st.tarifMaket__item}>
-				<Container
-					headTitle={headTitle}
-					style={{}}
-					description={description}
-					className={`${className} pb-0 mb-0`}></Container>
-			</div>
-			<div className={st.tarifMaket__children}>{children}</div>
+			<Container>
+				{headTitle && <h1 className={st.container__headTitle}>{headTitle}</h1>}
+				{title && <h3 className={st.container__title}>{title}</h3>}
+				<div className={`${st.tarifMaket__item} ${className}`}>{description}</div>
+				<div className={`${st.tarifMaket__children} tarifSlider`}>{children}</div>
 
-			<div className={st.tarifMaket__item}>{endText}</div>
+				{endText}
+			</Container>
 		</div>
 	);
 }
