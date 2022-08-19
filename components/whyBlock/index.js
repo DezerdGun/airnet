@@ -50,7 +50,8 @@ export default function WhyBlock() {
 					{content.map((item) => (
 						<div
 							className={st.whyBlock__block__item}
-							style={{ background: `url('${item.img}') no-repeat` }}>
+							style={{ background: `url('${item.img}') no-repeat` }}
+							key={item.title}>
 							<h6>{item.title}</h6>
 							<p>{item.decsription}</p>
 						</div>
