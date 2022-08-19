@@ -14,6 +14,7 @@ import { Navigation, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import TarifMaket from '../../components/tarifMaket';
+import ForFreeBlock from '../../components/forFreeBlock';
 
 const block = [
 		{
@@ -306,6 +307,8 @@ export default function BigVDS() {
 						))}
 					</Swiper>
 				</TarifMaket>
+
+				<ForFreeBlock />
 
 				<Container>
 					<div className={st.vds__block}>

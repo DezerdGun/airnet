@@ -24,6 +24,9 @@ body {
 
 input,
 select {
+	outline: none !important;
+	border: none !important;
+
 	&:focus,
 	&:focus-within {
 		outline: none;
@@ -183,7 +186,8 @@ h6 {
 }
 
 .notifications-swiper,
-.tarifSlider {
+.tarifSlider,
+.whyBlock-swiper {
 	.swiper-button-prev {
 		top: 20px;
 		left: unset !important;
@@ -196,7 +200,8 @@ h6 {
 	}
 }
 
-.tarifSwiper {
+.tarifSwiper,
+.whyBlock-swiper {
 	.swiper-wrapper {
 		padding-top: 50px;
 	}

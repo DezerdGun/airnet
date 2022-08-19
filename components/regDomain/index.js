@@ -3,26 +3,15 @@ import st from './regDomain.module.scss';
 
 export default function RegDomain() {
 	return (
-		<Container style={{ background: `url('/domains.jpg') no-repeat` }} title="Регистрация доменов">
+		<Container style={{ background: `url('/domains.jpg') no-repeat` }} title="Зарегистрируем домен?">
 			<div className={st.regDomain}>
 				<div className={st.regDomain__block}>
-					<p>Проверьте доступно доменное имя в зоне «UZ» для регистрации</p>
-					<div className={st.regDomain__block__input}>
-						<div className={st.regDomain__block__input__block}>
-							<span>www.</span>
-							<input />
-							<span>.</span>
-							<select>
-								<option>uz</option>
-								<option>Все</option>
-							</select>
-						</div>
-						<button>Проверить</button>
-					</div>
+					<input placeholder="Введите название домена" />
+					<button>Проверить</button>
 				</div>
 
+				<p className={st.regDomain__price}>.uz 17.000сум/год</p>
 				<p className={st.regDomain__endText}>Домен в зоне UZ c хостингом - Бесплатно</p>
-				<p className={st.regDomain__endText}>Домен в зоне UZ - 17.000 сум/год</p>
 			</div>
 		</Container>
 	);

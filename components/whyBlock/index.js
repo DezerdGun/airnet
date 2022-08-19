@@ -45,38 +45,17 @@ export default function WhyBlock() {
 
 	return (
 		<div className={`${st.whyBlock} whyBlock-swiper`}>
-			<Container title="Почему выбирают Airnet" clNTitle="text-center text-uppercase">
-				<Swiper
-					cssMode={true}
-					modules={[Autoplay, Navigation]}
-					spaceBetween={0}
-					slidesPerView={1}
-					navigation
-					loop={true}
-					autoplay={{
-						delay: 10000,
-						disableOnInteraction: false,
-					}}
-					breakpoints={{
-						770: {
-							slidesPerView: 2,
-						},
-					}}
-					className={st.swiper__swiper}>
+			<Container title="Почему выбирают Airnet?" clNTitle="text-center text-uppercase">
+				<div className={st.whyBlock__block}>
 					{content.map((item) => (
-						<SwiperSlide key={item.title}>
-							<div className={st.whyBlock__block}>
-								<div className={st.whyBlock__block__img}>
-									<img src={item.img} />
-								</div>
-								<div className={st.whyBlock__block__content}>
-									<h6>{item.title}</h6>
-									<p>{item.decsription}</p>
-								</div>
-							</div>
-						</SwiperSlide>
+						<div
+							className={st.whyBlock__block__item}
+							style={{ background: `url('${item.img}') no-repeat` }}>
+							<h6>{item.title}</h6>
+							<p>{item.decsription}</p>
+						</div>
 					))}
-				</Swiper>
+				</div>
 			</Container>
 		</div>
 	);

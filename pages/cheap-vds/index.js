@@ -11,6 +11,7 @@ import { Navigation, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import TarifCard from '../../components/tarifCard';
+import ForFreeBlock from '../../components/forFreeBlock';
 
 const block = [
 		{
@@ -102,6 +103,7 @@ export default function CheapVds() {
 						</div>
 					</div>
 				</Container>
+
 				<Container>
 					<div className={ft.vds__block}>
 						{block.map((item) => (
@@ -152,6 +154,8 @@ export default function CheapVds() {
 						))}
 					</Swiper>
 				</TarifMaket>
+
+				<ForFreeBlock />
 
 				<Partners />
 			</div>
