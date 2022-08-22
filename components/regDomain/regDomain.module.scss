@@ -36,8 +36,8 @@ $light_gray: #f2f2f2;
 			color: $white;
 			background-color: $green;
 			border: none;
-			
-			&:hover{
+
+			&:hover {
 				background-color: #00402e;
 			}
 		}
@@ -82,6 +82,7 @@ $light_gray: #f2f2f2;
 
 			input {
 				width: 100%;
+				margin-right: 0;
 				margin-bottom: 10px;
 			}
 

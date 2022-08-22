@@ -1,0 +1,49 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #f8f8f8;
+$red: #f00;
+
+.whyCard {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&__item {
+		width: 49%;
+		padding: 25px 20px;
+		background-size: 45px !important;
+		background-position: calc(100% - 20px) 15px !important;
+		background-color: $white !important;
+		border-radius: 10px;
+		margin-bottom: 20px;
+
+		h6,
+		p {
+			width: calc(100% - 55px);
+		}
+
+		h6 {
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 14px;
+			margin-bottom: 0;
+			line-height: 140% !important;
+
+			a {
+				font-size: inherit;
+			}
+		}
+	}
+
+	@media (max-width: 660px) {
+		&__item {
+			width: 100%;
+		}
+	}
+}
