@@ -9,6 +9,13 @@ import CustomTable from '../../components/customTable';
 import FAQ from '../../components/faq';
 import CustomTableHosting from '../../components/customTableHosting';
 import SEO from '../../components/seo';
+import TarifMaket from '../../components/tarifMaket';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import TarifCard2 from '../../components/tarifCard2';
 
 const block = [
 		{
@@ -160,6 +167,36 @@ const block = [
 			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40',
 		},
 	],
+	tarif2 = [
+		{
+			title: 'Старт',
+			price: '10 000',
+			ssd: 250,
+			sites: 5,
+			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=32',
+		},
+		{
+			title: 'Простой',
+			price: '15 000',
+			ssd: 500,
+			sites: 10,
+			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=31',
+		},
+		{
+			title: 'Стандарт',
+			price: '25 000',
+			ssd: '1 000',
+			sites: 15,
+			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=33',
+		},
+		{
+			title: 'Доступный',
+			price: '60 000',
+			ssd: '3 000',
+			sites: 20,
+			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=34',
+		},
+	],
 	faq = [
 		{
 			title: 'Как скоро можно начать пользоваться услугой?',
@@ -205,6 +242,49 @@ export default function Hosting() {
 						<CustomTableHosting table={table2} />
 					</div>
 				</Container>
+
+				<TarifMaket
+					// bgImg={'/servers-2.jpg'}
+					title="Популярные тарифы Виртуальный хостинг Cpanel в Ташкенте"
+					description={
+						<p>
+							Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости до 1
+							Gbps
+						</p>
+					}
+					endText={<p className="text-white text-center mt-2">*При оплате за хостинг от 6 месяцев!</p>}>
+					<Swiper
+						cssMode={true}
+						modules={[Autoplay, Navigation]}
+						spaceBetween={0}
+						slidesPerView={1}
+						navigation
+						loop={true}
+						autoplay={{
+							delay: 10000,
+							disableOnInteraction: false,
+						}}
+						breakpoints={{
+							950: {
+								slidesPerView: 4,
+							},
+							770: {
+								slidesPerView: 3,
+							},
+							500: {
+								slidesPerView: 2,
+							},
+						}}
+						className="tarifSwiper">
+						{tarif2.map((item) => (
+							<SwiperSlide key={item.title}>
+								<div className="w-95">
+									<TarifCard2 tarif={item} />
+								</div>
+							</SwiperSlide>
+						))}
+					</Swiper>
+				</TarifMaket>
 
 				<Container title="Ваш хостинг будет размещен на сервере с конфигурацией:" clNTitle="text-center">
 					<div className={st.hosting__block}>
