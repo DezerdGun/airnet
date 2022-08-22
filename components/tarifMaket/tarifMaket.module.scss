@@ -16,7 +16,8 @@ $red: #f00;
 	p {
 		color: $black !important;
 	}
-	h3{
+	h1,
+	h3 {
 		margin-bottom: 10px;
 		font-size: 32px;
 		text-align: center;
@@ -30,13 +31,16 @@ $red: #f00;
 	}
 
 	&__children {
-		margin-top: -20px;
+		margin-top: -10px;
 		margin-bottom: 20px;
 	}
 
 	@media (max-width: 550px) {
-		&__item {
-			width: calc(100% - 70px);
+		&__children {
+			margin-top: -20px;
 		}
+		// &__item {
+		// 	width: calc(100% - 70px);
+		// }
 	}
 }

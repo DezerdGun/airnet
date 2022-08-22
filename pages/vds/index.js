@@ -251,7 +251,7 @@ export default function VDS() {
 			/>
 			<div className={st.vds}>
 				<TarifMaket
-					bgImg={'/servers-2.jpg'}
+					// bgImg={'/servers-2.jpg'}
 					headTitle="VDS/VPS — сервера на базе быстрых SSD-дисков"
 					description={
 						<p>
@@ -261,7 +261,7 @@ export default function VDS() {
 					}
 					className="mt-0 px-0"
 					endText={
-						<div className="text-white mt-2">
+						<div className="text-white text-center mt-2">
 							<p>
 								Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2-х
 								рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического
@@ -274,7 +274,6 @@ export default function VDS() {
 					<Swiper
 						cssMode={true}
 						modules={[Autoplay, Navigation]}
-						spaceBetween={0}
 						slidesPerView={1}
 						navigation
 						loop={true}
@@ -283,16 +282,13 @@ export default function VDS() {
 							disableOnInteraction: false,
 						}}
 						breakpoints={{
-							1200: {
-								slidesPerView: 5,
-							},
-							950: {
+							1070: {
 								slidesPerView: 4,
 							},
 							770: {
 								slidesPerView: 3,
 							},
-							500: {
+							550: {
 								slidesPerView: 2,
 							},
 						}}

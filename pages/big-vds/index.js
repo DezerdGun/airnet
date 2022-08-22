@@ -252,7 +252,7 @@ export default function BigVDS() {
 			/>
 			<div className={st.vds}>
 				<TarifMaket
-					bgImg={'/servers-2.jpg'}
+					// bgImg={'/servers-2.jpg'}
 					headTitle="Мощные VDS/VPS — сервера на базе VMware виртуализации с быстрыми SSD-дисками"
 					description={
 						<p>
@@ -262,7 +262,7 @@ export default function BigVDS() {
 					}
 					className="mt-0 px-0"
 					endText={
-						<div className="text-white mt-2">
+						<div className="text-white text-center mt-2">
 							<p>
 								Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2-х
 								рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического
@@ -284,16 +284,13 @@ export default function BigVDS() {
 							disableOnInteraction: false,
 						}}
 						breakpoints={{
-							1200: {
-								slidesPerView: 5,
-							},
-							950: {
+							1070: {
 								slidesPerView: 4,
 							},
 							770: {
 								slidesPerView: 3,
 							},
-							500: {
+							550: {
 								slidesPerView: 2,
 							},
 						}}
