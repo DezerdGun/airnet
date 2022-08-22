@@ -142,7 +142,7 @@ const Drop = ({ item }) => {
 			{price.show && (
 				<ul>
 					{item.map((el, i) => (
-						<li onClick={() => setPrice({ checked: i, show: false })}>
+						<li onClick={() => setPrice({ checked: i, show: false })} key={el.price}>
 							<strong>{el.price} сум в год</strong>
 							<br />
 							<span>при оплате за {el.dateOff}</span>
