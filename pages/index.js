@@ -14,6 +14,7 @@ import RegDomain from '../components/regDomain';
 import Sitepad from '../components/sitepad';
 import Stock from '../components/stock';
 import TarifCard from '../components/tarifCard';
+import Link from 'next/dist/client/link';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper';
@@ -165,13 +166,48 @@ const faq = [
 			sites: 20,
 			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=34',
 		},
+	],
+	content = [
+		{
+			title: 'Служба поддержки 24/7',
+			description:
+				'В случае возникновения каких-либо вопросов, Вы всегда можете рассчитывать на нашу квалифицированную помощь с индивидуальным подходом, по телефону, e-mail, telegram, а также в онлайн чате - в любое время суток!',
+			img: '/phone.png',
+		},
+		{
+			title: 'Стабильность',
+			description: (
+				<>
+					Мы обеспечиваем гарантированную доступность сервиса 99%. Круглосуточно, за всеми системами следят
+					наши высококвалифицированные сотрудники. А оборудование размещаем в высокотехнологичном,
+					современном, надёжном{' '}
+					<Link href="/dc">
+						<a>Дата-Центре</a>
+					</Link>{' '}
+					TIER-2, в Ташкенте.
+				</>
+			),
+			img: '/search.png',
+		},
+		{
+			title: 'Низкая цена',
+			description:
+				'Мы предоставляем услуги по самым "низким" ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.',
+			img: '/wallet.png',
+		},
+		{
+			title: 'Собственные ip-адреса',
+			description:
+				'Мы предоставляем услуги по собственной BGP протоколу (Border Gateway Protocol) для всех блоков IP-адресов. Подключенныe напрямую к автономной системе (AS) АК "Узтелеком", а также являемся участниками зоны TAS-IX.',
+			img: '/wallet.png',
+		},
 	];
 
 export default function Home() {
 	return (
 		<div className={st.home}>
 			<CustomSwiper />
-			<WhyBlock />
+			<WhyBlock title="Почему выбирают AIRNET?" content={content} />
 			<TarifMaket
 				// bgImg={'/servers.jpg'}
 				title="Популярные тарифы - Виртуальный сервер в Ташкенте"

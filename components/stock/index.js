@@ -13,34 +13,34 @@ export default function Stock() {
 	const content = [
 		{
 			title: 'Подарки при оплате на длительный срок',
-			decsription:
+			description:
 				'Закажите любой тариф виртуального хостинга на 1 или 2 года и получите в подарок домен .uz: Помощь в переносе сайтов; SSL-сертификаты на каждый Ваш домен; Приоритетный уровень обслуживания;',
 			img: '/present.png',
 		},
 		{
 			title: 'Хостинг в подарок, при переезде от другого провайдера',
-			decsription:
+			description:
 				'Вы переезжаете к нам от другого хостинг-провайдера? Тогда мы подарим один месяц виртуального хостинга, по выбранному Вами тарифу, более того, выполним бесплатный перенос всех сайтов!',
 			img: '/present.png',
 		},
 		{
 			title: 'Тестовый период',
-			decsription: 'Некоторые наши услуги Вы можете тестировать до 3-х дней.',
+			description: 'Некоторые наши услуги Вы можете тестировать до 3-х дней.',
 			img: '/timer.png',
 		},
 		{
 			title: 'Помощь при переезде',
-			decsription: 'Сделаем все сами, в кратчайшие сроки.',
+			description: 'Сделаем все сами, в кратчайшие сроки.',
 			img: '/settings.png',
 		},
 		{
 			title: 'Приведите друга!',
-			decsription: 'Подарим Вам бесплатный месяц веб-хостинга, по Вашему тарифному плану.',
+			description: 'Подарим Вам бесплатный месяц веб-хостинга, по Вашему тарифному плану.',
 			img: '/people.png',
 		},
 		{
 			title: 'Бесплатно доменное имя!',
-			decsription: 'При заказе виртуального хостинга от 1 года.',
+			description: 'При заказе виртуального хостинга от 1 года.',
 			img: '/site.png',
 		},
 	];
@@ -78,7 +78,7 @@ export default function Stock() {
 	// 								<div className={st.stock__content__block__content}>
 	// 									<div>
 	// 										<h6>{item.title}</h6>
-	// 										<p>{item.decsription}</p>
+	// 										<p>{item.description}</p>
 	// 									</div>
 	// 									<button>
 	// 										<Link href={LINKS.STOCK}>
@@ -104,7 +104,7 @@ export default function Stock() {
 	// 						</div>
 	// 						<div className={st.stock__content2__block__content}>
 	// 							<h6>{item.title}</h6>
-	// 							<p>{item.decsription}</p>
+	// 							<p>{item.description}</p>
 	// 						</div>
 	// 					</div>
 	// 				))}

@@ -4,6 +4,7 @@ import st from './domains.module.scss';
 import Link from 'next/dist/client/link';
 import { useRef, useState } from 'react';
 import SEO from '../../components/seo';
+import RegDomain, { RegDomainBlock } from '../../components/regDomain';
 
 export default function Domains() {
 	const [isDomainFree, setIsDomainFree] = useState(undefined),
@@ -28,17 +29,16 @@ export default function Domains() {
 				desc="Быстрая регистрация доменов, по самым низким ценам, в зоне uz"
 			/>
 			<div className={st.domains}>
-				<Container
-					className="mt-0"
-					style={{ background: "url('/servers-2.jpg') no-repeat" }}
-					headTitle="Регистрация доменных имен в зоне UZ"
-					description={
-						<p>
-							Компания &quot;AIRNET&quot; является официальным{' '}
-							<a href="https://cctld.uz/reg/">регистратором домен в зоне UZ</a>
-						</p>
-					}>
-					<div className={st.domains__head}>
+				<div className={st.domains__head}>
+					<Container
+						headTitle="Регистрация доменных имен в зоне UZ"
+						clNTitle="mb-3"
+						description={
+							<p>
+								Компания &quot;AIRNET&quot; является официальным{' '}
+								<a href="https://cctld.uz/reg/">регистратором домен в зоне UZ</a>
+							</p>
+						}>
 						<div className={st.domains__head__block}>
 							<h3>Введите название доменного имени и нажмите на кнопку &quot;Проверить&quot;.</h3>
 							<p>
@@ -47,23 +47,9 @@ export default function Domains() {
 									Положением о порядке регистрации и пользования доменными именами в домене «UZ»
 								</a>
 							</p>
-							<form onSubmit={checkDomain} className={st.domains__head__block__input}>
-								<div className={st.domains__head__block__input__block}>
-									<span>www.</span>
-									<input
-										ref={domainName}
-										id="domainName"
-										placeholder="Например: airnet.uz"
-										required
-									/>
-									<span>.</span>
-									<select>
-										<option>uz</option>
-										{/* <option>Все</option> */}
-									</select>
-								</div>
-								<button type="submit">Проверить</button>
-							</form>
+							<div className={st.domains__head__block__item}>
+								<RegDomainBlock />
+							</div>
 							{isDomainFree && (
 								<p className={st.domains__head__block__text}>
 									<strong>{domainName.current.value}.uz</strong>{' '}
@@ -122,8 +108,8 @@ export default function Domains() {
 							после окончания срока регистрации. Домен переходит к Администрации домена UZ, при этом в
 							течение 30 календарных дней предыдущий владелец может вернуть себе домен.
 						</p>
-					</div>
-				</Container>
+					</Container>
+				</div>
 				<Partners />
 			</div>
 		</>

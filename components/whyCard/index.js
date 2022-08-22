@@ -9,7 +9,7 @@ export default function WhyCard({ content }) {
 					style={{ background: `url('${item.img}') no-repeat` }}
 					key={item.title}>
 					<h6>{item.title}</h6>
-					<p>{item.decsription}</p>
+					<p>{item.description}</p>
 				</div>
 			))}
 		</div>

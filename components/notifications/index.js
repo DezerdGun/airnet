@@ -9,7 +9,7 @@ const content = [
 	{
 		title: 'AIRNET',
 		date: '10.02.2022',
-		decsription: (
+		description: (
 			<>
 				<p>
 					В связи с аварийной ситуацией на сети ННО ЦВСПД &quot;TAS-IX&quot; 15.02.2022 г. с 00:30 по 10:00
@@ -22,7 +22,7 @@ const content = [
 	{
 		title: 'AIRNET',
 		date: '8.02.2022',
-		decsription: (
+		description: (
 			<>
 				<p>
 					В связи с профилактическими работами у вышестоящего партнёра на сети TAS-IX, 12.02.2022г., в период
@@ -35,7 +35,7 @@ const content = [
 	{
 		title: 'AIRNET',
 		date: '5.01.2022',
-		decsription: (
+		description: (
 			<>
 				<p>
 					На телекоммуникационной сети OOO «AIRNET» 13 января 2022 года (с 21:00 до 01:30чч) в связи со
@@ -88,7 +88,7 @@ export default function Notifications() {
 											<h6>{item.title}</h6>
 										</div>
 									</div>
-									{item.decsription}
+									{item.description}
 								</div>
 							</div>
 						</SwiperSlide>

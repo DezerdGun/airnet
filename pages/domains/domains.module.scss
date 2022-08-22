@@ -9,17 +9,14 @@ $red: #f00;
 
 .domains {
 	&__head {
-		p {
-			color: $white;
-		}
+		background-color: $light_gray;
 
 		a {
 			text-decoration: underline;
 		}
 
 		&__block {
-			padding: 20px;
-			background-color: $white;
+			margin-top: -20px;
 			margin-bottom: 10px;
 
 			h3 {
@@ -30,53 +27,9 @@ $red: #f00;
 				color: $black;
 			}
 
-			&__input {
-				display: flex;
-				align-items: center;
-				margin-bottom: 10px;
-
-				span,
-				input,
-				select,
-				option {
-					font-size: 18px;
-				}
-
-				&__block {
-					display: flex;
-					align-items: center;
-
-					input,
-					select {
-						height: 40px;
-						margin: 0 2px;
-						border: 1px solid $gray;
-						background-color: transparent;
-					}
-
-					input {
-						width: calc(100% - 110px);
-						border-top-left-radius: 5px;
-						border-bottom-left-radius: 5px;
-					}
-
-					select {
-						padding-right: 5px;
-						cursor: pointer;
-						border-top-right-radius: 5px;
-						border-bottom-right-radius: 5px;
-					}
-				}
-
-				button {
-					height: 40px;
-					border-radius: 5px;
-					margin-left: 10px;
-					background-color: $green;
-					color: $white;
-					border: 0;
-					padding: 0 20px;
-				}
+			&__item {
+				margin: 40px 0;
+				text-align: center;
 			}
 
 			&__text {
@@ -113,6 +66,13 @@ $red: #f00;
 							}
 						}
 
+						&:last-child {
+							th,
+							td {
+								background-color: $white;
+							}
+						}
+
 						&:first-child {
 							th {
 								color: $white;
@@ -142,16 +102,8 @@ $red: #f00;
 	@media (max-width: 550px) {
 		&__head {
 			&__block {
-				padding: 10px;
-
-				&__input {
-					flex-wrap: wrap;
-
-					button {
-						width: 100%;
-						margin-left: 0;
-						margin-top: 10px;
-					}
+				&__item {
+					margin: 20px 0;
 				}
 
 				&__table {
@@ -160,6 +112,16 @@ $red: #f00;
 					table {
 						width: 790px;
 					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 450px) {
+		&__head {
+			&__block {
+				&__item {
+					margin: 10px 0;
 				}
 			}
 		}
