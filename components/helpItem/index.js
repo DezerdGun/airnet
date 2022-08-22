@@ -24,6 +24,7 @@ export default function HelpItem({ data }) {
 					</p>
 				</div>
 			</Container>
+			{data?.afterContent}
 			{data?.faq && <FAQ faq={data.faq} title="НАС ЧАСТО СПРАШИВАЮТ БИЛЛИНГ-ПАНЕЛЬ" />}
 			<Partners />
 		</>

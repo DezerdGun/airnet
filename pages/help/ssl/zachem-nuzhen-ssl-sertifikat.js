@@ -1,4 +1,5 @@
 import HelpItem from '../../../components/helpItem';
+import PopularSert from '../../../components/popularSert';
 
 const mainData = {
 	headTitle: 'Зачем нужен SSl-сертификат',
@@ -53,6 +54,7 @@ const mainData = {
 			</p>
 		</>
 	),
+	afterContent: <PopularSert />,
 };
 
 export default function HelpBlog() {

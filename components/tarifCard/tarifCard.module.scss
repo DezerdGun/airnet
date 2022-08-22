@@ -13,7 +13,7 @@ $red: #f00;
 	padding: 15px;
 
 	&__header {
-		padding: 25px 15px;
+		padding: 25px 10px;
 		border-radius: 8px;
 		display: flex;
 		align-items: center;
@@ -22,7 +22,7 @@ $red: #f00;
 		background: radial-gradient(circle, rgba(0, 106, 77, 1) 0%, rgba(0, 106, 77, 1) 100%);
 
 		h4 {
-			font-size: 22px;
+			font-size: 19px;
 			margin-bottom: 0;
 			color: $white;
 			word-spacing: 20px;
@@ -36,7 +36,7 @@ $red: #f00;
 				color: $white;
 
 				&:first-child {
-					font-size: 22px;
+					font-size: 19px;
 					font-weight: 700;
 				}
 
@@ -111,11 +111,6 @@ $red: #f00;
 	@media (max-width: 1170px) {
 		&__header {
 			padding: 20px 10px;
-
-			h4,
-			&__price > span:first-child {
-				font-size: 20px;
-			}
 		}
 	}
 }
