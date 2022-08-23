@@ -7,7 +7,7 @@ export default function StepsBlock({ title, data, img }) {
 			<div className={st.stepsBlock}>
 				<ol>
 					{data.map((item) => (
-						<li key={itme.title}>
+						<li key={item.title}>
 							<h3>{item.title}</h3>
 							<div>{item.description}</div>
 						</li>
