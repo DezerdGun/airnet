@@ -34,32 +34,17 @@ $red: #f00;
 	}
 
 	&__questions {
-		&__block {
-			display: flex;
-			align-items: center;
-			justify-content: space-evenly;
-			margin-bottom: 20px;
+		background-color: $light_gray;
 
-			&__item {
-				width: 30%;
-				text-align: center;
-
-				h3 {
-					font-size: 16px;
-					font-weight: 400;
-				}
-
-				a {
-					width: fit-content;
-					display: block;
-					margin: 0 auto;
-					padding: 10px 20px;
-					border: 1px solid $green;
-				}
-			}
+		a {
+			width: fit-content;
+			display: block;
+			padding: 10px 20px;
+			border: 1px solid $green;
 		}
 
 		&__footer {
+			margin-top: 20px;
 			border-top: 1px solid $gray;
 			padding: 20px 0;
 			display: flex;
