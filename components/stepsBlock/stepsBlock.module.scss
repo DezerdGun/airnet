@@ -1,0 +1,96 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #eeebee;
+$red: #f00;
+
+.stepsBlock {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+
+	ol {
+		width: 25%;
+		list-style: none;
+		padding: 0;
+
+		li {
+			position: relative;
+			padding-left: 20px;
+			min-height: 75px;
+			margin-bottom: 20px;
+
+			h3 {
+				font-size: 24px;
+			}
+
+			div {
+				color: $dark_gray;
+			}
+
+			&::before {
+				position: absolute;
+				counter-increment: section;
+				content: counter(section);
+				top: 2px;
+				left: -10px;
+				display: flex;
+				justify-content: center;
+				color: #83b235;
+				width: fit-content;
+				font-size: 42px;
+				font-weight: 700;
+			}
+
+			&::after {
+				position: absolute;
+				content: '';
+				top: 42px;
+				left: 0;
+				width: 2px;
+				height: 50px;
+				border-left: 3px dashed $gray;
+			}
+		}
+	}
+
+	img {
+		width: 300px;
+	}
+
+	@media (max-width: 990px) {
+		ol {
+			width: 35%;
+		}
+	}
+
+	@media (max-width: 770px) {
+		ol {
+			width: 45%;
+		}
+
+		img {
+			width: 250px;
+		}
+	}
+
+	@media (max-width: 550px) {
+		flex-wrap: wrap;
+
+		ol {
+			width: 100%;
+			padding: 0 10px;
+
+			li {
+				min-height: 90px;
+			}
+		}
+
+		img {
+			width: 250px;
+		}
+	}
+}

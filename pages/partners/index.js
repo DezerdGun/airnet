@@ -3,6 +3,7 @@ import Container from '../../components/container';
 import Partners from '../../components/partners';
 import { LINKS } from '../../components/requirements';
 import SEO from '../../components/seo';
+import StepsBlock from '../../components/stepsBlock';
 import st from './partners.module.scss';
 
 export default function PartnersPage() {
@@ -88,6 +89,40 @@ export default function PartnersPage() {
 						</tbody>
 					</table>
 				</Container>
+
+				<StepsBlock
+					title="Как это работает?"
+					data={[
+						{
+							title: 'Приглашение',
+							description: 'Вы размещаете партнёрскую ссылку на сайте или делитесь промокодом с друзьями',
+						},
+						{
+							title: 'Заявка',
+							description: 'Человек переходит на FirstVDS по ссылке, либо вводит промокод при заказе',
+						},
+						{
+							title: 'Активация',
+							description: (
+								<>
+									При активации первого сервера клиент получает{' '}
+									<span className="text-green">скидку 25%</span> на первый месяц
+								</>
+							),
+						},
+						{
+							title: 'Прибыль',
+							description: (
+								<>
+									Вы получаете <span className="text-green">10% от расходов</span> всех ваших
+									рефералов себе на счёт
+								</>
+							),
+						},
+					]}
+					img="/how-work.png"
+				/>
+
 				<Container
 					style={{ background: "url('/agreement.jpg') no-repeat" }}
 					title="Как начать зарабатывать"
