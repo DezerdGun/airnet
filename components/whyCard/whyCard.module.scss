@@ -51,11 +51,6 @@ $red: #f00;
 				font-weight: 700;
 			}
 		}
-
-		&:nth-child(3),
-		&:last-child {
-			margin-bottom: 0;
-		}
 	}
 
 	@media (max-width: 660px) {
