@@ -9,83 +9,175 @@ $red: #f00;
 
 .helpItem {
 	border-top: 1px solid $light_gray;
+	padding-top: 20px;
 
 	&__block {
-		border: 1px solid $light_gray;
-		padding: 20px;
-		margin: 20px 0;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		margin-bottom: 20px;
 
-		h2 {
-			font-size: 22px;
-		}
+		&__links {
+			width: 250px;
+			transition: all 0.2s ease;
+			overflow-y: scroll;
 
-		h3 {
-			font-size: 18px;
-			margin-bottom: 0;
-			position: relative;
-			font-weight: 400;
-		}
-
-		a {
-			font-size: inherit;
-			text-decoration: underline;
-
-			&:hover {
-				text-decoration: none;
-			}
-		}
-
-		strong {
-			color: inherit;
-		}
-
-		ul {
-			list-style: none;
-			padding-left: 0;
-		}
-
-		ul,
-		ol {
-			margin-bottom: 10px;
-
-			ul {
-				padding-left: 30px;
+			h4 {
+				font-size: 30px;
 			}
 
-			li {
-				margin-bottom: 5px;
+			&::-webkit-scrollbar {
+				width: 0;
+			}
 
-				&:last-child {
+			&__fixed {
+				position: fixed;
+				top: 100px;
+				height: 100vh;
+				padding-bottom: 32px;
+				overflow: hidden auto;
+				padding-top: 24px;
+				margin-top: -24px;
+			}
+
+			&__absolute {
+				position: absolute;
+				bottom: 0;
+			}
+
+			&__back {
+				background-color: $white;
+			}
+
+			&__block {
+				list-style: none;
+				padding: 0;
+				padding: 10px 0;
+				border-bottom: 1px solid $light_gray;
+				cursor: pointer;
+				margin-bottom: 0;
+				font-weight: 700;
+				font-size: 22px;
+
+				ul {
+					padding-left: 10px;
 					margin-bottom: 0;
+				}
+
+				li {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding-right: 5px;
+
+					.helpItem__block__links__block {
+						padding-bottom: 0;
+						border-bottom: none;
+					}
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+
+					&:hover {
+						color: $green;
+					}
+				}
+
+				&__span {
+					&__active {
+						transform: rotate(90deg);
+					}
+				}
+
+				&__content {
+					display: none;
+
+					&__active {
+						display: block;
+					}
 				}
 			}
 		}
 
-		ol {
-			padding-left: 20px;
+		&__content {
+			width: 70%;
+			margin-left: auto;
 
-			&:last-child {
-				margin-bottom: 0;
+			a {
+				color: $black;
+				font-size: inherit;
+				border-bottom: 1px solid $green;
+			}
+
+			h3 {
+				font-size: 28px;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+
+			&__block {
+				margin-bottom: 30px;
+
+				h4 {
+					font-size: 22px;
+					padding-bottom: 10px;
+					padding-left: 25px;
+					border-bottom: 1px solid $light_gray;
+					position: relative;
+					background: url('/flag.png') no-repeat;
+					background-size: 18px;
+					background-position: 0 2px;
+				}
+
+				ul {
+					list-style: none;
+					padding: 0;
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+
+					li {
+						width: 48%;
+						font-size: 18px;
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 990px) {
+		&__block {
+			&__content {
+				width: calc(100% - 280px);
+			}
+		}
+	}
+
+	@media (max-width: 770px) {
+		&__block {
+			flex-wrap: wrap;
+			&__links,
+			&__content {
+				width: 100%;
+			}
+
+			&__links {
+				margin-bottom: 20px;
 			}
 		}
 	}
 
 	@media (max-width: 550px) {
 		&__block {
-			h2 {
-				font-size: 18px;
-			}
-
-			h3 {
-				font-size: 16px;
-			}
-
-			ul,
-			ol {
-				padding-left: 10px;
-
-				ul {
-					padding-left: 20px;
+			&__content {
+				&__block {
+					flex-wrap: wrap;
+					ul > li {
+						width: 100%;
+						font-size: 16px;
+					}
 				}
 			}
 		}

@@ -34,17 +34,7 @@ const data = {
 	},
 	mainData = {
 		headTitle: data.title,
-		content: (
-			<ol id={data.id} className={st.help__block__content__active}>
-				{data.children.map((item) => (
-					<li key={item.link}>
-						<Link href={item.link}>
-							<a>{item.title}</a>
-						</Link>
-					</li>
-				))}
-			</ol>
-		),
+		content: data,
 	};
 
 export default function HelpInner() {
