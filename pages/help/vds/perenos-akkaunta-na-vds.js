@@ -1,4 +1,4 @@
-import HelpItem from '../../../components/helpItem';
+import HelpBlock from '../../../components/helpItem/helpBlock';
 
 const mainData = {
 	headTitle: 'Перенос аккаунта на VDS',
@@ -24,5 +24,5 @@ const mainData = {
 };
 
 export default function HelpBlog() {
-	return <HelpItem data={mainData} />;
+	return <HelpBlock data={mainData} />;
 }

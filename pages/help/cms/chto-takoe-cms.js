@@ -1,4 +1,4 @@
-import HelpItem from '../../../components/helpItem';
+import HelpBlock from '../../../components/helpItem/helpBlock';
 
 const mainData = {
 	headTitle: 'Что такое CMS',
@@ -33,5 +33,5 @@ const mainData = {
 };
 
 export default function HelpBlog() {
-	return <HelpItem data={mainData} />;
+	return <HelpBlock data={mainData} />;
 }

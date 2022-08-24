@@ -1,6 +1,6 @@
-import HelpItem from '../../../components/helpItem';
 import Link from 'next/link';
 import { LINKS } from '../../../components/requirements';
+import HelpBlock from '../../../components/helpItem/helpBlock';
 
 const mainData = {
 	headTitle: 'Как зарегистрировать домен UZ',
@@ -29,5 +29,5 @@ const mainData = {
 };
 
 export default function HelpBlog() {
-	return <HelpItem data={mainData} />;
+	return <HelpBlock data={mainData} />;
 }

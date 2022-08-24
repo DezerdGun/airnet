@@ -1,4 +1,4 @@
-import HelpItem from '../../../components/helpItem';
+import HelpBlock from '../../../components/helpItem/helpBlock';
 
 const mainData = {
 	headTitle: 'Как перенести сайт на хостинг AIRNET?',
@@ -34,5 +34,5 @@ const mainData = {
 };
 
 export default function HelpBlog() {
-	return <HelpItem data={mainData} />;
+	return <HelpBlock data={mainData} />;
 }

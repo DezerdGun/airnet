@@ -1,6 +1,4 @@
-import Link from 'next/link';
 import HelpItem from '../../../components/helpItem';
-import st from '../help.module.scss';
 
 const data = {
 		id: 'cms',
