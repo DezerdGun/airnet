@@ -43,7 +43,7 @@ export default function HelpItem({ data }) {
 								<h4>Разделы</h4>
 								<div className={st.helpItem__block__links__back}>
 									{data?.content?.length ? (
-										data.content.map((item) => <LinksBlock data={item} />)
+										data.content.map((item, i) => <LinksBlock key={i} data={item} />)
 									) : (
 										<LinksBlock data={data.content} />
 									)}
@@ -101,7 +101,7 @@ const LinksBlock = ({ data }) => {
 				className={`${st.helpItem__block__links__block__content} ${
 					state && st.helpItem__block__links__block__content__active
 				}`}>
-				{data?.children && data.children.map((item) => <LinksBlock data={item} />)}
+				{data?.children && data.children.map((item, i) => <LinksBlock key={`data${i}`} data={item} />)}
 			</div>
 		</ul>
 	);
@@ -110,7 +110,7 @@ const LinksBlock = ({ data }) => {
 const Content = ({ data }) => {
 	if (data?.length)
 		return data.map((item) => (
-			<div className={st.helpItem__block__content__block}>
+			<div key={item.title} className={st.helpItem__block__content__block}>
 				<h3>
 					{item?.link ? (
 						<Link href={item.link}>
