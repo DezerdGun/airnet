@@ -13,7 +13,7 @@ export const LINKS = {
 	DOMAINS: '/domains',
 	SSL_HELP: '/help/ssl/zachem-nuzhen-ssl-sertifikat',
 	LICENSE: '/license',
-	ADMINISTRATION: '/',
+	ADMINISTRATION: '/admin-support',
 	ABOUT: '/about',
 	BLOG: '/blog',
 	STOCK: '/stock',
