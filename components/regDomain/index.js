@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import Container from '../container';
 import st from './regDomain.module.scss';
 
@@ -13,11 +14,44 @@ export default function RegDomain() {
 }
 
 export const RegDomainBlock = () => {
+	const search = useRef();
+
+	const checkDomain = () => {
+		console.log('dsds');
+		// try {
+		// 	fetch('https://tst.dot.uz/api/api_2_1.php', {
+		// 		method: 'POST',
+		// 		body: (
+		// 			<data>
+		// 				<dname>airnet.uz</dname>
+		// 			</data>
+		// 		),
+		// 		headers: {
+		// 			'Content-type': 'text/xml',
+		// 		},
+		// 	})
+		// 		.then((response) => response.text())
+		// 		// .then((str) => new window.DOMParser().parseFromString(str, 'text/xml'))
+		// 		.then((data) => console.log(data));
+		// } catch (e) {
+		// 	console.log(e);
+		// }
+		let xhr = new XMLHttpRequest();
+		xhr.open('POST', 'https://tst.dot.uz/api/api_2_1.php', [false, 'airnetAPI', 'TurLcMAC4cnB']);
+		xhr.setRequestHeader('Content-type', 'text/xml; charset=utf-8');
+		xhr.send(
+			<data>
+				<sLogin>airnetAPI</sLogin>
+				<sPass>TurLcMAC4cnB</sPass>
+			</data>
+		);
+	};
+
 	return (
 		<>
 			<div className={st.regDomain__block}>
-				www. <input placeholder="Введите название домена например: airnet.uz" />
-				<button>Проверить</button>
+				www. <input rel={search} placeholder="Введите название домена например: airnet.uz" />
+				<button onClick={checkDomain}>Проверить</button>
 			</div>
 
 			<p className={st.regDomain__price}>.UZ - 20.000сум/год</p>

@@ -12,41 +12,20 @@ $red: #f00;
 		table {
 			width: 100%;
 
-			td,
-			th {
-				color: $black;
-				background-color: $white;
-				padding: 10px;
-				font-size: 14px;
-				white-space: nowrap;
-				text-align: center;
-				border-right: 1px solid $light_gray;
-
-				&:last-child {
-					border-right: none;
-				}
+			td {
+				padding: 20px;
+				font-size: 18px;
 			}
 
-			th {
-				color: $white;
-				font-size: 15px;
-				background-color: $green !important;
-			}
-
-			tr {
-				&:nth-child(odd) {
-					td,
-					th {
-						background-color: $light_gray;
-					}
-				}
-
-				&:last-child {
-					td {
-						background-color: $white;
-					}
+			tr:hover {
+				td {
+					background-color: $light_gray;
 				}
 			}
+		}
+
+		div {
+			font-size: 24px;
 		}
 
 		&__img {
@@ -61,6 +40,39 @@ $red: #f00;
 				font-weight: 700;
 				font-size: 16px;
 			}
+		}
+
+		&__count {
+			width: 50px;
+			height: 50px;
+			background-color: $green;
+			color: $white;
+			font-weight: 700;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__proc {
+			h4 {
+				font-size: 22px;
+			}
+			h5 {
+				font-weight: 400;
+				margin-bottom: 0;
+			}
+		}
+
+		a {
+			display: block;
+			background-color: $green;
+			color: $white;
+			font-size: 20px;
+			font-weight: 700;
+			text-align: center;
+			padding: 10px;
+			border-radius: 5px;
 		}
 	}
 
@@ -148,12 +160,17 @@ $red: #f00;
 			}
 
 			&::-webkit-scrollbar-thumb {
-				background-color: $white;
+				background-color: $light_gray;
 				border-radius: 10px;
 			}
 
 			table {
 				width: 935px;
+
+				td {
+					font-size: 16px;
+					padding: 10px;
+				}
 			}
 
 			&__img {
@@ -164,6 +181,23 @@ $red: #f00;
 
 				img {
 					width: 100px;
+				}
+			}
+
+			&__count {
+				width: 40px;
+				height: 38px;
+				font-size: 20px !important;
+			}
+
+			&__proc {
+				h4 {
+					font-size: 20px;
+					margin-bottom: 5px;
+				}
+
+				h5 {
+					font-size: 16px;
 				}
 			}
 		}

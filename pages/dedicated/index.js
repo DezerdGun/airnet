@@ -27,158 +27,341 @@ const checkedCircle = (
 	),
 	table = [
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<img src="/dedicated/d-1.png" />
-				</div>
-			),
-			proc: 'Intel E3-1220v2',
+			proc: 'Xeon E3',
+			procTitle: '1220v2',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 16,
-			ssd: '240 GB SSD',
+			ssd: '240 Гб SSD',
+			settingsRam: 16,
+			settingsOther: '1 шт. SSD',
+			price: '200 000',
+			link: '#',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<img src="/dedicated/d-1.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 1xL5640',
+			proc: '1 x Xeon',
+			procTitle: 'L5640',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 32,
-			ssd: '1 x 200 Gb SSD',
+			ssd: '1 x 200 Гб SSD',
+			settingsRam: 32,
+			settingsOther: '2 шт. HDD, SSD',
+			price: '200 000',
+			link: '#',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<img src="/dedicated/d-1.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 1xL5640',
+			proc: '1 x Xeon',
+			procTitle: 'L5640',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 32,
-			ssd: '2 x 500 Gb HDD',
+			ssd: '2 x 500 Гб HDD',
+			settingsRam: 32,
+			settingsOther: '2 шт. HDD',
+			price: '200 000',
+			link: '#',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<img src="/dedicated/d-1.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 1xL5640',
+			proc: '1 x Xeon',
+			procTitle: 'L5640',
+			core: '4 ядра',
+			herz: '3.1-3.5',
+			ssd: '2 x 500 Гб HDD',
+			settingsRam: 32,
+			settingsOther: '2 шт. HDD',
+			price: '200 000',
+			link: '#',
 			ram: 32,
-			ssd: '2 x 500 Gb HDD',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<span>ХИТ</span>
-					<img src="/dedicated/d-1.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 2xL5630',
+			proc: '2 x Xeon',
+			procTitle: 'L5630',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 32,
-			ssd: '2 x 200 Gb SSD, RAID 1',
+			ssd: '2 x 200 Гб SSD, RAID 1',
+			settingsRam: 32,
+			settingsOther: '2 шт. SSD, RAID 1',
+			price: '200 000',
+			link: '#',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<img src="/dedicated/d-1.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 2xL5630',
+			proc: '2 x Xeon',
+			procTitle: 'L5630',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 32,
-			ssd: '2 x 1000 Gb HDD, RAID 1',
+			ssd: '2 x 1000 Гб HDD, RAID 1',
+			settingsRam: 32,
+			settingsOther: '2 шт. HDD, RAID 1',
+			price: '200 000',
+			link: '#',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<img src="/dedicated/d-2.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 2xE5-2670',
+			proc: '2 x Xeon E5',
+			procTitle: '2670',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 32,
-			ssd: '2 x 1000 Gb HDD, RAID 1',
+			ssd: '2 x 1000 Гб HDD, RAID 1',
+			settingsRam: 32,
+			settingsOther: '2 шт. HDD, RAID 1',
+			price: '200 000',
+			link: '#',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<img src="/dedicated/d-2.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 2xL5630',
+			proc: '2 x Xeon',
+			procTitle: 'L5630',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 48,
-			ssd: '2 x 200 Gb SSD, RAID 1',
+			ssd: '2 x 200 Гб SSD, RAID 1',
+			settingsRam: 48,
+			settingsOther: '2 шт. SSD, RAID 1',
+			price: '200 000',
+			link: '#',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<img src="/dedicated/d-2.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 2xL5630',
+			proc: '2 x Xeon',
+			procTitle: 'L5630',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 48,
-			ssd: '2 x 1000 Gb HDD, RAID 1',
+			ssd: '2 x 1000 Гб HDD, RAID 1',
+			settingsRam: 48,
+			settingsOther: '2 шт. HDD, RAID 1',
+			price: '200 000',
+			link: '#',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<img src="/dedicated/d-2.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 2xL5640',
+			proc: '2 x Xeon',
+			procTitle: 'L5640',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 64,
-			ssd: '2 x 480 Gb SSD, RAID 1',
+			ssd: '2 x 480 Гб SSD, RAID 1',
+			settingsRam: 64,
+			settingsOther: '2 шт. SSD, RAID 1',
+			price: '200 000',
+			link: '#',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<span>СУПЕРЦЕНА</span>
-					<img src="/dedicated/d-2.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 2xL5640',
+			proc: '2 x Xeon',
+			procTitle: 'L5640',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 64,
-			ssd: '2 x 2000 Gb HDD, RAID 1',
+			ssd: '2 x 2000 Гб HDD, RAID 1',
+			settingsRam: 64,
+			settingsOther: '2 шт. HDD, RAID 1',
+			price: '200 000',
+			link: '#',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<img src="/dedicated/d-3.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 2xE5-2670',
+			proc: '2 x Xeon E5',
+			procTitle: '2670',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 64,
-			ssd: '2 x 1000 Gb HDD, RAID 1',
+			ssd: '2 x 1000 Гб HDD, RAID 1',
+			settingsRam: 64,
+			settingsOther: '2 шт. HDD, RAID 1',
+			price: '200 000',
+			link: '#',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<img src="/dedicated/d-3.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 2xE5-2670',
+			proc: '2 x Xeon E5',
+			procTitle: '2670',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 64,
-			ssd: '2 x 480 Gb SSD, RAID 1',
+			ssd: '2 x 480 Гб SSD, RAID 1',
+			settingsRam: 64,
+			settingsOther: '2 шт. SSD, RAID 1',
+			price: '200 000',
+			link: '#',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<img src="/dedicated/d-3.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 2xL5640',
+			proc: '2 x Xeon',
+			procTitle: 'L5640',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 96,
-			ssd: '2 x 480 Gb SSD, RAID 1',
+			ssd: '2 x 480 Гб SSD, RAID 1',
+			settingsRam: 96,
+			settingsOther: '2 шт. SSD, RAID 1',
+			price: '200 000',
+			link: '#',
 		},
 		{
-			img: (
-				<div className={st.dedicated__table__img}>
-					<img src="/dedicated/d-3.png" />
-				</div>
-			),
-			proc: 'Intel Xeon 2xL5640',
+			proc: '2 x Xeon',
+			procTitle: 'L5640',
+			core: '4 ядра',
+			herz: '3.1-3.5',
 			ram: 96,
-			ssd: '2 x 2000 Gb HDD, RAID 1',
+			ssd: '2 x 2000 Гб HDD, RAID 1',
+			settingsRam: 96,
+			settingsOther: '2 шт. HDD, RAID 1',
+			price: '200 000',
+			link: '#',
 		},
 	];
+
+// table = [
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<img src="/dedicated/d-1.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel E3-1220v2',
+// 		ram: 16,
+// 		ssd: '240 Гб SSD',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<img src="/dedicated/d-1.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 1xL5640',
+// 		ram: 32,
+// 		ssd: '1 x 200 Гб SSD',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<img src="/dedicated/d-1.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 1xL5640',
+// 		ram: 32,
+// 		ssd: '2 x 500 Гб HDD',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<img src="/dedicated/d-1.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 1xL5640',
+// 		ram: 32,
+// 		ssd: '2 x 500 Гб HDD',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<span>ХИТ</span>
+// 				<img src="/dedicated/d-1.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 2xL5630',
+// 		ram: 32,
+// 		ssd: '2 x 200 Гб SSD, RAID 1',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<img src="/dedicated/d-1.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 2xL5630',
+// 		ram: 32,
+// 		ssd: '2 x 1000 Гб HDD, RAID 1',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<img src="/dedicated/d-2.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 2xE5-2670',
+// 		ram: 32,
+// 		ssd: '2 x 1000 Гб HDD, RAID 1',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<img src="/dedicated/d-2.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 2xL5630',
+// 		ram: 48,
+// 		ssd: '2 x 200 Гб SSD, RAID 1',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<img src="/dedicated/d-2.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 2xL5630',
+// 		ram: 48,
+// 		ssd: '2 x 1000 Гб HDD, RAID 1',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<img src="/dedicated/d-2.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 2xL5640',
+// 		ram: 64,
+// 		ssd: '2 x 480 Гб SSD, RAID 1',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<span>СУПЕРЦЕНА</span>
+// 				<img src="/dedicated/d-2.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 2xL5640',
+// 		ram: 64,
+// 		ssd: '2 x 2000 Гб HDD, RAID 1',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<img src="/dedicated/d-3.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 2xE5-2670',
+// 		ram: 64,
+// 		ssd: '2 x 1000 Гб HDD, RAID 1',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<img src="/dedicated/d-3.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 2xE5-2670',
+// 		ram: 64,
+// 		ssd: '2 x 480 Гб SSD, RAID 1',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<img src="/dedicated/d-3.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 2xL5640',
+// 		ram: 96,
+// 		ssd: '2 x 480 Гб SSD, RAID 1',
+// 	},
+// 	{
+// 		img: (
+// 			<div className={st.dedicated__table__img}>
+// 				<img src="/dedicated/d-3.png" />
+// 			</div>
+// 		),
+// 		proc: 'Intel Xeon 2xL5640',
+// 		ram: 96,
+// 		ssd: '2 x 2000 Гб HDD, RAID 1',
+// 	},
+// ];
 
 export default function Dedicated() {
 	return (
@@ -190,12 +373,18 @@ export default function Dedicated() {
 			<div className={st.dedicated}>
 				<Container
 					className="mt-0"
-					style={{ background: "url('/servers.jpg') no-repeat" }}
+					// style={{ background: "url('/servers.jpg') no-repeat" }}
 					headTitle="Выделенные сервера"
+					description={
+						<p>
+							Установим и активируем сервер за 60 минут, добавим диски и память за сутки по согласованию с
+							отделом продаж
+						</p>
+					}
 					clNTitle="mb-4">
 					<>
 						<div className={st.dedicated__table}>
-							<table>
+							{/* <table>
 								<thead>
 									<tr>
 										<th></th>
@@ -212,7 +401,7 @@ export default function Dedicated() {
 										<tr key={item.proc}>
 											<td>{item.img}</td>
 											<td>{item.proc}</td>
-											<td>{item.ram} GB</td>
+											<td>{item.ram} Гб</td>
 											<td>{item.ssd}</td>
 											<td>100 Mbit/s., неограниченный</td>
 											<td>Ташкент</td>
@@ -220,6 +409,40 @@ export default function Dedicated() {
 										</tr>
 									))}
 								</tbody>
+							</table> */}
+							<table>
+								{table.map((item, i) => (
+									<tr key={item.proc}>
+										<td>
+											<div className={st.dedicated__table__count}>P{i + 1}</div>
+										</td>
+										<td>
+											<div className={st.dedicated__table__proc}>
+												<h4>{item.proc}</h4>
+												<h5>{item.procTitle}</h5>
+											</div>
+										</td>
+										<td className="text-center">{item.core}</td>
+										<td className="text-center">{item.herz}ГГц</td>
+										<td className="text-center">{item.ram}Гб</td>
+										<td className="text-center">{item.ssd}</td>
+										{/* <td>100 Mbit/s., неограниченный</td> */}
+										{/* <td>Ташкент</td> */}
+										<td className="text-center">
+											<div className="def-price">
+												{item.price}
+												<span>
+													сум
+													<hr />
+													мес.
+												</span>
+											</div>
+										</td>
+										<td>
+											<a href={item.link}>ЗАКАЗАТЬ</a>
+										</td>
+									</tr>
+								))}
 							</table>
 						</div>
 						<a href="" className={st.dedicated__link}>
@@ -249,7 +472,7 @@ export default function Dedicated() {
 							<span>{checkedCircle}</span>Бесплатная настройка и установка сервера
 						</li>
 						<li>
-							<span>{checkedCircle}</span>Все сервера подключаются к порту 1 Gbps., трафик на скорости до
+							<span>{checkedCircle}</span>Все сервера подключаются к порту 1 Гбps., трафик на скорости до
 							25 Mbit/s без ограничений
 						</li>
 						<li>
