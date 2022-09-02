@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import InputRange from 'react-input-range';
+// import InputRange from 'react-input-range';
 import Container from '../container';
 import st from './calculator.module.scss';
-import 'react-input-range/lib/css/index.css';
+// import 'react-input-range/lib/css/index.css';
 
 const calcSpeed = [
 		{
@@ -358,13 +358,13 @@ const CalcInput = ({ text, step, min, max, name, state, setState }) => {
 	return (
 		<div className={st.calculator__block__item__category__content__input}>
 			<div className={st.calculator__block__item__category__content__input__item}>
-				<InputRange
+				{/* <InputRange
 					step={step}
 					maxValue={max}
 					minValue={min}
 					value={state[name]}
 					onChange={(value) => setState({ ...state, [name]: value })}
-				/>
+				/> */}
 			</div>
 			<div className={st.calculator__block__item__category__content__input__block}>
 				<input value={state[name]} onChange={(value) => setState({ ...state, [name]: value })} />
@@ -401,6 +401,7 @@ const CalcSystem = ({ data, state }) => {
 							<ul>
 								{item.versions.map((el, i) => (
 									<li
+										key={el.title}
 										className={
 											ver === i &&
 											st.calculator__block__item__category__content__system__item__content__active

@@ -1,9 +1,10 @@
 // /** @type {import('next').NextConfig} */
-// const nextConfig = {
-// 	reactStrictMode: true,
-// 	eslint: {
-// 		ignoreDuringBuilds: true,
-// 	},
-// };
+const nextConfig = {
+	reactStrictMode: true,
+	eslint: {
+		ignoreDuringBuilds: true,
+	},
+	experimental: { esmExternals: true },
+};
 
-// module.exports = nextConfig;
+module.exports = nextConfig;
