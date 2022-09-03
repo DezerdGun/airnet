@@ -231,6 +231,140 @@ $red: #f00;
 							}
 						}
 					}
+
+					&__po {
+						display: flex;
+						align-items: center;
+						flex-wrap: wrap;
+
+						&__item {
+							width: fit-content;
+							margin-right: 10px;
+							color: $white;
+							padding: 10px;
+							border-radius: 5px;
+							background-color: $gray;
+							margin-bottom: 10px;
+							cursor: pointer;
+
+							&__active {
+								background-color: $green;
+							}
+						}
+					}
+
+					&__switcher {
+						width: fit-content;
+						display: flex;
+						align-items: center;
+						background-color: $gray;
+						border-radius: 5px;
+
+						&__item {
+							color: $white;
+							padding: 8px 15px;
+							font-weight: 700;
+							cursor: pointer;
+
+							&__active {
+								border-radius: 5px;
+								background-color: $green;
+							}
+						}
+					}
+
+					&__footer {
+						border-top: 1px solid $gray;
+						padding: 20px;
+
+						h4 {
+							color: $white;
+							font-size: 20px;
+							margin-bottom: 20px;
+
+							span {
+								font-size: inherit;
+							}
+						}
+
+						ul {
+							list-style: none;
+							padding: 0;
+
+							li {
+								color: $white;
+								background-color: $gray;
+								padding: 8px 10px;
+								margin-bottom: 15px;
+								border-radius: 5px;
+
+								svg {
+									width: 20px;
+									height: 20px;
+									fill: $green;
+									margin-right: 10px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&__result {
+			width: 300px;
+			border-radius: 10px;
+			overflow: hidden;
+
+			&__header {
+				padding: 20px;
+				background-color: $green;
+
+				div {
+					font-size: 24px;
+					margin-bottom: 15px;
+					color: $white;
+				}
+
+				a {
+					color: $white;
+				}
+			}
+
+			&__content {
+				background-color: $gray;
+				padding: 20px;
+
+				&__info {
+					margin-bottom: 15px;
+					&__title {
+						text-transform: uppercase;
+						color: $light_gray;
+						font-size: 12px;
+						font-weight: 700;
+					}
+
+					&__value {
+						color: $white;
+						font-weight: 700;
+					}
+				}
+
+				&__footer {
+					margin-top: 30px;
+					padding-top: 20px;
+					border-top: 1px solid $light_gray;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					a {
+						display: block;
+						background-color: $green;
+						color: $white;
+						padding: 10px;
+						border-radius: 10px;
+					}
 				}
 			}
 		}
