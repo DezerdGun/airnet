@@ -13,6 +13,7 @@ $red: #f00;
 	&__block {
 		display: flex;
 		justify-content: space-between;
+		position: relative;
 
 		&__item {
 			width: 55%;
@@ -316,9 +317,28 @@ $red: #f00;
 			border-radius: 10px;
 			overflow: hidden;
 
+			&__fixed {
+				position: fixed;
+				top: 100px;
+				right: 50px;
+				height: 100vh;
+				padding-bottom: 32px;
+				overflow: hidden auto;
+				padding-top: 24px;
+				margin-top: -24px;
+			}
+
+			&__absolute {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+
 			&__header {
 				padding: 20px;
 				background-color: $green;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
 
 				div {
 					font-size: 24px;
@@ -334,6 +354,8 @@ $red: #f00;
 			&__content {
 				background-color: $gray;
 				padding: 20px;
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
 
 				&__info {
 					margin-bottom: 15px;
@@ -357,6 +379,14 @@ $red: #f00;
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
+					div,
+					span {
+						color: $white;
+					}
+
+					hr {
+						border-color: $white;
+					}
 
 					a {
 						display: block;

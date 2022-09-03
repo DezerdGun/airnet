@@ -256,11 +256,30 @@ export default function Calculator() {
 		administration: 'Нет',
 	});
 
+	const [isFixed, setIsFixed] = useState(false);
+
+	const scroll = () => {
+		const content = document.querySelector('#content'),
+			result = document.querySelector('#result');
+
+		if (document.body.clientWidth > 770) {
+			if (window.pageYOffset >= 112) {
+				if (window.pageYOffset > content.clientHeight - result.clientHeight + 112) {
+					setIsFixed('end');
+				} else setIsFixed(true);
+			} else setIsFixed(false);
+		} else document.removeEventListener('scroll', scroll);
+	};
+
+	useEffect(() => {
+		document.addEventListener('scroll', scroll);
+	}, []);
+
 	return (
 		<div className={st.calculator}>
 			<Container>
 				<div className={st.calculator__block}>
-					<div className={st.calculator__block__item}>
+					<div id="content" className={st.calculator__block__item}>
 						<div className={st.calculator__block__item__info}>
 							<div className={st.calculator__block__item__info__item}>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -372,7 +391,14 @@ export default function Calculator() {
 							</ul>
 						</div>
 					</div>
-					<div className={st.calculator__block__result}>
+					<div
+						id="result"
+						className={`${st.calculator__block__result} ${
+							isFixed &&
+							(isFixed === 'end'
+								? st.calculator__block__result__absolute
+								: st.calculator__block__result__fixed)
+						}`}>
 						<div className={st.calculator__block__result__header}>
 							<div>VDS Форсаж</div>
 							<a href="#">Поделиться</a>
