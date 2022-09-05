@@ -368,7 +368,6 @@ export default function Calculator() {
 								<CalcInfo title="SSD" value={`${state.ssd} Гб`} />
 							</div>
 							<CalcInfo title="Операционная система" value={`${state.os} ${state.osVersion}`} />
-							<CalcInfo title="Предустановленное ПО" value={`${state.po}`} />
 							<CalcInfo title="Канал" value={`${state.speed}`} />
 							<CalcInfo title="Лимит IP-Адресов" value={`32 адреса`} />
 							<CalcInfo title="Администрирование" value={`${state.administration}`} />
@@ -484,7 +483,6 @@ const CalcSystem = ({ data, setData, state, setState }) => {
 					<div
 						className={st.calculator__block__item__category__content__system__item__title}
 						onClick={() => {
-							console.log(show, i, !show.show || show.index !== i);
 							if (!show.show || show.index !== i) {
 								setShow((prev) => ({ ...prev, index: i, show: false }));
 								setState((prev) => ({
