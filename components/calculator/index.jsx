@@ -6,88 +6,30 @@ import st from './calculator.module.scss';
 import { Range } from 'react-range';
 
 const calcSpeed = [
-		{
-			id: 100,
-			title: 'до 100 Мбит/с - безлимит',
-			price: 0,
-		},
-		{
-			id: 1,
-			title: 'до 1 Гбит/с - 32ТБ/мес',
-			price: 0,
-		},
-		{
-			id: 'ddos',
-			title: 'Защита от DDoS (1 Мбит/с)',
-			price: 250,
-		},
-	],
-	calcPO = [
-		{
-			id: 'not',
-			title: 'Не выбрано',
-		},
-		{
-			id: 'lamp',
-			title: 'LAMP',
-		},
-		{
-			id: 'lemp',
-			title: 'LEMP',
-		},
-		{
-			id: '1c',
-			title: '1С-Битрикс: Управление сайтом',
-		},
-		{
-			id: 'django',
-			title: 'Django',
-		},
-		{
-			id: 'isp6lite',
-			title: 'ISPmanager 6 Lite',
-			price: 299,
-		},
-		{
-			id: 'isp6pro',
-			title: 'ISPmanager 6 Pro',
-			price: 599,
-		},
-		{
-			id: 'isp6host',
-			title: 'ISPmanager 6 Host',
-			price: 899,
-		},
-		{
-			id: 'openvpn',
-			title: 'Openvpn',
-		},
-		{
-			id: 'redmine',
-			title: 'Redmine',
-		},
-		{
-			id: 'team',
-			title: 'Teamspeak',
-		},
-		{
-			id: 'tomcat',
-			title: 'Tomcat',
-		},
-		{
-			id: 'bitrix24',
-			title: 'Битрикс24',
-		},
-	];
+	{
+		id: 'unlim-25',
+		title: 'Unlim 25M',
+		price: 500000,
+	},
+	{
+		id: 'unlim-50',
+		title: 'Unlim 50M',
+		price: 1000000,
+	},
+	{
+		id: 'unlim-100',
+		title: 'Unlim 100M',
+		price: 2000000,
+	},
+];
 
 export default function Calculator() {
 	const [state, setState] = useState({
 			core: 2,
 			ram: 2,
 			ssd: 20,
-			os: 'ubuntu',
+			os: 'Ubuntu',
 			osVersion: '18.04',
-			po: calcPO[0].title,
 			speed: calcSpeed[0].title,
 			administration: 'Нет',
 		}),
@@ -363,20 +305,12 @@ export default function Calculator() {
 						<CalcBlock number={3} title="Система">
 							<CalcHeader title="Выбор операционной системы" price={0} />
 							<CalcSystem data={calcOS} setData={setCalcOS} state={state} setState={setState} />
-							<CalcHeader title="Выбор предустановленного ПО" price={0} />
-							<CalcPO
-								data={calcPO.filter((item) =>
-									calcOS
-										.find((e) => e.id === state.os)
-										.versions.find((e) => e.title === state.osVersion)
-										.po.includes(item.id)
-								)}
-								state={state}
-								setState={setState}
-							/>
 						</CalcBlock>
 						<CalcBlock number={4} title="Канал">
-							<CalcHeader title="Выбор канала" price={0} />
+							<CalcHeader
+								title="Выбор канала"
+								price={BeautyNum(calcSpeed.find((item) => item.title === state.speed).price)}
+							/>
 							<CalcSpeed data={calcSpeed} state={state} setState={setState} />
 						</CalcBlock>
 						<CalcBlock number={5} title="Администрирование">
@@ -440,7 +374,12 @@ export default function Calculator() {
 							<CalcInfo title="Администрирование" value={`${state.administration}`} />
 							<div className={st.calculator__block__result__content__footer}>
 								<div className="def-price">
-									{BeautyNum(state.core * 30000 + state.ram * 30000 + state.ssd * 1000)}{' '}
+									{BeautyNum(
+										state.core * 30000 +
+											state.ram * 30000 +
+											state.ssd * 1000 +
+											calcSpeed.find((item) => item.title === state.speed).price
+									)}{' '}
 									<span>
 										сум
 										<hr />
@@ -538,18 +477,22 @@ const CalcSystem = ({ data, setData, state, setState }) => {
 				<div
 					key={item.id}
 					className={`${st.calculator__block__item__category__content__system__item} ${
-						state.os === item.id && st.calculator__block__item__category__content__system__item__active
+						state.os === item.title
+							? st.calculator__block__item__category__content__system__item__active
+							: ''
 					}`}>
 					<div
 						className={st.calculator__block__item__category__content__system__item__title}
 						onClick={() => {
-							setShow((prev) => ({ ...prev, index: i, show: false }));
-							setState((prev) => ({
-								...prev,
-								os: item.id,
-								osVersion: item.versions[show.ver].title,
-								po: 'Не выбрано',
-							}));
+							console.log(show, i, !show.show || show.index !== i);
+							if (!show.show || show.index !== i) {
+								setShow((prev) => ({ ...prev, index: i, show: false }));
+								setState((prev) => ({
+									...prev,
+									os: item.title,
+									osVersion: item.versions[show.ver].title,
+								}));
+							}
 						}}>
 						{item.title}
 					</div>
@@ -578,22 +521,14 @@ const CalcSystem = ({ data, setData, state, setState }) => {
 };
 
 const CalcSystemVersions = ({ index, show, setShow, state, setState, data, setData }) => {
-	const [ver, setVer] = useState(0);
-
 	return (
 		<>
-			{/* {show.index === index ? state.osVersion : data.versions[ver]?.title} */}
-			{/* {data.versions.find((item) => item.selected).title ? state.osVersion : data.versions[ver]?.title} */}
 			{data.versions.find((item) => item?.selected).title}
 			{show.index === index && show.show && (
 				<ul>
 					{data.versions.map((el, i) => (
 						<li
-							// className={
-							// 	ver === index ? st.calculator__block__item__category__content__system__item__content__active : ''
-							// }
 							onClick={() => {
-								setVer(index);
 								setData((prev) => {
 									const temp = data.versions.map((key, index) => {
 										key.selected = index == i;
@@ -604,7 +539,7 @@ const CalcSystemVersions = ({ index, show, setShow, state, setState, data, setDa
 								});
 								setState((prev) => ({
 									...prev,
-									os: data.id,
+									os: data.title,
 									osVersion: data.versions[i].title,
 									ver: i,
 									po: 'Не выбрано',
@@ -617,23 +552,6 @@ const CalcSystemVersions = ({ index, show, setShow, state, setState, data, setDa
 				</ul>
 			)}
 		</>
-	);
-};
-
-const CalcPO = ({ data, state, setState }) => {
-	return (
-		<div className={st.calculator__block__item__category__content__po}>
-			{data.map((item) => (
-				<div
-					className={`${st.calculator__block__item__category__content__po__item} ${
-						item.title === state.po ? st.calculator__block__item__category__content__po__item__active : ''
-					}`}
-					key={item.title}
-					onClick={() => setState((prev) => ({ ...prev, po: item.title }))}>
-					{item.title}
-				</div>
-			))}
-		</div>
 	);
 };
 
@@ -665,7 +583,8 @@ const CalcSwitcher = ({ state, setState }) => {
 						? st.calculator__block__item__category__content__switcher__item__active
 						: ''
 				}`}
-				onClick={() => setState((prev) => ({ ...prev, administration: 'Нет' }))}>
+				// onClick={() => setState((prev) => ({ ...prev, administration: 'Нет' }))}>
+			>
 				Нет
 			</div>
 			<div
@@ -674,7 +593,8 @@ const CalcSwitcher = ({ state, setState }) => {
 						? st.calculator__block__item__category__content__switcher__item__active
 						: ''
 				}`}
-				onClick={() => setState((prev) => ({ ...prev, administration: 'Да' }))}>
+				// onClick={() => setState((prev) => ({ ...prev, administration: 'Да' }))}>
+			>
 				Да
 			</div>
 		</div>
