@@ -13,7 +13,7 @@ $red: #f00;
 	&__block {
 		display: flex;
 		justify-content: space-between;
-		position: relative;
+		// position: relative;
 
 		&__item {
 			width: 55%;
@@ -313,25 +313,18 @@ $red: #f00;
 		}
 
 		&__result {
-			width: 300px;
+			width: 400px;
 			border-radius: 10px;
 			overflow: hidden;
-
-			&__fixed {
-				position: fixed;
-				top: 100px;
-				right: 50px;
-				height: 100vh;
-				padding-bottom: 32px;
-				overflow: hidden auto;
-				padding-top: 24px;
-				margin-top: -24px;
-			}
+			transition: none !important;
 
 			&__absolute {
 				position: absolute;
 				right: 0;
-				bottom: 0;
+				padding-bottom: 32px;
+				overflow: hidden auto;
+				padding-top: 24px;
+				transition: none !important;
 			}
 
 			&__header {

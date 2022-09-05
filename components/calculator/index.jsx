@@ -78,183 +78,200 @@ const calcSpeed = [
 			id: 'bitrix24',
 			title: 'Битрикс24',
 		},
-	],
-	calcOS = [
-		{
-			id: 'ubuntu',
-			title: 'Ubuntu',
-			img: '/',
-			versions: [
-				{
-					title: '18.04',
-					po: [
-						'not',
-						'lamp',
-						'lemp',
-						'django',
-						'isp6lite',
-						'isp6pro',
-						'isp6host',
-						'openvpn',
-						'team',
-						'tomcat',
-					],
-				},
-				{
-					title: '20.04',
-					po: ['not', 'lamp', 'lemp', 'isp6lite', 'isp6pro', 'isp6host', 'openvpn'],
-				},
-				{
-					title: '22.04',
-					po: ['not', 'isp6lite', 'isp6pro', 'isp6host'],
-				},
-			],
-		},
-		{
-			id: 'centos',
-			title: 'CentOS',
-			img: '/',
-			versions: [
-				{
-					title: '7',
-					po: [
-						'not',
-						'lamp',
-						'1c',
-						'django',
-						'isp6lite',
-						'isp6pro',
-						'isp6host',
-						'openvpn',
-						'team',
-						'tomcat',
-						'bitrix24',
-					],
-				},
-			],
-		},
-		{
-			id: 'alma',
-			title: 'Alma',
-			img: '/',
-			versions: [
-				{
-					title: '8',
-					po: [
-						'not',
-						'lamp',
-						'lemp',
-						'django',
-						'isp6lite',
-						'isp6pro',
-						'isp6host',
-						'openvpn',
-						'redmine',
-						'team',
-						'tomcat',
-					],
-				},
-				{
-					title: '9',
-					po: ['not'],
-				},
-			],
-		},
-		{
-			id: 'rocky',
-			title: 'Rocky',
-			img: '/',
-			versions: [
-				{
-					title: '8',
-					po: ['not', 'lamp', 'lemp', 'django', 'openvpn', 'redmine', 'team', 'tomcat'],
-				},
-				{
-					title: '9',
-					po: ['not'],
-				},
-			],
-		},
-		{
-			id: 'oracle',
-			title: 'Oracle',
-			img: '/',
-			versions: [
-				{
-					title: '8',
-					po: ['not', 'lamp', 'lemp', 'django', 'openvpn', 'redmine', 'team', 'tomcat'],
-				},
-			],
-		},
-		{
-			id: 'debian',
-			title: 'Debian',
-			img: '/',
-			versions: [
-				{
-					title: '10',
-					po: [
-						'not',
-						'lamp',
-						'lemp',
-						'isp6lite',
-						'isp6pro',
-						'isp6host',
-						'openvpn',
-						'redmine',
-						'team',
-						'tomcat',
-					],
-				},
-				{
-					title: '11',
-					po: ['not', 'lamp', 'lemp', 'isp6lite', 'isp6pro', 'isp6host', 'openvpn', 'team', 'tomcat'],
-				},
-			],
-		},
-		{
-			id: 'free',
-			title: 'FreeBSD',
-			img: '/',
-			versions: [
-				{
-					title: '12',
-					po: ['not'],
-				},
-				{
-					title: '13',
-					po: ['not'],
-				},
-			],
-		},
-		{
-			id: 'windows',
-			title: 'Windows',
-			img: '/',
-			versions: [
-				{
-					title: '2019',
-					po: ['not'],
-				},
-				{
-					title: '2022',
-					po: ['not'],
-				},
-			],
-		},
 	];
 
 export default function Calculator() {
 	const [state, setState] = useState({
-		core: 2,
-		ram: 2,
-		ssd: 20,
-		os: 'ubuntu',
-		osVersion: '18.04',
-		po: calcPO[0].title,
-		speed: calcSpeed[0].title,
-		administration: 'Нет',
-	});
+			core: 2,
+			ram: 2,
+			ssd: 20,
+			os: 'ubuntu',
+			osVersion: '18.04',
+			po: calcPO[0].title,
+			speed: calcSpeed[0].title,
+			administration: 'Нет',
+		}),
+		[position, setPosition] = useState({ top: 0 }),
+		[calcOS, setCalcOS] = useState([
+			{
+				id: 'ubuntu',
+				selected: true,
+				title: 'Ubuntu',
+				img: '/',
+				versions: [
+					{
+						selected: true,
+						title: '18.04',
+						po: [
+							'not',
+							'lamp',
+							'lemp',
+							'django',
+							'isp6lite',
+							'isp6pro',
+							'isp6host',
+							'openvpn',
+							'team',
+							'tomcat',
+						],
+					},
+					{
+						title: '20.04',
+						po: ['not', 'lamp', 'lemp', 'isp6lite', 'isp6pro', 'isp6host', 'openvpn'],
+					},
+					{
+						title: '22.04',
+						po: ['not', 'isp6lite', 'isp6pro', 'isp6host'],
+					},
+				],
+			},
+			{
+				id: 'centos',
+				selected: false,
+				title: 'CentOS',
+				img: '/',
+				versions: [
+					{
+						selected: true,
+						title: '7',
+						po: [
+							'not',
+							'lamp',
+							'1c',
+							'django',
+							'isp6lite',
+							'isp6pro',
+							'isp6host',
+							'openvpn',
+							'team',
+							'tomcat',
+							'bitrix24',
+						],
+					},
+				],
+			},
+			{
+				id: 'alma',
+				selected: false,
+				title: 'Alma',
+				img: '/',
+				versions: [
+					{
+						selected: true,
+						title: '8',
+						po: [
+							'not',
+							'lamp',
+							'lemp',
+							'django',
+							'isp6lite',
+							'isp6pro',
+							'isp6host',
+							'openvpn',
+							'redmine',
+							'team',
+							'tomcat',
+						],
+					},
+					{
+						title: '9',
+						po: ['not'],
+					},
+				],
+			},
+			{
+				id: 'rocky',
+				selected: false,
+				title: 'Rocky',
+				img: '/',
+				versions: [
+					{
+						selected: true,
+						title: '8',
+						po: ['not', 'lamp', 'lemp', 'django', 'openvpn', 'redmine', 'team', 'tomcat'],
+					},
+					{
+						title: '9',
+						po: ['not'],
+					},
+				],
+			},
+			{
+				id: 'oracle',
+				selected: false,
+				title: 'Oracle',
+				img: '/',
+				versions: [
+					{
+						selected: true,
+						title: '8',
+						po: ['not', 'lamp', 'lemp', 'django', 'openvpn', 'redmine', 'team', 'tomcat'],
+					},
+				],
+			},
+			{
+				id: 'debian',
+				selected: false,
+				title: 'Debian',
+				img: '/',
+				versions: [
+					{
+						selected: true,
+						title: '10',
+						po: [
+							'not',
+							'lamp',
+							'lemp',
+							'isp6lite',
+							'isp6pro',
+							'isp6host',
+							'openvpn',
+							'redmine',
+							'team',
+							'tomcat',
+						],
+					},
+					{
+						title: '11',
+						po: ['not', 'lamp', 'lemp', 'isp6lite', 'isp6pro', 'isp6host', 'openvpn', 'team', 'tomcat'],
+					},
+				],
+			},
+			{
+				id: 'free',
+				selected: false,
+				title: 'FreeBSD',
+				img: '/',
+				versions: [
+					{
+						selected: true,
+						title: '12',
+						po: ['not'],
+					},
+					{
+						title: '13',
+						po: ['not'],
+					},
+				],
+			},
+			{
+				id: 'windows',
+				selected: false,
+				title: 'Windows',
+				img: '/',
+				versions: [
+					{
+						selected: true,
+						title: '2019',
+						po: ['not'],
+					},
+					{
+						title: '2022',
+						po: ['not'],
+					},
+				],
+			},
+		]);
 
 	const [isFixed, setIsFixed] = useState(false);
 
@@ -263,10 +280,14 @@ export default function Calculator() {
 			result = document.querySelector('#result');
 
 		if (document.body.clientWidth > 770) {
-			if (window.pageYOffset >= 112) {
-				if (window.pageYOffset > content.clientHeight - result.clientHeight + 112) {
-					setIsFixed('end');
-				} else setIsFixed(true);
+			if (window.pageYOffset >= 32) {
+				setIsFixed(true);
+
+				if (window.pageYOffset > content.clientHeight - result.clientHeight + 32) {
+					setPosition({ top: 'unset', bottom: 0 });
+				} else {
+					setPosition({ top: `${window.pageYOffset + 10}px` });
+				}
 			} else setIsFixed(false);
 		} else document.removeEventListener('scroll', scroll);
 	};
@@ -277,7 +298,7 @@ export default function Calculator() {
 
 	return (
 		<div className={st.calculator}>
-			<Container>
+			<Container className="position-relative">
 				<div className={st.calculator__block}>
 					<div id="content" className={st.calculator__block__item}>
 						<div className={st.calculator__block__item__info}>
@@ -301,7 +322,10 @@ export default function Calculator() {
 							</div>
 						</div>
 						<CalcBlock number={1} title="Процессор и память">
-							<CalcHeader title="Количество ядер процессора (до 3,4 ГГц)" price={0} />
+							<CalcHeader
+								title="Количество ядер процессора (до 3,4 ГГц)"
+								price={BeautyNum(state.core * 30000)}
+							/>
 							<CalcInput
 								text="ядер"
 								step={1}
@@ -311,7 +335,7 @@ export default function Calculator() {
 								state={state}
 								setState={setState}
 							/>
-							<CalcHeader title="Объём оперативной памяти" price={0} />
+							<CalcHeader title="Объём оперативной памяти" price={BeautyNum(state.ram * 30000)} />
 							<CalcInput
 								text="Гб"
 								step={2}
@@ -325,7 +349,7 @@ export default function Calculator() {
 						<CalcBlock number={2} title="Хранилище">
 							<CalcHeader title="Дисковая система" />
 							<CalcSelect title="SSD" isChecked={true} />
-							<CalcHeader title="Объём диска" price={0} />
+							<CalcHeader title="Объём диска" price={BeautyNum(state.ssd * 1000)} />
 							<CalcInput
 								text="Гб"
 								step={20}
@@ -338,7 +362,7 @@ export default function Calculator() {
 						</CalcBlock>
 						<CalcBlock number={3} title="Система">
 							<CalcHeader title="Выбор операционной системы" price={0} />
-							<CalcSystem data={calcOS} state={state} setState={setState} />
+							<CalcSystem data={calcOS} setData={setCalcOS} state={state} setState={setState} />
 							<CalcHeader title="Выбор предустановленного ПО" price={0} />
 							<CalcPO
 								data={calcPO.filter((item) =>
@@ -394,11 +418,9 @@ export default function Calculator() {
 					<div
 						id="result"
 						className={`${st.calculator__block__result} ${
-							isFixed &&
-							(isFixed === 'end'
-								? st.calculator__block__result__absolute
-								: st.calculator__block__result__fixed)
-						}`}>
+							isFixed ? st.calculator__block__result__absolute : ''
+						}`}
+						style={position}>
 						<div className={st.calculator__block__result__header}>
 							<div>VDS Форсаж</div>
 							<a href="#">Поделиться</a>
@@ -418,7 +440,7 @@ export default function Calculator() {
 							<CalcInfo title="Администрирование" value={`${state.administration}`} />
 							<div className={st.calculator__block__result__content__footer}>
 								<div className="def-price">
-									50 000{' '}
+									{BeautyNum(state.core * 30000 + state.ram * 30000 + state.ssd * 1000)}{' '}
 									<span>
 										сум
 										<hr />
@@ -506,8 +528,9 @@ const CalcInput = ({ text, step, min, max, name, state, setState }) => {
 	);
 };
 
-const CalcSystem = ({ data, state, setState }) => {
-	const [show, setShow] = useState({ index: 0, show: false, ver: 0 });
+const CalcSystem = ({ data, setData, state, setState }) => {
+	const [show, setShow] = useState({ index: 0, show: false, ver: 0 }),
+		[ver, setVer] = useState(Array(data.length));
 
 	return (
 		<div className={st.calculator__block__item__category__content__system}>
@@ -545,6 +568,7 @@ const CalcSystem = ({ data, state, setState }) => {
 							state={state}
 							setState={setState}
 							data={item}
+							setData={setData}
 						/>
 					</div>
 				</div>
@@ -553,12 +577,14 @@ const CalcSystem = ({ data, state, setState }) => {
 	);
 };
 
-const CalcSystemVersions = ({ index, show, setShow, state, setState, data }) => {
+const CalcSystemVersions = ({ index, show, setShow, state, setState, data, setData }) => {
 	const [ver, setVer] = useState(0);
 
 	return (
 		<>
-			{show.index === index ? state.osVersion : data.versions[ver]?.title}
+			{/* {show.index === index ? state.osVersion : data.versions[ver]?.title} */}
+			{/* {data.versions.find((item) => item.selected).title ? state.osVersion : data.versions[ver]?.title} */}
+			{data.versions.find((item) => item?.selected).title}
 			{show.index === index && show.show && (
 				<ul>
 					{data.versions.map((el, i) => (
@@ -568,6 +594,14 @@ const CalcSystemVersions = ({ index, show, setShow, state, setState, data }) => 
 							// }
 							onClick={() => {
 								setVer(index);
+								setData((prev) => {
+									const temp = data.versions.map((key, index) => {
+										key.selected = index == i;
+										return key;
+									});
+									prev[index] = { ...prev[index], versions: temp };
+									return [...prev];
+								});
 								setState((prev) => ({
 									...prev,
 									os: data.id,
@@ -666,3 +700,32 @@ const CalcInfo = ({ title, value }) => {
 		</div>
 	);
 };
+
+function BeautyNum(Number) {
+	if (!isNaN(Number) && isFinite(Number)) {
+		let string = Number.toString();
+		const arr = string.split('.');
+		let str = '';
+		let count = 0;
+		let temp = '';
+		if (arr[0].length <= 3) return Number;
+		for (let j = arr[0].length - 1; j >= 0; j--) {
+			count++;
+			temp = arr[0][j] + temp;
+			if (count === 3) {
+				if (str.length > 0) {
+					str = temp + ' ' + str;
+				} else {
+					str = temp;
+				}
+				temp = '';
+				count = 0;
+			}
+		}
+		if (temp.length > 0) str = temp + ' ' + str;
+		if (arr.length > 1) str = str + '.' + arr[1].slice(0, 2);
+		return str;
+	} else {
+		return 0;
+	}
+}
