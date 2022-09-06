@@ -379,7 +379,7 @@ export default function Hosting() {
 						))}
 					</div>
 				</Container>
-				<FAQ faq={faq} title="НАС ЧАСТО СПРАШИВАЮТ" />
+				<FAQ faq={faq} title="Нас часто спрашивают" />
 				<Partners />
 			</div>
 		</>
