@@ -246,7 +246,7 @@ export default function Hosting() {
 				desc="Виртуальный хостинг Cpanel в сети TAS-IX с круглосуточной поддержкой, хостинг в Ташкенте, недорогой хостинг, хостинг в Узбекистане"
 			/>
 			<div className={st.hosting}>
-				<Container
+				{/* <Container
 					className="mt-0"
 					headTitle="Быстрый и надежный виртуальный хостинг Cpanel в Ташкенте"
 					description={
@@ -269,11 +269,11 @@ export default function Hosting() {
 						<CustomTableHosting table={table1} />
 						<CustomTableHosting table={table2} />
 					</div>
-				</Container>
+				</Container> */}
 
 				<TarifMaket
 					// bgImg={'/servers-2.jpg'}
-					title="Популярные тарифы Виртуальный хостинг Cpanel в Ташкенте"
+					headTitle="Популярные тарифы Виртуальный хостинг Cpanel в Ташкенте"
 					description={
 						<p>
 							Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости до 1
