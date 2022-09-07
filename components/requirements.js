@@ -17,7 +17,7 @@ export const LINKS = {
 	ABOUT: '/about',
 	BLOG: '/blog',
 	STOCK: '/stock',
-	SSL: '/',
+	SSL: '/ssl',
 	FAQ: '/faq',
 	PAYMENT: '/payment',
 	SUPPORT: '/support',
