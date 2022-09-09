@@ -21,6 +21,14 @@ $red: #f00;
 		border-radius: 10px;
 		margin-bottom: 20px;
 
+		&__fourCol {
+			width: 24%;
+
+			h6 {
+				margin-bottom: 0 !important;
+			}
+		}
+
 		h6,
 		p {
 			width: calc(100% - 55px);
@@ -57,9 +65,23 @@ $red: #f00;
 		&__item {
 			width: 100%;
 
+			&__fourCol {
+				width: 49%;
+			}
+
 			&:nth-child(3) {
 				margin-bottom: 20px;
 			}
+		}
+	}
+
+	@media (max-width: 440px) {
+		&__item {
+
+			&__fourCol {
+				width: 100%;
+			}
+
 		}
 	}
 }
