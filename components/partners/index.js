@@ -15,7 +15,7 @@ export default function Partners() {
 		'/partners/google.png',
 		'/partners/plesk.svg',
 		'/partners/rapidssl.png',
-		'/partners/ripe.png',
+		'/partners/ripe.webp',
 		'/partners/yandex.svg',
 	];
 

@@ -36,15 +36,15 @@ export default function CustomSwiper() {
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
-					<div className={st.swiper__block} style={{ background: `url('/banner.webp') no-repeat` }}>
+					<div className={st.swiper__block} style={{ background: `url('/banner2.jpg') no-repeat` }}>
 						<Container>
 							<div className={st.swiper__block__item}>
-								<h2>Ваши сайты<br /> будут работать всегда</h2>
+								<h2>VDS/VPS хостинг<br /> в Узбекистане</h2>
 								<h4>
-									Сервер любой конфигурации под Ваши задачи.<br /> Надежность и безопасность Вашего бизнеса!
+								Закажите Облачный VPS для стабильной работы<br /> вашего веб-проекта.
 								</h4>
 								<br />
-								<h4>Доступность в сети TAS-IX - 1 Гбит/с для всех клиентов AIRNET</h4>
+								<h4>Доступность в сети интернет от - 25 Мбит/с для всех клиентов AIRNET</h4>
 								<div className={st.swiper__block__item__bg}></div>
 							</div>
 						</Container>

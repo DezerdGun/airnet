@@ -82,7 +82,7 @@ export default function Notifications() {
 							<div className={st.notifications__block}>
 								<div className={st.notifications__block__item}>
 									<div className={st.notifications__block__item__header}>
-										<div className={st.notifications__block__item__header__author}>AN</div>
+										<div className={st.notifications__block__item__header__author}>AIR</div>
 										<div className={st.notifications__block__item__header__content}>
 											<span>{item.date}</span>
 											<h6>{item.title}</h6>

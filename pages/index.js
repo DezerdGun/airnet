@@ -23,6 +23,7 @@ import 'swiper/css/navigation';
 import TarifMaket from '../components/tarifMaket';
 import TarifCard2 from '../components/tarifCard2';
 import Reviews from '../components/reviews';
+import Product from "../components/seo/product";
 
 const faq = [
 		{
@@ -62,7 +63,7 @@ const faq = [
 					</p>
 
 					<p>
-						Для <strong>SSD</strong> [без перезагрузки]
+						Для <strong>SSD</strong> [требуется перезагрузка]
 					</p>
 
 					<p>
@@ -234,6 +235,7 @@ const faq = [
 export default function Home() {
 	return (
 		<div className={st.home}>
+			<Product />
 			<CustomSwiper />
 			<WhyBlock title="Почему выбирают AIRNET?" content={content} />
 			<TarifMaket
@@ -298,7 +300,7 @@ export default function Home() {
 						Gbps
 					</p>
 				}
-				endText={<p className="text-white text-center mt-2">*При оплате за хостинг от 6 месяцев!</p>}>
+				endText={<p className="text-white text-center mt-2">*При оплате за хостинг от 12 месяцев!</p>}>
 				<Swiper
 					cssMode={true}
 					modules={[Autoplay, Navigation]}
