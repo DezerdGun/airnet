@@ -196,7 +196,24 @@ const block = [
 		},
 		{
 			title: "Mega",
-			price: "800 000",
+			// price: "800 000",
+			prices: [
+				{
+					price: "200 000",
+					dateOff: "3 мес.",
+					date: "мес.",
+				},
+				{
+					price: "300 000",
+					dateOff: "6 мес.",
+					date: "мес.",
+				},
+				{
+					price: "400 000",
+					dateOff: "12 мес.",
+					date: "мес.",
+				},
+			],
 			cpu: 6,
 			ram: 12,
 			ssd: 200,
@@ -205,7 +222,24 @@ const block = [
 		},
 		{
 			title: "Ultra",
-			price: "1 000 000",
+			// price: "1 000 000",
+			prices: [
+				{
+					price: "200 000",
+					dateOff: "3 мес.",
+					date: "мес.",
+				},
+				{
+					price: "300 000",
+					dateOff: "6 мес.",
+					date: "мес.",
+				},
+				{
+					price: "400 000",
+					dateOff: "12 мес.",
+					date: "мес.",
+				},
+			],
 			cpu: 8,
 			ram: 16,
 			ssd: 250,
