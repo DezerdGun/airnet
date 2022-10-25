@@ -1,0 +1,121 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #eeebee;
+$red: #f00;
+
+.drop {
+	position: relative;
+	cursor: pointer;
+	margin-top: 40px;
+
+	&__checked {
+		font-weight: 700;
+
+		div {
+			font-size: 36px;
+			display: flex;
+			align-items: center;
+
+			span {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-left: 8px;
+				font-size: 13px;
+
+				hr {
+					width: 20px;
+					opacity: 1;
+					color: $black;
+					margin: 3px 0 0;
+				}
+			}
+
+			svg {
+				margin-left: 5px;
+			}
+		}
+	}
+
+	&__tarifCard {
+		margin-top: 0;
+
+		.drop__checked {
+			height: fit-content;
+
+			div {
+				white-space: nowrap;
+				font-size: 18px;
+				justify-content: flex-end;
+			}
+
+			div,
+			span,
+			hr {
+				color: white;
+			}
+
+			span {
+				font-weight: 500;
+			}
+		}
+
+		ul {
+			min-width: 200px;
+			margin-top: 10px;
+			text-align: right;
+			right: 0;
+		}
+	}
+
+	&__ul {
+		position: absolute;
+		background-color: $white;
+		box-shadow: 0 0 10px $gray;
+		border-radius: 10px;
+		list-style: none;
+		padding: 0;
+		transform: translateY(-1rem);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease;
+
+		li {
+			padding: 15px;
+			border-bottom: 1px solid $light_gray;
+			cursor: pointer;
+
+			strong,
+			span {
+				font-size: 18px;
+			}
+
+			span {
+				line-height: 90% !important;
+				font-size: 16px;
+			}
+
+			&:hover {
+				strong,
+				span {
+					color: $green;
+				}
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		&__active {
+			transform: translateY(0);
+			opacity: 1;
+			visibility: visible;
+			z-index: 2;
+		}
+	}
+}

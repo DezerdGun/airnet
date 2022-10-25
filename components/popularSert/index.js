@@ -1,92 +1,109 @@
-import { useState } from 'react';
-import Container from '../container';
-import st from './popularSert.module.scss';
+import { useState } from "react";
+import Container from "../container";
+import Drop from "../drop";
+import st from "./popularSert.module.scss";
 
 const data = [
 	{
-		title: 'Comodo PositiveSSL',
-		description: 'Самый доступный сертификат от Comodo. Низкая стоимость и быстрый выпуск.',
+		title: "Comodo PositiveSSL",
+		description: "Самый доступный сертификат от Comodo. Низкая стоимость и быстрый выпуск.",
 		warranty: 50000,
-		dateOff: '1 дня',
-		link: 'https://billing.airnet.uz/billing.php?do=order&type=shop&item=1&one=1',
+		dateOff: "1 дня",
+		link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=1&one=1",
 		prices: [
 			{
-				price: '100 000',
-				dateOff: '1 год',
+				price: "100 000",
+				dateOff: "1 год",
+				date: "год",
 			},
 			{
-				price: '190 000',
-				dateOff: '2 года',
+				price: "190 000",
+				dateOff: "2 года",
+				date: "год",
 			},
 			{
-				price: '275 000',
-				dateOff: '3 года',
+				price: "275 000",
+				dateOff: "3 года",
+				date: "год",
 			},
 			{
-				price: '350 000',
-				dateOff: '4 года',
+				price: "350 000",
+				dateOff: "4 года",
+				date: "год",
 			},
 			{
-				price: '400 000',
-				dateOff: '5 лет',
+				price: "400 000",
+				dateOff: "5 лет",
+				date: "год",
 			},
 		],
 	},
 	{
-		title: 'Comodo PositiveSSL Wildcard',
-		description: 'Надежный цифровой сертификат безопасности.',
+		title: "Comodo PositiveSSL Wildcard",
+		description: "Надежный цифровой сертификат безопасности.",
 		warranty: 50000,
-		dateOff: '1 дней',
-		link: 'https://billing.airnet.uz/billing.php?do=order&type=shop&item=2&one=1',
+		dateOff: "1 дней",
+		link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=2&one=1",
 		prices: [
 			{
-				price: '1 000 000',
-				dateOff: '1 год',
+				price: "1 000 000",
+				dateOff: "1 год",
+				date: "год",
 			},
 			{
-				price: '1 900 000',
-				dateOff: '2 года',
+				price: "1 900 000",
+				dateOff: "2 года",
+				date: "год",
 			},
 			{
-				price: '2 800 000',
-				dateOff: '3 года',
+				price: "2 800 000",
+				dateOff: "3 года",
+				date: "год",
 			},
 			{
-				price: '3 500 000',
-				dateOff: '4 года',
+				price: "3 500 000",
+				dateOff: "4 года",
+				date: "год",
 			},
 			{
-				price: '4 000 000',
-				dateOff: '5 лет',
+				price: "4 000 000",
+				dateOff: "5 лет",
+				date: "год",
 			},
 		],
 	},
 	{
-		title: 'Comodo PremiumSSL Wildcard',
-		description: 'Сертификат с расширенной проверкой идентифицирует не только сайт, но и организацию.',
+		title: "Comodo PremiumSSL Wildcard",
+		description:
+			"Сертификат с расширенной проверкой идентифицирует не только сайт, но и организацию.",
 		warranty: 250000,
-		dateOff: '5 дней',
-		link: 'https://billing.airnet.uz/billing.php?do=order&type=shop&item=3&one=1',
+		dateOff: "5 дней",
+		link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=3&one=1",
 		prices: [
 			{
-				price: '2 250 000',
-				dateOff: '1 год',
+				price: "2 250 000",
+				dateOff: "1 год",
+				date: "год",
 			},
 			{
-				price: '4 200 000',
-				dateOff: '2 года',
+				price: "4 200 000",
+				dateOff: "2 года",
+				date: "год",
 			},
 			{
-				price: '5 800 000',
-				dateOff: '3 года',
+				price: "5 800 000",
+				dateOff: "3 года",
+				date: "год",
 			},
 			{
-				price: '7 500 000',
-				dateOff: '4 года',
+				price: "7 500 000",
+				dateOff: "4 года",
+				date: "год",
 			},
 			{
-				price: '8 500 000',
-				dateOff: '5 лет',
+				price: "8 500 000",
+				dateOff: "5 лет",
+				date: "год",
 			},
 		],
 	},
@@ -139,7 +156,9 @@ export default function PopularSert() {
 							</div>
 							<div className={st.popularSert__block__item__footer}>
 								<Drop item={item.prices} />
-								<a href={item.link}><button>Купить</button></a>
+								<a href={item.link}>
+									<button>Купить</button>
+								</a>
 							</div>
 						</div>
 					))}
@@ -148,43 +167,3 @@ export default function PopularSert() {
 		</div>
 	);
 }
-
-const Drop = ({ item }) => {
-	const [price, setPrice] = useState({ checked: 0, show: false });
-
-	return (
-		<div className={st.popularSert__block__item__footer__drop}>
-			<div
-				onClick={() => setPrice({ ...price, show: !price.show })}
-				className={st.popularSert__block__item__footer__drop__checked}>
-				<div>
-					{item[price.checked].price}
-					<span>
-						сум
-						<hr />
-						год
-					</span>
-					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="black">
-						<path
-							d="M11.3359 1.33366L6.0026 6.66699L0.669271 1.33366"
-							stroke="#F8F8F8"
-							strokeLinecap="round"
-							strokeLinejoin="round"></path>
-					</svg>
-				</div>
-				при оплате за {item[price.checked].dateOff}
-			</div>
-			{price.show && (
-				<ul>
-					{item.map((el, i) => (
-						<li onClick={() => setPrice({ checked: i, show: false })} key={el.price}>
-							<strong>{el.price} сум в год</strong>
-							<br />
-							<span>при оплате за {el.dateOff}</span>
-						</li>
-					))}
-				</ul>
-			)}
-		</div>
-	);
-};
