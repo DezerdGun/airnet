@@ -1,17 +1,21 @@
-import st from './tarifCard.module.scss';
+import Drop from "../drop";
+import st from "./tarifCard.module.scss";
 
 export default function TarifCard({ tarif }) {
 	return (
 		<div className={st.tarifCard}>
 			<div className={st.tarifCard__header}>
 				<h4>{tarif.title}</h4>
-				<div className={st.tarifCard__header__price}>
+				{/* <div className={st.tarifCard__header__price}>
 					<span>{tarif.price}</span>
 					<span>
 						сум
 						<hr />
 						мес
 					</span>
+				</div> */}
+				<div className={st.tarifCard__header__price}>
+					<Drop item={tarif.prices} isTarifCard={true} />
 				</div>
 			</div>
 			<table>

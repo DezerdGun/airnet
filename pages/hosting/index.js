@@ -1,53 +1,53 @@
-import CustomTableBottom from '../../components/customTableBottom';
-import Partners from '../../components/partners';
-import TraficMaket from '../../components/traficMaket';
-import st from './hosting.module.scss';
-import Link from 'next/link';
-import { LINKS } from '../../components/requirements';
-import Container from '../../components/container';
-import CustomTable from '../../components/customTable';
-import FAQ from '../../components/faq';
-import CustomTableHosting from '../../components/customTableHosting';
-import SEO from '../../components/seo';
-import TarifMaket from '../../components/tarifMaket';
+import CustomTableBottom from "../../components/customTableBottom";
+import Partners from "../../components/partners";
+import TraficMaket from "../../components/traficMaket";
+import st from "./hosting.module.scss";
+import Link from "next/link";
+import { LINKS } from "../../components/requirements";
+import Container from "../../components/container";
+import CustomTable from "../../components/customTable";
+import FAQ from "../../components/faq";
+import CustomTableHosting from "../../components/customTableHosting";
+import SEO from "../../components/seo";
+import TarifMaket from "../../components/tarifMaket";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import TarifCard2 from '../../components/tarifCard2';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import TarifCard2 from "../../components/tarifCard2";
 
 const block = [
 		{
-			title: 'Жесткие диски',
-			description: '12 x 1ТB SSD',
-			img: '/hosting/ssd.png',
+			title: "Жесткие диски",
+			description: "12 x 1ТB SSD",
+			img: "/hosting/ssd.png",
 		},
 		{
-			title: 'Оперативная память',
-			description: '256 GB DDR4 ECC',
-			img: '/hosting/ram.png',
+			title: "Оперативная память",
+			description: "256 GB DDR4 ECC",
+			img: "/hosting/ram.png",
 		},
 		{
-			title: 'Процессор',
-			description: '2 x Intel Xeon',
-			img: '/hosting/processor.png',
+			title: "Процессор",
+			description: "2 x Intel Xeon",
+			img: "/hosting/processor.png",
 		},
 		{
-			title: 'Массив RAID',
-			description: 'Аппаратный RAID5',
-			img: '/hosting/raid.png',
+			title: "Массив RAID",
+			description: "Аппаратный RAID5",
+			img: "/hosting/raid.png",
 		},
 	],
 	cms = [
-		'Блоги',
-		'Порталы и CMS',
-		'Форумы',
-		'Галереи изображений',
-		'Социальные сети',
-		'Голосования и опросы',
-		'Интернет-магазины',
-		'Файловые менеджеры',
+		"Блоги",
+		"Порталы и CMS",
+		"Форумы",
+		"Галереи изображений",
+		"Социальные сети",
+		"Голосования и опросы",
+		"Интернет-магазины",
+		"Файловые менеджеры",
 	],
 	checkedCircle = (
 		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,173 +61,309 @@ const block = [
 	),
 	table1 = [
 		{
-			title: 'Старт',
-			price: '10 000',
+			title: "Старт",
+			price: "10 000",
 			ssd: 250,
 			sites: 5,
-			present: '',
-			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=32',
-			month1: '10 000',
-			month3: '30 000',
-			month6: '57 000',
-			month12: '108 000',
-			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=1',
+			present: "",
+			orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=32",
+			month1: "10 000",
+			month3: "30 000",
+			month6: "57 000",
+			month12: "108 000",
+			buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=1",
 		},
 		{
-			title: 'Простой',
-			price: '15 000',
+			title: "Простой",
+			price: "15 000",
 			ssd: 500,
 			sites: 10,
-			present: '',
-			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=31',
-			month1: '15 000',
-			month3: '45 000',
-			month6: '85 500',
-			month12: '162 000',
-			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=2',
+			present: "",
+			orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=31",
+			month1: "15 000",
+			month3: "45 000",
+			month6: "85 500",
+			month12: "162 000",
+			buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=2",
 		},
 		{
-			title: 'Стандарт',
-			price: '25 000',
-			ssd: '1 000',
+			title: "Стандарт",
+			price: "25 000",
+			ssd: "1 000",
 			sites: 15,
-			present: '',
-			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=33',
-			month1: '25 000',
-			month3: '75 000',
-			month6: '142 500',
-			month12: '270 000',
-			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=3',
+			present: "",
+			orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=33",
+			month1: "25 000",
+			month3: "75 000",
+			month6: "142 500",
+			month12: "270 000",
+			buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=3",
 		},
 		{
-			title: 'Доступный',
-			price: '60 000',
-			ssd: '3 000',
+			title: "Доступный",
+			price: "60 000",
+			ssd: "3 000",
 			sites: 20,
-			present: '',
-			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=34',
-			month1: '60 000',
-			month3: '180 000',
-			month6: '342 000',
-			month12: '648 000',
-			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=4',
+			present: "",
+			orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=34",
+			month1: "60 000",
+			month3: "180 000",
+			month6: "342 000",
+			month12: "648 000",
+			buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=4",
 		},
 	],
 	table2 = [
 		{
-			title: 'Оптимальный',
-			price: '90 000',
-			ssd: '5 000',
-			sites: '∞',
-			present: '(2шт)',
-			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=37',
-			month1: '90 000',
-			month3: '270 000',
-			month6: '513 000',
-			month12: '972 000',
-			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=36',
+			title: "Оптимальный",
+			price: "90 000",
+			ssd: "5 000",
+			sites: "∞",
+			present: "(2шт)",
+			orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=37",
+			month1: "90 000",
+			month3: "270 000",
+			month6: "513 000",
+			month12: "972 000",
+			buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=36",
 		},
 		{
-			title: 'Выгодный',
-			price: '150 000',
-			ssd: '10 000',
-			sites: '∞',
-			present: '(2шт)',
-			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38',
-			month1: '150 000',
-			month3: '450 000',
-			month6: '855 000',
-			month12: '1 620 000',
-			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38',
+			title: "Выгодный",
+			price: "150 000",
+			ssd: "10 000",
+			sites: "∞",
+			present: "(2шт)",
+			orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38",
+			month1: "150 000",
+			month3: "450 000",
+			month6: "855 000",
+			month12: "1 620 000",
+			buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38",
 		},
 		{
-			title: 'Офис',
-			price: '250 000',
-			ssd: '15 000',
-			sites: '∞',
-			present: '(2шт)',
-			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39',
-			month1: '250 000',
-			month3: '750 000',
-			month6: '1 425 000',
-			month12: '2 700 000',
-			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39',
+			title: "Офис",
+			price: "250 000",
+			ssd: "15 000",
+			sites: "∞",
+			present: "(2шт)",
+			orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39",
+			month1: "250 000",
+			month3: "750 000",
+			month6: "1 425 000",
+			month12: "2 700 000",
+			buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39",
 		},
 		{
-			title: 'Корпоративный',
-			price: '350 000',
-			ssd: '20 000',
-			sites: '∞',
-			present: '(2шт)',
-			orderLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40',
-			month1: '350 000',
-			month3: '1 050 000',
-			month6: '1 995 000',
-			month12: '3 780 000',
-			buyLink: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40',
+			title: "Корпоративный",
+			price: "350 000",
+			ssd: "20 000",
+			sites: "∞",
+			present: "(2шт)",
+			orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40",
+			month1: "350 000",
+			month3: "1 050 000",
+			month6: "1 995 000",
+			month12: "3 780 000",
+			buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40",
 		},
 	],
 	tarif2 = [
 		{
-			title: 'Старт',
-			price: '10 000',
+			title: "Старт",
+			// price: '10 000',
+			prices: [
+				{
+					price: "200 000",
+					dateOff: "3 мес.",
+					date: "мес.",
+				},
+				{
+					price: "300 000",
+					dateOff: "6 мес.",
+					date: "мес.",
+				},
+				{
+					price: "400 000",
+					dateOff: "12 мес.",
+					date: "мес.",
+				},
+			],
 			ssd: 250,
 			sites: 5,
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=32',
+			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=32",
 		},
 		{
-			title: 'Простой',
-			price: '15 000',
+			title: "Простой",
+			// price: '15 000',
+			prices: [
+				{
+					price: "200 000",
+					dateOff: "3 мес.",
+					date: "мес.",
+				},
+				{
+					price: "300 000",
+					dateOff: "6 мес.",
+					date: "мес.",
+				},
+				{
+					price: "400 000",
+					dateOff: "12 мес.",
+					date: "мес.",
+				},
+			],
 			ssd: 500,
 			sites: 10,
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=31',
+			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=31",
 		},
 		{
-			title: 'Стандарт',
-			price: '25 000',
-			ssd: '1 000',
+			title: "Стандарт",
+			// price: '25 000',
+			prices: [
+				{
+					price: "200 000",
+					dateOff: "3 мес.",
+					date: "мес.",
+				},
+				{
+					price: "300 000",
+					dateOff: "6 мес.",
+					date: "мес.",
+				},
+				{
+					price: "400 000",
+					dateOff: "12 мес.",
+					date: "мес.",
+				},
+			],
+			ssd: "1 000",
 			sites: 15,
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=33',
+			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=33",
 		},
 		{
-			title: 'Доступный',
-			price: '60 000',
-			ssd: '3 000',
+			title: "Доступный",
+			// price: '60 000',
+			prices: [
+				{
+					price: "200 000",
+					dateOff: "3 мес.",
+					date: "мес.",
+				},
+				{
+					price: "300 000",
+					dateOff: "6 мес.",
+					date: "мес.",
+				},
+				{
+					price: "400 000",
+					dateOff: "12 мес.",
+					date: "мес.",
+				},
+			],
+			ssd: "3 000",
 			sites: 20,
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=34',
+			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=34",
 		},
 		{
-			title: 'Оптимальный',
-			price: '90 000',
-			ssd: '5 000',
-			sites: '∞',
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=37',
+			title: "Оптимальный",
+			// price: '90 000',
+			prices: [
+				{
+					price: "200 000",
+					dateOff: "3 мес.",
+					date: "мес.",
+				},
+				{
+					price: "300 000",
+					dateOff: "6 мес.",
+					date: "мес.",
+				},
+				{
+					price: "400 000",
+					dateOff: "12 мес.",
+					date: "мес.",
+				},
+			],
+			ssd: "5 000",
+			sites: "∞",
+			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=37",
 		},
 		{
-			title: 'Выгодный',
-			price: '150 000',
-			ssd: '10 000',
-			sites: '∞',
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38',
+			title: "Выгодный",
+			// price: '150 000',
+			prices: [
+				{
+					price: "200 000",
+					dateOff: "3 мес.",
+					date: "мес.",
+				},
+				{
+					price: "300 000",
+					dateOff: "6 мес.",
+					date: "мес.",
+				},
+				{
+					price: "400 000",
+					dateOff: "12 мес.",
+					date: "мес.",
+				},
+			],
+			ssd: "10 000",
+			sites: "∞",
+			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38",
 		},
 		{
-			title: 'Офис',
-			price: '250 000',
-			ssd: '15 000',
-			sites: '∞',
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39',
+			title: "Офис",
+			// price: '250 000',
+			prices: [
+				{
+					price: "200 000",
+					dateOff: "3 мес.",
+					date: "мес.",
+				},
+				{
+					price: "300 000",
+					dateOff: "6 мес.",
+					date: "мес.",
+				},
+				{
+					price: "400 000",
+					dateOff: "12 мес.",
+					date: "мес.",
+				},
+			],
+			ssd: "15 000",
+			sites: "∞",
+			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39",
 		},
 		{
-			title: 'Корпоративный',
-			price: '350 000',
-			ssd: '20 000',
-			sites: '∞',
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40',
+			title: "Корпоративный",
+			// price: '350 000',
+			prices: [
+				{
+					price: "200 000",
+					dateOff: "3 мес.",
+					date: "мес.",
+				},
+				{
+					price: "300 000",
+					dateOff: "6 мес.",
+					date: "мес.",
+				},
+				{
+					price: "400 000",
+					dateOff: "12 мес.",
+					date: "мес.",
+				},
+			],
+			ssd: "20 000",
+			sites: "∞",
+			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40",
 		},
 	],
 	faq = [
 		{
-			title: 'Как скоро можно начать пользоваться услугой?',
+			title: "Как скоро можно начать пользоваться услугой?",
 			description: (
 				<>
 					<p>Пользовательский аккаунт открывается сразу после подачи заявки.</p>
@@ -276,11 +412,14 @@ export default function Hosting() {
 					headTitle="Популярные тарифы Виртуальный хостинг Cpanel в Ташкенте"
 					description={
 						<p>
-							Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости до 1
-							Gbps
+							Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на
+							скорости до 1 Gbps
 						</p>
 					}
-					endText={<p className="text-white text-center mt-2">*При оплате за хостинг от 6 месяцев!</p>}>
+					endText={
+						<p className="text-white text-center mt-2">*При оплате за хостинг от 6 месяцев!</p>
+					}
+				>
 					<Swiper
 						cssMode={true}
 						modules={[Autoplay, Navigation]}
@@ -303,7 +442,8 @@ export default function Hosting() {
 								slidesPerView: 2,
 							},
 						}}
-						className="tarifSwiper">
+						className="tarifSwiper"
+					>
 						{tarif2.map((item) => (
 							<SwiperSlide key={item.title}>
 								<div className="w-95">
@@ -314,7 +454,10 @@ export default function Hosting() {
 					</Swiper>
 				</TarifMaket>
 
-				<Container title="Ваш хостинг будет размещен на сервере с конфигурацией:" clNTitle="text-center">
+				<Container
+					title="Ваш хостинг будет размещен на сервере с конфигурацией:"
+					clNTitle="text-center"
+				>
 					<div className={st.hosting__block}>
 						{block.map((item) => (
 							<div key={item.title} className={st.hosting__block__item}>
@@ -330,56 +473,53 @@ export default function Hosting() {
 					</div>
 				</Container>
 				<div className={`bg-gray`}>
-				<Container
-					title="На всех тарифных планах"
-					clNTitle="text-black text-center"
-					// style={{ background: "url('/hosting/server.jpg') no-repeat" }}
+					<Container
+						title="На всех тарифных планах"
+						clNTitle="text-black text-center"
+						// style={{ background: "url('/hosting/server.jpg') no-repeat" }}
 					>
-					<div className={st.hosting__plan}>
-						<div className={st.hosting__plan__content}>
-							<p>
-								<strong>Безлимитный трафик</strong> — никаких ограничений на соотношение входящего /
-								исходящего трафика.
-							</p>
-							<p>
-								<strong>Скорость в Интернет</strong> — 100 Mbps
-							</p>
-							<p>
-								<strong>Скорость в TAS-IX</strong> — 1 Gbps
-							</p>
-							<p>
-								<strong>Безлимитные FTP-аккаунты</strong> — для своего удобства работы с файлами, Вы
-								можете создавать неограниченное количество FTP-аккаунтов, например, для каждого проекта
-								- отдельный доступ.
-							</p>
-							<p>
-								<strong>Без жестких ограничений ресурсов</strong> — у нас нет жестких лимитов аппаратных
-								ресурсов. Если вдруг на Ваш сайт придет большое количество человек, то все они увидят
-								Ваш сайт. Гарантировано посещение - 2500 человек в сутки.
-							</p>
+						<div className={st.hosting__plan}>
+							<div className={st.hosting__plan__content}>
+								<p>
+									<strong>Безлимитный трафик</strong> — никаких ограничений на соотношение входящего
+									/ исходящего трафика.
+								</p>
+								<p>
+									<strong>Скорость в Интернет</strong> — 100 Mbps
+								</p>
+								<p>
+									<strong>Скорость в TAS-IX</strong> — 1 Gbps
+								</p>
+								<p>
+									<strong>Безлимитные FTP-аккаунты</strong> — для своего удобства работы с файлами,
+									Вы можете создавать неограниченное количество FTP-аккаунтов, например, для каждого
+									проекта - отдельный доступ.
+								</p>
+								<p>
+									<strong>Без жестких ограничений ресурсов</strong> — у нас нет жестких лимитов
+									аппаратных ресурсов. Если вдруг на Ваш сайт придет большое количество человек, то
+									все они увидят Ваш сайт. Гарантировано посещение - 2500 человек в сутки.
+								</p>
+							</div>
+							<div className={st.hosting__plan__img}>
+								<img src="/hosting/unlim.png" />
+							</div>
 						</div>
-						<div className={st.hosting__plan__img}>
-							<img src="/hosting/unlim.png" />
-						</div>
-					</div>
-				</Container>
+					</Container>
 				</div>
 				<Container
 					title="Быстрая установка Wordpress и популярных CMS в 1 клик!"
 					description={
 						<>
-						<p>
-							Установка CMS-установщика в 1 клик
-						</p>
-						<p>
-							Вашему вниманию предлагаются более <strong>100 БЕСПЛАТНЫХ</strong>
-						</p>
-						<p>
-							CMS-установщиков различных категорий от Softaculous:
-						</p>
+							<p>Установка CMS-установщика в 1 клик</p>
+							<p>
+								Вашему вниманию предлагаются более <strong>100 БЕСПЛАТНЫХ</strong>
+							</p>
+							<p>CMS-установщиков различных категорий от Softaculous:</p>
 						</>
 					}
-					className="text-center">
+					className="text-center"
+				>
 					<div className={st.hosting__cms}>
 						{cms.map((item) => (
 							<div key={item} className={st.hosting__cms__item}>
