@@ -36,6 +36,7 @@ $gray: #c2c2c2;
 
 			&:hover {
 				color: $gray;
+				background-color: transparent !important;
 				svg {
 					fill: $gray;
 				}

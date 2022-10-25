@@ -35,9 +35,9 @@ const block = [
 			img: '/time.png',
 		},
 		{
-			title: 'Вернем вам деньги, если что',
+			title: 'Низкая цена',
 			description:
-				'Хотите убедиться, что все работает как нужно? Не волнуйтесь, для этого есть целых 30 дней. Если в течение этого времени Вы решите, что хотите отказаться от наших услуг, мы вернем Вам все неиспользованные средства.',
+				'Мы предоставляем услуги по самым "низким" ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.',
 			img: '/money.png',
 		},
 		{
@@ -57,42 +57,21 @@ const block = [
 			),
 			img: '/support.png',
 		},
+		{
+			title: 'Гибкая настройка',
+			description:
+				'Вы можете изменить количество CPU и RAM в любой момент, а также увеличить объём SSD',
+			img: '/year.png',
+		},
 	],
 	tarif = [
-		{
-			title: 'Strong',
-			price: '200 000',
-			cpu: 2,
-			ram: 4,
-			ssd: 50,
-			net: 15,
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14',
-		},
-		{
-			title: 'VIP',
-			price: '250 000',
-			cpu: 4,
-			ram: 4,
-			ssd: 100,
-			net: 15,
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=15',
-		},
-		{
-			title: 'VIP+',
-			price: '300 000',
-			cpu: 4,
-			ram: 6,
-			ssd: 150,
-			net: 15,
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16',
-		},
 		{
 			title: 'Nano',
 			price: '400 000',
 			cpu: 4,
 			ram: 8,
 			ssd: 100,
-			net: 15,
+			net: 25,
 			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=49',
 		},
 		{
@@ -101,8 +80,26 @@ const block = [
 			cpu: 6,
 			ram: 10,
 			ssd: 150,
-			net: 15,
+			net: 25,
 			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50',
+		},
+		{
+			title: 'Mega',
+			price: '800 000',
+			cpu: 6,
+			ram: 12,
+			ssd: 200,
+			net: 25,
+			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51',
+		},
+		{
+			title: 'Ultra',
+			price: '1 000 000',
+			cpu: 8,
+			ram: 16,
+			ssd: 250,
+			net: 25,
+			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52',
 		},
 	];
 
@@ -140,7 +137,7 @@ export default function VDS() {
 						modules={[Autoplay, Navigation]}
 						slidesPerView={1}
 						navigation
-						loop={true}
+						loop={false}
 						autoplay={{
 							delay: 10000,
 							disableOnInteraction: false,
@@ -167,11 +164,11 @@ export default function VDS() {
 					</Swiper>
 				</TarifMaket>
 
-				<ForFreeBlock />
-
 				<WhyBlock content={block} />
 
-				<Container
+				<ForFreeBlock />
+
+				<Container className="text-center"
 					title="Стоимость международного интернет-канала без ограничения трафика"
 					description="Внешний трафик и трафик в сети «TAS-IX» не тарифицируется.">
 					<div className={st.vds__table}>
@@ -189,18 +186,11 @@ export default function VDS() {
 									</thead>
 									<tbody>
 										<tr>
-											<td>Unlim 5M</td>
-											<td>15 мбит/с</td>
-											<td>1 Гбит/с</td>
-											<td>Без ограничений</td>
-											<td>Бесплатно</td>
-										</tr>
-										<tr>
 											<td>Unlim 25M</td>
 											<td>25 мбит/с</td>
 											<td>1 Гбит/с</td>
 											<td>Без ограничений</td>
-											<td>500 000 сум/мес.</td>
+											<td>Бесплатно</td>
 										</tr>
 										<tr>
 											<td>Unlim 50M</td>
@@ -215,6 +205,20 @@ export default function VDS() {
 											<td>1 Гбит/с</td>
 											<td>Без ограничений</td>
 											<td>2 000 000 сум/мес.</td>
+										</tr>
+										<tr>
+											<td>Unlim 200M</td>
+											<td>200 мбит/с</td>
+											<td>1 Гбит/с</td>
+											<td>Без ограничений</td>
+											<td>5 000 000 сум/мес.</td>
+										</tr>
+										<tr>
+											<td>Unlim 350M</td>
+											<td>350 мбит/с</td>
+											<td>1 Гбит/с</td>
+											<td>Без ограничений</td>
+											<td>10 000 000 сум/мес.</td>
 										</tr>
 									</tbody>
 								</table>

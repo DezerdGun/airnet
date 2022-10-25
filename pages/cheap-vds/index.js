@@ -18,7 +18,7 @@ import WhyBlock from '../../components/whyBlock';
 const block = [
 		{
 			title: 'Хостинг файлов и картинок',
-			description: 'Используйте 10 Gb жесткого диска для хранения данных.',
+			description: 'Используйте 20 Gb жесткого диска для хранения данных.',
 			img: '/server.png',
 		},
 		{
@@ -31,24 +31,29 @@ const block = [
 			description: 'Вы можете организовать почтовый сервис или DNS-кластер.',
 			img: '/database.png',
 		},
+		{
+			title: 'Запрещается',
+			description: 'Не предоставляется для игровых серверов и видео-контент сайтов!',
+			img: '/warning.png',
+		},
 	],
 	tarif = [
-		{
-			title: 'Micro',
-			price: '100 000',
-			cpu: 1,
-			ram: 1,
-			ssd: 25,
-			net: 10,
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12',
-		},
+		// {
+		// 	title: 'Micro',
+		// 	price: '100 000',
+		// 	cpu: 1,
+		// 	ram: 1,
+		// 	ssd: 25,
+		// 	net: 10,
+		// 	link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12',
+		// },
 		{
 			title: 'Platinum',
 			price: '150 000',
 			cpu: 2,
 			ram: 2,
-			ssd: 40,
-			net: 10,
+			ssd: 25,
+			net: 25,
 			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=13',
 		},
 		{
@@ -57,8 +62,26 @@ const block = [
 			cpu: 2,
 			ram: 4,
 			ssd: 50,
-			net: 15,
+			net: 25,
 			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14',
+		},
+		{
+			title: 'VIP',
+			price: '250 000',
+			cpu: 4,
+			ram: 4,
+			ssd: 75,
+			net: 25,
+			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=15',
+		},
+		{
+			title: 'VIP+',
+			price: '300 000',
+			cpu: 4,
+			ram: 6,
+			ssd: 100,
+			net: 25,
+			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16',
 		},
 	];
 
@@ -70,7 +93,60 @@ export default function CheapVds() {
 				desc="Дешевые и бесплатные VDS/VPS на быстрых SSD-дисках в сети TAS-IX в Ташкенте"
 			/>
 			<div className={st.cheapVds}>
-				<Container style={{ background: `url('/servers-5.jpg') no-repeat` }} className="mt-0 py-0">
+				<TarifMaket
+					// bgImg={'/servers-2.jpg'}
+					headTitle="Бюджетные VDS/VPS — Самые дешевые сервера в Ташкенте"
+					description={
+						<p>
+							Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости 1
+							Gbps
+						</p>
+					}
+					className="mt-0 px-0"
+					endText={
+						<div className="text-white text-center mt-2">
+							<p>
+								Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2-х
+								рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического
+								персонала. Среднее время активации оборудования после оплаты - 1-2 часа. Мы делам всё
+								возможное, чтобы уменьшить время ожидания.
+							</p>
+							<p>Срок действия услуги начнется с момента её активации.</p>
+						</div>
+					}>
+					<Swiper
+						cssMode={true}
+						modules={[Autoplay, Navigation]}
+						slidesPerView={1}
+						navigation
+						loop={false}
+						autoplay={{
+							delay: 100000,
+							disableOnInteraction: false,
+						}}
+						breakpoints={{
+							1070: {
+								slidesPerView: 4,
+							},
+							770: {
+								slidesPerView: 3,
+							},
+							550: {
+								slidesPerView: 2,
+							},
+						}}
+						className="tarifSwiper">
+						{tarif.map((item) => (
+							<SwiperSlide key={item.title}>
+								<div className="w-95">
+									<TarifCard tarif={item} />
+								</div>
+							</SwiperSlide>
+						))}
+					</Swiper>
+				</TarifMaket>
+				
+				{/* <Container style={{ background: `url('/servers-5.jpg') no-repeat` }} className="mt-0 py-0">
 					<div className={st.cheapVds__header}>
 						<div className={st.cheapVds__header__left}>
 							<h1>БЮДЖЕТНЫЕ VDS/VPS</h1>
@@ -92,11 +168,11 @@ export default function CheapVds() {
 							</a>
 						</div>
 					</div>
-				</Container>
+				</Container> */}
 
 				<WhyBlock content={block} />
 
-				<TarifMaket
+				{/* <TarifMaket
 					bgImg={'/servers-2.jpg'}
 					className="mb-4"
 					endText={
@@ -134,7 +210,7 @@ export default function CheapVds() {
 							</SwiperSlide>
 						))}
 					</Swiper>
-				</TarifMaket>
+				</TarifMaket> */}
 
 				<ForFreeBlock />
 

@@ -27,341 +27,30 @@ const checkedCircle = (
 	),
 	table = [
 		{
-			proc: 'Xeon E3',
-			procTitle: '1220v2',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 16,
-			ssd: '240 Гб SSD',
+			proc: '2 x Xeon',
+			procTitle: 'E5-2670',
+			core: '42 ядра',
+			herz: '2.6',
+			ram: 256,
+			ssd: '6 x 1000 Гб SSD, RAID 5',
 			settingsRam: 16,
-			settingsOther: '1 шт. SSD',
-			price: '200 000',
-			link: '#',
-		},
-		{
-			proc: '1 x Xeon',
-			procTitle: 'L5640',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 32,
-			ssd: '1 x 200 Гб SSD',
-			settingsRam: 32,
-			settingsOther: '2 шт. HDD, SSD',
-			price: '200 000',
-			link: '#',
-		},
-		{
-			proc: '1 x Xeon',
-			procTitle: 'L5640',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 32,
-			ssd: '2 x 500 Гб HDD',
-			settingsRam: 32,
-			settingsOther: '2 шт. HDD',
-			price: '200 000',
-			link: '#',
-		},
-		{
-			proc: '1 x Xeon',
-			procTitle: 'L5640',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ssd: '2 x 500 Гб HDD',
-			settingsRam: 32,
-			settingsOther: '2 шт. HDD',
-			price: '200 000',
-			link: '#',
-			ram: 32,
+			settingsOther: '12 шт. SSD',
+			price: '20 000 000',
+			link: 'https://billing.airnet.uz/',
 		},
 		{
 			proc: '2 x Xeon',
-			procTitle: 'L5630',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 32,
-			ssd: '2 x 200 Гб SSD, RAID 1',
-			settingsRam: 32,
-			settingsOther: '2 шт. SSD, RAID 1',
-			price: '200 000',
-			link: '#',
-		},
-		{
-			proc: '2 x Xeon',
-			procTitle: 'L5630',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 32,
-			ssd: '2 x 1000 Гб HDD, RAID 1',
-			settingsRam: 32,
-			settingsOther: '2 шт. HDD, RAID 1',
-			price: '200 000',
-			link: '#',
-		},
-		{
-			proc: '2 x Xeon E5',
-			procTitle: '2670',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 32,
-			ssd: '2 x 1000 Гб HDD, RAID 1',
-			settingsRam: 32,
-			settingsOther: '2 шт. HDD, RAID 1',
-			price: '200 000',
-			link: '#',
-		},
-		{
-			proc: '2 x Xeon',
-			procTitle: 'L5630',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 48,
-			ssd: '2 x 200 Гб SSD, RAID 1',
-			settingsRam: 48,
-			settingsOther: '2 шт. SSD, RAID 1',
-			price: '200 000',
-			link: '#',
-		},
-		{
-			proc: '2 x Xeon',
-			procTitle: 'L5630',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 48,
-			ssd: '2 x 1000 Гб HDD, RAID 1',
-			settingsRam: 48,
-			settingsOther: '2 шт. HDD, RAID 1',
-			price: '200 000',
-			link: '#',
-		},
-		{
-			proc: '2 x Xeon',
-			procTitle: 'L5640',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 64,
-			ssd: '2 x 480 Гб SSD, RAID 1',
-			settingsRam: 64,
-			settingsOther: '2 шт. SSD, RAID 1',
-			price: '200 000',
-			link: '#',
-		},
-		{
-			proc: '2 x Xeon',
-			procTitle: 'L5640',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 64,
-			ssd: '2 x 2000 Гб HDD, RAID 1',
-			settingsRam: 64,
-			settingsOther: '2 шт. HDD, RAID 1',
-			price: '200 000',
-			link: '#',
-		},
-		{
-			proc: '2 x Xeon E5',
-			procTitle: '2670',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 64,
-			ssd: '2 x 1000 Гб HDD, RAID 1',
-			settingsRam: 64,
-			settingsOther: '2 шт. HDD, RAID 1',
-			price: '200 000',
-			link: '#',
-		},
-		{
-			proc: '2 x Xeon E5',
-			procTitle: '2670',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 64,
-			ssd: '2 x 480 Гб SSD, RAID 1',
-			settingsRam: 64,
-			settingsOther: '2 шт. SSD, RAID 1',
-			price: '200 000',
-			link: '#',
-		},
-		{
-			proc: '2 x Xeon',
-			procTitle: 'L5640',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 96,
-			ssd: '2 x 480 Гб SSD, RAID 1',
-			settingsRam: 96,
-			settingsOther: '2 шт. SSD, RAID 1',
-			price: '200 000',
-			link: '#',
-		},
-		{
-			proc: '2 x Xeon',
-			procTitle: 'L5640',
-			core: '4 ядра',
-			herz: '3.1-3.5',
-			ram: 96,
-			ssd: '2 x 2000 Гб HDD, RAID 1',
-			settingsRam: 96,
-			settingsOther: '2 шт. HDD, RAID 1',
-			price: '200 000',
-			link: '#',
+			procTitle: 'E5-2637 v2',
+			core: '28 ядра',
+			herz: '3.5',
+			ram: 256,
+			ssd: '12 x 1000 Гб SSD, RAID 5',
+			settingsRam: 16,
+			settingsOther: '12 шт. SSD',
+			price: '25 000 000',
+			link: 'https://billing.airnet.uz/',
 		},
 	];
-
-// table = [
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<img src="/dedicated/d-1.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel E3-1220v2',
-// 		ram: 16,
-// 		ssd: '240 Гб SSD',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<img src="/dedicated/d-1.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 1xL5640',
-// 		ram: 32,
-// 		ssd: '1 x 200 Гб SSD',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<img src="/dedicated/d-1.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 1xL5640',
-// 		ram: 32,
-// 		ssd: '2 x 500 Гб HDD',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<img src="/dedicated/d-1.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 1xL5640',
-// 		ram: 32,
-// 		ssd: '2 x 500 Гб HDD',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<span>ХИТ</span>
-// 				<img src="/dedicated/d-1.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 2xL5630',
-// 		ram: 32,
-// 		ssd: '2 x 200 Гб SSD, RAID 1',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<img src="/dedicated/d-1.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 2xL5630',
-// 		ram: 32,
-// 		ssd: '2 x 1000 Гб HDD, RAID 1',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<img src="/dedicated/d-2.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 2xE5-2670',
-// 		ram: 32,
-// 		ssd: '2 x 1000 Гб HDD, RAID 1',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<img src="/dedicated/d-2.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 2xL5630',
-// 		ram: 48,
-// 		ssd: '2 x 200 Гб SSD, RAID 1',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<img src="/dedicated/d-2.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 2xL5630',
-// 		ram: 48,
-// 		ssd: '2 x 1000 Гб HDD, RAID 1',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<img src="/dedicated/d-2.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 2xL5640',
-// 		ram: 64,
-// 		ssd: '2 x 480 Гб SSD, RAID 1',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<span>СУПЕРЦЕНА</span>
-// 				<img src="/dedicated/d-2.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 2xL5640',
-// 		ram: 64,
-// 		ssd: '2 x 2000 Гб HDD, RAID 1',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<img src="/dedicated/d-3.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 2xE5-2670',
-// 		ram: 64,
-// 		ssd: '2 x 1000 Гб HDD, RAID 1',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<img src="/dedicated/d-3.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 2xE5-2670',
-// 		ram: 64,
-// 		ssd: '2 x 480 Гб SSD, RAID 1',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<img src="/dedicated/d-3.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 2xL5640',
-// 		ram: 96,
-// 		ssd: '2 x 480 Гб SSD, RAID 1',
-// 	},
-// 	{
-// 		img: (
-// 			<div className={st.dedicated__table__img}>
-// 				<img src="/dedicated/d-3.png" />
-// 			</div>
-// 		),
-// 		proc: 'Intel Xeon 2xL5640',
-// 		ram: 96,
-// 		ssd: '2 x 2000 Гб HDD, RAID 1',
-// 	},
-// ];
 
 export default function Dedicated() {
 	return (
@@ -372,12 +61,12 @@ export default function Dedicated() {
 			/>
 			<div className={st.dedicated}>
 				<Container
-					className="mt-0"
+					className="mt-0 text-center"
 					// style={{ background: "url('/servers.jpg') no-repeat" }}
 					headTitle="Выделенные сервера"
 					description={
 						<p>
-							Установим и активируем сервер за 60 минут, добавим диски и память за сутки по согласованию с
+							Установим и активируем сервер за 120 минут, добавим диски и память за сутки по согласованию с
 							отделом продаж
 						</p>
 					}
@@ -445,7 +134,7 @@ export default function Dedicated() {
 								))}
 							</table>
 						</div>
-						<a href="" className={st.dedicated__link}>
+						<a href="https://billing.airnet.uz/" className={st.dedicated__link}>
 							Арендовать сервер
 						</a>
 					</>
@@ -459,12 +148,13 @@ export default function Dedicated() {
 						уменьшить время ожидания. Срок действия услуги начнется с момента её активации.
 					</p>
 					<p className={st.dedicated__text}>
-						{infoCircle}Цены привязаны и указаны в сумах, корректировка курса выполняется раз в сутки.
+						{infoCircle}Цены привязаны и указаны в сумах.
 					</p>
 				</Container>
 
+				<div className={`bg-gray`}>
 				<Container
-					style={{ background: "url('/hosting/server.jpg') no-repeat" }}
+					// style={{ background: "url('/hosting/server.jpg') no-repeat" }}
 					title="Что входит в услугу аренды сервера"
 					clNTitle="text-black text-center">
 					<ul className={st.dedicated__plan}>
@@ -472,12 +162,12 @@ export default function Dedicated() {
 							<span>{checkedCircle}</span>Бесплатная настройка и установка сервера
 						</li>
 						<li>
-							<span>{checkedCircle}</span>Все сервера подключаются к порту 1 Гбps., трафик на скорости до
-							25 Mbit/s без ограничений
+							<span>{checkedCircle}</span>Все сервера подключаются к порту 10 Gbps, интернет на скорости до
+							100 Mbit/s без ограничений и 1 Gbps в зоне TAS-IX.
 						</li>
 						<li>
 							<span>{checkedCircle}</span>
-							На каждый сервер бесплатно выделяется 1 IPv4 адрес., стоимость дополнительного IP - 15 000
+							На каждый сервер бесплатно выделяется 1 IPv4 адрес., стоимость дополнительного IP - 20 000
 							сум
 						</li>
 						<li>
@@ -489,6 +179,7 @@ export default function Dedicated() {
 						</li>
 					</ul>
 				</Container>
+				</div>
 				<Partners />
 			</div>
 		</>

@@ -44,6 +44,16 @@ a {
 
 	&:hover {
 		text-decoration: none !important;
+		color: $white !important;
+		background-color: $dark_green !important;
+	}
+}
+
+button{
+	
+	&:hover {
+		color: $white;
+		background-color: $dark_green;
 	}
 }
 
