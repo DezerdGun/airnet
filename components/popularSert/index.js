@@ -4,53 +4,88 @@ import st from './popularSert.module.scss';
 
 const data = [
 	{
-		title: 'GlobalSign AlphaSSL',
-		description: 'Самый доступный сертификат от GlobalSign. Низкая стоимость и быстрый выпуск.',
-		warranty: 0,
+		title: 'Comodo PositiveSSL',
+		description: 'Самый доступный сертификат от Comodo. Низкая стоимость и быстрый выпуск.',
+		warranty: 50000,
 		dateOff: '1 дня',
+		link: 'https://billing.airnet.uz/billing.php?do=order&type=shop&item=1&one=1',
 		prices: [
 			{
-				price: '4 425',
-				dateOff: '1 год',
-			},
-		],
-	},
-	{
-		title: 'GlobalSign Organization SSL',
-		description: 'Надежный цифровой сертификат безопасности c обязательной проверкой документов организации',
-		warranty: 1250000,
-		dateOff: '3 дней',
-		prices: [
-			{
-				price: '22 194',
-				dateOff: '1 год',
-			},
-		],
-	},
-	{
-		title: 'Thawte SSL Web Server with EV',
-		description: 'Сертификат с расширенной проверкой идентифицирует не только сайт, но и организацию.',
-		warranty: 1500000,
-		dateOff: '10 дней',
-		prices: [
-			{
-				price: '28 595',
+				price: '100 000',
 				dateOff: '1 год',
 			},
 			{
-				price: '28 519',
+				price: '190 000',
 				dateOff: '2 года',
 			},
 			{
-				price: '28 327',
+				price: '275 000',
 				dateOff: '3 года',
 			},
 			{
-				price: '28 136',
+				price: '350 000',
 				dateOff: '4 года',
 			},
 			{
-				price: '28 059',
+				price: '400 000',
+				dateOff: '5 лет',
+			},
+		],
+	},
+	{
+		title: 'Comodo PositiveSSL Wildcard',
+		description: 'Надежный цифровой сертификат безопасности.',
+		warranty: 50000,
+		dateOff: '1 дней',
+		link: 'https://billing.airnet.uz/billing.php?do=order&type=shop&item=2&one=1',
+		prices: [
+			{
+				price: '1 000 000',
+				dateOff: '1 год',
+			},
+			{
+				price: '1 900 000',
+				dateOff: '2 года',
+			},
+			{
+				price: '2 800 000',
+				dateOff: '3 года',
+			},
+			{
+				price: '3 500 000',
+				dateOff: '4 года',
+			},
+			{
+				price: '4 000 000',
+				dateOff: '5 лет',
+			},
+		],
+	},
+	{
+		title: 'Comodo PremiumSSL Wildcard',
+		description: 'Сертификат с расширенной проверкой идентифицирует не только сайт, но и организацию.',
+		warranty: 250000,
+		dateOff: '5 дней',
+		link: 'https://billing.airnet.uz/billing.php?do=order&type=shop&item=3&one=1',
+		prices: [
+			{
+				price: '2 250 000',
+				dateOff: '1 год',
+			},
+			{
+				price: '4 200 000',
+				dateOff: '2 года',
+			},
+			{
+				price: '5 800 000',
+				dateOff: '3 года',
+			},
+			{
+				price: '7 500 000',
+				dateOff: '4 года',
+			},
+			{
+				price: '8 500 000',
 				dateOff: '5 лет',
 			},
 		],
@@ -104,7 +139,7 @@ export default function PopularSert() {
 							</div>
 							<div className={st.popularSert__block__item__footer}>
 								<Drop item={item.prices} />
-								<button>Купить</button>
+								<a href={item.link}><button>Купить</button></a>
 							</div>
 						</div>
 					))}

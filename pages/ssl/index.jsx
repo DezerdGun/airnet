@@ -64,9 +64,9 @@ const content = [
 						автоматически отправлять его на&nbsp;перевыпуск. Пройдя процедуру подтверждения,
 						вы&nbsp;получите новый файл сертификата, который необходимо установить на&nbsp;сайте.
 					</p>
-					<p>
+					{/* <p>
 						<a href="/technology/podpiska-na-ssl-sertifikat">Подробнее о&nbsp;подписке</a>.
-					</p>
+					</p> */}
 				</>
 			),
 		},
@@ -75,9 +75,9 @@ const content = [
 			description: (
 				<p>
 					Wildcard-сертификат можно использовать на всех поддоменах вашего основного домена. Этот сертификат
-					будет действителен на поддоменах типа www.domain.ru, forum.domain.ru, my.domain.ru и т. д. без
+					будет действителен на поддоменах типа www.airnet.uz, forum.airnet.uz, my.airnet.uz и т. д. без
 					ограничений на количество поддоменов. При создании запроса на Wildcard-сертификат в качестве Common
-					Name (CN) необходимо использовать *.domain.ru, где domain.ru — это ваше доменное имя.
+					Name (CN) необходимо использовать *.airnet.uz, где airnet.uz — это ваше доменное имя.
 				</p>
 			),
 		},
@@ -87,7 +87,7 @@ const content = [
 				<p>
 					IDN (Internationalized Domain Names) — доменные имена, которые содержат символы национальных
 					алфавитов. Поддержка IDN означает, что сертификат поддерживает нелатинские буквы в доменных именах и
-					может использоваться для доменных имён на национальных языках (например, сайт.рф).
+					может использоваться для доменных имён на национальных языках (например, эйрнет.uz).
 				</p>
 			),
 		},
@@ -97,7 +97,7 @@ const content = [
 			img: '/ssl/positive-ssl.png',
 			title: 'PositiveSSL',
 			price: '100 000',
-			link: '',
+			link: 'https://billing.airnet.uz/billing.php?do=order&type=shop&item=1&one=1',
 			description: [
 				<>
 					Доменов: <strong>1</strong>
@@ -112,8 +112,8 @@ const content = [
 		{
 			img: '/partners/comodo.png',
 			title: 'PositiveSSL Wildcard',
-			price: '100 000',
-			link: '',
+			price: '1 000 000',
+			link: 'https://billing.airnet.uz/billing.php?do=order&type=shop&item=2&one=1',
 			description: [
 				<>
 					Доменов: <strong>Неограниченное количество поддоменов</strong>
@@ -128,7 +128,7 @@ const content = [
 		{
 			img: '/partners/comodo.png',
 			title: 'EV SSL',
-			price: '100 000',
+			price: '1 000 000',
 			link: '',
 			description: [
 				<>
@@ -143,8 +143,8 @@ const content = [
 		{
 			img: '/partners/comodo.png',
 			title: 'PremiumSSL Wildcard',
-			price: '100 000',
-			link: '',
+			price: '2 250 000',
+			link: 'https://billing.airnet.uz/billing.php?do=order&type=shop&item=3&one=1',
 			description: [
 				<>
 					Доменов: <strong>Неограниченное количество поддоменов</strong>
@@ -155,66 +155,66 @@ const content = [
 				'Высокая гарантия',
 			],
 		},
-		{
-			img: '/ssl/instant-ssl.png',
-			title: 'InstantSSL',
-			price: '100 000',
-			link: '',
-			description: [
-				<>
-					Доменов: <strong>1</strong>
-				</>,
-				'Проверка организации',
-				'Название компании в SSL',
-				'Удобный SSL',
-				'Высокая гарантия',
-			],
-		},
-		{
-			img: '/ssl/positive-ssl.png',
-			title: 'PositiveSSL Multi-Domain',
-			price: '100 000',
-			link: '',
-			description: [
-				<>
-					Доменов: <strong>3-100</strong>
-				</>,
-				'Проверка домена',
-				'Базовый HTTPS',
-				'Удобный SSL',
-				'Низкая гарантия',
-			],
-		},
-		{
-			img: '/partners/comodo.png',
-			title: 'EV Multi-Domain SSL',
-			price: '100 000',
-			link: '',
-			description: [
-				<>
-					Доменов: <strong>3-100</strong>
-				</>,
-				'Расширенная проверка',
-				'Название компании в браузере',
-				'Удобный SSL',
-				'Очень высокая гарантия',
-			],
-		},
-		{
-			img: '/ssl/unified-ssl.webp',
-			title: 'Unified Communications',
-			price: '100 000',
-			link: '',
-			description: [
-				<>
-					Доменов: <strong>3-100</strong>
-				</>,
-				'Проверка домена',
-				'Название компании в SSL',
-				'Удобный SSL',
-				'Высокая гарантия',
-			],
-		},
+		// {
+		// 	img: '/ssl/instant-ssl.png',
+		// 	title: 'InstantSSL',
+		// 	price: '100 000',
+		// 	link: '',
+		// 	description: [
+		// 		<>
+		// 			Доменов: <strong>1</strong>
+		// 		</>,
+		// 		'Проверка организации',
+		// 		'Название компании в SSL',
+		// 		'Удобный SSL',
+		// 		'Высокая гарантия',
+		// 	],
+		// },
+		// {
+		// 	img: '/ssl/positive-ssl.png',
+		// 	title: 'PositiveSSL Multi-Domain',
+		// 	price: '100 000',
+		// 	link: '',
+		// 	description: [
+		// 		<>
+		// 			Доменов: <strong>3-100</strong>
+		// 		</>,
+		// 		'Проверка домена',
+		// 		'Базовый HTTPS',
+		// 		'Удобный SSL',
+		// 		'Низкая гарантия',
+		// 	],
+		// },
+		// {
+		// 	img: '/partners/comodo.png',
+		// 	title: 'EV Multi-Domain SSL',
+		// 	price: '100 000',
+		// 	link: '',
+		// 	description: [
+		// 		<>
+		// 			Доменов: <strong>3-100</strong>
+		// 		</>,
+		// 		'Расширенная проверка',
+		// 		'Название компании в браузере',
+		// 		'Удобный SSL',
+		// 		'Очень высокая гарантия',
+		// 	],
+		// },
+		// {
+		// 	img: '/ssl/unified-ssl.webp',
+		// 	title: 'Unified Communications',
+		// 	price: '100 000',
+		// 	link: '',
+		// 	description: [
+		// 		<>
+		// 			Доменов: <strong>3-100</strong>
+		// 		</>,
+		// 		'Проверка домена',
+		// 		'Название компании в SSL',
+		// 		'Удобный SSL',
+		// 		'Высокая гарантия',
+		// 	],
+		// },
 	];
 
 export default function SSL() {
@@ -223,8 +223,8 @@ export default function SSL() {
 	return (
 		<>
 			<SEO
-				title="Купить SSL-сертификат, TLS 1.2, X.509v3"
-				desc="Дешево купить SSL или TLS сертификат от 825р. в год. Большой выбор сертификационных центров Comodo, Thawte, RapidSSL, Geotrust, Symantec."
+				title="Airnet.uz - Купить SSL-сертификат, TLS, Ташкент"
+				desc="Дешево купить SSL или TLS сертификат от 100 000 сум в год. Большой выбор сертификационных центров Comodo"
 			/>
 			<Container headTitle="SSL-сертификаты">
 				<hr />
@@ -239,7 +239,7 @@ export default function SSL() {
 							Сертификаты отличаются по уровню проверки удостоверяющим центром, а также по количеству
 							защищаемых доменов и субдоменов.
 						</p>
-						<a href="#">Выбрать сертификат</a>
+						<a href="https://billing.airnet.uz/billing.php?do=shopitems" target="_blank">Выбрать сертификат</a>
 					</div>
 					<div className={styles.ssl__block__img}>
 						<img src="/ssl/intro-img.png" />
@@ -280,7 +280,7 @@ const SslComponent = ({ index, item, show, setShow }) => {
 							год
 						</span>
 					</div>
-					<a href="#">Купить</a>
+					<a href={item.link}>Купить</a>
 					<button className={show === index ? styles.ssl__component__content__price__btn : ''}>
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 							<path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />

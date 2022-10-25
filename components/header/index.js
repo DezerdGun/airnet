@@ -42,7 +42,7 @@ export default function Header() {
 			},
 			{
 				title: 'SSL',
-				link: LINKS.SSL_HELP,
+				link: LINKS.SSL,
 			},
 			{
 				title: 'Лицензии',

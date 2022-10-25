@@ -289,7 +289,7 @@ export default function Hosting() {
 						navigation
 						loop={true}
 						autoplay={{
-							delay: 10000,
+							delay: 20000,
 							disableOnInteraction: false,
 						}}
 						breakpoints={{
@@ -329,10 +329,12 @@ export default function Hosting() {
 						))}
 					</div>
 				</Container>
+				<div className={`bg-gray`}>
 				<Container
 					title="На всех тарифных планах"
 					clNTitle="text-black text-center"
-					style={{ background: "url('/hosting/server.jpg') no-repeat" }}>
+					// style={{ background: "url('/hosting/server.jpg') no-repeat" }}
+					>
 					<div className={st.hosting__plan}>
 						<div className={st.hosting__plan__content}>
 							<p>
@@ -340,10 +342,10 @@ export default function Hosting() {
 								исходящего трафика.
 							</p>
 							<p>
-								<strong>Скорость в TAS-IX</strong> — 1 Gbps
+								<strong>Скорость в Интернет</strong> — 100 Mbps
 							</p>
 							<p>
-								<strong>Скорость в Интернет</strong> — 100 Mbps
+								<strong>Скорость в TAS-IX</strong> — 1 Gbps
 							</p>
 							<p>
 								<strong>Безлимитные FTP-аккаунты</strong> — для своего удобства работы с файлами, Вы
@@ -361,13 +363,21 @@ export default function Hosting() {
 						</div>
 					</div>
 				</Container>
+				</div>
 				<Container
 					title="Быстрая установка Wordpress и популярных CMS в 1 клик!"
 					description={
+						<>
 						<p>
-							Установка CMS-установщика в 1 клик — Вашему вниманию предлагаются более 100 БЕСПЛАТНЫХ
+							Установка CMS-установщика в 1 клик
+						</p>
+						<p>
+							Вашему вниманию предлагаются более <strong>100 БЕСПЛАТНЫХ</strong>
+						</p>
+						<p>
 							CMS-установщиков различных категорий от Softaculous:
 						</p>
+						</>
 					}
 					className="text-center">
 					<div className={st.hosting__cms}>

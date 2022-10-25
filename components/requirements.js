@@ -1,7 +1,7 @@
 export const LINKS = {
 	HOME: '/',
 	HOSTING: '/hosting',
-	RESELLING: '/',
+	RESELLING: '/reseller',
 	SERVERS: '/dedicated',
 	VPS_VDS: '#',
 	CHEAP_VDS: '/cheap-vds',

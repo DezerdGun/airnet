@@ -56,7 +56,7 @@ export default function TarifCard2({ tarif }) {
 			</table>
 			<hr />
 			<button>
-				<a href={tarif.link}>Заказать сервер</a>
+				<a href={tarif.link}>Заказать хостинг</a>
 			</button>
 		</div>
 	);
