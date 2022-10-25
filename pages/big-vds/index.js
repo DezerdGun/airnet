@@ -18,53 +18,53 @@ import ForFreeBlock from "../../components/forFreeBlock";
 import WhyBlock from "../../components/whyBlock";
 
 const block = [
-	{
-		title: 'Мгновенная активация',
-		description: (
-			<>
-				<p>
-					Активация VDS выполняется от 5 минуты до 4-х часов, в зависимости от количества заказов и
-					наличия свободного оборудования.
-				</p>
-				<button>
-					<Link href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
-						<a>Стать клиентом и заказать VDS</a>
-					</Link>
-				</button>
-			</>
-		),
-		img: '/time.png',
-	},
-	{
-		title: 'Низкая цена',
-		description:
-			'Мы предоставляем услуги по самым "низким" ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.',
-		img: '/money.png',
-	},
-	{
-		title: 'Поддержка круглосуточно',
-		description: (
-			<>
-				<p>
-					В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим максимально
-					быстро.
-				</p>
-				<button>
-					<Link href={LINKS.CONTACTS}>
-						<a>Наши контакты</a>
-					</Link>
-				</button>
-			</>
-		),
-		img: '/support.png',
-	},
-	{
-		title: 'Гибкая настройка',
-		description:
-			'Вы можете изменить количество CPU и RAM в любой момент, а также увеличить объём SSD',
-		img: '/year.png',
-	},
-],
+		{
+			title: "Мгновенная активация",
+			description: (
+				<>
+					<p>
+						Активация VDS выполняется от 5 минуты до 4-х часов, в зависимости от количества заказов
+						и наличия свободного оборудования.
+					</p>
+					<button>
+						<Link href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
+							<a>Стать клиентом и заказать VDS</a>
+						</Link>
+					</button>
+				</>
+			),
+			img: "/time.png",
+		},
+		{
+			title: "Низкая цена",
+			description:
+				'Мы предоставляем услуги по самым "низким" ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.',
+			img: "/money.png",
+		},
+		{
+			title: "Поддержка круглосуточно",
+			description: (
+				<>
+					<p>
+						В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим
+						максимально быстро.
+					</p>
+					<button>
+						<Link href={LINKS.CONTACTS}>
+							<a>Наши контакты</a>
+						</Link>
+					</button>
+				</>
+			),
+			img: "/support.png",
+		},
+		{
+			title: "Гибкая настройка",
+			description:
+				"Вы можете изменить количество CPU и RAM в любой момент, а также увеличить объём SSD",
+			img: "/year.png",
+		},
+	],
 	tarif = [
 		// {
 		// 	title: "Mega",
@@ -142,7 +142,7 @@ const block = [
 			ram: 32,
 			ssd: 300,
 			net: 50,
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=53',
+			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=53",
 		},
 		{
 			title: "Peta",
@@ -168,7 +168,7 @@ const block = [
 			ram: 48,
 			ssd: 500,
 			net: 50,
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=61',
+			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=61",
 		},
 		{
 			title: "Zeta",
@@ -194,16 +194,33 @@ const block = [
 			ram: 64,
 			ssd: 500,
 			net: 50,
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=62',
+			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=62",
 		},
 		{
-			title: 'Yotta',
-			price: '7 500 000',
+			title: "Yotta",
+			price: "7 500 000",
+			prices: [
+				{
+					price: "200 000",
+					dateOff: "3 мес.",
+					date: "мес.",
+				},
+				{
+					price: "300 000",
+					dateOff: "6 мес.",
+					date: "мес.",
+				},
+				{
+					price: "400 000",
+					dateOff: "12 мес.",
+					date: "мес.",
+				},
+			],
 			cpu: 22,
 			ram: 128,
 			ssd: 1000,
 			net: 100,
-			link: 'https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=63',
+			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=63",
 		},
 	];
 
@@ -275,56 +292,58 @@ export default function BigVDS() {
 
 				<ForFreeBlock />
 
-			<Container className="text-center"
-				title="Стоимость международного интернет-канала без ограничения трафика"
-				description="Внешний трафик и трафик в сети «TAS-IX» не тарифицируется.">
-				<div className={st.vds__table}>
-					<CustomTable
-						table={
-							<table>
-								<thead>
-									<tr>
-										<th>Тариф</th>
-										<th>Скорость доступа в Интернет</th>
-										<th>Скорость доступа в «TAS-IX»</th>
-										<th>Тарификация</th>
-										<th>Абонентская плата в месяц</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Unlim 50M</td>
-										<td>50 мбит/с</td>
-										<td>1 Гбит/с</td>
-										<td>Без ограничений</td>
-										<td>Бесплатно</td>
-									</tr>
-									<tr>
-										<td>Unlim 100M</td>
-										<td>100 мбит/с</td>
-										<td>1 Гбит/с</td>
-										<td>Без ограничений</td>
-										<td>2 000 000 сум/мес.</td>
-									</tr>
-									<tr>
-										<td>Unlim 200M</td>
-										<td>200 мбит/с</td>
-										<td>1 Гбит/с</td>
-										<td>Без ограничений</td>
-										<td>5 000 000 сум/мес.</td>
-									</tr>
-									<tr>
-										<td>Unlim 350M</td>
-										<td>350 мбит/с</td>
-										<td>1 Гбит/с</td>
-										<td>Без ограничений</td>
-										<td>10 000 000 сум/мес.</td>
-									</tr>
-								</tbody>
-							</table>
-						}
-					/>
-				</div>
+				<Container
+					className="text-center"
+					title="Стоимость международного интернет-канала без ограничения трафика"
+					description="Внешний трафик и трафик в сети «TAS-IX» не тарифицируется."
+				>
+					<div className={st.vds__table}>
+						<CustomTable
+							table={
+								<table>
+									<thead>
+										<tr>
+											<th>Тариф</th>
+											<th>Скорость доступа в Интернет</th>
+											<th>Скорость доступа в «TAS-IX»</th>
+											<th>Тарификация</th>
+											<th>Абонентская плата в месяц</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Unlim 50M</td>
+											<td>50 мбит/с</td>
+											<td>1 Гбит/с</td>
+											<td>Без ограничений</td>
+											<td>Бесплатно</td>
+										</tr>
+										<tr>
+											<td>Unlim 100M</td>
+											<td>100 мбит/с</td>
+											<td>1 Гбит/с</td>
+											<td>Без ограничений</td>
+											<td>2 000 000 сум/мес.</td>
+										</tr>
+										<tr>
+											<td>Unlim 200M</td>
+											<td>200 мбит/с</td>
+											<td>1 Гбит/с</td>
+											<td>Без ограничений</td>
+											<td>5 000 000 сум/мес.</td>
+										</tr>
+										<tr>
+											<td>Unlim 350M</td>
+											<td>350 мбит/с</td>
+											<td>1 Гбит/с</td>
+											<td>Без ограничений</td>
+											<td>10 000 000 сум/мес.</td>
+										</tr>
+									</tbody>
+								</table>
+							}
+						/>
+					</div>
 				</Container>
 				<Partners />
 			</div>
