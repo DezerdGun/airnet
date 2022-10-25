@@ -80,7 +80,8 @@ $red: #f00;
 		display: block;
 		width: fit-content;
 		margin: 10px auto 0;
-		padding: 10px 20px;
+		padding: 20px;
+	    border-radius: 5px;
 		background-color: $green;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -101,9 +102,9 @@ $red: #f00;
 		margin-bottom: 0;
 
 		li {
-			width: 65%;
+			width: 75%;
 			margin: 0 auto 15px;
-			font-weight: 700;
+			// font-weight: 700;
 
 			span {
 				margin-right: 10px;

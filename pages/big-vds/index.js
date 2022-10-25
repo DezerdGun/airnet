@@ -36,9 +36,9 @@ const block = [
 			img: "/time.png",
 		},
 		{
-			title: "Вернем вам деньги, если что",
+			title: "Низкая цена",
 			description:
-				"Хотите убедиться, что все работает как нужно? Не волнуйтесь, для этого есть целых 30 дней. Если в течение этого времени Вы решите, что хотите отказаться от наших услуг, мы вернем Вам все неиспользованные средства.",
+				'Мы предоставляем услуги по самым "низким" ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.',
 			img: "/money.png",
 		},
 		{
@@ -60,58 +60,58 @@ const block = [
 		},
 	],
 	tarif = [
-		{
-			title: "Mega",
-			// price: '800 000',
-			prices: [
-				{
-					price: "200 000",
-					dateOff: "3 мес.",
-					date: "мес.",
-				},
-				{
-					price: "300 000",
-					dateOff: "6 мес.",
-					date: "мес.",
-				},
-				{
-					price: "400 000",
-					dateOff: "12 мес.",
-					date: "мес.",
-				},
-			],
-			cpu: 6,
-			ram: 12,
-			ssd: 200,
-			net: 25,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
-		},
-		{
-			title: "Ultra",
-			// price: '1 000 000',
-			prices: [
-				{
-					price: "200 000",
-					dateOff: "3 мес.",
-					date: "мес.",
-				},
-				{
-					price: "300 000",
-					dateOff: "6 мес.",
-					date: "мес.",
-				},
-				{
-					price: "400 000",
-					dateOff: "12 мес.",
-					date: "мес.",
-				},
-			],
-			cpu: 8,
-			ram: 16,
-			ssd: 200,
-			net: 25,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
-		},
+		// {
+		// 	title: "Mega",
+		// 	// price: '800 000',
+		// 	prices: [
+		// 		{
+		// 			price: "200 000",
+		// 			dateOff: "3 мес.",
+		// 			date: "мес.",
+		// 		},
+		// 		{
+		// 			price: "300 000",
+		// 			dateOff: "6 мес.",
+		// 			date: "мес.",
+		// 		},
+		// 		{
+		// 			price: "400 000",
+		// 			dateOff: "12 мес.",
+		// 			date: "мес.",
+		// 		},
+		// 	],
+		// 	cpu: 6,
+		// 	ram: 12,
+		// 	ssd: 200,
+		// 	net: 25,
+		// 	link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
+		// },
+		// {
+		// 	title: "Ultra",
+		// 	// price: '1 000 000',
+		// 	prices: [
+		// 		{
+		// 			price: "200 000",
+		// 			dateOff: "3 мес.",
+		// 			date: "мес.",
+		// 		},
+		// 		{
+		// 			price: "300 000",
+		// 			dateOff: "6 мес.",
+		// 			date: "мес.",
+		// 		},
+		// 		{
+		// 			price: "400 000",
+		// 			dateOff: "12 мес.",
+		// 			date: "мес.",
+		// 		},
+		// 	],
+		// 	cpu: 8,
+		// 	ram: 16,
+		// 	ssd: 200,
+		// 	net: 25,
+		// 	link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
+		// },
 		{
 			title: "Tera",
 			// price: '1 500 000',

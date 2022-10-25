@@ -54,6 +54,9 @@ $red: #f00;
 			border: none;
 			margin-top: 10px;
 
+			&:hover{
+				background-color: #00402e;
+			}
 			a {
 				color: $white;
 				font-weight: 700;

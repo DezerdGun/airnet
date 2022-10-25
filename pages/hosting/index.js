@@ -426,7 +426,7 @@ export default function Hosting() {
 						spaceBetween={0}
 						slidesPerView={1}
 						navigation
-						loop={true}
+						loop={false}
 						autoplay={{
 							delay: 20000,
 							disableOnInteraction: false,
