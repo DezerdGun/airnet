@@ -15,6 +15,7 @@ const Drop = ({ item, isTarifCard }) => {
 					<span>
 						сум
 						<hr />
+						{console.log(item, price.checked)}
 						{item[price.checked].date}
 					</span>
 					<svg

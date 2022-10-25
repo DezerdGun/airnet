@@ -198,7 +198,7 @@ const block = [
 		},
 		{
 			title: "Yotta",
-			price: "7 500 000",
+			// price: "7 500 000",
 			prices: [
 				{
 					price: "200 000",
