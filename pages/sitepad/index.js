@@ -1,7 +1,10 @@
 import Container from '../../components/container';
+import Link from 'next/link';
 import Image from 'next/image';
 import Partners from '../../components/partners';
+import { LINKS } from '../../components/requirements';
 import SEO from '../../components/seo';
+import st from './sitepad.module.scss';
 
 export default function SitePad() {
 	return (
@@ -10,17 +13,39 @@ export default function SitePad() {
 				title="Бесплатный Конструктор сайтов SitePad | Хостинг TAS-IX в Ташкенте, Узбекистане"
 				desc="Простой и быстрый бесплатный конструктор сайтов в Ташкенте SitePad, создайте профессиональный сайт без навыком программированя в зоне TAS-IX"
 			/>
-			<Container
+			
+			<Container headTitle="Конструктор сайтов SitePad">
+				<div className={st.sitepad__info}>
+					<div className={st.sitepad__info__content}>
+						<h3>Об услуге</h3>
+						<p>
+							Создайте свой профессиональный веб-сайт с помощью простого в использовании редактора и публикуйте статические веб-страницы. Более 500 адаптивных тем веб-сайтов, которые охватывают широкий спектр категорий, таких как блог, бизнес, портфолио, рестораны, путешествия и многие другие.
+						</p>
+						<p>
+							Более 40 виджетов, таких как слайдер изображений/видео, галереи изображений, форматированный текст, видео, аудио, Service Box, Google Maps, Контактная форма, социальные сети и многое другое, что поможет вам создать свой веб-сайт
+						</p>
+						{/* <Link href={LINKS.HELP}>
+							<a>Как подключить DDoS?</a>
+						</Link> */}
+					</div>
+					<div className={st.sitepad__info__img}>
+						<img src="/sitepad-img.png" />
+					</div>
+				</div>
+			</Container>
+
+			{/* <Container
 				style={{ background: "url('/servers-2.jpg') no-repeat" }}
 				title="Конструктор сайтов SitePad"
-				className="my-0"></Container>
+				className="my-0">
+			</Container> */}
 			<Container className="px-3">
 				<p>
 					После того как вы прошли регистрацию и заказали у нас хостинг, на вашем почтовом адресе указанным
 					при регистрации отправлены данные от хостинг-панели Cpanel, перейдите в{' '}
 					<a
-						href="https://cpanel.airnet.uz:2083/"
-						title="https://cpanel.airnet.uz:2083/"
+						href="https://cpanel.airnet.uz/"
+						title="https://cpanel.airnet.uz/"
 						target="_blank"
 						rel="noreferrer noopener"
 						className="text-decoration-underline">
@@ -50,7 +75,7 @@ export default function SitePad() {
 					Если у вас остались вопросы, вы всегда можете обратиться в нашу тех.поддержку для получения
 					консультации по возникшим вопросам!
 				</p>
-				<p>+99871-200-87-00</p>
+				{/* <p>+99871-200-87-00</p>
 				<p>+99890-324-30-80 </p>
 				<p>
 					Наш{' '}
@@ -62,7 +87,7 @@ export default function SitePad() {
 						className="text-decoration-underline">
 						телеграм
 					</a>{' '}
-				</p>
+				</p> */}
 			</Container>
 			<Partners />
 		</>

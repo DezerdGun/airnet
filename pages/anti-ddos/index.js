@@ -2,7 +2,10 @@ import Container from '../../components/container';
 import Link from 'next/link';
 import Image from 'next/image';
 import SEO from '../../components/seo';
+import st from './anti-ddos.module.scss';
+import { LINKS } from '../../components/requirements';
 import WhyBlock from '../../components/whyBlock';
+import Partners from '../../components/partners';
 
 const content = [
 	{
@@ -35,7 +38,28 @@ export default function AntiDDos() {
 				title="Защита серверов от DDoS-атак | Airnet"
 				desc="Описание защиты от DDoS-атак VDS и Выделенных серверов у Airnet"
 			/>
-			<Container headTitle="Защита серверов от DDoS-атак" clNTitle="mb-0"></Container>
+			
+			<Container headTitle="Защита серверов от DDoS-атак">
+				<div className={st.anti_ddos__info}>
+					<div className={st.anti_ddos__info__content}>
+						<h3>Об услуге</h3>
+						<p>
+							Защищает сервер от самых известных атак, предотвращает угрозы на канальном, сетевом, транспортном и прикладном уровнях OSI. Весь входящий трафик фильтруется — вредоносный отсеивается, и до сайта доходят только реальные пользователи.
+						</p>
+						<p>
+							Подключите защищенный канал, и все сайты на сервере будут в безопасности.
+						</p>
+						<Link href={LINKS.HELP}>
+							<a>Как подключить DDoS?</a>
+						</Link>
+					</div>
+					<div className={st.anti_ddos__info__img}>
+						<img src="/ddos-img.png" />
+					</div>
+				</div>
+			</Container>
+
+			{/* <Container headTitle="Защита серверов от DDoS-атак" clNTitle="mb-0"></Container> */}
 			<WhyBlock title="Чем опасны DDoS-атаки?" content={content} />
 			<Container className="pt-2">
 				<hr />
@@ -82,6 +106,7 @@ export default function AntiDDos() {
 					<Image src="/anti-ddos/protected.png" width={640} height={216} />
 				</div>
 			</Container>
+			<Partners />
 		</>
 	);
 }

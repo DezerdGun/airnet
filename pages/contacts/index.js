@@ -74,8 +74,8 @@ export default function Contacts() {
 					<YMaps>
 						<Map
 							width="100%"
-							height="300px"
-							defaultState={{ center: [41.3102896, 69.2759416], zoom: 17 }}
+							height="500px"
+							defaultState={{ center: [41.332246, 69.324796], zoom: 15 }}
 						/>
 					</YMaps>
 				</Container>

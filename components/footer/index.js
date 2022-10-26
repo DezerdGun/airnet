@@ -161,10 +161,10 @@ export default function Footer() {
 					link: LINKS.SITEPAD,
 					title: 'Конструктор сайтов SitePad',
 				},
-				{
-					link: LINKS.ANTIVIRUS,
-					title: 'Антивирус для сайта',
-				},
+				// {
+				// 	link: LINKS.ANTIVIRUS,
+				// 	title: 'Антивирус для сайта',
+				// },
 			],
 		},
 		clients = {
@@ -179,7 +179,7 @@ export default function Footer() {
 					title: 'Контакты',
 				},
 				{
-					link: LINKS.FAQ,
+					link: LINKS.DOCUMENTS,
 					title: 'Документы',
 				},
 				{

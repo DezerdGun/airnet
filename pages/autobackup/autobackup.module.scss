@@ -11,7 +11,7 @@ $red: #f00;
 	&__info {
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
 		border-top: 1px solid $light_gray;
 		padding-top: 20px;
 		margin-top: -20px;
@@ -20,7 +20,7 @@ $red: #f00;
 			width: 30%;
 
 			h3 {
-				font-size: 26px;
+				font-size: 30px;
 				margin-bottom: 20px;
 			}
 

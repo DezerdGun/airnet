@@ -1,5 +1,6 @@
 import Container from '../../components/container';
 import Link from 'next/link';
+import Partners from '../../components/partners';
 import SEO from '../../components/seo';
 
 export default function About() {
@@ -14,7 +15,7 @@ export default function About() {
 						<a className="text-decoration-underline">виртуального хостинга</a>
 					</Link>
 					,{' '}
-					<Link href="/partners">
+					<Link href="/reseller">
 						<a className="text-decoration-underline">реселлинга</a>
 					</Link>
 					,{' '}
@@ -57,6 +58,7 @@ export default function About() {
 					Мы всегда открыты для новых предложений по сотрудничеству, улучшению нашего сервиса и критике.
 				</p>
 			</Container>
+			<Partners />
 		</>
 	);
 }
