@@ -29,7 +29,7 @@ const checkedCircle = (
 		{
 			proc: '2 x Xeon',
 			procTitle: 'E5-2670',
-			core: '42 ядра',
+			core: '32 ядра',
 			herz: '2.6',
 			ram: 256,
 			ssd: '6 x 1000 Гб SSD, RAID 5',
@@ -41,7 +41,7 @@ const checkedCircle = (
 		{
 			proc: '2 x Xeon',
 			procTitle: 'E5-2637 v2',
-			core: '28 ядра',
+			core: '16 ядер',
 			herz: '3.5',
 			ram: 256,
 			ssd: '12 x 1000 Гб SSD, RAID 5',
