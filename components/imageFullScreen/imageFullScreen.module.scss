@@ -6,6 +6,7 @@
 	height: 100vh;
 	z-index: 10;
 	background-color: rgba(0, 0, 0, 0.8);
+	overflow-y: auto;
 
 	&__img {
 		width: 80%;
@@ -14,20 +15,30 @@
 		text-align: center;
 
 		img {
-			width: auto !important;
+			width: 95% !important;
 			min-width: 0 !important;
 			margin: 0 auto !important;
-			height: calc(100vh - 100px) !important;
-			object-fit: contain;
+			height: auto !important;
+			object-fit: cover;
 		}
 
 		svg {
-			position: absolute;
+			position: fixed;
 			top: 20px;
-			right: 20px;
+			right: 40px;
 			width: 20px;
 			fill: #fff;
 			cursor: pointer;
+		}
+	}
+
+	@media (max-width: 550px) {
+		&__img {
+			svg {
+				top: 10px;
+				right: 10px;
+				width: 10px;
+			}
 		}
 	}
 }
