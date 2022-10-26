@@ -252,6 +252,7 @@ export default function BigVDS() {
 				desc="Высокопроизводительный виртуальный хостинг, Мощные VDS, VPS-сервера, VDS в Ташкенте, виртуальные сервера, выделенные сервера в Узбекистане"
 			/>
 			<div className={st.vds}>
+				<div className={'bg_gray'}>
 				<TarifMaket
 					// bgImg={'/servers-2.jpg'}
 					headTitle={<>Мощные VDS/VPS — сервера  <br /> на базе VMware виртуализации с быстрыми SSD-дисками</>}
@@ -307,6 +308,7 @@ export default function BigVDS() {
 						))}
 					</Swiper>
 				</TarifMaket>
+				</div>
 
 				<WhyBlock content={block} />
 

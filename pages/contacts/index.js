@@ -32,7 +32,7 @@ export default function Contacts() {
 		<>
 			<SEO title="Контактная информация | Airnet" desc="Контактная информация компании Airnet" />
 			<div className={st.contacts}>
-				<Container className="mt-0">
+				<Container className="mt-0 pb-0">
 					<div className={st.contacts__phones}>
 						<div className={st.contacts__phones__item}>
 							<span>Абонентский отдел</span>

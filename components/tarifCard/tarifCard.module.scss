@@ -4,13 +4,14 @@ $green: #006a4d;
 $dark_green: #00402e;
 $gray: #c2c2c2;
 $dark_gray: #666;
-$light_gray: #f2f2f2;
+$light_gray: #eeebee;
 $red: #f00;
 
 .tarifCard {
-	background-color: $light_gray;
+	background-color: $white;
 	border-radius: 15px;
 	padding: 15px;
+	border: 1px solid $light_gray;
 
 	&__header {
 		padding: 25px 10px;
@@ -78,7 +79,9 @@ $red: #f00;
 			}
 
 			td {
-				color: $gray;
+				// color: $gray;
+				color: $black;
+				font-size: 14px;
 			}
 		}
 	}

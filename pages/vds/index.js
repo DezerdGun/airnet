@@ -276,6 +276,7 @@ export default function VDS() {
 				desc="Предложение в соотношении цены-качества-количества ресурсов, которое построенно на быстрых SSD-дисках. Оптимальные VDS/VPS в сети TAS-IX в Ташкенте"
 			/>
 			<div className={st.vds}>
+				<div className={'bg_gray'}>
 				<TarifMaket
 					// bgImg={'/servers-2.jpg'}
 					headTitle="VDS/VPS — сервера на базе быстрых SSD-дисков"
@@ -330,6 +331,7 @@ export default function VDS() {
 						))}
 					</Swiper>
 				</TarifMaket>
+				</div>
 
 				<WhyBlock content={block} />
 

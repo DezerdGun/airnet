@@ -13,6 +13,8 @@ $red: #f00;
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
+		padding-bottom: 40px;
+		border-bottom: 1px solid $gray;
 
 		&__item {
 			text-align: center;
@@ -35,7 +37,7 @@ $red: #f00;
 	}
 
 	&__questions {
-		background-color: $bg_gray;
+		// background-color: $bg_gray;
 
 		a {
 			width: fit-content;

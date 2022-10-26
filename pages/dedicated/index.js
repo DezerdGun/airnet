@@ -170,9 +170,9 @@ export default function Dedicated() {
 							На каждый сервер бесплатно выделяется 1 IPv4 адрес., стоимость дополнительного IP - 20 000
 							сум
 						</li>
-						<li>
+						{/* <li>
 							<span>{checkedCircle}</span>Все серверы поддерживают как 32-х так и 64-х битные системы
-						</li>
+						</li> */}
 						<li>
 							<span>{checkedCircle}</span>Операционные системы для установки: Linux и Windows Server
 							(доступен не на всех конфигурациях)

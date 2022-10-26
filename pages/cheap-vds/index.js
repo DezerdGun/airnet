@@ -198,6 +198,7 @@ export default function CheapVds() {
 				desc="Дешевые и бесплатные VDS/VPS на быстрых SSD-дисках в сети TAS-IX в Ташкенте"
 			/>
 			<div className={st.cheapVds}>
+				<div className={'bg_gray'}>
 				<TarifMaket
 					// bgImg={'/servers-2.jpg'}
 					headTitle="Бюджетные VDS/VPS — Самые дешевые сервера в Ташкенте"
@@ -252,6 +253,7 @@ export default function CheapVds() {
 						))}
 					</Swiper>
 				</TarifMaket>
+				</div>
 
 				{/* <Container style={{ background: `url('/servers-5.jpg') no-repeat` }} className="mt-0 py-0">
 					<div className={st.cheapVds__header}>

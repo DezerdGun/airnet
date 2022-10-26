@@ -447,6 +447,7 @@ export default function Hosting() {
 					</div>
 				</Container> */}
 
+				<div className={'bg_gray'}>
 				<TarifMaket
 					// bgImg={'/servers-2.jpg'}
 					headTitle="Популярные тарифы Виртуальный хостинг Cpanel в Ташкенте"
@@ -493,6 +494,7 @@ export default function Hosting() {
 						))}
 					</Swiper>
 				</TarifMaket>
+				</div>
 
 				<Container
 					title="Ваш хостинг будет размещен на сервере с конфигурацией:"
