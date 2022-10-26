@@ -80,8 +80,8 @@ export default function SitePad() {
 			/>
 			
 			<Container headTitle="Конструктор сайтов SitePad">
-				<div className={st.sitepad__info}>
-					<div className={st.sitepad__info__content}>
+				<div className={styles.sitepad__info}>
+					<div className={styles.sitepad__info__content}>
 						<h3>Об услуге</h3>
 						<p>
 							Создайте свой профессиональный веб-сайт с помощью простого в использовании редактора и публикуйте статические веб-страницы. Более 500 адаптивных тем веб-сайтов, которые охватывают широкий спектр категорий, таких как блог, бизнес, портфолио, рестораны, путешествия и многие другие.
@@ -93,7 +93,7 @@ export default function SitePad() {
 							<a>Как подключить DDoS?</a>
 						</Link> */}
 					</div>
-					<div className={st.sitepad__info__img}>
+					<div className={styles.sitepad__info__img}>
 						<img src="/sitepad-img.png" />
 					</div>
 				</div>
@@ -102,8 +102,8 @@ export default function SitePad() {
 			{/* <Container
 				style={{ background: "url('/servers-2.jpg') no-repeat" }}
 				title="Конструктор сайтов SitePad"
-				className="my-0"
-			></Container>
+				className="my-0">
+			</Container> */}
 			<Container className="px-3">
 				<p>
 					После того как вы прошли регистрацию и заказали у нас хостинг, на вашем почтовом адресе
@@ -151,13 +151,8 @@ export default function SitePad() {
 						className="text-decoration-underline"
 					>
 						телеграм
-<<<<<<< HEAD
 					</a>{' '}
 				</p> */}
-=======
-					</a>{" "}
-				</p>
->>>>>>> 4ed2c076f611a0d02a40db1a79f5a3607ef61c2e
 			</Container>
 			{image && <ImageFullScreen image={image} setImage={setImage} />}
 
