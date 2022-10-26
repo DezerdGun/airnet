@@ -37,6 +37,7 @@ $red: #f00;
 
 			svg {
 				margin-left: 5px;
+				fill: $white;
 			}
 		}
 	}
@@ -65,7 +66,7 @@ $red: #f00;
 		}
 
 		ul {
-			min-width: 200px;
+			min-width: 210px;
 			margin-top: 10px;
 			text-align: right;
 			right: 0;
@@ -75,7 +76,7 @@ $red: #f00;
 	&__ul {
 		position: absolute;
 		background-color: $white;
-		box-shadow: 0 0 10px $gray;
+		// box-shadow: 0 0 10px $gray;
 		border-radius: 10px;
 		list-style: none;
 		padding: 0;

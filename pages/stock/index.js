@@ -1,6 +1,8 @@
 import Container from '../../components/container';
 import st from './stock.module.scss';
 import Image from 'next/image';
+import PopularStock from "../../components/popularStock";
+import Partners from '../../components/partners';
 import SEO from '../../components/seo';
 
 const data = [
@@ -146,7 +148,17 @@ export default function Stock() {
 				title="Акции и скидки | Хостинг TAS-IX в Ташкенте, Узбекистане"
 				desc="Выгодные акции от компании Airnet"
 			/>
-			<Container headTitle="Действующие акции">
+
+			<Container className="text-center" headTitle="Активный акции">
+				<hr />
+				<div className={st.stock__block}>
+					<div className={st.stock__block__content}>
+						<p>Собрали здесь самые интересные предложения</p>
+					</div>
+				</div>
+			</Container>
+			<PopularStock />
+			{/* <Container headTitle="Действующие акции">
 				<hr />
 				<div className={st.stock}>
 					{data.map((item) => (
@@ -167,7 +179,8 @@ export default function Stock() {
 						</div>
 					))}
 				</div>
-			</Container>
+			</Container> */}
+			<Partners />
 		</>
 	);
 }

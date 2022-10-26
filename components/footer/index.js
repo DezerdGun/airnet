@@ -190,10 +190,10 @@ export default function Footer() {
 					link: LINKS.REVIEWS,
 					title: 'Отзывы',
 				},
-				{
-					link: LINKS.LOYALS,
-					title: 'Программа лояльности',
-				},
+				// {
+				// 	link: LINKS.LOYALS,
+				// 	title: 'Программа лояльности',
+				// },
 			],
 		},
 		help = {
@@ -382,19 +382,6 @@ export default function Footer() {
 								))}
 							</ul>
 						</div>
-						<div className={st.footer__block__head__payment}>
-							<h6>Принимаем к оплате</h6>
-							<ul>
-								{payment.map((item) => (
-									<li key={item.link}>
-										<a href={item.link}>{item.img}</a>
-									</li>
-								))}
-							</ul>
-							<Link href={LINKS.PAYMENT}>
-								<a>Смотреть все способы</a>
-							</Link>
-						</div>
 					</div>
 					<nav className={st.footer__block__nav}>
 						<ul className={st.footer__block__nav__ul}>
@@ -460,7 +447,20 @@ export default function Footer() {
 											</Link>
 										</li>
 									))}
-								</ul>
+								</ul><br />
+								<div className={st.footer__block__head__payment}>
+									<h6>Принимаем к оплате</h6>
+									<ul>
+										{payment.map((item) => (
+											<li key={item.link}>
+												<a href={item.link}>{item.img}</a>
+											</li>
+										))}
+									</ul>
+									<Link href={LINKS.PAYMENT}>
+										<a>Смотреть все способы</a>
+									</Link>
+								</div>
 							</li>
 						</ul>
 					</nav>

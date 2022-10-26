@@ -3,11 +3,39 @@ $black: #000;
 $green: #006a4d;
 $dark_green: #00402e;
 $gray: #c2c2c2;
+$bg_gray: #f8f8f8;
 $dark_gray: #666;
 $light_gray: #eeebee;
 $red: #f00;
 
 .domains {
+	&__block {
+		margin: 40px auto 0;
+		display: flex;
+		justify-content: space-between;
+
+		&__content {
+			width: 45%;
+
+			h2 {
+				font-size: 30px;
+				margin-bottom: 20px;
+			}
+
+			a {
+				display: block;
+				padding: 20px 40px;
+				color: $white;
+				border-radius: 10px;
+				text-align: center;
+				font-weight: 700;
+				margin: 30px 0;
+				width: fit-content;
+				background-color: $green;
+			}
+		}
+	}
+
 	&__head {
 		background-color: $light_gray;
 

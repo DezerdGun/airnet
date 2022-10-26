@@ -32,15 +32,16 @@ export default function Contacts() {
 		<>
 			<SEO title="Контактная информация | Airnet" desc="Контактная информация компании Airnet" />
 			<div className={st.contacts}>
-				<Container className="mt-0" style={{ background: "url('/contact.jpg') no-repeat" }}>
+				<Container className="mt-0">
 					<div className={st.contacts__phones}>
 						<div className={st.contacts__phones__item}>
 							<span>Абонентский отдел</span>
-							<h3>{phone}+998 (71) 200-87-00</h3>
+							<h3>{phone}+998 (71) 202-87-00</h3>
 							<p>(русский-узбекский язык)</p>
 						</div>
 						<div className={st.contacts__phones__item}>
 							<span>Техническая поддержка</span>
+							<h3>{phone}+998 (71) 200-87-00</h3>
 							<h3>{phone}+998 (90) 324-30-80</h3>
 							<p>(телеграм)</p>
 						</div>
@@ -66,10 +67,10 @@ export default function Contacts() {
 					</Container>
 				</div>
 				<Container
-					style={{ backgroundColor: '#eeebee' }}
+					// style={{ backgroundColor: '#f8f8f8' }}
 					title="Приходите к нам в Ташкенте"
 					clNTitle="text-black text-center">
-					<p className="text-center">Узбекистан, г. Ташкент, ул. Матбуотчилар, 32</p>
+					<p className="text-center">Узбекистан, г. Ташкент, ул. Сайрам, 25</p>
 					<YMaps>
 						<Map
 							width="100%"

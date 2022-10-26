@@ -13,10 +13,10 @@ const license = [
 		img: "/license/license.webp",
 	},
 	{
-		img: "/license/license.webp",
+		img: "/license/guvohnoma.jpg",
 	},
 	{
-		img: "/license/license.webp",
+		img: "/license/certificate.png",
 	},
 ];
 
@@ -31,7 +31,7 @@ export default function License() {
 	return (
 		<>
 			<SEO title="Лицензия на предоставление услуг хостинга | Airnet" desc="" />
-			<Container headTitle="Лицензия на предоставление услуг хостинга">
+			<Container className={'text-center'} headTitle="Лицензии и сертификаты на предоставление услуг хостинга">
 				<hr />
 
 				<Swiper
@@ -40,9 +40,9 @@ export default function License() {
 					spaceBetween={0}
 					slidesPerView={1}
 					navigation
-					loop={true}
+					loop={false}
 					autoplay={{
-						delay: 10000,
+						delay: 100000,
 						disableOnInteraction: false,
 					}}
 					breakpoints={{

@@ -4,6 +4,7 @@ import Container from "../../components/container";
 import FAQ from "../../components/faq";
 import PopularSert from "../../components/popularSert";
 import SEO from "../../components/seo";
+import Partners from '../../components/partners';
 import WhyBlock from "../../components/whyBlock";
 import styles from "./ssl.module.scss";
 
@@ -263,6 +264,7 @@ export default function SSL() {
 			</Container>
 			<WhyBlock title="Почему стоит покупать у нас?" content={content2} />
 			<FAQ faq={faq} title="FAQ" />
+			<Partners />
 		</>
 	);
 }

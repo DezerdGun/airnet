@@ -123,17 +123,22 @@ const block = [
 			// price: '1 500 000',
 			prices: [
 				{
-					price: "200 000",
+					price: "1 500 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "4 500 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "9 000 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "18 000 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -149,17 +154,22 @@ const block = [
 			// price: '2 250 000',
 			prices: [
 				{
-					price: "200 000",
+					price: "2 250 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "6 750 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "13 500 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "27 000 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -175,17 +185,22 @@ const block = [
 			// price: '3 000 000',
 			prices: [
 				{
-					price: "200 000",
+					price: "3 000 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "9 000 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "18 000 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "36 000 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -201,17 +216,22 @@ const block = [
 			// price: "7 500 000",
 			prices: [
 				{
-					price: "200 000",
+					price: "7 500 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "22 500 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "45 000 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "90 000 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -234,7 +254,7 @@ export default function BigVDS() {
 			<div className={st.vds}>
 				<TarifMaket
 					// bgImg={'/servers-2.jpg'}
-					headTitle="Мощные VDS/VPS — сервера на базе VMware виртуализации с быстрыми SSD-дисками"
+					headTitle={<>Мощные VDS/VPS — сервера  <br /> на базе VMware виртуализации с быстрыми SSD-дисками</>}
 					description={
 						<p>
 							Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на

@@ -147,17 +147,22 @@ const block = [
 			// price: "400 000",
 			prices: [
 				{
-					price: "200 000",
+					price: "400 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "1 200 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "2 400 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "4 800 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -173,17 +178,22 @@ const block = [
 			// price: "550 000",
 			prices: [
 				{
-					price: "200 000",
+					price: "550 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "1 650 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "3 300 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "6 600 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -199,17 +209,22 @@ const block = [
 			// price: "800 000",
 			prices: [
 				{
-					price: "200 000",
+					price: "800 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "2 400 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "4 800 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "9 600 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -225,17 +240,22 @@ const block = [
 			// price: "1 000 000",
 			prices: [
 				{
-					price: "200 000",
+					price: "1 000 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "3 000 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "6 000 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "12 000 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},

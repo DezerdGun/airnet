@@ -1,5 +1,6 @@
 import Container from '../../components/container';
 import StepsBlock from '../../components/stepsBlock';
+import Partners from '../../components/partners';
 import WhyCard from '../../components/whyCard';
 import st from './reseller.module.scss';
 
@@ -56,6 +57,7 @@ export default function Reseller() {
 				]}
 				img="/how-work-img.png"
 			/>
+			<Partners />
 		</>
 	);
 }

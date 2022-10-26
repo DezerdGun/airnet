@@ -15,8 +15,9 @@ const Drop = ({ item, isTarifCard }) => {
 					<span>
 						сум
 						<hr />
-						{console.log(item, price.checked)}
-						{item[price.checked].date}
+						{item[price.checked].dateOff}
+						{/* {console.log(item, price.checked)} */}
+						{/* {item[price.checked].date} */}
 					</span>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +34,7 @@ const Drop = ({ item, isTarifCard }) => {
 						></path>
 					</svg>
 				</div>
-				<span>при оплате за {item[price.checked].dateOff}</span>
+				{/* <span>при оплате за {item[price.checked].dateOff}</span> */}
 			</div>
 			<ul className={`${styles.drop__ul} ${price.show ? styles.drop__ul__active : ""}`}>
 				{item.map((el, i) => (

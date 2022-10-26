@@ -107,16 +107,21 @@ const faq = [
 			prices: [
 				{
 					price: "200 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "600 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "1 200 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "2 400 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -132,17 +137,22 @@ const faq = [
 			// price: '300 000',
 			prices: [
 				{
-					price: "200 000",
+					price: "300 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "900 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "1 800 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "3 600 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -158,17 +168,22 @@ const faq = [
 			// price: '550 000',
 			prices: [
 				{
-					price: "200 000",
+					price: "550 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "1 650 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "3 300 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "6 600 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -180,21 +195,57 @@ const faq = [
 			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
 		},
 		{
-			title: "Ultra",
-			// price: '1 000 000',
+			title: "Mega",
+			// price: "800 000",
 			prices: [
 				{
-					price: "200 000",
+					price: "800 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "2 400 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "4 800 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "9 600 000",
+					dateOff: "12 мес.",
+					date: "мес.",
+				},
+			],
+			cpu: 6,
+			ram: 12,
+			ssd: 200,
+			net: 25,
+			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
+		},
+		{
+			title: "Ultra",
+			// price: '1 000 000',
+			prices: [
+				{
+					price: "1 000 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "3 000 000",
+					dateOff: "3 мес.",
+					date: "мес.",
+				},
+				{
+					price: "6 000 000",
+					dateOff: "6 мес.",
+					date: "мес.",
+				},
+				{
+					price: "12 000 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -212,17 +263,22 @@ const faq = [
 			// price: '10 000',
 			prices: [
 				{
-					price: "200 000",
+					price: "10 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "30 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "57 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "108 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -236,17 +292,22 @@ const faq = [
 			// price: '15 000',
 			prices: [
 				{
-					price: "200 000",
+					price: "15 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "45 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "85 500",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "162 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -260,17 +321,22 @@ const faq = [
 			// price: '25 000',
 			prices: [
 				{
-					price: "200 000",
+					price: "25 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "75 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "142 500",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "270 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -284,17 +350,22 @@ const faq = [
 			// price: '60 000',
 			prices: [
 				{
-					price: "200 000",
+					price: "60 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "180 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "342 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "648 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -308,17 +379,22 @@ const faq = [
 			// price: '90 000',
 			prices: [
 				{
-					price: "200 000",
+					price: "90 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "270 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "513 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "972 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -332,17 +408,22 @@ const faq = [
 			// price: '150 000',
 			prices: [
 				{
-					price: "200 000",
+					price: "150 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "450 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "855 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "1 620 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -356,17 +437,22 @@ const faq = [
 			// price: '250 000',
 			prices: [
 				{
-					price: "200 000",
+					price: "250 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "750 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "1 425 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "2 700 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -380,17 +466,22 @@ const faq = [
 			// price: '350 000',
 			prices: [
 				{
-					price: "200 000",
+					price: "350 000",
+					dateOff: "1 мес.",
+					date: "мес.",
+				},
+				{
+					price: "1 050 000",
 					dateOff: "3 мес.",
 					date: "мес.",
 				},
 				{
-					price: "300 000",
+					price: "1 995 000",
 					dateOff: "6 мес.",
 					date: "мес.",
 				},
 				{
-					price: "400 000",
+					price: "3 780 000",
 					dateOff: "12 мес.",
 					date: "мес.",
 				},
@@ -469,9 +560,9 @@ export default function Home() {
 					spaceBetween={0}
 					slidesPerView={1}
 					navigation
-					loop={true}
+					loop={false}
 					autoplay={{
-						delay: 10000,
+						delay: 100000,
 						disableOnInteraction: false,
 					}}
 					breakpoints={{
@@ -516,9 +607,9 @@ export default function Home() {
 					spaceBetween={0}
 					slidesPerView={1}
 					navigation
-					loop={true}
+					loop={false}
 					autoplay={{
-						delay: 10000,
+						delay: 100000,
 						disableOnInteraction: false,
 					}}
 					breakpoints={{
