@@ -1,9 +1,9 @@
-import Container from '../../components/container';
-import Partners from '../../components/partners';
-import st from './contacts.module.scss';
-import { YMaps, Map } from 'react-yandex-maps';
-import SEO from '../../components/seo';
-import WhyCard from '../../components/whyCard';
+import Container from "../../components/container";
+import Partners from "../../components/partners";
+import st from "./contacts.module.scss";
+import { YMaps, Map } from "react-yandex-maps";
+import SEO from "../../components/seo";
+import WhyCard from "../../components/whyCard";
 
 const phone = (
 		<span>
@@ -14,15 +14,15 @@ const phone = (
 	),
 	content = [
 		{
-			title: 'По всем техническим вопросам:',
+			title: "По всем техническим вопросам:",
 			description: <a href="mailto:info@airnet.uz">info@airnet.uz</a>,
 		},
 		{
-			title: 'По финансовым, предпродажным и организационным вопросам:',
+			title: "По финансовым, предпродажным и организационным вопросам:",
 			description: <a href="mailto:info@airnet.uz">info@airnet.uz</a>,
 		},
 		{
-			title: 'По поводу жалоб и предложений:',
+			title: "По поводу жалоб и предложений:",
 			description: <a href="mailto:admin@airnet.uz">admin@airnet.uz</a>,
 		},
 	];
@@ -58,9 +58,9 @@ export default function Contacts() {
 								</svg>
 							</span>
 							<p>
-								Если Вы уже являетесь нашим клиентом, самый простой и быстрый способ связи — посредством
-								тикет-системы в биллинге. Обращения через тикет систему рассматриваются с наиболее
-								высоким приоритетом и максимально быстро.
+								Если Вы уже являетесь нашим клиентом, самый простой и быстрый способ связи —
+								посредством тикет-системы в биллинге. Обращения через тикет систему рассматриваются
+								с наиболее высоким приоритетом и максимально быстро.
 							</p>
 							<a href="https://billing.airnet.uz/billing.php">Личный кабинет</a>
 						</div>
@@ -69,15 +69,18 @@ export default function Contacts() {
 				<Container
 					// style={{ backgroundColor: '#f8f8f8' }}
 					title="Приходите к нам в Ташкенте"
-					clNTitle="text-black text-center">
+					clNTitle="text-black text-center"
+				>
 					<p className="text-center">Узбекистан, г. Ташкент, ул. Сайрам, 25</p>
-					<YMaps>
-						<Map
-							width="100%"
-							height="300px"
-							defaultState={{ center: [41.3102896, 69.2759416], zoom: 17 }}
-						/>
-					</YMaps>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.020531509858!2d69.3247241!3d41.330166899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4f21efa76fd%3A0x5c4c93cf2b6f99ea!2zMjUgU2F5cmFtIGtvJ2NoYXNpLCDQotC-0YjQutC10L3Rgg!5e0!3m2!1sru!2s!4v1666791600018!5m2!1sru!2s"
+						width="100%"
+						height="300"
+						style={{ border: 0 }}
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
 				</Container>
 				<Partners />
 			</div>

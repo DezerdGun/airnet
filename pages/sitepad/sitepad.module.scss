@@ -1,0 +1,12 @@
+.sitepad {
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		&__item {
+			width: 48%;
+			margin-bottom: 10px;
+		}
+	}
+}
