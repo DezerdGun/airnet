@@ -2,20 +2,17 @@ import { useState } from "react";
 import styles from "./drop.module.scss";
 
 const Drop = ({ item, isTarifCard }) => {
-	const [price, setPrice] = useState({ checked: 0, show: false });
+	const [checked, setChecked] = useState(0);
 
 	return (
 		<div className={`${styles.drop} ${isTarifCard ? styles.drop__tarifCard : ""}`}>
-			<div
-				onClick={() => setPrice({ ...price, show: !price.show })}
-				className={styles.drop__checked}
-			>
+			<div className={styles.drop__checked}>
 				<div>
-					{item[price.checked].price}
+					{item[checked].price}
 					<span>
 						сум
 						<hr />
-						{item[price.checked].dateOff}
+						{item[checked].dateOff}
 						{/* {console.log(item, price.checked)} */}
 						{/* {item[price.checked].date} */}
 					</span>
@@ -36,9 +33,9 @@ const Drop = ({ item, isTarifCard }) => {
 				</div>
 				{/* <span>при оплате за {item[price.checked].dateOff}</span> */}
 			</div>
-			<ul className={`${styles.drop__ul} ${price.show ? styles.drop__ul__active : ""}`}>
+			<ul className={styles.drop__ul}>
 				{item.map((el, i) => (
-					<li onClick={() => setPrice({ checked: i, show: false })} key={el.price}>
+					<li onClick={() => setChecked(i)} key={el.price}>
 						<strong>
 							{el.price} сум в {el.date}
 						</strong>

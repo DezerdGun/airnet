@@ -276,61 +276,61 @@ export default function VDS() {
 				desc="Предложение в соотношении цены-качества-количества ресурсов, которое построенно на быстрых SSD-дисках. Оптимальные VDS/VPS в сети TAS-IX в Ташкенте"
 			/>
 			<div className={st.vds}>
-				<div className={'bg_gray'}>
-				<TarifMaket
-					// bgImg={'/servers-2.jpg'}
-					headTitle="VDS/VPS — сервера на базе быстрых SSD-дисков"
-					description={
-						<p>
-							Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на
-							скорости 1 Gbps
-						</p>
-					}
-					className="mt-0 px-0"
-					endText={
-						<div className="text-white text-center mt-2">
+				<div className={"bg_gray"}>
+					<TarifMaket
+						// bgImg={'/servers-2.jpg'}
+						headTitle="VDS/VPS — сервера на базе быстрых SSD-дисков"
+						description={
 							<p>
-								Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до
-								2-х рабочих дней, в зависимости от наличия необходимых серверов и загрузки
-								технического персонала. Среднее время активации оборудования после оплаты - 1-2
-								часа. Мы делам всё возможное, чтобы уменьшить время ожидания.
+								Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на
+								скорости 1 Gbps
 							</p>
-							<p>Срок действия услуги начнется с момента её активации.</p>
-						</div>
-					}
-				>
-					<Swiper
-						cssMode={true}
-						modules={[Autoplay, Navigation]}
-						slidesPerView={1}
-						navigation
-						loop={false}
-						autoplay={{
-							delay: 10000,
-							disableOnInteraction: true,
-						}}
-						breakpoints={{
-							1070: {
-								slidesPerView: 4,
-							},
-							770: {
-								slidesPerView: 3,
-							},
-							550: {
-								slidesPerView: 2,
-							},
-						}}
-						className="tarifSwiper"
+						}
+						className="mt-0 px-0"
+						endText={
+							<div className="text-white text-center mt-2">
+								<p>
+									Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут
+									до 2-х рабочих дней, в зависимости от наличия необходимых серверов и загрузки
+									технического персонала. Среднее время активации оборудования после оплаты - 1-2
+									часа. Мы делам всё возможное, чтобы уменьшить время ожидания.
+								</p>
+								<p>Срок действия услуги начнется с момента её активации.</p>
+							</div>
+						}
 					>
-						{tarif.map((item) => (
-							<SwiperSlide key={item.title}>
-								<div className="w-95">
-									<TarifCard tarif={item} />
-								</div>
-							</SwiperSlide>
-						))}
-					</Swiper>
-				</TarifMaket>
+						<Swiper
+							cssMode={true}
+							modules={[Autoplay, Navigation]}
+							slidesPerView={1}
+							navigation
+							loop={false}
+							autoplay={{
+								delay: 10000,
+								disableOnInteraction: true,
+							}}
+							breakpoints={{
+								1070: {
+									slidesPerView: 4,
+								},
+								770: {
+									slidesPerView: 3,
+								},
+								550: {
+									slidesPerView: 2,
+								},
+							}}
+							className="tarifSwiper"
+						>
+							{tarif.map((item) => (
+								<SwiperSlide key={item.title}>
+									<div className="w-95">
+										<TarifCard tarif={item} />
+									</div>
+								</SwiperSlide>
+							))}
+						</Swiper>
+					</TarifMaket>
 				</div>
 
 				<WhyBlock content={block} />
