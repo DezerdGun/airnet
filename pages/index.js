@@ -24,6 +24,7 @@ import TarifMaket from "../components/tarifMaket";
 import TarifCard2 from "../components/tarifCard2";
 import Reviews from "../components/reviews";
 import Product from "../components/seo/product";
+import { useEffect, useState } from "react";
 
 const faq = [
 		{
@@ -528,6 +529,20 @@ const faq = [
 	];
 
 export default function Home() {
+	const [show, setShow] = useState(-1);
+
+	useEffect(() => {
+		const outerClick = (e) => {
+			const classList = [...e.target?.classList];
+
+			if (!classList.join(" ").includes("tarif_drop")) {
+				setShow(-1);
+			}
+		};
+		document.addEventListener("click", outerClick);
+		return () => document.removeEventListener("click", outerClick);
+	}, []);
+
 	return (
 		<div className={st.home}>
 			<Product />
@@ -578,10 +593,10 @@ export default function Home() {
 					}}
 					className="tarifSwiper"
 				>
-					{tarif.map((item) => (
+					{tarif.map((item, index) => (
 						<SwiperSlide key={item.title}>
 							<div className="w-95">
-								<TarifCard tarif={item} />
+								<TarifCard index={index} tarif={item} show={show} setShow={setShow} />
 							</div>
 						</SwiperSlide>
 					))}
@@ -625,10 +640,15 @@ export default function Home() {
 					}}
 					className="tarifSwiper"
 				>
-					{tarif2.map((item) => (
+					{tarif2.map((item, index) => (
 						<SwiperSlide key={item.title}>
 							<div className="w-95">
-								<TarifCard2 tarif={item} />
+								<TarifCard2
+									index={index + tarif2.length}
+									tarif={item}
+									show={show}
+									setShow={setShow}
+								/>
 							</div>
 						</SwiperSlide>
 					))}

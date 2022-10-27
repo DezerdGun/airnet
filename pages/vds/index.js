@@ -15,6 +15,7 @@ import "swiper/css/navigation";
 import TarifCard from "../../components/tarifCard";
 import ForFreeBlock from "../../components/forFreeBlock";
 import WhyBlock from "../../components/whyBlock";
+import { useEffect, useState } from "react";
 
 const block = [
 		{
@@ -269,6 +270,20 @@ const block = [
 	];
 
 export default function VDS() {
+	const [show, setShow] = useState(-1);
+
+	useEffect(() => {
+		const outerClick = (e) => {
+			const classList = [...e.target?.classList];
+
+			if (!classList.join(" ").includes("tarif_drop")) {
+				setShow(-1);
+			}
+		};
+		document.addEventListener("click", outerClick);
+		return () => document.removeEventListener("click", outerClick);
+	}, []);
+
 	return (
 		<>
 			<SEO
@@ -322,10 +337,10 @@ export default function VDS() {
 							}}
 							className="tarifSwiper"
 						>
-							{tarif.map((item) => (
+							{tarif.map((item, index) => (
 								<SwiperSlide key={item.title}>
 									<div className="w-95">
-										<TarifCard tarif={item} />
+										<TarifCard index={index} tarif={item} show={show} setShow={setShow} />
 									</div>
 								</SwiperSlide>
 							))}

@@ -16,6 +16,7 @@ import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import TarifCard2 from "../../components/tarifCard2";
+import { useEffect, useState } from "react";
 
 const block = [
 		{
@@ -415,6 +416,20 @@ const block = [
 	];
 
 export default function Hosting() {
+	const [show, setShow] = useState(-1);
+
+	useEffect(() => {
+		const outerClick = (e) => {
+			const classList = [...e.target?.classList];
+
+			if (!classList.join(" ").includes("tarif_drop")) {
+				setShow(-1);
+			}
+		};
+		document.addEventListener("click", outerClick);
+		return () => document.removeEventListener("click", outerClick);
+	}, []);
+
 	return (
 		<>
 			<SEO
@@ -447,53 +462,53 @@ export default function Hosting() {
 					</div>
 				</Container> */}
 
-				<div className={'bg_gray'}>
-				<TarifMaket
-					// bgImg={'/servers-2.jpg'}
-					headTitle="Популярные тарифы Виртуальный хостинг Cpanel в Ташкенте"
-					description={
-						<p>
-							Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на
-							скорости до 1 Gbps
-						</p>
-					}
-					endText={
-						<p className="text-white text-center mt-2">*При оплате за хостинг от 6 месяцев!</p>
-					}
-				>
-					<Swiper
-						cssMode={true}
-						modules={[Autoplay, Navigation]}
-						spaceBetween={0}
-						slidesPerView={1}
-						navigation
-						loop={false}
-						autoplay={{
-							delay: 20000,
-							disableOnInteraction: false,
-						}}
-						breakpoints={{
-							950: {
-								slidesPerView: 4,
-							},
-							770: {
-								slidesPerView: 3,
-							},
-							500: {
-								slidesPerView: 2,
-							},
-						}}
-						className="tarifSwiper"
+				<div className={"bg_gray"}>
+					<TarifMaket
+						// bgImg={'/servers-2.jpg'}
+						headTitle="Популярные тарифы Виртуальный хостинг Cpanel в Ташкенте"
+						description={
+							<p>
+								Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на
+								скорости до 1 Gbps
+							</p>
+						}
+						endText={
+							<p className="text-white text-center mt-2">*При оплате за хостинг от 6 месяцев!</p>
+						}
 					>
-						{tarif2.map((item) => (
-							<SwiperSlide key={item.title}>
-								<div className="w-95">
-									<TarifCard2 tarif={item} />
-								</div>
-							</SwiperSlide>
-						))}
-					</Swiper>
-				</TarifMaket>
+						<Swiper
+							cssMode={true}
+							modules={[Autoplay, Navigation]}
+							spaceBetween={0}
+							slidesPerView={1}
+							navigation
+							loop={false}
+							autoplay={{
+								delay: 20000,
+								disableOnInteraction: false,
+							}}
+							breakpoints={{
+								950: {
+									slidesPerView: 4,
+								},
+								770: {
+									slidesPerView: 3,
+								},
+								500: {
+									slidesPerView: 2,
+								},
+							}}
+							className="tarifSwiper"
+						>
+							{tarif2.map((item, index) => (
+								<SwiperSlide key={item.title}>
+									<div className="w-95">
+										<TarifCard2 index={index} tarif={item} show={show} setShow={setShow} />
+									</div>
+								</SwiperSlide>
+							))}
+						</Swiper>
+					</TarifMaket>
 				</div>
 
 				<Container

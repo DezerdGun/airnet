@@ -1,7 +1,7 @@
 import Drop from "../drop";
 import st from "../tarifCard/tarifCard.module.scss";
 
-export default function TarifCard2({ tarif }) {
+export default function TarifCard2({ index, tarif, show, setShow }) {
 	return (
 		<div className={st.tarifCard}>
 			<div className={st.tarifCard__header}>
@@ -15,7 +15,13 @@ export default function TarifCard2({ tarif }) {
 					</span>
 				</div> */}
 				<div className={st.tarifCard__header__price}>
-					<Drop item={tarif.prices} isTarifCard={true} />
+					<Drop
+						index={index}
+						item={tarif.prices}
+						isTarifCard={true}
+						show={show}
+						setShow={setShow}
+					/>
 				</div>
 			</div>
 			<table>
