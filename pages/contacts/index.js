@@ -82,7 +82,7 @@ export default function Contacts() {
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.020531509858!2d69.3247241!3d41.330166899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4f21efa76fd%3A0x5c4c93cf2b6f99ea!2zMjUgU2F5cmFtIGtvJ2NoYXNpLCDQotC-0YjQutC10L3Rgg!5e0!3m2!1sru!2s!4v1666791600018!5m2!1sru!2s"
 						width="100%"
-						height="300"
+						height="500"
 						style={{ border: 0 }}
 						allowfullscreen=""
 						loading="lazy"
