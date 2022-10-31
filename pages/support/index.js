@@ -1,8 +1,68 @@
-import Partners from '../../components/partners';
-import TarifMaket from '../../components/tarifMaket';
-import st from './support.module.scss';
+import { useEffect, useState } from "react";
+import Partners from "../../components/partners";
+import TarifMaket from "../../components/tarifMaket";
+import st from "./support.module.scss";
+import emailjs from "@emailjs/browser";
+import { useIMask } from "react-imask";
+import { validateEmail } from "../../utils/validateEmail";
 
 export default function Support() {
+	const [show, setShow] = useState(false),
+		[isError, setIsError] = useState({
+			name: false,
+			email: false,
+			phone: false,
+			message: false,
+		}),
+		[loading, setLoading] = useState(false),
+		[message, setMessage] = useState(false);
+
+	useEffect(() => {
+		IMask(document.getElementById("tel"), { mask: "+998 ** *******" });
+	}, []);
+
+	useEffect(() => {
+		if (show) document.body.style = "overflow:hidden";
+		else document.body.style = "overflow:unset";
+	}, [show]);
+
+	const handleCheck = (condition, id) => {
+		if (condition) {
+			setIsError((prev) => ({ ...prev, [id]: false }));
+			return true;
+		}
+		setIsError((prev) => ({ ...prev, [id]: true }));
+		return false;
+	};
+
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		const checkName = handleCheck(document.querySelector("#name").value.length >= 10, "name"),
+			checkEmail = handleCheck(validateEmail(document.querySelector("#email").value), "email"),
+			checkPhone = handleCheck(
+				document.querySelector("#tel").value.length === 15 &&
+					isFinite(+document.querySelector("#tel").value.slice(5, 7)) &&
+					isFinite(+document.querySelector("#tel").value.slice(8)),
+				"phone"
+			),
+			checkMessage = handleCheck(document.querySelector("#message").value.length >= 10, "message");
+
+		if (checkName && checkEmail && checkPhone && checkMessage) {
+			setLoading(true);
+
+			emailjs.sendForm("service_8y8kawd", "template_d3e40pc", e.target, "4UNI67N1PkcmUoyUx").then(
+				() => {
+					setLoading(false);
+					e.target.reset();
+					setMessage(true);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+		}
+	};
+
 	return (
 		<>
 			<div className={st.support}>
@@ -15,7 +75,8 @@ export default function Support() {
 							<br />
 							Техническая поддержка работает клуглосуточно, без выходных и праздников.
 						</p>
-					}>
+					}
+				>
 					<div className={st.support__block}>
 						<div className={st.support__block__item}>
 							<h3>Способы связи</h3>
@@ -38,7 +99,9 @@ export default function Support() {
 										</svg>
 										<div>
 											<label>Через форму</label>
-											<a href="https://billing.airnet.uz/billing.php?do=tickets" target="_blank">Открыть форму</a>
+											<a href="https://billing.airnet.uz/billing.php?do=tickets" target="_blank">
+												Открыть форму
+											</a>
 										</div>
 									</li>
 									{/* <li>
@@ -65,14 +128,14 @@ export default function Support() {
 								<h3>Жалобы</h3>
 								<div className={st.support__block__item__content}>
 									<p>
-										Если Вы обнаружили, что клиент "AIRNET" нарушает Ваши права или
-										осуществляет неправомерные действия в сети Интернет, пожалуйста, свяжитесь с
-										нами через форму жалоб или по электронной почте{' '}
+										Если Вы обнаружили, что клиент "AIRNET" нарушает Ваши права или осуществляет
+										неправомерные действия в сети Интернет, пожалуйста, свяжитесь с нами через форму
+										жалоб или по электронной почте{" "}
 										<a href="mailto:admin@airnet.uz">admin@airnet.uz</a>
 									</p>
 								</div>
 							</div>
-							<button>Открыть форму жалобы</button>
+							<button onClick={() => setShow(true)}>Открыть форму жалобы</button>
 						</div>
 						<div className={st.support__block__item}>
 							<div>
@@ -103,7 +166,10 @@ export default function Support() {
 											</svg>
 											<div>
 												<label>Телефон</label>
-												<a href="tel:+998903243080">+998(90) 324-30-80</a> <a href="https://t.me/airnetuzb" target="_blank">(телеграм)</a>
+												<a href="tel:+998903243080">+998(90) 324-30-80</a>{" "}
+												<a href="https://t.me/airnetuzb" target="_blank">
+													(телеграм)
+												</a>
 											</div>
 										</li>
 									</ul>
@@ -114,6 +180,122 @@ export default function Support() {
 				</TarifMaket>
 			</div>
 			<Partners />
+			<div className={`${st.modal} ${show ? st.modal__active : ""}`}>
+				<div className={st.modal__block}>
+					<div className={st.modal__block__header}>
+						<div>Отправить жалобу</div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 320 512"
+							onClick={() => setShow(false)}
+						>
+							<path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+						</svg>
+					</div>
+					<form onSubmit={handleSubmit}>
+						<div className={st.modal__block__item}>
+							<label htmlFor="name">ФИО</label>
+							<div
+								className={`${st.modal__block__item__input} ${
+									isError.name ? st.modal__block__item__input__error : ""
+								}`}
+							>
+								<input
+									id="name"
+									name="name"
+									type="text"
+									placeholder="Акромов Акбар Акромович"
+									required
+									onChange={(e) =>
+										isError.name &&
+										handleCheck(document.querySelector("#name").value.length >= 10, "name")
+									}
+								/>
+							</div>
+							{isError.name && <span>Пожалуйста, введите ваше ФИО</span>}
+						</div>
+						<div className={st.modal__block__item}>
+							<label htmlFor="email">Email</label>
+							<div
+								className={`${st.modal__block__item__input} ${
+									isError.email ? st.modal__block__item__input__error : ""
+								}`}
+							>
+								<input
+									id="email"
+									name="email"
+									type="email"
+									placeholder="akbar@gmail.com"
+									required
+									onChange={(e) =>
+										isError.email &&
+										handleCheck(validateEmail(document.querySelector("#email").value), "email")
+									}
+								/>
+							</div>
+							{isError.email && <span>Пожалуйста, введите ваш email</span>}
+						</div>
+						<div className={st.modal__block__item}>
+							<label htmlFor="tel">Телефон</label>
+							<div
+								className={`${st.modal__block__item__input} ${
+									isError.phone ? st.modal__block__item__input__error : ""
+								}`}
+							>
+								<input
+									id="tel"
+									name="phone"
+									type="tel"
+									placeholder="+998 90 1234567"
+									required
+									onChange={(e) => {
+										isError.phone &&
+											handleCheck(
+												document.querySelector("#tel").value.length === 15 &&
+													isFinite(+document.querySelector("#tel").value.slice(5, 7)) &&
+													isFinite(+document.querySelector("#tel").value.slice(8)),
+												"phone"
+											);
+									}}
+								/>
+							</div>
+							{isError.phone && <span>Пожалуйста, введите ваш номер</span>}
+						</div>
+						<div className={st.modal__block__item}>
+							<label htmlFor="message">Сообщение</label>
+							<div
+								className={`${st.modal__block__item__input} ${
+									isError.message ? st.modal__block__item__input__error : ""
+								}`}
+							>
+								<textarea
+									id="message"
+									name="message"
+									placeholder="Трудности с подключением..."
+									required
+									onChange={(e) =>
+										isError.message &&
+										handleCheck(document.querySelector("#message").value.length >= 10, "message")
+									}
+								/>
+							</div>
+							{isError.message && <span>Пожалуйста, введите ваше сообщение</span>}
+						</div>
+						{message ? (
+							<button onClick={() => setShow(false)}>Ваша жалоба успешно отправлена</button>
+						) : (
+							<button type="submit" disabled={loading}>
+								Отправить{" "}
+								{loading ? (
+									<div class="spinner-border spinner-border-sm text-light" role="status">
+										<span class="visually-hidden">Loading...</span>
+									</div>
+								) : null}
+							</button>
+						)}
+					</form>
+				</div>
+			</div>
 		</>
 	);
 }

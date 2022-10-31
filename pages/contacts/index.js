@@ -49,7 +49,14 @@ export default function Contacts() {
 				</Container>
 				<div className={st.contacts__questions}>
 					<Container title="Пишите по любым вопросам" clNTitle="text-center">
-						<WhyCard content={content} />
+						<div className={st.contacts__questions__block}>
+							{content.map((item) => (
+								<div className={st.contacts__questions__block__item} key={item.title}>
+									<h6>{item.title}</h6>
+									<p>{item.description}</p>
+								</div>
+							))}
+						</div>
 
 						<div className={st.contacts__questions__footer}>
 							<span>
