@@ -25,6 +25,7 @@ import TarifCard2 from "../components/tarifCard2";
 import Reviews from "../components/reviews";
 import Product from "../components/seo/product";
 import { useEffect, useState } from "react";
+import SEO from "../components/seo";
 
 const faq = [
 		{
@@ -545,6 +546,10 @@ export default function Home() {
 
 	return (
 		<div className={st.home}>
+			<SEO
+				title="Airnet.uz - Виртуальный хостинг в TAS-IX, домена, VDS-сервера, Ташкент"
+				desc="Виртуальный хостинг, хостинг в Ташкенте, реселлинг хостинга, дешевые VDS, VPS-сервера, VDS в Ташкенте, виртуальные сервера, выделенные сервера, доменные имена"
+			/>
 			<Product />
 			<CustomSwiper />
 			<WhyBlock title="Почему выбирают AIRNET?" content={content} />
