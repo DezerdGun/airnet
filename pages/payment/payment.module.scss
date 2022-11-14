@@ -8,6 +8,17 @@ $light_gray: #eeebee;
 $red: #f00;
 
 .payment {
+
+	ul{
+		li{
+			margin-bottom: 10px;
+		}
+	}
+
+	h2{
+		font-size: 30px;
+	}
+
 	&__block {
 		display: flex;
 		justify-content: space-between;

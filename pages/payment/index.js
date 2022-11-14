@@ -103,22 +103,44 @@ export default function Payment() {
 			</Container> */}
 			<Container className="px-3">
 
-				<ol>
-					<li>Банковский перевод</li>
-					<li>Банковские карты (UzCard, HUMA, VISA, MasterCard)</li>
-					<li>Международные банковские карты (PayBox)</li>
-					<li>PAYNET.uz</li>
-					<li>PAYME.uz</li>
-					<li>Click.uz</li>
-					<li>UPAY.uz</li>
-					<li>Oson.uz</li>
-					<li>Инфокиоск</li>
-				</ol>
+				<ul>
+					<li><a href="#transfer-swift">Банковский перевод</a> (SWIFT) оплата по договору.</li>
+					<li><a href="#transfer-card">Банковские карты</a> (UzCard, HUMA, VISA, MasterCard)</li>
+					<li><a href="#transfer-paybox">Международные банковские карты</a> VISA, MasterCard (PayBox.Money)</li>
+					<li><a href="#transfer-paynet">PAYNET.uz</a></li>
+					<li><a href="#transfer-payme">PAYME.uz</a></li>
+					<li><a href="#transfer-click">Click.uz</a></li>
+					<li><a href="#transfer-upay">UPAY.uz</a></li>
+					<li><a href="#transfer-oson">Oson.uz</a></li>
+					<li><a href="#transfer-bank">Инфокиоск</a></li>
+				</ul>
 
 				<p>
 					Для зачисления средств на баланс аккаунта необходимо создать счёт и оплатить его. Откройте Личный кабинет, 
-					перейдите в раздел Финансы → Платежи, нажмите кнопку Создать и выберите подходящий способ оплаты.
+					перейдите в верху балансовые счет - выберите "Пополнить", введите "Сумму пополнения" нажмите кнопку "Перейти к оплате счета".
 				</p>
+
+				<br /><br /><br />
+
+				<h2 id="transfer-swift">Банковский перевод</h2>
+
+				<p>Банковским переводом могут воспользоваться компании. Для юридических лиц предоставляются все необходимые бухгалтерские документы.</p>
+
+				<h2 id="transfer-card">Банковские карты</h2>
+
+				<h2 id="transfer-paybox">Международные банковские карты</h2>
+
+				<h2 id="transfer-paynet">PAYNET.uz</h2>
+
+				<h2 id="transfer-payme">PAYME.uz</h2>
+
+				<h2 id="transfer-click">Click.uz</h2>
+
+				<h2 id="transfer-upay">UPAY.uz</h2>
+
+				<h2 id="transfer-oson">Oson.uz</h2>
+
+				<h2 id="transfer-bank">Инфокиоск</h2>
 
 				{/* <div className={styles.sitepad__block}>
 					{data.map((item) => (
