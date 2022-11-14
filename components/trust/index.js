@@ -19,6 +19,9 @@ const content = [
 	'/trust/universal-bank.jpg',
 	'/trust/uzb-abroad.jpg',
 	'/trust/yapona-mama.jpg',
+	'/trust/reikardz.jpg',
+	'/trust/ts.jpg',
+	'/trust/lerna.jpg',
 ];
 
 export default function Trust() {
