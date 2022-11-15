@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
-				<title>Airnet.uz - Виртуальный хостинг в TAS-IX, домена, VDS-сервера, Ташкент</title>
+				<title>Airnet.uz - Виртуальный хостинг в TAS-IX, домена в зоне UZ, VDS/VPS - сервера, Ташкент, Узбекистане</title>
 				<meta
 					name="description"
 					content="Виртуальный хостинг, хостинг в Ташкенте, реселлинг хостинга, дешевые VDS, VPS-сервера, VDS в Ташкенте, виртуальные сервера, выделенные сервера, доменные имена"
