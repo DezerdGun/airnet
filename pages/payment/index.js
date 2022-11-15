@@ -1,4 +1,5 @@
 import Container from "../../components/container";
+import FAQ from "../../components/faq";
 import Image from "next/image";
 import Partners from "../../components/partners";
 import SEO from "../../components/seo";
@@ -6,7 +7,132 @@ import { useEffect, useState } from "react";
 import ImageFullScreen from "../../components/imageFullScreen";
 import styles from "./payment.module.scss";
 
-const data = [
+const faq = [
+	{
+		title: "Банковский перевод (SWIFT)",
+		description: (
+			<>
+				<p>
+					Чтобы воспользоваться банковским переводом по договору, нужно оформить заказ у нас на сайте, пройти регистрацию и далее обратится к техническую поддержку для составления договора для юридического лица,
+					для этого потребуется всего 3 документа:
+				</p><br />
+				<p>
+					1. Гувохнома (Свидетельство о регистрации компании)<br />
+					2. ФИО директора (Удостверение личности)<br />
+					3. Банковские Реквизиты компании
+				</p>
+			</>
+		),
+	},
+	{
+		title: "Международные банковские карты",
+		description: (
+			<>
+				<p>
+					Для нерезидентов Узбекистана и карты выпущенные не в банках Узбекистана - доступна оплата через платежные системы paybox.money и oson.uz
+				</p>
+				<p>
+					Чтобы произвести оплату через Paybox.Money перейдите во вкладку "Кабинет" -> "Счета" выберите № счета и нажмите кнопку "Оплатить счет", далее выберите из предложенных способов оплаты "Paybox" и нажмите на кнопку оплатить...
+				</p><br />
+				<img src="/payments/1.png" />
+			</>
+		),
+	},
+	{
+		title: "PAYNET.uz",
+		description: (
+			<>
+				<p>
+					Зайдите с мобильного приложение PAYNET через сайт https://paynet.uz, а также через диллеров PAYNET, найдите нас в категории "Хостинг-провайдеры" - AIRNET.uz хостинг, 
+					для оплаты введите ваш ID или № счета и сумму оплаты.
+				</p>
+				<img className="width-50" src="/payments/2.jpg" />
+				<img className="width-50" src="/payments/3.jpg" />
+			</>
+		),
+	},
+	{
+		title: "PAYME.uz",
+		description: (
+			<>
+				<p>
+					Зайдите с мобильного приложение PAYME.uz найдите нас в категории "Хостинг-провайдеры" - AIRNET.uz хостинг, для оплаты введите ваш ID или № счета и сумму оплаты.
+				</p>
+				<img className="width-50" src="/payments/5.jpg" />
+				<img className="width-50" src="/payments/6.jpg" />
+				<p>
+					В биллинг панели выбрать способ оплаты через PAYME.uz и нажать на кнопку "Оплатить Payme" и вас переведет на сайт платежной системы где нужно будет указать данные вашей карты для быстрой оплаты.
+				</p><br />
+				<img src="/payments/4.png" />
+			</>
+		),
+	},
+	{
+		title: "Click.uz",
+		description: (
+			<>
+				<p>
+					Зайдите с мобильного приложение Click.uz найдите нас в категории "Хостинг и домены" - AIRNET.uz хостинг, для оплаты введите № счета и сумму оплаты.
+				</p>
+				<img className="width-50" src="/payments/7.jpg" />
+				<img className="width-50" src="/payments/8.jpg" />
+				<p>
+					В биллинг панели выбрать способ оплаты через CLICK.uz и нажать на кнопку "Оплатить" и вас переведет на сайт платежной системы где нужно будет указать данные вашей карты для быстрой оплаты.
+				</p><br />
+				<img src="/payments/9.png" />
+			</>
+		),
+	},
+	{
+		title: "UPAY.uz",
+		description: (
+			<>
+				<p>
+					Зайдите с мобильного приложение UPAY.uz найдите нас в категории "Хостинг услуги" - AIRNET.uz хостинг, для оплаты введите ваш ID клиента и сумму оплаты.
+				</p>
+				<img className="width-50" src="/payments/11.jpg" />
+				<img className="width-50" src="/payments/12.jpg" />
+				<p>
+					В биллинг панели выбрать способ оплаты через UPAY.uz и нажать на кнопку "Перейти на сайт UPAY" и вас переведет на сайт платежной системы где нужно будет указать данные вашей карты для быстрой оплаты.
+				</p><br />
+				<img src="/payments/10.png" />
+			</>
+		),
+	},
+	{
+		title: "Oson.uz",
+		description: (
+			<>
+				<p>
+					Зайдите с мобильного приложение OSON.uz найдите нас в категории "Хостинг провайдеры" - AIRNET.uz хостинг, для оплаты введите ваш ID клиента или № счета и сумму оплаты.
+				</p>
+				<img className="width-50" src="/payments/16.jpg" />
+				<img className="width-50" src="/payments/17.jpg" />
+				<p>
+					В биллинг панели выбрать способ оплаты через OSON.uz и нажать на кнопку "Оплатить OSON" и вам откроется дополнительное окно платежной системы где нужно будет указать данные вашей карты для быстрой оплаты.
+				</p><br />
+				<img src="/payments/13.png" /><br />
+				<p>
+					Можно выбрать оплата банковской картой UZCARD или HUMO
+				</p><br />
+				<img src="/payments/14.png" /><br />
+				<p>
+					Можно выбрать оплата банковской картой VISA или MasterCard
+				</p><br />
+				<img src="/payments/15.png" />
+			</>
+		),
+	},
+	{
+		title: "Киоск самообслуживания",
+		description: (
+			<>
+				<p>Киоски самообслуживания находятся на балансе коммерческих банков</p>
+			</>
+		),
+	},
+],
+data = [
 	{
 		title: "Шаг № 1 (Найдите Конструктор сайтов SitePad и нажмите на него)",
 		img: "/sitepad/step-1.jpg",
@@ -112,7 +238,7 @@ export default function Payment() {
 					<li><a href="#transfer-click">Click.uz</a></li>
 					<li><a href="#transfer-upay">UPAY.uz</a></li>
 					<li><a href="#transfer-oson">Oson.uz</a></li>
-					<li><a href="#transfer-bank">Инфокиоск</a></li>
+					<li><a href="#transfer-bank">Киоск самообслуживания</a></li>
 				</ul>
 
 				<p>
@@ -120,9 +246,7 @@ export default function Payment() {
 					перейдите в верху балансовые счет - выберите "Пополнить", введите "Сумму пополнения" нажмите кнопку "Перейти к оплате счета".
 				</p>
 
-				<br /><br /><br />
-
-				<h2 id="transfer-swift">Банковский перевод</h2>
+				{/* <h2 id="transfer-swift">Банковский перевод</h2>
 
 				<p>Банковским переводом могут воспользоваться компании. Для юридических лиц предоставляются все необходимые бухгалтерские документы.</p>
 
@@ -140,7 +264,7 @@ export default function Payment() {
 
 				<h2 id="transfer-oson">Oson.uz</h2>
 
-				<h2 id="transfer-bank">Инфокиоск</h2>
+				<h2 id="transfer-bank">Инфокиоск</h2> */}
 
 				{/* <div className={styles.sitepad__block}>
 					{data.map((item) => (
@@ -173,6 +297,7 @@ export default function Payment() {
 				</p> */}
 			</Container>
 			{image && <ImageFullScreen image={image} setImage={setImage} />}
+			<FAQ faq={faq} title="Подробные способы оплаты" />
 
 			<Partners />
 		</div>

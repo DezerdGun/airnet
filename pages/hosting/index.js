@@ -473,7 +473,7 @@ export default function Hosting() {
 							</p>
 						}
 						endText={
-							<p className="text-white text-center mt-2">*При оплате за хостинг от 6 месяцев!</p>
+							<p className="text-white text-center mt-2">*При оплате за хостинг 12 месяцев!</p>
 						}
 					>
 						<Swiper
