@@ -31,7 +31,7 @@ export default function TarifCard({ index, tarif, show, setShow }) {
 					<td>SSD</td>
 				</tr>
 				<tr>
-					<th>{tarif.cpu} ядра</th>
+					<th>{tarif.cpu} ядер</th>
 					<th>{tarif.ram} ГБ</th>
 					<th>{tarif.ssd} ГБ</th>
 				</tr>
