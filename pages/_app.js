@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from '../components/footer';
-import Header from '../components/header';
-import '../styles/globals.scss';
-import { useEffect } from 'react';
-import Cookies from '../components/cookies';
+import Head from "next/head";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import "../styles/globals.scss";
+import { useEffect } from "react";
+import Cookies from "../components/cookies";
 // import i18n from 'i18next'
 // import {initReactI18next} from 'react-i18next'
 
@@ -16,7 +16,7 @@ import Cookies from '../components/cookies';
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<div>
+		<>
 			<Head>
 				<title>Airnet.uz - Виртуальный хостинг в TAS-IX, домена, VDS-сервера, Ташкент</title>
 				<meta
@@ -116,14 +116,25 @@ function MyApp({ Component, pageProps }) {
             height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
 				}}
 			></noscript>
-			<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+			<link
+				href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+				rel="stylesheet"
+			/>
 			<Header />
 			<div className="app">
 				<Component {...pageProps} />
 				<Cookies />
 			</div>
 			<Footer />
-		</div>
+			<script
+				dangerouslySetInnerHTML={{
+					__html: `window.replainSettings = { id: '5f7300e1-1747-4afc-ae3f-6b8478c6ce3e' };
+						(function(u){var s=document.createElement('script');s.async=true;s.src=u;
+						var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+						})('https://widget.replain.cc/dist/client.js')`,
+				}}
+			></script>
+		</>
 	);
 }
 
