@@ -110,11 +110,13 @@ const data = [
 ];
 
 export default function PopularSert() {
+	const [show, setShow] = useState(null);
+
 	return (
 		<div className={st.popularSert}>
 			<Container title="Популярные сертификаты" clNTitle="text-center">
 				<div className={st.popularSert__block}>
-					{data.map((item) => (
+					{data.map((item, index) => (
 						<div key={item.title} className={st.popularSert__block__item}>
 							<div className={st.popularSert__block__item__top}>
 								<div>{item.title}</div>
@@ -155,7 +157,7 @@ export default function PopularSert() {
 								</ul>
 							</div>
 							<div className={st.popularSert__block__item__footer}>
-								<Drop item={item.prices} />
+								<Drop index={index} item={item.prices} show={show} setShow={setShow} />
 								<a href={item.link}>
 									<button>Купить</button>
 								</a>

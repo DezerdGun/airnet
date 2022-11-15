@@ -31,7 +31,10 @@ export default function License() {
 	return (
 		<>
 			<SEO title="Лицензия на предоставление услуг хостинга | Airnet" desc="" />
-			<Container className={'text-center'} headTitle="Лицензии и сертификаты на предоставление услуг хостинга">
+			<Container
+				className={"text-center"}
+				headTitle="Лицензии и сертификаты на предоставление услуг хостинга"
+			>
 				<hr />
 
 				<Swiper
@@ -58,13 +61,14 @@ export default function License() {
 					{license.map((item) => (
 						<SwiperSlide key={item.img}>
 							<div className="w-95">
-								<Image
+								<img
 									onClick={() => setImage(item.img)}
 									src={item.img}
-									width={1200}
-									height={1697}
+									width="100%"
+									height="auto"
 									blurDataURL
 									placeholder="blur"
+									style={{ cursor: "pointer" }}
 								/>
 							</div>
 						</SwiperSlide>
