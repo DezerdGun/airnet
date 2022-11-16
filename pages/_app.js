@@ -18,7 +18,10 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
-				<title>Airnet.uz - Виртуальный хостинг в TAS-IX, домена в зоне UZ, VDS/VPS - сервера, Ташкент, Узбекистане</title>
+				<title>
+					Airnet.uz - Виртуальный хостинг в TAS-IX, домена в зоне UZ, VDS/VPS - сервера, Ташкент,
+					Узбекистане
+				</title>
 				<meta
 					name="description"
 					content="Виртуальный хостинг, хостинг в Ташкенте, реселлинг хостинга, дешевые VDS, VPS-сервера, VDS в Ташкенте, виртуальные сервера, выделенные сервера, доменные имена"
@@ -37,8 +40,11 @@ function MyApp({ Component, pageProps }) {
 				></script>
 
 				{/* <!-- Yandex.Metrika counter --> */}
-				<script type="text/javascript" >
-				(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+
+				<script
+					type="text/javascript"
+					dangerouslySetInnerHTML={{
+						__html: `(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 				m[i].l=1*new Date();
 				for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
 				k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
@@ -49,9 +55,19 @@ function MyApp({ Component, pageProps }) {
 						trackLinks:true,
 						accurateTrackBounce:true,
 						webvisor:true
-				});
-				</script>
-				<noscript><div><img src="https://mc.yandex.ru/watch/50412993" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+				});`,
+					}}
+				></script>
+				<noscript>
+					<div>
+						<img
+							src="https://mc.yandex.ru/watch/50412993"
+							style="position:absolute; left:-9999px;"
+							alt=""
+						/>
+					</div>
+				</noscript>
+
 				{/* <!-- /Yandex.Metrika counter --> */}
 
 				{/* ------------- Organization ------------- */}
