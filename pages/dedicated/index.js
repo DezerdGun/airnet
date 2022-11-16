@@ -175,7 +175,7 @@ export default function Dedicated() {
 						</li> */}
 						<li>
 							<span>{checkedCircle}</span>Операционные системы для установки: Linux и Windows Server
-							(доступен не на всех конфигурациях)
+							(или ISO по запросу пользователя)
 						</li>
 					</ul>
 				</Container>
