@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
 					name="description"
 					content="Виртуальный хостинг, хостинг в Ташкенте, реселлинг хостинга, дешевые VDS, VPS-сервера, VDS в Ташкенте, виртуальные сервера, выделенные сервера, доменные имена"
 				/>
-				<link rel="shortcut icon" href="/favicon.ico" />
+				<link rel="shortcut icon" href="/favicon.png" />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
 				<script
