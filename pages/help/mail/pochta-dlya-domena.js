@@ -5,7 +5,7 @@ const mainData = {
 	content: (
 		<>
 			<p>Компания AIRNET.uz не предоставляет пользователям почтовый сервис.</p>
-			<p>Мы рекомендуем использовать почтовый сервисы:</p>
+			<p>Мы рекомендуем использовать почтовые сервисы</p>
 			<p>
 				Бесплатный –{' '}
 				<a href="https://connect.yandex.ru/" target="_blank" rel="noreferrer noopener">
