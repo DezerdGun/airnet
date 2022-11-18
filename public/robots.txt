@@ -1,0 +1,24 @@
+# *
+User-agent: *
+Allow: /*.css
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.js
+Allow: /wp-admin/admin-ajax.php
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-json/
+
+
+# Googlebot
+User-agent: Googlebot
+Allow: /*.css
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.js
+
+# Host
+Host: https://airnet.uz
+
+# Sitemaps
+Sitemap: https://airnet.uz/sitemap.xml

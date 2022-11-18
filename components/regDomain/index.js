@@ -23,20 +23,21 @@ export const RegDomainBlock = () => {
 
 		console.log(e.target[0].value);
 
-		fetch(`https://billing.airnet.uz/api.php`, {
-			headers: {
-				"Access-Control-Allow-Origin": "true",
-			},
-		});
-		// let xhr = new XMLHttpRequest();
-		// xhr.open("POST", "https://tst.dot.uz/api/api_2_1.php", [false, "airnetAPI", "TurLcMAC4cnB"]);
-		// xhr.setRequestHeader("Content-type", "text/xml; charset=utf-8");
-		// xhr.send(
-		// 	<data>
-		// 		<sLogin>airnetAPI</sLogin>
-		// 		<sPass>TurLcMAC4cnB</sPass>
-		// 	</data>
-		// );
+		// fetch(`https://billing.airnet.uz/api.php`, {
+		// 	headers: {
+		// 		"Access-Control-Allow-Origin": "true",
+		// 	},
+		// });
+		let xhr = new XMLHttpRequest();
+		xhr.open("POST", "https://tst.dot.uz/api/api_2_1.php", [false, "airnetAPI", "TurLcMAC4cnB"]);
+		xhr.setRequestHeader("Content-type", "text/xml; charset=utf-8");
+		xhr.send(
+			<data>
+				{/* <sLogin>airnetAPI</sLogin>
+				<sPass>TurLcMAC4cnB</sPass> */}
+				<dname>bozor.uz</dname>
+			</data>
+		);
 	};
 
 	return (
