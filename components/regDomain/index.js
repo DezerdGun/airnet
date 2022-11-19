@@ -1,10 +1,10 @@
-import { useRef, useState } from "react";
+import axios from "axios";
+import { useState } from "react";
 import Container from "../container";
 import st from "./regDomain.module.scss";
 
 export default function RegDomain() {
 	return (
-		// <Container style={{ background: `url('/domains.jpg') no-repeat` }} title="Зарегистрируем домен?">
 		<div className={st.regDomain}>
 			<Container title="Зарегистрируем домен?">
 				<RegDomainBlock />
@@ -14,38 +14,68 @@ export default function RegDomain() {
 }
 
 export const RegDomainBlock = () => {
-	const [loading, setLoading] = useState(false);
+	const [isDomainFree, setIsDomainFree] = useState({
+			domain: "",
+			isShow: false,
+			isActive: false,
+		}),
+		[loading, setLoading] = useState(false);
 
 	const checkDomain = (e) => {
 		e.preventDefault();
 
 		setLoading(true);
+		const domain = document.querySelector("#domain").value;
 
-		console.log(e.target[0].value);
+		axios
+			.post("https://api.airnet.uz/api/check/domain", {
+				domain,
+			})
+			.then((res) => {
+				setLoading(false);
 
-		// fetch(`https://billing.airnet.uz/api.php`, {
-		// 	headers: {
-		// 		"Access-Control-Allow-Origin": "true",
-		// 	},
-		// });
-		let xhr = new XMLHttpRequest();
-		xhr.open("POST", "https://tst.dot.uz/api/api_2_1.php", [false, "airnetAPI", "TurLcMAC4cnB"]);
-		xhr.setRequestHeader("Content-type", "text/xml; charset=utf-8");
-		xhr.send(
-			<data>
-				{/* <sLogin>airnetAPI</sLogin>
-				<sPass>TurLcMAC4cnB</sPass> */}
-				<dname>bozor.uz</dname>
-			</data>
-		);
+				if (res.data.data.dstatus === "ACTIV")
+					setIsDomainFree({ domain, isShow: true, isActive: true });
+				else setIsDomainFree({ domain, isShow: true, isActive: false });
+			});
 	};
 
 	return (
 		<>
 			<form onSubmit={checkDomain} className={st.regDomain__block}>
-				www. <input placeholder="Введите название домена например: airnet.uz" required />
-				<button type="submit">Проверить</button>
+				www.{" "}
+				<input id="domain" placeholder="Введите название домена например: airnet.uz" required />
+				<button type="submit" disabled={loading}>
+					Проверить{" "}
+					{loading && (
+						<div class="spinner-border text-light spinner-border-sm" role="status">
+							<span class="visually-hidden">Loading...</span>
+						</div>
+					)}
+				</button>
 			</form>
+
+			{isDomainFree.isShow && (
+				<p className={st.regDomain__text}>
+					<strong>{isDomainFree.domain}</strong>{" "}
+					{isDomainFree.isActive ? (
+						<span className={st.regDomain__text__red}>
+							доменное имя в данное время недоступно для регистрации.
+						</span>
+					) : (
+						<>
+							<span className={st.regDomain__text__green}>
+								доменное имя в данное время доступно для регистрации.
+							</span>{" "}
+							Нажмите{" "}
+							<a href="https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=airnet22">
+								Заказать
+							</a>{" "}
+							для регистрации доменного имени.
+						</>
+					)}
+				</p>
+			)}
 
 			<p className={st.regDomain__price}>.UZ - 20.000 сум/год</p>
 			<p className={st.regDomain__price}>.RU - 65.000 сум/год</p>

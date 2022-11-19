@@ -13,8 +13,7 @@ $red: #f00;
 	text-align: center;
 
 	h3,
-	p,
-	span {
+	p {
 		color: $black;
 	}
 
@@ -56,6 +55,18 @@ $red: #f00;
 		min-width: 170px;
 		display: inline-block;
 		border: 1px solid $gray !important;
+	}
+
+	&__text {
+		margin-bottom: 20px;
+
+		&__red {
+			color: $red;
+		}
+
+		&__green {
+			color: $green;
+		}
 	}
 
 	&__endText {
