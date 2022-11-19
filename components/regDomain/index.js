@@ -25,7 +25,12 @@ export const RegDomainBlock = () => {
 		e.preventDefault();
 
 		setLoading(true);
-		const domain = document.querySelector("#domain").value;
+		let domain = document.querySelector("#domain").value;
+
+		if (!domain.includes(".uz")) {
+			domain += ".uz";
+			document.querySelector("#domain").value = domain;
+		}
 
 		axios
 			.post("https://api.airnet.uz/api/check/domain", {
@@ -34,7 +39,7 @@ export const RegDomainBlock = () => {
 			.then((res) => {
 				setLoading(false);
 
-				if (res.data.data.dstatus === "ACTIV")
+				if (res.data.data?.dstatus !== "empty")
 					setIsDomainFree({ domain, isShow: true, isActive: true });
 				else setIsDomainFree({ domain, isShow: true, isActive: false });
 			});
@@ -68,7 +73,9 @@ export const RegDomainBlock = () => {
 								доменное имя в данное время доступно для регистрации.
 							</span>{" "}
 							Нажмите{" "}
-							<a href="https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=airnet22">
+							<a
+								href={`https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=${isDomainFree.domain}`}
+							>
 								Заказать
 							</a>{" "}
 							для регистрации доменного имени.
