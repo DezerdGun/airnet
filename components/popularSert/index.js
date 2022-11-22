@@ -42,7 +42,7 @@ const data = [
 		title: "Comodo PositiveSSL Wildcard",
 		description: "Надежный цифровой сертификат безопасности.",
 		warranty: 50000,
-		dateOff: "1 дней",
+		dateOff: "1 дня",
 		link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=2&one=1",
 		prices: [
 			{
