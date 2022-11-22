@@ -22,12 +22,12 @@ const data = [
 				date: "год",
 			},
 			{
-				price: "275 000",
+				price: "276 000",
 				dateOff: "3 года",
 				date: "год",
 			},
 			{
-				price: "350 000",
+				price: "352 000",
 				dateOff: "4 года",
 				date: "год",
 			},
@@ -56,12 +56,12 @@ const data = [
 				date: "год",
 			},
 			{
-				price: "2 800 000",
+				price: "2 760 000",
 				dateOff: "3 года",
 				date: "год",
 			},
 			{
-				price: "3 500 000",
+				price: "3 520 000",
 				dateOff: "4 года",
 				date: "год",
 			},
@@ -86,22 +86,22 @@ const data = [
 				date: "год",
 			},
 			{
-				price: "4 200 000",
+				price: "4 275 000",
 				dateOff: "2 года",
 				date: "год",
 			},
 			{
-				price: "5 800 000",
+				price: "6 210 000",
 				dateOff: "3 года",
 				date: "год",
 			},
 			{
-				price: "7 500 000",
+				price: "7 920 000",
 				dateOff: "4 года",
 				date: "год",
 			},
 			{
-				price: "8 500 000",
+				price: "9 000 000",
 				dateOff: "5 лет",
 				date: "год",
 			},
