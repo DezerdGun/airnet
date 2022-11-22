@@ -17,22 +17,22 @@ const data = [
 				date: "год",
 			},
 			{
-				price: "190 000",
+				price: "180 000",
 				dateOff: "2 года",
 				date: "год",
 			},
 			{
-				price: "276 000",
+				price: "255 000",
 				dateOff: "3 года",
 				date: "год",
 			},
 			{
-				price: "352 000",
+				price: "320 000",
 				dateOff: "4 года",
 				date: "год",
 			},
 			{
-				price: "400 000",
+				price: "375 000",
 				dateOff: "5 лет",
 				date: "год",
 			},
@@ -56,17 +56,17 @@ const data = [
 				date: "год",
 			},
 			{
-				price: "2 760 000",
+				price: "2 700 000",
 				dateOff: "3 года",
 				date: "год",
 			},
 			{
-				price: "3 520 000",
+				price: "3 400 000",
 				dateOff: "4 года",
 				date: "год",
 			},
 			{
-				price: "4 000 000",
+				price: "3 500 000",
 				dateOff: "5 лет",
 				date: "год",
 			},
@@ -91,17 +91,17 @@ const data = [
 				date: "год",
 			},
 			{
-				price: "6 210 000",
+				price: "6 075 000",
 				dateOff: "3 года",
 				date: "год",
 			},
 			{
-				price: "7 920 000",
+				price: "7 650 000",
 				dateOff: "4 года",
 				date: "год",
 			},
 			{
-				price: "9 000 000",
+				price: "7 875 000",
 				dateOff: "5 лет",
 				date: "год",
 			},
