@@ -190,7 +190,7 @@ export const RegDomainBlock = () => {
 							<th>sCustomerState</th>
 							<td>{isDomainFree?.data?.sCustomerState}</td>
 						</tr>
-						<tr>
+						{/* <tr>
 							<th>sTechsOrgRU</th>
 							<td>{isDomainFree?.data?.sTechsOrgRU}</td>
 						</tr>
@@ -241,7 +241,7 @@ export const RegDomainBlock = () => {
 						<tr>
 							<th>rcode</th>
 							<td>{isDomainFree?.data?.rcode}</td>
-						</tr>
+						</tr> */}
 					</table>
 				</div>
 				<svg
