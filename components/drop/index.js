@@ -1,8 +1,19 @@
 import { useState } from "react";
 import styles from "./drop.module.scss";
 
-const Drop = ({ item, index, show, setShow, isTarifCard }) => {
+const Drop = ({ item, index, show, setShow, isTarifCard, language }) => {
 	const [checked, setChecked] = useState(0);
+
+	const langData = {
+		sum: {
+			ru: "сум",
+			uz: "so'm",
+		},
+		sumV: {
+			ru: "сум в",
+			uz: "so'mda",
+		},
+	};
 
 	return (
 		<div className={`tarif_drop ${styles.drop} ${isTarifCard ? styles.drop__tarifCard : ""}`}>
@@ -13,9 +24,9 @@ const Drop = ({ item, index, show, setShow, isTarifCard }) => {
 				<div className="tarif_drop">
 					{item[checked].price}
 					<span className="tarif_drop">
-						сум
+						{langData.sum[language]}
 						<hr />
-						{item[checked].dateOff}
+						{item[checked].dateOff[language]}
 					</span>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -45,10 +56,16 @@ const Drop = ({ item, index, show, setShow, isTarifCard }) => {
 						key={el.price}
 					>
 						<strong>
-							{el.price} сум в {el.date}
+							{el.price} {langData.sumV[language]} {el.date[language]}
 						</strong>
 						<br />
-						<span>при оплате за {el.dateOff}</span>
+						<span>
+							{language === "uz" ? (
+								<>{el.dateOff.uz} ga to'lov</>
+							) : (
+								<>при оплате за {el.dateOff.ru}</>
+							)}
+						</span>
 					</li>
 				))}
 			</ul>

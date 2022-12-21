@@ -1,33 +1,40 @@
-import st from './trust.module.scss';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper';
-import Container from '../container';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import st from "./trust.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper";
+import Container from "../container";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const content = [
-	'/trust/coca.jpg',
-	'/trust/FED.png',
-	'/trust/ipoteka.jpg',
-	'/trust/leader-school.jpg',
-	'/trust/paynet.jpg',
-	'/trust/pepsi.jpg',
-	'/trust/silkroad.jpg',
-	'/trust/skillbox.jpg',
-	'/trust/tld.jpg',
-	'/trust/ttz.jpg',
-	'/trust/universal-bank.jpg',
-	'/trust/uzb-abroad.jpg',
-	'/trust/yapona-mama.jpg',
-	'/trust/reikardz.jpg',
-	'/trust/ts.jpg',
-	'/trust/lerna.jpg',
+	"/trust/coca.jpg",
+	"/trust/FED.png",
+	"/trust/ipoteka.jpg",
+	"/trust/leader-school.jpg",
+	"/trust/paynet.jpg",
+	"/trust/pepsi.jpg",
+	"/trust/silkroad.jpg",
+	"/trust/skillbox.jpg",
+	"/trust/tld.jpg",
+	"/trust/ttz.jpg",
+	"/trust/universal-bank.jpg",
+	"/trust/uzb-abroad.jpg",
+	"/trust/yapona-mama.jpg",
+	"/trust/reikardz.jpg",
+	"/trust/ts.jpg",
+	"/trust/lerna.jpg",
 ];
 
-export default function Trust() {
+export default function Trust({ language }) {
+	const langData = {
+		title: {
+			ru: "Нам доверяют",
+			uz: "Bizga ishonishadi",
+		},
+	};
+
 	return (
 		<div className={`${st.trust} trust-swiper`}>
-			<Container title="Нам доверяют" clNTitle="text-center">
+			<Container title={langData.title[language]} clNTitle="text-center">
 				<Swiper
 					cssMode={true}
 					modules={[Autoplay, Navigation]}
@@ -53,7 +60,8 @@ export default function Trust() {
 							slidesPerView: 6,
 						},
 					}}
-					className={st.swiper__swiper}>
+					className={st.swiper__swiper}
+				>
 					{content.map((item) => (
 						<SwiperSlide key={item.title}>
 							<div className={st.trust__block}>

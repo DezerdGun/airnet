@@ -1,8 +1,8 @@
-import st from './faq.module.scss';
-import Head from 'next/head';
-import Container from '../container';
+import st from "./faq.module.scss";
+import Head from "next/head";
+import Container from "../container";
 
-export default function FAQ({ faq, title }) {
+export default function FAQ({ faq, title, language }) {
 	const active = (i) => {
 		const blocks = document.querySelectorAll(`.${st.faq__items__block}`);
 
@@ -11,6 +11,25 @@ export default function FAQ({ faq, title }) {
 				? item?.classList.remove(st.faq__items__block__active)
 				: item.classList.toggle(st.faq__items__block__active)
 		);
+	};
+
+	const faqGenerate = (faq) => {
+		const temp = {
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			mainEntity: [],
+		};
+
+		temp.mainEntity = faq.map((item) => ({
+			"@type": "Question",
+			name: item.title,
+			acceptedAnswer: {
+				"@type": "Answer",
+				text: faqGenerateText(item.description[language].props.children),
+			},
+		}));
+
+		return temp;
 	};
 
 	return (
@@ -30,14 +49,15 @@ export default function FAQ({ faq, title }) {
 							{faq.map((item, i) => (
 								<div key={item.title} className={st.faq__items__block}>
 									<div className={st.faq__items__block__heading} onClick={() => active(i)}>
-										<h2>{item.title}</h2>
+										<h2>{item.title[language]}</h2>
 										<span>
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												width="21"
 												height="21"
 												viewBox="0 0 21 21"
-												fill="none">
+												fill="none"
+											>
 												<rect x="9" width="3" height="21" rx="1.5" fill="black" />
 												<rect
 													y="12"
@@ -51,7 +71,7 @@ export default function FAQ({ faq, title }) {
 										</span>
 									</div>
 									<div id={`faqContent${i}`} className={st.faq__items__block__text}>
-										{item.description}
+										{item.description[language]}
 									</div>
 								</div>
 							))}
@@ -65,32 +85,15 @@ export default function FAQ({ faq, title }) {
 
 const faqGenerateText = (text) => {
 	if (Array.isArray(text)) {
-		const temp = text.map((item) => (typeof item === 'object' ? faqGenerateText(item.props.children) : item));
+		const temp = text.map((item) =>
+			typeof item === "object" ? faqGenerateText(item.props.children) : item
+		);
 
 		return temp
-			.filter((item) => item !== ' ')
-			.join(' ')
-			.replaceAll('  ', ' ');
-	} else if (typeof text === 'object') {
+			.filter((item) => item !== " ")
+			.join(" ")
+			.replaceAll("  ", " ");
+	} else if (typeof text === "object") {
 		return faqGenerateText(text.props.children);
 	} else return text;
-};
-
-const faqGenerate = (faq) => {
-	const temp = {
-		'@context': 'https://schema.org',
-		'@type': 'FAQPage',
-		mainEntity: [],
-	};
-
-	temp.mainEntity = faq.map((item) => ({
-		'@type': 'Question',
-		name: item.title,
-		acceptedAnswer: {
-			'@type': 'Answer',
-			text: faqGenerateText(item.description.props.children),
-		},
-	}));
-
-	return temp;
 };

@@ -1,27 +1,34 @@
-import st from './partners.module.scss';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper';
-import Container from '../container';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import Link from 'next/link';
+import st from "./partners.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper";
+import Container from "../container";
+import "swiper/css";
+import "swiper/css/navigation";
+import Link from "next/link";
 
-export default function Partners() {
+export default function Partners({ language }) {
 	const content = [
-		'/partners/bitrix.svg',
-		'/partners/cloudlinux.png',
-		'/partners/comodo.png',
-		'/partners/cPanel.png',
-		'/partners/google.png',
-		'/partners/plesk.svg',
-		'/partners/rapidssl.png',
-		'/partners/ripe.webp',
-		'/partners/yandex.svg',
+		"/partners/bitrix.svg",
+		"/partners/cloudlinux.png",
+		"/partners/comodo.png",
+		"/partners/cPanel.png",
+		"/partners/google.png",
+		"/partners/plesk.svg",
+		"/partners/rapidssl.png",
+		"/partners/ripe.webp",
+		"/partners/yandex.svg",
 	];
+
+	const langData = {
+		title: {
+			ru: "Наши партнеры",
+			uz: "Bizning hamkorlarimiz",
+		},
+	};
 
 	return (
 		<div className={`${st.partners} partners-swiper`}>
-			<Container title="Наши партнеры" clNTitle="text-center">
+			<Container title={langData.title[language]} clNTitle="text-center">
 				<Swiper
 					cssMode={true}
 					modules={[Autoplay, Navigation]}
@@ -47,7 +54,8 @@ export default function Partners() {
 							slidesPerView: 6,
 						},
 					}}
-					className={st.swiper__swiper}>
+					className={st.swiper__swiper}
+				>
 					{content.map((item) => (
 						<SwiperSlide key={item.title}>
 							<div className={st.partners__block}>

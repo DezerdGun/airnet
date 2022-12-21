@@ -1,59 +1,108 @@
-import st from './notifications.module.scss';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper';
-import Container from '../container';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import st from "./notifications.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper";
+import Container from "../container";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const content = [
 	{
-		title: 'AIRNET',
-		date: '10.02.2022',
-		description: (
-			<>
-				<p>
-					В связи с аварийной ситуацией на сети ННО ЦВСПД &quot;TAS-IX&quot; 15.02.2022 г. с 00:30 по 10:00
-					(ТШК) могли наблюдаться ухудшения качества и перерывы в предоставлении услуги сети TAS-IX.
-				</p>
-				<p>ННО ЦВСПД &quot;TAS-IX&quot; приносит свои извинения за предоставленные неудобства.</p>
-			</>
-		),
+		title: "AIRNET",
+		date: "10.02.2022",
+		description: {
+			ru: (
+				<>
+					<p>
+						В связи с аварийной ситуацией на сети ННО ЦВСПД &quot;TAS-IX&quot; 15.02.2022 г. с 00:30
+						по 10:00 (ТШК) могли наблюдаться ухудшения качества и перерывы в предоставлении услуги
+						сети TAS-IX.
+					</p>
+					<p>ННО ЦВСПД &quot;TAS-IX&quot; приносит свои извинения за предоставленные неудобства.</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+						NNO TsVPD tarmog'ida favqulodda vaziyat yuzaga kelishi munosabati bilan
+						&quot;TAS-IX&quot; 15.02.2022 00:30 dan soat 10:00 (TSK) ga qadar xizmatlar sifati
+						yomonlashishi va xizmatlar ko'rsatishda uzilishlar bo'lishi mumkin TAS-IX tarmoqlari.
+					</p>
+					<p>NNO TsVSPD &quot;TAS-IX&quot; yuzaga kelgan noqulayliklar uchun uzr so'raydi.</p>
+				</>
+			),
+		},
 	},
 	{
-		title: 'AIRNET',
-		date: '8.02.2022',
-		description: (
-			<>
-				<p>
-					В связи с профилактическими работами у вышестоящего партнёра на сети TAS-IX, 12.02.2022г., в период
-					с 10:00 до 15:00 возможно временное отсутствие услуги в сети TAS-IX.
-				</p>
-				<p>Приносим извинения за доставленные неудобства.</p>
-			</>
-		),
+		title: "AIRNET",
+		date: "8.02.2022",
+		description: {
+			ru: (
+				<>
+					<p>
+						В связи с профилактическими работами у вышестоящего партнёра на сети TAS-IX,
+						12.02.2022г., в период с 10:00 до 15:00 возможно временное отсутствие услуги в сети
+						TAS-IX.
+					</p>
+					<p>Приносим извинения за доставленные неудобства.</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+						TAS-IX tarmog‘idagi yuqori hamkorda profilaktika ishlari olib borilishi munosabati bilan
+						2022-yil 12-fevralda soat 10:00 dan 15:00 gacha bo'lgan davrda TAS-IX tarmog'ida
+						vaqtinchalik xizmat ko'rsatilmasligi mumkin.
+					</p>
+					<p>Yuzilgan noqulayliklar uchun uzr so'raymiz.</p>
+				</>
+			),
+		},
 	},
 	{
-		title: 'AIRNET',
-		date: '5.01.2022',
-		description: (
-			<>
-				<p>
-					На телекоммуникационной сети OOO «AIRNET» 13 января 2022 года (с 21:00 до 01:30чч) в связи со
-					спам-атаками и досс-атаками были технические сбои в доступе к сервисам компании.
-				</p>
-				<p>
-					В этот период наблюдались кратковременные прерывания связи и ухудшение качества предоставляемых
-					услуг фиксированной связи на сети OOO &quot;AIRNET&quot;.
-				</p>
-			</>
-		),
+		title: "AIRNET",
+		date: "5.01.2022",
+		description: {
+			ru: (
+				<>
+					<p>
+						На телекоммуникационной сети OOO «AIRNET» 13 января 2022 года (с 21:00 до 01:30чч) в
+						связи со спам-атаками и досс-атаками были технические сбои в доступе к сервисам
+						компании.
+					</p>
+					<p>
+						В этот период наблюдались кратковременные прерывания связи и ухудшение качества
+						предоставляемых услуг фиксированной связи на сети OOO &quot;AIRNET&quot;.
+					</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+						2022-yil 13-yanvar kuni (soat 21:00 dan 01:30 gacha) AIRNET MChJ telekommunikatsiya
+						tarmog‘ida spam hujumlari va doss hujumlari bilan kompaniya xizmatlariga kirishda texnik
+						nosozliklar yuzaga keldi.
+					</p>
+					<p>
+						Bu davrda aloqada qisqa muddatli uzilishlar va sifatning yomonlashuvi kuzatildi.
+						“AIRNET” MChJ tarmog‘ida statsionar aloqa xizmatlarini ko‘rsatdi.
+					</p>
+				</>
+			),
+		},
 	},
 ];
 
-export default function Notifications() {
+export default function Notifications({ language }) {
+	const langData = {
+		title: {
+			ru: "Оповещения",
+			uz: "Ogohlantirishlar",
+		},
+	};
+
 	return (
 		<div className={`${st.notifications} notifications-swiper`}>
-			<Container title="Оповещения" clNTitle="text-center mb-0">
+			<Container title={langData.title[language]} clNTitle="text-center mb-0">
 				<Swiper
 					cssMode={true}
 					modules={[Autoplay, Navigation]}
@@ -76,7 +125,8 @@ export default function Notifications() {
 							slidesPerView: 4,
 						},
 					}}
-					className={st.swiper__swiper}>
+					className={st.swiper__swiper}
+				>
 					{content.map((item) => (
 						<SwiperSlide key={item.title}>
 							<div className={st.notifications__block}>
@@ -88,7 +138,7 @@ export default function Notifications() {
 											<h6>{item.title}</h6>
 										</div>
 									</div>
-									{item.description}
+									{item.description[language]}
 								</div>
 							</div>
 						</SwiperSlide>
