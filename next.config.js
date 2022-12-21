@@ -37,6 +37,11 @@ module.exports = {
 				destination: '/domains',
 				permanent: true,
 			},
+			{
+				source: '/blog/enovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati',
+				destination: '/blog/lenovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati',
+				permanent: true,
+			},
 		];
 	},
 };

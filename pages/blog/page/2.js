@@ -33,7 +33,7 @@ export const blog = [
 	},
 	{
 		img: '/blog/lenovo-phone.jpg',
-		link: '/blog/enovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati',
+		link: '/blog/lenovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati',
 		date: '21 Дек 2018',
 		title: 'Lenovo представила первый в мире смартфон с 12 ГБ оперативной памяти',
 		description: (
