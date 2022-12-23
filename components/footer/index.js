@@ -14,6 +14,22 @@ export default function Footer({ language }) {
 			ru: "Присоединяйтесь",
 			uz: "Ulanish",
 		},
+		buy: {
+			ru: "Принимаем к оплате",
+			uz: "To'lov usullari",
+		},
+		method: {
+			ru: "Смотреть все способы",
+			uz: "Barcha usullarni ko'rish",
+		},
+		privacy: {
+			ru: "Политика конфиденциальности",
+			uz: "Maxfiylik siyosati",
+		},
+		worked: {
+			ru: "Сайт разработан AIRNET",
+			uz: "Veb-sayt AIRNET tomonidan ishlab chiqilgan",
+		},
 	};
 
 	const social = [
@@ -99,261 +115,261 @@ export default function Footer({ language }) {
 			},
 		],
 		vps_vds = {
-			title: "VPS и VDS серверы",
+			title: { ru: "VPS и VDS серверы", uz: "VPS va VDS serverlari" },
 			children: [
 				{
 					link: LINKS.CHEAP_VDS,
-					title: "Бюджетные серверы",
+					title: { ru: "Бюджетные серверы", uz: "Hamyonbob serverlari" },
 				},
 				{
 					link: LINKS.OPTIMAL_VDS,
-					title: "Оптимальные серверы",
+					title: { ru: "Оптимальные серверы", uz: "Optimal serverlari" },
 				},
 				{
 					link: LINKS.BIG_VDS,
-					title: "Высокопроизводительные серверы",
+					title: { ru: "Высокопроизводительные серверы", uz: "Yuqori unumdor serverlar" },
 				},
 				{
 					link: LINKS.VDS_1C,
-					title: "VDS для 1C",
+					title: { ru: "VDS для 1C", uz: "1C uchun VDS" },
 				},
 				{
 					link: LINKS.VDS_STORAGE,
-					title: "VDS Storage",
+					title: { ru: "VDS Storage", uz: "VDS Storage" },
 				},
 				{
 					link: LINKS.VDS_WINDOWS,
-					title: "VDS для Windows",
+					title: { ru: "VDS для Windows", uz: "Windows uchun VDS" },
 				},
 				{
 					link: LINKS.SERVERS,
-					title: "Выделенные серверы",
+					title: { ru: "Выделенные серверы", uz: "Ajratilgan serverlar" },
 				},
 			],
 		},
 		uslugi = {
-			title: "Услуги",
+			title: { ru: "Услуги", uz: "Xizmatlar" },
 			children: [
 				{
 					link: LINKS.DOMAINS,
-					title: "Доменные имена",
+					title: { ru: "Доменные имена", uz: "Domen nomlari" },
 				},
 				{
 					link: LINKS.SSL,
-					title: "SSL-сертификаты",
+					title: { ru: "SSL-сертификаты", uz: "SSL- sertifekatlari" },
 				},
 				{
 					link: LINKS.ADMINISTRATION,
-					title: "Администрирование",
+					title: { ru: "Администрирование", uz: "Adminstratsiya" },
 				},
 				{
 					link: LINKS.AUTO_COPY,
-					title: "Автоматическое резервное копирование",
+					title: { ru: "Автоматическое резервное копирование", uz: "Avtomatik saqlash" },
 				},
 				{
 					link: LINKS.ANTI_DDOS,
-					title: "Защита от DDoS",
+					title: { ru: "Защита от DDoS", uz: "DDoS dan himoya" },
 				},
 				{
 					link: LINKS.LICENSE,
-					title: "Лицензии AIRNET",
+					title: { ru: "Лицензии AIRNET", uz: "AIRNET litsenziyasi" },
 				},
 				{
 					link: LINKS.SITEPAD,
-					title: "Конструктор сайтов SitePad",
+					title: { ru: "Конструктор сайтов SitePad", uz: "SitePad qollanmasi" },
 				},
 				// {
 				// 	link: LINKS.ANTIVIRUS,
-				// 	title: 'Антивирус для сайта',
+				// 	title:{ru: 'Антивирус для сайта',uz:""},
 				// },
 			],
 		},
 		clients = {
-			title: "Клиентам",
+			title: { ru: "Клиентам", uz: "Mijoszal uchun" },
 			children: [
 				{
 					link: LINKS.ABOUT,
-					title: "О компании",
+					title: { ru: "О компании", uz: "Kompaniya haqida" },
 				},
 				{
 					link: LINKS.CONTACTS,
-					title: "Контакты",
+					title: { ru: "Контакты", uz: "Kontaktlar" },
 				},
 				{
 					link: LINKS.DOCUMENTS,
-					title: "Документы",
+					title: { ru: "Документы", uz: "Dokumentlar" },
 				},
 				{
 					link: LINKS.BLOG,
-					title: "Блог",
+					title: { ru: "Блог", uz: "Blok" },
 				},
 				{
 					link: LINKS.REVIEWS,
-					title: "Отзывы",
+					title: { ru: "Отзывы", uz: "Sharhlar" },
 				},
 				// {
 				// 	link: LINKS.LOYALS,
-				// 	title: 'Программа лояльности',
+				// 	title:{ru: 'Программа лояльности',uz:""},
 				// },
 			],
 		},
 		help = {
-			title: "Помощь",
+			title: { ru: "Помощь", uz: "Yordam" },
 			children: [
 				{
 					link: LINKS.HELP,
-					title: "База знаний",
+					title: { ru: "База знаний", uz: "Bililar bazasi" },
 				},
 				{
 					link: LINKS.SUPPORT,
-					title: "Служба поддержки",
+					title: { ru: "Служба поддержки", uz: "Qo'llab-quvatlash xizmati" },
 				},
 				{
 					link: LINKS.AUTO_PAY,
-					title: "Автоплатёж",
+					title: { ru: "Автоплатёж", uz: "Avtoto'lov" },
 				},
 			],
 		},
 		partners = {
-			title: "Партнёрам",
+			title: { ru: "Партнёрам", uz: "Hamkorlar" },
 			children: [
 				{
 					link: LINKS.PARTNERS,
-					title: "Реферальная программа",
+					title: { ru: "Реферальная программа", uz: "Yo'naltirilgan dasturlar" },
 				},
 				{
 					link: LINKS.RESELLING,
-					title: "Программа реселлинга",
+					title: { ru: "Программа реселлинга", uz: "Resellar dasturi" },
 				},
 			],
 		};
 	// menu = [
 	// 	{
-	// 		title: 'VPS и VDS серверы',
+	// 		title:{ru: 'VPS и VDS серверы',uz:""},
 	// 		children: [
 	// 			{
 	// 				link: LINKS.CHEAP_VDS,
-	// 				title: 'Бюджетные серверы',
+	// 				title:{ru: 'Бюджетные серверы',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.OPTIMAL_VDS,
-	// 				title: 'Оптимальные серверы',
+	// 				title:{ru: 'Оптимальные серверы',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.BIG_VDS,
-	// 				title: 'Высокопроизводительные серверы',
+	// 				title:{ru: 'Высокопроизводительные серверы',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.VDS_1C,
-	// 				title: 'VDS для 1C',
+	// 				title:{ru: 'VDS для 1C',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.VDS_STORAGE,
-	// 				title: 'VDS Storage',
+	// 				title:{ru: 'VDS Storage',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.VDS_WINDOWS,
-	// 				title: 'VDS для Windows',
+	// 				title:{ru: 'VDS для Windows',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.SERVERS,
-	// 				title: 'Выделенные серверы',
+	// 				title:{ru: 'Выделенные серверы',uz:""},
 	// 			},
 	// 		],
 	// 	},
 	// 	{
-	// 		title: 'Услуги',
+	// 		title:{ru: 'Услуги',uz:""},
 	// 		children: [
 	// 			{
 	// 				link: LINKS.DOMAINS,
-	// 				title: 'Доменные имена',
+	// 				title:{ru: 'Доменные имена',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.SSL,
-	// 				title: 'SSL-сертификаты',
+	// 				title:{ru: 'SSL-сертификаты',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.ADMINISTRATION,
-	// 				title: 'Администрирование',
+	// 				title:{ru: 'Администрирование',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.AUTO_COPY,
-	// 				title: 'Автоматическое резервное копирование',
+	// 				title:{ru: 'Автоматическое резервное копирование',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.ANTI_DDOS,
-	// 				title: 'Защита от DDoS',
+	// 				title:{ru: 'Защита от DDoS',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.LICENSE,
-	// 				title: 'Лицензии AIRNET',
+	// 				title:{ru: 'Лицензии AIRNET',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.SITEPAD,
-	// 				title: 'Конструктор сайтов SitePad',
+	// 				title:{ru: 'Конструктор сайтов SitePad',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.ANTIVIRUS,
-	// 				title: 'Антивирус для сайта',
+	// 				title:{ru: 'Антивирус для сайта',uz:""},
 	// 			},
 	// 		],
 	// 	},
 	// 	{
-	// 		title: 'Клиентам',
+	// 		title:{ru: 'Клиентам',uz:""},
 	// 		children: [
 	// 			{
 	// 				link: LINKS.ABOUT,
-	// 				title: 'О компании',
+	// 				title:{ru: 'О компании',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.CONTACTS,
-	// 				title: 'Контакты',
+	// 				title:{ru: 'Контакты',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.FAQ,
-	// 				title: 'Документы',
+	// 				title:{ru: 'Документы',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.BLOG,
-	// 				title: 'Блог',
+	// 				title:{ru: 'Блог',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.REVIEWS,
-	// 				title: 'Отзывы',
+	// 				title:{ru: 'Отзывы',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.LOYALS,
-	// 				title: 'Программа лояльности',
+	// 				title:{ru: 'Программа лояльности',uz:""},
 	// 			},
 	// 		],
 	// 	},
 	// 	{
-	// 		title: 'Партнёрам',
+	// 		title:{ru: 'Партнёрам',uz:""},
 	// 		children: [
 	// 			{
 	// 				link: LINKS.PARTNERS,
-	// 				title: 'Реферальная программа',
+	// 				title:{ru: 'Реферальная программа',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.RESELLING,
-	// 				title: 'Программа реселлинга',
+	// 				title:{ru: 'Программа реселлинга',uz:""},
 	// 			},
 	// 		],
 	// 	},
 	// 	{
-	// 		title: 'Помощь',
+	// 		title:{ru: 'Помощь',uz:""},
 	// 		children: [
 	// 			{
 	// 				link: LINKS.HELP,
-	// 				title: 'База знаний',
+	// 				title:{ru: 'База знаний',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.SUPPORT,
-	// 				title: 'Служба поддержки',
+	// 				title:{ru: 'Служба поддержки',uz:""},
 	// 			},
 	// 			{
 	// 				link: LINKS.AUTO_PAY,
-	// 				title: 'Автоплатёж',
+	// 				title:{ru: 'Автоплатёж',uz:""},
 	// 			},
 	// 		],
 	// 	},
@@ -391,12 +407,12 @@ export default function Footer({ language }) {
 							<li
 								className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__li__vps}`}
 							>
-								<h3>{vps_vds.title}</h3>
+								<h3>{vps_vds.title[language]}</h3>
 								<ul>
 									{vps_vds.children.map((i) => (
 										<li key={i.link}>
 											<Link href={i.link}>
-												<a>{i.title}</a>
+												<a>{i.title[language]}</a>
 											</Link>
 										</li>
 									))}
@@ -405,12 +421,12 @@ export default function Footer({ language }) {
 							<li
 								className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__li__uslugi}`}
 							>
-								<h3>{uslugi.title}</h3>
+								<h3>{uslugi.title[language]}</h3>
 								<ul>
 									{uslugi.children.map((i) => (
 										<li key={i.link}>
 											<Link href={i.link}>
-												<a>{i.title}</a>
+												<a>{i.title[language]}</a>
 											</Link>
 										</li>
 									))}
@@ -420,12 +436,12 @@ export default function Footer({ language }) {
 								<li
 									className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__div__clients}`}
 								>
-									<h3>{clients.title}</h3>
+									<h3>{clients.title[language]}</h3>
 									<ul>
 										{clients.children.map((i) => (
 											<li key={i.link}>
 												<Link href={i.link}>
-													<a>{i.title}</a>
+													<a>{i.title[language]}</a>
 												</Link>
 											</li>
 										))}
@@ -434,12 +450,12 @@ export default function Footer({ language }) {
 								<li
 									className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__div__partners}`}
 								>
-									<h3>{partners.title}</h3>
+									<h3>{partners.title[language]}</h3>
 									<ul>
 										{partners.children.map((i) => (
 											<li key={i.link}>
 												<Link href={i.link}>
-													<a>{i.title}</a>
+													<a>{i.title[language]}</a>
 												</Link>
 											</li>
 										))}
@@ -449,19 +465,19 @@ export default function Footer({ language }) {
 							<li
 								className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__li__help}`}
 							>
-								<h3>{help.title}</h3>
+								<h3>{help.title[language]}</h3>
 								<ul>
 									{help.children.map((i) => (
 										<li key={i.link}>
 											<Link href={i.link}>
-												<a>{i.title}</a>
+												<a>{i.title[language]}</a>
 											</Link>
 										</li>
 									))}
 								</ul>
 								<br />
 								<div className={st.footer__block__head__payment}>
-									<h6>Принимаем к оплате</h6>
+									<h6>{langData.buy[language]}</h6>
 									<ul>
 										{payment.map((item) => (
 											<li key={item.link}>
@@ -477,7 +493,7 @@ export default function Footer({ language }) {
 										))}
 									</ul>
 									<Link href={LINKS.PAYMENT}>
-										<a>Смотреть все способы</a>
+										<a>{langData.method[language]}</a>
 									</Link>
 								</div>
 							</li>
@@ -487,10 +503,10 @@ export default function Footer({ language }) {
 				<div className={st.footer__bottom}>
 					<span>Copyright © 2018 — 2022 OOO «AIRNET»</span>
 					<Link href={LINKS.PRIVACY_POLICY}>
-						<a>Политика конфиденциальности</a>
+						<a>{langData.privacy[language]}</a>
 					</Link>
 					<Link href={LINKS.HOME}>
-						<a>Сайт разработан AIRNET</a>
+						<a>{langData.worked[language]}</a>
 					</Link>
 				</div>
 			</Container>
