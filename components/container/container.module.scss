@@ -1,7 +1,7 @@
 $white: #fff;
 
 .container {
-	width: 1200px;
+	width: 1250px;
 	padding: 40px 0;
 	margin: 0 auto;
 
@@ -38,7 +38,7 @@ $white: #fff;
 		}
 	}
 
-	@media (max-width: 1240px) {
+	@media (max-width: 1270px) {
 		width: 1150px;
 
 		&__bg {

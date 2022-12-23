@@ -5,6 +5,7 @@ import Header from "../components/header";
 import "../styles/globals.scss";
 import { useEffect } from "react";
 import Cookies from "../components/cookies";
+import { useRouter } from "next/router";
 // import i18n from 'i18next'
 // import {initReactI18next} from 'react-i18next'
 
@@ -15,16 +16,26 @@ import Cookies from "../components/cookies";
 // })
 
 function MyApp({ Component, pageProps }) {
+	const router = useRouter(),
+		language = router.pathname.includes("/uz") ? "uz" : "ru";
+
+	console.log(router.pathname);
+
 	return (
 		<>
 			<Head>
 				<title>
-					Airnet.uz - Виртуальный хостинг в TAS-IX, домена в зоне UZ, VDS/VPS - сервера, Ташкент,
-					Узбекистане
+					{language === "uz"
+						? "Airnet.uz - TAS-IXda virtual xosting, UZ zonasida domen, VDS/VPS - serverlar, Toshkent, O'zbekiston"
+						: "Airnet.uz - Виртуальный хостинг в TAS-IX, домена в зоне UZ, VDS/VPS - сервера, Ташкент,	Узбекистане"}
 				</title>
 				<meta
 					name="description"
-					content="Виртуальный хостинг, хостинг в Ташкенте, реселлинг хостинга, дешевые VDS, VPS-сервера, VDS в Ташкенте, виртуальные сервера, выделенные сервера, доменные имена"
+					content={
+						language === "uz"
+							? "Virtual xosting, Toshkentda xosting, qayta sotish hosting, arzon VDS, VPS serverlar, Toshkentda VDS, virtual serverlar, ajratilgan serverlar, domen nomlari"
+							: "Виртуальный хостинг, хостинг в Ташкенте, реселлинг хостинга, дешевые VDS, VPS-сервера, VDS в Ташкенте, виртуальные сервера, выделенные сервера, доменные имена"
+					}
 				/>
 				<link rel="shortcut icon" href="/favicon.png" />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -154,12 +165,12 @@ function MyApp({ Component, pageProps }) {
 				href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
 				rel="stylesheet"
 			/>
-			<Header />
+			<Header language={language} />
 			<div className="app">
 				<Component {...pageProps} />
-				<Cookies />
+				<Cookies language={language} />
 			</div>
-			<Footer />
+			<Footer language={language} />
 			<script
 				dangerouslySetInnerHTML={{
 					__html: `window.replainSettings = { id: '5f7300e1-1747-4afc-ae3f-6b8478c6ce3e' };

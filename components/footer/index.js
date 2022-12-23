@@ -4,7 +4,18 @@ import st from "./footer.module.scss";
 import Link from "next/dist/client/link";
 import { LOGO } from "../utils";
 
-export default function Footer() {
+export default function Footer({ language }) {
+	const langData = {
+		workTime: {
+			ru: "Звонок круглосуточно",
+			uz: "24/7 aloqadamiz",
+		},
+		join: {
+			ru: "Присоединяйтесь",
+			uz: "Ulanish",
+		},
+	};
+
 	const social = [
 			{
 				link: "https://t.me/airnetuzb",
@@ -360,10 +371,10 @@ export default function Footer() {
 						</div>
 						<div className={st.footer__block__head__phone}>
 							<a href={LINKS.PHONE}>+998 (71) 200-87-00</a>
-							<p>Звонок круглосуточно</p>
+							<p>{langData.workTime[language]}</p>
 						</div>
 						<div className={st.footer__block__head__social}>
-							<h6>Присоединяйтесь</h6>
+							<h6>{langData.join[language]}</h6>
 							<ul>
 								{social.map((item) => (
 									<li key={item.link}>

@@ -179,7 +179,7 @@ $gray: #c2c2c2;
 		}
 	}
 
-	@media (max-width: 1240px) {
+	@media (max-width: 1270px) {
 		&__main {
 			&__nav__item__a {
 				padding: 4px;
@@ -187,7 +187,7 @@ $gray: #c2c2c2;
 		}
 	}
 
-	@media (max-width: 1170px) {
+	@media (max-width: 1270px) {
 		&__main {
 			&__logo {
 				a {
@@ -207,10 +207,8 @@ $gray: #c2c2c2;
 		}
 	}
 
-	@media (max-width: 1040px) {
+	@media (max-width: 1170px) {
 		&__main {
-			height: 70px;
-
 			&__nav {
 				display: none;
 			}
@@ -220,6 +218,12 @@ $gray: #c2c2c2;
 					display: flex;
 				}
 			}
+		}
+	}
+
+	@media (max-width: 1040px) {
+		&__main {
+			height: 70px;
 		}
 	}
 

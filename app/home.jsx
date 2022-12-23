@@ -697,7 +697,7 @@ export default function Home({ language }) {
 
 	return (
 		<>
-			<SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
+			{/* <SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} /> */}
 			<Product />
 			<CustomSwiper language={language} />
 			<WhyBlock title={langData.whyBlockTitle[language]} content={content} language={language} />

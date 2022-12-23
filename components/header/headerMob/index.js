@@ -1,8 +1,8 @@
-import st from './headerMob.module.scss';
-import Link from 'next/dist/client/link';
-import { useEffect } from 'react';
+import st from "./headerMob.module.scss";
+import Link from "next/dist/client/link";
+import { useEffect } from "react";
 
-export default function HeaderMob({ isOpen, setIsOpen, menu }) {
+export default function HeaderMob({ isOpen, setIsOpen, menu, language }) {
 	useEffect(() => {
 		let icon = document.querySelectorAll(`.${st.headerMob__block__icon}`);
 		let coll = document.querySelectorAll(`.${st.headerMob__collapse}`);
@@ -10,7 +10,7 @@ export default function HeaderMob({ isOpen, setIsOpen, menu }) {
 
 		for (i = 0; i < icon.length; i++) {
 			((j) =>
-				icon[j].addEventListener('click', function () {
+				icon[j].addEventListener("click", function () {
 					icon[j].classList.toggle(st.headerMob__block__icon__active);
 					coll[j].classList.toggle(st.headerMob__collapse__active);
 				}))(i);
@@ -22,10 +22,10 @@ export default function HeaderMob({ isOpen, setIsOpen, menu }) {
 			<ul>
 				{menu.map((item) =>
 					item?.children ? (
-						<li key={item.title}>
+						<li key={item.title[language]}>
 							<div className={st.headerMob__block}>
 								<Link href={item.link}>
-									<a onClick={() => setIsOpen(false)}>{item.title}</a>
+									<a onClick={() => setIsOpen(false)}>{item.title[language]}</a>
 								</Link>
 								<span className={st.headerMob__block__icon}>
 									<svg
@@ -33,29 +33,31 @@ export default function HeaderMob({ isOpen, setIsOpen, menu }) {
 										width="12"
 										height="8"
 										viewBox="0 0 12 8"
-										fill="none">
+										fill="none"
+									>
 										<path
 											d="M11.3359 1.33366L6.0026 6.66699L0.669271 1.33366"
 											stroke="#F8F8F8"
 											strokeLinecap="round"
-											strokeLinejoin="round"></path>
+											strokeLinejoin="round"
+										></path>
 									</svg>
 								</span>
 							</div>
 							<ul className={st.headerMob__collapse}>
 								{item.children.map((link) => (
-									<li key={link.title}>
+									<li key={link.title[language]}>
 										<Link href={link.link}>
-											<a onClick={() => setIsOpen(false)}>{link.title}</a>
+											<a onClick={() => setIsOpen(false)}>{link.title[language]}</a>
 										</Link>
 									</li>
 								))}
 							</ul>
 						</li>
 					) : (
-						<li key={item.title}>
+						<li key={item.title[language]}>
 							<Link href={item.link}>
-								<a onClick={() => setIsOpen(false)}>{item.title}</a>
+								<a onClick={() => setIsOpen(false)}>{item.title[language]}</a>
 							</Link>
 						</li>
 					)
