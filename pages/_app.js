@@ -167,7 +167,7 @@ function MyApp({ Component, pageProps }) {
 			/>
 			<Header language={language} />
 			<div className="app">
-				<Component {...pageProps} />
+				<Component {...pageProps} language={language} />
 				<Cookies language={language} />
 			</div>
 			<Footer language={language} />
