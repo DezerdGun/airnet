@@ -185,7 +185,7 @@ export default function Footer({ language }) {
 			],
 		},
 		clients = {
-			title: { ru: "Клиентам", uz: "Mijoszal uchun" },
+			title: { ru: "Клиентам", uz: "Mijozlar uchun" },
 			children: [
 				{
 					link: LINKS.ABOUT,
@@ -197,11 +197,11 @@ export default function Footer({ language }) {
 				},
 				{
 					link: LINKS.DOCUMENTS,
-					title: { ru: "Документы", uz: "Dokumentlar" },
+					title: { ru: "Документы", uz: "Xujjatlar" },
 				},
 				{
 					link: LINKS.BLOG,
-					title: { ru: "Блог", uz: "Blok" },
+					title: { ru: "Блог", uz: "Blog" },
 				},
 				{
 					link: LINKS.REVIEWS,
@@ -218,7 +218,7 @@ export default function Footer({ language }) {
 			children: [
 				{
 					link: LINKS.HELP,
-					title: { ru: "База знаний", uz: "Bililar bazasi" },
+					title: { ru: "База знаний", uz: "Bilimlar bazasi" },
 				},
 				{
 					link: LINKS.SUPPORT,
