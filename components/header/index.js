@@ -10,83 +10,91 @@ import { LOGO } from "../utils";
 export default function Header({ language }) {
 	const menu = [
 			{
-				title: { ru: "Хостинг", uz: "Xosting" },
+				title: { ru: "Хостинг", uz: "Xosting", en: "Hosting" },
 				link: LINKS.HOSTING,
 			},
 			{
-				title: { ru: "Серверы", uz: "Serverlar" },
+				title: { ru: "Серверы", uz: "Serverlar", en: "Servers" },
 				link: LINKS.SERVERS,
 			},
 			{
-				title: { ru: "VPS и VDS серверы", uz: "VPS va VDS serverlari" },
+				title: { ru: "VPS и VDS серверы", uz: "VPS va VDS serverlari", en: "VPS and VDS servers" },
 				link: LINKS.VPS_VDS,
 				children: [
 					{
-						title: { ru: "Бюджетные серверы", uz: "Byudjet serverlari" },
+						title: { ru: "Бюджетные серверы", uz: "Byudjet serverlari", en: "Budget Servers" },
 						link: LINKS.CHEAP_VDS,
 					},
 					{
-						title: { ru: "Оптимальные серверы", uz: "Optimal serverlar" },
+						title: { ru: "Оптимальные серверы", uz: "Optimal serverlar", en: "Optimal Servers" },
 						link: LINKS.OPTIMAL_VDS,
 					},
 					{
-						title: { ru: "Высокопроизводительные серверы", uz: "Yuqori unumdor serverlar" },
+						title: {
+							ru: "Высокопроизводительные серверы",
+							uz: "Yuqori unumdor serverlar",
+							en: "High Performance Servers",
+						},
 						link: LINKS.BIG_VDS,
 					},
 				],
 			},
 			{
-				title: { ru: "Домены", uz: "Domenlar" },
+				title: { ru: "Домены", uz: "Domenlar", en: "Domains" },
 				link: LINKS.DOMAINS,
 			},
 			{
-				title: { ru: "SSL", uz: "SSL" },
+				title: { ru: "SSL", uz: "SSL", en: "SSL" },
 				link: LINKS.SSL,
 			},
 			{
-				title: { ru: "Лицензии", uz: "Litsenziyalar" },
+				title: { ru: "Лицензии", uz: "Litsenziyalar", en: "Licenses" },
 				link: LINKS.LICENSE,
 			},
 
 			{
-				title: { ru: "О сервисе", uz: "Xizmat haqida" },
+				title: { ru: "О сервисе", uz: "Xizmat haqida", en: "About service" },
 				link: LINKS.ABOUT,
 				className: "sec",
 				children: [
 					{
-						title: { ru: "Администрирование", uz: "Ma'muriyat" },
+						title: { ru: "Администрирование", uz: "Ma'muriyat", en: "Administration" },
 						link: LINKS.ADMINISTRATION,
 					},
 					{
-						title: { ru: "Реселлинг", uz: "Qayta sotish" },
+						title: { ru: "Реселлинг", uz: "Qayta sotish", en: "Reselling" },
 						link: LINKS.RESELLING,
 					},
 					{
-						title: { ru: "Блог", uz: "Blog" },
+						title: { ru: "Блог", uz: "Blog", en: "Blog" },
 						link: LINKS.BLOG,
 					},
 					{
-						title: { ru: "Акции", uz: "Aksiya" },
+						title: { ru: "Акции", uz: "Aksiya", en: "Stocks" },
 						link: LINKS.STOCK,
 					},
 					{
-						title: { ru: "FAQ", uz: "FAQ" },
+						title: { ru: "FAQ", uz: "FAQ", en: "FAQ" },
 						link: LINKS.FAQ,
 					},
 					{
-						title: { ru: "Оплата", uz: "To'lov" },
+						title: { ru: "Оплата", uz: "To'lov", en: "Payment" },
 						link: LINKS.PAYMENT,
 					},
 					{
-						title: { ru: "Поддержка", uz: "Qo'llab-quvvatlash" },
+						title: { ru: "Поддержка", uz: "Qo'llab-quvvatlash", en: "Support" },
 						link: LINKS.SUPPORT,
 					},
 					{
-						title: { ru: "+998(71) 200-87-00", uz: "+998(71) 200-87-00" },
+						title: { ru: "+998(71) 200-87-00", uz: "+998(71) 200-87-00", en: "+998(71) 200-87-00" },
 						link: LINKS.PHONE,
 					},
 					{
-						title: { ru: "+998(90) 324-30-80 (телеграм)", uz: "+998(90) 324-30-80 (telegram)" },
+						title: {
+							ru: "+998(90) 324-30-80 (телеграм)",
+							uz: "+998(90) 324-30-80 (telegram)",
+							en: "+998(90) 324-30-80 (telegram)",
+						},
 						link: LINKS.TELEGRAM,
 					},
 				],
@@ -98,6 +106,7 @@ export default function Header({ language }) {
 		enter: {
 			ru: "Вход и регистрация",
 			uz: "Kirish va ro'yxatdan o'tish",
+			en: "Login and registration",
 		},
 	};
 

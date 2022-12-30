@@ -8,10 +8,12 @@ const Drop = ({ item, index, show, setShow, isTarifCard, language }) => {
 		sum: {
 			ru: "сум",
 			uz: "so'm",
+			en: "sum",
 		},
 		sumV: {
 			ru: "сум в",
 			uz: "so'mda",
+			en: "sum in",
 		},
 	};
 
@@ -62,6 +64,8 @@ const Drop = ({ item, index, show, setShow, isTarifCard, language }) => {
 						<span>
 							{language === "uz" ? (
 								<>{el.dateOff.uz} ga to'lov</>
+							) : language === "en" ? (
+								<>when paying for {el.dateOff.ru}</>
 							) : (
 								<>при оплате за {el.dateOff.ru}</>
 							)}

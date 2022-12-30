@@ -6,50 +6,62 @@ export default function TarifCard({ index, tarif, show, setShow, language }) {
 		yader: {
 			ru: "ядер",
 			uz: "yadroli",
+			en: "cores",
 		},
 		yadra: {
 			ru: "ядра",
 			uz: "yadroli",
+			en: "cores",
 		},
 		gb: {
 			ru: "ГБ",
 			uz: "GB",
+			en: "GB",
 		},
 		os: {
 			ru: "ОС",
 			uz: "OT",
+			en: "OS",
 		},
 		winOrLin: {
 			ru: "Windows или Linux",
 			uz: "Windows yoki Linux",
+			en: "Windows or Linux",
 		},
 		ip: {
 			ru: "IP адресов",
 			uz: "IP manzillar",
+			en: "IP addresses",
 		},
 		virtual: {
 			ru: "Виртуализация",
 			uz: "Virtualizatsiya",
+			en: "Virtualization",
 		},
 		address: {
 			ru: "1 адрес",
 			uz: "1 manzil",
+			en: "1 address",
 		},
 		channel: {
 			ru: "Канал",
 			uz: "Kanal",
+			en: "Channel",
 		},
 		speed: {
 			ru: "Мбит/сек",
 			uz: "Mbit/s",
+			en: "Mbps",
 		},
 		gigSpeed: {
 			ru: "Гбит/сек",
 			uz: "Gbit/s",
+			en: "Gbps",
 		},
 		order: {
 			ru: "Заказать сервер",
 			uz: "Buyurtma berish",
+			en: "Order a server",
 		},
 	};
 
