@@ -65,7 +65,7 @@ const Drop = ({ item, index, show, setShow, isTarifCard, language }) => {
 							{language === "uz" ? (
 								<>{el.dateOff.uz} ga to'lov</>
 							) : language === "en" ? (
-								<>when paying for {el.dateOff.ru}</>
+								<>when paying for {el.dateOff.en}</>
 							) : (
 								<>при оплате за {el.dateOff.ru}</>
 							)}

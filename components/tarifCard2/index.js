@@ -6,42 +6,52 @@ export default function TarifCard2({ index, tarif, show, setShow, language }) {
 		mb: {
 			ru: "МБ",
 			uz: "MB",
+			en: "MB",
 		},
 		count: {
 			ru: "Кол-во сайтов",
 			uz: "Saytlar soni",
+			en: "Number of sites",
 		},
 		free: {
 			ru: "Бесплатно",
 			uz: "Bepul",
+			en: "Free",
 		},
 		domen: {
 			ru: "Домен .UZ",
 			uz: ".Uz domeni",
+			en: "Domain .UZ",
 		},
 		present: {
 			ru: "В Подарок",
 			uz: "Sovg'a sifatida",
+			en: "As a gift",
 		},
 		obyom: {
 			ru: "Объем трафика",
 			uz: "Trafik hajmi",
+			en: "Traffic volume",
 		},
 		channel: {
 			ru: "Канал",
 			uz: "Kanal",
+			en: "Channel",
 		},
 		speed: {
 			ru: "Мбит/сек",
 			uz: "Mbit/s",
+			en: "Mbps",
 		},
 		gigSpeed: {
 			ru: "Гбит/сек",
 			uz: "Gbit/s",
+			en: "Gbps",
 		},
 		order: {
 			ru: "Заказать хостинг",
 			uz: "Buyurtma berish",
+			en: "Order hosting",
 		},
 	};
 

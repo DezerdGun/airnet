@@ -29,6 +29,7 @@ export default function Trust({ language }) {
 		title: {
 			ru: "Нам доверяют",
 			uz: "Bizga ishonishadi",
+			en: "We are trusted",
 		},
 	};
 

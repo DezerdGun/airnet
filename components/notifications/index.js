@@ -30,6 +30,16 @@ const content = [
 					<p>NNO TsVSPD &quot;TAS-IX&quot; yuzaga kelgan noqulayliklar uchun uzr so'raydi.</p>
 				</>
 			),
+			en: (
+				<>
+					<p>
+						In connection with the emergency situation on the network of NNO TsVPD
+						&quot;TAS-IX&quot; 02/15/2022 from 00:30 by 10:00 (TSK) there could be deterioration in
+						quality and interruptions in the provision of services TAS-IX networks.
+					</p>
+					<p>NNO TsVSPD &quot;TAS-IX&quot; apologizes for the inconvenience caused.</p>
+				</>
+			),
 		},
 	},
 	{
@@ -54,6 +64,16 @@ const content = [
 						vaqtinchalik xizmat ko'rsatilmasligi mumkin.
 					</p>
 					<p>Yuzilgan noqulayliklar uchun uzr so'raymiz.</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+						In connection with preventive work at the higher partner on the TAS-IX network,
+						02/12/2022, from 10:00 to 15:00, there may be a temporary lack of service in the network
+						TAS-IX.
+					</p>
+					<p>We apologize for the inconvenience.</p>
 				</>
 			),
 		},
@@ -88,6 +108,20 @@ const content = [
 					</p>
 				</>
 			),
+			en: (
+				<>
+					<p>
+						On the telecommunications network of AIRNET LLC on January 13, 2022 (from 21:00 to 01:30
+						a.m.) at due to spam attacks and doss attacks there were technical failures in access to
+						services companies.
+					</p>
+					<p>
+						During this period, short-term interruptions in communication and deterioration in the
+						quality were observed. provided fixed communication services on the network of "AIRNET"
+						LLC.
+					</p>
+				</>
+			),
 		},
 	},
 ];
@@ -97,6 +131,7 @@ export default function Notifications({ language }) {
 		title: {
 			ru: "Оповещения",
 			uz: "Ogohlantirishlar",
+			en: "Notifications",
 		},
 	};
 
