@@ -1,215 +1,225 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 // import InputRange from 'react-input-range';
-import Container from '../container';
-import st from './calculator.module.scss';
+import Container from "../container";
+import st from "./calculator.module.scss";
 // import 'react-input-range/lib/css/index.css';
-import { Range } from 'react-range';
+import { Range } from "react-range";
 
 const calcSpeed = [
 	{
-		id: 'unlim-25',
-		title: 'Unlim 25M',
+		id: "unlim-25",
+		title: "Unlim 25M",
 		price: 500000,
 	},
 	{
-		id: 'unlim-50',
-		title: 'Unlim 50M',
+		id: "unlim-50",
+		title: "Unlim 50M",
 		price: 1000000,
 	},
 	{
-		id: 'unlim-100',
-		title: 'Unlim 100M',
+		id: "unlim-100",
+		title: "Unlim 100M",
 		price: 2000000,
 	},
 ];
 
-export default function Calculator() {
+export default function Calculator({ language }) {
 	const [state, setState] = useState({
 			core: 2,
 			ram: 2,
 			ssd: 20,
-			os: 'Ubuntu',
-			osVersion: '18.04',
+			os: "Ubuntu",
+			osVersion: "18.04",
 			speed: calcSpeed[0].title,
-			administration: 'Нет',
+			administration: "Нет",
 		}),
 		[position, setPosition] = useState({ top: 0 }),
 		[calcOS, setCalcOS] = useState([
 			{
-				id: 'ubuntu',
+				id: "ubuntu",
 				selected: true,
-				title: 'Ubuntu',
-				img: '/',
+				title: "Ubuntu",
+				img: "/",
 				versions: [
 					{
 						selected: true,
-						title: '18.04',
+						title: "18.04",
 						po: [
-							'not',
-							'lamp',
-							'lemp',
-							'django',
-							'isp6lite',
-							'isp6pro',
-							'isp6host',
-							'openvpn',
-							'team',
-							'tomcat',
+							"not",
+							"lamp",
+							"lemp",
+							"django",
+							"isp6lite",
+							"isp6pro",
+							"isp6host",
+							"openvpn",
+							"team",
+							"tomcat",
 						],
 					},
 					{
-						title: '20.04',
-						po: ['not', 'lamp', 'lemp', 'isp6lite', 'isp6pro', 'isp6host', 'openvpn'],
+						title: "20.04",
+						po: ["not", "lamp", "lemp", "isp6lite", "isp6pro", "isp6host", "openvpn"],
 					},
 					{
-						title: '22.04',
-						po: ['not', 'isp6lite', 'isp6pro', 'isp6host'],
+						title: "22.04",
+						po: ["not", "isp6lite", "isp6pro", "isp6host"],
 					},
 				],
 			},
 			{
-				id: 'centos',
+				id: "centos",
 				selected: false,
-				title: 'CentOS',
-				img: '/',
+				title: "CentOS",
+				img: "/",
 				versions: [
 					{
 						selected: true,
-						title: '7',
+						title: "7",
 						po: [
-							'not',
-							'lamp',
-							'1c',
-							'django',
-							'isp6lite',
-							'isp6pro',
-							'isp6host',
-							'openvpn',
-							'team',
-							'tomcat',
-							'bitrix24',
+							"not",
+							"lamp",
+							"1c",
+							"django",
+							"isp6lite",
+							"isp6pro",
+							"isp6host",
+							"openvpn",
+							"team",
+							"tomcat",
+							"bitrix24",
 						],
 					},
 				],
 			},
 			{
-				id: 'alma',
+				id: "alma",
 				selected: false,
-				title: 'Alma',
-				img: '/',
+				title: "Alma",
+				img: "/",
 				versions: [
 					{
 						selected: true,
-						title: '8',
+						title: "8",
 						po: [
-							'not',
-							'lamp',
-							'lemp',
-							'django',
-							'isp6lite',
-							'isp6pro',
-							'isp6host',
-							'openvpn',
-							'redmine',
-							'team',
-							'tomcat',
+							"not",
+							"lamp",
+							"lemp",
+							"django",
+							"isp6lite",
+							"isp6pro",
+							"isp6host",
+							"openvpn",
+							"redmine",
+							"team",
+							"tomcat",
 						],
 					},
 					{
-						title: '9',
-						po: ['not'],
+						title: "9",
+						po: ["not"],
 					},
 				],
 			},
 			{
-				id: 'rocky',
+				id: "rocky",
 				selected: false,
-				title: 'Rocky',
-				img: '/',
+				title: "Rocky",
+				img: "/",
 				versions: [
 					{
 						selected: true,
-						title: '8',
-						po: ['not', 'lamp', 'lemp', 'django', 'openvpn', 'redmine', 'team', 'tomcat'],
+						title: "8",
+						po: ["not", "lamp", "lemp", "django", "openvpn", "redmine", "team", "tomcat"],
 					},
 					{
-						title: '9',
-						po: ['not'],
-					},
-				],
-			},
-			{
-				id: 'oracle',
-				selected: false,
-				title: 'Oracle',
-				img: '/',
-				versions: [
-					{
-						selected: true,
-						title: '8',
-						po: ['not', 'lamp', 'lemp', 'django', 'openvpn', 'redmine', 'team', 'tomcat'],
+						title: "9",
+						po: ["not"],
 					},
 				],
 			},
 			{
-				id: 'debian',
+				id: "oracle",
 				selected: false,
-				title: 'Debian',
-				img: '/',
+				title: "Oracle",
+				img: "/",
 				versions: [
 					{
 						selected: true,
-						title: '10',
+						title: "8",
+						po: ["not", "lamp", "lemp", "django", "openvpn", "redmine", "team", "tomcat"],
+					},
+				],
+			},
+			{
+				id: "debian",
+				selected: false,
+				title: "Debian",
+				img: "/",
+				versions: [
+					{
+						selected: true,
+						title: "10",
 						po: [
-							'not',
-							'lamp',
-							'lemp',
-							'isp6lite',
-							'isp6pro',
-							'isp6host',
-							'openvpn',
-							'redmine',
-							'team',
-							'tomcat',
+							"not",
+							"lamp",
+							"lemp",
+							"isp6lite",
+							"isp6pro",
+							"isp6host",
+							"openvpn",
+							"redmine",
+							"team",
+							"tomcat",
 						],
 					},
 					{
-						title: '11',
-						po: ['not', 'lamp', 'lemp', 'isp6lite', 'isp6pro', 'isp6host', 'openvpn', 'team', 'tomcat'],
+						title: "11",
+						po: [
+							"not",
+							"lamp",
+							"lemp",
+							"isp6lite",
+							"isp6pro",
+							"isp6host",
+							"openvpn",
+							"team",
+							"tomcat",
+						],
 					},
 				],
 			},
 			{
-				id: 'free',
+				id: "free",
 				selected: false,
-				title: 'FreeBSD',
-				img: '/',
+				title: "FreeBSD",
+				img: "/",
 				versions: [
 					{
 						selected: true,
-						title: '12',
-						po: ['not'],
+						title: "12",
+						po: ["not"],
 					},
 					{
-						title: '13',
-						po: ['not'],
+						title: "13",
+						po: ["not"],
 					},
 				],
 			},
 			{
-				id: 'windows',
+				id: "windows",
 				selected: false,
-				title: 'Windows',
-				img: '/',
+				title: "Windows",
+				img: "/",
 				versions: [
 					{
 						selected: true,
-						title: '2019',
-						po: ['not'],
+						title: "2019",
+						po: ["not"],
 					},
 					{
-						title: '2022',
-						po: ['not'],
+						title: "2022",
+						po: ["not"],
 					},
 				],
 			},
@@ -218,24 +228,24 @@ export default function Calculator() {
 	const [isFixed, setIsFixed] = useState(false);
 
 	const scroll = () => {
-		const content = document.querySelector('#content'),
-			result = document.querySelector('#result');
+		const content = document.querySelector("#content"),
+			result = document.querySelector("#result");
 
 		if (document.body.clientWidth > 770) {
 			if (window.pageYOffset >= 32) {
 				setIsFixed(true);
 
 				if (window.pageYOffset > content.clientHeight - result.clientHeight + 32) {
-					setPosition({ top: 'unset', bottom: 0 });
+					setPosition({ top: "unset", bottom: 0 });
 				} else {
 					setPosition({ top: `${window.pageYOffset + 10}px` });
 				}
 			} else setIsFixed(false);
-		} else document.removeEventListener('scroll', scroll);
+		} else document.removeEventListener("scroll", scroll);
 	};
 
 	useEffect(() => {
-		document.addEventListener('scroll', scroll);
+		document.addEventListener("scroll", scroll);
 	}, []);
 
 	return (
@@ -352,9 +362,10 @@ export default function Calculator() {
 					<div
 						id="result"
 						className={`${st.calculator__block__result} ${
-							isFixed ? st.calculator__block__result__absolute : ''
+							isFixed ? st.calculator__block__result__absolute : ""
 						}`}
-						style={position}>
+						style={position}
+					>
 						<div className={st.calculator__block__result__header}>
 							<div>VDS Форсаж</div>
 							<a href="#">Поделиться</a>
@@ -378,7 +389,7 @@ export default function Calculator() {
 											state.ram * 30000 +
 											state.ssd * 1000 +
 											calcSpeed.find((item) => item.title === state.speed).price
-									)}{' '}
+									)}{" "}
 									<span>
 										сум
 										<hr />
@@ -431,11 +442,12 @@ const CalcInput = ({ text, step, min, max, name, state, setState }) => {
 							{...props}
 							style={{
 								...props.style,
-								height: '16px',
-								width: '100%',
-								borderRadius: '10px',
-								backgroundColor: '#c2c2c2',
-							}}>
+								height: "16px",
+								width: "100%",
+								borderRadius: "10px",
+								backgroundColor: "#c2c2c2",
+							}}
+						>
 							{children}
 						</div>
 					)}
@@ -444,11 +456,11 @@ const CalcInput = ({ text, step, min, max, name, state, setState }) => {
 							{...props}
 							style={{
 								...props.style,
-								height: '24px',
-								width: '24px',
-								border: '8px solid #006a4d',
-								borderRadius: '50%',
-								backgroundColor: '#fff',
+								height: "24px",
+								width: "24px",
+								border: "8px solid #006a4d",
+								borderRadius: "50%",
+								backgroundColor: "#fff",
 							}}
 						/>
 					)}
@@ -478,8 +490,9 @@ const CalcSystem = ({ data, setData, state, setState }) => {
 					className={`${st.calculator__block__item__category__content__system__item} ${
 						state.os === item.title
 							? st.calculator__block__item__category__content__system__item__active
-							: ''
-					}`}>
+							: ""
+					}`}
+				>
 					<div
 						className={st.calculator__block__item__category__content__system__item__title}
 						onClick={() => {
@@ -491,7 +504,8 @@ const CalcSystem = ({ data, setData, state, setState }) => {
 									osVersion: item.versions[show.ver].title,
 								}));
 							}
-						}}>
+						}}
+					>
 						{item.title}
 					</div>
 					<div
@@ -501,7 +515,8 @@ const CalcSystem = ({ data, setData, state, setState }) => {
 								setShow((prev) =>
 									prev.index === i ? { ...prev, show: !prev.show } : { index: i, show: true }
 								);
-						}}>
+						}}
+					>
 						<CalcSystemVersions
 							index={i}
 							show={show}
@@ -540,10 +555,11 @@ const CalcSystemVersions = ({ index, show, setShow, state, setState, data, setDa
 									os: data.title,
 									osVersion: data.versions[i].title,
 									ver: i,
-									po: 'Не выбрано',
+									po: "Не выбрано",
 								}));
 								setShow((prev) => ({ ...prev, show: false, ver: i }));
-							}}>
+							}}
+						>
 							{el.title}
 						</li>
 					))}
@@ -561,10 +577,11 @@ const CalcSpeed = ({ data, state, setState }) => {
 					className={`${st.calculator__block__item__category__content__po__item} ${
 						item.title === state.speed
 							? st.calculator__block__item__category__content__po__item__active
-							: ''
+							: ""
 					}`}
 					key={item.title}
-					onClick={() => setState((prev) => ({ ...prev, speed: item.title }))}>
+					onClick={() => setState((prev) => ({ ...prev, speed: item.title }))}
+				>
 					{item.title}
 				</div>
 			))}
@@ -577,9 +594,9 @@ const CalcSwitcher = ({ state, setState }) => {
 		<div className={st.calculator__block__item__category__content__switcher}>
 			<div
 				className={`${st.calculator__block__item__category__content__switcher__item} ${
-					state.administration === 'Нет'
+					state.administration === "Нет"
 						? st.calculator__block__item__category__content__switcher__item__active
-						: ''
+						: ""
 				}`}
 				// onClick={() => setState((prev) => ({ ...prev, administration: 'Нет' }))}>
 			>
@@ -587,9 +604,9 @@ const CalcSwitcher = ({ state, setState }) => {
 			</div>
 			<div
 				className={`${st.calculator__block__item__category__content__switcher__item} ${
-					state.administration === 'Да'
+					state.administration === "Да"
 						? st.calculator__block__item__category__content__switcher__item__active
-						: ''
+						: ""
 				}`}
 				// onClick={() => setState((prev) => ({ ...prev, administration: 'Да' }))}>
 			>
@@ -604,7 +621,8 @@ const CalcSelect = ({ title, isChecked }) => {
 		<div
 			className={`${st.calculator__block__item__category__content__select} ${
 				isChecked && st.calculator__block__item__category__content__select__checked
-			}`}>
+			}`}
+		>
 			{title}
 		</div>
 	);
@@ -622,26 +640,26 @@ const CalcInfo = ({ title, value }) => {
 function BeautyNum(Number) {
 	if (!isNaN(Number) && isFinite(Number)) {
 		let string = Number.toString();
-		const arr = string.split('.');
-		let str = '';
+		const arr = string.split(".");
+		let str = "";
 		let count = 0;
-		let temp = '';
+		let temp = "";
 		if (arr[0].length <= 3) return Number;
 		for (let j = arr[0].length - 1; j >= 0; j--) {
 			count++;
 			temp = arr[0][j] + temp;
 			if (count === 3) {
 				if (str.length > 0) {
-					str = temp + ' ' + str;
+					str = temp + " " + str;
 				} else {
 					str = temp;
 				}
-				temp = '';
+				temp = "";
 				count = 0;
 			}
 		}
-		if (temp.length > 0) str = temp + ' ' + str;
-		if (arr.length > 1) str = str + '.' + arr[1].slice(0, 2);
+		if (temp.length > 0) str = temp + " " + str;
+		if (arr.length > 1) str = str + "." + arr[1].slice(0, 2);
 		return str;
 	} else {
 		return 0;
