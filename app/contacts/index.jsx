@@ -1,9 +1,8 @@
-import Container from "../../components/container";
-import Partners from "../../components/partners";
+import Container from "@/components/container";
+import Partners from "@/components/partners";
 import st from "./contacts.module.scss";
 import { YMaps, Map } from "react-yandex-maps";
-import SEO from "../../components/seo";
-import WhyCard from "../../components/whyCard";
+import SEO from "@/components/seo";
 
 const phone = (
 		<span>
@@ -14,20 +13,23 @@ const phone = (
 	),
 	content = [
 		{
-			title: "По всем техническим вопросам:",
+			title: { ru: "По всем техническим вопросам:", uz: "Hamma texnik savollar bo'yicha" },
 			description: <a href="mailto:info@airnet.uz">info@airnet.uz</a>,
 		},
 		{
-			title: "По финансовым, предпродажным и организационным вопросам:",
+			title: {
+				ru: "По финансовым, предпродажным и организационным вопросам:",
+				uz: " Moliyaviy, sotishdan oldingi va tashkiliy masalalar bo'yicha:",
+			},
 			description: <a href="mailto:info@airnet.uz">info@airnet.uz</a>,
 		},
 		{
-			title: "По поводу жалоб и предложений:",
+			title: { ru: "По поводу жалоб и предложений:", uz: "Arizalar va takliflar bo'yicha " },
 			description: <a href="mailto:admin@airnet.uz">admin@airnet.uz</a>,
 		},
 	];
 
-export default function Contacts() {
+export default function Contacts({ language }) {
 	return (
 		<>
 			<SEO title="Контактная информация | Airnet" desc="Контактная информация компании Airnet" />
@@ -89,7 +91,7 @@ export default function Contacts() {
 						referrerpolicy="no-referrer-when-downgrade"
 					></iframe>
 				</Container>
-				<Partners />
+				<Partners language={language} />
 			</div>
 		</>
 	);

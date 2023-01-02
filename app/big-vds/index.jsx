@@ -24,8 +24,8 @@ const block = [
 			description: (
 				<>
 					<p>
-						Активация VDS выполняется от 5 минут до 4-х часов, в зависимости от количества заказов
-						и наличия свободного оборудования.
+						Активация VDS выполняется от 5 минут до 4-х часов, в зависимости от количества заказов и
+						наличия свободного оборудования.
 					</p>
 					<button>
 						<Link href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
@@ -245,7 +245,7 @@ const block = [
 		},
 	];
 
-export default function BigVDS() {
+export default function BigVDS({ language }) {
 	const [show, setShow] = useState(-1);
 
 	useEffect(() => {

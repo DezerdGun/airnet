@@ -1,10 +1,5 @@
-import Calculator from '../../components/calculator';
-import st from './constructorVds.module.scss';
+import ConstructorVds from "@/app/constructor-vds";
 
-export default function ConstructorVds() {
-	return (
-		<div className={st.constructorVds}>
-			<Calculator />
-		</div>
-	);
+export default function ({ language }) {
+	return <ConstructorVds language={language} />;
 }
