@@ -17,9 +17,11 @@ import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
 	const router = useRouter(),
-		language = router.pathname.includes("/uz") ? "uz" : "ru";
-
-	console.log(router.pathname);
+		language = router.pathname.includes("/uz")
+			? "uz"
+			: router.pathname.includes("/en")
+			? "en"
+			: "ru";
 
 	return (
 		<>

@@ -9,26 +9,32 @@ export default function Footer({ language }) {
 		workTime: {
 			ru: "Звонок круглосуточно",
 			uz: "24/7 aloqadamiz",
+			en: "Call around the clock",
 		},
 		join: {
 			ru: "Присоединяйтесь",
 			uz: "Ulanish",
+			en: "Join",
 		},
 		buy: {
 			ru: "Принимаем к оплате",
 			uz: "To'lov usullari",
+			en: "Accept for payment",
 		},
 		method: {
 			ru: "Смотреть все способы",
 			uz: "Barcha usullarni ko'rish",
+			en: "See all ways",
 		},
 		privacy: {
 			ru: "Политика конфиденциальности",
 			uz: "Maxfiylik siyosati",
+			en: "Privacy Policy",
 		},
 		worked: {
 			ru: "Сайт разработан AIRNET",
 			uz: "Veb-sayt AIRNET tomonidan ishlab chiqilgan",
+			en: "Website developed by AIRNET",
 		},
 	};
 
@@ -115,68 +121,80 @@ export default function Footer({ language }) {
 			},
 		],
 		vps_vds = {
-			title: { ru: "VPS и VDS серверы", uz: "VPS va VDS serverlari" },
+			title: { ru: "VPS и VDS серверы", uz: "VPS va VDS serverlari", en: "VPS and VDS servers" },
 			children: [
 				{
 					link: LINKS.CHEAP_VDS,
-					title: { ru: "Бюджетные серверы", uz: "Hamyonbob serverlari" },
+					title: { ru: "Бюджетные серверы", uz: "Hamyonbob serverlari", en: "Budget servers" },
 				},
 				{
 					link: LINKS.OPTIMAL_VDS,
-					title: { ru: "Оптимальные серверы", uz: "Optimal serverlari" },
+					title: { ru: "Оптимальные серверы", uz: "Optimal serverlari", en: "Optimal servers" },
 				},
 				{
 					link: LINKS.BIG_VDS,
-					title: { ru: "Высокопроизводительные серверы", uz: "Yuqori unumdor serverlar" },
+					title: {
+						ru: "Высокопроизводительные серверы",
+						uz: "Yuqori unumdor serverlar",
+						en: "High performance servers",
+					},
 				},
 				{
 					link: LINKS.VDS_1C,
-					title: { ru: "VDS для 1C", uz: "1C uchun VDS" },
+					title: { ru: "VDS для 1C", uz: "1C uchun VDS", en: "VDS for 1C" },
 				},
 				{
 					link: LINKS.VDS_STORAGE,
-					title: { ru: "VDS Storage", uz: "VDS Storage" },
+					title: { ru: "VDS Storage", uz: "VDS Storage", en: "VDS Storage" },
 				},
 				{
 					link: LINKS.VDS_WINDOWS,
-					title: { ru: "VDS для Windows", uz: "Windows uchun VDS" },
+					title: { ru: "VDS для Windows", uz: "Windows uchun VDS", en: "VDS for Windows" },
 				},
 				{
 					link: LINKS.SERVERS,
-					title: { ru: "Выделенные серверы", uz: "Ajratilgan serverlar" },
+					title: { ru: "Выделенные серверы", uz: "Ajratilgan serverlar", en: "Dedicated servers" },
 				},
 			],
 		},
 		uslugi = {
-			title: { ru: "Услуги", uz: "Xizmatlar" },
+			title: { ru: "Услуги", uz: "Xizmatlar", en: "Services" },
 			children: [
 				{
 					link: LINKS.DOMAINS,
-					title: { ru: "Доменные имена", uz: "Domen nomlari" },
+					title: { ru: "Доменные имена", uz: "Domen nomlari", en: "Domain names" },
 				},
 				{
 					link: LINKS.SSL,
-					title: { ru: "SSL-сертификаты", uz: "SSL- sertifekatlari" },
+					title: { ru: "SSL-сертификаты", uz: "SSL-sertifekatlari", en: "SSL-certificates" },
 				},
 				{
 					link: LINKS.ADMINISTRATION,
-					title: { ru: "Администрирование", uz: "Adminstratsiya" },
+					title: { ru: "Администрирование", uz: "Adminstratsiya", en: "Administration" },
 				},
 				{
 					link: LINKS.AUTO_COPY,
-					title: { ru: "Автоматическое резервное копирование", uz: "Avtomatik saqlash" },
+					title: {
+						ru: "Автоматическое резервное копирование",
+						uz: "Avtomatik saqlash",
+						en: "Automatic backup",
+					},
 				},
 				{
 					link: LINKS.ANTI_DDOS,
-					title: { ru: "Защита от DDoS", uz: "DDoS dan himoya" },
+					title: { ru: "Защита от DDoS", uz: "DDoS dan himoya", en: "DDoS protection" },
 				},
 				{
 					link: LINKS.LICENSE,
-					title: { ru: "Лицензии AIRNET", uz: "AIRNET litsenziyasi" },
+					title: { ru: "Лицензии AIRNET", uz: "AIRNET litsenziyasi", en: "AIRNET licenses" },
 				},
 				{
 					link: LINKS.SITEPAD,
-					title: { ru: "Конструктор сайтов SitePad", uz: "SitePad qollanmasi" },
+					title: {
+						ru: "Конструктор сайтов SitePad",
+						uz: "SitePad qollanmasi",
+						en: "SitePad Site Builder",
+					},
 				},
 				// {
 				// 	link: LINKS.ANTIVIRUS,
@@ -185,27 +203,27 @@ export default function Footer({ language }) {
 			],
 		},
 		clients = {
-			title: { ru: "Клиентам", uz: "Mijozlar uchun" },
+			title: { ru: "Клиентам", uz: "Mijozlar uchun", en: "For Clients" },
 			children: [
 				{
 					link: LINKS.ABOUT,
-					title: { ru: "О компании", uz: "Kompaniya haqida" },
+					title: { ru: "О компании", uz: "Kompaniya haqida", en: "About the company" },
 				},
 				{
 					link: LINKS.CONTACTS,
-					title: { ru: "Контакты", uz: "Kontaktlar" },
+					title: { ru: "Контакты", uz: "Kontaktlar", en: "Contacts" },
 				},
 				{
 					link: LINKS.DOCUMENTS,
-					title: { ru: "Документы", uz: "Xujjatlar" },
+					title: { ru: "Документы", uz: "Xujjatlar", en: "Documents" },
 				},
 				{
 					link: LINKS.BLOG,
-					title: { ru: "Блог", uz: "Blog" },
+					title: { ru: "Блог", uz: "Blog", en: "Blog" },
 				},
 				{
 					link: LINKS.REVIEWS,
-					title: { ru: "Отзывы", uz: "Sharhlar" },
+					title: { ru: "Отзывы", uz: "Sharhlar", en: "Reviews" },
 				},
 				// {
 				// 	link: LINKS.LOYALS,
@@ -214,32 +232,36 @@ export default function Footer({ language }) {
 			],
 		},
 		help = {
-			title: { ru: "Помощь", uz: "Yordam" },
+			title: { ru: "Помощь", uz: "Yordam", en: "Help" },
 			children: [
 				{
 					link: LINKS.HELP,
-					title: { ru: "База знаний", uz: "Bilimlar bazasi" },
+					title: { ru: "База знаний", uz: "Bilimlar bazasi", en: "Knowledge base" },
 				},
 				{
 					link: LINKS.SUPPORT,
-					title: { ru: "Служба поддержки", uz: "Qo'llab-quvatlash xizmati" },
+					title: { ru: "Служба поддержки", uz: "Qo'llab-quvatlash xizmati", en: "Support Service" },
 				},
 				{
 					link: LINKS.AUTO_PAY,
-					title: { ru: "Автоплатёж", uz: "Avtoto'lov" },
+					title: { ru: "Автоплатёж", uz: "Avtoto'lov", en: "Auto payment" },
 				},
 			],
 		},
 		partners = {
-			title: { ru: "Партнёрам", uz: "Hamkorlar" },
+			title: { ru: "Партнёрам", uz: "Hamkorlar", en: "Partners" },
 			children: [
 				{
 					link: LINKS.PARTNERS,
-					title: { ru: "Реферальная программа", uz: "Yo'naltirilgan dasturlar" },
+					title: {
+						ru: "Реферальная программа",
+						uz: "Yo'naltirilgan dasturlar",
+						en: "Referral program",
+					},
 				},
 				{
 					link: LINKS.RESELLING,
-					title: { ru: "Программа реселлинга", uz: "Resellar dasturi" },
+					title: { ru: "Программа реселлинга", uz: "Resellar dasturi", en: "Reselling Program" },
 				},
 			],
 		};

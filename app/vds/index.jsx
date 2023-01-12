@@ -1,20 +1,20 @@
-import CustomTableBottom from "../../components/customTableBottom";
-import Partners from "../../components/partners";
-import TraficMaket from "../../components/traficMaket";
-import st from "../vds/vds.module.scss";
+import CustomTableBottom from "@/components/customTableBottom";
+import Partners from "@/components/partners";
+import TraficMaket from "@/components/traficMaket";
+import st from "@/app/vds/vds.module.scss";
 import Link from "next/link";
-import { LINKS } from "../../components/requirements";
-import Container from "../../components/container";
-import CustomTable from "../../components/customTable";
-import SEO from "../../components/seo";
-import TarifMaket from "../../components/tarifMaket";
+import { LINKS } from "@/components/requirements";
+import Container from "@/components/container";
+import CustomTable from "@/components/customTable";
+import SEO from "@/components/seo";
+import TarifMaket from "@/components/tarifMaket";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import TarifCard from "../../components/tarifCard";
-import ForFreeBlock from "../../components/forFreeBlock";
-import WhyBlock from "../../components/whyBlock";
+import TarifCard from "@/components/tarifCard";
+import ForFreeBlock from "@/components/forFreeBlock";
+import WhyBlock from "@/components/whyBlock";
 import { useEffect, useState } from "react";
 
 const block = [
@@ -503,7 +503,7 @@ export default function VDS({ language }) {
 							}}
 							className="tarifSwiper"
 						>
-							{tarif.map((item, index, language) => (
+							{tarif.map((item, index) => (
 								<SwiperSlide key={item.title} language={language}>
 									<div className="w-95">
 										<TarifCard
@@ -522,7 +522,7 @@ export default function VDS({ language }) {
 
 				<WhyBlock content={block} language={language} />
 
-				<ForFreeBlock />
+				<ForFreeBlock language={language} />
 
 				<Container
 					className="text-center"

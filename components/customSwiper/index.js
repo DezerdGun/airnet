@@ -20,6 +20,12 @@ export default function CustomSwiper({ language }) {
 					<br /> har doim ishlaydi
 				</>
 			),
+			en: (
+				<>
+					Your sites
+					<br /> will always work
+				</>
+			),
 		},
 		slideText11: {
 			ru: (
@@ -34,10 +40,17 @@ export default function CustomSwiper({ language }) {
 					<br /> Biznesingizning ishonchliligi va xavfsizligi!
 				</>
 			),
+			en: (
+				<>
+					Server of any configuration for your tasks.
+					<br /> Reliability and security of your business!
+				</>
+			),
 		},
 		slideText12: {
 			ru: "Доступность в сети TAS-IX - 1 Гбит/с для всех клиентов AIRNET",
 			uz: "TAS-IX tarmog'ida mavjudlik - barcha AIRNET mijozlari uchun 1 Gbit/s",
+			en: "Availability in the TAS-IX network - 1 Gbps for all AIRNET clients",
 		},
 		slideTitle2: {
 			ru: (
@@ -50,6 +63,12 @@ export default function CustomSwiper({ language }) {
 				<>
 					VDS/VPS hosting
 					<br /> O'zbekistonda
+				</>
+			),
+			en: (
+				<>
+					VDS/VPS hosting
+					<br /> in Uzbekistan
 				</>
 			),
 		},
@@ -65,10 +84,17 @@ export default function CustomSwiper({ language }) {
 					Barqaror ish uchun Cloud VPS-ga buyurtma bering veb loyihangizning <br />.
 				</>
 			),
+			en: (
+				<>
+					Order Cloud VPS for stable work
+					<br /> of your web project.
+				</>
+			),
 		},
 		slideText22: {
 			ru: "Доступность в сети интернет от - 25 Мбит/с для всех клиентов AIRNET",
 			uz: "Barcha AIRNET mijozlari uchun - 25 Mbit/s dan boshlab Internet mavjudligi",
+			en: "Availability on the Internet from - 25 Mbps for all AIRNET clients",
 		},
 	};
 

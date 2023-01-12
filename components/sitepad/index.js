@@ -10,6 +10,7 @@ export default function Sitepad({ language }) {
 		title: {
 			ru: "Бесплатный конструктор сайтов от SitePad",
 			uz: "SitePad tomonidan bepul veb-sayt yaratuvchisi",
+			en: "Free Website Builder by SitePad",
 		},
 		desc: {
 			ru: (
@@ -29,6 +30,15 @@ export default function Sitepad({ language }) {
 						<a className="text-red">har qanday xostingga buyurtma bering</a>
 					</Link>{" "}
 					Cpanel tarif rejalarida.
+				</p>
+			),
+			en: (
+				<p>
+					In order to use the website builder with more than 750 different themes, you necessary{" "}
+					<Link href={LINKS.HOSTING}>
+						<a className="text-red">order any hosting</a>
+					</Link>{" "}
+					on Cpanel tariff plans.
 				</p>
 			),
 		},
@@ -51,14 +61,25 @@ export default function Sitepad({ language }) {
 					mumkin dasturlash qobiliyatlari.
 				</>
 			),
+			en: (
+				<>
+					After paying for the hosting service, you will get access to the Cpanel control panel by
+					e-mail.
+					<br />
+					Inside Cpanel you will be able to create a professional website using the website builder,
+					without programming skills.
+				</>
+			),
 		},
 		buy: {
 			ru: "Купить хостинг",
 			uz: "Xosting sotib olish",
+			en: "Buy hosting",
 		},
 		instruct: {
 			ru: "Краткая инструкция по созданию сайта через конструктор",
 			uz: "Konstruktor orqali sayt yaratish bo'yicha qisqacha ko'rsatmalar",
+			en: "Brief instructions for creating a site through the constructor",
 		},
 	};
 

@@ -37,14 +37,17 @@ export default function Reviews({ language }) {
 		title: {
 			ru: "Отзывы о нас",
 			uz: "Biz haqimizda sharhlar",
+			en: "Reviews about us",
 		},
 		text: {
 			ru: "довольных клиентов оставили свои отзывы о сервисе AIRNET. Они помогают нам расти и повышать уровень предоставления услуг.",
 			uz: "mamnun mijozlar AIRNET xizmati haqida o'z fikr-mulohazalarini qoldirdi. Ular bizga xizmat ko'rsatishni yaxshilashga yordam beradi.",
+			en: "satisfied customers have left their feedback about the AIRNET service. They help us grow and improve the level of service.",
 		},
 		show: {
 			ru: "Смотреть все отзывы",
 			uz: "Barcha sharhlarni ko'rish",
+			en: "See all reviews",
 		},
 	};
 

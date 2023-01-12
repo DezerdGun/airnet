@@ -1,6 +1,6 @@
-import st from "./faq.module.scss";
+import st from "@/components/faq/faq.module.scss";
 import Head from "next/head";
-import Container from "../container";
+import Container from "@/components/container";
 
 export default function FAQ({ faq, title, language }) {
 	const active = (i) => {
@@ -25,7 +25,7 @@ export default function FAQ({ faq, title, language }) {
 			name: item.title,
 			acceptedAnswer: {
 				"@type": "Answer",
-				text: faqGenerateText(item.description[language].props.children),
+				text: faqGenerateText(item.description[language]),
 			},
 		}));
 

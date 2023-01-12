@@ -23,6 +23,7 @@ export default function Partners({ language }) {
 		title: {
 			ru: "Наши партнеры",
 			uz: "Bizning hamkorlarimiz",
+			en: "Our partners",
 		},
 	};
 

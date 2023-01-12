@@ -1,5 +1,5 @@
-import Home from "@/app/home";
+import Hosting from "@/app/hosting";
 
-export default function () {
-	return <Home language="uz" />;
+export default function ({ language }) {
+	return <Hosting language={language} />;
 }

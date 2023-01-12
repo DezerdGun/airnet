@@ -242,6 +242,10 @@ export default function CheapVds({ language }) {
 			ru: "Срок действия услуги начнется с момента её активации.",
 			uz: "Xizmatning amal qilish muddati u yoqilgan paytdan boshlanadi.",
 		},
+		headTitle: {
+			ru: "Бюджетные VDS/VPS — Самые дешевые сервера в Ташкенте",
+			uz: "Hamyonbop VDS/VPS - Toshkentdagi eng arzon serverlar",
+		},
 	};
 
 	return (
@@ -251,7 +255,7 @@ export default function CheapVds({ language }) {
 				<div className={"bg_gray"}>
 					<TarifMaket
 						// bgImg={'/servers-2.jpg'}
-						headTitle="Бюджетные VDS/VPS — Самые дешевые сервера в Ташкенте"
+						headTitle={langDate.headTitle[language]}
 						description={<p>{langDate.description[language]}</p>}
 						className="mt-0 px-0"
 						endText={
@@ -287,7 +291,13 @@ export default function CheapVds({ language }) {
 							{tarif.map((item, index) => (
 								<SwiperSlide key={item.title}>
 									<div className="w-95">
-										<TarifCard index={index} tarif={item} show={show} setShow={setShow} />
+										<TarifCard
+											index={index}
+											tarif={item}
+											show={show}
+											setShow={setShow}
+											language={language}
+										/>
 									</div>
 								</SwiperSlide>
 							))}
@@ -364,7 +374,7 @@ export default function CheapVds({ language }) {
 					</Swiper>
 				</TarifMaket> */}
 
-				<ForFreeBlock />
+				<ForFreeBlock language={language} />
 
 				<Partners />
 			</div>

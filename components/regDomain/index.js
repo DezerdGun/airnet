@@ -8,6 +8,7 @@ export default function RegDomain({ language }) {
 		title: {
 			ru: "Зарегистрируем домен?",
 			uz: "Domenni ro'yxatdan o'tkazamizmi?",
+			en: "Shall we register a domain?",
 		},
 	};
 
@@ -25,22 +26,27 @@ export const RegDomainBlock = ({ language }) => {
 		inputPlaceholder: {
 			ru: "Введите название домена например: airnet.uz",
 			uz: "Domen nomini kiriting, masalan: airnet.uz",
+			en: "Enter the domain name for example: airnet.uz",
 		},
 		check: {
 			ru: "Проверить",
 			uz: "Tekshirish",
+			en: "Check",
 		},
 		domenBooked: {
 			ru: "доменное имя в данное время недоступно для регистрации.",
 			uz: "domen nomi hozirda ro‘yxatdan o‘tish uchun mavjud emas.",
+			en: "domain name is currently unavailable for registration.",
 		},
 		domenFree: {
 			ru: "доменное имя в данное время доступно для регистрации.",
 			uz: "domen nomi hozirda ro'yxatdan o'tish uchun mavjud.",
+			en: "domain name is currently available for registration.",
 		},
 		sumVg: {
 			ru: "сум/год",
 			uz: "so'm/yil",
+			en: "sum/year",
 		},
 	};
 
@@ -123,17 +129,7 @@ export const RegDomainBlock = ({ language }) => {
 					) : (
 						<>
 							<span className={st.regDomain__text__green}>{langData.domenFree[language]}</span>{" "}
-							{language === "ru" ? (
-								<>
-									Нажмите{" "}
-									<a
-										href={`https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=${isDomainFree.domain}`}
-									>
-										Заказать
-									</a>{" "}
-									для регистрации доменного имени.
-								</>
-							) : (
+							{language === "uz" ? (
 								<>
 									Buyurtma qilish uchun{" "}
 									<a
@@ -142,6 +138,26 @@ export const RegDomainBlock = ({ language }) => {
 										Ushbu havolaga
 									</a>{" "}
 									bosing
+								</>
+							) : language === "en " ? (
+								<>
+									Click{" "}
+									<a
+										href={`https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=${isDomainFree.domain}`}
+									>
+										To order
+									</a>{" "}
+									to register a domain name.
+								</>
+							) : (
+								<>
+									Нажмите{" "}
+									<a
+										href={`https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=${isDomainFree.domain}`}
+									>
+										Заказать
+									</a>{" "}
+									для регистрации доменного имени.
 								</>
 							)}
 						</>
