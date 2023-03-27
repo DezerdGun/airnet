@@ -4,7 +4,6 @@ import FAQ from '../../components/faq'
 import Partners from '../../components/partners'
 import { LINKS } from '../../components/requirements'
 import SEO from '../../components/seo'
-import st from './faq.module.scss'
 
 const faq = [
 	{
@@ -234,15 +233,13 @@ export default function FAQPage({ language }) {
 	return (
 		<>
 			<SEO title={langData.seoT[language]} desc={langData.descT[language]} />
-			<div className={st.faq}>
-				<Container
-					style={{ background: "url('/servers-2.jpg') no-repeat" }}
-					title={langData.title[language]}
-					className='my-0'
-				></Container>
-				<FAQ faq={faq} language={language} />
-				<Partners />
-			</div>
+			<Container
+				style={{ background: "url('/servers-2.jpg') no-repeat" }}
+				title={langData.title[language]}
+				className='my-0'
+			></Container>
+			<FAQ faq={faq} language={language} />
+			<Partners />
 		</>
 	)
 }
