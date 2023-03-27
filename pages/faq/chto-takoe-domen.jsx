@@ -1,5 +1,5 @@
-import FAQ from "@/app/chto-takoe-domen";
+import ChtoTakoeDomen from '@/app/faq/chto-takoe-domen'
 
 export default function ({ language }) {
-	return <FAQ language={language} />;
+	return <ChtoTakoeDomen language={language} />
 }

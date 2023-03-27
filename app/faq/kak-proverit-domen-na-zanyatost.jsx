@@ -1,6 +1,6 @@
-import FaqInside from '../../components/faqInside';
-import { LINKS } from '../../components/requirements';
-import Link from 'next/link';
+import FaqInside from '@/components/faqInside'
+import { LINKS } from '@/components/requirements'
+import Link from 'next/link'
 
 const data = {
 	title: 'Как проверить домен на занятость?',
@@ -8,8 +8,9 @@ const data = {
 	content: (
 		<>
 			<p>
-				<strong>Whois</strong> (от англ. «кто это») — общедоступная база данных зарегистрированных доменов.
-				Через неё любой пользователь может получить информацию о домене или IP-адресе.{' '}
+				<strong>Whois</strong> (от англ. «кто это») — общедоступная база данных
+				зарегистрированных доменов. Через неё любой пользователь может получить
+				информацию о домене или IP-адресе.{' '}
 			</p>
 			<h2>Как проверить домен на занятость?</h2>
 			<p>
@@ -27,20 +28,25 @@ const data = {
 				Введите имя домена или IP-адрес и нажмите <strong>Проверить</strong>.{' '}
 			</p>
 			<p>
-				Сервис покажет результаты проверки. Если домен <strong>свободен</strong>, вы можете его{' '}
+				Сервис покажет результаты проверки. Если домен <strong>свободен</strong>
+				, вы можете его{' '}
 				<a
-					href="https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz"
-					target="_blank"
-					rel="noreferrer noopener">
+					href='https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz'
+					target='_blank'
+					rel='noreferrer noopener'
+				>
 					зарегистрировать
 				</a>
 				.{' '}
 			</p>
-			<p>Если домен занят, вы можете обратиться к текущему администратору домена по вопросу его покупки.</p>
+			<p>
+				Если домен занят, вы можете обратиться к текущему администратору домена
+				по вопросу его покупки.
+			</p>
 		</>
 	),
-};
+}
 
 export default function FAQ() {
-	return <FaqInside data={data} />;
+	return <FaqInside data={data} />
 }
