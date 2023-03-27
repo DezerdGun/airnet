@@ -1,9 +1,9 @@
-import Container from '../container';
-import FAQ from '../faq';
-import Partners from '../partners';
-import st from './helpBlock.module.scss';
-import Link from 'next/link';
-import SEO from '../seo';
+import Link from 'next/link'
+import Container from '../container/index.jsx'
+import FAQ from '../faq'
+import Partners from '../partners'
+import SEO from '../seo'
+import st from './helpBlock.module.scss'
 
 export default function HelpBlock({ data }) {
 	return (
@@ -14,19 +14,21 @@ export default function HelpBlock({ data }) {
 					<div className={st.helpItem__block}>{data.content}</div>
 					<p>
 						Вернуться к{' '}
-						<Link href="/help">
+						<Link href='/help'>
 							<a>«База знаний»</a>
 						</Link>
 					</p>
 					<p>
-						Не нашли ответ на свой вопрос? Позвоните нашим специалистам по телефону{' '}
-						<a href="tel:+998712008700">+998(71) 200-87-00</a>
+						Не нашли ответ на свой вопрос? Позвоните нашим специалистам по
+						телефону <a href='tel:+998712008700'>+998(71) 200-87-00</a>
 					</p>
 				</div>
 			</Container>
 			{data?.afterContent}
-			{data?.faq && <FAQ faq={data.faq} title="НАС ЧАСТО СПРАШИВАЮТ БИЛЛИНГ-ПАНЕЛЬ" />}
+			{data?.faq && (
+				<FAQ faq={data.faq} title='НАС ЧАСТО СПРАШИВАЮТ БИЛЛИНГ-ПАНЕЛЬ' />
+			)}
 			<Partners />
 		</>
-	);
+	)
 }

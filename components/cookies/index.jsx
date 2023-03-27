@@ -1,0 +1,53 @@
+import { useEffect, useState } from 'react'
+import st from './cookies.module.scss'
+
+export default function Cookies({ language }) {
+	const [isOpen, setIsOpen] = useState(false)
+
+	const langData = {
+		title: {
+			ru: 'Пользуясь нашим сайтом, вы соглашаетесь с тем, что мы используем cookies',
+			uz: '',
+			en: '',
+		},
+		close: {
+			ru: 'ЗАКРЫТЬ',
+			uz: '',
+			en: '',
+		},
+		apply: {
+			ru: 'ПРИНЯТЬ',
+			uz: '',
+			en: '',
+		},
+	}
+
+	useEffect(() => {
+		localStorage?.getItem('cookies') ? '' : setIsOpen(true)
+	}, [isOpen])
+
+	if (!isOpen) return null
+	return (
+		<div className={st.cookies}>
+			<div className={st.cookies__block}>{langData.title[language]}</div>
+			<div className={st.cookies__block}>
+				<button
+					onClick={() => {
+						setIsOpen(false)
+						localStorage.setItem('cookies', 'declined')
+					}}
+				>
+					{langData.title[language]}
+				</button>
+				<button
+					onClick={() => {
+						setIsOpen(false)
+						localStorage.setItem('cookies', 'accepted')
+					}}
+				>
+					{langData.title[language]}
+				</button>
+			</div>
+		</div>
+	)
+}

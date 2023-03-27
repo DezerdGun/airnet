@@ -1,0 +1,91 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import Container from '../container/index.jsx'
+import SEO from '../seo'
+import st from './blogItem.module.scss'
+
+export default function BlogItem({ data, language }) {
+	const langData = {
+		title: {
+			ru: 'Хостинг TAS-IX в Ташкенте, Узбекистане',
+			uz: "O'zbekiston, Toshkent shahrida TAS-IX mezbonligi",
+			en: 'Hosting TAS-IX in Tashkent, Uzbekistan',
+		},
+		news: {
+			ru: 'Все новости',
+			uz: 'Barcha yangiliklar',
+			en: '',
+		},
+		added: {
+			ru: 'Добавлено',
+			uz: "Qo'shildi",
+			en: '',
+		},
+		prevPost: {
+			ru: 'Предыдущий пост',
+			uz: 'Oldingi post',
+			en: '',
+		},
+		nextPost: {
+			ru: 'Следующий пост',
+			uz: 'Keyingi post',
+			en: '',
+		},
+	}
+	return (
+		<>
+			<SEO
+				title={`${data.title} | ${langData.title[language]}`}
+				desc={data.desc}
+			/>
+			<Container>
+				<div className={st.blogItem}>
+					<Link href='/blog'>
+						<a className={st.blogItem__breadCrumb}>{langData.news[language]}</a>
+					</Link>
+					<h1>{data.title}</h1>
+					<div className={st.blogItem__details}>
+						<div className={st.blogItem__details__author}>
+							<Image
+								src='/user.png'
+								width={50}
+								height={50}
+								alt='user'
+								blurDataURL
+								placeholder='blur'
+							/>
+							<span>Airnet</span>
+						</div>
+						<div className={st.blogItem__details__date}>
+							<span className='fw-bold mb-3'>{langData.added[language]}</span>{' '}
+							<br />
+							<span>{data.date}</span>
+						</div>
+					</div>
+					<div className={st.blogItem__mainImg}>
+						<Image
+							src={data.img}
+							width={560}
+							height={300}
+							blurDataURL
+							placeholder='blur'
+						/>
+					</div>
+					{data.content}
+					<div className={st.blogItem__links}>
+						{data?.prev && (
+							<Link href={data.prev}>
+								<a className='me-2'>&laquo; {langData.prevPost[language]}</a>
+							</Link>
+						)}
+						{data?.next && (
+							<Link href={data.next}>
+								<a>{langData.nextPost[language]} &raquo;</a>
+							</Link>
+						)}
+					</div>
+				</div>
+			</Container>
+		</>
+	)
+}

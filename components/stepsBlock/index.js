@@ -1,5 +1,5 @@
-import Container from '../container';
-import st from './stepsBlock.module.scss';
+import Container from '../container/index.jsx'
+import st from './stepsBlock.module.scss'
 
 export default function StepsBlock({ title, data, img }) {
 	return (
@@ -18,5 +18,5 @@ export default function StepsBlock({ title, data, img }) {
 				</div>
 			</div>
 		</Container>
-	);
+	)
 }

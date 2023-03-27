@@ -1,19 +1,19 @@
-import Container from "../../components/container";
-import { LINKS } from "../../components/requirements";
-import st from "./faq.module.scss";
-import Link from "next/link";
-import FAQ from "../../components/faq";
-import Partners from "../../components/partners";
-import SEO from "../../components/seo";
+import Link from 'next/link'
+import Container from '../../components/container/index.jsx'
+import FAQ from '../../components/faq'
+import Partners from '../../components/partners'
+import { LINKS } from '../../components/requirements'
+import SEO from '../../components/seo'
+import st from './faq.module.scss'
 
 const faq = [
 	{
-		title: { ru: "Документы", uz: "Hujjatlar" },
+		title: { ru: 'Документы', uz: 'Hujjatlar' },
 		description: {
 			ru: (
 				<ul>
 					<li>
-						<Link href="/faq/kak-zaklyuchit-dogovor">
+						<Link href='/faq/kak-zaklyuchit-dogovor'>
 							<a>Как заключить договор?</a>
 						</Link>
 					</li>
@@ -32,7 +32,7 @@ const faq = [
 			uz: (
 				<ul>
 					<li>
-						<Link href="/faq/kak-zaklyuchit-dogovor">
+						<Link href='/faq/kak-zaklyuchit-dogovor'>
 							<a>Qanday qilib shartnoma tuzish</a>
 						</Link>
 					</li>
@@ -51,52 +51,52 @@ const faq = [
 		},
 	},
 	{
-		title: { ru: "Хостинг и Домены", uz: "Host va domenlar" },
+		title: { ru: 'Хостинг и Домены', uz: 'Host va domenlar' },
 		description: {
 			ru: (
 				<ul>
 					<li>
-						<Link href="/faq/chto-takoe-domen">
+						<Link href='/faq/chto-takoe-domen'>
 							<a>Что такое домен?</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/kak-proverit-domen-na-zanyatost">
+						<Link href='/faq/kak-proverit-domen-na-zanyatost'>
 							<a>Как проверить домен на занятость?</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/pravilo-registracii-domena-v-zone-uz">
+						<Link href='/faq/pravilo-registracii-domena-v-zone-uz'>
 							<a>Правила регистрации доменных имен в зоне .UZ?</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/kak-zaregistrirovat-domen">
+						<Link href='/faq/kak-zaregistrirovat-domen'>
 							<a>Как зарегистрировать домен?</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/oshibochno-zaregistriroval-domen">
+						<Link href='/faq/oshibochno-zaregistriroval-domen'>
 							<a>Ошибочно зарегистрировал домен, можно ли отменить?</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/ya-zaregistriroval-domen-chto-dalshe">
+						<Link href='/faq/ya-zaregistriroval-domen-chto-dalshe'>
 							<a>Я зарегистрировал домен, что дальше?</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/kak-perenesti-sajt-na-xosting-airnet">
+						<Link href='/faq/kak-perenesti-sajt-na-xosting-airnet'>
 							<a>Как перенести сайт на хостинг AIRNET?</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/kak-ustanovit-wordpress-na-xosting">
+						<Link href='/faq/kak-ustanovit-wordpress-na-xosting'>
 							<a>Как установить WordPress на хостинг?</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/kak-poluchit-testovyj-period">
+						<Link href='/faq/kak-poluchit-testovyj-period'>
 							<a>Как получить тестовый период?</a>
 						</Link>
 					</li>
@@ -110,47 +110,49 @@ const faq = [
 			uz: (
 				<ul>
 					<li>
-						<Link href="/faq/chto-takoe-domen">
+						<Link href='/faq/chto-takoe-domen'>
 							<a>Domen nma?</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/kak-proverit-domen-na-zanyatost">
+						<Link href='/faq/kak-proverit-domen-na-zanyatost'>
 							<a>Jarayon vaxtida domenni tekshirish</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/pravilo-registracii-domena-v-zone-uz">
+						<Link href='/faq/pravilo-registracii-domena-v-zone-uz'>
 							<a>UZ.da domen nomi bilan ro'yxatdan o'tkazish</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/kak-zaregistrirovat-domen">
+						<Link href='/faq/kak-zaregistrirovat-domen'>
 							<a>Domenni qanday ro'yxatdan o'tkazish</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/oshibochno-zaregistriroval-domen">
-							<a>Domen hatolik bn ro'yxatdan o'tkazildi, inkor qilish mavjudmi?</a>
+						<Link href='/faq/oshibochno-zaregistriroval-domen'>
+							<a>
+								Domen hatolik bn ro'yxatdan o'tkazildi, inkor qilish mavjudmi?
+							</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/ya-zaregistriroval-domen-chto-dalshe">
+						<Link href='/faq/ya-zaregistriroval-domen-chto-dalshe'>
 							<a>Men domenni ro'yhatdan o'tkazdim, endichi?</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/kak-perenesti-sajt-na-xosting-airnet">
+						<Link href='/faq/kak-perenesti-sajt-na-xosting-airnet'>
 							<a>Saytni qanday qilib AIRNET hostiga o'tkazish mumkin?</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/kak-ustanovit-wordpress-na-xosting">
+						<Link href='/faq/kak-ustanovit-wordpress-na-xosting'>
 							<a>Qanday qilib WordPressni hostga o'rnatish mumkin</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/faq/kak-poluchit-testovyj-period">
+						<Link href='/faq/kak-poluchit-testovyj-period'>
 							<a>Qanday qilib sinov muddatiga o'tish mumkin?</a>
 						</Link>
 					</li>
@@ -164,12 +166,12 @@ const faq = [
 		},
 	},
 	{
-		title: { ru: "База знаний", uz: "Ilm bazasi" },
+		title: { ru: 'База знаний', uz: 'Ilm bazasi' },
 		description: {
 			ru: (
 				<ul>
 					<li>
-						<Link href="/faq/kak-novichku-vybrat-xosting-provajdera-5-prostyx-sovetov">
+						<Link href='/faq/kak-novichku-vybrat-xosting-provajdera-5-prostyx-sovetov'>
 							<a>Как новичку выбрать хостинг-провайдера: 5 простых советов</a>
 						</Link>
 					</li>
@@ -178,10 +180,10 @@ const faq = [
 			uz: (
 				<ul>
 					<li>
-						<Link href="/faq/kak-novichku-vybrat-xosting-provajdera-5-prostyx-sovetov">
+						<Link href='/faq/kak-novichku-vybrat-xosting-provajdera-5-prostyx-sovetov'>
 							<a>
-								Yangi boshlanuvchilar uchun hosting provayderini qanday tanlash mumkin: 5 oddiy
-								maslahat
+								Yangi boshlanuvchilar uchun hosting provayderini qanday tanlash
+								mumkin: 5 oddiy maslahat
 							</a>
 						</Link>
 					</li>
@@ -190,7 +192,7 @@ const faq = [
 		},
 	},
 	{
-		title: { ru: "Способ оплаты", uz: "To'lov usullari" },
+		title: { ru: 'Способ оплаты', uz: "To'lov usullari" },
 		description: {
 			ru: (
 				<ul>
@@ -212,35 +214,35 @@ const faq = [
 			),
 		},
 	},
-];
+]
 
 export default function FAQPage({ language }) {
-	const langDate = {
+	const langData = {
 		seoT: {
-			ru: "Часто задаваемые вопросы | Хостинг TAS-IX в Ташкенте, Узбекистане",
-			uz: "Odatdagi savollar| Uzbekiston, Toshkent dagi TAS-IX hosti",
+			ru: 'Часто задаваемые вопросы | Хостинг TAS-IX в Ташкенте, Узбекистане',
+			uz: 'Odatdagi savollar| Uzbekiston, Toshkent dagi TAS-IX hosti',
 		},
 		descT: {
-			ru: "Информация и документы AIRNET.uz",
+			ru: 'Информация и документы AIRNET.uz',
 			uz: "AIRNET.uz haqida hujjat va ma'lumotlar",
 		},
 		title: {
-			ru: "Информация",
+			ru: 'Информация',
 			uz: "Ma'lumot",
 		},
-	};
+	}
 	return (
 		<>
-			<SEO title={langDate.seoT[language]} desc={langDate.descT[language]} />
+			<SEO title={langData.seoT[language]} desc={langData.descT[language]} />
 			<div className={st.faq}>
 				<Container
 					style={{ background: "url('/servers-2.jpg') no-repeat" }}
-					title={langDate.title[language]}
-					className="my-0"
+					title={langData.title[language]}
+					className='my-0'
 				></Container>
 				<FAQ faq={faq} language={language} />
 				<Partners />
 			</div>
 		</>
-	);
+	)
 }

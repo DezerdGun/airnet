@@ -1,30 +1,33 @@
-import Container from '../container';
-import FAQ from '../faq';
-import Partners from '../partners';
-import st from './helpItem.module.scss';
-import Link from 'next/link';
-import SEO from '../seo';
-import { useEffect, useState } from 'react';
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import Container from '../container/index.jsx'
+import FAQ from '../faq'
+import Partners from '../partners'
+import SEO from '../seo'
+import st from './helpItem.module.scss'
 
 export default function HelpItem({ data }) {
-	const [isFixed, setIsFixed] = useState(false);
+	const [isFixed, setIsFixed] = useState(false)
 
 	const scroll = () => {
 		const content = document.querySelector('#content'),
-			links = document.querySelector('#links');
+			links = document.querySelector('#links')
 
 		if (document.body.clientWidth > 770) {
 			if (window.pageYOffset >= 112) {
-				if (window.pageYOffset > content.clientHeight - links.clientHeight + 112) {
-					setIsFixed('end');
-				} else setIsFixed(true);
-			} else setIsFixed(false);
-		} else document.removeEventListener('scroll', scroll);
-	};
+				if (
+					window.pageYOffset >
+					content.clientHeight - links.clientHeight + 112
+				) {
+					setIsFixed('end')
+				} else setIsFixed(true)
+			} else setIsFixed(false)
+		} else document.removeEventListener('scroll', scroll)
+	}
 
 	useEffect(() => {
-		document.addEventListener('scroll', scroll);
-	}, []);
+		document.addEventListener('scroll', scroll)
+	}, [])
 
 	return (
 		<>
@@ -38,43 +41,48 @@ export default function HelpItem({ data }) {
 								(isFixed === 'end'
 									? st.helpItem__block__links__absolute
 									: st.helpItem__block__links__fixed)
-							}`}>
-							<div id="links">
+							}`}
+						>
+							<div id='links'>
 								<h4>Разделы</h4>
 								<div className={st.helpItem__block__links__back}>
 									{data?.content?.length ? (
-										data.content.map((item, i) => <LinksBlock key={i} data={item} />)
+										data.content.map((item, i) => (
+											<LinksBlock key={i} data={item} />
+										))
 									) : (
 										<LinksBlock data={data.content} />
 									)}
 								</div>
 							</div>
 						</div>
-						<div id="content" className={st.helpItem__block__content}>
+						<div id='content' className={st.helpItem__block__content}>
 							<Content data={data.content} />
 						</div>
 					</div>
 					<p>
 						Вернуться к{' '}
-						<Link href="/help">
+						<Link href='/help'>
 							<a>«База знаний»</a>
 						</Link>
 					</p>
 					<p>
-						Не нашли ответ на свой вопрос? Позвоните нашим специалистам по телефону{' '}
-						<a href="tel:+998712008700">+998(71) 200-87-00</a>
+						Не нашли ответ на свой вопрос? Позвоните нашим специалистам по
+						телефону <a href='tel:+998712008700'>+998(71) 200-87-00</a>
 					</p>
 				</div>
 			</Container>
 			{data?.afterContent}
-			{data?.faq && <FAQ faq={data.faq} title="НАС ЧАСТО СПРАШИВАЮТ БИЛЛИНГ-ПАНЕЛЬ" />}
+			{data?.faq && (
+				<FAQ faq={data.faq} title='НАС ЧАСТО СПРАШИВАЮТ БИЛЛИНГ-ПАНЕЛЬ' />
+			)}
 			<Partners />
 		</>
-	);
+	)
 }
 
 const LinksBlock = ({ data }) => {
-	const [state, setState] = useState(false);
+	const [state, setState] = useState(false)
 
 	return (
 		<ul className={st.helpItem__block__links__block}>
@@ -92,7 +100,8 @@ const LinksBlock = ({ data }) => {
 					<span
 						className={`${st.helpItem__block__links__block__span} ${
 							state && st.helpItem__block__links__block__span__active
-						}`}>
+						}`}
+					>
 						{'>'}
 					</span>
 				)}
@@ -100,12 +109,16 @@ const LinksBlock = ({ data }) => {
 			<div
 				className={`${st.helpItem__block__links__block__content} ${
 					state && st.helpItem__block__links__block__content__active
-				}`}>
-				{data?.children && data.children.map((item, i) => <LinksBlock key={`data${i}`} data={item} />)}
+				}`}
+			>
+				{data?.children &&
+					data.children.map((item, i) => (
+						<LinksBlock key={`data${i}`} data={item} />
+					))}
 			</div>
 		</ul>
-	);
-};
+	)
+}
 
 const Content = ({ data }) => {
 	if (data?.length)
@@ -122,7 +135,7 @@ const Content = ({ data }) => {
 				</h3>
 				<ContentBlock data={item.children} />
 			</div>
-		));
+		))
 	return (
 		<div className={st.helpItem__block__content__block}>
 			<h3>
@@ -136,8 +149,8 @@ const Content = ({ data }) => {
 			</h3>
 			<ContentBlock data={data.children} />
 		</div>
-	);
-};
+	)
+}
 
 const ContentBlock = ({ data }) => {
 	return data.map((item) => (
@@ -163,5 +176,5 @@ const ContentBlock = ({ data }) => {
 				</ul>
 			)}
 		</div>
-	));
-};
+	))
+}
