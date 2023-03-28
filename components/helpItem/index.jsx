@@ -1,17 +1,18 @@
-import Link from 'next/link'
-import { useEffect, useState } from 'react'
-import Container from '../container/index.jsx'
-import FAQ from '../faq'
-import Partners from '../partners'
-import SEO from '../seo'
-import st from './helpItem.module.scss'
+import Link from "next/link"
+import { useEffect, useState } from "react"
+import Container from "../container/index.jsx"
+import FAQ from "../faq"
+import Partners from "../partners"
+import { LINKS } from "../requirements.js"
+import SEO from "../seo"
+import st from "./helpItem.module.scss"
 
-export default function HelpItem({ data }) {
+export default function HelpItem({ data, language }) {
 	const [isFixed, setIsFixed] = useState(false)
 
 	const scroll = () => {
-		const content = document.querySelector('#content'),
-			links = document.querySelector('#links')
+		const content = document.querySelector("#content"),
+			links = document.querySelector("#links")
 
 		if (document.body.clientWidth > 770) {
 			if (window.pageYOffset >= 112) {
@@ -19,14 +20,46 @@ export default function HelpItem({ data }) {
 					window.pageYOffset >
 					content.clientHeight - links.clientHeight + 112
 				) {
-					setIsFixed('end')
+					setIsFixed("end")
 				} else setIsFixed(true)
 			} else setIsFixed(false)
-		} else document.removeEventListener('scroll', scroll)
+		} else document.removeEventListener("scroll", scroll)
+	}
+
+	const langData = {
+		menu: {
+			ru: "Разделы",
+			uz: "Bo'limlar",
+			en: "",
+		},
+		goToDB: {
+			ru: (
+				<>
+					Вернуться к{" "}
+					<Link href={LINKS.HELP}>
+						<a>«База знаний»</a>
+					</Link>
+				</>
+			),
+			uz: (
+				<>
+					<Link href={LINKS.HELP}>
+						<a>«Bilimlar bazasi»</a>
+					</Link>{" "}
+					sahifasiga qaytish
+				</>
+			),
+			en: "",
+		},
+		phoneSupport: {
+			ru: "Не нашли ответ на свой вопрос? Позвоните нашим специалистам по	телефону",
+			uz: "Savolingizga javob topa olmadingizmi? Telefon orqali mutaxassislarimizga qo'ng'iroq qiling",
+			en: "",
+		},
 	}
 
 	useEffect(() => {
-		document.addEventListener('scroll', scroll)
+		document.addEventListener("scroll", scroll)
 	}, [])
 
 	return (
@@ -38,13 +71,13 @@ export default function HelpItem({ data }) {
 						<div
 							className={`${st.helpItem__block__links} ${
 								isFixed &&
-								(isFixed === 'end'
+								(isFixed === "end"
 									? st.helpItem__block__links__absolute
 									: st.helpItem__block__links__fixed)
 							}`}
 						>
-							<div id='links'>
-								<h4>Разделы</h4>
+							<div id="links">
+								<h4>{langData.menu[language]}</h4>
 								<div className={st.helpItem__block__links__back}>
 									{data?.content?.length ? (
 										data.content.map((item, i) => (
@@ -56,25 +89,20 @@ export default function HelpItem({ data }) {
 								</div>
 							</div>
 						</div>
-						<div id='content' className={st.helpItem__block__content}>
+						<div id="content" className={st.helpItem__block__content}>
 							<Content data={data.content} />
 						</div>
 					</div>
+					<p>{langData.goToDB[language]}</p>
 					<p>
-						Вернуться к{' '}
-						<Link href='/help'>
-							<a>«База знаний»</a>
-						</Link>
-					</p>
-					<p>
-						Не нашли ответ на свой вопрос? Позвоните нашим специалистам по
-						телефону <a href='tel:+998712008700'>+998(71) 200-87-00</a>
+						{langData.phoneSupport[language]}{" "}
+						<a href="tel:+998712008700">+998(71) 200-87-00</a>
 					</p>
 				</div>
 			</Container>
 			{data?.afterContent}
 			{data?.faq && (
-				<FAQ faq={data.faq} title='НАС ЧАСТО СПРАШИВАЮТ БИЛЛИНГ-ПАНЕЛЬ' />
+				<FAQ faq={data.faq} title="НАС ЧАСТО СПРАШИВАЮТ БИЛЛИНГ-ПАНЕЛЬ" />
 			)}
 			<Partners />
 		</>
@@ -102,7 +130,7 @@ const LinksBlock = ({ data }) => {
 							state && st.helpItem__block__links__block__span__active
 						}`}
 					>
-						{'>'}
+						{">"}
 					</span>
 				)}
 			</li>
