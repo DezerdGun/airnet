@@ -1,8 +1,8 @@
-import FaqInside from '@/components/faqInside'
+import FaqInside from "@/components/faqInside"
 
 const data = {
-	title: 'Что такое домен?',
-	description: '',
+	title: "Что такое домен?",
+	description: "",
 	content: (
 		<>
 			<p>
@@ -22,8 +22,8 @@ const data = {
 
 			<p>
 				Все домены устроены иерархически: они состоят из частей (уровней).
-				Домены <strong>третьего</strong> уровня создаются на базе доменов{' '}
-				<strong>второго</strong> уровня, а домены <strong>второго</strong>{' '}
+				Домены <strong>третьего</strong> уровня создаются на базе доменов{" "}
+				<strong>второго</strong> уровня, а домены <strong>второго</strong>{" "}
 				уровня – на базе доменов <strong>первого</strong>.
 			</p>
 
@@ -35,7 +35,7 @@ const data = {
 			</p>
 
 			<p>
-				<strong>Домен первого уровня</strong> или <strong>доменная зона</strong>{' '}
+				<strong>Домен первого уровня</strong> или <strong>доменная зона</strong>{" "}
 				— правая часть домена после точки (<strong>airnet</strong>.uz)
 			</p>
 
@@ -45,7 +45,7 @@ const data = {
 			</p>
 
 			<p>
-				Максимальный срок регистрации домена в зоне <strong>UZ</strong> до{' '}
+				Максимальный срок регистрации домена в зоне <strong>UZ</strong> до{" "}
 				<strong>10 лет</strong>, позаботьтесь изначально о сроке регистрации
 				вашего домена.
 			</p>
@@ -53,6 +53,6 @@ const data = {
 	),
 }
 
-export default function ChtoTakoeDomen() {
-	return <FaqInside data={data} />
+export default function ChtoTakoeDomen({ language }) {
+	return <FaqInside data={data} language={language} />
 }

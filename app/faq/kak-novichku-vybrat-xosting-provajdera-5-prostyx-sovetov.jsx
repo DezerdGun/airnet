@@ -1,8 +1,8 @@
-import FaqInside from '@/components/faqInside'
+import FaqInside from "@/components/faqInside"
 
 const data = {
-	title: 'Как новичку выбрать хостинг-провайдера: 5 простых советов',
-	description: '',
+	title: "Как новичку выбрать хостинг-провайдера: 5 простых советов",
+	description: "",
 	content: (
 		<>
 			<p>
@@ -77,8 +77,8 @@ const data = {
 			<p>
 				Поэтому прежде, чем выбирать веб-хостинг, лучше поработать с ним в
 				тестовом режиме. Благо почти все провайдеры предоставляют потенциальным
-				клиентам{' '}
-				<a href='https://billing.airnet.uz/billing.php?do=order&amp;vid=hosting&amp;tarif=0'>
+				клиентам{" "}
+				<a href="https://billing.airnet.uz/billing.php?do=order&amp;vid=hosting&amp;tarif=0">
 					<strong>бесплатный тестовый период</strong>
 				</a>
 				.
@@ -87,6 +87,6 @@ const data = {
 	),
 }
 
-export default function FAQ() {
+export default function KakNovichku() {
 	return <FaqInside data={data} />
 }
