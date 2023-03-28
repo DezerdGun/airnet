@@ -1,38 +1,38 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Head from 'next/head'
-import { useRouter } from 'next/router'
-import Cookies from '../components/cookies/index.jsx'
-import Footer from '../components/footer'
-import Header from '../components/header'
-import '../styles/globals.scss'
+import "bootstrap/dist/css/bootstrap.min.css"
+import Head from "next/head"
+import { useRouter } from "next/router"
+import Cookies from "../components/cookies/index.jsx"
+import Footer from "../components/footer"
+import Header from "../components/header"
+import "../styles/globals.scss"
 
 function MyApp({ Component, pageProps }) {
 	const router = useRouter(),
-		language = router.pathname.includes('/uz')
-			? 'uz'
-			: router.pathname.includes('/en')
-			? 'en'
-			: 'ru'
+		language = router.pathname.includes("/uz")
+			? "uz"
+			: router.pathname.includes("/en")
+			? "en"
+			: "ru"
 
 	return (
 		<>
 			<Head>
 				<title>
-					{language === 'uz'
+					{language == "uz"
 						? "Airnet.uz - TAS-IXda virtual xosting, UZ zonasida domen, VDS/VPS - serverlar, Toshkent, O'zbekiston"
-						: 'Airnet.uz - Виртуальный хостинг в TAS-IX, домена в зоне UZ, VDS/VPS - сервера, Ташкент,	Узбекистане'}
+						: "Airnet.uz - Виртуальный хостинг в TAS-IX, домена в зоне UZ, VDS/VPS - сервера, Ташкент,	Узбекистане"}
 				</title>
 				<meta
-					name='description'
+					name="description"
 					content={
-						language === 'uz'
-							? 'Virtual xosting, Toshkentda xosting, qayta sotish hosting, arzon VDS, VPS serverlar, Toshkentda VDS, virtual serverlar, ajratilgan serverlar, domen nomlari'
-							: 'Виртуальный хостинг, хостинг в Ташкенте, реселлинг хостинга, дешевые VDS, VPS-сервера, VDS в Ташкенте, виртуальные сервера, выделенные сервера, доменные имена'
+						language == "uz"
+							? "Virtual xosting, Toshkentda xosting, qayta sotish hosting, arzon VDS, VPS serverlar, Toshkentda VDS, virtual serverlar, ajratilgan serverlar, domen nomlari"
+							: "Виртуальный хостинг, хостинг в Ташкенте, реселлинг хостинга, дешевые VDS, VPS-сервера, VDS в Ташкенте, виртуальные сервера, выделенные сервера, доменные имена"
 					}
 				/>
-				<link rel='shortcut icon' href='/favicon.png' />
-				<link rel='preconnect' href='https://fonts.googleapis.com' />
-				<link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
+				<link rel="shortcut icon" href="/favicon.png" />
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
 				<script
 					dangerouslySetInnerHTML={{
 						__html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -46,7 +46,7 @@ function MyApp({ Component, pageProps }) {
 				{/* <!-- Yandex.Metrika counter --> */}
 
 				<script
-					type='text/javascript'
+					type="text/javascript"
 					dangerouslySetInnerHTML={{
 						__html: `(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 				m[i].l=1*new Date();
@@ -65,9 +65,9 @@ function MyApp({ Component, pageProps }) {
 				<noscript>
 					<div>
 						<img
-							src='https://mc.yandex.ru/watch/50412993'
-							style={{ position: 'absolute', left: '-9999px' }}
-							alt=''
+							src="https://mc.yandex.ru/watch/50412993"
+							style={{ position: "absolute", left: "-9999px" }}
+							alt=""
 						/>
 					</div>
 				</noscript>
@@ -77,21 +77,21 @@ function MyApp({ Component, pageProps }) {
 				{/* ------------- Organization ------------- */}
 
 				<script
-					type='application/ld+json'
+					type="application/ld+json"
 					dangerouslySetInnerHTML={{
 						__html: JSON.stringify(
 							{
-								'@context': 'https://schema.org',
-								'@type': 'Organization',
-								name: 'AIRNET',
-								url: 'https://airnet.uz/',
-								logo: 'https://airnet.uz/logo.png',
+								"@context": "https://schema.org",
+								"@type": "Organization",
+								name: "AIRNET",
+								url: "https://airnet.uz/",
+								logo: "https://airnet.uz/logo.png",
 								contactPoint: {
-									'@type': 'ContactPoint',
-									telephone: '99890 3243080',
-									contactType: 'customer service',
-									areaServed: 'UZ',
-									availableLanguage: 'ru',
+									"@type": "ContactPoint",
+									telephone: "99890 3243080",
+									contactType: "customer service",
+									areaServed: "UZ",
+									availableLanguage: "ru",
 								},
 							},
 							null,
@@ -103,48 +103,48 @@ function MyApp({ Component, pageProps }) {
 				{/* ------------- LocalBusiness ------------- */}
 
 				<script
-					type='application/ld+json'
+					type="application/ld+json"
 					dangerouslySetInnerHTML={{
 						__html: JSON.stringify(
 							{
-								'@context': 'https://schema.org',
-								'@type': 'InsuranceAgency',
-								name: 'AIRNET',
-								image: 'https://airnet.uz/logo.png',
-								'@id': 'https://airnet.uz/',
-								url: 'https://airnet.uz/',
-								telephone: '99890 3243080',
-								priceRange: '$1 - $300',
+								"@context": "https://schema.org",
+								"@type": "InsuranceAgency",
+								name: "AIRNET",
+								image: "https://airnet.uz/logo.png",
+								"@id": "https://airnet.uz/",
+								url: "https://airnet.uz/",
+								telephone: "99890 3243080",
+								priceRange: "$1 - $300",
 								address: {
-									'@type': 'PostalAddress',
-									streetAddress: 'Matbuotchilar Street 32',
-									addressLocality: 'Tashkent',
-									postalCode: '100060',
-									addressCountry: 'Uzbekistan',
+									"@type": "PostalAddress",
+									streetAddress: "Matbuotchilar Street 32",
+									addressLocality: "Tashkent",
+									postalCode: "100060",
+									addressCountry: "Uzbekistan",
 								},
 								geo: {
-									'@type': 'GeoCoordinates',
+									"@type": "GeoCoordinates",
 									latitude: 41.310233,
 									longitude: 69.276234,
 								},
 								openingHoursSpecification: [
 									{
-										'@type': 'OpeningHoursSpecification',
+										"@type": "OpeningHoursSpecification",
 										dayOfWeek: [
-											'Monday',
-											'Tuesday',
-											'Wednesday',
-											'Thursday',
-											'Friday',
+											"Monday",
+											"Tuesday",
+											"Wednesday",
+											"Thursday",
+											"Friday",
 										],
-										opens: '08:00',
-										closes: '20:00',
+										opens: "08:00",
+										closes: "20:00",
 									},
 									{
-										'@type': 'OpeningHoursSpecification',
-										dayOfWeek: ['Sunday', 'Saturday'],
-										opens: '09:00',
-										closes: '18:00',
+										"@type": "OpeningHoursSpecification",
+										dayOfWeek: ["Sunday", "Saturday"],
+										opens: "09:00",
+										closes: "18:00",
 									},
 								],
 							},
@@ -161,11 +161,11 @@ function MyApp({ Component, pageProps }) {
 				}}
 			></noscript>
 			<link
-				href='https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap'
-				rel='stylesheet'
+				href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+				rel="stylesheet"
 			/>
 			<Header language={language} />
-			<div className='app'>
+			<div className="app">
 				<Component {...pageProps} language={language} />
 				<Cookies language={language} />
 			</div>
