@@ -17,12 +17,17 @@ $red: #f00;
 	z-index: 5;
 	display: flex;
 	align-items: flex-end;
-	width: 500px;
+	justify-content: space-between;
+	max-width: 500px;
 
 	&__block {
+		display: flex;
+		gap: 8px;
+
 		a {
 			text-decoration: underline !important;
 		}
+
 		button {
 			font-size: 14px;
 			border: none;
@@ -30,7 +35,7 @@ $red: #f00;
 			text-decoration: underline;
 			font-weight: 700;
 			padding: 0;
-			margin-left: 10px;
+			background-color: transparent !important;
 
 			&:first-child {
 				color: $red;
@@ -43,5 +48,10 @@ $red: #f00;
 		&:first-child {
 			width: calc(100% - 140px);
 		}
+	}
+
+	@media (max-width: 660px) {
+		width: calc(100% - 20px);
+		left: 10px;
 	}
 }

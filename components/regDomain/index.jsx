@@ -1,14 +1,14 @@
-import axios from 'axios'
-import { useEffect, useState } from 'react'
-import Container from '../container/index.jsx'
-import st from './regDomain.module.scss'
+import axios from "axios"
+import { useEffect, useState } from "react"
+import Container from "../container/index.jsx"
+import st from "./regDomain.module.scss"
 
 export default function RegDomain({ language }) {
 	const langData = {
 		title: {
-			ru: 'Зарегистрируем домен?',
+			ru: "Зарегистрируем домен?",
 			uz: "Domenni ro'yxatdan o'tkazamizmi?",
-			en: 'Shall we register a domain?',
+			en: "Shall we register a domain?",
 		},
 	}
 
@@ -24,34 +24,34 @@ export default function RegDomain({ language }) {
 export const RegDomainBlock = ({ language }) => {
 	const langData = {
 		inputPlaceholder: {
-			ru: 'Введите название домена например: airnet.uz',
-			uz: 'Domen nomini kiriting, masalan: airnet.uz',
-			en: 'Enter the domain name for example: airnet.uz',
+			ru: "Введите название домена например: airnet.uz",
+			uz: "Domen nomini kiriting, masalan: airnet.uz",
+			en: "Enter the domain name for example: airnet.uz",
 		},
 		check: {
-			ru: 'Проверить',
-			uz: 'Tekshirish',
-			en: 'Check',
+			ru: "Проверить",
+			uz: "Tekshirish",
+			en: "Check",
 		},
 		domenBooked: {
-			ru: 'доменное имя в данное время недоступно для регистрации.',
-			uz: 'domen nomi hozirda ro‘yxatdan o‘tish uchun mavjud emas.',
-			en: 'domain name is currently unavailable for registration.',
+			ru: "доменное имя в данное время недоступно для регистрации.",
+			uz: "domen nomi hozirda ro‘yxatdan o‘tish uchun mavjud emas.",
+			en: "domain name is currently unavailable for registration.",
 		},
 		domenFree: {
-			ru: 'доменное имя в данное время доступно для регистрации.',
+			ru: "доменное имя в данное время доступно для регистрации.",
 			uz: "domen nomi hozirda ro'yxatdan o'tish uchun mavjud.",
-			en: 'domain name is currently available for registration.',
+			en: "domain name is currently available for registration.",
 		},
 		sumVg: {
-			ru: 'сум/год',
+			ru: "сум/год",
 			uz: "so'm/yil",
-			en: 'sum/year',
+			en: "sum/year",
 		},
 	}
 
 	const [isDomainFree, setIsDomainFree] = useState({
-			domain: '',
+			domain: "",
 			isShow: false,
 			isActive: false,
 		}),
@@ -60,43 +60,43 @@ export const RegDomainBlock = ({ language }) => {
 
 	useEffect(() => {
 		if (!modal) {
-			document.body.style = 'overflow:unset'
+			document.body.style = "overflow:unset"
 			return
 		}
 
-		document.body.style = 'overflow:hidden'
+		document.body.style = "overflow:hidden"
 
 		const outerClick = (event) => {
 			const target = event.target
-			if (!target.closest('#modalBlock')) {
+			if (!target.closest("#modalBlock")) {
 				setModal(false)
 			}
 		}
 
-		document.addEventListener('click', outerClick)
+		document.addEventListener("click", outerClick)
 
-		return () => document.removeEventListener('click', outerClick)
+		return () => document.removeEventListener("click", outerClick)
 	}, [modal])
 
 	const checkDomain = (e) => {
 		e.preventDefault()
 
 		setLoading(true)
-		let domain = document.querySelector('#domain').value
+		let domain = document.querySelector("#domain").value
 
-		if (!domain.includes('.uz')) {
-			domain += '.uz'
-			document.querySelector('#domain').value = domain
+		if (!domain.includes(".uz")) {
+			domain += ".uz"
+			document.querySelector("#domain").value = domain
 		}
 
 		axios
-			.post('https://api.airnet.uz/api/check/domain', {
+			.post("https://api.airnet.uz/api/check/domain", {
 				domain,
 			})
 			.then((res) => {
 				setLoading(false)
 
-				if (res.data.data?.dstatus !== 'empty')
+				if (res.data.data?.dstatus !== "empty")
 					setIsDomainFree({
 						domain,
 						isShow: true,
@@ -110,18 +110,18 @@ export const RegDomainBlock = ({ language }) => {
 	return (
 		<>
 			<form onSubmit={checkDomain} className={st.regDomain__block}>
-				www.{' '}
+				www.{" "}
 				<input
-					id='domain'
+					id="domain"
 					placeholder={langData.inputPlaceholder[language]}
 					required
 				/>
-				<button type='submit' disabled={loading}>
-					{langData.check[language]}{' '}
+				<button type="submit" disabled={loading}>
+					{langData.check[language]}{" "}
 					{loading && (
 						<div
-							class='spinner-border text-light spinner-border-sm'
-							role='status'
+							class="spinner-border text-light spinner-border-sm"
+							role="status"
 						></div>
 					)}
 				</button>
@@ -129,13 +129,13 @@ export const RegDomainBlock = ({ language }) => {
 
 			{isDomainFree.isShow && (
 				<p className={st.regDomain__text}>
-					<strong>{isDomainFree.domain}</strong>{' '}
+					<strong>{isDomainFree.domain}</strong>{" "}
 					{isDomainFree.isActive ? (
 						<span className={st.regDomain__text__red}>
-							{langData.domenBooked[language]}{' '}
+							{langData.domenBooked[language]}{" "}
 							<span
 								className={st.regDomain__text__red}
-								style={{ textDecoration: 'underline', cursor: 'pointer' }}
+								style={{ textDecoration: "underline", cursor: "pointer" }}
 								onClick={() => setModal(!modal)}
 							>
 								whois
@@ -145,35 +145,35 @@ export const RegDomainBlock = ({ language }) => {
 						<>
 							<span className={st.regDomain__text__green}>
 								{langData.domenFree[language]}
-							</span>{' '}
-							{language === 'uz' ? (
+							</span>{" "}
+							{language == "uz" ? (
 								<>
-									Buyurtma qilish uchun{' '}
+									Buyurtma qilish uchun{" "}
 									<a
 										href={`https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=${isDomainFree.domain}`}
 									>
 										Ushbu havolaga
-									</a>{' '}
+									</a>{" "}
 									bosing
 								</>
-							) : language === 'en ' ? (
+							) : language == "en " ? (
 								<>
-									Click{' '}
+									Click{" "}
 									<a
 										href={`https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=${isDomainFree.domain}`}
 									>
 										To order
-									</a>{' '}
+									</a>{" "}
 									to register a domain name.
 								</>
 							) : (
 								<>
-									Нажмите{' '}
+									Нажмите{" "}
 									<a
 										href={`https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=${isDomainFree.domain}`}
 									>
 										Заказать
-									</a>{' '}
+									</a>{" "}
 									для регистрации доменного имени.
 								</>
 							)}
@@ -199,8 +199,8 @@ export const RegDomainBlock = ({ language }) => {
 			</p>
 			{/* <p className={st.regDomain__endText}>Домен в зоне UZ c хостингом - Бесплатно</p> */}
 
-			<div className={`${st.modal} ${modal ? st.modal__active : ''}`}>
-				<div id='modalBlock' className={st.modal__block}>
+			<div className={`${st.modal} ${modal ? st.modal__active : ""}`}>
+				<div id="modalBlock" className={st.modal__block}>
 					<table>
 						<tr>
 							<th>dName</th>
@@ -325,11 +325,11 @@ export const RegDomainBlock = ({ language }) => {
 					</table>
 				</div>
 				<svg
-					xmlns='http://www.w3.org/2000/svg'
-					viewBox='0 0 320 512'
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 320 512"
 					onClick={() => setModal(false)}
 				>
-					<path d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z' />
+					<path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
 				</svg>
 			</div>
 		</>

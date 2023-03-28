@@ -1,26 +1,26 @@
-import { useEffect, useState } from "react";
-import Link from "next/dist/client/link";
+import Link from "next/dist/client/link"
+import { useEffect, useState } from "react"
 
-import FAQ from "@/components/faq";
-import Notifications from "@/components/notifications";
-import Partners from "@/components/partners";
-import CustomSwiper from "@/components/customSwiper";
-import Trust from "@/components/trust";
-import WhyBlock from "@/components/whyBlock";
-import RegDomain from "@/components/regDomain";
-import Sitepad from "@/components/sitepad";
-import Stock from "@/components/stock";
-import TarifCard from "@/components/tarifCard";
-import TarifMaket from "@/components/tarifMaket";
-import TarifCard2 from "@/components/tarifCard2";
-import Reviews from "@/components/reviews";
-import Product from "@/components/seo/product";
-import SEO from "@/components/seo";
+import CustomSwiper from "@/components/customSwiper"
+import FAQ from "@/components/faq"
+import Notifications from "@/components/notifications"
+import Partners from "@/components/partners"
+import RegDomain from "@/components/regDomain"
+import Reviews from "@/components/reviews"
+import SEO from "@/components/seo"
+import Product from "@/components/seo/product"
+import Sitepad from "@/components/sitepad"
+import Stock from "@/components/stock"
+import TarifCard from "@/components/tarifCard"
+import TarifCard2 from "@/components/tarifCard2"
+import TarifMaket from "@/components/tarifMaket"
+import Trust from "@/components/trust"
+import WhyBlock from "@/components/whyBlock"
 
-import { Navigation, Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
+import { Autoplay, Navigation } from "swiper"
+import "swiper/css"
+import "swiper/css/navigation"
+import { Swiper, SwiperSlide } from "swiper/react"
 
 const faq = [
 		{
@@ -33,24 +33,31 @@ const faq = [
 				ru: (
 					<>
 						<p>
-							Чтобы протестировать сервис, сначала нужно <a href="#">зарегистрироваться.</a>
+							Чтобы протестировать сервис, сначала нужно{" "}
+							<a href="#">зарегистрироваться.</a>
 						</p>
 
-						<p>Вам нужен VDS сервер? - Выполните 5 простых шагов, описанных здесь</p>
+						<p>
+							Вам нужен VDS сервер? - Выполните 5 простых шагов, описанных здесь
+						</p>
 
 						<p>
-							Вы представляете юр.лицо, и вам нужен полноценный тестовый стенд? -{" "}
-							<strong>напишите нам</strong>
+							Вы представляете юр.лицо, и вам нужен полноценный тестовый стенд?
+							- <strong>напишите нам</strong>
 						</p>
 					</>
 				),
 				uz: (
 					<>
 						<p>
-							Xizmatni sinab koʻrish uchun avval <a href="#">roʻyxatdan oʻtishingiz kerak.</a>
+							Xizmatni sinab koʻrish uchun avval{" "}
+							<a href="#">roʻyxatdan oʻtishingiz kerak.</a>
 						</p>
 
-						<p>Sizga VDS server kerakmi? - Bu yerda tasvirlangan 5 oson qadamni bajaring</p>
+						<p>
+							Sizga VDS server kerakmi? - Bu yerda tasvirlangan 5 oson qadamni
+							bajaring
+						</p>
 
 						<p>
 							Siz yuridik shaxssiz va sizga to'liq huquqli test stoli kerakmi? -{" "}
@@ -64,11 +71,13 @@ const faq = [
 							To test the service, you first need to <a href="#">sign up.</a>
 						</p>
 
-						<p>Do you need a VDS server? - Follow the 5 easy steps described here</p>
+						<p>
+							Do you need a VDS server? - Follow the 5 easy steps described here
+						</p>
 
 						<p>
-							Are you a legal entity and do you need a full-fledged test stand? -{" "}
-							<strong>write to us</strong>
+							Are you a legal entity and do you need a full-fledged test stand?
+							- <strong>write to us</strong>
 						</p>
 					</>
 				),
@@ -83,20 +92,20 @@ const faq = [
 			description: {
 				ru: (
 					<p>
-						Время ответа может занять до 30 мин. Оно зависит от числа обращений в определенный
-						период времени.
+						Время ответа может занять до 30 мин. Оно зависит от числа обращений
+						в определенный период времени.
 					</p>
 				),
 				uz: (
 					<p>
-						Javob berish vaqti 30 daqiqagacha vaqt olishi mumkin. Bu ma'lum bir davrdagi
-						qo'ng'iroqlar soniga bog'liq. vaqt.
+						Javob berish vaqti 30 daqiqagacha vaqt olishi mumkin. Bu ma'lum bir
+						davrdagi qo'ng'iroqlar soniga bog'liq. vaqt.
 					</p>
 				),
 				en: (
 					<p>
-						Response time may take up to 30 minutes. It depends on the number of calls in a certain
-						time period.
+						Response time may take up to 30 minutes. It depends on the number of
+						calls in a certain time period.
 					</p>
 				),
 			},
@@ -110,10 +119,14 @@ const faq = [
 			description: {
 				ru: (
 					<>
-						<p>Да. Изменять конфигурации своего сервера вы можете в любой момент. 🚀</p>
+						<p>
+							Да. Изменять конфигурации своего сервера вы можете в любой момент.
+							🚀
+						</p>
 
 						<p>
-							Для <strong>RAM</strong> и <strong>CPU</strong> [требуется перезагрузка]
+							Для <strong>RAM</strong> и <strong>CPU</strong> [требуется
+							перезагрузка]
 						</p>
 
 						<p>
@@ -128,11 +141,13 @@ const faq = [
 				uz: (
 					<>
 						<p>
-							Ha. Siz istalgan vaqtda serveringiz konfiguratsiyasini o'zgartirishingiz mumkin. 🚀
+							Ha. Siz istalgan vaqtda serveringiz konfiguratsiyasini
+							o'zgartirishingiz mumkin. 🚀
 						</p>
 
 						<p>
-							<strong>RAM</strong> va <strong>CPU</strong> uchun [qayta yuklash kerak]
+							<strong>RAM</strong> va <strong>CPU</strong> uchun [qayta yuklash
+							kerak]
 						</p>
 
 						<p>
@@ -146,10 +161,14 @@ const faq = [
 				),
 				en: (
 					<>
-						<p>Yes. You can change the configuration of your server at any time. 🚀</p>
+						<p>
+							Yes. You can change the configuration of your server at any time.
+							🚀
+						</p>
 
 						<p>
-							For <strong>RAM</strong> and <strong>CPU</strong> [reboot required]
+							For <strong>RAM</strong> and <strong>CPU</strong> [reboot
+							required]
 						</p>
 
 						<p>
@@ -172,22 +191,25 @@ const faq = [
 			description: {
 				ru: (
 					<p>
-						Виртуальная инфраструктура <strong>AIRNET</strong> компании использует{" "}
-						<strong>VMware</strong> с прикладными дополнениями. Виртуальные сервера создаются в
-						среде операционной системы <strong>ESXi</strong>.
+						Виртуальная инфраструктура <strong>AIRNET</strong> компании
+						использует <strong>VMware</strong> с прикладными дополнениями.
+						Виртуальные сервера создаются в среде операционной системы{" "}
+						<strong>ESXi</strong>.
 					</p>
 				),
 				uz: (
 					<p>
-						Kompaniyaning <strong>AIRNET</strong> virtual infratuzilmasi <strong>VMware</strong>{" "}
-						ilova qoʻshimchalari bilan. Virtual serverlar muhitda yaratilgan
+						Kompaniyaning <strong>AIRNET</strong> virtual infratuzilmasi{" "}
+						<strong>VMware</strong> ilova qoʻshimchalari bilan. Virtual
+						serverlar muhitda yaratilgan
 						<strong>ESXi</strong> operatsion tizimi.
 					</p>
 				),
 				en: (
 					<p>
 						The company's <strong>AIRNET</strong> virtual infrastructure uses{" "}
-						<strong>VMware</strong> with application addons. Virtual servers are created in
+						<strong>VMware</strong> with application addons. Virtual servers are
+						created in
 						<strong>ESXi</strong> operating system environment.
 					</p>
 				),
@@ -205,12 +227,13 @@ const faq = [
 						<p>Способы оплаты</p>
 
 						<p>
-							Для <strong>физических лиц</strong>: PAYME, PAYNET, CLICK, UPAY, Webmoney, OSON.uz,
-							VISA, MasterCard и другие.
+							Для <strong>физических лиц</strong>: PAYME, PAYNET, CLICK, UPAY,
+							Webmoney, OSON.uz, VISA, MasterCard и другие.
 						</p>
 
 						<p>
-							Для <strong>юридических лиц</strong>: банковский перевод. (перечисление)
+							Для <strong>юридических лиц</strong>: банковский перевод.
+							(перечисление)
 						</p>
 					</>
 				),
@@ -219,12 +242,13 @@ const faq = [
 						<p>To'lov usullari</p>
 
 						<p>
-							<strong>jismoniy shaxslar</strong> uchun: PAYME, PAYNET, CLICK, UPAY, Webmoney,
-							OSON.uz, VISA, MasterCard va boshqalar.
+							<strong>jismoniy shaxslar</strong> uchun: PAYME, PAYNET, CLICK,
+							UPAY, Webmoney, OSON.uz, VISA, MasterCard va boshqalar.
 						</p>
 
 						<p>
-							<strong>yuridik shaxslar</strong> uchun: bank o‘tkazmasi. (ro'yxatga olish)
+							<strong>yuridik shaxslar</strong> uchun: bank o‘tkazmasi.
+							(ro'yxatga olish)
 						</p>
 					</>
 				),
@@ -233,8 +257,8 @@ const faq = [
 						<p>Payment methods</p>
 
 						<p>
-							For <strong>individuals</strong>: PAYME, PAYNET, CLICK, UPAY, Webmoney, OSON.uz, VISA,
-							MasterCard and others.
+							For <strong>individuals</strong>: PAYME, PAYNET, CLICK, UPAY,
+							Webmoney, OSON.uz, VISA, MasterCard and others.
 						</p>
 
 						<p>
@@ -649,8 +673,9 @@ const faq = [
 			description: {
 				ru: (
 					<>
-						Мы обеспечиваем гарантированную доступность сервиса 99%. Круглосуточно, за всеми
-						системами следят наши высококвалифицированные сотрудники. А оборудование размещаем в
+						Мы обеспечиваем гарантированную доступность сервиса 99%.
+						Круглосуточно, за всеми системами следят наши
+						высококвалифицированные сотрудники. А оборудование размещаем в
 						высокотехнологичном, современном, надёжном{" "}
 						<Link href="/dc">
 							<a>Дата-Центре</a>
@@ -660,8 +685,9 @@ const faq = [
 				),
 				uz: (
 					<>
-						Biz 99% kafolatlangan xizmat mavjudligini ta'minlaymiz. Kecha-kunduz, hamma uchun
-						tizimlar bizning yuqori malakali xodimlarimiz tomonidan nazorat qilinadi. Biz jihozlarni
+						Biz 99% kafolatlangan xizmat mavjudligini ta'minlaymiz.
+						Kecha-kunduz, hamma uchun tizimlar bizning yuqori malakali
+						xodimlarimiz tomonidan nazorat qilinadi. Biz jihozlarni
 						joylashtiramiz yuqori texnologiyali, zamonaviy, ishonchli{" "}
 						<Link href="/dc">
 							<a>Ma'lumotlar markazi</a>
@@ -671,9 +697,9 @@ const faq = [
 				),
 				en: (
 					<>
-						We provide guaranteed service availability of 99%. Around the clock, for everyone
-						systems are supervised by our highly qualified staff. We place the equipment in
-						high-tech, modern, reliable{" "}
+						We provide guaranteed service availability of 99%. Around the clock,
+						for everyone systems are supervised by our highly qualified staff.
+						We place the equipment in high-tech, modern, reliable{" "}
 						<Link href="/dc">
 							<a>Data Center</a>
 						</Link>{" "}
@@ -693,7 +719,11 @@ const faq = [
 			img: "/wallet.png",
 		},
 		{
-			title: { ru: "Собственные ip-адреса", uz: "O'z IP manzillari", en: "Own ip-addresses" },
+			title: {
+				ru: "Собственные ip-адреса",
+				uz: "O'z IP manzillari",
+				en: "Own ip-addresses",
+			},
 			description: {
 				ru: 'Мы предоставляем услуги по собственной BGP протоколу (Border Gateway Protocol) для всех блоков IP-адресов. Подключенныe напрямую к автономной системе (AS) АК "Узтелеком", а также являемся участниками зоны TAS-IX.',
 				uz: "Biz barcha IP-manzillar bloklari uchun o'z BGP protokolimiz (Chegara shlyuzi protokoli) yordamida xizmatlarni taqdim etamiz. “O‘ztelekom” AK avtonom tizimiga (AS) bevosita ulangan va biz ham TAS-IX zonasi a’zolarimiz.",
@@ -701,7 +731,7 @@ const faq = [
 			},
 			img: "/ip.png",
 		},
-	];
+	]
 
 export default function Home({ language }) {
 	const langData = {
@@ -734,9 +764,10 @@ export default function Home({ language }) {
 			ru: (
 				<>
 					<p>
-						Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2-х
-						рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического
-						персонала. Среднее время активации оборудования после оплаты - 1-2 часа. Мы делам всё
+						Срок установки сервера, после оформления заказа и оплаты, составляет
+						от 30 минут до 2-х рабочих дней, в зависимости от наличия
+						необходимых серверов и загрузки технического персонала. Среднее
+						время активации оборудования после оплаты - 1-2 часа. Мы делам всё
 						возможное, чтобы уменьшить время ожидания.
 					</p>
 					<p>Срок действия услуги начнется с момента её активации.</p>
@@ -745,9 +776,10 @@ export default function Home({ language }) {
 			uz: (
 				<>
 					<p>
-						Buyurtma va to'lovni amalga oshirgandan so'ng serverni o'rnatish vaqti 30 daqiqadan 2
-						daqiqagacha zarur serverlarning mavjudligi va texnik yukga qarab ish kunlari xodimlar.
-						To'lovdan so'ng uskunani faollashtirishning o'rtacha vaqti 1-2 soat. Biz hamma narsani
+						Buyurtma va to'lovni amalga oshirgandan so'ng serverni o'rnatish
+						vaqti 30 daqiqadan 2 daqiqagacha zarur serverlarning mavjudligi va
+						texnik yukga qarab ish kunlari xodimlar. To'lovdan so'ng uskunani
+						faollashtirishning o'rtacha vaqti 1-2 soat. Biz hamma narsani
 						qilamiz kutish vaqtini qisqartirish mumkin.
 					</p>
 					<p>Xizmat u yoqilgan paytdan boshlab ishga tushadi.</p>
@@ -756,9 +788,10 @@ export default function Home({ language }) {
 			en: (
 				<>
 					<p>
-						Server installation time, after placing an order and payment, is from 30 minutes to 2
-						working days, depending on the availability of the necessary servers and the load of the
-						technical personnel. Average equipment activation time after payment is 1-2 hours. We do
+						Server installation time, after placing an order and payment, is
+						from 30 minutes to 2 working days, depending on the availability of
+						the necessary servers and the load of the technical personnel.
+						Average equipment activation time after payment is 1-2 hours. We do
 						everything possible to reduce the waiting time.
 					</p>
 					<p>The service will start from the moment it is activated.</p>
@@ -780,32 +813,41 @@ export default function Home({ language }) {
 			uz: "Bizdan tez-tez so'rashadi",
 			en: "We are often asked",
 		},
-	};
-	const [show, setShow] = useState(-1);
+	}
+	const [show, setShow] = useState(-1)
 
 	useEffect(() => {
 		const outerClick = (e) => {
-			const classList = [...e.target?.classList];
+			const classList = [...e.target?.classList]
 
 			if (!classList.join(" ").includes("tarif_drop")) {
-				setShow(-1);
+				setShow(-1)
 			}
-		};
-		document.addEventListener("click", outerClick);
-		return () => document.removeEventListener("click", outerClick);
-	}, []);
+		}
+		document.addEventListener("click", outerClick)
+		return () => document.removeEventListener("click", outerClick)
+	}, [])
 
 	return (
 		<>
-			<SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
-			<Product />
+			<SEO
+				title={langData.seoTitle[language]}
+				desc={langData.seoDesc[language]}
+			/>
+			<Product language={language} />
 			<CustomSwiper language={language} />
-			<WhyBlock title={langData.whyBlockTitle[language]} content={content} language={language} />
+			<WhyBlock
+				title={langData.whyBlockTitle[language]}
+				content={content}
+				language={language}
+			/>
 			<TarifMaket
 				title={langData.tarifMaketTitle[language]}
 				description={<p>{langData.tarifMaketDesc[language]}</p>}
 				endText={
-					<div className="text-white text-center mt-2">{langData.tarifMaketEnd[language]}</div>
+					<div className="text-white text-center mt-2">
+						{langData.tarifMaketEnd[language]}
+					</div>
 				}
 			>
 				<Swiper
@@ -851,7 +893,11 @@ export default function Home({ language }) {
 			<TarifMaket
 				title={langData.tarifMaketTitle2[language]}
 				description={<p>{langData.tarifMaketDesc[language]}</p>}
-				endText={<p className="text-white text-center mt-2">{langData.tarifMaketEnd2[language]}</p>}
+				endText={
+					<p className="text-white text-center mt-2">
+						{langData.tarifMaketEnd2[language]}
+					</p>
+				}
 			>
 				<Swiper
 					cssMode={true}
@@ -900,5 +946,5 @@ export default function Home({ language }) {
 			<Notifications language={language} />
 			<Partners language={language} />
 		</>
-	);
+	)
 }
