@@ -5,7 +5,7 @@ import Link from "next/link"
 const data = {
 	title: {
 		ru: "Как перенести сайт на хостинг AIRNET?",
-		uz: " Qanday quilib saytni AIRNET serveriga otqazish mumkin",
+		uz: "Qanday quilib saytni AIRNET serveriga otqazish mumkin?",
 	},
 	description: { ru: "", uz: "", en: "" },
 	content: {
@@ -190,12 +190,12 @@ const data = {
 					o'tkaziladi.
 				</p>
 				<p>
-					O'tkazish bizning saytimizda allaqachon joylashtirilganidan amalga
-					oshirilishi mumkin hosting hisobiga, boshqa hisob qaydnomasiga yoki
-					boshqa hostingdan biznikiga.
+					O'tkazish bizning xostingimizda allaqachon mavjud bo'lgan bir hisobdan
+					boshqa hisob qaydnomasiga yoki boshqa hostingdan bizning hisobimizga
+					amalga oshirilishi mumkin.
 				</p>
 				<p>
-					ПMigratsiyani amalga oshirishdan oldin, qaysi sayt komponentlari
+					Migratsiyani amalga oshirishdan oldin, qaysi sayt komponentlari
 					ko'chirilishini aniqlashingiz kerak.
 				</p>
 				<p>Har bir sayt shartli ravishda bir nechta qismlardan iborat:</p>
@@ -217,8 +217,8 @@ const data = {
 				</p>
 				<h2>1.SAYT DOMENINI O'TKAZISH</h2>
 				<p>
-					Bizning xostingimizga domen qo'shganda, uni vakolat berishni tavsiya
-					qilamiz Spaceweb DNS serverlari:
+					Bizning xostingimizga domen qo'shganda, Spaceweb DNS serverlari dan
+					vakolat berishni tavsiya qilamiz :
 				</p>
 				<ul className="list">
 					<li>ns1.airnet.uz</li>
@@ -226,11 +226,11 @@ const data = {
 				</ul>
 				<h2>2. SAYT MAZMUNINI O'TKAZISH</h2>
 				<p>
-					Sayt tarkibini o'tkazish uchun siz jild tarkibini joylashtirishingiz
-					kerak sayt tarkibini yangi hisobdagi bir xil jildga.
+					Sayt tarkibini o'tkazish uchun siz jild tarkibini,yangi hisobdagi bir
+					xil jildga joylashtirishingiz kerak boladi .
 				</p>
 				<p>
-					Buni FTP orqali sayt tarkibini yuklab olish orqali amalga oshirish
+					Buni FTP orqali, sayt tarkibini yuklab olish orqali amalga oshirish
 					mumkin mahalliy kompyuter, keyin uni yangi hisobdagi veb-papkaga
 					joylashtiring.
 				</p>
@@ -247,10 +247,10 @@ const data = {
 				</p>
 				<h2>4. KONFIGURASYON FAYLLARINI TAHRIRLASH</h2>
 				<p>
-					Agar ko'chirilayotgan sayt ma'lumotlar bazasidan foydalansa,
-					bajarilgandan so'ng ikkinchi va uchinchi bosqichlar, siz uni
-					tahrirlashingiz kerak konfiguratsiya fayllari to'g'ri bo'ladigan
-					tarzda uzatilgan bazaga ulanish.
+					Agar ko'chirilayotgan sayt ma'lumotlar bazasidan foydalansa, ikkinchi
+					va uchinchi bosqichlar bajarilgandan so'ng ,uzatilgan bazaga ulanish
+					konfiguratsiya fayllari to'g'ri bo'ladigan tarzda siz uni
+					tahrirlashingiz kerak .
 				</p>
 				<p>
 					Konfiguratsiya faylida quyidagi parametrlar o'zgartirilishi kerak:
@@ -347,9 +347,9 @@ const data = {
 					</tbody>
 				</table>
 				<p>
-					Agar domensiz hisob qaydnomasi buyurtma qilingan bo'lsa, hisob
-					qaydnomasiga ega bo'ladi [login].airnet.uz shaklidagi texnik domen
-					mavjud.
+					Agar domensiz hisob qaydnomasi buyurtma qilingan
+					bo'lsa,[login].airnet.uz shaklidagi texnik domen hisob qaydnomasiga
+					ega bo'ladi .
 				</p>
 			</>
 		),

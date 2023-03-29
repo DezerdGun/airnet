@@ -5,7 +5,7 @@ import Link from "next/link"
 const data = {
 	title: {
 		ru: "Как зарегистрировать домен?",
-		uz: "Qanday qilib domenni royxatdan o'tqazish",
+		uz: "Qanday qilib domenni royxatdan o'tqazish?",
 	},
 	description: { ru: "", uz: "", en: "" },
 	content: {
@@ -44,13 +44,14 @@ const data = {
 					hisoblanadi
 				</p>
 				<p>
-					UZ zonasida domenni ro‘yxatdan o‘tkazish uchun{" "}
+					UZ zonasida domenni ro‘yxatdan o‘tkazish uchun “
 					<Link href={LINKS.DOMAINS}>
 						<a>domen harid qilish</a>
-					</Link>{" "}
-					sahifasiga o‘ting “ ” проверьте свободен ли домен для регистрации и
-					оставьте заявку, после оплаты с вами свяжутся менеджеры для
-					подтверждения ваших персональных данных для регистрации домена.
+					</Link>
+					” sahifasiga o‘ting domen ro'yxatdan o'tish uchun bepul yoki
+					yo'qligini tekshiring so'rov qoldiring, to'lov menejerlari siz bilan
+					bog'langandan keyin domenni ro'yxatdan o'tkazish uchun shaxsiy
+					ma'lumotlaringizni tasdiqlang.
 				</p>
 			</>
 		),

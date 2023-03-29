@@ -29,11 +29,11 @@ const data = {
 			<>
 				<p>
 					{" "}
-					Istalgan davlat fuqarosi .UZ domenini ro‘yxatdan o‘tkazishi mumkin.
+					Istalgan davlat fuqarosi .UZ domenida ro‘yxatdan o‘tkazishi mumkin.
 				</p>
 				<p>
 					UZ domenlari uchun roʻyxatdan oʻtgandan soʻng,{" "}
-					<strong>ishlash muddati</strong>, 30 kun davom etadi. Bu davrda joriy
+					<strong>ishlash muddati</strong> 30 kun davom etadi. Bu davrda joriy
 					domen administratori domenni yangilashi mumkin.
 				</p>
 				<p>

@@ -3,7 +3,7 @@ import FaqInside from "@/components/faqInside"
 const data = {
 	title: {
 		ru: "Как установить WordPress на хостинг?",
-		uz: " Qanday qilib WordPressni xostga yuklash",
+		uz: "Qanday qilib WordPressni xostga yuklash?",
 	},
 	description: { ru: "", uz: "", en: "" },
 	content: {
@@ -75,7 +75,7 @@ const data = {
 				<h2>Buni bilishingiz shart</h2>
 				<p>
 					Siz saytingizga, uning kataloglariga va dasturiy ta'minotiga
-					kirishingiz kerak O'rnatish jarayonini ta'minlash. Bu:
+					kirishingiz kerak. O'rnatish jarayonini ta'minlash bu:
 				</p>
 				<p>
 					Veb-saytingizga kirish (FTP)
@@ -89,7 +89,7 @@ const data = {
 				<h2>Ornatishni boshlang:</h2>
 				<ul className="list">
 					<li>
-						WordPress ni songi taqvinini.
+						WordPress ni songi taqvinini{" "}
 						<a rel="nofollow" href="http://ru.wordpress.org/">
 							qabul qilish
 						</a>{" "}

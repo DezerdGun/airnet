@@ -3,7 +3,7 @@ import { LINKS } from "@/components/requirements"
 import Link from "next/link"
 
 const data = {
-	title: { ru: "Как заключить договор?", uz: "Qanday qilib shartnoma tuzish" },
+	title: { ru: "Как заключить договор?", uz: "Qanday qilib shartnoma tuzish?" },
 	description: { ru: "", uz: "" },
 	content: {
 		ru: (
@@ -31,9 +31,10 @@ const data = {
 					Taklifning ommaviy shartnomasi imzolashni talab qilmaydi va xuddi
 					shunday "oddiy" ikki tomonlama shartnoma kabi yuridik kuchga ega.
 					O‘zbekiston Respublikasi Fuqarolik kodeksining 370-moddasiga asosan
-					ofertaning ommaviy shartnomasi shartlarini so'zsiz qabul qilish (qabul
-					qilish). Tizimda ro'yxatdan o'tish yoki to'lovni amalga oshirish
-					xizmat to'lovi hisobi. Shartnoma matni bilan tanishish uchun ushbu{" "}
+					ofertaning ommaviy shartnomasi shartlarini inkorsiz qabul qiladi
+					(qabul qilish). Tizimda ro'yxatdan o'tish yoki to'lovni amalga
+					oshirish xizmat to'lovi hisobi va shartnoma matni bilan tanishish
+					uchun ushbu{" "}
 					<Link href={LINKS.OFERTA}>
 						<a>havola</a>
 					</Link>

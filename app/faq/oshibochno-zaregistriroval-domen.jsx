@@ -28,13 +28,13 @@ const data = {
 		uz: (
 			<>
 				<p>
-					Rad etish sababidan qat'iy nazar, domen nomini to'g'rilang yoki
+					Rad etish sababidan qat'iy nazar, domen nomini to'g'rilash yoki
 					to'langan narxni boshqa domen nomiga o'tkazish{" "}
 					<strong>mumkin emas</strong>!
 				</p>
 				<p>
-					Agar domen UZ da <strong>royxatdan otqazilgan</strong> bolsa
-					muvaffaqiyatli ro'yxatdan o'tgandan keyin to'lovni qaytarish{" "}
+					Agar domen UZ da muvaffaqiyatli <strong>royxatdan otqazilgan</strong> bolsa
+					 to'lovni qaytarish{" "}
 					<strong>mumkin emas</strong>.
 				</p>
 				<p>

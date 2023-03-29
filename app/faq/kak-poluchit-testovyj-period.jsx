@@ -3,7 +3,7 @@ import FaqInside from "@/components/faqInside"
 const data = {
 	title: {
 		ru: "Как получить тестовый период?",
-		uz: "Qanday qilib tajriba vaqtinni olish mumkin",
+		uz: "Qanday qilib tajriba vaqtinni olish mumkin?",
 	},
 	description: { ru: "", uz: "" },
 	content: {

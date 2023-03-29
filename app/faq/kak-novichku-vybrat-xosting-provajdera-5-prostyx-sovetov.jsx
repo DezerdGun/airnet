@@ -139,7 +139,7 @@ const data = {
 					berishingiz kerak Barcha keyingi ishlar bo'ladigan parametrlar:
 				</p>
 				<p>
-					🔻 uptime (uzliksiz ish vaqti), ​
+					🔻 uptime (uzliksiz ish vaqti),
 					<br />
 					🔻 sayt yuklash tezligi,
 					<br />
