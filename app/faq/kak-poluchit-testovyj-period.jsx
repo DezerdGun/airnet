@@ -1,16 +1,31 @@
-import FaqInside from '@/components/faqInside'
+import FaqInside from "@/components/faqInside"
 
 const data = {
-	title: 'Как получить тестовый период?',
-	description: '',
-	content: (
-		<p>
-			Мы предоставляем тестовый период автоматически, сразу после регистрации
-			аккаунта у нас:
-		</p>
-	),
+	title: {
+		ru: "Как получить тестовый период?",
+		uz: "Qanday qilib tajriba vaqtinni olish mumkin",
+	},
+	description: { ru: "", uz: "" },
+	content: {
+		ru: (
+			<>
+				<p>
+					Мы предоставляем тестовый период автоматически, сразу после
+					регистрации аккаунта у нас:
+				</p>
+			</>
+		),
+		uz: (
+			<>
+				<p>
+					Biz darhol sinov muddatini avtomatik ravishda taqdim etamiz bizda
+					hisob qaydnomasini ro'yxatdan o'tkazish:
+				</p>
+			</>
+		),
+	},
 }
 
-export default function FAQ() {
-	return <FaqInside data={data} />
+export default function KakPoluchitTestovyjPeriod({ language }) {
+	return <FaqInside data={data} language={language} />
 }

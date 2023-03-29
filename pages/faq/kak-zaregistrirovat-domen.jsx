@@ -1,5 +1,6 @@
-import FAQ from "@/app/faq/kak-zaregistrirovat-domen";
+import KakZaregistrirovatDomen from '@/app/faq/kak-zaregistrirovat-domen'
+
 
 export default function ({ language }) {
-	return <FAQ language={language} />;
+	return <KakZaregistrirovatDomen language={language} />;
 }

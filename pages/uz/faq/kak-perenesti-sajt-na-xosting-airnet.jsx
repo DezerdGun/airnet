@@ -1,5 +1,5 @@
-import FAQ from "@/app/faq/kak-perenesti-sajt-na-xosting-airnet";
+import KakPerenestiSajtNaXostingAirnet from "@/pages/faq/kak-perenesti-sajt-na-xosting-airnet"
 
 export default function ({ language }) {
-	return <FAQ language={language} />;
+	return <KakPerenestiSajtNaXostingAirnet language={language} />
 }
