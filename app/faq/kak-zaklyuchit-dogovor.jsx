@@ -3,7 +3,7 @@ import { LINKS } from "@/components/requirements"
 import Link from "next/link"
 
 const data = {
-	title: { ri: "Как заключить договор?", uz: "Qanday qilib shartnoma tuzish" },
+	title: { ru: "Как заключить договор?", uz: "Qanday qilib shartnoma tuzish?" },
 	description: { ru: "", uz: "" },
 	content: {
 		ru: (

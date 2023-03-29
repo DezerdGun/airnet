@@ -3,7 +3,7 @@ import FaqInside from "@/components/faqInside"
 const data = {
 	title: {
 		ru: "Как установить WordPress на хостинг?",
-		u: " Qanday qilib WordPressni xostga yuklash",
+		uz: "Qanday qilib WordPressni xostga yuklash?",
 	},
 	description: { ru: "", uz: "", en: "" },
 	content: {

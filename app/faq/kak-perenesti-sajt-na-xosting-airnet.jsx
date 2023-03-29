@@ -5,7 +5,7 @@ import Link from "next/link"
 const data = {
 	title: {
 		ru: "Как перенести сайт на хостинг AIRNET?",
-		uz: " Qanday quilib saytni AIRNET serveriga otqazish mumkin",
+		uz: "Qanday quilib saytni AIRNET serveriga otqazish mumkin?",
 	},
 	description: { ru: "", uz: "", en: "" },
 	content: {

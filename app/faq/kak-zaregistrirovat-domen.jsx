@@ -5,7 +5,7 @@ import Link from "next/link"
 const data = {
 	title: {
 		ru: "Как зарегистрировать домен?",
-		uz: "Qanday qilib domenni royxatdan o'tqazish",
+		uz: "Qanday qilib domenni royxatdan o'tqazish?",
 	},
 	description: { ru: "", uz: "", en: "" },
 	content: {

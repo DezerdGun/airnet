@@ -1,15 +1,15 @@
-import Container from '@/components/container'
-import SEO from '@/components/seo'
+import Container from "@/components/container"
+import SEO from "@/components/seo"
 
 export default function DC({ language }) {
 	const langData = {
 		seoTitle: {
-			ru: 'Дата-Центр в Ташкенте | Airnet',
-			uz: 'Toshkentdagi Data Center | Airnet',
+			ru: "Дата-Центр в Ташкенте | Airnet",
+			uz: "Toshkentdagi Data Center | Airnet",
 		},
 		desc: {
-			ru: 'Дата-Центр Airnet, который расположен в Ташкенте',
-			uz: 'Toshkent shahrida joylashgan Airnet Data Center',
+			ru: "Дата-Центр Airnet, который расположен в Ташкенте",
+			uz: "Toshkent shahrida joylashgan Airnet Data Center",
 		},
 		tab: {
 			ru: (
@@ -56,7 +56,7 @@ export default function DC({ language }) {
 			),
 		},
 		headTitle: {
-			ri: 'Дата-Центр',
+			ru: "Дата-Центр",
 			uz: "Ma'lumotlar markazi",
 		},
 	}
