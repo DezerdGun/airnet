@@ -1,0 +1,24 @@
+.oferta {
+	display: flex;
+	justify-content: space-between;
+
+	&__block {
+		width: 49.5%;
+
+		h2 {
+			font-size: 20px;
+		}
+	}
+
+	@media (max-width: 770px) {
+		flex-wrap: wrap;
+
+		&__block {
+			width: 100%;
+
+			&:first-child {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
