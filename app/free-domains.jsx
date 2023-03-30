@@ -2,9 +2,9 @@ import Container from "@/components/container"
 import Partners from "@/components/partners"
 import { LINKS } from "@/components/requirements"
 import SEO from "@/components/seo"
-import st from "@/domains/domains.module.scss"
-import Link from "../next/dist/client/link"
+import Link from "next/dist/client/link"
 import { useRef, useState } from "react"
+import st from "./domains/domains.module.scss"
 
 export default function FreeDomains({ language }) {
 	const [isDomainFree, setIsDomainFree] = useState(undefined),
@@ -23,7 +23,8 @@ export default function FreeDomains({ language }) {
 				: setIsDomainFree("no")
 		})
 	}
-	const langdate = {
+
+	const langData = {
 		seoT: {
 			ru: "Бесплатный домен UZ, получить бесплатно домен UZ | Хостинг TAS-IX в Ташкенте, Узбекистане",
 			uz: "Bepul UZ domeni, bepul UZ domenini oling | O'zbekiston, Toshkent shahrida TAS-IX mezbonligi",
@@ -265,53 +266,53 @@ export default function FreeDomains({ language }) {
 	}
 	return (
 		<>
-			<SEO title={langdate.seoT[language]} desc={langdate.descT[language]} />
+			<SEO title={langData.seoT[language]} desc={langData.descT[language]} />
 			<div className={st.domains}>
 				<Container
 					className="mt-0"
 					style={{ background: "url('/servers-2.jpg') no-repeat" }}
-					headTitle={langdate.headTitle[language]}
-					description={langdate.description[language]}
+					headTitle={langData.headTitle[language]}
+					description={langData.description[language]}
 				>
 					<div className={st.domains__head}>
 						<div className={st.domains__head__block}>
-							<h3>{langdate.proverit[language]}</h3>
-							{langdate.proverka[langdate]}
+							<h3>{langData.proverit[language]}</h3>
+							{langData.proverka[langData]}
 							<form
 								onSubmit={checkDomain}
 								className={st.domains__head__block__input}
 							>
 								<div className={st.domains__head__block__input__block}>
 									<span>www.</span>
-									{langdate.placeholder[language]}
+									{langData.placeholder[language]}
 									<span>.</span>
 									<select>
 										<option>uz</option>
 										{/* <option>Все</option> */}
 									</select>
 								</div>
-								{langdate.button[language]}
+								{langData.button[language]}
 							</form>
 							{isDomainFree && (
 								<p className={st.domains__head__block__text}>
 									<strong>{domainName.current.value}.uz</strong>{" "}
 									{isDomainFree === "yes" ? (
 										<span className={st.domains__head__block__text__red}>
-											{langdate.tf[langdate]}
+											{langData.tf[langData]}
 										</span>
 									) : (
-										<>{langdate.tf2[language]}</>
+										<>{langData.tf2[language]}</>
 									)}
 								</p>
 							)}
 							<div className={st.domains__head__block__table}>
-								{langdate.table[language]}
+								{langData.table[language]}
 							</div>
 						</div>
-						{langdate.content[language]}
+						{langData.content[language]}
 					</div>
 				</Container>
-				<Partners />
+				<Partners language={language} />
 			</div>
 		</>
 	)
