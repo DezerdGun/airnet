@@ -5,43 +5,45 @@ const nextConfig = {
 		ignoreDuringBuilds: true,
 	},
 	experimental: { esmExternals: true },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
 
 module.exports = {
 	redirects: async () => {
 		return [
 			{
-				source: '/cheap_vds',
-				destination: '/cheap-vds',
+				source: "/cheap_vds",
+				destination: "/cheap-vds",
 				permanent: true,
 			},
 			{
-				source: '/big_vds',
-				destination: '/big-vds',
+				source: "/big_vds",
+				destination: "/big-vds",
 				permanent: true,
 			},
 			{
-				source: '/sitemap.xml',
-				destination: '/sitemap',
+				source: "/sitemap.xml",
+				destination: "/sitemap",
 				permanent: true,
 			},
 			{
-				source: '/sitemap_index.xml',
-				destination: '/sitemap',
+				source: "/sitemap_index.xml",
+				destination: "/sitemap",
 				permanent: true,
 			},
+			// {
+			// 	source: '/free-domains',
+			// 	destination: '/domains',
+			// 	permanent: true,
+			// },
 			{
-				source: '/free-domains',
-				destination: '/domains',
+				source:
+					"/blog/enovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati",
+				destination:
+					"/blog/lenovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati",
 				permanent: true,
 			},
-			{
-				source: '/blog/enovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati',
-				destination: '/blog/lenovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati',
-				permanent: true,
-			},
-		];
+		]
 	},
-};
+}

@@ -1,12 +1,11 @@
-import Container from "../../components/container";
-import Image from "next/image";
-import SEO from "../../components/seo";
-import ImageFullScreen from "../../components/imageFullScreen";
-import { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
+import Container from "@/components/container"
+import ImageFullScreen from "@/components/imageFullScreen"
+import SEO from "@/components/seo"
+import { useEffect, useState } from "react"
+import { Autoplay, Navigation } from "swiper"
+import "swiper/css"
+import "swiper/css/navigation"
+import { Swiper, SwiperSlide } from "swiper/react"
 
 const license = [
 	{
@@ -18,22 +17,31 @@ const license = [
 	{
 		img: "/license/certificate.png",
 	},
-];
+]
 
-export default function License() {
-	const [image, setImage] = useState("");
+export default function License({ language }) {
+	const [image, setImage] = useState("")
 
 	useEffect(() => {
-		if (image) document.body.style = "overflow:hidden";
-		else document.body.style = "overflow:unset";
-	}, [image]);
-
+		if (image) document.body.style = "overflow:hidden"
+		else document.body.style = "overflow:unset"
+	}, [image])
+	const langDate = {
+		seoT: {
+			ru: "Лицензия на предоставление услуг хостинга | Airnet",
+			uz: "Xosting xizmatlari litsenziyasi | Airnet",
+		},
+		headTitle: {
+			ru: "Лицензии и сертификаты на предоставление услуг хостинга",
+			uz: "Xosting xizmatlarini ko'rsatish uchun litsenziyalar va sertifikatlar",
+		},
+	}
 	return (
 		<>
-			<SEO title="Лицензия на предоставление услуг хостинга | Airnet" desc="" />
+			<SEO title={langDate.seoT[language]} desc="" />
 			<Container
 				className={"text-center"}
-				headTitle="Лицензии и сертификаты на предоставление услуг хостинга"
+				headTitle={langDate.headTitle[language]}
 			>
 				<hr />
 
@@ -78,5 +86,5 @@ export default function License() {
 				{image && <ImageFullScreen image={image} setImage={setImage} />}
 			</Container>
 		</>
-	);
+	)
 }
