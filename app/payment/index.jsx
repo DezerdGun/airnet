@@ -95,7 +95,7 @@ const faq = [
 			},
 		},
 		{
-			title: "PAYNET.uz",
+			title: { ru: "PAYNET.uz", uz: "PAYNET.uz" },
 			description: {
 				ru: (
 					<>
@@ -125,7 +125,7 @@ const faq = [
 			},
 		},
 		{
-			title: "PAYME.uz",
+			title: { ru: "PAYME.uz", uz: "PAYME.uz" },
 			description: {
 				ru: (
 					<>
@@ -167,7 +167,7 @@ const faq = [
 			},
 		},
 		{
-			title: "Click.uz",
+			title: { ru: "Click.uz", uz: "Click.uz" },
 			description: {
 				ru: (
 					<>
@@ -208,7 +208,7 @@ const faq = [
 			},
 		},
 		{
-			title: "UPAY.uz",
+			title: { ru: "UPAY.uz", uz: "UPAY.uz" },
 			description: {
 				ru: (
 					<>
@@ -252,7 +252,7 @@ const faq = [
 			},
 		},
 		{
-			title: "Oson.uz",
+			title: { ru: "Oson.uz", uz: "Oson.uz" },
 			description: {
 				ru: (
 					<>
@@ -317,23 +317,19 @@ const faq = [
 		{
 			title: {
 				ru: "Киоск самообслуживания",
-				uz: " O'z-o'ziga hizat korsatish kioskasi",
+				uz: "O'z-o'ziga hizat korsatish kioskasi",
 			},
 			description: {
 				ru: (
-					<>
-						<p>
-							Киоски самообслуживания находятся на балансе коммерческих банков
-						</p>
-					</>
+					<p>
+						Киоски самообслуживания находятся на балансе коммерческих банков
+					</p>
 				),
 				uz: (
-					<>
-						<p>
-							O‘z-o‘ziga xizmat ko‘rsatish infokiosklari tijorat banklari
-							balansida
-						</p>
-					</>
+					<p>
+						O‘z-o‘ziga xizmat ko‘rsatish infokiosklari tijorat banklari
+						balansida
+					</p>
 				),
 			},
 		},
@@ -342,7 +338,7 @@ const faq = [
 		{
 			title: {
 				ru: "Шаг № 1 (Найдите Конструктор сайтов SitePad и нажмите на него)",
-				uz: "1-qadam № (SitePad Website Builder-ni qidiring va ustiga bosing)",
+				uz: "1-qadam (SitePad Website Builder-ni qidiring va ustiga bosing)",
 			},
 			img: "/sitepad/step-1.jpg",
 			width: 500,
@@ -429,6 +425,7 @@ export default function Payment({ language }) {
 		if (image) document.body.style = "overflow:hidden"
 		else document.body.style = "overflow:unset"
 	}, [image])
+
 	const langData = {
 		seoT: {
 			ru: "Способы оплаты услуг | Хостинг TAS-IX в Ташкенте, Узбекистане",
@@ -467,19 +464,18 @@ export default function Payment({ language }) {
 						</Link> */}
 				</>
 			),
-			
 		},
 		table: {
 			ru: (
 				<>
 					<ul>
 						<li>
-							<a href="#transfer-swift">Банковский перевод</a> (SWIFT) оплата
-							по договору.
+							<a href="#transfer-swift">Банковский перевод</a> (SWIFT) оплата по
+							договору.
 						</li>
 						<li>
-							<a href="#transfer-card">Банковские карты</a> (UzCard, HUMO,
-							VISA, MasterCard)
+							<a href="#transfer-card">Банковские карты</a> (UzCard, HUMO, VISA,
+							MasterCard)
 						</li>
 						<li>
 							<a href="#transfer-paybox">Международные банковские карты</a>{" "}
@@ -505,10 +501,10 @@ export default function Payment({ language }) {
 						</li>
 					</ul>
 					<p>
-						Для зачисления средств на баланс аккаунта необходимо создать счёт
-						и оплатить его. Откройте Личный кабинет, перейдите вверху
-						балансовые счет - выберите "Пополнить", введите "Сумму пополнения"
-						нажмите кнопку "Перейти к оплате счета".
+						Для зачисления средств на баланс аккаунта необходимо создать счёт и
+						оплатить его. Откройте Личный кабинет, перейдите вверху балансовые
+						счет - выберите "Пополнить", введите "Сумму пополнения" нажмите
+						кнопку "Перейти к оплате счета".
 					</p>
 				</>
 			),
@@ -543,9 +539,7 @@ export default function Payment({ language }) {
 							<a href="#transfer-oson">Oson.uz</a>
 						</li>
 						<li>
-							<a href="#transfer-bank">
-								Kiosak o'z - o'ziga hizmat ko'rsatish
-							</a>
+							<a href="#transfer-bank">Kiosak o'z - o'ziga hizmat ko'rsatish</a>
 						</li>
 					</ul>
 					<p>
@@ -638,7 +632,7 @@ export default function Payment({ language }) {
 				</p> */}
 			</Container>
 			{image && <ImageFullScreen image={image} setImage={setImage} />}
-			<FAQ faq={faq} title={langData.title[language]} />
+			<FAQ faq={faq} title={langData.title[language]} language={language} />
 
 			<Partners language={language} />
 		</div>

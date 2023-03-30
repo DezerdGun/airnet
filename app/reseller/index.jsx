@@ -36,7 +36,7 @@ export default function Reseller({ language }) {
 	const langData = {
 		headTitle: {
 			ru: "Кто может стать реселлером?",
-			uz: "Kim reseller bola oladi",
+			uz: "Kim reseller bola oladi?",
 		},
 		description: {
 			ru: (
@@ -60,7 +60,7 @@ export default function Reseller({ language }) {
 		},
 		title: {
 			ru: "Как это работает?",
-			uz: "Bu qanday ishlaydi",
+			uz: "Bu qanday ishlaydi?",
 		},
 	}
 	return (
@@ -98,7 +98,7 @@ export default function Reseller({ language }) {
 						},
 					},
 					{
-						title: { ru: "Профит!", uz: "Foyda" },
+						title: { ru: "Профит!", uz: "Foyda!" },
 						description: {
 							ru: "Скидка + маржа = ваша прибыль, которую вы получаете сразу после первого заказа",
 							uz: "Chegirma + marja = birinchi buyurtmadan keyin darhol oladigan daromadingiz",
