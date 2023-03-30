@@ -213,7 +213,7 @@ export default function FreeDomains({ language }) {
 							<th>17 000 som*</th>
 							<th>
 								<Link href="/free-domains">
-									<a>Teakin*</a>
+									<a>Tekin*</a>
 								</Link>
 							</th>
 							<th>20 000 som*</th>

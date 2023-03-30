@@ -436,13 +436,13 @@ export default function Net({ language }) {
 									<td>
 										Tezlik<sup>1</sup>
 									</td>
-									<td>5 mb/s</td>
+									<td>5 Mb/s</td>
 								</tr>
 								<tr>
 									<td>
 										Qoniqarli tezlik TAS-IX<sup>2</sup>
 									</td>
-									<td>10 mb/s</td>
+									<td>10 Mb/s</td>
 								</tr>
 								<tr>
 									<td className="bg-green">
@@ -472,13 +472,13 @@ export default function Net({ language }) {
 									<td>
 										Tezlik<sup>2</sup>
 									</td>
-									<td>10 mb/s</td>
+									<td>10 Mb/s</td>
 								</tr>
 								<tr>
 									<td>
 										Qoniqarli tezlik TAS-IX<sup>2</sup>
 									</td>
-									<td>15 mb/s</td>
+									<td>15 Mb/s</td>
 								</tr>
 								<tr>
 									<td className="bg-green">
@@ -508,13 +508,13 @@ export default function Net({ language }) {
 									<td>
 										Tezlik<sup>3</sup>
 									</td>
-									<td>15 mb/s</td>
+									<td>15 Mb/s</td>
 								</tr>
 								<tr>
 									<td>
 										Qoniqarli tezlik TAS-IX<sup>2</sup>
 									</td>
-									<td>20 mb/s</td>
+									<td>20 Mb/s</td>
 								</tr>
 								<tr>
 									<td className="bg-green">
@@ -544,13 +544,13 @@ export default function Net({ language }) {
 									<td>
 										Tezlik<sup>4</sup>
 									</td>
-									<td>20 mb/s</td>
+									<td>20 Mb/s</td>
 								</tr>
 								<tr>
 									<td>
 										Qoniqarli tezlik TAS-IX<sup>2</sup>
 									</td>
-									<td>25 mb/s</td>
+									<td>25 Mb/s</td>
 								</tr>
 								<tr>
 									<td className="bg-green">
@@ -580,13 +580,13 @@ export default function Net({ language }) {
 									<td>
 										Tezlik<sup>5</sup>
 									</td>
-									<td>25 mb/s</td>
+									<td>25 Mb/s</td>
 								</tr>
 								<tr>
 									<td>
 										Qoniqarli tezlik TAS-IX<sup>2</sup>
 									</td>
-									<td>30 mb/s</td>
+									<td>30 Mb/s</td>
 								</tr>
 								<tr>
 									<td className="bg-green">

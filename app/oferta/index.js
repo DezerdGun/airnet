@@ -6,15 +6,15 @@ export default function Oferta({ language }) {
 	const langData = {
 		seoT: {
 			ru: "Публичная оферта | Airnet",
-			uz: "Ommaviy taklif | Airnet",
+			uz: "Ommaviy oferta | Airnet",
 		},
 		descT: {
 			ru: "Публичная оферта компании Airnet",
-			uz: "Airnet ommaviy taklifi",
+			uz: "Airnet ommaviy ofertasi",
 		},
 		headT: {
 			ru: "Публичная оферта",
-			uz: "Ommaviy taklif",
+			uz: "Ommaviy oferta",
 		},
 		about: {
 			ru: (
