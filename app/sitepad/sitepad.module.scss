@@ -1,0 +1,82 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #eeebee;
+$red: #f00;
+
+.sitepad {
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		&__item {
+			width: 48%;
+			margin-bottom: 10px;
+		}
+	}
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-top: 1px solid $light_gray;
+		padding-top: 20px;
+		margin-top: -20px;
+
+		&__content {
+			width: 30%;
+
+			h3 {
+				font-size: 30px;
+				margin-bottom: 20px;
+			}
+
+			a {
+				width: fit-content;
+				margin-top: 20px;
+				display: block;
+				padding: 15px 20px;
+				background-color: $green;
+				color: $white;
+				font-weight: 700;
+				border-radius: 10px;
+			}
+		}
+	}
+
+	@media (max-width: 880px) {
+		&__info {
+			&__content {
+				width: 50%;
+			}
+
+			&__img {
+				width: 35%;
+				img {
+					width: 90%;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 660px) {
+		&__info {
+			flex-wrap: wrap;
+
+			&__content {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+
+			&__img {
+				width: 50%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
