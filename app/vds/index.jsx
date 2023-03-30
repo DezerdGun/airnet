@@ -1,313 +1,22 @@
-import CustomTableBottom from "@/components/customTableBottom";
-import Partners from "@/components/partners";
-import TraficMaket from "@/components/traficMaket";
-import st from "@/app/vds/vds.module.scss";
-import Link from "next/link";
-import { LINKS } from "@/components/requirements";
-import Container from "@/components/container";
-import CustomTable from "@/components/customTable";
-import SEO from "@/components/seo";
-import TarifMaket from "@/components/tarifMaket";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import TarifCard from "@/components/tarifCard";
-import ForFreeBlock from "@/components/forFreeBlock";
-import WhyBlock from "@/components/whyBlock";
-import { useEffect, useState } from "react";
-
-const block = [
-		{
-			title: { ru: "Мгновенная активация", uz: "Bir zumdayoq ulanish" },
-			description: {
-				ru: (
-					<>
-						<p>
-							Активация VDS выполняется от 5 минут до 4-х часов, в зависимости от количества заказов
-							и наличия свободного оборудования.
-						</p>
-						<button>
-							<Link href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
-								<a>Стать клиентом и заказать VDS</a>
-							</Link>
-						</button>
-					</>
-				),
-				uz: (
-					<>
-						<p>
-							VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4 soatgacha davom etadi va
-							bepul jihozlarning mavjudligi.
-						</p>
-						<button>
-							<Link href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
-								<a>Mijoz bo'ling va VDSga buyurtma bering</a>
-							</Link>
-						</button>
-					</>
-				),
-			},
-
-			img: "/time.png",
-		},
-		{
-			title: { ru: "Низкая цена", uz: "Arzon narx" },
-			description: {
-				ru: "'Мы предоставляем услуги по самым низким ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.",
-				uz: "Biz O'zbekistonda eng past narxlarda xizmatlar ko'rsatamiz, bizning afzalligimiz shundaki, biz eng arzon narxlarda eng yuqori sifatli xizmatlarni taqdim etamiz. Shunday qilib, biz sizga sarflashga emas, pul topishingizga yordam beramiz.",
-			},
-
-			img: "/money.png",
-		},
-		{
-			title: { ru: "Поддержка круглосуточно", uz: "24/7 qo'llab quvvatlash" },
-			description: {
-				ru: (
-					<>
-						<p>
-							В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим
-							максимально быстро.
-						</p>
-						<button>
-							<Link href={LINKS.CONTACTS}>
-								<a>Наши контакты</a>
-							</Link>
-						</button>
-					</>
-				),
-				uz: (
-					<>
-						<p>
-							Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan bog'lanishingiz mumkin,
-							biz imkon qadar tezroq javob beramiz .
-						</p>
-						<button>
-							<Link href={LINKS.CONTACTS}>
-								<a>Bizning telefon raqamlar</a>
-							</Link>
-						</button>
-					</>
-				),
-			},
-
-			img: "/support.png",
-		},
-		{
-			title: { ru: "Гибкая настройка", uz: "O'zgaruvchan qurulmalar" },
-			description: {
-				ru: "Вы можете изменить количество CPU и RAM в любой момент, а также увеличить объём SSD",
-				uz: "Siz istalgan vaqtda protsessor va operativ xotira miqdorini o'zgartirishingiz, shuningdek, SSD hajmini oshirishingiz mumkin",
-			},
-
-			img: "/year.png",
-		},
-	],
-	tarif = [
-		// {
-		// 	title: "Strong",
-		// 	prices: [
-		// 		{
-		// 			price: "200 000",
-		// 			dateOff: "3 мес.",
-		// 			date: "мес.",
-		// 		},
-		// 		{
-		// 			price: "300 000",
-		// 			dateOff: "6 мес.",
-		// 			date: "мес.",
-		// 		},
-		// 		{
-		// 			price: "400 000",
-		// 			dateOff: "12 мес.",
-		// 			date: "мес.",
-		// 		},
-		// 	],
-		// 	cpu: 2,
-		// 	ram: 4,
-		// 	ssd: 50,
-		// 	net: 15,
-		// 	link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14",
-		// },
-		// {
-		// 	title: "VIP",
-		// 	// price: "250 000",
-		// 	prices: [
-		// 		{
-		// 			price: "200 000",
-		// 			dateOff: "3 мес.",
-		// 			date: "мес.",
-		// 		},
-		// 		{
-		// 			price: "300 000",
-		// 			dateOff: "6 мес.",
-		// 			date: "мес.",
-		// 		},
-		// 		{
-		// 			price: "400 000",
-		// 			dateOff: "12 мес.",
-		// 			date: "мес.",
-		// 		},
-		// 	],
-		// 	cpu: 4,
-		// 	ram: 4,
-		// 	ssd: 100,
-		// 	net: 15,
-		// 	link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=15",
-		// },
-		// {
-		// 	title: "VIP+",
-		// 	// price: "300 000",
-		// 	prices: [
-		// 		{
-		// 			price: "200 000",
-		// 			dateOff: "3 мес.",
-		// 			date: "мес.",
-		// 		},
-		// 		{
-		// 			price: "300 000",
-		// 			dateOff: "6 мес.",
-		// 			date: "мес.",
-		// 		},
-		// 		{
-		// 			price: "400 000",
-		// 			dateOff: "12 мес.",
-		// 			date: "мес.",
-		// 		},
-		// 	],
-		// 	cpu: 4,
-		// 	ram: 6,
-		// 	ssd: 150,
-		// 	net: 15,
-		// 	link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16",
-		// },
-		{
-			title: "Nano",
-			// price: "400 000",
-			prices: [
-				{
-					price: "400 000",
-					dateOff: "1 мес.",
-					date: "мес.",
-				},
-				{
-					price: "1 200 000",
-					dateOff: "3 мес.",
-					date: "мес.",
-				},
-				{
-					price: "2 400 000",
-					dateOff: "6 мес.",
-					date: "мес.",
-				},
-				{
-					price: "4 800 000",
-					dateOff: "12 мес.",
-					date: "мес.",
-				},
-			],
-			cpu: 4,
-			ram: 8,
-			ssd: 100,
-			net: 15,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=49",
-		},
-		{
-			title: "Advanced",
-			// price: "550 000",
-			prices: [
-				{
-					price: "550 000",
-					dateOff: "1 мес.",
-					date: "мес.",
-				},
-				{
-					price: "1 650 000",
-					dateOff: "3 мес.",
-					date: "мес.",
-				},
-				{
-					price: "3 300 000",
-					dateOff: "6 мес.",
-					date: "мес.",
-				},
-				{
-					price: "6 600 000",
-					dateOff: "12 мес.",
-					date: "мес.",
-				},
-			],
-			cpu: 6,
-			ram: 10,
-			ssd: 150,
-			net: 25,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
-		},
-		{
-			title: "Mega",
-			// price: "800 000",
-			prices: [
-				{
-					price: "800 000",
-					dateOff: "1 мес.",
-					date: "мес.",
-				},
-				{
-					price: "2 400 000",
-					dateOff: "3 мес.",
-					date: "мес.",
-				},
-				{
-					price: "4 800 000",
-					dateOff: "6 мес.",
-					date: "мес.",
-				},
-				{
-					price: "9 600 000",
-					dateOff: "12 мес.",
-					date: "мес.",
-				},
-			],
-			cpu: 6,
-			ram: 12,
-			ssd: 200,
-			net: 25,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
-		},
-		{
-			title: "Ultra",
-			// price: "1 000 000",
-			prices: [
-				{
-					price: "1 000 000",
-					dateOff: "1 мес.",
-					date: "мес.",
-				},
-				{
-					price: "3 000 000",
-					dateOff: "3 мес.",
-					date: "мес.",
-				},
-				{
-					price: "6 000 000",
-					dateOff: "6 мес.",
-					date: "мес.",
-				},
-				{
-					price: "12 000 000",
-					dateOff: "12 мес.",
-					date: "мес.",
-				},
-			],
-			cpu: 8,
-			ram: 16,
-			ssd: 250,
-			net: 25,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
-		},
-	];
+import st from "@/app/vds/vds.module.scss"
+import Container from "@/components/container"
+import CustomTable from "@/components/customTable"
+import ForFreeBlock from "@/components/forFreeBlock"
+import Partners from "@/components/partners"
+import { LINKS } from "@/components/requirements"
+import SEO from "@/components/seo"
+import TarifCard from "@/components/tarifCard"
+import TarifMaket from "@/components/tarifMaket"
+import WhyBlock from "@/components/whyBlock"
+import Link from "next/link"
+import { useEffect, useState } from "react"
+import { Autoplay, Navigation } from "swiper"
+import "swiper/css"
+import "swiper/css/navigation"
+import { Swiper, SwiperSlide } from "swiper/react"
 
 export default function VDS({ language }) {
+	const [show, setShow] = useState(-1)
 	const langData = {
 		seo: {
 			ru: "Быстрые VDS/VPS | Хостинг TAS-IX в Ташкенте, Узбекистане",
@@ -448,20 +157,236 @@ export default function VDS({ language }) {
 				</>
 			),
 		},
-	};
-	const [show, setShow] = useState(-1);
+		month: {
+			ru: "мес.",
+			uz: "oy",
+		},
+	}
+
+	const block = [
+			{
+				title: { ru: "Мгновенная активация", uz: "Bir zumdayoq ulanish" },
+				description: {
+					ru: (
+						<>
+							<p>
+								Активация VDS выполняется от 5 минут до 4-х часов, в зависимости
+								от количества заказов и наличия свободного оборудования.
+							</p>
+							<button>
+								<Link href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
+									<a>Стать клиентом и заказать VDS</a>
+								</Link>
+							</button>
+						</>
+					),
+					uz: (
+						<>
+							<p>
+								VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4
+								soatgacha davom etadi va bepul jihozlarning mavjudligi.
+							</p>
+							<button>
+								<Link href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
+									<a>Mijoz bo'ling va VDSga buyurtma bering</a>
+								</Link>
+							</button>
+						</>
+					),
+				},
+
+				img: "/time.png",
+			},
+			{
+				title: { ru: "Низкая цена", uz: "Arzon narx" },
+				description: {
+					ru: "'Мы предоставляем услуги по самым низким ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.",
+					uz: "Biz O'zbekistonda eng past narxlarda xizmatlar ko'rsatamiz, bizning afzalligimiz shundaki, biz eng arzon narxlarda eng yuqori sifatli xizmatlarni taqdim etamiz. Shunday qilib, biz sizga sarflashga emas, pul topishingizga yordam beramiz.",
+				},
+
+				img: "/money.png",
+			},
+			{
+				title: { ru: "Поддержка круглосуточно", uz: "24/7 qo'llab quvvatlash" },
+				description: {
+					ru: (
+						<>
+							<p>
+								В любое время суток, Вы можете к нам обратиться за помощью или
+								советом, мы ответим максимально быстро.
+							</p>
+							<button>
+								<Link href={LINKS.CONTACTS}>
+									<a>Наши контакты</a>
+								</Link>
+							</button>
+						</>
+					),
+					uz: (
+						<>
+							<p>
+								Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan
+								bog'lanishingiz mumkin, biz imkon qadar tezroq javob beramiz .
+							</p>
+							<button>
+								<Link href={LINKS.CONTACTS}>
+									<a>Bizning telefon raqamlar</a>
+								</Link>
+							</button>
+						</>
+					),
+				},
+
+				img: "/support.png",
+			},
+			{
+				title: { ru: "Гибкая настройка", uz: "O'zgaruvchan qurulmalar" },
+				description: {
+					ru: "Вы можете изменить количество CPU и RAM в любой момент, а также увеличить объём SSD",
+					uz: "Siz istalgan vaqtda protsessor va operativ xotira miqdorini o'zgartirishingiz, shuningdek, SSD hajmini oshirishingiz mumkin",
+				},
+
+				img: "/year.png",
+			},
+		],
+		tarif = [
+			{
+				title: { ru: "Nano", uz: "Nano", en: "" },
+				// price: "400 000",
+				prices: [
+					{
+						price: "400 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "1 200 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "2 400 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "4 800 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				cpu: 4,
+				ram: 8,
+				ssd: 100,
+				net: 15,
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=49",
+			},
+			{
+				title: { ru: "Advanced", uz: "Advanced", en: "" },
+				// price: "550 000",
+				prices: [
+					{
+						price: "550 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "1 650 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "3 300 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "6 600 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				cpu: 6,
+				ram: 10,
+				ssd: 150,
+				net: 25,
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
+			},
+			{
+				title: { ru: "Mega", uz: "Mega", en: "" },
+				// price: "800 000",
+				prices: [
+					{
+						price: "800 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "2 400 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "4 800 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "9 600 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				cpu: 6,
+				ram: 12,
+				ssd: 200,
+				net: 25,
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
+			},
+			{
+				title: { ru: "Ultra", uz: "Ultra", en: "" },
+				// price: "1 000 000",
+				prices: [
+					{
+						price: "1 000 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "3 000 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "6 000 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "12 000 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				cpu: 8,
+				ram: 16,
+				ssd: 250,
+				net: 25,
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
+			},
+		]
 
 	useEffect(() => {
 		const outerClick = (e) => {
-			const classList = [...e.target?.classList];
+			const classList = [...e.target?.classList]
 
 			if (!classList.join(" ").includes("tarif_drop")) {
-				setShow(-1);
+				setShow(-1)
 			}
-		};
-		document.addEventListener("click", outerClick);
-		return () => document.removeEventListener("click", outerClick);
-	}, []);
+		}
+		document.addEventListener("click", outerClick)
+		return () => document.removeEventListener("click", outerClick)
+	}, [])
 
 	return (
 		<>
@@ -533,8 +458,8 @@ export default function VDS({ language }) {
 						<CustomTable table={langData.table[language]} />
 					</div>
 				</Container>
-				<Partners />
+				<Partners language={language} />
 			</div>
 		</>
-	);
+	)
 }

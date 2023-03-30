@@ -1,8 +1,8 @@
-import { useState } from "react";
-import styles from "./drop.module.scss";
+import { useState } from "react"
+import styles from "./drop.module.scss"
 
 const Drop = ({ item, index, show, setShow, isTarifCard, language }) => {
-	const [checked, setChecked] = useState(0);
+	const [checked, setChecked] = useState(0)
 
 	const langData = {
 		sum: {
@@ -11,14 +11,18 @@ const Drop = ({ item, index, show, setShow, isTarifCard, language }) => {
 			en: "sum",
 		},
 		sumV: {
-			ru: "сум в",
-			uz: "so'mda",
-			en: "sum in",
+			ru: "сум в ",
+			uz: "so'm/",
+			en: "sum in ",
 		},
-	};
+	}
 
 	return (
-		<div className={`tarif_drop ${styles.drop} ${isTarifCard ? styles.drop__tarifCard : ""}`}>
+		<div
+			className={`tarif_drop ${styles.drop} ${
+				isTarifCard ? styles.drop__tarifCard : ""
+			}`}
+		>
 			<div
 				className={styles.drop__checked}
 				onClick={() => (index === show ? setShow(-1) : setShow(index))}
@@ -28,7 +32,7 @@ const Drop = ({ item, index, show, setShow, isTarifCard, language }) => {
 					<span className="tarif_drop">
 						{langData.sum[language]}
 						<hr />
-						{item[checked].dateOff[language]}
+						{item[checked].dateOff}
 					</span>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -48,33 +52,38 @@ const Drop = ({ item, index, show, setShow, isTarifCard, language }) => {
 					</svg>
 				</div>
 			</div>
-			<ul className={`${styles.drop__ul} ${show === index ? styles.drop__ul__active : ""}`}>
+			<ul
+				className={`${styles.drop__ul} ${
+					show == index ? styles.drop__ul__active : ""
+				}`}
+			>
 				{item.map((el, i) => (
 					<li
 						onClick={() => {
-							setChecked(i);
-							setShow(-1);
+							setChecked(i)
+							setShow(-1)
 						}}
 						key={el.price}
 					>
 						<strong>
-							{el.price} {langData.sumV[language]} {el.date[language]}
+							{el.price} {langData.sumV[language]}
+							{el.date}
 						</strong>
 						<br />
 						<span>
-							{language === "uz" ? (
-								<>{el.dateOff.uz} ga to'lov</>
-							) : language === "en" ? (
-								<>when paying for {el.dateOff.en}</>
+							{language == "uz" ? (
+								<>{el.dateOff} ga to'lov</>
+							) : language == "en" ? (
+								<>when paying for {el.dateOff}</>
 							) : (
-								<>при оплате за {el.dateOff.ru}</>
+								<>при оплате за {el.dateOff}</>
 							)}
 						</span>
 					</li>
 				))}
 			</ul>
 		</div>
-	);
-};
+	)
+}
 
-export default Drop;
+export default Drop

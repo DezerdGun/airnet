@@ -22,718 +22,8 @@ import "swiper/css"
 import "swiper/css/navigation"
 import { Swiper, SwiperSlide } from "swiper/react"
 
-const faq = [
-		{
-			title: {
-				ru: "Есть ли возможность протестировать услуги? ✔",
-				uz: "Xizmatlarni sinab ko'rish mumkinmi? ✔",
-				en: "Is it possible to test the services? ✔",
-			},
-			description: {
-				ru: (
-					<>
-						<p>
-							Чтобы протестировать сервис, сначала нужно{" "}
-							<a href="#">зарегистрироваться.</a>
-						</p>
-
-						<p>
-							Вам нужен VDS сервер? - Выполните 5 простых шагов, описанных здесь
-						</p>
-
-						<p>
-							Вы представляете юр.лицо, и вам нужен полноценный тестовый стенд?
-							- <strong>напишите нам</strong>
-						</p>
-					</>
-				),
-				uz: (
-					<>
-						<p>
-							Xizmatni sinab koʻrish uchun avval{" "}
-							<a href="#">roʻyxatdan oʻtishingiz kerak.</a>
-						</p>
-
-						<p>
-							Sizga VDS server kerakmi? - Bu yerda tasvirlangan 5 oson qadamni
-							bajaring
-						</p>
-
-						<p>
-							Siz yuridik shaxssiz va sizga to'liq huquqli test stoli kerakmi? -{" "}
-							<strong>bizga yozing</strong>
-						</p>
-					</>
-				),
-				en: (
-					<>
-						<p>
-							To test the service, you first need to <a href="#">sign up.</a>
-						</p>
-
-						<p>
-							Do you need a VDS server? - Follow the 5 easy steps described here
-						</p>
-
-						<p>
-							Are you a legal entity and do you need a full-fledged test stand?
-							- <strong>write to us</strong>
-						</p>
-					</>
-				),
-			},
-		},
-		{
-			title: {
-				ru: "Как быстро отвечает служба техподдержки? ⭐",
-				uz: "Texnik yordam qanchalik tez javob beradi? ⭐",
-				en: "How quickly does tech support respond? ⭐",
-			},
-			description: {
-				ru: (
-					<p>
-						Время ответа может занять до 30 мин. Оно зависит от числа обращений
-						в определенный период времени.
-					</p>
-				),
-				uz: (
-					<p>
-						Javob berish vaqti 30 daqiqagacha vaqt olishi mumkin. Bu ma'lum bir
-						davrdagi qo'ng'iroqlar soniga bog'liq. vaqt.
-					</p>
-				),
-				en: (
-					<p>
-						Response time may take up to 30 minutes. It depends on the number of
-						calls in a certain time period.
-					</p>
-				),
-			},
-		},
-		{
-			title: {
-				ru: "Можно ли изменять конфигурацию рабочего сервера? 🖥️",
-				uz: "Ishchi server konfiguratsiyasini o'zgartirish mumkinmi? 🖥️",
-				en: "Is it possible to change the configuration of the working server? 🖥️",
-			},
-			description: {
-				ru: (
-					<>
-						<p>
-							Да. Изменять конфигурации своего сервера вы можете в любой момент.
-							🚀
-						</p>
-
-						<p>
-							Для <strong>RAM</strong> и <strong>CPU</strong> [требуется
-							перезагрузка]
-						</p>
-
-						<p>
-							Для <strong>SSD</strong> [требуется перезагрузка]
-						</p>
-
-						<p>
-							Для <strong>Интернет</strong> [без перезагрузки]
-						</p>
-					</>
-				),
-				uz: (
-					<>
-						<p>
-							Ha. Siz istalgan vaqtda serveringiz konfiguratsiyasini
-							o'zgartirishingiz mumkin. 🚀
-						</p>
-
-						<p>
-							<strong>RAM</strong> va <strong>CPU</strong> uchun [qayta yuklash
-							kerak]
-						</p>
-
-						<p>
-							<strong>SSD</strong> uchun [qayta yuklash kerak]
-						</p>
-
-						<p>
-							<strong>Internet</strong> uchun [qayta yuklanmaydi]
-						</p>
-					</>
-				),
-				en: (
-					<>
-						<p>
-							Yes. You can change the configuration of your server at any time.
-							🚀
-						</p>
-
-						<p>
-							For <strong>RAM</strong> and <strong>CPU</strong> [reboot
-							required]
-						</p>
-
-						<p>
-							For <strong>SSD</strong> [reboot required]
-						</p>
-
-						<p>
-							For <strong>Internet</strong> [no reboot]
-						</p>
-					</>
-				),
-			},
-		},
-		{
-			title: {
-				ru: "Какая система виртуализации используется в AIRNET? 🗂️",
-				uz: "AIRNET da qanday virtualizatsiya tizimi qo'llaniladi? 🗂️",
-				en: "What virtualization system is used in AIRNET? 🗂️",
-			},
-			description: {
-				ru: (
-					<p>
-						Виртуальная инфраструктура <strong>AIRNET</strong> компании
-						использует <strong>VMware</strong> с прикладными дополнениями.
-						Виртуальные сервера создаются в среде операционной системы{" "}
-						<strong>ESXi</strong>.
-					</p>
-				),
-				uz: (
-					<p>
-						Kompaniyaning <strong>AIRNET</strong> virtual infratuzilmasi{" "}
-						<strong>VMware</strong> ilova qoʻshimchalari bilan. Virtual
-						serverlar muhitda yaratilgan
-						<strong>ESXi</strong> operatsion tizimi.
-					</p>
-				),
-				en: (
-					<p>
-						The company's <strong>AIRNET</strong> virtual infrastructure uses{" "}
-						<strong>VMware</strong> with application addons. Virtual servers are
-						created in
-						<strong>ESXi</strong> operating system environment.
-					</p>
-				),
-			},
-		},
-		{
-			title: {
-				ru: "Как можно оплатить за услуги AIRNET? 💷",
-				uz: "AIRNET xizmatlari uchun qanday to'lashim mumkin? 💷",
-				en: "How can I pay for AIRNET services? 💷",
-			},
-			description: {
-				ru: (
-					<>
-						<p>Способы оплаты</p>
-
-						<p>
-							Для <strong>физических лиц</strong>: PAYME, PAYNET, CLICK, UPAY,
-							Webmoney, OSON.uz, VISA, MasterCard и другие.
-						</p>
-
-						<p>
-							Для <strong>юридических лиц</strong>: банковский перевод.
-							(перечисление)
-						</p>
-					</>
-				),
-				uz: (
-					<>
-						<p>To'lov usullari</p>
-
-						<p>
-							<strong>jismoniy shaxslar</strong> uchun: PAYME, PAYNET, CLICK,
-							UPAY, Webmoney, OSON.uz, VISA, MasterCard va boshqalar.
-						</p>
-
-						<p>
-							<strong>yuridik shaxslar</strong> uchun: bank o‘tkazmasi.
-							(ro'yxatga olish)
-						</p>
-					</>
-				),
-				en: (
-					<>
-						<p>Payment methods</p>
-
-						<p>
-							For <strong>individuals</strong>: PAYME, PAYNET, CLICK, UPAY,
-							Webmoney, OSON.uz, VISA, MasterCard and others.
-						</p>
-
-						<p>
-							For <strong>legal entities</strong>: bank transfer. (enumeration)
-						</p>
-					</>
-				),
-			},
-		},
-	],
-	tarif = [
-		{
-			title: { ru: "Strong", uz: "Strong", en: "Strong" },
-			prices: [
-				{
-					price: "200 000",
-					dateOff: { ru: "1 мес.", uz: "1 oy", en: "1 month" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "600 000",
-					dateOff: { ru: "3 мес.", uz: "3 oy", en: "3 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "1 200 000",
-					dateOff: { ru: "6 мес.", uz: "6 oy", en: "6 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "2 400 000",
-					dateOff: { ru: "12 мес.", uz: "12 oy", en: "12 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-			],
-			cpu: 2,
-			ram: 4,
-			ssd: 50,
-			net: 25,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14",
-		},
-		{
-			title: { ru: "VIP+", uz: "VIP+", en: "VIP+" },
-			prices: [
-				{
-					price: "300 000",
-					dateOff: { ru: "1 мес.", uz: "1 oy", en: "1 month" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "900 000",
-					dateOff: { ru: "3 мес.", uz: "3 oy", en: "3 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "1 800 000",
-					dateOff: { ru: "6 мес.", uz: "6 oy", en: "6 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "3 600 000",
-					dateOff: { ru: "12 мес.", uz: "12 oy", en: "12 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-			],
-			cpu: 4,
-			ram: 6,
-			ssd: 150,
-			net: 25,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16",
-		},
-		{
-			title: { ru: "Advanced", uz: "Advanced", en: "Advanced" },
-			prices: [
-				{
-					price: "550 000",
-					dateOff: { ru: "1 мес.", uz: "1 oy", en: "1 month" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "1 650 000",
-					dateOff: { ru: "3 мес.", uz: "3 oy", en: "3 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "3 300 000",
-					dateOff: { ru: "6 мес.", uz: "6 oy", en: "6 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "6 600 000",
-					dateOff: { ru: "12 мес.", uz: "12 oy", en: "12 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-			],
-			cpu: 6,
-			ram: 10,
-			ssd: 150,
-			net: 25,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
-		},
-		{
-			title: { ru: "Mega", uz: "Mega", en: "Mega" },
-			prices: [
-				{
-					price: "800 000",
-					dateOff: { ru: "1 мес.", uz: "1 oy", en: "1 month" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "2 400 000",
-					dateOff: { ru: "3 мес.", uz: "3 oy", en: "3 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "4 800 000",
-					dateOff: { ru: "6 мес.", uz: "6 oy", en: "6 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "9 600 000",
-					dateOff: { ru: "12 мес.", uz: "12 oy", en: "12 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-			],
-			cpu: 6,
-			ram: 12,
-			ssd: 200,
-			net: 25,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
-		},
-		{
-			title: { ru: "Ultra", uz: "Ultra", en: "Ultra" },
-			prices: [
-				{
-					price: "1 000 000",
-					dateOff: { ru: "1 мес.", uz: "1 oy", en: "1 month" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "3 000 000",
-					dateOff: { ru: "3 мес.", uz: "3 oy", en: "3 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "6 000 000",
-					dateOff: { ru: "6 мес.", uz: "6 oy", en: "6 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "12 000 000",
-					dateOff: { ru: "12 мес.", uz: "12 oy", en: "12 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-			],
-			cpu: 8,
-			ram: 16,
-			ssd: 200,
-			net: 25,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
-		},
-	],
-	tarif2 = [
-		{
-			title: { ru: "Старт", uz: "Start", en: "Start" },
-			prices: [
-				{
-					price: "10 000",
-					dateOff: { ru: "1 мес.", uz: "1 oy", en: "1 month" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "30 000",
-					dateOff: { ru: "3 мес.", uz: "3 oy", en: "3 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "57 000",
-					dateOff: { ru: "6 мес.", uz: "6 oy", en: "6 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "108 000",
-					dateOff: { ru: "12 мес.", uz: "12 oy", en: "12 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-			],
-			ssd: 250,
-			sites: 5,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=32",
-		},
-		{
-			title: { ru: "Простой", uz: "Oddiy", en: "Simple" },
-			// price: '15 000',
-			prices: [
-				{
-					price: "15 000",
-					dateOff: { ru: "1 мес.", uz: "1 oy", en: "1 month" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "45 000",
-					dateOff: { ru: "3 мес.", uz: "3 oy", en: "3 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "85 500",
-					dateOff: { ru: "6 мес.", uz: "6 oy", en: "6 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "162 000",
-					dateOff: { ru: "12 мес.", uz: "12 oy", en: "12 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-			],
-			ssd: 500,
-			sites: 10,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=31",
-		},
-		{
-			title: { ru: "Стандарт", uz: "Standart", en: "Standart" },
-			// price: '25 000',
-			prices: [
-				{
-					price: "25 000",
-					dateOff: { ru: "1 мес.", uz: "1 oy", en: "1 month" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "75 000",
-					dateOff: { ru: "3 мес.", uz: "3 oy", en: "3 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "142 500",
-					dateOff: { ru: "6 мес.", uz: "6 oy", en: "6 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "270 000",
-					dateOff: { ru: "12 мес.", uz: "12 oy", en: "12 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-			],
-			ssd: "1 000",
-			sites: 15,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=33",
-		},
-		{
-			title: { ru: "Доступный", uz: "Hamyonbop", en: "Accessible" },
-			// price: '60 000',
-			prices: [
-				{
-					price: "60 000",
-					dateOff: { ru: "1 мес.", uz: "1 oy", en: "1 month" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "180 000",
-					dateOff: { ru: "3 мес.", uz: "3 oy", en: "3 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "342 000",
-					dateOff: { ru: "6 мес.", uz: "6 oy", en: "6 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "648 000",
-					dateOff: { ru: "12 мес.", uz: "12 oy", en: "12 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-			],
-			ssd: "3 000",
-			sites: 20,
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=34",
-		},
-		{
-			title: { ru: "Оптимальный", uz: "Optimal", en: "Optimal" },
-			// price: '90 000',
-			prices: [
-				{
-					price: "90 000",
-					dateOff: { ru: "1 мес.", uz: "1 oy", en: "1 month" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "270 000",
-					dateOff: { ru: "3 мес.", uz: "3 oy", en: "3 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "513 000",
-					dateOff: { ru: "6 мес.", uz: "6 oy", en: "6 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "972 000",
-					dateOff: { ru: "12 мес.", uz: "12 oy", en: "12 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-			],
-			ssd: "5 000",
-			sites: "∞",
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=37",
-		},
-		{
-			title: { ru: "Выгодный", uz: "Foydali", en: "Profitable" },
-			// price: '150 000',
-			prices: [
-				{
-					price: "150 000",
-					dateOff: { ru: "1 мес.", uz: "1 oy", en: "1 month" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "450 000",
-					dateOff: { ru: "3 мес.", uz: "3 oy", en: "3 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "855 000",
-					dateOff: { ru: "6 мес.", uz: "6 oy", en: "6 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "1 620 000",
-					dateOff: { ru: "12 мес.", uz: "12 oy", en: "12 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-			],
-			ssd: "10 000",
-			sites: "∞",
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38",
-		},
-		{
-			title: { ru: "Офис", uz: "Ofis", en: "Office" },
-			// price: '250 000',
-			prices: [
-				{
-					price: "250 000",
-					dateOff: { ru: "1 мес.", uz: "1 oy", en: "1 month" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "750 000",
-					dateOff: { ru: "3 мес.", uz: "3 oy", en: "3 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "1 425 000",
-					dateOff: { ru: "6 мес.", uz: "6 oy", en: "6 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "2 700 000",
-					dateOff: { ru: "12 мес.", uz: "12 oy", en: "12 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-			],
-			ssd: "15 000",
-			sites: "∞",
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39",
-		},
-		{
-			title: { ru: "Корпоративный", uz: "Korporativ", en: "Corporate" },
-			// price: '350 000',
-			prices: [
-				{
-					price: "350 000",
-					dateOff: { ru: "1 мес.", uz: "1 oy", en: "1 month" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "1 050 000",
-					dateOff: { ru: "3 мес.", uz: "3 oy", en: "3 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "1 995 000",
-					dateOff: { ru: "6 мес.", uz: "6 oy", en: "6 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-				{
-					price: "3 780 000",
-					dateOff: { ru: "12 мес.", uz: "12 oy", en: "12 months" },
-					date: { ru: "мес.", uz: "oy", en: "month" },
-				},
-			],
-			ssd: "20 000",
-			sites: "∞",
-			link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40",
-		},
-	],
-	content = [
-		{
-			title: {
-				ru: "Служба поддержки 24/7",
-				uz: "Qo'llab-quvvatlash xizmati 24/7",
-				en: "24/7 support service",
-			},
-			description: {
-				ru: "В случае возникновения каких-либо вопросов, Вы всегда можете рассчитывать на нашу квалифицированную помощь с индивидуальным подходом, по телефону, e-mail, telegram, а также в онлайн чате - в любое время суток!",
-				uz: "Savollaringiz bo'lsa, siz har doim bizning malakali yordamimizga individual yondashish orqali, telefon, elektron pochta, telegram orqali, shuningdek, kunning istalgan vaqtida ishonishingiz mumkin!",
-				en: "If you have any questions, you can always count on our qualified assistance with an individual approach, by phone, e-mail, telegram, as well as in online chat - at any time of the day!",
-			},
-			img: "/phone.png",
-		},
-		{
-			title: { ru: "Стабильность", uz: "Barqarorlik", en: "Stability" },
-			description: {
-				ru: (
-					<>
-						Мы обеспечиваем гарантированную доступность сервиса 99%.
-						Круглосуточно, за всеми системами следят наши
-						высококвалифицированные сотрудники. А оборудование размещаем в
-						высокотехнологичном, современном, надёжном{" "}
-						<Link href="/dc">
-							<a>Дата-Центре</a>
-						</Link>{" "}
-						TIER-2, в Ташкенте.
-					</>
-				),
-				uz: (
-					<>
-						Biz 99% kafolatlangan xizmat mavjudligini ta'minlaymiz.
-						Kecha-kunduz, hamma uchun tizimlar bizning yuqori malakali
-						xodimlarimiz tomonidan nazorat qilinadi. Biz jihozlarni
-						joylashtiramiz yuqori texnologiyali, zamonaviy, ishonchli{" "}
-						<Link href="/dc">
-							<a>Ma'lumotlar markazi</a>
-						</Link>{" "}
-						TIER-2, Toshkent shahrida.
-					</>
-				),
-				en: (
-					<>
-						We provide guaranteed service availability of 99%. Around the clock,
-						for everyone systems are supervised by our highly qualified staff.
-						We place the equipment in high-tech, modern, reliable{" "}
-						<Link href="/dc">
-							<a>Data Center</a>
-						</Link>{" "}
-						TIER-2, in Tashkent.
-					</>
-				),
-			},
-			img: "/search.png",
-		},
-		{
-			title: { ru: "Низкая цена", uz: "Past narx", en: "Low price" },
-			description: {
-				ru: 'Мы предоставляем услуги по самым "низким" ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.',
-				uz: "Biz O'zbekistonda 'eng past' narxlarda xizmatlar ko'rsatamiz, bizning afzalligimiz shundaki, biz eng yuqori sifatli xizmatlarni imkon qadar arzon narxlarda taqdim etamiz. Shunday qilib, biz sizga sarflashga emas, pul ishlashingizga yordam beramiz.",
-				en: 'We provide services at the "lowest" prices in Uzbekistan, our advantage is that we provide the highest quality services for the lowest possible prices. Thus, we will help you to earn, not to spend.',
-			},
-			img: "/wallet.png",
-		},
-		{
-			title: {
-				ru: "Собственные ip-адреса",
-				uz: "O'z IP manzillari",
-				en: "Own ip-addresses",
-			},
-			description: {
-				ru: 'Мы предоставляем услуги по собственной BGP протоколу (Border Gateway Protocol) для всех блоков IP-адресов. Подключенныe напрямую к автономной системе (AS) АК "Узтелеком", а также являемся участниками зоны TAS-IX.',
-				uz: "Biz barcha IP-manzillar bloklari uchun o'z BGP protokolimiz (Chegara shlyuzi protokoli) yordamida xizmatlarni taqdim etamiz. “O‘ztelekom” AK avtonom tizimiga (AS) bevosita ulangan va biz ham TAS-IX zonasi a’zolarimiz.",
-				en: 'We provide services on our own BGP protocol (Border Gateway Protocol) for all blocks of IP addresses. Connected directly to the autonomous system (AS) of JSC "Uztelecom", and we are also members of the TAS-IX zone.',
-			},
-			img: "/ip.png",
-		},
-	]
-
 export default function Home({ language }) {
+	const [show, setShow] = useState(-1)
 	const langData = {
 		seoTitle: {
 			ru: "Airnet.uz - Виртуальный хостинг в TAS-IX, домена, VDS-сервера, Ташкент",
@@ -813,8 +103,725 @@ export default function Home({ language }) {
 			uz: "Bizdan tez-tez so'rashadi",
 			en: "We are often asked",
 		},
+		month: {
+			ru: "мес.",
+			uz: "oy",
+		},
 	}
-	const [show, setShow] = useState(-1)
+
+	const faq = [
+			{
+				title: {
+					ru: "Есть ли возможность протестировать услуги? ✔",
+					uz: "Xizmatlarni sinab ko'rish mumkinmi? ✔",
+					en: "Is it possible to test the services? ✔",
+				},
+				description: {
+					ru: (
+						<>
+							<p>
+								Чтобы протестировать сервис, сначала нужно{" "}
+								<a href="#">зарегистрироваться.</a>
+							</p>
+
+							<p>
+								Вам нужен VDS сервер? - Выполните 5 простых шагов, описанных
+								здесь
+							</p>
+
+							<p>
+								Вы представляете юр.лицо, и вам нужен полноценный тестовый
+								стенд? - <strong>напишите нам</strong>
+							</p>
+						</>
+					),
+					uz: (
+						<>
+							<p>
+								Xizmatni sinab koʻrish uchun avval{" "}
+								<a href="#">roʻyxatdan oʻtishingiz kerak.</a>
+							</p>
+
+							<p>
+								Sizga VDS server kerakmi? - Bu yerda tasvirlangan 5 oson qadamni
+								bajaring
+							</p>
+
+							<p>
+								Siz yuridik shaxssiz va sizga to'liq huquqli test stoli kerakmi?
+								- <strong>bizga yozing</strong>
+							</p>
+						</>
+					),
+					en: (
+						<>
+							<p>
+								To test the service, you first need to <a href="#">sign up.</a>
+							</p>
+
+							<p>
+								Do you need a VDS server? - Follow the 5 easy steps described
+								here
+							</p>
+
+							<p>
+								Are you a legal entity and do you need a full-fledged test
+								stand? - <strong>write to us</strong>
+							</p>
+						</>
+					),
+				},
+			},
+			{
+				title: {
+					ru: "Как быстро отвечает служба техподдержки? ⭐",
+					uz: "Texnik yordam qanchalik tez javob beradi? ⭐",
+					en: "How quickly does tech support respond? ⭐",
+				},
+				description: {
+					ru: (
+						<p>
+							Время ответа может занять до 30 мин. Оно зависит от числа
+							обращений в определенный период времени.
+						</p>
+					),
+					uz: (
+						<p>
+							Javob berish vaqti 30 daqiqagacha vaqt olishi mumkin. Bu ma'lum
+							bir davrdagi qo'ng'iroqlar soniga bog'liq. vaqt.
+						</p>
+					),
+					en: (
+						<p>
+							Response time may take up to 30 minutes. It depends on the number
+							of calls in a certain time period.
+						</p>
+					),
+				},
+			},
+			{
+				title: {
+					ru: "Можно ли изменять конфигурацию рабочего сервера? 🖥️",
+					uz: "Ishchi server konfiguratsiyasini o'zgartirish mumkinmi? 🖥️",
+					en: "Is it possible to change the configuration of the working server? 🖥️",
+				},
+				description: {
+					ru: (
+						<>
+							<p>
+								Да. Изменять конфигурации своего сервера вы можете в любой
+								момент. 🚀
+							</p>
+
+							<p>
+								Для <strong>RAM</strong> и <strong>CPU</strong> [требуется
+								перезагрузка]
+							</p>
+
+							<p>
+								Для <strong>SSD</strong> [требуется перезагрузка]
+							</p>
+
+							<p>
+								Для <strong>Интернет</strong> [без перезагрузки]
+							</p>
+						</>
+					),
+					uz: (
+						<>
+							<p>
+								Ha. Siz istalgan vaqtda serveringiz konfiguratsiyasini
+								o'zgartirishingiz mumkin. 🚀
+							</p>
+
+							<p>
+								<strong>RAM</strong> va <strong>CPU</strong> uchun [qayta
+								yuklash kerak]
+							</p>
+
+							<p>
+								<strong>SSD</strong> uchun [qayta yuklash kerak]
+							</p>
+
+							<p>
+								<strong>Internet</strong> uchun [qayta yuklanmaydi]
+							</p>
+						</>
+					),
+					en: (
+						<>
+							<p>
+								Yes. You can change the configuration of your server at any
+								time. 🚀
+							</p>
+
+							<p>
+								For <strong>RAM</strong> and <strong>CPU</strong> [reboot
+								required]
+							</p>
+
+							<p>
+								For <strong>SSD</strong> [reboot required]
+							</p>
+
+							<p>
+								For <strong>Internet</strong> [no reboot]
+							</p>
+						</>
+					),
+				},
+			},
+			{
+				title: {
+					ru: "Какая система виртуализации используется в AIRNET? 🗂️",
+					uz: "AIRNET da qanday virtualizatsiya tizimi qo'llaniladi? 🗂️",
+					en: "What virtualization system is used in AIRNET? 🗂️",
+				},
+				description: {
+					ru: (
+						<p>
+							Виртуальная инфраструктура <strong>AIRNET</strong> компании
+							использует <strong>VMware</strong> с прикладными дополнениями.
+							Виртуальные сервера создаются в среде операционной системы{" "}
+							<strong>ESXi</strong>.
+						</p>
+					),
+					uz: (
+						<p>
+							Kompaniyaning <strong>AIRNET</strong> virtual infratuzilmasi{" "}
+							<strong>VMware</strong> ilova qoʻshimchalari bilan. Virtual
+							serverlar muhitda yaratilgan
+							<strong>ESXi</strong> operatsion tizimi.
+						</p>
+					),
+					en: (
+						<p>
+							The company's <strong>AIRNET</strong> virtual infrastructure uses{" "}
+							<strong>VMware</strong> with application addons. Virtual servers
+							are created in
+							<strong>ESXi</strong> operating system environment.
+						</p>
+					),
+				},
+			},
+			{
+				title: {
+					ru: "Как можно оплатить за услуги AIRNET? 💷",
+					uz: "AIRNET xizmatlari uchun qanday to'lashim mumkin? 💷",
+					en: "How can I pay for AIRNET services? 💷",
+				},
+				description: {
+					ru: (
+						<>
+							<p>Способы оплаты</p>
+
+							<p>
+								Для <strong>физических лиц</strong>: PAYME, PAYNET, CLICK, UPAY,
+								Webmoney, OSON.uz, VISA, MasterCard и другие.
+							</p>
+
+							<p>
+								Для <strong>юридических лиц</strong>: банковский перевод.
+								(перечисление)
+							</p>
+						</>
+					),
+					uz: (
+						<>
+							<p>To'lov usullari</p>
+
+							<p>
+								<strong>jismoniy shaxslar</strong> uchun: PAYME, PAYNET, CLICK,
+								UPAY, Webmoney, OSON.uz, VISA, MasterCard va boshqalar.
+							</p>
+
+							<p>
+								<strong>yuridik shaxslar</strong> uchun: bank o‘tkazmasi.
+								(ro'yxatga olish)
+							</p>
+						</>
+					),
+					en: (
+						<>
+							<p>Payment methods</p>
+
+							<p>
+								For <strong>individuals</strong>: PAYME, PAYNET, CLICK, UPAY,
+								Webmoney, OSON.uz, VISA, MasterCard and others.
+							</p>
+
+							<p>
+								For <strong>legal entities</strong>: bank transfer.
+								(enumeration)
+							</p>
+						</>
+					),
+				},
+			},
+		],
+		tarif = [
+			{
+				title: { ru: "Strong", uz: "Strong", en: "Strong" },
+				prices: [
+					{
+						price: "200 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "600 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "1 200 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "2 400 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				cpu: 2,
+				ram: 4,
+				ssd: 50,
+				net: 25,
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14",
+			},
+			{
+				title: { ru: "VIP+", uz: "VIP+", en: "VIP+" },
+				prices: [
+					{
+						price: "300 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "900 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "1 800 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "3 600 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				cpu: 4,
+				ram: 6,
+				ssd: 150,
+				net: 25,
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16",
+			},
+			{
+				title: { ru: "Advanced", uz: "Advanced", en: "Advanced" },
+				prices: [
+					{
+						price: "550 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "1 650 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "3 300 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "6 600 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				cpu: 6,
+				ram: 10,
+				ssd: 150,
+				net: 25,
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
+			},
+			{
+				title: { ru: "Mega", uz: "Mega", en: "Mega" },
+				prices: [
+					{
+						price: "800 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "2 400 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "4 800 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "9 600 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				cpu: 6,
+				ram: 12,
+				ssd: 200,
+				net: 25,
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
+			},
+			{
+				title: { ru: "Ultra", uz: "Ultra", en: "Ultra" },
+				prices: [
+					{
+						price: "1 000 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "3 000 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "6 000 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "12 000 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				cpu: 8,
+				ram: 16,
+				ssd: 200,
+				net: 25,
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
+			},
+		],
+		tarif2 = [
+			{
+				title: { ru: "Старт", uz: "Start", en: "Start" },
+				prices: [
+					{
+						price: "10 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "30 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "57 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "108 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				ssd: 250,
+				sites: 5,
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=32",
+			},
+			{
+				title: { ru: "Простой", uz: "Oddiy", en: "Simple" },
+				// price: '15 000',
+				prices: [
+					{
+						price: "15 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "45 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "85 500",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "162 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				ssd: 500,
+				sites: 10,
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=31",
+			},
+			{
+				title: { ru: "Стандарт", uz: "Standart", en: "Standart" },
+				// price: '25 000',
+				prices: [
+					{
+						price: "25 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "75 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "142 500",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "270 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				ssd: "1 000",
+				sites: 15,
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=33",
+			},
+			{
+				title: { ru: "Доступный", uz: "Hamyonbop", en: "Accessible" },
+				// price: '60 000',
+				prices: [
+					{
+						price: "60 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "180 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "342 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "648 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				ssd: "3 000",
+				sites: 20,
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=34",
+			},
+			{
+				title: { ru: "Оптимальный", uz: "Optimal", en: "Optimal" },
+				// price: '90 000',
+				prices: [
+					{
+						price: "90 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "270 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "513 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "972 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				ssd: "5 000",
+				sites: "∞",
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=37",
+			},
+			{
+				title: { ru: "Выгодный", uz: "Foydali", en: "Profitable" },
+				// price: '150 000',
+				prices: [
+					{
+						price: "150 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "450 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "855 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "1 620 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				ssd: "10 000",
+				sites: "∞",
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38",
+			},
+			{
+				title: { ru: "Офис", uz: "Ofis", en: "Office" },
+				// price: '250 000',
+				prices: [
+					{
+						price: "250 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "750 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "1 425 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "2 700 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				ssd: "15 000",
+				sites: "∞",
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39",
+			},
+			{
+				title: { ru: "Корпоративный", uz: "Korporativ", en: "Corporate" },
+				// price: '350 000',
+				prices: [
+					{
+						price: "350 000",
+						dateOff: `1 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "1 050 000",
+						dateOff: `3 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "1 995 000",
+						dateOff: `6 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+					{
+						price: "3 780 000",
+						dateOff: `12 ${langData.month[language]}`,
+						date: langData.month[language],
+					},
+				],
+				ssd: "20 000",
+				sites: "∞",
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40",
+			},
+		],
+		content = [
+			{
+				title: {
+					ru: "Служба поддержки 24/7",
+					uz: "Qo'llab-quvvatlash xizmati 24/7",
+					en: "24/7 support service",
+				},
+				description: {
+					ru: "В случае возникновения каких-либо вопросов, Вы всегда можете рассчитывать на нашу квалифицированную помощь с индивидуальным подходом, по телефону, e-mail, telegram, а также в онлайн чате - в любое время суток!",
+					uz: "Savollaringiz bo'lsa, siz har doim bizning malakali yordamimizga individual yondashish orqali, telefon, elektron pochta, telegram orqali, shuningdek, kunning istalgan vaqtida ishonishingiz mumkin!",
+					en: "If you have any questions, you can always count on our qualified assistance with an individual approach, by phone, e-mail, telegram, as well as in online chat - at any time of the day!",
+				},
+				img: "/phone.png",
+			},
+			{
+				title: { ru: "Стабильность", uz: "Barqarorlik", en: "Stability" },
+				description: {
+					ru: (
+						<>
+							Мы обеспечиваем гарантированную доступность сервиса 99%.
+							Круглосуточно, за всеми системами следят наши
+							высококвалифицированные сотрудники. А оборудование размещаем в
+							высокотехнологичном, современном, надёжном{" "}
+							<Link href="/dc">
+								<a>Дата-Центре</a>
+							</Link>{" "}
+							TIER-2, в Ташкенте.
+						</>
+					),
+					uz: (
+						<>
+							Biz 99% kafolatlangan xizmat mavjudligini ta'minlaymiz.
+							Kecha-kunduz, hamma uchun tizimlar bizning yuqori malakali
+							xodimlarimiz tomonidan nazorat qilinadi. Biz jihozlarni
+							joylashtiramiz yuqori texnologiyali, zamonaviy, ishonchli{" "}
+							<Link href="/dc">
+								<a>Ma'lumotlar markazi</a>
+							</Link>{" "}
+							TIER-2, Toshkent shahrida.
+						</>
+					),
+					en: (
+						<>
+							We provide guaranteed service availability of 99%. Around the
+							clock, for everyone systems are supervised by our highly qualified
+							staff. We place the equipment in high-tech, modern, reliable{" "}
+							<Link href="/dc">
+								<a>Data Center</a>
+							</Link>{" "}
+							TIER-2, in Tashkent.
+						</>
+					),
+				},
+				img: "/search.png",
+			},
+			{
+				title: { ru: "Низкая цена", uz: "Past narx", en: "Low price" },
+				description: {
+					ru: 'Мы предоставляем услуги по самым "низким" ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.',
+					uz: "Biz O'zbekistonda 'eng past' narxlarda xizmatlar ko'rsatamiz, bizning afzalligimiz shundaki, biz eng yuqori sifatli xizmatlarni imkon qadar arzon narxlarda taqdim etamiz. Shunday qilib, biz sizga sarflashga emas, pul ishlashingizga yordam beramiz.",
+					en: 'We provide services at the "lowest" prices in Uzbekistan, our advantage is that we provide the highest quality services for the lowest possible prices. Thus, we will help you to earn, not to spend.',
+				},
+				img: "/wallet.png",
+			},
+			{
+				title: {
+					ru: "Собственные ip-адреса",
+					uz: "O'z IP manzillari",
+					en: "Own ip-addresses",
+				},
+				description: {
+					ru: 'Мы предоставляем услуги по собственной BGP протоколу (Border Gateway Protocol) для всех блоков IP-адресов. Подключенныe напрямую к автономной системе (AS) АК "Узтелеком", а также являемся участниками зоны TAS-IX.',
+					uz: "Biz barcha IP-manzillar bloklari uchun o'z BGP protokolimiz (Chegara shlyuzi protokoli) yordamida xizmatlarni taqdim etamiz. “O‘ztelekom” AK avtonom tizimiga (AS) bevosita ulangan va biz ham TAS-IX zonasi a’zolarimiz.",
+					en: 'We provide services on our own BGP protocol (Border Gateway Protocol) for all blocks of IP addresses. Connected directly to the autonomous system (AS) of JSC "Uztelecom", and we are also members of the TAS-IX zone.',
+				},
+				img: "/ip.png",
+			},
+		]
 
 	useEffect(() => {
 		const outerClick = (e) => {

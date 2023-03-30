@@ -245,9 +245,9 @@ export default function PopularSert({ language }) {
 										</span>
 										{langData.srok[language]}:{" "}
 										{language == "ru" ? (
-											<strong>от {item.dateOff[language]}</strong>
+											<strong>от {item.dateOff}</strong>
 										) : (
-											<strong>{item.dateOff[language]} dan</strong>
+											<strong>{item.dateOff} dan</strong>
 										)}
 									</li>
 								</ul>
@@ -258,6 +258,7 @@ export default function PopularSert({ language }) {
 									item={item.prices}
 									show={show}
 									setShow={setShow}
+									language={language}
 								/>
 								<a href={item.link}>
 									<button>{langData.buy[language]}</button>
