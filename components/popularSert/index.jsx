@@ -71,7 +71,7 @@ export default function PopularSert({ language }) {
 
 	const data = [
 		{
-			title: "Comodo PositiveSSL",
+			title: { ru: "Comodo PositiveSSL", uz: "Comodo PositiveSSL", en: "" },
 			description: {
 				ru: "Самый доступный сертификат от Comodo. Низкая стоимость и быстрый выпуск.",
 				uz: "Comodo'dan eng arzon sertifikat. Arzon narx va tez chiqarish.",
@@ -109,7 +109,11 @@ export default function PopularSert({ language }) {
 			],
 		},
 		{
-			title: "Comodo PositiveSSL Wildcard",
+			title: {
+				ru: "Comodo PositiveSSL Wildcard",
+				uz: "Comodo PositiveSSL Wildcard",
+				en: "",
+			},
 			description: {
 				ru: "Надежный цифровой сертификат безопасности.",
 				uz: "Ishonchli raqamli xavfsizlik sertifikati.",
@@ -147,7 +151,11 @@ export default function PopularSert({ language }) {
 			],
 		},
 		{
-			title: "Comodo PremiumSSL Wildcard",
+			title: {
+				ru: "Comodo PremiumSSL Wildcard",
+				uz: "Comodo PremiumSSL Wildcard",
+				en: "",
+			},
 			description: {
 				ru: "Сертификат с расширенной проверкой идентифицирует не только сайт, но и организацию.",
 				uz: "Kengaytirilgan tekshirishga ega sertifikat nafaqat saytni, balki tashkilotni ham aniqlaydi.",

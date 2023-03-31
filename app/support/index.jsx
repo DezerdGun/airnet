@@ -3,6 +3,7 @@ import TarifMaket from "@/components/tarifMaket"
 import { validateEmail } from "@/utils/validateEmail"
 import emailjs from "@emailjs/browser"
 import { useEffect, useState } from "react"
+import { useIMask } from "react-imask"
 import st from "./support.module.scss"
 
 export default function Support({ language }) {
@@ -360,6 +361,14 @@ export default function Support({ language }) {
 			ru: "Ваша жалоба успешно отправлена",
 			uz: "Sizning shikoyatingiz yuborildi",
 		},
+		phoneText: {
+			ru: 'Телефон',
+			uz: 'Telefon'
+		},
+		sendText:  {
+			ru: 'Отправить',
+			uz: 'Yuborish'
+		},
 	}
 
 	return (
@@ -401,7 +410,7 @@ export default function Support({ language }) {
 												<path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z" />
 											</svg>
 											<div>
-												<label>Telefon</label>
+												<label>{langData.phoneText[language]}</label>
 												<a href="tel:+998712008700">+998(71) 200-87-00</a>
 											</div>
 										</li>
@@ -413,7 +422,7 @@ export default function Support({ language }) {
 												<path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z" />
 											</svg>
 											<div>
-												<label>Telefon</label>
+												<label>{langData.phoneText[language]}</label>
 												<a href="tel:+998712008700">+998(71) 202-87-00</a>
 											</div>
 										</li>
@@ -425,7 +434,7 @@ export default function Support({ language }) {
 												<path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z" />
 											</svg>
 											<div>
-												<label>Телефон</label>
+												<label>{langData.phoneText[language]}</label>
 												<a href="tel:+998903243080">+998(90) 324-30-80</a>{" "}
 												<a href="https://t.me/airnetuzb" target="_blank">
 													(telegram)
@@ -439,7 +448,7 @@ export default function Support({ language }) {
 					</div>
 				</TarifMaket>
 			</div>
-			<Partners />
+			<Partners language={language} />
 			<div className={`${st.modal} ${show ? st.modal__active : ""}`}>
 				<div className={st.modal__block}>
 					<div className={st.modal__block__header}>
@@ -481,7 +490,7 @@ export default function Support({ language }) {
 							{isError.email && <span>{langData.amail[language]}</span>}
 						</div>
 						<div className={st.modal__block__item}>
-							<label htmlFor="tel">Telefon</label>
+							<label htmlFor="tel">{langData.phoneText[language]}</label>
 							<div
 								className={`${st.modal__block__item__input} ${
 									isError.phone ? st.modal__block__item__input__error : ""
@@ -527,7 +536,7 @@ export default function Support({ language }) {
 							</button>
 						) : (
 							<button type="submit" disabled={loading}>
-								Отправить{" "}
+								{langData.sendText[language]}{" "}
 								{loading ? (
 									<div
 										class="spinner-border spinner-border-sm text-light"
