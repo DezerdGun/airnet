@@ -1,113 +1,113 @@
-import BlogItem from "@/components/blogItem"
+import BlogItem from "@/components/blogItem";
 
 const data = {
-	title: {
-		ru: "«ВКонтакте» завела профиль в Instagram",
-		uz: "VKontakte Instagram profilini ishga tushirdi",
-	},
-	decs: {
-		ru: "Раньше «ВКонтакте» активно боролась с Instagram — отключала ссылки на сервис и пыталась создать конкурента.",
-		uz: "Avvalroq “VKontakte” Instagram’ga qarshi faol kurashgan – u servisga havolalarni o‘chirib, raqobatchi yaratishga uringan",
-	},
-	date: "28 Дек 2018",
-	img: "/blog/vk.jpg",
-	content: {
-		ru: (
-			<>
-				<p>
-					Раньше «ВКонтакте» активно боролась с Instagram — отключала ссылки на
-					сервис и пыталась создать конкурента.
-				</p>
+  title: {
+    ru: "«ВКонтакте» завела профиль в Instagram",
+    uz: "VKontakte Instagram profilini ishga tushirdi",
+  },
+  desc: {
+    ru: "Раньше «ВКонтакте» активно боролась с Instagram — отключала ссылки на сервис и пыталась создать конкурента.",
+    uz: "Avvalroq “VKontakte” Instagram’ga qarshi faol kurashgan – u servisga havolalarni o‘chirib, raqobatchi yaratishga uringan",
+  },
+  date: "28.12.2018",
+  img: "/blog/vk.jpg",
+  content: {
+    ru: (
+      <>
+        <p>
+          Раньше «ВКонтакте» активно боролась с Instagram — отключала ссылки на
+          сервис и пыталась создать конкурента.
+        </p>
 
-				<p>
-					Соцсеть «ВКонтакте», запущенная в 2006 году, запустила свой профиль в
-					Instagram. На это обратили внимание в VC.ru. Первая фотография в нём
-					опубликована 21 декабря 2018 года — на ней изображён Дом Зингера, где
-					расположена штаб-квартира «ВКонтакте».
-				</p>
-				<p>
-					Представители «ВКонтакте» подтвердили, что это официальный профиль, но
-					не стали подробно объяснять, зачем компании он понадобился.
-				</p>
-				<p>
-					«ВКонтакте» раньше боролась с Instagram — в августе 2015 года соцсеть
-					отключила ссылки на фотосервис на страницах пользователей и в личных
-					сообщениях на фоне выхода фотоприложения Snapster.
-				</p>
-				<p>
-					В апреле 2016 года ссылки включили обратно — во «ВКонтакте» объяснили,
-					что это было вызвано не заботой о Snapster, а борьбой с людьми и
-					организациями, которые занимались перепродажей трафика. Snapster
-					закрыли в сентябре 2017 года.
-				</p>
-				<p>
-					В Узбекистане проблемы с доступом к «ВКонтакте» наблюдаются с октября,
-					когда начал с перебоями работать YouTube.
-				</p>
-				<p>
-					Ссылка на источник{" "}
-					<a
-						href="https://www.spot.uz/ru"
-						target="_blank"
-						rel="noreferrer noopener"
-					>
-						Spot
-					</a>
-				</p>
-			</>
-		),
-		uz: (
-			<>
-				<p>
-					Ilgari VKontakte Instagramga qarshi faol kurash olib bordi - u
-					havolalarni o'chirib qo'ydi xizmati va raqobatchi yaratishga harakat
-					qildi.
-				</p>
+        <p>
+          Соцсеть «ВКонтакте», запущенная в 2006 году, запустила свой профиль в
+          Instagram. На это обратили внимание в VC.ru. Первая фотография в нём
+          опубликована 21 декабря 2018 года — на ней изображён Дом Зингера, где
+          расположена штаб-квартира «ВКонтакте».
+        </p>
+        <p>
+          Представители «ВКонтакте» подтвердили, что это официальный профиль, но
+          не стали подробно объяснять, зачем компании он понадобился.
+        </p>
+        <p>
+          «ВКонтакте» раньше боролась с Instagram — в августе 2015 года соцсеть
+          отключила ссылки на фотосервис на страницах пользователей и в личных
+          сообщениях на фоне выхода фотоприложения Snapster.
+        </p>
+        <p>
+          В апреле 2016 года ссылки включили обратно — во «ВКонтакте» объяснили,
+          что это было вызвано не заботой о Snapster, а борьбой с людьми и
+          организациями, которые занимались перепродажей трафика. Snapster
+          закрыли в сентябре 2017 года.
+        </p>
+        <p>
+          В Узбекистане проблемы с доступом к «ВКонтакте» наблюдаются с октября,
+          когда начал с перебоями работать YouTube.
+        </p>
+        <p>
+          Ссылка на источник{" "}
+          <a
+            href="https://www.spot.uz/ru"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Spot
+          </a>
+        </p>
+      </>
+    ),
+    uz: (
+      <>
+        <p>
+          Ilgari VKontakte Instagramga qarshi faol kurash olib bordi - u
+          havolalarni o'chirib qo'ydi xizmati va raqobatchi yaratishga harakat
+          qildi.
+        </p>
 
-				<p>
-					2006 yilda ishga tushirilgan "VKontakte" ijtimoiy tarmog'i o'z
-					profilini yilda ishga tushirdi Instagram. Bu VC.ru saytida qayd
-					etilgan. Undagi birinchi fotosurat 2018 yil 21-dekabrda nashr etilgan
-					- bu xonanda xonanda tasvirlangan VKontakte shtab-kvartirasi
-					joylashgan.
-				</p>
-				<p>
-					VKontakte vakillari bu rasmiy profil ekanligini tasdiqladilar, ammo
-					kompaniyaga nima uchun kerakligini batafsil tushuntirishni boshlamadi.
-				</p>
-				<p>
-					"VKontakte" ilgari Instagram bilan kurashgan - 2015 yil avgustida
-					ijtimoiy tarmoq foydalanuvchilarning sahifalarida va shaxsiy
-					fotosuratlar xizmatiga o'chirilgan havolalar Snapster foto ilovasi
-					ishga tushirilganda xabarlar.
-				</p>
-				<p>
-					2016 yil aprel oyida havolalar qayta yoqildi - tushuntirdi VKontakte
-					Bu Snapster haqida qayg'urishdan emas, balki odamlar bilan jang
-					qilishdan va trafikni qayta sotish bilan shug'ullangan tashkilotlar.
-					Snapster 2017 yil sentyabr oyida yopildi.
-				</p>
-				<p>
-					O‘zbekistonda oktyabr oyidan beri “VKontakte” tarmog‘iga kirishda
-					muammolar kuzatilmoqda. YouTube vaqti-vaqti bilan boshlanganda.
-				</p>
-				<p>
-					Manba'a uchun link{" "}
-					<a
-						href="https://www.spot.uz/ru"
-						target="_blank"
-						rel="noreferrer noopener"
-					>
-						Spot
-					</a>
-				</p>
-			</>
-		),
-	},
-	prev: "/blog/deputaty-nachali-obsuzhdenie-zakonoproekta-o-personalnyx-dannyx",
-	next: "/blog/karty-uzcard-teper-mozhno-popolnyat-nalichnymi",
-}
+        <p>
+          2006 yilda ishga tushirilgan "VKontakte" ijtimoiy tarmog'i o'z
+          profilini yilda ishga tushirdi Instagram. Bu VC.ru saytida qayd
+          etilgan. Undagi birinchi fotosurat 2018 yil 21-dekabrda nashr etilgan
+          - bu xonanda xonanda tasvirlangan VKontakte shtab-kvartirasi
+          joylashgan.
+        </p>
+        <p>
+          VKontakte vakillari bu rasmiy profil ekanligini tasdiqladilar, ammo
+          kompaniyaga nima uchun kerakligini batafsil tushuntirishni boshlamadi.
+        </p>
+        <p>
+          "VKontakte" ilgari Instagram bilan kurashgan - 2015 yil avgustida
+          ijtimoiy tarmoq foydalanuvchilarning sahifalarida va shaxsiy
+          fotosuratlar xizmatiga o'chirilgan havolalar Snapster foto ilovasi
+          ishga tushirilganda xabarlar.
+        </p>
+        <p>
+          2016 yil aprel oyida havolalar qayta yoqildi - tushuntirdi VKontakte
+          Bu Snapster haqida qayg'urishdan emas, balki odamlar bilan jang
+          qilishdan va trafikni qayta sotish bilan shug'ullangan tashkilotlar.
+          Snapster 2017 yil sentyabr oyida yopildi.
+        </p>
+        <p>
+          O‘zbekistonda oktyabr oyidan beri “VKontakte” tarmog‘iga kirishda
+          muammolar kuzatilmoqda. YouTube vaqti-vaqti bilan boshlanganda.
+        </p>
+        <p>
+          Manba'a uchun link{" "}
+          <a
+            href="https://www.spot.uz/ru"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Spot
+          </a>
+        </p>
+      </>
+    ),
+  },
+  prev: "/blog/deputaty-nachali-obsuzhdenie-zakonoproekta-o-personalnyx-dannyx",
+  next: "/blog/karty-uzcard-teper-mozhno-popolnyat-nalichnymi",
+};
 
 export default function Blog({ language }) {
-	return <BlogItem data={data} language={language} />
+  return <BlogItem data={data} language={language} />;
 }
