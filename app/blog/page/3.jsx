@@ -1,7 +1,5 @@
 import st from "../blog.module.scss";
-import Image from "next/image";
 import Link from "next/link";
-import Container from "../../../components/container";
 import { BlogBlock } from "..";
 
 export const blog = [
