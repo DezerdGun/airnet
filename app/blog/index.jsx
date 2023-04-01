@@ -319,6 +319,47 @@ export const blog = [
 ];
 
 export default function Blog({ language }) {
+  const pagination = {
+    ru: (
+      <>
+        <a className={st.blog__links__active} disabled>
+          &laquo; Предыдущий пост
+        </a>
+        <a className={st.blog__links__active}>1</a>
+        <Link href="/blog/page/2">
+          <a>2</a>
+        </Link>
+        <Link href="/blog/page/3">
+          <a>3</a>
+        </Link>
+        <Link href="/blog/page/2">
+          <a>Следующий пост &raquo;</a>
+        </Link>
+      </>
+    ),
+    uz: (
+      <>
+        <a className={st.blog__links__active} disabled>
+          &laquo; Oldingi post
+        </a>
+        <a className={st.blog__links__active}>1</a>
+        <Link href="/blog/page/2">
+          <a>2</a>
+        </Link>
+        <Link href="/blog/page/3">
+          <a>3</a>
+        </Link>
+        <Link href="/blog/page/2">
+          <a>Keyingi post &raquo;</a>
+        </Link>
+      </>
+    ),
+  };
+
+  return <BlogBlock pagination={pagination} blog={blog} language={language} />;
+}
+
+export function BlogBlock({ pagination, blog, language }) {
   const langData = {
     seoT: {
       ru: "Новости | Airnet",
@@ -331,42 +372,6 @@ export default function Blog({ language }) {
     headTitle: {
       ru: "Новости",
       uz: "Yangiliklar",
-    },
-    post: {
-      ru: (
-        <>
-          <a className={st.blog__links__active} disabled>
-            &laquo; Предыдущий пост
-          </a>
-          <a className={st.blog__links__active}>1</a>
-          <Link href="/blog/page/2">
-            <a>2</a>
-          </Link>
-          <Link href="/blog/page/3">
-            <a>3</a>
-          </Link>
-          <Link href="/blog/page/2">
-            <a>Следующий пост &raquo;</a>
-          </Link>
-        </>
-      ),
-      uz: (
-        <>
-          <a className={st.blog__links__active} disabled>
-            &laquo; Oldingi post
-          </a>
-          <a className={st.blog__links__active}>1</a>
-          <Link href="/blog/page/2">
-            <a>2</a>
-          </Link>
-          <Link href="/blog/page/3">
-            <a>3</a>
-          </Link>
-          <Link href="/blog/page/2">
-            <a>Keyingi post &raquo;</a>
-          </Link>
-        </>
-      ),
     },
   };
   return (
@@ -403,7 +408,7 @@ export default function Blog({ language }) {
               </div>
             ))}
           </div>
-          <div className={st.blog__links}>{langData.post[language]}</div>
+          <div className={st.blog__links}>{pagination[language]}</div>
         </div>
       </Container>
     </>
