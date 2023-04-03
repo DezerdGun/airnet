@@ -1,20 +1,20 @@
-import HelpItem from '../../../components/helpItem';
+import HelpItem from "@/components/helpItem"
 
 const data = {
-		id: 'site',
-		title: 'Технические вопросы',
+		id: "site",
+		title: { ru: "Технические вопросы", uz: "Texnik savollar" },
 		children: [
 			{
-				title: 'Файл .htaccess',
-				link: '/help/site/file-htaccess',
+				title: { ru: "Файл .htaccess", uz: "Fayl .htaccess" },
+				link: "/help/site/file-htaccess",
 			},
 		],
 	},
 	mainData = {
 		headTitle: data.title,
 		content: data,
-	};
+	}
 
-export default function HelpInner() {
-	return <HelpItem data={mainData} />;
+export default function HelpInner({ language }) {
+	return <HelpItem data={mainData} language={language} />
 }

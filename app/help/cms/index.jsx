@@ -1,20 +1,20 @@
-import HelpItem from '../../../components/helpItem';
+import HelpItem from "@/components/helpItem"
 
 const data = {
-		id: 'cms',
-		title: 'CMS',
+		id: "cms",
+		title: "CMS",
 		children: [
 			{
-				title: 'Что такое CMS',
-				link: '/help/cms/chto-takoe-cms',
+				title: { ru: "Что такое CMS", uz: "CMS nima" },
+				link: "/help/cms/chto-takoe-cms",
 			},
 		],
 	},
 	mainData = {
 		headTitle: data.title,
 		content: data,
-	};
+	}
 
-export default function HelpInner() {
-	return <HelpItem data={mainData} />;
+export default function HelpInner({ language }) {
+	return <HelpItem data={mainData} language={language} />
 }

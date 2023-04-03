@@ -1,11 +1,11 @@
-import HelpItem from '../../../components/helpItem';
+import HelpItem from '@/components/helpItem';
 
 const data = {
 		id: 'hosting',
-		title: 'Хостинг',
+		title:{ru: 'Хостинг', uz:"Xost"},
 		children: [
 			{
-				title: 'Как перенести сайт на хостинг AIRNET?',
+				title: {ru:'Как перенести сайт на хостинг AIRNET?', uz:"Qanday qilib veb-saytni AIRNET xostingiga o'tkazish mumkin?"},
 				link: '/help/hosting/kak-perenesti-sajt-na-hosting-airnet',
 			},
 		],
@@ -15,6 +15,6 @@ const data = {
 		content: data,
 	};
 
-export default function HelpInner() {
-	return <HelpItem data={mainData} />;
+export default function HelpInner({language}) {
+	return <HelpItem data={mainData} language={language}/>;
 }

@@ -1,20 +1,20 @@
-import HelpItem from '../../../components/helpItem';
+import HelpItem from "@/components/helpItem"
 
 const data = {
-		id: 'ftp',
-		title: 'FTP',
+		id: "ftp",
+		title: "FTP",
 		children: [
 			{
-				title: 'Что такое FTP',
-				link: '/help/ftp/chto-takoe-ftp',
+				title: { ru: "Что такое FTP", uz: "FTP nma?" },
+				link: "/help/ftp/chto-takoe-ftp",
 			},
 		],
 	},
 	mainData = {
 		headTitle: data.title,
 		content: data,
-	};
+	}
 
-export default function HelpInner() {
-	return <HelpItem data={mainData} />;
+export default function HelpInner({ language }) {
+	return <HelpItem data={mainData} language={language} />
 }
