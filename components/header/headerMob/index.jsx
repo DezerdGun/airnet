@@ -1,9 +1,16 @@
 import { checkLang } from "@/utils/checkLang"
 import Link from "next/dist/client/link"
 import { useEffect } from "react"
+import { LangBlock } from ".."
 import st from "./headerMob.module.scss"
 
-export default function HeaderMob({ isOpen, setIsOpen, menu, language }) {
+export default function HeaderMob({
+	isOpen,
+	setIsOpen,
+	menu,
+	language,
+	router,
+}) {
 	useEffect(() => {
 		let icon = document.querySelectorAll(`.${st.headerMob__block__icon}`)
 		let coll = document.querySelectorAll(`.${st.headerMob__collapse}`)
@@ -66,6 +73,9 @@ export default function HeaderMob({ isOpen, setIsOpen, menu, language }) {
 					)
 				)}
 			</ul>
+			<div className={st.headerMob__lang}>
+				<LangBlock language={language} router={router} />
+			</div>
 		</div>
 	)
 }

@@ -81,9 +81,20 @@ $gray: #c2c2c2;
 		}
 	}
 
+	&__lang {
+		display: flex;
+		gap: 5px;
+	}
+
 	@media (max-width: 1040px) {
 		&__active {
 			display: block;
+		}
+	}
+
+	@media (min-width: 550px) {
+		&__lang {
+			display: none;
 		}
 	}
 

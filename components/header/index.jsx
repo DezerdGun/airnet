@@ -183,39 +183,8 @@ export default function Header({ language }) {
 						))}
 					</nav>
 					<div className={st.header__main__right}>
-						{console.log(typeof language, language == "ru", router)}
-
 						<div className={st.header__main__right__lang}>
-							<div
-								className={`${st.header__main__right__lang__item} ${
-									language === "ru"
-										? st.header__main__right__lang__item__active
-										: ""
-								}`}
-								onClick={() => changeLang("ru", router)}
-							>
-								RU
-							</div>
-							{/* <div
-								className={`${st.header__main__right__lang__item} ${
-									language === "en"
-										? st.header__main__right__lang__item__active
-										: ""
-								}`}
-								onClick={() => changeLang("en", router)}
-							>
-								EN
-							</div> */}
-							<div
-								className={`${st.header__main__right__lang__item} ${
-									language === "uz"
-										? st.header__main__right__lang__item__active
-										: ""
-								}`}
-								onClick={() => changeLang("uz", router)}
-							>
-								UZ
-							</div>
+							<LangBlock language={language} router={router} />
 						</div>
 						<button className={st.header__main__right__billing}>
 							<a href="https://billing.airnet.uz/billing.php">
@@ -298,6 +267,7 @@ export default function Header({ language }) {
 				setIsOpen={setIsOpen}
 				menu={menu}
 				language={language}
+				router={router}
 			/>
 		</div>
 	)
@@ -314,5 +284,28 @@ const NavItem = ({ nav, language }) => {
 				</li>
 			))}
 		</ul>
+	)
+}
+
+export const LangBlock = ({ language, router }) => {
+	return (
+		<>
+			<div
+				className={`${st.header__main__right__lang__item} ${
+					language === "ru" ? st.header__main__right__lang__item__active : ""
+				}`}
+				onClick={() => changeLang("ru", router)}
+			>
+				RU
+			</div>
+			<div
+				className={`${st.header__main__right__lang__item} ${
+					language === "uz" ? st.header__main__right__lang__item__active : ""
+				}`}
+				onClick={() => changeLang("uz", router)}
+			>
+				UZ
+			</div>
+		</>
 	)
 }
