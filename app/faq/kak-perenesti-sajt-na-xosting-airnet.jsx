@@ -1,5 +1,6 @@
 import FaqInside from "@/components/faqInside"
 import { LINKS } from "@/components/requirements"
+import { checkLang } from "@/utils/checkLang"
 import Link from "next/link"
 
 const data = {
