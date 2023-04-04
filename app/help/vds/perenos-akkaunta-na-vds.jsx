@@ -23,7 +23,8 @@ const mainData = {
 				<p>
 					Если возникнут трудности в процессе экспорта данных, вы можете
 					получить необходимую консультацию, оставив заявку в отделе технической
-					поддержки по телефону +998 (90) 324-30-80
+					поддержки по телефону{" "}
+					<a href="tel:+998 (90) 324-30-80">+998 (90) 324-30-80</a>
 				</p>
 			</>
 		),
@@ -47,8 +48,9 @@ const mainData = {
 				</p>
 				<p>
 					Ma'lumotlarni eksport qilish jarayonida qiyinchiliklarga duch
-					kelsangiz, kerakli maslahatlarni olishingiz mumkin, +998 (90)
-					324-30-80 telefon orqali texnik yordam bo'limiga so'rov qoldirish
+					kelsangiz, kerakli maslahatlarni olishingiz mumkin,{" "}
+					<a href="tel:+998 (90) 324-30-80">+998 (90) 324-30-80</a> telefon
+					orqali texnik yordam bo'limiga so'rov qoldirish
 				</p>
 			</>
 		),

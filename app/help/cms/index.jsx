@@ -2,7 +2,7 @@ import HelpItem from "@/components/helpItem"
 
 const data = {
 		id: "cms",
-		title: "CMS",
+		title: { ru: "CMS", uz: "CMS" },
 		children: [
 			{
 				title: { ru: "Что такое CMS", uz: "CMS nima" },

@@ -1,7 +1,7 @@
 import HelpBlock from "@/components/helpItem/helpBlock"
 
 const mainData = {
-	headTitle: { ru: "Что такое FTP", uz: "FTP nma?" },
+	headTitle: { ru: "Что такое FTP?", uz: "FTP nma?" },
 	content: {
 		ru: (
 			<>
@@ -69,8 +69,8 @@ const mainData = {
 		uz: (
 			<>
 				<p>
-					<strong>FTP - Fayl uzatish protokoli</strong>
-					fayllar") - uzatish uchun mo'ljallangan standart protokol fayllar.
+					<strong>FTP - File Transfer Protocol</strong> (Fayl uzatish protokoli
+					fayllar) - uzatish uchun mo'ljallangan standart protokol fayllar.
 				</p>
 				<p>
 					<strong>FTP mijozi</strong> sizga imkon beruvchi dasturdir hisobni
@@ -116,8 +116,7 @@ const mainData = {
 				</p>
 				<p>
 					Qo'shimcha FTP hisobi uchun{" "}
-					<strong>Foydalanuvchi nomi va parol</strong>
-					yaratilganda belgilanadi.
+					<strong>Foydalanuvchi nomi va parol</strong> yaratilganda belgilanadi.
 				</p>
 				<p>
 					FTP yordamida siz alohida fayllarni, fayllar guruhlarini yoki

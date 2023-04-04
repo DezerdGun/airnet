@@ -57,14 +57,14 @@ const mainData = {
 					holda siz domenni tanlashingiz mumkin sayt ishlaydigan nom.
 				</p>
 				<p>
-					4. O'rnatish tugallangach, brauzeringizda qaysi veb-saytni oching
+					4. O'rnatish tugallangach, brauzeringizda qaysi veb-saytni oching{" "}
 					<strong>WordPress CMS</strong> dvigatelini o'rnating va to'ldiring
 					kerakli maydonlar (sayt nomi, login, parol va elektron pochta manzili)
 					va WordPress-ni o'rnatish tugmasini bosing
 				</p>
 				<p>
 					5. Yakuniy o'rnatish bosqichidan so'ng, kirish sahifasi sayt boshqaruv
-					paneliga kirish. ​
+					paneliga kirish.
 				</p>
 			</>
 		),

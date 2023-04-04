@@ -1,27 +1,5 @@
-import HelpBlock from '../../../components/helpItem/helpBlock';
+import HelpBlog from "@/app/help/mail/pochta-dlya-domena"
 
-const mainData = {
-	headTitle: 'Почта для домена',
-	content: (
-		<>
-			<p>Компания AIRNET.uz не предоставляет пользователям почтовый сервис.</p>
-			<p>Мы рекомендуем использовать почтовые сервисы</p>
-			<p>
-				Бесплатный –{' '}
-				<a href="https://connect.yandex.ru/" target="_blank" rel="noreferrer noopener">
-					<strong>Яндекс.Почта</strong>
-				</a>
-			</p>
-			<p>
-				Платный –{' '}
-				<a href="https://workspace.google.com/intl/ru/products/gmail" target="_blank" rel="noreferrer noopener">
-					<strong>Gmail.com</strong>
-				</a>
-			</p>
-		</>
-	),
-};
-
-export default function HelpBlog() {
-	return <HelpBlock data={mainData} />;
+export default function ({ language }) {
+	return <HelpBlog language={language} />
 }

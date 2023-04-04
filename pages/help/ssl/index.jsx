@@ -1,20 +1,5 @@
-import HelpItem from '../../../components/helpItem';
+import HelpBlog from "@/app/help/ssl"
 
-const data = {
-		id: 'ssl',
-		title: 'SSl-сертификаты',
-		children: [
-			{
-				title: 'Зачем нужен SSl-сертификат',
-				link: '/help/ssl/zachem-nuzhen-ssl-sertifikat',
-			},
-		],
-	},
-	mainData = {
-		headTitle: data.title,
-		content: data,
-	};
-
-export default function HelpInner() {
-	return <HelpItem data={mainData} />;
+export default function ({ language }) {
+	return <HelpBlog language={language} />
 }

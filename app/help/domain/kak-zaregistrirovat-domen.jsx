@@ -4,8 +4,8 @@ import Link from "next/link"
 
 const mainData = {
 	headTitle: {
-		ru: "Как зарегистрировать домен UZ",
-		uz: "Domen UZ royxatdan otqazish",
+		ru: "Как зарегистрировать домен UZ?",
+		uz: "Qanday qilib domen UZ royxatdan otqaziladi?",
 	},
 	content: {
 		ru: (
@@ -45,9 +45,9 @@ const mainData = {
 				</p>
 				<p>
 					<strong>
-						Buyurtma berish uchun
+						Buyurtma berish uchun «
 						<a href="https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz">
-							ushbu tugmani bosing.
+							ushbu tugmani bosing
 						</a>
 					</strong>
 					»;

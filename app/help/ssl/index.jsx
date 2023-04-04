@@ -2,12 +2,12 @@ import HelpItem from "@/components/helpItem"
 
 const data = {
 		id: "ssl",
-		title: { ru: "SSl-сертификаты", uz: "SS1 -sertefekati" },
+		title: { ru: "SSL-сертификаты", uz: "SSL-sertifikati" },
 		children: [
 			{
 				title: {
-					ru: "Зачем нужен SSl-сертификат",
-					uz: "Nma uchun SS1-sertefekati kerak",
+					ru: "Зачем нужен SSL-сертификат?",
+					uz: "Nma uchun SSL-sertifikati kerak?",
 				},
 				link: "/help/ssl/zachem-nuzhen-ssl-sertifikat",
 			},

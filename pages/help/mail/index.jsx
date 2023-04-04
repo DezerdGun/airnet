@@ -1,20 +1,5 @@
-import HelpItem from '../../../components/helpItem';
+import HelpBlog from "@/app/help/mail"
 
-const data = {
-		id: 'mail',
-		title: 'Почта',
-		children: [
-			{
-				title: 'Почта для домена',
-				link: '/help/mail/pochta-dlya-domena',
-			},
-		],
-	},
-	mainData = {
-		headTitle: data.title,
-		content: data,
-	};
-
-export default function HelpInner() {
-	return <HelpItem data={mainData} />;
+export default function ({ language }) {
+	return <HelpBlog language={language} />
 }

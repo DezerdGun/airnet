@@ -1,7 +1,9 @@
+import { checkLang } from "@/utils/checkLang.js"
 import Link from "next/link"
 import Container from "../container/index.jsx"
 import FAQ from "../faq"
 import Partners from "../partners"
+import { LINKS } from "../requirements.js"
 import SEO from "../seo"
 import st from "./helpBlock.module.scss"
 
@@ -16,14 +18,14 @@ export default function HelpBlock({ data, language }) {
 			ru: (
 				<>
 					Вернуться к{" "}
-					<Link href={LINKS.HELP}>
+					<Link href={checkLang(language) + LINKS.HELP}>
 						<a>«База знаний»</a>
 					</Link>
 				</>
 			),
 			uz: (
 				<>
-					<Link href={LINKS.HELP}>
+					<Link href={checkLang(language) + LINKS.HELP}>
 						<a>«Bilimlar bazasi»</a>
 					</Link>{" "}
 					sahifasiga qaytish
@@ -40,10 +42,13 @@ export default function HelpBlock({ data, language }) {
 
 	return (
 		<>
-			<SEO title={`${data.headTitle} | Airnet`} desc={data.desc} />
-			<Container headTitle={data.headTitle}>
+			<SEO
+				title={`${data.headTitle[language]} | Airnet`}
+				desc={data?.desc?.[language]}
+			/>
+			<Container headTitle={data.headTitle[language]}>
 				<div className={st.helpItem}>
-					<div className={st.helpItem__block}>{data.content}</div>
+					<div className={st.helpItem__block}>{data.content[language]}</div>
 					<p>{langData.goToDB[language]}</p>
 					<p>
 						{langData.phoneSupport[language]}{" "}
@@ -52,8 +57,14 @@ export default function HelpBlock({ data, language }) {
 				</div>
 			</Container>
 			{data?.afterContent}
-			{data?.faq && <FAQ faq={data.faq} title={langData.faq[language]} />}
-			<Partners />
+			{data?.faq && (
+				<FAQ
+					faq={data.faq}
+					title={langData.faq[language]}
+					language={language}
+				/>
+			)}
+			<Partners language={language} />
 		</>
 	)
 }

@@ -1,7 +1,7 @@
 import HelpBlock from "@/components/helpItem/helpBlock"
 
 const mainData = {
-	headTitle: { ru: "Файл .htaccess", uz: "Fayl.htaccess" },
+	headTitle: { ru: "Файл .htaccess", uz: "Fayl .htaccess" },
 	content: {
 		ru: (
 			<>
@@ -131,12 +131,12 @@ const mainData = {
 				<p>RewriteEngine on</p>
 				<p>RewriteCond %{`{HTTP:HTTPS}`} !=on [NC]</p>
 				<p>RewriteRule ^(.*)$ https://www.example.ru/$1 [R=301,L]</p>
-				<p>и наоборот, с HTTPS на HTTP:</p>
+				<p>va aksincha, HTTPS dan HTTP ga:</p>
 				<p>RewriteEngine on</p>
 				<p>RewriteCond %{`{HTTP:HTTPS}`} =on [NC]</p>
 				<p>RewriteRule ^(.*)$ http://www.example.ru/$1 [R=301,L]</p>
 				<p>
-					<strong>Cheklash va saytga kirishga ruxsat berish </strong>
+					<strong>Cheklash va saytga kirishga ruxsat berish</strong>
 					<strong>ip</strong>
 					<strong>-manzillar</strong>
 				</p>
@@ -164,7 +164,7 @@ const mainData = {
 					manzillarning bo'sh joy bilan ajratilgan ro'yxati.
 				</p>
 				<p>
-					<strong>&nbsp;Muayyan fayllarga kirishni cheklash</strong>
+					<strong>Muayyan fayllarga kirishni cheklash</strong>
 				</p>
 				<p>
 					Ba'zi fayllarga &nbsp;kirish cheklovlarini o'rnatish .htaccess fayliga

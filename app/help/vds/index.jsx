@@ -2,7 +2,7 @@ import HelpItem from "@/components/helpItem"
 
 const data = {
 		id: "vds",
-		title: "VDS",
+		title: { ru: "VDS", uz: "VDS" },
 		children: [
 			{
 				title: {
@@ -28,7 +28,7 @@ const data = {
 			{
 				title: {
 					ru: "Восстановление root пароля от VDS",
-					uz: "VDS-dan ildiz parolini tiklash",
+					uz: "VDS ning root parolni tiklash",
 				},
 				link: "/help/vds/vosstanovlenie-root-parolya-ot-vds",
 			},

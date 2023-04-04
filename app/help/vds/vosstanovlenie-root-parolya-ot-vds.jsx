@@ -3,7 +3,7 @@ import HelpBlock from "@/components/helpItem/helpBlock"
 const mainData = {
 	headTitle: {
 		ru: "Восстановление root пароля от VDS",
-		uz: "VDS ning root qulf kodini tiklsh",
+		uz: "VDS ning root parolni tiklash",
 	},
 	content: {
 		ru: (
@@ -35,7 +35,7 @@ const mainData = {
 		uz: (
 			<>
 				<p>
-					Agar siz serverda ildiz parolini yo'qotib qo'ysangiz yoki unutsangiz,
+					Agar siz serverda root parolini yo'qotib qo'ysangiz yoki unutsangiz,
 					uni qayta tiklashingiz mumkin.
 				</p>
 				<p>
@@ -47,7 +47,7 @@ const mainData = {
 					Преимущество этой консоли в том, что сервер всегда доступен, если
 					соединение с сервером установлено локально и соединение не потеряно.
 				</p>
-				<p>Ildiz parolni tiklash algoritmi:</p>
+				<p>Root parolni tiklash algoritmi:</p>
 				<ol>
 					<li>Serverni qayta ishga tushiring</li>
 					<li>
@@ -55,7 +55,7 @@ const mainData = {
 						menyusidagi yadro yuklash parametrlarini o'zgartiring.
 					</li>
 					<li>Operatsion tizimni bitta foydalanuvchi rejimida yuklash.</li>
-					<li>Eski parolni kiritmasdan yangi ildiz parolini o'rnating.</li>
+					<li>Eski parolni kiritmasdan yangi root parolini o'rnating.</li>
 				</ol>
 			</>
 		),

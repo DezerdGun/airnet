@@ -3,7 +3,7 @@ import HelpBlock from "@/components/helpItem/helpBlock"
 const mainData = {
 	headTitle: {
 		ru: "Нужно ли вводить данные паспорта для регистрации?",
-		uz: "Ro'yxatdan o'tish uchun pasport ma'lumotlarini kiritishim kerakmi",
+		uz: "Ro'yxatdan o'tish uchun pasport ma'lumotlarini kiritishim kerakmi?",
 	},
 	content: {
 		ru: (

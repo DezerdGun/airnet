@@ -1,29 +1,5 @@
-import HelpBlock from '../../../components/helpItem/helpBlock';
+import HelpBlog from "@/app/help/vds/vosstanovlenie-root-parolya-ot-vds"
 
-const mainData = {
-	headTitle: 'Восстановление root пароля от VDS',
-	content: (
-		<>
-			<p>Если вы потеряете или забудете root пароль на сервере, вы сможете его восстановить.</p>
-			<p>
-				Это можно сделать с помощью консоли – VNC, расположенной в панели управления, нужно будет выбрать услугу
-				и перейти в меню консоль – VNC.
-			</p>
-			<p>
-				Преимущество этой консоли в том, что сервер всегда доступен, если соединение с сервером установлено
-				локально и соединение не потеряно.
-			</p>
-			<p>Алгоритм восстановления root-пароля:</p>
-			<ol>
-				<li>Перезагрузите сервер</li>
-				<li>Перед запуском операционной системы измените параметры загрузки ядра в меню загрузчика GRUB.</li>
-				<li>Загрузите операционную систему в однопользовательском режиме.</li>
-				<li>Установите новый root-пароль, не вводя старый.</li>
-			</ol>
-		</>
-	),
-};
-
-export default function HelpBlog() {
-	return <HelpBlock data={mainData} />;
+export default function ({ language }) {
+	return <HelpBlog language={language} />
 }

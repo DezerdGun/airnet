@@ -1,19 +1,5 @@
-import HelpBlock from '../../../components/helpItem/helpBlock';
+import HelpBlog from "@/app/help/vds/neobhodimye-navyki-dlya-raboty-s-vds"
 
-const mainData = {
-	headTitle: 'Необходимые навыки для работы с VDS',
-	content: (
-		<>
-			<p>Управления виртуальным сервером требует навыков системного администрирования.</p>
-			<p>Для управления VDS доступно множество коммерческих и бесплатных панелей управления.</p>
-			<p>
-				Альтернативой панелям управления помимо этого служит — протокол SSH, который весьма популярен при работе
-				с VDS и с выделенными физическими серверами.
-			</p>
-		</>
-	),
-};
-
-export default function HelpBlog() {
-	return <HelpBlock data={mainData} />;
+export default function ({ language }) {
+	return <HelpBlog language={language} />
 }

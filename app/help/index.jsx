@@ -22,7 +22,7 @@ const data = [
 			children: [
 				{
 					id: "site",
-					title: "Сайт",
+					title: { ru: "Сайт", uz: "Sayt" },
 					children: [
 						{
 							title: { ru: "Файл .htaccess", uz: "Fayl .htaccess" },
@@ -44,7 +44,7 @@ const data = [
 				},
 				{
 					id: "cms",
-					title: "CMS",
+					title: { ru: "CMS", uz: "CMS" },
 					link: "/help/cms",
 					children: [
 						{
@@ -55,7 +55,7 @@ const data = [
 				},
 				{
 					id: "ftp",
-					title: "FTP",
+					title: { ru: "FTP", uz: "FTP" },
 					link: "/help/ftp",
 					children: [
 						{
@@ -99,7 +99,7 @@ const data = [
 						{
 							title: {
 								ru: "Наши DNS-записи",
-								uz: " Bizning DNS-serverlarimiz ",
+								uz: "Bizning DNS-serverlarimiz",
 							},
 							link: "/help/domain/dns",
 						},
@@ -129,7 +129,7 @@ const data = [
 			],
 		},
 		{
-			title: "VDS",
+			title: { ru: "VDS", uz: "VDS" },
 			link: "/help/vds",
 			children: [
 				{
@@ -245,7 +245,10 @@ const data = [
 				},
 			},
 			{
-				title: "Как изменить личные данные в биллинг системе?",
+				title: {
+					ru: "Как изменить личные данные в биллинг системе?",
+					uz: "To'lov tizimidagi shaxsiy ma'lumotlarni qanday o'zgartirish mumkin?",
+				},
 				description: {
 					ru: (
 						<>
