@@ -1,3 +1,4 @@
+import { checkLang } from "@/utils/checkLang"
 import Link from "next/link"
 import Container from "../../components/container"
 import { LINKS } from "../../components/requirements"
@@ -24,7 +25,7 @@ export default function PrivacyPolicy({ language }) {
 					<h2>Кто мы</h2>
 					<p>
 						Наш адрес сайта:{" "}
-						<Link href={LINKS.HOME}>
+						<Link href={checkLang(language) + LINKS.HOME}>
 							<a>https://airnet.uz</a>
 						</Link>
 						.
@@ -131,7 +132,7 @@ export default function PrivacyPolicy({ language }) {
 					<h2>Biz kimmiz</h2>
 					<p>
 						Saytimiz manzili:{" "}
-						<Link href={LINKS.HOME}>
+						<Link href={checkLang(language) + LINKS.HOME}>
 							<a>https://airnet.uz</a>
 						</Link>
 						.

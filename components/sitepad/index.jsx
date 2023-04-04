@@ -1,50 +1,51 @@
-import Link from 'next/dist/client/link'
-import Container from '../container/index.jsx'
-import { LINKS } from '../requirements'
-import st from './sitepad.module.scss'
+import { checkLang } from "@/utils/checkLang.js"
+import Link from "next/dist/client/link"
+import Container from "../container/index.jsx"
+import { LINKS } from "../requirements"
+import st from "./sitepad.module.scss"
 
 export default function Sitepad({ language }) {
 	const content = [
-		'/art-const-1.jpg',
-		'/art-const-2.jpg',
-		'/art-const-3.jpg',
-		'/art-const-4.jpg',
+		"/art-const-1.jpg",
+		"/art-const-2.jpg",
+		"/art-const-3.jpg",
+		"/art-const-4.jpg",
 	]
 
 	const langData = {
 		title: {
-			ru: 'Бесплатный конструктор сайтов от SitePad',
-			uz: 'SitePad tomonidan bepul veb-sayt yaratuvchisi',
-			en: 'Free Website Builder by SitePad',
+			ru: "Бесплатный конструктор сайтов от SitePad",
+			uz: "SitePad tomonidan bepul veb-sayt yaratuvchisi",
+			en: "Free Website Builder by SitePad",
 		},
 		desc: {
 			ru: (
 				<p>
 					Для того чтобы воспользоваться конструктором сайта где более 750
-					разных тем, вам необходимо{' '}
-					<Link href={LINKS.HOSTING}>
-						<a className='text-red'>заказать любой хостинг</a>
-					</Link>{' '}
+					разных тем, вам необходимо{" "}
+					<Link href={checkLang(language) + LINKS.HOSTING}>
+						<a className="text-red">заказать любой хостинг</a>
+					</Link>{" "}
 					на тарифных планах Cpanel.
 				</p>
 			),
 			uz: (
 				<p>
 					750 dan ortiq turli mavzular bilan veb-sayt quruvchisidan foydalanish
-					uchun siz zarur{' '}
-					<Link href={LINKS.HOSTING}>
-						<a className='text-red'>har qanday xostingga buyurtma bering</a>
-					</Link>{' '}
+					uchun siz zarur{" "}
+					<Link href={checkLang(language) + LINKS.HOSTING}>
+						<a className="text-red">har qanday xostingga buyurtma bering</a>
+					</Link>{" "}
 					Cpanel tarif rejalarida.
 				</p>
 			),
 			en: (
 				<p>
 					In order to use the website builder with more than 750 different
-					themes, you necessary{' '}
-					<Link href={LINKS.HOSTING}>
-						<a className='text-red'>order any hosting</a>
-					</Link>{' '}
+					themes, you necessary{" "}
+					<Link href={checkLang(language) + LINKS.HOSTING}>
+						<a className="text-red">order any hosting</a>
+					</Link>{" "}
 					on Cpanel tariff plans.
 				</p>
 			),
@@ -80,14 +81,14 @@ export default function Sitepad({ language }) {
 			),
 		},
 		buy: {
-			ru: 'Купить хостинг',
-			uz: 'Xosting sotib olish',
-			en: 'Buy hosting',
+			ru: "Купить хостинг",
+			uz: "Xosting sotib olish",
+			en: "Buy hosting",
 		},
 		instruct: {
-			ru: 'Краткая инструкция по созданию сайта через конструктор',
+			ru: "Краткая инструкция по созданию сайта через конструктор",
 			uz: "Konstruktor orqali sayt yaratish bo'yicha qisqacha ko'rsatmalar",
-			en: 'Brief instructions for creating a site through the constructor',
+			en: "Brief instructions for creating a site through the constructor",
 		},
 	}
 
@@ -105,12 +106,12 @@ export default function Sitepad({ language }) {
 				<p>{langData.text[language]}</p>
 				<div className={st.sitepad__button}>
 					<button>
-						<Link href={LINKS.HOSTING}>
+						<Link href={checkLang(language) + LINKS.HOSTING}>
 							<a>{langData.buy[language]}</a>
 						</Link>
 					</button>
 					<button>
-						<Link href={LINKS.SITEPAD}>
+						<Link href={checkLang(language) + LINKS.SITEPAD}>
 							<a>{langData.instruct[language]}</a>
 						</Link>
 					</button>

@@ -1,3 +1,4 @@
+import { checkLang } from "@/utils/checkLang"
 import Link from "next/link"
 import Container from "../../components/container"
 import Partners from "../../components/partners"
@@ -157,7 +158,7 @@ export default function PartnersPage({ language }) {
 								<h6>Разместить баннер на своем сайте</h6>
 								<p>
 									Архив с рекламными материалами доступен по{" "}
-									<Link href={LINKS.HOME}>
+									<Link href={checkLang(language) + LINKS.HOME}>
 										<a>данной ссылке</a>
 									</Link>
 									.
@@ -378,7 +379,7 @@ export default function PartnersPage({ language }) {
 								<h6>Saytingizga banner joylashtiring</h6>
 								<p>
 									Reklama materiallari arxivi quyidagi{" "}
-									<Link href={LINKS.HOME}>
+									<Link href={checkLang(language) + LINKS.HOME}>
 										<a>havola</a>
 									</Link>{" "}
 									manzilda joylashgan .

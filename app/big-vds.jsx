@@ -10,6 +10,7 @@ import Link from "next/link"
 import ForFreeBlock from "@/components/forFreeBlock"
 import TarifMaket from "@/components/tarifMaket"
 import WhyBlock from "@/components/whyBlock"
+import { checkLang } from "@/utils/checkLang"
 import { useEffect, useState } from "react"
 import { Autoplay, Navigation } from "swiper"
 import "swiper/css"
@@ -206,7 +207,7 @@ export default function BigVDS({ language }) {
 								советом, мы ответим максимально быстро.
 							</p>
 							<button>
-								<Link href={LINKS.CONTACTS}>
+								<Link href={checkLang(language) + LINKS.CONTACTS}>
 									<a>Наши контакты</a>
 								</Link>
 							</button>
@@ -219,7 +220,7 @@ export default function BigVDS({ language }) {
 								bog'lanishingiz mumkin, biz javob beramiz imkon qadar tezroq.
 							</p>
 							<button>
-								<Link href={LINKS.CONTACTS}>
+								<Link href={checkLang(language) + LINKS.CONTACTS}>
 									<a>Murojat uchun</a>
 								</Link>
 							</button>

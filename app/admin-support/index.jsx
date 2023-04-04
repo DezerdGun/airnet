@@ -1,9 +1,10 @@
-import Container from "@/components/container";
-import { LINKS } from "@/components/requirements";
-import st from "./adminSupport.module.scss";
-import Link from "next/link";
-import Partners from "@/components/partners";
-import WhyBlock from "@/components/whyBlock";
+import Container from "@/components/container"
+import Partners from "@/components/partners"
+import { LINKS } from "@/components/requirements"
+import WhyBlock from "@/components/whyBlock"
+import { checkLang } from "@/utils/checkLang"
+import Link from "next/link"
+import st from "./adminSupport.module.scss"
 
 const content = [
 	{
@@ -11,8 +12,13 @@ const content = [
 		description: {
 			ru: (
 				<>
-					<p>Выполняются только после согласования с поддержкой и оплачиваются по часам.</p>
-					<p>Оставляем за собой право отказаться от выполнения таких работ, как:</p>
+					<p>
+						Выполняются только после согласования с поддержкой и оплачиваются по
+						часам.
+					</p>
+					<p>
+						Оставляем за собой право отказаться от выполнения таких работ, как:
+					</p>
 					<ul className="list">
 						<li>администрирование серверов без панели;</li>
 						<li>администрирование Windows-серверов;</li>
@@ -29,10 +35,12 @@ const content = [
 			uz: (
 				<>
 					<p>
-						Faqat qo'llab-quvvatlash bilan kelishilganidan keyin amalga oshiriladi va soatiga
-						to'lanadi.
+						Faqat qo'llab-quvvatlash bilan kelishilganidan keyin amalga
+						oshiriladi va soatiga to'lanadi.
 					</p>
-					<p>Biz quyidagi ishlarni bajarishni rad etish huquqini saqlab qolamiz:</p>
+					<p>
+						Biz quyidagi ishlarni bajarishni rad etish huquqini saqlab qolamiz:
+					</p>
 					<ul className="list">
 						<li>serverni panelsiz boshqarish;</li>
 						<li>Windows serverlarini boshqarish;</li>
@@ -48,7 +56,9 @@ const content = [
 			),
 			en: (
 				<>
-					<p>Performed only after agreement with support and paid by the hour.</p>
+					<p>
+						Performed only after agreement with support and paid by the hour.
+					</p>
 					<p>We reserve the right to refuse to perform such works as:</p>
 					<ul className="list">
 						<li>server administration without panel;</li>
@@ -67,44 +77,56 @@ const content = [
 		img: "/question.png",
 	},
 	{
-		title: { ru: "Не выполняем", uz: "Biz ijro etmaymiz", en: "We do not perform" },
+		title: {
+			ru: "Не выполняем",
+			uz: "Biz ijro etmaymiz",
+			en: "We do not perform",
+		},
 		description: {
 			ru: (
 				<ul className="list">
 					<li>поиск и исправление ошибок в скриптах клиента;</li>
 					<li>
-						поиск и исправление ошибок <span>в SQL-запросах</span>, а также их оптимизацию;
+						поиск и исправление ошибок <span>в SQL-запросах</span>, а также их
+						оптимизацию;
 					</li>
 					<li>обучение основам работы c Linux, FreeBSD, Windows;</li>
-					<li>настройку игровых серверов, прокси и другого специфического ПО.</li>
+					<li>
+						настройку игровых серверов, прокси и другого специфического ПО.
+					</li>
 				</ul>
 			),
 			uz: (
 				<ul className="list">
 					<li>Mijoz skriptlarida xatolarni topish va tuzatish;</li>
 					<li>
-						<span> SQL so'rovlarida</span> xatolarni qidirish va tuzatish, shuningdek ularni
-						optimallashtirish;
+						<span> SQL so'rovlarida</span> xatolarni qidirish va tuzatish,
+						shuningdek ularni optimallashtirish;
 					</li>
 					<li>Linux, FreeBSD, Windows bilan ishlash asoslarini o'rganish;</li>
-					<li>o‘yin serverlari, proksi-serverlar va boshqa maxsus dasturlarni sozlash.</li>
+					<li>
+						o‘yin serverlari, proksi-serverlar va boshqa maxsus dasturlarni
+						sozlash.
+					</li>
 				</ul>
 			),
 			en: (
 				<ul className="list">
 					<li>Finding and fixing errors in client scripts;</li>
 					<li>
-						search and correction of <span> errors in SQL queries</span>, as well as their
-						optimization;
+						search and correction of <span> errors in SQL queries</span>, as
+						well as their optimization;
 					</li>
 					<li>learning the basics of working with Linux, FreeBSD, Windows;</li>
-					<li>configuring game servers, proxies and other specific software.</li>
+					<li>
+						configuring game servers, proxies and other specific software.
+					</li>
 				</ul>
 			),
 		},
 		img: "/notification-danger.png",
 	},
-];
+]
 
 export default function AdminSupport({ language }) {
 	const langData = {
@@ -116,13 +138,14 @@ export default function AdminSupport({ language }) {
 		text1: {
 			ru: (
 				<>
-					Если у вас нет своего системного администратора — закажите пакет администрирования и
-					доверьте выполнение работ на сервере нашим специалистам.
+					Если у вас нет своего системного администратора — закажите пакет
+					администрирования и доверьте выполнение работ на сервере нашим
+					специалистам.
 					<br />
 					<br />
-					Если вы уверены, что проблема находится в зоне нашей ответственности, напишите или
-					позвоните в{" "}
-					<Link href={LINKS.SUPPORT}>
+					Если вы уверены, что проблема находится в зоне нашей ответственности,
+					напишите или позвоните в{" "}
+					<Link href={checkLang(language) + LINKS.SUPPORT}>
 						<a>службу поддержки</a>
 					</Link>
 					.
@@ -130,13 +153,14 @@ export default function AdminSupport({ language }) {
 			),
 			uz: (
 				<>
-					Agar o'zingizning tizim administratoringiz bo'lmasa, ma'muriyat paketiga buyurtma bering
-					va Serverda ishlarni bajarishni mutaxassislarimizga topshiring.
+					Agar o'zingizning tizim administratoringiz bo'lmasa, ma'muriyat
+					paketiga buyurtma bering va Serverda ishlarni bajarishni
+					mutaxassislarimizga topshiring.
 					<br />
 					<br />
-					Muammo bizning mas'uliyat sohamizda ekanligiga ishonchingiz komil bo'lsa, yoki ga yozing
-					qo'ng'iroq qiling{" "}
-					<Link href={LINKS.SUPPORT}>
+					Muammo bizning mas'uliyat sohamizda ekanligiga ishonchingiz komil
+					bo'lsa, yoki ga yozing qo'ng'iroq qiling{" "}
+					<Link href={checkLang(language) + LINKS.SUPPORT}>
 						<a>qo'llab-quvvatlash</a>
 					</Link>
 					.
@@ -144,12 +168,14 @@ export default function AdminSupport({ language }) {
 			),
 			en: (
 				<>
-					If you do not have your own system administrator, order an administration package and
-					Entrust the execution of work on the server to our specialists.
+					If you do not have your own system administrator, order an
+					administration package and Entrust the execution of work on the server
+					to our specialists.
 					<br />
 					<br />
-					If you are sure that the problem is in our area of responsibility, write to or call{" "}
-					<Link href={LINKS.SUPPORT}>
+					If you are sure that the problem is in our area of responsibility,
+					write to or call{" "}
+					<Link href={checkLang(language) + LINKS.SUPPORT}>
 						<a>support</a>
 					</Link>
 					.
@@ -196,14 +222,16 @@ export default function AdminSupport({ language }) {
 		paketText: {
 			ru: (
 				<>
-					Пакет включает в себя решение 5 задач по вопросам администрирования сервера.
+					Пакет включает в себя решение 5 задач по вопросам администрирования
+					сервера.
 					<br />
 					Только для серверов FirstVDS с панелью управления ISPmanager.
 				</>
 			),
 			uz: (
 				<>
-					Paket server ma'muriyati bilan bog'liq 5 ta vazifani hal qilishni o'z ichiga oladi.
+					Paket server ma'muriyati bilan bog'liq 5 ta vazifani hal qilishni o'z
+					ichiga oladi.
 					<br />
 					Faqat ISPmanager boshqaruv paneliga ega FirstVDS serverlari uchun.
 				</>
@@ -355,7 +383,7 @@ export default function AdminSupport({ language }) {
 			uz: "Ma'lumotlarni saqlash bilan VDSni qayta o'rnatish",
 			en: "Reinstalling VDS with saving data",
 		},
-	};
+	}
 
 	return (
 		<div className={st.adminSupport}>
@@ -523,5 +551,5 @@ export default function AdminSupport({ language }) {
 			<WhyBlock content={content} language={language} />
 			<Partners />
 		</div>
-	);
+	)
 }

@@ -129,7 +129,7 @@ export default function SitePad({ language }) {
 							Google Maps, Контактная форма, социальные сети и многое другое,
 							что поможет вам создать свой веб-сайт
 						</p>
-						{/* <Link href={LINKS.HELP}>
+						{/* <Link href={checkLang(language)+LINKS.HELP}>
 							<a>Как подключить DDoS?</a>
 						</Link> */}
 					</div>
@@ -155,7 +155,7 @@ export default function SitePad({ language }) {
 							Xaritalar, Kontakt shakli, ijtimoiy tarmoqlar va boshqalar,
 							veb-saytingizni yaratishga nima yordam beradi
 						</p>
-						{/* <Link href={LINKS.HELP}>
+						{/* <Link href={checkLang(language)+LINKS.HELP}>
 							<a>Как подключить DDoS?</a>
 						</Link> */}
 					</div>

@@ -37,14 +37,18 @@ export default function HelpItem({ data, language }) {
 			ru: (
 				<>
 					Вернуться к{" "}
-					<Link href={`${checkLang(language)}${LINKS.HELP}`}>
+					<Link
+						href={checkLang(language) + `${checkLang(language)}${LINKS.HELP}`}
+					>
 						<a>«База знаний»</a>
 					</Link>
 				</>
 			),
 			uz: (
 				<>
-					<Link href={`${checkLang(language)}${LINKS.HELP}`}>
+					<Link
+						href={checkLang(language) + `${checkLang(language)}${LINKS.HELP}`}
+					>
 						<a>«Bilimlar bazasi»</a>
 					</Link>{" "}
 					sahifasiga qaytish
@@ -131,7 +135,9 @@ const LinksBlock = ({ data, language }) => {
 			<li onClick={() => setState(!state)}>
 				<div>
 					{data?.link ? (
-						<Link href={`${checkLang(language)}${data.link}`}>
+						<Link
+							href={checkLang(language) + `${checkLang(language)}${data.link}`}
+						>
 							<a>{data.title[language]}</a>
 						</Link>
 					) : (
@@ -171,7 +177,9 @@ const Content = ({ data, language }) => {
 			>
 				<h3>
 					{item?.link ? (
-						<Link href={`${checkLang(language)}${item.link}`}>
+						<Link
+							href={checkLang(language) + `${checkLang(language)}${item.link}`}
+						>
 							<a>{item.title[language]}</a>
 						</Link>
 					) : (
@@ -185,7 +193,9 @@ const Content = ({ data, language }) => {
 		<div className={st.helpItem__block__content__block}>
 			<h3>
 				{data?.link ? (
-					<Link href={`${checkLang(language)}${data.link}`}>
+					<Link
+						href={checkLang(language) + `${checkLang(language)}${data.link}`}
+					>
 						<a>{data.title[language]}</a>
 					</Link>
 				) : (
@@ -205,7 +215,9 @@ const ContentBlock = ({ data, language }) => {
 		>
 			<h4>
 				{item?.link ? (
-					<Link href={`${checkLang(language)}${item.link}`}>
+					<Link
+						href={checkLang(language) + `${checkLang(language)}${item.link}`}
+					>
 						<a>{item.title[language]}</a>
 					</Link>
 				) : (
@@ -216,7 +228,11 @@ const ContentBlock = ({ data, language }) => {
 				<ul>
 					{item.children.map((item) => (
 						<li key={item.id}>
-							<Link href={`${checkLang(language)}${item.link}`}>
+							<Link
+								href={
+									checkLang(language) + `${checkLang(language)}${item.link}`
+								}
+							>
 								<a>{item.title[language]}</a>
 							</Link>
 						</li>

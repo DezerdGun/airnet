@@ -13,7 +13,7 @@ const data = {
 			<>
 				<p>
 					В рамках акции{" "}
-					<Link href={LINKS.STOCK}>
+					<Link href={checkLang(language) + LINKS.STOCK}>
 						<a>Бесплатный перенос сайта</a>
 					</Link>{" "}
 					осуществляется перенос сайта на хостинг AIRNET нашими специалистами.
@@ -183,7 +183,7 @@ const data = {
 			<>
 				<p>
 					Chegara ichida{" "}
-					<Link href={LINKS.STOCK}>
+					<Link href={checkLang(language) + LINKS.STOCK}>
 						<a>Tekinga saytni kochirib otkazish</a>
 					</Link>{" "}
 					va sayt bizning mutaxassislarimiz tomonidan AIRNET xostingiga

@@ -1,21 +1,22 @@
-import st from "./headerMob.module.scss";
-import Link from "next/dist/client/link";
-import { useEffect } from "react";
+import { checkLang } from "@/utils/checkLang"
+import Link from "next/dist/client/link"
+import { useEffect } from "react"
+import st from "./headerMob.module.scss"
 
 export default function HeaderMob({ isOpen, setIsOpen, menu, language }) {
 	useEffect(() => {
-		let icon = document.querySelectorAll(`.${st.headerMob__block__icon}`);
-		let coll = document.querySelectorAll(`.${st.headerMob__collapse}`);
-		let i;
+		let icon = document.querySelectorAll(`.${st.headerMob__block__icon}`)
+		let coll = document.querySelectorAll(`.${st.headerMob__collapse}`)
+		let i
 
 		for (i = 0; i < icon.length; i++) {
-			((j) =>
+			;((j) =>
 				icon[j].addEventListener("click", function () {
-					icon[j].classList.toggle(st.headerMob__block__icon__active);
-					coll[j].classList.toggle(st.headerMob__collapse__active);
-				}))(i);
+					icon[j].classList.toggle(st.headerMob__block__icon__active)
+					coll[j].classList.toggle(st.headerMob__collapse__active)
+				}))(i)
 		}
-	}, []);
+	}, [])
 
 	return (
 		<div className={`${st.headerMob} ${isOpen ? st.headerMob__active : null}`}>
@@ -24,7 +25,7 @@ export default function HeaderMob({ isOpen, setIsOpen, menu, language }) {
 					item?.children ? (
 						<li key={item.title[language]}>
 							<div className={st.headerMob__block}>
-								<Link href={item.link}>
+								<Link href={checkLang(language) + item.link}>
 									<a onClick={() => setIsOpen(false)}>{item.title[language]}</a>
 								</Link>
 								<span className={st.headerMob__block__icon}>
@@ -47,8 +48,10 @@ export default function HeaderMob({ isOpen, setIsOpen, menu, language }) {
 							<ul className={st.headerMob__collapse}>
 								{item.children.map((link) => (
 									<li key={link.title[language]}>
-										<Link href={link.link}>
-											<a onClick={() => setIsOpen(false)}>{link.title[language]}</a>
+										<Link href={checkLang(language) + link.link}>
+											<a onClick={() => setIsOpen(false)}>
+												{link.title[language]}
+											</a>
 										</Link>
 									</li>
 								))}
@@ -56,7 +59,7 @@ export default function HeaderMob({ isOpen, setIsOpen, menu, language }) {
 						</li>
 					) : (
 						<li key={item.title[language]}>
-							<Link href={item.link}>
+							<Link href={checkLang(language) + item.link}>
 								<a onClick={() => setIsOpen(false)}>{item.title[language]}</a>
 							</Link>
 						</li>
@@ -64,5 +67,5 @@ export default function HeaderMob({ isOpen, setIsOpen, menu, language }) {
 				)}
 			</ul>
 		</div>
-	);
+	)
 }

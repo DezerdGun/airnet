@@ -2,6 +2,7 @@ import Container from "@/components/container"
 import Partners from "@/components/partners"
 import { LINKS } from "@/components/requirements"
 import SEO from "@/components/seo"
+import { checkLang } from "@/utils/checkLang"
 import Link from "next/dist/client/link"
 import { useRef, useState } from "react"
 import st from "./domains/domains.module.scss"
@@ -74,7 +75,7 @@ export default function FreeDomains({ language }) {
 						Вы можете получить{" "}
 						<strong>абсолютно бесплатно домен в зоне UZ</strong>, для этого
 						нужно купить{" "}
-						<Link href={LINKS.HOSTING}>
+						<Link href={checkLang(language) + LINKS.HOSTING}>
 							<a>любой тариф на хостинг</a>
 						</Link>
 						.
@@ -94,7 +95,7 @@ export default function FreeDomains({ language }) {
 					<p>
 						Siz <strong>mutlaqo tekin domen .UZ</strong>ga ega bolishingiz
 						mumkin buning uchun{" "}
-						<Link href={LINKS.HOSTING}>
+						<Link href={checkLang(language) + LINKS.HOSTING}>
 							<a>istalgan tarifni</a>
 						</Link>{" "}
 						sotib olishingiz kerak .

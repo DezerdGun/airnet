@@ -22,7 +22,7 @@ const data = {
 				</p>
 				<p>
 					Для регистрации домена в зоне .UZ пройдите на страницу “
-					<Link href={LINKS.DOMAINS}>
+					<Link href={checkLang(language) + LINKS.DOMAINS}>
 						<a>купить домен</a>
 					</Link>
 					” проверьте свободен ли домен для регистрации и оставьте заявку, после
@@ -45,7 +45,7 @@ const data = {
 				</p>
 				<p>
 					UZ zonasida domenni ro‘yxatdan o‘tkazish uchun “
-					<Link href={LINKS.DOMAINS}>
+					<Link href={checkLang(language) + LINKS.DOMAINS}>
 						<a>domen harid qilish</a>
 					</Link>
 					” sahifasiga o‘ting domen ro'yxatdan o'tish uchun bepul yoki

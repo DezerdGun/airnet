@@ -8,6 +8,7 @@ import SEO from "@/components/seo"
 import TarifCard from "@/components/tarifCard"
 import TarifMaket from "@/components/tarifMaket"
 import WhyBlock from "@/components/whyBlock"
+import { checkLang } from "@/utils/checkLang"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { Autoplay, Navigation } from "swiper"
@@ -216,7 +217,7 @@ export default function VDS({ language }) {
 								советом, мы ответим максимально быстро.
 							</p>
 							<button>
-								<Link href={LINKS.CONTACTS}>
+								<Link href={checkLang(language) + LINKS.CONTACTS}>
 									<a>Наши контакты</a>
 								</Link>
 							</button>
@@ -229,7 +230,7 @@ export default function VDS({ language }) {
 								bog'lanishingiz mumkin, biz imkon qadar tezroq javob beramiz .
 							</p>
 							<button>
-								<Link href={LINKS.CONTACTS}>
+								<Link href={checkLang(language) + LINKS.CONTACTS}>
 									<a>Bizning telefon raqamlar</a>
 								</Link>
 							</button>

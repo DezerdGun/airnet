@@ -447,7 +447,7 @@ export default function Payment({ language }) {
 						Услуги нашей компании можно оплачивать различными способами.
 						Выбирайте наиболее удобный:
 					</p>
-					{/* <Link href={LINKS.HELP}>
+					{/* <Link href={checkLang(language)+LINKS.HELP}>
 							<a>Как подключить DDoS?</a>
 						</Link> */}
 				</>
@@ -459,7 +459,7 @@ export default function Payment({ language }) {
 						Kompaniyamiz xizmatlari turli yo'llar bilan to'lanishi mumkin. Eng
 						qulayini tanlang:
 					</p>
-					{/* <Link href={LINKS.HELP}>
+					{/* <Link href={checkLang(language)+LINKS.HELP}>
 							<a>Как подключить DDoS?</a>
 						</Link> */}
 				</>

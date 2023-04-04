@@ -12,7 +12,7 @@ const mainData = {
 			<>
 				<p>
 					Выбрать и проверить доменное имя в «
-					<Link href={LINKS.DOMAINS}>
+					<Link href={checkLang(language) + LINKS.DOMAINS}>
 						<a>
 							<strong>регистрации доменов</strong>
 						</a>
@@ -36,7 +36,7 @@ const mainData = {
 			<>
 				<p>
 					Domen nomini tanlang va «
-					<Link href={LINKS.DOMAINS}>
+					<Link href={checkLang(language) + LINKS.DOMAINS}>
 						<a>
 							<strong>domenni royxatdan otqazing</strong>
 						</a>

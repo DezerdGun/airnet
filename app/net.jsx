@@ -3,6 +3,7 @@ import CustomTableBottom from "@/components/customTableBottom"
 import Partners from "@/components/partners"
 import SEO from "@/components/seo"
 import TraficMaket from "@/components/traficMaket"
+import { checkLang } from "@/utils/checkLang"
 import Link from "next/link"
 import st from "./vds/vds.module.scss"
 
@@ -626,7 +627,7 @@ export default function Net({ language }) {
 									<p>{item.description}</p>
 									{item.link ? (
 										<button>
-											<Link href={item.link}>
+											<Link href={checkLang(language) + item.link}>
 												<a>{item.linkTitle}</a>
 											</Link>
 										</button>
