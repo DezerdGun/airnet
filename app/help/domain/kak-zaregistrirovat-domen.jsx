@@ -1,5 +1,6 @@
 import HelpBlock from "@/components/helpItem/helpBlock"
 import { LINKS } from "@/components/requirements"
+import { checkLang } from "@/utils/checkLang"
 import Link from "next/link"
 
 export default function HelpBlog({ language }) {
