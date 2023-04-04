@@ -1,7 +1,8 @@
-import Container from "@/components/container";
-import Link from "next/link";
-import Partners from "@/components/partners";
-import SEO from "@/components/seo";
+import Container from "@/components/container"
+import Partners from "@/components/partners"
+import SEO from "@/components/seo"
+import { checkLang } from "@/utils/checkLang"
+import Link from "next/link"
 
 export default function About({ language }) {
 	const langData = {
@@ -24,23 +25,23 @@ export default function About({ language }) {
 			ru: (
 				<>
 					<strong>AIRNET.uz</strong> – это компания, предоставляющая услуги:{" "}
-					<Link href="/hosting">
+					<Link href={checkLang(language) + "/hosting"}>
 						<a className="text-decoration-underline">виртуального хостинга</a>
 					</Link>
 					,{" "}
-					<Link href="/reseller">
+					<Link href={checkLang(language) + "/reseller"}>
 						<a className="text-decoration-underline">реселлинга</a>
 					</Link>
 					,{" "}
-					<Link href="/vds">
+					<Link href={checkLang(language) + "/vds"}>
 						<a className="text-decoration-underline">аренды VDS</a>
 					</Link>{" "}
 					и{" "}
-					<Link href="/dedicated">
+					<Link href={checkLang(language) + "/dedicated"}>
 						<a className="text-decoration-underline">выделенных серверов</a>
 					</Link>
 					, а также{" "}
-					<Link href="/domains">
+					<Link href={checkLang(language) + "/domains"}>
 						<a className="text-decoration-underline">регистрации доменов</a>
 					</Link>
 					.
@@ -49,24 +50,26 @@ export default function About({ language }) {
 			uz: (
 				<>
 					<strong>AIRNET.uz</strong> - bu xizmatlarni taqdim etuvchi kompaniya:{" "}
-					<Link href="/hosting">
+					<Link href={checkLang(language) + "/hosting"}>
 						<a className="text-decoration-underline">umumiy xosting</a>
 					</Link>
 					,{" "}
-					<Link href="/reseller">
+					<Link href={checkLang(language) + "/reseller"}>
 						<a className="text-decoration-underline">sotuvchi</a>
 					</Link>
 					,{" "}
-					<Link href="/vds">
+					<Link href={checkLang(language) + "/vds"}>
 						<a className="text-decoration-underline">VDS ijarasi</a>
 					</Link>{" "}
 					va{" "}
-					<Link href="/dedicated">
+					<Link href={checkLang(language) + "/dedicated"}>
 						<a className="text-decoration-underline">ajratilgan serverlar</a>
 					</Link>
 					, va yana{" "}
-					<Link href="/domains">
-						<a className="text-decoration-underline">domenni ro'yxatdan o'tkazish</a>
+					<Link href={checkLang(language) + "/domains"}>
+						<a className="text-decoration-underline">
+							domenni ro'yxatdan o'tkazish
+						</a>
 					</Link>
 					.
 				</>
@@ -74,23 +77,23 @@ export default function About({ language }) {
 			en: (
 				<>
 					<strong>AIRNET.uz</strong> is a company providing services:{" "}
-					<Link href="/hosting">
+					<Link href={checkLang(language) + "/hosting"}>
 						<a className="text-decoration-underline">shared hosting</a>
 					</Link>
 					,{" "}
-					<Link href="/reseller">
+					<Link href={checkLang(language) + "/reseller"}>
 						<a className="text-decoration-underline">reseller</a>
 					</Link>
 					,{" "}
-					<Link href="/vds">
+					<Link href={checkLang(language) + "/vds"}>
 						<a className="text-decoration-underline">VDS leases</a>
 					</Link>{" "}
 					and{" "}
-					<Link href="/dedicated">
+					<Link href={checkLang(language) + "/dedicated"}>
 						<a className="text-decoration-underline">dedicated servers</a>
 					</Link>
 					, as well as{" "}
-					<Link href="/domains">
+					<Link href={checkLang(language) + "/domains"}>
 						<a className="text-decoration-underline">domain registrations</a>
 					</Link>
 					.
@@ -122,11 +125,14 @@ export default function About({ language }) {
 			uz: "Biz hech qachon erishgan yutuqlarimiz bilan to'xtab qolmaymiz va doimo rivojlanish va takomillashtirishga intilamiz. Biz hamkorlik bo'yicha yangi takliflar, xizmatimizni yaxshilash va tanqidlarga doim ochiqmiz.",
 			en: "We never rest on our laurels and constantly strive for development and improvement. We are always open to new proposals for cooperation, improvement of our service and criticism.",
 		},
-	};
+	}
 
 	return (
 		<>
-			<SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
+			<SEO
+				title={langData.seoTitle[language]}
+				desc={langData.seoDesc[language]}
+			/>
 			<Container headTitle={langData.title[language]}>
 				<hr />
 				<p>{langData.text1[language]}</p>
@@ -138,5 +144,5 @@ export default function About({ language }) {
 			</Container>
 			<Partners />
 		</>
-	);
+	)
 }

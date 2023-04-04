@@ -17,6 +17,7 @@ import TarifMaket from "@/components/tarifMaket"
 import Trust from "@/components/trust"
 import WhyBlock from "@/components/whyBlock"
 
+import { checkLang } from "@/utils/checkLang"
 import { Autoplay, Navigation } from "swiper"
 import "swiper/css"
 import "swiper/css/navigation"
@@ -767,7 +768,7 @@ export default function Home({ language }) {
 							Круглосуточно, за всеми системами следят наши
 							высококвалифицированные сотрудники. А оборудование размещаем в
 							высокотехнологичном, современном, надёжном{" "}
-							<Link href="/dc">
+							<Link href={checkLang(language) + "/dc"}>
 								<a>Дата-Центре</a>
 							</Link>{" "}
 							TIER-2, в Ташкенте.
@@ -779,7 +780,7 @@ export default function Home({ language }) {
 							Kecha-kunduz, hamma uchun tizimlar bizning yuqori malakali
 							xodimlarimiz tomonidan nazorat qilinadi. Biz jihozlarni
 							joylashtiramiz yuqori texnologiyali, zamonaviy, ishonchli{" "}
-							<Link href="/dc">
+							<Link href={checkLang(language) + "/dc"}>
 								<a>Ma'lumotlar markazi</a>
 							</Link>{" "}
 							TIER-2, Toshkent shahrida.
@@ -790,7 +791,7 @@ export default function Home({ language }) {
 							We provide guaranteed service availability of 99%. Around the
 							clock, for everyone systems are supervised by our highly qualified
 							staff. We place the equipment in high-tech, modern, reliable{" "}
-							<Link href="/dc">
+							<Link href={checkLang(language) + "/dc"}>
 								<a>Data Center</a>
 							</Link>{" "}
 							TIER-2, in Tashkent.

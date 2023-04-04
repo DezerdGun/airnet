@@ -41,7 +41,7 @@ export default function BlogItem({ data, language }) {
 			/>
 			<Container>
 				<div className={st.blogItem}>
-					<Link href="/blog">
+					<Link href={checkLang(language) + "/blog"}>
 						<a className={st.blogItem__breadCrumb}>{langData.news[language]}</a>
 					</Link>
 					<h1>{data.title[language]}</h1>

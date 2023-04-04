@@ -1,14 +1,14 @@
-import { Autoplay, Navigation } from 'swiper'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import Container from '../container/index.jsx'
-import st from './notifications.module.scss'
+import { Autoplay, Navigation } from "swiper"
+import "swiper/css"
+import "swiper/css/navigation"
+import { Swiper, SwiperSlide } from "swiper/react"
+import Container from "../container/index.jsx"
+import st from "./notifications.module.scss"
 
 const content = [
 	{
-		title: 'AIRNET',
-		date: '10.02.2022',
+		title: "AIRNET",
+		date: "10.02.2022",
 		description: {
 			ru: (
 				<>
@@ -54,8 +54,8 @@ const content = [
 		},
 	},
 	{
-		title: 'AIRNET',
-		date: '8.02.2022',
+		title: "AIRNET",
+		date: "8.02.2022",
 		description: {
 			ru: (
 				<>
@@ -91,8 +91,8 @@ const content = [
 		},
 	},
 	{
-		title: 'AIRNET',
-		date: '5.01.2022',
+		title: "AIRNET",
+		date: "5.01.2022",
 		description: {
 			ru: (
 				<>
@@ -143,15 +143,15 @@ const content = [
 export default function Notifications({ language }) {
 	const langData = {
 		title: {
-			ru: 'Оповещения',
-			uz: 'Ogohlantirishlar',
-			en: 'Notifications',
+			ru: "Оповещения",
+			uz: "Yangiliklar",
+			en: "Notifications",
 		},
 	}
 
 	return (
 		<div className={`${st.notifications} notifications-swiper`}>
-			<Container title={langData.title[language]} clNTitle='text-center mb-0'>
+			<Container title={langData.title[language]} clNTitle="text-center mb-0">
 				<Swiper
 					cssMode={true}
 					modules={[Autoplay, Navigation]}

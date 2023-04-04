@@ -175,9 +175,9 @@ export default function VDS({ language }) {
 								от количества заказов и наличия свободного оборудования.
 							</p>
 							<button>
-								<Link href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
-									<a>Стать клиентом и заказать VDS</a>
-								</Link>
+								<a href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
+									Стать клиентом и заказать VDS
+								</a>
 							</button>
 						</>
 					),
@@ -188,9 +188,9 @@ export default function VDS({ language }) {
 								soatgacha davom etadi va bepul jihozlarning mavjudligi.
 							</p>
 							<button>
-								<Link href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
-									<a>Mijoz bo'ling va VDSga buyurtma bering</a>
-								</Link>
+								<a href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
+									Mijoz bo'ling va VDSga buyurtma bering
+								</a>
 							</button>
 						</>
 					),

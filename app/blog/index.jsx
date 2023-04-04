@@ -327,13 +327,13 @@ export default function Blog({ language }) {
 					&laquo; Предыдущий пост
 				</a>
 				<a className={st.blog__links__active}>1</a>
-				<Link href="/blog/page/2">
+				<Link href={checkLang(language) + "/blog/page/2"}>
 					<a>2</a>
 				</Link>
-				<Link href="/blog/page/3">
+				<Link href={checkLang(language) + "/blog/page/3"}>
 					<a>3</a>
 				</Link>
-				<Link href="/blog/page/2">
+				<Link href={checkLang(language) + "/blog/page/2"}>
 					<a>Следующий пост &raquo;</a>
 				</Link>
 			</>
@@ -344,13 +344,13 @@ export default function Blog({ language }) {
 					&laquo; Oldingi post
 				</a>
 				<a className={st.blog__links__active}>1</a>
-				<Link href="/blog/page/2">
+				<Link href={checkLang(language) + "/blog/page/2"}>
 					<a>2</a>
 				</Link>
-				<Link href="/blog/page/3">
+				<Link href={checkLang(language) + "/blog/page/3"}>
 					<a>3</a>
 				</Link>
-				<Link href="/blog/page/2">
+				<Link href={checkLang(language) + "/blog/page/2"}>
 					<a>Keyingi post &raquo;</a>
 				</Link>
 			</>

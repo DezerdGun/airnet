@@ -196,7 +196,7 @@ export default function Header({ language }) {
 							>
 								RU
 							</div>
-							<div
+							{/* <div
 								className={`${st.header__main__right__lang__item} ${
 									language === "en"
 										? st.header__main__right__lang__item__active
@@ -205,7 +205,7 @@ export default function Header({ language }) {
 								onClick={() => changeLang("en", router)}
 							>
 								EN
-							</div>
+							</div> */}
 							<div
 								className={`${st.header__main__right__lang__item} ${
 									language === "uz"

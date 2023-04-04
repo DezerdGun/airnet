@@ -15,7 +15,9 @@ export default function Documents({ language }) {
 					<>
 						<ul>
 							<li>
-								<Link href="/faq/kak-zaklyuchit-dogovor">
+								<Link
+									href={checkLang(language) + "/faq/kak-zaklyuchit-dogovor"}
+								>
 									<a>Как заключить договор?</a>
 								</Link>
 							</li>
@@ -36,7 +38,9 @@ export default function Documents({ language }) {
 					<>
 						<ul>
 							<li>
-								<Link href="/faq/kak-zaklyuchit-dogovor">
+								<Link
+									href={checkLang(language) + "/faq/kak-zaklyuchit-dogovor"}
+								>
 									<a>Qanday qilib shartnoma tuzish</a>
 								</Link>
 							</li>
@@ -62,47 +66,82 @@ export default function Documents({ language }) {
 					<>
 						<ul>
 							<li>
-								<Link href="/faq/chto-takoe-domen">
+								<Link href={checkLang(language) + "/faq/chto-takoe-domen"}>
 									<a>Что такое домен?</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/kak-proverit-domen-na-zanyatost">
+								<Link
+									href={
+										checkLang(language) + "/faq/kak-proverit-domen-na-zanyatost"
+									}
+								>
 									<a>Как проверить домен на занятость?</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/pravilo-registracii-domena-v-zone-uz">
+								<Link
+									href={
+										checkLang(language) +
+										"/faq/pravilo-registracii-domena-v-zone-uz"
+									}
+								>
 									<a>Правила регистрации доменных имен в зоне .UZ?</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/kak-zaregistrirovat-domen">
+								<Link
+									href={checkLang(language) + "/faq/kak-zaregistrirovat-domen"}
+								>
 									<a>Как зарегистрировать домен?</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/oshibochno-zaregistriroval-domen">
+								<Link
+									href={
+										checkLang(language) +
+										"/faq/oshibochno-zaregistriroval-domen"
+									}
+								>
 									<a>Ошибочно зарегистрировал домен, можно ли отменить?</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/ya-zaregistriroval-domen-chto-dalshe">
+								<Link
+									href={
+										checkLang(language) +
+										"/faq/ya-zaregistriroval-domen-chto-dalshe"
+									}
+								>
 									<a>Я зарегистрировал домен, что дальше?</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/kak-perenesti-sajt-na-xosting-airnet">
+								<Link
+									href={
+										checkLang(language) +
+										"/faq/kak-perenesti-sajt-na-xosting-airnet"
+									}
+								>
 									<a>Как перенести сайт на хостинг AIRNET?</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/kak-ustanovit-wordpress-na-xosting">
+								<Link
+									href={
+										checkLang(language) +
+										"/faq/kak-ustanovit-wordpress-na-xosting"
+									}
+								>
 									<a>Как установить WordPress на хостинг?</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/kak-poluchit-testovyj-period">
+								<Link
+									href={
+										checkLang(language) + "/faq/kak-poluchit-testovyj-period"
+									}
+								>
 									<a>Как получить тестовый период?</a>
 								</Link>
 							</li>
@@ -118,29 +157,45 @@ export default function Documents({ language }) {
 					<>
 						<ul>
 							<li>
-								<Link href="/faq/chto-takoe-domen">
+								<Link href={checkLang(language) + "/faq/chto-takoe-domen"}>
 									<a>Domen aslida nma?</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/kak-proverit-domen-na-zanyatost">
+								<Link
+									href={
+										checkLang(language) + "/faq/kak-proverit-domen-na-zanyatost"
+									}
+								>
 									<a>Darsda qanday qilib domenni tekshirish</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/pravilo-registracii-domena-v-zone-uz">
+								<Link
+									href={
+										checkLang(language) +
+										"/faq/pravilo-registracii-domena-v-zone-uz"
+									}
+								>
 									<a>
 										.UZ zonasida domen nomlarini ro'yxatdan o'tkazish qoidalari?
 									</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/kak-zaregistrirovat-domen">
+								<Link
+									href={checkLang(language) + "/faq/kak-zaregistrirovat-domen"}
+								>
 									<a>Domenni qanday ro'yxatdan o'tkazish kerak?</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/oshibochno-zaregistriroval-domen">
+								<Link
+									href={
+										checkLang(language) +
+										"/faq/oshibochno-zaregistriroval-domen"
+									}
+								>
 									<a>
 										Men noto'g'ri domenni ro'yxatdan o'tkazdim, uni bekor qila
 										olamanmi?
@@ -148,22 +203,41 @@ export default function Documents({ language }) {
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/ya-zaregistriroval-domen-chto-dalshe">
+								<Link
+									href={
+										checkLang(language) +
+										"/faq/ya-zaregistriroval-domen-chto-dalshe"
+									}
+								>
 									<a>Men domenni ro'yxatdan o'tkazdim, keyin nima bo'ladi?</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/kak-perenesti-sajt-na-xosting-airnet">
+								<Link
+									href={
+										checkLang(language) +
+										"/faq/kak-perenesti-sajt-na-xosting-airnet"
+									}
+								>
 									<a>Veb-saytni AIRNET xostingiga qanday o'tkazish mumkin?</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/kak-ustanovit-wordpress-na-xosting">
+								<Link
+									href={
+										checkLang(language) +
+										"/faq/kak-ustanovit-wordpress-na-xosting"
+									}
+								>
 									<a>WordPressni hostingga qanday o'rnatish mumkin?</a>
 								</Link>
 							</li>
 							<li>
-								<Link href="/faq/kak-poluchit-testovyj-period">
+								<Link
+									href={
+										checkLang(language) + "/faq/kak-poluchit-testovyj-period"
+									}
+								>
 									<a>Sinov muddatini qanday olish mumkin?</a>
 								</Link>
 							</li>
@@ -184,7 +258,12 @@ export default function Documents({ language }) {
 					<>
 						<ul>
 							<li>
-								<Link href="/faq/kak-novichku-vybrat-xosting-provajdera-5-prostyx-sovetov">
+								<Link
+									href={
+										checkLang(language) +
+										"/faq/kak-novichku-vybrat-xosting-provajdera-5-prostyx-sovetov"
+									}
+								>
 									<a>
 										Как новичку выбрать хостинг-провайдера: 5 простых советов
 									</a>
@@ -197,7 +276,12 @@ export default function Documents({ language }) {
 					<>
 						<ul>
 							<li>
-								<Link href="/faq/kak-novichku-vybrat-xosting-provajdera-5-prostyx-sovetov">
+								<Link
+									href={
+										checkLang(language) +
+										"/faq/kak-novichku-vybrat-xosting-provajdera-5-prostyx-sovetov"
+									}
+								>
 									<a>
 										Yangi boshlanuvchilar uchun xosting provayderini qanday
 										tanlash uchun 5 ta oddiy maslahat:

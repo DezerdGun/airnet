@@ -183,7 +183,7 @@ export default function FreeDomains({ language }) {
 							<td>.UZ</td>
 							<th>17 000 сум*</th>
 							<th>
-								<Link href="/free-domains">
+								<Link href={checkLang(language) + "/free-domains"}>
 									<a>Бесплатно*</a>
 								</Link>
 							</th>
@@ -213,7 +213,7 @@ export default function FreeDomains({ language }) {
 							<td>.UZ</td>
 							<th>17 000 som*</th>
 							<th>
-								<Link href="/free-domains">
+								<Link href={checkLang(language) + "/free-domains"}>
 									<a>Tekin*</a>
 								</Link>
 							</th>
