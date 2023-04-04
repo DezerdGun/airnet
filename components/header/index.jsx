@@ -1,5 +1,7 @@
+import { changeLang } from "@/utils/changeLang.js"
 import { checkLang } from "@/utils/checkLang.js"
 import Link from "next/link"
+import { useRouter } from "next/router.js"
 import { useState } from "react"
 import Container from "../container/index.jsx"
 import { LINKS } from "../requirements"
@@ -120,7 +122,8 @@ export default function Header({ language }) {
 				],
 			},
 		],
-		[isOpen, setIsOpen] = useState(false)
+		[isOpen, setIsOpen] = useState(false),
+		router = useRouter()
 
 	const langData = {
 		enter: {
@@ -180,14 +183,39 @@ export default function Header({ language }) {
 						))}
 					</nav>
 					<div className={st.header__main__right}>
+						{console.log(typeof language, language == "ru", router)}
+
 						<div className={st.header__main__right__lang}>
 							<div
-								className={`${st.header__main__right__lang__item} ${st.header__main__right__lang__item__active}`}
+								className={`${st.header__main__right__lang__item} ${
+									language === "ru"
+										? st.header__main__right__lang__item__active
+										: ""
+								}`}
+								onClick={() => changeLang("ru", router)}
 							>
 								RU
 							</div>
-							<div className={st.header__main__right__lang__item}>EN</div>
-							<div className={st.header__main__right__lang__item}>UZ</div>
+							<div
+								className={`${st.header__main__right__lang__item} ${
+									language === "en"
+										? st.header__main__right__lang__item__active
+										: ""
+								}`}
+								onClick={() => changeLang("en", router)}
+							>
+								EN
+							</div>
+							<div
+								className={`${st.header__main__right__lang__item} ${
+									language === "uz"
+										? st.header__main__right__lang__item__active
+										: ""
+								}`}
+								onClick={() => changeLang("uz", router)}
+							>
+								UZ
+							</div>
 						</div>
 						<button className={st.header__main__right__billing}>
 							<a href="https://billing.airnet.uz/billing.php">

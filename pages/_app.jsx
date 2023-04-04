@@ -8,9 +8,9 @@ import "../styles/globals.scss"
 
 function MyApp({ Component, pageProps }) {
 	const router = useRouter(),
-		language = router.pathname.includes("/uz")
+		language = router.asPath.includes("/uz")
 			? "uz"
-			: router.pathname.includes("/en")
+			: router.asPath.includes("/en")
 			? "en"
 			: "ru"
 
