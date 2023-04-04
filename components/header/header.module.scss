@@ -216,6 +216,9 @@ $gray: #c2c2c2;
 			&__right {
 				&__burger {
 					display: flex;
+					&:hover {
+						background-color: transparent;
+					}
 				}
 			}
 		}
