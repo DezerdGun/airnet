@@ -506,7 +506,7 @@ export default function BigVDS({ language }) {
 						<CustomTable table={langData.table[language]} />
 					</div>
 				</Container>
-				<Partners />
+				<Partners language={language} />
 			</div>
 		</>
 	)

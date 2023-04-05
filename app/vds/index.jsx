@@ -309,7 +309,7 @@ export default function VDS({ language }) {
 				],
 				cpu: 6,
 				ram: 10,
-				ssd: 150,
+				ssd: 100,
 				net: 25,
 				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
 			},
