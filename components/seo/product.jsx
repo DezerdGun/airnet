@@ -5,7 +5,7 @@ export default function Product({ language }) {
 		description: {
 			ru: "Быстрые VDS/VPS | Хостинг TAS-IX в Ташкенте, Узбекистане",
 			uz: "Tez VDS/VPS | O'zbekiston, Toshkent shahrida TAS-IX mezbonligi",
-			en: "",
+			en: "Fast VDS/VPS | Hosting TAS-IX in Tashkent, Uzbekistan",
 		},
 	}
 

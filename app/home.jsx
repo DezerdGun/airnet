@@ -107,6 +107,7 @@ export default function Home({ language }) {
 		month: {
 			ru: "мес.",
 			uz: "oy",
+			en: "mo.",
 		},
 	}
 
