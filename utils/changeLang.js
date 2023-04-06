@@ -4,17 +4,15 @@ export const changeLang = (language, router) => {
 
 	switch (language) {
 		case "ru": {
-			if (link.includes("/uz") || link.includes("/en"))
-				return router.push(sliced.length ? sliced : "/")
+			if (link.includes("/uz") || link.includes("/en")) return router.push(sliced.length ? sliced : "/")
 		}
 		case "uz": {
-			if (link.includes("/en"))
-				return router.push("/uz" + sliced.length ? sliced : "")
+			if (link.includes("/en")) return router.push("/uz" + sliced.length ? sliced : "")
 			return router.push("/uz" + link)
 		}
-		// case "en": {
-		// 	if (link.includes("/uz")) return router.push(link.slice(3))
-		// 	return router.push("/en" + link)
-		// }
+		case "en": {
+			if (link.includes("/uz")) return router.push("/en" + sliced.length ? sliced : "")
+			return router.push("/en" + link)
+		}
 	}
 }

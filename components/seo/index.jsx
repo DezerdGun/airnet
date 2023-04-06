@@ -1,8 +1,8 @@
-import { useRouter } from 'next/dist/client/router';
-import Head from 'next/head';
+import { useRouter } from "next/dist/client/router"
+import Head from "next/head"
 
 export default function SEO({ title, keyw, desc, url, a }) {
-	const router = useRouter();
+	const router = useRouter()
 
 	return (
 		<Head>
@@ -11,8 +11,8 @@ export default function SEO({ title, keyw, desc, url, a }) {
 			<meta name="keywords" content={keyw} />
 			<title>{title}</title>
 			<meta property="og:title" content={title} />
-			<meta property="og:url" content={`https://airnet.uz${url ?? `${router.pathname}`}`} />
-			<link rel="canonical" href={`https://airnet.uz${url ?? `${router.pathname}`}`} />
+			<meta property="og:url" content={`https://airnet.uz${url ?? `${router.asPath}`}`} />
+			<link rel="canonical" href={`https://airnet.uz${url ?? `${router.asPath}`}`} />
 		</Head>
-	);
+	)
 }

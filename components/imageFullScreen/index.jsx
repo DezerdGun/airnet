@@ -1,5 +1,4 @@
-import Image from "next/image";
-import styles from "./imageFullScreen.module.scss";
+import styles from "./imageFullScreen.module.scss"
 
 export default function ImageFullScreen({ image, setImage }) {
 	return (
@@ -11,5 +10,5 @@ export default function ImageFullScreen({ image, setImage }) {
 				</svg>
 			</div>
 		</div>
-	);
+	)
 }

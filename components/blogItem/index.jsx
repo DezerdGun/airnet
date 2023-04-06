@@ -15,22 +15,22 @@ export default function BlogItem({ data, language }) {
 		news: {
 			ru: "Все новости",
 			uz: "Barcha yangiliklar",
-			en: "",
+			en: "All news",
 		},
 		added: {
 			ru: "Добавлено",
 			uz: "Qo'shildi",
-			en: "",
+			en: "Added",
 		},
 		prevPost: {
 			ru: "Предыдущий пост",
 			uz: "Oldingi post",
-			en: "",
+			en: "Previous post",
 		},
 		nextPost: {
 			ru: "Следующий пост",
 			uz: "Keyingi post",
-			en: "",
+			en: "Next post",
 		},
 	}
 	return (

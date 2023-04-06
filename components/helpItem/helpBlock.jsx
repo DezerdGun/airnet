@@ -12,7 +12,7 @@ export default function HelpBlock({ data, language }) {
 		faq: {
 			ru: "НАС ЧАСТО СПРАШИВАЮТ БИЛЛИНГ-ПАНЕЛЬ",
 			uz: "BIZGA KO'P SO'RALADIGAN BILLING-PANELI",
-			en: "",
+			en: "WE ARE FREQUENTLY ASKED BILLING PANEL",
 		},
 		goToDB: {
 			ru: (
@@ -31,39 +31,36 @@ export default function HelpBlock({ data, language }) {
 					sahifasiga qaytish
 				</>
 			),
-			en: "",
+			en: (
+				<>
+					Go back to{" "}
+					<Link href={checkLang(language) + LINKS.HELP}>
+						<a>Knowledge Base</a>
+					</Link>
+				</>
+			),
 		},
 		phoneSupport: {
 			ru: "Не нашли ответ на свой вопрос? Позвоните нашим специалистам по	телефону",
 			uz: "Savolingizga javob topa olmadingizmi? Telefon orqali mutaxassislarimizga qo'ng'iroq qiling",
-			en: "",
+			en: "Did not find an answer to your question? Call our specialists by phone",
 		},
 	}
 
 	return (
 		<>
-			<SEO
-				title={`${data.headTitle[language]} | Airnet`}
-				desc={data?.desc?.[language]}
-			/>
+			<SEO title={`${data.headTitle[language]} | Airnet`} desc={data?.desc?.[language]} />
 			<Container headTitle={data.headTitle[language]}>
 				<div className={st.helpItem}>
 					<div className={st.helpItem__block}>{data.content[language]}</div>
 					<p>{langData.goToDB[language]}</p>
 					<p>
-						{langData.phoneSupport[language]}{" "}
-						<a href="tel:+998712008700">+998(71) 200-87-00</a>
+						{langData.phoneSupport[language]} <a href="tel:+998712008700">+998(71) 200-87-00</a>
 					</p>
 				</div>
 			</Container>
 			{data?.afterContent}
-			{data?.faq && (
-				<FAQ
-					faq={data.faq}
-					title={langData.faq[language]}
-					language={language}
-				/>
-			)}
+			{data?.faq && <FAQ faq={data.faq} title={langData.faq[language]} language={language} />}
 			<Partners language={language} />
 		</>
 	)

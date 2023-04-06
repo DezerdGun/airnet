@@ -8,17 +8,17 @@ export default function Cookies({ language }) {
 		title: {
 			ru: "Пользуясь нашим сайтом, вы соглашаетесь с тем, что мы используем cookies",
 			uz: "Saytimizdan foydalanish orqali siz cookiesdan foydalanishimizga rozilik bildirasiz",
-			en: "",
+			en: "By using our site, you agree to our use of cookies",
 		},
 		close: {
 			ru: "ЗАКРЫТЬ",
 			uz: "YOPISH",
-			en: "",
+			en: "CLOSE",
 		},
 		apply: {
 			ru: "ПРИНЯТЬ",
 			uz: "QABUL QILISH",
-			en: "",
+			en: "ACCEPT",
 		},
 	}
 

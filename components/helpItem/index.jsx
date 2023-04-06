@@ -17,10 +17,7 @@ export default function HelpItem({ data, language }) {
 
 		if (document.body.clientWidth > 770) {
 			if (window.pageYOffset >= 112) {
-				if (
-					window.pageYOffset >
-					content.clientHeight - links.clientHeight + 112
-				) {
+				if (window.pageYOffset > content.clientHeight - links.clientHeight + 112) {
 					setIsFixed("end")
 				} else setIsFixed(true)
 			} else setIsFixed(false)
@@ -31,7 +28,7 @@ export default function HelpItem({ data, language }) {
 		menu: {
 			ru: "Разделы",
 			uz: "Bo'limlar",
-			en: "",
+			en: "Sections",
 		},
 		goToDB: {
 			ru: (
@@ -50,17 +47,24 @@ export default function HelpItem({ data, language }) {
 					sahifasiga qaytish
 				</>
 			),
-			en: "",
+			en: (
+				<>
+					Go back to{" "}
+					<Link href={checkLang(language) + LINKS.HELP}>
+						<a>Knowledge Base</a>
+					</Link>
+				</>
+			),
 		},
 		phoneSupport: {
 			ru: "Не нашли ответ на свой вопрос? Позвоните нашим специалистам по	телефону",
 			uz: "Savolingizga javob topa olmadingizmi? Telefon orqali mutaxassislarimizga qo'ng'iroq qiling",
-			en: "",
+			en: "Did not find an answer to your question? Call our specialists by phone",
 		},
 		faq: {
 			ru: "НАС ЧАСТО СПРАШИВАЮТ БИЛЛИНГ-ПАНЕЛЬ",
 			uz: "BIZNING TO'LOV PANOSINI KO'P SO'RALADILAR",
-			en: "",
+			en: "WE ARE FREQUENTLY ASKED BILLING PANEL",
 		},
 	}
 
@@ -70,19 +74,13 @@ export default function HelpItem({ data, language }) {
 
 	return (
 		<>
-			<SEO
-				title={`${data.headTitle[language]} | Airnet`}
-				desc={data?.desc?.[language]}
-			/>
+			<SEO title={`${data.headTitle[language]} | Airnet`} desc={data?.desc?.[language]} />
 			<Container headTitle={data.headTitle[language]}>
 				<div className={st.helpItem}>
 					<div className={st.helpItem__block}>
 						<div
 							className={`${st.helpItem__block__links} ${
-								isFixed &&
-								(isFixed === "end"
-									? st.helpItem__block__links__absolute
-									: st.helpItem__block__links__fixed)
+								isFixed && (isFixed === "end" ? st.helpItem__block__links__absolute : st.helpItem__block__links__fixed)
 							}`}
 						>
 							<div id="links">
@@ -90,9 +88,7 @@ export default function HelpItem({ data, language }) {
 								{console.log(data)}
 								<div className={st.helpItem__block__links__back}>
 									{data?.content?.length ? (
-										data.content.map((item, i) => (
-											<LinksBlock key={i} data={item} language={language} />
-										))
+										data.content.map((item, i) => <LinksBlock key={i} data={item} language={language} />)
 									) : (
 										<LinksBlock data={data.content} language={language} />
 									)}
@@ -105,19 +101,12 @@ export default function HelpItem({ data, language }) {
 					</div>
 					<p>{langData.goToDB[language]}</p>
 					<p>
-						{langData.phoneSupport[language]}{" "}
-						<a href="tel:+998712008700">+998(71) 200-87-00</a>
+						{langData.phoneSupport[language]} <a href="tel:+998712008700">+998(71) 200-87-00</a>
 					</p>
 				</div>
 			</Container>
 			{data?.afterContent}
-			{data?.faq && (
-				<FAQ
-					faq={data.faq}
-					title={langData.faq[language]}
-					language={language}
-				/>
-			)}
+			{data?.faq && <FAQ faq={data.faq} title={langData.faq[language]} language={language} />}
 			<Partners language={language} />
 		</>
 	)
@@ -154,9 +143,7 @@ const LinksBlock = ({ data, language }) => {
 				}`}
 			>
 				{data?.children &&
-					data.children.map((item, i) => (
-						<LinksBlock key={`data${i}`} data={item} language={language} />
-					))}
+					data.children.map((item, i) => <LinksBlock key={`data${i}`} data={item} language={language} />)}
 			</div>
 		</ul>
 	)
@@ -165,10 +152,7 @@ const LinksBlock = ({ data, language }) => {
 const Content = ({ data, language }) => {
 	if (data?.length)
 		return data.map((item) => (
-			<div
-				key={item.title[language]}
-				className={st.helpItem__block__content__block}
-			>
+			<div key={item.title[language]} className={st.helpItem__block__content__block}>
 				<h3>
 					{item?.link ? (
 						<Link href={checkLang(language) + item.link}>
@@ -199,10 +183,7 @@ const Content = ({ data, language }) => {
 
 const ContentBlock = ({ data, language }) => {
 	return data.map((item) => (
-		<div
-			key={item.title[language]}
-			className={st.helpItem__block__content__block__item}
-		>
+		<div key={item.title[language]} className={st.helpItem__block__content__block__item}>
 			<h4>
 				{item?.link ? (
 					<Link href={checkLang(language) + item.link}>
