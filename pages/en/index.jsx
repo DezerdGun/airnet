@@ -1,5 +1,5 @@
 import Home from "@/app/home";
 
-export default function ({ language }) {
-	return <Home language={language} />;
+export default function () {
+	return <Home language="uz" />;
 }
