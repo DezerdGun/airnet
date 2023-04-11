@@ -11,15 +11,15 @@ const faq = [
 			title: {
 				ru: "Банковский перевод (SWIFT)",
 				uz: "Bank o'tkazmasi (SWIFT)",
+				en: "Bank transfer (SWIFT)",
 			},
 			description: {
 				ru: (
 					<>
 						<p>
-							Чтобы воспользоваться банковским переводом по договору, нужно
-							оформить заказ у нас на сайте, пройти регистрацию и далее
-							обратится к технической поддержке для составления договора для
-							юридического лица, для этого потребуется всего 3 документа:
+							Чтобы воспользоваться банковским переводом по договору, нужно оформить заказ у нас на сайте, пройти
+							регистрацию и далее обратится к технической поддержке для составления договора для юридического лица, для
+							этого потребуется всего 3 документа:
 						</p>
 						<br />
 						<p>
@@ -34,15 +34,13 @@ const faq = [
 				uz: (
 					<>
 						<p>
-							Shartnoma bo'yicha bank o'tkazmasidan foydalanish uchun sizga
-							kerak veb-saytimizga buyurtma bering, ro'yxatdan o'ting va keyin
-							shartnoma tuzish uchun texnik yordamga murojaat qiling yuridik
-							shaxs bo'lsa, bu faqat 3 ta hujjatni talab qiladi:
+							Shartnoma bo'yicha bank o'tkazmasidan foydalanish uchun sizga kerak veb-saytimizga buyurtma bering,
+							ro'yxatdan o'ting va keyin shartnoma tuzish uchun texnik yordamga murojaat qiling yuridik shaxs bo'lsa, bu
+							faqat 3 ta hujjatni talab qiladi:
 						</p>
 						<br />
 						<p>
-							1. “Guvohnoma” (firmani ro‘yxatdan o‘tkazish to‘g‘risidagi
-							guvohnoma)
+							1. “Guvohnoma” (firmani ro‘yxatdan o‘tkazish to‘g‘risidagi guvohnoma)
 							<br />
 							2. Direktorning to'liq ismi (sharifi)
 							<br />
@@ -56,20 +54,19 @@ const faq = [
 			title: {
 				ru: "Международные банковские карты",
 				uz: "Xalqaro bank kartalari",
+				en: "International bank cards",
 			},
 			description: {
 				ru: (
 					<>
 						<p>
-							Для нерезидентов Узбекистана и карт выпущенных не в банках
-							Узбекистана - доступна оплата через платежные системы paybox.money
-							и oson.uz
+							Для нерезидентов Узбекистана и карт выпущенных не в банках Узбекистана - доступна оплата через платежные
+							системы paybox.money и oson.uz
 						</p>
 						<p>
-							Чтобы произвести оплату через Paybox.Money перейдите во вкладку
-							"Кабинет" {"->"} "Счета" выберите № счета и нажмите кнопку
-							"Оплатить счет", далее выберите из предложенных способов оплаты
-							"Paybox" и нажмите на кнопку оплатить...
+							Чтобы произвести оплату через Paybox.Money перейдите во вкладку "Кабинет" {"->"} "Счета" выберите № счета
+							и нажмите кнопку "Оплатить счет", далее выберите из предложенных способов оплаты "Paybox" и нажмите на
+							кнопку оплатить...
 						</p>
 						<br />
 						<img src="/payments/1.png" />
@@ -78,15 +75,13 @@ const faq = [
 				uz: (
 					<>
 						<p>
-							Oʻzbekiston norezidentlari va banklar tomonidan chiqarilgan
-							kartalar uchun O'zbekiston - to'lovni paybox.money va orqali
-							amalga oshirish mumkin oson.uz
+							Oʻzbekiston norezidentlari va banklar tomonidan chiqarilgan kartalar uchun O'zbekiston - to'lovni
+							paybox.money va orqali amalga oshirish mumkin oson.uz
 						</p>
 						<p>
-							Paybox.Money orqali toʻlovni amalga oshirish uchun yorligʻiga
-							oʻting "Kabinet" {"->"} "Hisoblar" hisob raqamini tanlang va
-							"To'lash" tugmasini bosing hisob", keyin taklif qilingan to'lov
-							usullaridan "Paybox" va tanlang to'lov tugmasini bosing...
+							Paybox.Money orqali toʻlovni amalga oshirish uchun yorligʻiga oʻting "Kabinet" {"->"} "Hisoblar" hisob
+							raqamini tanlang va "To'lash" tugmasini bosing hisob", keyin taklif qilingan to'lov usullaridan "Paybox"
+							va tanlang to'lov tugmasini bosing...
 						</p>
 						<br />
 						<img src="/payments/1.png" />
@@ -100,10 +95,9 @@ const faq = [
 				ru: (
 					<>
 						<p>
-							Зайдите с мобильного приложение PAYNET через сайт
-							https://paynet.uz, а также через диллеров PAYNET, найдите нас в
-							категории "Хостинг-провайдеры" - AIRNET.uz хостинг, для оплаты
-							введите ваш ID или № счета и сумму оплаты.
+							Зайдите с мобильного приложение PAYNET через сайт https://paynet.uz, а также через диллеров PAYNET,
+							найдите нас в категории "Хостинг-провайдеры" - AIRNET.uz хостинг, для оплаты введите ваш ID или № счета и
+							сумму оплаты.
 						</p>
 						<img className="width-50" src="/payments/2.jpg" />
 						<img className="width-50" src="/payments/3.jpg" />
@@ -112,11 +106,9 @@ const faq = [
 				uz: (
 					<>
 						<p>
-							https://paynet.uz sayti orqali PAYNET mobil ilovasidan tizimga
-							kiring, shuningdek, PAYNET dilerlari orqali bizni toifadan toping
-							"Xosting provayderlari" - AIRNET.uz xostingi, to'lash uchun
-							shaxsiy guvohnomangizni kiriting yoki hisob raqami va to'lov
-							miqdori.
+							https://paynet.uz sayti orqali PAYNET mobil ilovasidan tizimga kiring, shuningdek, PAYNET dilerlari orqali
+							bizni toifadan toping "Xosting provayderlari" - AIRNET.uz xostingi, to'lash uchun shaxsiy guvohnomangizni
+							kiriting yoki hisob raqami va to'lov miqdori.
 						</p>
 						<img className="width-50" src="/payments/2.jpg" />
 						<img className="width-50" src="/payments/3.jpg" />
@@ -130,16 +122,14 @@ const faq = [
 				ru: (
 					<>
 						<p>
-							Зайдите с мобильного приложение PAYME.uz найдите нас в категории
-							"Хостинг-провайдеры" - AIRNET.uz хостинг, для оплаты введите ваш
-							ID или № счета и сумму оплаты.
+							Зайдите с мобильного приложение PAYME.uz найдите нас в категории "Хостинг-провайдеры" - AIRNET.uz хостинг,
+							для оплаты введите ваш ID или № счета и сумму оплаты.
 						</p>
 						<img className="width-50" src="/payments/5.jpg" />
 						<img className="width-50" src="/payments/6.jpg" />
 						<p>
-							В биллинг панели выбрать способ оплаты через PAYME.uz и нажать на
-							кнопку "Оплатить Payme" и вас переведет на сайт платежной системы
-							где нужно будет указать данные вашей карты для быстрой оплаты.
+							В биллинг панели выбрать способ оплаты через PAYME.uz и нажать на кнопку "Оплатить Payme" и вас переведет
+							на сайт платежной системы где нужно будет указать данные вашей карты для быстрой оплаты.
 						</p>
 						<br />
 						<img src="/payments/4.png" />
@@ -148,17 +138,15 @@ const faq = [
 				uz: (
 					<>
 						<p>
-							PAYME.uz mobil ilovasidan tizimga kiring, bizni turkumda toping
-							"Xosting provayderlari" - AIRNET.uz xostingi, to'lov uchun
-							o'zingizni kiriting ID yoki hisob raqami va to'lov miqdori.
+							PAYME.uz mobil ilovasidan tizimga kiring, bizni turkumda toping "Xosting provayderlari" - AIRNET.uz
+							xostingi, to'lov uchun o'zingizni kiriting ID yoki hisob raqami va to'lov miqdori.
 						</p>
 						<img className="width-50" src="/payments/5.jpg" />
 						<img className="width-50" src="/payments/6.jpg" />
 						<p>
-							Billing panelida PAYME.uz orqali to‘lov usulini tanlang va ustiga
-							bosing "Payme bilan to'lash" tugmasini bosing va siz to'lov
-							tizimining veb-saytiga yo'naltirilasiz bu erda tez to'lov uchun
-							kartangiz ma'lumotlarini kiritishingiz kerak bo'ladi.
+							Billing panelida PAYME.uz orqali to‘lov usulini tanlang va ustiga bosing "Payme bilan to'lash" tugmasini
+							bosing va siz to'lov tizimining veb-saytiga yo'naltirilasiz bu erda tez to'lov uchun kartangiz
+							ma'lumotlarini kiritishingiz kerak bo'ladi.
 						</p>
 						<br />
 						<img src="/payments/4.png" />
@@ -172,16 +160,14 @@ const faq = [
 				ru: (
 					<>
 						<p>
-							Зайдите с мобильного приложение Click.uz найдите нас в категории
-							"Хостинг и домены" - AIRNET.uz хостинг, для оплаты введите № счета
-							и сумму оплаты.
+							Зайдите с мобильного приложение Click.uz найдите нас в категории "Хостинг и домены" - AIRNET.uz хостинг,
+							для оплаты введите № счета и сумму оплаты.
 						</p>
 						<img className="width-50" src="/payments/7.jpg" />
 						<img className="width-50" src="/payments/8.jpg" />
 						<p>
-							В биллинг панели выбрать способ оплаты через CLICK.uz и нажать на
-							кнопку "Оплатить" и вас переведет на сайт платежной системы где
-							нужно будет указать данные вашей карты для быстрой оплаты.
+							В биллинг панели выбрать способ оплаты через CLICK.uz и нажать на кнопку "Оплатить" и вас переведет на
+							сайт платежной системы где нужно будет указать данные вашей карты для быстрой оплаты.
 						</p>
 						<br />
 						<img src="/payments/9.png" />
@@ -190,16 +176,14 @@ const faq = [
 				uz: (
 					<>
 						<p>
-							Click.uz mobil ilovasidan tizimga kiring, bizni turkumda toping
-							"Xosting va domenlar" - AIRNET.uz xostingi, to'lov uchun hisob
-							raqamini kiriting va to'lov miqdori.
+							Click.uz mobil ilovasidan tizimga kiring, bizni turkumda toping "Xosting va domenlar" - AIRNET.uz
+							xostingi, to'lov uchun hisob raqamini kiriting va to'lov miqdori.
 						</p>
 						<img className="width-50" src="/payments/7.jpg" />
 						<img className="width-50" src="/payments/8.jpg" />
 						<p>
-							Billing panelida CLICK.uz orqali to‘lov usulini tanlang va ustiga
-							bosing "To'lash" tugmasi va siz to'lov tizimining saytiga o'tasiz
-							Tez to'lov uchun karta ma'lumotlarini kiritishingiz kerak.
+							Billing panelida CLICK.uz orqali to‘lov usulini tanlang va ustiga bosing "To'lash" tugmasi va siz to'lov
+							tizimining saytiga o'tasiz Tez to'lov uchun karta ma'lumotlarini kiritishingiz kerak.
 						</p>
 						<br />
 						<img src="/payments/9.png" />
@@ -213,17 +197,14 @@ const faq = [
 				ru: (
 					<>
 						<p>
-							Зайдите с мобильного приложение UPAY.uz найдите нас в категории
-							"Хостинг услуги" - AIRNET.uz хостинг, для оплаты введите ваш ID
-							клиента и сумму оплаты.
+							Зайдите с мобильного приложение UPAY.uz найдите нас в категории "Хостинг услуги" - AIRNET.uz хостинг, для
+							оплаты введите ваш ID клиента и сумму оплаты.
 						</p>
 						<img className="width-50" src="/payments/11.jpg" />
 						<img className="width-50" src="/payments/12.jpg" />
 						<p>
-							В биллинг панели выбрать способ оплаты через UPAY.uz и нажать на
-							кнопку "Перейти на сайт UPAY" и вас переведет на сайт платежной
-							системы где нужно будет указать данные вашей карты для быстрой
-							оплаты.
+							В биллинг панели выбрать способ оплаты через UPAY.uz и нажать на кнопку "Перейти на сайт UPAY" и вас
+							переведет на сайт платежной системы где нужно будет указать данные вашей карты для быстрой оплаты.
 						</p>
 						<br />
 						<img src="/payments/10.png" />
@@ -232,18 +213,14 @@ const faq = [
 				uz: (
 					<>
 						<p>
-							UPAY.uz mobil ilovasidan tizimga kiring, bizni turkumda toping
-							"Xosting xizmatlari" - AIRNET.uz xostingi, to'lash uchun
-							shaxsingizni tasdiqlovchi hujjatni kiriting mijoz va to'lov
-							miqdori.
+							UPAY.uz mobil ilovasidan tizimga kiring, bizni turkumda toping "Xosting xizmatlari" - AIRNET.uz xostingi,
+							to'lash uchun shaxsingizni tasdiqlovchi hujjatni kiriting mijoz va to'lov miqdori.
 						</p>
 						<img className="width-50" src="/payments/11.jpg" />
 						<img className="width-50" src="/payments/12.jpg" />
 						<p>
-							Billing panelida UPAY.uz orqali to‘lov usulini tanlang va ustiga
-							bosing "UPAY saytiga o'tish" tugmasini bosing va siz to'lov
-							saytiga o'tasiz karta ma'lumotlarini tezda kiritishingiz kerak
-							bo'lgan tizim to'lov.
+							Billing panelida UPAY.uz orqali to‘lov usulini tanlang va ustiga bosing "UPAY saytiga o'tish" tugmasini
+							bosing va siz to'lov saytiga o'tasiz karta ma'lumotlarini tezda kiritishingiz kerak bo'lgan tizim to'lov.
 						</p>
 						<br />
 						<img src="/payments/10.png" />
@@ -257,17 +234,14 @@ const faq = [
 				ru: (
 					<>
 						<p>
-							Зайдите с мобильного приложение OSON.uz найдите нас в категории
-							"Хостинг провайдеры" - AIRNET.uz хостинг, для оплаты введите ваш
-							ID клиента или № счета и сумму оплаты.
+							Зайдите с мобильного приложение OSON.uz найдите нас в категории "Хостинг провайдеры" - AIRNET.uz хостинг,
+							для оплаты введите ваш ID клиента или № счета и сумму оплаты.
 						</p>
 						<img className="width-50" src="/payments/16.jpg" />
 						<img className="width-50" src="/payments/17.jpg" />
 						<p>
-							В биллинг панели выбрать способ оплаты через OSON.uz и нажать на
-							кнопку "Оплатить OSON" и вам откроется дополнительное окно
-							платежной системы где нужно будет указать данные вашей карты для
-							быстрой оплаты.
+							В биллинг панели выбрать способ оплаты через OSON.uz и нажать на кнопку "Оплатить OSON" и вам откроется
+							дополнительное окно платежной системы где нужно будет указать данные вашей карты для быстрой оплаты.
 						</p>
 						<br />
 						<img src="/payments/13.png" />
@@ -284,26 +258,19 @@ const faq = [
 				uz: (
 					<>
 						<p>
-							OSON.uz mobil ilovasidan tizimga kiring, bizni turkumda toping
-							"Xosting provayderlari" - AIRNET.uz xostingi, to'lov uchun
-							o'zingizni kiriting Mijoz identifikatori yoki hisob raqami va
-							to'lov miqdori.
+							OSON.uz mobil ilovasidan tizimga kiring, bizni turkumda toping "Xosting provayderlari" - AIRNET.uz
+							xostingi, to'lov uchun o'zingizni kiriting Mijoz identifikatori yoki hisob raqami va to'lov miqdori.
 						</p>
 						<img className="width-50" src="/payments/16.jpg" />
 						<img className="width-50" src="/payments/17.jpg" />
 						<p>
-							Billing panelida OSON.uz orqali toʻlov usulini tanlang va ustiga
-							bosing "OSON to'lash" tugmasi va siz uchun qo'shimcha oyna
-							ochiladi karta ma'lumotlarini kiritishingiz kerak bo'lgan to'lov
-							tizimi tez to'lov.
+							Billing panelida OSON.uz orqali toʻlov usulini tanlang va ustiga bosing "OSON to'lash" tugmasi va siz
+							uchun qo'shimcha oyna ochiladi karta ma'lumotlarini kiritishingiz kerak bo'lgan to'lov tizimi tez to'lov.
 						</p>
 						<br />
 						<img src="/payments/13.png" />
 						<br />
-						<p>
-							Siz UZCARD yoki HUMO bank kartasi bilan toʻlashni tanlashingiz
-							mumkin
-						</p>
+						<p>Siz UZCARD yoki HUMO bank kartasi bilan toʻlashni tanlashingiz mumkin</p>
 						<br />
 						<img src="/payments/14.png" />
 						<br />
@@ -318,19 +285,11 @@ const faq = [
 			title: {
 				ru: "Киоск самообслуживания",
 				uz: "O'z-o'ziga hizat korsatish kioskasi",
+				en: "Self-service kiosk",
 			},
 			description: {
-				ru: (
-					<p>
-						Киоски самообслуживания находятся на балансе коммерческих банков
-					</p>
-				),
-				uz: (
-					<p>
-						O‘z-o‘ziga xizmat ko‘rsatish infokiosklari tijorat banklari
-						balansida
-					</p>
-				),
+				ru: <p>Киоски самообслуживания находятся на балансе коммерческих банков</p>,
+				uz: <p>O‘z-o‘ziga xizmat ko‘rsatish infokiosklari tijorat banklari balansida</p>,
 			},
 		},
 	],
@@ -339,6 +298,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 1 (Найдите Конструктор сайтов SitePad и нажмите на него)",
 				uz: "1-qadam (SitePad Website Builder-ni qidiring va ustiga bosing)",
+				en: "Step #1 (Search for SitePad Website Builder and click on it)",
 			},
 			img: "/sitepad/step-1.jpg",
 			width: 500,
@@ -348,6 +308,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 2 (Выберите слева Добавить сайт)",
 				uz: "2-qadam (chapdagi Veb-sayt qo'shish-ni tanlang)",
+				en: "Step #2 (Select Add Site on the Left)",
 			},
 			img: "/sitepad/step-2.jpg",
 			width: 500,
@@ -357,6 +318,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 3 (Нажмите Начать)",
 				uz: "3-qadam (Ishga tushirish tugmasini bosing)",
+				en: "Step #3 (Press Start)",
 			},
 			img: "/sitepad/step-3.jpg",
 			width: 500,
@@ -366,6 +328,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 4 (Найдите подходящую тему по категории создаваемого сайта)",
 				uz: "4-qadam (Siz yaratayotgan sayt toifasiga mos mavzuni toping)",
+				en: "Step #4 (Find a suitable theme for the category of the site you are creating)",
 			},
 			img: "/sitepad/step-4.jpg",
 			width: 500,
@@ -375,6 +338,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 5 (Визуальный просмотр демо-сайта)",
 				uz: "5-qadam (demo saytning vizual ko'rinishi)",
+				en: "Step #5 (Visual view of the demo site)",
 			},
 			img: "/sitepad/step-5.jpg",
 			width: 500,
@@ -384,6 +348,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 6 (Подтвердите установку выбранной темы)",
 				uz: "6-qadam (Tanlangan mavzuni o'rnatishni tasdiqlang)",
+				en: "Step #6 (Confirm installation of selected theme)",
 			},
 			img: "/sitepad/step-6.jpg",
 			width: 500,
@@ -393,6 +358,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 7 (Заполните поля настройки вашего будущего сайта и нажмите установить)",
 				uz: "7-qadam (Kelajak saytingizni o'rnatish uchun maydonlarni to'ldiring va o'rnatish tugmasini bosing)",
+				en: "Step #7 (Fill in the fields for setting up your future site and click install)",
 			},
 			img: "/sitepad/step-7.jpg",
 			width: 500,
@@ -402,6 +368,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 8 (После установки вы можете с легкостью изменить внутренние страницы вашего сайта)",
 				uz: "8-qadam (O'rnatishdan so'ng saytingizning ichki sahifalarini osongina o'zgartirishingiz mumkin)",
+				en: "Step #8 (After installation, you can easily change the internal pages of your site)",
 			},
 			img: "/sitepad/step-8.jpg",
 			width: 500,
@@ -411,6 +378,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 9 (Опции по редактированию страницы)",
 				uz: "9-qadam (sahifani tahrirlash parametrlari)",
+				en: "Step #9 (Page Editing Options)",
 			},
 			img: "/sitepad/step-9.jpg",
 			width: 500,
@@ -443,10 +411,7 @@ export default function Payment({ language }) {
 			ru: (
 				<>
 					<h3>Об услуге</h3>
-					<p>
-						Услуги нашей компании можно оплачивать различными способами.
-						Выбирайте наиболее удобный:
-					</p>
+					<p>Услуги нашей компании можно оплачивать различными способами. Выбирайте наиболее удобный:</p>
 					{/* <Link href={checkLang(language)+LINKS.HELP}>
 							<a>Как подключить DDoS?</a>
 						</Link> */}
@@ -455,10 +420,7 @@ export default function Payment({ language }) {
 			uz: (
 				<>
 					<h3>Hizmatlar haqida</h3>
-					<p>
-						Kompaniyamiz xizmatlari turli yo'llar bilan to'lanishi mumkin. Eng
-						qulayini tanlang:
-					</p>
+					<p>Kompaniyamiz xizmatlari turli yo'llar bilan to'lanishi mumkin. Eng qulayini tanlang:</p>
 					{/* <Link href={checkLang(language)+LINKS.HELP}>
 							<a>Как подключить DDoS?</a>
 						</Link> */}
@@ -470,16 +432,13 @@ export default function Payment({ language }) {
 				<>
 					<ul>
 						<li>
-							<a href="#transfer-swift">Банковский перевод</a> (SWIFT) оплата по
-							договору.
+							<a href="#transfer-swift">Банковский перевод</a> (SWIFT) оплата по договору.
 						</li>
 						<li>
-							<a href="#transfer-card">Банковские карты</a> (UzCard, HUMO, VISA,
-							MasterCard)
+							<a href="#transfer-card">Банковские карты</a> (UzCard, HUMO, VISA, MasterCard)
 						</li>
 						<li>
-							<a href="#transfer-paybox">Международные банковские карты</a>{" "}
-							VISA, MasterCard (PayBox.Money)
+							<a href="#transfer-paybox">Международные банковские карты</a> VISA, MasterCard (PayBox.Money)
 						</li>
 						<li>
 							<a href="#transfer-paynet">PAYNET.uz</a>
@@ -501,10 +460,9 @@ export default function Payment({ language }) {
 						</li>
 					</ul>
 					<p>
-						Для зачисления средств на баланс аккаунта необходимо создать счёт и
-						оплатить его. Откройте Личный кабинет, перейдите вверху балансовые
-						счет - выберите "Пополнить", введите "Сумму пополнения" нажмите
-						кнопку "Перейти к оплате счета".
+						Для зачисления средств на баланс аккаунта необходимо создать счёт и оплатить его. Откройте Личный кабинет,
+						перейдите вверху балансовые счет - выберите "Пополнить", введите "Сумму пополнения" нажмите кнопку "Перейти
+						к оплате счета".
 					</p>
 				</>
 			),
@@ -512,16 +470,13 @@ export default function Payment({ language }) {
 				<>
 					<ul>
 						<li>
-							<a href="#transfer-swift">Bank o'tkazmasi</a> (SWIFT) To'lovi
-							asosida.
+							<a href="#transfer-swift">Bank o'tkazmasi</a> (SWIFT) To'lovi asosida.
 						</li>
 						<li>
-							<a href="#transfer-card">Bank kartasi</a> (UzCard, HUMO, VISA,
-							MasterCard)
+							<a href="#transfer-card">Bank kartasi</a> (UzCard, HUMO, VISA, MasterCard)
 						</li>
 						<li>
-							<a href="#transfer-paybox">Halqaro o'tkazmalar</a> VISA,
-							MasterCard (PayBox.Money)
+							<a href="#transfer-paybox">Halqaro o'tkazmalar</a> VISA, MasterCard (PayBox.Money)
 						</li>
 						<li>
 							<a href="#transfer-paynet">PAYNET.uz</a>
@@ -543,11 +498,9 @@ export default function Payment({ language }) {
 						</li>
 					</ul>
 					<p>
-						Hisob balansiga pul mablag'larini kiritish uchun siz hisob
-						yaratishingiz kerak va buning uchun to'lang. Shaxsiy hisobingizni
-						oching, tepaga o'ting balans hisobi - "To'ldirish" -ni tanlang,
-						"To'ldirish summasi" ni kiriting. "To'lov-fakturaga o'tish"
-						tugmasini bosing.
+						Hisob balansiga pul mablag'larini kiritish uchun siz hisob yaratishingiz kerak va buning uchun to'lang.
+						Shaxsiy hisobingizni oching, tepaga o'ting balans hisobi - "To'ldirish" -ni tanlang, "To'ldirish summasi" ni
+						kiriting. "To'lov-fakturaga o'tish" tugmasini bosing.
 					</p>
 				</>
 			),
@@ -564,9 +517,7 @@ export default function Payment({ language }) {
 
 			<Container headTitle={langData.headTitle[language]}>
 				<div className={styles.payment__info}>
-					<div className={styles.payment__info__content}>
-						{langData.payment[language]}
-					</div>
+					<div className={styles.payment__info__content}>{langData.payment[language]}</div>
 					<div className={styles.payment__info__img}>
 						<img src="/payment-img.png" />
 					</div>

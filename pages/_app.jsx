@@ -8,11 +8,7 @@ import "../styles/globals.scss"
 
 function MyApp({ Component, pageProps }) {
 	const router = useRouter(),
-		language = router.asPath.includes("/uz")
-			? "uz"
-			: router.asPath.includes("/en")
-			? "en"
-			: "ru"
+		language = router.asPath.includes("/uz") ? "uz" : router.asPath.includes("/en") ? "en" : "ru"
 
 	return (
 		<>
@@ -20,6 +16,8 @@ function MyApp({ Component, pageProps }) {
 				<title>
 					{language == "uz"
 						? "Airnet.uz - TAS-IXda virtual xosting, UZ zonasida domen, VDS/VPS - serverlar, Toshkent, O'zbekiston"
+						: language == "en"
+						? "Airnet.uz - Virtual hosting in TAS-IX, domain in UZ zone, VDS/VPS - servers, Tashkent, Uzbekistan"
 						: "Airnet.uz - Виртуальный хостинг в TAS-IX, домена в зоне UZ, VDS/VPS - сервера, Ташкент,	Узбекистане"}
 				</title>
 				<meta
@@ -27,6 +25,8 @@ function MyApp({ Component, pageProps }) {
 					content={
 						language == "uz"
 							? "Virtual xosting, Toshkentda xosting, qayta sotish hosting, arzon VDS, VPS serverlar, Toshkentda VDS, virtual serverlar, ajratilgan serverlar, domen nomlari"
+							: language == "en"
+							? "Virtual hosting, hosting in Tashkent, reselling hosting, cheap VDS, VPS servers, VDS in Tashkent, virtual servers, dedicated servers, domain names"
 							: "Виртуальный хостинг, хостинг в Ташкенте, реселлинг хостинга, дешевые VDS, VPS-сервера, VDS в Ташкенте, виртуальные сервера, выделенные сервера, доменные имена"
 					}
 				/>
@@ -65,11 +65,7 @@ function MyApp({ Component, pageProps }) {
 				></script>
 				<noscript>
 					<div>
-						<img
-							src="https://mc.yandex.ru/watch/50412993"
-							style={{ position: "absolute", left: "-9999px" }}
-							alt=""
-						/>
+						<img src="https://mc.yandex.ru/watch/50412993" style={{ position: "absolute", left: "-9999px" }} alt="" />
 					</div>
 				</noscript>
 
@@ -131,13 +127,7 @@ function MyApp({ Component, pageProps }) {
 								openingHoursSpecification: [
 									{
 										"@type": "OpeningHoursSpecification",
-										dayOfWeek: [
-											"Monday",
-											"Tuesday",
-											"Wednesday",
-											"Thursday",
-											"Friday",
-										],
+										dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
 										opens: "08:00",
 										closes: "20:00",
 									},
@@ -161,10 +151,7 @@ function MyApp({ Component, pageProps }) {
             height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
 				}}
 			></noscript>
-			<link
-				href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
-				rel="stylesheet"
-			/>
+			<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
 			<Header language={language} />
 			<div className="app">
 				<Component {...pageProps} language={language} />

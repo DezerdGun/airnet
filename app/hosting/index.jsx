@@ -56,8 +56,7 @@ export default function Hosting({ language }) {
 			ru: (
 				<>
 					<p>
-						<strong>Безлимитный трафик</strong> — никаких ограничений на
-						соотношение входящего / исходящего трафика.
+						<strong>Безлимитный трафик</strong> — никаких ограничений на соотношение входящего / исходящего трафика.
 					</p>
 					<p>
 						<strong>Скорость в Интернет</strong> — 100 Mbps
@@ -66,23 +65,20 @@ export default function Hosting({ language }) {
 						<strong>Скорость в TAS-IX</strong> — 1 Gbps
 					</p>
 					<p>
-						<strong>Безлимитные FTP-аккаунты</strong> — для своего удобства
-						работы с файлами, Вы можете создавать неограниченное количество
-						FTP-аккаунтов, например, для каждого проекта - отдельный доступ.
+						<strong>Безлимитные FTP-аккаунты</strong> — для своего удобства работы с файлами, Вы можете создавать
+						неограниченное количество FTP-аккаунтов, например, для каждого проекта - отдельный доступ.
 					</p>
 					<p>
-						<strong>Без жестких ограничений ресурсов</strong> — у нас нет
-						жестких лимитов аппаратных ресурсов. Если вдруг на Ваш сайт придет
-						большое количество человек, то все они увидят Ваш сайт.
-						Гарантировано посещение - 2500 человек в сутки.
+						<strong>Без жестких ограничений ресурсов</strong> — у нас нет жестких лимитов аппаратных ресурсов. Если
+						вдруг на Ваш сайт придет большое количество человек, то все они увидят Ваш сайт. Гарантировано посещение -
+						2500 человек в сутки.
 					</p>
 				</>
 			),
 			uz: (
 				<>
 					<p>
-						<strong>Cheksiz trafik</strong> - kiruvchi / kirish nisbatida
-						cheklovlar yo'q. chiquvchi trafik.
+						<strong>Cheksiz trafik</strong> - kiruvchi / kirish nisbatida cheklovlar yo'q. chiquvchi trafik.
 					</p>
 					<p>
 						<strong>Internet tezligi</strong> — 100 Mbit/s
@@ -91,23 +87,20 @@ export default function Hosting({ language }) {
 						<strong>TAS-IX da tezlik</strong> — 1 Gbit/s
 					</p>
 					<p>
-						<strong>Cheksiz FTP hisoblari</strong> — fayllar bilan ishlash
-						qulayligi uchun siz cheksiz miqdordagi FTP hisoblarini yaratishingiz
-						mumkin, masalan, har bir loyiha uchun - alohida kirish.
+						<strong>Cheksiz FTP hisoblari</strong> — fayllar bilan ishlash qulayligi uchun siz cheksiz miqdordagi FTP
+						hisoblarini yaratishingiz mumkin, masalan, har bir loyiha uchun - alohida kirish.
 					</p>
 					<p>
-						<strong>Qattiq resurs cheklovlari yo'q</strong> - bizda apparat
-						uchun qattiq cheklovlar yo'q resurslar. Agar to'satdan saytingizga
-						juda ko'p odamlar kirsa, ular hammasi ko'radi Sizning veb-saytingiz.
-						Kafolatlangan tashrif - kuniga 2500 kishi.
+						<strong>Qattiq resurs cheklovlari yo'q</strong> - bizda apparat uchun qattiq cheklovlar yo'q resurslar. Agar
+						to'satdan saytingizga juda ko'p odamlar kirsa, ular hammasi ko'radi Sizning veb-saytingiz. Kafolatlangan
+						tashrif - kuniga 2500 kishi.
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						<strong>Unlimited traffic</strong> - no limits on the ratio of
-						incoming / outgoing traffic.
+						<strong>Unlimited traffic</strong> - no limits on the ratio of incoming / outgoing traffic.
 					</p>
 					<p>
 						<strong>Internet speed</strong> — 100 Mbps
@@ -116,15 +109,13 @@ export default function Hosting({ language }) {
 						<strong>Speed in TAS-IX</strong> — 1 Gbps
 					</p>
 					<p>
-						<strong>Unlimited FTP accounts</strong> — for your convenience of
-						working with files, you you can create an unlimited number of FTP
-						accounts, for example, for each project - separate access.
+						<strong>Unlimited FTP accounts</strong> — for your convenience of working with files, you you can create an
+						unlimited number of FTP accounts, for example, for each project - separate access.
 					</p>
 					<p>
-						<strong>No hard resource limits</strong> - we don't have hard limits
-						on hardware resources. If suddenly a large number of people come to
-						your site, then they will all see Your website. Guaranteed visit -
-						2500 people per day.
+						<strong>No hard resource limits</strong> - we don't have hard limits on hardware resources. If suddenly a
+						large number of people come to your site, then they will all see Your website. Guaranteed visit - 2500
+						people per day.
 					</p>
 				</>
 			),
@@ -171,6 +162,7 @@ export default function Hosting({ language }) {
 		month: {
 			ru: "мес.",
 			uz: "oy",
+			en: "mon.",
 		},
 	}
 
@@ -235,13 +227,7 @@ export default function Hosting({ language }) {
 			{ ru: "Файловые менеджеры", uz: "Fayl menejerlari", en: "File Managers" },
 		],
 		checkedCircle = (
-			<svg
-				width="24"
-				height="24"
-				viewBox="0 0 24 24"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-			>
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
 					fillRule="evenodd"
 					clipRule="evenodd"
@@ -257,14 +243,12 @@ export default function Hosting({ language }) {
 				ssd: 250,
 				sites: 5,
 				present: "",
-				orderLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=32",
+				orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=32",
 				month1: "10 000",
 				month3: "30 000",
 				month6: "57 000",
 				month12: "108 000",
-				buyLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=1",
+				buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=1",
 			},
 			{
 				title: "Простой",
@@ -272,14 +256,12 @@ export default function Hosting({ language }) {
 				ssd: 500,
 				sites: 10,
 				present: "",
-				orderLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=31",
+				orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=31",
 				month1: "15 000",
 				month3: "45 000",
 				month6: "85 500",
 				month12: "162 000",
-				buyLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=2",
+				buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=2",
 			},
 			{
 				title: "Стандарт",
@@ -287,14 +269,12 @@ export default function Hosting({ language }) {
 				ssd: "1 000",
 				sites: 15,
 				present: "",
-				orderLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=33",
+				orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=33",
 				month1: "25 000",
 				month3: "75 000",
 				month6: "142 500",
 				month12: "270 000",
-				buyLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=3",
+				buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=3",
 			},
 			{
 				title: "Доступный",
@@ -302,14 +282,12 @@ export default function Hosting({ language }) {
 				ssd: "3 000",
 				sites: 20,
 				present: "",
-				orderLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=34",
+				orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=34",
 				month1: "60 000",
 				month3: "180 000",
 				month6: "342 000",
 				month12: "648 000",
-				buyLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=4",
+				buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=4",
 			},
 		],
 		table2 = [
@@ -319,14 +297,12 @@ export default function Hosting({ language }) {
 				ssd: "5 000",
 				sites: "∞",
 				present: "(2шт)",
-				orderLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=37",
+				orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=37",
 				month1: "90 000",
 				month3: "270 000",
 				month6: "513 000",
 				month12: "972 000",
-				buyLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=36",
+				buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=36",
 			},
 			{
 				title: "Выгодный",
@@ -334,14 +310,12 @@ export default function Hosting({ language }) {
 				ssd: "10 000",
 				sites: "∞",
 				present: "(2шт)",
-				orderLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38",
+				orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38",
 				month1: "150 000",
 				month3: "450 000",
 				month6: "855 000",
 				month12: "1 620 000",
-				buyLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38",
+				buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=38",
 			},
 			{
 				title: "Офис",
@@ -349,14 +323,12 @@ export default function Hosting({ language }) {
 				ssd: "15 000",
 				sites: "∞",
 				present: "(2шт)",
-				orderLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39",
+				orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39",
 				month1: "250 000",
 				month3: "750 000",
 				month6: "1 425 000",
 				month12: "2 700 000",
-				buyLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39",
+				buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=39",
 			},
 			{
 				title: "Корпоративный",
@@ -364,14 +336,12 @@ export default function Hosting({ language }) {
 				ssd: "20 000",
 				sites: "∞",
 				present: "(2шт)",
-				orderLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40",
+				orderLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40",
 				month1: "350 000",
 				month3: "1 050 000",
 				month6: "1 995 000",
 				month12: "3 780 000",
-				buyLink:
-					"https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40",
+				buyLink: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=40",
 			},
 		],
 		tarif2 = [
@@ -617,40 +587,23 @@ export default function Hosting({ language }) {
 				description: {
 					ru: (
 						<>
-							<p>
-								Пользовательский аккаунт открывается сразу после подачи заявки.
-							</p>
+							<p>Пользовательский аккаунт открывается сразу после подачи заявки.</p>
 
-							<p>
-								Сразу после произведения оплаты, вы можете начать сразу же
-								пользоваться услугой.
-							</p>
+							<p>Сразу после произведения оплаты, вы можете начать сразу же пользоваться услугой.</p>
 						</>
 					),
 					uz: (
 						<>
-							<p>
-								Foydalanuvchi hisobi ariza topshirilgandan so‘ng darhol
-								ochiladi.
-							</p>
+							<p>Foydalanuvchi hisobi ariza topshirilgandan so‘ng darhol ochiladi.</p>
 
-							<p>
-								Toʻlovni amalga oshirganingizdan soʻng darhol xizmatdan
-								foydalanishni boshlashingiz mumkin.
-							</p>
+							<p>Toʻlovni amalga oshirganingizdan soʻng darhol xizmatdan foydalanishni boshlashingiz mumkin.</p>
 						</>
 					),
 					en: (
 						<>
-							<p>
-								The user account is opened immediately after the application is
-								submitted.
-							</p>
+							<p>The user account is opened immediately after the application is submitted.</p>
 
-							<p>
-								Immediately after making the payment, you can start using the
-								service immediately.
-							</p>
+							<p>Immediately after making the payment, you can start using the service immediately.</p>
 						</>
 					),
 				},
@@ -671,10 +624,7 @@ export default function Hosting({ language }) {
 
 	return (
 		<>
-			<SEO
-				title={langData.seoTitle[language]}
-				desc={langData.seoDesc[language]}
-			/>
+			<SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
 			<div className={st.hosting}>
 				{/* <Container
 					className="mt-0"
@@ -706,11 +656,7 @@ export default function Hosting({ language }) {
 						// bgImg={'/servers-2.jpg'}
 						headTitle={langData.tarifTitle[language]}
 						description={<p>{langData.tarifDesc[language]}</p>}
-						endText={
-							<p className="text-white text-center mt-2">
-								{langData.tarifEnd[language]}
-							</p>
-						}
+						endText={<p className="text-white text-center mt-2">{langData.tarifEnd[language]}</p>}
 					>
 						<Swiper
 							cssMode={true}
@@ -739,13 +685,7 @@ export default function Hosting({ language }) {
 							{tarif2.map((item, index) => (
 								<SwiperSlide key={item.title}>
 									<div className="w-95">
-										<TarifCard2
-											index={index}
-											tarif={item}
-											show={show}
-											setShow={setShow}
-											language={language}
-										/>
+										<TarifCard2 index={index} tarif={item} show={show} setShow={setShow} language={language} />
 									</div>
 								</SwiperSlide>
 							))}
@@ -756,10 +696,7 @@ export default function Hosting({ language }) {
 				<Container title={langData.confTitle[language]} clNTitle="text-center">
 					<div className={st.hosting__block}>
 						{block.map((item) => (
-							<div
-								key={item.title[language]}
-								className={st.hosting__block__item}
-							>
+							<div key={item.title[language]} className={st.hosting__block__item}>
 								<div className={st.hosting__block__item__img}>
 									<img src={item.img} />
 								</div>
@@ -778,9 +715,7 @@ export default function Hosting({ language }) {
 						// style={{ background: "url('/hosting/server.jpg') no-repeat" }}
 					>
 						<div className={st.hosting__plan}>
-							<div className={st.hosting__plan__content}>
-								{langData.allTarifsText[language]}
-							</div>
+							<div className={st.hosting__plan__content}>{langData.allTarifsText[language]}</div>
 							<div className={st.hosting__plan__img}>
 								<img src="/hosting/unlim.png" />
 							</div>
@@ -802,11 +737,7 @@ export default function Hosting({ language }) {
 					</div>
 				</Container>
 
-				<FAQ
-					faq={faq}
-					title={langData.faqTitle[language]}
-					language={language}
-				/>
+				<FAQ faq={faq} title={langData.faqTitle[language]} language={language} />
 				<Partners language={language} />
 			</div>
 		</>

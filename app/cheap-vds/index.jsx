@@ -19,34 +19,42 @@ export default function CheapVds({ language }) {
 		seoTitle: {
 			ru: "Бюджетные VDS/VPS | Хостинг TAS-IX в Ташкенте, Узбекистане",
 			uz: "Byudjet VDS/VPS | O'zbekiston, Toshkent shahrida TAS-IX mezbonligi",
+			en: "Budget VDS/VPS | Hosting TAS-IX in Tashkent, Uzbekistan",
 		},
 		descTitle: {
 			ru: "Дешевые и бесплатные VDS/VPS на быстрых SSD-дисках в сети TAS-IX в Ташкенте",
 			uz: "Toshkent shahridagi TAS-IX tarmog'ida tezkor SSD disklarida arzon va bepul VDS/VPS",
+			en: "Cheap and free VDS/VPS on fast SSD drives in the TAS-IX network in Tashkent",
 		},
 		headTitle: {
 			ru: "Бюджетные VDS/VPS — Самые дешевые сервера в Ташкенте",
 			uz: "Byudjet VDS/VPS - Toshkentdagi eng arzon serverlar",
+			en: "Budget VDS / VPS - The cheapest servers in Tashkent",
 		},
 		description: {
 			ru: "Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости 1 Gbps",
 			uz: "Bizning serverlarimiz O'zbekiston hududida (Toshkent) TAS-IX tarmog'ida joylashgan tezligi 1 Gbps",
+			en: "Our servers are located on the territory of Uzbekistan (Tashkent), in the TAS-IX network at a speed of 1 Gbps",
 		},
 		endText1: {
 			ru: "Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2-х рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации оборудования после оплаты - 1-2 часа. Мы делаем всё возможное, чтобы уменьшить время ожидания.",
 			uz: "Buyurtma va to'lovni amalga oshirgandan so'ng serverni o'rnatish vaqti 30 daqiqadan boshlanadi zarur serverlar va yuk mavjudligiga qarab 2 ish kunigacha texnik xodimlar. To'lovdan keyin uskunani faollashtirishning o'rtacha vaqti - 1-2 soat. Biz kutish vaqtini kamaytirish uchun qo'limizdan kelganini qilamiz.",
+			en: "Server installation time, after placing an order and payment, is from 30 minutes to 2 business days, depending on the availability of the necessary servers and the workload of technical personnel. The average equipment activation time after payment is 1-2 hours. We do our best to to reduce waiting time.",
 		},
 		endText2: {
 			ru: "Срок действия услуги начнется с момента её активации.",
 			uz: "Xizmatning amal qilish muddati u yoqilgan paytdan boshlanadi.",
+			en: "The service will start from the moment it is activated.",
 		},
 		headTitle: {
 			ru: "Бюджетные VDS/VPS — Самые дешевые сервера в Ташкенте",
 			uz: "Hamyonbop VDS/VPS - Toshkentdagi eng arzon serverlar",
+			en: "Budget VDS / VPS - The cheapest servers in Tashkent",
 		},
 		month: {
 			ru: "мес.",
 			uz: "oy",
+			en: "mon.",
 		},
 	}
 
@@ -55,18 +63,21 @@ export default function CheapVds({ language }) {
 				title: {
 					ru: "Хостинг файлов и картинок",
 					uz: "Fayllar va rasmlar serveri",
+					en: "File and image hosting",
 				},
 				description: {
 					ru: "Используйте 20 Gb жесткого диска для хранения данных.",
 					uz: "Ma'lumotlarni saqlash uchun 20 Gb qattiq diskdan foydalaning",
+					en: "Use 20 Gb hard drive for data storage.",
 				},
 				img: "/server.png",
 			},
 			{
-				title: { ru: "Для обучения и тестов", uz: "O'qish va test uchun" },
+				title: { ru: "Для обучения и тестов", uz: "O'qish va test uchun", en: "For training and tests" },
 				description: {
 					ru: "Идеально подходит для работы в командной строке и знакомства с системой Linux.",
 					uz: "Buyruqlar satrida ishlash va Linux tizimi bilan tanishish uchun ideal.",
+					en: "Perfect for command line work and getting to know the Linux system.",
 				},
 				img: "/lesson.png",
 			},
@@ -74,25 +85,28 @@ export default function CheapVds({ language }) {
 				title: {
 					ru: "Для нетребовательных задач",
 					uz: "Zarur bo'lmagan topshiriqlar uchun",
+					en: "For undemanding tasks",
 				},
 				description: {
 					ru: "Вы можете организовать почтовый сервис или DNS-кластер.",
 					uz: "Siz pochta xizmati yoki DNS klasterini tashkil qilishingiz mumkin.",
+					en: "You can set up a mail service or a DNS cluster.",
 				},
 				img: "/database.png",
 			},
 			{
-				title: { ru: "Запрещается", uz: "Taqiqlanadi" },
+				title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
 				description: {
 					ru: "Не предоставляется для игровых серверов и видео-контент сайтов!",
 					uz: "O'yin serverlari va video kontent saytlari uchun mavjud emas!",
+					en: "Not available for game servers and video content sites!",
 				},
 				img: "/warning.png",
 			},
 		],
 		tarif = [
 			{
-				title: { ru: "Platinum", uz: "Platinum", en: "" },
+				title: { ru: "Platinum", uz: "Platinum", en: "Platinum" },
 				// price: '150 000',
 				prices: [
 					{
@@ -123,7 +137,7 @@ export default function CheapVds({ language }) {
 				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=13",
 			},
 			{
-				title: { ru: "Strong", uz: "Strong", en: "" },
+				title: { ru: "Strong", uz: "Strong", en: "Strong" },
 				// price: '200 000',
 				prices: [
 					{
@@ -154,7 +168,7 @@ export default function CheapVds({ language }) {
 				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14",
 			},
 			{
-				title: { ru: "VIP", uz: "VIP", en: "" },
+				title: { ru: "VIP", uz: "VIP", en: "VIP" },
 				// price: '250 000',
 				prices: [
 					{
@@ -185,7 +199,7 @@ export default function CheapVds({ language }) {
 				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=15",
 			},
 			{
-				title: { ru: "VIP+", uz: "VIP+", en: "" },
+				title: { ru: "VIP+", uz: "VIP+", en: "VIP+" },
 				// price: '300 000',
 				prices: [
 					{
@@ -231,10 +245,7 @@ export default function CheapVds({ language }) {
 
 	return (
 		<>
-			<SEO
-				title={langData.seoTitle[language]}
-				desc={langData.descTitle[language]}
-			/>
+			<SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
 			<div className={st.cheapVds}>
 				<div className={"bg_gray"}>
 					<TarifMaket
@@ -275,13 +286,7 @@ export default function CheapVds({ language }) {
 							{tarif.map((item, index) => (
 								<SwiperSlide key={item.title}>
 									<div className="w-95">
-										<TarifCard
-											index={index}
-											tarif={item}
-											show={show}
-											setShow={setShow}
-											language={language}
-										/>
+										<TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} />
 									</div>
 								</SwiperSlide>
 							))}

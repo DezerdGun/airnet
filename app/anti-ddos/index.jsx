@@ -27,7 +27,7 @@ export default function AntiDDos({ language }) {
 			img: "/notification.png",
 		},
 		{
-			title: { ru: "Потеря клиентов", uz: "Mijozlorni yo'qotish" },
+			title: { ru: "Потеря клиентов", uz: "Mijozlorni yo'qotish", en: "Losing Customers" },
 			description: {
 				ru: "Клиент не будет ждать, пока сайт заработает и отправится рассматривать предложения конкурентов.",
 				uz: "Mijoz sayt ishlashini kutmaydi va raqobatchilarning takliflarini ko'rib chiqishga boradi.",
@@ -71,7 +71,7 @@ export default function AntiDDos({ language }) {
 		seoTitle: {
 			ru: "Защита серверов от DDoS-атак | Airnet",
 			uz: "DDoS hujumidan serverlarni himoya qilish| Airnet",
-			en: "",
+			en: "Protecting servers from DDoS attacks | Airnet",
 		},
 		seoDesc: {
 			ru: "Описание защиты от DDoS-атак VDS и Выделенных серверов у Airnet",
@@ -146,30 +146,27 @@ export default function AntiDDos({ language }) {
 		howDo: {
 			ru: "Для защиты серверов и сервисов от атак предлагаем решение на основе технологии VAC – эксклюзивное сочетание методов для:",
 			uz: "Serverlar va xizmatlarni hujumlardan himoya qilish uchun biz VAC texnologiyasiga asoslangan yechimni taklif qilamiz - bu usullarning eksklyuziv kombinatsiyasi:",
-			en: "",
+			en: "To protect servers and services from attacks, we offer a solution based on VAC technology - an exclusive combination of methods for:",
 		},
 		do1: {
 			ru: "Высокоскоростного анализа всех пакетов в режиме реального времени",
 			uz: "Barcha paketlarni real vaqtda yuqori tezlikda tahlil qilish",
-			en: "",
+			en: "High-speed real-time analysis of all packets",
 		},
 		do2: {
 			ru: "Отсеивания входящего трафика вашего сервера",
 			uz: "Qanday himoya qilishServeringizdan kiruvchi trafikni filtrlash",
-			en: "",
+			en: "Filtering incoming traffic from your server",
 		},
 		do3: {
 			ru: "Смягчения негативных последствий, то есть выделения всех нелегитимных IP-пакетов и пропускания легитимных",
 			uz: "Salbiy oqibatlarni yumshatish, ya'ni barcha noqonuniy IP-paketlarni taqsimlash va qonuniy o'tish.",
-			en: "",
+			en: "Mitigation of negative consequences, that is, the allocation of all illegitimate IP packets and the passage of legitimate",
 		},
 	}
 	return (
 		<>
-			<SEO
-				title={langData.seoTitle[language]}
-				desc={langData.seoDesc[language]}
-			/>
+			<SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
 
 			<Container headTitle={langData.headTitle[language]}>
 				<div className={st.anti_ddos__info}>
@@ -188,22 +185,13 @@ export default function AntiDDos({ language }) {
 			</Container>
 
 			{/* <Container headTitle="Защита серверов от DDoS-атак" clNTitle="mb-0"></Container> */}
-			<WhyBlock
-				title={langData.title[language]}
-				content={content}
-				language={language}
-			/>
+			<WhyBlock title={langData.title[language]} content={content} language={language} />
 			<Container className="pt-2">
 				<hr />
 				<h3>{langData.DDoSAtack[language]}</h3>
 				<p>{langData.chanceAtack[language]}</p>
 				<div className="text-center">
-					<Image
-						src="/anti-ddos/without-protection.png"
-						width={640}
-						height={167}
-						className="text-center"
-					/>
+					<Image src="/anti-ddos/without-protection.png" width={640} height={167} className="text-center" />
 				</div>
 				<h3>{langData.aboutAtack[language]}</h3>
 				<p>{langData.atacks[language]}</p>
@@ -214,12 +202,7 @@ export default function AntiDDos({ language }) {
 				</ul>
 
 				<div className="text-center">
-					<Image
-						src="/anti-ddos/network.jpg"
-						width={800}
-						height={640}
-						className="text-center"
-					/>
+					<Image src="/anti-ddos/network.jpg" width={800} height={640} className="text-center" />
 				</div>
 
 				<h3>{langData.howIt[language]}</h3>
@@ -233,7 +216,7 @@ export default function AntiDDos({ language }) {
 					<Image src="/anti-ddos/protected.png" width={640} height={216} />
 				</div>
 			</Container>
-			<Partners />
+			<Partners language={language} />
 		</>
 	)
 }

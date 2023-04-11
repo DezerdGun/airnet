@@ -110,20 +110,10 @@ export const RegDomainBlock = ({ language }) => {
 	return (
 		<>
 			<form onSubmit={checkDomain} className={st.regDomain__block}>
-				www.{" "}
-				<input
-					id="domain"
-					placeholder={langData.inputPlaceholder[language]}
-					required
-				/>
+				www. <input id="domain" placeholder={langData.inputPlaceholder[language]} required />
 				<button type="submit" disabled={loading}>
 					{langData.check[language]}{" "}
-					{loading && (
-						<div
-							class="spinner-border text-light spinner-border-sm"
-							role="status"
-						></div>
-					)}
+					{loading && <div class="spinner-border text-light spinner-border-sm" role="status"></div>}
 				</button>
 			</form>
 
@@ -143,9 +133,7 @@ export const RegDomainBlock = ({ language }) => {
 						</span>
 					) : (
 						<>
-							<span className={st.regDomain__text__green}>
-								{langData.domenFree[language]}
-							</span>{" "}
+							<span className={st.regDomain__text__green}>{langData.domenFree[language]}</span>{" "}
 							{language == "uz" ? (
 								<>
 									Buyurtma qilish uchun{" "}
@@ -156,7 +144,7 @@ export const RegDomainBlock = ({ language }) => {
 									</a>{" "}
 									bosing
 								</>
-							) : language == "en " ? (
+							) : language == "en" ? (
 								<>
 									Click{" "}
 									<a
@@ -182,21 +170,11 @@ export const RegDomainBlock = ({ language }) => {
 				</p>
 			)}
 
-			<p className={st.regDomain__price}>
-				.UZ - 20.000 {langData.sumVg[language]}
-			</p>
-			<p className={st.regDomain__price}>
-				.RU - 65.000 {langData.sumVg[language]}
-			</p>
-			<p className={st.regDomain__price}>
-				.COM - 150.000 {langData.sumVg[language]}
-			</p>
-			<p className={st.regDomain__price}>
-				.NET - 150.000 {langData.sumVg[language]}
-			</p>
-			<p className={st.regDomain__price}>
-				.ORG - 200.000 {langData.sumVg[language]}
-			</p>
+			<p className={st.regDomain__price}>.UZ - 20.000 {langData.sumVg[language]}</p>
+			<p className={st.regDomain__price}>.RU - 65.000 {langData.sumVg[language]}</p>
+			<p className={st.regDomain__price}>.COM - 150.000 {langData.sumVg[language]}</p>
+			<p className={st.regDomain__price}>.NET - 150.000 {langData.sumVg[language]}</p>
+			<p className={st.regDomain__price}>.ORG - 200.000 {langData.sumVg[language]}</p>
 			{/* <p className={st.regDomain__endText}>Домен в зоне UZ c хостингом - Бесплатно</p> */}
 
 			<div className={`${st.modal} ${modal ? st.modal__active : ""}`}>
@@ -324,11 +302,7 @@ export const RegDomainBlock = ({ language }) => {
 						</tr> */}
 					</table>
 				</div>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 320 512"
-					onClick={() => setModal(false)}
-				>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" onClick={() => setModal(false)}>
 					<path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
 				</svg>
 			</div>
