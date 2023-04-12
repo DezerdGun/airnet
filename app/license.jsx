@@ -30,19 +30,18 @@ export default function License({ language }) {
 		seoT: {
 			ru: "Лицензия на предоставление услуг хостинга | Airnet",
 			uz: "Xosting xizmatlari litsenziyasi | Airnet",
+			en: "License to provide hosting services | Airnet",
 		},
 		headTitle: {
 			ru: "Лицензии и сертификаты на предоставление услуг хостинга",
 			uz: "Xosting xizmatlarini ko'rsatish uchun litsenziyalar va sertifikatlar",
+			en: "Licenses and certificates for the provision of hosting services",
 		},
 	}
 	return (
 		<>
 			<SEO title={langDate.seoT[language]} desc="" />
-			<Container
-				className={"text-center"}
-				headTitle={langDate.headTitle[language]}
-			>
+			<Container className={"text-center"} headTitle={langDate.headTitle[language]}>
 				<hr />
 
 				<Swiper

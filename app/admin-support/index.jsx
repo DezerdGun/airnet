@@ -161,7 +161,7 @@ export default function AdminSupport({ language }) {
 					<span>
 						сум
 						<hr />
-						мес
+						мес.
 					</span>
 				</>
 			),
@@ -181,7 +181,7 @@ export default function AdminSupport({ language }) {
 					<span>
 						sum
 						<hr />
-						months
+						mon.
 					</span>
 				</>
 			),

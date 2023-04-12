@@ -67,9 +67,7 @@ export default function About({ language }) {
 					</Link>
 					, va yana{" "}
 					<Link href={checkLang(language) + "/domains"}>
-						<a className="text-decoration-underline">
-							domenni ro'yxatdan o'tkazish
-						</a>
+						<a className="text-decoration-underline">domenni ro'yxatdan o'tkazish</a>
 					</Link>
 					.
 				</>
@@ -129,10 +127,7 @@ export default function About({ language }) {
 
 	return (
 		<>
-			<SEO
-				title={langData.seoTitle[language]}
-				desc={langData.seoDesc[language]}
-			/>
+			<SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
 			<Container headTitle={langData.title[language]}>
 				<hr />
 				<p>{langData.text1[language]}</p>
@@ -142,7 +137,7 @@ export default function About({ language }) {
 				<p>{langData.text5[language]}</p>
 				<p>{langData.text6[language]}</p>
 			</Container>
-			<Partners />
+			<Partners language={language} />
 		</>
 	)
 }

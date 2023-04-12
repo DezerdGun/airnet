@@ -24,38 +24,47 @@ export default function BigVDS({ language }) {
 		seoT: {
 			ru: "Высокопроизводительные сервера | Хостинг TAS-IX в Ташкенте, Узбекистане",
 			uz: "Yuqori samarali serverlar | O'zbekiston, Toshkent shahrida TAS-IX mezbonligi",
+			en: "High performance servers | Hosting TAS-IX in Tashkent, Uzbekistan",
 		},
 		descT: {
 			ru: "Высокопроизводительный виртуальный хостинг, Мощные VDS, VPS-сервера, VDS в Ташкенте, виртуальные сервера, выделенные сервера в Узбекистане",
 			uz: "Yuqori samarali virtual xosting, Kuchli VDS, VPS serverlar, Toshkentdagi VDS, virtual serverlar, O'zbekistonda ajratilgan serverlar",
+			en: "High performance virtual hosting, Powerful VDS, VPS servers, VDS in Tashkent, virtual servers, dedicated servers in Uzbekistan",
 		},
 		headT1: {
-			ru: <>Мощные VDS/VPS — сервера</>,
-			uz: <>Kuchli VDS/VPS - serveri</>,
+			ru: "Мощные VDS/VPS — сервера",
+			uz: "Kuchli VDS/VPS - serveri",
+			en: "Powerful VDS/VPS servers",
 		},
 		headT2: {
-			ru: <>на базе VMware виртуализации с быстрыми SSD-дисками</>,
-			uz: <>Tez SSD drayvlar bilan VMware-ga asoslangan virtualizatsiya</>,
+			ru: "на базе VMware виртуализации с быстрыми SSD-дисками",
+			uz: "tez SSD drayvlar bilan VMware-ga asoslangan virtualizatsiya",
+			en: "VMware based virtualization with fast SSDs",
 		},
 		description: {
 			ru: "Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости 1 Gbps",
 			uz: "Bizning serverlarimiz O'zbekiston hududida (Toshkent) TAS-IX tarmog'ida joylashgan tezligi 1 Gbps ",
+			en: "Our servers are located on the territory of Uzbekistan (Tashkent), in the TAS-IX network at a speed of 1 Gbps",
 		},
 		endText1: {
 			ru: "Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2-х рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации оборудования после оплаты - 1-2 часа. Мы делаем всё возможное, чтобы уменьшить время ожидания.",
 			uz: "Buyurtma va to'lovni amalga oshirgandan so'ng serverni o'rnatish vaqti 30 daqiqadan boshlanadi zarur serverlar va yuk mavjudligiga qarab 2 ish kunigacha texnik xodimlar. To'lovdan keyin uskunani faollashtirishning o'rtacha vaqti - 1-2 soat. Biz kutish vaqtini kamaytirish uchun qo'limizdan kelganini qilamiz. ",
+			en: "Server installation time, after placing an order and payment, is from 30 minutes to 2 business days, depending on the availability of the necessary servers and the workload of technical personnel. The average equipment activation time after payment is 1-2 hours. We do our best to to reduce waiting time.",
 		},
 		endText2: {
 			ru: "Срок действия услуги начнется с момента её активации.",
 			uz: "Xizmatning amal qilish muddati u yoqilgan paytdan boshlanadi.",
+			en: "The service will start from the moment it is activated.",
 		},
 		cT: {
 			ru: "Стоимость международного интернет-канала без ограничения трафика",
 			uz: "Trafik cheklovlarisiz xalqaro Internet-kanalning narxi",
+			en: "The cost of an international Internet channel without traffic restrictions",
 		},
 		dT: {
 			ru: "Внешний трафик и трафик в сети «TAS-IX» не тарифицируется.",
 			uz: "TAS-IX tarmog'idagi tashqi trafik va trafik hisoblanmaydi. ",
+			en: "External traffic and traffic in the TAS-IX network is not charged.",
 		},
 		table: {
 			ru: (
@@ -74,14 +83,14 @@ export default function BigVDS({ language }) {
 							<tr>
 								<td>Unlim 50M</td>
 								<td>50 MB/s</td>
-								<td>1 GB/s</td>
+								<td>1 Gbps</td>
 								<td>Без ограничений</td>
 								<td>Бесплатно</td>
 							</tr>
 							<tr>
 								<td>Unlim 100M</td>
 								<td>100 MB/s</td>
-								<td>1 GB/s</td>
+								<td>1 Gbps</td>
 								<td>Без ограничений</td>
 								<td>2 000 000 сум/мес.</td>
 							</tr>
@@ -119,30 +128,75 @@ export default function BigVDS({ language }) {
 							<tr>
 								<td>Unlim 50M</td>
 								<td>50 MB/s</td>
-								<td>1 GB/s</td>
+								<td>1 Gbps</td>
 								<td>Cheksiz</td>
 								<td>Tekin</td>
 							</tr>
 							<tr>
 								<td>Unlim 100M</td>
 								<td>100 MB/s</td>
-								<td>1 GB/s</td>
+								<td>1 Gbps</td>
 								<td>Cheksiz</td>
 								<td>2 000 000 so'm/oy.</td>
 							</tr>
 							<tr>
 								<td>Unlim 200M</td>
 								<td>200 MB/s</td>
-								<td>1 GB/s</td>
+								<td>1 Gbps</td>
 								<td>Cheksiz</td>
 								<td>5 000 000 so'm/oy.</td>
 							</tr>
 							<tr>
 								<td>Unlim 350M</td>
 								<td>350 MB/s</td>
-								<td>1 GB/s</td>
+								<td>1 Gbps</td>
 								<td>Cheksiz</td>
 								<td>10 000 000 so'm/oy.</td>
+							</tr>
+						</tbody>
+					</table>
+				</>
+			),
+			en: (
+				<>
+					<table>
+						<thead>
+							<tr>
+								<th>Tariff</th>
+								<th>Internet access speed</th>
+								<th>Access speed in "TAS-IX"</th>
+								<th>Billing</th>
+								<th>Monthly fee</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Unlim 50M</td>
+								<td>50 MB/s</td>
+								<td>1 Gbps</td>
+								<td>Unlimited</td>
+								<td>Free</td>
+							</tr>
+							<tr>
+								<td>Unlim 100M</td>
+								<td>100 MB/s</td>
+								<td>1 Gbps</td>
+								<td>Unlimited</td>
+								<td>2 000 000 sum/mon.</td>
+							</tr>
+							<tr>
+								<td>Unlim 200M</td>
+								<td>200 MB/s</td>
+								<td>1 Gbps</td>
+								<td>Unlimited</td>
+								<td>5 000 000 sum/mon.</td>
+							</tr>
+							<tr>
+								<td>Unlim 350M</td>
+								<td>350 MB/s</td>
+								<td>1 Gbps</td>
+								<td>Unlimited</td>
+								<td>10 000 000 sum/mon.</td>
 							</tr>
 						</tbody>
 					</table>
@@ -152,18 +206,19 @@ export default function BigVDS({ language }) {
 		month: {
 			ru: "мес.",
 			uz: "oy",
+			en: "mon.",
 		},
 	}
 
 	const block = [
 			{
-				title: { ru: "Мгновенная активация", uz: "Bir zumda ulanish" },
+				title: { ru: "Мгновенная активация", uz: "Bir zumda ulanish", en: "Instant activation" },
 				description: {
 					ru: (
 						<>
 							<p>
-								Активация VDS выполняется от 5 минут до 4-х часов, в зависимости
-								от количества заказов и наличия свободного оборудования.
+								Активация VDS выполняется от 5 минут до 4-х часов, в зависимости от количества заказов и наличия
+								свободного оборудования.
 							</p>
 							<button>
 								<a href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
@@ -174,13 +229,23 @@ export default function BigVDS({ language }) {
 					),
 					uz: (
 						<>
-							<p>
-								VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4
-								soatgacha davom etadi mavjud uskunalar.
-							</p>
+							<p>VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4 soatgacha davom etadi mavjud uskunalar.</p>
 							<button>
 								<a href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
 									Mijozga aylaning va vdsga buyurtma bering
+								</a>
+							</button>
+						</>
+					),
+					en: (
+						<>
+							<p>
+								VDS activation takes from 5 minutes to 4 hours, depending on the number of orders and availability free
+								equipment.
+							</p>
+							<button>
+								<a href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
+									Become a client and order VDS
 								</a>
 							</button>
 						</>
@@ -190,21 +255,21 @@ export default function BigVDS({ language }) {
 				img: "/time.png",
 			},
 			{
-				title: { ru: "Низкая цена", uz: "Hamyonbop narx" },
+				title: { ru: "Низкая цена", uz: "Hamyonbop narx", en: "Low price" },
 				description: {
 					ru: "Мы предоставляем услуги по самым низким ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.",
 					uz: "Biz O'zbekistonda eng past narxlarda xizmatlar ko'rsatamiz, bizning afzalligimiz shundaki, biz eng yuqori sifatli xizmatlarni imkon qadar arzon narxlarda taqdim etamiz. Shunday qilib, biz sizga sarflashga emas, pul ishlashingizga yordam beramiz.",
+					en: "We provide services at the lowest prices in Uzbekistan, our advantage is that we provide the highest quality services at the lowest possible prices. Thus, we will help you earn money, not spend money.",
 				},
 				img: "/money.png",
 			},
 			{
-				title: { ru: "Поддержка круглосуточно", uz: "24/7 hizmatingizda" },
+				title: { ru: "Поддержка круглосуточно", uz: "24/7 hizmatingizda", en: "Support 24/7" },
 				description: {
 					ru: (
 						<>
 							<p>
-								В любое время суток, Вы можете к нам обратиться за помощью или
-								советом, мы ответим максимально быстро.
+								В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим максимально быстро.
 							</p>
 							<button>
 								<Link href={checkLang(language) + LINKS.CONTACTS}>
@@ -216,12 +281,24 @@ export default function BigVDS({ language }) {
 					uz: (
 						<>
 							<p>
-								Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan
-								bog'lanishingiz mumkin, biz javob beramiz imkon qadar tezroq.
+								Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan bog'lanishingiz mumkin, biz javob beramiz
+								imkon qadar tezroq.
 							</p>
 							<button>
 								<Link href={checkLang(language) + LINKS.CONTACTS}>
 									<a>Murojat uchun</a>
+								</Link>
+							</button>
+						</>
+					),
+					en: (
+						<>
+							<p>
+								At any time of the day, you can contact us for help or advice, we will respond as quickly as possible.
+							</p>
+							<button>
+								<Link href={checkLang(language) + LINKS.CONTACTS}>
+									<a>Our contacts</a>
 								</Link>
 							</button>
 						</>
@@ -231,10 +308,11 @@ export default function BigVDS({ language }) {
 				img: "/support.png",
 			},
 			{
-				title: { ru: "Гибкая настройка", uz: "Ko'p qirrali qurilmalar" },
+				title: { ru: "Гибкая настройка", uz: "Ko'p qirrali qurilmalar", en: "Flexible setup" },
 				description: {
 					ru: "Вы можете изменить количество CPU и RAM в любой момент, а также увеличить объём SSD",
 					uz: "Siz istalgan vaqtda protsessor va RAM miqdorini o'zgartirishingiz, shuningdek SSD miqdorini oshirishingiz mumkin",
+					en: "You can change the amount of CPU and RAM at any time, as well as increase the amount of SSD",
 				},
 
 				img: "/year.png",
@@ -294,7 +372,7 @@ export default function BigVDS({ language }) {
 			// 	link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
 			// },
 			{
-				title: { ru: "Tera", uz: "Tera", en: "" },
+				title: { ru: "Tera", uz: "Tera", en: "Tera" },
 				// price: '1 500 000',
 				prices: [
 					{
@@ -325,7 +403,7 @@ export default function BigVDS({ language }) {
 				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=53",
 			},
 			{
-				title: { ru: "Peta", uz: "Peta", en: "" },
+				title: { ru: "Peta", uz: "Peta", en: "Peta" },
 				// price: '2 250 000',
 				prices: [
 					{
@@ -356,7 +434,7 @@ export default function BigVDS({ language }) {
 				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=61",
 			},
 			{
-				title: { ru: "Zeta", uz: "Zeta", en: "" },
+				title: { ru: "Zeta", uz: "Zeta", en: "Zeta" },
 				// price: '3 000 000',
 				prices: [
 					{
@@ -387,7 +465,7 @@ export default function BigVDS({ language }) {
 				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=62",
 			},
 			{
-				title: { ru: "Yotta", uz: "Yotta", en: "" },
+				title: { ru: "Yotta", uz: "Yotta", en: "Yotta" },
 				// price: "7 500 000",
 				prices: [
 					{
@@ -479,13 +557,7 @@ export default function BigVDS({ language }) {
 							{tarif.map((item, index) => (
 								<SwiperSlide key={item.title}>
 									<div className="w-95">
-										<TarifCard
-											index={index}
-											tarif={item}
-											show={show}
-											setShow={setShow}
-											language={language}
-										/>
+										<TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} />
 									</div>
 								</SwiperSlide>
 							))}
@@ -497,11 +569,7 @@ export default function BigVDS({ language }) {
 
 				<ForFreeBlock language={language} />
 
-				<Container
-					className="text-center"
-					title={langData.cT[language]}
-					description={langData.dT[language]}
-				>
+				<Container className="text-center" title={langData.cT[language]} description={langData.dT[language]}>
 					<div className={st.vds__table}>
 						<CustomTable table={langData.table[language]} />
 					</div>

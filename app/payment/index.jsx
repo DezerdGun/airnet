@@ -48,6 +48,23 @@ const faq = [
 						</p>
 					</>
 				),
+				en: (
+					<>
+						<p>
+							To use a bank transfer under an agreement, you need to place an order on our website, go registration and
+							then turn to technical support to draw up an agreement for a legal entity, for This will require only 3
+							documents:
+						</p>
+						<br />
+						<p>
+							1. Certificate (Company Registration Certificate)
+							<br />
+							2. Full name of the director (ID)
+							<br />
+							3. Bank details of the company
+						</p>
+					</>
+				),
 			},
 		},
 		{
@@ -87,10 +104,25 @@ const faq = [
 						<img src="/payments/1.png" />
 					</>
 				),
+				en: (
+					<>
+						<p>
+							For non-residents of Uzbekistan and cards issued not in banks of Uzbekistan - payment is available through
+							payment paybox.money and oson.uz systems
+						</p>
+						<p>
+							To make a payment via Paybox.Money, go to the tab "Account" {"->"} "Accounts" select the account number
+							and click the "Pay invoice" button, then select "Paybox" from the offered payment methods and click on pay
+							button...
+						</p>
+						<br />
+						<img src="/payments/1.png" />
+					</>
+				),
 			},
 		},
 		{
-			title: { ru: "PAYNET.uz", uz: "PAYNET.uz" },
+			title: { ru: "PAYNET.uz", uz: "PAYNET.uz", en: "PAYNET.uz" },
 			description: {
 				ru: (
 					<>
@@ -114,10 +146,21 @@ const faq = [
 						<img className="width-50" src="/payments/3.jpg" />
 					</>
 				),
+				en: (
+					<>
+						<p>
+							Log in from the PAYNET mobile application through the site https://paynet.uz, as well as through PAYNET
+							dealers, find us in the category "Hosting providers" - AIRNET.uz hosting, for payment enter your ID or
+							account number and payment amount.
+						</p>
+						<img className="width-50" src="/payments/2.jpg" />
+						<img className="width-50" src="/payments/3.jpg" />
+					</>
+				),
 			},
 		},
 		{
-			title: { ru: "PAYME.uz", uz: "PAYME.uz" },
+			title: { ru: "PAYME.uz", uz: "PAYME.uz", en: "PAYME.uz" },
 			description: {
 				ru: (
 					<>
@@ -152,10 +195,27 @@ const faq = [
 						<img src="/payments/4.png" />
 					</>
 				),
+				en: (
+					<>
+						<p>
+							Log in from the mobile application PAYME.uz find us in the category "Hosting providers" - AIRNET.uz
+							hosting, to pay, enter your ID or account number and the amount of payment.
+						</p>
+						<img className="width-50" src="/payments/5.jpg" />
+						<img className="width-50" src="/payments/6.jpg" />
+						<p>
+							In the billing panel, select the payment method via PAYME.uz and click on the "Pay with Payme" button and
+							you will be transferred to the website of the payment system where you will need to specify your card
+							details for quick payment.
+						</p>
+						<br />
+						<img src="/payments/4.png" />
+					</>
+				),
 			},
 		},
 		{
-			title: { ru: "Click.uz", uz: "Click.uz" },
+			title: { ru: "Click.uz", uz: "Click.uz", en: "Click.uz" },
 			description: {
 				ru: (
 					<>
@@ -189,10 +249,26 @@ const faq = [
 						<img src="/payments/9.png" />
 					</>
 				),
+				en: (
+					<>
+						<p>
+							Log in from the Click.uz mobile application find us in the category "Hosting and domains" - AIRNET.uz
+							hosting, to pay, enter the account number and payment amount.
+						</p>
+						<img className="width-50" src="/payments/7.jpg" />
+						<img className="width-50" src="/payments/8.jpg" />
+						<p>
+							In the billing panel, select the payment method via CLICK.uz and click on the "Pay" button and you will be
+							transferred to payment system website where you will need to specify your card details for quick payment.
+						</p>
+						<br />
+						<img src="/payments/9.png" />
+					</>
+				),
 			},
 		},
 		{
-			title: { ru: "UPAY.uz", uz: "UPAY.uz" },
+			title: { ru: "UPAY.uz", uz: "UPAY.uz", en: "UPAY.uz" },
 			description: {
 				ru: (
 					<>
@@ -229,7 +305,7 @@ const faq = [
 			},
 		},
 		{
-			title: { ru: "Oson.uz", uz: "Oson.uz" },
+			title: { ru: "Oson.uz", uz: "Oson.uz", en: "Oson.uz" },
 			description: {
 				ru: (
 					<>
@@ -279,6 +355,31 @@ const faq = [
 						<img src="/payments/15.png" />
 					</>
 				),
+				en: (
+					<>
+						<p>
+							Log in from the mobile application OSON.uz find us in the category "Hosting providers" - AIRNET.uz
+							hosting, to pay, enter your customer ID or account number and the payment amount.
+						</p>
+						<img className="width-50" src="/payments/16.jpg" />
+						<img className="width-50" src="/payments/17.jpg" />
+						<p>
+							In the billing panel, select the payment method through OSON.uz and click on the "Pay OSON" button and you
+							will see an additional window of the payment system where you will need to specify your card details for
+							quick payment.
+						</p>
+						<br />
+						<img src="/payments/13.png" />
+						<br />
+						<p>You can choose to pay with a UZCARD or HUMO bank card</p>
+						<br />
+						<img src="/payments/14.png" />
+						<br />
+						<p>You can choose to pay by VISA or MasterCard</p>
+						<br />
+						<img src="/payments/15.png" />
+					</>
+				),
 			},
 		},
 		{
@@ -290,6 +391,7 @@ const faq = [
 			description: {
 				ru: <p>Киоски самообслуживания находятся на балансе коммерческих банков</p>,
 				uz: <p>O‘z-o‘ziga xizmat ko‘rsatish infokiosklari tijorat banklari balansida</p>,
+				en: <p>Self-service kiosks are on the balance sheet of commercial banks</p>,
 			},
 		},
 	],
@@ -298,7 +400,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 1 (Найдите Конструктор сайтов SitePad и нажмите на него)",
 				uz: "1-qadam (SitePad Website Builder-ni qidiring va ustiga bosing)",
-				en: "Step #1 (Search for SitePad Website Builder and click on it)",
+				en: "Step 1 (Search for SitePad Website Builder and click on it)",
 			},
 			img: "/sitepad/step-1.jpg",
 			width: 500,
@@ -308,7 +410,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 2 (Выберите слева Добавить сайт)",
 				uz: "2-qadam (chapdagi Veb-sayt qo'shish-ni tanlang)",
-				en: "Step #2 (Select Add Site on the Left)",
+				en: "Step 2 (Select Add Site on the Left)",
 			},
 			img: "/sitepad/step-2.jpg",
 			width: 500,
@@ -318,7 +420,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 3 (Нажмите Начать)",
 				uz: "3-qadam (Ishga tushirish tugmasini bosing)",
-				en: "Step #3 (Press Start)",
+				en: "Step 3 (Press Start)",
 			},
 			img: "/sitepad/step-3.jpg",
 			width: 500,
@@ -328,7 +430,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 4 (Найдите подходящую тему по категории создаваемого сайта)",
 				uz: "4-qadam (Siz yaratayotgan sayt toifasiga mos mavzuni toping)",
-				en: "Step #4 (Find a suitable theme for the category of the site you are creating)",
+				en: "Step 4 (Find a suitable theme for the category of the site you are creating)",
 			},
 			img: "/sitepad/step-4.jpg",
 			width: 500,
@@ -338,7 +440,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 5 (Визуальный просмотр демо-сайта)",
 				uz: "5-qadam (demo saytning vizual ko'rinishi)",
-				en: "Step #5 (Visual view of the demo site)",
+				en: "Step 5 (Visual view of the demo site)",
 			},
 			img: "/sitepad/step-5.jpg",
 			width: 500,
@@ -348,7 +450,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 6 (Подтвердите установку выбранной темы)",
 				uz: "6-qadam (Tanlangan mavzuni o'rnatishni tasdiqlang)",
-				en: "Step #6 (Confirm installation of selected theme)",
+				en: "Step 6 (Confirm installation of selected theme)",
 			},
 			img: "/sitepad/step-6.jpg",
 			width: 500,
@@ -358,7 +460,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 7 (Заполните поля настройки вашего будущего сайта и нажмите установить)",
 				uz: "7-qadam (Kelajak saytingizni o'rnatish uchun maydonlarni to'ldiring va o'rnatish tugmasini bosing)",
-				en: "Step #7 (Fill in the fields for setting up your future site and click install)",
+				en: "Step 7 (Fill in the fields for setting up your future site and click install)",
 			},
 			img: "/sitepad/step-7.jpg",
 			width: 500,
@@ -368,7 +470,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 8 (После установки вы можете с легкостью изменить внутренние страницы вашего сайта)",
 				uz: "8-qadam (O'rnatishdan so'ng saytingizning ichki sahifalarini osongina o'zgartirishingiz mumkin)",
-				en: "Step #8 (After installation, you can easily change the internal pages of your site)",
+				en: "Step 8 (After installation, you can easily change the internal pages of your site)",
 			},
 			img: "/sitepad/step-8.jpg",
 			width: 500,
@@ -378,7 +480,7 @@ const faq = [
 			title: {
 				ru: "Шаг № 9 (Опции по редактированию страницы)",
 				uz: "9-qadam (sahifani tahrirlash parametrlari)",
-				en: "Step #9 (Page Editing Options)",
+				en: "Step 9 (Page Editing Options)",
 			},
 			img: "/sitepad/step-9.jpg",
 			width: 500,
@@ -398,14 +500,17 @@ export default function Payment({ language }) {
 		seoT: {
 			ru: "Способы оплаты услуг | Хостинг TAS-IX в Ташкенте, Узбекистане",
 			uz: "Xizmatlar uchun to'lov usullari | O'zbekiston, Toshkent shahrida TAS-IX mezbonligi",
+			en: "Methods of payment for services | Hosting TAS-IX in Tashkent, Uzbekistan",
 		},
 		descT: {
 			ru: "Способы оплаты услуг",
 			uz: "Xizmatlar uchun to'lov usullari",
+			en: "Methods of payment for services",
 		},
 		headTitle: {
 			ru: "Способы оплаты услуг",
 			uz: "To'lov usullari",
+			en: "Methods of payment for services",
 		},
 		payment: {
 			ru: (
@@ -424,6 +529,15 @@ export default function Payment({ language }) {
 					{/* <Link href={checkLang(language)+LINKS.HELP}>
 							<a>Как подключить DDoS?</a>
 						</Link> */}
+				</>
+			),
+			en: (
+				<>
+					<h3>About service</h3>
+					<p>You can pay for the services of our company in various ways. Choose the most convenient:</p>
+					{/* <Link href={checkLang(language)+LINKS.HELP}>
+			<a>How to enable DDoS?</a>
+			</Link> */}
 				</>
 			),
 		},
@@ -504,10 +618,49 @@ export default function Payment({ language }) {
 					</p>
 				</>
 			),
+			en: (
+				<>
+					<ul>
+						<li>
+							<a href="#transfer-swift">Bank transfer</a> (SWIFT) payment under the contract.
+						</li>
+						<li>
+							<a href="#transfer-card">Bank cards</a> (UzCard, HUMO, VISA, MasterCard)
+						</li>
+						<li>
+							<a href="#transfer-paybox">International bank cards</a> VISA, MasterCard (PayBox.Money)
+						</li>
+						<li>
+							<a href="#transfer-paynet">PAYNET.uz</a>
+						</li>
+						<li>
+							<a href="#transfer-payme">PAYME.uz</a>
+						</li>
+						<li>
+							<a href="#transfer-click">Click.uz</a>
+						</li>
+						<li>
+							<a href="#transfer-upay">UPAY.uz</a>
+						</li>
+						<li>
+							<a href="#transfer-oson">Oson.uz</a>
+						</li>
+						<li>
+							<a href="#transfer-bank">Self-Service Kiosk</a>
+						</li>
+					</ul>
+					<p>
+						To credit funds to the account balance, you need to create an account and pay for it. Open your personal
+						account go to the top of the balance account - select "Top up", enter the "Top up amount" click the "Go to
+						to pay the bill."
+					</p>
+				</>
+			),
 		},
 		title: {
 			ru: "Подробные способы оплаты",
 			uz: "Batafsil to'lov usullari",
+			en: "Detailed payment methods",
 		},
 	}
 

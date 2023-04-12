@@ -9,25 +9,26 @@ const content = [
 		title: {
 			ru: "Сайт хостинг-провайдера",
 			uz: "Xosting provayderining veb-sayti",
+			en: "Website hosting provider",
 		},
 		description: {
 			ru: "Сайт должен быть готов для размещения предложений по нашим виртуальным серверам. Это может быть действующий сайт хостинговой компании, уже имеющей опыт работы в хостинг-услугах и клиентскую базу.",
 			uz: "Sayt virtual serverlarimizga takliflar joylashtirishga tayyor bo'lishi kerak. Bu hosting xizmatlari va mijozlar bazasi bo'yicha tajribaga ega bo'lgan jonli sayt hosting kompaniyasi bo'lishi mumkin",
+			en: "The site must be ready to host offers for our virtual servers. This may be an active site of a hosting company that already has experience in hosting services and a client base.",
 		},
-
 		img: "/server.png",
 	},
 	{
 		title: {
 			ru: "Сайт веб-студии",
-			uz: "Sayt virtual serverlarimizga takliflar kelishiga tayyor bo'lishi kerak. Bu hosting xizmatlari va bazasi bo'yicha tajribaga ega bo'lgan jonli sayt hosting kompaniyasi bo'lishi mumkin",
+			uz: "Veb-studiya sayti",
+			en: "Web studio website",
 		},
-
 		description: {
 			ru: "Помимо услуг по созданию сайтов, студия должна предлагать своим клиентам дополнительные услуги по их размещению.",
 			uz: "Sayt yaratish xizmatlaridan tashqari, studiya o'z mijozlariga ularni joylashtirish uchun qo'shimcha xizmatlarni taklif qilishi kerak.",
+			en: "In addition to site creation services, the studio must offer its clients additional services for their placement.",
 		},
-
 		img: "/tag.png",
 	},
 ]
@@ -37,39 +38,39 @@ export default function Reseller({ language }) {
 		headTitle: {
 			ru: "Кто может стать реселлером?",
 			uz: "Kim reseller bola oladi?",
+			en: "Who can become a reseller?",
 		},
 		description: {
 			ru: (
-				<>
-					<p>
-						К участию в программе допускаются только нацеленные на массовую
-						перепродажу партнёры. Обязательными условиями являются наличие сайта
-						и продажа не менее 10 серверов в первые полгода.
-					</p>
-				</>
+				<p>
+					К участию в программе допускаются только нацеленные на массовую перепродажу партнёры. Обязательными условиями
+					являются наличие сайта и продажа не менее 10 серверов в первые полгода.
+				</p>
 			),
 			uz: (
-				<>
-					<p>
-						Dasturda faqat ommaviy ishlab chiqarishga yo'naltirilganlar ishtirok
-						etishlari mumkin. qayta sotish hamkorlari. Veb-sayt - bu old shart
-						va birinchi olti oy ichida kamida 10 ta serverni sotish.
-					</p>
-				</>
+				<p>
+					Dasturda faqat ommaviy ishlab chiqarishga yo'naltirilganlar ishtirok etishlari mumkin. qayta sotish
+					hamkorlari. Veb-sayt - bu old shart va birinchi olti oy ichida kamida 10 ta serverni sotish.
+				</p>
+			),
+			en: (
+				<p>
+					Only partners aimed at mass resale are allowed to participate in the program. Mandatory the conditions are the
+					presence of a website and the sale of at least 10 servers in the first six months.
+				</p>
 			),
 		},
 		title: {
 			ru: "Как это работает?",
 			uz: "Bu qanday ishlaydi?",
+			en: "How it works?",
 		},
 	}
+
 	return (
 		<>
 			<div className={st.reseller}>
-				<Container
-					headTitle={langData.headTitle[language]}
-					description={langData.description[language]}
-				>
+				<Container headTitle={langData.headTitle[language]} description={langData.description[language]}>
 					<WhyCard content={content} language={language} />
 				</Container>
 			</div>
@@ -77,31 +78,35 @@ export default function Reseller({ language }) {
 				title={langData.title[language]}
 				data={[
 					{
-						title: { ru: "Получаете заявку", uz: "Arizani qabul qilish" },
+						title: { ru: "Получаете заявку", uz: "Arizani qabul qilish", en: "Receive an application" },
 						description: {
 							ru: "Клиенты обращаются за сервером напрямую к вам",
 							uz: "Mijozlar to'g'ridan-to'g'ri sizdan server so'rashadi",
+							en: "Clients request a server directly from you",
 						},
 					},
 					{
-						title: { ru: "Покупаете у нас", uz: "Bizdan harid qiling" },
+						title: { ru: "Покупаете у нас", uz: "Bizdan harid qiling", en: "Buy from us" },
 						description: {
 							ru: "Приобретаете у нас сервер со скидкой от 15 до 30%",
 							uz: "Bizdan serverni 15 dan 30% gacha chegirma bilan sotib oling",
+							en: "Purchase a server from us with a discount of 15 to 30%",
 						},
 					},
 					{
-						title: { ru: "Продаёте клиенту", uz: "Mikozga soting" },
+						title: { ru: "Продаёте клиенту", uz: "Mikozga soting", en: "Sell to a customer" },
 						description: {
 							ru: "Купленный сервер вы продаёте своему клиенту с наценкой",
 							uz: "Siz sotib olingan serverni mijozingizga yuqori narxda sotasiz",
+							en: "You sell the purchased server to your client at a premium",
 						},
 					},
 					{
-						title: { ru: "Профит!", uz: "Foyda!" },
+						title: { ru: "Профит!", uz: "Foyda!", en: "Profit!" },
 						description: {
 							ru: "Скидка + маржа = ваша прибыль, которую вы получаете сразу после первого заказа",
 							uz: "Chegirma + marja = birinchi buyurtmadan keyin darhol oladigan daromadingiz",
+							en: "Discount + margin = your profit that you get immediately after the first order",
 						},
 					},
 				]}

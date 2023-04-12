@@ -32,16 +32,14 @@ module.exports = {
 				destination: "/sitemap",
 				permanent: true,
 			},
-			// {
-			// 	source: '/free-domains',
-			// 	destination: '/domains',
-			// 	permanent: true,
-			// },
 			{
-				source:
-					"/blog/enovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati",
-				destination:
-					"/blog/lenovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati",
+				source: "/free-domains",
+				destination: "/domains",
+				permanent: true,
+			},
+			{
+				source: "/blog/enovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati",
+				destination: "/blog/lenovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati",
 				permanent: true,
 			},
 		]

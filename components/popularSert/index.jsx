@@ -235,7 +235,13 @@ export default function PopularSert({ language }) {
 											</svg>
 										</span>
 										{langData.srok[language]}:{" "}
-										{language == "ru" ? <strong>от {item.dateOff}</strong> : <strong>{item.dateOff} dan</strong>}
+										{language == "uz" ? (
+											<strong>{item.dateOff} dan</strong>
+										) : language == "en" ? (
+											<strong>from {item.dateOff}</strong>
+										) : (
+											<strong>от {item.dateOff}</strong>
+										)}
 									</li>
 								</ul>
 							</div>

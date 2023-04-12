@@ -1,43 +1,43 @@
 import Container from "@/components/container"
 import FAQ from "@/components/faq"
+import Partners from "@/components/partners"
 import PopularSert from "@/components/popularSert"
 import SEO from "@/components/seo"
 import WhyBlock from "@/components/whyBlock"
 import { useState } from "react"
-import { SslComponent } from "./ssl"
 import styles from "./ssl/ssl.module.scss"
+import { SslComponent } from "./ssl"
 
-export default function Voip({ language }) {
+export default function SSL({ language }) {
 	const [show, setShow] = useState(null)
 
 	const langData = {
 		seoTitle: {
 			ru: "Купить SSL-сертификат, TLS 1.2, X.509v3",
 			uz: "SSL sertifikatini sotib oling, TLS 1.2, X.509v3",
-			en: "",
+			en: "Buy an SSL certificate, TLS 1.2, X.509v3",
 		},
 		seoDesc: {
 			ru: "Дешево купить SSL или TLS сертификат от 825р. в год. Большой выбор сертификационных центров Comodo, Thawte, RapidSSL, Geotrust, Symantec.",
 			uz: "825 rubldan SSL yoki TLS sertifikatini sotib olish arzon. yilda. Comodo, Thawte, RapidSSL, Geotrust, Symantec sertifikatlashtirish markazlarining katta tanlovi.",
-			en: "",
+			en: "Cheap to buy an SSL or TLS certificate from 825 rubles per year. Large selection of certification centers Comodo, Thawte, RapidSSL, Geotrust, Symantec.",
 		},
 		headTitle: {
 			ru: "SSL-сертификаты",
 			uz: "SSL sertifikatlari",
-			en: "",
+			en: "SSL certificates",
 		},
 		content: {
 			ru: (
 				<>
 					<h2>Об услуге</h2>
 					<p>
-						SSL-сертификат подтверждает подлинность вашего сайта и создаёт
-						зашифрованное соединение, гарантируя посетителям безопасность и
-						конфиденциальность.
+						SSL-сертификат подтверждает подлинность вашего сайта и создаёт зашифрованное соединение, гарантируя
+						посетителям безопасность и конфиденциальность.
 					</p>
 					<p>
-						Сертификаты отличаются по уровню проверки удостоверяющим центром, а
-						также по количеству защищаемых доменов и субдоменов.
+						Сертификаты отличаются по уровню проверки удостоверяющим центром, а также по количеству защищаемых доменов и
+						субдоменов.
 					</p>
 					<a href="#">Выбрать сертификат</a>
 				</>
@@ -46,246 +46,248 @@ export default function Voip({ language }) {
 				<>
 					<h2>Xizmat haqida</h2>
 					<p>
-						SSL sertifikati veb-saytingizning haqiqiyligini tasdiqlaydi va
-						yaratadi shifrlangan ulanish, tashrif buyuruvchilar xavfsizligini
-						kafolatlaydi va maxfiylik.
+						SSL sertifikati veb-saytingizning haqiqiyligini tasdiqlaydi va yaratadi shifrlangan ulanish, tashrif
+						buyuruvchilar xavfsizligini kafolatlaydi va maxfiylik.
 					</p>
 					<p>
-						Sertifikatlar sertifikatlashtirish organi tomonidan tekshirish
-						darajasida farqlanadi, shuningdek, himoyalangan domenlar va
-						subdomenlar soni bo'yicha.
+						Sertifikatlar sertifikatlashtirish organi tomonidan tekshirish darajasida farqlanadi, shuningdek,
+						himoyalangan domenlar va subdomenlar soni bo'yicha.
 					</p>
 					<a href="#">Sertifikatni tanlang</a>
 				</>
 			),
-			en: "",
+			en: (
+				<>
+					<h2>About service</h2>
+					<p>
+						An SSL certificate authenticates your website and creates an encrypted connection, ensuring visitors safety
+						and privacy.
+					</p>
+					<p>
+						Certificates differ in the level of verification by the certification authority, as well as in the number of
+						protected domains and subdomains.
+					</p>
+					<a href="#">Select certificate</a>
+				</>
+			),
 		},
 		whyTitle: {
 			ru: "Почему стоит покупать у нас?",
 			uz: "Nima uchun bizdan sotib olasiz?",
-			en: "",
+			en: "Why should you buy from us?",
 		},
 		sum: {
 			ru: "сум",
 			uz: "so'm",
-			en: "",
+			en: "sum",
 		},
 		year: {
 			ru: "год",
 			uz: "yil",
-			en: "",
+			en: "year",
 		},
 		buy: {
 			ru: "Купить",
 			uz: "Sotib olish",
-			en: "",
+			en: "Buy",
 		},
 	}
 
 	const content = [
 			{
-				title: { ru: "Доверие", uz: "Ishonch", en: "" },
+				title: { ru: "Доверие", uz: "Ishonch", en: "Confidence" },
 				description: {
-					ru: "OnlinePBX - IP телефония для тех, кто ценит каждого клиента!",
-					uz: "OnlinePBX - har bir mijozni qadrlaydiganlar uchun IP telefoniya!",
-					en: "",
+					ru: "Сертификат содержит информацию о владельце, благодаря которой посетители могут идентифицировать сайт и компанию.",
+					uz: "Sertifikat egasi haqidagi ma'lumotlarni o'z ichiga oladi, buning yordamida tashrif buyuruvchilar sayt va kompaniyani aniqlashlari mumkin.",
+					en: "The certificate contains information about the owner, thanks to which visitors can identify the site and the company.",
 				},
 				img: "/",
 			},
 			{
-				title: { ru: "Защита", uz: "Himoya", en: "" },
+				title: { ru: "Защита", uz: "Himoya", en: "Protection" },
 				description: {
-					ru: "Сферы бизнеса наших клиентов по подключению IP-телефонии в Узбекистане",
-					uz: "O'zbekistonda IP-telefoniyani ulash bo'yicha mijozlarimizning biznes yo'nalishlari",
-					en: "",
+					ru: "Злоумышленники не могут получить доступ к передаваемым данным благодаря зашифрованному каналу.",
+					uz: "Buzg'unchilar shifrlangan kanal tufayli uzatilgan ma'lumotlarga kira olmaydi.",
+					en: "Intruders cannot access the transmitted data due to the encrypted channel.",
+				},
+				img: "/",
+			},
+			{
+				title: { ru: "Гарантия", uz: "Ishonchnoma", en: "Guarantee" },
+				description: {
+					ru: "Удостоверяющие центры компенсируют убытки, вызванные некорректной работой сертификата.",
+					uz: "Sertifikat idoralari sertifikatning noto'g'ri ishlashi natijasida etkazilgan zararni qoplaydi.",
+					en: "Certificate authorities compensate for losses caused by incorrect operation of the certificate.",
 				},
 				img: "/",
 			},
 		],
 		content2 = [
 			{
-				title: { ru: "Отделы продаж", uz: "Savdo bo'limlari", en: "" },
-				description: { ru: "", uz: "", en: "" },
-				img: "/",
-			},
-			{
-				title: { ru: "Call-центры", uz: "Qo'ng'iroq markazlari", en: "" },
-				description: { ru: "", uz: "", en: "" },
-				img: "/",
-			},
-			{
-				title: {
-					ru: "Маркетинговые агенства",
-					uz: "Marketing agentliklari",
-					en: "",
+				title: { ru: "Выгодная цена", uz: "Unumdor narh", en: "Profitable price" },
+				description: {
+					ru: "Предлагаем более низкие цены, чем при покупке напрямую у сертификационного центра.",
+					uz: "Biz to'g'ridan-to'g'ri sertifikatlashtirish markazidan sotib olishdan ko'ra arzonroq narxlarni taklif qilamiz.",
+					en: "We offer lower prices than buying directly from the certification center.",
 				},
-				description: { ru: "", uz: "", en: "" },
-				img: "/",
+				img: "/money.png",
 			},
 			{
-				title: { ru: "Онлайн-школы", uz: "Onlayn maktablar", en: "" },
-				description: { ru: "", uz: "", en: "" },
-				img: "/",
-			},
-			{
-				title: {
-					ru: "Строительные компании",
-					uz: "Qurilish kompaniyalari",
-					en: "",
+				title: { ru: "Скидка за период", uz: "Ma'lum vatga chegirma", en: "Period Discount" },
+				description: {
+					ru: "Чем больше срок заказа сертификата, тем ниже цена покупки.",
+					uz: "Sertifikatga buyurtma berish muddati qancha uzoq bo'lsa, sotib olish narxi shunchalik past bo'ladi.",
+					en: "The longer the period for ordering a certificate, the lower the purchase price.",
 				},
-				description: { ru: "", uz: "", en: "" },
-				img: "/",
+				img: "/wallet.png",
 			},
 			{
-				title: { ru: "Фитнес-центры", uz: "Fitnes markazlari", en: "" },
-				description: { ru: "", uz: "", en: "" },
-				img: "/",
-			},
-			{
-				title: {
-					ru: "Агенства недвижимости",
-					uz: "Ko'chmas mulk agentliklari",
-					en: "",
+				title: { ru: "Подписка", uz: "Obuna", en: "Subscription" },
+				description: {
+					ru: "При оформлении подписки ваш сертификат будет каждый год автоматически отправляться на перевыпуск.",
+					uz: "Siz obuna bo'lganingizda sertifikatingiz har yili avtomatik ravishda qayta chiqariladi.",
+					en: "When you subscribe, your certificate will automatically be reissued every year.",
 				},
-				description: { ru: "", uz: "", en: "" },
-				img: "/",
+				img: "/calendar.png",
 			},
 			{
-				title: { ru: "Интернет-магазины", uz: "Onlayn xarid qilish", en: "" },
-				description: { ru: "", uz: "", en: "" },
-				img: "/",
-			},
-			{
-				title: { ru: "Салоны красоты", uz: "Go'zallik salonlari", en: "" },
-				description: { ru: "", uz: "", en: "" },
-				img: "/",
+				title: { ru: "Поддержка 24/7", uz: "Qo'llab-quvatlash 24/7", en: "Support 24/7" },
+				description: {
+					ru: "Оказываем круглосуточную поддержку по вопросам заказа, установки и перевыпуска сертификата.",
+					uz: "Biz sertifikatga buyurtma berish, o'rnatish va qayta rasmiylashtirish uchun kechayu kunduz yordam beramiz.",
+					en: "We provide round-the-clock support for ordering, installing and reissuing a certificate.",
+				},
+				img: "/support.png",
 			},
 		],
 		faq = [
 			{
-				title: {
-					ru: "Как работает подписка?",
-					uz: "Obuna qanday ishlaydi?",
-					en: "",
-				},
+				title: { ru: "Как работает подписка?", uz: "Obuna qanday ishlaydi", en: "How does a subscription work?" },
 				description: {
 					ru: (
 						<>
 							<p>
-								Подписка позволяет автоматизировать процесс продления{" "}
-								<span class="nobr">SSL-сертификата</span>
-								и&nbsp;сэкономить при единовременной оплате. Вы&nbsp;можете
-								оформить подписку на&nbsp;2, 3, 4 года или 5 лет&nbsp;— чем
-								больше срок, тем ниже цена сертификата.
+								Подписка позволяет автоматизировать процесс продления <span class="nobr">SSL-сертификата</span>
+								и&nbsp;сэкономить при единовременной оплате. Вы&nbsp;можете оформить подписку на&nbsp;2, 3, 4 года или 5
+								лет&nbsp;— чем больше срок, тем ниже цена сертификата.
 							</p>
 							<p>
-								Каждый год, за&nbsp;2 недели до&nbsp;конца срока действия
-								сертификата, система будет автоматически отправлять его
-								на&nbsp;перевыпуск. Пройдя процедуру подтверждения,
-								вы&nbsp;получите новый файл сертификата, который необходимо
-								установить на&nbsp;сайте.
+								Каждый год, за&nbsp;2 недели до&nbsp;конца срока действия сертификата, система будет автоматически
+								отправлять его на&nbsp;перевыпуск. Пройдя процедуру подтверждения, вы&nbsp;получите новый файл
+								сертификата, который необходимо установить на&nbsp;сайте.
 							</p>
-							<p>
-								<a href="/technology/podpiska-na-ssl-sertifikat">
-									Подробнее о&nbsp;подписке
-								</a>
-								.
-							</p>
+							{/* <p>
+						<a href="/technology/podpiska-na-ssl-sertifikat">Подробнее о&nbsp;подписке</a>.
+					</p> */}
 						</>
 					),
 					uz: (
 						<>
 							<p>
-								Obuna yangilanish jarayonini avtomatlashtirish imkonini beradi{" "}
-								<span class="nobr">SSL sertifikati</span>
-								va&nbsp;bir martalik toʻlov bilan tejang. Siz&nbsp;mumkin obuna
-								bo'ling&nbsp;2, 3, 4 yil yoki 5 yil&nbsp;- qancha ko'p muddati,
-								sertifikat narxi past bo'ladi.
+								Obuna yangilanish jarayonini avtomatlashtirish <span class="nobr">SSL-sertifikati</span>
+								va&nbsp;bir marta to'lov bilan pulni tejash imkonini beradi. &nbsp;siz istalgan vahtga obuna
+								yani&nbsp;2, 3, 4 yil yoki 5 yil&nbsp;— qanchalik uzoq muddat bolsa, shunchalik narhi pas boladi.
 							</p>
 							<p>
-								Har yili, amal qilish muddatidan&nbsp;2 hafta oldin sertifikat,
-								tizim uni avtomatik ravishda yuboradi qayta chiqarish
-								uchun&nbsp; Tasdiqlash jarayonidan o'tgandan so'ng, sizga kerak
-								boʻlgan yangi sertifikat fayli&nbsp;olasiz
-								veb-saytga&nbsp;o'rnatish.
+								Har yili, amal qilish muddatidan&nbsp;2 hafta oldin sertifikat, tizim uni avtomatik ravishda yuboradi
+								qayta chiqarish uchun&nbsp; Tasdiqlash jarayonidan o'tgandan so'ng, sizga kerak boʻlgan yangi sertifikat
+								faylini&nbsp;olasiz va veb-saytga&nbsp;o'rnatasiz.
 							</p>
-							<p>
-								<a href="/technology/subpiska-na-ssl-sertifikat">
-									&nbsp;Obuna haqida batafsil
-								</a>
-								.
-							</p>
+							{/* <p>
+						<a href="/technology/podpiska-na-ssl-sertifikat">Подробнее о&nbsp;подписке</a>.
+					</p> */}
 						</>
 					),
-					en: "",
+					en: (
+						<>
+							<p>
+								Subscription allows you to automate the process of renewing a <span class="nobr">SSL certificate</span>
+								and&nbsp;save with a one-time payment. You&nbsp;can subscribe to&nbsp;2, 3, 4 or 5 years years&nbsp;-
+								the longer the term, the lower the price of the certificate.
+							</p>
+							<p>
+								Every year, 2 weeks before&nbsp;the expiration date of the certificate, the system will automatically
+								send it for&nbsp;reissue. After passing the confirmation procedure, you&nbsp;will receive a new file
+								certificate to be installed on&nbsp;website.
+							</p>
+							{/* <p>
+							<a href="/technology/podpiska-na-ssl-sertifikat">Learn more about&nbsp;subscription</a>.
+							</p> */}
+						</>
+					),
 				},
 			},
 			{
 				title: {
 					ru: "Поддержка субдоменов (WC, WildCard)",
-					uz: "Subdomenni qo'llab-quvvatlash (WC, WildCard)",
-					en: "",
+					uz: "(WC,WildCard) subdomenlarni qo'llash",
+					en: "Subdomain support (WC, WildCard)",
 				},
 				description: {
 					ru: (
 						<p>
-							Wildcard-сертификат можно использовать на всех поддоменах вашего
-							основного домена. Этот сертификат будет действителен на поддоменах
-							типа www.domain.ru, forum.domain.ru, my.domain.ru и т. д. без
-							ограничений на количество поддоменов. При создании запроса на
-							Wildcard-сертификат в качестве Common Name (CN) необходимо
-							использовать *.domain.ru, где domain.ru — это ваше доменное имя.
+							Wildcard-сертификат можно использовать на всех поддоменах вашего основного домена. Этот сертификат будет
+							действителен на поддоменах типа www.airnet.uz, forum.airnet.uz, my.airnet.uz и т. д. без ограничений на
+							количество поддоменов. При создании запроса на Wildcard-сертификат в качестве Common Name (CN) необходимо
+							использовать *.airnet.uz, где airnet.uz — это ваше доменное имя.
 						</p>
 					),
 					uz: (
 						<p>
-							Wildcard-sertifikati barcha subdomenlaringiz uchun ishlatilishi
-							mumkin asosiy domen. Ushbu sertifikat subdomenlarda amal qiladi
-							kabi www.domain.ru, forum.domain.ru, my.domain.ru va boshqalar
-							holda subdomenlar soni bo'yicha cheklovlar. uchun so'rov
-							yaratishda Umumiy nom (CN) sifatida Wildcard-sertifikati talab
-							qilinadi *.domain.ru dan foydalaning, bu erda domain.ru sizning
-							domen nomingizdir.
+							Wildcard belgilar sertifikati barcha subdomenlaringiz uchun ishlatilishi mumkin bolgan asosiy domen. Ushbu
+							sertifikat subdomenlarda amal qiladi kabi www.airnet.uz, forum.airnet.uz, my.airnet.uz va hokazolarsiz
+							subdomenlar soni bo'yicha cheklovlar. uchun so'rov yaratishda Umumiy nom (CN) sifatida joker belgilar
+							sertifikati talab qilinadi *.airnet.uz dan foydalaning, bu erda airnet.uz sizning domen nomingizdir.
 						</p>
 					),
-					en: "",
+					en: (
+						<p>
+							A wildcard certificate can be used on all subdomains of your main domain. This certificate will valid on
+							subdomains like www.airnet.uz, forum.airnet.uz, my.airnet.uz, etc. without restrictions on number of
+							subdomains. When creating a request for a Wildcard certificate as a Common Name (CN), you must use
+							*.airnet.uz, where airnet.uz is your domain name.
+						</p>
+					),
 				},
 			},
 			{
 				title: {
 					ru: "Поддержка национальных доменов (IDN)",
-					uz: "Mamlakat kodi domenini (IDN) qo'llab-quvvatlash",
-					en: "",
+					uz: "(IDN) Milliy domenlarni qo'llash",
+					en: "Support for country code domains (IDN)",
 				},
 				description: {
 					ru: (
 						<p>
-							IDN (Internationalized Domain Names) — доменные имена, которые
-							содержат символы национальных алфавитов. Поддержка IDN означает,
-							что сертификат поддерживает нелатинские буквы в доменных именах и
-							может использоваться для доменных имён на национальных языках
-							(например, сайт.рф).
+							IDN (Internationalized Domain Names) — доменные имена, которые содержат символы национальных алфавитов.
+							Поддержка IDN означает, что сертификат поддерживает нелатинские буквы в доменных именах и может
+							использоваться для доменных имён на национальных языках (например, эйрнет.uz).
 						</p>
 					),
 					uz: (
 						<p>
-							IDN (xalqarolashtirilgan domen nomlari) bu domen nomlari milliy
-							alifbo belgilaridan iborat. IDN qo'llab-quvvatlashi shuni
-							anglatadi sertifikat domen nomlarida lotin bo'lmagan harflarni
-							qo'llab-quvvatlaydi va mumkin milliy tillardagi domen nomlari
-							uchun ishlatilishi mumkin (masalan, site.rf).
+							IDN (xalqarolashtirilgan domen nomlari) bu domen nomlari milliy alifbo belgilaridan iborat. IDN
+							qo'llab-quvvatlashi shuni anglatadi sertifikat domen nomlarida lotin bo'lmagan harflarni
+							qo'llab-quvvatlaydi va mumkin milliy tillardagi domen nomlari uchun ishlatilishi mumkin (masalan,
+							airnet.uz).
 						</p>
 					),
-					en: "",
+					en: (
+						<p>
+							IDN (Internationalized Domain Names) - domain names that contain characters of national alphabets. IDN
+							support means that the certificate supports non-Latin characters in domain names and can be used for
+							domain names in national languages (for example, airnet.uz).
+						</p>
+					),
 				},
 			},
 		],
 		ssl = [
 			{
 				img: "/ssl/positive-ssl.png",
-				title: { ru: "PositiveSSL", uz: "PositiveSSL", en: "" },
+				title: { ru: "PositiveSSL", uz: "PositiveSSL", en: "PositiveSSL" },
 				price: "100 000",
-				link: "",
+				link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=1&one=1",
 				description: {
 					ru: [
 						<>
@@ -306,6 +308,16 @@ export default function Voip({ language }) {
 						"Qulay SSL",
 						"Qulay SSL",
 						"Kafolat past",
+					],
+					en: [
+						<>
+							Domains: <strong>1</strong>
+						</>,
+						"Domain check",
+						"Basic HTTPS",
+						"Convenient SSL",
+						"Convenient SSL",
+						"Low Warranty",
 					],
 				},
 			},
@@ -314,10 +326,10 @@ export default function Voip({ language }) {
 				title: {
 					ru: "PositiveSSL Wildcard",
 					uz: "PositiveSSL Wildcard",
-					en: "",
+					en: "PositiveSSL Wildcard",
 				},
-				price: "100 000",
-				link: "",
+				price: "1 000 000",
+				link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=2&one=1",
 				description: {
 					ru: [
 						<>
@@ -339,12 +351,22 @@ export default function Voip({ language }) {
 						"Qulay SSL",
 						"Kafolat past",
 					],
+					en: [
+						<>
+							Domains: <strong>Unlimited subdomains</strong>
+						</>,
+						"Domain check",
+						"Basic HTTPS",
+						"Convenient SSL",
+						"Convenient SSL",
+						"Low Warranty",
+					],
 				},
 			},
 			{
 				img: "/partners/comodo.png",
-				title: { ru: "EV SSL", uz: "EV SSL", en: "" },
-				price: "100 000",
+				title: { ru: "EV SSL", uz: "EV SSL", en: "EV SSL" },
+				price: "1 000 000",
 				link: "",
 				description: {
 					ru: [
@@ -365,13 +387,22 @@ export default function Voip({ language }) {
 						"Qulay SSL",
 						"Juda yuqori kafolat",
 					],
+					en: [
+						<>
+							Domains: <strong>1</strong>
+						</>,
+						"Extended Check",
+						"Company name in browser",
+						"Convenient SSL",
+						"Very high guarantee",
+					],
 				},
 			},
 			{
 				img: "/partners/comodo.png",
-				title: { ru: "PremiumSSL Wildcard", uz: "PremiumSSL Wildcard", en: "" },
-				price: "100 000",
-				link: "",
+				title: { ru: "PremiumSSL Wildcard", uz: "PremiumSSL Wildcard", en: "PremiumSSL Wildcard" },
+				price: "2 250 000",
+				link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=3&one=1",
 				description: {
 					ru: [
 						<>
@@ -391,117 +422,14 @@ export default function Voip({ language }) {
 						"Qulay SSL",
 						"Yuqori kafolat",
 					],
-				},
-			},
-			{
-				img: "/ssl/instant-ssl.png",
-				title: { ru: "InstantSSL", uz: "InstantSSL", en: "" },
-				price: "100 000",
-				link: "",
-				description: {
-					ru: [
+					en: [
 						<>
-							Доменов: <strong>1</strong>
+							Domains: <strong>Unlimited subdomains</strong>
 						</>,
-						"Проверка организации",
-						"Название компании в SSL",
-						"Удобный SSL",
-						"Высокая гарантия",
-					],
-					uz: [
-						<>
-							Domenlar: <strong>1</strong>
-						</>,
-						"Tashkilotni tekshirish",
-						"SSL kompaniya nomi",
-						"Qulay SSL",
-						"Yuqori kafolat",
-					],
-				},
-			},
-			{
-				img: "/ssl/positive-ssl.png",
-				title: {
-					ru: "PositiveSSL Multi-Domain",
-					uz: "PositiveSSL Multi-Domain",
-					en: "",
-				},
-				price: "100 000",
-				link: "",
-				description: {
-					ru: [
-						<>
-							Доменов: <strong>3-100</strong>
-						</>,
-						"Проверка домена",
-						"Базовый HTTPS",
-						"Удобный SSL",
-						"Низкая гарантия",
-					],
-					uz: [
-						<>
-							Domenlar: <strong>3-100</strong>
-						</>,
-						"Domenni tekshirish",
-						"Asosiy HTTPS",
-						"Qulay SSL",
-						"Kafolat past",
-					],
-				},
-			},
-			{
-				img: "/partners/comodo.png",
-				title: { ru: "EV Multi-Domain SSL", uz: "EV Multi-Domain SSL", en: "" },
-				price: "100 000",
-				link: "",
-				description: {
-					ru: [
-						<>
-							Доменов: <strong>3-100</strong>
-						</>,
-						"Расширенная проверка",
-						"Название компании в браузере",
-						"Удобный SSL",
-						"Очень высокая гарантия",
-					],
-					uz: [
-						<>
-							Domenlar: <strong>3-100</strong>
-						</>,
-						"Kengaytirilgan tekshirish",
-						"Brauzerda kompaniya nomi",
-						"Qulay SSL",
-						"Juda yuqori kafolat",
-					],
-				},
-			},
-			{
-				img: "/ssl/unified-ssl.webp",
-				title: {
-					ru: "Unified Communications",
-					uz: "Unified Communications",
-					en: "",
-				},
-				price: "100 000",
-				link: "",
-				description: {
-					ru: [
-						<>
-							Доменов: <strong>3-100</strong>
-						</>,
-						"Проверка домена",
-						"Название компании в SSL",
-						"Удобный SSL",
-						"Высокая гарантия",
-					],
-					uz: [
-						<>
-							Domenlar: <strong>3-100</strong>
-						</>,
-						"Domen tekshiruvi",
-						"SSLda kompaniya nomi",
-						"Qulay SSL",
-						"Yuqori kafolat",
+						"Organization check",
+						"SSL company name",
+						"Convenient SSL",
+						"High Guarantee",
 					],
 				},
 			},
@@ -509,16 +437,11 @@ export default function Voip({ language }) {
 
 	return (
 		<>
-			<SEO
-				title={langData.seoTitle[language]}
-				desc={langData.seoDesc[language]}
-			/>
+			<SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
 			<Container headTitle={langData.headTitle[language]}>
 				<hr />
 				<div className={styles.ssl__block}>
-					<div className={styles.ssl__block__content}>
-						{langData.content[language]}
-					</div>
+					<div className={styles.ssl__block__content}>{langData.content[language]}</div>
 					<div className={styles.ssl__block__img}>
 						<img src="/ssl/intro-img.png" />
 					</div>
@@ -539,13 +462,9 @@ export default function Voip({ language }) {
 					/>
 				))}
 			</Container>
-			<WhyBlock
-				title={langData.whyTitle[language]}
-				content={content2}
-				fourCol={true}
-				language={language}
-			/>
+			<WhyBlock title={langData.whyTitle[language]} content={content2} language={language} />
 			<FAQ faq={faq} title="FAQ" language={language} />
+			<Partners language={language} />
 		</>
 	)
 }

@@ -9,12 +9,12 @@ import st from "./vds/vds.module.scss"
 
 const block = [
 	{
-		title: { ru: "Мгновенная активация", uz: "Darhol faollashtirish" },
+		title: { ru: "Мгновенная активация", uz: "Tezkor faollashtirish", en: "Instant activation" },
 		description: {
 			ru: "Активация интернет-пакетов AirNet выполняется от 5 минуты до 2-х часов, в зависимости от количества заказов и наличия свободного оборудования.",
 			uz: "AirNet Internet-paketlarini faollashtirish buyurtmalar soni va bepul jihozlar mavjudligiga qarab 5 daqiqadan 2 soatgacha davom etadi.",
+			en: "Activation of AirNet Internet packages takes from 5 minutes to 2 hours, depending on the number of orders and the availability of free equipment.",
 		},
-
 		img: (
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -103,18 +103,23 @@ const block = [
 			</svg>
 		),
 		link: "/",
-		linkTitle: "Стать клиентом и заказать трафик",
+		linkTitle: {
+			ru: "Стать клиентом и заказать трафик",
+			uz: "Mijoz bo'ling va trafikni buyurtma qiling",
+			en: "Become a client and order traffic",
+		},
 	},
 	{
 		title: {
 			ru: "Вернем вам деньги, если что",
 			uz: "Nma bolishidan qatiy nazar mablagni qaytaramiz",
+			en: "We'll refund your money, if anything,",
 		},
 		description: {
 			ru: "Хотите убедиться, что все работает как нужно? Не волнуйтесь, для этого есть целых 30 дней. Если в течение этого времени Вы решите, что хотите отказаться от наших услуг, мы вернем Вам все неиспользованные средства.",
 			uz: "Hammasi kerakli darajada ishlashiga ishonch hosil qilishni xohlaysizmi? Xavotir olmang, buni amalga oshirish uchun sizda 30 kun bor. Agar shu vaqt ichida siz xizmatlarimizni toʻxtatmoqchi boʻlsangiz, foydalanilmagan mablagʻlaringizni qaytarib beramiz.",
+			en: "Would you like to make sure everything works as it should? Don't worry, you have 30 days to do this. If during this time you decide that you want to stop our services, we will refund you all unused funds.",
 		},
-
 		img: (
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -141,30 +146,15 @@ const block = [
 					/>
 				</g>
 				<g>
-					<polygon
-						style={{ fill: "#006a4d" }}
-						points="277.9,92.9 251.9,156.9 293.9,92.9  "
-					/>
-					<polygon
-						style={{ fill: "#006a4d" }}
-						points="216.2,92.9 242.4,156.9 200.4,92.9  "
-					/>
-					<polygon
-						style={{ fill: "#006a4d" }}
-						points="228.9,194 245.7,176.5 218.5,194  "
-					/>
-					<polygon
-						style={{ fill: "#006a4d" }}
-						points="268.6,194 251.8,176.5 278.9,194  "
-					/>
+					<polygon style={{ fill: "#006a4d" }} points="277.9,92.9 251.9,156.9 293.9,92.9  " />
+					<polygon style={{ fill: "#006a4d" }} points="216.2,92.9 242.4,156.9 200.4,92.9  " />
+					<polygon style={{ fill: "#006a4d" }} points="228.9,194 245.7,176.5 218.5,194  " />
+					<polygon style={{ fill: "#006a4d" }} points="268.6,194 251.8,176.5 278.9,194  " />
 					<path
 						style={{ fill: "#006a4d" }}
 						d="M271.7,166.9c0,3-2.4,5.4-5.4,5.4h-37.2c-3,0-5.4-2.4-5.4-5.4l0,0c0-3,2.4-5.4,5.4-5.4h37.2   C269.3,161.5,271.7,163.9,271.7,166.9L271.7,166.9z"
 					/>
-					<polygon
-						style={{ fill: "#006a4d" }}
-						points="243.1,82 251.9,82 246.9,154.3  "
-					/>
+					<polygon style={{ fill: "#006a4d" }} points="243.1,82 251.9,82 246.9,154.3  " />
 					<path
 						style={{ fill: "#006a4d" }}
 						d="M293.3,260.9c0,8.6-9.8,14.8-10.4,14c-7.3-8.5-19.8-14.8-32.5-14.8c-12.9,0-20.8,5.8-20.8,14.4   c0,10,10.6,12.7,25.4,16c17.7,3.8,40.9,11,40.9,36.1c0,19.4-13.5,32.9-36,36.3v7.5c0,8.8-3.5,13.1-11.1,13.1h-1   c-8.1,0-11-4-11-13.1v-7.1c-23.3-2.5-36.5-13.1-36.5-23.8c0-8.3,9.2-14.2,10-13.5c7.3,8.8,21.5,16.1,36.5,16.1   c13.7,0,21.5-5.8,21.5-14.4c0-10.6-11.9-13.5-26-16.7c-16.9-3.7-39.2-10.4-39.2-35.8c0-18.5,13.1-31.7,33.8-35.6v-7.1   c0-8.8,3.3-13.1,11-13.1h1.2c7.9,0,11,4,11,13.1v6.5C281.6,241.4,293.3,251,293.3,260.9z"
@@ -174,12 +164,12 @@ const block = [
 		),
 	},
 	{
-		title: { ru: "Поддержка круглосуточно", uz: "Qollab quvatlash 24/7" },
+		title: { ru: "Поддержка круглосуточно", uz: "Qollab quvatlash 24/7", en: "Support around the clock" },
 		description: {
 			ru: "В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим максимально быстро.",
 			uz: "Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan bog'lanishingiz mumkin, biz imkon qadar tezroq javob beramiz.",
+			en: "At any time of the day, you can contact us for help or advice, we will respond as quickly as possible.",
 		},
-
 		img: (
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -213,7 +203,7 @@ const block = [
 			</svg>
 		),
 		// link: LINKS.CONTACTS,
-		// linkTitle: "Наши контакты",
+		// linkTitle: {ru: "Наши контакты", uz: , en: }
 	},
 ]
 
@@ -222,10 +212,12 @@ export default function Net({ language }) {
 		seoT: {
 			ru: "Интернет пакеты | Airnet",
 			uz: "Internet hizmati | Airnet",
+			en: "Internet packages | Airnet",
 		},
 		descT: {
 			ru: "Подключение интернет пакетов в сети TAS-IX в Ташкенте по самым низким ценам в Узбекистане",
 			uz: "Toshkent shahridagi TAS-IX tarmog‘iga Internet-paketlarni O‘zbekistonda eng arzon narxlarda ulash",
+			en: "Connection of Internet packages in the TAS-IX network in Tashkent at the lowest prices in Uzbekistan",
 		},
 		table: {
 			ru: (
@@ -261,14 +253,11 @@ export default function Net({ language }) {
 								</tr>
 								<tr>
 									<td colSpan={2}>
-										<CustomTableBottom
-											price="200 000 сум/мес."
-											link="/"
-											text="Заказать трафик"
-										/>
+										<CustomTableBottom price="200 000 сум/мес." link="/" text="Заказать трафик" />
 									</td>
 								</tr>
 							</table>,
+
 							<table key="table-2">
 								<tr>
 									<th colSpan={2}>AIRNET «Unlim 2»</th>
@@ -297,14 +286,11 @@ export default function Net({ language }) {
 								</tr>
 								<tr>
 									<td colSpan={2}>
-										<CustomTableBottom
-											price="350 000 сум/мес."
-											link="/"
-											text="Заказать трафик"
-										/>
+										<CustomTableBottom price="350 000 сум/мес." link="/" text="Заказать трафик" />
 									</td>
 								</tr>
 							</table>,
+
 							<table key="table-3">
 								<tr>
 									<th colSpan={2}>AIRNET «Unlim 3»</th>
@@ -333,14 +319,11 @@ export default function Net({ language }) {
 								</tr>
 								<tr>
 									<td colSpan={2}>
-										<CustomTableBottom
-											price="500 000 сум/мес."
-											link="/"
-											text="Заказать трафик"
-										/>
+										<CustomTableBottom price="500 000 сум/мес." link="/" text="Заказать трафик" />
 									</td>
 								</tr>
 							</table>,
+
 							<table key="table-4">
 								<tr>
 									<th colSpan={2}>AIRNET «Unlim 4»</th>
@@ -369,14 +352,11 @@ export default function Net({ language }) {
 								</tr>
 								<tr>
 									<td colSpan={2}>
-										<CustomTableBottom
-											price="650 000 сум/мес."
-											link="/"
-											text="Заказать трафик"
-										/>
+										<CustomTableBottom price="650 000 сум/мес." link="/" text="Заказать трафик" />
 									</td>
 								</tr>
 							</table>,
+
 							<table key="table-5">
 								<tr>
 									<th colSpan={2}>AIRNET «Unlim 5»</th>
@@ -405,11 +385,7 @@ export default function Net({ language }) {
 								</tr>
 								<tr>
 									<td colSpan={2}>
-										<CustomTableBottom
-											price="800 000 сум/мес."
-											link="/"
-											text="Заказать трафик"
-										/>
+										<CustomTableBottom price="800 000 сум/мес." link="/" text="Заказать трафик" />
 									</td>
 								</tr>
 							</table>,
@@ -453,11 +429,7 @@ export default function Net({ language }) {
 								</tr>
 								<tr>
 									<td colSpan={2}>
-										<CustomTableBottom
-											price="200 000 som/oy."
-											link="/"
-											text="Trafik buyurtma berish"
-										/>
+										<CustomTableBottom price="200 000 som/oy." link="/" text="Trafik buyurtma berish" />
 									</td>
 								</tr>
 							</table>,
@@ -489,11 +461,7 @@ export default function Net({ language }) {
 								</tr>
 								<tr>
 									<td colSpan={2}>
-										<CustomTableBottom
-											price="350 000 som/oy."
-											link="/"
-											text="Trafik buyurtma berish"
-										/>
+										<CustomTableBottom price="350 000 som/oy." link="/" text="Trafik buyurtma berish" />
 									</td>
 								</tr>
 							</table>,
@@ -525,11 +493,7 @@ export default function Net({ language }) {
 								</tr>
 								<tr>
 									<td colSpan={2}>
-										<CustomTableBottom
-											price="500 000 som/oy."
-											link="/"
-											text="Trafik buyurtma berish "
-										/>
+										<CustomTableBottom price="500 000 som/oy." link="/" text="Trafik buyurtma berish " />
 									</td>
 								</tr>
 							</table>,
@@ -561,11 +525,7 @@ export default function Net({ language }) {
 								</tr>
 								<tr>
 									<td colSpan={2}>
-										<CustomTableBottom
-											price="650 000 som/oy."
-											link="/"
-											text="Trafik buyurtma berish"
-										/>
+										<CustomTableBottom price="650 000 som/oy." link="/" text="Trafik buyurtma berish" />
 									</td>
 								</tr>
 							</table>,
@@ -597,11 +557,178 @@ export default function Net({ language }) {
 								</tr>
 								<tr>
 									<td colSpan={2}>
-										<CustomTableBottom
-											price="800 000 som/oy."
-											link="/"
-											text="Trafik buyurtma berish"
-										/>
+										<CustomTableBottom price="800 000 som/oy." link="/" text="Trafik buyurtma berish" />
+									</td>
+								</tr>
+							</table>,
+						]}
+						className="mt-0"
+					/>
+				</>
+			),
+			en: (
+				<>
+					<TraficMaket
+						headTitle="AIRNET - Unlim Internet"
+						endText="1 Speed from the operator to the PBX, 2 Speed from the operator to the PBX traffic is not charged, 3 Internal resources are not charged and the speed of TAS-IX from the subscriber, 4 The speed of Internet access is reduced to that specified in the selected tariff plans."
+						bgImg="/servers-3.jpg"
+						table={[
+							<table key="table-1">
+								<tr>
+									<th colSpan={2}>AIRNET "Unlim 1"</th>
+								</tr>
+								<tr>
+									<td>Traffic volume</td>
+									<td>ထ</td>
+								</tr>
+								<tr>
+									<td>
+										Speed<sup>1</sup>
+									</td>
+									<td>5 Mbps</td>
+								</tr>
+								<tr>
+									<td>
+										Required speed TAS-IX<sup>2</sup>
+									</td>
+									<td>10 Mbps</td>
+								</tr>
+								<tr>
+									<td className="bg-green">When traffic threshold is exceeded</td>
+									<td className="bg-green">ထ</td>
+								</tr>
+								<tr>
+									<td colSpan={2}>
+										<CustomTableBottom price="200 000 UZS/mon.." link="/" text="Order traffic" />
+									</td>
+								</tr>
+							</table>,
+							<table key="table-2">
+								<tr>
+									<th colSpan={2}>AIRNET "Unlim 2"</th>
+								</tr>
+								<tr>
+									<td>Traffic volume</td>
+									<td>ထ</td>
+								</tr>
+								<tr>
+									<td>
+										Speed<sup>1</sup>
+									</td>
+									<td>10 Mbps</td>
+								</tr>
+								<tr>
+									<td>
+										Required speed TAS-IX<sup>2</sup>
+									</td>
+									<td>15 Mbps</td>
+								</tr>
+								<tr>
+									<td className="bg-green">
+										When the traffic threshold<sup>4</sup> is exceeded
+									</td>
+									<td className="bg-green">ထ</td>
+								</tr>
+								<tr>
+									<td colSpan={2}>
+										<CustomTableBottom price="350 000 UZS/mon." link="/" text="Order traffic" />
+									</td>
+								</tr>
+							</table>,
+							<table key="table-3">
+								<tr>
+									<th colSpan={2}>AIRNET "Unlim 3"</th>
+								</tr>
+								<tr>
+									<td>Traffic volume</td>
+									<td>ထ</td>
+								</tr>
+								<tr>
+									<td>
+										Speed<sup>1</sup>
+									</td>
+									<td>15 Mbps</td>
+								</tr>
+								<tr>
+									<td>
+										Required speed TAS-IX<sup>2</sup>
+									</td>
+									<td>20 Mbps</td>
+								</tr>
+								<tr>
+									<td className="bg-green">
+										When the traffic threshold<sup>4</sup> is exceeded
+									</td>
+									<td className="bg-green">ထ</td>
+								</tr>
+								<tr>
+									<td colSpan={2}>
+										<CustomTableBottom price="500 000 UZS/mon." link="/" text="Order traffic" />
+									</td>
+								</tr>
+							</table>,
+							<table key="table-4">
+								<tr>
+									<th colSpan={2}>AIRNET "Unlim 4"</th>
+								</tr>
+								<tr>
+									<td>Traffic volume</td>
+									<td>ထ</td>
+								</tr>
+								<tr>
+									<td>
+										Speed<sup>1</sup>
+									</td>
+									<td>20 Mbps</td>
+								</tr>
+								<tr>
+									<td>
+										Required speed TAS-IX<sup>2</sup>
+									</td>
+									<td>25 Mbps</td>
+								</tr>
+								<tr>
+									<td className="bg-green">
+										When the traffic threshold<sup>4</sup> is exceeded
+									</td>
+									<td className="bg-green">ထ</td>
+								</tr>
+								<tr>
+									<td colSpan={2}>
+										<CustomTableBottom price="650 000 UZS/mon." link="/" text="Order traffic" />
+									</td>
+								</tr>
+							</table>,
+
+							<table key="table-5">
+								<tr>
+									<th colSpan={2}>AIRNET "Unlim 5"</th>
+								</tr>
+								<tr>
+									<td>Traffic volume</td>
+									<td>ထ</td>
+								</tr>
+								<tr>
+									<td>
+										Speed<sup>1</sup>
+									</td>
+									<td>25 Mbps</td>
+								</tr>
+								<tr>
+									<td>
+										Required speed TAS-IX<sup>2</sup>
+									</td>
+									<td>30 Mbps</td>
+								</tr>
+								<tr>
+									<td className="bg-green">
+										When the traffic threshold<sup>4</sup> is exceeded
+									</td>
+									<td className="bg-green">ထ</td>
+								</tr>
+								<tr>
+									<td colSpan={2}>
+										<CustomTableBottom price="800 000 UZS/mon." link="/" text="Order traffic" />
 									</td>
 								</tr>
 							</table>,
@@ -619,22 +746,20 @@ export default function Net({ language }) {
 				{langData.table[language]}
 				<Container>
 					<div className={st.vds__block}>
-						{
-							block.map((item) => (
-								<div key={item.title} className={st.vds__block__item}>
-									<div className={st.vds__block__item__img}>{item.img}</div>
-									<h6>{item.title}</h6>
-									<p>{item.description}</p>
-									{item.link ? (
-										<button>
-											<Link href={checkLang(language) + item.link}>
-												<a>{item.linkTitle}</a>
-											</Link>
-										</button>
-									) : null}
-								</div>
-							))[language]
-						}
+						{block.map((item) => (
+							<div key={item.title[language]} className={st.vds__block__item}>
+								<div className={st.vds__block__item__img}>{item.img}</div>
+								<h6>{item.title[language]}</h6>
+								<p>{item.description[language]}</p>
+								{item.link ? (
+									<button>
+										<Link href={checkLang(language) + item.link}>
+											<a>{item.linkTitle[language]}</a>
+										</Link>
+									</button>
+								) : null}
+							</div>
+						))}
 					</div>
 				</Container>
 				<Partners language={language} />
