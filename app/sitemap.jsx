@@ -417,8 +417,8 @@ const sitemap = [
 				children: [
 					{
 						title: {
-							ru: "Зачем нужен SSl-сертификат",
-							uz: "SS1-sertifikat nmaga kerak",
+							ru: "Зачем нужен SSL-сертификат",
+							uz: "SSL-sertifikat nmaga kerak",
 							en: "Why do I need an SSL certificate",
 						},
 						link: "/help/ssl/zachem-nuzhen-ssl-sertifikat",

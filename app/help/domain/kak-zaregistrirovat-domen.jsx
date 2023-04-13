@@ -8,6 +8,7 @@ export default function HelpBlog({ language }) {
 		headTitle: {
 			ru: "Как зарегистрировать домен UZ?",
 			uz: "Qanday qilib domen UZ royxatdan otqaziladi?",
+			en: "How to register an UZ domain?",
 		},
 		content: {
 			ru: (
@@ -24,9 +25,7 @@ export default function HelpBlog({ language }) {
 					<p>
 						Нажать на кнопку «
 						<strong>
-							<a href="https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz">
-								Заказать
-							</a>
+							<a href="https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz">Заказать</a>
 						</strong>
 						»;
 					</p>
@@ -48,14 +47,34 @@ export default function HelpBlog({ language }) {
 					<p>
 						<strong>
 							Buyurtma berish uchun «
-							<a href="https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz">
-								ushbu tugmani bosing
-							</a>
+							<a href="https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz">ushbu tugmani bosing</a>
 						</strong>
 						»;
 					</p>
 					<p>Domen royxatdan otqazish tolovi</p>
 					<p>Pasport hujjatlarini yuborish.</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+						Select and check the domain name in "
+						<Link href={checkLang(language) + LINKS.DOMAINS}>
+							<a>
+								<strong>domain registrations</strong>
+							</a>
+						</Link>
+						»;
+					</p>
+					<p>
+						Click on the button "
+						<strong>
+							<a href="https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz">Order</a>
+						</strong>
+						»;
+					</p>
+					<p>Pay for domain registration;</p>
+					<p>Send passport details.</p>
 				</>
 			),
 		},

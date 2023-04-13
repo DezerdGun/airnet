@@ -193,7 +193,7 @@ export default function Footer({ language }) {
 					link: LINKS.SSL,
 					title: {
 						ru: "SSL-сертификаты",
-						uz: "SSL-sertifekatlari",
+						uz: "SSL-sertifikatlari",
 						en: "SSL-certificates",
 					},
 				},
@@ -483,9 +483,7 @@ export default function Footer({ language }) {
 					</div>
 					<nav className={st.footer__block__nav}>
 						<ul className={st.footer__block__nav__ul}>
-							<li
-								className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__li__vps}`}
-							>
+							<li className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__li__vps}`}>
 								<h3>{vps_vds.title[language]}</h3>
 								<ul>
 									{vps_vds.children.map((i) => (
@@ -497,9 +495,7 @@ export default function Footer({ language }) {
 									))}
 								</ul>
 							</li>
-							<li
-								className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__li__uslugi}`}
-							>
+							<li className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__li__uslugi}`}>
 								<h3>{uslugi.title[language]}</h3>
 								<ul>
 									{uslugi.children.map((i) => (
@@ -512,9 +508,7 @@ export default function Footer({ language }) {
 								</ul>
 							</li>
 							<div className={st.footer__block__nav__ul__div}>
-								<li
-									className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__div__clients}`}
-								>
+								<li className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__div__clients}`}>
 									<h3>{clients.title[language]}</h3>
 									<ul>
 										{clients.children.map((i) => (
@@ -526,9 +520,7 @@ export default function Footer({ language }) {
 										))}
 									</ul>
 								</li>
-								<li
-									className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__div__partners}`}
-								>
+								<li className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__div__partners}`}>
 									<h3>{partners.title[language]}</h3>
 									<ul>
 										{partners.children.map((i) => (
@@ -541,9 +533,7 @@ export default function Footer({ language }) {
 									</ul>
 								</li>
 							</div>
-							<li
-								className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__li__help}`}
-							>
+							<li className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__li__help}`}>
 								<h3>{help.title[language]}</h3>
 								<ul>
 									{help.children.map((i) => (

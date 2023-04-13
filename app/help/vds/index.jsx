@@ -2,12 +2,13 @@ import HelpItem from "@/components/helpItem"
 
 const data = {
 		id: "vds",
-		title: { ru: "VDS", uz: "VDS" },
+		title: { ru: "VDS", uz: "VDS", en: "VDS" },
 		children: [
 			{
 				title: {
 					ru: "Необходимые навыки для работы с VDS",
 					uz: "VDS bilan ishlash uchun zaruriy ko'nikmalar",
+					en: "Necessary skills to work with VDS",
 				},
 				link: "/help/vds/neobhodimye-navyki-dlya-raboty-s-vds",
 			},
@@ -15,6 +16,7 @@ const data = {
 				title: {
 					ru: "Смена тарифного плана на VDS",
 					uz: "Tarif rejasini VDS ga o'zgartirish",
+					en: "Change tariff plan to VDS",
 				},
 				link: "/help/vds/smena-tarifnogo-plana-na-vds",
 			},
@@ -22,6 +24,7 @@ const data = {
 				title: {
 					ru: "Как долго хранятся учётные записи VDS?",
 					uz: "VDS hisoblari qancha vaqt saqlanadi?",
+					en: "How long are VDS accounts kept?",
 				},
 				link: "/help/vds/kak-dolgo-hranyatsya-uchyotnye-zapisi-vds",
 			},
@@ -29,6 +32,7 @@ const data = {
 				title: {
 					ru: "Восстановление root пароля от VDS",
 					uz: "VDS ning root parolni tiklash",
+					en: "Recovery of root password from VDS",
 				},
 				link: "/help/vds/vosstanovlenie-root-parolya-ot-vds",
 			},
@@ -36,6 +40,7 @@ const data = {
 				title: {
 					ru: "Перенос аккаунта на VDS",
 					uz: "Hisobni VDS-ga o'tkazish",
+					en: "Account transfer to VDS",
 				},
 				link: "/help/vds/perenos-akkaunta-na-vds",
 			},
@@ -43,6 +48,7 @@ const data = {
 				title: {
 					ru: "Преимущества VDS и VPS-серверов",
 					uz: "VDS va VPS serverlarining afzalliklari",
+					en: "Advantages of VDS and VPS servers",
 				},
 				link: "/help/vds/preimushhestva-vds-i-vps-serverov",
 			},

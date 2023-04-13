@@ -2,10 +2,10 @@ import HelpItem from "@/components/helpItem"
 
 const data = {
 		id: "ftp",
-		title: { ru: "FTP", uz: "FTP" },
+		title: { ru: "FTP", uz: "FTP", en: "FTP" },
 		children: [
 			{
-				title: { ru: "Что такое FTP", uz: "FTP nma?" },
+				title: { ru: "Что такое FTP?", uz: "FTP nma?", en: "What is FTP?" },
 				link: "/help/ftp/chto-takoe-ftp",
 			},
 		],

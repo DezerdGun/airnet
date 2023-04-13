@@ -2,12 +2,13 @@ import HelpItem from "@/components/helpItem"
 
 const data = {
 		id: "hosting",
-		title: { ru: "Хостинг", uz: "Xost" },
+		title: { ru: "Хостинг", uz: "Hosting", en: "Hosting" },
 		children: [
 			{
 				title: {
 					ru: "Как перенести сайт на хостинг AIRNET?",
 					uz: "Qanday qilib veb-saytni AIRNET xostingiga o'tkazish mumkin?",
+					en: "How to transfer a website to AIRNET hosting?",
 				},
 				link: "/help/hosting/kak-perenesti-sajt-na-hosting-airnet",
 			},
