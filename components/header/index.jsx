@@ -62,8 +62,8 @@ export default function Header({ language }) {
 				link: LINKS.SSL,
 			},
 			{
-				title: { ru: "Лицензии", uz: "Litsenziyalar", en: "Licenses" },
-				link: LINKS.LICENSE,
+				title: { ru: "Почта", uz: "Pochta", en: "E-mail" },
+				link: LINKS.EMAIL,
 			},
 
 			{
@@ -102,6 +102,10 @@ export default function Header({ language }) {
 					{
 						title: { ru: "Поддержка", uz: "Qo'llab-quvvatlash", en: "Support" },
 						link: LINKS.SUPPORT,
+					},
+					{
+						title: { ru: "Наши лицензии", uz: "Litsenziyalar", en: "Licenses" },
+						link: LINKS.LICENSE,
 					},
 					{
 						title: {

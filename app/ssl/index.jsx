@@ -295,7 +295,6 @@ export default function SSL({ language }) {
 						"Проверка домена",
 						"Базовый HTTPS",
 						"Удобный SSL",
-						"Удобный SSL",
 						"Низкая гарантия",
 					],
 					uz: [
@@ -305,7 +304,6 @@ export default function SSL({ language }) {
 						"Domenni tekshirish",
 						"Asosiy HTTPS",
 						"Qulay SSL",
-						"Qulay SSL",
 						"Kafolat past",
 					],
 					en: [
@@ -314,7 +312,6 @@ export default function SSL({ language }) {
 						</>,
 						"Domain check",
 						"Basic HTTPS",
-						"Convenient SSL",
 						"Convenient SSL",
 						"Low Warranty",
 					],
@@ -337,7 +334,6 @@ export default function SSL({ language }) {
 						"Проверка домена",
 						"Базовый HTTPS",
 						"Удобный SSL",
-						"Удобный SSL",
 						"Низкая гарантия",
 					],
 					uz: [
@@ -347,7 +343,6 @@ export default function SSL({ language }) {
 						"Domenni tekshirish",
 						"Asosiy HTTPS",
 						"Qulay SSL",
-						"Qulay SSL",
 						"Kafolat past",
 					],
 					en: [
@@ -356,7 +351,6 @@ export default function SSL({ language }) {
 						</>,
 						"Domain check",
 						"Basic HTTPS",
-						"Convenient SSL",
 						"Convenient SSL",
 						"Low Warranty",
 					],

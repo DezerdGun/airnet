@@ -37,4 +37,5 @@ export const LINKS = {
 	PARTNERS: '/partners',
 	PRIVACY_POLICY: '/privacy-policy',
 	OFERTA: '/oferta',
+	EMAIL: '/email',
 };

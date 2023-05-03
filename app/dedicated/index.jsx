@@ -68,9 +68,9 @@ export default function Dedicated({ language }) {
 			en: "Install and activate the server in 120 minutes, add disks and memory in a day in agreement with the sales department",
 		},
 		hz: {
-			ru: "Гц",
-			uz: "Hz",
-			en: "Hz",
+			ru: "ГГц",
+			uz: "GHz",
+			en: "GHz",
 		},
 		gb: {
 			ru: "ГБ",
