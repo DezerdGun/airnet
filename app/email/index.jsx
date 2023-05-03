@@ -12,14 +12,14 @@ export default function EMAIL({ language }) {
 
 	const langData = {
 		seoTitle: {
-			ru: "Купить SSL-сертификат, TLS 1.2, X.509v3",
-			uz: "SSL sertifikatini sotib oling, TLS 1.2, X.509v3",
-			en: "Buy an SSL certificate, TLS 1.2, X.509v3",
+			ru: "Заказать корпоративную почту для домена",
+			uz: "Заказать корпоративную почту для домена",
+			en: "Заказать корпоративную почту для домена",
 		},
 		seoDesc: {
-			ru: "Дешево купить SSL или TLS сертификат от 825р. в год. Большой выбор сертификационных центров Comodo, Thawte, RapidSSL, Geotrust, Symantec.",
-			uz: "825 rubldan SSL yoki TLS sertifikatini sotib olish arzon. yilda. Comodo, Thawte, RapidSSL, Geotrust, Symantec sertifikatlashtirish markazlarining katta tanlovi.",
-			en: "Cheap to buy an SSL or TLS certificate from 825 rubles per year. Large selection of certification centers Comodo, Thawte, RapidSSL, Geotrust, Symantec.",
+			ru: "Дешево заказать корпоративную почту для домена. Большой выбор тарифных планов для вашего домена",
+			uz: "Дешево заказать корпоративную почту для домена. Большой выбор тарифных планов для вашего домена",
+			en: "Дешево заказать корпоративную почту для домена. Большой выбор тарифных планов для вашего домена",
 		},
 		headTitle: {
 			ru: "Почта на домене",
@@ -166,14 +166,11 @@ export default function EMAIL({ language }) {
 					ru: (
 						<>
 							<p>
-								Подписка позволяет автоматизировать процесс продления <span class="nobr">SSL-сертификата</span>
-								и&nbsp;сэкономить при единовременной оплате. Вы&nbsp;можете оформить подписку на&nbsp;2, 3, 4 года или 5
-								лет&nbsp;— чем больше срок, тем ниже цена сертификата.
+								Подписка позволяет автоматизировать процесс продления <span class="nobr">Корпоративной почты</span>
+								и сэкономить при единовременной оплате. Вы можете оформить подписку на 1, 6, 9 и 12 месяцев — чем больше срок, тем больше скидка.
 							</p>
 							<p>
-								Каждый год, за&nbsp;2 недели до&nbsp;конца срока действия сертификата, система будет автоматически
-								отправлять его на&nbsp;перевыпуск. Пройдя процедуру подтверждения, вы&nbsp;получите новый файл
-								сертификата, который необходимо установить на&nbsp;сайте.
+								Выберите тариф нажмите Заказать, пройдите регистрацию, после оплаты счета предоставим доступ к вашей почте.
 							</p>
 							{/* <p>
 						<a href="/technology/podpiska-na-ssl-sertifikat">Подробнее о&nbsp;подписке</a>.

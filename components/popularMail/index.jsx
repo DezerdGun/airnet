@@ -43,14 +43,14 @@ export default function PopularMail({ language }) {
 			en: "Support for national domains",
 		},
 		shifr: {
-			ru: "Шифрование",
-			uz: "Shifrlash",
-			en: "Encryption",
+			ru: "Кол-во аккаунтов",
+			uz: "Кол-во аккаунтов",
+			en: "Кол-во аккаунтов",
 		},
 		bit: {
-			ru: "бит",
-			uz: "bit",
-			en: "bit",
+			ru: "пользователей",
+			uz: "пользователей",
+			en: "пользователей",
 		},
 		warranty: {
 			ru: "Гарантия",
@@ -77,6 +77,7 @@ export default function PopularMail({ language }) {
 				uz: "1 ГБ на SSD-диске",
 				en: "1 ГБ на SSD-диске",
 			},
+			count: "3х",
 			link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=4&one=1",
 			prices: [
 				{
@@ -114,6 +115,7 @@ export default function PopularMail({ language }) {
 			},
 			// warranty: 50000,
 			// dateOff: langData.oneDay[language],
+			count: "15",
 			link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=5&one=1",
 			prices: [
 				{
@@ -151,6 +153,7 @@ export default function PopularMail({ language }) {
 			},
 			// warranty: 250000,
 			// dateOff: langData.fiveDays[language],
+			count: "20",
 			link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=6&one=1",
 			prices: [
 				{
@@ -188,6 +191,7 @@ export default function PopularMail({ language }) {
 			},
 			// warranty: 250000,
 			// dateOff: langData.fiveDays[language],
+			count: "50",
 			link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=7&one=1",
 			prices: [
 				{
@@ -232,14 +236,14 @@ export default function PopularMail({ language }) {
 										</span>
 										{langData.poddejka[language]}
 									</li>
-									{/* <li>
+									<li>
 										<span>
 											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
 												<path d="M80 192V144C80 64.47 144.5 0 224 0C303.5 0 368 64.47 368 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80zM144 192H304V144C304 99.82 268.2 64 224 64C179.8 64 144 99.82 144 144V192z" />
 											</svg>
 										</span>
-										{langData.shifr[language]}: <strong>256 {langData.bit[language]}</strong>
-									</li> */}
+										{langData.shifr[language]}: <strong>до {item.count} {langData.bit[language]}</strong>
+									</li>
 									{/* <li>
 										<span>
 											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">

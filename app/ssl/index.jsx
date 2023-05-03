@@ -17,9 +17,9 @@ export default function SSL({ language }) {
 			en: "Buy an SSL certificate, TLS 1.2, X.509v3",
 		},
 		seoDesc: {
-			ru: "Дешево купить SSL или TLS сертификат от 825р. в год. Большой выбор сертификационных центров Comodo, Thawte, RapidSSL, Geotrust, Symantec.",
-			uz: "825 rubldan SSL yoki TLS sertifikatini sotib olish arzon. yilda. Comodo, Thawte, RapidSSL, Geotrust, Symantec sertifikatlashtirish markazlarining katta tanlovi.",
-			en: "Cheap to buy an SSL or TLS certificate from 825 rubles per year. Large selection of certification centers Comodo, Thawte, RapidSSL, Geotrust, Symantec.",
+			ru: "Дешево купить SSL или TLS сертификат от 100 000 сум в год. Большой выбор сертификационных центров Comodo, Thawte, RapidSSL, Geotrust, Symantec.",
+			uz: "100 000 somdan SSL yoki TLS sertifikatini sotib olish arzon. yilda. Comodo, Thawte, RapidSSL, Geotrust, Symantec sertifikatlashtirish markazlarining katta tanlovi.",
+			en: "Cheap to buy an SSL or TLS certificate from 100 000 uzs per year. Large selection of certification centers Comodo, Thawte, RapidSSL, Geotrust, Symantec.",
 		},
 		headTitle: {
 			ru: "SSL-сертификаты",
