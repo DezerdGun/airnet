@@ -13,26 +13,24 @@ export default function EMAIL({ language }) {
 	const langData = {
 		seoTitle: {
 			ru: "Заказать корпоративную почту для домена",
-			uz: "Заказать корпоративную почту для домена",
-			en: "Заказать корпоративную почту для домена",
+			uz: "Domen uchun korporativ pochtaga buyurtma berish",
+			en: "Order corporate mail for a domain",
 		},
 		seoDesc: {
 			ru: "Дешево заказать корпоративную почту для домена. Большой выбор тарифных планов для вашего домена",
-			uz: "Дешево заказать корпоративную почту для домена. Большой выбор тарифных планов для вашего домена",
-			en: "Дешево заказать корпоративную почту для домена. Большой выбор тарифных планов для вашего домена",
+			uz: "Domen uchun korporativ pochtaga buyurtma berish arzon. Domeningiz uchun tarif rejalarining keng doirasi",
+			en: "It's cheap to order corporate mail for a domain. A wide range of tariff plans for your domain",
 		},
 		headTitle: {
 			ru: "Почта на домене",
-			uz: "Почта на домене",
-			en: "Почта на домене",
+			uz: "Domendagi pochta",
+			en: "Mail on the domain",
 		},
 		content: {
 			ru: (
 				<>
 					<h2>Об услуге</h2>
-					<p>
-						Корпоративная почта для вашего домена от быстрого и надежного регистратора AIRNET в Узбекистане
-					</p>
+					<p>Корпоративная почта для вашего домена от быстрого и надежного регистратора AIRNET в Узбекистане</p>
 					<ul>
 						<li>Неограниченное количество ящиков</li>
 						<li>Фильтрация от спама и вирусов</li>
@@ -72,8 +70,8 @@ export default function EMAIL({ language }) {
 		},
 		whyTitle: {
 			ru: "Преимущества доменной почты",
-			uz: "Преимущества доменной почты",
-			en: "Преимущества доменной почты",
+			uz: "Domen pochtasining afzalliklari",
+			en: "Benefits of Domain Mail",
 		},
 		sum: {
 			ru: "сум",
@@ -92,60 +90,31 @@ export default function EMAIL({ language }) {
 		},
 	}
 
-	const content = [
+	const content2 = [
 			{
-				title: { ru: "Неограниченное количество ящиков", uz: "Ishonch", en: "Confidence" },
-				description: {
-					// ru: "Сертификат содержит информацию о владельце, благодаря которой посетители могут идентифицировать сайт и компанию.",
-					// uz: "Sertifikat egasi haqidagi ma'lumotlarni o'z ichiga oladi, buning yordamida tashrif buyuruvchilar sayt va kompaniyani aniqlashlari mumkin.",
-					// en: "The certificate contains information about the owner, thanks to which visitors can identify the site and the company.",
-				},
-				img: "/",
-			},
-			{
-				title: { ru: "Фильтрация от спама и вирусов", uz: "Himoya", en: "Protection" },
-				description: {
-					// ru: "Злоумышленники не могут получить доступ к передаваемым данным благодаря зашифрованному каналу.",
-					// uz: "Buzg'unchilar shifrlangan kanal tufayli uzatilgan ma'lumotlarga kira olmaydi.",
-					// en: "Intruders cannot access the transmitted data due to the encrypted channel.",
-				},
-				img: "/",
-			},
-			{
-				title: { ru: "Отсутствие рекламы в интерфейсе", uz: "Ishonchnoma", en: "Guarantee" },
-				description: {
-					// ru: "Удостоверяющие центры компенсируют убытки, вызванные некорректной работой сертификата.",
-					// uz: "Sertifikat idoralari sertifikatning noto'g'ri ishlashi natijasida etkazilgan zararni qoplaydi.",
-					// en: "Certificate authorities compensate for losses caused by incorrect operation of the certificate.",
-				},
-				img: "/",
-			},
-		],
-		content2 = [
-			{
-				title: { ru: "Запоминаемость бренда", uz: "Запоминаемость бренда", en: "Запоминаемость бренда" },
+				title: { ru: "Запоминаемость бренда", uz: "Brend xabardorligi", en: "Brand Awareness" },
 				description: {
 					ru: "Рассылки с официального email организации вызывают больше доверия у клиентов. Такой домен лучше запоминается",
-					uz: "Рассылки с официального email организации вызывают больше доверия у клиентов. Такой домен лучше запоминается",
-					en: "Рассылки с официального email организации вызывают больше доверия у клиентов. Такой домен лучше запоминается",
+					uz: "Tashkilotning rasmiy elektron pochtasidan kelgan xatlar mijozlarning ishonchini oshiradi. Bunday domen yaxshi esda qoladi",
+					en: "Mailings from the official email of the organization cause more trust among customers. Such a domain is better remembered",
 				},
 				img: "/money.png",
 			},
 			{
-				title: { ru: "Конфиденциальность", uz: "Конфиденциальность", en: "Конфиденциальность" },
+				title: { ru: "Конфиденциальность", uz: "Maxfiylik", en: "Confidentiality" },
 				description: {
 					ru: "Вы сможете управлять персональными черным и белым списками отправителей и получателей",
-					uz: "Вы сможете управлять персональными черным и белым списками отправителей и получателей",
-					en: "Вы сможете управлять персональными черным и белым списками отправителей и получателей",
+					uz: "Siz jo'natuvchilar va qabul qiluvchilarning shaxsiy qora va oq ro'yxatlarini boshqarishingiz mumkin",
+					en: "You will be able to manage personal black and white lists of senders and recipients",
 				},
 				img: "/wallet.png",
 			},
 			{
-				title: { ru: "Безопасность", uz: "Безопасность", en: "Безопасность" },
+				title: { ru: "Безопасность", uz: "Xavfsizlik", en: "Safety" },
 				description: {
 					ru: "Предоставляем управление персональным черным и белым списками отправителей и получателей",
-					uz: "Предоставляем управление персональным черным и белым списками отправителей и получателей",
-					en: "Предоставляем управление персональным черным и белым списками отправителей и получателей",
+					uz: "Biz jo'natuvchilar va oluvchilarning shaxsiy qora va oq ro'yxatlarini boshqarishni ta'minlaymiz",
+					en: "We provide management of personal black and white lists of senders and recipients",
 				},
 				img: "/calendar.png",
 			},
@@ -166,11 +135,13 @@ export default function EMAIL({ language }) {
 					ru: (
 						<>
 							<p>
-								Подписка позволяет автоматизировать процесс продления <span class="nobr">Корпоративной почты</span>
-								и сэкономить при единовременной оплате. Вы можете оформить подписку на 1, 6, 9 и 12 месяцев — чем больше срок, тем больше скидка.
+								Подписка позволяет автоматизировать процесс продления <span class="nobr">Корпоративной почты</span>и
+								сэкономить при единовременной оплате. Вы можете оформить подписку на 1, 6, 9 и 12 месяцев — чем больше
+								срок, тем больше скидка.
 							</p>
 							<p>
-								Выберите тариф нажмите Заказать, пройдите регистрацию, после оплаты счета предоставим доступ к вашей почте.
+								Выберите тариф нажмите Заказать, пройдите регистрацию, после оплаты счета предоставим доступ к вашей
+								почте.
 							</p>
 							{/* <p>
 						<a href="/technology/podpiska-na-ssl-sertifikat">Подробнее о&nbsp;подписке</a>.
@@ -411,64 +382,9 @@ export default function EMAIL({ language }) {
 				</div>
 			</Container>
 			<PopularMail language={language} />
-			{/* <WhyBlock content={content} language={language} /> */}
-			{/* <Container>
-				{ssl.map((item, index) => (
-					<SslComponent
-						key={item.title}
-						index={index}
-						item={item}
-						show={show}
-						setShow={setShow}
-						langData={langData}
-						language={language}
-					/>
-				))}
-			</Container> */}
 			<WhyBlock title={langData.whyTitle[language]} content={content2} language={language} />
 			<FAQ faq={faq} title="FAQ" language={language} />
 			<Partners language={language} />
 		</>
-	)
-}
-
-export const SslComponent = ({ index, item, show, setShow, langData, language }) => {
-	return (
-		<div className={styles.ssl__component}>
-			<div className={styles.ssl__component__content} onClick={() => (show == index ? setShow(null) : setShow(index))}>
-				<div className={styles.ssl__component__content__info}>
-					<div className={styles.ssl__component__content__info__img}>
-						<img src={item.img} />
-					</div>
-					<div className={styles.ssl__component__content__info__title}>{item.title[language]}</div>
-				</div>
-				<div className={styles.ssl__component__content__price}>
-					<div className="def-price">
-						{item.price}{" "}
-						<span>
-							{langData.sum[language]}
-							<hr />
-							{langData.year[language]}
-						</span>
-					</div>
-					<a href="#">{langData.buy[language]}</a>
-					<button className={show == index ? styles.ssl__component__content__price__btn : ""}>
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-							<path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-						</svg>
-					</button>
-				</div>
-			</div>
-
-			<div
-				className={`${styles.ssl__component__collapse} ${show == index ? styles.ssl__component__collapse__active : ""}`}
-			>
-				<ul>
-					{item.description[language].map((el) => (
-						<li key={el}>{el}</li>
-					))}
-				</ul>
-			</div>
-		</div>
 	)
 }
