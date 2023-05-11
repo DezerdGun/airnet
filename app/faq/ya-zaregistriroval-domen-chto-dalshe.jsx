@@ -8,14 +8,15 @@ export default function YaZaregistrirovalDomenChtoDalshe({ language }) {
 		title: {
 			ru: "Я зарегистрировал домен, что дальше?",
 			uz: "Men domenni ro'yxatdan o'tkazdim, keyin nima bo'ladi?",
+			en: "I have registered a domain, what's next?",
 		},
 		description: { ru: "", uz: "", en: "" },
 		content: {
 			ru: (
 				<>
 					<p>
-						«Что делать после регистрации домена?» Дальнейшие действия зависят
-						от того, есть ли у вас готовый сайт и опыт в их создании или нет.
+						«Что делать после регистрации домена?» Дальнейшие действия зависят от того, есть ли у вас готовый сайт и
+						опыт в их создании или нет.
 					</p>
 					<h2>Если есть опыт в создании сайтов</h2>
 					<ol>
@@ -30,15 +31,30 @@ export default function YaZaregistrirovalDomenChtoDalshe({ language }) {
 			uz: (
 				<>
 					<p>
-						«Domenni ro'yxatdan o'tkazgandan keyin nima qilish kerak?» Keyingi
-						harakat sizdagi sayt yaratashish yoki shu sferadagi malaka bormi,
-						yoqmi shunga bogliq boladi.
+						«Domenni ro'yxatdan o'tkazgandan keyin nima qilish kerak?» Keyingi harakat sizdagi sayt yaratashish yoki shu
+						sferadagi malaka bormi, yoqmi shunga bogliq boladi.
 					</p>
 					<h2>Agar veb-saytlarni yaratishda tajribangiz bo'lsa</h2>
 					<ol>
 						<li>
 							<Link href={checkLang(language) + LINKS.HOSTING}>
 								<a>Xostingga buyurtma bering</a>
+							</Link>
+						</li>
+					</ol>
+				</>
+			),
+			en: (
+				<>
+					<p>
+						What to do after registering a domain? Further actions depend on whether you have a ready-made website and
+						experience in creating them or not.
+					</p>
+					<h2>If you have experience in creating websites</h2>
+					<ol>
+						<li>
+							<Link href={checkLang(language) + LINKS.HOSTING}>
+								<a>Order hosting</a>
 							</Link>
 						</li>
 					</ol>

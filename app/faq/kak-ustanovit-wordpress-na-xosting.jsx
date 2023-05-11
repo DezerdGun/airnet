@@ -4,6 +4,7 @@ const data = {
 	title: {
 		ru: "Как установить WordPress на хостинг?",
 		uz: "Qanday qilib WordPressni xostga yuklash?",
+		en: "How to install WordPress on hosting?",
 	},
 	description: { ru: "", uz: "", en: "" },
 	content: {
@@ -12,10 +13,7 @@ const data = {
 				<h2>Необходимые вещи</h2>
 				<p>Перед началом установки Вам потребуется узнать несколько вещей.</p>
 				<h2>Это нужно знать</h2>
-				<p>
-					Вам нужен доступ к вашему сайту, его директориям и программное
-					обеспечение для процесса установки. Это:
-				</p>
+				<p>Вам нужен доступ к вашему сайту, его директориям и программное обеспечение для процесса установки. Это:</p>
 				<p>
 					Доступ к Вашему сайту (FTP)
 					<br />
@@ -37,27 +35,18 @@ const data = {
 				</ul>
 				<h2>Краткая инструкция</h2>
 				<ul className="list">
+					<li>Скачайте и распакуйте дистрибутив WordPress, если вы этого еще не сделали.</li>
 					<li>
-						Скачайте и распакуйте дистрибутив WordPress, если вы этого еще не
-						сделали.
-					</li>
-					<li>
-						Создайте базу данных для WordPress на вашем веб-сервере, чтобы ваш
-						пользователь MySQL имел все права для доступа и внесения изменений в
-						нее.
+						Создайте базу данных для WordPress на вашем веб-сервере, чтобы ваш пользователь MySQL имел все права для
+						доступа и внесения изменений в нее.
 					</li>
 					<li>Переименуйте файл wp-config-sample.php файл в wp-config.php.</li>
 					<li>
-						Откройте wp-config.php в вашем любимом текстовом редакторе и впишите
-						в него настройки подключения к базе данных.
+						Откройте wp-config.php в вашем любимом текстовом редакторе и впишите в него настройки подключения к базе
+						данных.
 					</li>
-					<li>
-						Разместите файлы WordPress на вашем веб-сервере в директории “web”:
-					</li>
-					<li>
-						Перейдите по ссылке http://example.com/wp-admin/install.php
-						используя ваш любимый веб-браузер.
-					</li>
+					<li>Разместите файлы WordPress на вашем веб-сервере в директории “web”:</li>
+					<li>Перейдите по ссылке http://example.com/wp-admin/install.php используя ваш любимый веб-браузер.</li>
 					<li>Распаковки</li>
 				</ul>
 				<h2>
@@ -74,8 +63,8 @@ const data = {
 				<p>Yuklashdan oldin bir nechta zaruriyatlarni bilishingiz lozim.</p>
 				<h2>Buni bilishingiz shart</h2>
 				<p>
-					Siz saytingizga, uning kataloglariga va dasturiy ta'minotiga
-					kirishingiz kerak. O'rnatish jarayonini ta'minlash bu:
+					Siz saytingizga, uning kataloglariga va dasturiy ta'minotiga kirishingiz kerak. O'rnatish jarayonini
+					ta'minlash bu:
 				</p>
 				<p>
 					Veb-saytingizga kirish (FTP)
@@ -98,36 +87,69 @@ const data = {
 				</ul>
 				<h2>Qisqa qo'llanma</h2>
 				<ul className="list">
+					<li>Agar sizda hali WordPress yo'q bo'lsa, ilovani yuklab oling va chiqarib oling .</li>
 					<li>
-						Agar sizda hali WordPress yo'q bo'lsa, ilovani yuklab oling va
-						chiqarib oling .
+						Siz veb-serveringizda WordPress uchun ma'lumotlar bazasini yarating MySQL foydalanuvchi yani sizga kirish va
+						unga o'zgartirish kiritish uchun barcha huquqlarga ega bo'lasiz.
 					</li>
+					<li>wp-config-sample.php faylining nomini wp-config.php qilib o'zgartiring.</li>
 					<li>
-						Siz veb-serveringizda WordPress uchun ma'lumotlar bazasini yarating
-						MySQL foydalanuvchi yani sizga kirish va unga o'zgartirish kiritish
-						uchun barcha huquqlarga ega bo'lasiz.
+						Sevimli matn muharririda wp-config.php ni oching va yozing unda ma'lumotlar bazasiga ulanish sozlamalari
+						mavjud.
 					</li>
-					<li>
-						wp-config-sample.php faylining nomini wp-config.php qilib
-						o'zgartiring.
-					</li>
-					<li>
-						Sevimli matn muharririda wp-config.php ni oching va yozing unda
-						ma'lumotlar bazasiga ulanish sozlamalari mavjud.
-					</li>
-					<li>
-						WordPress fayllarini veb-serveringizga “veb” katalogiga
-						joylashtiring:
-					</li>
-					<li>
-						http://example.com/wp-admin/install.php havolasiga o'ting sevimli
-						veb-brauzeringizdan foydalaning.
-					</li>
+					<li>WordPress fayllarini veb-serveringizga “veb” katalogiga joylashtiring:</li>
+					<li>http://example.com/wp-admin/install.php havolasiga o'ting sevimli veb-brauzeringizdan foydalaning.</li>
 					<li>Qutidan chiqarish</li>
 				</ul>
 				<h2>
 					To'liq o'rnatish ko'rsatmalari{" "}
 					<a href="https://codex.wordpress.org/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_WordPress">
+						WordPress
+					</a>
+				</h2>
+			</>
+		),
+		en: (
+			<>
+				<h2>Necessary things</h2>
+				<p>There are a few things you need to know before starting the installation.</p>
+				<h2>Need to know</h2>
+				<p>You need access to your site, its directories and software provision for the installation process. This:</p>
+				<p>
+					Access to your website (FTP)
+					<br />
+					Text editor
+					<br />
+					FTP client
+					<br />
+					The browser you are using.
+				</p>
+				<h2>Start installation with:</h2>
+				<ul className="list">
+					<li>
+						<a rel="nofollow" href="http://ru.wordpress.org/">
+							Receiving
+						</a>{" "}
+						the latest version of WordPress.
+					</li>
+					<li>Unpack the resulting file to a folder on your computer.</li>
+				</ul>
+				<h2>Short instruction</h2>
+				<ul className="list">
+					<li>Download and extract the WordPress distribution if you haven't already done.</li>
+					<li>
+						Create a database for WordPress on your web server so that your the MySQL user had all rights to access and
+						make changes to her.
+					</li>
+					<li>Rename the wp-config-sample.php file to wp-config.php.</li>
+					<li>Open wp-config.php in your favorite text editor and type it contains database connection settings.</li>
+					<li>Place the WordPress files on your web server in the “web” directory:</li>
+					<li>Follow the link http://example.com/wp-admin/install.php using your favorite web browser.</li>
+					<li>Unpackings</li>
+				</ul>
+				<h2>
+					Full installation instructions{" "}
+					<a href="https://codex.wordpress.org/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0% B0_WordPress">
 						WordPress
 					</a>
 				</h2>
