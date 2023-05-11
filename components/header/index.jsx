@@ -240,7 +240,7 @@ export const LangBlock = ({ language, router }) => {
 				className={`${st.header__main__right__lang__item} ${
 					language == "ru" ? st.header__main__right__lang__item__active : ""
 				}`}
-				onClick={() => changeLang("ru", router)}
+				onClick={() => language != "ru" && changeLang("ru", router)}
 			>
 				RU
 			</div>
@@ -248,7 +248,7 @@ export const LangBlock = ({ language, router }) => {
 				className={`${st.header__main__right__lang__item} ${
 					language == "en" ? st.header__main__right__lang__item__active : ""
 				}`}
-				onClick={() => changeLang("en", router)}
+				onClick={() => language != "en" && changeLang("en", router)}
 			>
 				EN
 			</div>
@@ -256,7 +256,7 @@ export const LangBlock = ({ language, router }) => {
 				className={`${st.header__main__right__lang__item} ${
 					language == "uz" ? st.header__main__right__lang__item__active : ""
 				}`}
-				onClick={() => changeLang("uz", router)}
+				onClick={() => language != "uz" && changeLang("uz", router)}
 			>
 				UZ
 			</div>
