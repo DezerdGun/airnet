@@ -27,8 +27,7 @@ const mainData = {
 				</p>
 
 				<p>
-					Для установки ОС на сервере из iso-образа, подключитесь через KVM-консоль или загрузитесь в Selectel Boot
-					Menu.
+					Для установки ОС на сервере из iso-образа, подключитесь через KVM-консоль или загрузитесь в Airnet Boot Menu.
 				</p>
 
 				<h2>Подключиться по SSH</h2>
@@ -227,7 +226,7 @@ const mainData = {
 				</p>
 
 				<p>
-					OSni serverga iso tasvirdan o'rnatish uchun KVM konsoli orqali ulaning yoki Selectel Boot-ga yuklang. Menyu.
+					OSni serverga iso tasvirdan o'rnatish uchun KVM konsoli orqali ulaning yoki Airnet Boot-ga yuklang. Menyu.
 				</p>
 
 				<h2>SSH orqali ulaning</h2>
@@ -425,8 +424,7 @@ const mainData = {
 				</p>
 
 				<p>
-					To install the OS on the server from an iso image, connect via the KVM console or boot into Selectel Boot
-					Menu.
+					To install the OS on the server from an iso image, connect via the KVM console or boot into Airnet Boot Menu.
 				</p>
 
 				<h2>Connect via SSH</h2>

@@ -10,9 +10,9 @@ const mainData = {
 		ru: (
 			<>
 				<p>
-					Для выделенных серверов Selectel предусмотрена возможность создания и хранения резервных копий (бэкапов).
-					Услуга резервного копирования позволяет повысить надежность инфраструктуры, защитить себя от безвозвратной
-					потери данных.
+					Для выделенных серверов Airnet предусмотрена возможность создания и хранения резервных копий (бэкапов). Услуга
+					резервного копирования позволяет повысить надежность инфраструктуры, защитить себя от безвозвратной потери
+					данных.
 				</p>
 
 				<p>Для создания и хранения резервных копий доступны следующие решения:</p>
@@ -25,10 +25,10 @@ const mainData = {
 					<li>
 						автоматический бэкап в Объектное хранилище — резервные копии создаются с помощью ПО, которое поддерживает
 						FTP, OpenStack Swift или Amazon S3-совместимый API. ПО регулярно архивирует и переносит данные в объектное
-						хранилище Selectel;
+						хранилище Airnet;
 					</li>
 					<li>
-						бэкап в Файловое хранилище Selectel (SFS) — SFS подключается по протоколам NFS или CIFS к одному или
+						бэкап в Файловое хранилище Airnet (SFS) — SFS подключается по протоколам NFS или CIFS к одному или
 						нескольким инстансам (серверам или виртуальным машинам), которые могут работать с ней одновременно.
 						Использует трёхкратную репликацию томов диска, что обеспечивает высокую сохранность данных. Для серверов
 						линейки Chipcore Line данное решение недоступно.
@@ -54,7 +54,7 @@ const mainData = {
 					<li>
 						Object Storage-ga avtomatik zaxiralash - zaxira nusxalari FTP, OpenStack Swift yoki Amazon S3-ga mos API-ni
 						qo'llab-quvvatlaydigan dasturiy ta'minot yordamida yaratiladi. Dastur muntazam ravishda ma'lumotlarni
-						arxivlaydi va Selectel ob'ekt xotirasiga o'tkazadi;
+						arxivlaydi va Airnet ob'ekt xotirasiga o'tkazadi;
 					</li>
 					<li>
 						Tanlangan fayl xotirasiga (SFS) zahira nusxasi — SFS NFS yoki CIFS protokollari orqali u bilan bir vaqtda
@@ -68,8 +68,8 @@ const mainData = {
 		en: (
 			<>
 				<p>
-					Selectel dedicated servers provide the ability to create and store backups (backups). The backup service
-					allows you to increase the reliability of the infrastructure, protect yourself from irretrievable data loss.
+					Airnet dedicated servers provide the ability to create and store backups (backups). The backup service allows
+					you to increase the reliability of the infrastructure, protect yourself from irretrievable data loss.
 				</p>
 
 				<p>The following solutions are available for creating and storing backups:</p>
@@ -81,11 +81,11 @@ const mainData = {
 					</li>
 					<li>
 						automatic backup to Object Storage - backups are created using software that supports FTP, OpenStack Swift
-						or Amazon S3 compatible API. The software regularly archives and transfers data to the Selectel object
+						or Amazon S3 compatible API. The software regularly archives and transfers data to the Airnet object
 						storage;
 					</li>
 					<li>
-						backup to Selectel File Storage (SFS) — SFS connects via NFS or CIFS protocols to one or more instances
+						backup to Airnet File Storage (SFS) — SFS connects via NFS or CIFS protocols to one or more instances
 						(servers or virtual machines) that can work with it simultaneously. Uses three-time replication of disk
 						volumes, which ensures high data safety. This solution is not available for Chipcore Line servers.
 					</li>
