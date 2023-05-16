@@ -52,6 +52,38 @@ const data = {
 				},
 				link: "/help/vds/preimushhestva-vds-i-vps-serverov",
 			},
+			{
+				title: {
+					ru: "",
+					uz: "",
+					en: "",
+				},
+				link: "/help/vds/connect-to-server",
+			},
+			{
+				title: {
+					ru: "",
+					uz: "",
+					en: "",
+				},
+				link: "/help/vds/manage-server-vnc",
+			},
+			{
+				title: {
+					ru: "",
+					uz: "",
+					en: "",
+				},
+				link: "/help/vds/backups-server",
+			},
+			{
+				title: {
+					ru: "",
+					uz: "",
+					en: "",
+				},
+				link: "/help/vds/windows",
+			},
 		],
 	},
 	mainData = {
