@@ -54,33 +54,33 @@ const data = {
 			},
 			{
 				title: {
-					ru: "",
-					uz: "",
-					en: "",
+					ru: "Подключиться к выделенному серверу",
+					uz: "Ajratilgan serverga ulaning",
+					en: "Connect to a dedicated server",
 				},
 				link: "/help/vds/connect-to-server",
 			},
 			{
 				title: {
-					ru: "",
-					uz: "",
-					en: "",
+					ru: "Управлять сервером через KVM-консоль",
+					uz: "KVM konsoli orqali serverni boshqarish",
+					en: "Manage server via KVM console",
 				},
 				link: "/help/vds/manage-server-vnc",
 			},
 			{
 				title: {
-					ru: "",
-					uz: "",
-					en: "",
+					ru: "Резервное копирование выделенных серверов",
+					uz: "Maxsus server zahirasi",
+					en: "Dedicated server backup",
 				},
 				link: "/help/vds/backups-server",
 			},
 			{
 				title: {
-					ru: "",
-					uz: "",
-					en: "",
+					ru: "Развернуть виртуальную машину с Windows Server",
+					uz: "Windows Server bilan virtual mashinani o'rnating",
+					en: "Deploy a virtual machine with Windows Server",
 				},
 				link: "/help/vds/windows",
 			},

@@ -477,6 +477,80 @@ const sitemap = [
 						},
 						link: "/help/vds/vosstanovlenie-root-parolya-ot-vds",
 					},
+					{
+						title: {
+							ru: "Подключиться к выделенному серверу",
+							uz: "Ajratilgan serverga ulaning",
+							en: "Connect to a dedicated server",
+						},
+						link: "/help/vds/connect-to-server",
+					},
+					{
+						title: {
+							ru: "Управлять сервером через KVM-консоль",
+							uz: "KVM konsoli orqali serverni boshqarish",
+							en: "Manage server via KVM console",
+						},
+						link: "/help/vds/manage-server-vnc",
+					},
+					{
+						title: {
+							ru: "Резервное копирование выделенных серверов",
+							uz: "Maxsus server zahirasi",
+							en: "Dedicated server backup",
+						},
+						link: "/help/vds/backups-server",
+					},
+					{
+						title: {
+							ru: "Развернуть виртуальную машину с Windows Server",
+							uz: "Windows Server bilan virtual mashinani o'rnating",
+							en: "Deploy a virtual machine with Windows Server",
+						},
+						link: "/help/vds/windows",
+					},
+				],
+			},
+			{
+				title: { ru: "Биллинг", uz: "Billing", en: "Billing" },
+				link: "/help/billing",
+				children: [
+					{
+						id: "billing",
+						title: { ru: "Биллинг", uz: "Billing", en: "Billing" },
+						children: [
+							{
+								title: {
+									ru: "Регистрация в панели управления",
+									uz: "Boshqaruv panelida ro'yxatdan o'tish",
+									en: "Registration in the control panel",
+								},
+								link: "/help/billing/account",
+								children: [
+									{
+										title: {
+											ru: "Восстановление доступа к аккаунту",
+											uz: "Hisobga kirish huquqi tiklanmoqda",
+											en: "Restoring account access",
+										},
+										link: "/help/billing/account/restore",
+									},
+									{
+										title: {
+											ru: "Перенести услуги на другой аккаунт",
+											uz: "Xizmatlarni boshqa hisobga o'tkazish",
+											en: "Transfer services to another account",
+										},
+										link: "/help/billing/account/transfer",
+									},
+									{
+										title: { ru: "Удалить аккаунт", uz: "Hisobni o'chirish", en: "Delete account" },
+										link: "/help/billing/account/delete",
+									},
+								],
+							},
+						],
+					},
 				],
 			},
 		],
