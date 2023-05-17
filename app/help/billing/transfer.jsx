@@ -10,7 +10,7 @@ const mainData = {
 		ru: (
 			<>
 				<p>
-					Если на аккаунте Selectel уже пополнялся баланс, то переоформить аккаунт на другое юридическое или физическое
+					Если на аккаунте Airnet уже пополнялся баланс, то переоформить аккаунт на другое юридическое или физическое
 					лицо, изменить ФИО Владельца аккаунта или ИНН напрямую нельзя. Зарегистрируйте новый аккаунт и перенесите на
 					него услуги.
 				</p>
@@ -57,7 +57,7 @@ const mainData = {
 						</ul>
 					</li>
 					<li>
-						Если нужно перенести оборудование, размещенное в Selectel, мы пришлем в тикетах документы:
+						Если нужно перенести оборудование, размещенное в Airnet, мы пришлем в тикетах документы:
 						<ul>
 							<li>на передающий аккаунт — акт приема-передачи для возврата оборудования;</li>
 							<li>
@@ -80,7 +80,7 @@ const mainData = {
 		uz: (
 			<>
 				<p>
-					Agar Selectel hisobvarag'ida balans allaqachon to'ldirilgan bo'lsa, unda boshqa yuridik yoki jismoniy shaxs
+					Agar Airnet hisobvarag'ida balans allaqachon to'ldirilgan bo'lsa, unda boshqa yuridik yoki jismoniy shaxs
 					uchun hisobni qayta ro'yxatdan o'tkazish, Hisob egasining to'liq ismini yoki TINni to'g'ridan-to'g'ri
 					o'zgartirish mumkin emas. Yangi hisob qaydnomasini ro'yxatdan o'tkazing va unga o'tkazing unga xizmatlar.
 				</p>
@@ -130,7 +130,7 @@ const mainData = {
 						</ul>
 					</li>
 					<li>
-						Agar siz Selectel tomonidan joylashtirilgan uskunalarni topshirishingiz kerak bo'lsa, biz hujjatlarni
+						Agar siz Airnet tomonidan joylashtirilgan uskunalarni topshirishingiz kerak bo'lsa, biz hujjatlarni
 						chiptalarda yuboramiz:
 						<ul>
 							<li>o'tkazuvchi hisob raqamiga - uskunani qaytarish uchun qabul qilish va topshirish akti;</li>
@@ -157,7 +157,7 @@ const mainData = {
 		en: (
 			<>
 				<p>
-					If the balance has already been replenished on the Selectel account, then it is impossible to re-register the
+					If the balance has already been replenished on the Airnet account, then it is impossible to re-register the
 					account for another legal or natural person, change the full name of the Account Owner or TIN directly.
 					Register a new account and transfer to him services.
 				</p>
@@ -206,7 +206,7 @@ const mainData = {
 						</ul>
 					</li>
 					<li>
-						If you need to transfer equipment hosted by Selectel, we will send documents in tickets:
+						If you need to transfer equipment hosted by Airnet, we will send documents in tickets:
 						<ul>
 							<li>to the transferring account - an act of acceptance and transfer for the return of equipment;</li>
 							<li>
