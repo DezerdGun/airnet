@@ -43,17 +43,26 @@ export default function FreeDomains({ language }) {
 			ru: (
 				<p>
 					Компания &quot;AIRNET&quot; является официальным{" "}
-					<a href="https://cctld.uz/reg/">регистратором домен в зоне UZ</a>
+					<a href="https://cctld.uz/reg/" target="_blank" rel="noopener noreferrer">
+						регистратором домен в зоне UZ
+					</a>
 				</p>
 			),
 			uz: (
 				<p>
-					&quot;AIRNET&quot;Kompaniyasi rasmiy <a href="https://cctld.uz/reg/">UZ domeni registratori</a> hisoblanadi{" "}
+					&quot;AIRNET&quot;Kompaniyasi rasmiy{" "}
+					<a href="https://cctld.uz/reg/" target="_blank" rel="noopener noreferrer">
+						UZ domeni registratori
+					</a>{" "}
+					hisoblanadi{" "}
 				</p>
 			),
 			en: (
 				<p>
-					Company &quot;AIRNET&quot; is official <a href="https://cctld.uz/reg/">domain registrar in UZ zone</a>
+					Company &quot;AIRNET&quot; is official{" "}
+					<a href="https://cctld.uz/reg/" target="_blank" rel="noopener noreferrer">
+						domain registrar in UZ zone
+					</a>
 				</p>
 			),
 		},
@@ -67,7 +76,7 @@ export default function FreeDomains({ language }) {
 				<>
 					<p>
 						Перед регистрацией просим вас ознакомиться с{" "}
-						<a href="https://cctld.uz/info/polru/">
+						<a href="https://cctld.uz/info/polru/" target="_blank" rel="noopener noreferrer">
 							Положением о порядке регистрации и пользования доменными именами в домене «UZ»
 						</a>
 					</p>
@@ -84,7 +93,7 @@ export default function FreeDomains({ language }) {
 				<>
 					<p>
 						Royxatdan otish oldidan{" "}
-						<a href="https://cctld.uz/info/polru/">
+						<a href="https://cctld.uz/info/polru/" target="_blank" rel="noopener noreferrer">
 							Domen nomlarini ro'yxatdan o'tkazish va ulardan foydalanish tartibi to'g'risidagi nizom domeni "UZ"
 						</a>
 						ni bilan tanishib chiqing
@@ -102,7 +111,7 @@ export default function FreeDomains({ language }) {
 				<>
 					<p>
 						Before registering, please read{" "}
-						<a href="https://cctld.uz/info/polru/">
+						<a href="https://cctld.uz/info/polru/" target="_blank" rel="noopener noreferrer">
 							Regulations on the procedure for registration and use of domain names in the "UZ" domain
 						</a>
 					</p>
