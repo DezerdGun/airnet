@@ -358,7 +358,7 @@ export default function VDS({ language }) {
 						// date: langData.month[language],
 					},
 					{
-						price: "10% - 4 400 000",
+						price: "10% - 4 320 000",
 						dateOff: `12 ${langData.month[language]}`,
 						// date: langData.month[language],
 					},
@@ -389,7 +389,7 @@ export default function VDS({ language }) {
 						// date: langData.month[language],
 					},
 					{
-						price: "10% - 6 050 000",
+						price: "10% - 5 940 000",
 						dateOff: `12 ${langData.month[language]}`,
 						// date: langData.month[language],
 					},
@@ -420,7 +420,7 @@ export default function VDS({ language }) {
 						// date: langData.month[language],
 					},
 					{
-						price: "10% - 8 800 000",
+						price: "10% - 8 640 000",
 						dateOff: `12 ${langData.month[language]}`,
 						// date: langData.month[language],
 					},
@@ -451,7 +451,7 @@ export default function VDS({ language }) {
 						// date: langData.month[language],
 					},
 					{
-						price: "10% - 11 000 000",
+						price: "10% - 10 800 000",
 						dateOff: `12 ${langData.month[language]}`,
 						// date: langData.month[language],
 					},

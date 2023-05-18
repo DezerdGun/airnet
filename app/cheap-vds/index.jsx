@@ -125,7 +125,7 @@ export default function CheapVds({ language }) {
 						// date: langData.month[language],
 					},
 					{
-						price: "10% - 1 650 000",
+						price: "10% - 1 620 000",
 						dateOff: `12 ${langData.month[language]}`,
 						// date: langData.month[language],
 					},
@@ -156,7 +156,7 @@ export default function CheapVds({ language }) {
 						// date: langData.month[language],
 					},
 					{
-						price: "10% - 2 200 000",
+						price: "10% - 2 160 000",
 						dateOff: `12 ${langData.month[language]}`,
 						// date: langData.month[language],
 					},
@@ -187,7 +187,7 @@ export default function CheapVds({ language }) {
 						// date: langData.month[language],
 					},
 					{
-						price: "10% - 2 750 000",
+						price: "10% - 2 700 000",
 						dateOff: `12 ${langData.month[language]}`,
 						// date: langData.month[language],
 					},
@@ -218,7 +218,7 @@ export default function CheapVds({ language }) {
 						// date: langData.month[language],
 					},
 					{
-						price: "10% - 3 300 000",
+						price: "10% - 3 240 000",
 						dateOff: `12 ${langData.month[language]}`,
 						// date: langData.month[language],
 					},
