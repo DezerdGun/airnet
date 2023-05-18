@@ -11,9 +11,9 @@ const Drop = ({ item, index, show, setShow, isTarifCard, language }) => {
 			en: "sum",
 		},
 		sumV: {
-			ru: "сум в ",
-			uz: "so'm/",
-			en: "sum in ",
+			ru: "сум",
+			uz: "so'm",
+			en: "sum",
 		},
 	}
 

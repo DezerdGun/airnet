@@ -74,19 +74,19 @@ export default function VDS({ language }) {
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
+							{/* <tr>
 								<td>Unlim 25M</td>
 								<td>25 мбит/с</td>
 								<td>1 Гбит/с</td>
 								<td>Без ограничений</td>
 								<td>Бесплатно</td>
-							</tr>
+							</tr> */}
 							<tr>
 								<td>Unlim 50M</td>
 								<td>50 мбит/с</td>
 								<td>1 Гбит/с</td>
 								<td>Без ограничений</td>
-								<td>1 000 000 сум/мес.</td>
+								<td>Бесплатно</td>
 							</tr>
 							<tr>
 								<td>Unlim 100M</td>
@@ -126,19 +126,19 @@ export default function VDS({ language }) {
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
+							{/* <tr>
 								<td>Unlim 25M</td>
 								<td>25 MB/s</td>
 								<td>1 Gbps</td>
 								<td>Cheksiz</td>
 								<td>Tekin</td>
-							</tr>
+							</tr> */}
 							<tr>
 								<td>Unlim 50M</td>
 								<td>50 MB/s</td>
 								<td>1 Gbps</td>
 								<td>Cheksiz</td>
-								<td>1 000 000 so'm/oy.</td>
+								<td>Tekin</td>
 							</tr>
 							<tr>
 								<td>Unlim 100M</td>
@@ -178,19 +178,19 @@ export default function VDS({ language }) {
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
+							{/* <tr>
 								<td>Unlim 25M</td>
 								<td>25 Mbps</td>
 								<td>1 Gbps</td>
 								<td>Unlimited</td>
 								<td>Free</td>
-							</tr>
+							</tr> */}
 							<tr>
 								<td>Unlim 50M</td>
 								<td>50 Mbps</td>
 								<td>1 Gbps</td>
 								<td>Unlimited</td>
-								<td>1 000 000 sum/mon.</td>
+								<td>Free</td>
 							</tr>
 							<tr>
 								<td>Unlim 100M</td>
@@ -345,28 +345,28 @@ export default function VDS({ language }) {
 					{
 						price: "400 000",
 						dateOff: `1 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 					{
 						price: "1 200 000",
 						dateOff: `3 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 					{
 						price: "2 400 000",
 						dateOff: `6 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 					{
-						price: "4 800 000",
+						price: "10% - 4 400 000",
 						dateOff: `12 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 				],
 				cpu: 4,
 				ram: 8,
 				ssd: 100,
-				net: 15,
+				net: 50,
 				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=49",
 			},
 			{
@@ -376,28 +376,28 @@ export default function VDS({ language }) {
 					{
 						price: "550 000",
 						dateOff: `1 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 					{
 						price: "1 650 000",
 						dateOff: `3 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 					{
 						price: "3 300 000",
 						dateOff: `6 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 					{
-						price: "6 600 000",
+						price: "10% - 6 050 000",
 						dateOff: `12 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 				],
 				cpu: 6,
 				ram: 10,
 				ssd: 150,
-				net: 25,
+				net: 50,
 				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
 			},
 			{
@@ -407,28 +407,28 @@ export default function VDS({ language }) {
 					{
 						price: "800 000",
 						dateOff: `1 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 					{
 						price: "2 400 000",
 						dateOff: `3 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 					{
 						price: "4 800 000",
 						dateOff: `6 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 					{
-						price: "9 600 000",
+						price: "10% - 8 800 000",
 						dateOff: `12 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 				],
 				cpu: 6,
 				ram: 12,
 				ssd: 200,
-				net: 25,
+				net: 50,
 				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
 			},
 			{
@@ -438,28 +438,28 @@ export default function VDS({ language }) {
 					{
 						price: "1 000 000",
 						dateOff: `1 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 					{
 						price: "3 000 000",
 						dateOff: `3 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 					{
 						price: "6 000 000",
 						dateOff: `6 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 					{
-						price: "12 000 000",
+						price: "10% - 11 000 000",
 						dateOff: `12 ${langData.month[language]}`,
-						date: langData.month[language],
+						// date: langData.month[language],
 					},
 				],
 				cpu: 8,
 				ram: 16,
 				ssd: 250,
-				net: 25,
+				net: 50,
 				link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
 			},
 		]

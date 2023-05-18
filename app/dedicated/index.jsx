@@ -30,7 +30,7 @@ export default function Dedicated({ language }) {
 				settingsRam: 16,
 				settingsOther: { ru: "12 шт. SSD", uz: "12 ta. SSD", en: "12 pcs. SSD" },
 				price: "20 000 000",
-				link: "https://billing.airnet.uz/",
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=dedicated&tarif=113",
 			},
 			{
 				proc: "2 x Xeon",
@@ -42,7 +42,7 @@ export default function Dedicated({ language }) {
 				settingsRam: 16,
 				settingsOther: { ru: "12 шт. SSD", uz: "12 ta. SSD", en: "12 pcs. SSD" },
 				price: "25 000 000",
-				link: "https://billing.airnet.uz/",
+				link: "https://billing.airnet.uz/billing.php?do=order&vid=dedicated&tarif=113",
 			},
 		]
 
@@ -296,7 +296,7 @@ export default function Dedicated({ language }) {
 								))}
 							</table>
 						</div>
-						<a href="https://billing.airnet.uz/" className={st.dedicated__link}>
+						<a href="https://billing.airnet.uz/billing.php?do=tarifs&vid=dedicated" className={st.dedicated__link}>
 							{langData.arenda[language]}
 						</a>
 					</>
