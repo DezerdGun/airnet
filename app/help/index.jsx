@@ -200,9 +200,9 @@ const data = [
 						},
 						{
 							title: {
-								ru: "Управлять сервером через KVM-консоль",
-								uz: "KVM konsoli orqali serverni boshqarish",
-								en: "Manage server via KVM console",
+								ru: "Управлять сервером через VNC-консоль",
+								uz: "VNC konsoli orqali serverni boshqarish",
+								en: "Manage server via VNC console",
 							},
 							link: "/help/vds/manage-server-vnc",
 						},

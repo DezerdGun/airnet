@@ -41,7 +41,7 @@ const mainData = {
 
 				<p>После завершения установки ОС виртуальная машина будет готова к работе.</p>
 
-				<h3>Посмотреть пароль администратора</h3>
+				{/* <h3>Посмотреть пароль администратора</h3>
 				<p>
 					В процессе первого запуска ОС происходит автоматическая перезагрузка и кастомизация образа. После перезагрузки
 					откроется стандартное окно аутентификации.
@@ -120,7 +120,7 @@ const mainData = {
 						Опционально: для использования собственного преднастроенного установочного образа ОС добавьте его в
 						соответствующий приватный репозиторий, подробнее в статье Импортировать виртуальную машину.
 					</li>
-				</ol>
+				</ol> */}
 			</>
 		),
 		uz: (
@@ -157,7 +157,7 @@ const mainData = {
 
 				<p>OTni oʻrnatish tugallangandan soʻng virtual mashina foydalanishga tayyor boʻladi.</p>
 
-				<h3>Administrator parolini ko'rish</h3>
+				{/* <h3>Administrator parolini ko'rish</h3>
 				<p>
 					Operatsion tizimning birinchi ishga tushirilishida tasvirni avtomatik qayta ishga tushirish va sozlash amalga
 					oshiriladi. Qayta ishga tushirilgandan so'ng, standart autentifikatsiya oynasi ochiladi.
@@ -239,7 +239,7 @@ const mainData = {
 						Majburiy emas: o'zingizning oldindan sozlangan OS o'rnatish tasviridan foydalanish uchun uni tegishli
 						shaxsiy omborga qo'shing, batafsil ma'lumot uchun Virtual mashinani import qilish bo'limiga qarang.
 					</li>
-				</ol>
+				</ol> */}
 			</>
 		),
 		en: (
@@ -274,7 +274,7 @@ const mainData = {
 
 				<p>After the OS installation is complete, the virtual machine will be ready to use.</p>
 
-				<h3>View administrator password</h3>
+				{/* <h3>View administrator password</h3>
 				<p>
 					During the first start of the OS, an automatic reboot and customization of the image takes place. After the
 					reboot, the standard authentication window will open.
@@ -356,7 +356,7 @@ const mainData = {
 						Optional: to use your own pre-configured OS installation image, add it to the appropriate private
 						repository, see Import a virtual machine for details.
 					</li>
-				</ol>
+				</ol> */}
 			</>
 		),
 	},
