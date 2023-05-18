@@ -42,6 +42,21 @@ module.exports = {
 				destination: "/blog/lenovo-predstavila-pervyj-v-mire-smartfon-s-12-gb-operativnoj-pamyati",
 				permanent: true,
 			},
+			{
+				source: "/net",
+				destination: "/",
+				permanent: true,
+			},
+			{
+				source: "/cpanel",
+				destination: "/hosting",
+				permanent: true,
+			},
+			{
+				source: "/virtual",
+				destination: "/hosting",
+				permanent: true,
+			},
 		]
 	},
 }

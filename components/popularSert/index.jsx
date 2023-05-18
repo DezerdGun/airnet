@@ -247,7 +247,7 @@ export default function PopularSert({ language }) {
 							</div>
 							<div className={st.popularSert__block__item__footer}>
 								<Drop index={index} item={item.prices} show={show} setShow={setShow} language={language} />
-								<a href={item.link}>
+								<a href={item.link} target="_blank" rel="noopener noreferrer">
 									<button>{langData.buy[language]}</button>
 								</a>
 							</div>

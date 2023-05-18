@@ -2,13 +2,7 @@ import { useState } from "react"
 import st from "./customTableHosting.module.scss"
 
 const checkedCircle = (
-	<svg
-		width="24"
-		height="24"
-		viewBox="0 0 24 24"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-	>
+	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path
 			fillRule="evenodd"
 			clipRule="evenodd"
@@ -187,21 +181,12 @@ export default function CustomTableHosting({ table, language }) {
 									{item.price} {langData.sumPerMonth[language]}.
 								</span>
 								<button
-									className={
-										isOpen === i + 1
-											? st.customTableHosting__head__button__active
-											: null
-									}
-									onClick={() =>
-										isOpen === i + 1 ? setIsOpen(null) : setIsOpen(i + 1)
-									}
+									className={isOpen === i + 1 ? st.customTableHosting__head__button__active : null}
+									onClick={() => (isOpen === i + 1 ? setIsOpen(null) : setIsOpen(i + 1))}
 								>
 									{langData.podrobnee[language]}
 									<span>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											viewBox="0 0 448 512"
-										>
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
 											<path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z" />
 										</svg>
 									</span>
@@ -217,19 +202,11 @@ export default function CustomTableHosting({ table, language }) {
 							{item.ssd} {langData.mb[language]}
 						</td>
 					))}
-					<div
-						className={`${st.customTableHosting__block} ${
-							isOpen && st.customTableHosting__block__active
-						}`}
-					>
+					<div className={`${st.customTableHosting__block} ${isOpen && st.customTableHosting__block__active}`}>
 						<div className={st.customTableHosting__block__scroll}>
 							<div className={st.customTableHosting__block__scroll__head}>
 								<h6>{langData.podrobniyeXarakter[language]}</h6>
-								<svg
-									onClick={() => setIsOpen(null)}
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 320 512"
-								>
+								<svg onClick={() => setIsOpen(null)} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
 									<path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
 								</svg>
 							</div>
@@ -260,8 +237,7 @@ export default function CustomTableHosting({ table, language }) {
 								</table>
 								<ul>
 									<li>
-										{checkedCircle}CPU Intel Xeon -{" "}
-										<strong>{langData.eightCore[language]}</strong>
+										{checkedCircle}CPU Intel Xeon - <strong>{langData.eightCore[language]}</strong>
 									</li>
 									<li>
 										{checkedCircle}
@@ -281,8 +257,7 @@ export default function CustomTableHosting({ table, language }) {
 									<li>{checkedCircle}PHP: 7.1, 7.2, 7.3, 7.4, 8.0</li>
 									<li>
 										{checkedCircle}
-										{langData.RAM[language]}{" "}
-										<strong>4096 {langData.mb[language]}</strong>
+										{langData.RAM[language]} <strong>4096 {langData.mb[language]}</strong>
 									</li>
 									<li>{checkedCircle}ionCube Loader, CURL, Zend, Cron</li>
 									<li>
@@ -316,7 +291,7 @@ export default function CustomTableHosting({ table, language }) {
 									</tr>
 									<tr>
 										<td colSpan={2}>
-											<a href={table[isOpen - 1]?.buyLink}>
+											<a href={table[isOpen - 1]?.buyLink} target="_blank" rel="noopener noreferrer">
 												{langData.buyXosting[language]}
 											</a>
 										</td>
@@ -383,7 +358,9 @@ export default function CustomTableHosting({ table, language }) {
 					<td></td>
 					{table.map((item) => (
 						<td key={item.orderLink}>
-							<a href={item.orderLink}>{langData.order[language]}</a>
+							<a href={item.orderLink} target="_blank" rel="noopener noreferrer">
+								{langData.order[language]}
+							</a>
 						</td>
 					))}
 				</tr>

@@ -1,5 +1,5 @@
-import Drop from "../drop";
-import st from "../tarifCard/tarifCard.module.scss";
+import Drop from "../drop"
+import st from "../tarifCard/tarifCard.module.scss"
 
 export default function TarifCard2({ index, tarif, show, setShow, language }) {
 	const langData = {
@@ -53,7 +53,7 @@ export default function TarifCard2({ index, tarif, show, setShow, language }) {
 			uz: "Buyurtma berish",
 			en: "Order hosting",
 		},
-	};
+	}
 
 	return (
 		<div className={st.tarifCard}>
@@ -114,8 +114,10 @@ export default function TarifCard2({ index, tarif, show, setShow, language }) {
 			</table>
 			<hr />
 			<button>
-				<a href={tarif.link}>{langData.order[language]}</a>
+				<a href={tarif.link} target="_blank" rel="noopener noreferrer">
+					{langData.order[language]}
+				</a>
 			</button>
 		</div>
-	);
+	)
 }

@@ -473,7 +473,7 @@ export default function Footer({ language }) {
 							<ul>
 								{social.map((item) => (
 									<li key={item.link}>
-										<a href={item.link} target="_blank">
+										<a href={item.link} target="_blank" rel="noopener noreferrer">
 											{item.img}
 										</a>
 									</li>
@@ -550,14 +550,18 @@ export default function Footer({ language }) {
 									<ul>
 										{payment.map((item) => (
 											<li key={item.link}>
-												<a href={item.link}>{item.img}</a>
+												<a href={item.link} target="_blank" rel="noopener noreferrer">
+													{item.img}
+												</a>
 											</li>
 										))}
 									</ul>
 									<ul>
 										{payment2.map((item) => (
 											<li key={item.link}>
-												<a href={item.link}>{item.img}</a>
+												<a href={item.link} target="_blank" rel="noopener noreferrer">
+													{item.img}
+												</a>
 											</li>
 										))}
 									</ul>

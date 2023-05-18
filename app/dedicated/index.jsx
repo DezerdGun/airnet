@@ -290,7 +290,9 @@ export default function Dedicated({ language }) {
 											</div>
 										</td>
 										<td>
-											<a href={item.link}>{langData.buy[language]}</a>
+											<a href={item.link} target="_blank" rel="noopener noreferrer">
+												{langData.buy[language]}
+											</a>
 										</td>
 									</tr>
 								))}
