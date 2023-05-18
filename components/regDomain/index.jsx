@@ -139,6 +139,8 @@ export const RegDomainBlock = ({ language }) => {
 									Buyurtma qilish uchun{" "}
 									<a
 										href={`https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=${isDomainFree.domain}`}
+										target="_blank"
+										rel="noopener noreferrer"
 									>
 										Ushbu havolaga
 									</a>{" "}
@@ -149,6 +151,8 @@ export const RegDomainBlock = ({ language }) => {
 									Click{" "}
 									<a
 										href={`https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=${isDomainFree.domain}`}
+										target="_blank"
+										rel="noopener noreferrer"
 									>
 										To order
 									</a>{" "}
@@ -159,6 +163,8 @@ export const RegDomainBlock = ({ language }) => {
 									Нажмите{" "}
 									<a
 										href={`https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=${isDomainFree.domain}`}
+										target="_blank"
+										rel="noopener noreferrer"
 									>
 										Заказать
 									</a>{" "}
