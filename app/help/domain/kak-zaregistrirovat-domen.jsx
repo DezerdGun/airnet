@@ -25,7 +25,13 @@ export default function HelpBlog({ language }) {
 					<p>
 						Нажать на кнопку «
 						<strong>
-							<a href="https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz">Заказать</a>
+							<a
+								href="https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Заказать
+							</a>
 						</strong>
 						»;
 					</p>
@@ -47,7 +53,13 @@ export default function HelpBlog({ language }) {
 					<p>
 						<strong>
 							Buyurtma berish uchun «
-							<a href="https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz">ushbu tugmani bosing</a>
+							<a
+								href="https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								ushbu tugmani bosing
+							</a>
 						</strong>
 						»;
 					</p>
@@ -69,7 +81,13 @@ export default function HelpBlog({ language }) {
 					<p>
 						Click on the button "
 						<strong>
-							<a href="https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz">Order</a>
+							<a
+								href="https://billing.airnet.uz/billing.php?do=order&amp;type=d&amp;zone=uz"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Order
+							</a>
 						</strong>
 						»;
 					</p>

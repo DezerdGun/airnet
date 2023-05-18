@@ -296,7 +296,12 @@ export default function Dedicated({ language }) {
 								))}
 							</table>
 						</div>
-						<a href="https://billing.airnet.uz/billing.php?do=tarifs&vid=dedicated" target="_blank" className={st.dedicated__link}>
+						<a
+							href="https://billing.airnet.uz/billing.php?do=tarifs&vid=dedicated"
+							target="_blank"
+							rel="noopener noreferrer"
+							className={st.dedicated__link}
+						>
 							{langData.arenda[language]}
 						</a>
 					</>

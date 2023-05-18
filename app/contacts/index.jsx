@@ -133,7 +133,9 @@ export default function Contacts({ language }) {
 								</svg>
 							</span>
 							<p>{langData.quas[language]}</p>
-							<a href="https://billing.airnet.uz/billing.php">{langData.room[language]}</a>
+							<a href="https://billing.airnet.uz/billing.php" target="_blank" rel="noopener noreferrer">
+								{langData.room[language]}
+							</a>
 						</div>
 					</Container>
 				</div>

@@ -119,7 +119,7 @@ export default function Support({ language }) {
 							</svg>
 							<div>
 								<label>Через форму</label>
-								<a href="https://billing.airnet.uz/billing.php?do=tickets" target="_blank">
+								<a href="https://billing.airnet.uz/billing.php?do=tickets" target="_blank" rel="noopener noreferrer">
 									Открыть форму
 								</a>
 							</div>
@@ -163,7 +163,7 @@ export default function Support({ language }) {
 							</svg>
 							<div>
 								<label>Forma orqali</label>
-								<a href="https://billing.airnet.uz/billing.php?do=tickets" target="_blank">
+								<a href="https://billing.airnet.uz/billing.php?do=tickets" target="_blank" rel="noopener noreferrer">
 									Formani ochish
 								</a>
 							</div>
@@ -207,7 +207,7 @@ export default function Support({ language }) {
 							</svg>
 							<div>
 								<label>Via form</label>
-								<a href="https://billing.airnet.uz/billing.php?do=tickets" target="_blank">
+								<a href="https://billing.airnet.uz/billing.php?do=tickets" target="_blank" rel="noopener noreferrer">
 									open form
 								</a>
 							</div>

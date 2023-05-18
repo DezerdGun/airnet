@@ -140,8 +140,14 @@ export default function PartnersPage({ language }) {
 							<div className={st.partners__payment__block}>
 								<h6>Пройти регистрацию</h6>
 								<p>
-									<a href="https://billing.airnet.uz/billing.php?do=order&type=partner">Пройдите регистрацию</a>, после
-									чего, в нашем биллинге Вы сможете получить свою реферальную ссылку и персональный промо-код.
+									<a
+										href="https://billing.airnet.uz/billing.php?do=order&type=partner"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Пройдите регистрацию
+									</a>
+									, после чего, в нашем биллинге Вы сможете получить свою реферальную ссылку и персональный промо-код.
 								</p>
 							</div>
 							<div className={st.partners__payment__block}>
@@ -329,9 +335,15 @@ export default function PartnersPage({ language }) {
 							<div className={st.partners__payment__block}>
 								<h6>Ro'yhatdan o'tish</h6>
 								<p>
-									<a href="https://billing.airnet.uz/billing.php?do=order&type=partner">Ro'yhatdan o'ting</a> va shundan
-									so'ng, siz o'zingizni havola va shaxsiy promo-kodingizni bizning habarlarimiz orqali olishingiz mumkin
-									.
+									<a
+										href="https://billing.airnet.uz/billing.php?do=order&type=partner"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Ro'yhatdan o'ting
+									</a>{" "}
+									va shundan so'ng, siz o'zingizni havola va shaxsiy promo-kodingizni bizning habarlarimiz orqali
+									olishingiz mumkin .
 								</p>
 							</div>
 							<div className={st.partners__payment__block}>
@@ -517,8 +529,14 @@ export default function PartnersPage({ language }) {
 							<div className={st.partners__payment__block}>
 								<h6>Register</h6>
 								<p>
-									<a href="https://billing.airnet.uz/billing.php?do=order&type=partner">Sign up</a>, after which, in our
-									billing you will be able to get your referral link and personal promo code .
+									<a
+										href="https://billing.airnet.uz/billing.php?do=order&type=partner"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Sign up
+									</a>
+									, after which, in our billing you will be able to get your referral link and personal promo code .
 								</p>
 							</div>
 							<div className={st.partners__payment__block}>

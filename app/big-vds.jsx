@@ -221,7 +221,11 @@ export default function BigVDS({ language }) {
 								свободного оборудования.
 							</p>
 							<button>
-								<a href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
+								<a
+									href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									Стать клиентом и заказать VDS
 								</a>
 							</button>
@@ -231,7 +235,11 @@ export default function BigVDS({ language }) {
 						<>
 							<p>VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4 soatgacha davom etadi mavjud uskunalar.</p>
 							<button>
-								<a href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
+								<a
+									href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									Mijozga aylaning va vdsga buyurtma bering
 								</a>
 							</button>
@@ -244,7 +252,11 @@ export default function BigVDS({ language }) {
 								equipment.
 							</p>
 							<button>
-								<a href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12">
+								<a
+									href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									Become a client and order VDS
 								</a>
 							</button>

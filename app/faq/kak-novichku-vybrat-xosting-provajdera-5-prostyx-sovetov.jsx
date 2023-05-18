@@ -71,7 +71,11 @@ const data = {
 				<p>
 					Поэтому прежде, чем выбирать веб-хостинг, лучше поработать с ним в тестовом режиме. Благо почти все провайдеры
 					предоставляют потенциальным клиентам{" "}
-					<a href="https://billing.airnet.uz/billing.php?do=order&amp;vid=hosting&amp;tarif=0">
+					<a
+						href="https://billing.airnet.uz/billing.php?do=order&amp;vid=hosting&amp;tarif=0"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<strong>бесплатный тестовый период</strong>
 					</a>
 					.
@@ -144,7 +148,11 @@ const data = {
 				<p>
 					Shuning uchun, veb-xost tanlashdan oldin,sinov rejimida ishlagan yaxshiroq. . Yaxshiyamki, deyarli barcha
 					provayderlar potentsial mijozlarga{" "}
-					<a href="https://billing.airnet.uz/billing.php?do=order&amp;vid=hosting&amp;tarif=0">
+					<a
+						href="https://billing.airnet.uz/billing.php?do=order&amp;vid=hosting&amp;tarif=0"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<strong>bepul sinov muddati</strong>{" "}
 					</a>
 					bilan ta'minlaydi .
@@ -215,7 +223,11 @@ const data = {
 				<p>
 					Therefore, before choosing a web host, it is better to work with him in test mode. Fortunately, almost all
 					providers provide to potential customers{" "}
-					<a href="https://billing.airnet.uz/billing.php?do=order&amp;vid=hosting&amp;tarif=0">
+					<a
+						href="https://billing.airnet.uz/billing.php?do=order&amp;vid=hosting&amp;tarif=0"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<strong>free trial period</strong>
 					</a>
 					.

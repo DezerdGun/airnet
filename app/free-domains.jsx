@@ -137,7 +137,14 @@ export default function FreeDomains({ language }) {
 					<span className={st.domains__head__block__text__green}>
 						доменное имя в данное время недоступно для регистрации.
 					</span>{" "}
-					Нажмите <a href="https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=airnet22">Заказать</a>{" "}
+					Нажмите{" "}
+					<a
+						href="https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=airnet22"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Заказать
+					</a>{" "}
 					для регистрации доменного имени.
 				</>
 			),
@@ -147,7 +154,11 @@ export default function FreeDomains({ language }) {
 						Domen nomi hozirda ro‘yxatdan o‘tish uchun mavjud emas.
 					</span>{" "}
 					Domen nomini ro'yxatdan o'tkazish uchun
-					<a href="https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=airnet22">
+					<a
+						href="https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=airnet22"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						buyurtma berish
 					</a>{" "}
 					tugmasini bosing
@@ -158,8 +169,15 @@ export default function FreeDomains({ language }) {
 					<span className={st.domains__head__block__text__green}>
 						The domain name is currently unavailable for registration.
 					</span>{" "}
-					Click <a href="https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=airnet22">Order</a> to
-					register a domain name.
+					Click{" "}
+					<a
+						href="https://billing.airnet.uz/billing.php?do=order&type=d&zone=uz&domain=airnet22"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Order
+					</a>{" "}
+					to register a domain name.
 				</>
 			),
 		},
@@ -185,7 +203,9 @@ export default function FreeDomains({ language }) {
 						<th>20 000 сум*</th>
 						<th>40 000 сум**</th>
 						<th>
-							<a href="https://billing.airnet.uz/billing.php?do=zones">Купить</a>
+							<a href="https://billing.airnet.uz/billing.php?do=zones" target="_blank" rel="noopener noreferrer">
+								Купить
+							</a>
 						</th>
 					</tr>
 				</table>
@@ -211,7 +231,9 @@ export default function FreeDomains({ language }) {
 						<th>20 000 som*</th>
 						<th>40 000 som**</th>
 						<th>
-							<a href="https://billing.airnet.uz/billing.php?do=zones">Harid qilish</a>
+							<a href="https://billing.airnet.uz/billing.php?do=zones" target="_blank" rel="noopener noreferrer">
+								Harid qilish
+							</a>
 						</th>
 					</tr>
 				</table>
@@ -237,7 +259,9 @@ export default function FreeDomains({ language }) {
 						<th>20 000 sum*</th>
 						<th>40 000 UZS**</th>
 						<th>
-							<a href="https://billing.airnet.uz/billing.php?do=zones">Buy</a>
+							<a href="https://billing.airnet.uz/billing.php?do=zones" target="_blank" rel="noopener noreferrer">
+								Buy
+							</a>
 						</th>
 					</tr>
 				</table>
