@@ -720,7 +720,7 @@ export default function Oferta({ language }) {
 							нормативными актами Республики Узбекистан, действующими в области предоставления Услуг.
 						</p>
 					</div>
-					<div className={st.oferta__block}>
+					{/* <div className={st.oferta__block}>
 						<h2>На оказание услуг интернета</h2>
 						<p>
 							Общество с ограниченной ответственностью «AIRNET», именуемое в дальнейшем Провайдер, действующего на
@@ -1296,1290 +1296,1419 @@ export default function Oferta({ language }) {
 							9.7 Абонент обязуется регулярно проверять наличие подобных изменений на официальном сайте Провайдера
 							www.airnet.uz
 						</p>
-					</div>
+					</div> */}
 				</>
 			),
 			uz: (
 				<>
 					<div>
-						<h2>Xosting xizmatlari uchun</h2>
+						<h2>Xosting xizmatlarini taqdim etish uchun</h2>
 						<p>
-							“AIRNET” MChJ, bundan keyin “Pudratchi” deb yuritiladi, vakillik qiladi Litsenziya asosida faoliyat
-							yurituvchi direktor Danayev A.G Aloqa, axborotlashtirish davlat qo‘mitasi tomonidan chiqarilgan va
-							Telekommunikatsiya texnologiyalari AA No 0006506 18.06.2018 yil yoqilgan ma'lumotlarni uzatish
-							tarmoqlaridan foydalanish va xizmatlar ko'rsatish, nashr etadi xosting xizmatlarini taqdim etish uchun
-							ushbu Taklif.
+							Aloqa, axborotlashtirish va telekommunikatsiya texnologiyalari davlat qo‘mitasi tomonidan 18.06.2018
+							yildagi AA No 0006506-sonli litsenziya asosida ish yurituvchi direktor Danayev A.G. tomonidan taqdim
+							etilgan “AIRNET” MChJ, bundan keyin “Pudratchi” deb yuritiladi. . ma’lumotlar uzatish tarmoqlaridan
+							foydalanish va xizmatlar ko‘rsatish uchun xosting xizmatlarini ko‘rsatish bo‘yicha ushbu Taklifni e’lon
+							qiladi.
 						</p>
 						<p>
-							<strong>1. Umumiy holat</strong>
+							<strong>1. Umumiy qoidalar</strong>
 							<br />
-							1.1. Ushbu taklif San'atga muvofiq. 370 Fuqarolik O'zbekiston Respublikasi Kodeksi ommaviy oferta
-							hisoblanadi (shartnoma tuzish taklifi), Pudratchiga jismoniy va yuridik shaxslarning cheklanmagan soni,
-							shuningdek o'z ichiga olgan yakka tartibdagi tadbirkorlar (keyingi o'rinlarda Buyurtmachi deb yuritiladi).
-							Xizmatlarni taqdim etish va ulardan foydalanish bo'yicha shartnomaning muhim shartlari Pudratchi.
+							1.1. Ushbu taklif San'atga muvofiq. O‘zbekiston Respublikasi Fuqarolik Kodeksining 370-moddasida
+							Pudratchining cheklanmagan miqdordagi jismoniy va yuridik shaxslarga, shuningdek, yakka tartibdagi
+							tadbirkorlarga (keyingi o‘rinlarda Buyurtmachi deb yuritiladi) ommaviy oferta (shartnoma tuzish
+							to‘g‘risidagi taklifi) kiradi. Pudratchi xizmatlarini taqdim etish va ulardan foydalanish bo'yicha
+							shartnomaning muhim shartlari.
 							<br />
-							1.2. Ushbu Taklifni to'liq va so'zsiz qabul qilish ushbu taklifda ko'rsatilgan shartlarni bajarish uchun
-							har qanday harakatlar, in shu jumladan Mijoz sifatida ro'yxatdan o'tish, Xizmatlar uchun to'lov ushbu
-							Ofertada nazarda tutilgan tartibda, shuningdek, boshqa shunga o'xshash shaxsning Xizmatlardan foydalanish
-							niyatini tasdiqlovchi harakatlar Pudratchi.
+							1.2. Ushbu Ofertani to'liq va so'zsiz qabul qilish - bu taklifda ko'rsatilgan shartlarni bajarish bo'yicha
+							har qanday harakat, shu jumladan Buyurtmachi sifatida ro'yxatdan o'tish, ushbu Ofertada ko'zda tutilgan
+							xizmatlar uchun to'lovni amalga oshirish, shuningdek, shaxsning niyatini tasdiqlovchi shunga o'xshash
+							boshqa harakatlar. Pudratchining xizmatlaridan foydalanish.
 							<br />
-							1.3. Qabul qilingan paytdan boshlab Buyurtmachi hisobga olinadi ushbu Taklif bilan tanishib, rozilik
-							bildirganingizdan keyin respublika Fuqarolik kodeksining shartlariga muvofiq O‘zbekiston Pudratchi bilan
-							shartnomaviy bitimlar tuzgan deb hisoblanadi ushbu Taklif shartlari bo'yicha munosabatlar.
+							1.3. Qabul qilingan paytdan boshlab Buyurtmachi ushbu Oferta bilan tanishgan va rozi bo‘lgan hisoblanadi
+							va O‘zbekiston Respublikasi Fuqarolik Kodeksi shartlariga muvofiq Pudratchi bilan shartlar bo‘yicha
+							shartnomaviy munosabatlarga kirgan deb hisoblanadi. ushbu Taklifdan.
 							<br />
-							1.4. Pudratchining majburiyatlari ushbu shartlar bilan cheklangan taklif, xususan, Pudratchining
-							majburiyatlari shartni o'z ichiga olmaydi Buyurtmachiga Internetga kirishni ta'minlash xizmatlari. Kirish
-							Internetga Mijoz o'z hisobidan mustaqil ravishda taqdim etadi. Shuningdek, Pudratchi qabul qilish va
-							uzatish imkoniyatini ta'minlamaydi Buyurtmachi tomonidan Pudratchining ofisida elektron xabarlar;
-							sozlamalar va/yoki kompyuter texnikasi va dasturiy ta’minotini diagnostikasi ta'minlash, shuningdek,
-							Buyurtmachi va/yoki xodimlarni o'qitish Buyurtmachining dasturiy va apparat vositalari bilan ishlash
-							ko'nikmalari.
+							1.4. Pudratchining majburiyatlari ushbu taklif shartlari bilan cheklangan, xususan, Pudratchining
+							majburiyatlari Buyurtmachiga Internetga kirishni ta'minlash bo'yicha xizmatlar ko'rsatishni o'z ichiga
+							olmaydi. Internetga kirish Mijoz tomonidan o'z mablag'lari hisobidan ta'minlanadi. Shuningdek, Pudratchi
+							Pudratchining ofisida Buyurtmachi tomonidan elektron xabarlarni qabul qilish va uzatish imkoniyatini
+							ta'minlamaydi; kompyuter texnikasi va dasturiy ta'minotini sozlash va/yoki diagnostika qilish, shuningdek,
+							Buyurtmachi va/yoki Buyurtmachi xodimlarini dasturiy va texnik vositalar bilan ishlash ko'nikmalariga
+							o'rgatish.
 							<br />
-							1.5. Yuridik shaxslar uchun alohida shartnoma tuzish ushbu Taklif shartlari majburiydir.
+							1.5. Yuridik shaxslar uchun ushbu Oferta shartlari bo'yicha alohida Shartnoma tuzish majburiydir.
 						</p>
 						<p>
-							<strong>2.Taklifda foydalanilgan tushunchalar va ta'riflar</strong>
+							<strong>2. Taklif</strong>da foydalanilgan tushunchalar va ta'riflar
 							<br />
-							Понятия и определения, используемые в настоящей Оферте, имеют следующие значения:
+							Ushbu Taklifda foydalanilgan atamalar va ta'riflar quyidagi ma'nolarga ega: <br />
+							2.1. SITE (Internet sayt, veb-sayt) - ma'lum bir mavzuga bag'ishlangan va Internet orqali kirish mumkin
+							bo'lgan o'zaro bog'langan sahifalarni o'z ichiga olgan yagona axborot tuzilmasi.
 							<br />
-							2.1. САЙТ (интернет-сайт, веб-сайт) — единая информационная структура, содержащая связанные между собой
-							страницы, посвященные определенной теме и доступные через сеть Интернет
+							2.2. XIZMATLAR - Pudratchi va boshqalar tomonidan Internetda Mijozlarning ma'lumotlarini joylashtirish va
+							saqlash bilan bog'liq virtual xosting xizmatlari. Xizmatlarning toʻliq roʻyxati Pudratchining
+							https://airnet.uz saytida koʻrsatilgan
 							<br />
-							2.2. УСЛУГИ — предоставляемые Исполнителем услуги виртуального хостинга и прочие, связанные с размещением
-							и поддержанием информации Заказчиков в сети Интернет. Полный список Услуг указан на сайте Исполнителя по
-							адресу https://airnet.uz
+							2.3. MIJOCH - ushbu taklifni San'atga muvofiq qabul qilgan yakka tartibdagi tadbirkor, jismoniy yoki
+							yuridik shaxs. Ushbu Shartlar 1.
 							<br />
-							2.3. ЗАКАЗЧИК — индивидуальный предприниматель, физическое или юридическое лицо, совершившее акцепт
-							настоящей оферты в соответствии со ст. 1 настоящих Условий.
+							2.4. TARIFF - tegishli Xizmatning o'ziga xos xususiyatlaridan kelib chiqqan holda, muayyan Xizmatdan
+							foydalanishning ma'lum davri uchun narxi.
 							<br />
-							2.4. ТАРИФ – стоимость конкретной Услуги за определенный период ее использования, обусловленной спецификой
-							соответствующей Услуги.
+							2.5. HISOB - Buyurtmachining identifikatsiyasi uchun unga tayinlangan login va parol, Pudratchining server
+							uskunasidagi Buyurtmachining ma'lumotlariga kirish imkonini beradi.
 							<br />
-							2.5. АККАУНТ — логин и пароль, присваиваемые Заказчику для его идентификации, позволяющие получать доступ
-							к информации Заказчика на серверном оборудовании Исполнителя.
+							2.6. TRAFFIK - ma'lum vaqt davomida Pudratchining texnik jihozlari tomonidan qayd etilgan server va
+							Internet tugunlari o'rtasidagi telematik xabarlar hajmi.
 							<br />
-							2.6. ТРАФИК — зафиксированный техническим оборудованием Исполнителя объем телематических сообщений между
-							сервером и узлами сети Интернет за определенный период времени.
+							2.5. VIRTUAL HOSTING - tarmoqda doimiy joylashgan serverda (odatda Internetda) ma'lumotlarni jismoniy
+							joylashtirish uchun hisoblash quvvatini ta'minlash xizmati.
 							<br />
-							2.5. ВИРТУАЛЬНЫЙ ХОСТИНГ – услуга по предоставлению вычислительных мощностей для физического размещения
-							информации на сервере, постоянно находящемся в сети (обычно Интернет)
+							2.6. FAVQULODDA HOLAT - bu standart (muntazam) xizmatlar ko'rsatishning bir qismi bo'lmagan, kompaniya
+							mijozlari tomonidan xizmatlardan foydalanishning to'xtatilishi yoki foydalanish imkoniyatiga olib kelgan
+							yoki olib kelishi mumkin bo'lgan har qanday hodisa.
+						</p>
+
+						<p>
+							<strong>3. Xizmat shartlari</strong>
 							<br />
-							2.6. АВАРИЙНАЯ СИТУАЦИЯ — это любое событие, не являющееся частью стандартного (штатного) предоставления
-							услуг, которое привело или могло привести к прерыванию или возможности использования услуг клиентами
-							компании.
+							3.1. ISPCONFIG tizimida hisob qaydnomasini ro'yxatdan o'tkazish Pudratchi tomonidan tizim ko'rsatmalariga
+							muvofiq Buyurtmachining hisob ma'lumotlarini ko'rsatish orqali xosting serverida mustaqil ravishda amalga
+							oshiriladi. ISPCONFIG tizimida Buyurtmachini identifikatsiya qiluvchi asosiy elementlar ro'yxatdan o'tish
+							paytida ko'rsatilgan login va paroldir (hisob ma'lumotlari).
+							<br />
+							Pudratchi Buyurtmachining ma'lumotlarini tekshiradi va istalgan vaqtda kiritilgan ma'lumotlarning
+							to'g'riligini yoki kiritilmagan ma'lumotlarning taqdim etilishini (tasdiqlovchi hujjatlarning nusxalari
+							yoki asl nusxalarini taqdim etish orqali) tasdiqlashni so'rash va xizmatlar ko'rsatishni to'xtatib turish
+							huquqiga ega. tasdiqlovchi hujjatlar taqdim etiladi va Buyurtmachi so'ralgan ma'lumotlarni o'zgartiradi
+							va/yoki to'ldiradi.
+							<br />
+							3.2. ISPCONFIG tizimida hisob parolini tiklash Buyurtmachi tomonidan Pudratchining texnik bo'limiga
+							murojaat qilish orqali amalga oshirilishi mumkin, agar Buyurtmachining aloqa elektron pochtasi (elektron
+							pochta manzili) Hisob ma'lumotlariga kiritilgan bo'lsa. Pudratchi parolni faqat Buyurtmachi Buyurtmachini
+							identifikatsiya qiluvchi hujjatlarni taqdim etganida va taqdim etilgan hujjatlarda ko'rsatilgan
+							ma'lumotlar Hisobni ro'yxatdan o'tkazish paytida kiritilgan ma'lumotlarga mos kelganda parolni tiklaydi.
+							Aks holda, Buyurtmachi tomonidan Hisobga kirish uchun foydalanilgan parol Pudratchi tomonidan tiklanmaydi.
+							<br />
+							3.3. Buyurtmachi Xizmatlar uchun to'lovni amalga oshirgandan so'ng (ushbu Shartlarga muvofiq) va Hisob
+							qaydnomasi ro'yxatdan o'tgan paytdan boshlab Xizmatlardan foydalanish imkoniyatiga ega bo'ladi.
+							<br />
+							3.4. Muayyan Xizmatlarni tanlash va ulardan foydalanish (ulanish va/yoki uzish) Buyurtmachi tomonidan
+							Hisobdan foydalangan holda mustaqil ravishda amalga oshiriladi. Hisobga kirish hosting serverida ISPCONFIG
+							tizimining tegishli maydonlariga Mijozning hisob ma'lumotlarini kiritish orqali amalga oshiriladi.
+							<br />
+							3.5. Xaridor oshkor qilish, yo'qotish, o'g'irlik va hokazolarga olib kelgan harakatlar va / yoki
+							harakatsizlik uchun to'liq javobgardir. uning hisob ma'lumotlari va Buyurtmachini individuallashtiradigan
+							boshqa ma'lumotlar, shuningdek, mijozning hisob ma'lumotlaridan foydalangan holda uchinchi shaxslarning
+							har qanday harakatlari va/yoki harakatsizligi uchun. Pudratchi Buyurtmachi va/yoki uchinchi shaxslarning
+							o'z ma'lumotlaridan foydalangan holda yuqoridagi harakatlari uchun javobgar emas.
+							<br />
+							3.6. Pudratchi Buyurtmachining elektron pochta xabarlari va jurnal fayllari bundan mustasno, Buyurtmachi
+							ma'lumotlarining zaxira nusxasini yaratadi. Bunday holda, Buyurtmachi ma'lumotlarining zaxira nusxasi,
+							agar Buyurtmachi tomonidan bog'langan xizmatlarda boshqacha qoida nazarda tutilgan bo'lmasa, Pudratchi
+							tomonidan mustaqil ravishda belgilangan muddatlarda va muddatlarda amalga oshiriladi.
+							<br />
+							3.7. Xizmatlardan foydalanganda Buyurtmachi Pudratchi tomonidan taqdim etiladigan turli xizmatlar,
+							veb-serverdagi xato sahifalari, ogohlantirishlar, shu jumladan Hisob bloklanganda va boshqa dasturiy
+							ta'minot sozlamalari grafik va boshqa dizayn elementlari yordamida amalga oshirilishi mumkinligiga rozi
+							bo'ladi, ammo bu harakatlar amalga oshirilmaydi. mijozning har qanday huquqlarining buzilishi. Ba'zi
+							hollarda Buyurtmachi ma'lumotlarning ko'rinishini mustaqil ravishda o'zgartirish imkoniyatiga ega
+							(xususan, ba'zi veb-server xatolari).
+							<br />
+							3.8. Xizmatlardan foydalanganda, server resurslariga va Pudratchining boshqa texnik vositalariga, shaxsiy
+							ma'lumotlarga va boshqa Mijozlarning boshqa ma'lumotlariga, shuningdek Internet orqali mavjud bo'lgan
+							boshqa ma'lumotlarga ruxsatsiz kirishga qaratilgan har qanday harakatlar, xususan, Buyurtmachiga tegishli
+							bo'lmagan dasturiy ta'minot va/yoki ma'lumotlarni bunday dasturiy ta'minot va/yoki ma'lumotlar egasining
+							roziligisiz yo'q qilish yoki o'zgartirish. Ruxsatsiz kirish deganda resurs egasi ruxsat bermoqchi
+							bo'lganidan boshqacha tarzda resurslarga kirishga qaratilgan harakatlar tushuniladi.
+							<br />
+							3.9. Xizmatlardan foydalanganda Buyurtmachiga elektron pochta va telekonferentsiya guruhlari orqali
+							ma'lumotni qabul qiluvchi tomonidan kelishilmagan (so'ralmagan) "spam", ya'ni tijorat, reklama va boshqa
+							elektron xabarlarni ommaviy yuborish taqiqlanadi. Pudratchining texnik resurslari orqali
+							Internet-forumlarga, bloglarga va xabarlarni nashr qilish imkoniyatiga ega boshqa manbalarga. Qabul
+							qiluvchining roziligi bilan, obunani bekor qilish imkoniyati bilan ma'lumotlarni tarqatish "spam" deb
+							hisoblanmaydi. Elektron xabarlar deganda elektron pochta xabarlari, ICQ va boshqa shunga o'xshash shaxsiy
+							ma'lumot almashish vositalari tushuniladi.
+							<br />
+							3.10. Agar xabarda Pudratchi tomonidan qo'llab-quvvatlanadigan koordinatalar (veb-sayt manzili, elektron
+							pochta va boshqalar) mavjud bo'lsa, Pudratchiga tegishli bo'lmagan resurslar orqali "spam" yuborish
+							taqiqlanadi. <br />
+							3.11. Rasmiy ma'lumotlarni qalbakilashtirish, elektron xabarlarning sarlavhalarida mavjud bo'lmagan
+							qaytarish manzillaridan foydalanish, shuningdek ma'lumotlarni uzatishda IP manzilingizni va / yoki boshqa
+							tarmoq protokollarida ishlatiladigan manzillarni soxtalashtirish taqiqlanadi.
+							<br />
+							3.12. Pudratchi joylashtirilgan ma'lumotlarga ("kontent") quyidagi cheklovlarni kiritadi: <br />
+							3.12.1. Xizmatlardan foydalanish Buyurtmachi tomonidan faqat qonuniy maqsadlarda va qonuniy yo'llar bilan
+							amalga oshirilishi kerak.
+							<br />
+							3.12.2. Buyurtmachi tomonidan yaratilgan va qo'llab-quvvatlanadigan axborot tugunlarining mazmuni uchun
+							bevosita mijoz javobgardir. Pudratchi Buyurtmachi tomonidan joylashtirilgan va/yoki tarqatilgan
+							ma'lumotlarning mazmuni ustidan dastlabki nazoratni amalga oshirmaydi, biroq agar bunday ma'lumotlarni
+							joylashtirish va tarqatish amaldagi qonunchilikka zid bo'lsa, Pudratchi tegishli ma'lumotlarni bloklash
+							va/yoki o'chirish huquqiga ega. Hisob.
+							<br />
+							3.12.3. Haqoratli, odobsiz, erotik va pornografik xarakterdagi, zo‘ravonlikka, amaldagi hokimiyatni
+							ag‘darishga chaqiruvlar va hokazo ma’lumotlarni joylashtirish va tarqatish, shuningdek, bunday
+							xarakterdagi xabarlarni yuborish uchun elektron pochtadan foydalanish taqiqlanadi. Ushbu Shartlar
+							doirasida Pudratchi joylashtirilgan va tarqatilgan ma'lumotlarning mohiyatini va uni ushbu bandga muvofiq
+							joylashtirish va tarqatish taqiqlangan ma'lumotlar turlariga tasniflash mezonlarini mustaqil ravishda
+							belgilaydi.
+							<br />
+							3.12.4. Dasturiy ta'minotni yoki mualliflik huquqi yoki boshqa huquqlar bilan to'liq yoki qisman
+							himoyalangan boshqa materiallarni egasining ruxsatisiz hech qanday tarzda o'tkazish, ko'paytirish yoki
+							tarqatish mumkin emas.
+							<br />
+							3.12.5. Kompyuter viruslari yoki ularga tenglashtirilgan boshqa komponentlarni o'z ichiga olgan har qanday
+							ma'lumot yoki dasturiy ta'minotni joylashtirish va tarqatish taqiqlanadi.
+							<br />
+							3.12.6. "Eshik teshiklari" deb ataladigan va "spam" qidiruvining boshqa shakllarini joylashtirish,
+							shuningdek saytlar ("toplar"), kazinolar, har qanday qimor o'yinlari, shuningdek to'g'ridan-to'g'ri yoki
+							bilvosita maqsadli har qanday tadbirlar uchun reyting tizimlarini joylashtirish taqiqlanadi. aldash,
+							firibgarlik yoki boshqa noqonuniy usullar bilan foyda olish va/yoki boshqa foyda olish.
+							<br />
+							3.12.7. O‘zbekiston Respublikasining amaldagi qonunchiligida tarqatilishi cheklangan yoki taqiqlangan
+							xizmatlar, tovarlar va boshqa materiallarni reklama qilish va sotish taqiqlanadi.
+							<br />
+							3.12.8. Uchinchi shaxslarning sha'ni va qadr-qimmati yoki ishchanlik obro'siga bevosita yoki bilvosita
+							ta'sir ko'rsatadigan uchinchi shaxslar to'g'risidagi ma'lumotlarni ularning roziligisiz chop etish yoki
+							boshqa tarzda joylashtirish, shuningdek uchinchi shaxslarni aniqlaydigan shaxsiy ma'lumotlarni
+							joylashtirish taqiqlanadi.
+							<br />
+							3.13. Pudratchining va/yoki uchinchi shaxslarning resurslariga ma'nosiz yoki foydasiz ma'lumotlarni
+							o'tkazishga qaratilgan, ushbu resurslarga haddan tashqari (parazitar) yukni keltirib chiqaradigan
+							harakatlarni, shuningdek dasturiy ta'minotni o'chirib qo'yish yoki noto'g'ri ishlashiga qaratilgan
+							harakatlarni amalga oshirish taqiqlanadi. / yoki bunday resurslarga xizmat ko'rsatadigan uskunalar.
+							<br />
+							3.14. Tarmoqlarni skanerlash, dasturiy ta'minot xavfsizligi zaifliklarini aniqlash, parol va boshqa
+							identifikatsiya ma'lumotlarini topish, ochiq portlar ro'yxatini, himoyalanmagan resurs bo'limlari va
+							boshqalarni aniqlashga qaratilgan har qanday harakatlarni egasining ochiq roziligisiz amalga oshirish
+							taqiqlanadi. Xizmatdan foydalanishda anonim proksi-serverlardan foydalanish.
+							<br />
+							3.14.1. Xosting hisoblarida proksi skriptlarni o'rnatish va ulardan foydalanish qat'iyan man etiladi. Agar
+							Pudratchi Buyurtmachining xosting hisobvarag'ida o'rnatilgan proksi-skriptlarni aniqlasa, Pudratchi
+							Buyurtmachidan eng kam ish haqining 0,5 dan 3 baravarigacha (O'zbekiston Respublikasi qonunchiligida
+							belgilangan eng kam ish haqi) miqdorida pul kompensatsiyasini talab qilish huquqini o'zida saqlab qoladi.
+							proksi skriptlarni o'rnatish va ulardan foydalanish. Kompensatsiyaning aniq qiymati Pudratchi tomonidan
+							proksi-skriptlardan foydalanish natijasida etkazilgan zararga qarab hisoblab chiqiladi. Pul
+							kompensatsiyasi to'langandan so'ng, Pudratchi Buyurtmachining hosting hisobi faoliyatini davom ettiradi.
+							Agar Buyurtmachi proksi-skriptlardan foydalanganlik uchun Pudratchi tomonidan belgilangan pul
+							kompensatsiyasini to'lashdan bosh tortsa, Pudratchi Buyurtmachiga xizmat ko'rsatishni butunlay to'xtatish
+							huquqini o'zida saqlab qoladi.
+							<br />
+							3.15. Amaldagi qonun hujjatlariga zid bo'lgan, Pudratchi va/yoki uchinchi shaxslarning huquqlari va
+							qonuniy manfaatlarini buzadigan boshqa harakatlarni amalga oshirish taqiqlanadi.
+							<br />
+							3.16. Buyurtmachi Pudratchi tomonidan taqdim etilgan dasturiy ta'minotni ishga tushirish uchun
+							resurslardan foydalanishga haqli emas, ularning ishlashi Pudratchining dasturiy-apparat majmuasi,
+							shuningdek, uchinchi shaxslarning tarmoqlari, dasturiy ta'minot, apparat va/yoki axborot resurslari
+							ishlamay qolishiga olib kelishi mumkin. , yoki uchinchi shaxslarning ma'lumotlariga to'g'ridan-to'g'ri
+							yoki bilvosita noqonuniy kirishni qo'lga kiritish uchun.
+							<br />
+							3.17. Xizmatlardan foydalanishda xizmatlarning xususiyatlari tufayli texnik cheklovlar mavjud, xususan:
+							<br />
+							3.17.1. Virtual xostingning tanlangan tarif rejasiga muvofiq o'rnatilgan cheklovlar. Ushbu cheklovlar
+							tarif rejasi tavsifi sahifasida https://airnet.uz/virtual ko'rsatilgan. Bundan tashqari, siz Apache
+							veb-serverida va/yoki MySQL ma'lumotlar bazasida barcha Mijozlarning umumiy yukining 10% dan ortiq yukni
+							yarata olmaysiz. <br />
+							3.17.2. "Spam" bilan kurashish uchun elektron pochta bilan ishlashda quyidagi cheklovlar mavjud: <br />
+							• Mijozning bitta pochta qutisidan soatiga yuborilgan xatlar soni: 50 tadan ko'p emas;
+							<br />
+							• Buyurtmachining bitta pochta qutisi uchun SMTP ga bir vaqtda ulanishlarning maksimal soni: 5;
+							<br />
+							• xabarlar navbatdagi maksimal kutish vaqti: 24 soat.
+							<br />
+							3.17.3. Yuborilgan elektron pochta hajmi 20 MB dan oshmaydi.
+							<br />
+							3.18. Ushbu Shartlarning 3.17-bandida belgilangan texnik cheklovlarga qo'shimcha ravishda, Pudratchi
+							shunga o'xshash xizmatlarni taqdim etishda standart va odatiy bo'lgan va Pudratchining apparat va dasturiy
+							ta'minot tizimining normal ishlashini ta'minlash uchun zarur bo'lgan boshqa cheklovlarni ham o'rnatishi
+							mumkin. ushbu Shartlarga muvofiq xizmatlarni taqdim etish.
+							<br />
+							3.19. Buyurtmachi kiruvchi trafikning umumiy hajmi chiquvchi trafik umumiy hajmining 1/4 qismidan, tashqi
+							trafik esa TAS-IX tarmog‘idagi trafikdan oshmasligi kerak.
+						</p>
+
+						<p>
+							<strong>4. Buyurtmachi</strong>ning huquq va majburiyatlari
+							<br />
+							4.1. Buyurtmachi quyidagilarni o'z zimmasiga oladi:
+							<br />
+							4.1.1. Ushbu Shartlarga so'zsiz rioya qiling va Pudratchining veb-saytida (https://airnet.uz) e'lon
+							qilingan ularga va ularga kiritilgan o'zgartirish va qo'shimchalarga va Xizmatlar sohasida mavjud bo'lgan
+							boshqa biznes amaliyotlariga rioya qiling.
+							<br />
+							4.1.2. Hisob qaydnomasini ro'yxatdan o'tkazishda ro'yxatdan o'tish paytida so'ralgan barcha masalalar
+							bo'yicha o'zingiz haqingizda to'g'ri, aniq va to'liq ma'lumot bering va ushbu ma'lumotni yangilab turing.
+							<br />
+							4.1.3. Tariflarda ko'zda tutilgan Xizmatlar narxining o'zgarishini kuzatish. Xizmatlar narxidagi
+							o'zgarishlar Pudratchining veb-saytida (https://airnet.uz) e'lon qilinadi.
+							<br />
+							4.1.4. Agar Xizmatlar narxi o'zgargan bo'lsa va Buyurtmachi yangi tariflarga rozi bo'lmasa, ular kuchga
+							kirgunga qadar Pudratchiga yangi tariflar bilan rozi emasligi haqida yozma ravishda xabar bering.
+							<br />
+							4.1.5. To'lovlarni ushbu Shartlarda nazarda tutilgan miqdorda va tartibda mustaqil ravishda kuzatib borish
+							va o'z vaqtida amalga oshirish.
+							<br />
+							4.1.6. Xizmatlardan foydalanish va xizmatlardan foydalanish doirasida ma'lumotlarni faqat amaldagi qonun
+							hujjatlari va ushbu Shartlar talablariga muvofiq joylashtirish, shu jumladan Pudratchining texnik
+							resurslariga saqlash, foydalanish va/yoki saqlash taqiqlangan dasturiy ta'minot va ma'lumotlarni
+							joylashtirmaslik. O‘zbekiston Respublikasi qonunchiligiga, boshqa milliy va xalqaro qonun hujjatlariga
+							muvofiq tarqatish yoki saqlash, foydalanish va/yoki tarqatishda cheklash;
+							<br />
+							4.1.7. Pudratchi va uchinchi shaxslarning dasturiy ta'minot qobig'iga, apparat va dasturiy ta'minotiga,
+							tugun mashinalariga zarar yetkazmang.
+							<br />
+							4.1.8. Pudratchi va/yoki uchinchi shaxslar tomonidan taqdim etilgan dasturiy ta'minot, ma'lumotlar va
+							hujjatlarga mualliflik huquqi va boshqa huquqlarga rioya qiling. Mualliflik huquqi/patent va boshqa
+							huquqlarning buzilganligi uchun mustaqil ravishda javobgarlikni o'z zimmasiga olish, shuningdek
+							Pudratchining tegishli huquqlar buzilganligi to'g'risida qayta yo'naltirilgan shikoyatlariga o'z vaqtida
+							javob berish, uchinchi shaxslar jalb qilish yoki jalb qilishga urinishlari natijasida Pudratchiga
+							etkazilgan zararni qoplash. Buyurtmachining ma'lumotlari bilan yuqoridagi huquqlarni buzganlik uchun
+							Pudratchini javobgarlikka tortish.
+							<br />
+							4.1.9. Hisob ma'lumotlaringizni maxfiy saqlang va ularni yo'qotish, o'g'irlik, shikastlanish va
+							hokazolardan himoya qilish uchun choralar ko'ring.
+							<br />
+							4.1.10. Baxtsiz hodisa va Pudratchiga bog'liq bo'lmagan boshqa sabablarga ko'ra xizmatlar ko'rsatishda
+							uzilishlar yuzaga kelganda imkon qadar ma'lumot yo'qotilishining oldini olishga imkon beradigan chastota
+							bilan ma'lumotlaringizni mustaqil ravishda zaxiralang.
+							<br />
+							4.1.11. Ushbu Shartlarda nazarda tutilgan boshqa majburiyatlarni, talablarni va cheklovlarni to'liq
+							bajarish.
+							<br />
+							4.2. Buyurtmachi tarif rejalarini tanlash orqali unga ko'rsatiladigan Xizmatlar hajmini mustaqil ravishda
+							belgilaydi.
+						</p>
+
+						<p>
+							<strong>5. Pudratchi</strong>ning huquq va majburiyatlari
+							<br />
+							5.1. Pudratchi o'z zimmasiga oladi:
+							<br />
+							5.1.1. Ushbu Shartlarga muvofiq, haftada 7 kun, dam olish va bayram kunlarini o'z ichiga olgan holda,
+							Buyurtmachi tomonidan xizmatlar uchun oldindan to'lov miqdoriga mos keladigan miqdorda xizmatlar
+							ko'rsatilishini ta'minlash. Pudratchi Xizmatlarni taqdim etishda O'zbekiston Respublikasida belgilangan
+							standartlar va texnik standartlarga javob beradigan Xizmatlar sifatiga kafolat beradi.
+							<br />
+							5.1.2. Buyurtmachi tomonidan xizmatlarni oldindan to'lash va iste'mol qilish hisobini yuriting.
+							<br />
+							5.1.3. Pudratchining veb-saytida (https://airnet.uz) ushbu Shartlar, Tariflar va Xizmatlarni ko'rsatish
+							bilan bog'liq boshqa hujjatlarga kiritilgan o'zgartirish va qo'shimchalarni ular kuchga kirgan kundan
+							kamida 5 kalendar kuni oldin e'lon qilish.
+							<br />
+							5.1.4. Buyurtmachining ma'lumotlarining maxfiyligini hurmat qiling. Pudratchi Xizmatlarni texnik
+							qo'llab-quvvatlash maqsadida Buyurtmachining ma'lumotlariga kirish huquqiga ega, shuningdek, uchinchi
+							shaxslardan noqonuniy va/yoki zararli, shuningdek Buyurtmachining boshqa xatti-harakatlari to'g'risida
+							da'volar olingan hollarda bunday ma'lumotlarga kirish huquqiga ega. Pudratchi va / yoki uchinchi shaxslar
+							uchun zararli bo'lgan. Pudratchi O'zbekiston Respublikasining amaldagi qonunchiligida nazarda tutilgan
+							hollarda yuqoridagi ma'lumotlar to'g'risida faqat vakolatli davlat organlariga xabar berishga haqli.
+							<br />
+							Axborot yo'qotilishining oldini olish maqsadida Buyurtmachi ma'lumotlarining zaxira nusxasini yaratish
+							Buyurtmachi ma'lumotlarining maxfiyligini buzish hisoblanmaydi.
+							<br />
+							5.2. Ijrochi quyidagi huquqlarga ega:
+							<br />
+							5.2.1. Pudratchining texnik resurslari bo'yicha zarur rejali profilaktika va ta'mirlash ishlarini,
+							shuningdek favqulodda vaziyatlarda rejadan tashqari ishlarni bajarish uchun xizmatlar ko'rsatishni
+							to'xtatib turish. Xizmatlarni ko'rsatishni to'xtatib turishga olib keladigan yuqorida ko'rsatilgan
+							ishlarning bajarilishi to'g'risidagi xabar Pudratchi tomonidan o'z veb-saytida bunday ishlarning taxminiy
+							davomiyligini ko'rsatgan holda e'lon qilinadi (favqulodda vaziyatlar bundan mustasno, xizmatlarni taqdim
+							etishni to'xtatib turish to'g'risidagi ma'lumotlar). Xizmatlarni taqdim etish Pudratchi tomonidan imkon
+							qadar e'lon qilinadi).
+							<br />
+							5.2.2. Xizmatlarni ko'rsatishni to'xtatish, agar bu, xususan, lekin ular bilan cheklanmagan holda,
+							Pudratchining o'z resurslari bo'lmagan axborot va transport kanallaridan foydalanishning mumkin emasligi
+							yoki uchinchi shaxslarning harakatlari va / yoki harakatsizligi, agar bu to'g'ridan-to'g'ri ushbu Shartlar
+							bo'yicha xizmatlarni taqdim etishga ta'sir qiladi, shu jumladan favqulodda vaziyatlarda. Shu bilan birga,
+							Pudratchi, shuningdek, Buyurtmachining veb-saytiga DDoS hujumi sodir bo'lgan taqdirda, Pudratchining
+							resurslariga muqarrar ravishda haddan tashqari yuklanishni keltirib chiqaradigan, Buyurtmachining
+							veb-sayti delegatsiyasini o'z resurslaridan vaqtincha olib tashlashga haqli. Pudratchining xizmatlaridan
+							boshqa mijozlar tomonidan foydalanishning mumkin emasligi.
+							<br />
+							Pudratchi Buyurtmachi oldida javobgar bo'lmaydi va Buyurtmachiga ishdagi kechikishlar, uzilishlar va
+							Pudratchining resurslari va xizmatlaridan to'liq foydalanishning mumkin emasligi sababli etkazilgan yoki
+							kelib chiqishi mumkin bo'lgan yo'qotishlarni qoplamaydi. yuqoridagi sabablar.
+							<br />
+							5.2.3. Ushbu oʻzgartirish va qoʻshimchalarni Pudratchining veb-saytida (https://airnet.uz) eʼlon qilish
+							orqali bir tomonlama tartibda ushbu Shartlar va tariflarga oʻzgartirish va qoʻshimchalar kiritish.
+							<br />
+							5.2.4. Agar mijoz noto'g'ri ma'lumot bergan bo'lsa yoki ma'lumotlar o'zgarganda uni yangilamasa,
+							shuningdek, tasdiqlovchi hujjatlar yoki hujjatlarni o'z vaqtida taqdim etmasa, xizmatlar ko'rsatishni
+							to'xtatib turish yoki Hisob qaydnomasini ro'yxatdan o'tkazishni bekor qilish va xizmatlarni taqdim etish
+							va undan foydalanishni rad etish. Agar Pudratchi Buyurtmachi tomonidan taqdim etilgan ma'lumotlarning
+							to'g'ri, to'liq yoki to'g'ri ekanligiga shubha tug'dirsa, shuningdek, ushbu Shartlarda nazarda tutilgan
+							hollarda va tartibda Buyurtmachining mablag'lari qoldig'ini qabul qilmasdan hisobdan chiqarish.
+							<br />
+							5.2.5. Buyurtmachi ushbu Shartlarni, shuningdek, amaldagi qonunchilikni buzgan taqdirda Xizmatlarni
+							ko'rsatishni to'xtatib turish.
+							<br />
+							5.2.6. Ushbu Shartlarda nazarda tutilgan hollarda va tartibda Hisobni bloklash va/yoki o‘chirish.
+							<br />
+							5.2.7. Agar bunday dasturiy ta'minotning ishlashi favqulodda vaziyatlarga olib keladigan yoki olib kelishi
+							mumkin bo'lsa, Pudratchining xavfsizlik tizimining buzilishi, ushbu Shartlarning buzilishi yoki qonun.
+							<br />
+							5.2.8. Mijozlardan qo'llab-quvvatlash xizmatining xabar almashish tizimi yoki elektron pochta qutisi
+							orqali masofadan turib arizalarni qabul qilish, mijoz esa quyidagi hujjatlarni taqdim etishi kerak:
+							<br />
+							1. Agar Buyurtmachi jismoniy shaxs bo'lsa:
+							<br />
+							• Imzolangan ilovaning rangli skanerlangan nusxasi.
+							<br />
+							• Pasportning rangli skanerlangan nusxasi.
+							<br />
+							• Ariza beruvchining imzosi qo'yilgan arizasi bo'lgan fotosurati. Yuz va bayonotning o'zi aniq ko'rinib
+							turishi kerak.
+							<br />
+							2. Agar Buyurtmachi yuridik shaxs bo‘lsa:
+							<br />
+							• Yuridik shaxs muhri bilan blankadagi bosh imzosi bilan imzolangan arizaning rangli skanerlangan nusxasi.
+							<br />
+							• Yuridik shaxs rahbarining pasportining rangli skanerlangan nusxasi.
+							<br />
+							• Yuridik shaxs guvohnomasining (guvoxnoma) rangli skanerlangan nusxasi.
+							<br />
+							Ushbu choralar Mijoz ma'lumotlarining firibgarlardan xavfsizligini ta'minlash uchun zarur.
 						</p>
 						<p>
-							<strong>3. Правила использования Услуг</strong>
+							<strong>6. Xizmatlar narxi va to‘lov tartibi</strong>
 							<br />
-							3.1. Регистрация Аккаунта в системе «ISPCONFIG» осуществляется Исполнителем самостоятельно на
-							хостинг-сервере путем указания учетных данных Заказчика в соответствии с инструкцией системы. Основными
-							элементами, идентифицирующими Заказчика в системе «ISPCONFIG», являются логин и пароль, указанные при
-							регистрации (учетные данные).
+							6.1. Xizmatlarning narxi ushbu Shartlarning ajralmas qismi bo'lgan Tariflarga muvofiq belgilanadi.
+							Tariflar Pudratchi tomonidan veb-saytda (https://airnet.uz) joylashtiriladi.
 							<br />
-							Исполнитель осуществляет проверку данных Заказчика и имеет право в любое время запросить подтверждение
-							правильности введенных данных или предоставление невведенных данных (путем предоставления копий либо
-							оригиналов подтверждающих документов) и приостановить оказание Услуг до момента предоставления
-							подтверждающих документов и изменения и/или дополнения Заказчиком запрашиваемых данных.
+							6.2. Xizmatlarning umumiy qiymati Xizmatlarni ko'rsatish vaqtida amalda bo'lgan Tariflarga muvofiq
+							Buyurtmachiga ko'rsatilgan Xizmatlar uchun hisobdan chiqarilgan pul mablag'larining umumiy summasi
+							sifatida aniqlanadi.
 							<br />
-							3.2. Восстановление пароля Аккаунта в системе «ISPCONFIG» может быть осуществлено Заказчиком путем запроса
-							в технический отдел Исполнителя при условии наличия контактного e-mail (адреса электронной почты)
-							Заказчика в информационных данных Аккаунта. Исполнитель восстанавливает пароль только при предоставлении
-							Заказчиком документов, идентифицирующих Заказчика, и соответствии данных, указанных в представленных
-							документах, данным, введенным при регистрации Аккаунта. В противном случае, пароль, используемый
-							Заказчиком для доступа к Аккаунту, Исполнителем не восстанавливается.
+							6.3. Xizmatlar Buyurtmachi tomonidan 4.1.5-bandga muvofiq Pudratchining hisob raqamiga oldindan to'lov
+							asosida to'lanadi.
 							<br />
-							3.3. Заказчик получает возможность пользоваться Услугами после оплаты Услуг (с соблюдением настоящих
-							Условий) и с момента регистрации Аккаунта.
+							6.4. Buyurtmachi ushbu Shartlarning 6.3-bandiga rioya qilgan holda, Pudratchi tomonidan xizmatlarni
+							ko'rsatishni boshlash sanasi mijoz tomonidan avans to'lovini olgan kundan boshlab Hisobni boshqarish
+							panelida tegishli xizmatlarni faollashtirgan sana hisoblanadi. Pudratchining hisob-kitob hisobvarag'iga
+							quyidagi shartlar asosida pul mablag'larini o'tkazish:
 							<br />
-							3.4. Выбор и использование (подключение и/или отключение) конкретных Услуг осуществляется Заказчиком
-							самостоятельно с помощью Аккаунта. Доступ к Аккаунту осуществляется на хостинг-сервере путем ввода
-							Заказчиком своих учетных данных в соответствующие поля системы «ISPCONFIG».
+							• Pudratchi Hisob o'chirilgan taqdirda mablag'lar qoldig'ini ushbu Shartlarda belgilangan miqdorda va
+							tartibda hisobdan chiqarishga haqli.
 							<br />
-							3.5. Заказчик несет полную ответственность за действия и/или бездействие, приведшие к разглашению, потере,
-							краже и т.п. его учетных данных и иной информации, индивидуализирующей Заказчика, а также за любые
-							действия и/или бездействие третьих лиц, использующих учетные данные Заказчика. Исполнитель не несет
-							ответственности за вышеуказанные действия Заказчика и/или третьих лиц, использующих его учетные данные.
+							• Agar Buyurtmachi ushbu Shartlarda belgilangan muddatda yangi tariflar bilan rozi emasligi to‘g‘risida
+							Pudratchiga yozma ravishda xabar bermasa, Buyurtmachi Tariflarning o‘zgarishiga rozi bo‘lgan hisoblanadi
+							va ko‘rsatilgan xizmatlar uchun mablag‘lar hisobdan yechib olinadi. Pudratchi yangi tariflar bo'yicha.
 							<br />
-							3.6. Исполнителем осуществляется резервное копирование данных Заказчика, за исключением сообщений
-							электронной почты и лог-файлов Заказчика. При этом резервное копирование данных Заказчика осуществляется
-							Исполнителем в сроки и периоды, устанавливаемые Исполнителем самостоятельно, если иное не предусмотрено
-							подключенными Заказчиком Услугами.
-							<br />
-							3.7. При использовании Услуг Заказчик соглашается с тем, что различные сервисы, предоставляемые
-							Исполнителем, страницы ошибок веб-сервера, предупреждения, в том числе при блокировании Аккаунта, и другие
-							настройки программного обеспечения могут оформляться с применением графических и иных элементов дизайна,
-							при этом данные действия не являются нарушением каких-либо прав Заказчика. В некоторых случаях Заказчик
-							имеет возможность самостоятельно изменить внешний вид данных (в частности, некоторые ошибки веб-сервера).
-							<br />
-							3.8. При использовании Услуг запрещаются любые действия, направленные на получение несанкционированного
-							доступа к ресурсам сервера и других технических средств Исполнителя, персональным учетным и иным данным
-							других Заказчиков, а также к любым другим данным, доступным через сеть Интернет, в частности, уничтожение
-							или модификация программного обеспечения и/или данных, не принадлежащих Заказчику, без согласования с
-							владельцем такого программного обеспечения и/или данных. Под несанкционированным доступом понимаются
-							действия, направленные на получение доступа к ресурсам способом, отличным от предполагавшегося владельцем
-							ресурса в качестве разрешенного.
-							<br />
-							3.9. При использовании Услуг Заказчику запрещается осуществлять массовую рассылку «спама», т. е.
-							электронных сообщений коммерческого, рекламного и иного характера, не согласованных (не запрошенных)
-							получателем информации по электронной почте и в группы телеконференций, а также на интернет-форумы, блоги
-							и другие ресурсы с возможностью публикации сообщений, через технические ресурсы Исполнителя. Не
-							рассматривается как «спам» рассылка информации с согласия получателя, при возможности отказа от подписки.
-							Под электронными сообщениями понимаются сообщения электронной почты, ICQ и других подобных средств личного
-							обмена информацией.
-							<br />
-							3.10. Запрещается рассылка «спама» через ресурсы, не принадлежащие Исполнителю, в том случае, если в
-							сообщении указаны координаты (адрес сайта, электронной почты и т. д.), поддерживаемые Исполнителем.
-							<br />
-							3.11. Запрещается подделывать служебную информацию, использовать несуществующие обратные адреса в
-							заголовках электронных сообщений, а также фальсифицировать свой IP-адрес и/или адреса, используемые в
-							других сетевых протоколах при передаче данных.
-							<br />
-							3.12. Исполнителем вводятся следующие ограничения на размещаемую информацию («контент»):
-							<br />
-							3.12.1. Использование Услуг должно осуществляться Заказчиком только для законных целей и законными
-							способами.
-							<br />
-							3.12.2. За содержание информационных узлов, создаваемых и поддерживаемых Заказчиком, несет ответственность
-							непосредственно сам Заказчик. Исполнитель не осуществляет предварительного контроля за содержанием
-							размещаемой и/или распространяемой Заказчиком информации, однако когда размещение и распространение такой
-							информации противоречит текущему законодательству, Исполнитель вправе заблокировать и/или удалить
-							соответствующий Аккаунт.
-							<br />
-							3.12.3. Запрещается размещение и распространение информации оскорбительного, нецензурного, эротического и
-							порнографического характера, призывов к насилию, свержению существующей власти и т. п., а также
-							использование электронной почты для отправки сообщений указанного характера. В рамках настоящих Условий
-							Исполнитель самостоятельно определяет характер размещенной и распространенной информации и критерии
-							отнесения ее к типам информации, запрещенной к размещению и распространению в соответствии с настоящим
-							пунктом.
-							<br />
-							3.12.4. Запрещается передавать, воспроизводить или распространять любым способом программное обеспечение
-							или любые другие материалы, полностью или частично защищенные авторскими или другими правами, без
-							разрешения владельца.
-							<br />
-							3.12.5. Запрещается размещение и распространение любой информации или программного обеспечения, которое
-							содержит в себе компьютерные вирусы или другие компоненты, приравненные к ним.
-							<br />
-							3.12.6. Запрещается размещение так называемых «дорвеев» и других форм поискового «спама», а также
-							размещение систем рейтинга сайтов («топов»), казино, любых азартных игр, а также любых мероприятий, прямо
-							или косвенно направленных на извлечение прибыли и/или получение иных благ путем обмана, мошенничества или
-							иными незаконными способами.
-							<br />
-							3.12.7. Запрещается рекламировать и продавать услуги, товары и иные материалы, распространение которых
-							ограничено или запрещено действующим законодательством Республики Узбекистан.
-							<br />
-							3.12.8. Запрещается публиковать или иным образом размещать информацию о третьих лицах, прямо или косвенно
-							затрагивающую честь и достоинство либо деловую репутацию таких третьих лиц, а также размещать персональную
-							идентифицирующую третьих лиц информацию без их согласия.
-							<br />
-							3.13. Запрещается осуществлять действия, направленные на передачу ресурсам Исполнителя и/или третьих лиц
-							бессмысленной или бесполезной информации, создающей излишнюю (паразитную) нагрузку на эти ресурсы, а также
-							действия, направленные на вывод из строя или неправильное функционирование программного обеспечения и/или
-							оборудования, обслуживающих такие ресурсы.
-							<br />
-							3.14. Запрещается осуществление любых действий, направленных на сканирование сетей, обнаружение
-							уязвимостей в безопасности программного обеспечения, подбор пароля и иных идентифицирующих данных,
-							обнаружение списков открытых портов, незащищенных разделов ресурсов и т.д., без явно выраженного согласия
-							владельца, а также использование анонимных прокси-серверов при использовании Услуги.
-							<br />
-							3.14.1. Строго запрещается установка и использование прокси-скриптов внутри хостинговых аккаунтов. В
-							случае обнаружения Исполнителем установленных прокси-скриптов на хостинговом аккаунте Заказчика,
-							Исполнитель оставляет за собой право потребовать от Заказчика денежную компенсацию в размере от 0.5 до 3-х
-							МЗП (минимальная заработная плата, установленная законодательством Республики Узбекистан) за установку и
-							использование прокси-скриптов. Точная стоимость компенсации оценивается Исполнителем в зависимости от
-							нанесенного ущерба в результате использования прокси-скриптов. После выплаты денежной компенсации
-							Исполнитель возобновляет работу хостингового аккаунта Заказчика. В случае отказа Заказчика оплаты
-							установленной Исполнителем денежной компенсации за использование прокси-скриптов, Исполнитель оставляет за
-							собой право полностью прекратить обслуживание Заказчика.
-							<br />
-							3.15. Запрещается осуществление иных действий, противоречащих действующему законодательству и нарушающих
-							права и законные интересы Исполнителя и/или третьих лиц.
-							<br />
-							3.16. Заказчик не вправе использовать предоставленные Исполнителем ресурсы для запуска программного
-							обеспечения, работа которого может привести к нарушению работоспособности программно-аппаратного комплекса
-							Исполнителя, а также сетей, программных, аппаратных и/или информационных ресурсов третьих лиц либо для
-							получения незаконного доступа напрямую или косвенно к информации третьих лиц, при этом не учитывается,
-							используется ли такое программное обеспечение Заказчиком с умыслом или без такового.
-							<br />
-							3.17. При использовании Услуг существуют ограничения технического характера, обусловленные особенностями
-							Услуг, а именно:
-							<br />
-							3.17.1. Ограничения установленные согласно выбранного тарифного плана виртуального хостинга. Данные
-							ограничения указаны на странице описания тарифного плана https://airnet.uz/virtual. Также нельзя создавать
-							нагрузку на веб-сервер Apache и/или базу данных MySQL более чем 10% от общей нагрузки всех Заказчиков.
-							<br />
-							3.17.2. В целях борьбы со «спамом» существуют следующие ограничения на работу с электронной почтой:
-							<br />
-							• количество отправляемых писем с одного почтового ящика Заказчика в час: не более 50;
-							<br />
-							• максимально количество одновременных подключений к SMTP для одного почтового ящика Заказчика: 5;
-							<br />
-							• максимальное время ожидания в очереди сообщений: 24 часа.
-							<br />
-							3.17.3. Размер отправляемого электронного письма не более 20 МБ.
-							<br />
-							3.18. Помимо установленных п. 3.17 настоящих Условий технических ограничений Исполнителем могут быть
-							установлены также иные ограничения, являющиеся стандартными и обычными в области оказания аналогичных
-							Услуг и необходимые для обеспечения нормального функционирования программно-аппаратного комплекса
-							Исполнителя в целях надлежащего оказания Услуг в соответствии с настоящими Условиями.
-							<br />
-							3.19. Суммарный объем входящего трафика Заказчика не должен превышать 1/4 от общего объема исходящего, а
-							зарубежный трафик не должен превышать трафика в сети TAS-IX.
+							• Ko‘rsatilgan xizmatlar uchun schyot-fakturalarni taqdim etish Pudratchining ofisida yoki Shartnomada
+							ko‘rsatilgan Buyurtmachining aloqa elektron pochta qutisiga amalga oshiriladi, Buyurtmachi esa o‘z
+							hisobidan Pudratchiga qaytarish majburiyatini oladi. Buyurtmachiga pochta orqali yoki Pudratchiga
+							hujjatlarni qabul qilishni tasdiqlash imkonini beruvchi boshqa usulda. Agar Pudratchi Buyurtmachiga
+							tegishli hujjatlarni taqdim etgan paytdan e'tiboran 14 (o'n to'rt) kalendar kun ichida Pudratchi
+							imzolangan schyot-fakturani olmagan bo'lsa, Pudratchi tomonidan bir tomonlama imzolangan schyot-faktura
+							asosida Xizmatlar to'g'ri ko'rsatilgan deb hisoblanadi.
+							<br />• Xizmatlar uchun to'lov uchun barcha bank yoki boshqa komissiya to'lovlari Buyurtmachi tomonidan
+							mustaqil ravishda to'lanadi.
 						</p>
 						<p>
-							<strong>4. Права и обязанности Заказчика</strong>
+							<strong>7. Tomonlarning javobgarligi</strong>
 							<br />
-							4.1. Заказчик обязуется:
+							7.1. Ushbu Shartlar bilan tartibga solinmagan barcha masalalar bo‘yicha, shuningdek ularni bajarish
+							jarayonida yuzaga kelgan nizolarni hal qilishda tomonlar O‘zbekiston Respublikasining amaldagi
+							qonunchiligiga amal qiladilar. Agar taraflar nizoni sudgacha da’vo tartibida hal qilishning iloji
+							bo‘lmasa, u O‘zbekiston Respublikasining amaldagi qonunchiligiga muvofiq Toshkent shahar sudida hal
+							qilinishi kerak.
 							<br />
-							4.1.1. Безусловно выполнять настоящие Условия и следить за изменениями и дополнениями в них и Приложениях
-							к ним, публикуемыми на веб-сайте Исполнителя (https://airnet.uz) и иные обычаи делового оборота,
-							существующие в области Услуг.
+							7.2. Buyurtmachi o'z paroli va boshqa hisobga olish ma'lumotlarining saqlanishi, shuningdek, mijoz va/yoki
+							uchinchi shaxslar bunday hisob ma'lumotlaridan ruxsatsiz foydalanish (oshkor qilish, yo'qotish, o'g'irlash
+							va h.k.) natijasida yuzaga kelishi mumkin bo'lgan yo'qotishlar uchun to'liq javobgar bo'ladi.
 							<br />
-							4.1.2. При регистрации Аккаунта предоставить правдивую, точную и полную информацию о себе по всем
-							вопросам, запрашиваемым при регистрации, и поддерживать эту информацию в актуальном состоянии.
+							Buyurtmachi Buyurtmachi va/yoki uning vakolatlaridan foydalangan shaxslarning Pudratchiga har qanday zarar
+							etkazgan, shu jumladan ishbilarmonlik obro'sini yo'qotgan har qanday noqonuniy xatti-harakatlari va/yoki
+							harakatsizligi uchun javobgar bo'ladi va Pudratchiga etkazilgan zararni qoplaydi. Pudratchi, shuningdek,
+							Buyurtmachiga zarar etkazgan uchinchi shaxslarning harakatlari uchun javobgar emas.
 							<br />
-							4.1.3. Следить за изменением стоимости Услуг, предусмотренной Тарифами. Изменения стоимости Услуг
-							публикуются на веб-сайте Исполнителя (https://airnet.uz).
+							7.3. Pudratchi Buyurtmachi tomonidan joylashtirilgan ma'lumotlarning mazmuni va Buyurtmachi yoki uning
+							foydalanuvchilari tomonidan yaratilgan va qo'llab-quvvatlanadigan axborot tugunlari uchun javobgar emas va
+							hech qanday dastlabki tekshirish va tsenzurani amalga oshirmaydi.
 							<br />
-							4.1.4. При изменении стоимости Услуг и несогласии Заказчика с новыми Тарифами в срок до введения их в
-							действие сообщить в письменном виде Исполнителю о своем несогласии с новыми Тарифами.
+							Buyurtmachi o'zining qasddan va qasddan bo'lmagan har qanday harakatlari va/yoki harakatsizligi,
+							shuningdek, Internetda ma'lumotni joylashtirish va/yoki tarqatish bilan bog'liq o'z ma'lumotlaridan
+							foydalangan shaxslarning har qanday harakatlari va/yoki harakatsizligi uchun javobgar bo'ladi.
+							Pudratchining resurslaridan foydalanish orqali uchinchi shaxslarning resurslariga kirish huquqini olish.
 							<br />
-							4.1.5. Самостоятельно следить и своевременно осуществлять платежи в размерах и порядке, предусмотренных
-							настоящими Условиями.
+							7.4. Buyurtmachi va/yoki uning ishonch ma'lumotlaridan foydalangan holda boshqa mamlakatlarning milliy
+							qonunchiligini va/yoki xalqaro huquqni buzgan qasddan va/yoki qasddan bo'lmagan xatti-harakatlari va/yoki
+							harakatsizligi, shuningdek, yuqoridagi holatlar tufayli etkazilgan har qanday zarar uchun yakka tartibda
+							javobgar bo'ladi. Pudratchiga, uchinchi shaxslarga nisbatan harakatlar va/yoki harakatsizlik, shuningdek,
+							bunday harakatlar va/yoki harakatsizlik oqibatlari uchun.
 							<br />
-							4.1.6. Использовать Услуги и размещать информацию в рамках использования Услуг только в соответствии с
-							требованиями действующего законодательства и настоящих Условий, в том числе не размещать на технических
-							ресурсах Исполнителя программное обеспечение и информацию, запрещенные к хранению, использованию и/или
-							распространению или ограниченные в хранении, использовании и/или распространении согласно законодательству
-							РУз, другому национальному и международному законодательству;
+							7.5. Pudratchi Buyurtmachiga etkazilgan to'g'ridan-to'g'ri va / yoki bilvosita zarar uchun javobgar emas,
+							shuningdek, Buyurtmachiga resurslar va xizmatlardan foydalanish yoki foydalanmaslik natijasida etkazilgan
+							zararni (shu jumladan yo'qolgan foydani) qoplamaydi. Pudratchining, shuningdek, kamchiliklar, uzilishlar
+							yoki ma'lumotlarni uzatishdagi kechikishlar, xatolar, nuqsonlar, fayllarni o'chirish, funktsiyalarni
+							o'zgartirish va boshqa sabablar natijasida etkazilgan zararlar uchun.
 							<br />
-							4.1.7. Не наносить ущерб программной оболочке, техническим и программным средствам, узловым машинам
-							Исполнителя и третьих лиц.
+							7.6. Pudratchi umumiy aloqa kanallarining sifati, provayderlar o'rtasidagi trafik almashinuvi siyosati,
+							Internetning normal ishlashi, uning qismlari yoki Pudratchining o'z resurslariga bog'liq bo'lmagan aloqa
+							liniyalarining sifati va ularning mavjudligi uchun javobgar emas. Buyurtmachi uchun va Buyurtmachiga
+							taqdim etiladigan xizmatlarning xususiyatlari, funktsiyalari va sifatini o'zgartirish uchun javobgar emas,
+							agar bunday o'zgarishlar Internetning ishlashi yoki vakolati, ta'siri va nazorati ostida bo'lmagan boshqa
+							holatlar bilan bog'liq bo'lsa. Pudratchi.
 							<br />
-							4.1.8. Соблюдать авторские и иные права на предоставляемые Исполнителем и/или третьими лицами программное
-							обеспечение, информацию и документацию. Самостоятельно нести ответственность за нарушение любых
-							авторских/патентных и прочих прав, а также своевременно отвечать на перенаправленные Исполнителем жалобы о
-							нарушении соответствующих прав, возместить Исполнителю убытки в случае попыток привлечения или привлечения
-							третьими лицами Исполнителя к ответственности за нарушение информацией Заказчика вышеуказанных прав.
+							Agar masofaviy tarmoqning ishi uning manzilini (lar)ini "spam" ning oldini olish uchun foydalaniladigan
+							bloklash ro'yxatlariga kiritilishiga olib kelgan bo'lsa, unga ko'ra Pudratchining pochta serveri pochtani
+							qabul qilmaydi, Pudratchi ham imkonsizligi uchun javobgar emas. Bunday tarmoqdan mijozning pochta
+							xabarlarini qabul qilish.
 							<br />
-							4.1.9. Соблюдать конфиденциальность своих учетных данных и принимать меры, направленные на их защиту от
-							утери, кражи, повреждения и т. п.
+							7.7. Pudratchi Xizmatlarning texnik sifati standartlariga amal qiladi va Pudratchi va Buyurtmachining
+							resurslariga ruxsatsiz kirishga urinishlar, Pudratchi uskunasidagi nosozliklar va nosozliklar, zararli
+							komponentlarning kirib kelishi va hokazolarning oldini olish yoki bostirish uchun barcha oqilona
+							sa'y-harakatlarni amalga oshiradi. favqulodda yoki favqulodda vaziyat yuzaga kelgan taqdirda, Pudratchi
+							vaziyatni imkon qadar tezroq normallashtirish uchun barcha choralarni ko'radi. Shu bilan birga, Pudratchi
+							Xizmat uskunalari va dasturiy ta'minotining o'ziga xos xususiyatlaridan kelib chiqqan holda, butun tizim
+							va xizmatlarning mutlaq doimiy 100% xatosiz va uzluksiz ishlashini kafolatlamaydi, shuningdek, xatosiz
+							ishlashga kafolat bermaydi. , har qanday uchinchi shaxslar tomonidan chiqarilgan dasturiy ta'minotning
+							uzluksiz va mutlaq xavfsizligi va / yoki xizmatlarni taqdim etishda foydalaniladigan boshqa materiallar.
 							<br />
-							4.1.10. Самостоятельно осуществлять резервное копирование своих данных с периодичностью, позволяющей
-							максимально избежать потери информации в случаях перебоев в оказании Услуг, вызванных аварией и иными, не
-							зависящими от Исполнителя причинами.
+							7.8. Buyurtmachi Pudratchining resurslari va / yoki xizmatlari orqali Internetdan foydalanish bilan
+							bog'liq barcha xavflarni o'z zimmasiga oladi, shu jumladan har qanday ma'lumotlarning foydaliligi,
+							to'liqligi, to'g'riligini baholash uchun, Pudratchi ma'lum bir maqsadga muvofiqligi, sifati, qonuniyligi
+							uchun javobgar emas. Internet tarmog‘idan foydalanish orqali so‘ralgan va/yoki olingan har qanday
+							tovarlar, ishlar, xizmatlar, shu jumladan Pudratchining serveriga joylashtirilgan bo‘lsa (Pudratchi
+							tomonidan taqdim etilgan xizmatlar bundan mustasno).
 							<br />
-							4.1.11. Выполнить в полном объеме другие обязательства, требования и ограничения, предусмотренные
-							настоящими Условиями.
+							7.9. Pudratchi Pudratchining serverlarida va/yoki boshqa Internet-serverlarida Buyurtmachiga taklif
+							etilayotgan sifatli, zararsiz va xatosiz dasturiy ta'minot (keyingi o'rinlarda dasturiy ta'minot sifati
+							deb yuritiladi) uchun javobgar emas, dasturiy ta'minot Pudratchi tomonidan ishlab chiqilgan hollar bundan
+							mustasno. .
 							<br />
-							4.2. Заказчик самостоятельно определяет объем предоставляемых ему Услуг путем выбора тарифных планов.
+							Agar Pudratchi Buyurtmachiga uchinchi shaxslar (masalan, MySQL, Apache va boshqalar) tomonidan ishlab
+							chiqilgan dasturiy ta'minotni qo'llab-quvvatlash xizmatini taqdim etsa, Pudratchi Buyurtmachi oldida faqat
+							ISPCONFIG tizimida ushbu dasturiy ta'minotning to'g'ri ishlashi uchun javobgar bo'ladi, lekin bunday emas.
+							dasturiy ta'minot sifati uchun.
+							<br />
+							Pudratchi Buyurtmachiga veb-interfeys sifatida taqdim etilgan xatlarni o'qish uchun interfeysni ishlab
+							chiquvchisi emas, shuning uchun uning normal ishlashi uchun javobgar emas. Pochta bilan ishlash uchun
+							Pudratchi maxsus dasturlardan - pochta mijozlaridan foydalanishni tavsiya qiladi.
+							<br />
+							7.10. Buyurtmachi domen nomini ro'yxatdan o'tkazishning o'z vaqtida va to'g'ri yangilanishi va o'z vaqtida
+							va/yoki noto'g'ri yangilashning mumkin bo'lgan oqibatlari uchun faqat javobgar bo'ladi va shu bilan
+							Pudratchiga yuqorida ko'rsatilgan xatti-harakatlar va / yoki Buyurtmachining harakatsizligi bo'yicha hech
+							qanday da'vo yo'qligini tasdiqlaydi, shuningdek, ularning oqibatlari.
+							<br />
+							7.11. Buyurtmachi Pudratchining domen nomidan foydalangan holda sodir etgan har qanday harakatlari va/yoki
+							harakatsizligi, shuningdek taqdim etilgan Xizmatlar tufayli boshqa texnik tafsilotlar, xususan, IP
+							manzillari, server nomlari va boshqalar uchun yakka tartibda javobgar bo'ladi, shuningdek, Pudratchining
+							bunday harakatlari va / yoki Buyurtmachining harakatsizligi tufayli Pudratchiga etkazilgan zararlar uchun
+							javobgarligi, uchinchi shaxslar uchun Pudratchining bunday harakatlariga va/yoki Buyurtmachining
+							harakatsizligiga tegishli ko'rinishini keltirib chiqaradi.
+							<br />
+							7.12. Pudratchi Buyurtmachi oldida faqat to'langan, lekin ko'rsatilmagan Xizmatlar doirasida javobgar
+							bo'ladi. Pudratchi Buyurtmachi oldida moliyaviy javobgar emas va agar Xizmatlar mijozning aybi bilan
+							ko'rsatilmagan bo'lsa, ushbu Shartlar bo'yicha to'langan pul mablag'larini Buyurtmachiga qaytarmaydi.
+							<br />
+							7.13. Tomonlar tomonidan ushbu Shartlarni lozim darajada bajarish tomonlar na oldindan ko‘ra olmaydigan va
+							na oldini olishga qodir bo‘lmagan ob’ektiv sabablarga ko‘ra imkonsiz bo‘lgan taqdirda (tabiiy ofatlar,
+							O‘zbekiston Respublikasining amaldagi qonunchiligiga kiritilgan o‘zgartirishlar, davlat hokimiyati va
+							boshqaruvi organlarining harakatlari, harbiy harakatlar barcha turdagi operatsiyalar va h.k.) hech bir
+							tomon boshqa tomondan ushbu Shartlarning lozim darajada bajarilmaganligi yoki bajarilmaganligi (jumladan,
+							boy berilgan foyda) tufayli etkazilgan zararni qoplashni talab qilishga haqli emas.
 						</p>
 						<p>
-							<strong>5. Права и обязанности Исполнителя</strong>
+							<strong>8. Hisobni bloklash va o‘chirish</strong>
 							<br />
-							5.1. Исполнитель обязуется:
+							8.1. Pudratchi ushbu Shartlarda nazarda tutilgan hollarda, tartibda va shartlarda Hisobni bloklash va/yoki
+							o'chirish huquqiga ega.
 							<br />
-							5.1.1. Обеспечивать предоставление Услуг в объеме, соответствующем сумме предоплаты Заказчиком за Услуги в
-							соответствии с настоящими Условиями, круглосуточно 7 дней в неделю, включая выходные и праздничные дни.
-							При оказании Услуг Исполнитель гарантирует качество Услуг, соответствующее стандартам и техническим
-							нормам, установленным в Республики Узбекистан.
+							8.2. Hisob qaydnomasini blokirovka qilish - bu Mijozning Hisobni boshqarish paneliga kirish imkoniyati
+							(cheklangan imkoniyatlar bilan) bilan Mijoz tomonidan Xizmatlardan vaqtincha foydalanishning mumkin
+							emasligi. Hisobni blokirovka qilish Pudratchi tomonidan, agar ushbu Shartlarda boshqacha qoida nazarda
+							tutilgan bo'lmasa, Buyurtmachi Hisobni blokirovka qilishga olib kelgan qoidabuzarliklarni bartaraf etgunga
+							qadar amalga oshiriladi. Hisobni bloklash bilan bir vaqtda, Shartlar buzilganligi va Buyurtmachi tomonidan
+							yo'l qo'yilgan qoidabuzarliklarni bartaraf etish zarurligi to'g'risida xabar mijozning aloqa elektron
+							pochtasiga va Hisobga yuborilishi mumkin.
 							<br />
-							5.1.2. Вести учет предоплаты и потребления Заказчиком Услуг.
+							8.3. Hisobni o'chirish mijozning Hisobga kirishining mumkin emasligini va tegishli Hisob doirasida
+							Xizmatlardan foydalanishning mumkin emasligini anglatadi.
 							<br />
-							5.1.3. Публиковать на сайте Исполнителя (https://airnet.uz) изменения и дополнения в настоящих Условиях,
-							Тарифах и иных документах, относящихся к оказанию Услуг, в срок не позднее 5 календарных дней до даты
-							введения их в действие.
+							8.4. Hisobni bloklash yoki o'chirishda mijozning virtual veb-serverga kirishi ushbu Shartlarga muvofiq
+							grafik va boshqa hosting dizayn elementlaridan foydalangan holda berilgan tegishli ogohlantirishning bir
+							vaqtning o'zida ko'rsatilishi bilan tugatiladi.
 							<br />
-							5.1.4. Соблюдать конфиденциальность учетных данных Заказчика. Исполнитель имеет доступ к информации
-							Заказчика в целях технического обеспечения Услуг, а также имеет право на доступ к такой информации в
-							случаях получения претензий от третьих лиц, касающихся противозаконных и/или вредоносных, а также иных
-							действий Заказчика, наносящих вред Исполнителю и/или третьим лицам. Исполнитель вправе сообщить
-							вышеуказанные данные только компетентным государственным органам в случаях, предусмотренных действующим
-							законодательством Республики Узбекистан.
+							8.5. Pudratchi quyidagi hollarda Hisobni bloklash huquqiga ega:
 							<br />
-							Резервное копирование данных Заказчика в целях предотвращения потери информации не является нарушением
-							конфиденциальности информации Заказчика.
+							8.5.1. Agar mijoz ushbu shartlarni buzsa;
 							<br />
-							5.2. Исполнитель имеет право:
+							8.5.2. Pudratchining hisob-kitob hisobvarag'iga tushgan mablag'lar qoldig'i hozirgi vaqtda Buyurtmachi
+							tomonidan ulangan xizmatlarning umumiy qiymatidan kam bo'lsa - Buyurtmachi minimal bir martalik to'lov
+							miqdori bo'yicha shartlarga rioya qilgan holda to'lamaguncha. ushbu Shartlarda nazarda tutilgan to'lov.
 							<br />
-							5.2.1. Приостанавливать предоставление Услуг для проведения необходимых плановых профилактических и
-							ремонтных работ на технических ресурсах Исполнителя, а также внеплановых работ в аварийных ситуациях.
-							Сообщение о производстве вышеуказанных работ, влекущих за собой приостановление в оказании Услуг,
-							публикуется Исполнителем на своем веб-сайте с указанием предположительной продолжительности таких работ
-							(за исключением аварийных ситуаций, когда информация о приостановлении в оказании Услуг публикуется
-							Исполнителем по мере возможности).
+							8.5.3. Xaridor noto'g'ri ma'lumotlarni kiritganda, Buyurtmachi Hisobni ro'yxatdan o'tkazishda so'ralgan
+							ma'lumotlarni kiritmaydi, mijozning ma'lumotlarini o'z vaqtida yangilamaydi.
 							<br />
-							5.2.2. Прерывать оказание Услуг, если это обусловлено, в частности, но, не ограничиваясь нижеизложенным,
-							невозможностью использования информационно-транспортных каналов, не являющихся собственными ресурсами
-							Исполнителя, либо действием и/или бездействием третьих лиц, если это непосредственно влияет на оказание
-							Услуг в рамках данных Условий, в том числе при аварийной ситуации. При этом Исполнитель также имеет право
-							временно снять делегирование сайта Заказчика с собственных ресурсов в случае осуществления на сайт
-							Заказчика DDoS-атаки, неизбежно создающей чрезмерную нагрузку на ресурсы Исполнителя, что влечет за собой
-							невозможность использования Услуг Исполнителя другими Заказчиками.
+							8.5.4. Tasdiqlovchi hujjatlar taqdim etilmagan taqdirda, bu holda Pudratchi tegishli so'rov va/yoki talab
+							yuborilgan paytdan e'tiboran 3 (uch) kalendar kun ichida Buyurtmachining harakatsizligi yuqoridagi
+							harakatlarga tenglashtiriladi.
 							<br />
-							Исполнитель не несет ответственности перед Заказчиком и не возмещает Заказчику убытки, возникшие или
-							могущие возникнуть у Заказчика в связи с задержками, перебоями в работе и невозможностью полноценного
-							использования ресурсов и Услуг Исполнителя, возникших по вышеперечисленным причинам.
+							8.5.5. Pudratchi uchinchi shaxslardan shikoyat/da'vo va/yoki vakolatli organlardan Buyurtmachining
+							harakatlari va/yoki harakatsizligi, shu jumladan mualliflik huquqining buzilishi, spam yuborish va ushbu
+							Shartlarning yoki Shartnoma talablarining boshqa buzilishiga oid da'volarni olgan taqdirda. O'zbekiston
+							Respublikasining amaldagi qonunchiligi - buzilishlar bartaraf etilgunga qadar yoki Hisob o'chirilgunga
+							qadar.
 							<br />
-							5.2.3. Вносить в одностороннем порядке изменения и дополнения в настоящие Условия и Тарифы путем
-							публикации этих изменений и дополнений на сайте Исполнителя (https://airnet.uz).
+							8.6. Pudratchi quyidagi hollarda Hisobni o'chirishga haqli:
 							<br />
-							5.2.4. Приостанавливать предоставление Услуг либо отменить регистрацию Аккаунта и отказать в дальнейшем в
-							предоставлении и использовании Услуг в случае предоставления Заказчиком неверной информации либо
-							неосуществления ее актуализации при изменении данных, а также в случае несвоевременного представления
-							подтверждающих документов либо если у Исполнителя возникают сомнения в том, что предоставленная Заказчиком
-							информация верна, полна или точна, а также осуществлять в безакцептном порядке списание остатка денежных
-							средств Заказчика в случаях и порядке, предусмотренных настоящими Условиями.
+							8.6.1. Buyurtmachining o'z iltimosiga binoan yoki mijoz ushbu Shartlarni bajarishdan bir tomonlama bosh
+							tortgan taqdirda;
 							<br />
-							5.2.5. Приостанавливать оказание Услуг в случае нарушения Заказчиком настоящих Условий, а также
-							действующего законодательства.
+							8.6.2. Hisob uch martadan ortiq bloklangan taqdirda;
 							<br />
-							5.2.6. Блокировать и/или удалять Аккаунт в случаях и порядке, предусмотренных настоящими Условиями.
+							8.6.3. Buyurtmachi tomonidan ushbu Shartlarni qo'pol ravishda buzgan taqdirda yoki Buyurtmachi yo'l
+							qo'yilgan qoidabuzarliklarni bartaraf etishdan bosh tortgan taqdirda yoki Buyurtmachi Pudratchi so'rov
+							yuborgan kundan boshlab 3 (uch) kalendar kun ichida buzilishlarni bartaraf etmasa. bunday
+							huquqbuzarliklarni bartaraf etish;
 							<br />
-							5.2.7. Приостанавливать, блокировать или запрещать использование программного обеспечения Заказчика в
-							рамках оказания и использования Услуг в случае, если эксплуатация такого программного обеспечения приводит
-							или может привести к аварийным ситуациям, нарушению системы безопасности Исполнителя, нарушению настоящих
-							Условий или законодательства.
+							8.6.4. Agar Buyurtmachi Buyurtmachidan olingan pul mablag'lari qayta o'rnatilgan kundan boshlab 30
+							(o'ttiz) kalendar kun ichida Pudratchining hisob-kitob hisobvarag'iga ushbu Shartlarda belgilangan
+							miqdorda va tartibda zarur to'lovlarni amalga oshirmasa;
 							<br />
-							5.2.8. Принимать заявления от Заказчиков удаленно через систему сообщений службы поддержки или электронный
-							почтовый ящик, при этом со стороны Заказчика обязательно должно быть предоставлены следующие документы:
+							8.6.5. Agar Buyurtmachi Hisob qaydnomasi ro'yxatdan o'tgan kundan boshlab 12 (o'n ikki) oy ichida
+							Xizmatlardan foydalanmasa;
 							<br />
-							1. Если Заказчик является физическим лицом:
+							8.6.6. Agar Buyurtmachi Hisobdagi Xizmatlardan oxirgi marta foydalanganidan beri 6 (olti) oydan ko'proq
+							vaqt o'tgan bo'lsa;
 							<br />
-							• Цветная сканированная копия подписанного заявления.
+							8.6.7. Pudratchi Shartlarning 3.16, 3.17-bandlari buzilishini mustaqil ravishda yoki uchinchi shaxslarning
+							shikoyatlari/so'rovlari/talablari bo'yicha aniqlagan taqdirda, band buzilgan taqdirda tegishli domen
+							nomini (nomlarini) ro'yxatdan o'tkazish bir vaqtning o'zida bekor qilinadi. Shartlarning 3.17.
 							<br />
-							• Цветная сканированная копия паспорта.
+							8.7. Ushbu Shartlarga muvofiq Hisobni o'chirish bilan bir vaqtda Pudratchi Pudratchiga Hisobni o'chirish
+							bilan bog'liq qo'shimcha xarajatlar va boshqa tegishli xarajatlarni qoplash sifatida to'liq qabul
+							qilmasdan mablag'lar qoldig'ini hisobdan chiqaradi.
 							<br />
-							• Фотография заявителя держащего подписанное заявление. Необходимо чтобы было хорошо видно лицо и само
-							заявление.
-							<br />
-							2. Если Заказчик является юридическим лицом:
-							<br />
-							• Цветная сканированная копия подписанного заявления руководителем на фирменном бланке с печатью
-							юридического лица.
-							<br />
-							• Цветная сканированная копия паспорта руководителя юридического лица.
-							<br />
-							• Цветная сканированная копия удостоверения (гувохномы) юридического лица.
-							<br />
-							Данные меры необходимы для обеспечения безопасности данных Заказчиков от мошенников.
+							8.8. Pudratchi nuqtai nazaridan, Buyurtmachi tomonidan O'zbekiston Respublikasi qonunchiligini aniq buzgan
+							taqdirda, unga xizmatlar ko'rsatish to'xtatilishi, Hisob qaydnomasi bloklanishi va/yoki o'chirilishi
+							mumkin. Pudratchining ogohlantirishi, pul qoldig'i Buyurtmachiga qaytarilmaydi va Pudratchiga ushbu
+							Shartlarning 8.7-bandiga muvofiq etkazilgan xarajatlarning qoplanishi hisoblanadi.
 						</p>
 						<p>
-							<strong>6. Стоимость Услуг и порядок расчетов</strong>
+							<strong>9. Texnik yordam</strong>
 							<br />
-							6.1. Стоимость Услуг определяется в соответствии с Тарифами, являющимися неотъемлемой частью настоящих
-							Условий. Тарифы размещаются Исполнителем на сайте (https://airnet.uz).
+							9.1. Xizmatlarni taqdim etish va ulardan foydalanish uchun Pudratchi ushbu Shartlarda belgilangan tartibda
+							Texnik qo'llab-quvvatlash xizmatining (keyingi o'rinlarda STP deb yuritiladi) ishlashini ta'minlaydi.
 							<br />
-							6.2. Общая стоимость Услуг определяется как суммарный объем денежных средств, списанных за оказанные
-							Заказчику Услуги в соответствии с Тарифами, действующими на момент оказания Услуг.
+							STP texnik jihozlar va tizim dasturiy ta'minotining ishlashini boshqaradi va nazorat qiladi, shuningdek,
+							mijozning konfiguratsiya fayllarini o'zgartirish to'g'risidagi so'rovlarini, agar bunday o'zgarishlarga
+							ruxsat berilsa va mijoz tomonidan mustaqil ravishda amalga oshirilmasa, shuningdek, tegishli muammolarni
+							bartaraf etish bo'yicha so'rovlarni qayta ishlaydi. taqdim etilgan Xizmatlarning ishlashiga.
 							<br />
-							6.3. Услуги оплачиваются Заказчиком на условиях предоплаты на расчетный счет Исполнителя согласно п.
-							4.1.5.
+							STP bilan bog'lanishda Buyurtmachi texnik mutaxassislar bilan muloqot qilish uchun zarur bo'lgan minimal
+							bilim va ko'nikmalarga ega bo'lishi kerakligini tushunadi. STP bilan bog'lanishda Buyurtmachi xatoning
+							sabablari haqida oldindan ma'lumot to'plashi, muammoning mohiyatini va uning yuzaga kelish sharoitlarini
+							aniq va tushunarli tarzda tushuntirishi kerak.
 							<br />
-							6.4. При условии соблюдения Заказчиком п. 6.3 настоящих Условий датой начала оказания Услуг Исполнителем
-							является дата подключения Заказчиком соответствующих Услуг в Контрольной панели Аккаунта при осуществлении
-							предоплаты от даты поступления денежных средств на расчетный счет Исполнителя при одновременном соблюдении
-							следующих условий:
+							9.2. STP Mijozlarga dasturlash, veb-dizayn, o'rnatish, Buyurtmachining skriptlari va dasturlarini sozlash
+							yoki ularni optimallashtirish, shuningdek, kompyuter savodxonligi asoslarini o'rgatish, saytlarni yaratish
+							va/yoki targ'ib qilish, taqdim etilayotgan xizmatlardan foydalanish bo'yicha maslahat bermaydi. uchinchi
+							shaxslar tomonidan, qidiruv, shuningdek, boshqa shunga o'xshash savollar.
 							<br />
-							• Исполнитель имеет право на списание остатка денежных средств в случае удаления Аккаунта в размере и
-							порядке, предусмотренных настоящими Условиями.
+							Bunday maslahatlar Buyurtmachiga qo'shimcha kelishuv asosida qo'shimcha haq evaziga berilishi mumkin.
 							<br />
-							• В случае если Заказчик в предусмотренный настоящими Условиями срок письменно не уведомил Исполнителя о
-							своем несогласии с новыми Тарифами, Заказчик считается согласившимся с изменением Тарифов, и списание
-							денежных средств за оказанные Услуги осуществляется Исполнителем по новым Тарифам.
+							9.3. STP bilan bog'lanish Buyurtmachi tomonidan Hisobni boshqarish paneliga kirishda uning ruxsati orqali
+							sayt egasi sifatida aniqlash uchun Hisob orqali amalga oshiriladi.
 							<br />
-							• Предоставление счетов-фактур на оказанные Услуги осуществляется в офисе Исполнителя или на контактный
-							электронный почтовый ящик Заказчика, указанный в Договоре, при этом Заказчик обязуется за свой счет
-							вернуть Исполнителю 1 экземпляр подписанной Заказчиком счет-фактуры по почте или иным способом,
-							позволяющим подтвердить получение документов Исполнителем. В случае неполучения Исполнителем подписанной
-							счет-фактуры в течение 14 (четырнадцати) календарных дней с момента предоставления Исполнителем Заказчику
-							соответствующих документов Услуги считаются оказанными надлежащим образом на основании односторонне
-							подписанной Исполнителем счет-фактуры.
-							<br />• Все банковские либо иные комиссионные платежи за оплату Услуг оплачиваются Заказчиком
-							самостоятельно.
+							Hisobga kirishning iloji bo'lmasa, Buyurtmachi Pudratchining veb-saytida joylashgan maxsus shaklni
+							to'ldirish orqali STP bilan bog'lanishi mumkin.
+							<br />
+							Boshqa har qanday yo'l bilan yuborilgan so'rovlar (xususan, telefon va/yoki elektron pochta orqali va/yoki
+							Hisobni boshqarish paneli orqali bog'lanishdan tashqari) rasmiy emas va Pudratchining javob berish va/yoki
+							majburiyatlarini bajarish majburiyatini yuklamaydi. ularga nisbatan har qanday harakat. Pudratchi telefon
+							va/yoki elektron pochta orqali va/yoki Hisobni boshqarish paneli orqali bog'lanishdan tashqari boshqa yo'l
+							bilan berilgan savollarga javob berish imkoniyati yoki mumkin emasligi to'g'risida mustaqil ravishda qaror
+							qabul qilish huquqini o'zida saqlab qoladi.
+							<br />
+							STP bilan telefon orqali bog'langan taqdirda, STP xodimi avtorizatsiya uchun Hisobni boshqarish paneli
+							orqali so'rov yuborishingizni talab qilishi mumkin. STP xodimi, shuningdek, Buyurtmachining telefon yoki
+							boshqa so'rovini uning mazmunini Buyurtmachi tomonidan ko'rish imkoniyati bilan ma'lumotlar bazasiga yozib
+							olish huquqiga ega. Shu bilan birga, Buyurtmachining telefon orqali kelib tushgan murojaatlariga DTPning
+							javoblari Pudratchi tomonidan faqat ish kunlarida ish vaqtida amalga oshiriladi.
+							<br />
+							9.4. So'rovlar Pudratchi tomonidan qabul qilinganda ko'rib chiqiladi. Buyurtmachining so'roviga STPning
+							javob berish muddati STP tomonidan qabul qilingan so'rovlar soniga bog'liq va agar iloji bo'lsa, Pudratchi
+							so'rovlarga 48 soatdan ortiq bo'lmagan vaqt ichida javob beradi, ammo agar kerak bo'lsa, javob berish
+							muddati savolni Pudratchi oshirishi mumkin.
+							<br />
+							9.5. Quyidagilarni o'z ichiga olgan STP so'rovlari ko'rib chiqish va qayta ishlash uchun qabul qilinmaydi:
+							<br />
+							• o'zbek va rus tillaridan boshqa tillarda tuzilgan ma'lumotlar;
+							<br />
+							• ishbilarmonlik muloqotining umume’tirof etilgan qoidalari va odatlariga zid bo‘lgan behayo so‘zlar,
+							qo‘pollik, haqorat, qo‘pollik va boshqa iboralar;
+							<br />
+							• Xizmatlar bilan bog'liq bo'lmagan (xostingning ishlashi va domenni ro'yxatdan o'tkazish) va/yoki
+							Xizmatlarning texnik xususiyatlari bilan bog'liq bo'lmagan savollar;
+							<br />
+							• tushunarsiz, noaniq yoki shunga o'xshash shaklda tuzilgan, shu munosabat bilan savolning ma'nosi
+							tushunarsiz bo'lib qoladigan savollar;
+							<br />
+							• moslashtirish yoki o'rnatish uchun talablar, skriptlarni yaxshilash va h.k.
+							<br />
+							So'rovlar ko'rib chiqish va ko'rib chiqish uchun qabul qilinmaydi va ko'rib chiqish uchun qabul qilingan
+							arizani bajarish ushbu Shartlarda nazarda tutilgan asoslar bo'yicha Xizmatlarni ko'rsatish
+							to'xtatilganligi sababli rad etilishi mumkin.
+							<br />
+							9.6. Agar STP standart so'rov yoki so'rovni qabul qilsa, unga javobi Pudratchining veb-saytida "Savollar
+							va javoblar" bo'limida mavjud bo'lsa, so'rovga javob veb-saytdagi tegishli sahifaga havola ko'rinishida
+							berilishi mumkin. Pudratchining veb-saytida "Savollar va javoblar" bo'limi mavjud.
+							<br />
+							Agar DTPga boshqa internet saytlarida javob topish mumkin boʻlgan soʻrov kelib tushsa, soʻrovga javob
+							tegishli saytga havola koʻrinishida berilishi mumkin.
 						</p>
 						<p>
-							<strong>7. Ответственность сторон</strong>
+							<strong>10. Boshqa shartlar</strong>
 							<br />
-							7.1. По всем вопросам, неурегулированными настоящими Условиями, а также при разрешении споров, возникших в
-							процессе их исполнения, стороны руководствуются действующим законодательством Республики Узбекистан. В
-							случае невозможности разрешения сторонами спора в досудебном претензионном порядке, он подлежит разрешению
-							в соответствующем суде г. Ташкента в соответствии с действующим законодательством Республики Узбекистан.
+							10.1. Ushbu Shartlarda nazarda tutilgan Buyurtmachining yozma bayonotlari barcha Hisob ma'lumotlarini,
+							shuningdek, kerak bo'lganda Pudratchiga Buyurtmachini aniqlashga imkon beradigan boshqa ma'lumotlarni o'z
+							ichiga olishi kerak.
 							<br />
-							7.2. Заказчик несет полную ответственность за сохранность своего пароля и иных учетных данных, также как и
-							за убытки, которые могут возникнуть у Заказчика и/или третьих лиц по причине несанкционированного
-							использования (разглашение, потеря, кража и т. д.) таких учетных данных.
+							10.2. Tomonlar Pudratchi tomonidan Buyurtmachiga u tomonidan Hisobning shaxsiy ma'lumotlarida ko'rsatilgan
+							elektron pochta manzillariga yuborilgan xabarlar va xabarlarning qonuniy kuchini tan oladilar. Bunday
+							bildirishnomalar va xabarlar Pudratchi tomonidan Buyurtmachining pochta manziliga yuborilgan oddiy yozma
+							shaklda rasmiylashtirilgan xabarlar va bildirishnomalarga tenglashtiriladi. Xabarlarni yuborish, qabul
+							qilish faktlari, ularni jo'natish vaqti va mazmuni bo'yicha kelishmovchiliklar yuzaga kelgan taqdirda,
+							tomonlar Pudratchining texnik vositalarining dalillarini ko'rsatilgan shaxslar o'rtasidagi
+							kelishmovchiliklarni hal qilish uchun ishonchli va yakuniy deb hisoblashga kelishib oldilar.
 							<br />
-							Заказчик несет ответственность за любые неправомерные действия и/или бездействие Заказчика и/или лиц,
-							использующих его учетные данные, повлекшие причинение любого вреда Исполнителю, включая утрату деловой
-							репутации, и возмещает Исполнителю убытки. Исполнитель также не несет ответственности за действия третьих
-							лиц, повлекшие ущерб для Заказчика.
+							10.3. Tomonlar Buyurtmachidan Pudratchiga bildirishnomalar va xabarlar kelishini tan oladilar, San'atga
+							muvofiq STP bilan bog'lanish hollari bundan mustasno. Ushbu Shartlarning 9-bandi, agar ular Hisob va
+							Buyurtmachini identifikatsiya qilish uchun zarur bo'lgan barcha ma'lumotlarni ko'rsatgan holda yozma
+							shaklda tuzilgan va ro'yxatdan o'tgan pochta orqali yuborilgan bo'lsa, to'g'ri tuzilgan deb hisoblanadi.
 							<br />
-							7.3. Исполнитель не несет ответственности за содержание размещаемой Заказчиком информации и информационных
-							узлов, создаваемых и поддерживаемых Заказчиком или его пользователями, и не осуществляет какой-либо
-							предварительной проверки и цензуры.
+							10.4. Pudratchi Hisobni ro'yxatdan o'tkazishda Buyurtmachi tomonidan taqdim etilgan ma'lumotlarni uchinchi
+							shaxslarga bermaslik yoki bermaslik majburiyatini oladi, bunday ma'lumotlarni davlat organlariga va/yoki
+							boshqa organlarga va tashkilotlarga ularning iltimosiga binoan taqdim etish bundan mustasno. boshqa
+							uchinchi shaxslardan ularning huquqlari va/yoki O‘zbekiston Respublikasining amaldagi qonunchiligi
+							Buyurtmachi tomonidan buzilganligi to‘g‘risidagi so‘rovlar/shikoyatlar/da’volar kelib tushgan taqdirda.
 							<br />
-							Заказчик несет ответственность за любые свои действия и/или бездействие, как умышленные, так и
-							неумышленные, а равно за любые действия и/или бездействие лиц, использующих его учетные данные, связанные
-							с размещением и/или распространением информации в сети Интернет, а также получением посредством
-							использования ресурсов Исполнителя доступа к ресурсам третьих лиц.
+							10.5. Tomonlar ushbu Shartlarga taalluqli hujjatlar va ular bilan bog'liq boshqa hujjatlardagi maxfiy
+							ma'lumotlarni boshqa tomonning yozma ruxsatisiz oshkor qilmaslik, bermaslik yoki uchinchi shaxslarga
+							bermaslik majburiyatini oladilar. Shartlar ma'lumot emas. Tomonlar maxfiy deb hisoblashga kelishib olgan.
 							<br />
-							7.4. Заказчик самостоятельно несет ответственность за умышленные и/или неумышленные действия и/или
-							бездействие Заказчика и/или лиц, использующих его учетные данные, повлекшие нарушение любого национального
-							законодательства других стран и/или международного законодательства, а также за любой ущерб, причинный
-							вышеуказанными действиями и/или бездействием Исполнителю, третьим лицам, а также за последствия таких
-							действий и/или бездействия.
+							Ushbu bandning oldingi bandida nazarda tutilgan qoidalar bunday ma'lumotlarni taqdim etish talabi quyidagi
+							shaxslar tomonidan taqdim etilgan holatlarga nisbatan qo'llanilmaydi:
 							<br />
-							7.5. Исполнитель не несет ответственности за прямой и/или косвенный ущерб, причиненный Заказчику, а также
-							не возмещает Заказчику убытки (включая упущенную выгоду), понесенные Заказчиком в результате использования
-							или неиспользования ресурсов и Услуг Исполнителя, а также за убытки, понесенные в результате пропусков,
-							перерывов в работе или задержек в передаче данных, ошибок, дефектов, удаления файлов, изменений функций и
-							других причин.
+							• davlat organlari,
 							<br />
-							7.6. Исполнитель не несет ответственности за качество каналов связи общего пользования, политику обмена
-							трафиком между провайдерами, нормальное функционирование сети Интернет, ее частей или за качество линий
-							связи, не имеющих отношения к собственным ресурсам Исполнителя, и за их доступность для Заказчика, а также
-							не несет ответственности за изменение свойств, функций и качества Услуг, предоставляемых Заказчику, если
-							таковые изменения связаны с функционированием сети Интернет либо с другими обстоятельствами, находящимися
-							вне зоны компетенции, влияния и контроля Исполнителя.
+							• boshqa davlat organlari,
 							<br />
-							В случае если работа удаленной сети привела к занесению ее адреса(ов) в блок-листы, используемые для
-							предотвращения «спама», по которым почтовый сервер Исполнителя не осуществляет прием почты, Исполнитель
-							также не несет ответственности за невозможность принятия почты Заказчика от такой сети.
+							• mahalliy o‘zini o‘zi boshqarish organlari O‘zbekiston Respublikasining amaldagi qonunchiligiga muvofiq
+							o‘z funksiyalarini amalga oshirish maqsadida;
 							<br />
-							7.7. Исполнитель соблюдает технические стандарты качества Услуг и предпринимает все разумные усилия,
-							предотвращающие либо пресекающие попытки несанкционированного доступа к ресурсам Исполнителя и Заказчика,
-							сбоев и неполадок в оборудовании Исполнителя, проникновения вредоносных компонентов и т. д. При
-							возникновении аварийной или чрезвычайной ситуации Исполнитель принимает все зависящие от него меры для
-							скорейшей нормализации ситуации. При этом Исполнитель в силу специфики оборудования и программного
-							обеспечения Услуги не гарантирует абсолютную постоянную стопроцентную безошибочность и бесперебойность
-							работы всей системы и Услуг, а также не гарантирует безошибочность, бесперебойность и абсолютную
-							безопасность функционирования выпущенного любыми третьими лицами программного обеспечения и/или иных
-							материалов, используемых для предоставления Услуг.
+							10.6. Pudratchi, agar kerak bo'lsa, xizmatlarni taqdim etish uchun tegishli litsenziyalar va/yoki
+							ruxsatnomalar bilan uchinchi shaxslarni jalb qilish huquqiga ega.
 							<br />
-							7.8. Заказчик несет все риски, связанные с использованием сети Интернет через ресурсы и/или Услуги
-							Исполнителя, в том числе за оценку полезности, полноты, точности любой информации, Исполнитель не несет
-							ответственности за качество, правомерность, пригодность для конкретной цели любых товаров, работ, услуг,
-							запрашиваемых и/или полученных путем использования сети Интернет, в том числе в случае их размещения на
-							сервере Исполнителя (за исключением Услуг, предоставляемых Исполнителем).
+							10.7. Ushbu Shartlar maqolalarining sarlavhasi va raqamlanishi o'qish qulayligi uchun berilgan va ushbu
+							Shartlarni talqin qilishda muhim emas.
 							<br />
-							7.9. Исполнитель не несет ответственности за качество, безвредность и безошибочность программного
-							обеспечения (далее — качество программного обеспечения), предлагаемого Заказчику на серверах Исполнителя
-							и/или других серверах сети Интернет, за исключением случая, когда программное обеспечение разработано
-							самим Исполнителем.
+							10.8. Agar ushbu Shartlarning biron bir qoidasi tom ma'noda ijro etilishi shart bo'lmasa, u O'zbekiston
+							Respublikasining amaldagi qonunchiligiga muvofiq, tomonlarning dastlabki manfaatlarini hisobga olgan
+							holda, Shartlarning qolgan qismi esa to‘liq hajmda faoliyatini davom ettiradi.
 							<br />
-							Если Исполнитель предоставляет Заказчику услугу по поддержке программного обеспечения, разработанного
-							третьими лицами (например, MySQL, Apache и т. д.), Исполнитель несет ответственность перед Заказчиком
-							только за правильность функционирования данного программного обеспечения в рамках системы «ISPCONFIG», но
-							не за качество самого программного обеспечения.
-							<br />
-							Исполнитель не является разработчиком интерфейса для чтения почты, который предоставляется Заказчику в
-							качестве веб-интерфейса, поэтому ответственность за его нормальное функционирование не несет. Для работы с
-							почтой Исполнитель рекомендует использовать специализированные программы — почтовые Клиенты.
-							<br />
-							7.10. Заказчик самостоятельно несет ответственность за своевременное и надлежащее продление регистрации
-							доменного имени и возможные последствия несвоевременного и/или ненадлежащего продления и настоящим
-							подтверждает отсутствие претензий к Исполнителю, касающихся вышеуказанных действий и/или бездействия
-							Заказчика, а также их последствий.
-							<br />
-							7.11. Заказчик самостоятельно несет ответственность за любые свои действия и/или бездействия, совершенные
-							с использованием доменного имени Исполнителя, а также других технических реквизитов, обусловленных
-							предоставляемыми Услугами, в частности, IP-адреса, названий серверов и т. д., а также несет перед
-							Исполнителем ответственность за убытки, причиненные Исполнителю таковыми действиями и/или бездействием
-							Заказчика, создающими у третьих лиц видимость принадлежности Исполнителя к таковым действиям и/или
-							бездействиям Заказчика.
-							<br />
-							7.12. Исполнитель несет ответственность перед Заказчиком только в пределах оплаченных, но не оказанных
-							Услуг. Исполнитель не несет перед Заказчиком финансовой ответственности и не возвращает Заказчику
-							уплаченные в рамках данных Условий денежные средства, в случае если Услуги не были оказаны по вине
-							Заказчика.
-							<br />
-							7.13. В случае если надлежащее исполнение сторонами настоящих Условий невозможно в силу объективных
-							причин, которые стороны не могли ни предвидеть, ни предотвратить (стихийные бедствия, изменения текущего
-							законодательства Республики Узбекистан, действия органов государственной власти и управления, военные
-							действия всех видов и т. п.) ни одна из сторон не вправе требовать от другой стороны возмещения
-							причиненных ненадлежащим исполнением или неисполнением настоящих Условий убытков (включая упущенную
-							выгоду).
-						</p>
-						<p>
-							<strong>8. Блокирование и удаление Аккаунта</strong>
-							<br />
-							8.1. Исполнитель имеет право на блокирование и/или удаление Аккаунта в случаях, порядке и на условиях,
-							предусмотренных настоящими Условиями.
-							<br />
-							8.2. Блокирование Аккаунта означает временную невозможность использования Заказчиком Услуг при возможности
-							доступа (с ограниченной возможностью) Заказчика к Контрольной панели Аккаунта. Блокирование Аккаунта
-							осуществляется Исполнителем до момента устранения Заказчиком нарушений, приведших к блокированию Аккаунта,
-							если иное не предусмотрено настоящими Условиями. Одновременно с блокированием Аккаунта на контактный
-							e-mail Заказчика и в Аккаунт может направляться уведомление о нарушении Условий и необходимости устранения
-							допущенных Заказчиком нарушений.
-							<br />
-							8.3. Удаление Аккаунта означает невозможность доступа Заказчика к Аккаунту и невозможность использования
-							Услуг в рамках соответствующего Аккаунта.
-							<br />
-							8.4. При блокировании или удалении Аккаунта происходит прекращение доступа Заказчика к виртуальному
-							веб-серверу с одновременным выводом соответствующего предупреждения, оформленного с применением
-							графических и иных элементов дизайна хостинга в соответствии с настоящими Условиями.
-							<br />
-							8.5. Исполнитель имеет право на блокирование Аккаунта в следующих случаях:
-							<br />
-							8.5.1. При нарушении Заказчиком настоящих Условий;
-							<br />
-							8.5.2. При случае, когда остаток поступивших денежных средств на расчетный счет Исполнителя меньше общей
-							стоимости Услуг, подключенных Заказчиком на данный момент — до момента оплаты Заказчиком с соблюдением
-							условий о размере минимального единоразового платежа, предусмотренного настоящими Условиями.
-							<br />
-							8.5.3. При введении Заказчиком неверных данных, не введении Заказчиком данных, запрашиваемых при
-							регистрации Аккаунта, несвоевременной актуализации данных Заказчика.
-							<br />
-							8.5.4. При непредставлении подтверждающих документов, при этом к вышеуказанным действиям приравнивается
-							бездействие Заказчика в течение 3 (трех) календарных дней с момента направления Исполнителем
-							соответствующего запроса и/или требования.
-							<br />
-							8.5.5. В случае получения Исполнителем жалобы/требования от третьих лиц и/или требования от компетентных
-							органов, в отношении действий и/или бездействия Заказчика, в том числе по поводу нарушения авторских прав,
-							рассылки «спама» и прочих нарушений настоящих Условий или требований действующего законодательства
-							Республики Узбекистан — до момента устранения допущенных нарушений или удаления Аккаунта.
-							<br />
-							8.6. Исполнитель имеет право на удаление Аккаунта в следующих случаях:
-							<br />
-							8.6.1. По собственному желанию Заказчика либо при одностороннем отказе Заказчика от исполнения настоящих
-							Условий;
-							<br />
-							8.6.2. В случае блокирования Аккаунта более трех раз;
-							<br />
-							8.6.3. При грубом нарушении Заказчиком настоящих Условий либо при отказе Заказчика от устранения
-							допущенных нарушений либо при не устранении нарушений Заказчиком в течение 3 (трех) календарных дней с
-							момента направления Исполнителем требования об устранении таких нарушений;
-							<br />
-							8.6.4. В случае если Заказчик в течение 30 (тридцати) календарных дней с момента обнуления денежных
-							средств поступивших от Заказчика, не осуществит необходимые платежи на расчетный счет Исполнителя в
-							размере и порядке, предусмотренном настоящими Условиями;
-							<br />
-							8.6.5. В случае если в течение 12 (двенадцати) месяцев с момента регистрации Аккаунта Заказчик не
-							использует Услуги;
-							<br />
-							8.6.6. В случае если с момента последнего использования Заказчиком Услуг в рамках Аккаунта прошло более 6
-							(шести) месяцев;
-							<br />
-							8.6.7. В случае обнаружения Исполнителем самостоятельно либо по жалобам/запросам/требованиям третьих лиц
-							нарушений п. 3.16, 3.17, Условий с одновременным аннулированием регистрации соответствующего доменного
-							имени (имен) при нарушении п. 3.17 Условий.
-							<br />
-							8.7. Одновременно с удалением Аккаунта в соответствии с настоящими Условиями Исполнитель списывает остаток
-							денежных средств в безакцептном порядке в полном объеме в качестве возмещения Исполнителю дополнительно
-							понесенных расходов, связанных с удалением Аккаунта, и иных сопутствующих расходов.
-							<br />
-							8.8. В случае очевидного, с точки зрения Исполнителя, нарушения Заказчиком законодательства Республики
-							Узбекистан, оказание ему Услуг может быть приостановлено, а Аккаунт заблокирован и/или удален без
-							предварительного предупреждения со стороны Исполнителя, при этом остаток денежных средств Заказчику не
-							возвращается и считается возмещением Исполнителю понесенных расходов согласно п. 8.7 настоящих Условий.
-						</p>
-						<p>
-							<strong>9. Техническая поддержка</strong>
-							<br />
-							9.1. В целях оказания и использования Услуг Исполнитель обеспечивает функционирование Службы технической
-							поддержки (далее по тексту – СТП) в порядке, предусмотренном настоящими Условиями.
-							<br />
-							СТП осуществляет управление и контроль над работой технического оборудования и системных программных
-							средств, а также осуществляет обработку запросов Заказчика на изменения в конфигурационных файлах, если
-							такие изменения допускаются и не могут быть выполнены Заказчиком самостоятельно, а также запросов по
-							устранению проблем, связанных с функционированием предоставляемых Услуг.
-							<br />
-							При обращении в СТП Заказчик понимает, что должен обладать минимально необходимым объемом знаний и навыков
-							для общения с техническими специалистами. При обращении в СТП Заказчику необходимо заранее собрать
-							информацию о причинах ошибки, четко и понятно объяснить суть проблемы и обстоятельства ее возникновения.
-							<br />
-							9.2. СТП не осуществляет консультирование Заказчиков по вопросам программирования, веб-дизайна, установок,
-							настроек скриптов и программ Заказчика или их оптимизации, а также обучение началам компьютерной
-							грамотности, создания и/или продвижения сайтов, работе сервисов, предоставляемых третьими лицами, поиску,
-							а также по другим аналогичным вопросам.
-							<br />
-							Подобные консультации могут предоставляться Заказчику по дополнительной договоренности за дополнительную
-							плату.
-							<br />
-							9.3. Обращение в СТП осуществляется Заказчиком через Аккаунт в целях идентификации Заказчика как владельца
-							сайта посредством его авторизации при входе в Контрольную панель Аккаунта.
-							<br />
-							В случае невозможности входа в Аккаунт Заказчик может обратиться в СТП путем заполнения специальной формы,
-							расположенной на сайте Исполнителя.
-							<br />
-							Запросы, отправленные каким-либо иным способом (в частности, посредством телефонной связи и/или
-							электронной почты и/или иным способом, отличным от обращения через Контрольную панель Аккаунта) не
-							являются официальными и не влекут за собой обязанности Исполнителя по ответу и/или совершению каких-либо
-							действий по ним. Исполнитель оставляет за собой право самостоятельно принимать решение о возможности или
-							невозможности отвечать на вопросы, заданные посредством телефонной связи и/или электронной почты и/или
-							иным способом, отличным от обращения через Контрольную панель Аккаунта.
-							<br />
-							В случае обращения в СТП по телефону сотрудник СТП может потребовать отправить запрос через Контрольную
-							панель Аккаунта для авторизации. Сотрудник СТП также имеет право зафиксировать телефонное или иное
-							обращение Заказчика в базе данных с возможностью просмотра его содержимого Заказчиком. При этом ответы СТП
-							на заявки Заказчика, полученные посредством телефонной связи, осуществляются Исполнителем только по
-							рабочим дням в рабочее время.
-							<br />
-							9.4. Обработка запросов осуществляется Исполнителем по мере их поступления. Время ответа СТП на запрос
-							Заказчика зависит от количества поступивших в СТП запросов, и по возможности Исполнитель отвечает на
-							запросы в разумный срок не более 48 часов, однако, при необходимости время ответа на вопрос может быть
-							увеличено Исполнителем.
-							<br />
-							9.5. Не принимаются к рассмотрению и обработке запросы в СТП, содержащие:
-							<br />
-							• информацию, составленную на иных языках, кроме узбекского и русского языков;
-							<br />
-							• нецензурные выражения, грубость, оскорбления, хамство и иные выражения, противоречащие
-							общераспространенным правилам и обычаям делового общения;
-							<br />
-							• вопросы, не относящиеся к Услугам (работоспособности хостинга и регистрации доменов) и/или не
-							относящиеся к техническим особенностям Услуг;
-							<br />
-							• вопросы, сформулированные неясно, нечетко или иным подобным образом, в связи с чем смысл вопроса
-							становится непонятен;
-							<br />
-							• требования по настройке или установке, доработки скриптов и т.д.
-							<br />
-							Не принимаются к рассмотрению и обработке запросы, а также в выполнении принятой к рассмотрению заявки
-							может быть отказано по причине приостановления предоставления Услуг по основаниям, предусмотренным
-							настоящими Условиями.
-							<br />
-							9.6. В случае если в СТП поступает стандартный запрос или запрос, ответ на который уже содержится на сайте
-							Исполнителя в разделе «Вопросы и ответы», ответ на запрос может быть дан в виде ссылки на соответствующую
-							страницу на сайте Исполнителя, содержащую раздел «Вопросы и ответы».
-							<br />В случае если в СТП поступает запрос, ответ на который может быть найден на других сайтах сети
-							Интернет, ответ на запрос может быть дан в виде ссылки на соответствующий сайт.
-						</p>
-						<p>
-							<strong>10. Прочие условия</strong>
-							<br />
-							10.1. Письменные заявления Заказчика, предусмотренные настоящими Условиями, должны содержать все данные
-							Аккаунта, а также при необходимости иные данные, позволяющие Исполнителю идентифицировать Заказчика.
-							<br />
-							10.2. Стороны признают юридическую силу уведомлений и сообщений, направленных Исполнителем в адрес
-							Заказчика на указанные им в персональных данных Аккаунта адреса электронной почты. Такие уведомления и
-							сообщения приравниваются к сообщениям и уведомлениям, исполненным в простой письменной форме, направляемым
-							Исполнителем на почтовый адрес Заказчика. В случае возникновения каких-либо разногласий по фактам
-							отправления, получения сообщений, времени их направления и содержания, стороны договорились считать
-							свидетельства технических средств Исполнителя достоверными и окончательными для разрешения разногласий
-							между указанными лицами.
-							<br />
-							10.3. Стороны признают, что уведомления и сообщения Заказчика в адрес Исполнителя, за исключением случаев
-							обращения в СТП согласно ст. 9 настоящих Условий, считаются совершенными надлежащим образом только при
-							составлении их в письменном виде с указанием всех необходимых для идентификации Аккаунта и Заказчика
-							данных, и направлении их по почте заказным письмом.
-							<br />
-							10.4. Исполнитель обязуется не передавать и не делать доступными третьим лицам сведения о Заказчике,
-							предоставленные последним при регистрации Аккаунта, за исключением предоставления таких сведений
-							государственным органам и/или иным органам и организациям по их запросам, а также иным третьим лицам при
-							получении от них запросов/жалоб/претензий по вопросам нарушения Заказчиком их прав и/или действующего
-							законодательства Республики Узбекистан.
-							<br />
-							10.5. Стороны обязуются не разглашать, не передавать и не делать доступными третьим лицам конфиденциальные
-							сведения, содержащиеся в документах, относящихся к настоящим Условиям и иным документам, относящимся к
-							ним, без письменного разрешения другой стороны, при этом факт совершения акцепта и предмет настоящих
-							Условий не являются сведениями, которые стороны приняли считать конфиденциальными.
-							<br />
-							Положения, предусмотренные предыдущим абзацем настоящего пункта, не распространяются на случаи, когда
-							требование о предоставлении таких сведений предъявляется следующими лицами:
-							<br />
-							• органами государственной власти,
-							<br />
-							• иными государственным органами,
-							<br />
-							• органами местного самоуправления в целях выполнения их функций в соответствии с действующим
-							законодательством Республики Узбекистан;
-							<br />
-							10.6. Исполнитель вправе при необходимости привлекать для оказания Услуг третьих лиц, имеющих
-							соответствующие лицензии и/или разрешения.
-							<br />
-							10.7. Наименование и нумерация статей настоящих Условий приведены для удобства прочтения и не имеют
-							значения при толковании настоящих Условий.
-							<br />
-							10.8. В случае если какое-либо из положений настоящих Условий окажется не подлежащим буквальному
-							исполнению, оно толкуется в соответствии с действующим законодательством Республики Узбекистан с учетом
-							первоначальных интересов сторон, при этом оставшаяся часть Условий продолжает действовать в полной мере.
-							<br />
-							10.9. Настоящие Условия составлены в соответствии с Гражданским кодексом Республики Узбекистан и иными
-							нормативными актами Республики Узбекистан, действующими в области предоставления Услуг.
-						</p>
-					</div>
-					<div className={st.oferta__block}>
-						<h2>На оказание услуг интернета</h2>
-						<p>
-							Общество с ограниченной ответственностью «AIRNET», именуемое в дальнейшем Провайдер, действующего на
-							основании Лицензии выданной Государственным комитетом Связи, Информатизации и Телекоммуникационных
-							технологий АА № 0006506 от 18.06.2018г. на эксплуатацию и оказание услуг сетей передачи данных, настоящим
-							предоставляет физическим лицам (акцептирующим) настоящую оферту на нижеследующих условиях.
-						</p>
-						<p>
-							<strong>1. Общие положения</strong>
-							<br />
-							1.1.1 Настоящие Условия в соответствии со ст. 369 Гражданского кодекса Республики Узбекистан являются
-							публичной офертой (предложением), содержащей существенные условия договора на оказание и использование
-							Услуг Провайдера в адрес физических лиц.
-							<br />
-							1.1.2. Полным и безоговорочным акцептом настоящей оферты являются любые действия по выполнению указанных в
-							данной оферте условий, в т. ч. регистрация в качестве Абонента Провайдера, оплата Услуг предусмотренным
-							настоящей офертой способом, а также иные аналогичные действия, подтверждающие намерения лица пользоваться
-							Услугами.
-							<br />
-							1.1.3. С момента совершения акцепта Абонент считается ознакомившимся и согласившимся с настоящей офертой и
-							в соответствии с Гражданским Кодексом РУз считается вступившим с Провайдером в договорные отношения в
-							соответствии с настоящими Условиями.
-							<br />
-							1.1.4. Провайдер, заключая договор, руководствуется презумпцией наличия у Абонента необходимых навыков для
-							работы на персональном компьютере, а также навыков для работы в сети Интернет.
-							<br />
-							1.2. В настоящей публичной оферте используются следующие понятия:
-							<br />
-							“Услуги” – услуги служб передачи данных, в том числе Интернет;
-							<br />
-							“Провайдер” – юридическое лицо, оказывающее услуги сетей передачи данных на основании соответствующих
-							лицензий;
-							<br />
-							“Абонент” – пользователь услугами, физическое лицо, с которым заключён договор об оказании таких услуг, с
-							выделением для этих целей уникального номера идентификации;
-							<br />
-							“Пользовательское оборудование, оконечное оборудование” – технические средства для передачи и/или приёма
-							сигналов по линиям связи (компьютер, сетевой кабель и пр.), расположенные в жилом помещении Абонента;
-							<br />
-							“Интернет” – глобальное добровольное, независимое объединение компьютерных сетей и информационных
-							ресурсов, принадлежащих множеству различных физических и юридических лиц;
-							<br />
-							«Сеть AIRNET» – сеть передачи данных ООО «AIRNET»;
-							<br />
-							«Сеть FTTx» – (англ. fibertothe x — оптическое волокно до точки X) — это общий термин для любой
-							телекоммуникационной сети, в которой от узла связи до определенного места (точка X) доходит
-							волоконно-оптический кабель.
-							<br />
-							“Авторизация” – процесс регистрации (представления) Абонента в базе данных (биллинге) Провайдера, путем
-							ввода уникальных номеров идентификации, для получения доступа к услугам;
-							<br />
-							“Трафик” – объём информации, передаваемой через компьютерную сеть за определённый период времени;
-							<br />
-							«Спам» – массовая рассылка коммерческой, политической и иной рекламы (информации) или иного вида сообщений
-							лицам, невыражавшим желания их получать;
-							<br />
-							“Официальный сайт Провайдера” – информационный ресурс ООО «AIRNET», расположенный по адресу www.airnet.uz;
-							<br />
-							“Номер лицевого счёта Абонента” – уникальный идентификационный номер Абонента, расположенный в базе данных
-							Провайдера, имеющий постоянный характер в течение всего периода оказания услуг;
-							<br />
-							“Лицевой счет Абонента” – персональный счет Абонента, отражающий учёт финансовых сведений о поступлении
-							средств от Абонента и их расходовании Абонентном. Страница лицевого счёта располагается в Персональном
-							кабинете абонента. Вход в Персональный кабинет располагается на официальном сайте Провайдера.
-							<br />
-							“Зона ответственности Провайдера” – технические средства и линейно кабельное хозяйство до места
-							подключения пользовательского оборудования, находящиеся во владении и под управлением Провайдера;
-							<br />
-							«Дополнительные услуги» – услуги, подключаемые помимо основной услуги «Интернет» по письменной заявке
-							Абонента или заявке, сформированной через Персональный кабинет («Телефония», «Динамический DNS» и др.).
-							Подробное описание и условия пользования Дополнительными услугами размещаются на Официальном сайте
-							Провайдера или в Персональном кабинете Абонента;
-							<br />
-							“Установочная дата” – день месяца, соответствующий дате первого совершенного соединения с сетью Интернет;
-							<br />
-							«Расчетный период» – срок действия Абонентской платы со дня установочной даты, установленной тарифным
-							планом Абонента.
-							<br />
-							“Абонентская плата” – установленная тарифным планом сумма, списываемая c лицевого счета абонента 1 (один)
-							раз в расчетный период. Списание происходит в день, являющийся установочной датой;
-							<br />
-							“Логин” – имя Пользователя, которое используется для уникальной идентификации конкретного пользователя в
-							системе, состоит из букв и/или цифр;
-							<br />
-							“Пароль” – уникальный идентификационный код Абонента, который используется им для входа в систему. Пароль
-							абонента генерируется Провайдером в момент заключения договора и может быть изменен в последствии
-							Абонентом;
-							<br />
-							“Персональный кабинет” – web-страница на сайте Провайдера, содержащая статистическую информацию об объеме
-							полученных услуг и текущем состоянии Лицевого счета Абонента и позволяющая управлять дополнительными
-							услугами оказываемыми Провайдером. Вход в персональный кабинет осуществляется при помощи активации Логина
-							и Пароля;
-							<br />
-							“Жилое помещение абонента” – квартира или дом Абонента, в котором устанавливается подключение к сети
-							Интернет по договору и расположенное по адресу, указанному в Приложении №1 к договору;
-							<br />
-							“Служба информационно-технической поддержки” – служба, предоставляющая круглосуточную техническую и
-							информационную поддержку Абонентам Провайдера по телефонному номеру +99890 3243080;
-							<br />
-							«Публичная оферта» – настоящий документ, содержащей существенные условия договора на оказание и
-							использование Услуг Провайдера физическим лицам, имеющий силу договора, опубликованный в сети на
-							официальном сайте Провайдера, расположенного по адресу www.airnet.uz;
-							<br />
-							«Акцепт оферты» – полное и безоговорочное принятие оферты путем подписания Абонентом договора с OOO
-							«AIRNET» на оказание услуг сетей передачи данных физическим лицам.
-						</p>
-						<p>
-							<strong>2. Предмет договора</strong>
-							<br />
-							2.1. Провайдер предоставляет Абоненту для домашнего пользования услуги высокоскоростного доступа в сеть
-							Интернет (сеть «FTTx») перечисленные в Приложении №1 к договору, а Абонент оплачивает и потребляет
-							предоставляемые услуги в соответствии с условиями договора.
-							<br />
-							2.2. На период оказания услуг по договору Провайдер при необходимости передает Абоненту во временное
-							пользование необходимое для подключения к сети Интернет оборудование и материалы в исправном состоянии. В
-							случае расторжения Договора, Абонент возвращает Провайдеру оборудование и материалы в том состоянии, в
-							каком его принял, с учетом естественного износа. При возврате оборудования и материалов абонентом,
-							демонтаж кабеля производится исключительно специалистами провайдера, а возврат модемов и Wi-fi роутеров
-							осуществляется абонентом самостоятельно в офисе компании.
-							<br />
-							2.3. Передача оборудования Абоненту, его возврат Провайдеру или замена осуществляются по двухстороннему
-							Акту.
-							<br />
-							2.4. В случае наличия у Абонента собственного телекоммуникационного оборудования, пригодного для
-							полноценного пользования Услугами ” Провайдера” по технологиям FTTx, пункты 2.2. и 2.3. теряют свою силу.
-							<br />
-							2.5. В случае отсутствия на оборудовании у абонента работоспособной сетевой карты, для абонентов,
-							подключенных по сети «FTTx», абонент самостоятельно обеспечивает ее установку на свой компьютер за свой
-							счет до момента подключения к сети Интернет.
-							<br />
-							2.6. В рамках Договора Провайдер также предоставляет Абоненту, по его письменной, либо сформированной
-							через Персональный кабинет заявке, дополнительные услуги.
-							<br />
-							2.7. Полным и безоговорочным акцептом настоящей оферты являются любые действия по выполнению указанных в
-							данной оферте условий, в т. ч. Авторизация в качестве Абонента в сети AIRNET.
-						</p>
-						<p>
-							<strong>3. Оплата услуг и порядок их оказания</strong>
-							<br />
-							3.1. Абонент оплачивает услуги Провайдера согласно выбранному тарифному плану, указанному в Приложении №1
-							к договору по тарифам, опубликованным на официальном сайте Провайдера. Все тарифы на услуги указываются в
-							национальной валюте Республики Узбекистан – сум и включают в себя все налоги и сборы, действующие на
-							момент оплаты.
-							<br />
-							3.2. Оплата за услуги по договору производится посредством приобретения и активизации Интернет-карт или
-							иных авторизированных платежных систем и/ или касс Провайдера в национальной валюте Республики Узбекистан
-							– сум.
-							<br />
-							3.3. Денежные средства Абонента, списываемые с Лицевого счета Абонента в качестве оплаты за услуги,
-							указываются национальной валюте Республики Узбекистан – сум и включают в себя все налоги и сборы,
-							действующие на момент оплаты.
-							<br />
-							3.4. Цена услуг, предоставляемых Провайдером по договору, рассчитывается исходя из перечня выбранных
-							Абонентом услуг согласно Приложению №1 и выбранного Абонентом тарифного плана и состоит из:
-							<br />
-							3.4.1. единовременного платежа;
-							<br />
-							3.4.2. ежемесячной абонентской платы за потребляемые услуги.
-							<br />
-							3.5. Оплата единовременного платежа осуществляется одновременно с заключением договора. Единовременный
-							платеж состоит из регистрационной платы за подключение и оплаты за оборудование (при подключении с
-							оборудованием от компании) и Абонентской платы за пользование услугами в первый месяц. В случае, если
-							Абонент не произвел авторизацию в течение первого расчетного периода, то списание внесенной абонентской
-							платы за первый месяц производится на 30-й день с момента заключения договора.
-							<br />
-							3.6. Абонентская плата вносится Абонентом до начала следующего расчетного периода в форме 100% предоплаты.
-							<br />
-							3.7. Абонентская плата списывается Провайдером ежемесячно в установочную дату, независимо от фактического
-							использования Абонентом оказанных услуг за текущий месяц, за исключением следующих случаев:
-							<br />
-							• расторжения договора в связи с невозможностью оказания услуг по вине Провайдера;
-							<br />
-							• в течение срока использования услуги резервирования.
-							<br />
-							Возврат внесенных Абонентом денежных средств в данных случаях производится согласно акту, подписанному
-							сторонами и при обязательном подтверждении внесенной оплаты (чек, квитанция, карточка оплаты).
-							<br />
-							3.8. Если на установочную дату на Лицевом счете Абонента не сформировалась полная сумма ежемесячной
-							абонентской платы, то Провайдер блокирует доступ к услуге.
-							<br />
-							3.9. Если Абонент в течение 14 дней текущего месяца не внес абонентскую плату, то Провайдер может в
-							одностороннем порядке расторгнуть договор, отключить Абонента от сети и удалить точку доступа. Ранее
-							переданное Абоненту оборудование подлежит возврату в порядке, установленном п.2.2. и п.2.3., в срок не
-							позднее 5 (Пяти) банковских дней со дня расторжения договора.
-							<br />
-							3.10. Предоплата следующего расчетного периода пользования услугами может производиться Абонентом в любой
-							день текущего расчетного периода.
-							<br />
-							3.11. Датой начала пользования услугой считается первый успешный вход – авторизация Абонента.
-							<br />
-							3.12. В случае превышения лимита трафика, установленного тарифным планом, Абонент оплачивает за каждый 1Мб
-							сверх лимита по тарифам указанного плана.
-							<br />
-							3.13. Положительный остаток между внесенным Абонентом депозитом за сверхлимитный трафик и фактической
-							суммой его потребления на последний день расчетного периода засчитывается в счет абонентской платы за
-							следующий расчетный период, а в случае расторжения договора возвращается Абоненту, согласно подписанному
-							двустороннему акту сверки взаиморасчетов, а также при наличии подтверждения внесенной оплаты (чек,
-							квитанция, карточка оплаты).
-							<br />
-							3.14. Доступ Абонента к услуге интернет, телефонии и всех других дополнительных услуг, после выработки
-							лимита трафика, установленного выбранным Абонентом тарифным планом, предоставляется у FTTx абонентов – при
-							наличии на его лицевом счете суммы, не менее чем 4210 (четыре тысячи двести десять) сум.
-							<br />
-							3.15. Услуги, оказанные Провайдером Абоненту, считаются надлежащим образом оказанными и принятыми на
-							последний день расчетного периода, если Абонент не предъявил обоснованную письменную претензию в
-							установленном договором порядке.
-							<br />
-							3.16. Смена тарифного плана Абонента осуществляется через Персональный Кабинет не позднее, начала
-							следующего расчетного периода;
-							<br />
-							3.17. В случае необходимости Абонент может приостановить использование услуг Провайдера через Персональный
-							кабинет, либо путем обращения в офис Провайдера, не позднее, чем за 2 (Двое) суток до начала следующего
-							расчетного периода. Это позволит Абоненту приостановить пользование услугой, с сохранением в период
-							резервирования за собой порта и своих реквизитов в базе данных Провайдера. Максимальный срок
-							резервирования порта составляет 2 (Два) месяца. Если по истечении 2 (Двух) месяцев с момента
-							резервирования Абонент в письменном виде не изъявил желание возобновить услугу и/или не оплатил
-							абонентскую плату, то Договор считается расторгнутым. Оплата за услугу резервирования производится в
-							порядке предварительной оплаты до установочной даты каждого резервируемого.
-							<br />
-							3.18. Все суммы, предоставляемые Абоненту в ходе рекламных акций, добавленные в виде бонусов от Провайдера
-							могут быть израсходованы только на оплату услуг Интернет и при расторжении договора не выплачиваются
-							Абоненту в денежной форме.
-						</p>
-						<p>
-							<strong>4. Права и обязанности сторон</strong>
-							<br />
-							4.1. Провайдер обязуется:
-							<br />
-							4.1.1. подключить Абонента в течение 7 (семи) календарных дней с момента заключения договора;
-							<br />
-							4.1.2. предоставлять Абоненту услуги доступа в сеть Интернет с использованием динамического,
-							действительного для работы в сети Интернет IP-адреса, и в соответствии с условиями, описанными в договоре;
-							<br />
-							4.1.3. уведомлять Абонента на официальном сайте Провайдера о сроках начала и продолжительности проведения
-							профилактических и плановых ремонтных работ, которые могут привести к нарушению нормального режима
-							предоставления услуг, не менее чем за 24 (Двадцать четыре) часа до их начала;
-							<br />
-							4.1.4. не допускать отказа в предоставлении услуг свыше 36 (Тридцати шести) часов суммарно в месяц;
-							<br />
-							4.1.5. в соответствии с п. 2.2 Договора, обеспечить исправность передаваемого Абоненту оборудования,
-							необходимого для подключения к Сети AIRNET.
-							<br />
-							4.1.6. предоставить Абоненту возможность получения бесплатных телефонных консультаций Службы
-							информационно-технической поддержки.
-							<br />
-							4.2. Провайдер имеет право:
-							<br />
-							4.2.1. не предоставлять услугу до внесения Абонентом 100% предоплаты единовременного платежа и абонентской
-							платы;
-							<br />
-							4.2.2. в одностороннем порядке отказать Абоненту в выполнении работ по подключению и в предоставлении
-							услуг, если в заявке на подключение, полученной от Абонента, содержится недостоверная информация;
-							<br />
-							4.2.3. в одностороннем порядке изменять действующие и вводить новые тарифы, предварительно уведомив об
-							этом Абонента за 10 (Десять) дней до их введения, путем размещения информации на официальном сайте
-							Провайдера;
-							<br />
-							4.2.4. прекратить предоставление услуг Абоненту с расторжением договора в одностороннем порядке случаях:
-							<br />
-							• нарушения пользователем условий договора и приложений к нему;
-							<br />
-							• любых действий Абонента, повлекших за собой сбой в работе сети Провайдера;
-							<br />
-							• рассылки абонентом спама;
-							<br />
-							• нарушения Абонентом Правил пользования услугами, публикуемых на официальном сайте Провайдера;
-							<br />
-							• отсутствия оплаты за оказываемые Провайдером услуги, в сроки установленные договором;
-							<br />
-							• использования получаемых услуг или переданного оборудования в незаконных или коммерческих целях (с целью
-							извлечения прибыли);
-							<br />
-							• использования услуги при организации локальных сетей с соединением между собой двух или более
-							компьютеров, расположенных вне жилого помещения абонента;
-							<br />
-							• использования услуги при организации пунктов коллективного пользования («Интернет-клубов»,
-							«Интернет-кафе», любых учебно-образовательных центров и т.п.);
-							<br />
-							• при использовании получаемых услуг не в домашних условиях;
-							<br />
-							• совершения Абонентом действий, направленных на получение несанкционированного доступа к ресурсам сетей и
-							последующего использования такого доступа.
-							<br />
-							4.2.5. по своему усмотрению давать Абоненту бонусы или скидки в рамках предоставляемых услуг в течении
-							срока действия договора, а также предоставлять скидки на абонентскую, либо регистрационную плату;
-							<br />
-							4.2.6. отказать в передаче любой информации, распространение которой нарушает законодательство Республики
-							Узбекистан;
-							<br />
-							4.2.7. передавать Абоненту любую информации относящуюся к деятельности Провайдера, Абонента и оказываемым
-							Услугам;
-							<br />
-							4.2.8. блокировать доступ Абонента в Сеть AIRNET по запросу правомочных органов;
-							<br />
-							4.2.9. предпринимать действия направленные на обеспечение безопасности и стабильности функционирования
-							Сети AIRNET. Эти действия включают в себя, но не ограничиваются блокированием портов, фильтрацией трафика,
-							кэшированием и ограничением скорости передачи данных.
-							<br />
-							4.3. Абонент обязуется:
-							<br />
-							4.3.1. представить следующие документы, необходимые для подключения к сети Провайдера:
-							<br />
-							• документ, удостоверяющий личность абонента с пропиской (постоянная или временная) по месту подключения,
-							либо документ, подтверждающий право владения помещением или договор аренды/найма помещения, либо
-							письменное согласие владельца жилого помещения;
-							<br />
-							4.3.2. обеспечить доступ специалистов Провайдера или его уполномоченных представителей на место установки
-							оборудования для проведения подключения, технического обслуживания и плановых профилактических работ в
-							рабочее время Провайдера;
-							<br />
-							4.3.3. пользоваться оборудованием и материалами Провайдера, переданных Абоненту, с соблюдением правил его
-							эксплуатации.
-							<br />
-							Нарушением этих правил считается:
-							<br />
-							• не обеспечение сохранности оборудования и материалов;
-							<br />
-							• нарушение физической конструкции оборудования;
-							<br />
-							• поломка оборудования в результате некорректной работы электросети в жилом помещении Абонента;
-							<br />
-							• нарушение программного обеспечения, изначально заложенного в функции оборудования.
-							<br />
-							4.3.4. произвести авторизацию в сети не позднее 15 (Пятнадцати) календарных дней с момента передачи
-							подтверждения Провайдером о готовности линии к оказанию услуг.
-							<br />
-							4.3.5. оплачивать предоставляемые услуги в сроки, установленные договором и Приложениями к нему;
-							<br />
-							4.3.6. не наносить передаваемой и принимаемой информацией экономический, политический и другой вред
-							государству, юридическим и физическим лицам, не использовать каналы и средства связи для распространения
-							порнографической продукции и информации, носящей компрометирующий и порочащий государство, юридические и
-							физические лица характер;
-							<br />
-							4.3.7. не использовать услуги в незаконных и коммерческих целях (с целью извлечения прибыли);
-							<br />
-							4.3.8. в случае использования услуги для деятельности Интернет-кафе, Интернет-клуба и т.п. в 2-дневный
-							срок предоставить Провайдеру соответствующую лицензию и другие необходимые документы, а также
-							перезаключить договор по установленной Провайдером для такого использования форме с момента фактического
-							коллективного использования либо прекратить такое использование и в тот же срок оплатить Провайдеру
-							стоимость фактически использованных коллективных услуг по тарифам, установленным Провайдером, а также
-							штраф в том же размере;
-							<br />
-							4.3.9. в случае расторжении договора произвести взаиморасчёты с Провайдером, вернуть оборудование в
-							исправном состоянии и подписать Акт приема передачи оборудования в офисе Провайдера в срок до 5 (Пяти)
-							банковских дней, подключении по ADSL технологии;
-							<br />
-							4.3.10. вернуть переданное Абоненту оборудование Провайдера путем предоставления в рабочее время
-							Провайдера доступа специалиста Провайдера в жилое помещение абонента для демонтажа оборудования в день
-							расторжения договора, при подключении по FTTB технологии;
-							<br />
-							4.3.11. оплатить возникшую за период неактивности задолженность в соответствии с п.п 3.6 и 3.7 Договора;
-							<br />
-							4.3.12. не предпринимать действий, направленных на снижение качества работы или повреждение сетей
-							телекоммуникаций;
-							<br />
-							4.3.13. в случае утери Абонентом уникальных идентификационных данных или логина/пароля, немедленно, но не
-							позднее 24 (Двадцати четырёх) часов с момента утери, в письменной форме подать заявление на их
-							восстановление/смену. В заявлении Абонент должен указать свою фамилию, имя, отчество и номер своего
-							лицевого счёта;
-							<br />
-							4.3.14. немедленно обращаться в Службу информационно-технической поддержки при возникновении неполадок
-							и/или отсутствии доступа к надлежаще оплаченным услугам, с фиксированием фамилии специалиста, принявшего
-							такое обращение, даты, времени обращения и номера технической заявки.
-							<br />
-							4.3.15. регулярно проверять наличие изменений условий договора на официальном сайте Провайдера.
-							Продолжение пользования Абонентом услугами Провайдера спустя 10 (Десять) дней после уведомления об
-							изменении текущих тарифных планов и иных условий договора рассматривается как безоговорочное согласие
-							Абонента с такими изменениями.
-							<br />
-							4.4. Абонент имеет право:
-							<br />
-							4.4.1. пользоваться консультативной и технической поддержкой Службы информационно-технической поддержки
-							Провайдера при возникновении вопросов, связанных с использованием предоставляемых Провайдером услуг через
-							единый колл-центр по номеру +99890 3243080;
-							<br />
-							4.4.2. получать информацию о потребительских свойствах и качестве оказываемых услуг;
-							<br />
-							4.4.3. получать информацию об оказанных услугах и остатке денежных средств в Персональном кабинете;
-							<br />
-							4.4.4. предъявлять обоснованные претензии в письменной форме в порядке, предусмотренном п.6.3 договора.
-						</p>
-						<p>
-							<strong>5. Ответственность сторон</strong>
-							<br />
-							5.1. Провайдер несёт ответственность перед Абонентом в пределах зоны своей ответственности (п.1.2
-							договора).
-							<br />
-							5.2. В случае нарушения Провайдером пунктов 4.1.3 – 4.1.4 договора Абонент вправе требовать выплаты ему
-							неустойки в форме пени (компенсация) за период перерыва в предоставлении услуг, исходя из 1/720 части
-							абонентской платы в расчетный период за каждый полный час перерыва в оказании услуг, но не более всей
-							суммы абонентской платы в расчетный период.
-							<br />
-							5.3. Ограничение ответственности Провайдера.
-							<br />
-							5.3.1. Провайдер не несет ответственность за невозможность оказания услуг доступа в сеть Интернет, если
-							это обусловлено:
-							<br />
-							• качеством линий связи, предоставленных предприятием, оказывающим услуги телефонной связи, при помощи
-							которых Абонент устанавливает соединение с Сетью AIRNET;
-							<br />
-							• нарушением целостности и сохранности передаваемого Абоненту оборудования и материалов;
-							<br />
-							• возможным ухудшением качества связи в результате негативного влияния помех от посторонних источников
-							сигнала, вносимых в сеть Провайдера или Абонента;
-							<br />
-							• неработоспособностью оборудования или программного обеспечения, поставленного Абоненту третьими лицами и
-							используемого совместно с услугой Провайдера;
-							<br />
-							• нарушением Абонентом условий, установленных договором и приложениями к нему.
-							<br />
-							5.3.2. Поскольку Интернет является добровольным объединением различных сетей, Провайдер не несет
-							ответственности за нормальное функционирование и доступность отдельных сегментов сети Интернет. Провайдер
-							не гарантирует возможность информационного обмена с теми узлами или серверами, которые временно или
-							постоянно недоступны через сеть Интернет.
-							<br />
-							5.3.3. Провайдер не несет ответственность за информационный поток, доступный через сеть Интернет, который
-							может содержать нежелательные для Абонента и третьих лиц материалы и информацию.
-							<br />
-							5.3.4. Абонент несёт самостоятельную ответственность и риски, связанные с использованием материалов,
-							информации, рекламы, товаров и услуг, полученных им в сети Интернет.
-							<br />
-							5.3.5. Провайдер не несет ответственность за утерю Абонентом логина или пароля, а также возможные
-							дальнейшие последствия такой утери.
-							<br />
-							5.3.6. Абонент несёт самостоятельную ответственность за причиненный ущерб и иные риски связанные с
-							возможными вирусными и хакерскими атаками.
-							<br />
-							5.3.7. Провайдер несет ответственность за убытки Абонента, возникшие по вине Провайдера, в пределах одной
-							ежемесячной абонентской платы. При этом вина Провайдера и причинно-следственная связь между действием
-							(бездействием) Провайдера и убытками Абонента должны быть установлены решением соответствующего суда.
-							Провайдер не несет ответственности за убытки Абонента, возникшие в результате использования Абонентом
-							услуг, предоставляемых по договору Провайдером, в целях извлечения прибыли (в коммерческих целях).
-							<br />
-							5.4. Абонент принимает на себя полную ответственность за использование услуги, в том числе, но, не
-							ограничиваясь этим, за получение разрешения от собственника жилого помещения абонента на выполнение
-							действий, необходимых для подключения к сети Интернет и оказания услуг по договору.
-							<br />
-							5.5. В случае утраты, повреждения или выхода из строя переданного Абоненту оборудования и материалов,
-							последний возмещает Провайдеру балансовую стоимость утраченного/вышедшего из строя оборудования и
-							материалов, а при повреждении – сумму, на которую понизилась стоимость оборудования, в национальной валюте
-							по курсу Центрального банка Республики Узбекистан на день возмещения.
-							<br />
-							5.6. Провайдер не несет ответственности за извещение или не извещение третьих лиц о прекращении доступа
-							Абонента к услугам и/или о расторжении договора и за возможные последствия, возникшие в результате такого
-							извещения или его отсутствия.
-							<br />
-							5.7. В случаях, не оговоренных договором, Стороны руководствуются действующим законодательством Республики
-							Узбекистан.
-						</p>
-						<p>
-							<strong> 6. Разрешение споров</strong>
-							<br />
-							6.1. Споры и разногласия между сторонами по договору, будут решаться по возможности путем переговоров.
-							<br />
-							6.2. Если споры и разногласия не будут разрешены путем переговоров, они подлежат разрешению в судебном
-							порядке, установленном законодательством Республики Узбекистан с обязательным соблюдением досудебного
-							(претензионного) порядка урегулирования споров, предусмотренного п.6.3 договора.
-							<br />
-							6.3. Порядок подачи претензий.
-							<br />
-							6.3.1. Претензия должна быть предъявлена Абонентом в письменной форме не позднее 3 (Трёх) рабочих дней с
-							момента возникновения основания для претензии. В случае пропуска установленного срока предъявления
-							претензии, Провайдер имеет право оставить претензию без рассмотрения.
-							<br />
-							6.3.2. Претензия подлежит регистрации Провайдером.
-							<br />
-							6.3.3. Претензия должна содержать: номер лицевого счёта, ФИО Абонента, его полный почтовый адрес,
-							конкретные нарушения и время, когда таковые были допущены, фамилию сотрудника Службы
-							информационно-технической поддержки, которому было заявлено о неполадках, дату и время такого обращения, а
-							также номер технической заявки по проблеме. Провайдер вправе оставить без рассмотрения претензию, не
-							содержащую сведений, указанных в настоящем пункте.
-							<br />
-							6.4. При проверке претензий Провайдер устанавливает:
-							<br />
-							6.4.1. Подтверждается ли факт неоказания или ненадлежащего оказания услуги собственными данными
-							Провайдера, в том числе показаниями систем учета объема оказанных услуг;
-							<br />
-							6.4.2. Что является причиной неоказания или ненадлежащего оказания услуги.
-							<br />
-							6.5. Сторона, получившая претензию, обязана в течение 30 (Тридцати) дней с момента ее получения
-							предоставить другой стороне письменный мотивированный ответ на нее, за исключением случаев не соблюдения
-							Абонентом порядка предъявления претензии, установленного пунктами 6.3.1 и 6.3.3 договора.
-						</p>
-						<p>
-							<strong>7. Форс-мажор</strong>
-							<br />
-							7.1. Ни одна из сторон не несет ответственность за частичное или полное невыполнение своих обязательств по
-							договору, если такое невыполнение явилось следствием обстоятельств непреодолимой силы, возникших после
-							заключения Договора в результате событий чрезвычайного характера, которые Стороны не могли предвидеть или
-							предотвратить разумными мерами. Выполнение обязательств прекращается на период действия этих обстоятельств
-							и их последствий.
-							<br />
-							7.2. Сторона, для которой создалась невозможность исполнения обязательств по Договору обязана немедленно
-							известить в письменной форме другую сторону о наступлении или прекращении вышеуказанных обстоятельств,
-							затем не позднее 14 (четырнадцать) дней представить письменное подтверждение возникновения форс-мажора,
-							выданное соответствующим компетентным органом.
-							<br />
-							7.3. Наступление форс-мажорных обстоятельств влечет за собой увеличение срока исполнения сторонами своих
-							обязательств по договору на период их действия при выполнении условий, предусмотренных п.7.2 договора.
-							<br />
-							7.4. Если форс-мажорные обстоятельства будут длиться более одного месяца, Стороны проводят переговоры по
-							дальнейшему исполнению договора. Однако, если в течение последующего месяца Стороны не смогут
-							договориться, тогда каждая из Сторон вправе отказаться (письменно уведомив другую сторону не менее чем за
-							5 дней до прекращения действия Договора) от дальнейшего исполнения обязательств по договору и прекращения
-							его действия, при условии осуществления полного взаиморасчета по обязательствам, исполненным Сторонами до
-							наступления форс-мажорных обстоятельств.
-						</p>
-						<p>
-							<strong>8. Срок действия, порядок изменения и расторжения договора</strong>
-							<br />
-							8.1. Договор вступает в силу с момента его подписания Сторонами, действует в течение одного года и
-							продлевается автоматически на такой же срок, если ни одна из сторон не выразила намерения о его
-							расторжении до истечения срока действия договора;
-							<br />
-							8.2. Договор может быть расторгнут в одностороннем порядке любой из Сторон, с предварительного письменного
-							уведомления другой Стороны за 15 (Пятнадцать) дней до предполагаемой даты расторжения в следующих случаях,
-							что не влечет за собой освобождения Абонента от оплаты образовавшейся задолженности:
-							<br />
-							• при отсутствии потребности Абонента в оказываемых Провайдером Услугах;
-							<br />
-							• при невозможности предоставления Провайдером Услуг;
-							<br />
-							• при нарушении условий Договора другой Стороной.
-							<br />
-							8.3. Договор может быть расторгнут в одностороннем порядке Провайдером согласно п.4.2.4., а также при
-							отсутствии потребности Абонента в оказываемых Провайдером Услугах и при невозможности предоставления
-							Провайдером Услуг с письменным уведомлением Абонента о таком расторжении за 30 дней до его расторжения,
-							что не влечет за собой освобождения Абонента от оплаты образовавшейся задолженности.
-							<br />
-							8.4.После возврата оборудования Абонентом и произведения всех взаиморасчетов, Провайдер в течении 10
-							рабочих дней направляет письмо на узел связи о снятии кроссировки телефонной линии Абонента с оборудования
-							Провайдера при подключении по ADSL технологии.
-							<br />
-							8.5. В случае расторжения договора Стороны в срок до 15 (Пятнадцати) банковских дней с момента расторжения
-							договора производят взаиморасчёты. Обязательства сторон по Договору считаются выполненными с момента
-							завершения взаиморасчётов и возврата оборудования Провайдеру.
-							<br />
-							8.6. Провайдер не несет ответственности за извещение или не извещение третьих лиц о расторжении договора и
-							за возможные последствия, возникшие в результате такого извещения или его отсутствия.
-							<br />
-							8.7. Провайдер вправе изменять положения договора, принимать к нему новые или изменять действующие
-							приложения, публикуя уведомления о таких изменениях на официальном сайте Провайдера не менее чем за 10
-							(Десять) дней до вступления таких изменений в силу.
-							<br />
-							8.8. Абонент обязан регулярно проверять наличие изменений условий договора на официальном сайте
-							Провайдера. Продолжение пользования Абонентом услугами Провайдера спустя 10 (Десять) дней после
-							уведомления об изменении текущих тарифных планов и иных условий договора рассматривается как
-							безоговорочное согласие с такими изменениями.
-						</p>
-						<p>
-							<strong>9. Прочие условия</strong>
-							<br />
-							9.1. Договор составляется на русском языке в 2 (Двух) экземплярах, имеющих одинаковую юридическую силу, –
-							по одному для каждой из сторон.
-							<br />
-							9.2. Все Приложения к Договору являются его неотъемлемой частью.
-							<br />
-							9.3. Все изменения, поправки и дополнения к договору действительны в том случае, если они совершены в
-							письменной форме и подписаны Сторонами, за исключением случаев, предусмотренных договором.
-							<br />
-							9.4. Во всем, что не предусмотрено Договором, стороны будут руководствоваться действующим гражданским
-							законодательством Республики Узбекистан.
-							<br />
-							9.5. Абонент подтверждает, что условия договора ему в полном объеме ясны и понятны.
-							<br />
-							9.6. Провайдер имеет право вносить изменения в любые пункты настоящей Оферты, предварительно за 10
-							(десять) дней выставив объявление на своем официальном сайте www.airnet.uz о предстоящих изменениях. Любые
-							изменения в настоящей оферте, опубликованные на сайте компании www.airnet.uz имеют приоритетное значение
-							над подписанными ранее договорами между Абонентом и Провайдером, в случае оплаты абонентом Услуг
-							предусмотренных настоящей офертой способом, а также иные аналогичные действия, подтверждающие намерения
-							лица пользоваться Услугами.
-							<br />
-							9.7 Абонент обязуется регулярно проверять наличие подобных изменений на официальном сайте Провайдера
-							www.airnet.uz
+							10.9. Ushbu Shartlar O‘zbekiston Respublikasining Fuqarolik kodeksi va O‘zbekiston Respublikasining
+							Xizmatlar ko‘rsatish sohasidagi amaldagi boshqa me’yoriy hujjatlariga muvofiq tuzilgan.
 						</p>
 					</div>
 				</>
 			),
-			en: "",
+			en: (
+				<>
+					<div>
+						<h2>For the provision of hosting services</h2>
+						<p>
+							LLC “AIRNET”, hereinafter referred to as the “Contractor”, represented by the director Danaev A.G., acting
+							on the basis of the License issued by the State Committee for Communications, Informatization and
+							Telecommunication Technologies AA No. 0006506 dated 06/18/2018. for the operation and provision of
+							services of data transmission networks, publishes this Offer for the provision of hosting services.
+						</p>
+						<p>
+							<strong>1. General provisions</strong>
+							<br />
+							1.1. This Offer in accordance with Art. 370 of the Civil Code of the Republic of Uzbekistan are a public
+							offer (an offer to conclude a contract) by the Contractor to an unlimited number of individuals and legal
+							entities, as well as individual entrepreneurs (hereinafter referred to as the Customer), containing the
+							essential terms of the contract for the provision and use of the Contractor's Services.
+							<br />
+							1.2. Full and unconditional acceptance of this Offer is any action to fulfill the conditions specified in
+							this offer, including registration as a Customer, payment for the Services provided for in this Offer in
+							the manner, as well as other similar actions confirming the intention of a person to use the Services of
+							the Contractor.
+							<br />
+							1.3. From the moment of acceptance, the Customer is considered to have read and agreed with this Offer
+							and, in accordance with the terms of the Civil Code of the Republic of Uzbekistan, is considered to have
+							entered into a contractual relationship with the Contractor on the terms of this Offer.
+							<br />
+							1.4. The obligations of the Contractor are limited by the terms of this offer, in particular, the
+							obligations of the Contractor do not include the provision of services to the Customer for providing
+							access to the Internet. Access to the Internet is provided by the Customer at his own expense. Also, the
+							Contractor does not provide the possibility of receiving and transmitting electronic messages by the
+							Customer at the Contractor's office; setting up and/or diagnosing computer hardware and software, as well
+							as training the Customer and/or Customer's employees in the skills of working with software and hardware.
+							<br />
+							1.5. For legal entities, the conclusion of a separate Agreement on the terms of this Offer is mandatory.
+						</p>
+						<p>
+							<strong>2. Concepts and definitions used in the Offer</strong>
+							<br />
+							The terms and definitions used in this Offer have the following meanings: <br />
+							2.1. SITE (Internet site, website) - a single information structure containing interconnected pages
+							devoted to a specific topic and accessible via the Internet
+							<br />
+							2.2. SERVICES - virtual hosting services provided by the Contractor and others related to the placement
+							and maintenance of information of Customers on the Internet. The full list of Services is indicated on the
+							Contractor's website at https://airnet.uz
+							<br />
+							2.3. CUSTOMER - an individual entrepreneur, individual or legal entity who has accepted this offer in
+							accordance with Art. 1 of these Terms.
+							<br />
+							2.4. TARIFF - the cost of a particular Service for a certain period of its use, due to the specifics of
+							the relevant Service.
+							<br />
+							2.5. ACCOUNT - login and password assigned to the Customer for his identification, allowing access to the
+							Customer's information on the server equipment of the Contractor.
+							<br />
+							2.6. TRAFFIC - the volume of telematic messages between the server and Internet nodes recorded by the
+							technical equipment of the Contractor for a certain period of time.
+							<br />
+							2.5. VIRTUAL HOSTING - a service for the provision of computing power for the physical placement of
+							information on a server permanently located on a network (usually the Internet)
+							<br />
+							2.6. EMERGENCY is any event that is not part of the standard (regular) provision of services, which has
+							led or could lead to the interruption or possibility of using the services by the company's customers.
+						</p>
+
+						<p>
+							<strong>3. Service Terms</strong>
+							<br />
+							3.1. Account registration in the ISPCONFIG system is carried out by the Contractor independently on the
+							hosting server by specifying the Customer's credentials in accordance with the system instructions. The
+							main elements identifying the Customer in the ISPCONFIG system are the login and password specified during
+							registration (credentials).
+							<br />
+							The Contractor checks the Customer's data and has the right at any time to request confirmation of the
+							correctness of the entered data or the provision of non-entered data (by providing copies or originals of
+							supporting documents) and suspend the provision of the Services until the supporting documents are
+							provided and the Customer changes and/or supplements the requested data.
+							<br />
+							3.2. Account password recovery in the ISPCONFIG system can be carried out by the Customer by requesting
+							the Contractor's technical department, provided that the Customer's contact e-mail (e-mail address) is
+							included in the Account information. The Contractor recovers the password only when the Customer provides
+							documents identifying the Customer and the data specified in the submitted documents correspond to the
+							data entered during the registration of the Account. Otherwise, the password used by the Customer to
+							access the Account is not restored by the Contractor.
+							<br />
+							3.3. The Customer gets the opportunity to use the Services after paying for the Services (in compliance
+							with these Terms) and from the moment the Account is registered.
+							<br />
+							3.4. The choice and use (connection and / or disconnection) of specific Services is carried out by the
+							Customer independently using the Account. Access to the Account is carried out on the hosting server by
+							entering the Customer's credentials in the appropriate fields of the ISPCONFIG system.
+							<br />
+							3.5. The customer is fully responsible for actions and / or inaction that led to disclosure, loss, theft,
+							etc. its credentials and other information that individualizes the Customer, as well as for any actions
+							and / or inaction of third parties using the Customer's credentials. The Contractor is not responsible for
+							the above actions of the Customer and / or third parties using his credentials.
+							<br />
+							3.6. The Contractor backs up the Customer's data, with the exception of e-mail messages and log files of
+							the Customer. In this case, the backup of the Customer's data is carried out by the Contractor within the
+							terms and periods established by the Contractor independently, unless otherwise provided by the Services
+							connected by the Customer.
+							<br />
+							3.7. When using the Services, the Customer agrees that various services provided by the Contractor, web
+							server error pages, warnings, including when the Account is blocked, and other software settings can be
+							made using graphic and other design elements, while these actions are not are a violation of any rights of
+							the Customer. In some cases, the Customer has the opportunity to independently change the appearance of
+							the data (in particular, some web server errors).
+							<br />
+							3.8. When using the Services, any actions aimed at obtaining unauthorized access to the resources of the
+							server and other technical means of the Contractor, personal credentials and other data of other
+							Customers, as well as to any other data accessible via the Internet, in particular, destruction or
+							modification of software and /or data that does not belong to the Customer, without the consent of the
+							owner of such software and/or data. Unauthorized access refers to actions aimed at gaining access to
+							resources in a way different from what the owner of the resource intended to be allowed.
+							<br />
+							3.9. When using the Services, the Customer is prohibited from sending mass mailing of "spam", i.e.
+							commercial, advertising and other electronic messages that are not agreed (not requested) by the recipient
+							of information by e-mail and teleconference groups, as well as to Internet forums, blogs and other
+							resources with the possibility of publishing messages, through the technical resources of the Contractor.
+							It is not considered as "spam" the distribution of information with the consent of the recipient, with the
+							possibility of unsubscribing. Electronic messages are understood as messages of e-mail, ICQ and other
+							similar means of personal exchange of information.
+							<br />
+							3.10. It is forbidden to send "spam" through resources that do not belong to the Contractor, if the
+							message contains coordinates (website address, e-mail, etc.) supported by the Contractor. <br />
+							3.11. It is forbidden to forge official information, use non-existent return addresses in the headers of
+							electronic messages, and also falsify your IP address and / or addresses used in other network protocols
+							when transmitting data.
+							<br />
+							3.12. The Contractor introduces the following restrictions on the posted information ("content"): <br />
+							3.12.1. The use of the Services must be carried out by the Customer only for lawful purposes and in lawful
+							ways.
+							<br />
+							3.12.2. The Customer is directly responsible for the content of information nodes created and maintained
+							by the Customer. The Contractor does not exercise preliminary control over the content of information
+							posted and / or distributed by the Customer, however, when the placement and distribution of such
+							information is contrary to current legislation, the Contractor has the right to block and / or delete the
+							corresponding Account.
+							<br />
+							3.12.3. It is prohibited to post and disseminate information of an offensive, obscene, erotic and
+							pornographic nature, calls for violence, overthrow of the existing government, etc., as well as the use of
+							e-mail to send messages of this nature. Within the framework of these Terms, the Contractor independently
+							determines the nature of the posted and disseminated information and the criteria for classifying it as
+							the types of information prohibited for placement and distribution in accordance with this paragraph.
+							<br />
+							3.12.4. You may not transfer, reproduce or distribute in any way the software or any other materials
+							protected in whole or in part by copyright or other rights without the permission of the owner.
+							<br />
+							3.12.5. It is prohibited to post and distribute any information or software that contains computer viruses
+							or other components equated to them.
+							<br />
+							3.12.6. It is prohibited to place so-called "doorways" and other forms of search "spam", as well as to
+							place rating systems for sites ("tops"), casinos, any gambling, as well as any events directly or
+							indirectly aimed at making profit and/or obtaining other benefits through deceit, fraud or other illegal
+							means.
+							<br />
+							3.12.7. It is forbidden to advertise and sell services, goods and other materials, the distribution of
+							which is limited or prohibited by the current legislation of the Republic of Uzbekistan.
+							<br />
+							3.12.8. It is prohibited to publish or otherwise place information about third parties that directly or
+							indirectly affects the honor and dignity or business reputation of such third parties, as well as post
+							personal information identifying third parties without their consent.
+							<br />
+							3.13. It is prohibited to carry out actions aimed at transferring meaningless or useless information to
+							the resources of the Contractor and / or third parties that create an excessive (parasitic) load on these
+							resources, as well as actions aimed at disabling or malfunctioning of the software and / or equipment
+							serving such resources.
+							<br />
+							3.14. It is prohibited to carry out any actions aimed at scanning networks, detecting software security
+							vulnerabilities, guessing a password and other identifying data, detecting lists of open ports,
+							unprotected resource sections, etc., without the express consent of the owner, as well as using anonymous
+							proxies. servers when using the Service.
+							<br />
+							3.14.1. It is strictly forbidden to install and use proxy scripts within hosting accounts. If the
+							Contractor detects installed proxy scripts on the hosting account of the Customer, the Contractor reserves
+							the right to demand from the Customer monetary compensation in the amount of 0.5 to 3 minimum wages
+							(minimum wage established by the legislation of the Republic of Uzbekistan) for the installation and use
+							of proxy scripts. The exact cost of compensation is estimated by the Contractor depending on the damage
+							caused as a result of the use of proxy scripts. After payment of monetary compensation, the Contractor
+							resumes the operation of the Customer's hosting account. If the Customer refuses to pay the monetary
+							compensation established by the Contractor for the use of proxy scripts, the Contractor reserves the right
+							to completely stop servicing the Customer.
+							<br />
+							3.15. It is prohibited to carry out other actions that contradict the current legislation and violate the
+							rights and legitimate interests of the Contractor and / or third parties.
+							<br />
+							3.16. The Customer is not entitled to use the resources provided by the Contractor to run software, the
+							operation of which may lead to a malfunction of the Contractor's software and hardware complex, as well as
+							networks, software, hardware and / or information resources of third parties, or to obtain illegal access
+							directly or indirectly to the information of third parties. persons, it does not take into account whether
+							such software is used by the Customer with or without intent.
+							<br />
+							3.17. When using the Services, there are technical limitations due to the features of the Services,
+							namely:
+							<br />
+							3.17.1. Restrictions set according to the chosen tariff plan of virtual hosting. These restrictions are
+							indicated on the tariff plan description page https://airnet.uz/virtual. Also, you cannot create a load on
+							the Apache web server and/or MySQL database of more than 10% of the total load of all Customers. <br />
+							3.17.2. In order to combat "spam", there are the following restrictions on working with e-mail: <br />
+							• number of sent letters from one mailbox of the Customer per hour: no more than 50;
+							<br />
+							• maximum number of simultaneous connections to SMTP for one mailbox of the Customer: 5;
+							<br />
+							• maximum waiting time in the message queue: 24 hours.
+							<br />
+							3.17.3. The size of the sent e-mail is no more than 20 MB.
+							<br />
+							3.18. In addition to the technical restrictions established by clause 3.17 of these Terms, the Contractor
+							may also establish other restrictions that are standard and customary in the provision of similar Services
+							and necessary to ensure the normal functioning of the Contractor's hardware and software system in order
+							to properly provide the Services in accordance with these Terms.
+							<br />
+							3.19. The total volume of the Customer's incoming traffic must not exceed 1/4 of the total volume of
+							outgoing traffic, and foreign traffic must not exceed the traffic in the TAS-IX network.
+						</p>
+
+						<p>
+							<strong>4. Rights and obligations of the Customer</strong>
+							<br />
+							4.1. The customer undertakes:
+							<br />
+							4.1.1. Unconditionally comply with these Terms and follow the changes and additions to them and their
+							Annexes published on the Contractor's website (https://airnet.uz) and other business practices that exist
+							in the field of Services.
+							<br />
+							4.1.2. When registering an Account, provide true, accurate and complete information about yourself on all
+							issues requested during registration, and keep this information up to date.
+							<br />
+							4.1.3. Monitor changes in the cost of the Services provided for by the Tariffs. Changes in the cost of the
+							Services are published on the Contractor's website (https://airnet.uz).
+							<br />
+							4.1.4. If the cost of the Services changes and the Customer does not agree with the new Tariffs, inform
+							the Contractor in writing about his disagreement with the new Tariffs before they enter into force.
+							<br />
+							4.1.5. Independently monitor and timely make payments in the amounts and in the manner provided for in
+							these Terms.
+							<br />
+							4.1.6. Use the Services and post information within the framework of the use of the Services only in
+							accordance with the requirements of the current legislation and these Terms, including not posting on the
+							Contractor's technical resources software and information that are prohibited from storage, use and / or
+							distribution or limited in storage, use and / or distribution in accordance with the legislation of the
+							Republic of Uzbekistan, other national and international legislation;
+							<br />
+							4.1.7. Do not cause damage to the software shell, hardware and software, node machines of the Contractor
+							and third parties.
+							<br />
+							4.1.8. Observe copyright and other rights to the software, information and documentation provided by the
+							Contractor and / or third parties. Independently bear responsibility for violation of any copyright/patent
+							and other rights, as well as respond in a timely manner to complaints redirected by the Contractor about
+							the violation of relevant rights, reimburse the Contractor for losses in case of attempts by third parties
+							to attract or hold the Contractor liable for violation of the above rights by the Customer's information.
+							<br />
+							4.1.9. Keep your credentials confidential and take steps to protect them from loss, theft, damage, etc.
+							<br />
+							4.1.10. Independently back up your data with a frequency that allows you to avoid the loss of information
+							as much as possible in cases of interruptions in the provision of the Services caused by an accident and
+							other reasons beyond the control of the Contractor.
+							<br />
+							4.1.11. Fulfill in full other obligations, requirements and restrictions provided for in these Terms.
+							<br />
+							4.2. The Customer independently determines the scope of the Services provided to him by choosing tariff
+							plans.
+						</p>
+
+						<p>
+							<strong>5. Rights and obligations of the Contractor</strong>
+							<br />
+							5.1. The Contractor undertakes:
+							<br />
+							5.1.1. Ensure the provision of the Services in the amount corresponding to the amount of prepayment by the
+							Customer for the Services in accordance with these Terms, around the clock, 7 days a week, including
+							weekends and holidays. When providing the Services, the Contractor guarantees the quality of the Services
+							that meets the standards and technical standards established in the Republic of Uzbekistan.
+							<br />
+							5.1.2. Keep records of prepayment and consumption of the Services by the Customer.
+							<br />
+							5.1.3. Publish on the Contractor's website (https://airnet.uz) changes and additions to these Terms,
+							Tariffs and other documents related to the provision of the Services no later than 5 calendar days before
+							the date of their entry into force.
+							<br />
+							5.1.4. Respect the confidentiality of the Customer's credentials. The Contractor has access to the
+							Customer's information for the purpose of technical support of the Services, and also has the right to
+							access such information in cases of receiving claims from third parties regarding illegal and / or
+							harmful, as well as other actions of the Customer that are harmful to the Contractor and / or third
+							parties . The Contractor has the right to report the above data only to the competent state bodies in
+							cases provided for by the current legislation of the Republic of Uzbekistan.
+							<br />
+							Backing up the Customer's data in order to prevent the loss of information is not a violation of the
+							confidentiality of the Customer's information.
+							<br />
+							5.2. The performer has the right:
+							<br />
+							5.2.1. Suspend the provision of the Services to carry out the necessary scheduled preventive and repair
+							work on the technical resources of the Contractor, as well as unscheduled work in emergency situations.
+							The message about the performance of the above work, which entails the suspension of the provision of the
+							Services, is published by the Contractor on its website indicating the estimated duration of such work
+							(with the exception of emergency situations, when information about the suspension of the provision of the
+							Services is published by the Contractor to the extent possible).
+							<br />
+							5.2.2. Interrupt the provision of the Services, if this is due, in particular, but not limited to the
+							following, the impossibility of using information and transport channels that are not the Contractor's own
+							resources, or the action and / or inaction of third parties, if this directly affects the provision of the
+							Services under these Terms , including in an emergency. At the same time, the Contractor also has the
+							right to temporarily remove the delegation of the Customer's website from its own resources in the event
+							of a DDoS attack on the Customer's website, which inevitably creates an excessive load on the Contractor's
+							resources, which entails the impossibility of using the Contractor's Services by other Customers.
+							<br />
+							The Contractor shall not be liable to the Customer and shall not reimburse the Customer for losses
+							incurred or which may arise from the Customer in connection with delays, interruptions in work and the
+							impossibility of full use of the resources and Services of the Contractor arising from the above reasons.
+							<br />
+							5.2.3. Unilaterally make changes and additions to these Terms and Tariffs by publishing these changes and
+							additions on the Contractor's website (https://airnet.uz).
+							<br />
+							5.2.4. Suspend the provision of the Services or cancel the registration of the Account and refuse to
+							further provide and use the Services if the Customer provides incorrect information or fails to update it
+							when the data changes, as well as in case of late submission of supporting documents or if the Contractor
+							has doubts that the information provided by the Customer the information is true, complete or accurate, as
+							well as to write off the balance of the Customer's funds without acceptance in the cases and in the manner
+							provided for in these Terms.
+							<br />
+							5.2.5. Suspend the provision of Services in case of violation by the Customer of these Terms, as well as
+							the current legislation.
+							<br />
+							5.2.6. Block and/or delete the Account in the cases and in the manner provided for by these Terms.
+							<br />
+							5.2.7. Suspend, block or prohibit the use of the Customer's software as part of the provision and use of
+							the Services if the operation of such software leads or may lead to emergency situations, a breach of the
+							Contractor's security system, a violation of these Terms or the law.
+							<br />
+							5.2.8. Receive applications from Customers remotely via the support service messaging system or an e-mail
+							box, while the Customer must provide the following documents:
+							<br />
+							1. If the Customer is an individual:
+							<br />
+							• Color scanned copy of the signed application.
+							<br />
+							• Color scanned copy of the passport.
+							<br />
+							• Photograph of the applicant holding a signed application. It is necessary that the face and the
+							statement itself be clearly visible.
+							<br />
+							2. If the Customer is a legal entity:
+							<br />
+							• A color scanned copy of the signed application by the head on letterhead with the seal of the legal
+							entity.
+							<br />
+							• Color scanned copy of the passport of the head of the legal entity.
+							<br />
+							• A color scanned copy of the certificate (guvokhnoma) of a legal entity.
+							<br />
+							These measures are necessary to ensure the safety of Customer data from fraudsters.
+						</p>
+						<p>
+							<strong>6. Cost of Services and payment procedure</strong>
+							<br />
+							6.1. The cost of the Services is determined in accordance with the Tariffs, which are an integral part of
+							these Terms. Tariffs are posted by the Contractor on the website (https://airnet.uz).
+							<br />
+							6.2. The total cost of the Services is determined as the total amount of money debited for the Services
+							rendered to the Customer in accordance with the Tariffs in force at the time of the provision of the
+							Services.
+							<br />
+							6.3. Services are paid by the Customer on a prepaid basis to the account of the Contractor in accordance
+							with clause 4.1.5.
+							<br />
+							6.4. Subject to the Customer's compliance with clause 6.3 of these Terms, the date of commencement of the
+							provision of Services by the Contractor is the date the Customer activates the relevant Services in the
+							Control Panel of the Account when making an advance payment from the date of receipt of funds to the
+							Contractor's settlement account, subject to the following conditions:
+							<br />
+							• The Contractor has the right to write off the balance of funds in case of deletion of the Account in the
+							amount and in the manner prescribed by these Terms.
+							<br />
+							• If the Customer fails to notify the Contractor in writing of his disagreement with the new Tariffs
+							within the period specified in these Terms, the Customer is considered to have agreed with the change in
+							the Tariffs, and the funds for the Services rendered are debited by the Contractor at the new Tariffs.
+							<br />
+							• Provision of invoices for the Services rendered is carried out at the Contractor's office or to the
+							Customer's contact e-mail box specified in the Agreement, while the Customer undertakes to return to the
+							Contractor at its own expense 1 copy of the invoice signed by the Customer by mail or in another way that
+							allows confirming the receipt of documents Contractor. If the Contractor does not receive a signed invoice
+							within 14 (fourteen) calendar days from the moment the Contractor provides the Customer with the relevant
+							documents, the Services are considered to be provided properly on the basis of the invoice unilaterally
+							signed by the Contractor.
+							<br />• All bank or other commission payments for payment for the Services are paid by the Customer
+							independently.
+						</p>
+						<p>
+							<strong>7. Responsibility of the Parties</strong>
+							<br />
+							7.1. On all issues not regulated by these Terms, as well as in resolving disputes that arose in the
+							process of their execution, the parties are guided by the current legislation of the Republic of
+							Uzbekistan. If it is impossible for the parties to resolve the dispute in the pre-trial claim procedure,
+							it is subject to resolution in the appropriate court of Tashkent in accordance with the current
+							legislation of the Republic of Uzbekistan.
+							<br />
+							7.2. The Customer is fully responsible for the safety of his password and other credentials, as well as
+							for losses that the Customer and / or third parties may incur due to unauthorized use (disclosure, loss,
+							theft, etc.) of such credentials.
+							<br />
+							The Customer is responsible for any illegal actions and / or inaction of the Customer and / or persons
+							using his credentials that caused any harm to the Contractor, including loss of business reputation, and
+							reimburses the Contractor for losses. The Contractor is also not responsible for the actions of third
+							parties that caused damage to the Customer.
+							<br />
+							7.3. The Contractor is not responsible for the content of the information posted by the Customer and
+							information nodes created and maintained by the Customer or its users, and does not carry out any
+							preliminary verification and censorship.
+							<br />
+							The Customer is responsible for any of his actions and / or inaction, both intentional and unintentional,
+							as well as for any actions and / or inaction of persons using his credentials related to the placement and
+							/ or dissemination of information on the Internet, as well as receiving through the use of the resources
+							of the Contractor of access to the resources of third parties.
+							<br />
+							7.4. The Customer is solely responsible for intentional and / or unintentional actions and / or inaction
+							of the Customer and / or persons using his credentials that violated any national legislation of other
+							countries and / or international law, as well as for any damage caused by the above actions and / or
+							inaction to the Contractor, third parties, as well as for the consequences of such actions and / or
+							inaction.
+							<br />
+							7.5. The Contractor is not liable for direct and / or indirect damage caused to the Customer, and also
+							does not reimburse the Customer for losses (including lost profits) incurred by the Customer as a result
+							of the use or non-use of the resources and Services of the Contractor, as well as for losses incurred as a
+							result of omissions, interruptions operation or delays in data transmission, errors, defects, deletion of
+							files, changes in functions and other reasons.
+							<br />
+							7.6. The Contractor is not responsible for the quality of public communication channels, the traffic
+							exchange policy between providers, the normal functioning of the Internet, its parts or for the quality of
+							communication lines that are not related to the Contractor's own resources, and for their availability for
+							the Customer, and is not responsible for changing the properties, functions and quality of the Services
+							provided to the Customer, if such changes are associated with the functioning of the Internet or with
+							other circumstances that are beyond the competence, influence and control of the Contractor.
+							<br />
+							If the work of the remote network has led to the entry of its address (s) into the block lists used to
+							prevent "spam", according to which the Contractor's mail server does not receive mail, the Contractor is
+							also not responsible for the impossibility of accepting the Customer's mail from such a network.
+							<br />
+							7.7. The Contractor complies with the technical quality standards of the Services and takes all reasonable
+							efforts to prevent or suppress attempts of unauthorized access to the resources of the Contractor and the
+							Customer, failures and malfunctions in the Contractor's equipment, penetration of malicious components,
+							etc. In the event of an emergency or emergency situation, the Contractor takes all measures to normalize
+							the situation as soon as possible. At the same time, the Contractor, due to the specifics of the equipment
+							and software of the Service, does not guarantee absolute constant 100% error-free and uninterrupted
+							operation of the entire system and Services, and also does not guarantee the error-free, uninterrupted and
+							absolute safety of the functioning of software released by any third parties and / or other materials used
+							for provision of the Services.
+							<br />
+							7.8. The Customer bears all risks associated with using the Internet through the resources and / or
+							Services of the Contractor, including for evaluating the usefulness, completeness, accuracy of any
+							information, the Contractor is not responsible for the quality, legality, suitability for a particular
+							purpose of any goods, works, services requested and / or obtained by using the Internet, including if they
+							are placed on the Contractor's server (with the exception of the Services provided by the Contractor).
+							<br />
+							7.9. The Contractor is not responsible for the quality, harmlessness and error-free software (hereinafter
+							referred to as the quality of the software) offered to the Customer on the Contractor's servers and/or
+							other Internet servers, except when the software is developed by the Contractor.
+							<br />
+							If the Contractor provides the Customer with a service to support software developed by third parties (for
+							example, MySQL, Apache, etc.), the Contractor is responsible to the Customer only for the correct
+							functioning of this software within the ISPCONFIG system, but not for the quality of the software.
+							<br />
+							The Contractor is not the developer of the interface for reading mail, which is provided to the Customer
+							as a web interface, therefore, is not responsible for its normal functioning. To work with mail, the
+							Contractor recommends using specialized programs - mail clients.
+							<br />
+							7.10. The Customer is solely responsible for the timely and proper renewal of the domain name registration
+							and the possible consequences of untimely and / or improper renewal and hereby confirms the absence of
+							claims against the Contractor regarding the above actions and / or inaction of the Customer, as well as
+							their consequences.
+							<br />
+							7.11. The Customer is solely responsible for any of his actions and / or inactions committed using the
+							Contractor's domain name, as well as other technical details due to the Services provided, in particular,
+							IP addresses, server names, etc., and also bears to the Contractor liability for losses caused to the
+							Contractor by such actions and / or inaction of the Customer, creating for third parties the appearance of
+							the Contractor's belonging to such actions and / or inaction of the Customer.
+							<br />
+							7.12. The Contractor shall be liable to the Customer only within the limits of paid, but not rendered
+							Services. The Contractor is not financially liable to the Customer and does not return to the Customer the
+							funds paid under these Conditions, if the Services were not provided due to the fault of the Customer.
+							<br />
+							7.13. In the event that the proper execution by the parties of these Terms is impossible due to objective
+							reasons that the parties could neither foresee nor prevent (natural disasters, changes in the current
+							legislation of the Republic of Uzbekistan, actions of state authorities and administration, military
+							operations of all kinds, etc.) neither party has the right to demand compensation from the other party for
+							damages caused by improper performance or non-performance of these Terms (including lost profits).
+						</p>
+						<p>
+							<strong>8. Blocking and deleting an Account</strong>
+							<br />
+							8.1. The Contractor has the right to block and / or delete the Account in the cases, in the manner and
+							under the conditions provided for by these Terms.
+							<br />
+							8.2. Account blocking means temporary impossibility of using the Services by the Customer with the
+							possibility of access (with a limited ability) of the Customer to the Control Panel of the Account.
+							Blocking of the Account is carried out by the Contractor until the Customer eliminates the violations that
+							led to the blocking of the Account, unless otherwise provided by these Terms. Simultaneously with the
+							blocking of the Account, a notification of a violation of the Terms and the need to eliminate the
+							violations committed by the Customer may be sent to the Customer's contact e-mail and to the Account.
+							<br />
+							8.3. Deleting an Account means the impossibility of the Customer's access to the Account and the
+							impossibility of using the Services within the framework of the relevant Account.
+							<br />
+							8.4. When blocking or deleting the Account, the Customer's access to the virtual web server is terminated
+							with the simultaneous display of a corresponding warning issued using graphic and other hosting design
+							elements in accordance with these Terms.
+							<br />
+							8.5. The Contractor has the right to block the Account in the following cases:
+							<br />
+							8.5.1. If the Customer violates these Terms;
+							<br />
+							8.5.2. In the event that the balance of the funds received on the Contractor's settlement account is less
+							than the total cost of the Services connected by the Customer at the moment - until the Customer pays in
+							compliance with the conditions on the amount of the minimum one-time payment provided for by these Terms.
+							<br />
+							8.5.3. When the Customer enters incorrect data, the Customer does not enter the data requested when
+							registering the Account, untimely updating of the Customer's data.
+							<br />
+							8.5.4. In case of failure to submit supporting documents, in this case, the Customer’s inaction within 3
+							(three) calendar days from the moment the Contractor sends the relevant request and / or requirement is
+							equated to the above actions.
+							<br />
+							8.5.5. In the event that the Contractor receives a complaint/claim from third parties and/or a claim from
+							the competent authorities regarding the actions and/or inaction of the Customer, including copyright
+							infringement, spamming and other violations of these Terms or the requirements of the current legislation
+							of the Republic Uzbekistan - until the violations are eliminated or the Account is deleted.
+							<br />
+							8.6. The Contractor has the right to delete the Account in the following cases:
+							<br />
+							8.6.1. At the Customer's own request or in case of the Customer's unilateral refusal to fulfill these
+							Terms;
+							<br />
+							8.6.2. In case of blocking the Account more than three times;
+							<br />
+							8.6.3. In the event of a gross violation by the Customer of these Terms or in the event of the Customer's
+							refusal to eliminate the violations committed or if the Customer fails to eliminate the violations within
+							3 (three) calendar days from the date the Contractor sends a request to eliminate such violations;
+							<br />
+							8.6.4. If the Customer, within 30 (thirty) calendar days from the date of resetting the funds received
+							from the Customer, does not make the necessary payments to the Contractor's settlement account in the
+							amount and in the manner prescribed by these Terms;
+							<br />
+							8.6.5. If the Customer does not use the Services within 12 (twelve) months from the date of registration
+							of the Account;
+							<br />
+							8.6.6. If more than 6 (six) months have passed since the Customer last used the Services within the
+							Account;
+							<br />
+							8.6.7. In the event that the Contractor detects violations of clauses 3.16, 3.17 of the Terms on its own
+							or on complaints/requests/requirements of third parties, with simultaneous cancellation of the
+							registration of the corresponding domain name (names) in case of violation of clause 3.17 of the Terms.
+							<br />
+							8.7. Simultaneously with the deletion of the Account in accordance with these Terms, the Contractor writes
+							off the balance of funds without acceptance in full as a reimbursement to the Contractor for additional
+							costs incurred associated with deleting the Account and other related costs.
+							<br />
+							8.8. In the event of an obvious, from the point of view of the Contractor, violation by the Customer of
+							the legislation of the Republic of Uzbekistan, the provision of Services to him may be suspended, and the
+							Account is blocked and / or deleted without prior warning from the Contractor, while the balance of funds
+							is not returned to the Customer and is considered a reimbursement to the Contractor of the costs incurred
+							in accordance with clause 8.7 of these Terms.
+						</p>
+						<p>
+							<strong>9. Technical support</strong>
+							<br />
+							9.1. In order to provide and use the Services, the Contractor ensures the functioning of the Technical
+							Support Service (hereinafter referred to as the STP) in the manner prescribed by these Terms.
+							<br />
+							STP manages and controls the operation of technical equipment and system software, as well as processes
+							the Customer's requests for changes in configuration files, if such changes are allowed and cannot be
+							performed by the Customer on their own, as well as requests to eliminate problems related to the operation
+							of the Services provided .
+							<br />
+							When contacting the STP, the Customer understands that he must have the minimum necessary amount of
+							knowledge and skills to communicate with technical specialists. When contacting the STP, the Customer must
+							collect information in advance about the causes of the error, clearly and understandably explain the
+							essence of the problem and the circumstances of its occurrence.
+							<br />
+							9.2. STP does not provide advice to Customers on programming, web design, installations, settings of
+							scripts and programs of the Customer or their optimization, as well as training in the basics of computer
+							literacy, creation and / or promotion of sites, operation of services provided by third parties, search,
+							as well as other similar questions.
+							<br />
+							Such consultations can be provided to the Customer by additional agreement for an additional fee.
+							<br />
+							9.3. Contacting the STP is carried out by the Customer through the Account in order to identify the
+							Customer as the owner of the site through his authorization when entering the Control Panel of the
+							Account.
+							<br />
+							If it is impossible to log into the Account, the Customer can contact the STP by filling out a special
+							form located on the Contractor's website.
+							<br />
+							Requests sent in any other way (in particular, by telephone and / or e-mail and / or in any other way
+							other than contacting through the Account Control Panel) are not official and do not entail the
+							Contractor's obligation to respond and / or commit any action on them. The Contractor reserves the right
+							to independently decide on the possibility or impossibility of answering questions asked by telephone and
+							/ or e-mail and / or in any other way other than contacting through the Account Control Panel.
+							<br />
+							In the case of contacting the STP by phone, the STP employee may require you to send a request through the
+							Account Control Panel for authorization. The STP employee also has the right to record the Customer's
+							telephone or other request in the database with the possibility of viewing its contents by the Customer.
+							At the same time, the responses of the STP to the Customer's applications received by telephone are
+							carried out by the Contractor only on business days during business hours.
+							<br />
+							9.4. Requests are processed by the Contractor as they are received. The response time of the STP to the
+							Customer’s request depends on the number of requests received by the STP, and, if possible, the Contractor
+							responds to requests within a reasonable time no more than 48 hours, however, if necessary, the response
+							time to a question can be increased by the Contractor.
+							<br />
+							9.5. Requests to the STP containing the following are not accepted for consideration and processing:
+							<br />
+							• information compiled in languages other than Uzbek and Russian;
+							<br />
+							• obscene language, rudeness, insults, rudeness and other expressions that are contrary to the generally
+							accepted rules and customs of business communication;
+							<br />
+							• questions not related to the Services (operability of hosting and domain registration) and/or not
+							related to the technical features of the Services;
+							<br />
+							• Questions formulated in an unclear, vague or similar way, in connection with which the meaning of the
+							question becomes incomprehensible;
+							<br />
+							• requirements for customization or installation, improvements to scripts, etc.
+							<br />
+							Requests are not accepted for consideration and processing, and the execution of an application accepted
+							for consideration may be refused due to the suspension of the provision of the Services on the grounds
+							provided for in these Terms.
+							<br />
+							9.6. If STP receives a standard request or a request, the answer to which is already contained on the
+							Contractor's website in the "Questions and Answers" section, the answer to the request can be given in the
+							form of a link to the corresponding page on the Contractor's website containing the "Questions and
+							Answers" section .
+							<br />
+							If the STP receives a request, the answer to which can be found on other Internet sites, the response to
+							the request can be given in the form of a link to the appropriate site.
+						</p>
+						<p>
+							<strong>10. Other terms</strong>
+							<br />
+							10.1. The written statements of the Customer provided for by these Terms must contain all the Account
+							data, as well as other data, if necessary, allowing the Contractor to identify the Customer.
+							<br />
+							10.2. The Parties recognize the legal force of notifications and messages sent by the Contractor to the
+							Customer at the e-mail addresses indicated by him in the personal data of the Account. Such notifications
+							and messages are equated to messages and notifications executed in a simple written form sent by the
+							Contractor to the Customer's postal address. In the event of any disagreement regarding the facts of
+							sending, receiving messages, the time of their sending and content, the parties agreed to consider the
+							evidence of the Contractor's technical means reliable and final for resolving disagreements between the
+							indicated persons.
+							<br />
+							10.3. The Parties acknowledge that notices and messages from the Customer to the Contractor, with the
+							exception of cases of contacting the STP in accordance with Art. 9 of these Terms and Conditions are
+							considered to be properly made only if they are drawn up in writing, indicating all the data necessary to
+							identify the Account and the Customer, and sent by registered mail.
+							<br />
+							10.4. The Contractor undertakes not to transfer or make available to third parties information about the
+							Customer provided by the latter when registering the Account, with the exception of providing such
+							information to state bodies and / or other bodies and organizations at their request, as well as to other
+							third parties upon receipt of requests / complaints from them /claims on issues of violation by the
+							Customer of their rights and/or the current legislation of the Republic of Uzbekistan.
+							<br />
+							10.5. The Parties undertake not to disclose, transfer or make available to third parties confidential
+							information contained in the documents relating to these Terms and other documents related to them,
+							without the written permission of the other party, while the fact of acceptance and the subject of these
+							Terms are not information. which the parties have agreed to treat as confidential.
+							<br />
+							The provisions provided for in the previous paragraph of this paragraph shall not apply to cases where the
+							requirement to provide such information is presented by the following persons:
+							<br />
+							• public authorities,
+							<br />
+							• other state bodies,
+							<br />
+							• local self-government bodies in order to perform their functions in accordance with the current
+							legislation of the Republic of Uzbekistan;
+							<br />
+							10.6. The Contractor has the right, if necessary, to involve third parties with the appropriate licenses
+							and / or permits to provide the Services.
+							<br />
+							10.7. The title and numbering of the articles of these Terms are for ease of reading and do not matter in
+							the interpretation of these Terms.
+							<br />
+							10.8. In the event that any of the provisions of these Terms is not subject to literal execution, it shall
+							be interpreted in accordance with the current legislation of the Republic of Uzbekistan, taking into
+							account the initial interests of the parties, while the remainder of the Terms shall continue to operate
+							in full.
+							<br />
+							10.9. These Terms are drawn up in accordance with the Civil Code of the Republic of Uzbekistan and other
+							regulatory acts of the Republic of Uzbekistan in force in the field of the provision of the Services.
+						</p>
+					</div>
+				</>
+			),
 		},
 	}
 	return (
