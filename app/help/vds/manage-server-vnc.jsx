@@ -2,21 +2,21 @@ import HelpBlock from "@/components/helpItem/helpBlock"
 
 const mainData = {
 	headTitle: {
-		ru: "Управлять сервером через KVM-консоль",
-		uz: "KVM konsoli orqali serverni boshqarish",
-		en: "Manage server via KVM console",
+		ru: "Управлять сервером через VNC-консоль",
+		uz: "VNC konsoli orqali serverni boshqarish",
+		en: "Manage server via VNC console",
 	},
 	content: {
 		ru: (
 			<>
 				<p>
 					Выделенные серверы, кроме линейки Chipcore Line, укомплектованы BMC модулем, который позволяет удаленно
-					управлять питанием и запускать KVM-консоль. Для серверов Chipcore Line можно заказать дополнительную услугу
-					Подключение IP-KVM на 3 часа.
+					управлять питанием и запускать VNC-консоль. Для серверов Chipcore Line можно заказать дополнительную услугу
+					Подключение IP-VNC на 3 часа.
 				</p>
 
 				<p>
-					Чтобы открыть KVM-консоль, нажмите на значок консоли в правом верхнем углу карточки с информацией о сервере.
+					Чтобы открыть VNC-консоль, нажмите на значок консоли в правом верхнем углу карточки с информацией о сервере.
 					Консоль запустится в noVNC-сессии прямо в браузере и автоматически адаптируется под размер экрана. Вы сможете
 					управлять сервером даже с планшета. При открытии нескольких вкладок с запущенными noVNC-сессиями текстовый
 					ввод доступен только на наиболее ранней открытой вкладке.
@@ -75,13 +75,13 @@ const mainData = {
 		uz: (
 			<>
 				<p>
-					Chipcore liniyasidan tashqari maxsus serverlar quvvatni masofadan boshqarish va KVM konsolini ishga tushirish
+					Chipcore liniyasidan tashqari maxsus serverlar quvvatni masofadan boshqarish va VNC konsolini ishga tushirish
 					imkonini beruvchi BMC moduli bilan jihozlangan. Chipcore Line serverlari uchun siz 3 soat davomida qo'shimcha
-					IP-KVM ulanish xizmatiga buyurtma berishingiz mumkin.
+					IP-VNC ulanish xizmatiga buyurtma berishingiz mumkin.
 				</p>
 
 				<p>
-					KVM konsolini ochish uchun server ma'lumot kartasining yuqori o'ng burchagidagi konsol belgisini bosing.
+				VNC konsolini ochish uchun server ma'lumot kartasining yuqori o'ng burchagidagi konsol belgisini bosing.
 					Konsol to'g'ridan-to'g'ri brauzerda noVNC seansida boshlanadi va avtomatik ravishda ekran o'lchamiga
 					moslashadi. Serverni hatto planshetdan ham boshqarishingiz mumkin. NoVNC seanslari bilan bir nechta
 					yorliqlarni ochganda, matn kiritish faqat eng birinchi ochiq tabda mavjud.
@@ -147,12 +147,12 @@ const mainData = {
 			<>
 				<p>
 					Dedicated servers, except for the Chipcore Line, are equipped with a BMC module that allows you to remotely
-					control power and run a KVM console. For Chipcore Line servers, you can order an additional service IP-KVM
+					control power and run a VNC console. For Chipcore Line servers, you can order an additional service IP-VNC
 					connection for 3 hours.
 				</p>
 
 				<p>
-					To open the KVM console, click on the console icon in the upper right corner of the server information card.
+					To open the VNC console, click on the console icon in the upper right corner of the server information card.
 					The console will start in a noVNC session right in the browser and automatically adapt to the screen size. You
 					can manage the server even from a tablet. When opening multiple tabs with running noVNC sessions, text input
 					is only available on the earliest open tab.
