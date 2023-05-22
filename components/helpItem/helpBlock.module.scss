@@ -30,6 +30,29 @@ $red: #f00;
 			line-height: 150% !important;
 		}
 
+		img {
+			width: 100%;
+			max-width: 800px;
+		}
+
+		table {
+			border: 1px solid #dadee0;
+			border-radius: 12px;
+			width: 100%;
+			border-collapse: initial;
+
+			th,
+			td {
+				padding: 16px;
+				border-bottom: 1px solid #dadee0;
+				font-size: 15px;
+			}
+
+			tr:last-child td {
+				border-bottom: none;
+			}
+		}
+
 		a {
 			font-size: inherit;
 			text-decoration: underline;

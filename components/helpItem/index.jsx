@@ -70,6 +70,9 @@ export default function HelpItem({ data, language }) {
 
 	useEffect(() => {
 		document.addEventListener("scroll", scroll)
+		return () => {
+			document.removeEventListener("scroll", scroll)
+		}
 	}, [])
 
 	return (
