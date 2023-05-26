@@ -7,115 +7,177 @@ $dark_gray: #666;
 $light_gray: #eeebee;
 $red: #f00;
 
-.helpItem {
-	border-top: 1px solid $light_gray;
+.helpBlock {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 
-	&__block {
-		border: 1px solid $light_gray;
-		padding: 20px;
-		margin: 20px 0;
+  &__related {
+    width: 23%;
+    height: fit-content;
+    background-color: $white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 
-		h2 {
-			font-size: 22px;
-		}
+    &__title {
+      font-size: 24px;
+      font-weight: 600;
+      padding: 20px;
+    }
 
-		h3 {
-			font-size: 18px;
-			margin-bottom: 0;
-			position: relative;
-			font-weight: 400;
-		}
+    &__links {
+      list-style: none;
+      padding: 0;
+      padding-bottom: 10px;
 
-		p {
-			line-height: 150% !important;
-		}
+      li {
+        margin-bottom: 10px;
+        border-left: 5px solid $green;
+        padding: 0 20px;
 
-		img {
-			width: 100%;
-			max-width: 800px;
-		}
+        a {
+          font-size: 18px;
+          font-weight: 500;
+        }
 
-		table {
-			border: 1px solid #dadee0;
-			border-radius: 12px;
-			width: 100%;
-			border-collapse: initial;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 
-			th,
-			td {
-				padding: 16px;
-				border-bottom: 1px solid #dadee0;
-				font-size: 15px;
-			}
+  &__content {
+    width: 75%;
+    // border: 1px solid $light_gray;
+    padding: 20px;
+    background-color: $white;
+    border-radius: 10px;
 
-			tr:last-child td {
-				border-bottom: none;
-			}
-		}
+    h2 {
+      font-size: 28px;
+    }
 
-		a {
-			font-size: inherit;
-			text-decoration: underline;
+    h3 {
+      font-size: 24px;
+      margin-bottom: 0;
+      position: relative;
+      font-weight: 400;
+    }
 
-			&:hover {
-				text-decoration: none;
-			}
-		}
+    p,
+    li {
+      font-size: 18px;
+      line-height: 150% !important;
+    }
 
-		strong {
-			color: inherit;
-		}
+    img {
+      width: 100%;
+      max-width: 800px;
+    }
 
-		ul {
-			list-style: circle;
-			padding-left: 20px;
-		}
+    table {
+      border: 1px solid #dadee0;
+      border-radius: 12px;
+      width: 100%;
+      border-collapse: initial;
 
-		ul,
-		ol {
-			margin-bottom: 10px;
-			margin-top: 5px;
+      th,
+      td {
+        padding: 16px;
+        border-bottom: 1px solid #dadee0;
+        font-size: 15px;
+      }
 
-			ul {
-				padding-left: 30px;
-			}
+      tr:last-child td {
+        border-bottom: none;
+      }
+    }
 
-			li {
-				margin-bottom: 5px;
+    a {
+      font-size: inherit;
+      text-decoration: underline;
 
-				&:last-child {
-					margin-bottom: 0;
-				}
-			}
-		}
+      &:hover {
+        text-decoration: none;
+      }
+    }
 
-		ol {
-			padding-left: 20px;
+    strong {
+      color: inherit;
+      font-size: inherit;
+    }
 
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-	}
+    ul {
+      list-style: circle;
+    }
 
-	@media (max-width: 550px) {
-		&__block {
-			h2 {
-				font-size: 18px;
-			}
+    ul,
+    ol {
+      padding-left: 30px;
+    }
 
-			h3 {
-				font-size: 16px;
-			}
+    ul,
+    ol {
+      margin-bottom: 10px;
+      margin-top: 5px;
 
-			ul,
-			ol {
-				padding-left: 10px;
+      ul {
+        padding-left: 30px;
+      }
 
-				ul {
-					padding-left: 20px;
-				}
-			}
-		}
-	}
+      li {
+        margin-bottom: 5px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 880px) {
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__related,
+    &__content {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    &__content {
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      p,
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+
+  img {
+    width: 50px;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  span {
+    font-weight: 600;
+  }
 }
