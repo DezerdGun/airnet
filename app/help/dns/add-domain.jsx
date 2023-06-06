@@ -112,10 +112,6 @@ const mainData = {
                   ns1.airnet.uz
                   <br />
                   ns2.airnet.uz
-                  <br />
-                  ns3.airnet.uz
-                  <br />
-                  ns4.airnet.uz
                 </code>
               </pre>
             </div>
@@ -195,10 +191,6 @@ const mainData = {
                   ns1.airnet.uz
                   <br />
                   ns2.airnet.uz
-                  <br />
-                  ns3.airnet.uz
-                  <br />
-                  ns4.airnet.uz
                 </code>
               </pre>
             </div>
@@ -278,10 +270,6 @@ const mainData = {
                   ns1.airnet.uz
                   <br />
                   ns2.airnet.uz
-                  <br />
-                  ns3.airnet.uz
-                  <br />
-                  ns4.airnet.uz
                 </code>
               </pre>
             </div>

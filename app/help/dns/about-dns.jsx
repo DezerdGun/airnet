@@ -77,8 +77,8 @@ const mainData = {
         </p>
 
         <p>
-          Публичные IP-адреса авторитативных NS-серверов Airnet (ns1.airnet.org, ns2.airnet.org, ns3.airnet.org,
-          ns4.airnet.org) защищены DNS Firewall от DDoS-атак.
+          Публичные IP-адреса авторитативных NS-серверов Airnet (dns1.airnet.uz, dns2.airnet.uz) защищены DNS Firewall
+          от DDoS-атак.
         </p>
 
         <p>
@@ -135,8 +135,8 @@ const mainData = {
         </p>
 
         <p>
-          Airnetning nufuzli NS serverlarining umumiy IP manzillari (ns1.airnet.org, ns2.airnet.org, ns3.airnet.org,
-          ns4.airnet.org) DNS xavfsizlik devori tomonidan DDoS bilan himoyalangan.
+          Airnetning nufuzli NS serverlarining umumiy IP manzillari (dns1.airnet.uz, dns2.airnet.uz) DNS xavfsizlik
+          devori tomonidan DDoS bilan himoyalangan.
         </p>
 
         <p>
@@ -194,8 +194,8 @@ const mainData = {
         </p>
 
         <p>
-          Public IP addresses of Airnet's authoritative NS servers (ns1.airnet.org, ns2.airnet.org, ns3.airnet.org,
-          ns4.airnet.org) are DDoS-protected by DNS Firewall.
+          Public IP addresses of Airnet's authoritative NS servers (dns1.airnet.uz, dns2.airnet.uz) are DDoS-protected
+          by DNS Firewall.
         </p>
 
         <p>
