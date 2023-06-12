@@ -4,6 +4,7 @@ import Container from "@/components/container";
 import st from "./calculator.module.scss";
 // import 'react-input-range/lib/css/index.css';
 import { Range } from "react-range";
+import TarifCard from "../tarifCard";
 
 const calcSpeed = [
   // {
@@ -43,6 +44,7 @@ export default function Calculator({ language }) {
       speed: calcSpeed[0].title,
       administration: "Нет",
     }),
+    [show, setShow] = useState(null),
     [position, setPosition] = useState({ top: 0 }),
     [calcOS, setCalcOS] = useState([
       {
@@ -397,9 +399,9 @@ export default function Calculator({ language }) {
       ),
     },
     VDS: {
-      ru: "VDS Форсаж",
-      uz: "VDS Forsaj",
-      en: "VDS Fast and Furious",
+      ru: "VDS",
+      uz: "VDS",
+      en: "VDS",
     },
     send: {
       ru: "Поделиться",
@@ -543,7 +545,9 @@ export default function Calculator({ language }) {
               <CalcHeader title={langData.hardS[language]} sum={langData.sum[language]} />
               <div className="d-flex">
                 <CalcSelect title="SSD" isChecked={true} />
-                <CalcSelect title="NVME" isChecked={false} />
+                <div title="Под заказ">
+                  <CalcSelect title="NVME" isChecked={false} />
+                </div>
               </div>
               <CalcHeader
                 title={langData.wHard[language]}
@@ -583,7 +587,33 @@ export default function Calculator({ language }) {
             className={`${st.calculator__block__result} ${isFixed ? st.calculator__block__result__absolute : ""}`}
             style={position}
           >
-            <div className={st.calculator__block__result__header}>
+            <TarifCard
+              index={1}
+              tarif={{
+                title: { ru: langData.VDS[language], uz: langData.VDS[language], en: langData.VDS[language] },
+                prices: [
+                  {
+                    price: BeautyNum(
+                      state.core * 30000 +
+                        state.ram * 35000 +
+                        state.ssd * 1000 +
+                        calcSpeed.find((item) => item.title === state.speed).price
+                    ),
+                    dateOff: `1 мес`,
+                  },
+                ],
+                cpu: state.core,
+                ram: state.ram,
+                ssd: state.ssd,
+                net: state.speed,
+                link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14",
+              }}
+              show={show}
+              setShow={setShow}
+              language={language}
+            />
+
+            {/* <div className={st.calculator__block__result__header}>
               <div>{langData.VDS[language]}</div>
             </div>
             <div className={st.calculator__block__result__content}>
@@ -609,9 +639,9 @@ export default function Calculator({ language }) {
                   )}{" "}
                   {langData.MnS[language]}
                 </div>
-                {/* <a href="#">{langData.kor[language]}</a> */}
+                {/* <a href="#">{langData.kor[language]}</a> 
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </Container>
