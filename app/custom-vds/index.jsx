@@ -1,5 +1,6 @@
 import st from "@/app/vds/vds.module.scss";
 import Calculator from "@/components/calculator";
+import Container from "@/components/container";
 import FAQ from "@/components/faq";
 import Partners from "@/components/partners";
 import { LINKS } from "@/components/requirements";
@@ -225,264 +226,138 @@ export default function CustomVDS({ language }) {
   };
 
   const block = [
-      {
-        title: { ru: "Мгновенная активация", uz: "Bir zumdayoq ulanish", en: "Instant activation" },
-        description: {
-          ru: (
-            <>
-              <p>
-                Активация VDS выполняется от 5 минут до 4-х часов, в зависимости от количества заказов и наличия
-                свободного оборудования.
-              </p>
-              <button>
-                <a
-                  href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Стать клиентом и заказать VDS
-                </a>
-              </button>
-            </>
-          ),
-          uz: (
-            <>
-              <p>
-                VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4 soatgacha davom etadi va bepul jihozlarning
-                mavjudligi.
-              </p>
-              <button>
-                <a
-                  href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Mijoz bo'ling va VDSga buyurtma bering
-                </a>
-              </button>
-            </>
-          ),
-          en: (
-            <>
-              <p>
-                VDS activation takes from 5 minutes to 4 hours, depending on the number of orders and availability free
-                equipment.
-              </p>
-              <button>
-                <a
-                  href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Become a client and order VDS
-                </a>
-              </button>
-            </>
-          ),
-        },
+    {
+      title: { ru: "Мгновенная активация", uz: "Bir zumdayoq ulanish", en: "Instant activation" },
+      description: {
+        ru: (
+          <>
+            <p>
+              Активация VDS выполняется от 5 минут до 4-х часов, в зависимости от количества заказов и наличия
+              свободного оборудования.
+            </p>
+            <button>
+              <a
+                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Стать клиентом и заказать VDS
+              </a>
+            </button>
+          </>
+        ),
+        uz: (
+          <>
+            <p>
+              VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4 soatgacha davom etadi va bepul jihozlarning
+              mavjudligi.
+            </p>
+            <button>
+              <a
+                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mijoz bo'ling va VDSga buyurtma bering
+              </a>
+            </button>
+          </>
+        ),
+        en: (
+          <>
+            <p>
+              VDS activation takes from 5 minutes to 4 hours, depending on the number of orders and availability free
+              equipment.
+            </p>
+            <button>
+              <a
+                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Become a client and order VDS
+              </a>
+            </button>
+          </>
+        ),
+      },
 
-        img: "/time.png",
+      img: "/time.png",
+    },
+    {
+      title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
+      description: {
+        ru: "Не предоставляется для игровых серверов и видео-контент сайтов!",
+        uz: "O'yin serverlari va video kontent saytlari uchun mavjud emas!",
+        en: "Not available for game servers and video content sites!",
       },
-      {
-        title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
-        description: {
-          ru: "Не предоставляется для игровых серверов и видео-контент сайтов!",
-          uz: "O'yin serverlari va video kontent saytlari uchun mavjud emas!",
-          en: "Not available for game servers and video content sites!",
-        },
-        img: "/warning.png",
-      },
-      // {
-      // 	title: { ru: "Низкая цена", uz: "Arzon narx", en: "Low price" },
-      // 	description: {
-      // 		ru: "Мы предоставляем услуги по самым низким ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.",
-      // 		uz: "Biz O'zbekistonda eng past narxlarda xizmatlar ko'rsatamiz, bizning afzalligimiz shundaki, biz eng arzon narxlarda eng yuqori sifatli xizmatlarni taqdim etamiz. Shunday qilib, biz sizga sarflashga emas, pul topishingizga yordam beramiz.",
-      // 		en: "We provide services at the lowest prices in Uzbekistan, our advantage is that we provide the highest quality services at the lowest possible prices. Thus, we will help you earn, not spend money.",
-      // 	},
+      img: "/warning.png",
+    },
+    // {
+    // 	title: { ru: "Низкая цена", uz: "Arzon narx", en: "Low price" },
+    // 	description: {
+    // 		ru: "Мы предоставляем услуги по самым низким ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.",
+    // 		uz: "Biz O'zbekistonda eng past narxlarda xizmatlar ko'rsatamiz, bizning afzalligimiz shundaki, biz eng arzon narxlarda eng yuqori sifatli xizmatlarni taqdim etamiz. Shunday qilib, biz sizga sarflashga emas, pul topishingizga yordam beramiz.",
+    // 		en: "We provide services at the lowest prices in Uzbekistan, our advantage is that we provide the highest quality services at the lowest possible prices. Thus, we will help you earn, not spend money.",
+    // 	},
 
-      // 	img: "/money.png",
-      // },
-      {
-        title: { ru: "Поддержка круглосуточно", uz: "24/7 qo'llab quvvatlash", en: "Support 24/7" },
-        description: {
-          ru: (
-            <>
-              <p>
-                В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим максимально быстро.
-              </p>
-              <button>
-                <Link href={checkLang(language) + LINKS.CONTACTS}>
-                  <a>Наши контакты</a>
-                </Link>
-              </button>
-            </>
-          ),
-          uz: (
-            <>
-              <p>
-                Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan bog'lanishingiz mumkin, biz imkon qadar
-                tezroq javob beramiz .
-              </p>
-              <button>
-                <Link href={checkLang(language) + LINKS.CONTACTS}>
-                  <a>Bizning telefon raqamlar</a>
-                </Link>
-              </button>
-            </>
-          ),
-          en: (
-            <>
-              <p>
-                At any time of the day, you can contact us for help or advice, we will respond as quickly as possible.
-              </p>
-              <button>
-                <Link href={checkLang(language) + LINKS.CONTACTS}>
-                  <a>Our contacts</a>
-                </Link>
-              </button>
-            </>
-          ),
-        },
+    // 	img: "/money.png",
+    // },
+    {
+      title: { ru: "Поддержка круглосуточно", uz: "24/7 qo'llab quvvatlash", en: "Support 24/7" },
+      description: {
+        ru: (
+          <>
+            <p>
+              В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим максимально быстро.
+            </p>
+            <button>
+              <Link href={checkLang(language) + LINKS.CONTACTS}>
+                <a>Наши контакты</a>
+              </Link>
+            </button>
+          </>
+        ),
+        uz: (
+          <>
+            <p>
+              Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan bog'lanishingiz mumkin, biz imkon qadar
+              tezroq javob beramiz .
+            </p>
+            <button>
+              <Link href={checkLang(language) + LINKS.CONTACTS}>
+                <a>Bizning telefon raqamlar</a>
+              </Link>
+            </button>
+          </>
+        ),
+        en: (
+          <>
+            <p>
+              At any time of the day, you can contact us for help or advice, we will respond as quickly as possible.
+            </p>
+            <button>
+              <Link href={checkLang(language) + LINKS.CONTACTS}>
+                <a>Our contacts</a>
+              </Link>
+            </button>
+          </>
+        ),
+      },
 
-        img: "/support.png",
+      img: "/support.png",
+    },
+    {
+      title: { ru: "Гибкая настройка", uz: "O'zgaruvchan qurulmalar", en: "Flexible setup" },
+      description: {
+        ru: "Вы можете изменить количество CPU и RAM в любой момент, а также увеличить объём SSD",
+        uz: "Siz istalgan vaqtda protsessor va operativ xotira miqdorini o'zgartirishingiz, shuningdek, SSD hajmini oshirishingiz mumkin",
+        en: "You can change the amount of CPU and RAM at any time, as well as increase the amount of SSD",
       },
-      {
-        title: { ru: "Гибкая настройка", uz: "O'zgaruvchan qurulmalar", en: "Flexible setup" },
-        description: {
-          ru: "Вы можете изменить количество CPU и RAM в любой момент, а также увеличить объём SSD",
-          uz: "Siz istalgan vaqtda protsessor va operativ xotira miqdorini o'zgartirishingiz, shuningdek, SSD hajmini oshirishingiz mumkin",
-          en: "You can change the amount of CPU and RAM at any time, as well as increase the amount of SSD",
-        },
 
-        img: "/year.png",
-      },
-    ],
-    tarif = [
-      {
-        title: { ru: "Nano", uz: "Nano", en: "Nano" },
-        // price: "400 000",
-        prices: [
-          {
-            price: "400 000",
-            dateOff: `1 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "1 200 000",
-            dateOff: `3 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "2 400 000",
-            dateOff: `6 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "10% - 4 320 000",
-            dateOff: `12 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-        ],
-        cpu: 4,
-        ram: 8,
-        ssd: 100,
-        net: 50,
-        link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=49",
-      },
-      {
-        title: { ru: "Advanced", uz: "Advanced", en: "Advanced" },
-        // price: "550 000",
-        prices: [
-          {
-            price: "550 000",
-            dateOff: `1 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "1 650 000",
-            dateOff: `3 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "3 300 000",
-            dateOff: `6 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "10% - 5 940 000",
-            dateOff: `12 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-        ],
-        cpu: 6,
-        ram: 10,
-        ssd: 150,
-        net: 50,
-        link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
-      },
-      {
-        title: { ru: "Mega", uz: "Mega", en: "Mega" },
-        // price: "800 000",
-        prices: [
-          {
-            price: "800 000",
-            dateOff: `1 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "2 400 000",
-            dateOff: `3 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "4 800 000",
-            dateOff: `6 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "10% - 8 640 000",
-            dateOff: `12 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-        ],
-        cpu: 6,
-        ram: 12,
-        ssd: 200,
-        net: 50,
-        link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
-      },
-      {
-        title: { ru: "Ultra", uz: "Ultra", en: "Ultra" },
-        // price: "1 000 000",
-        prices: [
-          {
-            price: "1 000 000",
-            dateOff: `1 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "3 000 000",
-            dateOff: `3 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "6 000 000",
-            dateOff: `6 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "10% - 10 800 000",
-            dateOff: `12 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-        ],
-        cpu: 8,
-        ram: 16,
-        ssd: 250,
-        net: 50,
-        link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
-      },
-    ];
+      img: "/year.png",
+    },
+  ];
 
   useEffect(() => {
     const outerClick = (e) => {
@@ -500,56 +375,10 @@ export default function CustomVDS({ language }) {
     <>
       <SEO title={langData.seo[language]} desc={langData.desc[language]} />
       <div>
-        <div className={"bg_gray"}>
-          <TarifMaket
-            // bgImg={'/servers-2.jpg'}
-            headTitle={langData.headTitle[language]}
-            description={<p>{langData.dsc[language]}</p>}
-            className="mt-0 px-0"
-            endText={
-              <div className="text-white text-center mt-2">
-                <p>{langData.endText[language]}</p>
-                <p>{langData.timeW[language]}</p>
-              </div>
-            }
-          >
-            <Swiper
-              cssMode={true}
-              modules={[Autoplay, Navigation]}
-              slidesPerView={1}
-              navigation
-              loop={false}
-              autoplay={{
-                delay: 10000,
-                disableOnInteraction: true,
-              }}
-              breakpoints={{
-                1070: {
-                  slidesPerView: 4,
-                },
-                770: {
-                  slidesPerView: 3,
-                },
-                550: {
-                  slidesPerView: 2,
-                },
-              }}
-              className="tarifSwiper"
-            >
-              {tarif.map((item, index) => (
-                <SwiperSlide key={item.title} language={language}>
-                  <div className="w-95">
-                    <TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </TarifMaket>
-        </div>
+        <Container headTitle={langData.headTitle[language]} clNTitle="text-center" className="pb-0"></Container>
+        <Calculator language={language} />
 
         <WhyBlock content={block} language={language} />
-
-        <Calculator language={language} />
 
         <FAQ
           title="Дополнительно"

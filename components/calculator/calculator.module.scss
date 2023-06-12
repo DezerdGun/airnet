@@ -8,388 +8,387 @@ $light_gray: #eeebee;
 $red: #f00;
 
 .calculator {
-	background-color: #292b37;
+  // background-color: #292b37;
 
-	&__block {
-		display: flex;
-		justify-content: space-between;
-		// position: relative;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    // position: relative;
 
-		&__item {
-			width: 55%;
+    &__item {
+      width: 55%;
 
-			&__info {
-				display: flex;
-				align-items: center;
-				margin-bottom: 20px;
+      &__info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
 
-				&__item {
-					padding: 5px;
-					border-radius: 5px;
-					background-color: $gray;
-					color: $white;
-					margin-right: 10px;
+        &__item {
+          padding: 5px;
+          border-radius: 5px;
+          background-color: $green;
+          color: $white;
+          margin-right: 10px;
 
-					svg {
-						width: 20px;
-						height: 20px;
-						fill: $green;
-						margin-right: 10px;
-					}
-				}
-			}
+          svg {
+            width: 20px;
+            height: 20px;
+            fill: $white;
+            margin-right: 10px;
+          }
+        }
+      }
 
-			&__category {
-				display: flex;
-				justify-content: space-between;
+      &__category {
+        display: flex;
+        justify-content: space-between;
 
-				&__number {
-					background-color: $gray;
-					color: $white;
-					width: 20px;
-					height: 20px;
-					display: flex;
-					margin-top: 2px;
-					align-items: center;
-					justify-content: center;
-					border-radius: 50%;
-					font-size: 13px;
-					font-weight: 600;
-				}
+        &__number {
+          background-color: $green;
+          color: $white;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          margin-top: 2px;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          font-size: 13px;
+          font-weight: 600;
+        }
 
-				&__content {
-					width: calc(100% - 30px);
-					margin-bottom: 20px;
+        &__content {
+          width: calc(100% - 30px);
+          margin-bottom: 20px;
 
-					&__title {
-						font-size: 20px;
-						font-weight: 600;
-						color: $white;
-						margin-bottom: 20px;
-					}
+          &__title {
+            font-size: 20px;
+            font-weight: 600;
+            color: $green;
+            margin-bottom: 20px;
+          }
 
-					&__header {
-						display: flex;
-						align-items: center;
-						margin-bottom: 20px;
-						width: 80%;
+          &__header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 80%;
 
-						span {
-							color: $white;
-							font-weight: 600;
-							font-size: 18px;
-						}
+            span {
+              color: $green;
+              font-weight: 600;
+              font-size: 18px;
+            }
 
-						div {
-							flex-grow: 1;
-							display: flex;
-							justify-content: flex-end;
-							align-items: flex-end;
-							align-self: flex-end;
-							color: $green;
-							font-weight: 600;
-							font-size: 18px;
+            div {
+              flex-grow: 1;
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-end;
+              align-self: flex-end;
+              color: $green;
+              font-weight: 600;
+              font-size: 18px;
 
-							&::before {
-								content: '';
-								flex-grow: 1;
-								align-self: flex-end;
-								height: 2px;
-								min-width: 24px;
-								background-color: $gray;
-							}
-						}
-					}
+              &::before {
+                content: "";
+                flex-grow: 1;
+                align-self: flex-end;
+                height: 2px;
+                min-width: 24px;
+                background-color: $gray;
+              }
+            }
+          }
 
-					&__input {
-						display: flex;
-						align-items: center;
-						justify-content: space-between;
-						margin-bottom: 20px;
+          &__input {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
 
-						&__item {
-							width: 80%;
-						}
+            &__item {
+              width: 80%;
+            }
 
-						&__block {
-							width: calc(20% - 25px);
-							display: flex;
-							align-items: center;
-							justify-content: space-between;
+            &__block {
+              width: calc(20% - 25px);
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
 
-							input {
-								width: 60%;
-								text-align: center;
-								background-color: $gray;
-								color: $green;
-								font-weight: 600;
-								border-radius: 5px;
-								font-size: 22px;
-								padding: 5px 0;
-							}
+              input {
+                width: 60%;
+                text-align: center;
+                background-color: $green;
+                color: $white;
+                font-weight: 600;
+                border-radius: 5px;
+                font-size: 22px;
+                padding: 5px 0;
+              }
 
-							span {
-								font-weight: 600;
-								color: $white;
-							}
-						}
-					}
+              span {
+                font-weight: 600;
+                color: $white;
+              }
+            }
+          }
 
-					&__select {
-						font-weight: 600;
-						color: $white;
-						padding: 5px 10px;
-						background-color: $gray;
-						border-radius: 5px;
-						width: fit-content;
-						margin-bottom: 20px;
+          &__select {
+            font-weight: 600;
+            color: $white;
+            padding: 5px 10px;
+            background-color: $gray;
+            border-radius: 5px;
+            width: fit-content;
+            margin-bottom: 20px;
 
-						&__checked {
-							background-color: $green;
-						}
-					}
+            &__checked {
+              background-color: $green;
+            }
+          }
 
-					&__system {
-						display: flex;
-						align-items: center;
-						flex-wrap: wrap;
-						cursor: pointer;
+          &__system {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            cursor: pointer;
 
-						&__item {
-							width: 18%;
-							margin-right: 10px;
-							background-color: $gray;
-							padding: 5px;
-							border-radius: 5px;
-							margin-bottom: 10px;
+            &__item {
+              width: 18%;
+              margin-right: 10px;
+              background-color: $green;
+              padding: 5px;
+              border-radius: 5px;
+              margin-bottom: 10px;
 
-							&__title {
-								border-bottom: 1px solid $dark_gray;
-								font-weight: 600;
-								padding-bottom: 5px;
-								color: $white;
-							}
+              &__title {
+                border-bottom: 1px solid $dark_gray;
+                font-weight: 600;
+                padding-bottom: 5px;
+                color: $white;
+              }
 
-							&__content {
-								position: relative;
-								font-size: 14px;
-								font-weight: 600;
-								padding-top: 5px;
-								cursor: pointer;
-								color: $white;
+              &__content {
+                position: relative;
+                font-size: 14px;
+                font-weight: 600;
+                padding-top: 5px;
+                cursor: pointer;
+                color: $white;
 
-								ul {
-									width: 100%;
-									list-style: none;
-									padding: 0;
-									position: absolute;
-									top: 20px;
-									left: 0;
-									border-radius: 5px;
-									background-color: rgba($dark_gray, 0.92);
-									z-index: 2;
-									backdrop-filter: blur(1px);
+                ul {
+                  width: 100%;
+                  list-style: none;
+                  padding: 0;
+                  position: absolute;
+                  top: 20px;
+                  left: 0;
+                  border-radius: 5px;
+                  background-color: rgba($dark_gray, 0.92);
+                  z-index: 2;
+                  backdrop-filter: blur(1px);
 
-									li {
-										padding: 5px;
-										border-bottom: 1px solid $gray;
-										cursor: pointer;
-										font-size: 14px;
-										color: $white;
+                  li {
+                    padding: 5px;
+                    border-bottom: 1px solid $gray;
+                    cursor: pointer;
+                    font-size: 14px;
+                    color: $white;
 
-										&:hover {
-											color: $green;
-										}
+                    &:hover {
+                      color: $green;
+                    }
 
-										&:last-child {
-											border-bottom: none;
-										}
-									}
-								}
+                    &:last-child {
+                      border-bottom: none;
+                    }
+                  }
+                }
 
-								&__active {
-									color: $green !important;
-								}
+                &__active {
+                  color: $green !important;
+                }
 
-								&:hover {
-									color: $green;
-								}
-							}
+                &:hover {
+                  color: $green;
+                }
+              }
 
-							&__active {
-								background-color: $green;
+              &__active {
+                background-color: $green;
 
-								.calculator__block__item__category__content__system__item__title,
-								.calculator__block__item__category__content__system__item__content {
-									color: $white !important;
-								}
-							}
+                .calculator__block__item__category__content__system__item__title,
+                .calculator__block__item__category__content__system__item__content {
+                  color: $white !important;
+                }
+              }
 
-							&:hover {
-								.calculator__block__item__category__content__system__item__title {
-									color: $green;
-								}
-							}
-						}
-					}
+              &:hover {
+                .calculator__block__item__category__content__system__item__title {
+                  color: $green;
+                }
+              }
+            }
+          }
 
-					&__po {
-						display: flex;
-						align-items: center;
-						flex-wrap: wrap;
+          &__po {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
 
-						&__item {
-							width: fit-content;
-							margin-right: 10px;
-							color: $white;
-							padding: 10px;
-							border-radius: 5px;
-							background-color: $gray;
-							margin-bottom: 10px;
-							cursor: pointer;
+            &__item {
+              width: fit-content;
+              margin-right: 10px;
+              color: $white;
+              padding: 10px;
+              border-radius: 5px;
+              background-color: $gray;
+              margin-bottom: 10px;
+              cursor: pointer;
 
-							&__active {
-								background-color: $green;
-							}
-						}
-					}
+              &__active {
+                background-color: $green;
+              }
+            }
+          }
 
-					&__switcher {
-						width: fit-content;
-						display: flex;
-						align-items: center;
-						background-color: $gray;
-						border-radius: 5px;
+          &__switcher {
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            background-color: $gray;
+            border-radius: 5px;
 
-						&__item {
-							color: $white;
-							padding: 8px 15px;
-							font-weight: 700;
-							cursor: pointer;
+            &__item {
+              color: $white;
+              padding: 8px 15px;
+              font-weight: 700;
+              cursor: pointer;
 
-							&__active {
-								border-radius: 5px;
-								background-color: $green;
-							}
-						}
-					}
+              &__active {
+                border-radius: 5px;
+                background-color: $green;
+              }
+            }
+          }
 
-					&__footer {
-						border-top: 1px solid $gray;
-						padding: 20px;
+          &__footer {
+            border-top: 1px solid $gray;
+            padding: 20px;
 
-						h4 {
-							color: $white;
-							font-size: 20px;
-							margin-bottom: 20px;
+            h4 {
+              color: $green;
+              font-size: 20px;
+              margin-bottom: 20px;
 
-							span {
-								font-size: inherit;
-							}
-						}
+              span {
+                font-size: inherit;
+              }
+            }
 
-						ul {
-							list-style: none;
-							padding: 0;
+            ul {
+              list-style: none;
+              padding: 0;
 
-							li {
-								color: $white;
-								background-color: $gray;
-								padding: 8px 10px;
-								margin-bottom: 15px;
-								border-radius: 5px;
+              li {
+                color: $white;
+                background-color: $green;
+                padding: 8px 10px;
+                margin-bottom: 15px;
+                border-radius: 5px;
 
-								svg {
-									width: 20px;
-									height: 20px;
-									fill: $green;
-									margin-right: 10px;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+                svg {
+                  width: 20px;
+                  height: 20px;
+                  fill: $white;
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 
-		&__result {
-			width: 400px;
-			border-radius: 10px;
-			overflow: hidden;
-			transition: none !important;
+    &__result {
+      width: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: none !important;
 
-			&__absolute {
-				position: absolute;
-				right: 0;
-				padding-bottom: 32px;
-				overflow: hidden auto;
-				padding-top: 24px;
-				transition: none !important;
-			}
+      &__absolute {
+        position: absolute;
+        right: 0;
+        padding-bottom: 32px;
+        overflow: hidden auto;
+        padding-top: 24px;
+        transition: none !important;
+      }
 
-			&__header {
-				padding: 20px;
-				background-color: $green;
-				border-top-left-radius: 10px;
-				border-top-right-radius: 10px;
+      &__header {
+        padding: 20px;
+        background-color: $green;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
 
-				div {
-					font-size: 24px;
-					margin-bottom: 15px;
-					color: $white;
-				}
+        div {
+          font-size: 24px;
+          color: $white;
+        }
 
-				a {
-					color: $white;
-				}
-			}
+        a {
+          color: $white;
+        }
+      }
 
-			&__content {
-				background-color: $gray;
-				padding: 20px;
-				border-bottom-left-radius: 10px;
-				border-bottom-right-radius: 10px;
+      &__content {
+        background-color: $green;
+        padding: 0 20px 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
 
-				&__info {
-					margin-bottom: 15px;
-					&__title {
-						text-transform: uppercase;
-						color: $light_gray;
-						font-size: 12px;
-						font-weight: 700;
-					}
+        &__info {
+          margin-bottom: 15px;
+          &__title {
+            text-transform: uppercase;
+            color: $white;
+            font-size: 12px;
+            font-weight: 700;
+          }
 
-					&__value {
-						color: $white;
-						font-weight: 700;
-					}
-				}
+          &__value {
+            color: $white;
+            font-weight: 700;
+          }
+        }
 
-				&__footer {
-					margin-top: 30px;
-					padding-top: 20px;
-					border-top: 1px solid $light_gray;
-					display: flex;
-					align-items: center;
-					justify-content: space-between;
-					div,
-					span {
-						color: $white;
-					}
+        &__footer {
+          margin-top: 30px;
+          padding-top: 20px;
+          border-top: 1px solid $light_gray;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          div,
+          span {
+            color: $white;
+          }
 
-					hr {
-						border-color: $white;
-					}
+          hr {
+            border-color: $white;
+          }
 
-					a {
-						display: block;
-						background-color: $green;
-						color: $white;
-						padding: 10px;
-						border-radius: 10px;
-					}
-				}
-			}
-		}
-	}
+          a {
+            display: block;
+            background-color: $green;
+            color: $white;
+            padding: 10px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
 }

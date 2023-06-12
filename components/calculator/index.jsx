@@ -14,12 +14,22 @@ const calcSpeed = [
   {
     id: "unlim-50",
     title: "Unlim 50M",
-    price: 1000000,
+    price: 0,
   },
   {
     id: "unlim-100",
     title: "Unlim 100M",
     price: 2000000,
+  },
+  {
+    id: "unlim-200",
+    title: "Unlim 200M",
+    price: 5000000,
+  },
+  {
+    id: "unlim-350",
+    title: "Unlim 350M",
+    price: 10000000,
   },
 ];
 
@@ -453,13 +463,13 @@ export default function Calculator({ language }) {
         const content = document.querySelector("#content"),
           result = document.querySelector("#result");
 
-        if (window.pageYOffset >= 32) {
+        if (window.pageYOffset >= 80) {
           setIsFixed(true);
 
-          if (window.pageYOffset > content.clientHeight - result.clientHeight + 32) {
+          if (window.pageYOffset > content.clientHeight - result.clientHeight + 100) {
             setPosition({ top: "unset", bottom: 0 });
           } else {
-            setPosition({ top: `${window.pageYOffset + 10}px` });
+            setPosition({ top: `${window.pageYOffset - 120}px` });
           }
         } else setIsFixed(false);
       };
@@ -476,7 +486,7 @@ export default function Calculator({ language }) {
 
   return (
     <div className={st.calculator}>
-      <Container className="position-relative">
+      <Container className="position-relative py-0">
         <div className={st.calculator__block}>
           <div id="content" className={st.calculator__block__item}>
             <div className={st.calculator__block__item__info}>
@@ -516,7 +526,7 @@ export default function Calculator({ language }) {
               />
               <CalcHeader
                 title={langData.ozu[language]}
-                price={BeautyNum(state.ram * 30000)}
+                price={BeautyNum(state.ram * 35000)}
                 sum={langData.sum[language]}
               />
               <CalcInput
@@ -575,7 +585,6 @@ export default function Calculator({ language }) {
           >
             <div className={st.calculator__block__result__header}>
               <div>{langData.VDS[language]}</div>
-              <a href="#">{langData.send[language]}</a>
             </div>
             <div className={st.calculator__block__result__content}>
               <CalcInfo title="CPU" value={`${state.core} ${langData.yadro[language]}`} />
@@ -594,13 +603,13 @@ export default function Calculator({ language }) {
                 <div className="def-price">
                   {BeautyNum(
                     state.core * 30000 +
-                      state.ram * 30000 +
+                      state.ram * 35000 +
                       state.ssd * 1000 +
                       calcSpeed.find((item) => item.title === state.speed).price
                   )}{" "}
                   {langData.MnS[language]}
                 </div>
-                <a href="#">{langData.kor[language]}</a>
+                {/* <a href="#">{langData.kor[language]}</a> */}
               </div>
             </div>
           </div>
