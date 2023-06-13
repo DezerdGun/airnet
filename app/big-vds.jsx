@@ -16,6 +16,7 @@ import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { forFreeVDSData } from "./vds";
 
 export default function BigVDS({ language }) {
   const [show, setShow] = useState(-1);
@@ -216,9 +217,16 @@ export default function BigVDS({ language }) {
         description: {
           ru: (
             <>
-              <p>Активация VDS выполняется от 5 минут до 4-х часов, в зависимости от количества заказов и наличия свободного оборудования.</p>
+              <p>
+                Активация VDS выполняется от 5 минут до 4-х часов, в зависимости от количества заказов и наличия
+                свободного оборудования.
+              </p>
               <button>
-                <a href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Стать клиентом и заказать VDS
                 </a>
               </button>
@@ -228,7 +236,11 @@ export default function BigVDS({ language }) {
             <>
               <p>VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4 soatgacha davom etadi mavjud uskunalar.</p>
               <button>
-                <a href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Mijozga aylaning va vdsga buyurtma bering
                 </a>
               </button>
@@ -236,9 +248,16 @@ export default function BigVDS({ language }) {
           ),
           en: (
             <>
-              <p>VDS activation takes from 5 minutes to 4 hours, depending on the number of orders and availability free equipment.</p>
+              <p>
+                VDS activation takes from 5 minutes to 4 hours, depending on the number of orders and availability free
+                equipment.
+              </p>
               <button>
-                <a href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Become a client and order VDS
                 </a>
               </button>
@@ -271,7 +290,9 @@ export default function BigVDS({ language }) {
         description: {
           ru: (
             <>
-              <p>В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим максимально быстро.</p>
+              <p>
+                В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим максимально быстро.
+              </p>
               <button>
                 <Link href={checkLang(language) + LINKS.CONTACTS}>
                   <a>Наши контакты</a>
@@ -281,7 +302,10 @@ export default function BigVDS({ language }) {
           ),
           uz: (
             <>
-              <p>Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan bog'lanishingiz mumkin, biz javob beramiz imkon qadar tezroq.</p>
+              <p>
+                Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan bog'lanishingiz mumkin, biz javob beramiz
+                imkon qadar tezroq.
+              </p>
               <button>
                 <Link href={checkLang(language) + LINKS.CONTACTS}>
                   <a>Murojat uchun</a>
@@ -291,7 +315,9 @@ export default function BigVDS({ language }) {
           ),
           en: (
             <>
-              <p>At any time of the day, you can contact us for help or advice, we will respond as quickly as possible.</p>
+              <p>
+                At any time of the day, you can contact us for help or advice, we will respond as quickly as possible.
+              </p>
               <button>
                 <Link href={checkLang(language) + LINKS.CONTACTS}>
                   <a>Our contacts</a>
@@ -563,7 +589,7 @@ export default function BigVDS({ language }) {
 
         <WhyBlock content={block} language={language} />
 
-        <ForFreeBlock language={language} />
+        <ForFreeBlock data={forFreeVDSData} language={language} />
 
         <Container className="text-center" title={langData.cT[language]} description={langData.dT[language]}>
           <div className={st.vds__table}>

@@ -11,6 +11,7 @@ import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { forFreeVDSData } from "../vds";
 
 export default function CheapVds({ language }) {
   const [show, setShow] = useState(-1);
@@ -364,7 +365,7 @@ export default function CheapVds({ language }) {
 					</Swiper>
 				</TarifMaket> */}
 
-        <ForFreeBlock language={language} />
+        <ForFreeBlock data={forFreeVDSData} language={language} />
 
         <Partners language={language} />
       </div>
