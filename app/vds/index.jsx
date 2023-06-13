@@ -11,6 +11,10 @@ import WhyBlock from "@/components/whyBlock";
 import { checkLang } from "@/utils/checkLang";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { calendarIcon } from "shared/icons/calendarIcon";
+import { clockIcon } from "shared/icons/clockIcon";
+import { supportIcon } from "shared/icons/supportIcon";
+import { warningIcon } from "shared/icons/warningIcon";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -310,265 +314,258 @@ export default function VDS({ language }) {
     },
   };
 
-  const block = [
-      {
-        title: { ru: "Мгновенная активация", uz: "Bir zumdayoq ulanish", en: "Instant activation" },
-        description: {
-          ru: (
-            <>
-              <p>
-                Активация VDS выполняется от 5 минут до 4-х часов, в зависимости от количества заказов и наличия
-                свободного оборудования.
-              </p>
-              <button>
-                <a
-                  href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Стать клиентом и заказать VDS
-                </a>
-              </button>
-            </>
-          ),
-          uz: (
-            <>
-              <p>
-                VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4 soatgacha davom etadi va bepul jihozlarning
-                mavjudligi.
-              </p>
-              <button>
-                <a
-                  href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Mijoz bo'ling va VDSga buyurtma bering
-                </a>
-              </button>
-            </>
-          ),
-          en: (
-            <>
-              <p>
-                VDS activation takes from 5 minutes to 4 hours, depending on the number of orders and availability free
-                equipment.
-              </p>
-              <button>
-                <a
-                  href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Become a client and order VDS
-                </a>
-              </button>
-            </>
-          ),
-        },
+  const whyBlock = [
+    {
+      title: { ru: "Мгновенная активация", uz: "Bir zumdayoq ulanish", en: "Instant activation" },
+      description: {
+        ru: (
+          <>
+            <p>
+              Активация VDS выполняется от 5 минут до 4-х часов, в зависимости от количества заказов и наличия
+              свободного оборудования.
+            </p>
+            <button>
+              <a
+                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Стать клиентом и заказать VDS
+              </a>
+            </button>
+          </>
+        ),
+        uz: (
+          <>
+            <p>
+              VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4 soatgacha davom etadi va bepul jihozlarning
+              mavjudligi.
+            </p>
+            <button>
+              <a
+                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mijoz bo'ling va VDSga buyurtma bering
+              </a>
+            </button>
+          </>
+        ),
+        en: (
+          <>
+            <p>
+              VDS activation takes from 5 minutes to 4 hours, depending on the number of orders and availability free
+              equipment.
+            </p>
+            <button>
+              <a
+                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Become a client and order VDS
+              </a>
+            </button>
+          </>
+        ),
+      },
+      icon: clockIcon,
+    },
+    {
+      title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
+      description: {
+        ru: <p>Не предоставляется для игровых серверов и видео-контент сайтов!</p>,
+        uz: <p>O'yin serverlari va video kontent saytlari uchun mavjud emas!</p>,
+        en: <p>Not available for game servers and video content sites!</p>,
+      },
+      icon: warningIcon,
+    },
+    {
+      title: { ru: "Поддержка круглосуточно", uz: "24/7 qo'llab quvvatlash", en: "Support 24/7" },
+      description: {
+        ru: (
+          <>
+            <p>
+              В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим максимально быстро.
+            </p>
+            <button>
+              <Link href={checkLang(language) + LINKS.CONTACTS}>
+                <a>Наши контакты</a>
+              </Link>
+            </button>
+          </>
+        ),
+        uz: (
+          <>
+            <p>
+              Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan bog'lanishingiz mumkin, biz imkon qadar
+              tezroq javob beramiz .
+            </p>
+            <button>
+              <Link href={checkLang(language) + LINKS.CONTACTS}>
+                <a>Bizning telefon raqamlar</a>
+              </Link>
+            </button>
+          </>
+        ),
+        en: (
+          <>
+            <p>
+              At any time of the day, you can contact us for help or advice, we will respond as quickly as possible.
+            </p>
+            <button>
+              <Link href={checkLang(language) + LINKS.CONTACTS}>
+                <a>Our contacts</a>
+              </Link>
+            </button>
+          </>
+        ),
+      },
+      icon: supportIcon,
+    },
+    {
+      title: { ru: "Гибкая настройка", uz: "O'zgaruvchan qurulmalar", en: "Flexible setup" },
+      description: {
+        ru: <p>Вы можете изменить количество CPU и RAM в любой момент, а также увеличить объём SSD</p>,
+        uz: (
+          <p>
+            Siz istalgan vaqtda protsessor va operativ xotira miqdorini o'zgartirishingiz, shuningdek, SSD hajmini
+            oshirishingiz mumkin
+          </p>
+        ),
+        en: <p>You can change the amount of CPU and RAM at any time, as well as increase the amount of SSD</p>,
+      },
+      icon: calendarIcon,
+    },
+  ];
 
-        img: "/time.png",
-      },
-      {
-        title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
-        description: {
-          ru: "Не предоставляется для игровых серверов и видео-контент сайтов!",
-          uz: "O'yin serverlari va video kontent saytlari uchun mavjud emas!",
-          en: "Not available for game servers and video content sites!",
+  const tarif = [
+    {
+      title: { ru: "Nano", uz: "Nano", en: "Nano" },
+      // price: "400 000",
+      prices: [
+        {
+          price: "400 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
         },
-        img: "/warning.png",
-      },
-      // {
-      // 	title: { ru: "Низкая цена", uz: "Arzon narx", en: "Low price" },
-      // 	description: {
-      // 		ru: "Мы предоставляем услуги по самым низким ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.",
-      // 		uz: "Biz O'zbekistonda eng past narxlarda xizmatlar ko'rsatamiz, bizning afzalligimiz shundaki, biz eng arzon narxlarda eng yuqori sifatli xizmatlarni taqdim etamiz. Shunday qilib, biz sizga sarflashga emas, pul topishingizga yordam beramiz.",
-      // 		en: "We provide services at the lowest prices in Uzbekistan, our advantage is that we provide the highest quality services at the lowest possible prices. Thus, we will help you earn, not spend money.",
-      // 	},
-
-      // 	img: "/money.png",
-      // },
-      {
-        title: { ru: "Поддержка круглосуточно", uz: "24/7 qo'llab quvvatlash", en: "Support 24/7" },
-        description: {
-          ru: (
-            <>
-              <p>
-                В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим максимально быстро.
-              </p>
-              <button>
-                <Link href={checkLang(language) + LINKS.CONTACTS}>
-                  <a>Наши контакты</a>
-                </Link>
-              </button>
-            </>
-          ),
-          uz: (
-            <>
-              <p>
-                Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan bog'lanishingiz mumkin, biz imkon qadar
-                tezroq javob beramiz .
-              </p>
-              <button>
-                <Link href={checkLang(language) + LINKS.CONTACTS}>
-                  <a>Bizning telefon raqamlar</a>
-                </Link>
-              </button>
-            </>
-          ),
-          en: (
-            <>
-              <p>
-                At any time of the day, you can contact us for help or advice, we will respond as quickly as possible.
-              </p>
-              <button>
-                <Link href={checkLang(language) + LINKS.CONTACTS}>
-                  <a>Our contacts</a>
-                </Link>
-              </button>
-            </>
-          ),
+        {
+          price: "1 200 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
         },
-
-        img: "/support.png",
-      },
-      {
-        title: { ru: "Гибкая настройка", uz: "O'zgaruvchan qurulmalar", en: "Flexible setup" },
-        description: {
-          ru: "Вы можете изменить количество CPU и RAM в любой момент, а также увеличить объём SSD",
-          uz: "Siz istalgan vaqtda protsessor va operativ xotira miqdorini o'zgartirishingiz, shuningdek, SSD hajmini oshirishingiz mumkin",
-          en: "You can change the amount of CPU and RAM at any time, as well as increase the amount of SSD",
+        {
+          price: "2 400 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
         },
-
-        img: "/year.png",
-      },
-    ],
-    tarif = [
-      {
-        title: { ru: "Nano", uz: "Nano", en: "Nano" },
-        // price: "400 000",
-        prices: [
-          {
-            price: "400 000",
-            dateOff: `1 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "1 200 000",
-            dateOff: `3 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "2 400 000",
-            dateOff: `6 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "10% - 4 320 000",
-            dateOff: `12 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-        ],
-        cpu: 4,
-        ram: 8,
-        ssd: 100,
-        net: 50,
-        link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=49",
-      },
-      {
-        title: { ru: "Advanced", uz: "Advanced", en: "Advanced" },
-        // price: "550 000",
-        prices: [
-          {
-            price: "550 000",
-            dateOff: `1 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "1 650 000",
-            dateOff: `3 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "3 300 000",
-            dateOff: `6 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "10% - 5 940 000",
-            dateOff: `12 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-        ],
-        cpu: 6,
-        ram: 10,
-        ssd: 150,
-        net: 50,
-        link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
-      },
-      {
-        title: { ru: "Mega", uz: "Mega", en: "Mega" },
-        // price: "800 000",
-        prices: [
-          {
-            price: "800 000",
-            dateOff: `1 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "2 400 000",
-            dateOff: `3 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "4 800 000",
-            dateOff: `6 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "10% - 8 640 000",
-            dateOff: `12 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-        ],
-        cpu: 6,
-        ram: 12,
-        ssd: 200,
-        net: 50,
-        link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
-      },
-      {
-        title: { ru: "Ultra", uz: "Ultra", en: "Ultra" },
-        // price: "1 000 000",
-        prices: [
-          {
-            price: "1 000 000",
-            dateOff: `1 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "3 000 000",
-            dateOff: `3 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "6 000 000",
-            dateOff: `6 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-          {
-            price: "10% - 10 800 000",
-            dateOff: `12 ${langData.month[language]}`,
-            // date: langData.month[language],
-          },
-        ],
-        cpu: 8,
-        ram: 16,
-        ssd: 250,
-        net: 50,
-        link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
-      },
-    ];
+        {
+          price: "10% - 4 320 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 4,
+      ram: 8,
+      ssd: 100,
+      net: 50,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=49",
+    },
+    {
+      title: { ru: "Advanced", uz: "Advanced", en: "Advanced" },
+      // price: "550 000",
+      prices: [
+        {
+          price: "550 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "1 650 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "3 300 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 5 940 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 6,
+      ram: 10,
+      ssd: 150,
+      net: 50,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
+    },
+    {
+      title: { ru: "Mega", uz: "Mega", en: "Mega" },
+      // price: "800 000",
+      prices: [
+        {
+          price: "800 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "2 400 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "4 800 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 8 640 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 6,
+      ram: 12,
+      ssd: 200,
+      net: 50,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
+    },
+    {
+      title: { ru: "Ultra", uz: "Ultra", en: "Ultra" },
+      // price: "1 000 000",
+      prices: [
+        {
+          price: "1 000 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "3 000 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "6 000 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 10 800 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 8,
+      ram: 16,
+      ssd: 250,
+      net: 50,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
+    },
+  ];
 
   useEffect(() => {
     const outerClick = (e) => {
@@ -633,7 +630,7 @@ export default function VDS({ language }) {
           </TarifMaket>
         </div>
 
-        <WhyBlock content={block} language={language} />
+        <WhyBlock content={whyBlock} language={language} />
 
         <ForFreeBlock data={forFreeVDSData} language={language} />
 

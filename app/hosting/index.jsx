@@ -13,6 +13,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import st from "./hosting.module.scss";
 import ForFreeBlock from "@/components/forFreeBlock";
+import WhyBlock from "@/components/whyBlock";
+import { warrantyIcon } from "shared/icons/warrantyIcon";
+import { calendarIcon } from "shared/icons/calendarIcon";
+import { supportIcon } from "shared/icons/supportIcon";
+import { warningIcon } from "shared/icons/warningIcon";
+import { checkLang } from "@/utils/checkLang";
+import { clockIcon } from "shared/icons/clockIcon";
+import Link from "next/link";
+import { LINKS } from "@/components/requirements";
+import { infiniteIcon } from "shared/icons/infiniteIcon";
 
 export default function Hosting({ language }) {
   const [show, setShow] = useState(-1);
@@ -570,6 +580,170 @@ export default function Hosting({ language }) {
     ],
   };
 
+  const whyBlockHosting = [
+    {
+      title: { ru: "Мгновенная активация", uz: "Bir zumdayoq ulanish", en: "Instant activation" },
+      description: {
+        ru: (
+          <>
+            <p>
+              Активация VDS выполняется от 5 минут до 4-х часов, в зависимости от количества заказов и наличия
+              свободного оборудования.
+            </p>
+            <button>
+              <a
+                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Стать клиентом и заказать VDS
+              </a>
+            </button>
+          </>
+        ),
+        uz: (
+          <>
+            <p>
+              VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4 soatgacha davom etadi va bepul jihozlarning
+              mavjudligi.
+            </p>
+            <button>
+              <a
+                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mijoz bo'ling va VDSga buyurtma bering
+              </a>
+            </button>
+          </>
+        ),
+        en: (
+          <>
+            <p>
+              VDS activation takes from 5 minutes to 4 hours, depending on the number of orders and availability free
+              equipment.
+            </p>
+            <button>
+              <a
+                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Become a client and order VDS
+              </a>
+            </button>
+          </>
+        ),
+      },
+      icon: clockIcon,
+    },
+    {
+      title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
+      description: {
+        ru: <p>Не предоставляется для игровых серверов и видео-контент сайтов!</p>,
+        uz: <p>O'yin serverlari va video kontent saytlari uchun mavjud emas!</p>,
+        en: <p>Not available for game servers and video content sites!</p>,
+      },
+      icon: warningIcon,
+    },
+    {
+      title: { ru: "Поддержка круглосуточно", uz: "24/7 qo'llab quvvatlash", en: "Support 24/7" },
+      description: {
+        ru: (
+          <>
+            <p>
+              В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим максимально быстро.
+            </p>
+            <button>
+              <Link href={checkLang(language) + LINKS.CONTACTS}>
+                <a>Наши контакты</a>
+              </Link>
+            </button>
+          </>
+        ),
+        uz: (
+          <>
+            <p>
+              Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan bog'lanishingiz mumkin, biz imkon qadar
+              tezroq javob beramiz .
+            </p>
+            <button>
+              <Link href={checkLang(language) + LINKS.CONTACTS}>
+                <a>Bizning telefon raqamlar</a>
+              </Link>
+            </button>
+          </>
+        ),
+        en: (
+          <>
+            <p>
+              At any time of the day, you can contact us for help or advice, we will respond as quickly as possible.
+            </p>
+            <button>
+              <Link href={checkLang(language) + LINKS.CONTACTS}>
+                <a>Our contacts</a>
+              </Link>
+            </button>
+          </>
+        ),
+      },
+      icon: supportIcon,
+    },
+    {
+      title: { ru: "Гибкая настройка", uz: "O'zgaruvchan qurulmalar", en: "Flexible setup" },
+      description: {
+        ru: <p>Вы можете изменить количество CPU и RAM в любой момент, а также увеличить объём SSD</p>,
+        uz: (
+          <p>
+            Siz istalgan vaqtda protsessor va operativ xotira miqdorini o'zgartirishingiz, shuningdek, SSD hajmini
+            oshirishingiz mumkin
+          </p>
+        ),
+        en: <p>You can change the amount of CPU and RAM at any time, as well as increase the amount of SSD</p>,
+      },
+      icon: calendarIcon,
+    },
+    {
+      title: {
+        ru: "Управление по VNC",
+        uz: "VNC orqali boshqarish",
+        en: "Control via VNC",
+      },
+      description: {
+        ru: <p>Предоставляем доступ к VPS/VDS северам по протоколу удаленного доступа VNC.</p>,
+        uz: <p>VPS/VDS serverlariga VNC masofaviy kirish protokoli orqali kirishni ta'minlaymiz.</p>,
+        en: <p>We provide access to VPS/VDS servers via the VNC remote access protocol.</p>,
+      },
+      icon: warrantyIcon,
+    },
+    {
+      title: {
+        ru: "Безлимитный трафик",
+        uz: "Cheksiz trafik",
+        en: "Unlimited traffic",
+      },
+      description: {
+        ru: (
+          <p>Нет ограничений по входящему и исходящему объёму данных на всех тарифных планах с каналом от 50 Мбит/с.</p>
+        ),
+        uz: (
+          <p>
+            50 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi va chiquvchi maʼlumotlar hajmiga
+            cheklovlar yoʻq.
+          </p>
+        ),
+        en: (
+          <p>
+            There are no restrictions on incoming and outgoing data volume on all tariff plans with a channel of 50 Mbps
+            or more.
+          </p>
+        ),
+      },
+      icon: infiniteIcon,
+    },
+  ];
+
   useEffect(() => {
     const outerClick = (e) => {
       const classList = [...e.target?.classList];
@@ -652,6 +826,8 @@ export default function Hosting({ language }) {
             </Swiper>
           </TarifMaket>
         </div>
+
+        <WhyBlock content={whyBlockHosting} language={language} />
 
         <Container title={langData.confTitle[language]} clNTitle="text-center">
           <div className={st.hosting__block}>

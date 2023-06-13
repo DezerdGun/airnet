@@ -8,84 +8,64 @@ $light_gray: #f8f8f8;
 $red: #f00;
 
 .whyCard {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+  width: 100%;
+  min-height: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $light_gray;
+  box-shadow: 0 0 2px $gray;
+  position: relative;
+  overflow: hidden;
 
-	&__item {
-		width: 49%;
-		padding: 25px 20px;
-		background-size: 45px !important;
-		background-position: calc(100% - 20px) 15px !important;
-		background-color: $white !important;
-		border-radius: 10px;
-		margin-bottom: 20px;
-		border: 1px solid $gray;
+  a {
+    color: inherit !important;
+  }
 
-		&__fourCol {
-			width: 24%;
+  &__icon {
+    display: block;
+    margin-bottom: 20px;
 
-			h6 {
-				margin-bottom: 0 !important;
-			}
-		}
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: $green;
+    }
+  }
 
-		h6,
-		p {
-			width: calc(100% - 55px);
-		}
+  div {
+    position: absolute;
+    top: -30px;
+    right: 20px;
 
-		h6 {
-			margin-bottom: 20px;
-		}
+    svg {
+      width: 80px;
+      height: 80px;
+      fill: #c2c2c2;
+    }
+  }
 
-		p {
-			font-size: 14px;
-			margin-bottom: 0;
-			line-height: 140% !important;
+  button {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 8px;
+    text-align: left;
 
-			a {
-				font-size: inherit;
-			}
-		}
+    &:hover {
+      color: $white;
+      background-color: $green;
+    }
+  }
 
-		button {
-			background-color: $green;
-			padding: 10px;
-			border: none;
-			margin-top: 10px;
+  &:hover {
+    background-color: $white;
+  }
 
-			&:hover{
-				background-color: #00402e;
-			}
-			a {
-				color: $white;
-				font-weight: 700;
-			}
-		}
-	}
+  @media (min-width: 600px) {
+    width: 48%;
+    min-height: 200px;
+  }
 
-	@media (max-width: 660px) {
-		&__item {
-			width: 100%;
-
-			&__fourCol {
-				width: 49%;
-			}
-
-			&:nth-child(3) {
-				margin-bottom: 20px;
-			}
-		}
-	}
-
-	@media (max-width: 440px) {
-		&__item {
-
-			&__fourCol {
-				width: 100%;
-			}
-
-		}
-	}
+  @media (min-width: 1040px) {
+    width: 32%;
+  }
 }

@@ -1,13 +1,17 @@
-import Container from "../container/index.jsx"
-import WhyCard from "../whyCard"
-import st from "./whyBlock.module.scss"
+import Container from "../container/index.jsx";
+import WhyCard from "../whyCard";
+import styles from "./whyBlock.module.scss";
 
-export default function WhyBlock({ title, content, fourCol, language }) {
-	return (
-		<div className={`${st.whyBlock} whyBlock-swiper`}>
-			<Container title={title} clNTitle="text-center">
-				<WhyCard content={content} fourCol={fourCol} language={language} />
-			</Container>
-		</div>
-	)
+export default function WhyBlock({ title, content, language }) {
+  return (
+    <div className={styles.whyBlock}>
+      <Container title={title} clNTitle="text-center">
+        <div className={styles.whyBlock__block}>
+          {content.map((item) => (
+            <WhyCard key={item.title} content={item} language={language} />
+          ))}
+        </div>
+      </Container>
+    </div>
+  );
 }

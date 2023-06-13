@@ -12,6 +12,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { forFreeVDSData } from "../vds";
+import { serversIcon } from "shared/icons/serversIcon";
+import { lesssonIcon } from "shared/icons/lessonIcon";
+import { databaseIcon } from "shared/icons/databaseIcon";
+import { warningIcon } from "shared/icons/warningIcon";
 
 export default function CheapVds({ language }) {
   const [show, setShow] = useState(-1);
@@ -67,20 +71,20 @@ export default function CheapVds({ language }) {
           en: "File and image hosting",
         },
         description: {
-          ru: "Используйте 20 Gb жесткого диска для хранения данных.",
-          uz: "Ma'lumotlarni saqlash uchun 20 Gb qattiq diskdan foydalaning",
-          en: "Use 20 Gb hard drive for data storage.",
+          ru: <p>Используйте 20 Gb жесткого диска для хранения данных.</p>,
+          uz: <p>Ma'lumotlarni saqlash uchun 20 Gb qattiq diskdan foydalaning</p>,
+          en: <p>Use 20 Gb hard drive for data storage.</p>,
         },
-        img: "/server.png",
+        icon: serversIcon,
       },
       {
         title: { ru: "Для обучения и тестов", uz: "O'qish va test uchun", en: "For training and tests" },
         description: {
-          ru: "Идеально подходит для работы в командной строке и знакомства с системой Linux.",
-          uz: "Buyruqlar satrida ishlash va Linux tizimi bilan tanishish uchun ideal.",
-          en: "Perfect for command line work and getting to know the Linux system.",
+          ru: <p>Идеально подходит для работы в командной строке и знакомства с системой Linux.</p>,
+          uz: <p>Buyruqlar satrida ishlash va Linux tizimi bilan tanishish uchun ideal.</p>,
+          en: <p>Perfect for command line work and getting to know the Linux system.</p>,
         },
-        img: "/lesson.png",
+        icon: lesssonIcon,
       },
       {
         title: {
@@ -89,20 +93,20 @@ export default function CheapVds({ language }) {
           en: "For undemanding tasks",
         },
         description: {
-          ru: "Вы можете организовать почтовый сервис или DNS-кластер.",
-          uz: "Siz pochta xizmati yoki DNS klasterini tashkil qilishingiz mumkin.",
-          en: "You can set up a mail service or a DNS cluster.",
+          ru: <p>Вы можете организовать почтовый сервис или DNS-кластер.</p>,
+          uz: <p>Siz pochta xizmati yoki DNS klasterini tashkil qilishingiz mumkin.</p>,
+          en: <p>You can set up a mail service or a DNS cluster.</p>,
         },
-        img: "/database.png",
+        icon: databaseIcon,
       },
       {
         title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
         description: {
-          ru: "Не предоставляется для игровых серверов и видео-контент сайтов!",
-          uz: "O'yin serverlari va video kontent saytlari uchun mavjud emas!",
-          en: "Not available for game servers and video content sites!",
+          ru: <p>Не предоставляется для игровых серверов и видео-контент сайтов!</p>,
+          uz: <p>O'yin serverlari va video kontent saytlari uchun mavjud emas!</p>,
+          en: <p>Not available for game servers and video content sites!</p>,
         },
-        img: "/warning.png",
+        icon: warningIcon,
       },
     ],
     tarif = [

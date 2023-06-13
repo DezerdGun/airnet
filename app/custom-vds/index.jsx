@@ -11,6 +11,10 @@ import WhyBlock from "@/components/whyBlock";
 import { checkLang } from "@/utils/checkLang";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { calendarIcon } from "shared/icons/calendarIcon";
+import { clockIcon } from "shared/icons/clockIcon";
+import { supportIcon } from "shared/icons/supportIcon";
+import { warningIcon } from "shared/icons/warningIcon";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -281,28 +285,17 @@ export default function CustomVDS({ language }) {
           </>
         ),
       },
-
-      img: "/time.png",
+      icon: clockIcon,
     },
     {
       title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
       description: {
-        ru: "Не предоставляется для игровых серверов и видео-контент сайтов!",
-        uz: "O'yin serverlari va video kontent saytlari uchun mavjud emas!",
-        en: "Not available for game servers and video content sites!",
+        ru: <p>Не предоставляется для игровых серверов и видео-контент сайтов!</p>,
+        uz: <p>O'yin serverlari va video kontent saytlari uchun mavjud emas!</p>,
+        en: <p>Not available for game servers and video content sites!</p>,
       },
-      img: "/warning.png",
+      icon: warningIcon,
     },
-    // {
-    // 	title: { ru: "Низкая цена", uz: "Arzon narx", en: "Low price" },
-    // 	description: {
-    // 		ru: "Мы предоставляем услуги по самым низким ценам в Узбекистане, наше преимущество в том, что мы оказываем максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а не тратиться.",
-    // 		uz: "Biz O'zbekistonda eng past narxlarda xizmatlar ko'rsatamiz, bizning afzalligimiz shundaki, biz eng arzon narxlarda eng yuqori sifatli xizmatlarni taqdim etamiz. Shunday qilib, biz sizga sarflashga emas, pul topishingizga yordam beramiz.",
-    // 		en: "We provide services at the lowest prices in Uzbekistan, our advantage is that we provide the highest quality services at the lowest possible prices. Thus, we will help you earn, not spend money.",
-    // 	},
-
-    // 	img: "/money.png",
-    // },
     {
       title: { ru: "Поддержка круглосуточно", uz: "24/7 qo'llab quvvatlash", en: "Support 24/7" },
       description: {
@@ -344,8 +337,7 @@ export default function CustomVDS({ language }) {
           </>
         ),
       },
-
-      img: "/support.png",
+      icon: supportIcon,
     },
     {
       title: { ru: "Гибкая настройка", uz: "O'zgaruvchan qurulmalar", en: "Flexible setup" },
@@ -354,8 +346,7 @@ export default function CustomVDS({ language }) {
         uz: "Siz istalgan vaqtda protsessor va operativ xotira miqdorini o'zgartirishingiz, shuningdek, SSD hajmini oshirishingiz mumkin",
         en: "You can change the amount of CPU and RAM at any time, as well as increase the amount of SSD",
       },
-
-      img: "/year.png",
+      icon: calendarIcon,
     },
   ];
 
