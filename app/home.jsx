@@ -26,6 +26,8 @@ import { phoneIcon } from "shared/icons/phoneIcon";
 import { searchIcon } from "shared/icons/searchIcon";
 import { walletIcon } from "shared/icons/walletIcon";
 import { ethernetIcon } from "shared/icons/ethernetIcon";
+import { databaseIcon } from "shared/icons/databaseIcon";
+import { serversIcon } from "shared/icons/serversIcon";
 
 export default function Home({ language }) {
   const [show, setShow] = useState(-1);
@@ -825,6 +827,56 @@ export default function Home({ language }) {
           ),
         },
         icon: ethernetIcon,
+      },
+      {
+        title: {
+          ru: "Серверы в Ташкенте",
+          uz: "Toshkentdagi serverlar",
+          en: "Servers in Tashkent",
+        },
+        description: {
+          ru: (
+            <p>
+              Хранение и обработка данных происходит на территории Узбекистана и в зоне TAS-IX.
+            </p>
+          ),
+          uz: (
+            <p>
+              Ma'lumotlarni saqlash va qayta ishlash O'zbekiston hududida va TAS-IX zonasida amalga oshiriladi.
+            </p>
+          ),
+          en: (
+            <p>
+              Data storage and processing takes place on the territory of Uzbekistan and in the TAS-IX zone.
+            </p>
+          ),
+        },
+        icon: serversIcon,
+      },
+      {
+        title: {
+          ru: "Скорость",
+          uz: "Tezlik",
+          en: "Speed",
+        },
+        description: {
+          ru: (
+            <p>
+              Максимальная скорость работы сайтов благодаря SSD дискам.
+            </p>
+          ),
+          uz: (
+            <p>
+              SSD drayvlar tufayli veb-saytning maksimal tezligi.
+            </p>
+          ),
+          en: (
+            <p>
+              Maximum website speed thanks to SSD drives.
+            </p>
+          ),
+        },
+        icon: databaseIcon,
       },
     ];
 

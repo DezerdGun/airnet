@@ -14,15 +14,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import st from "./hosting.module.scss";
 import ForFreeBlock from "@/components/forFreeBlock";
 import WhyBlock from "@/components/whyBlock";
-import { warrantyIcon } from "shared/icons/warrantyIcon";
 import { calendarIcon } from "shared/icons/calendarIcon";
 import { supportIcon } from "shared/icons/supportIcon";
 import { warningIcon } from "shared/icons/warningIcon";
 import { checkLang } from "@/utils/checkLang";
 import { clockIcon } from "shared/icons/clockIcon";
+import { settingsIcon } from "shared/icons/settingsIcon";
+import { presentIcon } from "shared/icons/presentIcon";
 import Link from "next/link";
 import { LINKS } from "@/components/requirements";
-import { infiniteIcon } from "shared/icons/infiniteIcon";
 
 export default function Hosting({ language }) {
   const [show, setShow] = useState(-1);
@@ -93,9 +93,9 @@ export default function Hosting({ language }) {
       ),
     },
     faqTitle: {
-      ru: "Нас часто спрашивают",
-      uz: "Bizdan tez-tez so'rashadi",
-      en: "We are often asked",
+      ru: "Часто задаваемые вопросы",
+      uz: "Ko'p so'raladigan savollar",
+      en: "FAQ",
     },
     month: {
       ru: "мес.",
@@ -438,6 +438,102 @@ export default function Hosting({ language }) {
           ),
         },
       },
+      {
+        title: {
+          ru: "Возможно ли тестирование сайта без переноса домена?",
+          uz: "Domenni o'tkazmasdan saytni sinab ko'rish mumkinmi?",
+          en: "Is it possible to test a site without transferring a domain?",
+        },
+        description: {
+          ru: (
+            <>
+              <p>Да. Домена можно не переносить в нашу систему но у домена долны быть прописаны наши DNS сервера которые после активации хостинга будут отправлены на ваш email.</p>
+            </>
+          ),
+          uz: (
+            <>
+              <p>Ha. Domenlarni bizning tizimimizga o'tkazib bo'lmaydi, lekin domenda DNS serverlarimiz ro'yxatdan o'tgan bo'lishi kerak, ular hosting faollashtirilgandan so'ng elektron pochtangizga yuboriladi.</p>
+            </>
+          ),
+          en: (
+            <>
+              <p>Yes. Domains can not be transferred to our system, but the domain must have our DNS servers registered, which, after hosting activation, will be sent to your email.</p>
+            </>
+          ),
+        },
+      },
+      {
+        title: {
+          ru: "Могу ли я получить root-доступ или SSH-доступ на виртуальном хостинге Cpanel?",
+          uz: "Cpanel umumiy hostingida root yoki SSH ruxsatini olsam bo'ladimi?",
+          en: "Can I get root access or SSH access on cpanel shared hosting?",
+        },
+        description: {
+          ru: (
+            <>
+              <p>Нет, root-доступ и SSH-доступ недоступен для планов виртуального хостинга на Cpanel. Если вам требуется root-доступ и SSH-доступ, мы рекомендуем вам приобрести виртуальный сервер.</p>
+            </>
+          ),
+          uz: (
+            <>
+              <p>Yo'q, cpanel umumiy hosting rejalari uchun ildizga kirish va SSH ruxsati mavjud emas. Agar siz ildizga kirish va SSHga kirishni talab qilsangiz, virtual server sotib olishingizni tavsiya qilamiz.</p>
+            </>
+          ),
+          en: (
+            <>
+              <p>No, root access and SSH access are not available for cpanel shared hosting plans. If you require root access and SSH access, we recommend that you purchase a virtual server.</p>
+            </>
+          ),
+        },
+      },
+      {
+        title: {
+          ru: "Какая версия MySQL установлена на вашем хостинге?",
+          uz: "Sizning hostingingizda MySQL-ning qaysi versiyasi o'rnatilgan?",
+          en: "What version of MySQL is installed on your hosting?",
+        },
+        description: {
+          ru: (
+            <>
+              <p>На хостинге установлена всегда последние версии MySQL и MariaDB. Всю необходимую информацию о сервере Вы можете уточнить у технической поддержки.</p>
+            </>
+          ),
+          uz: (
+            <>
+              <p>Xostingda har doim MySQL va MariaDB ning so'nggi versiyalari o'rnatilgan. Server haqida barcha kerakli ma'lumotlarni texnik yordamdan olishingiz mumkin.</p>
+            </>
+          ),
+          en: (
+            <>
+              <p>The hosting always has the latest versions of MySQL and MariaDB installed. You can get all the necessary information about the server from technical support.</p>
+            </>
+          ),
+        },
+      },
+      {
+        title: {
+          ru: "Какие версии PHP доступны на вашем хостинге?",
+          uz: "Xostingda PHP ning qanday versiyalari mavjud?",
+          en: "What versions of PHP are available on your hosting?",
+        },
+        description: {
+          ru: (
+            <>
+              <p>На хостинге доступны актуальные версии PHP от 7.3 до 8.2</p>
+            </>
+          ),
+          uz: (
+            <>
+              <p>Xosting PHP ning 7.3 dan 8.2 gacha bo'lgan joriy versiyalarida mavjud</p>
+            </>
+          ),
+          en: (
+            <>
+              <p>The hosting is available with current PHP versions from 7.3 to 8.2</p>
+            </>
+          ),
+        },
+      },
     ];
 
   const forFreeData = {
@@ -587,52 +683,22 @@ export default function Hosting({ language }) {
         ru: (
           <>
             <p>
-              Активация VDS выполняется от 5 минут до 4-х часов, в зависимости от количества заказов и наличия
-              свободного оборудования.
+              Активация Cpanel хостинга выполняется мгновенно после оплаты счета.
             </p>
-            <button>
-              <a
-                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Стать клиентом и заказать VDS
-              </a>
-            </button>
           </>
         ),
         uz: (
           <>
             <p>
-              VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4 soatgacha davom etadi va bepul jihozlarning
-              mavjudligi.
+              Cpanel hostingni faollashtirish hisob-faktura to'langanidan so'ng darhol amalga oshiriladi
             </p>
-            <button>
-              <a
-                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Mijoz bo'ling va VDSga buyurtma bering
-              </a>
-            </button>
           </>
         ),
         en: (
           <>
             <p>
-              VDS activation takes from 5 minutes to 4 hours, depending on the number of orders and availability free
-              equipment.
+              Activation of cpanel hosting is performed instantly after payment of the invoice
             </p>
-            <button>
-              <a
-                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Become a client and order VDS
-              </a>
-            </button>
           </>
         ),
       },
@@ -641,9 +707,9 @@ export default function Hosting({ language }) {
     {
       title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
       description: {
-        ru: <p>Не предоставляется для игровых серверов и видео-контент сайтов!</p>,
-        uz: <p>O'yin serverlari va video kontent saytlari uchun mavjud emas!</p>,
-        en: <p>Not available for game servers and video content sites!</p>,
+        ru: <p>Не предоставляется для игровых серверов и видео-контент сайтов! Для телеграм ботов!</p>,
+        uz: <p>O'yin serverlari va video kontent saytlari uchun mavjud emas! Telegram botlari uchun!</p>,
+        en: <p>Not available for game servers and video content sites! For telegram bots!</p>,
       },
       icon: warningIcon,
     },
@@ -691,56 +757,55 @@ export default function Hosting({ language }) {
       icon: supportIcon,
     },
     {
-      title: { ru: "Гибкая настройка", uz: "O'zgaruvchan qurulmalar", en: "Flexible setup" },
+      title: { ru: "Бесплатные SSL", uz: "Bepul SSL", en: "Free SSL" },
       description: {
-        ru: <p>Вы можете изменить количество CPU и RAM в любой момент, а также увеличить объём SSD</p>,
+        ru: <p>Обеспечьте вашему сайту защищённое HTTPS‑соединение с помощью бесплатного сертификата.</p>,
         uz: (
           <p>
-            Siz istalgan vaqtda protsessor va operativ xotira miqdorini o'zgartirishingiz, shuningdek, SSD hajmini
-            oshirishingiz mumkin
+            Saytingizga bepul sertifikat bilan xavfsiz HTTPS ulanishini bering.
           </p>
         ),
-        en: <p>You can change the amount of CPU and RAM at any time, as well as increase the amount of SSD</p>,
+        en: <p>Give your site a secure HTTPS connection with a free certificate.</p>,
       },
       icon: calendarIcon,
     },
     {
       title: {
-        ru: "Управление по VNC",
-        uz: "VNC orqali boshqarish",
-        en: "Control via VNC",
+        ru: "Перенесем сайты сами",
+        uz: "Saytlarni o'zimiz o'tkazamiz",
+        en: "We will transfer the sites ourselves",
       },
       description: {
-        ru: <p>Предоставляем доступ к VPS/VDS северам по протоколу удаленного доступа VNC.</p>,
-        uz: <p>VPS/VDS serverlariga VNC masofaviy kirish protokoli orqali kirishni ta'minlaymiz.</p>,
-        en: <p>We provide access to VPS/VDS servers via the VNC remote access protocol.</p>,
+        ru: <p>Наши специалисты бесплатно и быстро перенесут Ваши сайты и настроят их на нашем хостинге.</p>,
+        uz: <p>Bizning mutaxassislarimiz saytlaringizni tez va bepul o'tkazadilar va ularni bizning hostingimizga o'rnatadilar.</p>,
+        en: <p>Our specialists will quickly and free of charge transfer your sites and set them up on our hosting.</p>,
       },
-      icon: warrantyIcon,
+      icon: settingsIcon,
     },
     {
       title: {
-        ru: "Безлимитный трафик",
-        uz: "Cheksiz trafik",
-        en: "Unlimited traffic",
+        ru: "Скидка при оплате за год",
+        uz: "Yillik chegirma",
+        en: "Yearly discount",
       },
       description: {
         ru: (
-          <p>Нет ограничений по входящему и исходящему объёму данных на всех тарифных планах с каналом от 50 Мбит/с.</p>
+          <p>
+            При единоразовой оплате хостинга на год Вы экономите до 20% в зависимости от тарифа и получаете бесплатный домен в зоне UZ.
+          </p>
         ),
         uz: (
           <p>
-            50 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi va chiquvchi maʼlumotlar hajmiga
-            cheklovlar yoʻq.
+            Bir yil davomida xosting uchun bir martalik toʻlov bilan siz tarifga qarab 20% gacha tejaysiz va UZ zonasida bepul domenga ega boʻlasiz.
           </p>
         ),
         en: (
           <p>
-            There are no restrictions on incoming and outgoing data volume on all tariff plans with a channel of 50 Mbps
-            or more.
+            With a one-time payment for hosting for a year, you save up to 20% depending on the tariff and get a free domain in the UZ zone
           </p>
         ),
       },
-      icon: infiniteIcon,
+      icon: presentIcon,
     },
   ];
 

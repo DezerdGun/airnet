@@ -1,4 +1,6 @@
 import SEO from "@/components/seo";
+import Container from "@/components/container";
+import CustomTable from "@/components/customTable";
 import TarifMaket from "@/components/tarifMaket";
 import { useEffect, useState } from "react";
 import st from "./cheapVds.module.scss";
@@ -16,6 +18,8 @@ import { serversIcon } from "shared/icons/serversIcon";
 import { lesssonIcon } from "shared/icons/lessonIcon";
 import { databaseIcon } from "shared/icons/databaseIcon";
 import { warningIcon } from "shared/icons/warningIcon";
+import { infiniteIcon } from "shared/icons/infiniteIcon";
+import { warrantyIcon } from "shared/icons/warrantyIcon";
 
 export default function CheapVds({ language }) {
   const [show, setShow] = useState(-1);
@@ -61,6 +65,17 @@ export default function CheapVds({ language }) {
       uz: "oy",
       en: "mon.",
     },
+
+    // cT: {
+    //   ru: "Стоимость международного интернет-канала без ограничения трафика",
+    //   uz: "Trafik cheklovlarisiz xalqaro Internet-kanalning narxi",
+    //   en: "The cost of an international Internet channel without traffic restrictions",
+    // },
+    // cD: {
+    //   ru: "Внешний трафик и трафик в сети «TAS-IX» не тарифицируется.",
+    //   uz: "TAS-IX tarmog'idagi tashqi trafik va trafik to'lov olinmaydi.",
+    //   en: "External traffic and traffic in the TAS-IX network is not charged.",
+    // },
   };
 
   const block = [
@@ -107,6 +122,44 @@ export default function CheapVds({ language }) {
           en: <p>Not available for game servers and video content sites!</p>,
         },
         icon: warningIcon,
+      },
+      {
+        title: {
+          ru: "Управление по VNC",
+          uz: "VNC orqali boshqarish",
+          en: "Control via VNC",
+        },
+        description: {
+          ru: <p>Предоставляем доступ к VPS/VDS северам по протоколу удаленного доступа VNC.</p>,
+          uz: <p>VPS/VDS serverlariga VNC masofaviy kirish protokoli orqali kirishni ta'minlaymiz.</p>,
+          en: <p>We provide access to VPS/VDS servers via the VNC remote access protocol.</p>,
+        },
+        icon: warrantyIcon,
+      },
+      {
+        title: {
+          ru: "Безлимитный трафик",
+          uz: "Cheksiz trafik",
+          en: "Unlimited traffic",
+        },
+        description: {
+          ru: (
+            <p>Нет ограничений по входящему и исходящему объёму данных на всех тарифных планах с каналом от 50 Мбит/с.</p>
+          ),
+          uz: (
+            <p>
+              50 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi va chiquvchi maʼlumotlar hajmiga
+              cheklovlar yoʻq.
+            </p>
+          ),
+          en: (
+            <p>
+              There are no restrictions on incoming and outgoing data volume on all tariff plans with a channel of 50 Mbps
+              or more.
+            </p>
+          ),
+        },
+        icon: infiniteIcon,
       },
     ],
     tarif = [
@@ -370,6 +423,12 @@ export default function CheapVds({ language }) {
 				</TarifMaket> */}
 
         <ForFreeBlock data={forFreeVDSData} language={language} />
+
+        {/* <Container className="text-center" title={langData.cT[language]} description={langData.cD[language]}>
+          <div className={st.vds__table}>
+            <CustomTable table={langData.table[language]} />
+          </div>
+        </Container> */}
 
         <Partners language={language} />
       </div>

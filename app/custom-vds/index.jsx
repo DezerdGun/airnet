@@ -15,6 +15,8 @@ import { calendarIcon } from "shared/icons/calendarIcon";
 import { clockIcon } from "shared/icons/clockIcon";
 import { supportIcon } from "shared/icons/supportIcon";
 import { warningIcon } from "shared/icons/warningIcon";
+import { infiniteIcon } from "shared/icons/infiniteIcon";
+import { warrantyIcon } from "shared/icons/warrantyIcon";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -24,9 +26,9 @@ export default function CustomVDS({ language }) {
   const [show, setShow] = useState(-1);
   const langData = {
     seo: {
-      ru: "Быстрые VDS/VPS | Хостинг TAS-IX в Ташкенте, Узбекистане",
-      uz: "Tez VDS/VPS | O'zbekiston, Toshkent shahrida TAS-IX mezbonligi",
-      en: "Fast VDS/VPS | Hosting TAS-IX in Tashkent, Uzbekistan",
+      ru: "Свой виртуальный сервер VDS/VPS | Хостинг TAS-IX в Ташкенте, Узбекистане",
+      uz: "O'z virtual serveri VDS/VPS | O'zbekiston, Toshkent shahrida TAS-IX mezbonligi",
+      en: "Own virtual server VDS/VPS | Hosting TAS-IX in Tashkent, Uzbekistan",
     },
     desc: {
       ru: "Предложение в соотношении цены-качества-количества ресурсов, которое построенно на быстрых SSD-дисках. Оптимальные VDS/VPS в сети TAS-IX в Ташкенте",
@@ -34,9 +36,9 @@ export default function CustomVDS({ language }) {
       en: "An offer in the ratio of price-quality-quantity of resources, which is built on fast SSD drives. Optimal VDS / VPS in the TAS-IX network in Tashkent",
     },
     headTitle: {
-      ru: "VDS/VPS — сервера на базе быстрых SSD-дисков",
-      uz: "VDS / VPS - tezkor SSD drayverlarga asoslangan serverlar",
-      en: "VDS/VPS - servers based on fast SSD drives",
+      ru: "Свой виртуальные сервер на базе быстрых SSD-дисков",
+      uz: "Tez SSD drayverlarga asoslangan shaxsiy virtual serveringiz",
+      en: "Your own virtual server based on fast SSD drives",
     },
     dsc: {
       ru: "Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости 1 Gbps",
@@ -348,6 +350,44 @@ export default function CustomVDS({ language }) {
       },
       icon: calendarIcon,
     },
+    {
+      title: {
+        ru: "Управление по VNC",
+        uz: "VNC orqali boshqarish",
+        en: "Control via VNC",
+      },
+      description: {
+        ru: <p>Предоставляем доступ к VPS/VDS северам по протоколу удаленного доступа VNC.</p>,
+        uz: <p>VPS/VDS serverlariga VNC masofaviy kirish protokoli orqali kirishni ta'minlaymiz.</p>,
+        en: <p>We provide access to VPS/VDS servers via the VNC remote access protocol.</p>,
+      },
+      icon: warrantyIcon,
+    },
+    {
+      title: {
+        ru: "Безлимитный трафик",
+        uz: "Cheksiz trafik",
+        en: "Unlimited traffic",
+      },
+      description: {
+        ru: (
+          <p>Нет ограничений по входящему и исходящему объёму данных на всех тарифных планах с каналом от 50 Мбит/с.</p>
+        ),
+        uz: (
+          <p>
+            50 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi va chiquvchi maʼlumotlar hajmiga
+            cheklovlar yoʻq.
+          </p>
+        ),
+        en: (
+          <p>
+            There are no restrictions on incoming and outgoing data volume on all tariff plans with a channel of 50 Mbps
+            or more.
+          </p>
+        ),
+      },
+      icon: infiniteIcon,
+    },
   ];
 
   useEffect(() => {
@@ -391,9 +431,9 @@ export default function CustomVDS({ language }) {
                     <span>Платные</span>
                     <ul className="mt-2">
                       <li>
-                        Windows -{" "}
+                        Windows Server -{" "}
                         <span>
-                          <strong className="text-green">1020 Сум/мес. за ядро</strong>
+                          <strong className="text-green">Тестовый период - 180 дней</strong>
                         </span>
                       </li>
                     </ul>
@@ -410,19 +450,19 @@ export default function CustomVDS({ language }) {
                       <li>
                         IPSmanager 6 Lite -{" "}
                         <span>
-                          <strong className="text-green">1020 Сум/мес. (максимум 10 сайтов)</strong>
+                          <strong className="text-green">СКОРО (максимум 10 сайтов)</strong>
                         </span>
                       </li>
                       <li>
                         IPSmanager 6 Pro -{" "}
                         <span>
-                          <strong className="text-green">1020 Сум/мес. (максимум 50 сайтов)</strong>
+                          <strong className="text-green">СКОРО (максимум 50 сайтов)</strong>
                         </span>
                       </li>
                       <li>
                         IPSmanager 6 Host -{" "}
                         <span>
-                          <strong className="text-green">1020 Сум/мес. (без ограничений)</strong>
+                          <strong className="text-green">СКОРО (без ограничений)</strong>
                         </span>
                       </li>
                     </ul>
@@ -439,19 +479,19 @@ export default function CustomVDS({ language }) {
                       <li>
                         Лицензия SQL Server Web Edition Core -{" "}
                         <span>
-                          <strong className="text-green">1020 Сум/мес. за 2 ядра (минимум 4 ядра)</strong>
+                          <strong className="text-green">СКОРО за 2 ядра (минимум 4 ядра)</strong>
                         </span>
                       </li>
                       <li>
                         Лицензия SQL Server Standard Edition per user -{" "}
                         <span>
-                          <strong className="text-green">1020 Сум/мес. за 1 пользователя</strong>
+                          <strong className="text-green">СКОРО за 1 пользователя</strong>
                         </span>
                       </li>
                       <li>
                         Windows Remote Desktop Services -{" "}
                         <span>
-                          <strong className="text-green">1020 Сум/мес. за 1 пользователя</strong>
+                          <strong className="text-green">СКОРО за 1 пользователя</strong>
                         </span>
                       </li>
                     </ul>
@@ -466,21 +506,15 @@ export default function CustomVDS({ language }) {
                   <p>
                     <ul>
                       <li>
-                        До 100 Мбит/с, безлимитный трафик -{" "}
+                        До 50 Мбит/с, безлимитный трафик -{" "}
                         <span>
                           <strong className="text-green">бесплатно</strong>
                         </span>
                       </li>
                       <li>
-                        До 1 Гбит/с, трафик 32 Тб/мес -{" "}
+                        До 1 Гбит/с, трафик 10 Тб/мес -{" "}
                         <span>
-                          <strong className="text-green">бесплатно, превышение 180₽/1 Тб</strong>
-                        </span>
-                      </li>
-                      <li>
-                        Защита от DDoS (1 Мбит/с) -{" "}
-                        <span>
-                          <strong className="text-green">250 ₽/мес</strong>
+                          <strong className="text-green">бесплатно</strong>
                         </span>
                       </li>
                     </ul>
@@ -497,13 +531,13 @@ export default function CustomVDS({ language }) {
                       <li>
                         Дополнительные IP-адреса IPv4 -{" "}
                         <span>
-                          <strong className="text-green">1020 Сум/мес.</strong>
+                          <strong className="text-green">20 000 cум/мес.</strong>
                         </span>
                       </li>
                       <li>
                         Дополнительные IP-адреса IPv6 (подсеть) -{" "}
                         <span>
-                          <strong className="text-green">1020 Сум/мес.</strong>
+                          <strong className="text-green">СКОРО</strong>
                         </span>
                       </li>
                     </ul>

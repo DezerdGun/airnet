@@ -51,6 +51,14 @@ export default function Header({ language }) {
 						},
 						link: LINKS.BIG_VDS,
 					},
+					{
+						title: {
+							ru: "Конструктор серверов",
+							uz: "Server quruvchi",
+							en: "Custom Server",
+						},
+						link: LINKS.CUSTOM_VDS,
+					},
 				],
 			},
 			{

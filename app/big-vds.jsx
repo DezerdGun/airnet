@@ -20,6 +20,8 @@ import { clockIcon } from "shared/icons/clockIcon";
 import { warningIcon } from "shared/icons/warningIcon";
 import { supportIcon } from "shared/icons/supportIcon";
 import { calendarIcon } from "shared/icons/calendarIcon";
+import { infiniteIcon } from "shared/icons/infiniteIcon";
+import { warrantyIcon } from "shared/icons/warrantyIcon";
 import { checkLang } from "@/utils/checkLang";
 
 export default function BigVDS({ language }) {
@@ -338,6 +340,44 @@ export default function BigVDS({ language }) {
         en: <p>You can change the amount of CPU and RAM at any time, as well as increase the amount of SSD</p>,
       },
       icon: calendarIcon,
+    },
+    {
+      title: {
+        ru: "Управление по VNC",
+        uz: "VNC orqali boshqarish",
+        en: "Control via VNC",
+      },
+      description: {
+        ru: <p>Предоставляем доступ к VPS/VDS северам по протоколу удаленного доступа VNC.</p>,
+        uz: <p>VPS/VDS serverlariga VNC masofaviy kirish protokoli orqali kirishni ta'minlaymiz.</p>,
+        en: <p>We provide access to VPS/VDS servers via the VNC remote access protocol.</p>,
+      },
+      icon: warrantyIcon,
+    },
+    {
+      title: {
+        ru: "Безлимитный трафик",
+        uz: "Cheksiz trafik",
+        en: "Unlimited traffic",
+      },
+      description: {
+        ru: (
+          <p>Нет ограничений по входящему и исходящему объёму данных на всех тарифных планах с каналом от 50 Мбит/с.</p>
+        ),
+        uz: (
+          <p>
+            50 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi va chiquvchi maʼlumotlar hajmiga
+            cheklovlar yoʻq.
+          </p>
+        ),
+        en: (
+          <p>
+            There are no restrictions on incoming and outgoing data volume on all tariff plans with a channel of 50 Mbps
+            or more.
+          </p>
+        ),
+      },
+      icon: infiniteIcon,
     },
   ];
 
