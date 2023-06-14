@@ -163,13 +163,6 @@ export default function VDS({ language }) {
               </tr>
             </thead>
             <tbody>
-              {/* <tr>
-								<td>Unlim 25M</td>
-								<td>25 мбит/с</td>
-								<td>1 Гбит/с</td>
-								<td>Без ограничений</td>
-								<td>Бесплатно</td>
-							</tr> */}
               <tr>
                 <td>Unlim 50M</td>
                 <td>50 мбит/с</td>
@@ -215,13 +208,6 @@ export default function VDS({ language }) {
               </tr>
             </thead>
             <tbody>
-              {/* <tr>
-								<td>Unlim 25M</td>
-								<td>25 MB/s</td>
-								<td>1 Gbps</td>
-								<td>Cheksiz</td>
-								<td>Tekin</td>
-							</tr> */}
               <tr>
                 <td>Unlim 50M</td>
                 <td>50 MB/s</td>
@@ -267,13 +253,6 @@ export default function VDS({ language }) {
               </tr>
             </thead>
             <tbody>
-              {/* <tr>
-								<td>Unlim 25M</td>
-								<td>25 Mbps</td>
-								<td>1 Gbps</td>
-								<td>Unlimited</td>
-								<td>Free</td>
-							</tr> */}
               <tr>
                 <td>Unlim 50M</td>
                 <td>50 Mbps</td>

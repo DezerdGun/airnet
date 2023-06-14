@@ -85,30 +85,30 @@ export default function BigVDS({ language }) {
               </tr>
             </thead>
             <tbody>
-              {/* <tr>
-								<td>Unlim 50M</td>
-								<td>50 MB/s</td>
-								<td>1 Gbps</td>
-								<td>Без ограничений</td>
-								<td>Бесплатно</td>
-							</tr> */}
               <tr>
-                <td>Unlim 100M</td>
-                <td>100 MB/s</td>
-                <td>1 Gbps</td>
+                <td>Unlim 50M</td>
+                <td>50 мбит/с</td>
+                <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
                 <td>Бесплатно</td>
               </tr>
               <tr>
+                <td>Unlim 100M</td>
+                <td>100 мбит/с</td>
+                <td>1 Гбит/с</td>
+                <td>Без ограничений</td>
+                <td>2 000 000 сум/мес.</td>
+              </tr>
+              <tr>
                 <td>Unlim 200M</td>
-                <td>200 MB/s</td>
+                <td>200 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
                 <td>5 000 000 сум/мес.</td>
               </tr>
               <tr>
                 <td>Unlim 350M</td>
-                <td>350 MB/s</td>
+                <td>350 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
                 <td>10 000 000 сум/мес.</td>
@@ -124,25 +124,25 @@ export default function BigVDS({ language }) {
               <tr>
                 <th>Tarif</th>
                 <th>Internet tezligi</th>
-                <th>Tas-IX dagi internet tezligi</th>
-                <th>Tarif boyicha</th>
-                <th>Oylik mijoz to'lovi</th>
+                <th>«TAS-IX» internet tezligi</th>
+                <th>Paket</th>
+                <th>Abonent oylik to'lovi</th>
               </tr>
             </thead>
             <tbody>
-              {/* <tr>
-								<td>Unlim 50M</td>
-								<td>50 MB/s</td>
-								<td>1 Gbps</td>
-								<td>Cheksiz</td>
-								<td>Tekin</td>
-							</tr> */}
+              <tr>
+                <td>Unlim 50M</td>
+                <td>50 MB/s</td>
+                <td>1 Gbps</td>
+                <td>Cheksiz</td>
+                <td>Tekin</td>
+              </tr>
               <tr>
                 <td>Unlim 100M</td>
                 <td>100 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
-                <td>Tekin</td>
+                <td>2 000 000 so'm/oy.</td>
               </tr>
               <tr>
                 <td>Unlim 200M</td>
@@ -175,30 +175,30 @@ export default function BigVDS({ language }) {
               </tr>
             </thead>
             <tbody>
-              {/* <tr>
-								<td>Unlim 50M</td>
-								<td>50 MB/s</td>
-								<td>1 Gbps</td>
-								<td>Unlimited</td>
-								<td>Free</td>
-							</tr> */}
               <tr>
-                <td>Unlim 100M</td>
-                <td>100 MB/s</td>
+                <td>Unlim 50M</td>
+                <td>50 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
                 <td>Free</td>
               </tr>
               <tr>
+                <td>Unlim 100M</td>
+                <td>100 Mbps</td>
+                <td>1 Gbps</td>
+                <td>Unlimited</td>
+                <td>2 000 000 sum/mon.</td>
+              </tr>
+              <tr>
                 <td>Unlim 200M</td>
-                <td>200 MB/s</td>
+                <td>200 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
                 <td>5 000 000 sum/mon.</td>
               </tr>
               <tr>
                 <td>Unlim 350M</td>
-                <td>350 MB/s</td>
+                <td>350 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
                 <td>10 000 000 sum/mon.</td>
