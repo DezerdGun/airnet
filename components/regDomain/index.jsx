@@ -48,6 +48,11 @@ export const RegDomainBlock = ({ language }) => {
       uz: "so'm/yil",
       en: "sum/year",
     },
+    notValid: {
+      ru: "Временно не доступно",
+      uz: "Vaqtinchalik mavjud emas",
+      en: "Temporarily unavailable",
+    },
   };
 
   const [isDomainFree, setIsDomainFree] = useState({
@@ -184,25 +189,25 @@ export const RegDomainBlock = ({ language }) => {
           <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
             .RU - 65.000 {langData.sumVg[language]}
           </div>
-          <span>Временно не доступно</span>
+          <span>{langData.notValid[language]}</span>
         </li>
         <li className={st.regDomain__price__item}>
           <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
             .COM - 150.000 {langData.sumVg[language]}
           </div>
-          <span>Временно не доступно</span>
+          <span>{langData.notValid[language]}</span>
         </li>
         <li className={st.regDomain__price__item}>
           <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
             .NET - 150.000 {langData.sumVg[language]}
           </div>
-          <span>Временно не доступно</span>
+          <span>{langData.notValid[language]}</span>
         </li>
         <li className={st.regDomain__price__item}>
           <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
             .ORG - 200.000 {langData.sumVg[language]}
           </div>
-          <span>Временно не доступно</span>
+          <span>{langData.notValid[language]}</span>
         </li>
       </ul>
 
