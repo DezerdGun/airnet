@@ -209,6 +209,36 @@ export const RegDomainBlock = ({ language }) => {
           </div>
           <span>{langData.notValid[language]}</span>
         </li>
+        <li className={st.regDomain__price__item}>
+          <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
+            .PRO - 60.000 {langData.sumVg[language]}
+          </div>
+          <span>{langData.notValid[language]}</span>
+        </li>
+        <li className={st.regDomain__price__item}>
+          <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
+            .BIZ - 60.000 {langData.sumVg[language]}
+          </div>
+          <span>{langData.notValid[language]}</span>
+        </li>
+        <li className={st.regDomain__price__item}>
+          <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
+            .US - 180.000 {langData.sumVg[language]}
+          </div>
+          <span>{langData.notValid[language]}</span>
+        </li>
+        <li className={st.regDomain__price__item}>
+          <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
+            .BANK - 2.000.000 {langData.sumVg[language]}
+          </div>
+          <span>{langData.notValid[language]}</span>
+        </li>
+        <li className={st.regDomain__price__item}>
+          <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
+            .SHOP - 50.000 {langData.sumVg[language]}
+          </div>
+          <span>{langData.notValid[language]}</span>
+        </li>
       </ul>
 
       {/* <p className={st.regDomain__endText}>Домен в зоне UZ c хостингом - Бесплатно</p> */}
