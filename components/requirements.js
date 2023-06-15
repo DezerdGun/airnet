@@ -7,6 +7,7 @@ export const LINKS = {
 	CHEAP_VDS: '/cheap-vds',
 	OPTIMAL_VDS: '/vds',
 	BIG_VDS: '/big-vds',
+	CUSTOM_VDS: '/custom-vds',
 	VDS_1C: '/',
 	VDS_STORAGE: '/',
 	VDS_WINDOWS: '/',
