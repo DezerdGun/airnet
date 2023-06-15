@@ -9,149 +9,173 @@ $light_gray: #eeebee;
 $red: #f00;
 
 .domains {
-	&__block {
-		margin: 40px auto 0;
-		display: flex;
-		justify-content: space-between;
+  &__block {
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
 
-		&__content {
-			width: 45%;
+    &__content {
+      width: 45%;
 
-			h2 {
-				font-size: 30px;
-				margin-bottom: 20px;
-			}
+      h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
 
-			a {
-				display: block;
-				padding: 20px 40px;
-				color: $white;
-				border-radius: 10px;
-				text-align: center;
-				font-weight: 700;
-				margin: 30px 0;
-				width: fit-content;
-				background-color: $green;
-			}
-		}
-	}
+      a {
+        display: block;
+        padding: 20px 40px;
+        color: $white;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: 700;
+        margin: 30px 0;
+        width: fit-content;
+        background-color: $green;
+      }
+    }
+  }
 
-	&__head {
-		background-color: $bg_gray;
+  &__head {
+    background-color: $bg_gray;
 
-		a {
-			text-decoration: underline;
-		}
+    a {
+      text-decoration: underline;
+    }
 
-		&__block {
-			margin-top: -20px;
-			margin-bottom: 10px;
+    &__block {
+      margin-top: -20px;
+      margin-bottom: 10px;
 
-			h3 {
-				font-weight: 400;
-			}
+      h3 {
+        font-weight: 400;
+      }
 
-			p {
-				color: $black;
-			}
+      p {
+        color: $black;
+      }
 
-			&__item {
-				margin: 40px 0;
-				text-align: center;
-			}
+      &__item {
+        margin: 40px 0;
+        text-align: center;
+      }
 
-			&__text {
-				&__red {
-					color: $red;
-				}
+      &__text {
+        &__red {
+          color: $red;
+        }
 
-				&__green {
-					color: $green;
-				}
-			}
+        &__green {
+          color: $green;
+        }
+      }
 
-			&__table {
-				table {
-					width: 100%;
+      &__table {
+        table {
+          width: 100%;
 
-					tr {
-						td,
-						th {
-							padding: 10px;
-							text-align: center;
-							border-right: 1px solid $light_gray;
+          tr {
+            td,
+            th {
+              padding: 10px;
+              text-align: center;
+              border-right: 1px solid $light_gray;
 
-							&:last-child {
-								border-right: none;
+              &:last-child {
+                border-right: none;
 
-								a {
-									display: block;
-									padding: 10px;
-									color: $white;
-									background-color: $green;
-									text-decoration: none;
-								}
-							}
-						}
+                a {
+                  display: block;
+                  padding: 10px;
+                  color: $white;
+                  background-color: $green;
+                  text-decoration: none;
+                }
+              }
+            }
 
-						&:last-child {
-							th,
-							td {
-								background-color: $white;
-							}
-						}
+            &:last-child {
+              th,
+              td {
+                background-color: $white;
+              }
+            }
 
-						&:first-child {
-							th {
-								color: $white;
-								background-color: $green;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+            &:first-child {
+              th {
+                color: $white;
+                background-color: $green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
-	@media (max-width: 880px) {
-		&__head {
-			&__block {
-				&__table {
-					overflow-x: scroll;
+  @media (max-width: 880px) {
+    &__block {
+      &__content {
+        width: 55%;
+      }
 
-					table {
-						width: 790px;
-					}
-				}
-			}
-		}
-	}
+      img {
+        width: 250px;
+      }
+    }
+    &__head {
+      &__block {
+        &__table {
+          overflow-x: scroll;
 
-	@media (max-width: 550px) {
-		&__head {
-			&__block {
-				&__item {
-					margin: 20px 0;
-				}
+          table {
+            width: 790px;
+          }
+        }
+      }
+    }
+  }
 
-				&__table {
-					overflow-x: scroll;
+  @media (max-width: 550px) {
+    &__block {
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
 
-					table {
-						width: 790px;
-					}
-				}
-			}
-		}
-	}
+      &__content {
+        width: 80%;
+      }
 
-	@media (max-width: 450px) {
-		&__head {
-			&__block {
-				&__item {
-					margin: 10px 0;
-				}
-			}
-		}
-	}
+      &__img {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &__head {
+      &__block {
+        &__item {
+          margin: 20px 0;
+        }
+
+        &__table {
+          overflow-x: scroll;
+
+          table {
+            width: 790px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    &__head {
+      &__block {
+        &__item {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
 }
