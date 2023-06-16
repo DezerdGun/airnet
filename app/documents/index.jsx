@@ -1,12 +1,87 @@
 import Container from "@/components/container";
-import FAQ from "@/components/faq";
 import Partners from "@/components/partners";
-import { LINKS } from "@/components/requirements";
 import SEO from "@/components/seo";
-import { checkLang } from "@/utils/checkLang";
-import Link from "next/link";
+import { HelpItemBlock } from "@/components/helpItem";
 
 export default function Documents({ language }) {
+  const data = [
+    {
+      title: {
+        ru: "Шаблоны заявлений на передачу прав другому владельцу",
+        uz: "Huquqlarni boshqa egasiga o'tkazish uchun arizalar uchun shablonlar",
+        en: "Templates for applications for the transfer of rights to another owner",
+      },
+      link: "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner",
+      children: [
+        {
+          id: "domain to another owner",
+          title: {
+            ru: "Шаблоны заявлений на передачу домена другому владельцу",
+            uz: "Domenni boshqa egasiga o'tkazish uchun dastur shablonlari",
+            en: "Application templates for transferring a domain to another owner",
+          },
+          link: "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/application-templates-for-transferring-a-domain-to-another-owner",
+        },
+        {
+          id: "server to another owner",
+          title: {
+            ru: "Шаблоны заявлений на передачу сервера другому владельцу",
+            uz: "Serverni boshqa egasiga o'tkazish uchun ilovalar shablonlari",
+            en: "Templates of applications for the transfer of the server to another owner",
+          },
+          link: "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/templates-of-applications-for-the-transfer-of-the-server-to-another-owner",
+        },
+        {
+          id: "account to another owner",
+          title: {
+            ru: "Шаблоны заявлений на передачу хостингового аккаунта другому владельцу",
+            uz: "Xosting hisobini boshqa egasiga o'tkazish uchun shablonlar",
+            en: "Templates for transferring a hosting account to another owner",
+          },
+          link: "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/templates-for-transferring-a-hosting-account-to-another-owner",
+        },
+      ],
+    },
+    {
+      title: {
+        ru: "Трансфер домена другому регистратору",
+        uz: "Domenni boshqa registratorga o'tkazish",
+        en: "Transferring a domain to another registrar",
+      },
+      link: "/documents/transferring-a-domain-to-another-registrar",
+      children: [
+        {
+          id: "transfer to another registrar",
+          title: {
+            ru: "Шаблоны заявлений на передачу домена другому регистратору",
+            uz: "Domenni boshqa ro'yxatga oluvchiga o'tkazish uchun ariza shablonlari",
+            en: "Application templates for domain transfer to another registrar",
+          },
+          link: "/documents/transferring-a-domain-to-another-registrar/application-templates-for-domain-transfer-to-another-registrar",
+        },
+      ],
+    },
+    {
+      title: {
+        ru: "Изменить контактный е-мейл",
+        uz: "Kontakt elektron pochta manzilini o'zgartirish",
+        en: "Change contact email",
+      },
+      link: "/documents/change-contact-email",
+      children: [
+        {
+          id: "changing the contact e-mail box",
+          title: {
+            ru: "Шаблоны заявлений на смену контактного электронного почтового ящика",
+            uz: "Kontakt elektron pochta qutisini o'zgartirish uchun dastur shablonlari",
+            en: "Application templates for changing the contact e-mail box",
+          },
+          link: "/documents/change-contact-email/application-templates-for-changing-the-contact-e-mail-box",
+        },
+      ],
+    },
+  ];
+
   const langData = {
     seoTitle: {
       ru: "Документы и договора | Airnet",
@@ -47,6 +122,7 @@ export default function Documents({ language }) {
           {langData.cTend[language]}
         </p>
       </Container>
+      <HelpItemBlock data={{ content: data }} language={language} />
       <Partners language={language} />
     </>
   );
