@@ -122,7 +122,7 @@ export default function EMAIL({ language }) {
       {
         title: { ru: "Конфиденциальность", uz: "Maxfiylik", en: "Confidentiality" },
         description: {
-          ru: <p>Вы сможете управлять персональными черным и белым списками отправителей и получателей</p>,
+          ru: <p>Вы сможете управлять персональными черными и белыми списками отправителей и получателей</p>,
           uz: (
             <p>Siz jo'natuvchilar va qabul qiluvchilarning shaxsiy qora va oq ro'yxatlarini boshqarishingiz mumkin</p>
           ),
@@ -133,7 +133,7 @@ export default function EMAIL({ language }) {
       {
         title: { ru: "Безопасность", uz: "Xavfsizlik", en: "Safety" },
         description: {
-          ru: <p>Предоставляем управление персональным черным и белым списками отправителей и получателей</p>,
+          ru: <p>Предоставляем управление персональным черными и белыми списками отправителей и получателей</p>,
           uz: <p>Biz jo'natuvchilar va oluvchilarning shaxsiy qora va oq ro'yxatlarini boshqarishni ta'minlaymiz</p>,
           en: <p>We provide management of personal black and white lists of senders and recipients</p>,
         },
@@ -160,7 +160,7 @@ export default function EMAIL({ language }) {
           ru: (
             <>
               <p>
-                Подписка позволяет автоматизировать процесс продления <span class="nobr">Корпоративной почты</span>и
+                Подписка позволяет автоматизировать процесс продления <span class="nobr">Корпоративной почты</span> и
                 сэкономить при единовременной оплате. Вы можете оформить подписку на 1, 6, 9 и 12 месяцев — чем больше
                 срок, тем больше скидка.
               </p>
@@ -219,7 +219,7 @@ export default function EMAIL({ language }) {
           ru: (
             <p>
               IDN (Internationalized Domain Names) — доменные имена, которые содержат символы национальных алфавитов.
-              Поддержка IDN означает, что сертификат поддерживает нелатинские буквы в доменных именах и может
+              Поддержка IDN означает, что сертификат поддерживает не латинские буквы в доменных именах и может
               использоваться для доменных имён на национальных языках (например, эйрнет.uz).
             </p>
           ),

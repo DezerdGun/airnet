@@ -835,21 +835,9 @@ export default function Home({ language }) {
           en: "Servers in Tashkent",
         },
         description: {
-          ru: (
-            <p>
-              Хранение и обработка данных происходит на территории Узбекистана и в зоне TAS-IX.
-            </p>
-          ),
-          uz: (
-            <p>
-              Ma'lumotlarni saqlash va qayta ishlash O'zbekiston hududida va TAS-IX zonasida amalga oshiriladi.
-            </p>
-          ),
-          en: (
-            <p>
-              Data storage and processing takes place on the territory of Uzbekistan and in the TAS-IX zone.
-            </p>
-          ),
+          ru: <p>Хранение и обработка данных происходит на территории Узбекистана и в зоне TAS-IX.</p>,
+          uz: <p>Ma'lumotlarni saqlash va qayta ishlash O'zbekiston hududida va TAS-IX zonasida amalga oshiriladi.</p>,
+          en: <p>Data storage and processing takes place on the territory of Uzbekistan and in the TAS-IX zone.</p>,
         },
         icon: serversIcon,
       },
@@ -860,21 +848,9 @@ export default function Home({ language }) {
           en: "Speed",
         },
         description: {
-          ru: (
-            <p>
-              Максимальная скорость работы сайтов благодаря SSD дискам.
-            </p>
-          ),
-          uz: (
-            <p>
-              SSD drayvlar tufayli veb-saytning maksimal tezligi.
-            </p>
-          ),
-          en: (
-            <p>
-              Maximum website speed thanks to SSD drives.
-            </p>
-          ),
+          ru: <p>Максимальная скорость работы сайтов благодаря SSD дискам.</p>,
+          uz: <p>SSD drayvlar tufayli veb-saytning maksimal tezligi.</p>,
+          en: <p>Maximum website speed thanks to SSD drives.</p>,
         },
         icon: databaseIcon,
       },
@@ -981,7 +957,6 @@ export default function Home({ language }) {
           ))}
         </Swiper>
       </TarifMaket>
-      <Sitepad language={language} />
       <Stock language={language} />
       <Reviews language={language} />
       <Trust language={language} />
