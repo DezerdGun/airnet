@@ -225,96 +225,96 @@ const sitemap = [
   },
   { title: { ru: "Документы", uz: "Hujjatlar", en: "Documentation" }, link: "/documents" },
   { title: { ru: "Домены", uz: "Domenlar", en: "Domains" }, link: "/domains" },
-  {
-    title: { ru: "Частые вопросы", uz: "Malum savollar", en: "FAQ" },
-    link: "/faq",
-    children: [
-      {
-        title: { ru: "Что такое домен?", uz: "Domen nma?", en: "What is a domain?" },
-        link: "/faq/chto-takoe-domen",
-      },
-      {
-        title: {
-          ru: "Как новичку выбрать хостинг-провайдера: 5 простых советов",
-          uz: "Yangi mijozlar uchun host tanlashning: 5 oson uslubi",
-          en: "How to choose a hosting provider for a beginner: 5 simple tips",
-        },
-        link: "/faq/kak-novichku-vybrat-xosting-provajdera-5-prostyx-sovetov",
-      },
-      {
-        title: {
-          ru: "Как перенести сайт на хостинг AIRNET?",
-          uz: "Saytni qanday qilib AIRNET hostiga otkazish",
-          en: "How to transfer a website to AIRNET hosting?",
-        },
-        link: "/faq/kak-perenesti-sajt-na-xosting-airnet",
-      },
-      {
-        title: {
-          ru: "Как получить тестовый период?",
-          uz: "Qanday qilib sinov muddatini olish",
-          en: "How to get a trial period?",
-        },
-        link: "/faq/kak-poluchit-testovyj-period",
-      },
-      {
-        title: {
-          ru: "Как проверить домен на занятость?",
-          uz: "Domen bandligini tekshirish",
-          en: "How to check if a domain is busy?",
-        },
-        link: "/faq/kak-proverit-domen-na-zanyatost",
-      },
-      {
-        title: {
-          ru: "Как установить WordPress на хостинг?",
-          uz: "WordPress ni qanday qilib xostga yuklash",
-          en: "How to install WordPress on hosting?",
-        },
-        link: "/faq/kak-ustanovit-wordpress-na-xosting",
-      },
-      {
-        title: {
-          ru: "Как заключить договор?",
-          uz: "Qanday qilib shartnoma tuzish",
-          en: "How to conclude an agreement?",
-        },
-        link: "/faq/kak-zaklyuchit-dogovor",
-      },
-      {
-        title: {
-          ru: "Как зарегистрировать домен?",
-          uz: "Domenni qanday royxatdan otqazish",
-          en: "How to register a domain?",
-        },
-        link: "/faq/kak-zaregistrirovat-domen",
-      },
-      {
-        title: {
-          ru: "Ошибочно зарегистрировал домен, можно ли отменить?",
-          uz: "Domenni royhatdan otqazishda hatolik, tog'irlash mumkinmi?",
-          en: "I registered a domain by mistake, can I cancel it?",
-        },
-        link: "/faq/oshibochno-zaregistriroval-domen",
-      },
-      {
-        title: {
-          ru: "Правила регистрации доменных имен в зоне .UZ",
-          uz: "Domen nomlarini .UZ da ornatish qoidalari",
-          en: "Rules for registering domain names in the .UZ zone",
-        },
-        link: "/faq/pravilo-registracii-domena-v-zone-uz",
-      },
-      {
-        title: {
-          ru: "Я зарегистрировал домен, что дальше?",
-          uz: "Domenni royhattan otkazdim, endichi?",
-          en: "I have registered a domain, what's next?",
-        },
-        link: "/faq/ya-zaregistriroval-domen-chto-dalshe",
-      },
-    ],
-  },
+  // {
+  //   title: { ru: "Частые вопросы", uz: "Malum savollar", en: "FAQ" },
+  //   link: "/faq",
+  //   children: [
+  //     {
+  //       title: { ru: "Что такое домен?", uz: "Domen nma?", en: "What is a domain?" },
+  //       link: "/faq/chto-takoe-domen",
+  //     },
+  //     {
+  //       title: {
+  //         ru: "Как новичку выбрать хостинг-провайдера: 5 простых советов",
+  //         uz: "Yangi mijozlar uchun host tanlashning: 5 oson uslubi",
+  //         en: "How to choose a hosting provider for a beginner: 5 simple tips",
+  //       },
+  //       link: "/faq/kak-novichku-vybrat-xosting-provajdera-5-prostyx-sovetov",
+  //     },
+  //     {
+  //       title: {
+  //         ru: "Как перенести сайт на хостинг AIRNET?",
+  //         uz: "Saytni qanday qilib AIRNET hostiga otkazish",
+  //         en: "How to transfer a website to AIRNET hosting?",
+  //       },
+  //       link: "/faq/kak-perenesti-sajt-na-xosting-airnet",
+  //     },
+  //     {
+  //       title: {
+  //         ru: "Как получить тестовый период?",
+  //         uz: "Qanday qilib sinov muddatini olish",
+  //         en: "How to get a trial period?",
+  //       },
+  //       link: "/faq/kak-poluchit-testovyj-period",
+  //     },
+  //     {
+  //       title: {
+  //         ru: "Как проверить домен на занятость?",
+  //         uz: "Domen bandligini tekshirish",
+  //         en: "How to check if a domain is busy?",
+  //       },
+  //       link: "/faq/kak-proverit-domen-na-zanyatost",
+  //     },
+  //     {
+  //       title: {
+  //         ru: "Как установить WordPress на хостинг?",
+  //         uz: "WordPress ni qanday qilib xostga yuklash",
+  //         en: "How to install WordPress on hosting?",
+  //       },
+  //       link: "/faq/kak-ustanovit-wordpress-na-xosting",
+  //     },
+  //     {
+  //       title: {
+  //         ru: "Как заключить договор?",
+  //         uz: "Qanday qilib shartnoma tuzish",
+  //         en: "How to conclude an agreement?",
+  //       },
+  //       link: "/faq/kak-zaklyuchit-dogovor",
+  //     },
+  //     {
+  //       title: {
+  //         ru: "Как зарегистрировать домен?",
+  //         uz: "Domenni qanday royxatdan otqazish",
+  //         en: "How to register a domain?",
+  //       },
+  //       link: "/faq/kak-zaregistrirovat-domen",
+  //     },
+  //     {
+  //       title: {
+  //         ru: "Ошибочно зарегистрировал домен, можно ли отменить?",
+  //         uz: "Domenni royhatdan otqazishda hatolik, tog'irlash mumkinmi?",
+  //         en: "I registered a domain by mistake, can I cancel it?",
+  //       },
+  //       link: "/faq/oshibochno-zaregistriroval-domen",
+  //     },
+  //     {
+  //       title: {
+  //         ru: "Правила регистрации доменных имен в зоне .UZ",
+  //         uz: "Domen nomlarini .UZ da ornatish qoidalari",
+  //         en: "Rules for registering domain names in the .UZ zone",
+  //       },
+  //       link: "/faq/pravilo-registracii-domena-v-zone-uz",
+  //     },
+  //     {
+  //       title: {
+  //         ru: "Я зарегистрировал домен, что дальше?",
+  //         uz: "Domenni royhattan otkazdim, endichi?",
+  //         en: "I have registered a domain, what's next?",
+  //       },
+  //       link: "/faq/ya-zaregistriroval-domen-chto-dalshe",
+  //     },
+  //   ],
+  // },
   {
     title: { ru: "Бесплатные домены", uz: "Bepul domen", en: "Free Domains" },
     link: "/free-domains",

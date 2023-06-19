@@ -6,15 +6,6 @@ const data = {
     title: { ru: "Документы", uz: "Hujjatlar", en: "Documentation" },
     children: [
       {
-        id: "agreement",
-        title: {
-          ru: "Как заключить договор?",
-          uz: "Qanday qilib shartnoma tuzish",
-          en: "How to conclude an agreement?",
-        },
-        link: "/faq/kak-zaklyuchit-dogovor",
-      },
-      {
         id: "services",
         title: {
           ru: "Лицензия на предоставление услуг хостинга",

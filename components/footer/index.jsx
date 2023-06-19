@@ -153,16 +153,16 @@ export default function Footer({ language }) {
           },
         },
         {
-          link: LINKS.VDS_1C,
-          title: { ru: "VDS для 1C", uz: "1C uchun VDS", en: "VDS for 1C" },
-        },
-        {
           title: {
             ru: "Конструктор серверов",
             uz: "Server quruvchi",
             en: "Custom Server",
           },
           link: LINKS.CUSTOM_VDS,
+        },
+        {
+          link: LINKS.VDS_1C,
+          title: { ru: "VDS для 1C", uz: "1C uchun VDS", en: "VDS for 1C" },
         },
         // {
         //   link: LINKS.VDS_STORAGE,
@@ -414,7 +414,7 @@ export default function Footer({ language }) {
   // 				title:{ru: 'Контакты',uz:""},
   // 			},
   // 			{
-  // 				link: LINKS.FAQ,
+  // 				link: LINKS.HELP,
   // 				title:{ru: 'Документы',uz:""},
   // 			},
   // 			{
