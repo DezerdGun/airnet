@@ -20,6 +20,7 @@ import { databaseIcon } from "shared/icons/databaseIcon";
 import { warningIcon } from "shared/icons/warningIcon";
 import { infiniteIcon } from "shared/icons/infiniteIcon";
 import { warrantyIcon } from "shared/icons/warrantyIcon";
+import AvailableOS from "@/components/availableOS";
 
 export default function CheapVds({ language }) {
   const [show, setShow] = useState(-1);
@@ -144,7 +145,9 @@ export default function CheapVds({ language }) {
         },
         description: {
           ru: (
-            <p>Нет ограничений по входящему и исходящему объёму данных на всех тарифных планах с каналом от 50 Мбит/с.</p>
+            <p>
+              Нет ограничений по входящему и исходящему объёму данных на всех тарифных планах с каналом от 50 Мбит/с.
+            </p>
           ),
           uz: (
             <p>
@@ -154,8 +157,8 @@ export default function CheapVds({ language }) {
           ),
           en: (
             <p>
-              There are no restrictions on incoming and outgoing data volume on all tariff plans with a channel of 50 Mbps
-              or more.
+              There are no restrictions on incoming and outgoing data volume on all tariff plans with a channel of 50
+              Mbps or more.
             </p>
           ),
         },
@@ -423,6 +426,7 @@ export default function CheapVds({ language }) {
 				</TarifMaket> */}
 
         <ForFreeBlock data={forFreeVDSData} language={language} />
+        <AvailableOS language={language} />
 
         {/* <Container className="text-center" title={langData.cT[language]} description={langData.cD[language]}>
           <div className={st.vds__table}>

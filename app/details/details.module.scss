@@ -1,0 +1,155 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$bg_gray: #f8f8f8;
+$dark_gray: #666;
+$light_gray: #eeebee;
+$red: #f00;
+
+.details {
+  &__banner {
+    display: flex;
+    justify-content: space-between;
+    min-height: 300px;
+    background: url("/details.png") no-repeat;
+    background-position: 100% 120px;
+    background-size: 200px;
+
+    h1 {
+      padding-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      color: $gray;
+    }
+  }
+
+  &__block {
+    padding-top: 40px;
+
+    h5 {
+      margin-top: 10px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    &__author {
+      width: fit-content;
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        border-radius: 50%;
+      }
+
+      p {
+        color: $gray;
+        font-size: 18px;
+      }
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      padding: 40px 20px;
+      border-top: 1px solid $gray;
+      flex-wrap: wrap;
+      row-gap: 20px;
+
+      &__item {
+        width: 100%;
+
+        h5 {
+          margin-bottom: 20px;
+        }
+
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+
+          li {
+            display: flex;
+            gap: 5px;
+            margin-top: 10px;
+            font-weight: 500;
+            flex-wrap: wrap;
+
+            svg {
+              width: auto;
+              min-width: 20px;
+              height: 20px;
+              stroke: $green;
+            }
+
+            span {
+              color: $gray;
+              display: flex;
+              gap: 5px;
+            }
+          }
+        }
+
+        &:last-child {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 550px) {
+    &__banner {
+      align-items: center;
+      background-position: 100% 30px;
+      background-size: 250px;
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  @media (min-width: 770px) {
+    &__banner {
+      min-height: 400px;
+      background-position: 100% 0;
+      background-size: 350px;
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    &__block {
+      &__content {
+        padding: 40px 20px;
+
+        &__item {
+          width: 48%;
+
+          ul {
+            li {
+              flex-wrap: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &__banner {
+      min-height: 400px;
+      background-size: 450px;
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+}

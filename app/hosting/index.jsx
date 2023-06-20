@@ -23,6 +23,7 @@ import { settingsIcon } from "shared/icons/settingsIcon";
 import { presentIcon } from "shared/icons/presentIcon";
 import Link from "next/link";
 import { LINKS } from "@/components/requirements";
+import AvailablePO from "@/components/availablePO";
 
 export default function Hosting({ language }) {
   const [show, setShow] = useState(-1);
@@ -447,17 +448,26 @@ export default function Hosting({ language }) {
         description: {
           ru: (
             <>
-              <p>Да. Домена можно не переносить в нашу систему но у домена долны быть прописаны наши DNS сервера которые после активации хостинга будут отправлены на ваш email.</p>
+              <p>
+                Да. Домена можно не переносить в нашу систему но у домена долны быть прописаны наши DNS сервера которые
+                после активации хостинга будут отправлены на ваш email.
+              </p>
             </>
           ),
           uz: (
             <>
-              <p>Ha. Domenlarni bizning tizimimizga o'tkazib bo'lmaydi, lekin domenda DNS serverlarimiz ro'yxatdan o'tgan bo'lishi kerak, ular hosting faollashtirilgandan so'ng elektron pochtangizga yuboriladi.</p>
+              <p>
+                Ha. Domenlarni bizning tizimimizga o'tkazib bo'lmaydi, lekin domenda DNS serverlarimiz ro'yxatdan o'tgan
+                bo'lishi kerak, ular hosting faollashtirilgandan so'ng elektron pochtangizga yuboriladi.
+              </p>
             </>
           ),
           en: (
             <>
-              <p>Yes. Domains can not be transferred to our system, but the domain must have our DNS servers registered, which, after hosting activation, will be sent to your email.</p>
+              <p>
+                Yes. Domains can not be transferred to our system, but the domain must have our DNS servers registered,
+                which, after hosting activation, will be sent to your email.
+              </p>
             </>
           ),
         },
@@ -471,17 +481,26 @@ export default function Hosting({ language }) {
         description: {
           ru: (
             <>
-              <p>Нет, root-доступ и SSH-доступ недоступен для планов виртуального хостинга на Cpanel. Если вам требуется root-доступ и SSH-доступ, мы рекомендуем вам приобрести виртуальный сервер.</p>
+              <p>
+                Нет, root-доступ и SSH-доступ недоступен для планов виртуального хостинга на Cpanel. Если вам требуется
+                root-доступ и SSH-доступ, мы рекомендуем вам приобрести виртуальный сервер.
+              </p>
             </>
           ),
           uz: (
             <>
-              <p>Yo'q, cpanel umumiy hosting rejalari uchun ildizga kirish va SSH ruxsati mavjud emas. Agar siz ildizga kirish va SSHga kirishni talab qilsangiz, virtual server sotib olishingizni tavsiya qilamiz.</p>
+              <p>
+                Yo'q, cpanel umumiy hosting rejalari uchun ildizga kirish va SSH ruxsati mavjud emas. Agar siz ildizga
+                kirish va SSHga kirishni talab qilsangiz, virtual server sotib olishingizni tavsiya qilamiz.
+              </p>
             </>
           ),
           en: (
             <>
-              <p>No, root access and SSH access are not available for cpanel shared hosting plans. If you require root access and SSH access, we recommend that you purchase a virtual server.</p>
+              <p>
+                No, root access and SSH access are not available for cpanel shared hosting plans. If you require root
+                access and SSH access, we recommend that you purchase a virtual server.
+              </p>
             </>
           ),
         },
@@ -495,17 +514,26 @@ export default function Hosting({ language }) {
         description: {
           ru: (
             <>
-              <p>На хостинге установлена всегда последние версии MySQL и MariaDB. Всю необходимую информацию о сервере Вы можете уточнить у технической поддержки.</p>
+              <p>
+                На хостинге установлена всегда последние версии MySQL и MariaDB. Всю необходимую информацию о сервере Вы
+                можете уточнить у технической поддержки.
+              </p>
             </>
           ),
           uz: (
             <>
-              <p>Xostingda har doim MySQL va MariaDB ning so'nggi versiyalari o'rnatilgan. Server haqida barcha kerakli ma'lumotlarni texnik yordamdan olishingiz mumkin.</p>
+              <p>
+                Xostingda har doim MySQL va MariaDB ning so'nggi versiyalari o'rnatilgan. Server haqida barcha kerakli
+                ma'lumotlarni texnik yordamdan olishingiz mumkin.
+              </p>
             </>
           ),
           en: (
             <>
-              <p>The hosting always has the latest versions of MySQL and MariaDB installed. You can get all the necessary information about the server from technical support.</p>
+              <p>
+                The hosting always has the latest versions of MySQL and MariaDB installed. You can get all the necessary
+                information about the server from technical support.
+              </p>
             </>
           ),
         },
@@ -682,23 +710,17 @@ export default function Hosting({ language }) {
       description: {
         ru: (
           <>
-            <p>
-              Активация Cpanel хостинга выполняется мгновенно после оплаты счета.
-            </p>
+            <p>Активация Cpanel хостинга выполняется мгновенно после оплаты счета.</p>
           </>
         ),
         uz: (
           <>
-            <p>
-              Cpanel hostingni faollashtirish hisob-faktura to'langanidan so'ng darhol amalga oshiriladi
-            </p>
+            <p>Cpanel hostingni faollashtirish hisob-faktura to'langanidan so'ng darhol amalga oshiriladi</p>
           </>
         ),
         en: (
           <>
-            <p>
-              Activation of cpanel hosting is performed instantly after payment of the invoice
-            </p>
+            <p>Activation of cpanel hosting is performed instantly after payment of the invoice</p>
           </>
         ),
       },
@@ -760,11 +782,7 @@ export default function Hosting({ language }) {
       title: { ru: "Бесплатные SSL", uz: "Bepul SSL", en: "Free SSL" },
       description: {
         ru: <p>Обеспечьте вашему сайту защищённое HTTPS‑соединение с помощью бесплатного сертификата.</p>,
-        uz: (
-          <p>
-            Saytingizga bepul sertifikat bilan xavfsiz HTTPS ulanishini bering.
-          </p>
-        ),
+        uz: <p>Saytingizga bepul sertifikat bilan xavfsiz HTTPS ulanishini bering.</p>,
         en: <p>Give your site a secure HTTPS connection with a free certificate.</p>,
       },
       icon: calendarIcon,
@@ -777,7 +795,12 @@ export default function Hosting({ language }) {
       },
       description: {
         ru: <p>Наши специалисты бесплатно и быстро перенесут Ваши сайты и настроят их на нашем хостинге.</p>,
-        uz: <p>Bizning mutaxassislarimiz saytlaringizni tez va bepul o'tkazadilar va ularni bizning hostingimizga o'rnatadilar.</p>,
+        uz: (
+          <p>
+            Bizning mutaxassislarimiz saytlaringizni tez va bepul o'tkazadilar va ularni bizning hostingimizga
+            o'rnatadilar.
+          </p>
+        ),
         en: <p>Our specialists will quickly and free of charge transfer your sites and set them up on our hosting.</p>,
       },
       icon: settingsIcon,
@@ -791,17 +814,20 @@ export default function Hosting({ language }) {
       description: {
         ru: (
           <p>
-            При единоразовой оплате хостинга на год Вы экономите до 20% в зависимости от тарифа и получаете бесплатный домен в зоне UZ.
+            При единоразовой оплате хостинга на год Вы экономите до 20% в зависимости от тарифа и получаете бесплатный
+            домен в зоне UZ.
           </p>
         ),
         uz: (
           <p>
-            Bir yil davomida xosting uchun bir martalik toʻlov bilan siz tarifga qarab 20% gacha tejaysiz va UZ zonasida bepul domenga ega boʻlasiz.
+            Bir yil davomida xosting uchun bir martalik toʻlov bilan siz tarifga qarab 20% gacha tejaysiz va UZ zonasida
+            bepul domenga ega boʻlasiz.
           </p>
         ),
         en: (
           <p>
-            With a one-time payment for hosting for a year, you save up to 20% depending on the tariff and get a free domain in the UZ zone
+            With a one-time payment for hosting for a year, you save up to 20% depending on the tariff and get a free
+            domain in the UZ zone
           </p>
         ),
       },
@@ -913,6 +939,8 @@ export default function Hosting({ language }) {
         <div className={`bg-gray`}>
           <ForFreeBlock data={forFreeData} language={language} />
         </div>
+
+        <AvailablePO language={language} />
 
         <Container
           title={langData.wordpressTitle[language]}

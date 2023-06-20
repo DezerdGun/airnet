@@ -21,6 +21,9 @@ import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ForFreeBlock from "@/components/forFreeBlock";
+import { forFreeVDSData } from "../vds";
+import AvailableOS from "@/components/availableOS";
 
 export default function CustomVDS({ language }) {
   const [show, setShow] = useState(-1);
@@ -408,6 +411,10 @@ export default function CustomVDS({ language }) {
       <div>
         <Container headTitle={langData.headTitle[language]} clNTitle="text-center" className="pb-0"></Container>
         <Calculator language={language} />
+
+        <ForFreeBlock data={forFreeVDSData} language={language} />
+
+        <AvailableOS language={language} />
 
         <WhyBlock content={block} language={language} />
 

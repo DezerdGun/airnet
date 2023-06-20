@@ -23,6 +23,7 @@ import { calendarIcon } from "shared/icons/calendarIcon";
 import { infiniteIcon } from "shared/icons/infiniteIcon";
 import { warrantyIcon } from "shared/icons/warrantyIcon";
 import { checkLang } from "@/utils/checkLang";
+import AvailableOS from "@/components/availableOS";
 
 export default function BigVDS({ language }) {
   const [show, setShow] = useState(-1);
@@ -631,6 +632,7 @@ export default function BigVDS({ language }) {
         <WhyBlock content={whyBlock} language={language} />
 
         <ForFreeBlock data={forFreeVDSData} language={language} />
+        <AvailableOS language={language} />
 
         <Container className="text-center" title={langData.cT[language]} description={langData.dT[language]}>
           <div className={st.vds__table}>

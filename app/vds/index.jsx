@@ -21,6 +21,7 @@ import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
+import AvailableOS from "@/components/availableOS";
 
 export const forFreeVDSData = {
   title: {
@@ -652,6 +653,8 @@ export default function VDS({ language }) {
         <WhyBlock content={whyBlock} language={language} />
 
         <ForFreeBlock data={forFreeVDSData} language={language} />
+
+        <AvailableOS language={language} />
 
         <Container className="text-center" title={langData.cT[language]} description={langData.cD[language]}>
           <div className={st.vds__table}>
