@@ -70,13 +70,78 @@ const Details = ({ language }) => {
   const langData = {
     title: {
       ru: "Реквизиты компании",
-      uz: "",
-      en: "",
+      uz: "Kompaniya tafsilotlari",
+      en: "Company details",
     },
     description: {
       ru: "Юридическая информация",
-      uz: "",
-      en: "",
+      uz: "Huquqiy ma'lumotlar",
+      en: "Legal information",
+    },
+    author: {
+      ru: "Данаев Алмаз",
+      uz: "Danaev Almaz",
+      en: "Danaev Almaz",
+    },
+    prinimatel: {
+      ru: "Индивидуальный предприниматель",
+      uz: "Yakka tartibdagi tadbirkor",
+      en: "Individual entrepreneur",
+    },
+    inn: {
+      ru: "ИНН",
+      uz: "KARVONSAROY",
+      en: "INN",
+    },
+    oked: {
+      ru: "ОКЭД",
+      uz: "OKED",
+      en: "OKED",
+    },
+    addressTitle: {
+      ru: "Адрес",
+      uz: "Manzil",
+      en: "Address",
+    },
+    address: {
+      ru: "100060, г. Ташкент, Мирабадский район, ул. Савр, 1А Регистрационный номер НДС: 326010205838",
+      uz: "100060, Toshkent sh., Mirobod tumani, Savr ko‘chasi, 1A QQS davlat raqami: 326010205838",
+      en: "100060, Tashkent, Mirabad district, Savr street, 1A VAT registration number: 326010205838",
+    },
+    banks: {
+      ru: "Банковские реквизиты",
+      uz: "Bank rekvizitlari",
+      en: "Bank details",
+    },
+    aikb: {
+      ru: "АИКБ",
+      uz: "AIKB",
+      en: "AIKB",
+    },
+    mfo: {
+      ru: "МФО",
+      uz: "MFO",
+      en: "MFO",
+    },
+    count: {
+      ru: "Счет",
+      uz: "Tekshirish",
+      en: "Check",
+    },
+    contactInfo: {
+      ru: "Контактная информация",
+      uz: "Bog'lanish uchun ma'lumot",
+      en: "Contact Information",
+    },
+    korrespondent: {
+      ru: "Для корреспонденции",
+      uz: "Xat yozish uchun",
+      en: "For Correspondence",
+    },
+    address2: {
+      ru: "100170, г. Ташкент, Мирзо-Улугбекский район, ул. Сайрам, 25",
+      uz: "100170, Toshkent sh., Mirzo Ulugʻbek tumani, Sayram koʻchasi, 25-uy",
+      en: "100170, Tashkent, Mirzo-Ulugbek district, Sairam street, 25",
     },
   };
 
@@ -94,71 +159,71 @@ const Details = ({ language }) => {
         <Container>
           <div className={styles.details__block__author}>
             <Image src="/author/almaz-danaev.jpg" width={110} height={110} priority />
-            <h5>Данаев Алмаз</h5>
-            <p>Индивидуальный предприниматель</p>
+            <h5>{langData.author[language]}</h5>
+            <p>{langData.prinimatel[language]}</p>
           </div>
           <div className={styles.details__block__content}>
             <div className={styles.details__block__content__item}>
-              <h5>Юридическая информация:</h5>
+              <h5>{langData.description[language]}:</h5>
               <ul>
                 <li>
                   <span>
                     {infoIcon}
-                    ИНН:
+                    {langData.inn[language]}:
                   </span>{" "}
                   305264467
                 </li>
                 <li>
                   <span>
                     {infoIcon}
-                    ОКЭД:
+                    {langData.oked[language]}:
                   </span>{" "}
                   63110
                 </li>
                 <li>
                   <span>
                     {addressIcon}
-                    Адрес:
+                    {langData.addressTitle[language]}:
                   </span>{" "}
-                  100060, г. Ташкент, Мирабадский район, ул. Савр, 1А Регистрационный номер НДС: 326010205838
+                  {langData.address[language]}
                 </li>
               </ul>
             </div>
             <div className={styles.details__block__content__item}>
-              <h5>Банковские реквизиты:</h5>
+              <h5> {langData.banks[language]}:</h5>
               <ul>
                 <li>
                   <span>
                     {infoIcon}
-                    АИКБ:
+                    {langData.aikb[language]}:
                   </span>{" "}
                   «Ипак Йули»
                 </li>
                 <li>
                   <span>
                     {phoneIcon}
-                    МФО:
+                    {langData.mfo[language]}:
                   </span>{" "}
                   01101
                 </li>
                 <li>
                   <span>
                     {messageIcon}
-                    Счет:
+                    {langData.count[language]}:
                   </span>{" "}
                   2020 8000 9008 3658 4001
                 </li>
               </ul>
             </div>
             <div className={styles.details__block__content__item}>
-              <h5>Контактная информация:</h5>
+              <h5> {langData.contactInfo[language]}:</h5>
               <ul>
                 <li>
                   <span>
                     {addressIcon}
-                    Для корреспонденции:
+                    {langData.korrespondent[language]}:
                   </span>{" "}
-                  100170, г. Ташкент, Мирзо-Улугбекский район, ул. Сайрам, 25
+                  {langData.address2[language]}
                 </li>
               </ul>
             </div>
