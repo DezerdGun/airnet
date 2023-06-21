@@ -38,12 +38,6 @@ const mainData = {
         <p>
           Name-сервер 2: <strong>dns2.airnet.uz</strong>
         </p>
-        <p>
-          Name-сервер 3: <strong>ns1.airnet.uz</strong>
-        </p>
-        <p>
-          Name-сервер 4: <strong>ns2.airnet.uz</strong>
-        </p>
       </>
     ),
     uz: (
@@ -55,12 +49,6 @@ const mainData = {
         <p>
           2- server nomi: <strong>dns2.airnet.uz</strong>
         </p>
-        <p>
-          3- server nomi: <strong>ns1.airnet.uz</strong>
-        </p>
-        <p>
-          4- server nomi: <strong>ns2.airnet.uz</strong>
-        </p>
       </>
     ),
     en: (
@@ -71,12 +59,6 @@ const mainData = {
         </p>
         <p>
           Name server 2: <strong>dns2.airnet.uz</strong>
-        </p>
-        <p>
-          Name server 3: <strong>ns1.airnet.uz</strong>
-        </p>
-        <p>
-          Name server 4: <strong>ns2.airnet.uz</strong>
         </p>
       </>
     ),

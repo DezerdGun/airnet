@@ -78,7 +78,7 @@ export default function HelpBlock({ data, language }) {
   return (
     <>
       <SEO title={`${data.headTitle[language]} | Airnet`} desc={data?.desc?.[language]} />
-      <div style={{ backgroundColor: "#eeebee" }}>
+      <div style={{ backgroundColor: "#f8f8f8" }}>
         <Container headTitle={data.headTitle[language]} clNTitle="mb-3">
           <div className={st.author}>
             <img src="/author/almaz-danaev.jpg" />

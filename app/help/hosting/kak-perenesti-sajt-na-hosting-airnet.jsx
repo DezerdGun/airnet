@@ -29,10 +29,6 @@ const mainData = {
             dns1.airnet.uz
             <br />
             dns2.airnet.uz
-            <br />
-            ns1.airnet.uz
-            <br />
-            ns2.airnet.uz
           </strong>
         </p>
       </>
@@ -58,10 +54,6 @@ const mainData = {
             dns1.airnet.uz
             <br />
             dns2.airnet.uz
-            <br />
-            ns1.airnet.uz
-            <br />
-            ns2.airnet.uz
           </strong>
         </p>
       </>
@@ -87,10 +79,6 @@ const mainData = {
             dns1.airnet.uz
             <br />
             dns2.airnet.uz
-            <br />
-            ns1.airnet.uz
-            <br />
-            ns2.airnet.uz
           </strong>
         </p>
       </>

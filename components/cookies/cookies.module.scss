@@ -4,54 +4,54 @@ $green: #006a4d;
 $dark_green: #00402e;
 $gray: #c2c2c2;
 $dark_gray: #666;
-$light_gray: #eeebee;
+$light_gray: #f8f8f8;
 $red: #f00;
 
 .cookies {
-	background-color: $light_gray;
-	padding: 20px;
-	box-shadow: 0 0 10px $light_gray;
-	position: fixed;
-	left: 30px;
-	bottom: 30px;
-	z-index: 5;
-	display: flex;
-	align-items: flex-end;
-	justify-content: space-between;
-	max-width: 500px;
+  background-color: $light_gray;
+  padding: 20px;
+  box-shadow: 0 0 10px $light_gray;
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  z-index: 5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 500px;
 
-	&__block {
-		display: flex;
-		gap: 8px;
+  &__block {
+    display: flex;
+    gap: 8px;
 
-		a {
-			text-decoration: underline !important;
-		}
+    a {
+      text-decoration: underline !important;
+    }
 
-		button {
-			font-size: 14px;
-			border: none;
-			text-transform: uppercase;
-			text-decoration: underline;
-			font-weight: 700;
-			padding: 0;
-			background-color: transparent !important;
+    button {
+      font-size: 14px;
+      border: none;
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-weight: 700;
+      padding: 0;
+      background-color: transparent !important;
 
-			&:first-child {
-				color: $red;
-			}
+      &:first-child {
+        color: $red;
+      }
 
-			&:last-child {
-				color: $green;
-			}
-		}
-		&:first-child {
-			width: calc(100% - 140px);
-		}
-	}
+      &:last-child {
+        color: $green;
+      }
+    }
+    &:first-child {
+      width: calc(100% - 140px);
+    }
+  }
 
-	@media (max-width: 660px) {
-		width: calc(100% - 20px);
-		left: 10px;
-	}
+  @media (max-width: 660px) {
+    width: calc(100% - 20px);
+    left: 10px;
+  }
 }

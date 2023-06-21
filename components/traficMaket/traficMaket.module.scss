@@ -4,101 +4,101 @@ $green: #006a4d;
 $dark_green: #00402e;
 $gray: #c2c2c2;
 $dark_gray: #666;
-$light_gray: #eeebee;
+$light_gray: #f8f8f8;
 
 .traficMaket {
-	h3,
-	p {
-		color: $white;
-	}
+  h3,
+  p {
+    color: $white;
+  }
 
-	&__table {
-		display: flex;
-		justify-content: space-between;
-		overflow-x: scroll;
+  &__table {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
 
-		&::-webkit-scrollbar {
-			height: 8px;
-			background-color: $dark_green;
-			border-radius: 10px;
-		}
+    &::-webkit-scrollbar {
+      height: 8px;
+      background-color: $dark_green;
+      border-radius: 10px;
+    }
 
-		&::-webkit-scrollbar-thumb {
-			background-color: $white;
-			border-radius: 10px;
-		}
+    &::-webkit-scrollbar-thumb {
+      background-color: $white;
+      border-radius: 10px;
+    }
 
-		&__item {
-			min-width: 270px;
-			max-width: 270px;
-			padding-bottom: 10px;
-			margin-right: 10px;
+    &__item {
+      min-width: 270px;
+      max-width: 270px;
+      padding-bottom: 10px;
+      margin-right: 10px;
 
-			&:last-child {
-				margin-right: 0;
-			}
-		}
+      &:last-child {
+        margin-right: 0;
+      }
+    }
 
-		table {
-			box-shadow: 0 0 10px $dark_gray;
+    table {
+      box-shadow: 0 0 10px $dark_gray;
 
-			td,
-			th {
-				color: $black;
-				background-color: $white;
-				padding: 10px;
-				font-size: 14px;
+      td,
+      th {
+        color: $black;
+        background-color: $white;
+        padding: 10px;
+        font-size: 14px;
 
-				&:nth-child(even) {
-					font-weight: 600 !important;
-					text-align: right;
-					white-space: nowrap;
-				}
+        &:nth-child(even) {
+          font-weight: 600 !important;
+          text-align: right;
+          white-space: nowrap;
+        }
 
-				sup {
-					color: inherit;
-				}
-			}
+        sup {
+          color: inherit;
+        }
+      }
 
-			th {
-				color: $white;
-				font-size: 15px;
-				background-color: $green !important;
-				text-align: center;
-			}
+      th {
+        color: $white;
+        font-size: 15px;
+        background-color: $green !important;
+        text-align: center;
+      }
 
-			tr {
-				&:nth-child(odd) {
-					td,
-					th {
-						background-color: $light_gray;
-					}
-				}
+      tr {
+        &:nth-child(odd) {
+          td,
+          th {
+            background-color: $light_gray;
+          }
+        }
 
-				&:last-child {
-					td {
-						background-color: $white;
-					}
-				}
-			}
-		}
-	}
+        &:last-child {
+          td {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
 
-	&__customTable {
-		.traficMaket__table__item {
-			table {
-				tr:first-child {
-					th,
-					td {
-						padding: 20px 10px;
-					}
-				}
-			}
-		}
-	}
+  &__customTable {
+    .traficMaket__table__item {
+      table {
+        tr:first-child {
+          th,
+          td {
+            padding: 20px 10px;
+          }
+        }
+      }
+    }
+  }
 
-	&__endText {
-		margin-top: 10px;
-		margin-bottom: 0 !important;
-	}
+  &__endText {
+    margin-top: 10px;
+    margin-bottom: 0 !important;
+  }
 }
