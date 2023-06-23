@@ -940,8 +940,6 @@ export default function Hosting({ language }) {
           <ForFreeBlock data={forFreeData} language={language} />
         </div>
 
-        <AvailablePO language={language} />
-
         <Container
           title={langData.wordpressTitle[language]}
           description={langData.wordpressDesc[language]}
@@ -956,6 +954,8 @@ export default function Hosting({ language }) {
             ))}
           </div>
         </Container>
+
+        <AvailablePO language={language} />
 
         <FAQ faq={faq} title={langData.faqTitle[language]} language={language} />
         <Partners language={language} />

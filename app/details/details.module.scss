@@ -12,10 +12,10 @@ $red: #f00;
   &__banner {
     display: flex;
     justify-content: space-between;
-    min-height: 300px;
-    background: url("/details.png") no-repeat;
-    background-position: 100% 120px;
-    background-size: 200px;
+    min-height: 100px;
+    // background: url("/details.png") no-repeat;
+    // background-position: 0 0;
+    // background-size: 200px;
 
     h1 {
       padding-top: 40px;
@@ -29,7 +29,7 @@ $red: #f00;
   }
 
   &__block {
-    padding-top: 40px;
+    padding-top: 0px;
 
     h5 {
       margin-top: 10px;
@@ -55,8 +55,8 @@ $red: #f00;
     &__content {
       display: flex;
       justify-content: space-between;
-      margin-top: 40px;
-      padding: 40px 20px;
+      margin-top: 0px;
+      padding: 20px 20px 40px;
       border-top: 1px solid $gray;
       flex-wrap: wrap;
       row-gap: 20px;
@@ -116,7 +116,7 @@ $red: #f00;
 
   @media (min-width: 770px) {
     &__banner {
-      min-height: 400px;
+      min-height: 200px;
       background-position: 100% 0;
       background-size: 350px;
 
@@ -144,7 +144,7 @@ $red: #f00;
 
   @media (min-width: 1024px) {
     &__banner {
-      min-height: 400px;
+      min-height: 200px;
       background-size: 450px;
 
       h1 {

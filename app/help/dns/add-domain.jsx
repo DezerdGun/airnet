@@ -47,14 +47,14 @@ const mainData = {
         <p>
           Доменное имя нужно зарегистрировать — арендовать у компании-регистратора доменов на определенный срок.
           Минимальный срок регистрации для всех доменных зон — 1 год, а максимальный срок зависит от зоны. Например, для
-          зоны .ru срок регистрации — 1 год, для .com — до 10 лет. После окончания периода регистрации домен необходимо
+          зоны .ru срок регистрации — 1 год, для .UZ — до 10 лет. После окончания периода регистрации домен необходимо
           продлить, чтобы вы остались владельцем домена, и ваш сайт продолжил работу.
         </p>
 
         <p
           style={{ padding: "10px 20px", border: "1px solid #91d5ff", borderRadius: "5px", backgroundColor: "#e6f7ff" }}
         >
-          Airnet не предоставляет услуги регистрации и продления доменов.
+          {/* Airnet не предоставляет услуги регистрации и продления доменов. */}
         </p>
 
         <h2>Добавить домен</h2>
@@ -109,9 +109,9 @@ const mainData = {
             >
               <pre>
                 <code>
-                  ns1.airnet.uz
+                  dns1.airnet.uz
                   <br />
-                  ns2.airnet.uz
+                  dns2.airnet.uz
                 </code>
               </pre>
             </div>
@@ -125,14 +125,14 @@ const mainData = {
         <p>
           Domen nomini ro'yxatdan o'tkazish kerak - domen registratoridan ma'lum muddatga ijaraga olingan. Barcha domen
           zonalari uchun minimal ro'yxatdan o'tish muddati 1 yil, maksimal muddat esa zonaga bog'liq. Masalan, .ru
-          zonasi uchun ro'yxatdan o'tish muddati 1 yil, .com uchun - 10 yilgacha. Roʻyxatdan oʻtish muddati tugagach,
+          zonasi uchun ro'yxatdan o'tish muddati 1 yil, .UZ uchun - 10 yilgacha. Roʻyxatdan oʻtish muddati tugagach,
           siz domen egasi boʻlib qolishingiz va saytingiz ishlashda davom etishingiz uchun domen yangilanishi kerak.
         </p>
 
         <p
           style={{ padding: "10px 20px", border: "1px solid #91d5ff", borderRadius: "5px", backgroundColor: "#e6f7ff" }}
         >
-          Airnet domenni roʻyxatdan oʻtkazish yoki yangilash xizmatlarini taqdim etmaydi.
+          {/* Airnet domenni roʻyxatdan oʻtkazish yoki yangilash xizmatlarini taqdim etmaydi. */}
         </p>
 
         <h2>Domen qo'shish</h2>
@@ -188,9 +188,9 @@ const mainData = {
             >
               <pre>
                 <code>
-                  ns1.airnet.uz
+                  dns1.airnet.uz
                   <br />
-                  ns2.airnet.uz
+                  dns2.airnet.uz
                 </code>
               </pre>
             </div>
@@ -204,14 +204,14 @@ const mainData = {
         <p>
           The domain name needs to be registered - rented from a domain registrar for a certain period. The minimum
           registration period for all domain zones is 1 year, and the maximum period depends on the zone. For example,
-          for the .ru zone, the registration period is 1 year, for .com - up to 10 years. After the registration period
+          for the .ru zone, the registration period is 1 year, for .UZ - up to 10 years. After the registration period
           ends, the domain must be renewed so that you remain the owner of the domain and your site continues to work.
         </p>
 
         <p
           style={{ padding: "10px 20px", border: "1px solid #91d5ff", borderRadius: "5px", backgroundColor: "#e6f7ff" }}
         >
-          Airnet does not provide domain registration or renewal services.
+          {/* Airnet does not provide domain registration or renewal services. */}
         </p>
 
         <h2>Add domain</h2>
@@ -267,9 +267,9 @@ const mainData = {
             >
               <pre>
                 <code>
-                  ns1.airnet.uz
+                  dns1.airnet.uz
                   <br />
-                  ns2.airnet.uz
+                  dns2.airnet.uz
                 </code>
               </pre>
             </div>
