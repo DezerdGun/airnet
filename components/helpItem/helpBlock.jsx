@@ -82,7 +82,7 @@ export default function HelpBlock({ data, language }) {
         <Container headTitle={data.headTitle[language]} clNTitle="mb-3">
           <div className={st.author}>
             <img src="/author/almaz-danaev.jpg" />
-            <span>Almaz Danaev</span>
+            <span>Almaz</span>
           </div>
           <div className={st.helpBlock}>
             <div className={st.helpBlock__related}>
