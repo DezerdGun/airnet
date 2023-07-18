@@ -421,9 +421,7 @@ const faq = [
           <>
             <p>
               Перейдите в счета, выберите способ оплаты через "
-              <a href="https://payze.uz/uz" targert="_blank">
-                PAYZE.uz
-              </a>
+              PAYZE.uz
               ", далее вас перебросит на сайт платежной систему выберите в корзину требуемую суммы оплаты и нажмите
               "Оформить заказ", следуйте инструкциям на сайте платежной системы и в поле "Дополнительные комментарии"
               введите номер оплачиваемого счета или ваш ID в нашей системе.
@@ -435,9 +433,7 @@ const faq = [
           <>
             <p>
               Hisoblarga o'ting, " orqali to'lov usulini tanlang "
-              <a href="https://payze.uz/uz" target="_blank">
-                PAYZE.uz
-              </a>
+              PAYZE.uz
               ", keyin siz to'lov tizimining saytiga o'tasiz, savatdagi kerakli to'lov miqdorini tanlang va bosing
               "Buyurtma bering", to'lov tizimining veb-saytidagi va "Qo'shimcha sharhlar" maydonidagi ko'rsatmalarga
               amal qiling. tizimimizga hisob raqamini yoki ID raqamingizni kiriting.
@@ -449,9 +445,7 @@ const faq = [
           <>
             <p>
               Go to accounts, select payment method via "
-              <a href="https://payze.uz/uz" target="_blank">
-                PAYZE.uz
-              </a>
+              PAYZE.uz
               ", then you will be transferred to the site of the payment system, select the required payment amount in
               the basket and click "Place an order", follow the instructions on the website of the payment system and in
               the field "Additional comments" enter the billing account number or your ID in our system.

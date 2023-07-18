@@ -55,11 +55,9 @@ const mainData = {
         <ul>
           <li>в панели управления;</li>
           <li>через Domains API;</li>
-          <li>Terraform — бета-версия, в случае ошибок в работе создайте тикет;</li>
-          <li>octoDNS — бета-версия, в случае ошибок в работе создайте тикет.</li>
         </ul>
         <h2>Инфраструктура Airnet DNS</h2>
-        <img src="/help/dns-about.jpg" />
+        {/* <img src="/help/dns-about.jpg" /> */}
         <p>Части инфраструктуры Airnet DNS:</p>
 
         <ul>
@@ -79,11 +77,6 @@ const mainData = {
         <p>
           Публичные IP-адреса авторитативных NS-серверов Airnet (dns1.airnet.uz, dns2.airnet.uz) защищены DNS Firewall
           от DDoS-атак.
-        </p>
-
-        <p>
-          Записи хранятся в базе данных PostgreSQL. Из кластера баз данных (мастера PostgreSQL) происходит репликация на
-          слейвы PostgreSQL на авторитативных серверах.
         </p>
 
         <h2>Стоимость</h2>
@@ -113,11 +106,9 @@ const mainData = {
         <ul>
           <li>boshqaruv panelida;</li>
           <li>Domenlar API orqali;</li>
-          <li>Terraform - bu beta-versiya, xatolik yuz bersa, chipta yarating;</li>
-          <li>octoDNS - bu beta-versiya, xatolik yuz bersa, chipta yarating.</li>
         </ul>
         <h2>DNS infratuzilmasini tanlang</h2>
-        <img src="/help/dns-about.jpg" />
+        {/* <img src="/help/dns-about.jpg" /> */}
         <p>Airnet DNS infratuzilmasining qismlari:</p>
 
         <ul>
@@ -137,11 +128,6 @@ const mainData = {
         <p>
           Airnetning nufuzli NS serverlarining umumiy IP manzillari (dns1.airnet.uz, dns2.airnet.uz) DNS xavfsizlik
           devori tomonidan DDoS bilan himoyalangan.
-        </p>
-
-        <p>
-          Yozuvlar PostgreSQL ma'lumotlar bazasida saqlanadi. Ma'lumotlar bazasi klasteri (PostgreSQL master) vakolatli
-          serverlardagi PostgreSQL slavelariga takrorlanadi.
         </p>
 
         <h2>Xarajat</h2>
@@ -172,11 +158,9 @@ const mainData = {
         <ul>
           <li>in the control panel;</li>
           <li>via the Domains API;</li>
-          <li>Terraform is a beta version, in case of errors, create a ticket;</li>
-          <li>octoDNS is a beta version, in case of errors, create a ticket.</li>
         </ul>
         <h2>Airnet DNS Infrastructure</h2>
-        <img src="/help/dns-about.jpg" />
+        {/* <img src="/help/dns-about.jpg" /> */}
         <p>Parts of the Airnet DNS infrastructure:</p>
 
         <ul>
@@ -196,11 +180,6 @@ const mainData = {
         <p>
           Public IP addresses of Airnet's authoritative NS servers (dns1.airnet.uz, dns2.airnet.uz) are DDoS-protected
           by DNS Firewall.
-        </p>
-
-        <p>
-          Records are stored in a PostgreSQL database. The database cluster (PostgreSQL master) is replicated to
-          PostgreSQL slaves on authoritative servers.
         </p>
 
         <h2>Cost</h2>

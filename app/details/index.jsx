@@ -84,9 +84,9 @@ const Details = ({ language }) => {
       en: "Danaev Almaz",
     },
     prinimatel: {
-      ru: "Индивидуальный предприниматель",
-      uz: "Yakka tartibdagi tadbirkor",
-      en: "Individual entrepreneur",
+      ru: "OOO",
+      uz: "OOO",
+      en: "OOO",
     },
     inn: {
       ru: "ИНН",
@@ -104,9 +104,9 @@ const Details = ({ language }) => {
       en: "Address",
     },
     address: {
-      ru: "100060, г. Ташкент, Мирабадский район, ул. Савр, 1А Регистрационный номер НДС: 326010205838",
-      uz: "100060, Toshkent sh., Mirobod tumani, Savr ko‘chasi, 1A QQS davlat raqami: 326010205838",
-      en: "100060, Tashkent, Mirabad district, Savr street, 1A VAT registration number: 326010205838",
+      ru: "100060, г. Ташкент, Мирабадский район, ул. Савр, 1А",
+      uz: "100060, Toshkent sh., Mirobod tumani, Savr ko‘chasi, 1A",
+      en: "100060, Tashkent, Mirabad district, Savr street, 1A",
     },
     banks: {
       ru: "Банковские реквизиты",
@@ -114,9 +114,9 @@ const Details = ({ language }) => {
       en: "Bank details",
     },
     aikb: {
-      ru: "АИКБ",
-      uz: "AIKB",
-      en: "AIKB",
+      ru: "Банк",
+      uz: "Bank",
+      en: "Bank",
     },
     mfo: {
       ru: "МФО",
@@ -124,7 +124,7 @@ const Details = ({ language }) => {
       en: "MFO",
     },
     count: {
-      ru: "Счет",
+      ru: "Р/Счет",
       uz: "Tekshirish",
       en: "Check",
     },
@@ -143,6 +143,11 @@ const Details = ({ language }) => {
       uz: "100170, Toshkent sh., Mirzo Ulugʻbek tumani, Sayram koʻchasi, 25-uy",
       en: "100170, Tashkent, Mirzo-Ulugbek district, Sairam street, 25",
     },
+    nds: {
+      ru: "Регистрационный номер НДС",
+      uz: "QQS davlat raqami",
+      en: "VAT registration number",
+    },
   };
 
   return (
@@ -157,11 +162,11 @@ const Details = ({ language }) => {
       </section>
       <section className={styles.details__block}>
         <Container>
-          <div className={styles.details__block__author}>
+          {/* <div className={styles.details__block__author}>
             <Image src="/author/almaz-danaev.jpg" width={110} height={110} priority />
             <h5>{langData.author[language]}</h5>
             <p>{langData.prinimatel[language]}</p>
-          </div>
+          </div> */}
           <div className={styles.details__block__content}>
             <div className={styles.details__block__content__item}>
               <h5>{langData.description[language]}:</h5>
@@ -175,6 +180,13 @@ const Details = ({ language }) => {
                 </li>
                 <li>
                   <span>
+                    {addressIcon}
+                    {langData.addressTitle[language]}:
+                  </span>{" "}
+                  {langData.address[language]}
+                </li>
+                <li>
+                  <span>
                     {infoIcon}
                     {langData.oked[language]}:
                   </span>{" "}
@@ -182,10 +194,10 @@ const Details = ({ language }) => {
                 </li>
                 <li>
                   <span>
-                    {addressIcon}
-                    {langData.addressTitle[language]}:
+                    {infoIcon}
+                    {langData.nds[language]}:
                   </span>{" "}
-                  {langData.address[language]}
+                  326010205838
                 </li>
               </ul>
             </div>
@@ -197,7 +209,7 @@ const Details = ({ language }) => {
                     {infoIcon}
                     {langData.aikb[language]}:
                   </span>{" "}
-                  «Ипак Йули»
+                  АИКБ «Ипак Йули»
                 </li>
                 <li>
                   <span>
