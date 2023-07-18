@@ -290,6 +290,10 @@ $light_gray: #f8f8f8;
       &__head,
       &__nav {
         width: 100%;
+
+        &__ul__li {
+          text-align: center;
+        }
       }
 
       &__head {
@@ -298,7 +302,16 @@ $light_gray: #f8f8f8;
         &__social,
         &__payment {
           ul {
+            gap: 10px;
             justify-content: center;
+
+            li {
+              margin-right: 0;
+
+              a {
+                display: block;
+              }
+            }
           }
         }
       }
