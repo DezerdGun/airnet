@@ -153,11 +153,11 @@ export default function HelpBlog({ language }) {
           </p>
           <p>
             Saytda barcha tarif rejalari bilan serverning{" "}
-            <Link href={checkLang(language) + checkLang(language) + LINKS.OPTIMAL_VDS}>
+            <Link href={checkLang(language) + LINKS.OPTIMAL_VDS}>
               <a>Optimal</a>
             </Link>{" "}
             va{" "}
-            <Link href={checkLang(language) + checkLang(language) + LINKS.BIG_VDS}>
+            <Link href={checkLang(language) + LINKS.BIG_VDS}>
               <a>Kuchli</a>
             </Link>{" "}
             turlarini tanishishingiz mumkin

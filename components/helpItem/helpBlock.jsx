@@ -75,6 +75,8 @@ export default function HelpBlock({ data, language }) {
     },
   ];
 
+  console.log(language);
+
   return (
     <>
       <SEO title={`${data.headTitle[language]} | Airnet`} desc={data?.desc?.[language]} />
@@ -90,7 +92,7 @@ export default function HelpBlock({ data, language }) {
               <ul className={st.helpBlock__related__links}>
                 {data.related.map((item) => (
                   <li key={item.link}>
-                    <Link href={item.link}>
+                    <Link href={checkLang(language) + item.link}>
                       <a>{item.title[language]}</a>
                     </Link>
                   </li>

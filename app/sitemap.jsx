@@ -516,38 +516,32 @@ const sitemap = [
         link: "/help/billing",
         children: [
           {
-            id: "billing",
-            title: { ru: "Биллинг", uz: "Billing", en: "Billing" },
+            title: {
+              ru: "Регистрация в панели управления",
+              uz: "Boshqaruv panelida ro'yxatdan o'tish",
+              en: "Registration in the control panel",
+            },
+            link: "/help/billing/account",
             children: [
               {
                 title: {
-                  ru: "Регистрация в панели управления",
-                  uz: "Boshqaruv panelida ro'yxatdan o'tish",
-                  en: "Registration in the control panel",
+                  ru: "Восстановление доступа к аккаунту",
+                  uz: "Hisobga kirish huquqi tiklanmoqda",
+                  en: "Restoring account access",
                 },
-                link: "/help/billing/account",
-                children: [
-                  {
-                    title: {
-                      ru: "Восстановление доступа к аккаунту",
-                      uz: "Hisobga kirish huquqi tiklanmoqda",
-                      en: "Restoring account access",
-                    },
-                    link: "/help/billing/account/restore",
-                  },
-                  {
-                    title: {
-                      ru: "Перенести услуги на другой аккаунт",
-                      uz: "Xizmatlarni boshqa hisobga o'tkazish",
-                      en: "Transfer services to another account",
-                    },
-                    link: "/help/billing/account/transfer",
-                  },
-                  {
-                    title: { ru: "Удалить аккаунт", uz: "Hisobni o'chirish", en: "Delete account" },
-                    link: "/help/billing/account/delete",
-                  },
-                ],
+                link: "/help/billing/account/restore",
+              },
+              {
+                title: {
+                  ru: "Перенести услуги на другой аккаунт",
+                  uz: "Xizmatlarni boshqa hisobga o'tkazish",
+                  en: "Transfer services to another account",
+                },
+                link: "/help/billing/account/transfer",
+              },
+              {
+                title: { ru: "Удалить аккаунт", uz: "Hisobni o'chirish", en: "Delete account" },
+                link: "/help/billing/account/delete",
               },
             ],
           },
@@ -601,6 +595,7 @@ const sitemap = [
       },
       {
         title: { ru: "Операционные системы", uz: "Operatsion tizimlar", en: "Operation systems" },
+        link: "/help/os",
         children: [
           {
             title: {

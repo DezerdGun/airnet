@@ -531,7 +531,7 @@ export default function Footer({ language }) {
                     {clients.children.map((i) => (
                       <li key={i.link}>
                         {i.blank ? (
-                          <a target="_blank" href={checkLang(language) + i.link}>
+                          <a target="_blank" href={i.link}>
                             {i.title[language]}
                           </a>
                         ) : (
