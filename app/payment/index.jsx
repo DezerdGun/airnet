@@ -383,7 +383,7 @@ const faq = [
       },
     },
     {
-      title: { ru: "Paybox.Money", uz: "Paybox.Money", en: "Paybox.Money" },
+      title: { ru: "Freedom Pay", uz: "Freedom Pay", en: "Freedom Pay" },
       description: {
         ru: (
           <>
@@ -391,7 +391,7 @@ const faq = [
               Перейдите в счета, выберите способ оплаты через "Freedom Pay", далее вас перебросит на сайт платежной
               систему введите данные вашей карты и следуйте инструкциям на сайте платежной системы.
             </p>
-            <img className="width-100" src="/payments/freedompay.jpg" />
+            <img className="width-100" src="/payments/freedompay.png" />
           </>
         ),
         uz: (
@@ -400,7 +400,7 @@ const faq = [
               Hisoblarga o'ting, "Freedom Pay" orqali to'lov usulini tanlang, keyin siz to'lov tizimining veb-saytiga
               o'tasiz, kartangiz ma'lumotlarini kiritasiz va to'lov tizimi veb-saytidagi ko'rsatmalarga amal qiling.
             </p>
-            <img className="width-100" src="/payments/freedompay.jpg" />
+            <img className="width-100" src="/payments/freedompay.png" />
           </>
         ),
         en: (
@@ -409,7 +409,7 @@ const faq = [
               Go to accounts, select the payment method via "Freedom Pay", then you will be transferred to the payment
               system website, enter your card details and follow the instructions on the payment system website.
             </p>
-            <img className="width-100" src="/payments/freedompay.jpg" />
+            <img className="width-100" src="/payments/freedompay.png" />
           </>
         ),
       },
