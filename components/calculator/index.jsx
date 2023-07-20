@@ -45,7 +45,6 @@ export default function Calculator({ language }) {
       administration: "Нет",
     }),
     [show, setShow] = useState(null),
-    [position, setPosition] = useState({ top: 0 }),
     [calcOS, setCalcOS] = useState([
       {
         id: "ubuntu",
@@ -459,36 +458,36 @@ export default function Calculator({ language }) {
     },
   };
 
-  useEffect(() => {
-    if (document.body.clientWidth > 770) {
-      const scroll = () => {
-        const content = document.querySelector("#content"),
-          result = document.querySelector("#result");
+  // useEffect(() => {
+  //   if (document.body.clientWidth > 770) {
+  //     const scroll = () => {
+  //       const content = document.querySelector("#content"),
+  //         result = document.querySelector("#result");
 
-        if (window.pageYOffset >= 80) {
-          setIsFixed(true);
+  //       if (window.pageYOffset >= 80) {
+  //         setIsFixed(true);
 
-          if (window.pageYOffset > content.clientHeight - result.clientHeight + 100) {
-            setPosition({ top: "unset", bottom: 0 });
-          } else {
-            setPosition({ top: `${window.pageYOffset - 120}px` });
-          }
-        } else setIsFixed(false);
-      };
+  //         if (window.pageYOffset > content.clientHeight - result.clientHeight + 100) {
+  //           setPosition({ top: "unset", bottom: 0 });
+  //         } else {
+  //           setPosition({ top: `${window.pageYOffset - 0}px` });
+  //         }
+  //       } else setIsFixed(false);
+  //     };
 
-      scroll();
+  //     scroll();
 
-      document.addEventListener("scroll", scroll);
+  //     document.addEventListener("scroll", scroll);
 
-      return () => {
-        document.removeEventListener("scroll", scroll);
-      };
-    }
-  }, []);
+  //     return () => {
+  //       document.removeEventListener("scroll", scroll);
+  //     };
+  //   }
+  // }, []);
 
   return (
     <div className={st.calculator}>
-      <Container className="position-relative py-0">
+      <Container className="position-relative">
         <div className={st.calculator__block}>
           <div id="content" className={st.calculator__block__item}>
             <div className={st.calculator__block__item__info}>
@@ -582,11 +581,7 @@ export default function Calculator({ language }) {
             </CalcBlock>
             <div className={st.calculator__block__item__category__content__footer}>{langData.br[language]}</div>
           </div>
-          <div
-            id="result"
-            className={`${st.calculator__block__result} ${isFixed ? st.calculator__block__result__absolute : ""}`}
-            style={position}
-          >
+          <div className={st.calculator__block__result}>
             <TarifCard
               index={1}
               tarif={{
@@ -649,10 +644,10 @@ export default function Calculator({ language }) {
   );
 }
 
-const CalcBlock = ({ number, title, children }) => {
+export const CalcBlock = ({ number, title, children }) => {
   return (
     <div className={st.calculator__block__item__category}>
-      <span className={st.calculator__block__item__category__number}>{number}</span>
+      {number && <span className={st.calculator__block__item__category__number}>{number}</span>}
       <div className={st.calculator__block__item__category__content}>
         <div className={st.calculator__block__item__category__content__title}>{title}</div>
         {children}
@@ -661,7 +656,7 @@ const CalcBlock = ({ number, title, children }) => {
   );
 };
 
-const CalcHeader = ({ title, price, sum }) => {
+export const CalcHeader = ({ title, price, sum }) => {
   return (
     <div className={st.calculator__block__item__category__content__header}>
       <span>{title}</span>
@@ -674,7 +669,7 @@ const CalcHeader = ({ title, price, sum }) => {
   );
 };
 
-const CalcInput = ({ text, step, min, max, name, state, setState }) => {
+export const CalcInput = ({ text, step, min, max, name, state, setState }) => {
   return (
     <div className={st.calculator__block__item__category__content__input}>
       <div className={st.calculator__block__item__category__content__input__item}>
@@ -874,12 +869,13 @@ const CalcSwitcher = ({ state, setState, language }) => {
   );
 };
 
-const CalcSelect = ({ title, isChecked }) => {
+export const CalcSelect = ({ title, isChecked, setChecked }) => {
   return (
     <div
       className={`${st.calculator__block__item__category__content__select} ${
         isChecked && st.calculator__block__item__category__content__select__checked
       }`}
+      onClick={setChecked}
     >
       {title}
     </div>
@@ -895,7 +891,7 @@ const CalcInfo = ({ title, value }) => {
   );
 };
 
-function BeautyNum(Number) {
+export function BeautyNum(Number) {
   if (!isNaN(Number) && isFinite(Number)) {
     let string = Number.toString();
     const arr = string.split(".");

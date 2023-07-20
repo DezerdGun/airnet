@@ -9,6 +9,8 @@ import { serversIcon } from "shared/icons/serversIcon.js";
 import { calendarIcon } from "shared/icons/calendarIcon.js";
 import { notificationIcon } from "shared/icons/notificationIcon.js";
 import { cloudsIcon } from "shared/icons/cloudsIcon.js";
+import { BeautyNum, CalcBlock, CalcHeader, CalcInput, CalcSelect } from "@/components/calculator/index.jsx";
+import { useState } from "react";
 
 export default function Autobackup({ language }) {
   const content = [
@@ -122,7 +124,38 @@ export default function Autobackup({ language }) {
       uz: "Qanday qilib ulanish",
       en: "How to connect backups?",
     },
+    backupUsluga: {
+      ru: "Backup услуга",
+      uz: "Zaxira xizmati",
+      en: "Backup service",
+    },
+    countCopies: {
+      ru: "Число копий",
+      uz: "Nusxalar soni",
+      en: "Number of copies",
+    },
+    sum: {
+      ru: "сум",
+      uz: "so'm",
+      en: "sum",
+    },
+    wHard: {
+      ru: "Объём диска",
+      uz: "Disk hajmi",
+      en: "Disk capacity",
+    },
+    GB: {
+      ru: "Гб",
+      uz: "Gb",
+      en: "Gb",
+    },
   };
+
+  const copyValues = [1, 3, 7, 16, 30];
+  const [state, setState] = useState({
+    copies: 1,
+    ssd: 100,
+  });
 
   return (
     <div className={st.autobackup}>
@@ -142,6 +175,37 @@ export default function Autobackup({ language }) {
         </div>
       </Container>
       <WhyBlock title={langData.title[language]} content={content} language={language} />
+      <Container>
+        <div style={{ maxWidth: "700px", margin: "0 auto" }}>
+          <CalcBlock title={langData.backupUsluga[language]}>
+            <CalcHeader title={langData.countCopies[language]} sum={langData.sum[language]} />
+            <div className="d-flex flex-wrap gap-2 mb-2">
+              {copyValues.map((item) => (
+                <CalcSelect
+                  key={item}
+                  title={item}
+                  isChecked={state.copies === item}
+                  setChecked={(event) => setState((prev) => ({ ...prev, copies: +event.target.innerHTML }))}
+                />
+              ))}
+            </div>
+            <CalcHeader
+              title={langData.wHard[language]}
+              price={BeautyNum(state.ssd * 1000 * state.copies)}
+              sum={langData.sum[language]}
+            />
+            <CalcInput
+              text={langData.GB[language]}
+              step={100}
+              min={100}
+              max={2000}
+              name="ssd"
+              state={state}
+              setState={setState}
+            />
+          </CalcBlock>
+        </div>
+      </Container>
       <Partners language={language} />
     </div>
   );

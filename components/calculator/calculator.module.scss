@@ -108,29 +108,31 @@ $red: #f00;
             margin-bottom: 20px;
 
             &__item {
-              width: 80%;
+              width: calc(100% - 140px);
             }
 
             &__block {
-              width: calc(20% - 25px);
+              width: 120px;
+              min-width: 20%;
               display: flex;
               align-items: center;
-              justify-content: space-between;
+              gap: 10px;
 
               input {
-                width: 60%;
+                width: 80px;
                 text-align: center;
                 background-color: $green;
                 color: $white;
                 font-weight: 600;
                 border-radius: 5px;
                 font-size: 22px;
-                padding: 5px 0;
+                padding: 5px 10px;
               }
 
               span {
                 font-weight: 600;
-                color: $white;
+                color: $black;
+                font-size: 18px;
               }
             }
           }
@@ -138,11 +140,12 @@ $red: #f00;
           &__select {
             font-weight: 600;
             color: $white;
-            padding: 5px 10px;
+            padding: 5px 20px;
             background-color: $gray;
             border-radius: 5px;
             width: fit-content;
             margin-bottom: 20px;
+            cursor: pointer;
 
             &__checked {
               background-color: $green;
@@ -317,15 +320,18 @@ $red: #f00;
       border-radius: 10px;
       overflow: hidden;
       transition: none !important;
+      height: fit-content;
+      top: 120px;
+      position: sticky;
 
-      &__absolute {
-        position: absolute;
-        right: 0;
-        padding-bottom: 32px;
-        overflow: hidden auto;
-        padding-top: 24px;
-        transition: none !important;
-      }
+      // &__absolute {
+      //   position: absolute;
+      //   right: 0;
+      //   padding-bottom: 32px;
+      //   overflow: hidden auto;
+      //   padding-top: 24px;
+      //   transition: none !important;
+      // }
 
       &__header {
         padding: 20px;
@@ -388,6 +394,45 @@ $red: #f00;
             border-radius: 10px;
           }
         }
+      }
+    }
+  }
+
+  @media (max-width: 1170px) {
+    &__block {
+      flex-direction: column;
+
+      &__item,
+      &__result {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      &__result {
+        position: static;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    &__block {
+      &__item,
+      &__result {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    &__block__item__category__content {
+      width: 100%;
+
+      &__header {
+        width: 100%;
+      }
+
+      &__select {
+        margin-bottom: 5px;
       }
     }
   }
