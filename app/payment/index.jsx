@@ -78,11 +78,11 @@ const faq = [
           <>
             <p>
               Для нерезидентов Узбекистана и карт выпущенных не в банках Узбекистана - доступна оплата через платежные
-              системы paybox.money и oson.uz
+              системы Freedom Pay, PAYZE и Oson.uz
             </p>
             <p>
-              Чтобы произвести оплату через Paybox.Money перейдите во вкладку "Кабинет" {"->"} "Счета" выберите № счета
-              и нажмите кнопку "Оплатить счет", далее выберите из предложенных способов оплаты "Paybox" и нажмите на
+              Чтобы произвести оплату через Freedom Pay перейдите во вкладку "Кабинет" {"->"} "Счета" выберите № счета
+              и нажмите кнопку "Оплатить счет", далее выберите из предложенных способов оплаты "Freedom Pay" и нажмите на
               кнопку оплатить...
             </p>
             <br />
@@ -93,11 +93,11 @@ const faq = [
           <>
             <p>
               Oʻzbekiston norezidentlari va banklar tomonidan chiqarilgan kartalar uchun O'zbekiston - to'lovni
-              paybox.money va orqali amalga oshirish mumkin oson.uz
+              Freedom Pay va orqali amalga oshirish mumkin oson.uz
             </p>
             <p>
-              Paybox.Money orqali toʻlovni amalga oshirish uchun yorligʻiga oʻting "Kabinet" {"->"} "Hisoblar" hisob
-              raqamini tanlang va "To'lash" tugmasini bosing hisob", keyin taklif qilingan to'lov usullaridan "Paybox"
+            Freedom Pay orqali toʻlovni amalga oshirish uchun yorligʻiga oʻting "Kabinet" {"->"} "Hisoblar" hisob
+              raqamini tanlang va "To'lash" tugmasini bosing hisob", keyin taklif qilingan to'lov usullaridan "Freedom Pay"
               va tanlang to'lov tugmasini bosing...
             </p>
             <br />
@@ -108,11 +108,11 @@ const faq = [
           <>
             <p>
               For non-residents of Uzbekistan and cards issued not in banks of Uzbekistan - payment is available through
-              payment paybox.money and oson.uz systems
+              payment Freedom Pay and oson.uz systems
             </p>
             <p>
-              To make a payment via Paybox.Money, go to the tab "Account" {"->"} "Accounts" select the account number
-              and click the "Pay invoice" button, then select "Paybox" from the offered payment methods and click on pay
+              To make a payment via Freedom Pay, go to the tab "Account" {"->"} "Accounts" select the account number
+              and click the "Pay invoice" button, then select "Freedom Pay" from the offered payment methods and click on pay
               button...
             </p>
             <br />
@@ -388,28 +388,28 @@ const faq = [
         ru: (
           <>
             <p>
-              Перейдите в счета, выберите способ оплаты через "Paybox.Money", далее вас перебросит на сайт платежной
+              Перейдите в счета, выберите способ оплаты через "Freedom Pay", далее вас перебросит на сайт платежной
               систему введите данные вашей карты и следуйте инструкциям на сайте платежной системы.
             </p>
-            <img className="width-100" src="/payments/paybox.money.png" />
+            <img className="width-100" src="/payments/freedompay.jpg" />
           </>
         ),
         uz: (
           <>
             <p>
-              Hisoblarga o'ting, "Paybox.Money" orqali to'lov usulini tanlang, keyin siz to'lov tizimining veb-saytiga
+              Hisoblarga o'ting, "Freedom Pay" orqali to'lov usulini tanlang, keyin siz to'lov tizimining veb-saytiga
               o'tasiz, kartangiz ma'lumotlarini kiritasiz va to'lov tizimi veb-saytidagi ko'rsatmalarga amal qiling.
             </p>
-            <img className="width-100" src="/payments/paybox.money.png" />
+            <img className="width-100" src="/payments/freedompay.jpg" />
           </>
         ),
         en: (
           <>
             <p>
-              Go to accounts, select the payment method via "Paybox.Money", then you will be transferred to the payment
+              Go to accounts, select the payment method via "Freedom Pay", then you will be transferred to the payment
               system website, enter your card details and follow the instructions on the payment system website.
             </p>
-            <img className="width-100" src="/payments/paybox.money.png" />
+            <img className="width-100" src="/payments/freedompay.jpg" />
           </>
         ),
       },
@@ -625,7 +625,7 @@ export default function Payment({ language }) {
               <a href="#transfer-card">Банковские карты</a> (UzCard, HUMO, VISA, MasterCard)
             </li>
             <li>
-              <a href="#transfer-paybox">Международные банковские карты</a> VISA, MasterCard (PayBox.Money)
+              <a href="#transfer-freedompay">Международные банковские карты</a> VISA, MasterCard (Freedom Pay)
             </li>
             <li>
               <a href="#transfer-paynet">PAYNET.uz</a>
@@ -643,7 +643,7 @@ export default function Payment({ language }) {
               <a href="#transfer-oson">Oson.uz</a>
             </li>
             <li>
-              <a href="#transfer-payboxmoney">Paybox.Money</a>
+              <a href="#transfer-freedompay">Freedom Pay</a>
             </li>
             <li>
               <a href="#transfer-payze">PAYZE.uz</a>
@@ -669,7 +669,7 @@ export default function Payment({ language }) {
               <a href="#transfer-card">Bank kartasi</a> (UzCard, HUMO, VISA, MasterCard)
             </li>
             <li>
-              <a href="#transfer-paybox">Halqaro o'tkazmalar</a> VISA, MasterCard (PayBox.Money)
+              <a href="#transfer-freedompay">Halqaro o'tkazmalar</a> VISA, MasterCard (Freedom Pay)
             </li>
             <li>
               <a href="#transfer-paynet">PAYNET.uz</a>
@@ -707,7 +707,7 @@ export default function Payment({ language }) {
               <a href="#transfer-card">Bank cards</a> (UzCard, HUMO, VISA, MasterCard)
             </li>
             <li>
-              <a href="#transfer-paybox">International bank cards</a> VISA, MasterCard (PayBox.Money)
+              <a href="#transfer-freedompay">International bank cards</a> VISA, MasterCard (Freedom Pay)
             </li>
             <li>
               <a href="#transfer-paynet">PAYNET.uz</a>
