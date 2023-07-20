@@ -123,7 +123,7 @@ export default function Footer({ language }) {
       },
       {
         link: "#",
-        img: <img className="paynet" src="payments/paynet.png" />,
+        img: <img className="paynet" src="/payments/paynet.png" />,
       },
     ],
     vps_vds = {

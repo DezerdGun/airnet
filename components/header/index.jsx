@@ -122,6 +122,7 @@ export default function Header({ language }) {
               en: "+998(71) 200-87-00",
             },
             link: LINKS.PHONE,
+            isHref: true,
           },
           {
             title: {
@@ -130,6 +131,7 @@ export default function Header({ language }) {
               en: "+998(90) 324-30-80 (telegram)",
             },
             link: LINKS.TELEGRAM,
+            isHref: true,
           },
         ],
       },
@@ -232,9 +234,13 @@ const NavItem = ({ nav, language }) => {
     <ul className={st[`header__main__nav__item__${nav.className}`]}>
       {nav.children.map((item) => (
         <li key={item.id}>
-          <Link href={checkLang(language) + item.link}>
-            <a>{item.title[language]}</a>
-          </Link>
+          {item?.isHref ? (
+            <a href={item.link}>{item.title[language]}</a>
+          ) : (
+            <Link href={checkLang(language) + item.link}>
+              <a>{item.title[language]}</a>
+            </Link>
+          )}
         </li>
       ))}
     </ul>
