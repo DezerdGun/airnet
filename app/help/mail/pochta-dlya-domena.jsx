@@ -1,15 +1,35 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import Link from "next/link";
 
 const mainData = {
   headTitle: { ru: "Почта для домена", uz: "Domen uchun pochta", en: "Mail for domain" },
-  related: [],
+  related: [
+    {
+      title: {
+        ru: "Настроить программу по протоколу IMAP",
+        uz: "IMAP protokoli yordamida dasturni sozlang",
+        en: "Configure the program using the IMAP protocol",
+      },
+      link: "/help/mail/mail-clients",
+    },
+  ],
   content: {
     ru: (
       <>
-        <p>Компания AIRNET.uz не предоставляет пользователям почтовый сервис.</p>
-        <p>Мы рекомендуем использовать почтовые сервисы</p>
+        <p>
+          Компания AIRNET.uz предоставляет пользователям почтовый сервис для домена. (https://airnet.uz/email ссылку на
+          "почтовый сервис")
+        </p>
         <p>
           Бесплатный –{" "}
+          <Link href="/email">
+            <a>
+              <strong>AIRNET.Почта</strong>
+            </a>
+          </Link>
+        </p>
+        <p>
+          Платный –{" "}
           <a href="https://connect.yandex.ru/" target="_blank" rel="noreferrer noopener">
             <strong>Яндекс.Почта</strong>
           </a>
@@ -24,17 +44,27 @@ const mainData = {
     ),
     uz: (
       <>
-        <p>AIRNET.uz foydalanuvchilarga pochta xizmatini taqdim etmaydi.</p>
-        <p>Pochta xizmatlaridan foydalanishni tavsiya etamiz</p>
         <p>
-          Bepul –{" "}
+          AIRNET.uz kompaniyasi foydalanuvchilarga domen uchun pochta xizmatini taqdim etadi.
+          (https://airnet.uz/uz/email manziliga havola "Pochta xizmati")
+        </p>
+        <p>
+          Tekin -{" "}
+          <Link href="/uz/email">
+            <a>
+              <strong>AIRNET.Mail</strong>
+            </a>
+          </Link>
+        </p>
+        <p>
+          Pullik –{" "}
           <a href="https://connect.yandex.ru/" target="_blank" rel="noreferrer noopener">
-            <strong>Yandex.Pochta</strong>
+            <strong>Yandex.Mail</strong>
           </a>
         </p>
         <p>
           Pullik –{" "}
-          <a href="https://workspace.google.com/intl/ru/products/gmail" target="_blank" rel="noreferrer noopener">
+          <a href="https://workspace.google.com/intl/en/products/gmail" target="_blank" rel="noreferrer noopener">
             <strong>Gmail.com</strong>
           </a>
         </p>
@@ -42,10 +72,20 @@ const mainData = {
     ),
     en: (
       <>
-        <p>AIRNET.uz does not provide users with a postal service.</p>
-        <p>We recommend using email services</p>
+        <p>
+          The AIRNET.uz company provides users with a mail service for the domain. (https://airnet.uz/en/email link to
+          "Post service")
+        </p>
         <p>
           Free –{" "}
+          <Link href="/en/email">
+            <a>
+              <strong>AIRNET.Mail</strong>
+            </a>
+          </Link>
+        </p>
+        <p>
+          Paid –{" "}
           <a href="https://connect.yandex.ru/" target="_blank" rel="noreferrer noopener">
             <strong>Yandex.Mail</strong>
           </a>

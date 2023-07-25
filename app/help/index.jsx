@@ -319,6 +319,14 @@ const data = [
               title: { ru: "Почта для домена", uz: "Domen uchun pochta", en: "Mail for domain" },
               link: "/help/mail/pochta-dlya-domena",
             },
+            {
+              title: {
+                ru: "Настроить программу по протоколу IMAP",
+                uz: "IMAP protokoli yordamida dasturni sozlang",
+                en: "Configure the program using the IMAP protocol",
+              },
+              link: "/help/mail/mail-clients",
+            },
           ],
         },
         {
