@@ -399,6 +399,10 @@ const sitemap = [
             title: { ru: "Почта для домена", uz: "Domen uchun pochta", en: "Email for Domain" },
             link: "/help/mail/pochta-dlya-domena",
           },
+          {
+            title: { ru: "Почта для домена", uz: "Domen uchun pochta", en: "Email for Domain" },
+            link: "/help/mail/mail-clients",
+          },
         ],
       },
       {
