@@ -166,27 +166,27 @@ export default function PopularSert({ language }) {
       link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=3&one=1",
       prices: [
         {
-          price: "2 250 000",
+          price: "3 000 000",
           dateOff: `1 ${langData.year[language]}`,
           // date: langData.year[language],
         },
         {
-          price: "4 275 000",
+          price: "6 000 000",
           dateOff: `2 ${langData.years[language]}`,
           // date: langData.year[language],
         },
         {
-          price: "6 075 000",
+          price: "9 000 000",
           dateOff: `3 ${langData.years[language]}`,
           // date: langData.year[language],
         },
         {
-          price: "7 650 000",
+          price: "12 000 000",
           dateOff: `4 ${langData.years[language]}`,
           // date: langData.year[language],
         },
         {
-          price: "7 875 000",
+          price: "15 000 000",
           dateOff: langData.fiveYears[language],
           // date: langData.year[language],
         },

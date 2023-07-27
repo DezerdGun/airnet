@@ -434,7 +434,7 @@ export default function SSL({ language }) {
       {
         img: "/partners/comodo.png",
         title: { ru: "PremiumSSL Wildcard", uz: "PremiumSSL Wildcard", en: "PremiumSSL Wildcard" },
-        price: "2 250 000",
+        price: "3 000 000",
         link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=3&one=1",
         description: {
           ru: [
