@@ -17,11 +17,10 @@ const mainData = {
     ru: (
       <>
         <p>
-          Компания AIRNET.uz предоставляет пользователям почтовый сервис для домена. (https://airnet.uz/email ссылку на
-          "почтовый сервис")
+          Компания AIRNET.uz предоставляет пользователям почтовый сервис для домена.
         </p>
         <p>
-          Бесплатный –{" "}
+          Платный –{" "}
           <Link href="/email">
             <a>
               <strong>AIRNET.Почта</strong>
@@ -46,10 +45,9 @@ const mainData = {
       <>
         <p>
           AIRNET.uz kompaniyasi foydalanuvchilarga domen uchun pochta xizmatini taqdim etadi.
-          (https://airnet.uz/uz/email manziliga havola "Pochta xizmati")
         </p>
         <p>
-          Tekin -{" "}
+          Pullik -{" "}
           <Link href="/uz/email">
             <a>
               <strong>AIRNET.Mail</strong>
@@ -73,11 +71,10 @@ const mainData = {
     en: (
       <>
         <p>
-          The AIRNET.uz company provides users with a mail service for the domain. (https://airnet.uz/en/email link to
-          "Post service")
+          The AIRNET.uz company provides users with a mail service for the domain.
         </p>
         <p>
-          Free –{" "}
+          Paid –{" "}
           <Link href="/en/email">
             <a>
               <strong>AIRNET.Mail</strong>

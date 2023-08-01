@@ -131,7 +131,26 @@ const content = [
         uz: "Domen nomini qanday yangilash kerak?",
         en: "How to renew a domain name?",
       },
-      description: { ru: "", uz: "", en: "" },
+      description: {
+        ru: (
+          <>
+            <p>
+              Счет на продление домена биллинговая система выставляет автоматически за 30 дней до срока оканчания регистрации, также вы можете самостоятельно выставить счет в любой момен в биллинг панели во вкладке "Домена", максимальный срок регистрации домена и продления домена 10 лет.
+            </p>
+          </>), 
+        uz: (
+          <>
+            <p>
+              Hisob-kitob tizimi ro‘yxatdan o‘tish muddati tugashidan 30 kun oldin avtomatik ravishda domenni yangilash uchun hisob-fakturani rasmiylashtiradi, shuningdek, siz istalgan vaqtda “Domenlar” yorlig‘idagi billing panelida o‘zingiz hisob-fakturani taqdim etishingiz mumkin, domenni ro‘yxatdan o‘tkazish va domenni uzaytirishning maksimal muddati 10 yil.
+            </p>
+          </>), 
+        en: (
+          <>
+            <p>
+              The billing system issues an invoice for domain renewal automatically 30 days before the registration deadline, you can also invoice yourself at any time in the billing panel in the "Domains" tab, the maximum period for domain registration and domain renewal is 10 years.
+            </p>
+          </>)
+        },
     },
     {
       title: {
@@ -139,7 +158,26 @@ const content = [
         uz: "Bizga domenni boshqa registratordan qanday o'tkazish mumkin?",
         en: "How to transfer a domain to us from another registrar?",
       },
-      description: { ru: "", uz: "", en: "" },
+      description: {
+        ru: (
+          <>
+            <p>
+              Чтобы произвести трансфер домена от другого хостинг-провайдера в нашу систему управления, вам следует обратится к провайдеру где был зарегистрирован домен с заявлением о трансфере домена в компанию ООО "AIRENT", после сообщить нам название домена и ID вашего личного кабинета и после успешного трансфера ваш домен будет виден во вкладке "Домена" в биллинговой панели.
+            </p>
+          </>), 
+        uz: (
+          <>
+            <p>
+              Domenni boshqa xosting provayderidan bizning boshqaruv tizimimizga o‘tkazish uchun domen nomini va shaxsiy hisobingiz identifikatorini bizga bildirganingizdan so‘ng domenni “AIRENT” MChJga o‘tkazish uchun ariza bilan domen ro‘yxatdan o‘tgan provayderga murojaat qilishingiz kerak. va muvaffaqiyatli o'tkazganingizdan so'ng, domeningiz hisob-kitob panelidagi "Domenlar" yorlig'ida ko'rinadi.
+            </p>
+          </>), 
+        en: (
+          <>
+            <p>
+              In order to transfer a domain from another hosting provider to our management system, you should contact the provider where the domain was registered with an application to transfer the domain to "AIRENT" LLC, after telling us the domain name and ID of your personal account and after a successful transfer your the domain will be visible in the "Domains" tab in the billing panel.
+            </p>
+          </>)
+      },
     },
     {
       title: {
@@ -147,7 +185,26 @@ const content = [
         uz: "Domen uchun sertifikatga qanday buyurtma berish mumkin?",
         en: "How to order a certificate for a domain?",
       },
-      description: { ru: "", uz: "", en: "" },
+      description: {
+        ru: (
+          <>
+            <p>
+              Чтобы сертификат на право владение доменным именем следует обратится в "тикет" систему с запросом предоставить сертификат или свидетельство на право владение доменным именем.
+            </p>
+          </>), 
+        uz: (
+          <>
+            <p>
+              Domen nomiga egalik qilish huquqiga sertifikat olish uchun domen nomiga egalik qilish huquqi uchun sertifikat yoki sertifikat taqdim etish so‘rovi bilan “chipta” tizimiga murojaat qilishingiz kerak.
+            </p>
+          </>), 
+        en: (
+          <>
+            <p>
+              To obtain a certificate for the right to own a domain name, you should contact the "ticket" system with a request to provide a certificate for the right to own a domain name.
+            </p>
+          </>)
+        },
     },
   ];
 
