@@ -26,6 +26,10 @@ const AvailableOS = ({ language }) => {
       title: "Windows",
       img: "/os/windows.png",
     },
+    {
+      title: "Alma Linux",
+      img: "/os/alma.png",
+    },
   ];
 
   return <AvailableTemplate title={langData.title[language]} data={os} language={language} />;

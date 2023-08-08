@@ -21,7 +21,7 @@ export default function RegDomain({ language }) {
   );
 }
 
-export const RegDomainBlock = ({ language }) => {
+export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
   const langData = {
     inputPlaceholder: {
       ru: "Введите название домена например: airnet.uz",
@@ -101,14 +101,18 @@ export const RegDomainBlock = ({ language }) => {
       .then((res) => {
         setLoading(false);
 
-        if (res.data.data?.dstatus !== "empty")
+        if (res.data.data?.dstatus !== "empty") {
           setIsDomainFree({
             domain,
             isShow: true,
             isActive: true,
             data: res.data.data,
           });
-        else setIsDomainFree({ domain, isShow: true, isActive: false });
+          setWhoIs && setWhoIs(res.data.data);
+        } else {
+          setIsDomainFree({ domain, isShow: true, isActive: false });
+          setWhoIs && setWhoIs(null);
+        }
       });
   };
 
@@ -181,35 +185,36 @@ export const RegDomainBlock = ({ language }) => {
         </p>
       )}
 
-      <ul className={st.regDomain__price}>
-        <li className={st.regDomain__price__item}>
-          <div className={st.regDomain__price__item__block}>.UZ - 20.000 {langData.sumVg[language]}</div>
-        </li>
-        <li className={st.regDomain__price__item}>
-          <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
-            .RU - 65.000 {langData.sumVg[language]}
-          </div>
-          <span>{langData.notValid[language]}</span>
-        </li>
-        <li className={st.regDomain__price__item}>
-          <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
-            .COM - 150.000 {langData.sumVg[language]}
-          </div>
-          <span>{langData.notValid[language]}</span>
-        </li>
-        <li className={st.regDomain__price__item}>
-          <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
-            .NET - 150.000 {langData.sumVg[language]}
-          </div>
-          <span>{langData.notValid[language]}</span>
-        </li>
-        <li className={st.regDomain__price__item}>
-          <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
-            .ORG - 200.000 {langData.sumVg[language]}
-          </div>
-          <span>{langData.notValid[language]}</span>
-        </li>
-        {/* <li className={st.regDomain__price__item}>
+      {showDomains && (
+        <ul className={st.regDomain__price}>
+          <li className={st.regDomain__price__item}>
+            <div className={st.regDomain__price__item__block}>.UZ - 20.000 {langData.sumVg[language]}</div>
+          </li>
+          <li className={st.regDomain__price__item}>
+            <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
+              .RU - 65.000 {langData.sumVg[language]}
+            </div>
+            <span>{langData.notValid[language]}</span>
+          </li>
+          <li className={st.regDomain__price__item}>
+            <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
+              .COM - 150.000 {langData.sumVg[language]}
+            </div>
+            <span>{langData.notValid[language]}</span>
+          </li>
+          <li className={st.regDomain__price__item}>
+            <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
+              .NET - 150.000 {langData.sumVg[language]}
+            </div>
+            <span>{langData.notValid[language]}</span>
+          </li>
+          <li className={st.regDomain__price__item}>
+            <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
+              .ORG - 200.000 {langData.sumVg[language]}
+            </div>
+            <span>{langData.notValid[language]}</span>
+          </li>
+          {/* <li className={st.regDomain__price__item}>
           <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
             .PRO - 60.000 {langData.sumVg[language]}
           </div>
@@ -239,7 +244,8 @@ export const RegDomainBlock = ({ language }) => {
           </div>
           <span>{langData.notValid[language]}</span>
         </li> */}
-      </ul>
+        </ul>
+      )}
 
       {/* <p className={st.regDomain__endText}>Домен в зоне UZ c хостингом - Бесплатно</p> */}
 

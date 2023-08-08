@@ -21,6 +21,7 @@ import { warningIcon } from "shared/icons/warningIcon";
 import { infiniteIcon } from "shared/icons/infiniteIcon";
 import { warrantyIcon } from "shared/icons/warrantyIcon";
 import AvailableOS from "@/components/availableOS";
+import VirtualServers from "@/components/virtualServers";
 
 export default function CheapVds({ language }) {
   const [show, setShow] = useState(-1);
@@ -427,6 +428,7 @@ export default function CheapVds({ language }) {
 
         <ForFreeBlock data={forFreeVDSData} language={language} />
         <AvailableOS language={language} />
+        <VirtualServers language={language} />
 
         {/* <Container className="text-center" title={langData.cT[language]} description={langData.cD[language]}>
           <div className={st.vds__table}>

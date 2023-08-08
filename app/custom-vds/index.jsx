@@ -24,6 +24,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import ForFreeBlock from "@/components/forFreeBlock";
 import { forFreeVDSData } from "../vds";
 import AvailableOS from "@/components/availableOS";
+import VirtualServers from "@/components/virtualServers";
 
 export default function CustomVDS({ language }) {
   const [show, setShow] = useState(-1);
@@ -415,6 +416,7 @@ export default function CustomVDS({ language }) {
         <ForFreeBlock data={forFreeVDSData} language={language} />
 
         <AvailableOS language={language} />
+        <VirtualServers language={language} />
 
         <WhyBlock content={block} language={language} />
 

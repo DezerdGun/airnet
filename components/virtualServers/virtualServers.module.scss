@@ -1,0 +1,41 @@
+.virtualServers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__item {
+    padding: 30px 20px;
+    background-color: #f5f2f2;
+    border-radius: 20px;
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: 550px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__item {
+      width: calc(50% - 10px);
+    }
+  }
+
+  @media (min-width: 1170px) {
+    justify-content: space-between;
+    gap: 0;
+
+    &__item {
+      width: 32%;
+    }
+  }
+}

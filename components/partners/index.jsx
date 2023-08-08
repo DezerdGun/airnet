@@ -32,14 +32,14 @@ export default function Partners({ language }) {
     <div className={`${st.partners} partners-swiper`}>
       <Container title={langData.title[language]} clNTitle="text-center">
         <Swiper
-          cssMode={true}
           modules={[Autoplay, Navigation]}
           spaceBetween={0}
           slidesPerView={2}
           navigation
           loop={true}
+          speed={4000}
           autoplay={{
-            delay: 10000,
+            delay: 0,
             disableOnInteraction: false,
           }}
           breakpoints={{

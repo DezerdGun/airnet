@@ -122,33 +122,43 @@ export default function Home({ language }) {
           ru: (
             <>
               <p>
-                Чтобы протестировать сервис, сначала нужно <a href="https://billing.airnet.uz/billing.php?do=order&type=partner" target="_blank">зарегистрироваться.</a>
+                Чтобы протестировать сервис, сначала нужно{" "}
+                <a href="https://billing.airnet.uz/billing.php?do=order&type=partner" target="_blank">
+                  зарегистрироваться.
+                </a>
               </p>
 
               <p>Вам нужен VDS сервер? - Выполните 3 простых шага, описанных здесь</p>
 
               <p>
-                Вы представляете юр.лицо, и вам нужен полноценный тестовый стенд? - <strong>напишите нам</strong> в тикет или на наш телеграм!
+                Вы представляете юр.лицо, и вам нужен полноценный тестовый стенд? - <strong>напишите нам</strong> в
+                тикет или на наш телеграм!
               </p>
             </>
           ),
           uz: (
             <>
               <p>
-                Xizmatni sinab koʻrish uchun avval <a href="https://billing.airnet.uz/billing.php?do=order&type=partner" target="_blank">roʻyxatdan oʻtishingiz kerak.</a>
+                Xizmatni sinab koʻrish uchun avval{" "}
+                <a href="https://billing.airnet.uz/billing.php?do=order&type=partner" target="_blank">
+                  roʻyxatdan oʻtishingiz kerak.
+                </a>
               </p>
 
               <p>Sizga VDS server kerakmi? - Bu yerda tasvirlangan 3 oson qadamni bajaring</p>
 
               <p>
-                Siz yuridik shaxssiz va sizga to'liq huquqli test stoli kerakmi? - <strong>bizga yozing</strong> 
+                Siz yuridik shaxssiz va sizga to'liq huquqli test stoli kerakmi? - <strong>bizga yozing</strong>
               </p>
             </>
           ),
           en: (
             <>
               <p>
-                To test the service, you first need to <a href="https://billing.airnet.uz/billing.php?do=order&type=partner" target="_blank">sign up.</a>
+                To test the service, you first need to{" "}
+                <a href="https://billing.airnet.uz/billing.php?do=order&type=partner" target="_blank">
+                  sign up.
+                </a>
               </p>
 
               <p>Do you need a VDS server? - Follow the 3 easy steps described here</p>
@@ -167,7 +177,12 @@ export default function Home({ language }) {
           en: "How quickly does tech support respond? ⭐",
         },
         description: {
-          ru: <p>Время ответа может занять до 30 мин. Оно зависит от числа обращений в определенный период времени. После 20:00 и до 09:00 утра время ответа может быть увеличено!</p>,
+          ru: (
+            <p>
+              Время ответа может занять до 30 мин. Оно зависит от числа обращений в определенный период времени. После
+              20:00 и до 09:00 утра время ответа может быть увеличено!
+            </p>
+          ),
           uz: (
             <p>
               Javob berish vaqti 30 daqiqagacha vaqt olishi mumkin. Bu ma'lum bir davrdagi qo'ng'iroqlar soniga bog'liq.
@@ -175,7 +190,10 @@ export default function Home({ language }) {
             </p>
           ),
           en: (
-            <p>Response time may take up to 30 minutes. It depends on the number of calls in a certain time period. After 20:00 pm and until 09:00 am, the response time may be increased!</p>
+            <p>
+              Response time may take up to 30 minutes. It depends on the number of calls in a certain time period. After
+              20:00 pm and until 09:00 am, the response time may be increased!
+            </p>
           ),
         },
       },
@@ -290,7 +308,10 @@ export default function Home({ language }) {
               </p>
 
               <p>
-                Все доступные способы оплаты смотрите на нашем <a href="/payment" target="_blank">сайте.</a>
+                Все доступные способы оплаты смотрите на нашем{" "}
+                <a href="/payment" target="_blank">
+                  сайте.
+                </a>
               </p>
             </>
           ),
@@ -308,7 +329,11 @@ export default function Home({ language }) {
               </p>
 
               <p>
-                Bizning <a href="/payment" target="_blank">veb-saytimizda</a> mavjud bo'lgan barcha to'lov usullarini ko'ring.
+                Bizning{" "}
+                <a href="/payment" target="_blank">
+                  veb-saytimizda
+                </a>{" "}
+                mavjud bo'lgan barcha to'lov usullarini ko'ring.
               </p>
             </>
           ),
@@ -326,7 +351,10 @@ export default function Home({ language }) {
               </p>
 
               <p>
-                See all available payment methods on our <a href="/payment" target="_blank">website.</a>
+                See all available payment methods on our{" "}
+                <a href="/payment" target="_blank">
+                  website.
+                </a>
               </p>
             </>
           ),
