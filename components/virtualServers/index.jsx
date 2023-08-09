@@ -5,37 +5,37 @@ import { timerIcon } from "@/utils/timerIcon";
 import { signalIcon } from "@/utils/signalIcon";
 
 const VirtualServers = ({ language }) => {
-  const langData = {
-    headTitle: {
-      ru: "Bиртуальные сервера",
-      uz: "Virtual serverlar",
-      en: "Virtual servers",
-    },
-  };
-
   const data = [
     {
       icon: flatsIcon,
-      title: { ru: "Дата-центры уровня TIER III", uz: "", en: "" },
-      description: { ru: "Размещаем инфраструктуру в надежных дата-центрах России и Польши", uz: "", en: "" },
+      title: { ru: "Дата-центры уровня TIER III", uz: "TIER III ma'lumotlar markazlari", en: "TIER III data centers" },
+      description: {
+        ru: "Размещаем инфраструктуру в надежном дата-центру Узбекистана, Ташкент",
+        uz: "Biz infratuzilmani O'zbekistonning ishonchli ma'lumotlar markazi Toshkentga joylashtiramiz",
+        en: "We place the infrastructure in a reliable data center of Uzbekistan, Tashkent",
+      },
     },
     {
       icon: timerIcon,
-      title: { ru: "Доступность по SLA — 99,99%", uz: "", en: "" },
+      title: { ru: "Доступность по SLA — 99,99%", uz: "SLA mavjudligi — 99,99%", en: "SLA availability — 99.99%" },
       description: {
         ru: "Гарантируем высокую отказоустойчивость. Возможный простой — не более 50 минут в год",
-        uz: "",
-        en: "",
+        uz: "Yuqori nosozlikka chidamliligini kafolatlaymiz. Mumkin bo'lgan uzilishlar - yiliga 50 daqiqadan ko'p bo'lmagan",
+        en: "We guarantee high fault tolerance. Possible downtime - no more than 50 minutes per year",
       },
     },
     {
       icon: signalIcon,
-      title: { ru: "Круглосуточный мониторинг", uz: "", en: "" },
-      description: { ru: "Следим за доступностью инфраструктуры и мгновенно реагируем на проблемы", uz: "", en: "" },
+      title: { ru: "Круглосуточный мониторинг", uz: "24 soatlik monitoring", en: "24-hour monitoring" },
+      description: {
+        ru: "Следим за доступностью инфраструктуры и мгновенно реагируем на проблемы",
+        uz: "Biz infratuzilma mavjudligini kuzatib boramiz va muammolarga zudlik bilan javob beramiz",
+        en: "We monitor the availability of infrastructure and instantly respond to problems",
+      },
     },
   ];
   return (
-    <Container title={langData.headTitle[language]}>
+    <Container>
       <div className={styles.virtualServers}>
         {data.map((item) => (
           <div key={item.title[language]} className={styles.virtualServers__item}>

@@ -64,7 +64,18 @@ export default function Header({ language }) {
       {
         title: { ru: "Домены", uz: "Domenlar", en: "Domains" },
         link: LINKS.DOMAINS,
+        children: [
+          {
+            title: {
+              ru: "Whois",
+              uz: "Whois",
+              en: "Whois",
+            },
+            link: LINKS.DOMAINS_WHOIS,
+          },
+        ],
       },
+
       {
         title: { ru: "SSL", uz: "SSL", en: "SSL" },
         link: LINKS.SSL,

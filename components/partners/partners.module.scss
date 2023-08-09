@@ -9,12 +9,12 @@ $green: #00402e;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    // background-color: $green;
+    background-color: $green;
 
     img {
       width: 130px;
       padding: 0 10px;
-      // filter: contrast(0) brightness(10);
+      filter: contrast(0) brightness(10);
       transition: filter 0.2s ease;
     }
 

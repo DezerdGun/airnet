@@ -132,13 +132,15 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
           {isDomainFree.isActive ? (
             <span className={st.regDomain__text__red}>
               {langData.domenBooked[language]}{" "}
-              <span
-                className={st.regDomain__text__red}
-                style={{ textDecoration: "underline", cursor: "pointer" }}
-                onClick={() => setModal(!modal)}
-              >
-                whois
-              </span>
+              {showDomains && (
+                <span
+                  className={st.regDomain__text__red}
+                  style={{ textDecoration: "underline", cursor: "pointer" }}
+                  onClick={() => setModal(!modal)}
+                >
+                  whois
+                </span>
+              )}
             </span>
           ) : (
             <>

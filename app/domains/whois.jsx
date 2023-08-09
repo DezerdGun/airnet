@@ -31,6 +31,21 @@ export default function WhoIs({ language }) {
       uz: "Whois - xizmat",
       en: "Whois - service",
     },
+    t1: {
+      ru: "Об услуге",
+      uz: "Hizmatlar haqida",
+      en: "About service",
+    },
+    t2: {
+      ru: "Доменное имя — это уникальный адрес, по которому открывается сайт в интернете.",
+      uz: "Domen nomi - bu Internetda veb-sayt ochiladigan noyob manzil.",
+      en: "A domain name is a unique address at which a website opens on the Internet.",
+    },
+    t3: {
+      ru: "У нас вы сможете подобрать красивое доменное имя по самым низким ценам, а ещё мы не повышаем стоимость домена при продлении.",
+      uz: "Biz bilan siz eng arzon narxlarda chiroyli domen nomini olishingiz mumkin, bizda esa yo'q biz yangilanganda domen narxini oshiramiz.",
+      en: "Here you can find a beautiful domain name at the lowest prices, and we also do not increase the cost of a domain upon renewal.",
+    },
     description: {
       ru: (
         <p>
@@ -336,6 +351,20 @@ export default function WhoIs({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
+      <Container headTitle={langData.headTitle[language]}>
+        <hr />
+        <div className={st.domains__block}>
+          <div className={st.domains__block__content}>
+            <h2>{langData.t1[language]}</h2>
+            <p>{langData.t2[language]}</p>
+            <p>{langData.t3[language]}</p>
+          </div>
+          <div className={st.domains__block__img}>
+            <img src="/domain/intro-img.png" />
+          </div>
+        </div>
+      </Container>
+
       <div className={st.domains__head}>
         <Container
           headTitle={langData.headTitle[language]}
@@ -349,76 +378,77 @@ export default function WhoIs({ language }) {
               {whoIs && (
                 <div className="my-4">
                   <h2 className="text-start">Whois</h2>
-                  <table>
-                    <tr>
-                      <th className="text-start">dName</th>
-                      <td>{whoIs?.dName}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sRegistrator</th>
-                      <td>{whoIs?.sRegistrator}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">dStatus</th>
-                      <td>{whoIs?.dStatus}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sNs1</th>
-                      <td>{whoIs?.sNs1}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sIp1</th>
-                      <td>{whoIs?.sIp1}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sNs2</th>
-                      <td>{whoIs?.sNs2}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sIp2</th>
-                      <td>{whoIs?.sIp2}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sNs3</th>
-                      <td>{whoIs?.sNs3}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sNs4</th>
-                      <td>{whoIs?.sNs4}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">dActivated</th>
-                      <td>{whoIs?.dActivated}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">dExpired</th>
-                      <td>{whoIs?.dExpired}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sOrg</th>
-                      <td>{whoIs?.sOrg}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sCustomerPost</th>
-                      <td>{whoIs?.sCustomerPost}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sCustomerCity</th>
-                      <td>{whoIs?.sCustomerCity}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sCustomerRegion</th>
-                      <td>{whoIs?.sCustomerRegion}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sCustomerCountry</th>
-                      <td>{whoIs?.sCustomerCountry}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sCustomerState</th>
-                      <td>{whoIs?.sCustomerState}</td>
-                    </tr>
-                    {/* <tr>
+                  <div className="table">
+                    <table style={{ border: "1px solid" }}>
+                      <tr>
+                        <th className="text-start">dName</th>
+                        <td>{whoIs?.dName}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sRegistrator</th>
+                        <td>{whoIs?.sRegistrator}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">dStatus</th>
+                        <td>{whoIs?.dStatus}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sNs1</th>
+                        <td>{whoIs?.sNs1}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sIp1</th>
+                        <td>{whoIs?.sIp1}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sNs2</th>
+                        <td>{whoIs?.sNs2}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sIp2</th>
+                        <td>{whoIs?.sIp2}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sNs3</th>
+                        <td>{whoIs?.sNs3}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sNs4</th>
+                        <td>{whoIs?.sNs4}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">dActivated</th>
+                        <td>{whoIs?.dActivated}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">dExpired</th>
+                        <td>{whoIs?.dExpired}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sOrg</th>
+                        <td>{whoIs?.sOrg}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sCustomerPost</th>
+                        <td>{whoIs?.sCustomerPost}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sCustomerCity</th>
+                        <td>{whoIs?.sCustomerCity}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sCustomerRegion</th>
+                        <td>{whoIs?.sCustomerRegion}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sCustomerCountry</th>
+                        <td>{whoIs?.sCustomerCountry}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sCustomerState</th>
+                        <td>{whoIs?.sCustomerState}</td>
+                      </tr>
+                      {/* <tr>
                       <th className="text-start">sTechsOrgRU</th>
                       <td>{whoIs?.sTechsOrgRU}</td>
                     </tr>
@@ -470,7 +500,8 @@ export default function WhoIs({ language }) {
                       <th className="text-start">rcode</th>
                       <td>{whoIs?.rcode}</td>
                     </tr> */}
-                  </table>
+                    </table>
+                  </div>
                 </div>
               )}
 

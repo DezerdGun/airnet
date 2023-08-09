@@ -12,6 +12,7 @@ export const LINKS = {
   VDS_STORAGE: "/",
   VDS_WINDOWS: "/",
   DOMAINS: "/domains",
+  DOMAINS_WHOIS: "/domains/whois",
   SSL_HELP: "/help/ssl/zachem-nuzhen-ssl-sertifikat",
   LICENSE: "/license",
   ADMINISTRATION: "/admin-support",
