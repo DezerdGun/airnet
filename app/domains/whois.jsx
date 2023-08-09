@@ -46,6 +46,106 @@ export default function WhoIs({ language }) {
       uz: "Biz bilan siz eng arzon narxlarda chiroyli domen nomini olishingiz mumkin, bizda esa yo'q biz yangilanganda domen narxini oshiramiz.",
       en: "Here you can find a beautiful domain name at the lowest prices, and we also do not increase the cost of a domain upon renewal.",
     },
+    domainSettings: {
+      ru: "ПАРАМЕТРЫ ДОМЕНА",
+      uz: "DOMAIN SOZLAMALARI",
+      en: "DOMAIN SETTINGS",
+    },
+    domain: {
+      ru: "Домен",
+      uz: "Domen",
+      en: "Domain",
+    },
+    status: {
+      ru: "Статус",
+      uz: "Holat",
+      en: "Status",
+    },
+    active: {
+      ru: "Активный",
+      uz: "Faol",
+      en: "Active",
+    },
+    descriptionTitle: {
+      ru: "Описание",
+      uz: "Tavsif",
+      en: "Description",
+    },
+    firstNS: {
+      ru: "Первый NS",
+      uz: "Birinchi NS",
+      en: "First NS",
+    },
+    secNS: {
+      ru: "Второй NS",
+      uz: "Ikkinchi NS",
+      en: "Second NS",
+    },
+    thirdNS: {
+      ru: "Третий NS",
+      uz: "Uchinchi NS",
+      en: "Third NS",
+    },
+    fourthNS: {
+      ru: "Четвертый NS",
+      uz: "To'rtinchi NS",
+      en: "Fourth NS",
+    },
+    registrator: {
+      ru: "Регистратор",
+      uz: "Registrator",
+      en: "Registrar",
+    },
+    createdAt: {
+      ru: "Дата создания",
+      uz: "Yaratilgan sana",
+      en: "Date of creation",
+    },
+    until: {
+      ru: "Активен до",
+      uz: "Faol",
+      en: "Active until",
+    },
+    clientSettings: {
+      ru: "ПАРАМЕТРЫ КЛИЕНТА",
+      uz: "MIJOLAR PARAMETRLARI",
+      en: "CLIENT PARAMETERS",
+    },
+    type: {
+      ru: "Тип",
+      uz: "Tur",
+      en: "Type",
+    },
+    organistaion: {
+      ru: "Организация",
+      uz: "Tashkilot",
+      en: "Organization",
+    },
+    region: {
+      ru: "Регион",
+      uz: "Region",
+      en: "Region",
+    },
+    postIndex: {
+      ru: "Почтовый индекс",
+      uz: "Pochta indeksi",
+      en: "Postal code",
+    },
+    city: {
+      ru: "Город",
+      uz: "Shahar",
+      en: "City",
+    },
+    country: {
+      ru: "Страна",
+      uz: "Mamlakat",
+      en: "Country",
+    },
+    prefix: {
+      ru: "Префикс",
+      uz: "Prefiks",
+      en: "Prefix",
+    },
     description: {
       ru: (
         <p>
@@ -196,13 +296,11 @@ export default function WhoIs({ language }) {
             mutlaqo bepul.
           </p>
           <p>
-            {" "}
-            sahifasiga o'tish
             <Link href={checkLang(language) + LINKS.DOMAINS}>
               <a>Domenni ro'yxatdan o'tkazish</a>
-            </Link>
-            , qidiruv satriga qiziqish nomini kiriting va "Ro'yxatdan o'tish" tugmasini bosing. Ma'lumot qidirish odatda
-            bir necha soniya vaqt oladi.
+            </Link>{" "}
+            sahifasiga o'tish, qidiruv satriga qiziqish nomini kiriting va "Ro'yxatdan o'tish" tugmasini bosing.
+            Ma'lumot qidirish odatda bir necha soniya vaqt oladi.
           </p>
           <p>
             Agar tizim ushbu domen haqida ma'lumot topa olmasa, unda bu nom bepul va ehtimol siz ro'yxatdan o'tishingiz
@@ -378,7 +476,134 @@ export default function WhoIs({ language }) {
               {whoIs && (
                 <div className="my-4">
                   <h2 className="text-start">Whois</h2>
-                  <div className="table">
+
+                  <div className="table" style={{ overflowX: "auto", textAlign: "left" }}>
+                    <table className="table table-striped" style={{ minWidth: "800px" }}>
+                      <thead>
+                        <tr>
+                          <td colSpan="8" style={{ textAlign: "center" }}>
+                            <strong>{langData.domainSettings[language]}</strong>
+                          </td>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>
+                            <strong>{langData.domain[language]}:</strong>
+                          </td>
+                          <td colSpan="3">{whoIs?.dName ?? "-"}</td>
+                          <td>
+                            <strong>{langData.status[language]}:</strong>
+                          </td>
+                          <td colSpan="3">{langData.active[language]}</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong>{langData.descriptionTitle[language]}:</strong>
+                          </td>
+                          <td colSpan="3">-</td>
+                          <td>
+                            <strong>{langData.firstNS[language]}:</strong>
+                          </td>
+                          <td colSpan="3">
+                            {langData.domain[language]}: {whoIs?.sNs1}{" "}
+                            {whoIs?.sNs1 !== "not.defined." && `IP: ${whoIs?.sIp1}`}
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong>{langData.registrator[language]}:</strong>
+                          </td>
+                          <td colSpan="3">{whoIs?.sRegistrator}</td>
+                          <td>
+                            <strong>{langData.secNS[language]}:</strong>
+                          </td>
+                          <td colSpan="3">
+                            {langData.domain[language]}: {whoIs?.sNs2}{" "}
+                            {whoIs?.sNs2 !== "not.defined." && `IP: ${whoIs?.sIp2}`}
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong>{langData.createdAt[language]}:</strong>
+                          </td>
+                          <td colSpan="3">{whoIs?.dActivated} г.</td>
+                          <td>
+                            <strong>{langData.thirdNS[language]}:</strong>
+                          </td>
+                          <td colSpan="3">
+                            {langData.domain[language]}: {whoIs?.sNs3}{" "}
+                            {whoIs?.sNs3 !== "not.defined." && `IP: ${whoIs?.sIp3}`}
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong>{langData.until[language]}:</strong>
+                          </td>
+                          <td colSpan="3">{whoIs?.dExpired} г.</td>
+                          <td>
+                            <strong>{langData.fourthNS[language]}:</strong>
+                          </td>
+                          <td colSpan="3">
+                            {langData.domain[language]}: {whoIs?.sNs4}{" "}
+                            {whoIs?.sNs4 !== "not.defined." && `IP: ${whoIs?.sIp4}`}
+                          </td>
+                        </tr>
+                      </tbody>
+
+                      <thead>
+                        <tr>
+                          <td colSpan="8" style={{ textAlign: "center" }}>
+                            <strong>{langData.clientSettings[language]}</strong>
+                          </td>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>
+                            <strong>{langData.type[language]}:</strong>
+                          </td>
+                          <td colSpan="7">-</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong>{langData.organistaion[language]}:</strong>
+                          </td>
+                          <td colSpan="7">{whoIs?.sOrg}</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong>{langData.region[language]}:</strong>
+                          </td>
+                          <td colSpan="7">
+                            {whoIs?.sCustomerCity}, {whoIs?.sCustomerCountry}
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong>{langData.postIndex[language]}:</strong>
+                          </td>
+                          <td>{whoIs?.sCustomerPost}</td>
+                          <td>
+                            <strong>{langData.city[language]}:</strong>
+                          </td>
+                          <td>{whoIs?.sCustomerCity}</td>
+                          <td>
+                            <strong>{langData.country[language]}:</strong>
+                          </td>
+                          <td>{whoIs?.sCustomerCountry}</td>
+                          <td>
+                            <strong>{langData.prefix[language]}:</strong>
+                          </td>
+                          <td>{whoIs?.sCustomerState}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  {/* <div className="table">
                     <table style={{ border: "1px solid" }}>
                       <tr>
                         <th className="text-start">dName</th>
@@ -448,144 +673,64 @@ export default function WhoIs({ language }) {
                         <th className="text-start">sCustomerState</th>
                         <td>{whoIs?.sCustomerState}</td>
                       </tr>
-                      {/* <tr>
-                      <th className="text-start">sTechsOrgRU</th>
-                      <td>{whoIs?.sTechsOrgRU}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sTechsPost</th>
-                      <td>{whoIs?.sTechsPost}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sTechsCityRU</th>
-                      <td>{whoIs?.sTechsCityRU}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sTechsRegion</th>
-                      <td>{whoIs?.sTechsRegion}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sTechsCountryRU</th>
-                      <td>{whoIs?.sTechsCountryRU}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sTechsState</th>
-                      <td>{whoIs?.sTechsState}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sBillsOrgRU</th>
-                      <td>{whoIs?.sBillsOrgRU}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sBillsPost</th>
-                      <td>{whoIs?.sBillsPost}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sBillsCityRU</th>
-                      <td>{whoIs?.sBillsCityRU}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sBillsRegion</th>
-                      <td>{whoIs?.sBillsRegion}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sBillsCountryRU</th>
-                      <td>{whoIs?.sBillsCountryRU}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">sBillsState</th>
-                      <td>{whoIs?.sBillsState}</td>
-                    </tr>
-                    <tr>
-                      <th className="text-start">rcode</th>
-                      <td>{whoIs?.rcode}</td>
-                    </tr> */}
+                      <tr>
+                        <th className="text-start">sTechsOrgRU</th>
+                        <td>{whoIs?.sTechsOrgRU}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sTechsPost</th>
+                        <td>{whoIs?.sTechsPost}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sTechsCityRU</th>
+                        <td>{whoIs?.sTechsCityRU}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sTechsRegion</th>
+                        <td>{whoIs?.sTechsRegion}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sTechsCountryRU</th>
+                        <td>{whoIs?.sTechsCountryRU}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sTechsState</th>
+                        <td>{whoIs?.sTechsState}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sBillsOrgRU</th>
+                        <td>{whoIs?.sBillsOrgRU}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sBillsPost</th>
+                        <td>{whoIs?.sBillsPost}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sBillsCityRU</th>
+                        <td>{whoIs?.sBillsCityRU}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sBillsRegion</th>
+                        <td>{whoIs?.sBillsRegion}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sBillsCountryRU</th>
+                        <td>{whoIs?.sBillsCountryRU}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">sBillsState</th>
+                        <td>{whoIs?.sBillsState}</td>
+                      </tr>
+                      <tr>
+                        <th className="text-start">rcode</th>
+                        <td>{whoIs?.rcode}</td>
+                      </tr>
                     </table>
-                  </div>
+                  </div> */}
                 </div>
               )}
 
-              <div className="text-start">
-                <h2>Whois – Проверить домен на занятость</h2>
-                <p>Сервис Whois позволяет получить сведения о регистрации доменов.</p>
-                <p>
-                  В переводе с английского «who is» — «кто это». Сервис покажет, кто является администратором и
-                  регистратором домена, выдаст сведения о сроке регистрации и возрасте доменного имени. При помощи Whois
-                  можно узнать контакты администратора заинтересовавшего вас домена, а также найти свободные домены,
-                  которые можно будет зарегистрировать через нашу компанию.
-                </p>
-                <h2>Как работает сервис Whois</h2>
-                <p>
-                  Чаще всего сервис Whois используется для того, чтобы проверить домен на занятость. Сделать это можно
-                  легко, быстро и абсолютно бесплатно.
-                </p>
-                <p>
-                  Перейдите на страницу{" "}
-                  <Link href={checkLang(language) + LINKS.DOMAINS}>
-                    <a>Регистрация доменов</a>
-                  </Link>
-                  , введите интересующее имя в строку поиска и нажмите кнопку «Зарегистрировать». Поиск информации
-                  обычно занимает считанные секунды.
-                </p>
-                <p>
-                  Если система не найдет информацию о данном домене, значит, это имя свободно, и, скорее всего, вы
-                  сможете его зарегистрировать. Рядом с сообщением «Домен свободен» вы увидите стоимость его регистрации
-                  на один год. Для покупки нажмите кнопку «Добавить в корзину».
-                </p>
-                <p>
-                  Если сервис выдаст сообщение «Домен занят», то, нажав на кнопку «Whois», вы сможете посмотреть
-                  подробную информацию о домене.
-                </p>
-                <h2>Whois – Проверить домен на занятость</h2>
-                <p>Какие сведения можно получить при помощи Whois</p>
-                <p>
-                  После проверки домена, который уже был зарегистрирован, Whois-сервис отображает следующую информацию:
-                </p>
-                <ul>
-                  <li>
-                    В полях «nserver» будут показаны сведения о DNS-серверах. Это позволяет узнать, у какого
-                    хостинг-провайдера владелец домена разместил свой сайт, поскольку, как правило, в этих строках
-                    отображаются записи хостера.
-                  </li>
-                  <li>ВВ поле «state» вы увидите актуальный статус домена.</li>
-                  <li>
-                    В случае если домен был зарегистрирован на физическое лицо, сервис Whois покажет в строке «person»
-                    данные об администраторе, однако в ряде доменных зон они могут быть скрыты. В этом случае вместо
-                    имени владельца в строке «person» вы увидите запись «Private Person».
-                  </li>
-                  <li>
-                    Если доменом владеет юридическое лицо, вместо записи «person» вы увидите строку «org», где
-                    отобразятся данные об этой организации.
-                  </li>
-                  <li>
-                    Поле «registrar» показывает имя компании-регистратора, в которой был зарегистрирован данный домен.
-                  </li>
-                  <li>В строке «admin-contact» сервис отображает контакты администратора домена.</li>
-                  <li>
-                    Поле «created» содержит сведения о дате регистрации доменного имени. Выяснив возраст домена, можно
-                    выявить мошеннические сайты-однодневки. Проверить сайт имеет смысл, если вам прислали e-mail с
-                    какой-либо подозрительной ссылкой либо в случае, когда вы зашли на вызывающий у вас сомнения
-                    веб-ресурс. Сайт, созданный недавно, вполне может оказаться мошенническим ресурсом.
-                  </li>
-                  <li>Поле «paid-till» показывает, когда закончится срок регистрации домена.</li>
-                  <li>
-                    Из строки «free-date» вы узнаете, когда этот адрес окажется свободен, если владелец не станет его
-                    продлевать.
-                  </li>
-                  <li>В поле «last updated» отображается дата последнего обновления данных о домене.</li>
-                </ul>
-                <p>
-                  Набор сведений, выдаваемых сервисом, может несколько отличаться в зависимости от доменной зоны и
-                  регистратора.
-                </p>
-                {/* <div>
-                        Ознакомьтесь с{" "}
-                        <a href="/ru/services/domains/whois/usloviya-ispolzovaniya-whois-servisa/">
-                          условиями использования
-                        </a>{" "}
-                        встроенного Whois-сервиса.
-                      </div> */}
-              </div>
+              {langData.whoisText[language]}
             </div>
             {langData.reg[language]}
           </div>
