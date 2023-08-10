@@ -90,26 +90,26 @@ export default function Header({ language }) {
         link: LINKS.ABOUT,
         className: "sec",
         children: [
-          {
-            title: {
-              ru: "Администрирование",
-              uz: "Ma'muriyat",
-              en: "Administration",
-            },
-            link: LINKS.ADMINISTRATION,
-          },
-          {
-            title: { ru: "Реселлинг", uz: "Qayta sotish", en: "Reselling" },
-            link: LINKS.RESELLING,
-          },
-          {
-            title: { ru: "Блог", uz: "Blog", en: "Blog" },
-            link: LINKS.BLOG,
-          },
-          {
-            title: { ru: "Акции", uz: "Aksiya", en: "Stocks" },
-            link: LINKS.STOCK,
-          },
+          // {
+          //   title: {
+          //     ru: "Администрирование",
+          //     uz: "Ma'muriyat",
+          //     en: "Administration",
+          //   },
+          //   link: LINKS.ADMINISTRATION,
+          // },
+          // {
+          //   title: { ru: "Реселлинг", uz: "Qayta sotish", en: "Reselling" },
+          //   link: LINKS.RESELLING,
+          // },
+          // {
+          //   title: { ru: "Блог", uz: "Blog", en: "Blog" },
+          //   link: LINKS.BLOG,
+          // },
+          // {
+          //   title: { ru: "Акции", uz: "Aksiya", en: "Stocks" },
+          //   link: LINKS.STOCK,
+          // },
           {
             title: { ru: "FAQ", uz: "FAQ", en: "FAQ" },
             link: LINKS.HELP,

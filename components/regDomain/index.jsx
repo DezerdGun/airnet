@@ -53,6 +53,106 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
       uz: "Vaqtinchalik mavjud emas",
       en: "Temporarily unavailable",
     },
+    domainSettings: {
+      ru: "ПАРАМЕТРЫ ДОМЕНА",
+      uz: "DOMAIN SOZLAMALARI",
+      en: "DOMAIN SETTINGS",
+    },
+    domain: {
+      ru: "Домен",
+      uz: "Domen",
+      en: "Domain",
+    },
+    status: {
+      ru: "Статус",
+      uz: "Holat",
+      en: "Status",
+    },
+    active: {
+      ru: "Активный",
+      uz: "Faol",
+      en: "Active",
+    },
+    descriptionTitle: {
+      ru: "Описание",
+      uz: "Tavsif",
+      en: "Description",
+    },
+    firstNS: {
+      ru: "Первый NS",
+      uz: "Birinchi NS",
+      en: "First NS",
+    },
+    secNS: {
+      ru: "Второй NS",
+      uz: "Ikkinchi NS",
+      en: "Second NS",
+    },
+    thirdNS: {
+      ru: "Третий NS",
+      uz: "Uchinchi NS",
+      en: "Third NS",
+    },
+    fourthNS: {
+      ru: "Четвертый NS",
+      uz: "To'rtinchi NS",
+      en: "Fourth NS",
+    },
+    registrator: {
+      ru: "Регистратор",
+      uz: "Registrator",
+      en: "Registrar",
+    },
+    createdAt: {
+      ru: "Дата создания",
+      uz: "Yaratilgan sana",
+      en: "Date of creation",
+    },
+    until: {
+      ru: "Активен до",
+      uz: "Faol",
+      en: "Active until",
+    },
+    clientSettings: {
+      ru: "ПАРАМЕТРЫ КЛИЕНТА",
+      uz: "MIJOLAR PARAMETRLARI",
+      en: "CLIENT PARAMETERS",
+    },
+    type: {
+      ru: "Тип",
+      uz: "Tur",
+      en: "Type",
+    },
+    organistaion: {
+      ru: "Организация",
+      uz: "Tashkilot",
+      en: "Organization",
+    },
+    region: {
+      ru: "Регион",
+      uz: "Region",
+      en: "Region",
+    },
+    postIndex: {
+      ru: "Почтовый индекс",
+      uz: "Pochta indeksi",
+      en: "Postal code",
+    },
+    city: {
+      ru: "Город",
+      uz: "Shahar",
+      en: "City",
+    },
+    country: {
+      ru: "Страна",
+      uz: "Mamlakat",
+      en: "Country",
+    },
+    prefix: {
+      ru: "Префикс",
+      uz: "Prefiks",
+      en: "Prefix",
+    },
   };
 
   const [isDomainFree, setIsDomainFree] = useState({
@@ -253,7 +353,133 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
 
       <div className={`${st.modal} ${modal ? st.modal__active : ""}`}>
         <div id="modalBlock" className={st.modal__block}>
-          <table>
+          <div className="table" style={{ overflowX: "auto", textAlign: "left" }}>
+            <table className="table table-striped" style={{ minWidth: "800px" }}>
+              <thead>
+                <tr>
+                  <td colSpan="8" style={{ textAlign: "center" }}>
+                    <strong>{langData.domainSettings[language]}</strong>
+                  </td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>{langData.domain[language]}:</strong>
+                  </td>
+                  <td colSpan="3">{isDomainFree?.data?.dName ?? "-"}</td>
+                  <td>
+                    <strong>{langData.status[language]}:</strong>
+                  </td>
+                  <td colSpan="3">{langData.active[language]}</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>{langData.descriptionTitle[language]}:</strong>
+                  </td>
+                  <td colSpan="3">-</td>
+                  <td>
+                    <strong>{langData.firstNS[language]}:</strong>
+                  </td>
+                  <td colSpan="3">
+                    {langData.domain[language]}: {isDomainFree?.data?.sNs1}{" "}
+                    {isDomainFree?.data?.sNs1 !== "not.defined." && `IP: ${isDomainFree?.data?.sIp1}`}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>{langData.registrator[language]}:</strong>
+                  </td>
+                  <td colSpan="3">{isDomainFree?.data?.sRegistrator}</td>
+                  <td>
+                    <strong>{langData.secNS[language]}:</strong>
+                  </td>
+                  <td colSpan="3">
+                    {langData.domain[language]}: {isDomainFree?.data?.sNs2}{" "}
+                    {isDomainFree?.data?.sNs2 !== "not.defined." && `IP: ${isDomainFree?.data?.sIp2}`}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>{langData.createdAt[language]}:</strong>
+                  </td>
+                  <td colSpan="3">{isDomainFree?.data?.dActivated} г.</td>
+                  <td>
+                    <strong>{langData.thirdNS[language]}:</strong>
+                  </td>
+                  <td colSpan="3">
+                    {langData.domain[language]}: {isDomainFree?.data?.sNs3}{" "}
+                    {isDomainFree?.data?.sNs3 !== "not.defined." && `IP: ${isDomainFree?.data?.sIp3}`}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>{langData.until[language]}:</strong>
+                  </td>
+                  <td colSpan="3">{isDomainFree?.data?.dExpired} г.</td>
+                  <td>
+                    <strong>{langData.fourthNS[language]}:</strong>
+                  </td>
+                  <td colSpan="3">
+                    {langData.domain[language]}: {isDomainFree?.data?.sNs4}{" "}
+                    {isDomainFree?.data?.sNs4 !== "not.defined." && `IP: ${isDomainFree?.data?.sIp4}`}
+                  </td>
+                </tr>
+              </tbody>
+
+              <thead>
+                <tr>
+                  <td colSpan="8" style={{ textAlign: "center" }}>
+                    <strong>{langData.clientSettings[language]}</strong>
+                  </td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>{langData.type[language]}:</strong>
+                  </td>
+                  <td colSpan="7">-</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>{langData.organistaion[language]}:</strong>
+                  </td>
+                  <td colSpan="7">{isDomainFree?.data?.sOrg}</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>{langData.region[language]}:</strong>
+                  </td>
+                  <td colSpan="7">
+                    {isDomainFree?.data?.sCustomerCity}, {isDomainFree?.data?.sCustomerCountry}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>{langData.postIndex[language]}:</strong>
+                  </td>
+                  <td>{isDomainFree?.data?.sCustomerPost}</td>
+                  <td>
+                    <strong>{langData.city[language]}:</strong>
+                  </td>
+                  <td>{isDomainFree?.data?.sCustomerCity}</td>
+                  <td>
+                    <strong>{langData.country[language]}:</strong>
+                  </td>
+                  <td>{isDomainFree?.data?.sCustomerCountry}</td>
+                  <td>
+                    <strong>{langData.prefix[language]}:</strong>
+                  </td>
+                  <td>{isDomainFree?.data?.sCustomerState}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* <table>
             <tr>
               <th>dName</th>
               <td>{isDomainFree?.data?.dName}</td>
@@ -373,8 +599,8 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
 						<tr>
 							<th>rcode</th>
 							<td>{isDomainFree?.data?.rcode}</td>
-						</tr> */}
-          </table>
+						</tr> 
+          </table> */}
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" onClick={() => setModal(false)}>
           <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />

@@ -175,7 +175,7 @@ export default function WhoIs({ language }) {
     },
     reg: {
       ru: (
-        <p>
+        <p className="text-start">
           Перед регистрацией просим вас ознакомиться с{" "}
           <a href="https://cctld.uz/info/polru/" target="_blank" rel="noopener noreferrer">
             Положением о порядке регистрации и пользования доменными именами в домене «UZ»
@@ -183,7 +183,7 @@ export default function WhoIs({ language }) {
         </p>
       ),
       uz: (
-        <p>
+        <p className="text-start">
           Ro'yxatdan o'tishdan oldin{" "}
           <a href="https://cctld.uz/info/polru/" target="_blank" rel="noopener noreferrer">
             “UZ” domenida domen nomlarini ro‘yxatdan o‘tkazish va ulardan foydalanish tartibi to‘g‘risidagi nizom bn
@@ -192,7 +192,7 @@ export default function WhoIs({ language }) {
         </p>
       ),
       en: (
-        <p>
+        <p className="text-start">
           Before registration, please read the{" "}
           <a href="https://cctld.uz/info/polru/" target="_blank" rel="noopener noreferrer">
             Regulations on the procedure for registration and use of domain names in the "UZ" domain
@@ -200,7 +200,7 @@ export default function WhoIs({ language }) {
         </p>
       ),
     },
-    whoisText: {
+    whoisText1: {
       ru: (
         <div className="text-start">
           <h2>Whois – Проверить домен на занятость</h2>
@@ -211,73 +211,6 @@ export default function WhoIs({ language }) {
             контакты администратора заинтересовавшего вас домена, а также найти свободные домены, которые можно будет
             зарегистрировать через нашу компанию.
           </p>
-          <h2>Как работает сервис Whois</h2>
-          <p>
-            Чаще всего сервис Whois используется для того, чтобы проверить домен на занятость. Сделать это можно легко,
-            быстро и абсолютно бесплатно.
-          </p>
-          <p>
-            Перейдите на страницу{" "}
-            <Link href={checkLang(language) + LINKS.DOMAINS}>
-              <a>Регистрация доменов</a>
-            </Link>
-            , введите интересующее имя в строку поиска и нажмите кнопку «Зарегистрировать». Поиск информации обычно
-            занимает считанные секунды.
-          </p>
-          <p>
-            Если система не найдет информацию о данном домене, значит, это имя свободно, и, скорее всего, вы сможете его
-            зарегистрировать. Рядом с сообщением «Домен свободен» вы увидите стоимость его регистрации на один год. Для
-            покупки нажмите кнопку «Добавить в корзину».
-          </p>
-          <p>
-            Если сервис выдаст сообщение «Домен занят», то, нажав на кнопку «Whois», вы сможете посмотреть подробную
-            информацию о домене.
-          </p>
-          <h2>Whois – Проверить домен на занятость</h2>
-          <p>Какие сведения можно получить при помощи Whois</p>
-          <p>После проверки домена, который уже был зарегистрирован, Whois-сервис отображает следующую информацию:</p>
-          <ul>
-            <li>
-              В полях «nserver» будут показаны сведения о DNS-серверах. Это позволяет узнать, у какого
-              хостинг-провайдера владелец домена разместил свой сайт, поскольку, как правило, в этих строках
-              отображаются записи хостера.
-            </li>
-            <li>ВВ поле «state» вы увидите актуальный статус домена.</li>
-            <li>
-              В случае если домен был зарегистрирован на физическое лицо, сервис Whois покажет в строке «person» данные
-              об администраторе, однако в ряде доменных зон они могут быть скрыты. В этом случае вместо имени владельца
-              в строке «person» вы увидите запись «Private Person».
-            </li>
-            <li>
-              Если доменом владеет юридическое лицо, вместо записи «person» вы увидите строку «org», где отобразятся
-              данные об этой организации.
-            </li>
-            <li>Поле «registrar» показывает имя компании-регистратора, в которой был зарегистрирован данный домен.</li>
-            <li>В строке «admin-contact» сервис отображает контакты администратора домена.</li>
-            <li>
-              Поле «created» содержит сведения о дате регистрации доменного имени. Выяснив возраст домена, можно выявить
-              мошеннические сайты-однодневки. Проверить сайт имеет смысл, если вам прислали e-mail с какой-либо
-              подозрительной ссылкой либо в случае, когда вы зашли на вызывающий у вас сомнения веб-ресурс. Сайт,
-              созданный недавно, вполне может оказаться мошенническим ресурсом.
-            </li>
-            <li>Поле «paid-till» показывает, когда закончится срок регистрации домена.</li>
-            <li>
-              Из строки «free-date» вы узнаете, когда этот адрес окажется свободен, если владелец не станет его
-              продлевать.
-            </li>
-            <li>В поле «last updated» отображается дата последнего обновления данных о домене.</li>
-          </ul>
-          <p>
-            Набор сведений, выдаваемых сервисом, может несколько отличаться в зависимости от доменной зоны и
-            регистратора.
-          </p>
-          {/* <div>
-              Ознакомьтесь с{" "}
-              <a href="/ru/services/domains/whois/usloviya-ispolzovaniya-whois-servisa/">
-                условиями использования
-              </a>{" "}
-              встроенного Whois-сервиса.
-            </div> */}
         </div>
       ),
       uz: (
@@ -290,74 +223,6 @@ export default function WhoIs({ language }) {
             ma'lumot beradi. Whois bilan Sizni qiziqtirgan domen ma'murining kontaktlarini bilib olishingiz, shuningdek,
             bepul domenlarni topishingiz mumkin, kompaniyamiz orqali ro'yxatdan o'tish mumkin.
           </p>
-          <h2>Whois xizmati qanday ishlaydi</h2>
-          <p>
-            Ko'pincha Whois xizmati domen mavjudligini tekshirish uchun ishlatiladi. Buni qilish mumkin oson, tez va
-            mutlaqo bepul.
-          </p>
-          <p>
-            <Link href={checkLang(language) + LINKS.DOMAINS}>
-              <a>Domenni ro'yxatdan o'tkazish</a>
-            </Link>{" "}
-            sahifasiga o'tish, qidiruv satriga qiziqish nomini kiriting va "Ro'yxatdan o'tish" tugmasini bosing.
-            Ma'lumot qidirish odatda bir necha soniya vaqt oladi.
-          </p>
-          <p>
-            Agar tizim ushbu domen haqida ma'lumot topa olmasa, unda bu nom bepul va ehtimol siz ro'yxatdan o'tishingiz
-            mumkin. "Domen bepul" xabari yonida siz uni ro'yxatdan o'tkazish narxini ko'rasiz bir yil uchun. Xarid
-            qilish uchun "Savatga qo'shish" tugmasini bosing.
-          </p>
-          <p>
-            Agar xizmat "Domen band" xabarini ko'rsatsa, "Whois" tugmasini bosish orqali siz ko'rishingiz mumkin. domen
-            haqida batafsil ma'lumot.
-          </p>
-          <h2>Whois - Domen bandligini tekshiring</h2>
-          <p>Whois yordamida qanday ma'lumotlarni olish mumkin</p>
-          <p>Ro'yxatdan o'tgan domenni tekshirgandan so'ng, Whois xizmati quyidagi ma'lumotlarni ko'rsatadi:</p>
-          <ul>
-            <li>
-              "Nserver" maydonlarida DNS serverlari haqidagi ma'lumotlar ko'rsatiladi. Bu sizga qaysi birini aniqlash
-              imkonini beradi hosting provayderi, domen egasi o'z saytini joylashtirdi, chunki, qoida tariqasida, bu
-              satrlarda hoster yozuvlari ko'rsatiladi.
-            </li>
-            <li>"Holat" maydonida siz domenning joriy holatini ko'rasiz.</li>
-            <li>
-              Agar domen jismoniy shaxsga ro'yxatdan o'tgan bo'lsa, Whois xizmati "person" qatorida ko'rsatiladi.
-              administrator haqidagi ma'lumotlar, ammo bir qator domen zonalarida ular yashirin bo'lishi mumkin. Bu
-              holda, o'rniga egasining ismi "shaxs" qatorida "Shaxsiy shaxs" yozuvini ko'rasiz.
-            </li>
-            <li>
-              Agar domen yuridik shaxsga tegishli bo'lsa, "shaxs" yozuvi o'rniga siz "org" qatorini ko'rasiz, bu erda
-              ushbu tashkilot haqidagi ma'lumotlar ko'rsatiladi.
-            </li>
-            <li>
-              "Registrator" maydonida ushbu domen ro'yxatdan o'tgan ro'yxatga oluvchi kompaniya nomi ko'rsatilgan.
-            </li>
-            <li>"Admin-kontakt" qatorida xizmat domen administratorining kontaktlarini ko'rsatadi.</li>
-            <li>
-              "Yaratilgan" maydonida domen nomini ro'yxatdan o'tkazish sanasi haqidagi ma'lumotlar mavjud. Domenning
-              yoshini bilib, mumkin firibgar veb-saytlarni aniqlash. Agar sizga elektron pochta xabari yuborilgan
-              bo'lsa, saytni tekshirish mantiqan har qanday shubhali havola yoki shubhali havolaga kirgan bo'lsangiz
-              veb-resurs. Yaqinda yaratilgan sayt soxta manba bo'lib chiqishi mumkin.
-            </li>
-            <li>Domenni ro'yxatdan o'tkazish muddati qachon tugashini "to'langan" maydoni ko'rsatadi.</li>
-            <li>
-              "Erkin sana" qatoridan siz ushbu manzil qachon bepul bo'lishini bilib olasiz, agar egasi unga aylanmasa
-              uzaytirish.
-            </li>
-            <li>"So'nggi yangilangan" maydonida domen oxirgi marta yangilangan sana ko'rsatiladi.</li>
-          </ul>
-          <p>
-            Xizmat tomonidan taqdim etilgan ma'lumotlar to'plami domen zonasiga qarab biroz farq qilishi mumkin
-            registrator.
-          </p>
-          {/* <div>
-              Ro'yxatdan o'chirilish {" "}
-              <a href="/ru/services/domains/whois/usloviya-ispolzovaniya-whois-servisa/">
-                foydalanish shartlari
-              </a>{" "}
-              o'rnatilgan Whois xizmati.
-            </div> */}
         </div>
       ),
       en: (
@@ -370,105 +235,254 @@ export default function WhoIs({ language }) {
             you can find out the contacts of the administrator of the domain you are interested in, as well as find free
             domains, which can be registered through our company.
           </p>
-          <h2>How the Whois service works</h2>
-          <p>
-            Most often, the Whois service is used to check the availability of a domain. It can be done easy, fast and
-            absolutely free.
-          </p>
-          <p>
-            Go to page{" "}
-            <Link href={checkLang(language) + LINKS.DOMAINS}>
-              <a>Domain registration</a>
-            </Link>
-            , enter the name of interest in the search bar and click the "Register" button. Search for information
-            usually takes a matter of seconds.
-          </p>
-          <p>
-            If the system does not find information about this domain, then this name is free, and most likely you you
-            can register it. Next to the message "Domain is free" you will see the cost of its registration for one
-            year. To purchase, click the "Add to Cart" button.
-          </p>
-          <p>
-            If the service displays the message "Domain busy", then by clicking on the "Whois" button, you can view
-            detailed information about the domain.
-          </p>
-          <h2>Whois - Check Domain for Busy</h2>
-          <p>What information can be obtained using Whois</p>
-          <p>
-            After checking a domain that has already been registered, the Whois service displays the following
-            information:
-          </p>
-          <ul>
-            <li>
-              The "nserver" fields will show information about DNS servers. This allows you to find out which hosting
-              provider, the domain owner hosted his site, because, as a rule, in these lines hoster entries are
-              displayed.
-            </li>
-            <li>In the "state" field you will see the current status of the domain.</li>
-            <li>
-              If the domain was registered to an individual, the Whois service will show in the line "person" data about
-              the administrator, however, in a number of domain zones they can be hidden. In this case, instead of owner
-              name in the line "person" you will see the entry "Private Person".
-            </li>
-            <li>
-              If the domain is owned by a legal entity, instead of the entry "person" you will see the line "org", where
-              information about that organization will be displayed.
-            </li>
-            <li>The "registrar" field shows the name of the registrar company in which this domain was registered.</li>
-            <li>In the "admin-contact" line, the service displays the contacts of the domain administrator.</li>
-            <li>
-              The "created" field contains information about the date of registration of the domain name. By finding out
-              the age of the domain, you can identify fraudulent websites. It makes sense to check the site if you were
-              sent an e-mail with any suspicious link, or in case you went to a suspicious link web resource. A site
-              created recently may well turn out to be a fraudulent resource.
-            </li>
-            <li>The "paid-till" field shows when the domain registration expires.</li>
-            <li>
-              From the "free-date" line you will know when this address will be free if the owner does not become it
-              prolong.
-            </li>
-            <li>The "last updated" field displays the date the domain was last updated.</li>
-          </ul>
-          <p>
-            The set of information provided by the service may differ slightly depending on the domain zone and
-            registrar.
-          </p>
-          {/* <div>
-            Check out {" "}
-            <a href="/ru/services/domains/whois/usloviya-ispolzovaniya-whois-servisa/">
-              terms of use
-            </a>{" "}
-            built-in Whois service.
-          </div> */}
         </div>
       ),
     },
   };
+
+  const faq = [
+    {
+      title: {
+        ru: "Как работает сервис Whois",
+        uz: "Whois xizmati qanday ishlaydi",
+        en: "How the Whois service works",
+      },
+      description: {
+        ru: (
+          <>
+            <p>
+              Чаще всего сервис Whois используется для того, чтобы проверить домен на занятость. Сделать это можно
+              легко, быстро и абсолютно бесплатно.
+            </p>
+            <p>
+              Перейдите на страницу{" "}
+              <Link href={checkLang(language) + LINKS.DOMAINS}>
+                <a>Регистрация доменов</a>
+              </Link>
+              , введите интересующее имя в строку поиска и нажмите кнопку «Зарегистрировать». Поиск информации обычно
+              занимает считанные секунды.
+            </p>
+            <p>
+              Если система не найдет информацию о данном домене, значит, это имя свободно, и, скорее всего, вы сможете
+              его зарегистрировать. Рядом с сообщением «Домен свободен» вы увидите стоимость его регистрации на один
+              год. Для покупки нажмите кнопку «Добавить в корзину».
+            </p>
+            <p>
+              Если сервис выдаст сообщение «Домен занят», то, нажав на кнопку «Whois», вы сможете посмотреть подробную
+              информацию о домене.
+            </p>
+          </>
+        ),
+        uz: (
+          <>
+            <p>
+              Ko'pincha Whois xizmati domen mavjudligini tekshirish uchun ishlatiladi. Buni qilish mumkin oson, tez va
+              mutlaqo bepul.
+            </p>
+            <p>
+              <Link href={checkLang(language) + LINKS.DOMAINS}>
+                <a>Domenni ro'yxatdan o'tkazish</a>
+              </Link>{" "}
+              sahifasiga o'tish, qidiruv satriga qiziqish nomini kiriting va "Ro'yxatdan o'tish" tugmasini bosing.
+              Ma'lumot qidirish odatda bir necha soniya vaqt oladi.
+            </p>
+            <p>
+              Agar tizim ushbu domen haqida ma'lumot topa olmasa, unda bu nom bepul va ehtimol siz ro'yxatdan
+              o'tishingiz mumkin. "Domen bepul" xabari yonida siz uni ro'yxatdan o'tkazish narxini ko'rasiz bir yil
+              uchun. Xarid qilish uchun "Savatga qo'shish" tugmasini bosing.
+            </p>
+            <p>
+              Agar xizmat "Domen band" xabarini ko'rsatsa, "Whois" tugmasini bosish orqali siz ko'rishingiz mumkin.
+              domen haqida batafsil ma'lumot.
+            </p>
+          </>
+        ),
+        en: (
+          <>
+            <p>
+              Most often, the Whois service is used to check the availability of a domain. It can be done easy, fast and
+              absolutely free.
+            </p>
+            <p>
+              Go to page{" "}
+              <Link href={checkLang(language) + LINKS.DOMAINS}>
+                <a>Domain registration</a>
+              </Link>
+              , enter the name of interest in the search bar and click the "Register" button. Search for information
+              usually takes a matter of seconds.
+            </p>
+            <p>
+              If the system does not find information about this domain, then this name is free, and most likely you you
+              can register it. Next to the message "Domain is free" you will see the cost of its registration for one
+              year. To purchase, click the "Add to Cart" button.
+            </p>
+            <p>
+              If the service displays the message "Domain busy", then by clicking on the "Whois" button, you can view
+              detailed information about the domain.
+            </p>
+          </>
+        ),
+      },
+    },
+    {
+      title: {
+        ru: "Whois – Проверить домен на занятость",
+        uz: "Whois - Domen bandligini tekshiring",
+        en: "Whois - Check Domain for Busy",
+      },
+      description: {
+        ru: (
+          <>
+            <p>Какие сведения можно получить при помощи Whois</p>
+            <p>После проверки домена, который уже был зарегистрирован, Whois-сервис отображает следующую информацию:</p>
+            <ul className="list">
+              <li>
+                В полях «nserver» будут показаны сведения о DNS-серверах. Это позволяет узнать, у какого
+                хостинг-провайдера владелец домена разместил свой сайт, поскольку, как правило, в этих строках
+                отображаются записи хостера.
+              </li>
+              <li>ВВ поле «state» вы увидите актуальный статус домена.</li>
+              <li>
+                В случае если домен был зарегистрирован на физическое лицо, сервис Whois покажет в строке «person»
+                данные об администраторе, однако в ряде доменных зон они могут быть скрыты. В этом случае вместо имени
+                владельца в строке «person» вы увидите запись «Private Person».
+              </li>
+              <li>
+                Если доменом владеет юридическое лицо, вместо записи «person» вы увидите строку «org», где отобразятся
+                данные об этой организации.
+              </li>
+              <li>
+                Поле «registrar» показывает имя компании-регистратора, в которой был зарегистрирован данный домен.
+              </li>
+              <li>В строке «admin-contact» сервис отображает контакты администратора домена.</li>
+              <li>
+                Поле «created» содержит сведения о дате регистрации доменного имени. Выяснив возраст домена, можно
+                выявить мошеннические сайты-однодневки. Проверить сайт имеет смысл, если вам прислали e-mail с
+                какой-либо подозрительной ссылкой либо в случае, когда вы зашли на вызывающий у вас сомнения веб-ресурс.
+                Сайт, созданный недавно, вполне может оказаться мошенническим ресурсом.
+              </li>
+              <li>Поле «paid-till» показывает, когда закончится срок регистрации домена.</li>
+              <li>
+                Из строки «free-date» вы узнаете, когда этот адрес окажется свободен, если владелец не станет его
+                продлевать.
+              </li>
+              <li>В поле «last updated» отображается дата последнего обновления данных о домене.</li>
+            </ul>
+            <p>
+              Набор сведений, выдаваемых сервисом, может несколько отличаться в зависимости от доменной зоны и
+              регистратора.
+            </p>
+          </>
+        ),
+        uz: (
+          <>
+            <p>Whois yordamida qanday ma'lumotlarni olish mumkin</p>
+            <p>Ro'yxatdan o'tgan domenni tekshirgandan so'ng, Whois xizmati quyidagi ma'lumotlarni ko'rsatadi:</p>
+            <ul className="list">
+              <li>
+                "Nserver" maydonlarida DNS serverlari haqidagi ma'lumotlar ko'rsatiladi. Bu sizga qaysi birini aniqlash
+                imkonini beradi hosting provayderi, domen egasi o'z saytini joylashtirdi, chunki, qoida tariqasida, bu
+                satrlarda hoster yozuvlari ko'rsatiladi.
+              </li>
+              <li>"Holat" maydonida siz domenning joriy holatini ko'rasiz.</li>
+              <li>
+                Agar domen jismoniy shaxsga ro'yxatdan o'tgan bo'lsa, Whois xizmati "person" qatorida ko'rsatiladi.
+                administrator haqidagi ma'lumotlar, ammo bir qator domen zonalarida ular yashirin bo'lishi mumkin. Bu
+                holda, o'rniga egasining ismi "shaxs" qatorida "Shaxsiy shaxs" yozuvini ko'rasiz.
+              </li>
+              <li>
+                Agar domen yuridik shaxsga tegishli bo'lsa, "shaxs" yozuvi o'rniga siz "org" qatorini ko'rasiz, bu erda
+                ushbu tashkilot haqidagi ma'lumotlar ko'rsatiladi.
+              </li>
+              <li>
+                "Registrator" maydonida ushbu domen ro'yxatdan o'tgan ro'yxatga oluvchi kompaniya nomi ko'rsatilgan.
+              </li>
+              <li>"Admin-kontakt" qatorida xizmat domen administratorining kontaktlarini ko'rsatadi.</li>
+              <li>
+                "Yaratilgan" maydonida domen nomini ro'yxatdan o'tkazish sanasi haqidagi ma'lumotlar mavjud. Domenning
+                yoshini bilib, mumkin firibgar veb-saytlarni aniqlash. Agar sizga elektron pochta xabari yuborilgan
+                bo'lsa, saytni tekshirish mantiqan har qanday shubhali havola yoki shubhali havolaga kirgan bo'lsangiz
+                veb-resurs. Yaqinda yaratilgan sayt soxta manba bo'lib chiqishi mumkin.
+              </li>
+              <li>Domenni ro'yxatdan o'tkazish muddati qachon tugashini "to'langan" maydoni ko'rsatadi.</li>
+              <li>
+                "Erkin sana" qatoridan siz ushbu manzil qachon bepul bo'lishini bilib olasiz, agar egasi unga aylanmasa
+                uzaytirish.
+              </li>
+              <li>"So'nggi yangilangan" maydonida domen oxirgi marta yangilangan sana ko'rsatiladi.</li>
+            </ul>
+            <p>
+              Xizmat tomonidan taqdim etilgan ma'lumotlar to'plami domen zonasiga qarab biroz farq qilishi mumkin
+              registrator.
+            </p>
+          </>
+        ),
+        en: (
+          <>
+            <p>What information can be obtained using Whois</p>
+            <p>
+              After checking a domain that has already been registered, the Whois service displays the following
+              information:
+            </p>
+            <ul className="list">
+              <li>
+                The "nserver" fields will show information about DNS servers. This allows you to find out which hosting
+                provider, the domain owner hosted his site, because, as a rule, in these lines hoster entries are
+                displayed.
+              </li>
+              <li>In the "state" field you will see the current status of the domain.</li>
+              <li>
+                If the domain was registered to an individual, the Whois service will show in the line "person" data
+                about the administrator, however, in a number of domain zones they can be hidden. In this case, instead
+                of owner name in the line "person" you will see the entry "Private Person".
+              </li>
+              <li>
+                If the domain is owned by a legal entity, instead of the entry "person" you will see the line "org",
+                where information about that organization will be displayed.
+              </li>
+              <li>
+                The "registrar" field shows the name of the registrar company in which this domain was registered.
+              </li>
+              <li>In the "admin-contact" line, the service displays the contacts of the domain administrator.</li>
+              <li>
+                The "created" field contains information about the date of registration of the domain name. By finding
+                out the age of the domain, you can identify fraudulent websites. It makes sense to check the site if you
+                were sent an e-mail with any suspicious link, or in case you went to a suspicious link web resource. A
+                site created recently may well turn out to be a fraudulent resource.
+              </li>
+              <li>The "paid-till" field shows when the domain registration expires.</li>
+              <li>
+                From the "free-date" line you will know when this address will be free if the owner does not become it
+                prolong.
+              </li>
+              <li>The "last updated" field displays the date the domain was last updated.</li>
+            </ul>
+            <p>
+              The set of information provided by the service may differ slightly depending on the domain zone and
+              registrar.
+            </p>
+            {/* <div>
+              Check out {" "}
+              <a href="/ru/services/domains/whois/usloviya-ispolzovaniya-whois-servisa/">
+                terms of use
+              </a>{" "}
+              built-in Whois service.
+            </div> */}
+          </>
+        ),
+      },
+    },
+  ];
   const [whoIs, setWhoIs] = useState(null);
 
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
-      <Container headTitle={langData.headTitle[language]}>
-        <hr />
-        <div className={st.domains__block}>
-          <div className={st.domains__block__content}>
-            <h2>{langData.t1[language]}</h2>
-            <p>{langData.t2[language]}</p>
-            <p>{langData.t3[language]}</p>
-          </div>
-          <div className={st.domains__block__img}>
-            <img src="/domain/intro-img.png" />
-          </div>
-        </div>
-      </Container>
 
       <div className={st.domains__head}>
-        <Container
-          headTitle={langData.headTitle[language]}
-          clNTitle="mb-3"
-          description={<p>{langData.description[language]}</p>}
-        >
+        <Container headTitle={langData.headTitle[language]} clNTitle="mb-3">
+          <hr />
+          <p>{langData.description[language]}</p>
           <div className={st.domains__head__block}>
             <div className={st.domains__head__block__item}>
               <RegDomainBlock language={language} showDomains={false} setWhoIs={setWhoIs} />
@@ -730,12 +744,28 @@ export default function WhoIs({ language }) {
                 </div>
               )}
 
-              {langData.whoisText[language]}
+              {langData.whoisText1[language]}
+              <br />
+              {langData.reg[language]}
             </div>
-            {langData.reg[language]}
           </div>
         </Container>
       </div>
+
+      <Container>
+        <div className={st.domains__block}>
+          <div className={st.domains__block__content}>
+            <h2>{langData.t1[language]}</h2>
+            <p>{langData.t2[language]}</p>
+            <p>{langData.t3[language]}</p>
+          </div>
+          <div className={st.domains__block__img}>
+            <img src="/domain/intro-img.png" />
+          </div>
+        </div>
+      </Container>
+
+      <FAQ faq={faq} language={language} />
     </>
   );
 }

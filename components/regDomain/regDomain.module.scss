@@ -194,22 +194,14 @@ $red: #f00;
   }
 
   &__block {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 1100px;
+    margin: 50px auto 0;
     background-color: $white;
 
     table {
-      width: 100%;
-
-      th {
-        text-align: left;
-      }
-
       th,
       td {
-        width: 50%;
         padding: 10px 20px;
-        border-bottom: 1px solid $light_gray;
       }
     }
   }
