@@ -32,19 +32,19 @@ export default function WhoIs({ language }) {
       en: "Whois - service",
     },
     t1: {
-      ru: "Об услуге",
-      uz: "Hizmatlar haqida",
-      en: "About service",
+      ru: "Whois – Проверить домен на занятость",
+      uz: "Whois - Domen bandligini tekshiring",
+      en: "Whois - Check Domain for Busy",
     },
     t2: {
-      ru: "Доменное имя — это уникальный адрес, по которому открывается сайт в интернете.",
-      uz: "Domen nomi - bu Internetda veb-sayt ochiladigan noyob manzil.",
-      en: "A domain name is a unique address at which a website opens on the Internet.",
+      ru: "Сервис Whois позволяет получить сведения о регистрации доменов.",
+      uz: "Whois xizmati sizga domenni roʻyxatdan oʻtkazish haqida maʼlumot olish imkonini beradi.",
+      en: "Whois service allows you to get information about domain registration.",
     },
     t3: {
-      ru: "У нас вы сможете подобрать красивое доменное имя по самым низким ценам, а ещё мы не повышаем стоимость домена при продлении.",
-      uz: "Biz bilan siz eng arzon narxlarda chiroyli domen nomini olishingiz mumkin, bizda esa yo'q biz yangilanganda domen narxini oshiramiz.",
-      en: "Here you can find a beautiful domain name at the lowest prices, and we also do not increase the cost of a domain upon renewal.",
+      ru: "В переводе с английского «who is» — «кто это». Сервис покажет, кто является администратором и регистратором домена, выдаст сведения о сроке регистрации и возрасте доменного имени. При помощи Whois можно узнать контакты администратора заинтересовавшего вас домена, а также найти свободные домены, которые можно будет зарегистрировать через нашу компанию.",
+      uz: "Ingliz tilidan tarjima qilingan «who is» - «who is it». Xizmat administrator kim ekanligini va kim ekanligini ko'rsatadi domen ro'yxatga oluvchisi ro'yxatdan o'tish davri va domen nomining yoshi haqida ma'lumot beradi. Whois bilan Sizni qiziqtirgan domen ma'murining kontaktlarini bilib olishingiz, shuningdek, bepul domenlarni topishingiz mumkin, kompaniyamiz orqali ro'yxatdan o'tish mumkin.",
+      en: "Translated from English «who is» - «who is it.» The service will show who is the administrator and domain registrar, will issue information about the registration period and the age of the domain name. With Whois you can find out the contacts of the administrator of the domain you are interested in, as well as find free domains, which can be registered through our company.",
     },
     domainSettings: {
       ru: "ПАРАМЕТРЫ ДОМЕНА",
@@ -198,44 +198,6 @@ export default function WhoIs({ language }) {
             Regulations on the procedure for registration and use of domain names in the "UZ" domain
           </a>
         </p>
-      ),
-    },
-    whoisText1: {
-      ru: (
-        <div className="text-start">
-          <h2>Whois – Проверить домен на занятость</h2>
-          <p>Сервис Whois позволяет получить сведения о регистрации доменов.</p>
-          <p>
-            В переводе с английского «who is» — «кто это». Сервис покажет, кто является администратором и регистратором
-            домена, выдаст сведения о сроке регистрации и возрасте доменного имени. При помощи Whois можно узнать
-            контакты администратора заинтересовавшего вас домена, а также найти свободные домены, которые можно будет
-            зарегистрировать через нашу компанию.
-          </p>
-        </div>
-      ),
-      uz: (
-        <div className="text-start">
-          <h2>Whois - Domen bandligini tekshiring</h2>
-          <p>Whois xizmati sizga domenni roʻyxatdan oʻtkazish haqida maʼlumot olish imkonini beradi.</p>
-          <p>
-            Ingliz tilidan tarjima qilingan "who is" - "who is it". Xizmat administrator kim ekanligini va kim
-            ekanligini ko'rsatadi domen ro'yxatga oluvchisi ro'yxatdan o'tish davri va domen nomining yoshi haqida
-            ma'lumot beradi. Whois bilan Sizni qiziqtirgan domen ma'murining kontaktlarini bilib olishingiz, shuningdek,
-            bepul domenlarni topishingiz mumkin, kompaniyamiz orqali ro'yxatdan o'tish mumkin.
-          </p>
-        </div>
-      ),
-      en: (
-        <div className="text-start">
-          <h2>Whois - Check Domain for Busy</h2>
-          <p>Whois service allows you to get information about domain registration.</p>
-          <p>
-            Translated from English "who is" - "who is it." The service will show who is the administrator and domain
-            registrar, will issue information about the registration period and the age of the domain name. With Whois
-            you can find out the contacts of the administrator of the domain you are interested in, as well as find free
-            domains, which can be registered through our company.
-          </p>
-        </div>
       ),
     },
   };
@@ -478,6 +440,19 @@ export default function WhoIs({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
+      <Container headTitle={langData.headTitle[language]}>
+        <hr />
+        <div className={st.domains__block}>
+          <div className={st.domains__block__content}>
+            <h2>{langData.t1[language]}</h2>
+            <p>{langData.t2[language]}</p>
+            <p>{langData.t3[language]}</p>
+          </div>
+          <div className={st.domains__block__img}>
+            <img src="/domain/intro-img.png" />
+          </div>
+        </div>
+      </Container>
 
       <div className={st.domains__head}>
         <Container headTitle={langData.headTitle[language]} clNTitle="mb-3">
@@ -744,26 +719,12 @@ export default function WhoIs({ language }) {
                 </div>
               )}
 
-              {langData.whoisText1[language]}
               <br />
               {langData.reg[language]}
             </div>
           </div>
         </Container>
       </div>
-
-      <Container>
-        <div className={st.domains__block}>
-          <div className={st.domains__block__content}>
-            <h2>{langData.t1[language]}</h2>
-            <p>{langData.t2[language]}</p>
-            <p>{langData.t3[language]}</p>
-          </div>
-          <div className={st.domains__block__img}>
-            <img src="/domain/intro-img.png" />
-          </div>
-        </div>
-      </Container>
 
       <FAQ faq={faq} language={language} />
     </>
