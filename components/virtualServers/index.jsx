@@ -10,9 +10,9 @@ const VirtualServers = ({ language }) => {
       icon: flatsIcon,
       title: { ru: "Дата-центры уровня TIER III", uz: "TIER III ma'lumotlar markazlari", en: "TIER III data centers" },
       description: {
-        ru: "Размещаем инфраструктуру в надежном дата-центру Узбекистана, Ташкент",
+        ru: "Размещаем инфраструктуру в надежном дата-центре Узбекистана, Ташкент",
         uz: "Biz infratuzilmani O'zbekistonning ishonchli ma'lumotlar markazi Toshkentga joylashtiramiz",
-        en: "We place the infrastructure in a reliable data center of Uzbekistan, Tashkent",
+        en: "We place the infrastructure in a reliable data-center of Uzbekistan, Tashkent",
       },
     },
     {
