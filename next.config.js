@@ -280,8 +280,8 @@ module.exports = {
         permanent: true,
       },
       {
-        source: "/change-contact-email/application-templates-for-changing-the-contact-e-mail-box",
-        destination: "/change-contact-email/e-mail",
+        source: "/documents/change-contact-email/application-templates-for-changing-the-contact-e-mail-box",
+        destination: "/documents/change-contact-email/e-mail",
         permanent: true,
       },
       {
@@ -306,6 +306,84 @@ module.exports = {
         source:
           "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/templates-for-transferring-a-hosting-account-to-another-owner",
         destination: "/documents/transfer-owner/hosting-owner",
+        permanent: true,
+      },
+      {
+        source: "/uz/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner",
+        destination: "/uz/documents/transfer-owner",
+        permanent: true,
+      },
+      {
+        source: "/uz/documents/transferring-a-domain-to-another-registrar",
+        destination: "/uz/documents/transfer-registrar",
+        permanent: true,
+      },
+      {
+        source: "/uz/documents/change-contact-email/application-templates-for-changing-the-contact-e-mail-box",
+        destination: "/uz/documents/change-contact-email/e-mail",
+        permanent: true,
+      },
+      {
+        source:
+          "/uz/documents/transferring-a-domain-to-another-registrar/application-templates-for-domain-transfer-to-another-registrar",
+        destination: "/uz/documents/transfer-registrar/domain-transfer-registrar",
+        permanent: true,
+      },
+      {
+        source:
+          "/uz/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/application-templates-for-transferring-a-domain-to-another-owner",
+        destination: "/uz/documents/transfer-owner/domain-owner",
+        permanent: true,
+      },
+      {
+        source:
+          "/uz/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/templates-of-applications-for-the-transfer-of-the-server-to-another-owner",
+        destination: "/uz/documents/transfer-owner/server-owner",
+        permanent: true,
+      },
+      {
+        source:
+          "/uz/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/templates-for-transferring-a-hosting-account-to-another-owner",
+        destination: "/uz/documents/transfer-owner/hosting-owner",
+        permanent: true,
+      },
+      {
+        source: "/en/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner",
+        destination: "/en/documents/transfer-owner",
+        permanent: true,
+      },
+      {
+        source: "/en/documents/transferring-a-domain-to-another-registrar",
+        destination: "/en/documents/transfer-registrar",
+        permanent: true,
+      },
+      {
+        source: "/en/documents/change-contact-email/application-templates-for-changing-the-contact-e-mail-box",
+        destination: "/en/documents/change-contact-email/e-mail",
+        permanent: true,
+      },
+      {
+        source:
+          "/en/documents/transferring-a-domain-to-another-registrar/application-templates-for-domain-transfer-to-another-registrar",
+        destination: "/en/documents/transfer-registrar/domain-transfer-registrar",
+        permanent: true,
+      },
+      {
+        source:
+          "/en/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/application-templates-for-transferring-a-domain-to-another-owner",
+        destination: "/en/documents/transfer-owner/domain-owner",
+        permanent: true,
+      },
+      {
+        source:
+          "/en/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/templates-of-applications-for-the-transfer-of-the-server-to-another-owner",
+        destination: "/en/documents/transfer-owner/server-owner",
+        permanent: true,
+      },
+      {
+        source:
+          "/en/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/templates-for-transferring-a-hosting-account-to-another-owner",
+        destination: "/en/documents/transfer-owner/hosting-owner",
         permanent: true,
       },
     ];
