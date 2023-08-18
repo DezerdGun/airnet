@@ -269,6 +269,45 @@ module.exports = {
       { source: "/en/faq/kak-proverit-domen-na-zanyatost", destination: "/en", permanent: true },
       { source: "/en/faq/kak-ustanovit-wordpress-na-xosting", destination: "/en", permanent: true },
       { source: "/en/faq/kak-zaklyuchit-dogovor", destination: "/en", permanent: true },
+      {
+        source: "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner",
+        destination: "/documents/transfer-owner",
+        permanent: true,
+      },
+      {
+        source: "/documents/transferring-a-domain-to-another-registrar",
+        destination: "/documents/transfer-registrar",
+        permanent: true,
+      },
+      {
+        source: "/change-contact-email/application-templates-for-changing-the-contact-e-mail-box",
+        destination: "/change-contact-email/e-mail",
+        permanent: true,
+      },
+      {
+        source:
+          "/documents/transferring-a-domain-to-another-registrar/application-templates-for-domain-transfer-to-another-registrar",
+        destination: "/documents/transfer-registrar/domain-transfer-registrar",
+        permanent: true,
+      },
+      {
+        source:
+          "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/application-templates-for-transferring-a-domain-to-another-owner",
+        destination: "/documents/transfer-owner/domain-owner",
+        permanent: true,
+      },
+      {
+        source:
+          "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/templates-of-applications-for-the-transfer-of-the-server-to-another-owner",
+        destination: "/documents/transfer-owner/server-owner",
+        permanent: true,
+      },
+      {
+        source:
+          "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/templates-for-transferring-a-hosting-account-to-another-owner",
+        destination: "/documents/transfer-owner/hosting-owner",
+        permanent: true,
+      },
     ];
   },
 };
