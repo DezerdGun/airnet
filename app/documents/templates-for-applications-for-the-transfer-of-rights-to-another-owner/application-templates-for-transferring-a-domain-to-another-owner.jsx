@@ -14,7 +14,7 @@ const mainData = {
         uz: "Serverni boshqa egasiga o'tkazish uchun ilovalar shablonlari",
         en: "Templates of applications for the transfer of the server to another owner",
       },
-      link: "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/templates-of-applications-for-the-transfer-of-the-server-to-another-owner",
+      link: "/documents/transfer-owner/server-owner",
     },
     {
       id: "account to another owner",
@@ -23,7 +23,7 @@ const mainData = {
         uz: "Xosting hisobini boshqa egasiga o'tkazish uchun shablonlar",
         en: "Templates for transferring a hosting account to another owner",
       },
-      link: "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/templates-for-transferring-a-hosting-account-to-another-owner",
+      link: "/documents/transfer-owner/hosting-owner",
     },
   ],
   content: {

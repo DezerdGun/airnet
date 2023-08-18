@@ -14,7 +14,7 @@ const data = {
           uz: "Kontakt elektron pochta qutisini o'zgartirish uchun dastur shablonlari",
           en: "Application templates for changing the contact e-mail box",
         },
-        link: "/documents/change-contact-email/application-templates-for-changing-the-contact-e-mail-box",
+        link: "/documents/change-contact-email/e-mail",
       },
     ],
   },

@@ -14,7 +14,7 @@ const data = {
           uz: "Domenni boshqa ro'yxatga oluvchiga o'tkazish uchun ariza shablonlari",
           en: "Application templates for domain transfer to another registrar",
         },
-        link: "/documents/transferring-a-domain-to-another-registrar/application-templates-for-domain-transfer-to-another-registrar",
+        link: "/documents/transfer-registrar/domain-transfer-registrar",
       },
     ],
   },

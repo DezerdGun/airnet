@@ -69,36 +69,32 @@ export const HelpItemBlock = ({ data, language }) => {
     },
   };
 
-  const scroll = () => {
-    const content = document.querySelector("#content"),
-      links = document.querySelector("#links");
+  // const scroll = () => {
+  //   const content = document.querySelector("#content"),
+  //     links = document.querySelector("#links");
 
-    if (document.body.clientWidth > 770) {
-      if (window.pageYOffset >= 112) {
-        if (window.pageYOffset > content.clientHeight - links.clientHeight + 112) {
-          setIsFixed("end");
-        } else setIsFixed(true);
-      } else setIsFixed(false);
-    } else document.removeEventListener("scroll", scroll);
-  };
+  //   if (document.body.clientWidth > 770) {
+  //     if (window.pageYOffset >= 112) {
+  //       if (window.pageYOffset > content.clientHeight - links.clientHeight + 112) {
+  //         setIsFixed("end");
+  //       } else setIsFixed(true);
+  //     } else setIsFixed(false);
+  //   } else document.removeEventListener("scroll", scroll);
+  // };
 
-  useEffect(() => {
-    document.addEventListener("scroll", scroll);
-    return () => {
-      document.removeEventListener("scroll", scroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   document.addEventListener("scroll", scroll);
+  //   return () => {
+  //     document.removeEventListener("scroll", scroll);
+  //   };
+  // }, []);
 
   return (
     <Container headTitle={data.headTitle?.[language]}>
       <div className={st.helpItem}>
         <div className={st.helpItem__block}>
-          <div
-            className={`${st.helpItem__block__links} ${
-              isFixed && (isFixed === "end" ? st.helpItem__block__links__absolute : st.helpItem__block__links__fixed)
-            }`}
-          >
-            <div id="links">
+          <div className={st.helpItem__block__links}>
+            <div id="links" className={st.helpItem__block__links__absolute}>
               <h4>{langData.menu[language]}</h4>
               <div className={st.helpItem__block__links__back}>
                 {data?.content?.length ? (
@@ -115,7 +111,7 @@ export const HelpItemBlock = ({ data, language }) => {
         </div>
         <p>{langData.goToDB[language]}</p>
         <p>
-          {langData.phoneSupport[language]} <a href="tel:+998712008700">+998(71) 200-87-00</a>
+          {langData.phoneSupport[language]} <a href="tel:+998712028700">+998(71) 202-87-00</a>
         </p>
       </div>
     </Container>

@@ -128,9 +128,9 @@ export default function Header({ language }) {
           },
           {
             title: {
-              ru: "+998(71) 200-87-00",
-              uz: "+998(71) 200-87-00",
-              en: "+998(71) 200-87-00",
+              ru: "+998(71) 202-87-00",
+              uz: "+998(71) 202-87-00",
+              en: "+998(71) 202-87-00",
             },
             link: LINKS.PHONE,
             isHref: true,

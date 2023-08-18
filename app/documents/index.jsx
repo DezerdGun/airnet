@@ -11,7 +11,7 @@ export default function Documents({ language }) {
         uz: "Huquqlarni boshqa egasiga o'tkazish uchun arizalar uchun shablonlar",
         en: "Templates for applications for the transfer of rights to another owner",
       },
-      link: "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner",
+      link: "/documents/transfer-owner",
       children: [
         {
           id: "domain to another owner",
@@ -20,7 +20,7 @@ export default function Documents({ language }) {
             uz: "Domenni boshqa egasiga o'tkazish uchun dastur shablonlari",
             en: "Application templates for transferring a domain to another owner",
           },
-          link: "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/application-templates-for-transferring-a-domain-to-another-owner",
+          link: "/documents/transfer-owner/domain-owner",
         },
         {
           id: "server to another owner",
@@ -29,7 +29,7 @@ export default function Documents({ language }) {
             uz: "Serverni boshqa egasiga o'tkazish uchun ilovalar shablonlari",
             en: "Templates of applications for the transfer of the server to another owner",
           },
-          link: "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/templates-of-applications-for-the-transfer-of-the-server-to-another-owner",
+          link: "/documents/transfer-owner/server-owner",
         },
         {
           id: "account to another owner",
@@ -38,7 +38,7 @@ export default function Documents({ language }) {
             uz: "Xosting hisobini boshqa egasiga o'tkazish uchun shablonlar",
             en: "Templates for transferring a hosting account to another owner",
           },
-          link: "/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/templates-for-transferring-a-hosting-account-to-another-owner",
+          link: "/documents/transfer-owner/hosting-owner",
         },
       ],
     },
@@ -48,7 +48,7 @@ export default function Documents({ language }) {
         uz: "Domenni boshqa registratorga o'tkazish",
         en: "Transferring a domain to another registrar",
       },
-      link: "/documents/transferring-a-domain-to-another-registrar",
+      link: "/documents/transfer-registrar",
       children: [
         {
           id: "transfer to another registrar",
@@ -57,7 +57,7 @@ export default function Documents({ language }) {
             uz: "Domenni boshqa ro'yxatga oluvchiga o'tkazish uchun ariza shablonlari",
             en: "Application templates for domain transfer to another registrar",
           },
-          link: "/documents/transferring-a-domain-to-another-registrar/application-templates-for-domain-transfer-to-another-registrar",
+          link: "/documents/transfer-registrar/domain-transfer-registrar",
         },
       ],
     },
@@ -76,7 +76,26 @@ export default function Documents({ language }) {
             uz: "Kontakt elektron pochta qutisini o'zgartirish uchun dastur shablonlari",
             en: "Application templates for changing the contact e-mail box",
           },
-          link: "/documents/change-contact-email/application-templates-for-changing-the-contact-e-mail-box",
+          link: "/documents/change-contact-email/e-mail",
+        },
+      ],
+    },
+    {
+      title: {
+        ru: "Договоры на оказание услуг",
+        uz: "Xizmat shartnomalari",
+        en: "Service contracts",
+      },
+      link: "/documents/contract",
+      children: [
+        {
+          id: "contract",
+          title: {
+            ru: "Договоры на оказание услуг",
+            uz: "Xizmat shartnomalari",
+            en: "Service contracts",
+          },
+          link: "/documents/contract/contract",
         },
       ],
     },

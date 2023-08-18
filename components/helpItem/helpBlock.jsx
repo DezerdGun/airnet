@@ -103,7 +103,7 @@ export default function HelpBlock({ data, language }) {
           </div>
           <p>{langData.goToDB[language]}</p>
           <p>
-            {langData.phoneSupport[language]} <a href="tel:+998712008700">+998(71) 200-87-00</a>
+            {langData.phoneSupport[language]} <a href="tel:+998712028700">+998(71) 202-87-00</a>
           </p>
         </Container>
         {data?.afterContent}

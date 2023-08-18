@@ -479,7 +479,7 @@ export default function Footer({ language }) {
               </Link>
             </div>
             <div className={st.footer__block__head__phone}>
-              <a href={LINKS.PHONE}>+998 (71) 200-87-00</a>
+              {/* <a href={LINKS.PHONE}>+998 (71) 200-87-00</a> */}
               <p>{langData.workTime[language]}</p>
               <a href={LINKS.PHONE2} className="d-block mt-2">
                 +998 (71) 202-87-00
