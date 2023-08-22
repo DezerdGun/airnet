@@ -1,4 +1,4 @@
-import HelpBlock from "@/app/documents/change-contact-email/application-templates-for-changing-the-contact-e-mail-box";
+import HelpBlock from "@/app/documents/change-contact-email/e-mail";
 
 export default function HelpBlog({ language }) {
   return <HelpBlock language={language} />;

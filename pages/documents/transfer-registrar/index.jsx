@@ -1,4 +1,4 @@
-import HelpInner from "@/app/documents/transferring-a-domain-to-another-registrar";
+import HelpInner from "@/app/documents/transfer-registrar";
 
 export default function ({ language }) {
   return <HelpInner language={language} />;

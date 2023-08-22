@@ -4,6 +4,109 @@ import Link from "next/link";
 import { LINKS } from "@/components/requirements";
 import { checkLang } from "@/utils/checkLang";
 
+const globeIcon = (
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="48" height="48" rx="24" fill="#006A4D"></rect>
+    <g clip-path="url(#clip0_315_6359)">
+      <path
+        d="M24 33C28.9706 33 33 28.9706 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33Z"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M15.5156 21H32.4844"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M15.5156 27H32.4844"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M24 32.7563C26.0711 32.7563 27.75 28.836 27.75 24C27.75 19.1641 26.0711 15.2438 24 15.2438C21.9289 15.2438 20.25 19.1641 20.25 24C20.25 28.836 21.9289 32.7563 24 32.7563Z"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </g>
+    <defs>
+      <clipPath id="clip0_315_6359">
+        <rect width="24" height="24" fill="white" transform="translate(12 12)"></rect>
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+const serverIcon = (
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="48" height="48" rx="24" fill="#006A4D"></rect>
+    <g clip-path="url(#clip0_315_6365)">
+      <path d="M27 19.125H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M27 22.875H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path
+        d="M30.75 32.25V15.75C30.75 15.3358 30.4142 15 30 15H18C17.5858 15 17.25 15.3358 17.25 15.75V32.25C17.25 32.6642 17.5858 33 18 33H30C30.4142 33 30.75 32.6642 30.75 32.25Z"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M24 30.75C24.8284 30.75 25.5 30.0784 25.5 29.25C25.5 28.4216 24.8284 27.75 24 27.75C23.1716 27.75 22.5 28.4216 22.5 29.25C22.5 30.0784 23.1716 30.75 24 30.75Z"
+        fill="white"
+      ></path>
+    </g>
+    <defs>
+      <clipPath id="clip0_315_6365">
+        <rect width="24" height="24" fill="white" transform="translate(12 12)"></rect>
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+const pdfIcon = (
+  <svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      opacity="0.3"
+      d="M8 13.6C8 10.2397 8 8.55953 8.65396 7.27606C9.2292 6.14708 10.1471 5.2292 11.2761 4.65396C12.5595 4 14.2397 4 17.6 4H29.349C30.3274 4 30.8166 4 31.2769 4.11052C31.6851 4.20851 32.0753 4.37012 32.4331 4.58944C32.8368 4.83681 33.1827 5.18271 33.8745 5.87452L38.1255 10.1255C38.8173 10.8173 39.1632 11.1632 39.4106 11.5669C39.6299 11.9247 39.7915 12.3149 39.8895 12.7231C40 13.1834 40 13.6726 40 14.651V34.4C40 37.7603 40 39.4405 39.346 40.7239C38.7708 41.8529 37.8529 42.7708 36.7239 43.346C35.4405 44 33.7603 44 30.4 44H17.6C14.2397 44 12.5595 44 11.2761 43.346C10.1471 42.7708 9.2292 41.8529 8.65396 40.7239C8 39.4405 8 37.7603 8 34.4V13.6Z"
+      fill="url(#paint0_linear_315_6271)"
+    ></path>
+    <path
+      d="M32.3643 29.0212H35.1669C35.6598 29.0212 36.0593 28.6217 36.0593 28.1288C36.0593 27.636 35.6598 27.2364 35.1669 27.2364H31.1792C30.6269 27.2364 30.1792 27.6841 30.1792 28.2364V35.8574C30.1792 36.4096 30.6269 36.8574 31.1792 36.8574H31.3643C31.9166 36.8574 32.3643 36.4096 32.3643 35.8574V32.9887H34.933C35.4218 32.9887 35.8181 32.5924 35.8181 32.1036C35.8181 31.6147 35.4218 31.2184 34.933 31.2184H32.3643V29.0212Z"
+      fill="#DC6655"
+    ></path>
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M27.1475 35.7141C26.1345 36.5559 24.5933 36.9562 22.7097 36.9562C22.0774 36.9562 21.5487 36.9335 21.1107 36.9009C20.6109 36.8636 20.2399 36.4372 20.2399 35.936V28.2289C20.2399 27.7324 20.604 27.3082 21.098 27.2587C21.7895 27.1895 22.4846 27.1578 23.18 27.1641C25.0057 27.1641 26.1924 27.4921 27.1185 28.1915C28.1195 28.9344 28.7466 30.1186 28.7466 31.819C28.7466 33.6592 28.0736 34.9303 27.1475 35.7141ZM22.4251 28.9199C22.6108 28.8765 22.9244 28.8331 23.4067 28.8331C25.2783 28.8331 26.4481 29.8894 26.4336 31.8913C26.4336 34.1874 25.1505 35.2727 23.18 35.2583C22.9099 35.2583 22.6108 35.2583 22.4251 35.2148V28.9199Z"
+      fill="#DC6655"
+    ></path>
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M17.9655 32.4461C17.2202 33.1455 16.1204 33.459 14.8397 33.459C14.5914 33.4617 14.3432 33.4472 14.0969 33.4156V35.8549C14.0969 36.4072 13.6492 36.8549 13.0969 36.8549H12.9407C12.3884 36.8549 11.9407 36.4072 11.9407 35.8549V28.2237C11.9407 27.7284 12.303 27.3047 12.7958 27.2549C13.4883 27.1848 14.1844 27.1545 14.8807 27.1641C16.2241 27.1641 17.1792 27.4197 17.8232 27.9335C18.4358 28.4207 18.8507 29.219 18.8507 30.1596C18.8483 31.1051 18.5347 31.9034 17.9655 32.4461ZM14.0993 28.8909C14.2537 28.8475 14.5528 28.8041 14.9966 28.8041C16.0819 28.8041 16.6945 29.3347 16.6945 30.2175C16.6945 31.2039 15.983 31.7876 14.8277 31.7876C14.5118 31.7876 14.2826 31.7755 14.0993 31.7321V28.8909Z"
+      fill="#DC6655"
+    ></path>
+    <path
+      d="M28 6.82843C28 5.26633 29.2663 4 30.8284 4C31.5786 4 32.298 4.29799 32.8284 4.82843L39.1716 11.1716C39.702 11.702 40 12.4214 40 13.1716C40 14.7337 38.7337 16 37.1716 16H32C29.7909 16 28 14.2091 28 12V6.82843Z"
+      fill="#DC6655"
+    ></path>
+    <defs>
+      <linearGradient id="paint0_linear_315_6271" x1="24" y1="4" x2="24" y2="44" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#DC6655"></stop>
+        <stop offset="1" stop-color="#DC6655" stop-opacity="0.5"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
 const mainData = {
   headTitle: {
     ru: "Договоры на оказание услуг",
@@ -18,8 +121,8 @@ const mainData = {
           <div className={st.domains__block__content}>
             <h2>Договоры на оказание услуг</h2>
             <p>
-              В соответствии со ст. 370 Гражданского кодекса Республики Узбекистан, ООО «AIRNET» предоставляет свои услуги на основании публичной
-              оферты.
+              В соответствии со ст. 370 Гражданского кодекса Республики Узбекистан, ООО «AIRNET» предоставляет свои
+              услуги на основании публичной оферты.
             </p>
             <p>
               В этом случае договор считается заключенным при выполнении клиентом действий, указанных в оферте (акцепте
@@ -39,189 +142,30 @@ const mainData = {
           </p>
           <div className="d-flex align-items-center justify-content-center gap-4">
             <div className="d-flex align-items-center gap-3 mt-2 mb-2">
-              <div style={{ height: "40px", width: "40px" }}>
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="48" height="48" rx="24" fill="#006A4D"></rect>
-                  <g clip-path="url(#clip0_315_6359)">
-                    <path
-                      d="M24 33C28.9706 33 33 28.9706 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M15.5156 21H32.4844"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M15.5156 27H32.4844"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M24 32.7563C26.0711 32.7563 27.75 28.836 27.75 24C27.75 19.1641 26.0711 15.2438 24 15.2438C21.9289 15.2438 20.25 19.1641 20.25 24C20.25 28.836 21.9289 32.7563 24 32.7563Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_315_6359">
-                      <rect width="24" height="24" fill="white" transform="translate(12 12)"></rect>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
+              <div style={{ height: "40px", width: "40px" }}>{globeIcon}</div>
               <div className="mt-2">Виртуального и мощного хостинга</div>
             </div>
             <div className="d-flex align-items-center gap-3 mt-2 mb-2">
-              <div style={{ height: "40px", width: "40px" }}>
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="48" height="48" rx="24" fill="#006A4D"></rect>
-                  <g clip-path="url(#clip0_315_6365)">
-                    <path
-                      d="M27 19.125H21"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M27 22.875H21"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M30.75 32.25V15.75C30.75 15.3358 30.4142 15 30 15H18C17.5858 15 17.25 15.3358 17.25 15.75V32.25C17.25 32.6642 17.5858 33 18 33H30C30.4142 33 30.75 32.6642 30.75 32.25Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M24 30.75C24.8284 30.75 25.5 30.0784 25.5 29.25C25.5 28.4216 24.8284 27.75 24 27.75C23.1716 27.75 22.5 28.4216 22.5 29.25C22.5 30.0784 23.1716 30.75 24 30.75Z"
-                      fill="white"
-                    ></path>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_315_6365">
-                      <rect width="24" height="24" fill="white" transform="translate(12 12)"></rect>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>{" "}
+              <div style={{ height: "40px", width: "40px" }}>{serverIcon}</div>
               <div className="mt-2">На аренду выделенного сервера</div>
             </div>
           </div>
+
           <div className="d-flex align-items-center flex-wrap mt-4" style={{ gap: "20px 2%" }}>
             <a
-              href="/"
+              href="/documents/Agreement-№-XXXX.pdf"
               className="d-flex gap-3 p-3 border rounded"
               style={{ width: "49%", textDecoration: "none" }}
+              target="_blank"
             >
-              <div style={{ height: "35px", width: "35px" }}>
-                <svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    opacity="0.3"
-                    d="M8 13.6C8 10.2397 8 8.55953 8.65396 7.27606C9.2292 6.14708 10.1471 5.2292 11.2761 4.65396C12.5595 4 14.2397 4 17.6 4H29.349C30.3274 4 30.8166 4 31.2769 4.11052C31.6851 4.20851 32.0753 4.37012 32.4331 4.58944C32.8368 4.83681 33.1827 5.18271 33.8745 5.87452L38.1255 10.1255C38.8173 10.8173 39.1632 11.1632 39.4106 11.5669C39.6299 11.9247 39.7915 12.3149 39.8895 12.7231C40 13.1834 40 13.6726 40 14.651V34.4C40 37.7603 40 39.4405 39.346 40.7239C38.7708 41.8529 37.8529 42.7708 36.7239 43.346C35.4405 44 33.7603 44 30.4 44H17.6C14.2397 44 12.5595 44 11.2761 43.346C10.1471 42.7708 9.2292 41.8529 8.65396 40.7239C8 39.4405 8 37.7603 8 34.4V13.6Z"
-                    fill="url(#paint0_linear_315_6271)"
-                  ></path>
-                  <path
-                    d="M32.3643 29.0212H35.1669C35.6598 29.0212 36.0593 28.6217 36.0593 28.1288C36.0593 27.636 35.6598 27.2364 35.1669 27.2364H31.1792C30.6269 27.2364 30.1792 27.6841 30.1792 28.2364V35.8574C30.1792 36.4096 30.6269 36.8574 31.1792 36.8574H31.3643C31.9166 36.8574 32.3643 36.4096 32.3643 35.8574V32.9887H34.933C35.4218 32.9887 35.8181 32.5924 35.8181 32.1036C35.8181 31.6147 35.4218 31.2184 34.933 31.2184H32.3643V29.0212Z"
-                    fill="#DC6655"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M27.1475 35.7141C26.1345 36.5559 24.5933 36.9562 22.7097 36.9562C22.0774 36.9562 21.5487 36.9335 21.1107 36.9009C20.6109 36.8636 20.2399 36.4372 20.2399 35.936V28.2289C20.2399 27.7324 20.604 27.3082 21.098 27.2587C21.7895 27.1895 22.4846 27.1578 23.18 27.1641C25.0057 27.1641 26.1924 27.4921 27.1185 28.1915C28.1195 28.9344 28.7466 30.1186 28.7466 31.819C28.7466 33.6592 28.0736 34.9303 27.1475 35.7141ZM22.4251 28.9199C22.6108 28.8765 22.9244 28.8331 23.4067 28.8331C25.2783 28.8331 26.4481 29.8894 26.4336 31.8913C26.4336 34.1874 25.1505 35.2727 23.18 35.2583C22.9099 35.2583 22.6108 35.2583 22.4251 35.2148V28.9199Z"
-                    fill="#DC6655"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M17.9655 32.4461C17.2202 33.1455 16.1204 33.459 14.8397 33.459C14.5914 33.4617 14.3432 33.4472 14.0969 33.4156V35.8549C14.0969 36.4072 13.6492 36.8549 13.0969 36.8549H12.9407C12.3884 36.8549 11.9407 36.4072 11.9407 35.8549V28.2237C11.9407 27.7284 12.303 27.3047 12.7958 27.2549C13.4883 27.1848 14.1844 27.1545 14.8807 27.1641C16.2241 27.1641 17.1792 27.4197 17.8232 27.9335C18.4358 28.4207 18.8507 29.219 18.8507 30.1596C18.8483 31.1051 18.5347 31.9034 17.9655 32.4461ZM14.0993 28.8909C14.2537 28.8475 14.5528 28.8041 14.9966 28.8041C16.0819 28.8041 16.6945 29.3347 16.6945 30.2175C16.6945 31.2039 15.983 31.7876 14.8277 31.7876C14.5118 31.7876 14.2826 31.7755 14.0993 31.7321V28.8909Z"
-                    fill="#DC6655"
-                  ></path>
-                  <path
-                    d="M28 6.82843C28 5.26633 29.2663 4 30.8284 4C31.5786 4 32.298 4.29799 32.8284 4.82843L39.1716 11.1716C39.702 11.702 40 12.4214 40 13.1716C40 14.7337 38.7337 16 37.1716 16H32C29.7909 16 28 14.2091 28 12V6.82843Z"
-                    fill="#DC6655"
-                  ></path>
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_315_6271"
-                      x1="24"
-                      y1="4"
-                      x2="24"
-                      y2="44"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#DC6655"></stop>
-                      <stop offset="1" stop-color="#DC6655" stop-opacity="0.5"></stop>
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
+              <div style={{ height: "35px", width: "35px" }}>{pdfIcon}</div>
               <div>
                 <div className="mb-2 card-name">Договор для юридических лиц</div>
-                <div className="card-size">PDF, 220 KB</div>
+                <div className="card-size">PDF, 1,06 KB</div>
               </div>
             </a>
-            <a
-              href="/"
-              className="d-flex gap-3 p-3 border rounded"
-              style={{ width: "49%", textDecoration: "none" }}
-            >
-              <div style={{ height: "35px", width: "35px" }}>
-                <svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    opacity="0.3"
-                    d="M8 13.6C8 10.2397 8 8.55953 8.65396 7.27606C9.2292 6.14708 10.1471 5.2292 11.2761 4.65396C12.5595 4 14.2397 4 17.6 4H29.349C30.3274 4 30.8166 4 31.2769 4.11052C31.6851 4.20851 32.0753 4.37012 32.4331 4.58944C32.8368 4.83681 33.1827 5.18271 33.8745 5.87452L38.1255 10.1255C38.8173 10.8173 39.1632 11.1632 39.4106 11.5669C39.6299 11.9247 39.7915 12.3149 39.8895 12.7231C40 13.1834 40 13.6726 40 14.651V34.4C40 37.7603 40 39.4405 39.346 40.7239C38.7708 41.8529 37.8529 42.7708 36.7239 43.346C35.4405 44 33.7603 44 30.4 44H17.6C14.2397 44 12.5595 44 11.2761 43.346C10.1471 42.7708 9.2292 41.8529 8.65396 40.7239C8 39.4405 8 37.7603 8 34.4V13.6Z"
-                    fill="url(#paint0_linear_315_6271)"
-                  ></path>
-                  <path
-                    d="M32.3643 29.0212H35.1669C35.6598 29.0212 36.0593 28.6217 36.0593 28.1288C36.0593 27.636 35.6598 27.2364 35.1669 27.2364H31.1792C30.6269 27.2364 30.1792 27.6841 30.1792 28.2364V35.8574C30.1792 36.4096 30.6269 36.8574 31.1792 36.8574H31.3643C31.9166 36.8574 32.3643 36.4096 32.3643 35.8574V32.9887H34.933C35.4218 32.9887 35.8181 32.5924 35.8181 32.1036C35.8181 31.6147 35.4218 31.2184 34.933 31.2184H32.3643V29.0212Z"
-                    fill="#DC6655"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M27.1475 35.7141C26.1345 36.5559 24.5933 36.9562 22.7097 36.9562C22.0774 36.9562 21.5487 36.9335 21.1107 36.9009C20.6109 36.8636 20.2399 36.4372 20.2399 35.936V28.2289C20.2399 27.7324 20.604 27.3082 21.098 27.2587C21.7895 27.1895 22.4846 27.1578 23.18 27.1641C25.0057 27.1641 26.1924 27.4921 27.1185 28.1915C28.1195 28.9344 28.7466 30.1186 28.7466 31.819C28.7466 33.6592 28.0736 34.9303 27.1475 35.7141ZM22.4251 28.9199C22.6108 28.8765 22.9244 28.8331 23.4067 28.8331C25.2783 28.8331 26.4481 29.8894 26.4336 31.8913C26.4336 34.1874 25.1505 35.2727 23.18 35.2583C22.9099 35.2583 22.6108 35.2583 22.4251 35.2148V28.9199Z"
-                    fill="#DC6655"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M17.9655 32.4461C17.2202 33.1455 16.1204 33.459 14.8397 33.459C14.5914 33.4617 14.3432 33.4472 14.0969 33.4156V35.8549C14.0969 36.4072 13.6492 36.8549 13.0969 36.8549H12.9407C12.3884 36.8549 11.9407 36.4072 11.9407 35.8549V28.2237C11.9407 27.7284 12.303 27.3047 12.7958 27.2549C13.4883 27.1848 14.1844 27.1545 14.8807 27.1641C16.2241 27.1641 17.1792 27.4197 17.8232 27.9335C18.4358 28.4207 18.8507 29.219 18.8507 30.1596C18.8483 31.1051 18.5347 31.9034 17.9655 32.4461ZM14.0993 28.8909C14.2537 28.8475 14.5528 28.8041 14.9966 28.8041C16.0819 28.8041 16.6945 29.3347 16.6945 30.2175C16.6945 31.2039 15.983 31.7876 14.8277 31.7876C14.5118 31.7876 14.2826 31.7755 14.0993 31.7321V28.8909Z"
-                    fill="#DC6655"
-                  ></path>
-                  <path
-                    d="M28 6.82843C28 5.26633 29.2663 4 30.8284 4C31.5786 4 32.298 4.29799 32.8284 4.82843L39.1716 11.1716C39.702 11.702 40 12.4214 40 13.1716C40 14.7337 38.7337 16 37.1716 16H32C29.7909 16 28 14.2091 28 12V6.82843Z"
-                    fill="#DC6655"
-                  ></path>
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_315_6271"
-                      x1="24"
-                      y1="4"
-                      x2="24"
-                      y2="44"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#DC6655"></stop>
-                      <stop offset="1" stop-color="#DC6655" stop-opacity="0.5"></stop>
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
+            <a href="#" className="d-flex gap-3 p-3 border rounded" style={{ width: "49%", textDecoration: "none" }}>
+              <div style={{ height: "35px", width: "35px" }}>{pdfIcon}</div>
               <div>
                 <div className="mb-2 card-name">Договор для физических лиц</div>
                 <div className="card-size">PDF, 220 KB</div>
@@ -263,20 +207,162 @@ const mainData = {
     ),
     uz: (
       <>
-        <p>Bayonnoma shablonlari:</p>
-        <ol>
-          <li>Jismoniy shaxsning elektron pochta qutisini (elektron pochta) o'zgartirish uchun ariza</li>
-          <li>Yuridik shaxsning elektron pochta qutisini (elektron pochta) o'zgartirish uchun ariza</li>
-        </ol>
+        <div className={st.domains__block}>
+          <div className={st.domains__block__content}>
+            <h2>Xizmat shartnomalari</h2>
+            <p>
+              moddaga muvofiq. O‘zbekiston Respublikasi Fuqarolik Kodeksining 370-moddasiga binoan “AIRNET” MChJ o‘z
+              xizmatlarini ommaviy oferta asosida taqdim etadi.
+            </p>
+            <p>
+              Bunda, mijoz ofertada ko'rsatilgan harakatlarni amalga oshirganda shartnoma tuzilgan hisoblanadi (taklifni
+              qabul qilish).
+            </p>
+          </div>
+          <div className={st.domains__block__img}>
+            <img src="/domain/intro-img.png" />
+          </div>
+        </div>
+        <div>
+          <h2 className="text-center">Shartnomalar</h2>
+          <p className="text-center">
+            Mijozlarga qulaylik yaratish maqsadida 2021-yil 1-yanvardan boshlab AIRNET MChJ barcha xizmatlari uchun
+            yagona shartnoma shakli kuchga kirdi:
+          </p>
+          <div className="d-flex align-items-center justify-content-center gap-4">
+            <div className="d-flex align-items-center gap-3 mt-2 mb-2">
+              <div style={{ height: "40px", width: "40px" }}>{globeIcon}</div>
+              <div className="mt-2">Virtual va kuchli xosting</div>
+            </div>
+            <div className="d-flex align-items-center gap-3 mt-2 mb-2">
+              <div style={{ height: "40px", width: "40px" }}>{serverIcon}</div>
+              <div className="mt-2">Ajratilgan serverni ijaraga olish</div>
+            </div>
+          </div>
+
+          <div className="d-flex align-items-center flex-wrap mt-4" style={{ gap: "20px 2%" }}>
+            <a
+              href="/documents/Agreement-№-XXXX.pdf"
+              className="d-flex gap-3 p-3 border rounded"
+              style={{ width: "49%", textDecoration: "none" }}
+              target="_blank"
+            >
+              <div style={{ height: "35px", width: "35px" }}>{pdfIcon}</div>
+              <div>
+                <div className="mb-2 card-name">Yuridik shaxslar uchun shartnoma</div>
+                <div className="card-size">PDF, 1,06 KB</div>
+              </div>
+            </a>
+            <a href="#" className="d-flex gap-3 p-3 border rounded" style={{ width: "49%", textDecoration: "none" }}>
+              <div style={{ height: "35px", width: "35px" }}>{pdfIcon}</div>
+              <div>
+                <div className="mb-2 card-name">Jismoniy shaxslar uchun shartnoma</div>
+                <div className="card-size">PDF, 220 KB</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-4">
+          <h2>Shartnomani yozma ravishda tuzish</h2>
+
+          <div className="d-flex gap-3">
+            <p>
+              Agar sizga xizmat ko'rsatish shartnomasini yozma ravishda tuzishingiz kerak bo'lsa, iltimos, bitta
+              to'ldirilgan nusxasini o'zingiz tomondan Toshkent sh., ko'ch. Sayram, 25 yosh
+            </p>
+            <p>
+              Agar siz Toshkentda bo'lsangiz, shartnoma tuzish uchun{" "}
+              <Link href={checkLang("uz") + LINKS.CONTACTS}>
+                <a>ofisimizga tashrif buyuring</a>
+              </Link>
+              . Siz bilan imzolangan shartnoma va pasportingiz bo'lishi kerak.
+              <br />
+              <br />
+              Shartnomani elektron hujjat aylanish tizimi (EDM) – didox.uz yoki faktura.uz orqali yuborishingiz mumkin.
+            </p>
+          </div>
+        </div>
       </>
     ),
     en: (
       <>
-        <p>Statement templates:</p>
-        <ol>
-          <li>Application to change the electronic mailbox (e-mail) of an individual</li>
-          <li>Application to change the electronic mailbox (e-mail) of a legal entity</li>
-        </ol>
+        <div className={st.domains__block}>
+          <div className={st.domains__block__content}>
+            <h2>Service contracts</h2>
+            <p>
+              In accordance with Art. 370 of the Civil Code of the Republic of Uzbekistan, AIRNET LLC provides its
+              services on the basis of a public offer.
+            </p>
+            <p>
+              In this case, the contract is considered concluded when the client performs the actions specified in the
+              offer (acceptance of the offer).
+            </p>
+          </div>
+          <div className={st.domains__block__img}>
+            <img src="/domain/intro-img.png" />
+          </div>
+        </div>
+        <div>
+          <h2 className="text-center">Contracts</h2>
+          <p className="text-center">
+            Please note that for the convenience of customers, from January 01, 2021, a single contract form for all
+            services of AIRNET LLC came into force:
+          </p>
+          <div className="d-flex align-items-center justify-content-center gap-4">
+            <div className="d-flex align-items-center gap-3 mt-2 mb-2">
+              <div style={{ height: "40px", width: "40px" }}>{globeIcon}</div>
+              <div className="mt-2">Virtual and powerful hosting</div>
+            </div>
+            <div className="d-flex align-items-center gap-3 mt-2 mb-2">
+              <div style={{ height: "40px", width: "40px" }}>{serverIcon}</div>
+              <div className="mt-2">To rent a dedicated server</div>
+            </div>
+          </div>
+
+          <div className="d-flex align-items-center flex-wrap mt-4" style={{ gap: "20px 2%" }}>
+            <a
+              href="/documents/Agreement-№-XXXX.pdf"
+              className="d-flex gap-3 p-3 border rounded"
+              style={{ width: "49%", textDecoration: "none" }}
+              target="_blank"
+            >
+              <div style={{ height: "35px", width: "35px" }}>{pdfIcon}</div>
+              <div>
+                <div className="mb-2 card-name">Agreement for legal entities</div>
+                <div className="card-size">PDF, 1.06 KB</div>
+              </div>
+            </a>
+            <a href="#" className="d-flex gap-3 p-3 border rounded" style={{ width: "49%", textDecoration: "none" }}>
+              <div style={{ height: "35px", width: "35px" }}>{pdfIcon}</div>
+              <div>
+                <div className="mb-2 card-name">Agreement for individuals</div>
+                <div className="card-size">PDF, 220 KB</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div className="mt-4">
+          <h2>Conclusion of an agreement in writing</h2>
+
+          <div className="d-flex gap-3">
+            <p>
+              If you need to conclude a written service agreement, please send one completed copy from your side to the
+              address: Tashkent, st. Sayram, 25
+            </p>
+            <p>
+              If you are in Tashkent, then you can{" "}
+              <Link href={checkLang("en") + LINKS.CONTACTS}>
+                <a>come to our office</a>
+              </Link>{" "}
+              to conclude an agreement . You must have a signed contract and a passport with you.
+              <br />
+              <br />
+              You can send the contract through the electronic document management system (EDM) - didox.uz or
+              faktura.uz.
+            </p>
+          </div>
+        </div>
       </>
     ),
   },

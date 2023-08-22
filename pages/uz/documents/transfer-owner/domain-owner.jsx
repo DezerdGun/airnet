@@ -1,4 +1,4 @@
-import HelpBlock from "@/app/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner/application-templates-for-transferring-a-domain-to-another-owner";
+import HelpBlock from "@/app/documents/transfer-owner/domain-owner";
 
 export default function HelpBlog({ language }) {
   return <HelpBlock language={language} />;

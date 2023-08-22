@@ -1,4 +1,4 @@
-import HelpInner from "@/app/documents/templates-for-applications-for-the-transfer-of-rights-to-another-owner";
+import HelpInner from "@/app/documents/transfer-owner";
 
 export default function ({ language }) {
   return <HelpInner language={language} />;
