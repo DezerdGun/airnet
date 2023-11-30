@@ -32,6 +32,11 @@ export default function Footer({ language }) {
       uz: "Maxfiylik siyosati",
       en: "Privacy Policy",
     },
+    oferta: {
+      ru: "Публичная оферта",
+      uz: "Ommaviy taklif",
+      en: "Public offer",
+    },
     details: {
       ru: "Реквизиты",
       uz: "Rekvizitlar",
@@ -600,6 +605,9 @@ export default function Footer({ language }) {
           <span>Copyright © 2018 — 2023 OOO «AIRNET»</span>
           <Link href={checkLang(language) + LINKS.PRIVACY_POLICY}>
             <a>{langData.privacy[language]}</a>
+          </Link>
+          <Link href={checkLang(language) + LINKS.OFERTA}>
+            <a>{langData.oferta[language]}</a>
           </Link>
           <Link href={checkLang(language) + LINKS.DETAILS}>
             <a>{langData.details[language]}</a>
