@@ -70,11 +70,10 @@ const content = [
         ru: <p>Услуга предоставляется бесплатно в дополнение к другим платным продуктам или услугам.</p>,
         uz: (
           <p>
-            Bizning tajribali xodimlarimiz biznesingiz yoki startap loyihangiz uchun to'g'ri domenni tanlashingizga
-            yordam beradi.
+            Xizmat boshqa pullik mahsulot yoki xizmatlardan tashqari bepul taqdim etiladi.
           </p>
         ),
-        en: <p>Our experienced staff will help you choose the right domain for your business or startup project.</p>,
+        en: <p>The service is provided free of charge in addition to other paid products or services.</p>,
       },
       icon: usersIcon,
     },
