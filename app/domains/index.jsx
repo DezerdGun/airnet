@@ -9,6 +9,7 @@ import { shakeIcon } from "shared/icons/shakeIcon";
 import { clockIcon } from "shared/icons/clockIcon";
 import { warrantyIcon } from "shared/icons/warrantyIcon";
 import { gamepadIcon } from "shared/icons/gamepadIcon";
+import { usersIcon } from "shared/icons/usersIcon";
 
 const content = [
     {
@@ -62,6 +63,20 @@ const content = [
         en: "Turn on the Privacy Protection feature to protect your personal data from theft.",
       },
       icon: warrantyIcon,
+    },
+    {
+      title: { ru: "Управление DNS записями", uz: "DNS records", en: "DNS records" },
+      description: {
+        ru: <p>Услуга предоставляется бесплатно в дополнение к другим платным продуктам или услугам.</p>,
+        uz: (
+          <p>
+            Bizning tajribali xodimlarimiz biznesingiz yoki startap loyihangiz uchun to'g'ri domenni tanlashingizga
+            yordam beradi.
+          </p>
+        ),
+        en: <p>Our experienced staff will help you choose the right domain for your business or startup project.</p>,
+      },
+      icon: usersIcon,
     },
   ],
   faq = [
