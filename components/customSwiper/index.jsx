@@ -97,6 +97,45 @@ export default function CustomSwiper({ language }) {
 			uz: 'Barcha AIRNET mijozlari uchun - 25 Mbit/s dan boshlab Internet mavjudligi',
 			en: 'Availability on the Internet from - 25 Mbps for all AIRNET clients',
 		},
+		slideTitle3: {
+			ru: (
+				<>
+					Поздравляем AIRNET.uz<br /> с 6-летием! 🎉
+				</>
+			),
+			uz: (
+				<>
+					Поздравляем AIRNET.uz<br /> с 6-летием! 🎉
+				</>
+			),
+			en: (
+				<>
+					Поздравляем AIRNET.uz<br /> с 6-летием! 🎉
+				</>
+			),
+		},
+		slideText33: {
+			ru: (
+				<>
+					Сегодня у нас праздничное предложение: скидка 25% на все услуги! 🚀 Только один день! Поторопитесь воспользоваться этим невероятным предложением и насладиться высокоскоростным и качественными услугами по выгодной цене. 🎂✨
+				</>
+			),
+			uz: (
+				<>
+					Сегодня у нас праздничное предложение: скидка 25% на все услуги! 🚀 Только один день! Поторопитесь воспользоваться этим невероятным предложением и насладиться высокоскоростным и качественными услугами по выгодной цене. 🎂✨
+				</>
+			),
+			en: (
+				<>
+					Сегодня у нас праздничное предложение: скидка 25% на все услуги! 🚀 Только один день! Поторопитесь воспользоваться этим невероятным предложением и насладиться высокоскоростным и качественными услугами по выгодной цене. 🎂✨
+				</>
+			),
+		},
+		slideText32: {
+			ru: 'Промо-код: HAPPY6',
+			uz: 'Промо-код: HAPPY6',
+			en: 'Промо-код: HAPPY6',
+		},
 	}
 
 	return (
@@ -114,6 +153,22 @@ export default function CustomSwiper({ language }) {
 				}}
 				className={st.swiper__swiper}
 			>
+				<SwiperSlide>
+					<div
+						className={st.swiper__block}
+						style={{ background: `url('/happy6.jpg') no-repeat` }}
+					>
+						<Container>
+							<div className={st.swiper__block__item}>
+								<h2>{langData.slideTitle3[language]}</h2>
+								<h4>{langData.slideText33[language]}</h4>
+								<br />
+								<h4>{langData.slideText32[language]}</h4>
+								<div className={st.swiper__block__item__bg}></div>
+							</div>
+						</Container>
+					</div>
+				</SwiperSlide>
 				<SwiperSlide>
 					<div
 						className={st.swiper__block}
