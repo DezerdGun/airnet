@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps, url }) {
 				<link rel="alternate" hrefLang="uz-en" href={`https://airnet.uz/en${url ?? `${router.pathname}`}`} />
 				<link rel="alternate" hrefLang="uz" href={`https://airnet.uz/uz${url ?? `${router.pathname}`}`} />
 				<link rel="alternate" hrefLang="x-default" href={`https://airnet.uz/uz${url ?? `${router.pathname}`}`} />
-				{/* <meta name="referrer" content="strict-origin" /> */}
+				<meta name="referrer" content="strict-origin" />
 				<script
 					dangerouslySetInnerHTML={{
 						__html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -156,7 +156,7 @@ function MyApp({ Component, pageProps, url }) {
             height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
 				}}
 			></noscript>
-			<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+			<link href="/fonts/css2.css?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
 			<Header language={language} />
 			<div className="app">
 				<Component {...pageProps} language={language} />
