@@ -34,11 +34,11 @@ function MyApp({ Component, pageProps, url }) {
 				<link rel="shortcut icon" href="/favicon.png" />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-				<meta name="referrer" content="strict-origin" />
 				<link rel="alternate" hrefLang="uz-ru" href={`https://airnet.uz${url ?? `${router.pathname}`}`} />
 				<link rel="alternate" hrefLang="uz-en" href={`https://airnet.uz/en${url ?? `${router.pathname}`}`} />
 				<link rel="alternate" hrefLang="uz" href={`https://airnet.uz/uz${url ?? `${router.pathname}`}`} />
 				<link rel="alternate" hrefLang="x-default" href={`https://airnet.uz/uz${url ?? `${router.pathname}`}`} />
+				{/* <meta name="referrer" content="strict-origin" /> */}
 				<script
 					dangerouslySetInnerHTML={{
 						__html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
