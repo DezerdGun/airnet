@@ -6,7 +6,7 @@ import Footer from "../components/footer"
 import Header from "../components/header"
 import "../styles/globals.scss"
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, url }) {
 	const router = useRouter(),
 		language = router.asPath.includes("/uz") ? "uz" : router.asPath.includes("/en") ? "en" : "ru"
 
@@ -34,6 +34,12 @@ function MyApp({ Component, pageProps }) {
 				<link rel="shortcut icon" href="/favicon.png" />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+
+				<link rel="alternate" hrefLang="uz-ru" href={`https://airnet.uz${url ?? `${router.pathname}`}`} />
+				<link rel="alternate" hrefLang="uz-en" href={`https://airnet.uz/en${url ?? `${router.pathname}`}`} />
+				<link rel="alternate" hrefLang="uz" href={`https://airnet.uz/uz${url ?? `${router.pathname}`}`} />
+				<link rel="alternate" hrefLang="x-default" href={`https://airnet.uz/uz${url ?? `${router.pathname}`}`} />
+
 				<script
 					dangerouslySetInnerHTML={{
 						__html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -114,9 +120,9 @@ function MyApp({ Component, pageProps }) {
 								priceRange: "$1 - $300",
 								address: {
 									"@type": "PostalAddress",
-									streetAddress: "Matbuotchilar Street 32",
+									streetAddress: "Sayram 25",
 									addressLocality: "Tashkent",
-									postalCode: "100060",
+									postalCode: "100067",
 									addressCountry: "Uzbekistan",
 								},
 								geo: {
