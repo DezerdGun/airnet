@@ -273,21 +273,26 @@ export default function Footer({ language }) {
           },
         },
         {
+          link: LINKS.DOCUMENTS,
+          title: { ru: "Документы", uz: "Xujjatlar", en: "Documents" },
+        },
+        {
           link: LINKS.CONTACTS,
           title: { ru: "Контакты", uz: "Kontaktlar", en: "Contacts" },
         },
         {
-          link: LINKS.DOCUMENTS,
-          title: { ru: "Документы", uz: "Xujjatlar", en: "Documents" },
+          link: LINKS.REVIEWS,
+          blank: true,
+          title: { ru: "Отзывы", uz: "Sharhlar", en: "Reviews" },
         },
         {
           link: LINKS.BLOG,
           title: { ru: "Блог", uz: "Blog", en: "Blog" },
         },
         {
-          link: LINKS.REVIEWS,
+          link: LINKS.STOCK,
           blank: true,
-          title: { ru: "Отзывы", uz: "Sharhlar", en: "Reviews" },
+          title: { ru: "Акции", uz: "Akciya", en: "Stock" },
         },
         // {
         // 	link: LINKS.LOYALS,
