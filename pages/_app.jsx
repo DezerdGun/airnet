@@ -34,10 +34,10 @@ function MyApp({ Component, pageProps, url }) {
 				<link rel="shortcut icon" href="/favicon.png" />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-				<link rel="alternate" hrefLang="uz-ru" href={`https://airnet.uz${url ?? `${router.pathname}`}`} />
-				<link rel="alternate" hrefLang="uz-en" href={`https://airnet.uz/en${url ?? `${router.pathname}`}`} />
-				<link rel="alternate" hrefLang="uz" href={`https://airnet.uz/uz${url ?? `${router.pathname}`}`} />
-				<link rel="alternate" hrefLang="x-default" href={`https://airnet.uz/uz${url ?? `${router.pathname}`}`} />
+				<link rel="alternate" hrefLang="uz-ru" href={`https://airnet.uz${(``) + (url ?? `${router.asPath}`)}`} />
+				<link rel="alternate" hrefLang="uz-en" href={`https://airnet.uz${(`/en`) + (url ?? `${router.asPath}`)}`} />
+				<link rel="alternate" hrefLang="uz" href={`https://airnet.uz${(`/uz`) + (url ?? `${router.asPath}`)}`} />
+				<link rel="alternate" hrefLang="x-default" href={`https://airnet.uz${(`/uz`) + (url ?? `${router.asPath}`)}`} />
 				<meta name="referrer" content="strict-origin" />
 				<script
 					dangerouslySetInnerHTML={{
