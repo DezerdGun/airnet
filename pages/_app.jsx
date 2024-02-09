@@ -9,6 +9,14 @@ import "../styles/globals.scss"
 function MyApp({ Component, pageProps, url }) {
 	const router = useRouter(),
 		language = router.asPath.includes("/uz") ? "uz" : router.asPath.includes("/en") ? "en" : "ru"
+		
+		function removeLanguagePrefix(url) {
+			const languagePrefixRegex = /^\/(uz|ru|en)/;
+			return url.replace(languagePrefixRegex, '');
+		}
+
+		console.log(router.pathname);
+		console.log(router.asPath);
 
 	return (
 		<>
@@ -34,11 +42,13 @@ function MyApp({ Component, pageProps, url }) {
 				<link rel="shortcut icon" href="/favicon.png" />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-				<link rel="alternate" hrefLang="uz-ru" href={`https://airnet.uz${(``) + (url ?? `${router.asPath}`)}`} />
-				<link rel="alternate" hrefLang="uz-en" href={`https://airnet.uz${(`/en`) + (url ?? `${router.asPath}`)}`} />
-				<link rel="alternate" hrefLang="uz" href={`https://airnet.uz${(`/uz`) + (url ?? `${router.asPath}`)}`} />
-				<link rel="alternate" hrefLang="x-default" href={`https://airnet.uz${(`/uz`) + (url ?? `${router.asPath}`)}`} />
+
+				<link rel="alternate" hrefLang="uz-ru" href={`https://airnet.uz${removeLanguagePrefix(router.pathname)}`} />
+				<link rel="alternate" hrefLang="uz-en" href={`https://airnet.uz${(`/en`) + removeLanguagePrefix(router.pathname)}`} />
+				<link rel="alternate" hrefLang="uz" href={`https://airnet.uz${(`/uz`) + (url ?? removeLanguagePrefix(router.pathname))}`} />
+				<link rel="alternate" hrefLang="x-default" href={`https://airnet.uz${(`/uz`) + (url ?? removeLanguagePrefix(router.pathname))}`} />
 				<meta name="referrer" content="strict-origin" />
+
 				<script
 					dangerouslySetInnerHTML={{
 						__html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
