@@ -195,7 +195,7 @@ export default function CheapVds({ language }) {
         cpu: 2,
         ram: 2,
         ssd: 25,
-        net: 50,
+        net: 100,
         os: "Linux",
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=13",
       },
@@ -227,7 +227,7 @@ export default function CheapVds({ language }) {
         cpu: 2,
         ram: 4,
         ssd: 50,
-        net: 50,
+        net: 100,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14",
       },
       {
@@ -258,7 +258,7 @@ export default function CheapVds({ language }) {
         cpu: 4,
         ram: 4,
         ssd: 75,
-        net: 50,
+        net: 100,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=15",
       },
       {
@@ -289,7 +289,7 @@ export default function CheapVds({ language }) {
         cpu: 4,
         ram: 6,
         ssd: 100,
-        net: 50,
+        net: 100,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16",
       },
     ];

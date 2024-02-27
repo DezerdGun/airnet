@@ -389,7 +389,7 @@ export default function Home({ language }) {
         cpu: 2,
         ram: 4,
         ssd: 50,
-        net: 50,
+        net: 100,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14",
       },
       {
@@ -419,7 +419,7 @@ export default function Home({ language }) {
         cpu: 4,
         ram: 6,
         ssd: 100,
-        net: 50,
+        net: 100,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16",
       },
       {
@@ -449,7 +449,7 @@ export default function Home({ language }) {
         cpu: 6,
         ram: 10,
         ssd: 100,
-        net: 50,
+        net: 100,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
       },
       {
@@ -479,7 +479,7 @@ export default function Home({ language }) {
         cpu: 6,
         ram: 12,
         ssd: 200,
-        net: 50,
+        net: 100,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
       },
       {
@@ -509,7 +509,7 @@ export default function Home({ language }) {
         cpu: 8,
         ram: 16,
         ssd: 250,
-        net: 50,
+        net: 100,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
       },
     ],
@@ -756,20 +756,19 @@ export default function Home({ language }) {
         description: {
           ru: (
             <p>
-              В случае возникновения каких-либо вопросов, Вы всегда можете рассчитывать на нашу квалифицированную помощь
-              с индивидуальным подходом, по телефону, e-mail, telegram, а также в онлайн чате - в любое время суток!
+              В случае возникновения каких-либо вопросов, Вы всегда можете рассчитывать на нашу квалифицированную помощь, по телефону, e-mail, telegram, а также в онлайн чате - в любое время суток 24/7!
             </p>
           ),
           uz: (
             <p>
               Savollaringiz bo'lsa, siz har doim bizning malakali yordamimizga individual yondashish orqali, telefon,
-              elektron pochta, telegram orqali, shuningdek, kunning istalgan vaqtida ishonishingiz mumkin!
+              elektron pochta, telegram orqali, shuningdek, kunning istalgan vaqtida ishonishingiz mumkin 24/7!
             </p>
           ),
           en: (
             <p>
               If you have any questions, you can always count on our qualified assistance with an individual approach,
-              by phone, e-mail, telegram, as well as in online chat - at any time of the day!
+              by phone, e-mail, telegram, as well as in online chat - at any time of the day 24/7!
             </p>
           ),
         },
@@ -785,7 +784,7 @@ export default function Home({ language }) {
               <Link href={checkLang(language) + "/dc"}>
                 <a>Дата-Центре</a>
               </Link>{" "}
-              TIER-2, в Ташкенте.
+              TIER-III, в г.Ташкенте.
             </p>
           ),
           uz: (
@@ -796,7 +795,7 @@ export default function Home({ language }) {
               <Link href={checkLang(language) + "/dc"}>
                 <a>Ma'lumotlar markazi</a>
               </Link>{" "}
-              TIER-2, Toshkent shahrida.
+              TIER-III, Toshkent shahrida.
             </p>
           ),
           en: (
@@ -806,7 +805,7 @@ export default function Home({ language }) {
               <Link href={checkLang(language) + "/dc"}>
                 <a>Data Center</a>
               </Link>{" "}
-              TIER-2, in Tashkent.
+              TIER-III, in Tashkent.
             </p>
           ),
         },
@@ -888,7 +887,7 @@ export default function Home({ language }) {
           en: "Speed",
         },
         description: {
-          ru: <p>Максимальная скорость работы сайтов благодаря SSD дискам.</p>,
+          ru: <p>Максимальная скорость работы сайтов благодаря SSD дискам и скорости доступа по сети интернет и TAS-IX.</p>,
           uz: <p>SSD drayvlar tufayli veb-saytning maksimal tezligi.</p>,
           en: <p>Maximum website speed thanks to SSD drives.</p>,
         },

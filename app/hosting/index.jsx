@@ -729,9 +729,9 @@ export default function Hosting({ language }) {
     {
       title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
       description: {
-        ru: <p>Не предоставляется для игровых серверов и видео-контент сайтов! Для телеграм ботов!</p>,
-        uz: <p>O'yin serverlari va video kontent saytlari uchun mavjud emas! Telegram botlari uchun!</p>,
-        en: <p>Not available for game servers and video content sites! For telegram bots!</p>,
+        ru: <p>Не предоставляется для <strong>игровых</strong> серверов и <strong>видео-контент</strong> сайтов! Для телеграм <strong>ботов!</strong></p>,
+        uz: <p><strong>O'yin</strong> serverlari va <strong>video</strong> kontent saytlari uchun mavjud emas! <strong>Telegram</strong> botlari uchun!</p>,
+        en: <p>Not available for <strong>game</strong> servers and <strong>video</strong> content sites! For telegram <strong>bots</strong>!</p>,
       },
       icon: warningIcon,
     },

@@ -89,19 +89,19 @@ export default function BigVDS({ language }) {
               </tr>
             </thead>
             <tbody>
-              <tr>
+              {/* <tr>
                 <td>Unlim 50M</td>
                 <td>50 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
                 <td>Бесплатно</td>
-              </tr>
+              </tr> */}
               <tr>
                 <td>Unlim 100M</td>
                 <td>100 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
-                <td>2 000 000 сум/мес.</td>
+                <td>Бесплатно</td>
               </tr>
               <tr>
                 <td>Unlim 200M</td>
@@ -280,9 +280,9 @@ export default function BigVDS({ language }) {
     {
       title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
       description: {
-        ru: <p>Не предоставляется для игровых серверов и видео-контент сайтов!</p>,
-        uz: <p>O'yin serverlari va video kontent saytlari uchun mavjud emas!</p>,
-        en: <p>Not available for game servers and video content sites!</p>,
+        ru: <p>Не предоставляется для <strong>"игровых"</strong> серверов и <strong>"видео-контент"</strong> сайтов!</p>,
+        uz: <p><strong>O'yin</strong> serverlari va <strong>video kontent</strong> saytlari uchun mavjud emas!</p>,
+        en: <p>Not available for <strong>game</strong> servers and <strong>video</strong> content sites!</p>,
       },
       icon: warningIcon,
     },
@@ -364,17 +364,17 @@ export default function BigVDS({ language }) {
       },
       description: {
         ru: (
-          <p>Нет ограничений по входящему и исходящему объёму данных на всех тарифных планах с каналом от 50 Мбит/с.</p>
+          <p>Нет ограничений по входящему и исходящему объёму данных на всех тарифных планах с каналом от 100 Мбит/с.</p>
         ),
         uz: (
           <p>
-            50 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi va chiquvchi maʼlumotlar hajmiga
+            100 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi va chiquvchi maʼlumotlar hajmiga
             cheklovlar yoʻq.
           </p>
         ),
         en: (
           <p>
-            There are no restrictions on incoming and outgoing data volume on all tariff plans with a channel of 50 Mbps
+            There are no restrictions on incoming and outgoing data volume on all tariff plans with a channel of 100 Mbps
             or more.
           </p>
         ),
