@@ -8,14 +8,24 @@ Allow: /wp-admin/admin-ajax.php
 Disallow: /wp-admin/
 Disallow: /wp-login.php
 Disallow: /wp-json/
+Clean-param: add-to-wishlist&_wpnonce&add-to-cart&C&dtai&password-protected&redirect_to&s&mnu_catgory
 
 
 # Googlebot
 User-agent: Googlebot
+
 Allow: /*.css
 Allow: /*.jpg
 Allow: /*.png
 Allow: /*.js
+Disallow: /*_wpnonce=
+Disallow: /*add-to-cart=
+Disallow: /*C=
+Disallow: /*dtai=
+Disallow: /*password-protected=
+Disallow: /*s=
+
+
 
 # Host
 Host: https://airnet.uz
