@@ -6,8 +6,11 @@ import Container from "../container/index.jsx";
 import st from "./trust.module.scss";
 
 const content = [
+  "/trust/tmz.png",
+  "/trust/ravnaqbank.png",
+  "/trust/cybernet.jpg",
   "/trust/coca.jpg",
-  "/trust/FED.png",
+  // "/trust/FED.png",
   "/trust/ipoteka.jpg",
   "/trust/leader-school.jpg",
   "/trust/paynet.jpg",
@@ -21,14 +24,14 @@ const content = [
   "/trust/yapona-mama.jpg",
   "/trust/reikardz.jpg",
   "/trust/lerna.jpg",
-  "/trust/PAYZE.jpg",
-  "/trust/paybox.png",
+  // "/trust/PAYZE.jpg",
+  // "/trust/paybox.png",
   "/trust/PAYGINE.jpg",
   "/trust/NADESK.png",
-  "/trust/UZDJTSU Nukus filiali.jpg",
+  // "/trust/UZDJTSU Nukus filiali.jpg",
   "/trust/terra.jpg",
   "/trust/yubor.png",
-  "/trust/napa.jpg",
+  // "/trust/napa.jpg",
   "/trust/Sehriyo.png",
 ];
 
