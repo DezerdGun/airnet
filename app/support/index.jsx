@@ -5,6 +5,9 @@ import emailjs from "@emailjs/browser";
 import { useEffect, useState } from "react";
 import { useIMask } from "react-imask";
 import st from "./support.module.scss";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function Support({ language }) {
   const [show, setShow] = useState(false),
@@ -415,6 +418,10 @@ export default function Support({ language }) {
   return (
     <>
       <div className={st.support}>
+      
+        <BreadCrumbs data={[{ name: 'Техническая поддержка' }]} />
+        <PageBreadcrumb links={[{ name: 'Техническая поддержка' }]} />
+
         <TarifMaket
           // bgImg={'/servers-2.jpg'}
           title={langData.title[language]}
@@ -476,6 +483,7 @@ export default function Support({ language }) {
         </TarifMaket>
       </div>
       <Partners language={language} />
+      <Reviews language={language} />
       <div className={`${st.modal} ${show ? st.modal__active : ""}`}>
         <div className={st.modal__block}>
           <div className={st.modal__block__header}>

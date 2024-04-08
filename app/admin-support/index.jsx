@@ -7,6 +7,9 @@ import Link from "next/link";
 import st from "./adminSupport.module.scss";
 import { questionIcon } from "shared/icons/questionIcon";
 import { notificationIcon } from "shared/icons/notificationIcon";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 const content = [
   {
@@ -359,6 +362,10 @@ export default function AdminSupport({ language }) {
 
   return (
     <div className={st.adminSupport}>
+            
+      <BreadCrumbs data={[{ name: 'Администрирование VDS/VPS сервера' }]} />
+      <PageBreadcrumb links={[{ name: 'Администрирование VDS/VPS сервера' }]} />
+
       <Container headTitle={langData.title[language]} clNTitle="mb-0">
         <hr />
         <div className={st.adminSupport__header}>
@@ -518,6 +525,7 @@ export default function AdminSupport({ language }) {
       </Container>
       <WhyBlock content={content} language={language} />
       <Partners language={language} />
+      <Reviews language={language} />
     </div>
   );
 }

@@ -124,8 +124,10 @@ export default function Stock({ language }) {
   };
 
   return (
-    <div className={st.stock}>
-      <WhyBlock title={langData.title[language]} content={whyBlockStock} language={language} />
-    </div>
+		<>
+      <div className={st.stock}>
+        <WhyBlock title={langData.title[language]} content={whyBlockStock} language={language} />
+      </div>
+    </>
   );
 }

@@ -25,6 +25,9 @@ import ForFreeBlock from "@/components/forFreeBlock";
 import { forFreeVDSData } from "../vds";
 import AvailableOS from "@/components/availableOS";
 import VirtualServers from "@/components/virtualServers";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function CustomVDS({ language }) {
   const [show, setShow] = useState(-1);
@@ -38,6 +41,11 @@ export default function CustomVDS({ language }) {
       ru: "Предложение в соотношении цены-качества-количества ресурсов, которое построенно на быстрых SSD-дисках. Оптимальные VDS/VPS в сети TAS-IX в Ташкенте",
       uz: "Tez SSD drayverlarga qurilgan narx-sifat-resurslar miqdori nisbatidagi taklif. Toshkent shahridagi TAS-IX tarmog'ida optimal VDS/VPS",
       en: "An offer in the ratio of price-quality-quantity of resources, which is built on fast SSD drives. Optimal VDS / VPS in the TAS-IX network in Tashkent",
+    },
+    whyBlockTitle: {
+      ru: "Преимущества",
+      uz: "Преимущества",
+      en: "Преимущества",
     },
     headTitle: {
       ru: "Свой виртуальные сервер на базе быстрых SSD-дисков",
@@ -409,6 +417,10 @@ export default function CustomVDS({ language }) {
   return (
     <>
       <SEO title={langData.seo[language]} desc={langData.desc[language]} />
+      
+      <BreadCrumbs data={[{ name: 'Конструктор VDS/VPS сервера' }]} />
+      <PageBreadcrumb links={[{ name: 'Конструктор VDS/VPS сервера' }]} />
+
       <div>
         <Container headTitle={langData.headTitle[language]} clNTitle="text-center" className="pb-0"></Container>
         <Calculator language={language} />
@@ -418,7 +430,7 @@ export default function CustomVDS({ language }) {
         <AvailableOS language={language} />
         <VirtualServers language={language} />
 
-        <WhyBlock content={block} language={language} />
+        <WhyBlock title={langData.whyBlockTitle[language]} content={block} language={language} />
 
         <FAQ
           title="Дополнительно"
@@ -558,6 +570,7 @@ export default function CustomVDS({ language }) {
         />
 
         <Partners language={language} />
+        <Reviews language={language} />
       </div>
     </>
   );

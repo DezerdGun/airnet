@@ -25,6 +25,9 @@ import { warrantyIcon } from "shared/icons/warrantyIcon";
 import { checkLang } from "@/utils/checkLang";
 import AvailableOS from "@/components/availableOS";
 import VirtualServers from "@/components/virtualServers";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../components/seo/breadCrumbs"
+import PageBreadcrumb from "../components/seo/pageBreadCrumbs";
 
 export default function BigVDS({ language }) {
   const [show, setShow] = useState(-1);
@@ -39,6 +42,11 @@ export default function BigVDS({ language }) {
       ru: "Высокопроизводительный виртуальный хостинг, Мощные VDS, VPS-сервера, VDS в Ташкенте, виртуальные сервера, выделенные сервера в Узбекистане",
       uz: "Yuqori samarali virtual xosting, Kuchli VDS, VPS serverlar, Toshkentdagi VDS, virtual serverlar, O'zbekistonda ajratilgan serverlar",
       en: "High performance virtual hosting, Powerful VDS, VPS servers, VDS in Tashkent, virtual servers, dedicated servers in Uzbekistan",
+    },
+    whyBlockTitle: {
+      ru: "Преимущества",
+      uz: "Преимущества",
+      en: "Преимущества",
     },
     headT1: {
       ru: "Мощные VDS/VPS — сервера",
@@ -579,6 +587,10 @@ export default function BigVDS({ language }) {
       <SEO title={langData.seoT[language]} desc={langData.descT[language]} />
       <div className={st.vds}>
         <div className={"bg_gray"}>
+      
+          <BreadCrumbs data={[{ name: 'Высокопроизводительные VDS/VPS сервера' }]} />
+          <PageBreadcrumb links={[{ name: 'Высокопроизводительные VDS/VPS сервера' }]} />
+          
           <TarifMaket
             // bgImg={'/servers-2.jpg'}
             headTitle={
@@ -586,6 +598,7 @@ export default function BigVDS({ language }) {
                 {langData.headT1[language]} <br /> {langData.headT2[language]}
               </>
             }
+            title="Тарифы"
             description={<p>{langData.description[language]}</p>}
             className="mt-0 px-0"
             endText={
@@ -630,7 +643,7 @@ export default function BigVDS({ language }) {
           </TarifMaket>
         </div>
 
-        <WhyBlock content={whyBlock} language={language} />
+        <WhyBlock title={langData.whyBlockTitle[language]} content={whyBlock} language={language} />
 
         <ForFreeBlock data={forFreeVDSData} language={language} />
         <AvailableOS language={language} />
@@ -642,6 +655,7 @@ export default function BigVDS({ language }) {
           </div>
         </Container>
         <Partners language={language} />
+        <Reviews language={language} />
       </div>
     </>
   );

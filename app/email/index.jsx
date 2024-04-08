@@ -10,6 +10,9 @@ import { coinsIcon } from "shared/icons/coinsIcon";
 import { warrantyIcon } from "shared/icons/warrantyIcon";
 import { calendarIcon } from "shared/icons/calendarIcon";
 import { supportIcon } from "shared/icons/supportIcon";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function EMAIL({ language }) {
   const [show, setShow] = useState(null);
@@ -397,6 +400,10 @@ export default function EMAIL({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
+      
+      <BreadCrumbs data={[{ name: 'Корпоративная почта' }]} />
+      <PageBreadcrumb links={[{ name: 'Корпоративная почта' }]} />
+
       <Container headTitle={langData.headTitle[language]}>
         <hr />
         <div className={styles.ssl__block}>
@@ -410,6 +417,7 @@ export default function EMAIL({ language }) {
       <WhyBlock title={langData.whyTitle[language]} content={content2} language={language} />
       <FAQ faq={faq} title="FAQ" language={language} />
       <Partners language={language} />
+      <Reviews language={language} />
     </>
   );
 }

@@ -11,6 +11,9 @@ import { notificationIcon } from "shared/icons/notificationIcon.js";
 import { coinsIcon } from "shared/icons/coinsIcon.js";
 import { userMinusIcon } from "shared/icons/userMinusIcon.js";
 import { dislikeIcon } from "shared/icons/dislikeIcon.js";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function AntiDDos({ language }) {
   const content = [
@@ -180,6 +183,9 @@ export default function AntiDDos({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
+            
+      <BreadCrumbs data={[{ name: 'DDoS-атака' }]} />
+      <PageBreadcrumb links={[{ name: 'DDoS-атака' }]} />
 
       <Container headTitle={langData.headTitle[language]}>
         <div className={st.anti_ddos__info}>
@@ -230,6 +236,7 @@ export default function AntiDDos({ language }) {
         </div>
       </Container>
       <Partners language={language} />
+      <Reviews language={language} />
     </>
   );
 }

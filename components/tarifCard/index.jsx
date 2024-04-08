@@ -68,7 +68,7 @@ export default function TarifCard({ index, tarif, show, setShow, language }) {
   return (
     <div className={st.tarifCard}>
       <div className={st.tarifCard__header}>
-        <h4>{tarif.title[language]}</h4>
+        <h3>{tarif.title[language]}</h3>
         <div className={st.tarifCard__header__price}>
           <Drop
             index={index}

@@ -11,6 +11,9 @@ import { notificationIcon } from "shared/icons/notificationIcon.js";
 import { cloudsIcon } from "shared/icons/cloudsIcon.js";
 import { BeautyNum, CalcBlock, CalcHeader, CalcInput, CalcSelect } from "@/components/calculator/index.jsx";
 import { useState } from "react";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function Autobackup({ language }) {
   const content = [
@@ -159,6 +162,10 @@ export default function Autobackup({ language }) {
 
   return (
     <div className={st.autobackup}>
+            
+      <BreadCrumbs data={[{ name: 'Резервное копирование' }]} />
+      <PageBreadcrumb links={[{ name: 'Резервное копирование' }]} />
+      
       <Container headTitle={langData.headTitle[language]}>
         <div className={st.autobackup__info}>
           <div className={st.autobackup__info__content}>
@@ -207,6 +214,7 @@ export default function Autobackup({ language }) {
         </div>
       </Container>
       <Partners language={language} />
+      <Reviews language={language} />
     </div>
   );
 }

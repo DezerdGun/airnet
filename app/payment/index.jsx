@@ -5,6 +5,9 @@ import ImageFullScreen from "../../components/imageFullScreen";
 import Partners from "../../components/partners";
 import SEO from "../../components/seo";
 import styles from "./payment.module.scss";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 const faq = [
     {
@@ -746,6 +749,9 @@ export default function Payment({ language }) {
   return (
     <div className={styles.payment}>
       <SEO title={langData.seoT[language]} desc={langData.descT[language]} />
+      
+      <BreadCrumbs data={[{ name: 'Способы оплаты' }]} />
+      <PageBreadcrumb links={[{ name: 'Способы оплаты' }]} />
 
       <Container headTitle={langData.headTitle[language]}>
         <div className={styles.payment__info}>
@@ -818,6 +824,7 @@ export default function Payment({ language }) {
       <FAQ faq={faq} title={langData.title[language]} language={language} />
 
       <Partners language={language} />
+      <Reviews language={language} />
     </div>
   );
 }

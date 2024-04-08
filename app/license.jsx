@@ -6,6 +6,10 @@ import { Autoplay, Navigation } from "swiper"
 import "swiper/css"
 import "swiper/css/navigation"
 import { Swiper, SwiperSlide } from "swiper/react"
+import Partners from "@/components/partners";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../components/seo/breadCrumbs"
+import PageBreadcrumb from "../components/seo/pageBreadCrumbs";
 
 const license = [
 	{
@@ -41,6 +45,10 @@ export default function License({ language }) {
 	return (
 		<>
 			<SEO title={langDate.seoT[language]} desc="" />
+      
+			<BreadCrumbs data={[{ name: 'Наши лицензии' }]} />
+			<PageBreadcrumb links={[{ name: 'Наши лицензии' }]} />
+			
 			<Container className={"text-center"} headTitle={langDate.headTitle[language]}>
 				<hr />
 
@@ -84,6 +92,8 @@ export default function License({ language }) {
 
 				{image && <ImageFullScreen image={image} setImage={setImage} />}
 			</Container>
+			<Partners language={language} />
+			<Reviews language={language} />
 		</>
 	)
 }

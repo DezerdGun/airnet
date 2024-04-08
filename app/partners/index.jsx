@@ -6,6 +6,9 @@ import { LINKS } from "../../components/requirements";
 import SEO from "../../components/seo";
 import StepsBlock from "../../components/stepsBlock";
 import st from "./partners.module.scss";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function PartnersPage({ language }) {
   const langData = {
@@ -605,7 +608,12 @@ export default function PartnersPage({ language }) {
   return (
     <>
       <SEO title={langData.seoT[language]} desc={langData.descT[language]} />
+      
+      <BreadCrumbs data={[{ name: 'Партнерская программа' }]} />
+      <PageBreadcrumb links={[{ name: 'Партнерская программа' }]} />
+
       <div className={st.partners}>{langData.container[language]}</div>
+      <Reviews language={language} />
     </>
   );
 }

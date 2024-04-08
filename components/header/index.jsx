@@ -123,6 +123,10 @@ export default function Header({ language }) {
             link: LINKS.SUPPORT,
           },
           {
+            title: { ru: "Отзывы", uz: "Отзывы", en: "Reviews" },
+            link: LINKS.REVIEWS,
+          },
+          {
             title: { ru: "Наши лицензии", uz: "Litsenziyalar", en: "Licenses" },
             link: LINKS.LICENSE,
           },

@@ -49,7 +49,7 @@ export default function FAQ({ faq, title, language }) {
 							{faq.map((item, i) => (
 								<div key={item.title} className={st.faq__items__block}>
 									<div className={st.faq__items__block__heading} onClick={() => active(i)}>
-										<h2>{item.title[language]}</h2>
+										<h3>{item.title[language]}</h3>
 										<span>
 											<svg
 												xmlns="http://www.w3.org/2000/svg"

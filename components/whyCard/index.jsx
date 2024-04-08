@@ -5,7 +5,7 @@ const WhyCard = ({ content, language }) => {
     <div className={styles.whyCard}>
       <span className={styles.whyCard__icon}>{content.icon}</span>
       <div>{content.icon}</div>
-      <h6>{content.title[language]}</h6>
+      <h3>{content.title[language]}</h3>
       {content.description[language]}
     </div>
   );

@@ -13,6 +13,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { checkLang } from "@/utils/checkLang";
 import { LINKS } from "@/components/requirements";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function WhoIs({ language }) {
   const langData = {
@@ -440,6 +443,10 @@ export default function WhoIs({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
+      
+      <BreadCrumbs data={[{ name: 'Whois' }]} />
+      <PageBreadcrumb links={[{ name: 'Whois' }]} />
+
       <Container headTitle={langData.headTitle[language]}>
         <hr />
         <div className={st.domains__block}>
@@ -455,8 +462,8 @@ export default function WhoIs({ language }) {
       </Container>
 
       <div className={st.domains__head}>
-        <Container headTitle={langData.headTitle[language]} clNTitle="mb-3">
-          <hr />
+        <Container clNTitle="mb-3">
+          {/* <hr /> */}
           <p>{langData.description[language]}</p>
           <div className={st.domains__head__block}>
             <div className={st.domains__head__block__item}>
@@ -726,7 +733,9 @@ export default function WhoIs({ language }) {
         </Container>
       </div>
 
-      <FAQ faq={faq} language={language} />
+      <FAQ faq={faq} title="FAQ" language={language} />
+      <Partners language={language} />
+      <Reviews language={language} />
     </>
   );
 }

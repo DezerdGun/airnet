@@ -17,10 +17,10 @@ export default function TarifMaket({
 		>
 			<Container>
 				{headTitle && <h1 className={st.container__headTitle}>{headTitle}</h1>}
-				{title && <h3 className={st.container__title}>{title}</h3>}
 				<div className={`${st.tarifMaket__item} ${className}`}>
 					{description}
 				</div>
+				{title && <h2 className={st.container__title}>{title}</h2>}
 				<div className={`${st.tarifMaket__children} tarifSlider`}>
 					{children}
 				</div>

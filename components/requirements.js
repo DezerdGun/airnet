@@ -35,7 +35,7 @@ export const LINKS = {
   ANTIVIRUS: "/",
   HELP: "/help",
   CONTACTS: "/contacts",
-  REVIEWS: "https://www.trustpilot.com/review/airnet.uz",
+  REVIEWS: "/reviews",
   LOYALS: "/",
   PARTNERS: "/partners",
   PRIVACY_POLICY: "/privacy-policy",

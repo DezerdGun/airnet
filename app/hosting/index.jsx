@@ -24,6 +24,9 @@ import { presentIcon } from "shared/icons/presentIcon";
 import Link from "next/link";
 import { LINKS } from "@/components/requirements";
 import AvailablePO from "@/components/availablePO";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function Hosting({ language }) {
   const [show, setShow] = useState(-1);
@@ -38,6 +41,11 @@ export default function Hosting({ language }) {
       ru: "Виртуальный хостинг Cpanel в сети TAS-IX с круглосуточной поддержкой, хостинг в Ташкенте, недорогой хостинг, хостинг в Узбекистане",
       uz: "Virtual hosting Cpanel TAS-IX tarmog'ida 24/7 qo'llab-quvvatlash, Toshkentda xosting, arzon hosting, O'zbekistonda xosting",
       en: "Virtual hosting Cpanel in TAS-IX network with 24/7 support, hosting in Tashkent, cheap hosting, hosting in Uzbekistan",
+    },
+    whyBlockTitle: {
+      ru: "Преимущества",
+      uz: "Преимущества",
+      en: "Преимущества",
     },
     tarifTitle: {
       ru: "Популярные тарифы Виртуальный хостинг Cpanel в Ташкенте",
@@ -877,9 +885,14 @@ export default function Hosting({ language }) {
 				</Container> */}
 
         <div className={"bg_gray"}>
+      
+          <BreadCrumbs data={[{ name: 'Виртуальный хостинг Cpanel' }]} />
+          <PageBreadcrumb links={[{ name: 'Виртуальный хостинг Cpanel' }]} />
+
           <TarifMaket
             // bgImg={'/servers-2.jpg'}
             headTitle={langData.tarifTitle[language]}
+            title="Тарифы"
             description={<p>{langData.tarifDesc[language]}</p>}
             endText={<p className="text-white text-center mt-2">{langData.tarifEnd[language]}</p>}
           >
@@ -918,7 +931,7 @@ export default function Hosting({ language }) {
           </TarifMaket>
         </div>
 
-        <WhyBlock content={whyBlockHosting} language={language} />
+        <WhyBlock title={langData.whyBlockTitle[language]} content={whyBlockHosting} language={language} />
 
         <Container title={langData.confTitle[language]} clNTitle="text-center">
           <div className={st.hosting__block}>
@@ -959,6 +972,7 @@ export default function Hosting({ language }) {
 
         <FAQ faq={faq} title={langData.faqTitle[language]} language={language} />
         <Partners language={language} />
+        <Reviews language={language} />
       </div>
     </>
   );

@@ -6,6 +6,9 @@ import st from "./reseller.module.scss";
 import WhyBlock from "@/components/whyBlock";
 import { serversIcon } from "shared/icons/serversIcon";
 import { tagIcon } from "shared/icons/tagIcon";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 const content = [
   {
@@ -103,6 +106,9 @@ export default function Reseller({ language }) {
   return (
     <>
       <div className={st.reseller}>
+        <BreadCrumbs data={[{ name: 'Реселлер' }]} />
+        <PageBreadcrumb links={[{ name: 'Реселлер' }]} />
+
         <Container headTitle={langData.headTitle[language]} description={langData.description[language]}></Container>
         <WhyBlock content={content} language={language} />
       </div>
@@ -146,6 +152,7 @@ export default function Reseller({ language }) {
         language={language}
       />
       <Partners language={language} />
+      <Reviews language={language} />
     </>
   );
 }

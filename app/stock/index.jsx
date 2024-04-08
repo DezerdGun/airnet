@@ -3,6 +3,8 @@ import Partners from "@/components/partners"
 import PopularStock from "@/components/popularStock"
 import SEO from "@/components/seo"
 import st from "./stock.module.scss"
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 const data = [
 	{
@@ -387,6 +389,9 @@ export default function Stock({ language }) {
 	return (
 		<>
 			<SEO title={langData.seoT[language]} desc={langData.descT[language]} />
+      
+			<BreadCrumbs data={[{ name: 'Акции' }]} />
+			<PageBreadcrumb links={[{ name: 'Акции' }]} />
 
 			<Container className="text-center" headTitle={langData.headTitle[language]}>
 				<hr />

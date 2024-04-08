@@ -6,7 +6,7 @@ export default function ForFreeBlock({ data, language }) {
     <Container>
       <div className={st.forFreeBlock}>
         <div className={st.forFreeBlock__block}>
-          <h3>{data.title[language]}</h3>
+          <h2>{data.title[language]}</h2>
           <ul>
             {data.content.map((item) => (
               <li key={item.title}>

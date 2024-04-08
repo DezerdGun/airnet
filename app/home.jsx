@@ -13,7 +13,7 @@ import Sitepad from "@/components/sitepad";
 import Stock from "@/components/stock";
 import TarifCard from "@/components/tarifCard";
 import TarifCard2 from "@/components/tarifCard2";
-import TarifMaket from "@/components/tarifMaket";
+import TarifMaketHome from "@/components/tarifMaketHome";
 import Trust from "@/components/trust";
 import WhyBlock from "@/components/whyBlock";
 
@@ -47,17 +47,17 @@ export default function Home({ language }) {
       uz: "Nima uchun AIRNET ni tanlaysiz?",
       en: "Why choose AIRNET?",
     },
-    tarifMaketTitle: {
+    tarifMaketHomeTitle: {
       ru: "Популярные тарифы - Виртуальный сервер в Ташкенте",
       uz: "Ommabop tariflar - Toshkentdagi virtual server",
       en: "Popular tariffs - Virtual server in Tashkent",
     },
-    tarifMaketDesc: {
+    tarifMaketHomeDesc: {
       ru: "Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости до 1 Gbps",
       uz: "Bizning serverlarimiz O‘zbekiston hududida (Toshkent) TAS-IX tarmog‘ida 1 Gbit/s gacha tezlikda joylashgan.",
       en: "Our servers are located on the territory of Uzbekistan (Tashkent), in the TAS-IX network at speeds up to 1 Gbps",
     },
-    tarifMaketEnd: {
+    tarifMaketHomeEnd: {
       ru: (
         <>
           <p>
@@ -89,12 +89,12 @@ export default function Home({ language }) {
         </>
       ),
     },
-    tarifMaketTitle2: {
+    tarifMaketHomeTitle2: {
       ru: "Популярные тарифы Виртуальный хостинг Cpanel в Ташкенте",
       uz: "Ommabop tariflar Toshkentda umumiy hosting Cpanel",
       en: "Popular tariffs Shared hosting Cpanel in Tashkent",
     },
-    tarifMaketEnd2: {
+    tarifMaketHomeEnd2: {
       ru: "*При оплате за хостинг от 12 месяцев!",
       uz: "*Xosting uchun 12 oydan boshlab to'lashda!",
       en: "*If you pay for hosting from 12 months!",
@@ -913,10 +913,10 @@ export default function Home({ language }) {
       <Product language={language} />
       <CustomSwiper language={language} />
       <WhyBlock title={langData.whyBlockTitle[language]} content={whyBlockData} language={language} />
-      <TarifMaket
-        title={langData.tarifMaketTitle[language]}
-        description={<p>{langData.tarifMaketDesc[language]}</p>}
-        endText={<div className="text-white text-center mt-2">{langData.tarifMaketEnd[language]}</div>}
+      <TarifMaketHome
+        title={langData.tarifMaketHomeTitle[language]}
+        description={<p>{langData.tarifMaketHomeDesc[language]}</p>}
+        endText={<div className="text-white text-center mt-2">{langData.tarifMaketHomeEnd[language]}</div>}
       >
         <Swiper
           cssMode={true}
@@ -950,12 +950,12 @@ export default function Home({ language }) {
             </SwiperSlide>
           ))}
         </Swiper>
-      </TarifMaket>
+      </TarifMaketHome>
       <RegDomain language={language} />
-      <TarifMaket
-        title={langData.tarifMaketTitle2[language]}
-        description={<p>{langData.tarifMaketDesc[language]}</p>}
-        endText={<p className="text-white text-center mt-2">{langData.tarifMaketEnd2[language]}</p>}
+      <TarifMaketHome
+        title={langData.tarifMaketHomeTitle2[language]}
+        description={<p>{langData.tarifMaketHomeDesc[language]}</p>}
+        endText={<p className="text-white text-center mt-2">{langData.tarifMaketHomeEnd2[language]}</p>}
       >
         <Swiper
           cssMode={true}
@@ -995,13 +995,13 @@ export default function Home({ language }) {
             </SwiperSlide>
           ))}
         </Swiper>
-      </TarifMaket>
+      </TarifMaketHome>
       <Stock language={language} />
-      <Reviews language={language} />
       <Trust language={language} />
       <FAQ faq={faq} title={langData.faqTitle[language]} language={language} />
       {/* <Notifications language={language} /> */}
       <Partners language={language} />
+      <Reviews language={language} />
     </>
   );
 }

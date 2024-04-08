@@ -22,6 +22,9 @@ import { infiniteIcon } from "shared/icons/infiniteIcon";
 import { warrantyIcon } from "shared/icons/warrantyIcon";
 import AvailableOS from "@/components/availableOS";
 import VirtualServers from "@/components/virtualServers";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function CheapVds({ language }) {
   const [show, setShow] = useState(-1);
@@ -36,6 +39,11 @@ export default function CheapVds({ language }) {
       ru: "Дешевые и бесплатные VDS/VPS на быстрых SSD-дисках в сети TAS-IX в Ташкенте",
       uz: "Toshkent shahridagi TAS-IX tarmog'ida tezkor SSD disklarida arzon va bepul VDS/VPS",
       en: "Cheap and free VDS/VPS on fast SSD drives in the TAS-IX network in Tashkent",
+    },
+    whyBlockTitle: {
+      ru: "Преимущества",
+      uz: "Преимущества",
+      en: "Преимущества",
     },
     headTitle: {
       ru: "Бюджетные VDS/VPS — Самые дешевые сервера в Ташкенте",
@@ -309,11 +317,17 @@ export default function CheapVds({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
+
       <div className={st.cheapVds}>
         <div className={"bg_gray"}>
+      
+          <BreadCrumbs data={[{ name: 'Бюджетные VDS/VPS сервера' }]} />
+          <PageBreadcrumb links={[{ name: 'Бюджетные VDS/VPS сервера' }]} />
+
           <TarifMaket
             // bgImg={'/servers-2.jpg'}
             headTitle={langData.headTitle[language]}
+            title="Тарифы"
             description={<p>{langData.description[language]}</p>}
             className="mt-0 px-0"
             endText={
@@ -382,7 +396,7 @@ export default function CheapVds({ language }) {
 					</div>
 				</Container> */}
 
-        <WhyBlock content={block} language={language} />
+        <WhyBlock title={langData.whyBlockTitle[language]} content={block} language={language} />
 
         {/* <TarifMaket
 					bgImg={'/servers-2.jpg'}
@@ -437,6 +451,7 @@ export default function CheapVds({ language }) {
         </Container> */}
 
         <Partners language={language} />
+        <Reviews language={language} />
       </div>
     </>
   );

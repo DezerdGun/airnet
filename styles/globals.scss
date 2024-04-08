@@ -97,7 +97,7 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 30px;
 }
 
 h3 {
@@ -244,12 +244,31 @@ h6 {
 .whyBlock-swiper,
 .reviews-swiper {
   .swiper-wrapper {
-    padding-top: 50px;
+    padding-top: 40px;
   }
 }
 
 .reviews-swiper {
   margin-top: -40px;
+}
+
+.add-reviews{
+  width: 1250px;
+  padding: 40px 0;
+  margin: 0 auto;
+  text-align: center;
+
+  a{
+    display: inline-block;
+    width: 350px;
+    background-color: #006a4d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+
+  }
 }
 
 /* ----------------------------- list ------------------------------*/

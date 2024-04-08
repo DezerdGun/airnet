@@ -1,6 +1,9 @@
+import SEO from "@/components/seo";
 import Image from "next/image";
 import styles from "./details.module.scss";
 import Container from "@/components/container";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 const Details = ({ language }) => {
   const infoIcon = (
@@ -68,6 +71,16 @@ const Details = ({ language }) => {
   );
 
   const langData = {
+    seoTitle: {
+      ru: "Реквизиты компании | Хостинг TAS-IX в Ташкенте, Узбекистане",
+      uz: "Реквизиты компании | O'zbekiston, Toshkent shahrida TAS-IX mezbonligi",
+      en: "Реквизиты компании | Hosting TAS-IX in Tashkent, Uzbekistan",
+    },
+    descTitle: {
+      ru: "Банковские реквизиты компании OOO AIRNET",
+      uz: "Банковские реквизиты компании OOO AIRNET",
+      en: "Банковские реквизиты компании OOO AIRNET",
+    },
     title: {
       ru: "Реквизиты компании",
       uz: "Kompaniya tafsilotlari",
@@ -151,7 +164,11 @@ const Details = ({ language }) => {
   };
 
   return (
+    <>
+    <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
     <main className={styles.details}>
+		<BreadCrumbs data={[{ name: 'Реквизиты компании' }]} />
+		<PageBreadcrumb links={[{ name: 'Реквизиты компании' }]} />
       <section className={styles.details__banner}>
         <Container className="pt-0">
           <div>
@@ -243,6 +260,7 @@ const Details = ({ language }) => {
         </Container>
       </section>
     </main>
+    </>
   );
 };
 

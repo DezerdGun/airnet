@@ -4,6 +4,8 @@ import { checkLang } from "@/utils/checkLang"
 import Image from "next/image"
 import Link from "next/link"
 import st from "./blog.module.scss"
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export const blog = [
 	{
@@ -427,6 +429,10 @@ export function BlogBlock({ pagination, blog, language }) {
 	return (
 		<>
 			<SEO title={langData.seoT[language]} desc={langData.descT[language]} />
+      
+			<BreadCrumbs data={[{ name: 'Новости' }]} />
+			<PageBreadcrumb links={[{ name: 'Новости' }]} />
+
 			<Container headTitle={langData.headTitle[language]} clNTitle="text-center">
 				<div className={st.blog}>
 					<div className={st.blog__block}>

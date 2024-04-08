@@ -2,6 +2,9 @@ import Container from "@/components/container";
 import Partners from "@/components/partners";
 import SEO from "@/components/seo";
 import { HelpItemBlock } from "@/components/helpItem";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function Documents({ language }) {
   const data = [
@@ -132,6 +135,10 @@ export default function Documents({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.desc[language]} />
+      
+      <BreadCrumbs data={[{ name: 'Договор' }]} />
+      <PageBreadcrumb links={[{ name: 'Договор' }]} />
+
       <Container headTitle={langData.headTitle[language]}>
         <hr />
 
@@ -143,6 +150,7 @@ export default function Documents({ language }) {
       </Container>
       <HelpItemBlock data={{ content: data }} language={language} />
       <Partners language={language} />
+      <Reviews language={language} />
     </>
   );
 }

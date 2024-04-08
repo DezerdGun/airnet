@@ -3,6 +3,9 @@ import Partners from "@/components/partners"
 import SEO from "@/components/seo"
 import { checkLang } from "@/utils/checkLang"
 import Link from "next/link"
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../components/seo/breadCrumbs"
+import PageBreadcrumb from "../components/seo/pageBreadCrumbs";
 
 export default function About({ language }) {
 	const langData = {
@@ -128,6 +131,10 @@ export default function About({ language }) {
 	return (
 		<>
 			<SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
+      
+			<BreadCrumbs data={[{ name: 'О компании' }]} />
+			<PageBreadcrumb links={[{ name: 'О компании' }]} />
+
 			<Container headTitle={langData.title[language]}>
 				<hr />
 				<p>{langData.text1[language]}</p>
@@ -138,6 +145,7 @@ export default function About({ language }) {
 				<p>{langData.text6[language]}</p>
 			</Container>
 			<Partners language={language} />
+			<Reviews language={language} />
 		</>
 	)
 }

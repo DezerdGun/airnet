@@ -3,6 +3,9 @@ import Partners from "@/components/partners";
 import SEO from "@/components/seo";
 import st from "./dedicated.module.scss";
 import ForFreeBlock from "@/components/forFreeBlock";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function Dedicated({ language }) {
   const checkedCircle = (
@@ -262,6 +265,10 @@ export default function Dedicated({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
+      
+      <BreadCrumbs data={[{ name: 'Выделенные сервера' }]} />
+      <PageBreadcrumb links={[{ name: 'Выделенные сервера' }]} />
+
       <div className={st.dedicated}>
         <Container
           className="mt-0 text-center"
@@ -362,6 +369,7 @@ export default function Dedicated({ language }) {
         <ForFreeBlock data={forFreeDedicatedData} language={language} />
 
         <Partners language={language} />
+        <Reviews language={language} />
       </div>
     </>
   );

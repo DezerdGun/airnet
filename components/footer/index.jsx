@@ -282,7 +282,6 @@ export default function Footer({ language }) {
         },
         {
           link: LINKS.REVIEWS,
-          blank: true,
           title: { ru: "Отзывы", uz: "Sharhlar", en: "Reviews" },
         },
         {
@@ -291,7 +290,6 @@ export default function Footer({ language }) {
         },
         {
           link: LINKS.STOCK,
-          blank: true,
           title: { ru: "Акции", uz: "Akciya", en: "Stock" },
         },
         // {

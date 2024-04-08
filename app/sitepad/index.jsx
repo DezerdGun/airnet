@@ -6,6 +6,9 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "./sitepad.module.scss";
 import Sitepad from "@/components/sitepad";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 const data = [
   {
@@ -354,6 +357,9 @@ export default function SitePad({ language }) {
   return (
     <div className={styles.sitepad}>
       <SEO title={langData.seoT[language]} desc={langData.descT[language]} />
+      
+      <BreadCrumbs data={[{ name: 'Конструктор сайтов' }]} />
+      <PageBreadcrumb links={[{ name: 'Конструктор сайтов' }]} />
 
       <Container headTitle={langData.headTitle[language]}>
         <div className={styles.sitepad__info}>{langData.usluga[language]}</div>
@@ -370,6 +376,7 @@ export default function SitePad({ language }) {
       {image && <ImageFullScreen image={image} setImage={setImage} />}
 
       <Partners language={language} />
+      <Reviews language={language} />
     </div>
   );
 }

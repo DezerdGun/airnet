@@ -10,6 +10,9 @@ import { clockIcon } from "shared/icons/clockIcon";
 import { warrantyIcon } from "shared/icons/warrantyIcon";
 import { gamepadIcon } from "shared/icons/gamepadIcon";
 import { usersIcon } from "shared/icons/usersIcon";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 const content = [
     {
@@ -234,6 +237,11 @@ export default function Domains({ language }) {
       uz: "Uz zonasida domenlarni tez, arzon narxlarda roʻyxatdan oʻtkazish",
       en: "Fast registration of domains, at the lowest prices, in the zone uz",
     },
+    whyBlockTitle: {
+      ru: "Преимущества",
+      uz: "Преимущества",
+      en: "Преимущества",
+    },
     headTitle: {
       ru: "Регистрация доменного имени",
       uz: "Domen nomini ro'yxatdan o'tkazish",
@@ -317,6 +325,10 @@ export default function Domains({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
+      
+      <BreadCrumbs data={[{ name: 'Регистрация домена в зоне UZ' }]} />
+      <PageBreadcrumb links={[{ name: 'Регистрация домена в зоне UZ' }]} />
+
       <Container headTitle={langData.headTitle[language]}>
         <hr />
         <div className={st.domains__block}>
@@ -333,8 +345,8 @@ export default function Domains({ language }) {
       <div className={st.domains}>
         <div className={st.domains__head}>
           <Container
-            headTitle={langData.headTitle[language]}
-            clNTitle="mb-3"
+            // headTitle={langData.headTitle[language]}
+            clNTitle="mb-3 center"
             description={<p>{langData.description[language]}</p>}
           >
             <div className={st.domains__head__block}>
@@ -383,9 +395,10 @@ export default function Domains({ language }) {
 						</p> */}
           </Container>
         </div>
-        <WhyBlock content={content} language={language} />
+        <WhyBlock title={langData.whyBlockTitle[language]} content={content} language={language} />
         <FAQ faq={faq} title="FAQ" language={language} />
         <Partners language={language} />
+        <Reviews language={language} />
       </div>
     </>
   );

@@ -2,6 +2,9 @@ import Container from "@/components/container";
 import Partners from "@/components/partners";
 import SEO from "@/components/seo";
 import st from "./contacts.module.scss";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs";
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function Contacts({ language }) {
   const phone = (
@@ -104,6 +107,10 @@ export default function Contacts({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.desc[language]} />
+      
+      <BreadCrumbs data={[{ name: 'Наши контакты' }]} />
+      <PageBreadcrumb links={[{ name: 'Наши контакты' }]} />
+
       <div className={st.contacts}>
         <Container title={langData.headTitle[language]} clNTitle="text-center" className="mt-0 pb-0">
           <div className={st.contacts__phones}>
@@ -161,6 +168,7 @@ export default function Contacts({ language }) {
           ></iframe>
         </Container>
         <Partners language={language} />
+        <Reviews language={language} />
       </div>
     </>
   );

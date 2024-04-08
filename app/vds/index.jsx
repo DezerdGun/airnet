@@ -23,6 +23,9 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AvailableOS from "@/components/availableOS";
 import VirtualServers from "@/components/virtualServers";
+import Reviews from "@/components/reviews";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export const forFreeVDSData = {
   title: {
@@ -121,6 +124,11 @@ export default function VDS({ language }) {
       ru: "Предложение в соотношении цены-качества-количества ресурсов, которое построенно на быстрых SSD-дисках. Оптимальные VDS/VPS в сети TAS-IX в Ташкенте",
       uz: "Tez SSD drayverlarga qurilgan narx-sifat-resurslar miqdori nisbatidagi taklif. Toshkent shahridagi TAS-IX tarmog'ida optimal VDS/VPS",
       en: "An offer in the ratio of price-quality-quantity of resources, which is built on fast SSD drives. Optimal VDS / VPS in the TAS-IX network in Tashkent",
+    },
+    whyBlockTitle: {
+      ru: "Преимущества",
+      uz: "Преимущества",
+      en: "Преимущества",
     },
     headTitle: {
       ru: "VDS/VPS — сервера на базе быстрых SSD-дисков",
@@ -605,9 +613,14 @@ export default function VDS({ language }) {
       <SEO title={langData.seo[language]} desc={langData.desc[language]} />
       <div className={st.vds}>
         <div className={"bg_gray"}>
+      
+          <BreadCrumbs data={[{ name: 'Оптимальные VDS/VPS сервера' }]} />
+          <PageBreadcrumb links={[{ name: 'Оптимальные VDS/VPS сервера' }]} />
+
           <TarifMaket
             // bgImg={'/servers-2.jpg'}
             headTitle={langData.headTitle[language]}
+            title="Тарифы"
             description={<p>{langData.dsc[language]}</p>}
             className="mt-0 px-0"
             endText={
@@ -651,7 +664,7 @@ export default function VDS({ language }) {
           </TarifMaket>
         </div>
 
-        <WhyBlock content={whyBlock} language={language} />
+        <WhyBlock title={langData.whyBlockTitle[language]} content={whyBlock} language={language} />
 
         <ForFreeBlock data={forFreeVDSData} language={language} />
 
@@ -664,6 +677,7 @@ export default function VDS({ language }) {
           </div>
         </Container>
         <Partners language={language} />
+        <Reviews language={language} />
       </div>
     </>
   );

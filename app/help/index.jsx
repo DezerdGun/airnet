@@ -3,6 +3,8 @@ import SEO from "@/components/seo";
 import Image from "next/image";
 import st from "./help.module.scss";
 import { LINKS } from "@/components/requirements";
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 const data = [
     {
@@ -534,7 +536,11 @@ export default function Help({ language }) {
   return (
     <>
       <SEO title={langData.seoT[language]} desc={langData.descT[language]} />
+      
       <div className={st.help}>
+        <BreadCrumbs data={[{ name: 'База знаний' }]} />
+        <PageBreadcrumb links={[{ name: 'База знаний' }]} />
+        
         <HelpItem data={mainData} language={language} />
       </div>
     </>
