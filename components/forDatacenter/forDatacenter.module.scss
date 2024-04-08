@@ -1,0 +1,128 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #f8f8f8;
+$red: #f00;
+
+.forDatacenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+
+  &__block {
+    width: 50%;
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+    h4 {
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 20px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        span {
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          text-align: left;
+          gap: 10px;
+
+          svg {
+            width: 25px;
+            height: 25px;
+            min-width: 25px;
+            fill: $green;
+          }
+        }
+      }
+    }
+  }
+
+  &__blockup{
+    width: 100%;
+    min-height: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #006a4d;
+    color: #fff;
+
+    h4 {
+      font-size: 50px;
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 770px) {
+    &__img {
+      img {
+        width: 250px;
+      }
+    }
+  }
+
+  @media (max-width: 660px) {
+    &__block {
+      h3 {
+        font-size: 26px;
+      }
+      ul {
+        li {
+          font-size: 18px;
+
+          span {
+            svg {
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    &__img {
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    &__block,
+    &__img {
+      width: 100%;
+
+      ul {
+        li {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

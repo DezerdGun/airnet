@@ -1,6 +1,7 @@
 import Container from "@/components/container";
 import FAQ from "@/components/faq";
 import Partners from "@/components/partners";
+import Howworks from "@/components/howworks";
 import { RegDomainBlock } from "@/components/regDomain";
 import SEO from "@/components/seo";
 import WhyBlock from "@/components/whyBlock";
@@ -11,6 +12,12 @@ import { warrantyIcon } from "shared/icons/warrantyIcon";
 import { gamepadIcon } from "shared/icons/gamepadIcon";
 import { usersIcon } from "shared/icons/usersIcon";
 import Reviews from "@/components/reviews";
+import ForContract from "@/components/forContract";
+import { forContractVDSData } from "../vds";
+import ForSupport from "@/components/ForSupport";
+import { forSupportVDSData } from "../vds";
+import ForDatacenter from "@/components/forDatacenter";
+import { forDatacenterVDSData } from "../vds";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
@@ -397,6 +404,12 @@ export default function Domains({ language }) {
         </div>
         <WhyBlock title={langData.whyBlockTitle[language]} content={content} language={language} />
         <FAQ faq={faq} title="FAQ" language={language} />
+
+        <Howworks language={language} />
+        <ForContract data={forContractVDSData} language={language} />
+        <ForSupport data={forSupportVDSData} language={language} />
+        <ForDatacenter data={forDatacenterVDSData} language={language} />
+
         <Partners language={language} />
         <Reviews language={language} />
       </div>

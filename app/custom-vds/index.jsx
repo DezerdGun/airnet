@@ -3,6 +3,7 @@ import Calculator from "@/components/calculator";
 import Container from "@/components/container";
 import FAQ from "@/components/faq";
 import Partners from "@/components/partners";
+import Howworks from "@/components/howworks";
 import { LINKS } from "@/components/requirements";
 import SEO from "@/components/seo";
 import TarifCard from "@/components/tarifCard";
@@ -26,6 +27,12 @@ import { forFreeVDSData } from "../vds";
 import AvailableOS from "@/components/availableOS";
 import VirtualServers from "@/components/virtualServers";
 import Reviews from "@/components/reviews";
+import ForContract from "@/components/forContract";
+import { forContractVDSData } from "../vds";
+import ForSupport from "@/components/ForSupport";
+import { forSupportVDSData } from "../vds";
+import ForDatacenter from "@/components/forDatacenter";
+import { forDatacenterVDSData } from "../vds";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
@@ -99,19 +106,19 @@ export default function CustomVDS({ language }) {
 								<td>Без ограничений</td>
 								<td>Бесплатно</td>
 							</tr> */}
-              <tr>
+              {/* <tr>
                 <td>Unlim 50M</td>
                 <td>50 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
                 <td>Бесплатно</td>
-              </tr>
+              </tr> */}
               <tr>
                 <td>Unlim 100M</td>
                 <td>100 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
-                <td>2 000 000 сум/мес.</td>
+                <td>Бесплатно</td>
               </tr>
               <tr>
                 <td>Unlim 200M</td>
@@ -151,19 +158,19 @@ export default function CustomVDS({ language }) {
 								<td>Cheksiz</td>
 								<td>Tekin</td>
 							</tr> */}
-              <tr>
+              {/* <tr>
                 <td>Unlim 50M</td>
                 <td>50 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
                 <td>Tekin</td>
-              </tr>
+              </tr> */}
               <tr>
                 <td>Unlim 100M</td>
                 <td>100 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
-                <td>2 000 000 so'm/oy.</td>
+                <td>Tekin</td>
               </tr>
               <tr>
                 <td>Unlim 200M</td>
@@ -203,19 +210,19 @@ export default function CustomVDS({ language }) {
 								<td>Unlimited</td>
 								<td>Free</td>
 							</tr> */}
-              <tr>
+              {/* <tr>
                 <td>Unlim 50M</td>
                 <td>50 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
                 <td>Free</td>
-              </tr>
+              </tr> */}
               <tr>
                 <td>Unlim 100M</td>
                 <td>100 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
-                <td>2 000 000 sum/mon.</td>
+                <td>Free</td>
               </tr>
               <tr>
                 <td>Unlim 200M</td>
@@ -383,17 +390,17 @@ export default function CustomVDS({ language }) {
       },
       description: {
         ru: (
-          <p>Нет ограничений по входящему и исходящему объёму данных на всех тарифных планах с каналом от 50 Мбит/с.</p>
+          <p>Нет ограничений по входящему и исходящему объёму данных на всех тарифных планах с каналом от 100 Мбит/с.</p>
         ),
         uz: (
           <p>
-            50 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi va chiquvchi maʼlumotlar hajmiga
+            100 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi va chiquvchi maʼlumotlar hajmiga
             cheklovlar yoʻq.
           </p>
         ),
         en: (
           <p>
-            There are no restrictions on incoming and outgoing data volume on all tariff plans with a channel of 50 Mbps
+            There are no restrictions on incoming and outgoing data volume on all tariff plans with a channel of 100 Mbps
             or more.
           </p>
         ),
@@ -527,7 +534,7 @@ export default function CustomVDS({ language }) {
                   <p>
                     <ul>
                       <li>
-                        До 50 Мбит/с, безлимитный трафик -{" "}
+                        До 100 Мбит/с, безлимитный трафик -{" "}
                         <span>
                           <strong className="text-green">бесплатно</strong>
                         </span>
@@ -568,6 +575,11 @@ export default function CustomVDS({ language }) {
             },
           ]}
         />
+
+        <Howworks language={language} />
+        <ForContract data={forContractVDSData} language={language} />
+        <ForSupport data={forSupportVDSData} language={language} />
+        <ForDatacenter data={forDatacenterVDSData} language={language} />
 
         <Partners language={language} />
         <Reviews language={language} />

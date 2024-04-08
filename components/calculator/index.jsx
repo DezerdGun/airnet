@@ -12,15 +12,15 @@ const calcSpeed = [
   //   title: "Unlim 25M",
   //   price: 500000,
   // },
-  {
-    id: "unlim-50",
-    title: "Unlim 50M",
-    price: 0,
-  },
+  // {
+  //   id: "unlim-50",
+  //   title: "Unlim 50M",
+  //   price: 0,
+  // },
   {
     id: "unlim-100",
     title: "Unlim 100M",
-    price: 2000000,
+    price: 0,
   },
   {
     id: "unlim-200",
@@ -212,9 +212,9 @@ export default function Calculator({ language }) {
       en: "Flexible setup",
     },
     speed: {
-      ru: "До 128 CPU",
-      uz: "128 CPU gacha",
-      en: "Up to 128 CPUs",
+      ru: "До 192 CPU",
+      uz: "192 CPU gacha",
+      en: "Up to 192 CPUs",
     },
     hard: {
       ru: "До 4000Гб SSD",

@@ -1,6 +1,7 @@
 import Container from "@/components/container";
 import FAQ from "@/components/faq";
 import Partners from "@/components/partners";
+import Howworks from "@/components/howworks";
 import PopularSert from "@/components/popularSert";
 import SEO from "@/components/seo";
 import WhyBlock from "@/components/whyBlock";
@@ -14,6 +15,12 @@ import { walletIcon } from "shared/icons/walletIcon";
 import { calendarIcon } from "shared/icons/calendarIcon";
 import { supportIcon } from "shared/icons/supportIcon";
 import Reviews from "@/components/reviews";
+import ForContract from "@/components/forContract";
+import { forContractVDSData } from "../vds";
+import ForSupport from "@/components/ForSupport";
+import { forSupportVDSData } from "../vds";
+import ForDatacenter from "@/components/forDatacenter";
+import { forDatacenterVDSData } from "../vds";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
@@ -496,9 +503,15 @@ export default function SSL({ language }) {
         ))}
       </Container>
       <WhyBlock title={langData.whyTitle[language]} content={content2} language={language} />
-      <FAQ faq={faq} title="FAQ" language={language} />
-      <Partners language={language} />
-      <Reviews language={language} />
+        <FAQ faq={faq} title="FAQ" language={language} />
+
+        <Howworks language={language} />
+        <ForContract data={forContractVDSData} language={language} />
+        <ForSupport data={forSupportVDSData} language={language} />
+        <ForDatacenter data={forDatacenterVDSData} language={language} />
+        
+        <Partners language={language} />
+        <Reviews language={language} />
     </>
   );
 }

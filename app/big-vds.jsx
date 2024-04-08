@@ -2,6 +2,7 @@ import st from "@/app/vds/vds.module.scss";
 import Container from "@/components/container";
 import CustomTable from "@/components/customTable";
 import Partners from "@/components/partners";
+import Howworks from "@/components/howworks";
 import { LINKS } from "@/components/requirements";
 import SEO from "@/components/seo";
 import TarifCard from "@/components/tarifCard";
@@ -26,6 +27,12 @@ import { checkLang } from "@/utils/checkLang";
 import AvailableOS from "@/components/availableOS";
 import VirtualServers from "@/components/virtualServers";
 import Reviews from "@/components/reviews";
+import ForContract from "@/components/forContract";
+import { forContractVDSData } from "./vds";
+import ForSupport from "@/components/ForSupport";
+import { forSupportVDSData } from "./vds";
+import ForDatacenter from "@/components/forDatacenter";
+import { forDatacenterVDSData } from "./vds";
 import BreadCrumbs from "../components/seo/breadCrumbs"
 import PageBreadcrumb from "../components/seo/pageBreadCrumbs";
 
@@ -654,6 +661,12 @@ export default function BigVDS({ language }) {
             <CustomTable table={langData.table[language]} />
           </div>
         </Container>
+        
+        <Howworks language={language} />
+        <ForContract data={forContractVDSData} language={language} />
+        <ForSupport data={forSupportVDSData} language={language} />
+        <ForDatacenter data={forDatacenterVDSData} language={language} />
+
         <Partners language={language} />
         <Reviews language={language} />
       </div>

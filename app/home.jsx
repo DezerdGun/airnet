@@ -17,6 +17,14 @@ import TarifMaketHome from "@/components/tarifMaketHome";
 import Trust from "@/components/trust";
 import WhyBlock from "@/components/whyBlock";
 
+import Howworks from "@/components/howworks";
+import ForContract from "@/components/forContract";
+import { forContractVDSData } from "./vds";
+import ForSupport from "@/components/ForSupport";
+import { forSupportVDSData } from "./vds";
+import ForDatacenter from "@/components/forDatacenter";
+import { forDatacenterVDSData } from "./vds";
+
 import { checkLang } from "@/utils/checkLang";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
@@ -1000,6 +1008,12 @@ export default function Home({ language }) {
       <Trust language={language} />
       <FAQ faq={faq} title={langData.faqTitle[language]} language={language} />
       {/* <Notifications language={language} /> */}
+        
+      <Howworks language={language} />
+      <ForContract data={forContractVDSData} language={language} />
+      <ForSupport data={forSupportVDSData} language={language} />
+      <ForDatacenter data={forDatacenterVDSData} language={language} />
+      
       <Partners language={language} />
       <Reviews language={language} />
     </>
