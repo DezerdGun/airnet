@@ -8,6 +8,24 @@ import st from './reviewsPage.module.scss'
 
 const data = [
 	{
+		name: 'Сардор',
+		surname: '',
+		date: '19.12.2023',
+		text: 'Отличный хостинг, очень радует тех поддержка, гибкие тарифы и при надобности возможно сделать тариф под себя, рекомендую!',
+	},
+	{
+		name: 'Александр',
+		surname: '',
+		date: '16.12.2023',
+		text: 'Отличный хостинг, очень быстрая скорость работы. Поддержка и специалисты отвечают быстро и помогают в решении возникших проблем в кратчайшие сроки. Цена на тариф приятная',
+	},
+	{
+		name: 'Нариман',
+		surname: '',
+		date: '03.12.2023',
+		text: 'Я пользуюсь хостингом AIRNET 2 года и очень доволен. У них отличный VPS, работает быстро и стабильно. Не было никаких перебоев, за это я их ценю. Техническая поддержка клиентов всегда готова помочь, она работает 24/7, Всем  рекомендую!',
+	},
+	{
 		name: 'Amir',
 		surname: '',
 		date: '02.06.2022',
@@ -85,12 +103,19 @@ export default function ReviewsPage({ language }) {
 									</div>
 									<div className={st.reviewsPage__block__header__content}>
 										<span>{item.date}</span>
-										<h6>
+										<p>
 											{item.name} {item.surname}
-										</h6>
+										</p>
 									</div>
 								</div>
 								{item.text}
+								<div className={st.reviewsPage__block__star}>
+									<span><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="25" height="25"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg></span>
+									<span><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="25" height="25"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg></span>
+									<span><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="25" height="25"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg></span>
+									<span><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="25" height="25"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg></span>
+									<span><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="25" height="25"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg></span>
+								</div>
 							</div>
 						</SwiperSlide>
 					))}

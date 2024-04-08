@@ -76,7 +76,7 @@ $red: #f00;
 			&__content {
 				width: calc(100% - 60px);
 
-				h6 {
+				p {
 					font-size: 20px;
 					margin: 3px 0 0;
 				}
@@ -85,6 +85,23 @@ $red: #f00;
 					font-size: 14px;
 					color: $gray;
 					font-weight: 700;
+				}
+			}
+		}
+
+		&__star {
+			width: 100%;
+			display: inline-block;
+			margin-top: 40px;
+
+			span {
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				margin-right: 5px;
+
+				svg {
+					fill: #ffa534;
 				}
 			}
 		}
