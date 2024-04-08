@@ -26,7 +26,7 @@ import AvailableOS from "@/components/availableOS";
 import VirtualServers from "@/components/virtualServers";
 import Reviews from "@/components/reviews";
 import ForContract from "@/components/forContract";
-import ForSupport from "@/components/ForSupport";
+import ForSupport from "@/components/forSupport";
 import ForDatacenter from "@/components/forDatacenter";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";

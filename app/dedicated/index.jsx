@@ -7,7 +7,7 @@ import ForFreeBlock from "@/components/forFreeBlock";
 import Reviews from "@/components/reviews";
 import ForContract from "@/components/forContract";
 import { forContractVDSData } from "../vds";
-import ForSupport from "@/components/ForSupport";
+import ForSupport from "@/components/forSupport";
 import { forSupportVDSData } from "../vds";
 import ForDatacenter from "@/components/forDatacenter";
 import { forDatacenterVDSData } from "../vds";
