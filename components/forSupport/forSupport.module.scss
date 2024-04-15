@@ -20,7 +20,7 @@ $red: #f00;
       font-size: 30px;
       margin-bottom: 30px;
     }
-    h3 {
+    p {
       font-weight: 500;
       margin-bottom: 30px;
     }
@@ -64,10 +64,15 @@ $red: #f00;
 
   @media (max-width: 660px) {
     &__block {
-      h3 {
-        font-size: 26px;
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 16px;
       }
       ul {
+        display: inline-block;
+
         li {
           font-size: 18px;
 

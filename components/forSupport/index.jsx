@@ -5,9 +5,12 @@ export default function ForSupport({ data, language }) {
   return (
     <Container>
       <div className={st.forSupport}>
+        <div className={st.forSupport__img}>
+          <img src={data.img} />
+        </div>
         <div className={st.forSupport__block}>
           <h2>{data.title[language]}</h2>
-          <h3>{data.desc[language]}</h3>
+          <p>{data.desc[language]}</p>
           <ul>
             {data.content.map((item) => (
               <li key={item.title}>
@@ -18,9 +21,6 @@ export default function ForSupport({ data, language }) {
               </li>
             ))}
           </ul>
-        </div>
-        <div className={st.forSupport__img}>
-          <img src={data.img} />
         </div>
       </div>
     </Container>

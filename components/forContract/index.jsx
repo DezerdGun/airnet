@@ -5,12 +5,9 @@ export default function ForContract({ data, language }) {
   return (
     <Container>
       <div className={st.forContract}>
-        <div className={st.forContract__img}>
-          <img src={data.img} />
-        </div>
         <div className={st.forContract__block}>
           <h2>{data.title[language]}</h2>
-          <h3>{data.desc[language]}</h3>
+          <p>{data.desc[language]}</p>
           <ul>
             {data.content.map((item) => (
               <li key={item.title}>
@@ -21,6 +18,9 @@ export default function ForContract({ data, language }) {
               </li>
             ))}
           </ul>
+        </div>
+        <div className={st.forContract__img}>
+          <img src={data.img} />
         </div>
       </div>
     </Container>
