@@ -1,6 +1,7 @@
-import { Autoplay, Navigation } from "swiper";
+import { Zoom, Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/zoom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Container from "../container/index.jsx";
 import st from "./howworks.module.scss";
@@ -27,11 +28,12 @@ export default function Howworks({ language }) {
       <Container title={langData.title[language]} clNTitle="text-center">
         <Swiper
           cssMode={true}
-          modules={[Autoplay, Navigation]}
+          modules={[Zoom, Autoplay, Navigation]}
           spaceBetween={0}
           slidesPerView={1}
           navigation={true}
           loop={true}
+          zoom={true}
           speed={10000}
           autoplay={false}
           breakpoints={{
@@ -52,7 +54,7 @@ export default function Howworks({ language }) {
         >
           {content.map((item) => (
             <SwiperSlide key={item.title}>
-              <div className={st.howworks__block}>
+              <div className={`${st.howworks__block} swiper-zoom-container`}>
                 <img src={item} />
               </div>
             </SwiperSlide>
