@@ -111,54 +111,6 @@ function MyApp({ Component, pageProps, url }) {
 						),
 					}}
 				></script>
-
-				{/* ------------- LocalBusiness ------------- */}
-
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(
-							{
-								"@context": "https://schema.org",
-								"@type": "InsuranceAgency",
-								name: "AIRNET",
-								image: "https://airnet.uz/logo.png",
-								"@id": "https://airnet.uz/",
-								url: "https://airnet.uz/",
-								telephone: "99890 3243080",
-								priceRange: "$1 - $300",
-								address: {
-									"@type": "PostalAddress",
-									streetAddress: "Sayram 25",
-									addressLocality: "Tashkent",
-									postalCode: "100067",
-									addressCountry: "Uzbekistan",
-								},
-								geo: {
-									"@type": "GeoCoordinates",
-									latitude: 41.310233,
-									longitude: 69.276234,
-								},
-								openingHoursSpecification: [
-									{
-										"@type": "OpeningHoursSpecification",
-										dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-										opens: "08:00",
-										closes: "20:00",
-									},
-									{
-										"@type": "OpeningHoursSpecification",
-										dayOfWeek: ["Sunday", "Saturday"],
-										opens: "09:00",
-										closes: "18:00",
-									},
-								],
-							},
-							null,
-							2
-						),
-					}}
-				></script>
 			</Head>
 			<noscript
 				dangerouslySetInnerHTML={{

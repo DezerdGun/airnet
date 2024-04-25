@@ -8,7 +8,7 @@ import Partners from "@/components/partners";
 import RegDomain from "@/components/regDomain";
 import Reviews from "@/components/reviews";
 import SEO from "@/components/seo";
-import Product from "@/components/seo/product";
+// import Product from "@/components/seo/product";
 import Sitepad from "@/components/sitepad";
 import Stock from "@/components/stock";
 import TarifCard from "@/components/tarifCard";
@@ -918,7 +918,7 @@ export default function Home({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
-      <Product language={language} />
+      {/* <Product language={language} /> */}
       <CustomSwiper language={language} />
       <WhyBlock title={langData.whyBlockTitle[language]} content={whyBlockData} language={language} />
       <TarifMaketHome

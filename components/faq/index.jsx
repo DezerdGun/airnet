@@ -22,7 +22,7 @@ export default function FAQ({ faq, title, language }) {
 
 		temp.mainEntity = faq.map((item) => ({
 			"@type": "Question",
-			name: item.title,
+			"name": item.title,
 			acceptedAnswer: {
 				"@type": "Answer",
 				text: faqGenerateText(item.description[language]),
