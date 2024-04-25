@@ -494,7 +494,7 @@ export default function Footer({ language }) {
               </a>
             </div>
             <div className={st.footer__block__head__social}>
-              <h6>{langData.join[language]}</h6>
+              <span>{langData.join[language]}</span>
               <ul>
                 {social.map((item) => (
                   <li key={item.link}>

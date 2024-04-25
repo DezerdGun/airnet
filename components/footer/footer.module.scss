@@ -61,7 +61,10 @@ $light_gray: #f8f8f8;
       &__payment {
         margin-bottom: 20px;
 
-        h6 {
+        span {
+          display: inline-block;
+          margin-bottom: 10px;
+          font-weight: 700;
           font-size: 18px;
           color: $white;
         }
