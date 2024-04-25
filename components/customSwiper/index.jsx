@@ -156,7 +156,7 @@ export default function CustomSwiper({ language }) {
 				<SwiperSlide>
 					<div
 						className={st.swiper__block}
-						style={{ background: `url('/happy6.jpg') no-repeat` }}
+						style={{ background: `url('/happy6.webp') no-repeat` }}
 					>
 						<Container>
 							<div className={st.swiper__block__item}>
@@ -188,7 +188,7 @@ export default function CustomSwiper({ language }) {
 				<SwiperSlide>
 					<div
 						className={st.swiper__block}
-						style={{ background: `url('/banner2.jpg') no-repeat` }}
+						style={{ background: `url('/banner2.webp') no-repeat` }}
 					>
 						<Container>
 							<div className={st.swiper__block__item}>

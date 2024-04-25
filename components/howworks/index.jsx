@@ -8,11 +8,11 @@ import st from "./howworks.module.scss";
 
 export default function Howworks({ language }) {
   const content = [
-    "/work/vds-1.png",
-    "/work/vds-2.png",
-    "/work/vds-3.png",
-    "/work/vds-4.png",
-    "/work/vds-5.png",
+    "/work/vds-1.webp",
+    "/work/vds-2.webp",
+    "/work/vds-3.webp",
+    "/work/vds-4.webp",
+    "/work/vds-5.webp",
   ];
 
   const langData = {
@@ -55,7 +55,7 @@ export default function Howworks({ language }) {
           {content.map((item) => (
             <SwiperSlide key={item.title}>
               <div className={`${st.howworks__block} swiper-zoom-container`}>
-                <img src={item} />
+                <img width="100%" height="auto" src={item} />
               </div>
             </SwiperSlide>
           ))}
