@@ -4,6 +4,7 @@ import Link from "next/link"
 import Container from "../container/index.jsx"
 import SEO from "../seo"
 import st from "./blogItem.module.scss"
+import PageBreadcrumb from "../seo/pageBreadCrumbs";
 
 export default function BlogItem({ data, language }) {
 	const langData = {
@@ -39,11 +40,14 @@ export default function BlogItem({ data, language }) {
 				title={`${data.title[language]} | ${langData.title[language]}`}
 				desc={data.desc[language]}
 			/>
+			
+			<PageBreadcrumb links={[{ name: data.title[language] }]} />
+
 			<Container>
 				<div className={st.blogItem}>
-					<Link href={checkLang(language) + "/blog"}>
+					{/* <Link href={checkLang(language) + "/blog"}>
 						<a className={st.blogItem__breadCrumb}>{langData.news[language]}</a>
-					</Link>
+					</Link> */}
 					<h1>{data.title[language]}</h1>
 					<div className={st.blogItem__details}>
 						<div className={st.blogItem__details__author}>
@@ -55,7 +59,7 @@ export default function BlogItem({ data, language }) {
 								blurDataURL
 								placeholder="blur"
 							/>
-							<span>Airnet</span>
+							<span>AIRNET</span>
 						</div>
 						<div className={st.blogItem__details__date}>
 							<span className="fw-bold mb-3">{langData.added[language]}</span>{" "}
