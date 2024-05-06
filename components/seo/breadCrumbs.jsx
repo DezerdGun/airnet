@@ -11,16 +11,16 @@ export default function BreadCrumbs({ data }) {
 							'@context': 'https://schema.org',
 							'@type': 'BreadcrumbList',
 							itemListElement: [
-								{ '@type': 'ListItem', position: 1, name: 'Airnet', item: 'https://airnet.uz/' },
+								{ '@type': 'ListItem', position: 1, name: 'Airnet ⚡', item: 'https://airnet.uz/' },
 								...data.map((item, i) =>
 									item?.link
 										? {
 												'@type': 'ListItem',
 												position: i + 2,
-												name: item.title,
+												name: item.name,
 												item: `https://airnet.uz${item.link}/`,
 										  }
-										: { '@type': 'ListItem', position: i + 2, name: item.title }
+										: { '@type': 'ListItem', position: i + 2, name: item.name + "⚡" }
 								),
 							],
 						},
