@@ -96,9 +96,9 @@ export default function CheapVds({ language }) {
       en: "Server installation time, after placing an order and payment, is from 30 minutes to 2 business days, depending on the availability of the necessary servers and the workload of technical personnel. The average equipment activation time after payment is 1-2 hours. We do our best to to reduce waiting time.",
     },
     endText2: {
-      ru: "Срок действия услуги начнется с момента её активации.",
-      uz: "Xizmatning amal qilish muddati u yoqilgan paytdan boshlanadi.",
-      en: "The service will start from the moment it is activated.",
+      ru: <p>Срок действия услуги начнется с момента её активации.<br /> Не предоставляется для <span className="strong">игровых серверов и видео-контент сайтов!</span></p>,
+      uz: <p>Xizmatning amal qilish muddati u yoqilgan paytdan boshlanadi.<br /> <span className="strong">oʻyin serverlari va video kontent saytlari uchun taqdim etilmaydi!</span></p>,
+      en: <p>The validity period of the service will begin from the moment of its activation.<br /> Not provided for <span className="strong">game servers and video content sites!</span></p>,
     },
     headTitle: {
       ru: "Бюджетные VDS/VPS — Самые дешевые сервера в Ташкенте",
