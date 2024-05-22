@@ -548,7 +548,7 @@ export default function VDS({ language }) {
       They help keep everything running smoothly. You can rent an Intel server in Uzbekistan today!</p>,
     },
     txt: {
-      ru: <p>Выберите удобный тариф для аренда сервера. Обратите внимание для аренды сервера Intel Xeon Gold вам нужно оформить индивидуальный заказ.<br />
+      ru: <p>Выберите удобный тариф для аренды сервера. Обратите внимание для аренды сервера Intel Xeon Gold вам нужно оформить индивидуальный заказ.<br />
         Или найдите сервер, который идеально подойдет вашему бизнесу. Мы предлагаем разные планы аренды сервера на базе Intel. У каждого плана есть свои особенности.<br /> 
         Вы можете выбрать подходящий для своих нужд и бюджета.</p>,
       uz: <p>Server ijarasi uchun qulay tarifni tanlang. Esda tuting, Intel Xeon Gold serverini ijaraga olish uchun siz individual buyurtma berishingiz kerak.<br />
