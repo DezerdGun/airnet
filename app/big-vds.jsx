@@ -27,6 +27,10 @@ import { checkLang } from "@/utils/checkLang";
 import AvailableOS from "@/components/availableOS";
 import VirtualServers from "@/components/virtualServers";
 import Reviews from "@/components/reviews";
+import ForIntel from "@/components/forIntel";
+import { ForIntelVDSData } from "./vds";
+import ForIntelTwo from "@/components/forIntelTwo";
+import { ForIntelTwoVDSData } from "./vds";
 import ForContract from "@/components/forContract";
 import { forContractVDSData } from "./vds";
 import ForSupport from "@/components/forSupport";
@@ -35,6 +39,7 @@ import ForDatacenter from "@/components/forDatacenter";
 import { forDatacenterVDSData } from "./vds";
 import BreadCrumbs from "../components/seo/breadCrumbs"
 import PageBreadcrumb from "../components/seo/pageBreadCrumbs";
+import ProductBIG from "../components/seo/productbig"
 
 export default function BigVDS({ language }) {
   const [show, setShow] = useState(-1);
@@ -66,9 +71,26 @@ export default function BigVDS({ language }) {
       en: "VMware based virtualization with fast SSDs",
     },
     description: {
-      ru: "Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости 1 Gbps",
-      uz: "Bizning serverlarimiz O'zbekiston hududida (Toshkent) TAS-IX tarmog'ida joylashgan tezligi 1 Gbps ",
-      en: "Our servers are located on the territory of Uzbekistan (Tashkent), in the TAS-IX network at a speed of 1 Gbps",
+      ru: <p>Мы продаем мощные серверы Intel. Они работают быстро и надежно.<br />
+        Это хорошо для вашего бизнеса. Наши специалисты следят за серверами круглосуточно.<br />
+        Они помогают, чтобы все работало без сбоев. Вы можете арендовать сервер Intel на территории Узбекистана уже сегодня!</p>,
+      uz: <p>Biz kuchli Intel serverlarini sotamiz. Ular tez va ishonchli ishlaydi.<br />
+      Bu sizning biznesingiz uchun yaxshi. Mutaxassislarimiz serverlarni kechayu kunduz kuzatib boradilar.<br />
+      Ular hamma narsani muammosiz bajarishga yordam beradi. Bugun O'zbekistonda Intel serverini ijaraga olishingiz mumkin!</p>,
+      en: <p>We sell powerful Intel servers. They work quickly and reliably.<br />
+      It's good for your business. Our specialists monitor the servers around the clock.<br />
+      They help keep everything running smoothly. You can rent an Intel server in Uzbekistan today!</p>,
+    },
+    txt: {
+      ru: <p>Выберите удобный тариф для аренда сервера. Обратите внимание для аренды сервера Intel Xeon Gold вам нужно оформить индивидуальный заказ.<br />
+        Или найдите сервер, который идеально подойдет вашему бизнесу. Мы предлагаем разные планы аренды сервера на базе Intel. У каждого плана есть свои особенности.<br /> 
+        Вы можете выбрать подходящий для своих нужд и бюджета.</p>,
+      uz: <p>Server ijarasi uchun qulay tarifni tanlang. Esda tuting, Intel Xeon Gold serverini ijaraga olish uchun siz individual buyurtma berishingiz kerak.<br />
+      Yoki biznesingiz uchun mukammal serverni toping. Biz turli xil Intel asosidagi server ijarasi rejalarini taklif qilamiz. Har bir reja o'ziga xos xususiyatlarga ega.<br />
+      Siz o'zingizning ehtiyojlaringiz va byudjetingizga mos keladiganini tanlashingiz mumkin.</p>,
+      en: <p>Choose a convenient tariff for server rental. Please note, to rent an Intel Xeon Gold server, you need to place an individual order.<br />
+      Or find a server that's perfect for your business. We offer different Intel based server rental plans. Each plan has its own characteristics.<br />
+      You can choose the one that suits your needs and budget.</p>,
     },
     endText1: {
       ru: "Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2-х рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации оборудования после оплаты - 1-2 часа. Мы делаем всё возможное, чтобы уменьшить время ожидания.",
@@ -592,6 +614,9 @@ export default function BigVDS({ language }) {
   return (
     <>
       <SEO title={langData.seoT[language]} desc={langData.descT[language]} />
+      
+      <ProductBIG />
+
       <div className={st.vds}>
         <div className={"bg_gray"}>
       
@@ -607,6 +632,7 @@ export default function BigVDS({ language }) {
             }
             title="Тарифы"
             description={<p>{langData.description[language]}</p>}
+            txt={<p>{langData.txt[language]}</p>}
             className="mt-0 px-0"
             endText={
               <div className="text-white text-center mt-2">
@@ -666,6 +692,8 @@ export default function BigVDS({ language }) {
         <ForContract data={forContractVDSData} language={language} />
         <ForSupport data={forSupportVDSData} language={language} />
         <ForDatacenter data={forDatacenterVDSData} language={language} />
+        <ForIntel data={ForIntelVDSData} language={language} />
+        <ForIntelTwo data={ForIntelTwoVDSData} language={language} />
 
         <Partners language={language} />
         <Reviews language={language} />

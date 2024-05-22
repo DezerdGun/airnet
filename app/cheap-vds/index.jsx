@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import st from "./cheapVds.module.scss";
 
 import ForFreeBlock from "@/components/forFreeBlock";
+import FAQ from "@/components/faq";
 import Partners from "@/components/partners";
 import Howworks from "@/components/howworks";
 import TarifCard from "@/components/tarifCard";
@@ -24,6 +25,10 @@ import { warrantyIcon } from "shared/icons/warrantyIcon";
 import AvailableOS from "@/components/availableOS";
 import VirtualServers from "@/components/virtualServers";
 import Reviews from "@/components/reviews";
+import ForIntel from "@/components/forIntel";
+import { ForIntelVDSData } from "../vds";
+import ForIntelTwo from "@/components/forIntelTwo";
+import { ForIntelTwoVDSData } from "../vds";
 import ForContract from "@/components/forContract";
 import { forContractVDSData } from "../vds";
 import ForSupport from "@/components/forSupport";
@@ -32,6 +37,7 @@ import ForDatacenter from "@/components/forDatacenter";
 import { forDatacenterVDSData } from "../vds";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import ProductCheap from "../../components/seo/productcheap"
 
 export default function CheapVds({ language }) {
   const [show, setShow] = useState(-1);
@@ -52,15 +58,37 @@ export default function CheapVds({ language }) {
       uz: "Преимущества",
       en: "Преимущества",
     },
+    whyBlockDescription: {
+      ru: <p>Просмотрите наши тарифы на сервера Intel ниже. Выберите нужный вам.<br /> Если вы выберете нашу услугу аренды сервера Intel Xeon, вы получите много преимуществ:</p>,
+      uz: <p>Quyida Intel serverimiz narxlarini koʻring. Sizga kerak bo'lganini tanlang.<br />Agar siz bizning Intel Xeon serverlarini ijaraga olish xizmatimizni tanlasangiz, siz ko'plab imtiyozlarga ega bo'lasiz:</p>,
+      en: <p>View our Intel server rates below. Choose the one you need.<br />If you choose our Intel Xeon server rental service, you will receive many benefits:</p>,
+    },
     headTitle: {
       ru: "Бюджетные VDS/VPS — Самые дешевые сервера в Ташкенте",
       uz: "Byudjet VDS/VPS - Toshkentdagi eng arzon serverlar",
       en: "Budget VDS / VPS - The cheapest servers in Tashkent",
     },
     description: {
-      ru: "Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости 1 Gbps",
-      uz: "Bizning serverlarimiz O'zbekiston hududida (Toshkent) TAS-IX tarmog'ida joylashgan tezligi 1 Gbps",
-      en: "Our servers are located on the territory of Uzbekistan (Tashkent), in the TAS-IX network at a speed of 1 Gbps",
+      ru: <p>Мы продаем мощные серверы Intel. Они работают быстро и надежно.<br />
+        Это хорошо для вашего бизнеса. Наши специалисты следят за серверами круглосуточно.<br />
+        Они помогают, чтобы все работало без сбоев. Вы можете арендовать сервер Intel на территории Узбекистана уже сегодня!</p>,
+      uz: <p>Biz kuchli Intel serverlarini sotamiz. Ular tez va ishonchli ishlaydi.<br />
+      Bu sizning biznesingiz uchun yaxshi. Mutaxassislarimiz serverlarni kechayu kunduz kuzatib boradilar.<br />
+      Ular hamma narsani muammosiz bajarishga yordam beradi. Bugun O'zbekistonda Intel serverini ijaraga olishingiz mumkin!</p>,
+      en: <p>We sell powerful Intel servers. They work quickly and reliably.<br />
+      It's good for your business. Our specialists monitor the servers around the clock.<br />
+      They help keep everything running smoothly. You can rent an Intel server in Uzbekistan today!</p>,
+    },
+    txt: {
+      ru: <p>Выберите удобный тариф для аренда сервера. Обратите внимание для аренды сервера Intel Xeon Gold вам нужно оформить индивидуальный заказ.<br />
+        Или найдите сервер, который идеально подойдет вашему бизнесу. Мы предлагаем разные планы аренды сервера на базе Intel. У каждого плана есть свои особенности.<br /> 
+        Вы можете выбрать подходящий для своих нужд и бюджета.</p>,
+      uz: <p>Server ijarasi uchun qulay tarifni tanlang. Esda tuting, Intel Xeon Gold serverini ijaraga olish uchun siz individual buyurtma berishingiz kerak.<br />
+      Yoki biznesingiz uchun mukammal serverni toping. Biz turli xil Intel asosidagi server ijarasi rejalarini taklif qilamiz. Har bir reja o'ziga xos xususiyatlarga ega.<br />
+      Siz o'zingizning ehtiyojlaringiz va byudjetingizga mos keladiganini tanlashingiz mumkin.</p>,
+      en: <p>Choose a convenient tariff for server rental. Please note, to rent an Intel Xeon Gold server, you need to place an individual order.<br />
+      Or find a server that's perfect for your business. We offer different Intel based server rental plans. Each plan has its own characteristics.<br />
+      You can choose the one that suits your needs and budget.</p>,
     },
     endText1: {
       ru: "Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2-х рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации оборудования после оплаты - 1-2 часа. Мы делаем всё возможное, чтобы уменьшить время ожидания.",
@@ -82,6 +110,11 @@ export default function CheapVds({ language }) {
       uz: "oy",
       en: "mon.",
     },
+    faqTitle: {
+      ru: "Часто задаваемые вопросы",
+      uz: "Ko'p so'raladigan savollar",
+      en: "FAQ",
+    },
 
     // cT: {
     //   ru: "Стоимость международного интернет-канала без ограничения трафика",
@@ -98,83 +131,84 @@ export default function CheapVds({ language }) {
   const block = [
       {
         title: {
-          ru: "Хостинг файлов и картинок",
-          uz: "Fayllar va rasmlar serveri",
-          en: "File and image hosting",
+          ru: "Качественные сервера Intel.",
+          uz: "Yuqori sifatli Intel serverlari.",
+          en: "High-quality Intel servers.",
         },
         description: {
-          ru: <p>Используйте 20 Gb жесткого диска для хранения данных.</p>,
-          uz: <p>Ma'lumotlarni saqlash uchun 20 Gb qattiq diskdan foydalaning</p>,
-          en: <p>Use 20 Gb hard drive for data storage.</p>,
+          ru: <p>Взятые у нас в аренду сервера Intel работают стабильно и не ломаются. Это хорошо для вашего проекта. Благодаря качеству сервера Intel минимизируется риск сбоев.</p>,
+          uz: <p>Bizdan ijaraga olingan Intel serverlari barqaror ishlaydi va buzilmaydi. Bu sizning loyihangiz uchun yaxshi. Intel serverining sifati tufayli ishdan chiqish xavfi minimallashtiriladi.</p>,
+          en: <p>Intel servers rented from us work stably and do not break down. This is good for your project. Thanks to the quality of the Intel server, the risk of failure is minimized.</p>,
         },
         icon: serversIcon,
       },
       {
-        title: { ru: "Для обучения и тестов", uz: "O'qish va test uchun", en: "For training and tests" },
+        title: { ru: "Удобные планы и настройки.", uz: "Qulay rejalar va sozlamalar.", en: "Convenient plans and settings." },
         description: {
-          ru: <p>Идеально подходит для работы в командной строке и знакомства с системой Linux.</p>,
-          uz: <p>Buyruqlar satrida ishlash va Linux tizimi bilan tanishish uchun ideal.</p>,
-          en: <p>Perfect for command line work and getting to know the Linux system.</p>,
+          ru: <p>Мы предлагаем разные планы и настройки серверов. При аренде серверов Intel вы сможете выбрать то, что вам нужно.</p>,
+          uz: <p>Biz turli xil rejalar va server sozlamalarini taklif qilamiz. Intel serverlarini ijaraga olayotganda siz o'zingizga kerakli narsani tanlashingiz mumkin.</p>,
+          en: <p>We offer different plans and server settings. When renting Intel servers, you can choose what you need.</p>,
         },
         icon: lesssonIcon,
       },
       {
         title: {
-          ru: "Для нетребовательных задач",
-          uz: "Zarur bo'lmagan topshiriqlar uchun",
-          en: "For undemanding tasks",
+          ru: "Поддержка 24/7.",
+          uz: "24/7 qo'llab-quvvatlash.",
+          en: "Support 24/7.",
         },
         description: {
-          ru: <p>Вы можете организовать почтовый сервис или DNS-кластер.</p>,
-          uz: <p>Siz pochta xizmati yoki DNS klasterini tashkil qilishingiz mumkin.</p>,
-          en: <p>You can set up a mail service or a DNS cluster.</p>,
+          ru: <p>У нас есть команда, которая помогает круглосуточно. Вы всегда можете получить удаленную помощь с сервером или арендой.</p>,
+          uz: <p>Bizda kechayu kunduz yordam beradigan jamoamiz bor. Siz har doim server yoki ijara bo'yicha masofaviy yordam olishingiz mumkin.</p>,
+          en: <p>We have a team that helps around the clock. You can always get remote help with a server or rental.</p>,
         },
         icon: databaseIcon,
       },
       {
-        title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
+        title: { ru: "Сохранность конфиденциальности.", uz: "Maxfiylikni saqlash.", en: "Maintaining confidentiality." },
         description: {
-          ru: <p>Не предоставляется для игровых серверов и видео-контент сайтов!</p>,
-          uz: <p>O'yin serverlari va video kontent saytlari uchun mavjud emas!</p>,
-          en: <p>Not available for game servers and video content sites!</p>,
+          ru: <p>Ваши данные будут в безопасности на наших серверах Intel. Мы защитим их от любых угроз во время аренды.</p>,
+          uz: <p>Sizning ma'lumotlaringiz bizning Intel serverlarimizda xavfsiz bo'ladi. Biz ijara vaqtida ularni har qanday tahdidlardan himoya qilamiz.</p>,
+          en: <p>Your data will be safe on our Intel servers. We will protect them from any threats during the rental.</p>,
         },
         icon: warningIcon,
       },
       {
         title: {
-          ru: "Управление по VNC",
-          uz: "VNC orqali boshqarish",
-          en: "Control via VNC",
+          ru: "Масштабируемость и гибкость.",
+          uz: "Masshtablilik va moslashuvchanlik.",
+          en: "Scalability and flexibility.",
         },
         description: {
-          ru: <p>Предоставляем доступ к VPS/VDS северам по протоколу удаленного доступа VNC.</p>,
-          uz: <p>VPS/VDS serverlariga VNC masofaviy kirish protokoli orqali kirishni ta'minlaymiz.</p>,
-          en: <p>We provide access to VPS/VDS servers via the VNC remote access protocol.</p>,
+          ru: <p>Наши серверы Intel можно масштабировать. Если ваш бизнес вырастет, мы поможем адаптироваться.<br />
+          Арендованные серверы Intel экономят энергию. Это снижает ваши расходы.</p>,
+          uz: <p>Bizning Intel serverlarimiz kengaytirilishi mumkin. Biznesingiz o'sishi bilan biz sizga moslashishga yordam beramiz.<br />
+          Ijaraga olingan Intel serverlari energiyani tejaydi. Bu sizning xarajatlaringizni kamaytiradi.</p>,
+          en: <p>Our Intel servers are scalable. As your business grows, we can help you adapt.<br />
+          Rented Intel servers save energy. This reduces your costs.</p>,
         },
         icon: warrantyIcon,
       },
       {
         title: {
-          ru: "Безлимитный трафик",
-          uz: "Cheksiz trafik",
-          en: "Unlimited traffic",
+          ru: "Обновления и инновации.",
+          uz: "Yangilanishlar va innovatsiyalar.",
+          en: "Updates and innovations.",
         },
         description: {
           ru: (
             <p>
-              Нет ограничений по входящему и исходящему объёму данных на всех тарифных планах с каналом от 50 Мбит/с.
+              Мы работаем с Intel и знаем все о новых серверных технологиях. Это делает вашу работу лучше.
             </p>
           ),
           uz: (
             <p>
-              50 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi va chiquvchi maʼlumotlar hajmiga
-              cheklovlar yoʻq.
+              Biz Intel bilan ishlaymiz va yangi server texnologiyalari haqida hamma narsani bilamiz. Bu sizning ishingizni yaxshilaydi.
             </p>
           ),
           en: (
             <p>
-              There are no restrictions on incoming and outgoing data volume on all tariff plans with a channel of 50
-              Mbps or more.
+              We work with Intel and know everything about new server technologies. It makes your work better.
             </p>
           ),
         },
@@ -307,6 +341,80 @@ export default function CheapVds({ language }) {
         net: 100,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16",
       },
+    ],
+    faq = [
+      {
+        title: {
+          ru: "Какие сроки установки сервера?",
+          uz: "Какие сроки установки сервера?",
+          en: "Какие сроки установки сервера?",
+        },
+        description: {
+          ru: (
+            <>
+              <p>Срок установки сервера после оформления заказа и оплаты обычно составляет от 30 минут до 2 рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического персонала.</p>
+            </>
+          ),
+          uz: (
+            <>
+              <p>Срок установки сервера после оформления заказа и оплаты обычно составляет от 30 минут до 2 рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического персонала.</p>
+            </>
+          ),
+          en: (
+            <>
+              <p>Срок установки сервера после оформления заказа и оплаты обычно составляет от 30 минут до 2 рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического персонала.</p>
+            </>
+          ),
+        },
+      },
+      {
+        title: {
+          ru: "Какие операционные системы доступны для серверов?",
+          uz: "Какие операционные системы доступны для серверов?",
+          en: "Какие операционные системы доступны для серверов?",
+        },
+        description: {
+          ru: (
+            <>
+              <p>Для серверов доступны различные операционные системы, включая Windows и Linux.</p>
+            </>
+          ),
+          uz: (
+            <>
+              <p>Для серверов доступны различные операционные системы, включая Windows и Linux.</p>
+            </>
+          ),
+          en: (
+            <>
+              <p>Для серверов доступны различные операционные системы, включая Windows и Linux.</p>
+            </>
+          ),
+        },
+      },
+      {
+        title: {
+          ru: "Как происходит оплата аренды сервера?",
+          uz: "Как происходит оплата аренды сервера?",
+          en: "Как происходит оплата аренды сервера?",
+        },
+        description: {
+          ru: (
+            <>
+              <p>Оплата аренды сервера происходит в зависимости от выбранного тарифного плана, который может быть ежемесячным или предусматривать более длительные периоды с соответствующими скидками.</p>
+            </>
+          ),
+          uz: (
+            <>
+              <p>Оплата аренды сервера происходит в зависимости от выбранного тарифного плана, который может быть ежемесячным или предусматривать более длительные периоды с соответствующими скидками.</p>
+            </>
+          ),
+          en: (
+            <>
+              <p>Оплата аренды сервера происходит в зависимости от выбранного тарифного плана, который может быть ежемесячным или предусматривать более длительные периоды с соответствующими скидками.</p>
+            </>
+          ),
+        },
+      },
     ];
 
   useEffect(() => {
@@ -325,6 +433,8 @@ export default function CheapVds({ language }) {
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
 
+      <ProductCheap />
+
       <div className={st.cheapVds}>
         <div className={"bg_gray"}>
       
@@ -336,6 +446,7 @@ export default function CheapVds({ language }) {
             headTitle={langData.headTitle[language]}
             title="Тарифы"
             description={<p>{langData.description[language]}</p>}
+            txt={<p>{langData.txt[language]}</p>}
             className="mt-0 px-0"
             endText={
               <div className="text-white text-center mt-2">
@@ -403,7 +514,7 @@ export default function CheapVds({ language }) {
 					</div>
 				</Container> */}
 
-        <WhyBlock title={langData.whyBlockTitle[language]} content={block} language={language} />
+        <WhyBlock title={langData.whyBlockTitle[language]} description={langData.whyBlockDescription[language]} content={block} language={language} />
 
         {/* <TarifMaket
 					bgImg={'/servers-2.jpg'}
@@ -461,9 +572,13 @@ export default function CheapVds({ language }) {
         <ForContract data={forContractVDSData} language={language} />
         <ForSupport data={forSupportVDSData} language={language} />
         <ForDatacenter data={forDatacenterVDSData} language={language} />
+        <ForIntel data={ForIntelVDSData} language={language} />
+        <ForIntelTwo data={ForIntelTwoVDSData} language={language} />
 
         <Partners language={language} />
         <Reviews language={language} />
+
+        <FAQ faq={faq} title={langData.faqTitle[language]} language={language} />
       </div>
     </>
   );
