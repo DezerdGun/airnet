@@ -30,10 +30,6 @@ import { forFreeVDSData } from "../vds";
 import AvailableOS from "@/components/availableOS";
 import VirtualServers from "@/components/virtualServers";
 import Reviews from "@/components/reviews";
-import ForIntel from "@/components/forIntel";
-import { ForIntelVDSData } from "../vds";
-import ForIntelTwo from "@/components/forIntelTwo";
-import { ForIntelTwoVDSData } from "../vds";
 import ForContract from "@/components/forContract";
 import { forContractVDSData } from "../vds";
 import ForSupport from "@/components/forSupport";
@@ -61,26 +57,15 @@ export default function CustomVDS({ language }) {
       uz: "Преимущества",
       en: "Преимущества",
     },
-    whyBlockDescription: {
-      ru: <p>Просмотрите наши тарифы на сервера Intel ниже. Выберите нужный вам.<br /> Если вы выберете нашу услугу аренды сервера Intel Xeon, вы получите много преимуществ:</p>,
-      uz: <p>Quyida Intel serverimiz narxlarini koʻring. Sizga kerak bo'lganini tanlang.<br />Agar siz bizning Intel Xeon serverlarini ijaraga olish xizmatimizni tanlasangiz, siz ko'plab imtiyozlarga ega bo'lasiz:</p>,
-      en: <p>View our Intel server rates below. Choose the one you need.<br />If you choose our Intel Xeon server rental service, you will receive many benefits:</p>,
-    },
     headTitle: {
       ru: "Свой виртуальные сервер на базе быстрых SSD-дисков",
       uz: "Tez SSD drayverlarga asoslangan shaxsiy virtual serveringiz",
       en: "Your own virtual server based on fast SSD drives",
     },
     dsc: {
-      ru: <p>Мы продаем мощные серверы Intel. Они работают быстро и надежно.<br />
-        Это хорошо для вашего бизнеса. Наши специалисты следят за серверами круглосуточно.<br />
-        Они помогают, чтобы все работало без сбоев. Вы можете арендовать сервер Intel на территории Узбекистана уже сегодня!</p>,
-      uz: <p>Biz kuchli Intel serverlarini sotamiz. Ular tez va ishonchli ishlaydi.<br />
-      Bu sizning biznesingiz uchun yaxshi. Mutaxassislarimiz serverlarni kechayu kunduz kuzatib boradilar.<br />
-      Ular hamma narsani muammosiz bajarishga yordam beradi. Bugun O'zbekistonda Intel serverini ijaraga olishingiz mumkin!</p>,
-      en: <p>We sell powerful Intel servers. They work quickly and reliably.<br />
-      It's good for your business. Our specialists monitor the servers around the clock.<br />
-      They help keep everything running smoothly. You can rent an Intel server in Uzbekistan today!</p>,
+      ru: "Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости 1 Gbps",
+      uz: "Bizning serverlarimiz O'zbekiston hududida (Toshkent) TAS-IX tarmog'ida joylashgan tezligi 1 Gbps",
+      en: "Our servers are located on the territory of Uzbekistan (Tashkent), in the TAS-IX network at a speed of 1 Gbps",
     },
     txt: {
       ru: <p>Выберите удобный тариф для аренды сервера. Обратите внимание для аренды сервера Intel Xeon Gold вам нужно оформить индивидуальный заказ.<br />
@@ -280,92 +265,168 @@ export default function CustomVDS({ language }) {
   };
 
   const block = [
-    {
-      title: {
-        ru: "Качественные сервера Intel.",
-        uz: "Yuqori sifatli Intel serverlari.",
-        en: "High-quality Intel servers.",
+      {
+        title: { ru: "Мгновенная активация", uz: "Bir zumdayoq ulanish", en: "Instant activation" },
+        description: {
+          ru: (
+            <>
+              <p>
+                Активация VDS выполняется от 5 минут до 4-х часов, в зависимости от количества заказов и наличия
+                свободного оборудования.
+              </p>
+              <button>
+                <a
+                  href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Стать клиентом и заказать VDS
+                </a>
+              </button>
+            </>
+          ),
+          uz: (
+            <>
+              <p>
+                VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4 soatgacha davom etadi va bepul jihozlarning
+                mavjudligi.
+              </p>
+              <button>
+                <a
+                  href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Mijoz bo'ling va VDSga buyurtma bering
+                </a>
+              </button>
+            </>
+          ),
+          en: (
+            <>
+              <p>
+                VDS activation takes from 5 minutes to 4 hours, depending on the number of orders and availability free
+                equipment.
+              </p>
+              <button>
+                <a
+                  href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Become a client and order VDS
+                </a>
+              </button>
+            </>
+          ),
+        },
+        icon: clockIcon,
       },
-      description: {
-        ru: <p>Взятые у нас в аренду сервера Intel работают стабильно и не ломаются. Это хорошо для вашего проекта. Благодаря качеству сервера Intel минимизируется риск сбоев.</p>,
-        uz: <p>Bizdan ijaraga olingan Intel serverlari barqaror ishlaydi va buzilmaydi. Bu sizning loyihangiz uchun yaxshi. Intel serverining sifati tufayli ishdan chiqish xavfi minimallashtiriladi.</p>,
-        en: <p>Intel servers rented from us work stably and do not break down. This is good for your project. Thanks to the quality of the Intel server, the risk of failure is minimized.</p>,
+      {
+        title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
+        description: {
+          ru: <p>Не предоставляется для <strong>"игровых"</strong> серверов и <strong>"видео-контент"</strong> сайтов!</p>,
+          uz: <p><strong>O'yin</strong> serverlari va <strong>video kontent</strong> saytlari uchun mavjud emas!</p>,
+          en: <p>Not available for <strong>game</strong> servers and <strong>video</strong> content sites!</p>,
+        },
+        icon: warningIcon,
       },
-      icon: serversIcon,
-    },
-    {
-      title: { ru: "Удобные планы и настройки.", uz: "Qulay rejalar va sozlamalar.", en: "Convenient plans and settings." },
-      description: {
-        ru: <p>Мы предлагаем разные планы и настройки серверов. При аренде серверов Intel вы сможете выбрать то, что вам нужно.</p>,
-        uz: <p>Biz turli xil rejalar va server sozlamalarini taklif qilamiz. Intel serverlarini ijaraga olayotganda siz o'zingizga kerakli narsani tanlashingiz mumkin.</p>,
-        en: <p>We offer different plans and server settings. When renting Intel servers, you can choose what you need.</p>,
+      {
+        title: { ru: "Поддержка круглосуточно", uz: "24/7 qo'llab quvvatlash", en: "Support 24/7" },
+        description: {
+          ru: (
+            <>
+              <p>
+                В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим максимально быстро.
+              </p>
+              <button>
+                <Link href={checkLang(language) + LINKS.CONTACTS}>
+                  <a>Наши контакты</a>
+                </Link>
+              </button>
+            </>
+          ),
+          uz: (
+            <>
+              <p>
+                Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan bog'lanishingiz mumkin, biz imkon qadar
+                tezroq javob beramiz .
+              </p>
+              <button>
+                <Link href={checkLang(language) + LINKS.CONTACTS}>
+                  <a>Bizning telefon raqamlar</a>
+                </Link>
+              </button>
+            </>
+          ),
+          en: (
+            <>
+              <p>
+                At any time of the day, you can contact us for help or advice, we will respond as quickly as possible.
+              </p>
+              <button>
+                <Link href={checkLang(language) + LINKS.CONTACTS}>
+                  <a>Our contacts</a>
+                </Link>
+              </button>
+            </>
+          ),
+        },
+        icon: supportIcon,
       },
-      icon: lesssonIcon,
-    },
-    {
-      title: {
-        ru: "Поддержка 24/7.",
-        uz: "24/7 qo'llab-quvvatlash.",
-        en: "Support 24/7.",
+      {
+        title: { ru: "Гибкая настройка", uz: "O'zgaruvchan qurulmalar", en: "Flexible setup" },
+        description: {
+          ru: <p>Вы можете изменить количество CPU и RAM в любой момент, а также увеличить объём SSD</p>,
+          uz: (
+            <p>
+              Siz istalgan vaqtda protsessor va operativ xotira miqdorini o'zgartirishingiz, shuningdek, SSD hajmini
+              oshirishingiz mumkin
+            </p>
+          ),
+          en: <p>You can change the amount of CPU and RAM at any time, as well as increase the amount of SSD</p>,
+        },
+        icon: calendarIcon,
       },
-      description: {
-        ru: <p>У нас есть команда, которая помогает круглосуточно. Вы всегда можете получить удаленную помощь с сервером или арендой.</p>,
-        uz: <p>Bizda kechayu kunduz yordam beradigan jamoamiz bor. Siz har doim server yoki ijara bo'yicha masofaviy yordam olishingiz mumkin.</p>,
-        en: <p>We have a team that helps around the clock. You can always get remote help with a server or rental.</p>,
+      {
+        title: {
+          ru: "Управление по VNC",
+          uz: "VNC orqali boshqarish",
+          en: "Control via VNC",
+        },
+        description: {
+          ru: <p>Предоставляем доступ к VPS/VDS северам по протоколу удаленного доступа VNC.</p>,
+          uz: <p>VPS/VDS serverlariga VNC masofaviy kirish protokoli orqali kirishni ta'minlaymiz.</p>,
+          en: <p>We provide access to VPS/VDS servers via the VNC remote access protocol.</p>,
+        },
+        icon: warrantyIcon,
       },
-      icon: databaseIcon,
-    },
-    {
-      title: { ru: "Сохранность конфиденциальности.", uz: "Maxfiylikni saqlash.", en: "Maintaining confidentiality." },
-      description: {
-        ru: <p>Ваши данные будут в безопасности на наших серверах Intel. Мы защитим их от любых угроз во время аренды.</p>,
-        uz: <p>Sizning ma'lumotlaringiz bizning Intel serverlarimizda xavfsiz bo'ladi. Biz ijara vaqtida ularni har qanday tahdidlardan himoya qilamiz.</p>,
-        en: <p>Your data will be safe on our Intel servers. We will protect them from any threats during the rental.</p>,
+      {
+        title: {
+          ru: "Безлимитный трафик",
+          uz: "Cheksiz trafik",
+          en: "Unlimited traffic",
+        },
+        description: {
+          ru: (
+            <p>Нет ограничений по входящему и исходящему объёму данных на всех тарифных планах с каналом от 100 Мбит/с.</p>
+          ),
+          uz: (
+            <p>
+              100 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi va chiquvchi maʼlumotlar hajmiga
+              cheklovlar yoʻq.
+            </p>
+          ),
+          en: (
+            <p>
+              There are no restrictions on incoming and outgoing data volume on all tariff plans with a channel of 100 Mbps
+              or more.
+            </p>
+          ),
+        },
+        icon: infiniteIcon,
       },
-      icon: warningIcon,
-    },
-    {
-      title: {
-        ru: "Масштабируемость и гибкость.",
-        uz: "Masshtablilik va moslashuvchanlik.",
-        en: "Scalability and flexibility.",
-      },
-      description: {
-        ru: <p>Наши серверы Intel можно масштабировать. Если ваш бизнес вырастет, мы поможем адаптироваться.<br />
-        Арендованные серверы Intel экономят энергию. Это снижает ваши расходы.</p>,
-        uz: <p>Bizning Intel serverlarimiz kengaytirilishi mumkin. Biznesingiz o'sishi bilan biz sizga moslashishga yordam beramiz.<br />
-        Ijaraga olingan Intel serverlari energiyani tejaydi. Bu sizning xarajatlaringizni kamaytiradi.</p>,
-        en: <p>Our Intel servers are scalable. As your business grows, we can help you adapt.<br />
-        Rented Intel servers save energy. This reduces your costs.</p>,
-      },
-      icon: warrantyIcon,
-    },
-    {
-      title: {
-        ru: "Обновления и инновации.",
-        uz: "Yangilanishlar va innovatsiyalar.",
-        en: "Updates and innovations.",
-      },
-      description: {
-        ru: (
-          <p>
-            Мы работаем с Intel и знаем все о новых серверных технологиях. Это делает вашу работу лучше.
-          </p>
-        ),
-        uz: (
-          <p>
-            Biz Intel bilan ishlaymiz va yangi server texnologiyalari haqida hamma narsani bilamiz. Bu sizning ishingizni yaxshilaydi.
-          </p>
-        ),
-        en: (
-          <p>
-            We work with Intel and know everything about new server technologies. It makes your work better.
-          </p>
-        ),
-      },
-      icon: infiniteIcon,
-    },
-  ];
+    ];
 
   useEffect(() => {
     const outerClick = (e) => {
@@ -398,7 +459,7 @@ export default function CustomVDS({ language }) {
         <AvailableOS language={language} />
         <VirtualServers language={language} />
 
-        <WhyBlock title={langData.whyBlockTitle[language]} description={langData.whyBlockDescription[language]} content={block} language={language} />
+        <WhyBlock title={langData.whyBlockTitle[language]} content={block} language={language} />
 
         <FAQ
           title="Дополнительно"
@@ -541,8 +602,6 @@ export default function CustomVDS({ language }) {
         <ForContract data={forContractVDSData} language={language} />
         <ForSupport data={forSupportVDSData} language={language} />
         <ForDatacenter data={forDatacenterVDSData} language={language} />
-        <ForIntel data={ForIntelVDSData} language={language} />
-        <ForIntelTwo data={ForIntelTwoVDSData} language={language} />
 
         <Partners language={language} />
         <Reviews language={language} />
