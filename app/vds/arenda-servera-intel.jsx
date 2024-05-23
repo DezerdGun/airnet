@@ -512,14 +512,14 @@ export default function VDS({ language }) {
   const [show, setShow] = useState(-1);
   const langData = {
     seo: {
-      ru: "Быстрые VDS/VPS | Хостинг TAS-IX в Ташкенте, Узбекистане",
-      uz: "Tez VDS/VPS | O'zbekiston, Toshkent shahrida TAS-IX mezbonligi",
-      en: "Fast VDS/VPS | Hosting TAS-IX in Tashkent, Uzbekistan",
+      ru: "Аренда сервера на базе Intel Xeon",
+      uz: "Intel Xeon asosidagi serverni ijaraga oling",
+      en: "Rent a server based on Intel Xeon",
     },
     desc: {
-      ru: "Предложение в соотношении цены-качества-количества ресурсов, которое построенно на быстрых SSD-дисках. Оптимальные VDS/VPS в сети TAS-IX в Ташкенте",
-      uz: "Tez SSD drayverlarga qurilgan narx-sifat-resurslar miqdori nisbatidagi taklif. Toshkent shahridagi TAS-IX tarmog'ida optimal VDS/VPS",
-      en: "An offer in the ratio of price-quality-quantity of resources, which is built on fast SSD drives. Optimal VDS / VPS in the TAS-IX network in Tashkent",
+      ru: "Аренда сервера на базе Intel Xeon - ⚡от 150000 сум✔️ Бесплатно 1 выделенный IP-адрес ✔️Тестовый период✔️Установка ОС",
+      uz: "Intel Xeon asosidagi serverni ijaraga oling - ⚡150 000 so'mdan✔️ Bepul 1 ta ajratilgan IP manzil ✔️Sinov muddati✔️OS o'rnatilishi",
+      en: "Rent a server based on Intel Xeon - ⚡from 150,000 sum✔️ Free 1 dedicated IP address ✔️Test period✔️OS installation",
     },
     whyBlockTitle: {
       ru: "Преимущества",
@@ -532,9 +532,9 @@ export default function VDS({ language }) {
       en: <p>View our Intel server rates below. Choose the one you need.<br />If you choose our Intel Xeon server rental service, you will receive many benefits:</p>,
     },
     headTitle: {
-      ru: "VDS/VPS — сервера на базе быстрых SSD-дисков",
-      uz: "VDS / VPS - tezkor SSD drayverlarga asoslangan serverlar",
-      en: "VDS/VPS - servers based on fast SSD drives",
+      ru: "Аренда серверов intel",
+      uz: "Intel server ijarasi",
+      en: "Intel server rental",
     },
     dsc: {
       ru: <p>Мы продаем мощные серверы Intel. Они работают быстро и надежно.<br />
@@ -813,6 +813,131 @@ export default function VDS({ language }) {
 
   const tarif = [
     {
+      title: { ru: "Platinum", uz: "Platinum", en: "Platinum" },
+      // price: '150 000',
+      prices: [
+        {
+          price: "150 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "450 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "900 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 1 620 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 2,
+      ram: 2,
+      ssd: 25,
+      net: 100,
+      os: "Linux",
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=13",
+    },
+    {
+      title: { ru: "Strong", uz: "Strong", en: "Strong" },
+      // price: '200 000',
+      prices: [
+        {
+          price: "200 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "600 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "1 200 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 2 160 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 2,
+      ram: 4,
+      ssd: 50,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14",
+    },
+    {
+      title: { ru: "VIP", uz: "VIP", en: "VIP" },
+      // price: '250 000',
+      prices: [
+        {
+          price: "250 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "750 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "1 500 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 2 700 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 4,
+      ram: 4,
+      ssd: 75,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=15",
+    },
+    {
+      title: { ru: "VIP+", uz: "VIP+", en: "VIP+" },
+      // price: '300 000',
+      prices: [
+        {
+          price: "300 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "900 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "1 800 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 3 240 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 4,
+      ram: 6,
+      ssd: 100,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16",
+    },
+    {
       title: { ru: "Nano", uz: "Nano", en: "Nano" },
       // price: "400 000",
       prices: [
@@ -936,6 +1061,130 @@ export default function VDS({ language }) {
       net: 100,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
     },
+    {
+      title: { ru: "Tera", uz: "Tera", en: "Tera" },
+      // price: '1 500 000',
+      prices: [
+        {
+          price: "1 500 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "4 500 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "9 000 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 16 200 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 8,
+      ram: 32,
+      ssd: 300,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=53",
+    },
+    {
+      title: { ru: "Peta", uz: "Peta", en: "Peta" },
+      // price: '2 250 000',
+      prices: [
+        {
+          price: "2 250 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "6 750 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "13 500 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 24 300 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 12,
+      ram: 48,
+      ssd: 500,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=61",
+    },
+    {
+      title: { ru: "Zeta", uz: "Zeta", en: "Zeta" },
+      // price: '3 000 000',
+      prices: [
+        {
+          price: "3 000 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "9 000 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "18 000 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 32 400 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 16,
+      ram: 64,
+      ssd: 500,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=62",
+    },
+    {
+      title: { ru: "Yotta", uz: "Yotta", en: "Yotta" },
+      // price: "7 500 000",
+      prices: [
+        {
+          price: "7 500 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "22 500 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "45 000 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 81 000 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 22,
+      ram: 128,
+      ssd: 1000,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=112",
+    },
   ];
 
   useEffect(() => {
@@ -959,8 +1208,8 @@ export default function VDS({ language }) {
       <div className={st.vds}>
         <div className={"bg_gray"}>
       
-          <BreadCrumbs data={[{ name: 'Оптимальные VDS/VPS сервера' }]} />
-          <PageBreadcrumb links={[{ name: 'Оптимальные VDS/VPS сервера' }]} />
+          <BreadCrumbs data={[{ name: 'Аренда серверов intel' }]} />
+          <PageBreadcrumb links={[{ name: 'Аренда серверов intel' }]} />
 
           <TarifMaket
             // bgImg={'/servers-2.jpg'}
@@ -1011,24 +1260,24 @@ export default function VDS({ language }) {
         </div>
 
         <WhyBlock title={langData.whyBlockTitle[language]} description={langData.whyBlockDescription[language]} content={whyBlock} language={language} />
+        <ForIntel data={ForIntelVDSData} language={language} />
+        <ForIntelTwo data={ForIntelTwoVDSData} language={language} />
 
         <ForFreeBlock data={forFreeVDSData} language={language} />
 
         <AvailableOS language={language} />
         <VirtualServers language={language} />
 
-        <Container className="text-center" title={langData.cT[language]} description={langData.cD[language]}>
+        {/* <Container className="text-center" title={langData.cT[language]} description={langData.cD[language]}>
           <div className={st.vds__table}>
             <CustomTable table={langData.table[language]} />
           </div>
-        </Container>
+        </Container> */}
         
         <Howworks language={language} />
         <ForContract data={forContractVDSData} language={language} />
         <ForSupport data={forSupportVDSData} language={language} />
         <ForDatacenter data={forDatacenterVDSData} language={language} />
-        <ForIntel data={ForIntelVDSData} language={language} />
-        <ForIntelTwo data={ForIntelTwoVDSData} language={language} />
 
         <Partners language={language} />
         <Reviews language={language} />
