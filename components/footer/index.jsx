@@ -171,13 +171,21 @@ export default function Footer({ language }) {
           link: LINKS.CUSTOM_VDS,
         },
         {
-          link: LINKS.VDS_1C,
-          title: { ru: "VDS для 1C", uz: "1C uchun VDS", en: "VDS for 1C" },
+          title: {
+            ru: "Аренда серверов intel",
+            uz: "Intel server ijarasi",
+            en: "Intel servers",
+          },
+          link: LINKS.INTEL_VDS,
         },
         // {
         //   link: LINKS.VDS_STORAGE,
         //   title: { ru: "VDS Storage", uz: "VDS Storage", en: "VDS Storage" },
         // },
+        {
+          link: LINKS.VDS_1C,
+          title: { ru: "VDS для 1C", uz: "1C uchun VDS", en: "VDS for 1C" },
+        },
         {
           link: LINKS.VDS_WINDOWS,
           title: {

@@ -28,7 +28,7 @@ export default function ProductVDS({ language }) {
 								{
 								  "@type": "Offer",
 								  name: "Advanced",
-								  price: "500000",
+								  price: "550000",
 								  priceCurrency: "UZS",
 								  url: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50"
 								},

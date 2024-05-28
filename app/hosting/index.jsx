@@ -34,6 +34,7 @@ import ForDatacenter from "@/components/forDatacenter";
 import { forDatacenterVDSData } from "../vds";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import ProductCpanel from "../../components/seo/productcpanel"
 
 export default function Hosting({ language }) {
   const [show, setShow] = useState(-1);
@@ -865,6 +866,9 @@ export default function Hosting({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
+
+      <ProductCpanel />
+
       <div className={st.hosting}>
         {/* <Container
 					className="mt-0"

@@ -35,7 +35,7 @@ import ForSupport from "@/components/forSupport";
 import ForDatacenter from "@/components/forDatacenter";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
-import ProductVDS from "../../components/seo/productvds"
+import ProductVDSIntel from "../../components/seo/productvdsintel"
 
 export const forFreeVDSData = {
   title: {
@@ -1203,7 +1203,7 @@ export default function VDS({ language }) {
     <>
       <SEO title={langData.seo[language]} desc={langData.desc[language]} />
       
-      <ProductVDS />
+      <ProductVDSIntel />
 
       <div className={st.vds}>
         <div className={"bg_gray"}>

@@ -8,6 +8,7 @@ export const LINKS = {
   OPTIMAL_VDS: "/vds",
   BIG_VDS: "/big-vds",
   CUSTOM_VDS: "/custom-vds",
+  INTEL_VDS: "/vds/arenda-servera-intel",
   VDS_1C: "/",
   VDS_STORAGE: "/",
   VDS_WINDOWS: "/",

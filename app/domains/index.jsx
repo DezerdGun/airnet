@@ -20,6 +20,7 @@ import ForDatacenter from "@/components/forDatacenter";
 import { forDatacenterVDSData } from "../vds";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import ProductDomain from "../../components/seo/productdomain"
 
 const content = [
     {
@@ -332,6 +333,8 @@ export default function Domains({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
+
+      <ProductDomain />
       
       <BreadCrumbs data={[{ name: 'Регистрация домена в зоне UZ' }]} />
       <PageBreadcrumb links={[{ name: 'Регистрация домена в зоне UZ' }]} />

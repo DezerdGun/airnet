@@ -23,6 +23,7 @@ import ForDatacenter from "@/components/forDatacenter";
 import { forDatacenterVDSData } from "../vds";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import ProductSSL from "../../components/seo/productssl"
 
 export default function SSL({ language }) {
   const [show, setShow] = useState(null);
@@ -474,6 +475,8 @@ export default function SSL({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
+
+      <ProductSSL />
       
       <BreadCrumbs data={[{ name: 'SSL сертификаты' }]} />
       <PageBreadcrumb links={[{ name: 'SSL сертификаты' }]} />

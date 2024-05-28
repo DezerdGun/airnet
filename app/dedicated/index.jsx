@@ -13,6 +13,7 @@ import ForDatacenter from "@/components/forDatacenter";
 import { forDatacenterVDSData } from "../vds";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import ProductDedicated from "../../components/seo/productdedicated"
 
 export default function Dedicated({ language }) {
   const checkedCircle = (
@@ -272,6 +273,8 @@ export default function Dedicated({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
+
+      <ProductDedicated />
       
       <BreadCrumbs data={[{ name: 'Выделенные сервера' }]} />
       <PageBreadcrumb links={[{ name: 'Выделенные сервера' }]} />

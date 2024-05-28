@@ -20,6 +20,7 @@ import ForDatacenter from "@/components/forDatacenter";
 import { forDatacenterVDSData } from "../vds";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import ProductMail from "../../components/seo/productmail"
 
 export default function EMAIL({ language }) {
   const [show, setShow] = useState(null);
@@ -407,6 +408,8 @@ export default function EMAIL({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
+
+      <ProductMail />
       
       <BreadCrumbs data={[{ name: 'Корпоративная почта' }]} />
       <PageBreadcrumb links={[{ name: 'Корпоративная почта' }]} />

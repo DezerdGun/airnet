@@ -36,6 +36,7 @@ import { walletIcon } from "shared/icons/walletIcon";
 import { ethernetIcon } from "shared/icons/ethernetIcon";
 import { databaseIcon } from "shared/icons/databaseIcon";
 import { serversIcon } from "shared/icons/serversIcon";
+import ProductHome from "@/components/seo/producthome"
 
 export default function Home({ language }) {
   const [show, setShow] = useState(-1);
@@ -919,6 +920,8 @@ export default function Home({ language }) {
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
       {/* <Product language={language} /> */}
+
+      <ProductHome />
       <CustomSwiper language={language} />
       <WhyBlock title={langData.whyBlockTitle[language]} content={whyBlockData} language={language} />
       <TarifMaketHome

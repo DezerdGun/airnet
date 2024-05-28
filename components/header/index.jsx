@@ -59,6 +59,14 @@ export default function Header({ language }) {
             },
             link: LINKS.CUSTOM_VDS,
           },
+          {
+            title: {
+              ru: "Аренда серверов intel",
+              uz: "Intel server ijarasi",
+              en: "Intel servers",
+            },
+            link: LINKS.INTEL_VDS,
+          },
         ],
       },
       {
