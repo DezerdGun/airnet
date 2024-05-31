@@ -607,14 +607,14 @@ export default function VDS({ language }) {
   const [show, setShow] = useState(-1);
   const langData = {
     seo: {
-      ru: "Аренда сервера на базе Intel Xeon",
-      uz: "Intel Xeon asosidagi serverni ijaraga oling",
-      en: "Rent a server based on Intel Xeon",
+      ru: "Аренда сервера linux - виртуальный сервер VPS на линукс",
+      uz: "Linux serverini ijaraga olish - Linuxda virtual VPS server",
+      en: "Renting a Linux server - virtual VPS server on Linux",
     },
     desc: {
-      ru: "Аренда сервера на базе Intel Xeon - ⚡от 150000 сум✔️ Бесплатно 1 выделенный IP-адрес ✔️Тестовый период✔️Установка ОС",
-      uz: "Intel Xeon asosidagi serverni ijaraga oling - ⚡150 000 so'mdan✔️ Bepul 1 ta ajratilgan IP manzil ✔️Sinov muddati✔️OS o'rnatilishi",
-      en: "Rent a server based on Intel Xeon - ⚡from 150,000 sum✔️ Free 1 dedicated IP address ✔️Test period✔️OS installation",
+      ru: "Аренда сервера на базе linux (линукс) - ⚡от 150000 сум ✔️Бесплатно 1 выделенный IP-адрес ✔️Тестовый период ✔️Установка ОС",
+      uz: "Linux (Linux) asosidagi server ijarasi - ⚡150 000 so'mdan ✔️Bepul 1 ta ajratilgan IP manzil ✔️Sinov muddati ✔️OS o'rnatish",
+      en: "Rent a server based on linux (Linux) - ⚡from 150,000 sum ✔️Free 1 dedicated IP address ✔️Test period ✔️OS installation",
     },
     whyBlockTitle: {
       ru: "Преимущества",
