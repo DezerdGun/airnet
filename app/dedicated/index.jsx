@@ -103,14 +103,14 @@ export default function Dedicated({ language }) {
 
   const langData = {
     seoTitle: {
-      ru: "Выделенные сервера | Хостинг TAS-IX в Ташкенте, Узбекистане",
-      uz: "Ajratilgan serverlar | O'zbekiston, Toshkent shahrida TAS-IX mezbonligi",
-      en: "Dedicated servers | Hosting TAS-IX in Tashkent, Uzbekistan",
+      ru: "Аренда выделенного сервера Deticated в Узбекистане - цены, тарифы",
+      uz: "O'zbekistonda Deticated maxsus server ijarasi - narxlar, tariflar",
+      en: "Rent a dedicated server Deticated in Uzbekistan - prices, tariffs",
     },
     descTitle: {
-      ru: "Выделенные сервера в сети TAS-IX в Ташкенте с бесплатной установкой и настройкой, круглосуточной поддержкой",
-      uz: "Toshkent shahridagi TAS-IX tarmog'idagi maxsus serverlar bepul o'rnatish va sozlash, 24/7 qo'llab-quvvatlash",
-      en: "Dedicated servers in the TAS-IX network in Tashkent with free installation and configuration, round the clock support",
+      ru: "Аренда Dedicated сервера. Дата центр в Ташкенте. Установим и активируем мощный сервер за 120 минут ✔️Бесплатная настройка и установка сервера",
+      uz: "Maxsus server ijarasi. Toshkentdagi Data-markaz. Biz 120 daqiqada kuchli serverni o'rnatamiz va faollashtiramiz ✔️Bepul serverni sozlash va o'rnatish",
+      en: "Dedicated server rental. Data center in Tashkent. We will install and activate a powerful server in 120 minutes ✔️Free server setup and installation",
     },
     headTitle: {
       ru: "Выделенные сервера",

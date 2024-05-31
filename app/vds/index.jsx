@@ -354,14 +354,14 @@ export default function VDS({ language }) {
   const [show, setShow] = useState(-1);
   const langData = {
     seo: {
-      ru: "Быстрые VDS/VPS | Хостинг TAS-IX в Ташкенте, Узбекистане",
-      uz: "Tez VDS/VPS | O'zbekiston, Toshkent shahrida TAS-IX mezbonligi",
-      en: "Fast VDS/VPS | Hosting TAS-IX in Tashkent, Uzbekistan",
+      ru: "Виртуальный сервер (VPS и VDS), аренда в Узбекистане",
+      uz: "Virtual server (VPS va VDS), O'zbekistonda ijaraga",
+      en: "Virtual server (VPS and VDS), rent in Uzbekistan",
     },
     desc: {
-      ru: "Предложение в соотношении цены-качества-количества ресурсов, которое построенно на быстрых SSD-дисках. Оптимальные VDS/VPS в сети TAS-IX в Ташкенте",
-      uz: "Tez SSD drayverlarga qurilgan narx-sifat-resurslar miqdori nisbatidagi taklif. Toshkent shahridagi TAS-IX tarmog'ida optimal VDS/VPS",
-      en: "An offer in the ratio of price-quality-quantity of resources, which is built on fast SSD drives. Optimal VDS / VPS in the TAS-IX network in Tashkent",
+      ru: "Аренда серверов VPS/VDS - ⚡от 150000 сум. Мгновенная активация ✔️Выделенный VPS-сервер в Узбекистане ✔️Тестовый период ✔️Установка ОС",
+      uz: "VPS/VDS serverlar ijarasi - ⚡150 000 so'mdan. Bir zumda faollashtirish ✔️O'zbekistonda maxsus VPS server ✔️Sinov muddati ✔️OTni o'rnatish",
+      en: "Rent of VPS/VDS servers - ⚡from 150,000 sum. Instant activation ✔️Dedicated VPS server in Uzbekistan ✔️Test period ✔️OS installation",
     },
     whyBlockTitle: {
       ru: "Преимущества",

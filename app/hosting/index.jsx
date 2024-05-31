@@ -41,14 +41,14 @@ export default function Hosting({ language }) {
 
   const langData = {
     seoTitle: {
-      ru: "Cpanel хостинг | Хостинг TAS-IX в Ташкенте, Узбекистане",
-      uz: "Cpanel Hosting | Toshkentda TAS-IX Hosting, O'zbekiston",
-      en: "Cpanel Hosting | TAS-IX Hosting in Tashkent, Uzbekistan",
+      ru: "Хостинг для сайта - купить виртуальный хостинг в Узбекистане, тарифы, цены",
+      uz: "Veb-sayt hosting - O'zbekistonda virtual xosting sotib olish, tariflar, narxlar",
+      en: "Website hosting - buy virtual hosting in Uzbekistan, tariffs, prices",
     },
     seoDesc: {
-      ru: "Виртуальный хостинг Cpanel в сети TAS-IX с круглосуточной поддержкой, хостинг в Ташкенте, недорогой хостинг, хостинг в Узбекистане",
-      uz: "Virtual hosting Cpanel TAS-IX tarmog'ida 24/7 qo'llab-quvvatlash, Toshkentda xosting, arzon hosting, O'zbekistonda xosting",
-      en: "Virtual hosting Cpanel in TAS-IX network with 24/7 support, hosting in Tashkent, cheap hosting, hosting in Uzbekistan",
+      ru: "Купить виртуальный хостинг для сайта - ⚡от 10000 сум. Дата центр в Ташкенте. Скорость в TAS-IX — 1 Gbps. ✔️ Мгновенная активация ✔️Безлимитный трафик",
+      uz: "Veb-sayt uchun virtual xosting sotib oling - ⚡10 000 so'mdan. Toshkentdagi Data-markaz. TAS-IX da tezlik 1 Gbit/s. ✔️ Tezkor faollashtirish ✔️ Cheksiz trafik",
+      en: "Buy virtual hosting for a website - ⚡from 10,000 sum. Data center in Tashkent. Speed ​​in TAS-IX is 1 Gbps. ✔️ Instant activation ✔️ Unlimited traffic",
     },
     whyBlockTitle: {
       ru: "Преимущества",

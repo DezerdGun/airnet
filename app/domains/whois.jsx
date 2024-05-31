@@ -20,14 +20,14 @@ import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 export default function WhoIs({ language }) {
   const langData = {
     seoTitle: {
-      ru: "Whois - сервис | Airnet",
-      uz: "Whois - xizmat | Airnet",
-      en: "Whois - service | Airnet",
+      ru: "Проверить имя домена, сервис Whois - занятость, владелец, дата регистрации",
+      uz: "Domen nomini tekshiring, Whois xizmati - ish joyi, egasi, ro'yxatdan o'tish sanasi",
+      en: "Check domain name, Whois service - employment, owner, registration date",
     },
     descTitle: {
-      ru: "Whois - сервис",
-      uz: "Whois - xizmat",
-      en: "Whois - service",
+      ru: "Сервис Whois - узнайте все о домене, когда зарегистрирован, занят ли он, а также кто владелец домена – юридическое или физическое лицо.",
+      uz: "Whois xizmati - domen haqida hamma narsani bilib oling, u qachon ro'yxatdan o'tgan, u egallanganmi va domen egasi kim - yuridik yoki jismoniy shaxs.",
+      en: "Whois service - find out everything about the domain, when it was registered, whether it is occupied, and who the owner of the domain is - a legal entity or an individual.",
     },
     headTitle: {
       ru: "Whois - сервис",
