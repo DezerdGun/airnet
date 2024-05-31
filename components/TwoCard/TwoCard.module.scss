@@ -1,0 +1,80 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #f8f8f8;
+$red: #f00;
+
+.TwoCard {
+  width: 100%;
+  min-height: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $light_gray;
+  box-shadow: 0 0 2px $gray;
+  position: relative;
+  overflow: hidden;
+
+  a {
+    color: inherit !important;
+  }
+
+  &__icon {
+    display: block;
+    width: 45px;
+    height: 45px;
+    line-height: 38px !important;
+    margin-bottom: 20px;
+    border: 3px solid #006a4d;
+    color: #006a4d;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: $green;
+    }
+  }
+
+  div {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+
+    svg {
+      width: 80px;
+      height: 80px;
+      fill: #c2c2c2;
+    }
+  }
+
+  button {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 8px;
+    text-align: left;
+
+    &:hover {
+      color: $white;
+      background-color: $green;
+    }
+  }
+
+  &:hover {
+    background-color: $white;
+  }
+
+  @media (min-width: 600px) {
+    width: 48%;
+    min-height: 200px;
+  }
+
+  @media (min-width: 1040px) {
+    width: 49%;
+  }
+}

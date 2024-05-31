@@ -9,6 +9,7 @@ export const LINKS = {
   BIG_VDS: "/big-vds",
   CUSTOM_VDS: "/custom-vds",
   INTEL_VDS: "/vds/arenda-servera-intel",
+  LINUX_VDS: "/vds/arenda-servera-linux",
   VDS_1C: "/",
   VDS_STORAGE: "/",
   VDS_WINDOWS: "/",

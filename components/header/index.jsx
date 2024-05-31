@@ -67,6 +67,14 @@ export default function Header({ language }) {
             },
             link: LINKS.INTEL_VDS,
           },
+          {
+            title: {
+              ru: "Аренда сервера Linux",
+              uz: "Linux server ijarasi",
+              en: "Linux servers",
+            },
+            link: LINKS.LINUX_VDS,
+          },
         ],
       },
       {

@@ -1,0 +1,27 @@
+$white: #fff;
+
+.TwoBlock {
+  background-color: $white;
+
+  &__block {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 20px;
+
+    p{
+      text-align: left;
+      margin-bottom: 0 !important;
+    }
+  }
+  h2{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  p{
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+}
