@@ -492,13 +492,14 @@ export default function WhoIs({ language }) {
                           <td>
                             <strong>{langData.status[language]}:</strong>
                           </td>
-                          <td colSpan="3">{langData.active[language]}</td>
+                          {/* <td colSpan="3">{langData.active[language]}</td> */}
+                          <td colSpan="3">{whoIs?.dStatus}</td>
                         </tr>
                         <tr>
                           <td>
                             <strong>{langData.descriptionTitle[language]}:</strong>
                           </td>
-                          <td colSpan="3">-</td>
+                          <td colSpan="3">{whoIs?.sDesc}</td>
                           <td>
                             <strong>{langData.firstNS[language]}:</strong>
                           </td>
@@ -524,7 +525,7 @@ export default function WhoIs({ language }) {
                           <td>
                             <strong>{langData.createdAt[language]}:</strong>
                           </td>
-                          <td colSpan="3">{whoIs?.dActivated} г.</td>
+                          <td colSpan="3">{whoIs?.dRegistered} г.</td>
                           <td>
                             <strong>{langData.thirdNS[language]}:</strong>
                           </td>
@@ -561,7 +562,7 @@ export default function WhoIs({ language }) {
                           <td>
                             <strong>{langData.type[language]}:</strong>
                           </td>
-                          <td colSpan="7">-</td>
+                          <td colSpan="3">{whoIs?.sType}</td>
                         </tr>
                         <tr>
                           <td>

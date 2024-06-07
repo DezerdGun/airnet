@@ -89,6 +89,14 @@ export default function Header({ language }) {
             },
             link: LINKS.DOMAINS_WHOIS,
           },
+          {
+            title: {
+              ru: "Доменная зона .net",
+              uz: "Доменная зона .net",
+              en: "Доменная зона .net",
+            },
+            link: LINKS.DOMAINS_NET,
+          },
         ],
       },
 
