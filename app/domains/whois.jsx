@@ -100,9 +100,9 @@ export default function WhoIs({ language }) {
       en: "Registrar",
     },
     createdAt: {
-      ru: "Дата создания",
-      uz: "Yaratilgan sana",
-      en: "Date of creation",
+      ru: "Дата обновления",
+      uz: "Yangilanish sanasi",
+      en: "Update date",
     },
     until: {
       ru: "Активен до",
@@ -525,7 +525,7 @@ export default function WhoIs({ language }) {
                           <td>
                             <strong>{langData.createdAt[language]}:</strong>
                           </td>
-                          <td colSpan="3">{whoIs?.dRegistered} г.</td>
+                          <td colSpan="3">{whoIs?.dActivated} г.</td>
                           <td>
                             <strong>{langData.thirdNS[language]}:</strong>
                           </td>

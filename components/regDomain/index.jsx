@@ -104,9 +104,9 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
       en: "Registrar",
     },
     createdAt: {
-      ru: "Дата создания",
-      uz: "Yaratilgan sana",
-      en: "Date of creation",
+      ru: "Дата обновления",
+      uz: "Yangilanish sanasi",
+      en: "Update date",
     },
     until: {
       ru: "Активен до",
@@ -404,7 +404,7 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
                   <td>
                     <strong>{langData.createdAt[language]}:</strong>
                   </td>
-                  <td colSpan="3">{isDomainFree?.data?.dRegistered} г.</td>
+                  <td colSpan="3">{isDomainFree?.data?.dActivated} г.</td>
                   <td>
                     <strong>{langData.thirdNS[language]}:</strong>
                   </td>
