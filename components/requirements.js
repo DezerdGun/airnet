@@ -21,6 +21,7 @@ export const LINKS = {
   ADMINISTRATION: "/admin-support",
   ABOUT: "/about",
   BLOG: "/blog",
+  NEWS: "/news",
   DOCUMENTS: "/documents",
   STOCK: "/stock",
   SSL: "/ssl",

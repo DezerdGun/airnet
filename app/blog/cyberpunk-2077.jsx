@@ -1,4 +1,4 @@
-import BlogItem from "@/components/blogItem"
+import NewsItem from "@/components/newsItem"
 
 const data = {
 	title: {
@@ -123,6 +123,6 @@ const data = {
 	next: "/blog/telegram-voice-chat",
 }
 
-export default function Blog({ language }) {
-	return <BlogItem data={data} language={language} />
+export default function News({ language }) {
+	return <NewsItem data={data} language={language} />
 }
