@@ -297,6 +297,10 @@ export default function Footer({ language }) {
           title: { ru: "Блог", uz: "Blog", en: "Blog" },
         },
         {
+          link: LINKS.NEWS,
+          title: { ru: "Новости", uz: "Новости", en: "Новости" },
+        },
+        {
           link: LINKS.STOCK,
           title: { ru: "Акции", uz: "Akciya", en: "Stock" },
         },

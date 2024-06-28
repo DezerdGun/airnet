@@ -7,6 +7,10 @@ $dark_gray: #666;
 $light_gray: #f8f8f8;
 $red: #f00;
 
+
+.app {
+  background: #f8f8f8;
+}
 .blog {
   &__block {
     display: flex;
@@ -14,8 +18,11 @@ $red: #f00;
     flex-wrap: wrap;
 
     &__item {
-      width: 49%;
+      width: 32%;
       margin-bottom: 20px;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
 
       &:last-child {
         margin-bottom: 0;
@@ -34,6 +41,7 @@ $red: #f00;
           display: flex;
           justify-content: space-between;
           align-items: baseline;
+          padding: 15px;
 
           h2 {
             font-size: 24px;
@@ -41,6 +49,11 @@ $red: #f00;
             margin-bottom: 15px;
           }
         }
+      }
+      P {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 20px;
       }
     }
   }

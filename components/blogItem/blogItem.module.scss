@@ -8,8 +8,70 @@ $light_gray: #f8f8f8;
 $red: #f00;
 
 .blogItem {
-  width: 70%;
-  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  // width: 70%;
+  // margin: 0 auto 20px;
+
+  &__center {
+    width: 70%;
+    padding: 35px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+
+    p {
+      font-size: 17px;
+      line-height: 28px !important;
+    }
+  }
+  &__right{
+    width: 25%;
+    padding: 35px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+
+    &__category{
+      h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      span {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &__text {
+      margin-bottom: 40px;
+
+      h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      span {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 
   &__breadCrumb {
     text-decoration: underline;
@@ -18,6 +80,8 @@ $red: #f00;
   h1 {
     font-size: 30px;
     margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f8f8f8;
   }
 
   h3 {
@@ -55,15 +119,37 @@ $red: #f00;
     border-bottom: 1px solid $light_gray;
 
     &__author {
-      display: flex;
+      display: inline-block;
       align-items: center;
+      width: 270px;
+      margin-top: 20px;
+      margin-bottom: 40px;
 
       img {
         border-radius: 50%;
       }
 
-      span {
+      h3 {
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        font-weight: normal;
         margin-left: 10px;
+      }
+      h4 {
+        display: inline-block;
+        margin-left: 15px;
+        margin-bottom: 0;
+        vertical-align: top;
+      }
+      p {
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: top;
+      }
+      span {
+        float: left;
+        display: inline-block !important;
       }
     }
 
@@ -73,16 +159,22 @@ $red: #f00;
   }
 
   &__mainImg {
-    margin: 20px 0;
+    margin: 0px 0;
 
     div,
     img {
       width: 100% !important;
+      border-radius: 20px;
     }
   }
 
   &__links {
     margin: 20px 0;
+  }
+  &__faqblock {
+    div {
+      width: 100%;
+    }
   }
 
   @media (max-width: 770px) {
