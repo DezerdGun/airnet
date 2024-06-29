@@ -1,5 +1,5 @@
-import Blog from "@/app/blog/telegram-voice-chat";
+import News from "@/app/blog/telegram-voice-chat";
 
 export default function ({ language }) {
-  return <Blog language={language} />;
+  return <News language={language} />;
 }

@@ -386,6 +386,21 @@ module.exports = {
         destination: "/en/documents/transfer-owner/hosting-owner",
         permanent: true,
       },
+      {
+        source: "/blog/uzinfocom-prekratil-rabotu-v-kachestve-registratora-domenov",
+        destination: "/blog/infocom-prekratil-rabotu-v-kachestve-registratora-domenov",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/uzinfocom-prekratil-rabotu-v-kachestve-registratora-domenov",
+        destination: "/en/blog/infocom-prekratil-rabotu-v-kachestve-registratora-domenov",
+        permanent: true,
+      },
+      {
+        source: "/uz//blog/uzinfocom-prekratil-rabotu-v-kachestve-registratora-domenov",
+        destination: "/uz/blog/infocom-prekratil-rabotu-v-kachestve-registratora-domenov",
+        permanent: true,
+      },
     ];
   },
 };

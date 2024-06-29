@@ -6,7 +6,7 @@ import st from "../blog.module.scss"
 export const blog = [
 	{
 		img: "/blog/yandex-money.jpg",
-		link: "/blog/uzinfocom-prekratil-rabotu-v-kachestve-registratora-domenov",
+		link: "/blog/infocom-prekratil-rabotu-v-kachestve-registratora-domenov",
 		date: "12.12.2018",
 		title: {
 			ru: "UZINFOCOM прекратил работу в качестве регистратора доменов",

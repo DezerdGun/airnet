@@ -1,5 +1,5 @@
-import Blog from "@/app/blog/vkontakte-zavela-profil-v-instagram";
+import News from "@/app/blog/vkontakte-zavela-profil-v-instagram";
 
 export default function ({ language }) {
-  return <Blog language={language} />;
+  return <News language={language} />;
 }

@@ -1,4 +1,4 @@
-import BlogItem from "@/components/blogItem"
+import NewsItem from "@/components/newsItem"
 
 const data = {
 	title: {
@@ -112,5 +112,5 @@ const data = {
 }
 
 export default function Blog({ language }) {
-	return <BlogItem data={data} language={language} />
+	return <NewsItem data={data} language={language} />
 }
