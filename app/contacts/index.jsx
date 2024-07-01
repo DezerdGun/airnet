@@ -121,7 +121,7 @@ export default function Contacts({ language }) {
             </div>
             <div className={st.contacts__phones__item}>
               <span>{langData.tex[language]}</span>
-              <h3>{phone}+998 (71) 202-87-00</h3>
+              <h3>{phone}+998 (71) 200-87-00</h3>
               <h3>{phone}+998 (90) 324-30-80</h3>
               <p>{langData.telegram[language]}</p>
             </div>

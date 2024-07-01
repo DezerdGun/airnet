@@ -290,7 +290,7 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
       {showDomains && (
         <ul className={st.regDomain__price}>
           <li className={st.regDomain__price__item}>
-            <div className={st.regDomain__price__item__block}>.UZ - 20.000 {langData.sumVg[language]}</div>
+            <div className={st.regDomain__price__item__block}>.UZ - 27.000 {langData.sumVg[language]}</div>
           </li>
           <li className={st.regDomain__price__item}>
             <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
