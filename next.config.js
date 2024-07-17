@@ -401,6 +401,51 @@ module.exports = {
         destination: "/uz/blog/infocom-prekratil-rabotu-v-kachestve-registratora-domenov",
         permanent: true,
       },
+      {
+        source: "/cheap-vds",
+        destination: "/vds",
+        permanent: true,
+      },
+      {
+        source: "/big-vds",
+        destination: "/vds",
+        permanent: true,
+      },
+      {
+        source: "/custom-vds",
+        destination: "/vds#constructor",
+        permanent: true,
+      },
+      {
+        source: "/en/cheap-vds",
+        destination: "/en/vds",
+        permanent: true,
+      },
+      {
+        source: "/en/big-vds",
+        destination: "/en/vds",
+        permanent: true,
+      },
+      {
+        source: "/en/custom-vds",
+        destination: "/en/vds#constructor",
+        permanent: true,
+      },
+      {
+        source: "/uz/cheap-vds",
+        destination: "/uz/vds",
+        permanent: true,
+      },
+      {
+        source: "/uz/big-vds",
+        destination: "/uz/vds",
+        permanent: true,
+      },
+      {
+        source: "/uz/custom-vds",
+        destination: "/uz/vds#constructor",
+        permanent: true,
+      },
     ];
   },
 };

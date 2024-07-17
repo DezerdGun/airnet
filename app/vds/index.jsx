@@ -35,6 +35,7 @@ import ForDatacenter from "@/components/forDatacenter";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ProductVDS from "../../components/seo/productvds"
+import Calculator from "@/components/calculator";
 
 export const forFreeVDSData = {
   title: {
@@ -372,6 +373,26 @@ export default function VDS({ language }) {
       ru: "VDS/VPS — сервера на базе быстрых SSD-дисков",
       uz: "VDS / VPS - tezkor SSD drayverlarga asoslangan serverlar",
       en: "VDS/VPS - servers based on fast SSD drives",
+    },
+    headTitle2: {
+      ru: "Мощные VDS/VPS — сервера на базе VMware виртуализации с быстрыми SSD-дисками",
+      uz: "Kuchli VDS/VPS - serveri tez SSD drayvlar bilan VMware-ga asoslangan virtualizatsiya",
+      en: "Powerful VDS/VPS servers VMware based virtualization with fast SSDs",
+    },
+    headTitle3: {
+      ru: "Бюджетные VDS/VPS | Хостинг TAS-IX в Ташкенте, Узбекистане",
+      uz: "Byudjet VDS/VPS | O'zbekiston, Toshkent shahrida TAS-IX mezbonligi",
+      en: "Budget VDS/VPS | Hosting TAS-IX in Tashkent, Uzbekistan",
+    },
+    headTitleC: {
+      ru: "Собери свой виртуальные сервер на базе быстрых SSD-дисков",
+      uz: "Tez SSD drayverlarga asoslangan shaxsiy virtual serveringiz",
+      en: "Your own virtual server based on fast SSD drives",
+    },
+    dscC: {
+      ru: "Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости 1 Gbps",
+      uz: "Bizning serverlarimiz O'zbekiston hududida (Toshkent) TAS-IX tarmog'ida joylashgan tezligi 1 Gbps",
+      en: "Our servers are located on the territory of Uzbekistan (Tashkent), in the TAS-IX network at a speed of 1 Gbps",
     },
     dsc: {
       ru: "Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости 1 Gbps",
@@ -834,6 +855,262 @@ export default function VDS({ language }) {
     },
   ];
 
+  const tarif2 = [
+    {
+      title: { ru: "Tera", uz: "Tera", en: "Tera" },
+      // price: '1 500 000',
+      prices: [
+        {
+          price: "1 500 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "4 500 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "9 000 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 16 200 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 8,
+      ram: 32,
+      ssd: 300,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=53",
+    },
+    {
+      title: { ru: "Peta", uz: "Peta", en: "Peta" },
+      // price: '2 250 000',
+      prices: [
+        {
+          price: "2 250 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "6 750 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "13 500 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 24 300 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 12,
+      ram: 48,
+      ssd: 500,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=61",
+    },
+    {
+      title: { ru: "Zeta", uz: "Zeta", en: "Zeta" },
+      // price: '3 000 000',
+      prices: [
+        {
+          price: "3 000 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "9 000 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "18 000 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 32 400 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 16,
+      ram: 64,
+      ssd: 500,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=62",
+    },
+    {
+      title: { ru: "Yotta", uz: "Yotta", en: "Yotta" },
+      // price: "7 500 000",
+      prices: [
+        {
+          price: "7 500 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "22 500 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "45 000 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 81 000 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 22,
+      ram: 128,
+      ssd: 1000,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=112",
+    },
+  ];
+  
+  const tarif3 = [
+    {
+      title: { ru: "Platinum", uz: "Platinum", en: "Platinum" },
+      // price: '150 000',
+      prices: [
+        {
+          price: "150 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "450 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "900 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 1 620 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 2,
+      ram: 2,
+      ssd: 25,
+      net: 100,
+      os: "Linux",
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=13",
+    },
+    {
+      title: { ru: "Strong", uz: "Strong", en: "Strong" },
+      // price: '200 000',
+      prices: [
+        {
+          price: "200 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "600 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "1 200 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 2 160 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 2,
+      ram: 4,
+      ssd: 50,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14",
+    },
+    {
+      title: { ru: "VIP", uz: "VIP", en: "VIP" },
+      // price: '250 000',
+      prices: [
+        {
+          price: "250 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "750 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "1 500 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 2 700 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 4,
+      ram: 4,
+      ssd: 75,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=15",
+    },
+    {
+      title: { ru: "VIP+", uz: "VIP+", en: "VIP+" },
+      // price: '300 000',
+      prices: [
+        {
+          price: "300 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "900 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "1 800 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 3 240 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 4,
+      ram: 6,
+      ssd: 100,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16",
+    },
+  ];
+
+
   useEffect(() => {
     const outerClick = (e) => {
       const classList = [...e.target?.classList];
@@ -845,6 +1122,12 @@ export default function VDS({ language }) {
     document.addEventListener("click", outerClick);
     return () => document.removeEventListener("click", outerClick);
   }, []);
+
+  const [toggle, setToggle] = useState(1)
+
+  function updateToggle(id) {
+    setToggle(id)
+  };
 
   return (
     <>
@@ -858,54 +1141,163 @@ export default function VDS({ language }) {
           <BreadCrumbs data={[{ name: 'Оптимальные VDS/VPS сервера' }]} />
           <PageBreadcrumb links={[{ name: 'Оптимальные VDS/VPS сервера' }]} />
 
-          <TarifMaket
-            // bgImg={'/servers-2.jpg'}
-            headTitle={langData.headTitle[language]}
-            title="Тарифы"
-            description={<p>{langData.dsc[language]}</p>}
-            className="mt-0 px-0"
-            endText={
-              <div className="text-white text-center mt-2">
-                <p>{langData.endText[language]}</p>
-                <p>{langData.timeW[language]}</p>
-              </div>
-            }
-          >
-            <Swiper
-              cssMode={true}
-              modules={[Autoplay, Navigation]}
-              slidesPerView={1}
-              navigation
-              loop={false}
-              autoplay={{
-                delay: 10000,
-                disableOnInteraction: true,
-              }}
-              breakpoints={{
-                1070: {
-                  slidesPerView: 4,
-                },
-                770: {
-                  slidesPerView: 3,
-                },
-                550: {
-                  slidesPerView: 2,
-                },
-              }}
-              className="tarifSwiper"
+          <ul className="tabs-button">
+            <li className={toggle === 1 ? "active" : ""}><a href='#' onClick={()=>updateToggle(1)}>Оптимальные</a></li>
+            <li className={toggle === 2 ? "active" : ""}><a href='#' onClick={()=>updateToggle(2)}>Мощные</a></li>
+            <li className={toggle === 3 ? "active" : ""}><a href='#' onClick={()=>updateToggle(3)}>Бюджетные</a></li>
+				  </ul>
+
+          <div className={toggle === 1 ? "show-content" : "none"}>
+            <TarifMaket
+              // bgImg={'/servers-2.jpg'}
+              headTitle={langData.headTitle[language]}
+              title="Тарифы"
+              description={<p>{langData.dsc[language]}</p>}
+              className="mt-0 px-0"
+              endText={
+                <div className="text-white text-center mt-2">
+                  <p>{langData.endText[language]}</p>
+                  <p>{langData.timeW[language]}</p>
+                </div>
+              }
             >
-              {tarif.map((item, index) => (
-                <SwiperSlide key={item.title} language={language}>
-                  <div className="w-95">
-                    <TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </TarifMaket>
+              <Swiper
+                cssMode={true}
+                modules={[Autoplay, Navigation]}
+                slidesPerView={1}
+                navigation
+                loop={false}
+                autoplay={{
+                  delay: 10000,
+                  disableOnInteraction: true,
+                }}
+                breakpoints={{
+                  1070: {
+                    slidesPerView: 4,
+                  },
+                  770: {
+                    slidesPerView: 3,
+                  },
+                  550: {
+                    slidesPerView: 2,
+                  },
+                }}
+                className="tarifSwiper"
+              >
+                  {tarif.map((item, index) => (
+                    <SwiperSlide key={item.title} language={language}>
+                      <div className="w-95">
+                        <TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+              </Swiper>
+            </TarifMaket>
+          </div>
+          <div className={toggle === 2 ? "show-content" : "none"}>
+            <TarifMaket
+              // bgImg={'/servers-2.jpg'}
+              headTitle={langData.headTitle2[language]}
+              title="Тарифы"
+              description={<p>{langData.dsc[language]}</p>}
+              className="mt-0 px-0"
+              endText={
+                <div className="text-white text-center mt-2">
+                  <p>{langData.endText[language]}</p>
+                  <p>{langData.timeW[language]}</p>
+                </div>
+              }
+            >
+              <Swiper
+                cssMode={true}
+                modules={[Autoplay, Navigation]}
+                slidesPerView={1}
+                navigation
+                loop={false}
+                autoplay={{
+                  delay: 10000,
+                  disableOnInteraction: true,
+                }}
+                breakpoints={{
+                  1070: {
+                    slidesPerView: 4,
+                  },
+                  770: {
+                    slidesPerView: 3,
+                  },
+                  550: {
+                    slidesPerView: 2,
+                  },
+                }}
+                className="tarifSwiper"
+              >
+                  {tarif2.map((item, index) => (
+                    <SwiperSlide key={item.title} language={language}>
+                      <div className="w-95">
+                        <TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+              </Swiper>
+            </TarifMaket>
+          </div>
+          <div className={toggle === 3 ? "show-content" : "none"}>
+            <TarifMaket
+              // bgImg={'/servers-2.jpg'}
+              headTitle={langData.headTitle3[language]}
+              title="Тарифы"
+              description={<p>{langData.dsc[language]}</p>}
+              className="mt-0 px-0"
+              endText={
+                <div className="text-white text-center mt-2">
+                  <p>{langData.endText[language]}</p>
+                  <p>{langData.timeW[language]}</p>
+                </div>
+              }
+            >
+              <Swiper
+                cssMode={true}
+                modules={[Autoplay, Navigation]}
+                slidesPerView={1}
+                navigation
+                loop={false}
+                autoplay={{
+                  delay: 10000,
+                  disableOnInteraction: true,
+                }}
+                breakpoints={{
+                  1070: {
+                    slidesPerView: 4,
+                  },
+                  770: {
+                    slidesPerView: 3,
+                  },
+                  550: {
+                    slidesPerView: 2,
+                  },
+                }}
+                className="tarifSwiper"
+              >
+                  {tarif3.map((item, index) => (
+                    <SwiperSlide key={item.title} language={language}>
+                      <div className="w-95">
+                        <TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+              </Swiper>
+            </TarifMaket>
+          </div>
         </div>
 
         <WhyBlock title={langData.whyBlockTitle[language]} content={whyBlock} language={language} />
+
+        <a name="constructor"></a>
+        <Container 
+        headTitle={langData.headTitleC[language]}
+        description={<p className="center">{langData.dscC[language]}</p>} 
+        clNTitle="text-center" className="pb-0"></Container>
+        <Calculator language={language} />
 
         <ForFreeBlock data={forFreeVDSData} language={language} />
 

@@ -7,7 +7,7 @@ export const LINKS = {
   CHEAP_VDS: "/cheap-vds",
   OPTIMAL_VDS: "/vds",
   BIG_VDS: "/big-vds",
-  CUSTOM_VDS: "/custom-vds",
+  CUSTOM_VDS: "/vds#constructor",
   INTEL_VDS: "/vds/arenda-servera-intel",
   LINUX_VDS: "/vds/arenda-servera-linux",
   VDS_1C: "/",

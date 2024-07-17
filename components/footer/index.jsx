@@ -139,27 +139,11 @@ export default function Footer({ language }) {
       },
       children: [
         {
-          link: LINKS.CHEAP_VDS,
-          title: {
-            ru: "Бюджетные серверы",
-            uz: "Hamyonbob serverlari",
-            en: "Budget servers",
-          },
-        },
-        {
           link: LINKS.OPTIMAL_VDS,
           title: {
             ru: "Оптимальные серверы",
             uz: "Optimal serverlari",
             en: "Optimal servers",
-          },
-        },
-        {
-          link: LINKS.BIG_VDS,
-          title: {
-            ru: "Высокопроизводительные серверы",
-            uz: "Yuqori unumdor serverlar",
-            en: "High performance servers",
           },
         },
         {

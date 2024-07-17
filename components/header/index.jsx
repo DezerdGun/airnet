@@ -27,14 +27,14 @@ export default function Header({ language }) {
         },
         link: LINKS.VPS_VDS,
         children: [
-          {
-            title: {
-              ru: "Бюджетные серверы",
-              uz: "Byudjet serverlari",
-              en: "Budget Servers",
-            },
-            link: LINKS.CHEAP_VDS,
-          },
+          // {
+          //   title: {
+          //     ru: "Бюджетные серверы",
+          //     uz: "Byudjet serverlari",
+          //     en: "Budget Servers",
+          //   },
+          //   link: LINKS.CHEAP_VDS,
+          // },
           {
             title: {
               ru: "Оптимальные серверы",
@@ -43,14 +43,14 @@ export default function Header({ language }) {
             },
             link: LINKS.OPTIMAL_VDS,
           },
-          {
-            title: {
-              ru: "Высокопроизводительные серверы",
-              uz: "Yuqori unumdor serverlar",
-              en: "High Performance Servers",
-            },
-            link: LINKS.BIG_VDS,
-          },
+          // {
+          //   title: {
+          //     ru: "Высокопроизводительные серверы",
+          //     uz: "Yuqori unumdor serverlar",
+          //     en: "High Performance Servers",
+          //   },
+          //   link: LINKS.BIG_VDS,
+          // },
           {
             title: {
               ru: "Конструктор серверов",

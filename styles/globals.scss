@@ -29,6 +29,55 @@ body {
   background-color: #f8f8f8;
 }
 
+.tabs-button {
+  // display: inline-block;
+  max-width: 1250px;
+  padding: 40px 0 0px;
+  margin: 0 auto;
+
+  li {
+    display: inline-grid;
+
+    a {
+      width: 150px;
+      padding: 10px 25px;
+      background-color: #c2c2c2;
+      margin-right: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  .active{
+
+    a {
+      color: #fff;
+      background-color: #006a4d;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .tabs-button {
+  
+    li {
+  
+      a {
+        width: 120px;
+        padding: 10px 15px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.show-content {
+  display: inline;
+}
+.none {
+  display: none;
+}
 input,
 select {
   outline: none !important;
@@ -39,6 +88,9 @@ select {
     outline: none;
     border: 1px solid $green !important;
   }
+}
+.center {
+  text-align: center;
 }
 
 a {

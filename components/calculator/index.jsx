@@ -227,12 +227,12 @@ export default function Calculator({ language }) {
       en: "Processor and Memory",
     },
     title: {
-      ru: "Количество ядер процессора (до 3,4 ГГц)",
-      uz: "Protsessor yadrolari soni (3,4 GGZ gacha)",
-      en: "Number of processor cores (up to 3.4 GHz)",
+      ru: "Количество ядер процессора (от 2,6 до 3,4 ГГц)",
+      uz: "Protsessor yadrolari soni (2,6 - 3,4 GGZ gacha)",
+      en: "Number of processor cores (2,6 up to 3.4 GHz)",
     },
     yadro: {
-      ru: "ядер",
+      ru: "ядра",
       uz: "yadro",
       en: "cores",
     },
@@ -545,7 +545,7 @@ export default function Calculator({ language }) {
               <div className="d-flex">
                 <CalcSelect title="SSD" isChecked={true} />
                 <div title="Под заказ">
-                  <CalcSelect title="NVME" isChecked={false} />
+                  <CalcSelect title="NVME - СКОРО" isChecked={false} />
                 </div>
               </div>
               <CalcHeader
@@ -851,7 +851,7 @@ const CalcSwitcher = ({ state, setState, language }) => {
     <div className={st.calculator__block__item__category__content__switcher}>
       <div
         className={`${st.calculator__block__item__category__content__switcher__item} ${
-          state.administration == "Нет" ? st.calculator__block__item__category__content__switcher__item__active : ""
+          state.administration == "Да" ? st.calculator__block__item__category__content__switcher__item__active : ""
         }`}
         // onClick={() => setState((prev) => ({ ...prev, administration: 'Нет' }))}>
       >
@@ -859,7 +859,7 @@ const CalcSwitcher = ({ state, setState, language }) => {
       </div>
       <div
         className={`${st.calculator__block__item__category__content__switcher__item} ${
-          state.administration == "Да" ? st.calculator__block__item__category__content__switcher__item__active : ""
+          state.administration == "Нет" ? st.calculator__block__item__category__content__switcher__item__active : ""
         }`}
         // onClick={() => setState((prev) => ({ ...prev, administration: 'Да' }))}>
       >
