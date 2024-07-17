@@ -78,6 +78,18 @@ body {
 .none {
   display: none;
 }
+
+.one-text {
+  margin-top: -80px;
+ text-align: center;
+
+ p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+ }
+}
+
 input,
 select {
   outline: none !important;
