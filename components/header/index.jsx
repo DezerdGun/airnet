@@ -97,6 +97,14 @@ export default function Header({ language }) {
             },
             link: LINKS.DOMAINS_NET,
           },
+          {
+            title: {
+              ru: "Доменная зона .in",
+              uz: "Доменная зона .in",
+              en: "Доменная зона .in",
+            },
+            link: LINKS.DOMAINS_IN,
+          },
         ],
       },
 
