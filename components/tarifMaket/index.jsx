@@ -18,12 +18,12 @@ export default function TarifMaket({
 			style={{ background: `url('${bgImg}') no-repeat` }}
 		>
 			<Container>
-				{headTitle && <h1 className={st.container__headTitle}>{headTitle}</h1>}
-				<div className={`${st.tarifMaket__item} ${className}`}>
+				{/* {title && <h2 className={st.container__title}>{title}</h2>} */}
+				{headTitle && <h3 className={st.container__headTitle}>{headTitle}</h3>}
+				{/* <div className={`${st.tarifMaket__item} ${className}`}>
 					{description}
-				</div>
-				{title && <h2 className={st.container__title}>{title}</h2>}
-				{txt && <p className={st.container__txt}>{txt}</p>}
+				</div> */}
+				{/* {txt && <p className={st.container__txt}>{txt}</p>} */}
 				
 				<div className={`${st.tarifMaket__children} tarifSlider`}>
 					{children}

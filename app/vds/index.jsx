@@ -399,6 +399,11 @@ export default function VDS({ language }) {
       uz: "Bizning serverlarimiz O'zbekiston hududida (Toshkent) TAS-IX tarmog'ida joylashgan tezligi 1 Gbps",
       en: "Our servers are located on the territory of Uzbekistan (Tashkent), in the TAS-IX network at a speed of 1 Gbps",
     },
+    txt: {
+      ru: "Тариф",
+      uz: "Тариф",
+      en: "Тариф",
+    },
     endText: {
       ru: "Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2-х рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации оборудования после оплаты - 1-2 часа. Мы делаем всё возможное, чтобы уменьшить время ожидания.",
       uz: "Buyurtma va to'lovni amalga oshirgandan so'ng serverni o'rnatish vaqti 30 daqiqadan boshlanadi zarur serverlar va yuk mavjudligiga qarab 2 ish kunigacha texnik xodimlar. To'lovdan keyin uskunani faollashtirishning o'rtacha vaqti - 1-2 soat. Biz kutish vaqtini kamaytirish uchun qo'limizdan kelganini qilamiz.",
@@ -1341,11 +1346,17 @@ export default function VDS({ language }) {
           <BreadCrumbs data={[{ name: 'Оптимальные VDS/VPS сервера' }]} />
           <PageBreadcrumb links={[{ name: 'Оптимальные VDS/VPS сервера' }]} />
 
-          <ul className="tabs-button">
-            <li className={toggle === 1 ? "active" : ""}><a href='#' onClick={()=>updateToggle(1)}>Оптимальные</a></li>
-            <li className={toggle === 2 ? "active" : ""}><a href='#' onClick={()=>updateToggle(2)}>Мощные</a></li>
-            <li className={toggle === 3 ? "active" : ""}><a href='#' onClick={()=>updateToggle(3)}>Бюджетные</a></li>
-				  </ul>
+          <Container className={"head-top"}>
+            <h1>{langData.headTitle[language]}</h1>
+            <p>{langData.dsc[language]}</p>
+            <h2>{langData.txt[language]}</h2>
+
+            <ul className="tabs-button">
+              <li className={toggle === 1 ? "active" : ""}><a href='#' onClick={()=>updateToggle(1)}>Оптимальные</a></li>
+              <li className={toggle === 2 ? "active" : ""}><a href='#' onClick={()=>updateToggle(2)}>Мощные</a></li>
+              <li className={toggle === 3 ? "active" : ""}><a href='#' onClick={()=>updateToggle(3)}>Бюджетные</a></li>
+            </ul>
+          </Container>
 
           <div className={toggle === 1 ? "show-content" : "none"}>
             <TarifMaket
