@@ -16,6 +16,7 @@ import ForContract from "@/components/forContract";
 import { forContractVDSData } from "../vds";
 import ForSupport from "@/components/forSupport";
 import ForInfo from "@/components/forInfo";
+import ForInfoTxt from "@/components/forInfoTxt";
 import { forSupportVDSData } from "../vds";
 import ForDatacenter from "@/components/forDatacenter";
 import { forDatacenterVDSData } from "../vds";
@@ -159,35 +160,7 @@ const content = [
       },
     },
   ];
-  export const forInfoNETData = {
-    title: {
-      ru: (
-        <>
-        </>
-      ),
-      uz: (
-        <>
-        </>
-      ),
-      en: (
-        <>
-        </>
-      ),
-    },
-    desc: {
-      ru: (
-        <>
-        </>
-      ),
-      uz: (
-        <>
-        </>
-      ),
-      en: (
-        <>
-        </>
-      ),
-    },
+  export const forInfoINData = {
     desc2: {
       ru: (
         <>
@@ -470,7 +443,8 @@ export default function Domains({ language }) {
         <ForInfo data={forInfoWhatData} language={language} />
         
         <WhyBlock title={langData.whyBlockTitle[language]} description={langData.whyBlockDescription[language]} content={content} language={language} />
-        <ForInfo data={forInfoNETData} language={language} />
+        {/* <ForInfo data={forInfoNETData} language={language} /> */}
+        <ForInfoTxt data={forInfoINData} language={language} />
 
         <FAQ faq={faq} title="FAQ" language={language} />
 
