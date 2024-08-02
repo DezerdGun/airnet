@@ -6,6 +6,7 @@ import Partners from "../partners";
 import { LINKS } from "../requirements.js";
 import SEO from "../seo";
 import st from "./helpBlock.module.scss";
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function HelpBlock({ data, language }) {
   const langData = {
@@ -80,11 +81,14 @@ export default function HelpBlock({ data, language }) {
   return (
     <>
       <SEO title={`${data.headTitle[language]} | Airnet`} desc={data?.desc?.[language]} />
+            
+      <PageBreadcrumb links={[{ name: 'Что такое FTP?' }]} />
+
       <div style={{ backgroundColor: "#f8f8f8" }}>
         <Container headTitle={data.headTitle[language]} clNTitle="mb-3">
           <div className={st.author}>
-            <img src="/author/almaz-danaev.jpg" />
-            <span>Almaz</span>
+            <img src="/author/almaz-danaev.png" />
+            <span>ALMAZ DANAEV <br /> CEO</span>
           </div>
           <div className={st.helpBlock}>
             <div className={st.helpBlock__related}>
