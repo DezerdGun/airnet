@@ -3,12 +3,16 @@ import SEO from "@/components/seo";
 import Image from "next/image";
 import st from "./help.module.scss";
 import { LINKS } from "@/components/requirements";
-import BreadCrumbs from "../../components/seo/breadCrumbs"
+import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 const data = [
     {
-      title: { ru: "Общие вопросы", uz: "Umumiy savollar", en: "General questions" },
+      title: {
+        ru: "Общие вопросы",
+        uz: "Umumiy savollar",
+        en: "General questions",
+      },
       children: [
         {
           title: {
@@ -26,7 +30,11 @@ const data = [
       children: [
         {
           id: "hosting",
-          title: { ru: "Общая информация", uz: "Umumiy ma'lumotlar", en: "General information" },
+          title: {
+            ru: "Общая информация",
+            uz: "Umumiy ma'lumotlar",
+            en: "General information",
+          },
           children: [
             {
               title: {
@@ -94,7 +102,11 @@ const data = [
       children: [
         {
           id: "vds",
-          title: { ru: "Общая информация", uz: "Umumiy ma'lumotlar", en: "General information" },
+          title: {
+            ru: "Общая информация",
+            uz: "Umumiy ma'lumotlar",
+            en: "General information",
+          },
           children: [
             {
               title: {
@@ -181,12 +193,20 @@ const data = [
       ],
     },
     {
-      title: { ru: "SSL-сертификаты", uz: "SSL-sertifikatlari", en: "SSL certificates" },
+      title: {
+        ru: "SSL-сертификаты",
+        uz: "SSL-sertifikatlari",
+        en: "SSL certificates",
+      },
       link: "/help/ssl",
       children: [
         {
           id: "ssl",
-          title: { ru: "Общая информация", uz: "Umumiy ma'lumotlar", en: "General information" },
+          title: {
+            ru: "Общая информация",
+            uz: "Umumiy ma'lumotlar",
+            en: "General information",
+          },
           children: [
             {
               title: {
@@ -230,7 +250,11 @@ const data = [
               link: "/help/billing/account/transfer",
             },
             {
-              title: { ru: "Удалить аккаунт", uz: "Hisobni o'chirish", en: "Delete account" },
+              title: {
+                ru: "Удалить аккаунт",
+                uz: "Hisobni o'chirish",
+                en: "Delete account",
+              },
               link: "/help/billing/account/delete",
             },
           ],
@@ -286,7 +310,11 @@ const data = [
     },
     {
       id: "os",
-      title: { ru: "Операционные системы", uz: "Operatsion tizimlar", en: "Operation systems" },
+      title: {
+        ru: "Операционные системы",
+        uz: "Operatsion tizimlar",
+        en: "Operation systems",
+      },
       children: [
         {
           title: {
@@ -299,7 +327,11 @@ const data = [
       ],
     },
     {
-      title: { ru: "Технические вопросы", uz: "Texnik savollar", en: "Technical questions" },
+      title: {
+        ru: "Технические вопросы",
+        uz: "Texnik savollar",
+        en: "Technical questions",
+      },
       link: "/help/site",
       children: [
         {
@@ -307,7 +339,11 @@ const data = [
           title: { ru: "Сайт", uz: "Sayt", en: "Website" },
           children: [
             {
-              title: { ru: "Файл .htaccess", uz: "Fayl .htaccess", en: ".htaccess file" },
+              title: {
+                ru: "Файл .htaccess",
+                uz: "Fayl .htaccess",
+                en: ".htaccess file",
+              },
               link: "/help/site/file-htaccess",
             },
           ],
@@ -318,7 +354,11 @@ const data = [
           link: "/help/mail",
           children: [
             {
-              title: { ru: "Почта для домена", uz: "Domen uchun pochta", en: "Mail for domain" },
+              title: {
+                ru: "Почта для домена",
+                uz: "Domen uchun pochta",
+                en: "Mail for domain",
+              },
               link: "/help/mail/pochta-dlya-domena",
             },
             {
@@ -337,7 +377,11 @@ const data = [
           link: "/help/cms",
           children: [
             {
-              title: { ru: "Что такое CMS?", uz: "CMS bu nma?", en: "What is CMS?" },
+              title: {
+                ru: "Что такое CMS?",
+                uz: "CMS bu nma?",
+                en: "What is CMS?",
+              },
               link: "/help/cms/chto-takoe-cms",
             },
           ],
@@ -348,7 +392,11 @@ const data = [
           link: "/help/ftp",
           children: [
             {
-              title: { ru: "Что такое FTP?", uz: "FTP nma?", en: "What is FTP?" },
+              title: {
+                ru: "Что такое FTP?",
+                uz: "FTP nma?",
+                en: "What is FTP?",
+              },
               link: "/help/ftp/chto-takoe-ftp",
             },
           ],
@@ -373,6 +421,7 @@ const data = [
   ],
   mainData = {
     headTitle: { ru: "База знаний", uz: "Ilmlar bazasi", en: "Knowledge base" },
+    url: "/help",
     content: data,
     faq: [
       {
@@ -385,26 +434,46 @@ const data = [
           ru: (
             <>
               <p className="mb-3">
-                Чтобы пополнить баланс зайдите в биллинг систему, кликните на ваш баланс (правая графа сверху)
+                Чтобы пополнить баланс зайдите в биллинг систему, кликните на
+                ваш баланс (правая графа сверху)
               </p>
-              <Image src="/help/balance.jpg" width={1160} height={511} blurDataURL placeholder="blur" />
+              <Image
+                src="/help/balance.jpg"
+                width={1160}
+                height={511}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
           uz: (
             <>
               <p className="mb-3">
-                Balansni to'ldirish uchun billing tizimiga o'ting, o'zingizning tugmachangizni bosing balans (yuqori
-                o'ng ustun)
+                Balansni to'ldirish uchun billing tizimiga o'ting, o'zingizning
+                tugmachangizni bosing balans (yuqori o'ng ustun)
               </p>
-              <Image src="/help/balance.jpg" width={1160} height={511} blurDataURL placeholder="blur" />
+              <Image
+                src="/help/balance.jpg"
+                width={1160}
+                height={511}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
           en: (
             <>
               <p className="mb-3">
-                To top up your balance, go to the billing system, click on your balance (top right column)
+                To top up your balance, go to the billing system, click on your
+                balance (top right column)
               </p>
-              <Image src="/help/balance.jpg" width={1160} height={511} blurDataURL placeholder="blur" />
+              <Image
+                src="/help/balance.jpg"
+                width={1160}
+                height={511}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
         },
@@ -418,20 +487,45 @@ const data = [
         description: {
           ru: (
             <>
-              <p className="mb-3">Как изменить личные данные в биллинг системе?</p>
-              <Image src="/help/profile.jpg" width={1160} height={422} blurDataURL placeholder="blur" />
+              <p className="mb-3">
+                Как изменить личные данные в биллинг системе?
+              </p>
+              <Image
+                src="/help/profile.jpg"
+                width={1160}
+                height={422}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
           uz: (
             <>
-              <p className="mb-3">Billing tizimidagi shaxsiy ma'lumotlarni qanday o'zgartirish mumkin?</p>
-              <Image src="/help/profile.jpg" width={1160} height={422} blurDataURL placeholder="blur" />
+              <p className="mb-3">
+                Billing tizimidagi shaxsiy ma'lumotlarni qanday o'zgartirish
+                mumkin?
+              </p>
+              <Image
+                src="/help/profile.jpg"
+                width={1160}
+                height={422}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
           en: (
             <>
-              <p className="mb-3">How to change personal data in the billing system?</p>
-              <Image src="/help/profile.jpg" width={1160} height={422} blurDataURL placeholder="blur" />
+              <p className="mb-3">
+                How to change personal data in the billing system?
+              </p>
+              <Image
+                src="/help/profile.jpg"
+                width={1160}
+                height={422}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
         },
@@ -446,19 +540,37 @@ const data = [
           ru: (
             <>
               <p className="mb-3">Для выбора вам предоставляется 6 языков</p>
-              <Image src="/help/lang.jpg" width={1160} height={422} blurDataURL placeholder="blur" />
+              <Image
+                src="/help/lang.jpg"
+                width={1160}
+                height={422}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
           uz: (
             <>
               <p className="mb-3">Sizda 6 ta til mavjud</p>
-              <Image src="/help/lang.jpg" width={1160} height={422} blurDataURL placeholder="blur" />
+              <Image
+                src="/help/lang.jpg"
+                width={1160}
+                height={422}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
           en: (
             <>
               <p className="mb-3">You have 6 languages to choose from</p>
-              <Image src="/help/lang.jpg" width={1160} height={422} blurDataURL placeholder="blur" />
+              <Image
+                src="/help/lang.jpg"
+                width={1160}
+                height={422}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
         },
@@ -472,20 +584,44 @@ const data = [
         description: {
           ru: (
             <>
-              <p className="mb-3">SSL сертификат можно увидеть в графе «товары»</p>
-              <Image src="/help/ssl.jpg" width={1160} height={592} blurDataURL placeholder="blur" />
+              <p className="mb-3">
+                SSL сертификат можно увидеть в графе «товары»
+              </p>
+              <Image
+                src="/help/ssl.jpg"
+                width={1160}
+                height={592}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
           uz: (
             <>
-              <p className="mb-3">SSL sertifikatini "mahsulotlar" ustunida ko'rish mumkin</p>
-              <Image src="/help/ssl.jpg" width={1160} height={592} blurDataURL placeholder="blur" />
+              <p className="mb-3">
+                SSL sertifikatini "mahsulotlar" ustunida ko'rish mumkin
+              </p>
+              <Image
+                src="/help/ssl.jpg"
+                width={1160}
+                height={592}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
           en: (
             <>
-              <p className="mb-3">SSL certificate can be seen in the "goods" column</p>
-              <Image src="/help/ssl.jpg" width={1160} height={592} blurDataURL placeholder="blur" />
+              <p className="mb-3">
+                SSL certificate can be seen in the "goods" column
+              </p>
+              <Image
+                src="/help/ssl.jpg"
+                width={1160}
+                height={592}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
         },
@@ -499,26 +635,60 @@ const data = [
         description: {
           ru: (
             <>
-              <p className="mb-3">C тарифными планами можно также ознакомится и приобрести в биллинг системе.</p>
-              <Image src="/help/tarif.jpg" width={1160} height={563} blurDataURL placeholder="blur" />
+              <p className="mb-3">
+                C тарифными планами можно также ознакомится и приобрести в
+                биллинг системе.
+              </p>
+              <Image
+                src="/help/tarif.jpg"
+                width={1160}
+                height={563}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
           uz: (
             <>
-              <p className="mb-3">Tarif rejalarini ham ko'rish va sotib olish mumkin hisob-kitob tizimi.</p>
-              <Image src="/help/tarif.jpg" width={1160} height={563} blurDataURL placeholder="blur" />
+              <p className="mb-3">
+                Tarif rejalarini ham ko'rish va sotib olish mumkin hisob-kitob
+                tizimi.
+              </p>
+              <Image
+                src="/help/tarif.jpg"
+                width={1160}
+                height={563}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
           en: (
             <>
-              <p className="mb-3">You can also view and purchase tariff plans in the billing system.</p>
-              <Image src="/help/tarif.jpg" width={1160} height={563} blurDataURL placeholder="blur" />
+              <p className="mb-3">
+                You can also view and purchase tariff plans in the billing
+                system.
+              </p>
+              <Image
+                src="/help/tarif.jpg"
+                width={1160}
+                height={563}
+                blurDataURL
+                placeholder="blur"
+              />
             </>
           ),
         },
       },
     ],
   };
+
+export const breadCrumbsHelp = [
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
 
 export default function Help({ language }) {
   const langData = {
@@ -533,14 +703,15 @@ export default function Help({ language }) {
       en: "Answers to frequently asked questions, you can find answers to your questions about hosting, domain and VDS servers from AIRNET",
     },
   };
+
   return (
     <>
       <SEO title={langData.seoT[language]} desc={langData.descT[language]} />
-      
+
       <div className={st.help}>
-        <BreadCrumbs data={[{ name: 'База знаний' }]} />
-        <PageBreadcrumb links={[{ name: 'База знаний' }]} />
-        
+        <BreadCrumbs data={breadCrumbsHelp} language={language} />
+        <PageBreadcrumb links={breadCrumbsHelp} language={language} />
+
         <HelpItem data={mainData} language={language} />
       </div>
     </>

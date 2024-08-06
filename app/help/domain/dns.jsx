@@ -1,7 +1,9 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsDomain } from "@/app/help/domain";
 
 const mainData = {
   headTitle: { ru: "DNS записи", uz: "DNS yozuvlari", en: "DNS records" },
+  url: "/help/domain/dns",
   related: [
     {
       title: {
@@ -31,7 +33,10 @@ const mainData = {
   content: {
     ru: (
       <>
-        <p>При добавлении домена на наш хостинг, рекомендуем делегировать его на DNS-сервера компании AIRNET.uz</p>
+        <p>
+          При добавлении домена на наш хостинг, рекомендуем делегировать его на
+          DNS-сервера компании AIRNET.uz
+        </p>
         <p>
           Name-сервер 1: <strong>dns1.airnet.uz</strong>
         </p>
@@ -42,7 +47,10 @@ const mainData = {
     ),
     uz: (
       <>
-        <p>Bizning xostingimizga domen qo'shganda, uni vakolat berishni tavsiya qilamiz AIRNET.uz DNS serverlari</p>
+        <p>
+          Bizning xostingimizga domen qo'shganda, uni vakolat berishni tavsiya
+          qilamiz AIRNET.uz DNS serverlari
+        </p>
         <p>
           1- server nomi: <strong>dns1.airnet.uz</strong>
         </p>
@@ -53,7 +61,10 @@ const mainData = {
     ),
     en: (
       <>
-        <p>When adding a domain to our hosting, we recommend delegating it to the DNS servers of AIRNET.uz</p>
+        <p>
+          When adding a domain to our hosting, we recommend delegating it to the
+          DNS servers of AIRNET.uz
+        </p>
         <p>
           Name server 1: <strong>dns1.airnet.uz</strong>
         </p>
@@ -65,6 +76,16 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsDomain,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return (
+    <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />
+  );
 }

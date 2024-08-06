@@ -2,6 +2,7 @@ import HelpBlock from "@/components/helpItem/helpBlock";
 import { LINKS } from "@/components/requirements";
 import { checkLang } from "@/utils/checkLang";
 import Link from "next/link";
+import { breadCrumbsDomain } from "@/app/help/domain";
 
 export default function HelpBlog({ language }) {
   const mainData = {
@@ -10,6 +11,7 @@ export default function HelpBlog({ language }) {
       uz: "Qanday qilib domen UZ royxatdan otqaziladi?",
       en: "How to register an UZ domain?",
     },
+    url: "/help/domain/kak-zaregistrirovat-domen",
     related: [
       {
         title: {
@@ -123,5 +125,16 @@ export default function HelpBlog({ language }) {
       ),
     },
   };
-  return <HelpBlock data={mainData} language={language} />;
+
+  const breadCrumbs = [
+    ...breadCrumbsDomain,
+    {
+      name: mainData.headTitle,
+      link: mainData.url,
+    },
+  ];
+
+  return (
+    <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />
+  );
 }

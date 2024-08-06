@@ -1,4 +1,5 @@
 import HelpItem from "@/components/helpItem";
+import HelpItemNoAsideLinks from "@/components/helpItem/HelpItemNoAsideLinks";
 import { LINKS } from "@/components/requirements";
 
 const data = {
@@ -22,5 +23,5 @@ const data = {
   };
 
 export default function HelpInner({ language }) {
-  return <HelpItem data={mainData} language={language} />;
+  return <HelpItemNoAsideLinks data={mainData} language={language} />;
 }

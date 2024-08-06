@@ -1,0 +1,173 @@
+$white: #fff;
+$black: #000;
+$green: #006a4d;
+$dark_green: #00402e;
+$gray: #c2c2c2;
+$dark_gray: #666;
+$light_gray: #f8f8f8;
+$red: #f00;
+
+.helpItem {
+  border-top: 1px solid $light_gray;
+  padding-top: 20px;
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+
+    &__links {
+      width: 280px;
+      transition: all 0.2s ease;
+
+      h4 {
+        font-size: 30px;
+      }
+
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+
+      &__absolute {
+        position: sticky;
+        top: 100px;
+      }
+
+      &__back {
+        background-color: $white;
+      }
+
+      &__block {
+        list-style: none;
+        padding: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid $light_gray;
+        cursor: pointer;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 22px;
+
+        ul {
+          padding-left: 10px;
+          margin-bottom: 0;
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-right: 10px;
+
+          .helpItem__block__links__block {
+            padding-bottom: 0;
+            border-bottom: none;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &:hover {
+            color: $green;
+          }
+        }
+
+        &__span {
+          &__active {
+            transform: rotate(90deg);
+          }
+        }
+
+        &__content {
+          display: none;
+
+          &__active {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &__content {
+      margin-inline: auto;
+
+      a {
+        color: $black;
+        font-size: inherit;
+        border-bottom: 1px solid $green;
+      }
+
+      h3 {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+
+      &__block {
+        margin-bottom: 30px;
+
+        h3 {
+          font-size: 22px;
+          padding-bottom: 10px;
+          padding-left: 25px;
+          border-bottom: 1px solid $light_gray;
+          position: relative;
+          background: url("/flag.png") no-repeat;
+          background-size: 18px;
+          background-position: 0 2px;
+          font-weight: 500;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          li {
+            width: 48%;
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 990px) {
+    &__block {
+      &__content {
+        width: calc(100% - 280px);
+      }
+    }
+  }
+
+  @media (max-width: 770px) {
+    &__block {
+      flex-wrap: wrap;
+      &__links,
+      &__content {
+        width: 100%;
+      }
+
+      &__links {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    &__block {
+      &__content {
+        &__block {
+          flex-wrap: wrap;
+          ul > li {
+            width: 100%;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

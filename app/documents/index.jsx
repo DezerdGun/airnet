@@ -3,7 +3,7 @@ import Partners from "@/components/partners";
 import SEO from "@/components/seo";
 import { HelpItemBlock } from "@/components/helpItem";
 import Reviews from "@/components/reviews";
-import BreadCrumbs from "../../components/seo/breadCrumbs"
+import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function Documents({ language }) {
@@ -135,9 +135,12 @@ export default function Documents({ language }) {
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.desc[language]} />
-      
-      <BreadCrumbs data={[{ name: 'Договор' }]} />
-      <PageBreadcrumb links={[{ name: 'Договор' }]} />
+
+      <BreadCrumbs data={[{ name: langData.headTitle }]} language={language} />
+      <PageBreadcrumb
+        links={[{ name: langData.headTitle }]}
+        language={language}
+      />
 
       <Container headTitle={langData.headTitle[language]}>
         <hr />

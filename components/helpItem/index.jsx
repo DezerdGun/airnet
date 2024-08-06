@@ -7,8 +7,10 @@ import Partners from "../partners/index.jsx";
 import { LINKS } from "../requirements.js";
 import SEO from "../seo";
 import st from "./helpItem.module.scss";
+import BreadCrumbs from "../seo/breadCrumbs.jsx";
+import PageBreadcrumb from "../seo/pageBreadCrumbs.jsx";
 
-export default function HelpItem({ data, language }) {
+export default function HelpItem({ data, language, breadCrumbs }) {
   const langData = {
     faq: {
       ru: "НАС ЧАСТО СПРАШИВАЮТ БИЛЛИНГ-ПАНЕЛЬ",
@@ -19,10 +21,27 @@ export default function HelpItem({ data, language }) {
 
   return (
     <>
-      <SEO title={`${data.headTitle[language]} | Airnet`} desc={data?.desc?.[language]} />
+      <SEO
+        title={`${data.headTitle[language]} | Airnet`}
+        desc={data?.desc?.[language]}
+      />
+      {breadCrumbs && breadCrumbs.length ? (
+        <>
+          <BreadCrumbs data={breadCrumbs} language={language} />
+          <PageBreadcrumb links={breadCrumbs} language={language} />
+        </>
+      ) : (
+        ""
+      )}
       <HelpItemBlock data={data} language={language} />
       {data?.afterContent}
-      {data?.faq && <FAQ faq={data.faq} title={langData.faq[language]} language={language} />}
+      {data?.faq && (
+        <FAQ
+          faq={data.faq}
+          title={langData.faq[language]}
+          language={language}
+        />
+      )}
       <Partners language={language} />
     </>
   );
@@ -95,10 +114,12 @@ export const HelpItemBlock = ({ data, language }) => {
         <div className={st.helpItem__block}>
           <div className={st.helpItem__block__links}>
             <div id="links" className={st.helpItem__block__links__absolute}>
-              <h4>{langData.menu[language]}</h4>
+              <h2>{langData.menu[language]}</h2>
               <div className={st.helpItem__block__links__back}>
                 {data?.content?.length ? (
-                  data.content.map((item, i) => <LinksBlock key={i} data={item} language={language} />)
+                  data.content.map((item, i) => (
+                    <LinksBlock key={i} data={item} language={language} />
+                  ))
                 ) : (
                   <LinksBlock data={data.content} language={language} />
                 )}
@@ -111,7 +132,8 @@ export const HelpItemBlock = ({ data, language }) => {
         </div>
         <p>{langData.goToDB[language]}</p>
         <p>
-          {langData.phoneSupport[language]} <a href="tel:+998712028700">+998(71) 202-87-00</a>
+          {langData.phoneSupport[language]}{" "}
+          <a href="tel:+998712028700">+998(71) 202-87-00</a>
         </p>
       </div>
     </Container>
@@ -149,7 +171,9 @@ const LinksBlock = ({ data, language }) => {
         }`}
       >
         {data?.children &&
-          data.children.map((item, i) => <LinksBlock key={`data${i}`} data={item} language={language} />)}
+          data.children.map((item, i) => (
+            <LinksBlock key={`data${i}`} data={item} language={language} />
+          ))}
       </div>
     </ul>
   );
@@ -158,8 +182,11 @@ const LinksBlock = ({ data, language }) => {
 export const Content = ({ data, language }) => {
   if (data?.length)
     return data.map((item) => (
-      <div key={item.title[language]} className={st.helpItem__block__content__block}>
-        <h3>
+      <div
+        key={item.title[language]}
+        className={st.helpItem__block__content__block}
+      >
+        <h2>
           {item?.link ? (
             <Link href={checkLang(language) + item.link}>
               <a>{item.title[language]}</a>
@@ -167,13 +194,13 @@ export const Content = ({ data, language }) => {
           ) : (
             item.title[language]
           )}
-        </h3>
+        </h2>
         <ContentBlock data={item.children} language={language} />
       </div>
     ));
   return (
     <div className={st.helpItem__block__content__block}>
-      <h3>
+      <h2>
         {data?.link ? (
           <Link href={checkLang(language) + data.link}>
             <a>{data.title[language]}</a>
@@ -181,7 +208,7 @@ export const Content = ({ data, language }) => {
         ) : (
           data.title[language]
         )}
-      </h3>
+      </h2>
       <ContentBlock data={data.children} language={language} />
     </div>
   );
@@ -189,7 +216,10 @@ export const Content = ({ data, language }) => {
 
 const ContentBlock = ({ data, language }) => {
   return data.map((item) => (
-    <div key={item.title[language]} className={st.helpItem__block__content__block__item}>
+    <div
+      key={item.title[language]}
+      className={st.helpItem__block__content__block__item}
+    >
       <h4>
         {item?.link ? (
           <Link href={checkLang(language) + item.link}>
@@ -203,9 +233,11 @@ const ContentBlock = ({ data, language }) => {
         <ul>
           {item.children.map((item) => (
             <li key={item.id}>
-              <Link href={checkLang(language) + item.link}>
-                <a>{item.title[language]}</a>
-              </Link>
+              <h3>
+                <Link href={checkLang(language) + item.link}>
+                  <a>{item.title[language]}</a>
+                </Link>
+              </h3>
             </li>
           ))}
         </ul>

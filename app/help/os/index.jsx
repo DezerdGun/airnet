@@ -1,8 +1,13 @@
 import HelpItem from "@/components/helpItem";
+import HelpItemNoAsideLinks from "@/components/helpItem/HelpItemNoAsideLinks";
 
 const data = {
     id: "os",
-    title: { ru: "Операционные системы", uz: "Operatsion tizimlar", en: "Operation systems" },
+    title: {
+      ru: "Операционные системы",
+      uz: "Operatsion tizimlar",
+      en: "Operation systems",
+    },
     children: [
       {
         title: {
@@ -20,5 +25,5 @@ const data = {
   };
 
 export default function HelpInner({ language }) {
-  return <HelpItem data={mainData} language={language} />;
+  return <HelpItemNoAsideLinks data={mainData} language={language} />;
 }

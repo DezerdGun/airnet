@@ -7,8 +7,9 @@ import { LINKS } from "../requirements.js";
 import SEO from "../seo";
 import st from "./helpBlock.module.scss";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import BreadCrumbs from "../seo/breadCrumbs.jsx";
 
-export default function HelpBlock({ data, language }) {
+export default function HelpBlock({ data, language, breadCrumbs }) {
   const langData = {
     author: {
       ru: "Алмаз Данаев",
@@ -71,24 +72,36 @@ export default function HelpBlock({ data, language }) {
       link: "/help/billing/account/transfer",
     },
     {
-      title: { ru: "Удалить аккаунт", uz: "Hisobni o'chirish", en: "Delete account" },
+      title: {
+        ru: "Удалить аккаунт",
+        uz: "Hisobni o'chirish",
+        en: "Delete account",
+      },
       link: "/help/billing/account/delete",
     },
   ];
 
-  console.log(language);
-
   return (
     <>
-      <SEO title={`${data.headTitle[language]} | Airnet`} desc={data?.desc?.[language]} />
-            
-      <PageBreadcrumb links={[{ name: 'Что такое FTP?' }]} />
+      <SEO
+        title={`${data.headTitle[language]} | Airnet`}
+        desc={data?.desc?.[language]}
+      />
 
       <div style={{ backgroundColor: "#f8f8f8" }}>
+        {breadCrumbs && breadCrumbs.length ? (
+          <>
+            <BreadCrumbs data={breadCrumbs} language={language} />
+            <PageBreadcrumb links={breadCrumbs} language={language} />
+          </>
+        ) : null}
+
         <Container headTitle={data.headTitle[language]} clNTitle="mb-3">
           <div className={st.author}>
             <img src="/author/almaz-danaev.png" />
-            <span>ALMAZ DANAEV <br /> CEO</span>
+            <span>
+              ALMAZ DANAEV <br /> CEO
+            </span>
           </div>
           <div className={st.helpBlock}>
             <div className={st.helpBlock__related}>
@@ -103,15 +116,24 @@ export default function HelpBlock({ data, language }) {
                 ))}
               </ul>
             </div>
-            <div className={st.helpBlock__content}>{data.content[language]}</div>
+            <div className={st.helpBlock__content}>
+              {data.content[language]}
+            </div>
           </div>
           <p>{langData.goToDB[language]}</p>
           <p>
-            {langData.phoneSupport[language]} <a href="tel:+998712028700">+998(71) 202-87-00</a>
+            {langData.phoneSupport[language]}{" "}
+            <a href="tel:+998712028700">+998(71) 202-87-00</a>
           </p>
         </Container>
         {data?.afterContent}
-        {data?.faq && <FAQ faq={data.faq} title={langData.faq[language]} language={language} />}
+        {data?.faq && (
+          <FAQ
+            faq={data.faq}
+            title={langData.faq[language]}
+            language={language}
+          />
+        )}
         <Partners language={language} />
       </div>
     </>
