@@ -24,6 +24,28 @@ import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ProductDomain from "../../components/seo/productdomain"
 
+export const breadCrumbsDomain = [
+  {
+    name: {
+      ru: "Регистрация домена в зоне UZ",
+      uz: "Регистрация домена в зоне UZ",
+      en: "Регистрация домена в зоне UZ",
+    },
+    link: "/domains",
+  },
+];
+export const breadCrumbsIn = [
+  ...breadCrumbsDomain,
+  {
+    name: {
+      ru: "Регистрация домена в зоне in",
+      uz: "Регистрация домена в зоне in",
+      en: "Регистрация домена в зоне in",
+    },
+    link: "/domains/in",
+  },
+];
+
 const content = [
     {
       title: {
@@ -370,8 +392,14 @@ export default function Domains({ language }) {
 
       <ProductDomain />
       
-      <BreadCrumbs data={[{ name: 'Регистрация домена в зоне UZ' }]} />
-      <PageBreadcrumb links={[{ name: 'Регистрация домена в зоне UZ' }]} />
+      {breadCrumbsIn && breadCrumbsIn.length ? (
+        <>
+          <BreadCrumbs data={breadCrumbsIn} language={language} />
+          <PageBreadcrumb links={breadCrumbsIn} language={language} />
+        </>
+      ) : (
+        ""
+      )}
 
       <Container headTitle={langData.headTitle[language]}>
         <hr />

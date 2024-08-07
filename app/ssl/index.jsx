@@ -472,14 +472,29 @@ export default function SSL({ language }) {
       },
     ];
 
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "SSL-сертификаты",
+        uz: "SSL-сертификаты",
+        en: "SSL-сертификаты",
+      },
+      link: "/ssl",
+    },
+  ];
+
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
 
       <ProductSSL />
       
-      <BreadCrumbs data={[{ name: 'SSL сертификаты' }]} />
-      <PageBreadcrumb links={[{ name: 'SSL сертификаты' }]} />
+      {breadCrumbs && breadCrumbs.length ? (
+        <>
+          <BreadCrumbs data={breadCrumbs} language={language} />
+          <PageBreadcrumb links={breadCrumbs} language={language} />
+        </>
+      ) : null}
 
       <Container headTitle={langData.headTitle[language]}>
         <hr />

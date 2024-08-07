@@ -405,14 +405,29 @@ export default function EMAIL({ language }) {
       },
     ];
 
+    const breadCrumbs = [
+      {
+        name: {
+          ru: "Почта на домене",
+          uz: "Почта на домене",
+          en: "Почта на домене",
+        },
+        link: "/email",
+      },
+    ];
+
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
 
       <ProductMail />
-      
-      <BreadCrumbs data={[{ name: 'Корпоративная почта' }]} />
-      <PageBreadcrumb links={[{ name: 'Корпоративная почта' }]} />
+
+      {breadCrumbs && breadCrumbs.length ? (
+        <>
+          <BreadCrumbs data={breadCrumbs} language={language} />
+          <PageBreadcrumb links={breadCrumbs} language={language} />
+        </>
+      ) : null}
 
       <Container headTitle={langData.headTitle[language]}>
         <hr />

@@ -17,6 +17,28 @@ import Reviews from "@/components/reviews";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
+export const breadCrumbsDomain = [
+  {
+    name: {
+      ru: "Регистрация домена в зоне UZ",
+      uz: "Регистрация домена в зоне UZ",
+      en: "Регистрация домена в зоне UZ",
+    },
+    link: "/domains",
+  },
+];
+export const breadCrumbsWhois = [
+  ...breadCrumbsDomain,
+  {
+    name: {
+      ru: "Whois - сервис",
+      uz: "Whois - сервис",
+      en: "Whois - сервис",
+    },
+    link: "/domains/whois",
+  },
+];
+
 export default function WhoIs({ language }) {
   const langData = {
     seoTitle: {
@@ -624,8 +646,14 @@ export default function WhoIs({ language }) {
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
       
-      <BreadCrumbs data={[{ name: 'Whois' }]} />
-      <PageBreadcrumb links={[{ name: 'Whois' }]} />
+      {breadCrumbsWhois && breadCrumbsWhois.length ? (
+        <>
+          <BreadCrumbs data={breadCrumbsWhois} language={language} />
+          <PageBreadcrumb links={breadCrumbsWhois} language={language} />
+        </>
+      ) : (
+        ""
+      )}
 
       <Container headTitle={langData.headTitle[language]}>
       </Container>
