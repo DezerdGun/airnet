@@ -32,9 +32,9 @@ import ForSupport from "@/components/forSupport";
 import { forSupportVDSData } from "../vds";
 import ForDatacenter from "@/components/forDatacenter";
 import { forDatacenterVDSData } from "../vds";
-import BreadCrumbs from "../../components/seo/breadCrumbs"
+import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
-import ProductCpanel from "../../components/seo/productcpanel"
+import ProductCpanel from "../../components/seo/productcpanel";
 
 export default function Hosting({ language }) {
   const [show, setShow] = useState(-1);
@@ -182,7 +182,13 @@ export default function Hosting({ language }) {
       { ru: "Файловые менеджеры", uz: "Fayl menejerlari", en: "File Managers" },
     ],
     checkedCircle = (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -434,23 +440,40 @@ export default function Hosting({ language }) {
         description: {
           ru: (
             <>
-              <p>Пользовательский аккаунт открывается сразу после подачи заявки.</p>
+              <p>
+                Пользовательский аккаунт открывается сразу после подачи заявки.
+              </p>
 
-              <p>Сразу после произведения оплаты, вы можете начать сразу же пользоваться услугой.</p>
+              <p>
+                Сразу после произведения оплаты, вы можете начать сразу же
+                пользоваться услугой.
+              </p>
             </>
           ),
           uz: (
             <>
-              <p>Foydalanuvchi hisobi ariza topshirilgandan so‘ng darhol ochiladi.</p>
+              <p>
+                Foydalanuvchi hisobi ariza topshirilgandan so‘ng darhol
+                ochiladi.
+              </p>
 
-              <p>Toʻlovni amalga oshirganingizdan soʻng darhol xizmatdan foydalanishni boshlashingiz mumkin.</p>
+              <p>
+                Toʻlovni amalga oshirganingizdan soʻng darhol xizmatdan
+                foydalanishni boshlashingiz mumkin.
+              </p>
             </>
           ),
           en: (
             <>
-              <p>The user account is opened immediately after the application is submitted.</p>
+              <p>
+                The user account is opened immediately after the application is
+                submitted.
+              </p>
 
-              <p>Immediately after making the payment, you can start using the service immediately.</p>
+              <p>
+                Immediately after making the payment, you can start using the
+                service immediately.
+              </p>
             </>
           ),
         },
@@ -465,24 +488,28 @@ export default function Hosting({ language }) {
           ru: (
             <>
               <p>
-                Да. Домена можно не переносить в нашу систему но у домена долны быть прописаны наши DNS сервера которые
-                после активации хостинга будут отправлены на ваш email.
+                Да. Домена можно не переносить в нашу систему но у домена долны
+                быть прописаны наши DNS сервера которые после активации хостинга
+                будут отправлены на ваш email.
               </p>
             </>
           ),
           uz: (
             <>
               <p>
-                Ha. Domenlarni bizning tizimimizga o'tkazib bo'lmaydi, lekin domenda DNS serverlarimiz ro'yxatdan o'tgan
-                bo'lishi kerak, ular hosting faollashtirilgandan so'ng elektron pochtangizga yuboriladi.
+                Ha. Domenlarni bizning tizimimizga o'tkazib bo'lmaydi, lekin
+                domenda DNS serverlarimiz ro'yxatdan o'tgan bo'lishi kerak, ular
+                hosting faollashtirilgandan so'ng elektron pochtangizga
+                yuboriladi.
               </p>
             </>
           ),
           en: (
             <>
               <p>
-                Yes. Domains can not be transferred to our system, but the domain must have our DNS servers registered,
-                which, after hosting activation, will be sent to your email.
+                Yes. Domains can not be transferred to our system, but the
+                domain must have our DNS servers registered, which, after
+                hosting activation, will be sent to your email.
               </p>
             </>
           ),
@@ -498,24 +525,28 @@ export default function Hosting({ language }) {
           ru: (
             <>
               <p>
-                Нет, root-доступ и SSH-доступ недоступен для планов виртуального хостинга на Cpanel. Если вам требуется
-                root-доступ и SSH-доступ, мы рекомендуем вам приобрести виртуальный сервер.
+                Нет, root-доступ и SSH-доступ недоступен для планов виртуального
+                хостинга на Cpanel. Если вам требуется root-доступ и SSH-доступ,
+                мы рекомендуем вам приобрести виртуальный сервер.
               </p>
             </>
           ),
           uz: (
             <>
               <p>
-                Yo'q, cpanel umumiy hosting rejalari uchun ildizga kirish va SSH ruxsati mavjud emas. Agar siz ildizga
-                kirish va SSHga kirishni talab qilsangiz, virtual server sotib olishingizni tavsiya qilamiz.
+                Yo'q, cpanel umumiy hosting rejalari uchun ildizga kirish va SSH
+                ruxsati mavjud emas. Agar siz ildizga kirish va SSHga kirishni
+                talab qilsangiz, virtual server sotib olishingizni tavsiya
+                qilamiz.
               </p>
             </>
           ),
           en: (
             <>
               <p>
-                No, root access and SSH access are not available for cpanel shared hosting plans. If you require root
-                access and SSH access, we recommend that you purchase a virtual server.
+                No, root access and SSH access are not available for cpanel
+                shared hosting plans. If you require root access and SSH access,
+                we recommend that you purchase a virtual server.
               </p>
             </>
           ),
@@ -531,24 +562,27 @@ export default function Hosting({ language }) {
           ru: (
             <>
               <p>
-                На хостинге установлена всегда последние версии MySQL и MariaDB. Всю необходимую информацию о сервере Вы
-                можете уточнить у технической поддержки.
+                На хостинге установлена всегда последние версии MySQL и MariaDB.
+                Всю необходимую информацию о сервере Вы можете уточнить у
+                технической поддержки.
               </p>
             </>
           ),
           uz: (
             <>
               <p>
-                Xostingda har doim MySQL va MariaDB ning so'nggi versiyalari o'rnatilgan. Server haqida barcha kerakli
-                ma'lumotlarni texnik yordamdan olishingiz mumkin.
+                Xostingda har doim MySQL va MariaDB ning so'nggi versiyalari
+                o'rnatilgan. Server haqida barcha kerakli ma'lumotlarni texnik
+                yordamdan olishingiz mumkin.
               </p>
             </>
           ),
           en: (
             <>
               <p>
-                The hosting always has the latest versions of MySQL and MariaDB installed. You can get all the necessary
-                information about the server from technical support.
+                The hosting always has the latest versions of MySQL and MariaDB
+                installed. You can get all the necessary information about the
+                server from technical support.
               </p>
             </>
           ),
@@ -568,12 +602,18 @@ export default function Hosting({ language }) {
           ),
           uz: (
             <>
-              <p>Xosting PHP ning 7.3 dan 8.2 gacha bo'lgan joriy versiyalarida mavjud</p>
+              <p>
+                Xosting PHP ning 7.3 dan 8.2 gacha bo'lgan joriy versiyalarida
+                mavjud
+              </p>
             </>
           ),
           en: (
             <>
-              <p>The hosting is available with current PHP versions from 7.3 to 8.2</p>
+              <p>
+                The hosting is available with current PHP versions from 7.3 to
+                8.2
+              </p>
             </>
           ),
         },
@@ -592,22 +632,29 @@ export default function Hosting({ language }) {
         title: {
           ru: (
             <p>
-              <strong>Безлимитный трафик</strong> — никаких ограничений на соотношение входящего / исходящего трафика.
+              <strong>Безлимитный трафик</strong> — никаких ограничений на
+              соотношение входящего / исходящего трафика.
             </p>
           ),
           uz: (
             <p>
-              <strong>Cheksiz trafik</strong> - kiruvchi / kirish nisbatida cheklovlar yo'q. chiquvchi trafik.
+              <strong>Cheksiz trafik</strong> - kiruvchi / kirish nisbatida
+              cheklovlar yo'q. chiquvchi trafik.
             </p>
           ),
           en: (
             <p>
-              <strong>Unlimited traffic</strong> - no limits on the ratio of incoming / outgoing traffic.
+              <strong>Unlimited traffic</strong> - no limits on the ratio of
+              incoming / outgoing traffic.
             </p>
           ),
         },
         img: (
-          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 640 512"
+          >
             <path d="M0 241.1C0 161 65 96 145.1 96c38.5 0 75.4 15.3 102.6 42.5L320 210.7l72.2-72.2C419.5 111.3 456.4 96 494.9 96C575 96 640 161 640 241.1v29.7C640 351 575 416 494.9 416c-38.5 0-75.4-15.3-102.6-42.5L320 301.3l-72.2 72.2C220.5 400.7 183.6 416 145.1 416C65 416 0 351 0 270.9V241.1zM274.7 256l-72.2-72.2c-15.2-15.2-35.9-23.8-57.4-23.8C100.3 160 64 196.3 64 241.1v29.7c0 44.8 36.3 81.1 81.1 81.1c21.5 0 42.2-8.5 57.4-23.8L274.7 256zm90.5 0l72.2 72.2c15.2 15.2 35.9 23.8 57.4 23.8c44.8 0 81.1-36.3 81.1-81.1V241.1c0-44.8-36.3-81.1-81.1-81.1c-21.5 0-42.2 8.5-57.4 23.8L365.3 256z" />
           </svg>
         ),
@@ -664,25 +711,33 @@ export default function Hosting({ language }) {
         title: {
           ru: (
             <p>
-              <strong>Безлимитные FTP-аккаунты</strong> — для своего удобства работы с файлами, Вы можете создавать
-              неограниченное количество FTP-аккаунтов, например, для каждого проекта - отдельный доступ.
+              <strong>Безлимитные FTP-аккаунты</strong> — для своего удобства
+              работы с файлами, Вы можете создавать неограниченное количество
+              FTP-аккаунтов, например, для каждого проекта - отдельный доступ.
             </p>
           ),
           uz: (
             <p>
-              <strong>Cheksiz FTP hisoblari</strong> — fayllar bilan ishlash qulayligi uchun siz cheksiz miqdordagi FTP
-              hisoblarini yaratishingiz mumkin, masalan, har bir loyiha uchun - alohida kirish.
+              <strong>Cheksiz FTP hisoblari</strong> — fayllar bilan ishlash
+              qulayligi uchun siz cheksiz miqdordagi FTP hisoblarini
+              yaratishingiz mumkin, masalan, har bir loyiha uchun - alohida
+              kirish.
             </p>
           ),
           en: (
             <p>
-              <strong>Unlimited FTP accounts</strong> — for your convenience of working with files, you you can create
-              an unlimited number of FTP accounts, for example, for each project - separate access.
+              <strong>Unlimited FTP accounts</strong> — for your convenience of
+              working with files, you you can create an unlimited number of FTP
+              accounts, for example, for each project - separate access.
             </p>
           ),
         },
         img: (
-          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 640 512"
+          >
             <path d="M0 241.1C0 161 65 96 145.1 96c38.5 0 75.4 15.3 102.6 42.5L320 210.7l72.2-72.2C419.5 111.3 456.4 96 494.9 96C575 96 640 161 640 241.1v29.7C640 351 575 416 494.9 416c-38.5 0-75.4-15.3-102.6-42.5L320 301.3l-72.2 72.2C220.5 400.7 183.6 416 145.1 416C65 416 0 351 0 270.9V241.1zM274.7 256l-72.2-72.2c-15.2-15.2-35.9-23.8-57.4-23.8C100.3 160 64 196.3 64 241.1v29.7c0 44.8 36.3 81.1 81.1 81.1c21.5 0 42.2-8.5 57.4-23.8L274.7 256zm90.5 0l72.2 72.2c15.2 15.2 35.9 23.8 57.4 23.8c44.8 0 81.1-36.3 81.1-81.1V241.1c0-44.8-36.3-81.1-81.1-81.1c-21.5 0-42.2 8.5-57.4 23.8L365.3 256z" />
           </svg>
         ),
@@ -691,23 +746,26 @@ export default function Hosting({ language }) {
         title: {
           ru: (
             <p>
-              <strong>Без жестких ограничений ресурсов</strong> — у нас нет жестких лимитов аппаратных ресурсов. Если
-              вдруг на Ваш сайт придет большое количество человек, то все они увидят Ваш сайт. Гарантировано посещение -
-              2500 человек в сутки.
+              <strong>Без жестких ограничений ресурсов</strong> — у нас нет
+              жестких лимитов аппаратных ресурсов. Если вдруг на Ваш сайт придет
+              большое количество человек, то все они увидят Ваш сайт.
+              Гарантировано посещение - 2500 человек в сутки.
             </p>
           ),
           uz: (
             <p>
-              <strong>Qattiq resurs cheklovlari yo'q</strong> - bizda apparat uchun qattiq cheklovlar yo'q resurslar.
-              Agar to'satdan saytingizga juda ko'p odamlar kirsa, ular hammasi ko'radi Sizning veb-saytingiz.
-              Kafolatlangan tashrif - kuniga 2500 kishi.
+              <strong>Qattiq resurs cheklovlari yo'q</strong> - bizda apparat
+              uchun qattiq cheklovlar yo'q resurslar. Agar to'satdan saytingizga
+              juda ko'p odamlar kirsa, ular hammasi ko'radi Sizning
+              veb-saytingiz. Kafolatlangan tashrif - kuniga 2500 kishi.
             </p>
           ),
           en: (
             <p>
-              <strong>No hard resource limits</strong> - we don't have hard limits on hardware resources. If suddenly a
-              large number of people come to your site, then they will all see Your website. Guaranteed visit - 2500
-              people per day.
+              <strong>No hard resource limits</strong> - we don't have hard
+              limits on hardware resources. If suddenly a large number of people
+              come to your site, then they will all see Your website. Guaranteed
+              visit - 2500 people per day.
             </p>
           ),
         },
@@ -722,21 +780,34 @@ export default function Hosting({ language }) {
 
   const whyBlockHosting = [
     {
-      title: { ru: "Мгновенная активация", uz: "Bir zumdayoq ulanish", en: "Instant activation" },
+      title: {
+        ru: "Мгновенная активация",
+        uz: "Bir zumdayoq ulanish",
+        en: "Instant activation",
+      },
       description: {
         ru: (
           <>
-            <p>Активация Cpanel хостинга выполняется мгновенно после оплаты счета.</p>
+            <p>
+              Активация Cpanel хостинга выполняется мгновенно после оплаты
+              счета.
+            </p>
           </>
         ),
         uz: (
           <>
-            <p>Cpanel hostingni faollashtirish hisob-faktura to'langanidan so'ng darhol amalga oshiriladi</p>
+            <p>
+              Cpanel hostingni faollashtirish hisob-faktura to'langanidan so'ng
+              darhol amalga oshiriladi
+            </p>
           </>
         ),
         en: (
           <>
-            <p>Activation of cpanel hosting is performed instantly after payment of the invoice</p>
+            <p>
+              Activation of cpanel hosting is performed instantly after payment
+              of the invoice
+            </p>
           </>
         ),
       },
@@ -745,19 +816,41 @@ export default function Hosting({ language }) {
     {
       title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
       description: {
-        ru: <p>Не предоставляется для <strong>игровых</strong> серверов и <strong>видео-контент</strong> сайтов! Для телеграм <strong>ботов!</strong></p>,
-        uz: <p><strong>O'yin</strong> serverlari va <strong>video</strong> kontent saytlari uchun mavjud emas! <strong>Telegram</strong> botlari uchun!</p>,
-        en: <p>Not available for <strong>game</strong> servers and <strong>video</strong> content sites! For telegram <strong>bots</strong>!</p>,
+        ru: (
+          <p>
+            Не предоставляется для <strong>игровых</strong> серверов и{" "}
+            <strong>видео-контент</strong> сайтов! Для телеграм{" "}
+            <strong>ботов!</strong>
+          </p>
+        ),
+        uz: (
+          <p>
+            <strong>O'yin</strong> serverlari va <strong>video</strong> kontent
+            saytlari uchun mavjud emas! <strong>Telegram</strong> botlari uchun!
+          </p>
+        ),
+        en: (
+          <p>
+            Not available for <strong>game</strong> servers and{" "}
+            <strong>video</strong> content sites! For telegram{" "}
+            <strong>bots</strong>!
+          </p>
+        ),
       },
       icon: warningIcon,
     },
     {
-      title: { ru: "Поддержка круглосуточно", uz: "24/7 qo'llab quvvatlash", en: "Support 24/7" },
+      title: {
+        ru: "Поддержка круглосуточно",
+        uz: "24/7 qo'llab quvvatlash",
+        en: "Support 24/7",
+      },
       description: {
         ru: (
           <>
             <p>
-              В любое время суток, Вы можете к нам обратиться за помощью или советом, мы ответим максимально быстро.
+              В любое время суток, Вы можете к нам обратиться за помощью или
+              советом, мы ответим максимально быстро.
             </p>
             <button>
               <Link href={checkLang(language) + LINKS.CONTACTS}>
@@ -769,8 +862,8 @@ export default function Hosting({ language }) {
         uz: (
           <>
             <p>
-              Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan bog'lanishingiz mumkin, biz imkon qadar
-              tezroq javob beramiz .
+              Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan
+              bog'lanishingiz mumkin, biz imkon qadar tezroq javob beramiz .
             </p>
             <button>
               <Link href={checkLang(language) + LINKS.CONTACTS}>
@@ -782,7 +875,8 @@ export default function Hosting({ language }) {
         en: (
           <>
             <p>
-              At any time of the day, you can contact us for help or advice, we will respond as quickly as possible.
+              At any time of the day, you can contact us for help or advice, we
+              will respond as quickly as possible.
             </p>
             <button>
               <Link href={checkLang(language) + LINKS.CONTACTS}>
@@ -797,9 +891,22 @@ export default function Hosting({ language }) {
     {
       title: { ru: "Бесплатные SSL", uz: "Bepul SSL", en: "Free SSL" },
       description: {
-        ru: <p>Обеспечьте вашему сайту защищённое HTTPS‑соединение с помощью бесплатного сертификата.</p>,
-        uz: <p>Saytingizga bepul sertifikat bilan xavfsiz HTTPS ulanishini bering.</p>,
-        en: <p>Give your site a secure HTTPS connection with a free certificate.</p>,
+        ru: (
+          <p>
+            Обеспечьте вашему сайту защищённое HTTPS‑соединение с помощью
+            бесплатного сертификата.
+          </p>
+        ),
+        uz: (
+          <p>
+            Saytingizga bepul sertifikat bilan xavfsiz HTTPS ulanishini bering.
+          </p>
+        ),
+        en: (
+          <p>
+            Give your site a secure HTTPS connection with a free certificate.
+          </p>
+        ),
       },
       icon: calendarIcon,
     },
@@ -810,14 +917,24 @@ export default function Hosting({ language }) {
         en: "We will transfer the sites ourselves",
       },
       description: {
-        ru: <p>Наши специалисты бесплатно и быстро перенесут Ваши сайты и настроят их на нашем хостинге.</p>,
-        uz: (
+        ru: (
           <p>
-            Bizning mutaxassislarimiz saytlaringizni tez va bepul o'tkazadilar va ularni bizning hostingimizga
-            o'rnatadilar.
+            Наши специалисты бесплатно и быстро перенесут Ваши сайты и настроят
+            их на нашем хостинге.
           </p>
         ),
-        en: <p>Our specialists will quickly and free of charge transfer your sites and set them up on our hosting.</p>,
+        uz: (
+          <p>
+            Bizning mutaxassislarimiz saytlaringizni tez va bepul o'tkazadilar
+            va ularni bizning hostingimizga o'rnatadilar.
+          </p>
+        ),
+        en: (
+          <p>
+            Our specialists will quickly and free of charge transfer your sites
+            and set them up on our hosting.
+          </p>
+        ),
       },
       icon: settingsIcon,
     },
@@ -830,24 +947,35 @@ export default function Hosting({ language }) {
       description: {
         ru: (
           <p>
-            При единоразовой оплате хостинга на год Вы экономите до 20% в зависимости от тарифа и получаете бесплатный
-            домен в зоне UZ.
+            При единоразовой оплате хостинга на год Вы экономите до 20% в
+            зависимости от тарифа и получаете бесплатный домен в зоне UZ.
           </p>
         ),
         uz: (
           <p>
-            Bir yil davomida xosting uchun bir martalik toʻlov bilan siz tarifga qarab 20% gacha tejaysiz va UZ zonasida
-            bepul domenga ega boʻlasiz.
+            Bir yil davomida xosting uchun bir martalik toʻlov bilan siz tarifga
+            qarab 20% gacha tejaysiz va UZ zonasida bepul domenga ega boʻlasiz.
           </p>
         ),
         en: (
           <p>
-            With a one-time payment for hosting for a year, you save up to 20% depending on the tariff and get a free
-            domain in the UZ zone
+            With a one-time payment for hosting for a year, you save up to 20%
+            depending on the tariff and get a free domain in the UZ zone
           </p>
         ),
       },
       icon: presentIcon,
+    },
+  ];
+
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "Виртуальный хостинг Cpanel",
+        uz: "Virtual hosting Cpanel",
+        en: "Virtual hosting Cpanel",
+      },
+      link: "/hosting",
     },
   ];
 
@@ -865,7 +993,10 @@ export default function Hosting({ language }) {
 
   return (
     <>
-      <SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
+      <SEO
+        title={langData.seoTitle[language]}
+        desc={langData.seoDesc[language]}
+      />
 
       <ProductCpanel />
 
@@ -896,16 +1027,23 @@ export default function Hosting({ language }) {
 				</Container> */}
 
         <div className={"bg_gray"}>
-      
-          <BreadCrumbs data={[{ name: 'Виртуальный хостинг Cpanel' }]} />
-          <PageBreadcrumb links={[{ name: 'Виртуальный хостинг Cpanel' }]} />
+          {breadCrumbs && breadCrumbs.length ? (
+            <>
+              <BreadCrumbs data={breadCrumbs} language={language} />
+              <PageBreadcrumb links={breadCrumbs} language={language} />
+            </>
+          ) : null}
 
           <TarifMaket
             // bgImg={'/servers-2.jpg'}
             headTitle={langData.tarifTitle[language]}
             title="Тарифы"
             description={<p>{langData.tarifDesc[language]}</p>}
-            endText={<p className="text-white text-center mt-2">{langData.tarifEnd[language]}</p>}
+            endText={
+              <p className="text-white text-center mt-2">
+                {langData.tarifEnd[language]}
+              </p>
+            }
           >
             <Swiper
               cssMode={true}
@@ -934,7 +1072,13 @@ export default function Hosting({ language }) {
               {tarif2.map((item, index) => (
                 <SwiperSlide key={item.title}>
                   <div className="w-95">
-                    <TarifCard2 index={index} tarif={item} show={show} setShow={setShow} language={language} />
+                    <TarifCard2
+                      index={index}
+                      tarif={item}
+                      show={show}
+                      setShow={setShow}
+                      language={language}
+                    />
                   </div>
                 </SwiperSlide>
               ))}
@@ -942,12 +1086,19 @@ export default function Hosting({ language }) {
           </TarifMaket>
         </div>
 
-        <WhyBlock title={langData.whyBlockTitle[language]} content={whyBlockHosting} language={language} />
+        <WhyBlock
+          title={langData.whyBlockTitle[language]}
+          content={whyBlockHosting}
+          language={language}
+        />
 
         <Container title={langData.confTitle[language]} clNTitle="text-center">
           <div className={st.hosting__block}>
             {block.map((item) => (
-              <div key={item.title[language]} className={st.hosting__block__item}>
+              <div
+                key={item.title[language]}
+                className={st.hosting__block__item}
+              >
                 <div className={st.hosting__block__item__img}>
                   <img src={item.img} />
                 </div>
@@ -981,7 +1132,11 @@ export default function Hosting({ language }) {
 
         <AvailablePO language={language} />
 
-        <FAQ faq={faq} title={langData.faqTitle[language]} language={language} />
+        <FAQ
+          faq={faq}
+          title={langData.faqTitle[language]}
+          language={language}
+        />
 
         <Howworks language={language} />
         <ForContract data={forContractVDSData} language={language} />

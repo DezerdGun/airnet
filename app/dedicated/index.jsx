@@ -11,13 +11,19 @@ import ForSupport from "@/components/forSupport";
 import { forSupportVDSData } from "../vds";
 import ForDatacenter from "@/components/forDatacenter";
 import { forDatacenterVDSData } from "../vds";
-import BreadCrumbs from "../../components/seo/breadCrumbs"
+import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
-import ProductDedicated from "../../components/seo/productdedicated"
+import ProductDedicated from "../../components/seo/productdedicated";
 
 export default function Dedicated({ language }) {
   const checkedCircle = (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -38,9 +44,17 @@ export default function Dedicated({ language }) {
         core: { ru: "32 ядра", uz: "32 yadro", en: "32 cores" },
         herz: "2.6",
         ram: 256,
-        ssd: { ru: "6 x 1000 Гб SSD, RAID 5", uz: "6 x 1000 GB SSD, RAID 5", en: "6 x 1000 GB SSD, RAID 5" },
+        ssd: {
+          ru: "6 x 1000 Гб SSD, RAID 5",
+          uz: "6 x 1000 GB SSD, RAID 5",
+          en: "6 x 1000 GB SSD, RAID 5",
+        },
         settingsRam: 16,
-        settingsOther: { ru: "12 шт. SSD", uz: "12 ta. SSD", en: "12 pcs. SSD" },
+        settingsOther: {
+          ru: "12 шт. SSD",
+          uz: "12 ta. SSD",
+          en: "12 pcs. SSD",
+        },
         price: "20 000 000",
         link: "https://billing.airnet.uz/billing.php?do=order&vid=dedicated&tarif=113",
       },
@@ -50,9 +64,17 @@ export default function Dedicated({ language }) {
         core: { ru: "16 ядер", uz: "16 yadro", en: "16 cores" },
         herz: "3.5",
         ram: 256,
-        ssd: { ru: "12 x 1000 Гб SSD, RAID 5", uz: "12 x 1000 GB SSD, RAID 5", en: "12 x 1000 GB SSD, RAID 5" },
+        ssd: {
+          ru: "12 x 1000 Гб SSD, RAID 5",
+          uz: "12 x 1000 GB SSD, RAID 5",
+          en: "12 x 1000 GB SSD, RAID 5",
+        },
         settingsRam: 16,
-        settingsOther: { ru: "12 шт. SSD", uz: "12 ta. SSD", en: "12 pcs. SSD" },
+        settingsOther: {
+          ru: "12 шт. SSD",
+          uz: "12 ta. SSD",
+          en: "12 pcs. SSD",
+        },
         price: "25 000 000",
         link: "https://billing.airnet.uz/billing.php?do=order&vid=dedicated&tarif=113",
       },
@@ -174,26 +196,32 @@ export default function Dedicated({ language }) {
     cT: {
       ru: (
         <>
-          Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 3-х рабочих дней, в
-          зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации
-          оборудования - 24 часа. <br /> Мы делаем всё возможное, чтобы уменьшить время ожидания. Срок действия услуги
-          начнется с момента её активации.
+          Срок установки сервера, после оформления заказа и оплаты, составляет
+          от 30 минут до 3-х рабочих дней, в зависимости от наличия необходимых
+          серверов и загрузки технического персонала. Среднее время активации
+          оборудования - 24 часа. <br /> Мы делаем всё возможное, чтобы
+          уменьшить время ожидания. Срок действия услуги начнется с момента её
+          активации.
         </>
       ),
       uz: (
         <>
-          Buyurtma va to'lovi amalga oshirgandan so'ng serverni o'rnatish muddati 30 daqiqadan dan keyin boshlanadi 3
-          ish kunigacha, zarur serverlar va yukning mavjudligiga qarab texnik xodimlar nazoratidan otadi. Uskunani
-          faollashtirish vaqti o'rtacha 24 soat. <br /> Kutish vaqtini qisqartirish uchun hamma narsa mumkin. Xizmatning
-          faollashivu shu paytdan boshlanadi.
+          Buyurtma va to'lovi amalga oshirgandan so'ng serverni o'rnatish
+          muddati 30 daqiqadan dan keyin boshlanadi 3 ish kunigacha, zarur
+          serverlar va yukning mavjudligiga qarab texnik xodimlar nazoratidan
+          otadi. Uskunani faollashtirish vaqti o'rtacha 24 soat. <br /> Kutish
+          vaqtini qisqartirish uchun hamma narsa mumkin. Xizmatning faollashivu
+          shu paytdan boshlanadi.
         </>
       ),
       en: (
         <>
-          Server installation time, after placing an order and payment, ranges from 30 minutes to 3 working days,
-          depending on the availability of the necessary servers and the workload of the technical staff. Average
-          activation time equipment - 24 hours. <br /> We do our best to reduce the waiting time. Service validity
-          period will start from the moment it is activated.
+          Server installation time, after placing an order and payment, ranges
+          from 30 minutes to 3 working days, depending on the availability of
+          the necessary servers and the workload of the technical staff. Average
+          activation time equipment - 24 hours. <br /> We do our best to reduce
+          the waiting time. Service validity period will start from the moment
+          it is activated.
         </>
       ),
     },
@@ -209,19 +237,21 @@ export default function Dedicated({ language }) {
             <span>{checkedCircle}</span>Бесплатная настройка и установка сервера
           </li>
           <li>
-            <span>{checkedCircle}</span>Все сервера подключаются к порту 10 Gbps, интернет на скорости до 100 Mbit/s без
-            ограничений и 1 Gbps в зоне TAS-IX.
+            <span>{checkedCircle}</span>Все сервера подключаются к порту 10
+            Gbps, интернет на скорости до 100 Mbit/s без ограничений и 1 Gbps в
+            зоне TAS-IX.
           </li>
           <li>
             <span>{checkedCircle}</span>
-            На каждый сервер бесплатно выделяется 1 IPv4 адрес., стоимость дополнительного IP - 20 000 сум
+            На каждый сервер бесплатно выделяется 1 IPv4 адрес., стоимость
+            дополнительного IP - 20 000 сум
           </li>
           {/* <li>
 							<span>{checkedCircle}</span>Все серверы поддерживают как 32-х так и 64-х битные системы
 						</li> */}
           <li>
-            <span>{checkedCircle}</span>Операционные системы для установки: Linux и Windows Server (или ISO по запросу
-            пользователя)
+            <span>{checkedCircle}</span>Операционные системы для установки:
+            Linux и Windows Server (или ISO по запросу пользователя)
           </li>
         </>
       ),
@@ -232,19 +262,22 @@ export default function Dedicated({ language }) {
             Bepul serverni o'rnatish va o'rnatish
           </li>
           <li>
-            <span>{checkedCircle}</span>Barcha serverlar 10 Gbit/s portga ulangan, internet yoqilgan cheklovsiz 100
-            Mbit/s gacha tezlik va TAS-IX zonasida 1 Gbit/s gacha.
+            <span>{checkedCircle}</span>Barcha serverlar 10 Gbit/s portga
+            ulangan, internet yoqilgan cheklovsiz 100 Mbit/s gacha tezlik va
+            TAS-IX zonasida 1 Gbit/s gacha.
           </li>
           <li>
             <span>{checkedCircle}</span>
-            Har bir server uchun 1 ta IPv4 manzili bepul ajratiladi, qo'shimcha IP narxi 20 000 so'm
+            Har bir server uchun 1 ta IPv4 manzili bepul ajratiladi, qo'shimcha
+            IP narxi 20 000 so'm
           </li>
           {/* <li>
 							<span>{checkedCircle}</span>Все серверы поддерживают как 32-х так и 64-х битные системы
 						</li> */}
           <li>
             <span>{checkedCircle}</span>
-            O'rnatish uchun operatsion tizimlar: Linux va Windows Server (yoki foydalanuvchi talabiga binoan ISO)
+            O'rnatish uchun operatsion tizimlar: Linux va Windows Server (yoki
+            foydalanuvchi talabiga binoan ISO)
           </li>
         </>
       ),
@@ -254,30 +287,48 @@ export default function Dedicated({ language }) {
             <span>{checkedCircle}</span>Free server setup and installation
           </li>
           <li>
-            <span>{checkedCircle}</span>All servers are connected to a 10 Gbps port, Internet at speeds up to 100 Mbit/s
-            without restrictions and 1 Gbps in the TAS-IX zone.
+            <span>{checkedCircle}</span>All servers are connected to a 10 Gbps
+            port, Internet at speeds up to 100 Mbit/s without restrictions and 1
+            Gbps in the TAS-IX zone.
           </li>
           <li>
-            <span>{checkedCircle}</span>1 IPv4 address is allocated for each server free of charge, the cost of an
-            additional IP is 20,000 sums
+            <span>{checkedCircle}</span>1 IPv4 address is allocated for each
+            server free of charge, the cost of an additional IP is 20,000 sums
           </li>
           <li>
-            <span>{checkedCircle}</span>Operating systems for installation: Linux and Windows Server (or ISO upon user
-            request)
+            <span>{checkedCircle}</span>Operating systems for installation:
+            Linux and Windows Server (or ISO upon user request)
           </li>
         </>
       ),
     },
   };
 
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "Выделенные сервера",
+        uz: "Dedicated servers",
+        en: "Maxsus serverlar",
+      },
+      link: "/dedicated",
+    },
+  ];
+
   return (
     <>
-      <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
+      <SEO
+        title={langData.seoTitle[language]}
+        desc={langData.descTitle[language]}
+      />
 
       <ProductDedicated />
-      
-      <BreadCrumbs data={[{ name: 'Выделенные сервера' }]} />
-      <PageBreadcrumb links={[{ name: 'Выделенные сервера' }]} />
+      {breadCrumbs && breadCrumbs.length ? (
+        <>
+          <BreadCrumbs data={breadCrumbs} language={language} />
+          <PageBreadcrumb links={breadCrumbs} language={language} />
+        </>
+      ) : null}
 
       <div className={st.dedicated}>
         <Container
@@ -346,7 +397,11 @@ export default function Dedicated({ language }) {
                       </div>
                     </td>
                     <td>
-                      <a href={item.link} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {langData.buy[language]}
                       </a>
                     </td>
@@ -377,7 +432,7 @@ export default function Dedicated({ language }) {
         </Container>
 
         <ForFreeBlock data={forFreeDedicatedData} language={language} />
-        
+
         <Howworks language={language} />
         <ForContract data={forContractVDSData} language={language} />
         <ForSupport data={forSupportVDSData} language={language} />
