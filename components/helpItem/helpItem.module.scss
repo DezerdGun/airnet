@@ -59,6 +59,15 @@ $red: #f00;
           justify-content: space-between;
           padding-right: 10px;
 
+          div {
+            width: 100%;
+
+            a {
+              display: inline-block;
+              width: 100%;
+            }
+          }
+
           .helpItem__block__links__block {
             padding-bottom: 0;
             border-bottom: none;
@@ -90,8 +99,14 @@ $red: #f00;
     }
 
     &__content {
-      width: 70%;
-      margin-left: auto;
+      width: 80%;
+      // margin-left: auto;
+      display: flex;
+      align-items: stretch;
+      flex-wrap: wrap;
+      -moz-column-gap: 2%;
+      column-gap: 2%;
+      row-gap: 20px;
 
       a {
         color: $black;
@@ -101,12 +116,19 @@ $red: #f00;
 
       h2 {
         font-size: 28px;
-        text-align: center;
+        text-align: left;
         margin-bottom: 30px;
       }
 
       &__block {
-        margin-bottom: 30px;
+        width: 49%;
+        margin-bottom: 0px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f8f8f8;
+        box-shadow: 0 0 2px #c2c2c2;
+        position: relative;
+        overflow: hidden;
 
         h4 {
           font-size: 22px;
@@ -128,12 +150,12 @@ $red: #f00;
         ul {
           list-style: none;
           padding: 0;
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
+          // display: flex;
+          // justify-content: space-between;
+          // flex-wrap: wrap;
 
           li {
-            width: 48%;
+            width: 100%;
             font-size: 18px;
             margin-bottom: 20px;
           }

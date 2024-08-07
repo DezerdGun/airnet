@@ -1505,7 +1505,7 @@ export default function VDS({ language }) {
 
         <a name="constructor"></a>
         <Container 
-        headTitle={langData.headTitleC[language]}
+        title={langData.headTitleC[language]}
         description={<p className="center">{langData.dscC[language]}</p>} 
         clNTitle="text-center" className="pb-0"></Container>
         <Calculator language={language} />

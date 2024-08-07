@@ -309,24 +309,6 @@ const data = [
       ],
     },
     {
-      id: "os",
-      title: {
-        ru: "Операционные системы",
-        uz: "Operatsion tizimlar",
-        en: "Operation systems",
-      },
-      children: [
-        {
-          title: {
-            ru: "Как сменить операционную систему",
-            uz: "Operatsion tizimni qanday o'zgartirish mumkin",
-            en: "How to change operating system",
-          },
-          link: "/help/os/change",
-        },
-      ],
-    },
-    {
       title: {
         ru: "Технические вопросы",
         uz: "Texnik savollar",
@@ -400,6 +382,25 @@ const data = [
               link: "/help/ftp/chto-takoe-ftp",
             },
           ],
+        },
+      ],
+    },
+    {
+      id: "os",
+      title: {
+        ru: "Операционные системы",
+        uz: "Operatsion tizimlar",
+        en: "Operation systems",
+      },
+      link: "/help/os",
+      children: [
+        {
+          title: {
+            ru: "Как сменить операционную систему",
+            uz: "Operatsion tizimni qanday o'zgartirish mumkin",
+            en: "How to change operating system",
+          },
+          link: "/help/os/change",
         },
       ],
     },

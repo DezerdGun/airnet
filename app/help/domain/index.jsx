@@ -46,13 +46,13 @@ const data = {
     content: data,
   };
 
-export const breadCrumbsDomain = [
-  ...breadCrumbsHelp,
-  {
-    name: data.title,
-    link: mainData.url,
-  },
-];
+  export const breadCrumbsDomain = [
+    ...breadCrumbsHelp,
+    {
+      name: data.title,
+      link: mainData.url,
+    },
+  ];
 
 export default function HelpInner({ language }) {
   return (

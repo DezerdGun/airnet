@@ -1,4 +1,5 @@
 import HelpItem from "@/components/helpItem";
+import { breadCrumbsHelp } from "@/app/help";
 import HelpItemNoAsideLinks from "@/components/helpItem/HelpItemNoAsideLinks";
 
 const data = {
@@ -46,6 +47,18 @@ const data = {
     content: data,
   };
 
+  export const breadCrumbsBilling = [
+    ...breadCrumbsHelp,
+    {
+      name: data.title,
+      link: mainData.url,
+    },
+  ];
+
 export default function HelpInner({ language }) {
-  return <HelpItemNoAsideLinks data={mainData} language={language} />;
+  return <HelpItemNoAsideLinks 
+  data={mainData} 
+  language={language}
+  breadCrumbs={breadCrumbsBilling} 
+  />;
 }

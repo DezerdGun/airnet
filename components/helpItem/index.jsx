@@ -155,7 +155,7 @@ const LinksBlock = ({ data, language }) => {
             data.title[language]
           )}
         </div>
-        {data?.children && (
+        {/* {data?.children && (
           <span
             className={`${st.helpItem__block__links__block__span} ${
               state && st.helpItem__block__links__block__span__active
@@ -163,17 +163,17 @@ const LinksBlock = ({ data, language }) => {
           >
             {">"}
           </span>
-        )}
+        )} */}
       </li>
       <div
         className={`${st.helpItem__block__links__block__content} ${
           state && st.helpItem__block__links__block__content__active
         }`}
       >
-        {data?.children &&
+        {/* {data?.children &&
           data.children.map((item, i) => (
             <LinksBlock key={`data${i}`} data={item} language={language} />
-          ))}
+          ))} */}
       </div>
     </ul>
   );
