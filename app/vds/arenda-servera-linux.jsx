@@ -1974,10 +1974,14 @@ export default function VDS({ language }) {
               <PageBreadcrumb links={breadCrumbs} language={language} />
             </>
           ) : null}
+          
+          <Container className={"head-top"}>
+            <h1>{langData.headTitle[language]}</h1>
+          </Container>
 
           <TarifMaket
             // bgImg={'/servers-2.jpg'}
-            headTitle={langData.headTitle[language]}
+            // headTitle={langData.headTitle[language]}
             // title="Тарифы"
             description={<p>{langData.dsc[language]}</p>}
             // txt={<p>{langData.txt[language]}</p>}

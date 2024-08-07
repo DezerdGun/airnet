@@ -1033,10 +1033,14 @@ export default function Hosting({ language }) {
               <PageBreadcrumb links={breadCrumbs} language={language} />
             </>
           ) : null}
-
+          
+          <Container className={"head-top"}>
+            <h1>{langData.tarifTitle[language]}</h1>
+          </Container>
+          
           <TarifMaket
             // bgImg={'/servers-2.jpg'}
-            headTitle={langData.tarifTitle[language]}
+            // headTitle={langData.tarifTitle[language]}
             title="Тарифы"
             description={<p>{langData.tarifDesc[language]}</p>}
             endText={
