@@ -1,5 +1,7 @@
 import Container from "@/components/container"
 import SEO from "@/components/seo"
+import BreadCrumbs from "../components/seo/breadCrumbs"
+import PageBreadcrumb from "../components/seo/pageBreadCrumbs";
 
 export default function DC({ language }) {
 	const langData = {
@@ -62,10 +64,31 @@ export default function DC({ language }) {
 			uz: "Ma'lumotlar markazi",
 			en: "Data center",
 		},
-	}
+	};
+
+    const breadCrumbs = [
+      {
+        name: {
+          ru: "Дата-Центр",
+          uz: "Дата-Центр",
+          en: "Дата-Центр",
+        },
+        link: "/dc",
+      },
+    ];
+
 	return (
 		<>
 			<SEO title={langData.seoTitle[language]} desc={langData.desc[language]} />
+			
+
+			{breadCrumbs && breadCrumbs.length ? (
+			<>
+				<BreadCrumbs data={breadCrumbs} language={language} />
+				<PageBreadcrumb links={breadCrumbs} language={language} />
+			</>
+			) : null}
+
 			<Container headTitle={langData.headTitle[language]}>{langData.tab[language]}</Container>
 		</>
 	)

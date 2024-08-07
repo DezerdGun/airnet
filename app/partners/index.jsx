@@ -605,12 +605,28 @@ export default function PartnersPage({ language }) {
       ),
     },
   };
+
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "Партнерская программа",
+        uz: "Партнерская программа",
+        en: "Партнерская программа",
+      },
+      link: "/partners",
+    },
+  ];
+
   return (
     <>
       <SEO title={langData.seoT[language]} desc={langData.descT[language]} />
-      
-      <BreadCrumbs data={[{ name: 'Партнерская программа' }]} />
-      <PageBreadcrumb links={[{ name: 'Партнерская программа' }]} />
+
+      {breadCrumbs && breadCrumbs.length ? (
+      <>
+        <BreadCrumbs data={breadCrumbs} language={language} />
+        <PageBreadcrumb links={breadCrumbs} language={language} />
+      </>
+      ) : null}
 
       <div className={st.partners}>{langData.container[language]}</div>
       <Reviews language={language} />

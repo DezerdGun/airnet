@@ -160,11 +160,26 @@ export default function Autobackup({ language }) {
     ssd: 100,
   });
 
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "Резервное копирование",
+        uz: "Резервное копирование",
+        en: "Резервное копирование",
+      },
+      link: "/autobackup",
+    },
+  ];
+
   return (
     <div className={st.autobackup}>
-            
-      <BreadCrumbs data={[{ name: 'Резервное копирование' }]} />
-      <PageBreadcrumb links={[{ name: 'Резервное копирование' }]} />
+
+    {breadCrumbs && breadCrumbs.length ? (
+    <>
+      <BreadCrumbs data={breadCrumbs} language={language} />
+      <PageBreadcrumb links={breadCrumbs} language={language} />
+    </>
+    ) : null}
       
       <Container headTitle={langData.headTitle[language]}>
         <div className={st.autobackup__info}>

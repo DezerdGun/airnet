@@ -14,6 +14,8 @@ import { coinsIcon } from "shared/icons/coinsIcon";
 import { walletIcon } from "shared/icons/walletIcon";
 import { calendarIcon } from "shared/icons/calendarIcon";
 import { supportIcon } from "shared/icons/supportIcon";
+import BreadCrumbs from "../components/seo/breadCrumbs"
+import PageBreadcrumb from "../components/seo/pageBreadCrumbs";
 
 export default function SSL({ language }) {
   const [show, setShow] = useState(null);
@@ -30,23 +32,21 @@ export default function SSL({ language }) {
       en: "Cheap to buy an SSL or TLS certificate from 825 rubles per year. Large selection of certification centers Comodo, Thawte, RapidSSL, Geotrust, Symantec.",
     },
     headTitle: {
-      ru: "SSL-сертификаты",
-      uz: "SSL sertifikatlari",
-      en: "SSL certificates",
+      ru: "VOIP телефония (SIP-TRUNK)",
+      uz: "VOIP телефония (SIP-TRUNK)",
+      en: "VOIP телефония (SIP-TRUNK)",
     },
     content: {
       ru: (
         <>
-          <h2>Об услуге</h2>
+          <h2>IP-телефония</h2>
           <p>
-            SSL-сертификат подтверждает подлинность вашего сайта и создаёт зашифрованное соединение, гарантируя
-            посетителям безопасность и конфиденциальность.
+            SIP транк — качественная и надежная связь для IP-АТС
           </p>
           <p>
-            Сертификаты отличаются по уровню проверки удостоверяющим центром, а также по количеству защищаемых доменов и
-            субдоменов.
+            SIP-телефония — это способ голосовой связи через интернет на основе протокола SIP. 
           </p>
-          <a href="#">Выбрать сертификат</a>
+          <a href="#">Выбрать тариф</a>
         </>
       ),
       uz: (
@@ -102,44 +102,41 @@ export default function SSL({ language }) {
 
   const content = [
       {
-        title: { ru: "Доверие", uz: "Ishonch", en: "Confidence" },
+        title: { ru: "Запись звонков", uz: "Запись звонков", en: "Запись звонков" },
         description: {
           ru: (
             <p>
-              Сертификат содержит информацию о владельце, благодаря которой посетители могут идентифицировать сайт и
-              компанию.
+              У вас будет запись всех звонков. Это значит, что вы сможете прослушать любой разговор менеджера с клиентом.
             </p>
           ),
           uz: (
             <p>
-              Sertifikat egasi haqidagi ma'lumotlarni o'z ichiga oladi, buning yordamida tashrif buyuruvchilar sayt va
-              kompaniyani aniqlashlari mumkin.
+              У вас будет запись всех звонков. Это значит, что вы сможете прослушать любой разговор менеджера с клиентом.
             </p>
           ),
           en: (
             <p>
-              The certificate contains information about the owner, thanks to which visitors can identify the site and
-              the company.
+              У вас будет запись всех звонков. Это значит, что вы сможете прослушать любой разговор менеджера с клиентом.
             </p>
           ),
-        },
-        icon: shakeIcon,
-      },
-      {
-        title: { ru: "Защита", uz: "Himoya", en: "Protection" },
-        description: {
-          ru: <p>Злоумышленники не могут получить доступ к передаваемым данным благодаря зашифрованному каналу.</p>,
-          uz: <p>Buzg'unchilar shifrlangan kanal tufayli uzatilgan ma'lumotlarga kira olmaydi.</p>,
-          en: <p>Intruders cannot access the transmitted data due to the encrypted channel.</p>,
         },
         icon: shieldIcon,
       },
       {
-        title: { ru: "Гарантия", uz: "Ishonchnoma", en: "Guarantee" },
+        title: { ru: "Многоканальность", uz: "Многоканальность", en: "Многоканальность" },
         description: {
-          ru: <p>Удостоверяющие центры компенсируют убытки, вызванные некорректной работой сертификата.</p>,
-          uz: <p>Sertifikat idoralari sertifikatning noto'g'ri ishlashi natijasida etkazilgan zararni qoplaydi.</p>,
-          en: <p>Certificate authorities compensate for losses caused by incorrect operation of the certificate.</p>,
+          ru: <p>Многоканальность - это возможность принимать на один телефонный номер несколько звонков одновременно. </p>,
+          uz: <p>Многоканальность - это возможность принимать на один телефонный номер несколько звонков одновременно. </p>,
+          en: <p>Многоканальность - это возможность принимать на один телефонный номер несколько звонков одновременно. </p>,
+        },
+        icon: shakeIcon,
+      },
+      {
+        title: { ru: "Переадресация вызовов", uz: "Переадресация вызовов", en: "Переадресация вызовов" },
+        description: {
+          ru: <p>Возможность автоматически переадресовывать звонки на другой телефонный номер или подключение автоответчика.</p>,
+          uz: <p>Возможность автоматически переадресовывать звонки на другой телефонный номер или подключение автоответчика.</p>,
+          en: <p>Возможность автоматически переадресовывать звонки на другой телефонный номер или подключение автоответчика.</p>,
         },
         icon: warrantyIcon,
       },
@@ -148,14 +145,13 @@ export default function SSL({ language }) {
       {
         title: { ru: "Выгодная цена", uz: "Unumdor narh", en: "Profitable price" },
         description: {
-          ru: <p>Предлагаем более низкие цены, чем при покупке напрямую у сертификационного центра.</p>,
+          ru: <p>Никакой абонентской платы за тариф</p>,
           uz: (
             <p>
-              Biz to'g'ridan-to'g'ri sertifikatlashtirish markazidan sotib olishdan ko'ra arzonroq narxlarni taklif
-              qilamiz.
+              Никакой абонентской платы за тариф
             </p>
           ),
-          en: <p>We offer lower prices than buying directly from the certification center.</p>,
+          en: <p>Никакой абонентской платы за тариф</p>,
         },
         icon: coinsIcon,
       },
@@ -250,75 +246,15 @@ export default function SSL({ language }) {
           ),
         },
       },
-      {
-        title: {
-          ru: "Поддержка субдоменов (WC, WildCard)",
-          uz: "(WC,WildCard) subdomenlarni qo'llash",
-          en: "Subdomain support (WC, WildCard)",
-        },
-        description: {
-          ru: (
-            <p>
-              Wildcard-сертификат можно использовать на всех поддоменах вашего основного домена. Этот сертификат будет
-              действителен на поддоменах типа www.airnet.uz, forum.airnet.uz, my.airnet.uz и т. д. без ограничений на
-              количество поддоменов. При создании запроса на Wildcard-сертификат в качестве Common Name (CN) необходимо
-              использовать *.airnet.uz, где airnet.uz — это ваше доменное имя.
-            </p>
-          ),
-          uz: (
-            <p>
-              Wildcard belgilar sertifikati barcha subdomenlaringiz uchun ishlatilishi mumkin bolgan asosiy domen. Ushbu
-              sertifikat subdomenlarda amal qiladi kabi www.airnet.uz, forum.airnet.uz, my.airnet.uz va hokazolarsiz
-              subdomenlar soni bo'yicha cheklovlar. uchun so'rov yaratishda Umumiy nom (CN) sifatida joker belgilar
-              sertifikati talab qilinadi *.airnet.uz dan foydalaning, bu erda airnet.uz sizning domen nomingizdir.
-            </p>
-          ),
-          en: (
-            <p>
-              A wildcard certificate can be used on all subdomains of your main domain. This certificate will valid on
-              subdomains like www.airnet.uz, forum.airnet.uz, my.airnet.uz, etc. without restrictions on number of
-              subdomains. When creating a request for a Wildcard certificate as a Common Name (CN), you must use
-              *.airnet.uz, where airnet.uz is your domain name.
-            </p>
-          ),
-        },
-      },
-      {
-        title: {
-          ru: "Поддержка национальных доменов (IDN)",
-          uz: "(IDN) Milliy domenlarni qo'llash",
-          en: "Support for country code domains (IDN)",
-        },
-        description: {
-          ru: (
-            <p>
-              IDN (Internationalized Domain Names) — доменные имена, которые содержат символы национальных алфавитов.
-              Поддержка IDN означает, что сертификат поддерживает не латинские буквы в доменных именах и может
-              использоваться для доменных имён на национальных языках (например, эйрнет.uz).
-            </p>
-          ),
-          uz: (
-            <p>
-              IDN (xalqarolashtirilgan domen nomlari) bu domen nomlari milliy alifbo belgilaridan iborat. IDN
-              qo'llab-quvvatlashi shuni anglatadi sertifikat domen nomlarida lotin bo'lmagan harflarni
-              qo'llab-quvvatlaydi va mumkin milliy tillardagi domen nomlari uchun ishlatilishi mumkin (masalan,
-              airnet.uz).
-            </p>
-          ),
-          en: (
-            <p>
-              IDN (Internationalized Domain Names) - domain names that contain characters of national alphabets. IDN
-              support means that the certificate supports non-Latin characters in domain names and can be used for
-              domain names in national languages (for example, airnet.uz).
-            </p>
-          ),
-        },
-      },
     ],
     ssl = [
       {
-        img: "/ssl/positive-ssl.png",
-        title: { ru: "PositiveSSL", uz: "PositiveSSL", en: "PositiveSSL" },
+        img: "/ssl/sipicon.png",
+        title: { 
+          ru: "SIP-2", 
+          uz: "SIP-2", 
+          en: "SIP-2" 
+        },
         price: "100 000",
         link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=1&one=1",
         description: {
@@ -355,11 +291,11 @@ export default function SSL({ language }) {
         },
       },
       {
-        img: "/partners/comodo.png",
+        img: "/ssl/sipicon.png",
         title: {
-          ru: "PositiveSSL Wildcard",
-          uz: "PositiveSSL Wildcard",
-          en: "PositiveSSL Wildcard",
+          ru: "SIP-4",
+          uz: "SIP-4",
+          en: "SIP-4",
         },
         price: "1 000 000",
         link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=2&one=1",
@@ -397,8 +333,8 @@ export default function SSL({ language }) {
         },
       },
       {
-        img: "/partners/comodo.png",
-        title: { ru: "EV SSL", uz: "EV SSL", en: "EV SSL" },
+        img: "/ssl/sipicon.png",
+        title: { ru: "SIP-8", uz: "SIP-8", en: "SIP-8" },
         price: "1 000 000",
         link: "",
         description: {
@@ -432,8 +368,8 @@ export default function SSL({ language }) {
         },
       },
       {
-        img: "/partners/comodo.png",
-        title: { ru: "PremiumSSL Wildcard", uz: "PremiumSSL Wildcard", en: "PremiumSSL Wildcard" },
+        img: "/ssl/sipicon.png",
+        title: { ru: "SIP-10", uz: "SIP-10", en: "SIP-10" },
         price: "3 000 000",
         link: "https://billing.airnet.uz/billing.php?do=order&type=shop&item=3&one=1",
         description: {
@@ -468,19 +404,38 @@ export default function SSL({ language }) {
       },
     ];
 
+    const breadCrumbs = [
+      {
+        name: {
+          ru: "VOIP телефония",
+          uz: "VOIP телефония",
+          en: "VOIP телефония",
+        },
+        link: "/voip",
+      },
+    ];
+
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
+
+      {breadCrumbs && breadCrumbs.length ? (
+      <>
+        <BreadCrumbs data={breadCrumbs} language={language} />
+        <PageBreadcrumb links={breadCrumbs} language={language} />
+      </>
+      ) : null}
+
       <Container headTitle={langData.headTitle[language]}>
         <hr />
         <div className={styles.ssl__block}>
           <div className={styles.ssl__block__content}>{langData.content[language]}</div>
           <div className={styles.ssl__block__img}>
-            <img src="/ssl/intro-img.png" />
+            <img src="/ssl/sip.png" />
           </div>
         </div>
       </Container>
-      <PopularSert language={language} />
+      {/* <PopularSert language={language} /> */}
       <WhyBlock content={content} language={language} />
       <Container>
         {ssl.map((item, index) => (

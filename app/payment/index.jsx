@@ -746,12 +746,27 @@ export default function Payment({ language }) {
     },
   };
 
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "Способы оплаты услуг",
+        uz: "Способы оплаты услуг",
+        en: "Способы оплаты услуг",
+      },
+      link: "/payment",
+    },
+  ];
+
   return (
     <div className={styles.payment}>
       <SEO title={langData.seoT[language]} desc={langData.descT[language]} />
-      
-      <BreadCrumbs data={[{ name: 'Способы оплаты' }]} />
-      <PageBreadcrumb links={[{ name: 'Способы оплаты' }]} />
+
+      {breadCrumbs && breadCrumbs.length ? (
+      <>
+        <BreadCrumbs data={breadCrumbs} language={language} />
+        <PageBreadcrumb links={breadCrumbs} language={language} />
+      </>
+      ) : null}
 
       <Container headTitle={langData.headTitle[language]}>
         <div className={styles.payment__info}>

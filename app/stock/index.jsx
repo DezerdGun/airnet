@@ -385,13 +385,29 @@ export default function Stock({ language }) {
 			uz: <p>Biz bu erda eng qiziqarli takliflarni to'pladik</p>,
 			en: <p>We have collected the most interesting offers here</p>,
 		},
-	}
+	};
+
+    const breadCrumbs = [
+      {
+        name: {
+          ru: "Акции",
+          uz: "Акции",
+          en: "Акции",
+        },
+        link: "/stock",
+      },
+    ];
+
 	return (
 		<>
 			<SEO title={langData.seoT[language]} desc={langData.descT[language]} />
-      
-			<BreadCrumbs data={[{ name: 'Акции' }]} />
-			<PageBreadcrumb links={[{ name: 'Акции' }]} />
+
+			{breadCrumbs && breadCrumbs.length ? (
+			<>
+				<BreadCrumbs data={breadCrumbs} language={language} />
+				<PageBreadcrumb links={breadCrumbs} language={language} />
+			</>
+			) : null}
 
 			<Container className="text-center" headTitle={langData.headTitle[language]}>
 				<hr />

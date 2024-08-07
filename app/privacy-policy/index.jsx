@@ -4,6 +4,8 @@ import Container from "../../components/container"
 import { LINKS } from "../../components/requirements"
 import SEO from "../../components/seo"
 import st from "./privacyPolicy.module.scss"
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function PrivacyPolicy({ language }) {
 	const langData = {
@@ -281,10 +283,30 @@ export default function PrivacyPolicy({ language }) {
 				</>
 			),
 		},
-	}
+	};
+
+    const breadCrumbs = [
+      {
+        name: {
+          ru: "Политика конфиденциальности",
+          uz: "Политика конфиденциальности",
+          en: "Политика конфиденциальности",
+        },
+        link: "/privacy-policy",
+      },
+    ];
+
 	return (
 		<>
 			<SEO title={langData.seoT[language]} desc={langData.desc[language]} />
+
+			{breadCrumbs && breadCrumbs.length ? (
+			<>
+				<BreadCrumbs data={breadCrumbs} language={language} />
+				<PageBreadcrumb links={breadCrumbs} language={language} />
+			</>
+			) : null}
+
 			<Container headTitle={langData.headTitle[language]}>
 				<hr />
 				<div className={st.privacyPolicy}>{langData.about[language]}</div>

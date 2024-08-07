@@ -354,12 +354,27 @@ export default function SitePad({ language }) {
     },
   };
 
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "Конструктор сайтов",
+        uz: "Конструктор сайтов",
+        en: "Конструктор сайтов",
+      },
+      link: "/sitepad",
+    },
+  ];
+
   return (
     <div className={styles.sitepad}>
       <SEO title={langData.seoT[language]} desc={langData.descT[language]} />
-      
-      <BreadCrumbs data={[{ name: 'Конструктор сайтов' }]} />
-      <PageBreadcrumb links={[{ name: 'Конструктор сайтов' }]} />
+
+      {breadCrumbs && breadCrumbs.length ? (
+      <>
+        <BreadCrumbs data={breadCrumbs} language={language} />
+        <PageBreadcrumb links={breadCrumbs} language={language} />
+      </>
+      ) : null}
 
       <Container headTitle={langData.headTitle[language]}>
         <div className={styles.sitepad__info}>{langData.usluga[language]}</div>

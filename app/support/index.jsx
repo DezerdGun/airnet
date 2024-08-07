@@ -415,12 +415,27 @@ export default function Support({ language }) {
     },
   };
 
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "Техническая поддержка",
+        uz: "Техническая поддержка",
+        en: "Техническая поддержка",
+      },
+      link: "/support",
+    },
+  ];
+
   return (
     <>
       <div className={st.support}>
-      
-        <BreadCrumbs data={[{ name: 'Техническая поддержка' }]} />
-        <PageBreadcrumb links={[{ name: 'Техническая поддержка' }]} />
+
+      {breadCrumbs && breadCrumbs.length ? (
+      <>
+        <BreadCrumbs data={breadCrumbs} language={language} />
+        <PageBreadcrumb links={breadCrumbs} language={language} />
+      </>
+      ) : null}
 
         <TarifMaket
           // bgImg={'/servers-2.jpg'}

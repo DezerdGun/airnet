@@ -30,12 +30,29 @@ const Review = ({ language }) => {
     },
   };
 
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "Отзывы о нас",
+        uz: "Отзывы о нас",
+        en: "Отзывы о нас",
+      },
+      link: "/reviews",
+    },
+  ];
+
   return (
     <>
     <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
     <main className={styles.reviewsPage}>
-		<BreadCrumbs data={[{ name: 'Отзывы о нас' }]} />
-		<PageBreadcrumb links={[{ name: 'Отзывы о нас' }]} />
+
+    {breadCrumbs && breadCrumbs.length ? (
+    <>
+      <BreadCrumbs data={breadCrumbs} language={language} />
+      <PageBreadcrumb links={breadCrumbs} language={language} />
+    </>
+    ) : null}
+    
     <ReviewsPage  language={language} />
     <div className='add-reviews'>
       <a target="_blank" href="https://billing.airnet.uz/billing.php?do=testimonials">Оставить отзыв</a>

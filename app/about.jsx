@@ -126,14 +126,29 @@ export default function About({ language }) {
 			uz: "Biz hech qachon erishgan yutuqlarimiz bilan to'xtab qolmaymiz va doimo rivojlanish va takomillashtirishga intilamiz. Biz hamkorlik bo'yicha yangi takliflar, xizmatimizni yaxshilash va tanqidlarga doim ochiqmiz.",
 			en: "We never rest on our laurels and constantly strive for development and improvement. We are always open to new proposals for cooperation, improvement of our service and criticism.",
 		},
-	}
+	};
+
+    const breadCrumbs = [
+      {
+        name: {
+          ru: "О компании",
+          uz: "О компании",
+          en: "О компании",
+        },
+        link: "/about",
+      },
+    ];
 
 	return (
 		<>
 			<SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
-      
-			<BreadCrumbs data={[{ name: 'О компании' }]} />
-			<PageBreadcrumb links={[{ name: 'О компании' }]} />
+
+			{breadCrumbs && breadCrumbs.length ? (
+			<>
+				<BreadCrumbs data={breadCrumbs} language={language} />
+				<PageBreadcrumb links={breadCrumbs} language={language} />
+			</>
+			) : null}
 
 			<Container headTitle={langData.title[language]}>
 				<hr />

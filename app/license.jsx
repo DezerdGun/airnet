@@ -41,13 +41,29 @@ export default function License({ language }) {
 			uz: "Xosting xizmatlarini ko'rsatish uchun litsenziyalar va sertifikatlar",
 			en: "Licenses and certificates for the provision of hosting services",
 		},
-	}
+	};
+
+    const breadCrumbs = [
+      {
+        name: {
+          ru: "Наши лицензии",
+          uz: "Наши лицензии",
+          en: "Наши лицензии",
+        },
+        link: "/license",
+      },
+    ];
+
 	return (
 		<>
 			<SEO title={langDate.seoT[language]} desc="" />
-      
-			<BreadCrumbs data={[{ name: 'Наши лицензии' }]} />
-			<PageBreadcrumb links={[{ name: 'Наши лицензии' }]} />
+
+			{breadCrumbs && breadCrumbs.length ? (
+			<>
+				<BreadCrumbs data={breadCrumbs} language={language} />
+				<PageBreadcrumb links={breadCrumbs} language={language} />
+			</>
+			) : null}
 			
 			<Container className={"text-center"} headTitle={langDate.headTitle[language]}>
 				<hr />

@@ -103,11 +103,27 @@ export default function Reseller({ language }) {
     },
   };
 
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "Реселлер",
+        uz: "Реселлер",
+        en: "Реселлер",
+      },
+      link: "/reseller",
+    },
+  ];
+
   return (
     <>
       <div className={st.reseller}>
-        <BreadCrumbs data={[{ name: 'Реселлер' }]} />
-        <PageBreadcrumb links={[{ name: 'Реселлер' }]} />
+
+      {breadCrumbs && breadCrumbs.length ? (
+      <>
+        <BreadCrumbs data={breadCrumbs} language={language} />
+        <PageBreadcrumb links={breadCrumbs} language={language} />
+      </>
+      ) : null}
 
         <Container headTitle={langData.headTitle[language]} description={langData.description[language]}></Container>
         <WhyBlock content={content} language={language} />

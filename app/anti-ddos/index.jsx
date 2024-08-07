@@ -180,12 +180,28 @@ export default function AntiDDos({ language }) {
       en: "Mitigation of negative consequences, that is, the allocation of all illegitimate IP packets and the passage of legitimate",
     },
   };
+
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "DDoS-атака",
+        uz: "DDoS-атака",
+        en: "DDoS-атака",
+      },
+      link: "/anti-ddos",
+    },
+  ];
+
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.seoDesc[language]} />
-            
-      <BreadCrumbs data={[{ name: 'DDoS-атака' }]} />
-      <PageBreadcrumb links={[{ name: 'DDoS-атака' }]} />
+
+      {breadCrumbs && breadCrumbs.length ? (
+      <>
+        <BreadCrumbs data={breadCrumbs} language={language} />
+        <PageBreadcrumb links={breadCrumbs} language={language} />
+      </>
+      ) : null}
 
       <Container headTitle={langData.headTitle[language]}>
         <div className={st.anti_ddos__info}>

@@ -1,6 +1,8 @@
 import Container from "@/components/container";
 import { checkLang } from "@/utils/checkLang";
 import Link from "next/link";
+import BreadCrumbs from "../components/seo/breadCrumbs"
+import PageBreadcrumb from "../components/seo/pageBreadCrumbs";
 
 const sitemap = [
   { title: { ru: "Главная", uz: "Bosh bolim", en: "Home" }, link: "/" },
@@ -679,12 +681,33 @@ const Sitemap = ({ language }) => {
       en: "Sitemap",
     },
   };
+
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "Карта сайта",
+        uz: "Карта сайта",
+        en: "Карта сайта",
+      },
+      link: "/sitemap",
+    },
+  ];
+
   return (
+    <>
+    {breadCrumbs && breadCrumbs.length ? (
+    <>
+      <BreadCrumbs data={breadCrumbs} language={language} />
+      <PageBreadcrumb links={breadCrumbs} language={language} />
+    </>
+    ) : null}
+
     <Container headTitle={langData.headTitle[language]}>
       {sitemap.map((item, i) => (
         <Linker key={i} link={item} language={language} />
       ))}
     </Container>
+    </>
   );
 };
 

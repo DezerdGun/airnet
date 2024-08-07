@@ -1,5 +1,7 @@
 import Container from "@/components/container"
 import SEO from "@/components/seo"
+import BreadCrumbs from "../components/seo/breadCrumbs"
+import PageBreadcrumb from "../components/seo/pageBreadCrumbs";
 
 export default function Speed({ language }) {
 	const langData = {
@@ -59,10 +61,30 @@ export default function Speed({ language }) {
 				</>
 			),
 		},
-	}
+	};
+
+    const breadCrumbs = [
+      {
+        name: {
+          ru: "Проверка скорости",
+          uz: "Проверка скорости",
+          en: "Проверка скорости",
+        },
+        link: "/speed",
+      },
+    ];
+
 	return (
 		<>
 			<SEO title={langData.seoT[language]} desc={langData.descT[language]} />
+
+			{breadCrumbs && breadCrumbs.length ? (
+			<>
+				<BreadCrumbs data={breadCrumbs} language={language} />
+				<PageBreadcrumb links={breadCrumbs} language={language} />
+			</>
+			) : null}
+
 			<Container headTitle={langData.headTitle[language]}>{langData.speed[language]}</Container>
 		</>
 	)

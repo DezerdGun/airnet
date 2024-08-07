@@ -163,12 +163,29 @@ const Details = ({ language }) => {
     },
   };
 
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "Реквизиты компании",
+        uz: "Реквизиты компании",
+        en: "Реквизиты компании",
+      },
+      link: "/details",
+    },
+  ];
+
   return (
     <>
     <SEO title={langData.seoTitle[language]} desc={langData.descTitle[language]} />
     <main className={styles.details}>
-		<BreadCrumbs data={[{ name: 'Реквизиты компании' }]} />
-		<PageBreadcrumb links={[{ name: 'Реквизиты компании' }]} />
+
+    {breadCrumbs && breadCrumbs.length ? (
+    <>
+      <BreadCrumbs data={breadCrumbs} language={language} />
+      <PageBreadcrumb links={breadCrumbs} language={language} />
+    </>
+    ) : null}
+
       <section className={styles.details__banner}>
         <Container className="pt-0">
           <div>

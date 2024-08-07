@@ -360,11 +360,26 @@ export default function AdminSupport({ language }) {
     },
   };
 
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "Администрирование VDS/VPS сервера",
+        uz: "Администрирование VDS/VPS сервера",
+        en: "Администрирование VDS/VPS сервера",
+      },
+      link: "/admin-support",
+    },
+  ];
+
   return (
     <div className={st.adminSupport}>
-            
-      <BreadCrumbs data={[{ name: 'Администрирование VDS/VPS сервера' }]} />
-      <PageBreadcrumb links={[{ name: 'Администрирование VDS/VPS сервера' }]} />
+
+    {breadCrumbs && breadCrumbs.length ? (
+    <>
+      <BreadCrumbs data={breadCrumbs} language={language} />
+      <PageBreadcrumb links={breadCrumbs} language={language} />
+    </>
+    ) : null}
 
       <Container headTitle={langData.title[language]} clNTitle="mb-0">
         <hr />

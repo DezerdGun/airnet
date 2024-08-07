@@ -1,6 +1,8 @@
 import Container from "../../components/container"
 import SEO from "../../components/seo"
 import st from "./oferta.module.scss"
+import BreadCrumbs from "../../components/seo/breadCrumbs"
+import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export default function Oferta({ language }) {
 	const langData = {
@@ -2710,10 +2712,30 @@ export default function Oferta({ language }) {
 				</>
 			),
 		},
-	}
+	};
+
+    const breadCrumbs = [
+      {
+        name: {
+          ru: "Публичная оферта",
+          uz: "Публичная оферта",
+          en: "Публичная оферта",
+        },
+        link: "/oferta",
+      },
+    ];
+
 	return (
 		<>
 			<SEO title={langData.seoT[language]} desc={langData.descT[language]} />
+
+			{breadCrumbs && breadCrumbs.length ? (
+			<>
+				<BreadCrumbs data={breadCrumbs} language={language} />
+				<PageBreadcrumb links={breadCrumbs} language={language} />
+			</>
+			) : null}
+
 			<Container headTitle={langData.headT[language]}>
 				<hr />
 				<div className={st.oferta}>

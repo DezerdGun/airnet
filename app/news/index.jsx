@@ -425,13 +425,29 @@ export function NewsBlock({ pagination, news, language }) {
 			uz: "Yangiliklar",
 			en: "News",
 		},
-	}
+	};
+
+    const breadCrumbs = [
+      {
+        name: {
+          ru: "Новости",
+          uz: "Новости",
+          en: "Новости",
+        },
+        link: "/news",
+      },
+    ];
+
 	return (
 		<>
 			<SEO title={langData.seoT[language]} desc={langData.descT[language]} />
-      
-			<BreadCrumbs data={[{ name: 'Новости' }]} />
-			<PageBreadcrumb links={[{ name: 'Новости' }]} />
+
+			{breadCrumbs && breadCrumbs.length ? (
+			<>
+				<BreadCrumbs data={breadCrumbs} language={language} />
+				<PageBreadcrumb links={breadCrumbs} language={language} />
+			</>
+			) : null}
 
 			<Container headTitle={langData.headTitle[language]} clNTitle="text-center">
 				<div className={st.news}>

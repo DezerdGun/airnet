@@ -104,13 +104,28 @@ export default function Contacts({ language }) {
     },
   };
 
+  const breadCrumbs = [
+    {
+      name: {
+        ru: "Наши контакты",
+        uz: "Наши контакты",
+        en: "Наши контакты",
+      },
+      link: "/contacts",
+    },
+  ];
+
   return (
     <>
       <SEO title={langData.seoTitle[language]} desc={langData.desc[language]} />
-      
-      <BreadCrumbs data={[{ name: 'Наши контакты' }]} />
-      <PageBreadcrumb links={[{ name: 'Наши контакты' }]} />
 
+      {breadCrumbs && breadCrumbs.length ? (
+      <>
+        <BreadCrumbs data={breadCrumbs} language={language} />
+        <PageBreadcrumb links={breadCrumbs} language={language} />
+      </>
+      ) : null}
+      
       <div className={st.contacts}>
         <Container title={langData.headTitle[language]} clNTitle="text-center" className="mt-0 pb-0">
           <div className={st.contacts__phones}>
