@@ -75,6 +75,22 @@ export default function Header({ language }) {
             },
             link: LINKS.LINUX_VDS,
           },
+          {
+            title: {
+              ru: "Аренда сервера Windows",
+              uz: "Windows server ijarasi",
+              en: "Windows servers",
+            },
+            link: LINKS.WINDOWS_VDS,
+          },
+          {
+            title: {
+              ru: "Аренда сервера для Битрикс24 и 1С-Битрикс",
+              uz: "Битрикс24 и 1С-Битрикс server ijarasi",
+              en: "Битрикс24 & 1С-Битрикс servers",
+            },
+            link: LINKS.BITRIX_VDS,
+          },
         ],
       },
       {

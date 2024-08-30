@@ -155,8 +155,16 @@ export default function Footer({ language }) {
           link: LINKS.CUSTOM_VDS,
         },
         {
+          link: LINKS.SERVERS,
           title: {
-            ru: "Аренда серверов intel",
+            ru: "Выделенные серверы",
+            uz: "Ajratilgan serverlar",
+            en: "Dedicated servers",
+          },
+        },
+        {
+          title: {
+            ru: "Аренда серверов Intel",
             uz: "Intel server ijarasi",
             en: "Intel servers",
           },
@@ -167,23 +175,27 @@ export default function Footer({ language }) {
         //   title: { ru: "VDS Storage", uz: "VDS Storage", en: "VDS Storage" },
         // },
         {
-          link: LINKS.VDS_1C,
-          title: { ru: "VDS для 1C", uz: "1C uchun VDS", en: "VDS for 1C" },
-        },
-        {
-          link: LINKS.VDS_WINDOWS,
+          link: LINKS.LINUX_VDS,
           title: {
-            ru: "VDS для Windows",
-            uz: "Windows uchun VDS",
-            en: "VDS for Windows",
+            ru: "Аренда сервера Linux",
+            uz: "Linux server ijarasi",
+            en: "Linux servers",
           },
         },
         {
-          link: LINKS.SERVERS,
+          link: LINKS.BITRIX_VDS,
           title: {
-            ru: "Выделенные серверы",
-            uz: "Ajratilgan serverlar",
-            en: "Dedicated servers",
+            ru: "Аренда сервера для Битрикс24 и 1С-Битрикс",
+            uz: "Битрикс24 и 1С-Битрикс server ijarasi",
+            en: "Битрикс24 & 1С-Битрикс servers",
+          },
+        },
+        {
+          link: LINKS.WINDOWS_VDS,
+          title: {
+            ru: "Аренда сервера Windows 1C",
+            uz: "Windows 1C serverlarini ijaraga olish",
+            en: "Windows 1C server rental",
           },
         },
       ],

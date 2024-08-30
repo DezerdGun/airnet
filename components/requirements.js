@@ -10,6 +10,8 @@ export const LINKS = {
   CUSTOM_VDS: "/vds#constructor",
   INTEL_VDS: "/vds/arenda-servera-intel",
   LINUX_VDS: "/vds/arenda-servera-linux",
+  WINDOWS_VDS: "/vds/arenda-servera-windows",
+  BITRIX_VDS: "/vds/arenda-servera-bitrix",
   VDS_1C: "/",
   VDS_STORAGE: "/",
   VDS_WINDOWS: "/",
