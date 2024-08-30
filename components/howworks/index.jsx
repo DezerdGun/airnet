@@ -18,7 +18,7 @@ export default function Howworks({ language }) {
   const langData = {
     title: {
       ru: "Удобно управлять и администрировать",
-      uz: "Удобно управлять и администрировать",
+      uz: "Boshqarish va boshqarish uchun qulay",
       en: "Easy works",
     },
   };

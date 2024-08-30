@@ -137,31 +137,31 @@ export const forContractVDSData = {
     ),
     uz: (
       <>
-        Все необходимое
+        Sizga kerak bo'lgan hamma narsa
         <br />
-        Для юридических лиц
+        Yuridik shaxslar uchun
       </>
     ),
     en: (
       <>
-        Все необходимое
+        Everything you need
         <br />
-        Для юридических лиц
+        For legal entities
       </>
     ),
   },
   desc: {
     ru: <>Работаем с юридическими лицами, ИП и бюджентными организациями.</>,
-    uz: <>Работаем с юридическими лицами, ИП и бюджентными организациями.</>,
-    en: <>Работаем с юридическими лицами, ИП и бюджентными организациями.</>,
+    uz: <>Biz yuridik shaxslar, yakka tartibdagi tadbirkorlar va byudjet tashkilotlari bilan ishlaymiz.</>,
+    en: <>We work with legal entities, individual entrepreneurs and budgetary organizations.</>,
   },
   img: "/how-work-img.png",
   content: [
     {
       title: {
         ru: "Отчетные документы на почту или по ЭДО",
-        uz: "Отчетные документы на почту или по ЭДО",
-        en: "Отчетные документы на почту или по ЭДО",
+        uz: "Hujjatlarni pochta yoki EDI orqali hisobot berish",
+        en: "Reporting documents by mail or via EDI",
       },
       img: (
         <svg
@@ -179,8 +179,8 @@ export const forContractVDSData = {
     {
       title: {
         ru: "Поддерживаем электронный документооборот",
-        uz: "Поддерживаем электронный документооборот",
-        en: "Поддерживаем электронный документооборот",
+        uz: "Biz elektron hujjat aylanishini qo'llab-quvvatlaymiz",
+        en: "We support electronic document management",
       },
       img: (
         <svg
@@ -198,8 +198,8 @@ export const forContractVDSData = {
     {
       title: {
         ru: "Договор оферты или индивидуальный договор",
-        uz: "Договор оферты или индивидуальный договор",
-        en: "Договор оферты или индивидуальный договор",
+        uz: "Taklif shartnomasi yoki individual kelishuv",
+        en: "Offer agreement or individual agreement",
       },
       img: (
         <svg
@@ -217,8 +217,8 @@ export const forContractVDSData = {
     {
       title: {
         ru: "Безналичные платежи",
-        uz: "Безналичные платежи",
-        en: "Безналичные платежи",
+        uz: "Naqd pulsiz to'lovlar",
+        en: "Non-cash payments",
       },
       img: (
         <svg
@@ -236,8 +236,8 @@ export const forContractVDSData = {
     {
       title: {
         ru: "Работа через биржу xarid.uzex.uz",
-        uz: "Работа через биржу xarid.uzex.uz",
-        en: "Работа через биржу xarid.uzex.uz",
+        uz: "xarid.uzex.uz birjasi orqali ishlash",
+        en: "Work through the exchange xarid.uzex.uz",
       },
       img: (
         <svg
@@ -257,8 +257,8 @@ export const forContractVDSData = {
 export const forSupportVDSData = {
   title: {
     ru: <>Отзывчивая поддержка 24/7</>,
-    uz: <>Отзывчивая поддержка 24/7</>,
-    en: <>Отзывчивая поддержка 24/7</>,
+    uz: <>24/7 javob beruvchi qo'llab-quvvatlash</>,
+    en: <>Responsive support 24/7</>,
   },
   desc: {
     ru: (
@@ -272,13 +272,34 @@ export const forSupportVDSData = {
         с услугой самостоятельно.
       </>
     ),
-    uz: <>Работаем с юридическими лицами, ИП и бюджентными организациями.</>,
-    en: <>Работаем с юридическими лицами, ИП и бюджентными организациями.</>,
+    uz: ( 
+      <>
+        Qo'llab-quvvatlash jamoasi har qanday hosting savolida sizga tezda yordam beradi. Ilovalarning 80%
+        1 soat ichida hal qilinadi. Vakolatli va do'stona mutaxassislar buni hal qilishadi
+        hatto eng qiyin vaziyatda ham.
+        <br />
+        <br />
+        Maqolalar va video ko'rsatmalarga ega bo'lgan keng bilimlar bazasi buni tushunishga yordam beradi
+        xizmat bilan o'zingiz.
+      </>
+    ),
+    en:  ( 
+      <>
+        The support service will quickly help with any question about hosting. 80% of requests
+        are resolved within 1 hour. Competent and friendly specialists will deal
+        with even the most difficult situation.
+        <br />
+        <br />
+        An extensive Knowledge Base with articles and video instructions will help you deal
+        with the service yourself.
+      </>
+    ),
   },
   img: "/intro-img.png",
   content: [
     {
-      title: { ru: "База знаний", uz: "База знаний", en: "База знаний" },
+      title: { ru: "База знаний", uz: "Bilimlar bazasi", en: "Knowledge Base" },
+      link: '/help',
       img: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -295,8 +316,8 @@ export const forSupportVDSData = {
     {
       title: {
         ru: "Видеосправка",
-        uz: "Видеосправка",
-        en: "Видеосправка",
+        uz: "Video yordam",
+        en: "Video reference",
       },
       img: (
         <svg
@@ -314,9 +335,10 @@ export const forSupportVDSData = {
     {
       title: {
         ru: "Чат поддержки",
-        uz: "Чат поддержки",
-        en: "Чат поддержки",
+        uz: "Qo'llab-quvvatlash chat",
+        en: "Support chat",
       },
+      link: 'https://t.me/airnetuzb',
       img: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -335,9 +357,10 @@ export const forSupportVDSData = {
     {
       title: {
         ru: "Тикет-система",
-        uz: "Тикет-система",
-        en: "Тикет-система",
+        uz: "Chipta tizimi",
+        en: "Ticket system",
       },
+      link: 'https://billing.airnet.uz/billing.php?do=tickets',
       img: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -358,8 +381,8 @@ export const forSupportVDSData = {
 export const forDatacenterVDSData = {
   title: {
     ru: <>Дата-центр AIRNET</>,
-    uz: <>Дата-центр AIRNET</>,
-    en: <>Дата-центр AIRNET</>,
+    uz: <>AIRNET ma'lumotlar markazi</>,
+    en: <>AIRNET Data Center</>,
   },
   desc: {
     ru: (
@@ -374,22 +397,20 @@ export const forDatacenterVDSData = {
     ),
     uz: (
       <>
-        Охраняемый ЦОД находится в <strong>Ташкенте</strong> и соответсвует
-        международным стандартам – <strong>TIER III</strong> (АК Узтелеком)
+        Xavfsiz ma'lumotlar markazi<strong>Toshkent</strong>da joylashgan va unga mos keladi
+        xalqaro standartlar -<strong>TIER III</strong>(AK Uztelecom)
         <br />
         <br />
-        ЦОД оборудован по стандартам повышенной надежности. Имеет систему
-        видеоконтроля, пожаротушения, бесперебойного питания.
+        Ma'lumotlar markazi yuqori ishonchlilik standartlari bilan jihozlangan. Tizimi bor
+        video monitoring, yong'in o'chirish, uzluksiz elektr ta'minoti.
       </>
     ),
     en: (
       <>
-        Охраняемый ЦОД находится в <strong>Ташкенте</strong> и соответсвует
-        международным стандартам – <strong>TIER III</strong> (АК Узтелеком)
+        The protected data center is located in <strong>Tashkent</strong> and complies with international standards - <strong>TIER III</strong> (Uztelecom JSC)
         <br />
         <br />
-        ЦОД оборудован по стандартам повышенной надежности. Имеет систему
-        видеоконтроля, пожаротушения, бесперебойного питания.
+        The data center is equipped according to high reliability standards. It has a video surveillance system, fire extinguishing, uninterruptible power supply.
       </>
     ),
   },
@@ -445,8 +466,8 @@ export default function VDS({ language }) {
     },
     whyBlockTitle: {
       ru: "Преимущества",
-      uz: "Преимущества",
-      en: "Преимущества",
+      uz: "Afzalliklar",
+      en: "Advantages",
     },
     headTitle: {
       ru: "VDS/VPS — сервера на базе быстрых SSD-дисков",
@@ -480,8 +501,8 @@ export default function VDS({ language }) {
     },
     txt: {
       ru: "Тариф",
-      uz: "Тариф",
-      en: "Тариф",
+      uz: "Tarif",
+      en: "Tariff",
     },
     endText: {
       ru: "Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2-х рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации оборудования после оплаты - 1-2 часа. Мы делаем всё возможное, чтобы уменьшить время ожидания.",
@@ -1874,142 +1895,6 @@ export default function VDS({ language }) {
           title={langData.faqTitle[language]}
           language={language}
         />
-        {/* <FAQ
-          title="Дополнительно"
-          language={language}
-          faq={[
-            {
-              title: { ru: "Операционная система" },
-              description: {
-                ru: (
-                  <p>
-                    <span>Бесплатные</span>
-                    <ul className="mt-2">
-                      <li>Debian</li>
-                      <li>Ubuntu</li>
-                      <li>FreeBSD</li>
-                      <li>CentOS</li>
-                      <li>Alma</li>
-                    </ul>
-                    <span>Платные</span>
-                    <ul className="mt-2">
-                      <li>
-                        Windows Server -{" "}
-                        <span>
-                          <strong className="text-green">Тестовый период - 180 дней</strong>
-                        </span>
-                      </li>
-                    </ul>
-                  </p>
-                ),
-              },
-            },
-            {
-              title: { ru: "Панель управления сервером" },
-              description: {
-                ru: (
-                  <p>
-                    <ul>
-                      <li>
-                        IPSmanager 6 Lite -{" "}
-                        <span>
-                          <strong className="text-green">СКОРО (максимум 10 сайтов)</strong>
-                        </span>
-                      </li>
-                      <li>
-                        IPSmanager 6 Pro -{" "}
-                        <span>
-                          <strong className="text-green">СКОРО (максимум 50 сайтов)</strong>
-                        </span>
-                      </li>
-                      <li>
-                        IPSmanager 6 Host -{" "}
-                        <span>
-                          <strong className="text-green">СКОРО (без ограничений)</strong>
-                        </span>
-                      </li>
-                    </ul>
-                  </p>
-                ),
-              },
-            },
-            {
-              title: { ru: "Лицензии Microsoft" },
-              description: {
-                ru: (
-                  <p>
-                    <ul>
-                      <li>
-                        Лицензия SQL Server Web Edition Core -{" "}
-                        <span>
-                          <strong className="text-green">СКОРО за 2 ядра (минимум 4 ядра)</strong>
-                        </span>
-                      </li>
-                      <li>
-                        Лицензия SQL Server Standard Edition per user -{" "}
-                        <span>
-                          <strong className="text-green">СКОРО за 1 пользователя</strong>
-                        </span>
-                      </li>
-                      <li>
-                        Windows Remote Desktop Services -{" "}
-                        <span>
-                          <strong className="text-green">СКОРО за 1 пользователя</strong>
-                        </span>
-                      </li>
-                    </ul>
-                  </p>
-                ),
-              },
-            },
-            {
-              title: { ru: "Канал" },
-              description: {
-                ru: (
-                  <p>
-                    <ul>
-                      <li>
-                        До 100 Мбит/с, безлимитный трафик -{" "}
-                        <span>
-                          <strong className="text-green">бесплатно</strong>
-                        </span>
-                      </li>
-                      <li>
-                        До 1 Гбит/с, трафик 10 Тб/мес -{" "}
-                        <span>
-                          <strong className="text-green">бесплатно</strong>
-                        </span>
-                      </li>
-                    </ul>
-                  </p>
-                ),
-              },
-            },
-            {
-              title: { ru: "Дополнительные IP-адреса" },
-              description: {
-                ru: (
-                  <p>
-                    <ul>
-                      <li>
-                        Дополнительные IP-адреса IPv4 -{" "}
-                        <span>
-                          <strong className="text-green">20 000 cум/мес.</strong>
-                        </span>
-                      </li>
-                      <li>
-                        Дополнительные IP-адреса IPv6 (подсеть) -{" "}
-                        <span>
-                          <strong className="text-green">СКОРО</strong>
-                        </span>
-                      </li>
-                    </ul>
-                  </p>
-                ),
-              },
-            },
-          ]}
-        /> */}
 
         <Howworks language={language} />
 

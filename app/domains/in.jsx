@@ -39,8 +39,8 @@ export const breadCrumbsIn = [
   {
     name: {
       ru: "Регистрация домена в зоне in",
-      uz: "Регистрация домена в зоне in",
-      en: "Регистрация домена в зоне in",
+      uz: "In zonada domenni ro'yxatdan o'tkazish",
+      en: "Domain registration in the in zone",
     },
     link: "/domains/in",
   },
@@ -328,8 +328,8 @@ export default function Domains({ language }) {
     },
     headTitle: {
       ru: "Регистрация домена в зоне in",
-      uz: "Регистрация домена в зоне in",
-      en: "Регистрация домена в зоне in",
+      uz: "In zonada domenni ro'yxatdan o'tkazish",
+      en: "Domain registration in the in zone",
     },
     description: {
       ru: (

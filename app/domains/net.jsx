@@ -27,8 +27,8 @@ export const breadCrumbsDomain = [
   {
     name: {
       ru: "Регистрация домена в зоне UZ",
-      uz: "Регистрация домена в зоне UZ",
-      en: "Регистрация домена в зоне UZ",
+      uz: "UZ zonasida domenni ro'yxatdan o'tkazish",
+      en: "Domain registration in UZ zone",
     },
     link: "/domains",
   },
@@ -38,8 +38,8 @@ export const breadCrumbsNet = [
   {
     name: {
       ru: "Регистрация домена net",
-      uz: "Регистрация домена net",
-      en: "Регистрация домена net",
+      uz: "net domenni ro'yxatdan o'tkazish",
+      en: "net domain registration",
     },
     link: "/domains/net",
   },
@@ -49,60 +49,60 @@ const content = [
     {
       title: { 
       ru: "Валидация", 
-      uz: "Валидация", 
-      en: "Валидация" },
+      uz: "Tasdiqlash", 
+      en: "Validation" },
       description: {
         ru: <p>домены .NET являются валидными для всех браузеров и операционных систем, что обеспечивает качественный доступ к вашему веб-сайту.</p>,
-        uz: <p>домены .NET являются валидными для всех браузеров и операционных систем, что обеспечивает качественный доступ к вашему веб-сайту.</p>,
-        en: <p>домены .NET являются валидными для всех браузеров и операционных систем, что обеспечивает качественный доступ к вашему веб-сайту.</p>,
+        uz: <p>.NET domenlari barcha brauzerlar va operatsion tizimlar uchun amal qiladi, bu sizning veb-saytingizga sifatli kirishni ta'minlaydi.</p>,
+        en: <p>.NET domains are valid across all browsers and operating systems, ensuring quality access to your website.</p>,
       },
       icon: shakeIcon,
     },
     {
       title: { 
       ru: "Узнаваемость", 
-      uz: "Узнаваемость", 
-      en: "Узнаваемость" },
+      uz: "Tan olish", 
+      en: "Recognizability" },
       description: {
         ru: <p>домены .NET являются широко известными и популярными, что может помочь улучшить узнаваемость вашего бренда и привлекать больше пользователей.</p>,
-        uz: <p>домены .NET являются широко известными и популярными, что может помочь улучшить узнаваемость вашего бренда и привлекать больше пользователей.</p>,
-        en: <p>домены .NET являются широко известными и популярными, что может помочь улучшить узнаваемость вашего бренда и привлекать больше пользователей.</p>,
+        uz: <p>.NET domenlari taniqli va ommabop bo'lib, bu sizning brend xabardorligini oshirishga va ko'proq foydalanuvchilarni jalb qilishga yordam beradi.</p>,
+        en: <p>.NET domains are widely known and popular, which can help improve your brand recognition and attract more users.</p>,
       },
       icon: clockIcon,
     },
     {
       title: {
         ru: "Продвижение", 
-        uz: "Продвижение", 
-        en: "Продвижение" },
+        uz: "Rag'batlantirish", 
+        en: "Promotion" },
       description: {
         ru: <p>домены .NET могут быть использованы для продвижения вашей компании или бренда, ведь это официальный домен сети компьютеров.</p>,
-        uz: <p>домены .NET могут быть использованы для продвижения вашей компании или бренда, ведь это официальный домен сети компьютеров.</p>,
-        en: <p>домены .NET могут быть использованы для продвижения вашей компании или бренда, ведь это официальный домен сети компьютеров.</p>,
+        uz: <p>.NET domenlari sizning kompaniyangiz yoki brendingizni targ'ib qilish uchun ishlatilishi mumkin, chunki u kompyuterlar tarmog'ining rasmiy domenidir.</p>,
+        en: <p>.NET domains can be used to promote your company or brand, because it is the official domain of the computer network.</p>,
       },
       icon: gamepadIcon,
     },
     {
       title: {
         ru: "Конкурентоспособность", 
-        uz: "Конкурентоспособность", 
-        en: "Конкурентоспособность" },
+        uz: "Raqobatbardoshlik", 
+        en: "Competitiveness" },
       description: {
         ru: <p>использование домена .NET может помочь вам стать конкурентоспособнее в своих рыночных нишах, особенно если вы работаете в области интернет-услуг.</p>,
-        uz: <p>использование домена .NET может помочь вам стать конкурентоспособнее в своих рыночных нишах, особенно если вы работаете в области интернет-услуг.</p>,
-        en: <p>использование домена .NET может помочь вам стать конкурентоспособнее в своих рыночных нишах, особенно если вы работаете в области интернет-услуг.</p>,
+        uz: <p>.NET domenidan foydalanish, ayniqsa, Internet xizmatlari sohasida bo'lsangiz, bozorda raqobatbardosh bo'lishingizga yordam beradi.</p>,
+        en: <p>Using a .NET domain can help you become more competitive in your market niches, especially if you work in the Internet services industry.</p>,
       },
       icon: warrantyIcon,
     },
     {
       title: {
         ru: "Безопасность", 
-        uz: "Безопасность", 
-        en: "Безопасность" },
+        uz: "Xavfsizlik", 
+        en: "Safety" },
       description: {
         ru: <p>домены .NET управляются VeriSign Inc., которая обеспечивает безопасность и стабильность работы доменов, что важно для защиты вашей компании и пользователей.</p>,
-        uz: <p>домены .NET управляются VeriSign Inc., которая обеспечивает безопасность и стабильность работы доменов, что важно для защиты вашей компании и пользователей.</p>,
-        en: <p>домены .NET управляются VeriSign Inc., которая обеспечивает безопасность и стабильность работы доменов, что важно для защиты вашей компании и пользователей.</p>,
+        uz: <p>.NET domenlari VeriSign Inc. tomonidan boshqariladi, bu sizning kompaniyangiz va foydalanuvchilaringizni himoya qilish uchun muhim bo'lgan domenlarning xavfsizligi va barqarorligini ta'minlaydi.</p>,
+        en: <p>.NET domains are managed by VeriSign Inc., which ensures the security and stability of the domains, which is important to protect your company and users.</p>,
       },
       icon: usersIcon,
     },
@@ -111,8 +111,8 @@ const content = [
     {
       title: {
         ru: "Сколько стоит домен .net?",
-        uz: "Сколько стоит домен .net?",
-        en: "Сколько стоит домен .net?",
+        uz: ".net domeni qancha turadi?",
+        en: "How much does a .net domain cost?",
       },
       description: {
         ru: (
@@ -128,7 +128,7 @@ const content = [
         uz: (
           <>
             <p>
-              Цена регистрации домена .net варьируется в зависимости от регистратора и периода регистрации. Средняя цена домена .net составляет от 10 до 30 долларов в год.
+            .net domenini ro'yxatdan o'tkazish narxi ro'yxatga oluvchiga va ro'yxatdan o'tish davriga qarab o'zgaradi. .net domenining o'rtacha narxi yiliga 10 dan 30 dollargacha.
             </p>
             {/* <p>
 					<a href="/technology/podpiska-na-ssl-sertifikat">Подробнее о&nbsp;подписке</a>.
@@ -138,7 +138,7 @@ const content = [
         en: (
           <>
             <p>
-              Цена регистрации домена .net варьируется в зависимости от регистратора и периода регистрации. Средняя цена домена .net составляет от 10 до 30 долларов в год.
+            The price of registering a .net domain varies depending on the registrar and the registration period. The average price of a .net domain is between $10 and $30 per year.
             </p>
             {/* <p>
 				<a href="/technology/podpiska-na-ssl-sertifikat">Learn more about&nbsp;subscription</a>.
@@ -150,8 +150,8 @@ const content = [
     {
       title: {
         ru: "Домен .net подходит для?",
-        uz: "Домен .net подходит для?",
-        en: "Домен .net подходит для?",
+        uz: ".net domeni mos keladimi?",
+        en: "Is .net domain suitable for?",
       },
       description: {
         ru: (
@@ -163,13 +163,13 @@ const content = [
         uz: (
           <>
             <p>
-              Домен .net подходит для компаний, которые оперируют в технологическом секторе, таких как разработка программного обеспечения, консультирование по информационным технологиям и предоставление сетевых услуг. Владельцы доменов могут ожидать явный прирост в посещении сайтов. Кроме того, он является хорошим выбором для компаний, которые хотят создать сильное онлайн присутствие и идентификацию бренда. Купить домен – это вопрос пары минут, но выгода можете превзойти все ваши ожидания.
+              .net domeni dasturiy ta'minotni ishlab chiqish, axborot texnologiyalari bo'yicha konsalting va tarmoq xizmatlari kabi texnologiya sohasida faoliyat yurituvchi kompaniyalar uchun javob beradi. Domen egalari veb-sayt trafigining aniq o'sishini kutishlari mumkin. Bundan tashqari, bu kuchli onlayn mavjudligi va brend identifikatsiyasini yaratmoqchi bo'lgan kompaniyalar uchun yaxshi tanlovdir. Domenni sotib olish bir necha daqiqa vaqtni oladi, ammo foyda barcha kutganingizdan oshib ketishi mumkin.
             </p>
           </>), 
         en: (
           <>
             <p>
-              Домен .net подходит для компаний, которые оперируют в технологическом секторе, таких как разработка программного обеспечения, консультирование по информационным технологиям и предоставление сетевых услуг. Владельцы доменов могут ожидать явный прирост в посещении сайтов. Кроме того, он является хорошим выбором для компаний, которые хотят создать сильное онлайн присутствие и идентификацию бренда. Купить домен – это вопрос пары минут, но выгода можете превзойти все ваши ожидания.
+            The .net domain is suitable for companies operating in the technology sector, such as software development, IT consulting, and network services. Domain owners can expect a clear increase in website traffic. It is also a good choice for companies looking to establish a strong online presence and brand identity. Buying a domain is a matter of minutes, but the benefits can exceed your expectations.
             </p>
           </>)
         },
@@ -177,8 +177,8 @@ const content = [
     {
       title: {
         ru: "Как зарегистрировать домен .net?",
-        uz: "Как зарегистрировать домен .net?",
-        en: "Как зарегистрировать домен .net?",
+        uz: ".net domenini qanday ro'yxatdan o'tkazish kerak?",
+        en: "How to register a .net domain?",
       },
       description: {
         ru: (
@@ -196,25 +196,25 @@ const content = [
         uz: (
           <>
             <p>
-              Чтобы зарегистрировать домен .net, выполните следующие шаги:<br />
+              .net domenini ro'yxatdan o'tkazish uchun quyidagi amallarni bajaring:<br />
 
-              1.  найдите необходимый домен на AIRNET;<br />
-              2.  проверьте доступность домена;<br />
-              3.  зарегистрируйте домен, предоставив требуемые данные (имя, электронная почта, контактную информацию);<br />
-              4.  оплатите регистрационный сбор.<br />
-              5.  Как видите, приобрести домен и зарегистрировать его совсем не является сложной задачей.
+              1. AIRNET da kerakli domenni toping;<br />
+              2. domen mavjudligini tekshirish;<br />
+              3. kerakli rekvizitlarni (ism, elektron pochta, aloqa ma'lumotlari) taqdim etish orqali domenni ro'yxatdan o'tkazish;<br />
+              4. ro'yxatdan o'tish to'lovini to'lash.<br />
+              5. Ko'rib turganingizdek, domen sotib olish va uni ro'yxatdan o'tkazish umuman qiyin ish emas.
             </p>
           </>), 
         en: (
           <>
             <p>
-              Чтобы зарегистрировать домен .net, выполните следующие шаги:<br />
+              To register a .net domain, follow these steps:<br />
 
-              1.  найдите необходимый домен на AIRNET;<br />
-              2.  проверьте доступность домена;<br />
-              3.  зарегистрируйте домен, предоставив требуемые данные (имя, электронная почта, контактную информацию);<br />
-              4.  оплатите регистрационный сбор.<br />
-              5.  Как видите, приобрести домен и зарегистрировать его совсем не является сложной задачей.
+              1. Find the domain you need on AIRNET;<br />
+              2. Check the availability of the domain;<br />
+              3. Register the domain by providing the required data (name, email, contact information);<br />
+              4. Pay the registration fee.<br />
+              5. As you can see, purchasing a domain and registering it is not a difficult task at all.
             </p>
           </>)
       },
@@ -222,8 +222,8 @@ const content = [
     {
       title: {
         ru: "Особенности домена .net?",
-        uz: "Особенности домена .net?",
-        en: "Особенности домена .net?",
+        uz: ".net domenining xususiyatlari?",
+        en: "Features of the .net domain?",
       },
       description: {
         ru: (
@@ -241,25 +241,28 @@ const content = [
         uz: (
           <>
             <p>
-              Некоторые заметные особенности домена .net включают:<br />
+              .net domenining ba'zi diqqatga sazovor xususiyatlariga quyidagilar kiradi:<br />
 
-              1.  глобальное распространение;<br />
-              2.  широкое признание и доверие;<br /> 
-              3.  подходит для технологических компаний;<br /> 
-              4.  может быть зарегистрирован на период от 1 до 10 лет;<br /> 
-              5.  может быть перенесен на другой регистратор, если это необходимо.
+              1. global taqsimot;<br />
+              2. keng e'tirof va ishonch;<br />
+              3. texnologiya kompaniyalari uchun mos;<br />
+              4. 1 yildan 10 yilgacha bo'lgan muddatga ro'yxatga olinishi mumkin;<br />
+              5. Agar kerak bo'lsa, boshqa registratorga o'tkazilishi mumkin.
             </p>
           </>), 
         en: (
           <>
             <p>
-              Некоторые заметные особенности домена .net включают:<br />
+              Some notable features of the .net domain include:<br />
 
-              1.  глобальное распространение;<br />
-              2.  широкое признание и доверие;<br /> 
-              3.  подходит для технологических компаний;<br /> 
-              4.  может быть зарегистрирован на период от 1 до 10 лет;<br /> 
-              5.  может быть перенесен на другой регистратор, если это необходимо.
+              1. Global distribution;<br />
+              2. Wide recognition and trust;<br />
+
+              3. Suitable for technology companies;<br />
+
+              4. Can be registered for a period of 1 to 10 years;<br />
+
+              5. Can be transferred to another registrar if necessary.
             </p>
           </>)
         },
@@ -274,12 +277,12 @@ const content = [
       ),
       uz: (
         <>
-          Условия регистрации домена .net
+          .net domenini ro'yxatdan o'tkazish shartlari
         </>
       ),
       en: (
         <>
-          Условия регистрации домена .net
+          .net Domain Registration Terms
         </>
       ),
     },
@@ -291,12 +294,12 @@ const content = [
       ),
       uz: (
         <>
-          Условия регистрации доменов в зоне .net следующие:
+          .net zonasida domenlarni ro'yxatdan o'tkazish shartlari quyidagilardan iborat:
         </>
       ),
       en: (
         <>
-          Условия регистрации доменов в зоне .net следующие:
+          The conditions for registering domains in the .net zone are as follows:
         </>
       ),
     },
@@ -308,12 +311,12 @@ const content = [
       ),
       uz: (
         <>
-          Обратите внимание, что условия регистрации могут варьироваться в зависимости от регистратора и политик ICANN.
+          Roʻyxatdan oʻtish shartlari registrator va ICANN siyosatiga qarab farq qilishi mumkinligini unutmang.
         </>
       ),
       en: (
         <>
-          Обратите внимание, что условия регистрации могут варьироваться в зависимости от регистратора и политик ICANN.
+          Please note that registration terms may vary depending on the registrar and ICANN policies.
         </>
       ),
     },
@@ -322,8 +325,8 @@ const content = [
       {
         title: { 
         ru: "Доступность доменного имени: доменное имя должно быть доступно для регистрации. Это означает, что доменное имя не может быть уже зарегистрировано, а также не может быть запрещено в соответствии с политикой ICANN (Internet Corporation for Assigned Names and Numbers).", 
-        uz: "Доступность доменного имени: доменное имя должно быть доступно для регистрации. Это означает, что доменное имя не может быть уже зарегистрировано, а также не может быть запрещено в соответствии с политикой ICANN (Internet Corporation for Assigned Names and Numbers).", 
-        en: "Доступность доменного имени: доменное имя должно быть доступно для регистрации. Это означает, что доменное имя не может быть уже зарегистрировано, а также не может быть запрещено в соответствии с политикой ICANN (Internet Corporation for Assigned Names and Numbers)." },
+        uz: "Domen nomining mavjudligi: Domen nomi ro'yxatdan o'tish uchun mavjud bo'lishi kerak. Bu shuni anglatadiki, domen nomini allaqachon ro'yxatdan o'tkazib bo'lmaydi yoki uni ICANN (Internet Corporation for Assigned Names and Numbers) siyosati bo'yicha rad etib bo'lmaydi.", 
+        en: "Domain name availability: The domain name must be available for registration. This means that the domain name cannot be already registered and also cannot be prohibited according to ICANN (Internet Corporation for Assigned Names and Numbers) policy." },
         img: (
           <p>1.</p>
         ),
@@ -331,8 +334,8 @@ const content = [
       {
         title: {
           ru: "Смесь латинских символов и цифр: доменное имя может содержать буквы латинского алфавита, цифры (0-9) и знаки `-`.",
-          uz: "Смесь латинских символов и цифр: доменное имя может содержать буквы латинского алфавита, цифры (0-9) и знаки `-`.",
-          en: "Смесь латинских символов и цифр: доменное имя может содержать буквы латинского алфавита, цифры (0-9) и знаки `-`.",
+          uz: "Lotin harflari va raqamlari aralashmasi: domen nomi lotin harflari, raqamlari (0-9) va belgilarni o'z ichiga olishi mumkin. `-`.",
+          en: "Mix of Latin characters and numbers: the domain name can contain Latin letters, numbers (0-9) and symbols `-`.",
         },
         img: (
           <p>2.</p>
@@ -341,8 +344,8 @@ const content = [
       {
         title: {
           ru: "Максимальная длина доменного имени: длина доменного имени не может превышать 63 символов.",
-          uz: "Максимальная длина доменного имени: длина доменного имени не может превышать 63 символов.",
-          en: "Максимальная длина доменного имени: длина доменного имени не может превышать 63 символов.",
+          uz: "Domen nomining maksimal uzunligi: Domen nomining uzunligi 63 belgidan oshmasligi kerak.",
+          en: "Maximum domain name length: The length of a domain name cannot exceed 63 characters.",
         },
         img: (
           <p>3.</p>
@@ -352,8 +355,8 @@ const content = [
       {
         title: {
           ru: "Минимальная длина доменного имени: длина доменного имени не может быть меньше 3 символов.",
-          uz: "Минимальная длина доменного имени: длина доменного имени не может быть меньше 3 символов.",
-          en: "Минимальная длина доменного имени: длина доменного имени не может быть меньше 3 символов.",
+          uz: "Domen nomining minimal uzunligi: domen nomining uzunligi 3 belgidan kam bo'lmasligi kerak.",
+          en: "Minimum domain name length: The length of a domain name cannot be less than 3 characters.",
         },
         img: (
           <p>4.</p>
@@ -362,8 +365,8 @@ const content = [
       {
         title: {
           ru: "Уникальность доменного имени: доменное имя должно быть уникальным, т.е. не может быть уже зарегистрировано другим лицом.",
-          uz: "Уникальность доменного имени: доменное имя должно быть уникальным, т.е. не может быть уже зарегистрировано другим лицом.",
-          en: "Уникальность доменного имени: доменное имя должно быть уникальным, т.е. не может быть уже зарегистрировано другим лицом.",
+          uz: "Domen nomining o'ziga xosligi: domen nomi noyob bo'lishi kerak, ya'ni. allaqachon boshqa shaxs tomonidan ro'yxatdan o'tkazilmaydi.",
+          en: "Uniqueness of the domain name: the domain name must be unique, i.e. it cannot already be registered by another person.",
         },
         img: (
           <p>5.</p>
@@ -372,8 +375,8 @@ const content = [
       {
         title: {
           ru: "Смесь заглавных и строчных букв: доменное имя может содержать как заглавные, так и строчные буквы.",
-          uz: "Смесь заглавных и строчных букв: доменное имя может содержать как заглавные, так и строчные буквы.",
-          en: "Смесь заглавных и строчных букв: доменное имя может содержать как заглавные, так и строчные буквы.",
+          uz: "Katta va kichik harflar aralashmasi: Domen nomi katta va kichik harflardan iborat bo'lishi mumkin.",
+          en: "Mix of upper and lower case letters: A domain name can contain both upper and lower case letters.",
         },
         img: (
           <p>6.</p>
@@ -382,8 +385,8 @@ const content = [
       {
         title: {
           ru: "Знаки пунктуации: доменное имя может содержать знаки пунктуации, такие как `.` , `,`, `;`, `?`, `%`, `&`, `=`, `+`, `/`, `-`, `_`, `~`, `!`.",
-          uz: "Знаки пунктуации: доменное имя может содержать знаки пунктуации, такие как `.` , `,`, `;`, `?`, `%`, `&`, `=`, `+`, `/`, `-`, `_`, `~`, `!`.",
-          en: "Знаки пунктуации: доменное имя может содержать знаки пунктуации, такие как `.` , `,`, `;`, `?`, `%`, `&`, `=`, `+`, `/`, `-`, `_`, `~`, `!`.",
+          uz: "Tinish belgilari: Domen nomida tinish belgilari bo'lishi mumkin, masalan `.` , `,`, `;`, `?`, `%`, `&`, `=`, `+`, `/`, `-`, `_`, `~`, `!`.",
+          en: "Punctuation: A domain name may contain punctuation marks such as `.` , `,`, `;`, `?`, `%`, `&`, `=`, `+`, `/`, `-`, `_`, `~`, `!`.",
         },
         img: (
           <p>7.</p>
@@ -392,8 +395,8 @@ const content = [
       {
         title: {
           ru: "Квотирование: некоторые символы, такие как `*`, `@`, `#`, `$`, `%`, `^`, `&`, `~`, `!`, могут быть квотированы (запятая) для использования в доменном имени.",
-          uz: "Квотирование: некоторые символы, такие как `*`, `@`, `#`, `$`, `%`, `^`, `&`, `~`, `!`, могут быть квотированы (запятая) для использования в доменном имени.",
-          en: "Квотирование: некоторые символы, такие как `*`, `@`, `#`, `$`, `%`, `^`, `&`, `~`, `!`, могут быть квотированы (запятая) для использования в доменном имени.",
+          uz: "Iqtibos: `*`, `@`, `#`, `$`, `%`, `^`, `&`, `~`, `!` kabi ba`zi belgilarni qo`shilish uchun qo`shtirnoq (vergul) olish mumkin. domen nomi.",
+          en: "Quoting: Some characters such as `*`, `@`, `#`, `$`, `%`, `^`, `&`, `~`, `!` may need to be quoted (comma) for use in a domain name.",
         },
         img: (
           <p>8.</p>
@@ -402,8 +405,8 @@ const content = [
       {
         title: {
           ru: "ICANN's Registry Agreement: регистратор должен заключить договор с ICANN (Internet Corporation for Assigned Names and Numbers) о регистрации доменов в зоне `.net`.",
-          uz: "ICANN's Registry Agreement: регистратор должен заключить договор с ICANN (Internet Corporation for Assigned Names and Numbers) о регистрации доменов в зоне `.net`.",
-          en: "ICANN's Registry Agreement: регистратор должен заключить договор с ICANN (Internet Corporation for Assigned Names and Numbers) о регистрации доменов в зоне `.net`.",
+          uz: "ICANNning reestr shartnomasi: registrator ICANN (Internet Corporation for Assigned Names and Numbers) bilan `.net` zonasida domenlarni ro'yxatdan o'tkazish uchun shartnoma tuzishi kerak..",
+          en: "ICANN's Registry Agreement: The registrar must enter into an agreement with ICANN (Internet Corporation for Assigned Names and Numbers) on the registration of domains in the `.net` zone..",
         },
         img: (
           <p>9.</p>
@@ -412,8 +415,8 @@ const content = [
       {
         title: {
           ru: "Верификация информации: регистратор должен запросить информацию о регистрирующем лице, включая его имя, адрес электронной почты и адрес физического лица или организации.",
-          uz: "Верификация информации: регистратор должен запросить информацию о регистрирующем лице, включая его имя, адрес электронной почты и адрес физического лица или организации.",
-          en: "Верификация информации: регистратор должен запросить информацию о регистрирующем лице, включая его имя, адрес электронной почты и адрес физического лица или организации.",
+          uz: "Ma'lumotni tekshirish: Ro'yxatga oluvchi ro'yxatdan o'tuvchi haqidagi ma'lumotlarni, shu jumladan uning ismi, elektron pochta manzili va shaxs yoki tashkilotning manzilini so'rashi kerak.",
+          en: "Verification of information: The registrar must request information about the registrant, including the name, email address, and address of the individual or organization.",
         },
         img: (
           <p>10.</p>
@@ -430,12 +433,12 @@ const content = [
       ),
       uz: (
         <>
-          Что такое доменное имя .net 
+          .net domen nomi nima 
         </>
       ),
       en: (
         <>
-          Что такое доменное имя .net 
+          What is a .net domain name 
         </>
       ),
     },
@@ -447,12 +450,12 @@ const content = [
       ),
       uz: (
         <>
-          Доменная зона .net - это обширная группа интернет-адресов, которые окончены суффиксом .net. Она была создана в 1985 году как часть оригинального интернета, и в настоящее время является одной из наиболее популярных и массовых зон доменных имен.
+          .net domen zonasi .net qo'shimchasi bilan tugaydigan Internet manzillarining katta guruhidir. U 1985 yilda original Internetning bir qismi sifatida yaratilgan va hozirda eng mashhur va keng tarqalgan domen nomlari zonalaridan biri hisoblanadi.
         </>
       ),
       en: (
         <>
-          Доменная зона .net - это обширная группа интернет-адресов, которые окончены суффиксом .net. Она была создана в 1985 году как часть оригинального интернета, и в настоящее время является одной из наиболее популярных и массовых зон доменных имен.
+          The .net domain zone is a large group of Internet addresses that end with the .net suffix. It was created in 1985 as part of the original Internet, and is currently one of the most popular and widespread domain name zones.
         </>
       ),
     },
@@ -487,18 +490,18 @@ export default function Domains({ language }) {
   const langData = {
     seoTitle: {
       ru: "Купить домен net - зарегистрировать доменное имя в зоне net",
-      uz: "Купить домен net - зарегистрировать доменное имя в зоне net",
-      en: "Купить домен net - зарегистрировать доменное имя в зоне net",
+      uz: "Net domenni sotib oling - domen nomini tarmoq zonasida ro'yxatdan o'tkazing",
+      en: "Buy domain net - register domain name in net zone",
     },
     descTitle: {
       ru: "Регистрация домена в зоне⚡net! Купить новое доменное в зоне net по низким ценам. Доменное имя верхнего уровня net. Регистратор airnet.uz",
-      uz: "Регистрация домена в зоне⚡net! Купить новое доменное в зоне net по низким ценам. Доменное имя верхнего уровня net. Регистратор airnet.uz",
-      en: "Регистрация домена в зоне⚡net! Купить новое доменное в зоне net по низким ценам. Доменное имя верхнего уровня net. Регистратор airnet.uz",
+      uz: "⚡net zonasida domenni ro'yxatdan o'tkazish! Net zonada arzon narxlarda yangi domen sotib oling. Yuqori darajadagi domen nomi tarmog'i. Airnet.uz registratori",
+      en: "Domain registration in the ⚡net zone! Buy a new domain in the net zone at low prices. Top-level domain name net. Registrar airnet.uz",
     },
     whyBlockTitle: {
       ru: "Преимущества регистрации  домена .NET",
-      uz: "Преимущества регистрации  домена .NET",
-      en: "Преимущества регистрации  домена .NET",
+      uz: ".NET domenini ro'yxatdan o'tkazishning afzalliklari",
+      en: "Benefits of Registering a .NET Domain",
     },
     whyBlockDescription: {
       ru: (
@@ -507,8 +510,19 @@ export default function Domains({ language }) {
           Купить домен можно уже сегодня, мы также поможем с регистрацией вашего сайта в доменных зонах.
         <br /><strong>Использование домена .NET имеет несколько преимуществ:</strong></p>
       ),
-      uz: "Использование домена .NET имеет несколько преимуществ:",
-      en: "Использование домена .NET имеет несколько преимуществ:",
+      uz: (
+        <p>
+        Esda tutingki, .NET domenidan foydalanishning afzalliklari sizning aniq vaziyatingizga va veb-saytingiz maqsadlariga bog'liq.<br />
+        Siz bugun domen sotib olishingiz mumkin, biz veb-saytingizni domen zonalarida ro'yxatdan o'tkazishda ham yordam beramiz.
+        <br /><strong>.NET domenidan foydalanish bir qancha afzalliklarga ega:</strong></p>
+        ),
+      en: (
+        <p>
+        Please note that the benefits of using a .NET domain depend on the specific situation and goals of your website.<br />
+        
+        You can buy a domain today, we will also help you register your site in domain zones.
+        <br /><strong>Using a .NET domain has several benefits:</strong></p>
+        ),
     },
     headTitle: {
       ru: "Регистрация доменного имени",
@@ -522,8 +536,8 @@ export default function Domains({ language }) {
     },
     t2: {
       ru: "Регистрация домена net - это процесс, который позволяет зарегистрировать уникальное имя домена (URL) в интернете. Зона.net является одной из наиболее популярных и массовых зон доменных имен.",
-      uz: "Регистрация домена net - это процесс, который позволяет зарегистрировать уникальное имя домена (URL) в интернете. Зона.net является одной из наиболее популярных и массовых зон доменных имен.",
-      en: "Регистрация домена net - это процесс, который позволяет зарегистрировать уникальное имя домена (URL) в интернете. Зона.net является одной из наиболее популярных и массовых зон доменных имен.",
+      uz: "Net domenni ro'yxatdan o'tkazish - bu Internetda noyob domen nomini (URL) ro'yxatdan o'tkazish imkonini beruvchi jarayon. Net zonasi eng mashhur va keng tarqalgan domen nomlari zonalaridan biridir.",
+      en: "Net domain registration is a process that allows you to register a unique domain name (URL) on the Internet. The .net zone is one of the most popular and widespread domain name zones.",
     },
     t3: {
       ru: "У нас вы сможете подобрать красивое доменное имя по самым низким ценам, а ещё мы не повышаем стоимость домена при продлении.",
@@ -532,8 +546,8 @@ export default function Domains({ language }) {
     },
     headTitle: {
       ru: "Регистрация домена net",
-      uz: "Регистрация домена net",
-      en: "Регистрация домена net",
+      uz: "Net domenni ro'yxatdan o'tkazish",
+      en: "Net domain registration",
     },
     description: {
       ru: (
