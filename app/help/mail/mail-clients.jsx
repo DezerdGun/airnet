@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsMail } from "@/app/help/mail";
 
 const mainData = {
   headTitle: {
@@ -118,6 +119,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsMail,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

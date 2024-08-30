@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsDns } from "@/app/help/dns";
 
 const mainData = {
   headTitle: {
@@ -51,7 +52,7 @@ const mainData = {
         <ol>
           <li>Проверьте, что у домена не истек срок регистрации.</li>
           <li>Добавьте домен.</li>
-          <li>Делегируйте домен на NS-серверы Airnet.</li>
+          <li>Делегируйте домен на NS-серверы AIRNET.</li>
           <li>Добавьте A-запись со значением IP-адреса вашего сервера.</li>
         </ol>
       </>
@@ -66,7 +67,7 @@ const mainData = {
         <ol>
           <li>Domen muddati tugamaganligini tekshiring.</li>
           <li>Domen qo'shing.</li>
-          <li>Domenni Airnet NS serverlariga topshiring.</li>
+          <li>Domenni AIRNET NS serverlariga topshiring.</li>
           <li>Serveringiz IP manzili qiymatiga ega A yozuvini qo'shing.</li>
         </ol>
       </>
@@ -81,7 +82,7 @@ const mainData = {
         <ol>
           <li>Check that the domain has not expired.</li>
           <li>Add a domain.</li>
-          <li>Delegate the domain to the Airnet NS servers.</li>
+          <li>Delegate the domain to the AIRNET NS servers.</li>
           <li>Add an A record with the value of your server's IP address.</li>
         </ol>
       </>
@@ -89,6 +90,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsDns,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

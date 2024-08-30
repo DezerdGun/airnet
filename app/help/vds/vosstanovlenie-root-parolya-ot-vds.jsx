@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsVds } from "@/app/help/vds";
 
 const mainData = {
   headTitle: {
@@ -147,6 +148,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsVds,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

@@ -37,23 +37,23 @@ const mainData = {
   content: {
     ru: (
       <p>
-        В случае регистрации домена копия паспорта является необходимым
-        документов, для регистрации домена в зоне UZ. Это требование главного
-        регистратора доменов в зоне UZ cctld.uz
+        В случае регистрации домена копия паспорта или ID-карта является необходимым документом, а также адрес постоянно места жительства, для регистрации домена в зоне UZ.
+        <br /><br />
+        Это требование главного регистратора доменов в зоне UZ cctld.uz
       </p>
     ),
     uz: (
       <p>
-        Domenni ro'yxatdan o'tkazishda pasport nusxasi zonada domenni ro'yxatdan
-        o'tkazish uchun zaruriy hujjatdir BIZ. Bu UZ cctld.uz zonasidagi
-        domenlar bosh registratorining talabi
+        Domenni ro‘yxatdan o‘tkazishda domenni UZ zonasida ro‘yxatdan o‘tkazish uchun pasport yoki ID karta nusxasi, shuningdek doimiy yashash manzili zaruriy hujjat hisoblanadi. 
+        <br /><br />
+        Bu cctld.uz UZ zonasidagi asosiy domen registratorining talabi
       </p>
     ),
     en: (
       <p>
-        In case of domain registration, a copy of the passport is necessary
-        documents for registering a domain in the UZ zone. This is the main
-        requirement domain registrar in the zone UZ cctld.uz
+        In case of domain registration, a copy of the passport or ID card is a necessary document, as well as the address of the permanent place of residence, for domain registration in the UZ zone.
+        <br /><br />
+        This is a requirement of the main registrar of domains in the UZ zone cctld.uz
       </p>
     ),
   },

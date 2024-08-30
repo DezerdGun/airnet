@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsVds } from "@/app/help/vds";
 
 const mainData = {
   headTitle: {
@@ -99,9 +100,6 @@ const mainData = {
         </p>
 
         <ul>
-          <li>
-            <strong>Windows Server 2012 R2</strong>
-          </li>
           <li>
             <strong>Windows Server 2016</strong>
           </li>
@@ -215,9 +213,6 @@ const mainData = {
         </p>
 
         <ul>
-          <li>
-            <strong>Windows Server 2012 R2</strong>
-          </li>
           <li>
             <strong>Windows Server 2016</strong>
           </li>
@@ -333,9 +328,6 @@ const mainData = {
 
         <ul>
           <li>
-            <strong>Windows Server 2012 R2</strong>
-          </li>
-          <li>
             <strong>Windows Server 2016</strong>
           </li>
           <li>
@@ -436,6 +428,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsVds,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsBilling } from "@/app/help/billing";
 
 const mainData = {
   headTitle: {
@@ -13,7 +14,7 @@ const mainData = {
         uz: "Hisobga kirish huquqi tiklanmoqda",
         en: "Restoring account access",
       },
-      link: "/help/billing/account/restore",
+      link: "/help/billing/restore",
     },
     {
       title: {
@@ -21,31 +22,31 @@ const mainData = {
         uz: "Xizmatlarni boshqa hisobga o'tkazish",
         en: "Transfer services to another account",
       },
-      link: "/help/billing/account/transfer",
+      link: "/help/billing/transfer",
     },
     {
       title: { ru: "Удалить аккаунт", uz: "Hisobni o'chirish", en: "Delete account" },
-      link: "/help/billing/account/delete",
+      link: "/help/billing/delete",
     },
   ],
   content: {
     ru: (
       <>
         <p>
-          Управление продуктами Airnet осуществляется через панель управления my.airnet.uz. Зарегистрироваться в панели
-          управления Airnet можно:
+          Управление продуктами AIRNET осуществляется через панель управления billing.airnet.uz. Зарегистрироваться в панели
+          управления AIRNET можно:
         </p>
         <ul>
-          <li>через сайт airnet.uz;</li>
+          <li>через сайт AIRNET.uz;</li>
           <li>по приглашению.</li>
         </ul>
         <p>Если в процессе регистрации возникнут проблемы, напишите в службу технической поддержки: info@airnet.uz.</p>
-        <h2>Зарегистрироваться через сайт airnet.uz</h2>
+        <h2>Зарегистрироваться через сайт AIRNET.uz</h2>
         <p>При регистрации пользователю будет присвоена роль Владелец аккаунта.</p>
 
         <ol>
           <li>
-            На сайте airnet.uz в правом верхнем углу нажмите <strong>Зарегистрироваться</strong>.
+            На сайте AIRNET.uz в правом верхнем углу нажмите <strong>Зарегистрироваться</strong>.
           </li>
           <li>Заполните форму регистрации.</li>
           <li>
@@ -121,20 +122,20 @@ const mainData = {
     uz: (
       <>
         <p>
-          Airnet mahsulotlari my.airnet.uz boshqaruv paneli orqali boshqariladi. Airnet boshqaruv panelida ro'yxatdan
+        AIRNET mahsulotlari billing.airnet.uz boshqaruv paneli orqali boshqariladi. AIRNET boshqaruv panelida ro'yxatdan
           o'tishingiz mumkin:
         </p>
         <ul>
-          <li>airnet.uz sayti orqali;</li>
+          <li>AIRNET.uz sayti orqali;</li>
           <li>taklif orqali.</li>
         </ul>
-        <p>Ro‘yxatdan o‘tish jarayonida muammolar yuzaga kelsa, texnik yordam xizmatiga yozing: support@airnet.uz.</p>
-        <h2>airnet.uz orqali ro'yxatdan o'ting</h2>
+        <p>Ro‘yxatdan o‘tish jarayonida muammolar yuzaga kelsa, texnik yordam xizmatiga yozing: info@airnet.uz.</p>
+        <h2>AIRNET.uz orqali ro'yxatdan o'ting</h2>
         <p>Ro‘yxatdan o‘tishda foydalanuvchiga Hisob egasi roli tayinlanadi.</p>
 
         <ol>
           <li>
-            airnet.uz veb-saytining yuqori o'ng burchagidagi <strong>Ro'yxatdan o'tish</strong> tugmasini bosing.
+          AIRNET.uz veb-saytining yuqori o'ng burchagidagi <strong>Ro'yxatdan o'tish</strong> tugmasini bosing.
           </li>
           <li>Ro‘yxatdan o‘tish formasini to‘ldiring.</li>
           <li>
@@ -232,23 +233,23 @@ const mainData = {
     en: (
       <>
         <p>
-          Airnet products are managed through the my.airnet.uz control panel. You can register in the Airnet control
+        AIRNET products are managed through the billing.airnet.uz control panel. You can register in the AIRNET control
           panel:
         </p>
         <ul>
-          <li>via the website airnet.uz;</li>
+          <li>via the website AIRNET.uz;</li>
           <li>by invitation.</li>
         </ul>
         <p>
           If there are any problems during the registration process, write to the technical support service:
-          support@airnet.uz.
+          info@airnet.uz.
         </p>
-        <h2>Register through airnet.uz</h2>
+        <h2>Register through AIRNET.uz</h2>
         <p>When registering, the user will be assigned the Account Owner role.</p>
 
         <ol>
           <li>
-            On the airnet.uz website, in the upper right corner, click <strong>Register</strong>.
+            On the AIRNET.uz website, in the upper right corner, click <strong>Register</strong>.
           </li>
           <li>Fill out the registration form.</li>
           <li>
@@ -348,6 +349,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsBilling,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

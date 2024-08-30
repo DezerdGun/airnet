@@ -42,10 +42,10 @@ export default function HelpBlog({ language }) {
       ru: (
         <>
           <p>
-            Выбрать и проверить доменное имя в «
+            Выбрать и проверить доменное имя на странице «
             <Link href={checkLang(language) + LINKS.DOMAINS}>
               <a>
-                <strong>регистрации доменов</strong>
+                <strong>Зарегистрировать домен</strong>
               </a>
             </Link>
             »;
@@ -63,8 +63,8 @@ export default function HelpBlog({ language }) {
             </strong>
             »;
           </p>
-          <p>Оплатить регистрацию домена;</p>
-          <p>Выслать паспортные данные.</p>
+          <p>Выслать паспортные данные по тикетной системе или на наш корпоративный телеграм <a href="https://t.me/airnetuzb" target="_blank">@airnetuzb</a>.</p>
+          <p>Оплатить счет за регистрацию домена;</p>
         </>
       ),
       uz: (
@@ -73,7 +73,7 @@ export default function HelpBlog({ language }) {
             Domen nomini tanlang va «
             <Link href={checkLang(language) + LINKS.DOMAINS}>
               <a>
-                <strong>domenni royxatdan otqazing</strong>
+                <strong>Domenni ro'yxatdan o'tkazing</strong>
               </a>
             </Link>
             »;
@@ -91,8 +91,8 @@ export default function HelpBlog({ language }) {
             </strong>
             »;
           </p>
-          <p>Domen royxatdan otqazish tolovi</p>
-          <p>Pasport hujjatlarini yuborish.</p>
+          <p>Pasport ma'lumotlaringizni chipta tizimi orqali yoki korporativ telegram <a href="https://t.me/airnetuzb" target="_blank">@airnetuzb</a> manziliga yuboring.</p>
+          <p>Domenni roʻyxatdan oʻtkazish uchun toʻlovni toʻlash;</p>
         </>
       ),
       en: (
@@ -101,7 +101,7 @@ export default function HelpBlog({ language }) {
             Select and check the domain name in "
             <Link href={checkLang(language) + LINKS.DOMAINS}>
               <a>
-                <strong>domain registrations</strong>
+                <strong>Register a domain</strong>
               </a>
             </Link>
             »;
@@ -119,8 +119,8 @@ export default function HelpBlog({ language }) {
             </strong>
             »;
           </p>
-          <p>Pay for domain registration;</p>
-          <p>Send passport details.</p>
+          <p>Send your passport details via the ticket system or to our corporate telegram <a href="https://t.me/airnetuzb" target="_blank">@airnetuzb</a>.</p>
+          <p>Pay the invoice for domain registration;</p>
         </>
       ),
     },

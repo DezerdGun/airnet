@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsVds } from "@/app/help/vds";
 
 const mainData = {
   headTitle: {
@@ -57,9 +58,9 @@ const mainData = {
     },
     {
       title: {
-        ru: "Управлять сервером через KVM-консоль",
-        uz: "KVM konsoli orqali serverni boshqarish",
-        en: "Manage server via KVM console",
+        ru: "Управлять сервером через VNC-консоль",
+        uz: "VNC konsoli orqali serverni boshqarish",
+        en: "Manage server via VNC console",
       },
       link: "/help/vds/manage-server-vnc",
     },
@@ -90,7 +91,7 @@ const mainData = {
           <li>по протоколу RDP (для серверов с ОС Windows);</li>
           <li>по протоколу VNC (для серверов с macOS);</li>
           <li>
-            через KVM-консоль (для серверов с любой ОС, для серверов линейки Chipcore Line при заказе дополнительной
+            через VNC-консоль (для серверов с любой ОС, для серверов линейки Chipcore Line при заказе дополнительной
             услуги).
           </li>
         </ul>
@@ -101,7 +102,7 @@ const mainData = {
         </p>
 
         <p>
-          Для установки ОС на сервере из iso-образа, подключитесь через KVM-консоль или загрузитесь в Airnet Boot Menu.
+          Для установки ОС на сервере из iso-образа, подключитесь через VNC-консоль или загрузитесь в Airnet Boot Menu.
         </p>
 
         <h2>Подключиться по SSH</h2>
@@ -288,7 +289,7 @@ const mainData = {
           <li>RDP protokoli orqali (Windows OS bilan ishlaydigan serverlar uchun);</li>
           <li>VNC protokoli (macOS-ga ega serverlar uchun);</li>
           <li>
-            KVM konsoli orqali (har qanday operatsion tizimga ega serverlar uchun, qo'shimcha buyurtma berishda Chipcore
+            VNC konsoli orqali (har qanday operatsion tizimga ega serverlar uchun, qo'shimcha buyurtma berishda Chipcore
             Line serverlari uchun xizmatlar).
           </li>
         </ul>
@@ -300,7 +301,7 @@ const mainData = {
         </p>
 
         <p>
-          OSni serverga iso tasvirdan o'rnatish uchun KVM konsoli orqali ulaning yoki Airnet Boot-ga yuklang. Menyu.
+          OSni serverga iso tasvirdan o'rnatish uchun VNC konsoli orqali ulaning yoki Airnet Boot-ga yuklang. Menyu.
         </p>
 
         <h2>SSH orqali ulaning</h2>
@@ -487,7 +488,7 @@ const mainData = {
           <li>via RDP protocol (for servers running Windows OS);</li>
           <li>VNC protocol (for servers with macOS);</li>
           <li>
-            via KVM console (for servers with any OS, for Chipcore Line servers when ordering an additional services).
+            via VNC console (for servers with any OS, for Chipcore Line servers when ordering an additional services).
           </li>
         </ul>
         <p>
@@ -498,7 +499,7 @@ const mainData = {
         </p>
 
         <p>
-          To install the OS on the server from an iso image, connect via the KVM console or boot into Airnet Boot Menu.
+          To install the OS on the server from an iso image, connect via the VNC console or boot into Airnet Boot Menu.
         </p>
 
         <h2>Connect via SSH</h2>
@@ -679,6 +680,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsVds,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

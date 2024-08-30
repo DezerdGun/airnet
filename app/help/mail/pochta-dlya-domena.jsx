@@ -1,5 +1,6 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
 import Link from "next/link";
+import { breadCrumbsMail } from "@/app/help/mail";
 
 const mainData = {
   headTitle: { ru: "Почта для домена", uz: "Domen uchun pochta", en: "Mail for domain" },
@@ -98,6 +99,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsMail,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

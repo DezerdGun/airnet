@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsBilling } from "@/app/help/billing";
 
 const mainData = {
   headTitle: {
@@ -21,11 +22,11 @@ const mainData = {
         uz: "Xizmatlarni boshqa hisobga o'tkazish",
         en: "Transfer services to another account",
       },
-      link: "/help/billing/account/transfer",
+      link: "/help/billing/transfer",
     },
     {
       title: { ru: "Удалить аккаунт", uz: "Hisobni o'chirish", en: "Delete account" },
-      link: "/help/billing/account/delete",
+      link: "/help/billing/delete",
     },
   ],
   content: {
@@ -138,42 +139,6 @@ const mainData = {
             Для повышения безопасности процедуры восстановления доступа к аккаунту мы можем запросить дополнительные
             документы.
           </li>
-        </ol>
-        <h2>Отключить двухэтапную аутентификацию, если нет доступа к панели управления</h2>
-
-        <p>
-          Если вы не Владелец аккаунта, обратитесь к Владельцу аккаунта — он должен удалить вас из списка пользователей
-          и добавить нового пользователя с верными данными.
-        </p>
-        <p>Если вы Владелец аккаунта, предоставьте нам документы:</p>
-        <p>
-          <strong>Юридическое лицо</strong>
-        </p>
-        <ol>
-          <li>Подготовьте документы:</li>
-          <ul>
-            <li>ИНН организации;</li>
-            <li>
-              документ, подтверждающий полномочия лица, подписавшего заявление о восстановлении доступа (для
-              генерального директора — это копия приказа или решение о назначении, для других лиц — доверенность);
-            </li>
-            <li>заявление по шаблону.</li>
-          </ul>
-          <li>Отправьте документы на электронную почту payment@airnet.uz.</li>
-          <li>Если возникнут вопросы, мы запросим дополнительные документы.</li>
-        </ol>
-        <p>
-          <strong>Физическое лицо</strong>
-        </p>
-        <ol>
-          <li>Подготовьте документы:</li>
-          <ul>
-            <li>копию главного разворота паспорта;</li>
-            <li>отчетливую фотографию Владельца аккаунта с паспортом, открытым на главном развороте;</li>
-            <li>заявление по шаблону.</li>
-          </ul>
-          <li>Отправьте документы на электронную почту payment@airnet.uz.</li>
-          <li>Если возникнут вопросы, мы запросим дополнительные документы.</li>
         </ol>
       </>
     ),
@@ -291,44 +256,6 @@ const mainData = {
             Hisobni tiklash jarayoni xavfsizligini yaxshilash uchun biz qo'shimcha hujjatlarni so'rashimiz mumkin.
           </li>
         </ol>
-
-        <h2>Boshqarish paneliga kirish imkoningiz bo'lmasa, 2 bosqichli tekshiruvni o'chirib qo'ying</h2>
-
-        <p>
-          Agar siz hisob egasi bo'lmasangiz, hisob egasi bilan bog'laning - ular sizni foydalanuvchilar ro'yxatidan olib
-          tashlashi va to'g'ri ma'lumotlarga ega yangi foydalanuvchi qo'shishi kerak.
-        </p>
-        <p>Agar siz hisob egasi bo'lsangiz, bizga hujjatlarni taqdim eting:</p>
-        <p>
-          <strong>Yuridik shaxs</strong>
-        </p>
-        <ol>
-          <li>Hujjatlarni tayyorlang:</li>
-          <ul>
-            <li>Tashkilotning STIR;</li>
-            <li>
-              kirish huquqini tiklash to'g'risidagi arizani imzolagan shaxsning vakolatini tasdiqlovchi hujjat (bosh
-              direktor uchun - bu tayinlash to'g'risidagi buyruq yoki qarorning nusxasi, boshqa shaxslar uchun -
-              ishonchnoma);
-            </li>
-            <li>shablon bayonoti.</li>
-          </ul>
-          <li>Hujjatlarni payment@airnet.uz manziliga yuboring.</li>
-          <li>Agar savollar boʻlsa, biz qoʻshimcha hujjatlarni soʻraymiz.</li>
-        </ol>
-        <p>
-          <strong>Individual</strong>
-        </p>
-        <ol>
-          <li>Hujjatlarni tayyorlang:</li>
-          <ul>
-            <li>pasportning asosiy tarqalishi nusxasi;</li>
-            <li>Hisob egasining pasporti birinchi sahifada ochiq holda aniq surati</li>
-            <li>shablon bayonoti.</li>
-          </ul>
-          <li>Hujjatlarni payment@airnet.uz manziliga yuboring.</li>
-          <li>Agar savollar boʻlsa, biz qoʻshimcha hujjatlarni soʻraymiz.</li>
-        </ol>
       </>
     ),
     en: (
@@ -432,49 +359,19 @@ const mainData = {
           </ul>
           <li>To improve the security of the account recovery procedure, we may request additional documents.</li>
         </ol>
-
-        <h2>Disable 2-Step Verification if you don't have access to the control panel</h2>
-
-        <p>
-          If you are not the Account Owner, contact the Account Owner - they should remove you from the list of users
-          and add a new user with the correct data.
-        </p>
-        <p>If you are an Account Owner, please provide us with the documents:</p>
-        <p>
-          <strong>Legal entity</strong>
-        </p>
-        <ol>
-          <li>Prepare documents:</li>
-          <ul>
-            <li>TIN of the organization;</li>
-            <li>
-              a document confirming the authority of the person who signed the application for the restoration of access
-              (for the CEO - this is a copy of the order or decision on appointment, for other persons - a power of
-              attorney);
-            </li>
-            <li>template statement.</li>
-          </ul>
-          <li>Send the documents to payment@airnet.uz.</li>
-          <li>If there are questions, we will ask for additional documents.</li>
-        </ol>
-        <p>
-          <strong>Individual</strong>
-        </p>
-        <ol>
-          <li>Prepare documents:</li>
-          <ul>
-            <li>copy of the main spread of the passport;</li>
-            <li>a clear photo of the Account Holder with their passport open on the front page</li>
-            <li>template statement.</li>
-          </ul>
-          <li>Send the documents to payment@airnet.uz.</li>
-          <li>If there are questions, we will ask for additional documents.</li>
-        </ol>
       </>
     ),
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsBilling,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

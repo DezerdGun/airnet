@@ -22,6 +22,7 @@ const data = {
   },
   mainData = {
     headTitle: data.title,
+    url: "/help/ssl",
     content: data,
   };
 

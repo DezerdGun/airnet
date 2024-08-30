@@ -90,6 +90,7 @@ const data = {
   },
   mainData = {
     headTitle: data.title,
+    url: "/help/vds",
     content: data,
   };
 

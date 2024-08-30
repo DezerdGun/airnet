@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsOs } from "@/app/help/os";
 
 const mainData = {
   headTitle: {
@@ -537,6 +538,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsOs,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

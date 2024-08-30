@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsDns } from "@/app/help/dns";
 
 const mainData = {
   headTitle: {
@@ -44,8 +45,8 @@ const mainData = {
     ru: (
       <>
         <p>
-          С помощью продукта DNS-хостинг можно размещать домены, ресурсные записи и обратные записи (PTR-записи) на
-          авторитативных NS-серверах Airnet.
+          С помощью продукта DNS-хостинг можно размещать домены, ресурсные записи и обратные записи (PTR-записи по запросу в тикет) на
+          авторитативных NS-серверах AIRNET.
         </p>
 
         <p>В продукте поддерживаются типы и роли пользователей.</p>
@@ -56,9 +57,9 @@ const mainData = {
           <li>в панели управления;</li>
           <li>через Domains API;</li>
         </ul>
-        <h2>Инфраструктура Airnet DNS</h2>
+        <h2>Инфраструктура AIRNET DNS</h2>
         {/* <img src="/help/dns-about.jpg" /> */}
-        <p>Части инфраструктуры Airnet DNS:</p>
+        <p>Части инфраструктуры AIRNET DNS:</p>
 
         <ul>
           <li>API-сервер, к которому попадают запросы;</li>
@@ -75,7 +76,7 @@ const mainData = {
         </p>
 
         <p>
-          Публичные IP-адреса авторитативных NS-серверов Airnet (dns1.airnet.uz, dns2.airnet.uz) защищены DNS Firewall
+          Публичные IP-адреса авторитативных NS-серверов AIRNET (dns1.airnet.uz, dns2.airnet.uz) защищены DNS Firewall
           от DDoS-атак.
         </p>
 
@@ -88,15 +89,15 @@ const mainData = {
 
         <h2>Ограничения</h2>
         <p>
-          Сейчас DNS Airnet нельзя использовать в качестве Secondary DNS — мы планируем добавить эту функцию в будущем.
+          Сейчас DNS AIRNET нельзя использовать в качестве Secondary DNS — мы планируем добавить эту функцию в будущем.
         </p>
       </>
     ),
     uz: (
       <>
         <p>
-          DNS xostingi yordamida siz Airnetning nufuzli NS serverlarida domenlar, manba yozuvlari va teskari yozuvlarni
-          (PTR yozuvlari) joylashtirishingiz mumkin.
+          DNS xostingi yordamida siz AIRNETning nufuzli NS serverlarida domenlar, manba yozuvlari va teskari yozuvlarni
+          (Chipta orqali so'rov bo'yicha PTR yozuvlari) joylashtirishingiz mumkin.
         </p>
 
         <p>Mahsulot foydalanuvchi turlari va rollarini qoʻllab-quvvatlaydi.</p>
@@ -109,7 +110,7 @@ const mainData = {
         </ul>
         <h2>DNS infratuzilmasini tanlang</h2>
         {/* <img src="/help/dns-about.jpg" /> */}
-        <p>Airnet DNS infratuzilmasining qismlari:</p>
+        <p>AIRNET DNS infratuzilmasining qismlari:</p>
 
         <ul>
           <li>So'rovlar yuboriladigan API serveri;</li>
@@ -126,7 +127,7 @@ const mainData = {
         </p>
 
         <p>
-          Airnetning nufuzli NS serverlarining umumiy IP manzillari (dns1.airnet.uz, dns2.airnet.uz) DNS xavfsizlik
+          AIRNETning nufuzli NS serverlarining umumiy IP manzillari (dns1.airnet.uz, dns2.airnet.uz) DNS xavfsizlik
           devori tomonidan DDoS bilan himoyalangan.
         </p>
 
@@ -139,7 +140,7 @@ const mainData = {
 
         <h2>Cheklovlar</h2>
         <p>
-          DNS Airnet-dan hozirda ikkinchi darajali DNS sifatida foydalanish mumkin emas - kelajakda bu xususiyatni
+          DNS AIRNET-dan hozirda ikkinchi darajali DNS sifatida foydalanish mumkin emas - kelajakda bu xususiyatni
           qo‘shishni rejalashtirmoqdamiz.
         </p>
       </>
@@ -147,7 +148,7 @@ const mainData = {
     en: (
       <>
         <p>
-          With DNS hosting, you can host domains, resource records, and reverse records (PTR records) on Airnet's
+          With DNS hosting, you can host domains, resource records, and reverse records (PTR records on request in ticket) on AIRNET's
           authoritative NS servers.
         </p>
 
@@ -159,9 +160,9 @@ const mainData = {
           <li>in the control panel;</li>
           <li>via the Domains API;</li>
         </ul>
-        <h2>Airnet DNS Infrastructure</h2>
+        <h2>AIRNET DNS Infrastructure</h2>
         {/* <img src="/help/dns-about.jpg" /> */}
-        <p>Parts of the Airnet DNS infrastructure:</p>
+        <p>Parts of the AIRNET DNS infrastructure:</p>
 
         <ul>
           <li>API server to which requests are made;</li>
@@ -178,7 +179,7 @@ const mainData = {
         </p>
 
         <p>
-          Public IP addresses of Airnet's authoritative NS servers (dns1.airnet.uz, dns2.airnet.uz) are DDoS-protected
+          Public IP addresses of AIRNET's authoritative NS servers (dns1.airnet.uz, dns2.airnet.uz) are DDoS-protected
           by DNS Firewall.
         </p>
 
@@ -190,12 +191,20 @@ const mainData = {
         </p>
 
         <h2>Limits</h2>
-        <p>DNS Airnet cannot currently be used as a Secondary DNS - we plan to add this feature in the future.</p>
+        <p>DNS AIRNET cannot currently be used as a Secondary DNS - we plan to add this feature in the future.</p>
       </>
     ),
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsDns,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

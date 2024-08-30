@@ -1,5 +1,6 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
 import PopularSert from "@/components/popularSert";
+import { breadCrumbsSsl } from "@/app/help/ssl";
 
 export default function HelpBlog({ language }) {
   const mainData = {
@@ -161,5 +162,14 @@ export default function HelpBlog({ language }) {
     },
     afterContent: <PopularSert language={language} />,
   };
-  return <HelpBlock data={mainData} language={language} />;
-}
+
+  const breadCrumbs = [
+    ...breadCrumbsSsl,
+    {
+      name: mainData.headTitle,
+      link: mainData.url,
+    },
+  ];
+  
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
+};

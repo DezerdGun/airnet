@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsFtp } from "@/app/help/ftp";
 
 const mainData = {
   headTitle: { ru: "Что такое FTP?", uz: "FTP nma?", en: "What is FTP?" },
@@ -20,7 +21,7 @@ const mainData = {
         <p>По умолчанию для каждого аккаунта на хостинге Airnet.uz предоставлен основной FTP-доступ.</p>
         <p>Для подключения к своему аккаунту по FTP, нужно настроить FTP-клиент.</p>
         <p>В FTP-клиенте должны быть установлены следующие параметры:</p>
-        <ul className="list">
+        <ul>
           <li>Имя пользователя —аналогично с логином для панели управления.</li>
           <li>Пароль — совпадает с паролем для входа в Панель управления.</li>
           <li>
@@ -62,7 +63,7 @@ const mainData = {
         <p>Odatiy bo'lib, Airnet.uz hostingidagi har bir akkaunt uchun, asosiy FTP kirish.</p>
         <p>Hisobingizga FTP orqali ulanish uchun siz FTP mijozini o'rnatishingiz kerak.</p>
         <p>FTP mijozida quyidagi parametrlar o'rnatilishi kerak:</p>
-        <ul className="list">
+        <ul>
           <li>Foydalanuvchi nomi - boshqaruv panelidagi loginga o'xshash.</li>
           <li>Parol - Boshqaruv paneliga kirish uchun parol bilan bir xil.</li>
           <li>
@@ -104,7 +105,7 @@ const mainData = {
         <p>By default, basic FTP access is provided for each account on Airnet.uz hosting.</p>
         <p>To connect to your account via FTP, you need to set up an FTP client.</p>
         <p>The following options must be set in the FTP client:</p>
-        <ul className="list">
+        <ul>
           <li>Username - similar to the login for the control panel.</li>
           <li>Password - same as the password for logging in to the Control Panel.</li>
           <li>
@@ -133,6 +134,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsFtp,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

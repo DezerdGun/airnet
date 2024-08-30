@@ -13,37 +13,36 @@ const data = {
           en: "Registration in the control panel",
         },
         link: "/help/billing/account",
-        children: [
-          {
-            title: {
-              ru: "Восстановление доступа к аккаунту",
-              uz: "Hisobga kirish huquqi tiklanmoqda",
-              en: "Restoring account access",
-            },
-            link: "/help/billing/account/restore",
-          },
-          {
-            title: {
-              ru: "Перенести услуги на другой аккаунт",
-              uz: "Xizmatlarni boshqa hisobga o'tkazish",
-              en: "Transfer services to another account",
-            },
-            link: "/help/billing/account/transfer",
-          },
-          {
-            title: {
-              ru: "Удалить аккаунт",
-              uz: "Hisobni o'chirish",
-              en: "Delete account",
-            },
-            link: "/help/billing/account/delete",
-          },
-        ],
+      },
+      {
+        title: {
+          ru: "Восстановление доступа к аккаунту",
+          uz: "Hisobga kirish huquqi tiklanmoqda",
+          en: "Restoring account access",
+        },
+        link: "/help/billing/restore",
+      },
+      {
+        title: {
+          ru: "Перенести услуги на другой аккаунт",
+          uz: "Xizmatlarni boshqa hisobga o'tkazish",
+          en: "Transfer services to another account",
+        },
+        link: "/help/billing/transfer",
+      },
+      {
+        title: {
+          ru: "Удалить аккаунт",
+          uz: "Hisobni o'chirish",
+          en: "Delete account",
+        },
+        link: "/help/billing/delete",
       },
     ],
   },
   mainData = {
     headTitle: data.title,
+    url: "/help/billing",
     content: data,
   };
 

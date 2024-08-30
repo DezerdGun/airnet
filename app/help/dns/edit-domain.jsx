@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsDns } from "@/app/help/dns";
 
 const mainData = {
   headTitle: {
@@ -56,14 +57,10 @@ const mainData = {
 
         <ol>
           <li>
-            В панели управления перейдите в раздел <strong>Сетевые сервисы</strong> → <strong>DNS-хостинг</strong>.
+            В панели управления перейдите в раздел <strong>Профайлы</strong> → <strong>Изменить данные профайла</strong>.
           </li>
           <li>
-            Откройте страницу домена → вкладка <strong>Настройки домена</strong>.
-          </li>
-          <li>
-            Внесите изменения в поле <strong>Электронная почта</strong> или{" "}
-            <strong>Время негативного кэширования</strong>.
+            Внесите изменения в поле <strong>Электронная почта</strong>
           </li>
           <li>
             Нажмите <strong>Сохранить</strong>.
@@ -86,14 +83,10 @@ const mainData = {
 
         <ol>
           <li>
-            Boshqaruv panelida <strong>Tarmoq xizmatlari</strong> → <strong>DNS hosting</strong>-ga o‘ting.
+          Boshqaruv panelida <strong>Profillar</strong> → <strong>Profil ma’lumotlarini tahrirlash</strong>-ga o‘ting.
           </li>
           <li>
-            Domen sahifasi → <strong>Domen sozlamalari</strong> yorlig‘ini oching.
-          </li>
-          <li>
-            <strong>Email</strong> yoki maydoniga o'zgartirishlar kiriting
-            <strong>Salbiy keshlash vaqti</strong>.
+            <strong>Email</strong> maydoniga o'zgartirishlar kiriting
           </li>
           <li>
             <strong>Saqlash</strong> tugmasini bosing.
@@ -116,13 +109,10 @@ const mainData = {
 
         <ol>
           <li>
-            In the control panel, go to <strong>Network Services</strong> → <strong>DNS Hosting</strong>.
+          In the control panel, go to <strong>Profiles</strong> → <strong>Edit profile details</strong>.
           </li>
           <li>
-            Open the domain page → <strong>Domain settings</strong> tab.
-          </li>
-          <li>
-            Make changes to the field <strong>Email</strong> or <strong>Negative caching time</strong>.
+            Make changes to the field <strong>Email</strong>
           </li>
           <li>
             Click <strong>Save</strong>.
@@ -133,6 +123,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsDns,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsBilling } from "@/app/help/billing";
 
 const mainData = {
   headTitle: { ru: "Удалить аккаунт", uz: "Hisobni o'chirish", en: "Delete account" },
@@ -17,7 +18,7 @@ const mainData = {
         uz: "Hisobga kirish huquqi tiklanmoqda",
         en: "Restoring account access",
       },
-      link: "/help/billing/account/restore",
+      link: "/help/billing/restore",
     },
     {
       title: {
@@ -25,7 +26,7 @@ const mainData = {
         uz: "Xizmatlarni boshqa hisobga o'tkazish",
         en: "Transfer services to another account",
       },
-      link: "/help/billing/account/transfer",
+      link: "/help/billing/transfer",
     },
   ],
   content: {
@@ -147,6 +148,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsBilling,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

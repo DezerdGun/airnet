@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsVds } from "@/app/help/vds";
 
 const mainData = {
   headTitle: {
@@ -90,7 +91,7 @@ const mainData = {
         <p>
           Например:{" "}
           <em>
-            можно изменить тариф с VDS/VPS «Micro» на VDS/VPS «VIP», но нельзя с VDS/VPS «VIP» на VDS/VPS «Micro».
+            можно изменить тариф с VDS/VPS «Platinum» на VDS/VPS «VIP», но нельзя с VDS/VPS «VIP» на VDS/VPS «Platinum».
           </em>
         </p>
         <p>
@@ -112,7 +113,7 @@ const mainData = {
         <p>
           Masalan:{" "}
           <em>
-            tarifni VDS/VPS "Micro" dan VDS/VPS "VIP" ga o'zgartirishingiz mumkin, lekin VDS/VPS "VIP" dan VDS/VPS ga
+            tarifni VDS/VPS "Platinum" dan VDS/VPS "VIP" ga o'zgartirishingiz mumkin, lekin VDS/VPS "VIP" dan VDS/VPS ga
             emas Mikro.
           </em>
         </p>
@@ -136,8 +137,8 @@ const mainData = {
         <p>
           For example:{" "}
           <em>
-            you can change the tariff from VDS/VPS "Micro" to VDS/VPS "VIP", but not from VDS/VPS "VIP" to VDS/VPS
-            "Micro".
+            you can change the tariff from VDS/VPS "Platinum" to VDS/VPS "VIP", but not from VDS/VPS "VIP" to VDS/VPS
+            "Platinum".
           </em>
         </p>
         <p>
@@ -154,6 +155,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsVds,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

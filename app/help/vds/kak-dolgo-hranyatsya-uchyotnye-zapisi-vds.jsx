@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsVds } from "@/app/help/vds";
 
 const mainData = {
   headTitle: {
@@ -83,28 +84,42 @@ const mainData = {
   content: {
     ru: (
       <p>
-        После блокировки услуги, учётная запись VDS хранится на наших серверах 30 дней. Если в течении этого периода
-        денежные средства не поступят, сервис и все данные будут безвозвратно удалены с наших серверов в соответствии с
+        После блокировки услуги, учётная запись VDS хранится на наших серверах 30 дней.
+        <br />
+        <br /> 
+        Если в течении этого периода денежные средства не поступят, сервис и все данные будут безвозвратно удалены с наших серверов в соответствии с
         условиями договора.
       </p>
     ),
     uz: (
       <p>
-        Xizmatni bloklagandan so'ng, VDS hisob qaydnomasi bizning serverlarimizda 30 kun davomida saqlanadi. Agar bu
-        davrda mablag' olinmaydi, xizmat va barcha ma'lumotlar bizning serverlarimizdan butunlay o'chiriladi shartnoma
+        Xizmatni bloklagandan so'ng, VDS hisob qaydnomasi bizning serverlarimizda 30 kun davomida saqlanadi. 
+        <br />
+        <br />
+        Agar bu davrda mablag' olinmaydi, xizmat va barcha ma'lumotlar bizning serverlarimizdan butunlay o'chiriladi shartnoma
         shartlariga muvofiq.
       </p>
     ),
     en: (
       <p>
-        After blocking the service, the VDS account is stored on our servers for 30 days. If during this period funds
-        will not be received, the service and all data will be permanently deleted from our servers in accordance with
+        After blocking the service, the VDS account is stored on our servers for 30 days.
+        <br />
+        <br />
+        If during this period funds will not be received, the service and all data will be permanently deleted from our servers in accordance with
         the terms of the contract.
       </p>
     ),
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsVds,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

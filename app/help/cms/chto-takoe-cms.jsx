@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsCms } from "@/app/help/cms";
 
 const mainData = {
   headTitle: { ru: "Что такое CMS?", uz: "CMS bu nma?", en: "What is CMS?" },
@@ -84,6 +85,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsCms,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

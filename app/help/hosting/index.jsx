@@ -18,6 +18,7 @@ const data = {
   },
   mainData = {
     headTitle: data.title,
+    url: "/help/hosting",
     content: data,
   };
 

@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsDns } from "@/app/help/dns";
 
 const mainData = {
   headTitle: {
@@ -55,10 +56,7 @@ const mainData = {
         <ol>
           <li>Делегируйте домен.</li>
           <li>
-            В панели управления перейдите в раздел <strong>Сетевые сервисы</strong> → <strong>DNS-хостинг</strong>.
-          </li>
-          <li>
-            Откройте страницу домена → вкладка <strong>DNS-записи</strong>.
+            В панели управления перейдите в раздел <strong>Кабинет</strong> → <strong>Домены</strong> → <strong>Управление DNS-записями</strong>.
           </li>
           <li>
             Нажмите <strong>Добавить запись</strong>.
@@ -180,10 +178,7 @@ const mainData = {
         <ol>
           <li>Domenni vakolat bering.</li>
           <li>
-            Boshqaruv panelida <strong>Tarmoq xizmatlari</strong> → <strong>DNS hosting</strong>-ga o‘ting.
-          </li>
-          <li>
-            Domen sahifasi → <strong>DNS yozuvlari</strong> yorlig‘ini oching.
+          Boshqaruv panelida <strong>Hisob qaydnomasi</strong> → <strong>Domenlar</strong> → <strong>DNS yozuvlarini boshqarish</strong> bo‘limiga o‘ting.
           </li>
           <li>
             <strong>Yozuv qo'shish</strong> tugmasini bosing.
@@ -308,10 +303,7 @@ const mainData = {
         <ol>
           <li>Delegate the domain.</li>
           <li>
-            In the control panel, go to <strong>Network Services</strong> → <strong>DNS Hosting</strong>.
-          </li>
-          <li>
-            Open the domain page → <strong>DNS records</strong> tab.
+            In the control panel, go to <strong>Account</strong> → <strong>Domains</strong> → <strong>Manage DNS records</strong>.
           </li>
           <li>
             Click <strong>Add Entry</strong>.
@@ -422,6 +414,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsDns,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

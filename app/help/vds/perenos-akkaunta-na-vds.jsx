@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsVds } from "@/app/help/vds";
 
 const mainData = {
   headTitle: { ru: "Перенос аккаунта на VDS", uz: "Hisobni VDS-ga o'tkazish", en: "Account transfer to VDS" },
@@ -92,7 +93,7 @@ const mainData = {
         </p>
         <p>
           Если возникнут трудности в процессе экспорта данных, вы можете получить необходимую консультацию, оставив
-          заявку в отделе технической поддержки по телефону <a href="tel:+998 (90) 324-30-80">+998 (90) 324-30-80</a>
+          заявку в отделе технической поддержки по телефону <a href="tel:+998712028700">+998 (71) 202-87-00</a>
         </p>
       </>
     ),
@@ -112,7 +113,7 @@ const mainData = {
         </p>
         <p>
           Ma'lumotlarni eksport qilish jarayonida qiyinchiliklarga duch kelsangiz, kerakli maslahatlarni olishingiz
-          mumkin, <a href="tel:+998 (90) 324-30-80">+998 (90) 324-30-80</a> telefon orqali texnik yordam bo'limiga
+          mumkin, <a href="tel:+998712028700">+998 (71) 202-87-00</a> telefon orqali texnik yordam bo'limiga
           so'rov qoldirish
         </p>
       </>
@@ -132,13 +133,21 @@ const mainData = {
         </p>
         <p>
           If you encounter difficulties during the data export process, you can get the necessary advice by leaving
-          contact the technical support department by phone <a href="tel:+998 (90) 324-30-80">+998 (90) 324-30-80</a>
+          contact the technical support department by phone <a href="tel:+998712028700">+998 (71) 202-87-00</a>
         </p>
       </>
     ),
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsVds,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

@@ -132,9 +132,9 @@ export default function CustomSwiper({ language }) {
 			),
 		},
 		slideText32: {
-			ru: '10% Скидка по промо-коду AIR-HAPPY',
-			uz: '10% Скидка по промо-коду AIR-HAPPY',
-			en: '10% Скидка по промо-коду AIR-HAPPY',
+			ru: '',
+			uz: '',
+			en: '',
 		},
 	}
 
@@ -153,22 +153,6 @@ export default function CustomSwiper({ language }) {
 				}}
 				className={st.swiper__swiper}
 			>
-				<SwiperSlide>
-					<div
-						className={st.swiper__block}
-						style={{ background: `url('/happy6.webp') no-repeat` }}
-					>
-						<Container>
-							<div className={st.swiper__block__item}>
-								<h2>{langData.slideTitle3[language]}</h2>
-								<h4>{langData.slideText33[language]}</h4>
-								<br />
-								<h4>{langData.slideText32[language]}</h4>
-								<div className={st.swiper__block__item__bg}></div>
-							</div>
-						</Container>
-					</div>
-				</SwiperSlide>
 				<SwiperSlide>
 					<div
 						className={st.swiper__block}
@@ -196,6 +180,22 @@ export default function CustomSwiper({ language }) {
 								<h4>{langData.slideText21[language]}</h4>
 								<br />
 								<h4>{langData.slideText22[language]}</h4>
+								<div className={st.swiper__block__item__bg}></div>
+							</div>
+						</Container>
+					</div>
+				</SwiperSlide>
+				<SwiperSlide>
+					<div
+						className={st.swiper__block}
+						style={{ background: `url('/happy6.webp') no-repeat` }}
+					>
+						<Container>
+							<div className={st.swiper__block__item}>
+								<h2>{langData.slideTitle3[language]}</h2>
+								<h4>{langData.slideText33[language]}</h4>
+								<br />
+								<h4>{langData.slideText32[language]}</h4>
 								<div className={st.swiper__block__item__bg}></div>
 							</div>
 						</Container>

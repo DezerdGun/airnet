@@ -2,6 +2,7 @@ import HelpBlock from "@/components/helpItem/helpBlock";
 import { LINKS } from "@/components/requirements";
 import { checkLang } from "@/utils/checkLang";
 import Link from "next/link";
+import { breadCrumbsVds } from "@/app/help/vds";
 
 export default function HelpBlog({ language }) {
   const mainData = {
@@ -114,11 +115,7 @@ export default function HelpBlog({ language }) {
           <p>
             Ознакомится со всеми тарифными планами можно на сайта{" "}
             <Link href={checkLang(language) + LINKS.OPTIMAL_VDS}>
-              <a>Оптимальные</a>
-            </Link>{" "}
-            и{" "}
-            <Link href={checkLang(language) + LINKS.BIG_VDS}>
-              <a>Высокопроизводительные</a>
+              <a>Оптимальные и Высокопроизводительные</a>
             </Link>{" "}
             сервера
           </p>
@@ -154,11 +151,7 @@ export default function HelpBlog({ language }) {
           <p>
             Saytda barcha tarif rejalari bilan serverning{" "}
             <Link href={checkLang(language) + LINKS.OPTIMAL_VDS}>
-              <a>Optimal</a>
-            </Link>{" "}
-            va{" "}
-            <Link href={checkLang(language) + LINKS.BIG_VDS}>
-              <a>Kuchli</a>
+              <a>Optimal va Kuchli</a>
             </Link>{" "}
             turlarini tanishishingiz mumkin
           </p>
@@ -193,11 +186,7 @@ export default function HelpBlog({ language }) {
           <p>
             You can get acquainted with all tariff plans on the website{" "}
             <Link href={checkLang(language) + LINKS.OPTIMAL_VDS}>
-              <a>Optimal</a>
-            </Link>{" "}
-            and{" "}
-            <Link href={checkLang(language) + LINKS.BIG_VDS}>
-              <a>High performance</a>
+              <a>Optimal and High performance</a>
             </Link>{" "}
             servers
           </p>
@@ -206,5 +195,13 @@ export default function HelpBlog({ language }) {
     },
   };
 
-  return <HelpBlock data={mainData} language={language} />;
+  const breadCrumbs = [
+    ...breadCrumbsVds,
+    {
+      name: mainData.headTitle,
+      link: mainData.url,
+    },
+  ];
+
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }

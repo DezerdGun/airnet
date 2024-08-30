@@ -50,6 +50,7 @@ const data = {
   },
   mainData = {
     headTitle: data.title,
+    url: "/help/dns",
     content: data,
   };
 

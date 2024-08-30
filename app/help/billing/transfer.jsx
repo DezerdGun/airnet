@@ -1,4 +1,5 @@
 import HelpBlock from "@/components/helpItem/helpBlock";
+import { breadCrumbsBilling } from "@/app/help/billing";
 
 const mainData = {
   headTitle: {
@@ -21,11 +22,11 @@ const mainData = {
         uz: "Hisobga kirish huquqi tiklanmoqda",
         en: "Restoring account access",
       },
-      link: "/help/billing/account/restore",
+      link: "/help/billing/restore",
     },
     {
       title: { ru: "Удалить аккаунт", uz: "Hisobni o'chirish", en: "Delete account" },
-      link: "/help/billing/account/delete",
+      link: "/help/billing/delete",
     },
   ],
   content: {
@@ -253,6 +254,14 @@ const mainData = {
   },
 };
 
+const breadCrumbs = [
+  ...breadCrumbsBilling,
+  {
+    name: mainData.headTitle,
+    link: mainData.url,
+  },
+];
+
 export default function HelpBlog({ language }) {
-  return <HelpBlock data={mainData} language={language} />;
+  return <HelpBlock data={mainData} language={language} breadCrumbs={breadCrumbs} />;
 }
