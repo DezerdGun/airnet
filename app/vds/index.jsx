@@ -416,7 +416,7 @@ export const forDatacenterVDSData = {
   },
   img: "/ddos-img.png",
   count: "99,98%",
-  text: "Сердний uptime на наших серверах",
+  text: "Средний uptime на наших серверах",
   count2: "0,2 сек",
   text2: "Среднее время загрузки сайтов на наших серверах",
   count3: "10000 +",
@@ -434,6 +434,251 @@ export const forDatacenterVDSData = {
           height="512"
         >
           <path d="M18,0H6C3.24,0,1,2.24,1,5v14c0,2.76,2.24,5,5,5h12c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM6,2h12c1.65,0,3,1.35,3,3V15H3V5c0-1.65,1.35-3,3-3Zm12,20H6c-1.65,0-3-1.35-3-3v-2H21v2c0,1.65-1.35,3-3,3Zm2-2.5c0,.83-.67,1.5-1.5,1.5s-1.5-.67-1.5-1.5,.67-1.5,1.5-1.5,1.5,.67,1.5,1.5Zm-4,0c0,.83-.67,1.5-1.5,1.5s-1.5-.67-1.5-1.5,.67-1.5,1.5-1.5,1.5,.67,1.5,1.5Z" />
+        </svg>
+      ),
+    },
+  ],
+};
+
+export const forContractArticlesData = {
+  title: {
+    ru: <>Полезные статьи</>,
+    uz: <>Foydali maqolalar</>,
+    en: <>Useful articles</>,
+  },
+  desc: {
+    ru: (
+      <>
+      </>
+    ),
+    uz: ( 
+      <>
+      </>
+    ),
+    en:  ( 
+      <>
+      </>
+    ),
+  },
+  img: "/sitepad-img.png",
+  content: [
+    {
+      title: {
+        ru: "Необходимые навыки для работы с VDS",
+        uz: "VDS bilan ishlash uchun zarur bo'lgan ko'nikmalar",
+        en: "Necessary skills for working with VDS",
+      },
+      link: '/help/vds/neobhodimye-navyki-dlya-raboty-s-vds',
+      img: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="Outline"
+          viewBox="0 0 24 24"
+          width="512"
+          height="512"
+        >
+          <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+          <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+          <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+        </svg>
+      ),
+    },
+    {
+      title: {
+        ru: "Смена тарифного плана на VDS",
+        uz: "Tarif rejasini VDS ga o'zgartirish",
+        en: "Change tariff plan to VDS",
+      },
+      link: '/help/vds/smena-tarifnogo-plana-na-vds',
+      img: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="Outline"
+          viewBox="0 0 24 24"
+          width="512"
+          height="512"
+        >
+          <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+          <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+          <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+        </svg>
+      ),
+    },
+    {
+      title: {
+        ru: "Как долго хранятся учётные записи VDS?",
+        uz: "VDS hisoblari qancha vaqt saqlanadi?",
+        en: "How long are VDS accounts stored?",
+      },
+      link: '/help/vds/kak-dolgo-hranyatsya-uchyotnye-zapisi-vds',
+      img: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="Outline"
+          viewBox="0 0 24 24"
+          width="512"
+          height="512"
+        >
+          <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+          <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+          <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+        </svg>
+      ),
+    },
+    {
+      title: {
+        ru: "Восстановление root пароля от VDS",
+        uz: "VDS dan ildiz parolini tiklash",
+        en: "Recovering root password from VDS",
+      },
+      link: '/help/vds/vosstanovlenie-root-parolya-ot-vds',
+      img: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="Outline"
+          viewBox="0 0 24 24"
+          width="512"
+          height="512"
+        >
+          <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+          <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+          <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+        </svg>
+      ),
+    },
+    {
+      title: {
+        ru: "Перенос аккаунта на VDS",
+        uz: "Hisobingiz VDS-ga o'tkazilmoqda",
+        en: "Transferring an account to VDS",
+      },
+      link: '/help/vds/perenos-akkaunta-na-vds',
+      img: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="Outline"
+          viewBox="0 0 24 24"
+          width="512"
+          height="512"
+        >
+          <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+          <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+          <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+        </svg>
+      ),
+    },
+    {
+      title: {
+        ru: "Преимущества VDS и VPS-серверов",
+        uz: "VDS va VPS serverlarining afzalliklari",
+        en: "Advantages of VDS and VPS servers",
+      },
+      link: '/help/vds/preimushhestva-vds-i-vps-serverov',
+      img: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="Outline"
+          viewBox="0 0 24 24"
+          width="512"
+          height="512"
+        >
+          <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+          <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+          <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+        </svg>
+      ),
+    },
+    {
+      title: {
+        ru: "Подключиться к выделенному серверу",
+        uz: "Maxsus serverga ulaning",
+        en: "Connect to a dedicated server",
+      },
+      link: '/help/vds/connect-to-server',
+      img: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="Outline"
+          viewBox="0 0 24 24"
+          width="512"
+          height="512"
+        >
+          <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+          <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+          <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+        </svg>
+      ),
+    },
+    {
+      title: {
+        ru: "Управлять сервером через VNC-консоль",
+        uz: "Serverni VNC konsoli orqali boshqaring",
+        en: "Manage the server via VNC console",
+      },
+      link: '/help/vds/manage-server-vnc',
+      img: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="Outline"
+          viewBox="0 0 24 24"
+          width="512"
+          height="512"
+        >
+          <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+          <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+          <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+        </svg>
+      ),
+    },
+    {
+      title: {
+        ru: "Резервное копирование выделенных серверов",
+        uz: "Maxsus server zahira nusxasi",
+        en: "Dedicated Server Backup",
+      },
+      link: '/help/vds/backups-server',
+      img: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="Outline"
+          viewBox="0 0 24 24"
+          width="512"
+          height="512"
+        >
+          <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+          <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+          <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+        </svg>
+      ),
+    },
+    {
+      title: {
+        ru: "Развернуть виртуальную машину с Windows Server",
+        uz: "Windows Server bilan virtual mashinani o'rnating",
+        en: "Deploy a virtual machine with Windows Server",
+      },
+      link: '/help/vds/windows',
+      img: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="Outline"
+          viewBox="0 0 24 24"
+          width="512"
+          height="512"
+        >
+          <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+          <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+          <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
         </svg>
       ),
     },
@@ -1920,6 +2165,7 @@ export default function VDS({ language }) {
 
         <ForContract data={forContractVDSData} language={language} />
         <ForSupport data={forSupportVDSData} language={language} />
+        <ForContract data={forContractArticlesData} language={language} />
         <ForDatacenter data={forDatacenterVDSData} language={language} />
 
         <Partners language={language} />

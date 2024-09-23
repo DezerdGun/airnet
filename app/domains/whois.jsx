@@ -16,6 +16,8 @@ import { LINKS } from "@/components/requirements";
 import Reviews from "@/components/reviews";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import ForContract from "@/components/forContract";
+import { forContractArticlesData } from "../domains";
 
 export const breadCrumbsDomain = [
   {
@@ -945,6 +947,7 @@ export default function WhoIs({ language }) {
       </Container>
 
       <FAQ faq={faq} title="FAQ" language={language} />
+      <ForContract data={forContractArticlesData} language={language} />
       <Partners language={language} />
       <Reviews language={language} />
     </>

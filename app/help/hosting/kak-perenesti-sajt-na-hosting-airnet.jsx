@@ -32,6 +32,10 @@ const mainData = {
         <p>
           Name server 2: <strong>dns2.airnet.uz</strong>
         </p>
+        <h3>Перенос файлов сайта на наш хостинг.</h3>
+        <p>
+          Сформировать тикет-заявку в биллинг панели на установку сайта на хостинг и предоставить архив сайта в формате RAR или ZIP.
+        </p>
       </>
     ),
     uz: (
@@ -56,6 +60,10 @@ const mainData = {
         <p>
           Name server 2: <strong>dns2.airnet.uz</strong>
         </p>
+        <h3>Sayt fayllarini xostingimizga o'tkazing.</h3>
+        <p>
+          Saytni xostingga o'rnatish va sayt arxivini RAR yoki ZIP formatida taqdim etish uchun hisob-kitob panelida chipta yarating.
+        </p>
       </>
     ),
     en: (
@@ -79,6 +87,10 @@ const mainData = {
         </p>
         <p>
           Name server 2: <strong>dns2.airnet.uz</strong>
+        </p>
+        <h3>Transferring site files to our hosting.</h3>
+        <p>
+          Create a ticket request in the billing panel to install the site on the hosting and provide the site archive in RAR or ZIP format.
         </p>
       </>
     ),

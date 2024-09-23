@@ -41,6 +41,7 @@ import { forFreeVDSData } from "../vds";
 import { forContractVDSData } from "../vds";
 import { forSupportVDSData } from "../vds";
 import { forDatacenterVDSData } from "../vds";
+import { forContractArticlesData } from "../vds";
 
 export const ForIntelVDSData = {
   title: {
@@ -1281,6 +1282,7 @@ export default function VDS({ language }) {
         <Howworks language={language} />
         <ForContract data={forContractVDSData} language={language} />
         <ForSupport data={forSupportVDSData} language={language} />
+        <ForContract data={forContractArticlesData} language={language} />
         <ForDatacenter data={forDatacenterVDSData} language={language} />
 
         <Partners language={language} />

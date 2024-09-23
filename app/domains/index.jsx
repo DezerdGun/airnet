@@ -229,7 +229,7 @@ const content = [
           <>
             <p>
               Счет на продление домена биллинговая система выставляет
-              автоматически за 30 дней до срока оканчания регистрации, также вы
+              автоматически за 30 дней до срока окончания регистрации, также вы
               можете самостоятельно выставить счет в любой момен в биллинг
               панели во вкладке "Домена", максимальный срок регистрации домена и
               продления домена 10 лет.
@@ -345,6 +345,119 @@ const content = [
       },
     },
   ];
+
+export const forContractArticlesData = {
+    title: {
+      ru: <>Полезные статьи</>,
+      uz: <>Foydali maqolalar</>,
+      en: <>Useful articles</>,
+    },
+    desc: {
+      ru: (
+        <>
+        </>
+      ),
+      uz: ( 
+        <>
+        </>
+      ),
+      en:  ( 
+        <>
+        </>
+      ),
+    },
+    img: "/sitepad-img.png",
+    content: [
+      {
+        title: {
+          ru: "Наши DNS-записи",
+          uz: "Bizning DNS yozuvlarimiz",
+          en: "Our DNS records",
+        },
+        link: '/help/domain/dns',
+        img: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Outline"
+            viewBox="0 0 24 24"
+            width="512"
+            height="512"
+          >
+            <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+            <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+            <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+            <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          </svg>
+        ),
+      },
+      {
+        title: {
+          ru: "Как зарегистрировать домен?",
+          uz: "Domenni qanday ro'yxatdan o'tkazish kerak?",
+          en: "How to register a domain?",
+        },
+        link: '/help/domain/kak-zaregistrirovat-domen',
+        img: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Outline"
+            viewBox="0 0 24 24"
+            width="512"
+            height="512"
+          >
+            <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+            <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+            <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+            <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          </svg>
+        ),
+      },
+      {
+        title: {
+          ru: "Рекомендации по выбору доменного имени",
+          uz: "Domen nomini tanlash bo'yicha tavsiyalar",
+          en: "Recommendations for choosing a domain name",
+        },
+        link: '/help/domain/rekomendaczii-po-vyboru-domennogo-imeni',
+        img: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Outline"
+            viewBox="0 0 24 24"
+            width="512"
+            height="512"
+          >
+            <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+            <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+            <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+            <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          </svg>
+        ),
+      },
+      {
+        title: {
+          ru: "Нужно ли вводить данные паспорта для регистрации?",
+          uz: "Ro'yxatdan o'tish uchun pasport ma'lumotlarini kiritishim kerakmi?",
+          en: "Do I need to enter my passport details for registration?",
+        },
+        link: '/help/domain/nuzhno-li-vvodit-dannye-pasporta-dlya-registraczii',
+        img: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Outline"
+            viewBox="0 0 24 24"
+            width="512"
+            height="512"
+          >
+            <path d="M24,11.247A12.012,12.012,0,1,0,12.017,24H19a5.005,5.005,0,0,0,5-5V11.247ZM22,19a3,3,0,0,1-3,3H12.017a10.041,10.041,0,0,1-7.476-3.343,9.917,9.917,0,0,1-2.476-7.814,10.043,10.043,0,0,1,8.656-8.761A10.564,10.564,0,0,1,12.021,2,9.921,9.921,0,0,1,18.4,4.3,10.041,10.041,0,0,1,22,11.342Z" />
+            <path d="M8,9h4a1,1,0,0,0,0-2H8A1,1,0,0,0,8,9Z" />
+            <path d="M16,11H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+            <path d="M16,15H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" />
+          </svg>
+        ),
+      },
+    ],
+  };
 
 export const breadCrumbsDomains = [
   {
@@ -571,6 +684,7 @@ export default function Domains({ language }) {
         <Howworks language={language} />
         <ForContract data={forContractVDSData} language={language} />
         <ForSupport data={forSupportVDSData} language={language} />
+        <ForContract data={forContractArticlesData} language={language} />
         <ForDatacenter data={forDatacenterVDSData} language={language} />
 
         <Partners language={language} />

@@ -21,7 +21,7 @@ export default function ForSupport({ data, language }) {
               </li>
             ))}
           </ul>
-        </div>
+        </div> 
       </div>
     </Container>
   );

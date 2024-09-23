@@ -22,6 +22,7 @@ import { forDatacenterVDSData } from "../vds";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ProductDomain from "../../components/seo/productdomain"
+import { forContractArticlesData } from "../domains";
 
 export const breadCrumbsDomain = [
   {
@@ -695,6 +696,7 @@ export default function Domains({ language }) {
         <Howworks language={language} />
         <ForContract data={forContractVDSData} language={language} />
         <ForSupport data={forSupportVDSData} language={language} />
+        <ForContract data={forContractArticlesData} language={language} />
         <ForDatacenter data={forDatacenterVDSData} language={language} />
 
         <Partners language={language} />
