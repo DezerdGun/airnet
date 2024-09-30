@@ -4,40 +4,39 @@ import { checkLang } from "@/utils/checkLang"
 import Image from "next/image"
 import Link from "next/link"
 import st from "./blog.module.scss"
-import BreadCrumbs from "../../components/seo/breadCrumbs"
+import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import ProductDomain from "../../components/seo/productdomain";
 
 export const blog = [
 	{
-		img: "/blog/cyberpunk.jpg",
-		link: "/blog/test",
-		date: "24.12.2023",
+		img: "/blog/com.jpg",
+		link: "/blog/domen-com-chto-eto",
+		date: "30.09.2024",
 		title: {
-			ru: "Акции разработчика игры Cyberpunk 2077 рухнули на 20%",
-			uz: "Cyberpunk 2077 ishlab chiqaruvchisi ulushlari 20 foizga tushib ketdi",
-			en: "Cyberpunk 2077 game developer stocks plummeted 20%",
+			ru: "Домен .COM — что это такое, особенности и преимущества",
+			uz: ".COM domeni - bu nima, xususiyatlari va afzalliklari",
+			en: "Domain .COM - what is it, features and advantages",
 		},
 		description: {
 			ru: (
 				<>
 					<p>
-						Котировки польской студии CD Projekt Red резко подешевели на фоне удаления игры Cyberpunk 2077 из магазина
-						Sony.
+						Com – одна из наиболее узнаваемых интернет-пользователями доменных зон.
 					</p>
 				</>
 			),
 			uz: (
 				<>
 					<p>
-						Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk
-						2077 o'yinini olib tashlash.
+						Com – одна из наиболее узнаваемых интернет-пользователями доменных зон.
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+						Com – одна из наиболее узнаваемых интернет-пользователями доменных зон.
 					</p>
 				</>
 			),
@@ -264,6 +263,17 @@ export default function Blog({ language }) {
 	return <BlogBlock pagination={pagination} blog={blog} language={language} />
 }
 
+export const breadCrumbsBlog = [
+	{
+	  name: {
+		ru: "Блог",
+		uz: "Blog",
+		en: "Blog",
+	  },
+	  link: "/blog",
+	},
+  ];
+
 export function BlogBlock({ pagination, blog, language }) {
 	const langData = {
 		seoT: {
@@ -286,8 +296,13 @@ export function BlogBlock({ pagination, blog, language }) {
 		<div className="bg-gray">
 			<SEO title={langData.seoT[language]} desc={langData.descT[language]} />
       
-			<BreadCrumbs data={[{ name: 'Блог' }]} />
-			<PageBreadcrumb links={[{ name: 'Блог' }]} />
+			<ProductDomain />
+			{breadCrumbsBlog && breadCrumbsBlog.length ? (
+				<>
+				<BreadCrumbs data={breadCrumbsBlog} language={language} />
+				<PageBreadcrumb links={breadCrumbsBlog} language={language} />
+				</>
+			) : null}
 
 			<Container headTitle={langData.headTitle[language]} clNTitle="text-center">
 				<div className={st.blog}>

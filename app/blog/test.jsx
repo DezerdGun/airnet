@@ -1,5 +1,6 @@
 import BlogItem from "@/components/blogItem"
 import Blogslider from "@/components/blogslider";
+import { breadCrumbsBlog } from "@/app/blog";
 
 const data = {
 	title: {
@@ -184,8 +185,22 @@ const data = {
 		),
 	},
 	next: "/blog/telegram-voice-chat",
-}
+},
 
+mainData = {
+    headTitle: data.title,
+    url: "/blog/domen-com-chto-eto",
+    content: data,
+  };
+
+  export const breadCrumbsBlog1 = [
+    ...breadCrumbsBlog,
+    {
+      name: data.title,
+      link: mainData.url,
+    },
+  ];
+  
 export default function Blog({ language }) {
-	return <BlogItem data={data} language={language} />
+	return <BlogItem data={data} language={language} breadCrumbs={breadCrumbsBlog1} />
 }

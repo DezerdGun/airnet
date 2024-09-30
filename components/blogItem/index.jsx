@@ -4,10 +4,11 @@ import Link from "next/link"
 import Container from "../container/index.jsx"
 import SEO from "../seo"
 import st from "./blogItem.module.scss"
-import PageBreadcrumb from "../seo/pageBreadCrumbs";
 import FAQ from "@/components/faq";
+import PageBreadcrumb from "@/components/seo/pageBreadCrumbs";
+import BreadCrumbs from "@/components/seo/breadCrumbs.jsx";
 
-export default function BlogItem({ data, language }) {
+export default function BlogItem({ data, language, breadCrumbs }) {
 	const langData = {
 		title: {
 			ru: "Хостинг TAS-IX в Ташкенте, Узбекистане",
@@ -57,11 +58,17 @@ export default function BlogItem({ data, language }) {
 				desc={data.desc[language]}
 			/>
 			
-			<PageBreadcrumb links={[{ name: data.title[language] }]} />
+			{breadCrumbs && breadCrumbs.length ? (
+			<>
+				<BreadCrumbs data={breadCrumbs} language={language} />
+				<PageBreadcrumb links={breadCrumbs} language={language} />
+			</>
+			) : null}
 
 			<Container>
 				<div className={st.blogItem}>
 					<div className={st.blogItem__center}>
+						{/* <h1>{data.headTitle[language]}</h1> */}
 						<div className={st.blogItem__mainImg}>
 							<Image
 								src={data.img}
@@ -92,7 +99,7 @@ export default function BlogItem({ data, language }) {
 								<span>- {data.date}</span>
 							</div>
 						</div>
-						<h1>{data.title[language]}</h1>
+						<h1>{data.headTitle[language]}</h1>
 
 						{data.content[language]}
 						
@@ -133,8 +140,8 @@ export default function BlogItem({ data, language }) {
 							<h3>Содержание</h3>
 							<ol>
 							{data.alinks.map((item) => (
-								<li key={item.name}>
-									<Link href="/">
+								<li key={item.slug}>
+									<Link href={`${item.location}/${item.slug}#${item.slug}`}>
 										<a>{item.title[language]}</a>
 									</Link>
 								</li>
@@ -143,10 +150,10 @@ export default function BlogItem({ data, language }) {
 						</div>
 						<div className={st.blogItem__right__category}>
 							<h3>Категорий</h3>
-							<span><a href="/">Сервера</a></span>
-							<span><a href="/">Хостинг</a></span>
-							<span><a href="/">Windows</a></span>
-							<span><a href="/">Linux</a></span>
+							<span><a href="/dedicated">Сервера</a></span>
+							<span><a href="/hosting">Хостинг</a></span>
+							<span><a href="/vds/arenda-servera-windows">Windows</a></span>
+							<span><a href="/vds/arenda-servera-linux">Linux</a></span>
 						</div>
 					</div>
 				</div>
