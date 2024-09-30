@@ -203,39 +203,6 @@ export const blog = [
 			),
 		},
 	},
-	{
-		img: "/blog/com.jpg",
-		link: "/blog/test",
-		date: "30.09.2024",
-		title: {
-			ru: "test",
-			uz: "test",
-			en: "test",
-		},
-		description: {
-			ru: (
-				<>
-					<p>
-					test
-					</p>
-				</>
-			),
-			uz: (
-				<>
-					<p>
-					test
-					</p>
-				</>
-			),
-			en: (
-				<>
-					<p>
-					test
-					</p>
-				</>
-			),
-		},
-	},
 ]
 
 export default function Blog({ language }) {
