@@ -139,13 +139,13 @@ export default function BlogItem({ data, language, breadCrumbs }) {
 						<div className={st.blogItem__right__text}>
 							<h3>Содержание</h3>
 							<ol>
-							{data.alinks.map((item) => (
+								{data.alinks.map((item) => (
 								<li key={item.slug}>
-									<Link href={`${item.location}/${item.slug}#${item.slug}`}>
-										<a>{item.title[language]}</a>
+									<Link href={`#${item.title.slug}`}>
+									<a>{item.title[language]}</a>
 									</Link>
 								</li>
-          					))}
+								))}
 							</ol>
 						</div>
 						<div className={st.blogItem__right__category}>
