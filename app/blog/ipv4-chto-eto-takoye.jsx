@@ -22,7 +22,7 @@ const data = {
 	updated: "11.10.2024",
 	read: "4",
 	view: "11",
-	img: "/blog/ssh.jpg",
+	img: "/blog/ipv4.jpg",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
       uz: "Ответы на популярные вопросы",
