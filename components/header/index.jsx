@@ -121,6 +121,14 @@ export default function Header({ language }) {
             },
             link: LINKS.DOMAINS_IN,
           },
+          {
+            title: {
+              ru: "Доменная зона .su",
+              uz: "Доменная зона .su",
+              en: "Доменная зона .su",
+            },
+            link: LINKS.DOMAINS_SU,
+          },
         ],
       },
 

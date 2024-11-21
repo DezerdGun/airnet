@@ -10,6 +10,171 @@ import ProductDomain from "../../components/seo/productdomain";
 
 export const blog = [
 	{
+		img: "/blog/rdp.jpg",
+		link: "/blog/chto-takoye-rdp",
+		date: "21.11.2024",
+		title: {
+			ru: "Что такое RDP?",
+			uz: "Что такое RDP?",
+			en: "Что такое RDP?",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+						RDP — протокол удаленного рабочего стола от Microsoft 🖥️
+					</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+						RDP — протокол удаленного рабочего стола от Microsoft 🖥️
+					</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+						RDP — протокол удаленного рабочего стола от Microsoft 🖥️
+					</p>
+				</>
+			),
+		},
+	},
+	{
+		img: "/blog/docker.png",
+		link: "/blog/chto-takoye-docker",
+		date: "21.11.2024",
+		title: {
+			ru: "Что такое Docker?",
+			uz: "Что такое Docker?",
+			en: "Что такое Docker?",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+						Docker — платформа для разработки, доставки и запуска приложений 📦
+					</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+						Docker — платформа для разработки, доставки и запуска приложений 📦
+					</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+						Docker — платформа для разработки, доставки и запуска приложений 📦
+					</p>
+				</>
+			),
+		},
+	},
+	{
+		img: "/blog/ipv4.png",
+		link: "/blog/chto-takoye-ip-address",
+		date: "21.11.2024",
+		title: {
+			ru: "Что такое IP-адрес?",
+			uz: "Что такое IP-адрес?",
+			en: "Что такое IP-адрес?",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+					IP-адрес — уникальный идентификатор устройства в сети 🖥️
+					</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+					IP-адрес — уникальный идентификатор устройства в сети 🖥️
+					</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+					IP-адрес — уникальный идентификатор устройства в сети 🖥️
+					</p>
+				</>
+			),
+		},
+	},
+	{
+		img: "/blog/nginx.webp",
+		link: "/blog/chto-takoye-nginx",
+		date: "21.11.2024",
+		title: {
+			ru: "NGINX: что это такое?",
+			uz: "NGINX: что это такое?",
+			en: "NGINX: что это такое?",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+					Nginx — популярный веб-сервер и обратный прокси-сервер 🌐
+					</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+					Nginx — популярный веб-сервер и обратный прокси-сервер 🌐
+					</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+					Nginx — популярный веб-сервер и обратный прокси-сервер 🌐
+					</p>
+				</>
+			),
+		},
+	},
+	{
+		img: "/blog/smtp.webp",
+		link: "/blog/chto-takoye-smtp",
+		date: "20.11.2024",
+		title: {
+			ru: "Что такое SMTP (Simple Mail Transfer Protocol)?",
+			uz: "Что такое SMTP (Simple Mail Transfer Protocol)?",
+			en: "Что такое SMTP (Simple Mail Transfer Protocol)?",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+						SMTP (Simple Mail Transfer Protocol) — стандартный протокол для отправки электронной почты 📧
+					</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+						SMTP (Simple Mail Transfer Protocol) — стандартный протокол для отправки электронной почты 📧
+					</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+						SMTP (Simple Mail Transfer Protocol) — стандартный протокол для отправки электронной почты 📧
+					</p>
+				</>
+			),
+		},
+	},
+	{
 		img: "/blog/domen.webp",
 		link: "/blog/kak-zaregistrirovat-domen",
 		date: "11.10.2024",

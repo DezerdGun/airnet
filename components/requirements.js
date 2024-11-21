@@ -19,6 +19,7 @@ export const LINKS = {
   DOMAINS_WHOIS: "/domains/whois",
   DOMAINS_NET: "/domains/net",
   DOMAINS_IN: "/domains/in",
+  DOMAINS_SU: "/domains/su",
   SSL_HELP: "/help/ssl/zachem-nuzhen-ssl-sertifikat",
   LICENSE: "/license",
   ADMINISTRATION: "/admin-support",
