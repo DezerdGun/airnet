@@ -1925,7 +1925,7 @@ export default function VDS({ language }) {
             <p>{langData.dsc[language]}</p>
             <h2>{langData.txt[language]}</h2>
 
-            <ul className="tabs-button">
+            {/* <ul className="tabs-button">
               <li className={toggle === 1 ? "active" : ""}>
                 <a href="#" onClick={() => updateToggle(1)}>
                   Оптимальные
@@ -1941,7 +1941,7 @@ export default function VDS({ language }) {
                   Бюджетные
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </Container>
 
           <div className={toggle === 1 ? "show-content" : "none"}>
@@ -1951,12 +1951,6 @@ export default function VDS({ language }) {
               title="Тарифы"
               description={<p>{langData.dsc[language]}</p>}
               className="mt-0 px-0"
-              endText={
-                <div className="text-white text-center mt-2">
-                  <p>{langData.endText[language]}</p>
-                  <p>{langData.timeW[language]}</p>
-                </div>
-              }
             >
               <Swiper
                 cssMode={true}
@@ -1997,19 +1991,13 @@ export default function VDS({ language }) {
               </Swiper>
             </TarifMaket>
           </div>
-          <div className={toggle === 2 ? "show-content" : "none"}>
+          <div className={toggle === 1 ? "show-content" : "none"}>
             <TarifMaket
               // bgImg={'/servers-2.jpg'}
               headTitle={langData.headTitle2[language]}
               title="Тарифы"
               description={<p>{langData.dsc[language]}</p>}
               className="mt-0 px-0"
-              endText={
-                <div className="text-white text-center mt-2">
-                  <p>{langData.endText[language]}</p>
-                  <p>{langData.timeW[language]}</p>
-                </div>
-              }
             >
               <Swiper
                 cssMode={true}
@@ -2050,7 +2038,8 @@ export default function VDS({ language }) {
               </Swiper>
             </TarifMaket>
           </div>
-          <div className={toggle === 3 ? "show-content" : "none"}>
+
+          <div className={toggle === 1 ? "show-content" : "none"}>
             <TarifMaket
               // bgImg={'/servers-2.jpg'}
               headTitle={langData.headTitle3[language]}

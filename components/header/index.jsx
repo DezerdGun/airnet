@@ -20,12 +20,9 @@ export default function Header({ language }) {
         link: LINKS.SERVERS,
       },
       {
-        title: {
-          ru: "VPS и VDS серверы",
-          uz: "VPS va VDS serverlari",
-          en: "VPS and VDS servers",
-        },
-        link: LINKS.VPS_VDS,
+        title: { ru: "VPS и VDS серверы", uz: "VPS va VDS serverlari", en: "VPS and VDS servers" },
+        link: LINKS.OPTIMAL_VDS,
+        // link: LINKS.VPS_VDS,
         children: [
           // {
           //   title: {
