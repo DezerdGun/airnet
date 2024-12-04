@@ -1,7 +1,8 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Container from "../container/index.jsx";
 import st from "./regDomain.module.scss";
+import { useRouter } from "next/router";
 
 export default function RegDomain({ language }) {
   const langData = {
@@ -24,9 +25,9 @@ export default function RegDomain({ language }) {
 export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
   const langData = {
     inputPlaceholder: {
-      ru: "Введите название домена например: airnet.uz",
-      uz: "Domen nomini kiriting, masalan: airnet.uz",
-      en: "Enter the domain name for example: airnet.uz",
+      ru: "Введите название домена например: airnet",
+      uz: "Domen nomini kiriting, masalan: airnet",
+      en: "Enter the domain name for example: airnet",
     },
     check: {
       ru: "Проверить",
@@ -159,14 +160,17 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
       en: "Prefix",
     },
   };
-
+  const pattern =
+    /^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9](?:\.[a-zA-Z]{2,})+$/;
+  const router = useRouter();
   const [isDomainFree, setIsDomainFree] = useState({
       domain: "",
       isShow: false,
       isActive: false,
     }),
     [modal, setModal] = useState(false),
-    [loading, setLoading] = useState(false);
+    [loading, setLoading] = useState(false),
+    [selectPlaceholder, setSelectPlaceholder] = useState(); // use useState for taking current value of select
 
   useEffect(() => {
     if (!modal) {
@@ -192,12 +196,15 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
     e.preventDefault();
 
     setLoading(true);
-    let domain = document.querySelector("#domain").value;
+    let selectedDomainName = document.querySelector("#domainName").value;
+    let domain = `${
+      document.querySelector("#domain").value
+    }${selectedDomainName}`;
 
-    if (!domain.includes(".uz")) {
-      domain += ".uz";
-      document.querySelector("#domain").value = domain;
-    }
+    // if (!domain.includes(".uz")) {
+    //   domain += ".uz";
+    //   document.querySelector("#domain").value = domain;
+    // }
 
     axios
       .post("https://api.airnet.uz/api/check/domain", {
@@ -206,17 +213,21 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
       .then((res) => {
         setLoading(false);
 
-        if (res.data.data?.dstatus !== "empty") {
+        if (
+          (res.data.data?.dstatus === "empty" ||
+            res.data.result === "Available") &&
+          pattern.test(domain)
+        ) {
+          setIsDomainFree({ domain, isShow: true, isActive: false });
+          setWhoIs && setWhoIs(null);
+        } else {
           setIsDomainFree({
             domain,
             isShow: true,
             isActive: true,
-            data: res.data.data,
+            data: res.data.data || null,
           });
           setWhoIs && setWhoIs(res.data.data);
-        } else {
-          setIsDomainFree({ domain, isShow: true, isActive: false });
-          setWhoIs && setWhoIs(null);
         }
       });
   };
@@ -224,10 +235,49 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
   return (
     <>
       <form onSubmit={checkDomain} className={st.regDomain__block}>
-        www. <input id="domain" placeholder={langData.inputPlaceholder[language]} required />
+        www.{" "}
+        <input
+          id="domain"
+          placeholder={
+            langData.inputPlaceholder[language] +
+            `.${
+              selectPlaceholder
+                ? selectPlaceholder.slice(1)
+                : router.pathname.slice(9) &&
+                  router.pathname.slice(9) !== "whois"
+                ? router.pathname.slice(9)
+                : "uz"
+            }`
+          }
+          required
+          onInput={(e) => {
+            e.target.value = e.target.value.replace(/[^-\p{L}\d]/gu, "");
+          }}
+        />
+        <select
+          id="domainName"
+          defaultValue={`.${router.pathname.slice(9)}` || ".uz"}
+          className={st.regDomain__block__select}
+          onChange={({ target }) => {
+            setSelectPlaceholder(target.value);
+            // router.push(`/domains/${target.value.slice(1)}`);
+          }}
+        >
+          <option value=".uz">.uz</option>
+          <option value=".com">.com</option>
+          <option value=".ru">.ru</option>
+          <option value=".net">.net</option>
+          <option value=".in">.in</option>
+          <option value=".su">.su</option>
+        </select>
         <button type="submit" disabled={loading}>
           {langData.check[language]}{" "}
-          {loading && <div class="spinner-border text-light spinner-border-sm" role="status"></div>}
+          {loading && (
+            <div
+              class="spinner-border text-light spinner-border-sm"
+              role="status"
+            ></div>
+          )}
         </button>
       </form>
 
@@ -237,7 +287,7 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
           {isDomainFree.isActive ? (
             <span className={st.regDomain__text__red}>
               {langData.domenBooked[language]}{" "}
-              {showDomains && (
+              {showDomains && isDomainFree?.data?.dStatus && (
                 <span
                   className={st.regDomain__text__red}
                   style={{ textDecoration: "underline", cursor: "pointer" }}
@@ -249,7 +299,9 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
             </span>
           ) : (
             <>
-              <span className={st.regDomain__text__green}>{langData.domenFree[language]}</span>{" "}
+              <span className={st.regDomain__text__green}>
+                {langData.domenFree[language]}
+              </span>{" "}
               {language == "uz" ? (
                 <>
                   Buyurtma qilish uchun{" "}
@@ -295,7 +347,9 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
       {showDomains && (
         <ul className={st.regDomain__price}>
           <li className={st.regDomain__price__item}>
-            <div className={st.regDomain__price__item__block}>.UZ - 27.000 {langData.sumVg[language]}</div>
+            <div className={st.regDomain__price__item__block}>
+              .UZ - 27.000 {langData.sumVg[language]}
+            </div>
             <span>{langData.Valid[language]}</span>
           </li>
           <li className={st.regDomain__price__item}>
@@ -311,13 +365,17 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
             <span>{langData.Valid[language]}</span>
           </li>
           <li className={st.regDomain__price__item}>
-            <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
+            <div
+              className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}
+            >
               .NET - 150.000 {langData.sumVg[language]}
             </div>
             <span>{langData.notValid[language]}</span>
           </li>
           <li className={st.regDomain__price__item}>
-            <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
+            <div
+              className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}
+            >
               .ORG - 200.000 {langData.sumVg[language]}
             </div>
             <span>{langData.notValid[language]}</span>
@@ -359,8 +417,14 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
 
       <div className={`${st.modal} ${modal ? st.modal__active : ""}`}>
         <div id="modalBlock" className={st.modal__block}>
-          <div className="table" style={{ overflowX: "auto", textAlign: "left" }}>
-            <table className="table table-striped" style={{ minWidth: "800px" }}>
+          <div
+            className="table"
+            style={{ overflowX: "auto", textAlign: "left" }}
+          >
+            <table
+              className="table table-striped"
+              style={{ minWidth: "800px" }}
+            >
               <thead>
                 <tr>
                   <td colSpan="8" style={{ textAlign: "center" }}>
@@ -390,7 +454,8 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
                   </td>
                   <td colSpan="3">
                     {langData.domain[language]}: {isDomainFree?.data?.sNs1}{" "}
-                    {isDomainFree?.data?.sNs1 !== "not.defined." && `IP: ${isDomainFree?.data?.sIp1}`}
+                    {isDomainFree?.data?.sNs1 !== "not.defined." &&
+                      `IP: ${isDomainFree?.data?.sIp1}`}
                   </td>
                 </tr>
                 <tr>
@@ -403,7 +468,8 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
                   </td>
                   <td colSpan="3">
                     {langData.domain[language]}: {isDomainFree?.data?.sNs2}{" "}
-                    {isDomainFree?.data?.sNs2 !== "not.defined." && `IP: ${isDomainFree?.data?.sIp2}`}
+                    {isDomainFree?.data?.sNs2 !== "not.defined." &&
+                      `IP: ${isDomainFree?.data?.sIp2}`}
                   </td>
                 </tr>
                 <tr>
@@ -416,7 +482,8 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
                   </td>
                   <td colSpan="3">
                     {langData.domain[language]}: {isDomainFree?.data?.sNs3}{" "}
-                    {isDomainFree?.data?.sNs3 !== "not.defined." && `IP: ${isDomainFree?.data?.sIp3}`}
+                    {isDomainFree?.data?.sNs3 !== "not.defined." &&
+                      `IP: ${isDomainFree?.data?.sIp3}`}
                   </td>
                 </tr>
                 <tr>
@@ -429,7 +496,8 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
                   </td>
                   <td colSpan="3">
                     {langData.domain[language]}: {isDomainFree?.data?.sNs4}{" "}
-                    {isDomainFree?.data?.sNs4 !== "not.defined." && `IP: ${isDomainFree?.data?.sIp4}`}
+                    {isDomainFree?.data?.sNs4 !== "not.defined." &&
+                      `IP: ${isDomainFree?.data?.sIp4}`}
                   </td>
                 </tr>
               </tbody>
@@ -460,7 +528,8 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
                     <strong>{langData.region[language]}:</strong>
                   </td>
                   <td colSpan="7">
-                    {isDomainFree?.data?.sCustomerCity}, {isDomainFree?.data?.sCustomerCountry}
+                    {isDomainFree?.data?.sCustomerCity},{" "}
+                    {isDomainFree?.data?.sCustomerCountry}
                   </td>
                 </tr>
                 <tr>
@@ -608,7 +677,11 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
 						</tr> 
           </table> */}
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" onClick={() => setModal(false)}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+          onClick={() => setModal(false)}
+        >
           <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
         </svg>
       </div>

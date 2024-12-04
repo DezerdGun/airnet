@@ -23,13 +23,22 @@ $red: #f00;
     margin-bottom: 20px;
 
     input {
-      width: 80%;
+      width: 76%;
       margin-right: 20px;
       height: 51.6px;
       border-radius: 10px;
       padding: 10px 15px;
       border: 1px solid $gray !important;
     }
+    &__select {
+      background-color: transparent;
+      margin-right: 20px;
+      &:focus,
+      &:focus-within {
+        border: none !important;
+      }
+    }
+
     button {
       padding: 15px 25px;
       border-radius: 10px;
