@@ -1947,6 +1947,60 @@ export default function VDS({ language }) {
           <div className={toggle === 1 ? "show-content" : "none"}>
             <TarifMaket
               // bgImg={'/servers-2.jpg'}
+              headTitle={langData.headTitle3[language]}
+              title="Тарифы"
+              description={<p>{langData.dsc[language]}</p>}
+              className="mt-0 px-0"
+              endText={
+                <div className="text-white text-center mt-2">
+                  <p>{langData.endText[language]}</p>
+                  <p>{langData.timeW[language]}</p>
+                </div>
+              }
+            >
+              <Swiper
+                cssMode={true}
+                modules={[Autoplay, Navigation]}
+                slidesPerView={1}
+                navigation
+                loop={false}
+                autoplay={{
+                  delay: 10000,
+                  disableOnInteraction: true,
+                }}
+                breakpoints={{
+                  1070: {
+                    slidesPerView: 4,
+                  },
+                  770: {
+                    slidesPerView: 3,
+                  },
+                  550: {
+                    slidesPerView: 2,
+                  },
+                }}
+                className="tarifSwiper"
+              >
+                {tarif3.map((item, index) => (
+                  <SwiperSlide key={item.title} language={language}>
+                    <div className="w-95">
+                      <TarifCard
+                        index={index}
+                        tarif={item}
+                        show={show}
+                        setShow={setShow}
+                        language={language}
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </TarifMaket>
+          </div>
+
+          <div className={toggle === 1 ? "show-content" : "none"}>
+            <TarifMaket
+              // bgImg={'/servers-2.jpg'}
               headTitle={langData.headTitle[language]}
               title="Тарифы"
               description={<p>{langData.dsc[language]}</p>}
@@ -2023,60 +2077,6 @@ export default function VDS({ language }) {
                 className="tarifSwiper"
               >
                 {tarif2.map((item, index) => (
-                  <SwiperSlide key={item.title} language={language}>
-                    <div className="w-95">
-                      <TarifCard
-                        index={index}
-                        tarif={item}
-                        show={show}
-                        setShow={setShow}
-                        language={language}
-                      />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </TarifMaket>
-          </div>
-
-          <div className={toggle === 1 ? "show-content" : "none"}>
-            <TarifMaket
-              // bgImg={'/servers-2.jpg'}
-              headTitle={langData.headTitle3[language]}
-              title="Тарифы"
-              description={<p>{langData.dsc[language]}</p>}
-              className="mt-0 px-0"
-              endText={
-                <div className="text-white text-center mt-2">
-                  <p>{langData.endText[language]}</p>
-                  <p>{langData.timeW[language]}</p>
-                </div>
-              }
-            >
-              <Swiper
-                cssMode={true}
-                modules={[Autoplay, Navigation]}
-                slidesPerView={1}
-                navigation
-                loop={false}
-                autoplay={{
-                  delay: 10000,
-                  disableOnInteraction: true,
-                }}
-                breakpoints={{
-                  1070: {
-                    slidesPerView: 4,
-                  },
-                  770: {
-                    slidesPerView: 3,
-                  },
-                  550: {
-                    slidesPerView: 2,
-                  },
-                }}
-                className="tarifSwiper"
-              >
-                {tarif3.map((item, index) => (
                   <SwiperSlide key={item.title} language={language}>
                     <div className="w-95">
                       <TarifCard
