@@ -23,7 +23,7 @@ $red: #f00;
     margin-bottom: 20px;
 
     input {
-      width: 76%;
+      width: 55%;
       margin-right: 20px;
       height: 51.6px;
       border-radius: 10px;
@@ -31,15 +31,21 @@ $red: #f00;
       border: 1px solid $gray !important;
     }
     &__select {
-      background-color: transparent;
+      width: 15%;
       margin-right: 20px;
-      &:focus,
-      &:focus-within {
-        border: none !important;
-      }
+      height: 51.6px;
+      border-radius: 10px;
+      padding: 10px 15px;
+      border: 1px solid $gray !important;
+
+      // &:focus,
+      // &:focus-within {
+      //   border: none !important;
+      // }
     }
 
     button {
+      width: 15%;
       padding: 15px 25px;
       border-radius: 10px;
       font-size: 18px;

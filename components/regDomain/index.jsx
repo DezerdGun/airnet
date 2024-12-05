@@ -263,12 +263,34 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
             // router.push(`/domains/${target.value.slice(1)}`);
           }}
         >
-          <option value=".uz">.uz</option>
-          <option value=".com">.com</option>
-          <option value=".ru">.ru</option>
-          <option value=".net">.net</option>
-          <option value=".in">.in</option>
-          <option value=".su">.su</option>
+          <option value=".uz">.uz - 27.000 сум</option>
+          <option value=".ru">.ru - 35.000 сум</option>
+          <option value=".com">.com - 200.000 сум</option>
+          <option value=".net">.net - 200.000 сум</option>
+          <option value=".org">.org - 200.000 сум</option>
+          <option value=".in">.in - 125.000 сум</option>
+          <option value=".su">.su - 125.000 сум</option>
+          <option value=".tg">.tg - Скоро</option>
+          <option value=".ae">.ae - Скоро</option>
+          <option value=".am">.am - Скоро</option>
+          <option value=".az">.az - Скоро</option>
+          <option value=".be">.be - Скоро</option>
+          <option value=".by">.by - Скоро</option>
+          <option value=".cc">.cc - Скоро</option>
+          <option value=".cn">.cn - Скоро</option>
+          <option value=".cz">.cz - Скоро</option>
+          <option value=".de">.de - Скоро</option>
+          <option value=".eu">.eu - Скоро</option>
+          <option value=".io">.io - Скоро</option>
+          <option value=".it">.it - Скоро</option>
+          <option value=".kg">.kg - Скоро</option>
+          <option value=".me">.me - Скоро</option>
+          <option value=".pw">.pw - Скоро</option>
+          <option value=".tk">.tk - Скоро</option>
+          <option value=".tr">.tr - Скоро</option>
+          <option value=".tv">.tv - Скоро</option>
+          <option value=".ua">.ua - Скоро</option>
+          <option value=".us">.us - Скоро</option>
         </select>
         <button type="submit" disabled={loading}>
           {langData.check[language]}{" "}
@@ -344,7 +366,7 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
         </p>
       )}
 
-      {showDomains && (
+      {/* {showDomains && (
         <ul className={st.regDomain__price}>
           <li className={st.regDomain__price__item}>
             <div className={st.regDomain__price__item__block}>
@@ -380,7 +402,7 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
             </div>
             <span>{langData.notValid[language]}</span>
           </li>
-          {/* <li className={st.regDomain__price__item}>
+          <li className={st.regDomain__price__item}>
           <div className={`${st.regDomain__price__item__block} ${st.regDomain__price__item__block__crossed}`}>
             .PRO - 60.000 {langData.sumVg[language]}
           </div>
@@ -409,9 +431,9 @@ export const RegDomainBlock = ({ language, showDomains = true, setWhoIs }) => {
             .SHOP - 50.000 {langData.sumVg[language]}
           </div>
           <span>{langData.notValid[language]}</span>
-        </li> */}
+        </li>
         </ul>
-      )}
+      )} */}
 
       {/* <p className={st.regDomain__endText}>Домен в зоне UZ c хостингом - Бесплатно</p> */}
 

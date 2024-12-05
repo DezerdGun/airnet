@@ -104,11 +104,35 @@ export default function Header({ language }) {
           },
           {
             title: {
+              ru: "Доменная зона .ru",
+              uz: "Доменная зона .ru",
+              en: "Доменная зона .ru",
+            },
+            link: LINKS.DOMAINS_RU,
+          },
+          {
+            title: {
+              ru: "Доменная зона .com",
+              uz: "Доменная зона .com",
+              en: "Доменная зона .com",
+            },
+            link: LINKS.DOMAINS_COM,
+          },
+          {
+            title: {
               ru: "Доменная зона .net",
               uz: "Доменная зона .net",
               en: "Доменная зона .net",
             },
             link: LINKS.DOMAINS_NET,
+          },
+          {
+            title: {
+              ru: "Доменная зона .org",
+              uz: "Доменная зона .org",
+              en: "Доменная зона .org",
+            },
+            link: LINKS.DOMAINS_ORG,
           },
           {
             title: {
