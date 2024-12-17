@@ -9,6 +9,42 @@ import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export const news = [
 	{
+		img: "/news/1.jpg",
+		link: "/news/",
+		date: "15.12.2024",
+		title: {
+			ru: "Уважаемые абоненты!",
+			uz: "Hurmatli abonentlar!",
+			en: "Dear subscribers!",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+						Сообщаем вам что тарифный планы на виртуальный сервер VDS/VPS "Platinum" с 1 января 2025г. будет не доступен для оформления новых заказов, в связи с тем тариф будет перемещен в архивный. 
+					</p>
+					<p>Для действующих серверов тариф останется без изменений до отключения услуга по данному тарифному плану.</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+						2025-yil 1-yanvardan boshlab VDS/VPS “Platinum” virtual serveri uchun tarif rejalarini ma’lum qilamiz. yangi buyurtmalarni joylashtirish uchun mavjud bo'lmaydi va shuning uchun tarif arxivga o'tkaziladi.
+					</p>
+					<p>Mavjud serverlar uchun tarif ushbu tarif rejasi boʻyicha xizmat uzilgunga qadar oʻzgarishsiz qoladi.</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+						We inform you that the tariff plans for the virtual server VDS/VPS "Platinum" from January 1, 2025 will not be available for placing new orders, in connection with which the tariff will be moved to the archive.
+					</p>
+					<p>For existing servers, the tariff will remain unchanged until the service is disabled under this tariff plan.</p>
+				</>
+			),
+		},
+	},
+	{
 		img: "/blog/cyberpunk.jpg",
 		link: "/blog/cyberpunk-2077",
 		date: "24.12.2020",

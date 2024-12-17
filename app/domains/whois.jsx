@@ -202,29 +202,79 @@ export default function WhoIs({ language }) {
     },
     reg: {
       ru: (
-        <p className="text-start">
+        <>
+        <p>
           Перед регистрацией просим вас ознакомиться с{" "}
-          <a href="https://cctld.uz/info/polru/" target="_blank" rel="noopener noreferrer">
-            Положением о порядке регистрации и пользования доменными именами в домене «UZ»
+          <a
+            href="https://cctld.uz/info/polru/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Положением о порядке регистрации и пользования доменными именами в
+            домене «UZ»
           </a>
         </p>
+        <div className={st.domains__head__block__zone}>
+          <p><strong>Доступные зоны:</strong></p>
+          <a href="/domains/" target="_blank">.UZ</a>
+          <a href="/domains/ru" target="_blank">.RU</a>
+          <a href="/domains/com" target="_blank">.COM</a>
+          <a href="/domains/net" target="_blank">.NET</a>
+          <a href="/domains/org" target="_blank">.ORG</a>
+          <a href="/domains/in" target="_blank">.IN</a>
+          <a href="/domains/su" target="_blank">.SU</a>
+        </div>
+        </>
       ),
       uz: (
-        <p className="text-start">
+        <>
+        <p>
           Ro'yxatdan o'tishdan oldin{" "}
-          <a href="https://cctld.uz/info/polru/" target="_blank" rel="noopener noreferrer">
-            “UZ” domenida domen nomlarini ro‘yxatdan o‘tkazish va ulardan foydalanish tartibi to‘g‘risidagi nizom bn
-            tanishib chiqing.
+          <a
+            href="https://cctld.uz/info/polru/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            “UZ” domenida domen nomlarini ro‘yxatdan o‘tkazish va ulardan
+            foydalanish tartibi to‘g‘risidagi nizom bn tanishib chiqing.
           </a>
         </p>
+        <div className={st.domains__head__block__zone}>
+          <p><strong>Mavjud hududlar:</strong></p>
+          <a href="/domains/" target="_blank">.UZ</a>
+          <a href="/domains/ru" target="_blank">.RU</a>
+          <a href="/domains/com" target="_blank">.COM</a>
+          <a href="/domains/net" target="_blank">.NET</a>
+          <a href="/domains/org" target="_blank">.ORG</a>
+          <a href="/domains/in" target="_blank">.IN</a>
+          <a href="/domains/su" target="_blank">.SU</a>
+        </div>
+        </>
       ),
       en: (
-        <p className="text-start">
+        <>
+        <p>
           Before registration, please read the{" "}
-          <a href="https://cctld.uz/info/polru/" target="_blank" rel="noopener noreferrer">
-            Regulations on the procedure for registration and use of domain names in the "UZ" domain
+          <a
+            href="https://cctld.uz/info/polru/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Regulations on the procedure for registration and use of domain
+            names in the "UZ" domain
           </a>
         </p>
+        <div className={st.domains__head__block__zone}>
+          <p><strong>Available Zones:</strong></p>
+          <a href="/domains/" target="_blank">.UZ</a>
+          <a href="/domains/ru" target="_blank">.RU</a>
+          <a href="/domains/com" target="_blank">.COM</a>
+          <a href="/domains/net" target="_blank">.NET</a>
+          <a href="/domains/org" target="_blank">.ORG</a>
+          <a href="/domains/in" target="_blank">.IN</a>
+          <a href="/domains/su" target="_blank">.SU</a>
+        </div>
+        </>
       ),
     },
   };

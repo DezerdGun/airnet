@@ -553,6 +553,7 @@ export default function Domains({ language }) {
     },
     reg: {
       ru: (
+        <>
         <p>
           Перед регистрацией просим вас ознакомиться с{" "}
           <a
@@ -564,8 +565,20 @@ export default function Domains({ language }) {
             домене «UZ»
           </a>
         </p>
+        <div className={st.domains__head__block__zone}>
+          <p><strong>Доступные зоны:</strong></p>
+          <a href="/domains/" target="_blank">.UZ</a>
+          <a href="/domains/ru" target="_blank">.RU</a>
+          <a href="/domains/com" target="_blank">.COM</a>
+          <a href="/domains/net" target="_blank">.NET</a>
+          <a href="/domains/org" target="_blank">.ORG</a>
+          <a href="/domains/in" target="_blank">.IN</a>
+          <a href="/domains/su" target="_blank">.SU</a>
+        </div>
+        </>
       ),
       uz: (
+        <>
         <p>
           Ro'yxatdan o'tishdan oldin{" "}
           <a
@@ -577,8 +590,20 @@ export default function Domains({ language }) {
             foydalanish tartibi to‘g‘risidagi nizom bn tanishib chiqing.
           </a>
         </p>
+        <div className={st.domains__head__block__zone}>
+          <p><strong>Mavjud hududlar:</strong></p>
+          <a href="/domains/" target="_blank">.UZ</a>
+          <a href="/domains/ru" target="_blank">.RU</a>
+          <a href="/domains/com" target="_blank">.COM</a>
+          <a href="/domains/net" target="_blank">.NET</a>
+          <a href="/domains/org" target="_blank">.ORG</a>
+          <a href="/domains/in" target="_blank">.IN</a>
+          <a href="/domains/su" target="_blank">.SU</a>
+        </div>
+        </>
       ),
       en: (
+        <>
         <p>
           Before registration, please read the{" "}
           <a
@@ -590,6 +615,17 @@ export default function Domains({ language }) {
             names in the "UZ" domain
           </a>
         </p>
+        <div className={st.domains__head__block__zone}>
+          <p><strong>Available Zones:</strong></p>
+          <a href="/domains/" target="_blank">.UZ</a>
+          <a href="/domains/ru" target="_blank">.RU</a>
+          <a href="/domains/com" target="_blank">.COM</a>
+          <a href="/domains/net" target="_blank">.NET</a>
+          <a href="/domains/org" target="_blank">.ORG</a>
+          <a href="/domains/in" target="_blank">.IN</a>
+          <a href="/domains/su" target="_blank">.SU</a>
+        </div>
+        </>
       ),
     },
   };

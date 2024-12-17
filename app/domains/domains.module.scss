@@ -55,6 +55,29 @@ $red: #f00;
         color: $black;
       }
 
+      &__zone {
+          margin-top: 40px;
+          text-align: left;
+
+        p {
+          margin-bottom: 25px;
+        }
+        a {
+          font-size: 16px;
+          width: 35px;
+          margin-right: 10px;
+          height: 51.6px;
+          border-radius: 10px;
+          padding: 10px 15px;
+          border: 1px solid #c2c2c2 !important;
+          text-decoration: none;
+        }
+        a:hover {
+          color: #fff;
+          background-color: #006a4d;
+        }
+      }
+
       &__item {
         margin: 40px 0;
         text-align: center;
