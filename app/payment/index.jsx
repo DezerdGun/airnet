@@ -72,20 +72,20 @@ const faq = [
     },
     {
       title: {
-        ru: "Международные банковские карты",
-        uz: "Xalqaro bank kartalari",
-        en: "International bank cards",
+        ru: "Международные банковские карты VISA, MasterCard",
+        uz: "Xalqaro bank kartalari VISA, MasterCard",
+        en: "International bank cards VISA, MasterCard",
       },
       description: {
         ru: (
           <>
             <p>
               Для нерезидентов Узбекистана и карт выпущенных не в банках Узбекистана - доступна оплата через платежные
-              системы Freedom Pay, PAYZE и Oson.uz
+              системы octo.uz
             </p>
             <p>
-              Чтобы произвести оплату через Freedom Pay перейдите во вкладку "Кабинет" {"->"} "Счета" выберите № счета
-              и нажмите кнопку "Оплатить счет", далее выберите из предложенных способов оплаты "Freedom Pay" и нажмите на
+              Чтобы произвести оплату через octo.uz перейдите во вкладку "Кабинет" {"->"} "Счета" выберите № счета
+              и нажмите кнопку "Оплатить счет", далее выберите из предложенных способов оплаты "octo.uz" и нажмите на
               кнопку оплатить...
             </p>
             <br />
@@ -96,11 +96,11 @@ const faq = [
           <>
             <p>
               Oʻzbekiston norezidentlari va banklar tomonidan chiqarilgan kartalar uchun O'zbekiston - to'lovni
-              Freedom Pay va orqali amalga oshirish mumkin oson.uz
+              octo.uz
             </p>
             <p>
-            Freedom Pay orqali toʻlovni amalga oshirish uchun yorligʻiga oʻting "Kabinet" {"->"} "Hisoblar" hisob
-              raqamini tanlang va "To'lash" tugmasini bosing hisob", keyin taklif qilingan to'lov usullaridan "Freedom Pay"
+            octo.uz orqali toʻlovni amalga oshirish uchun yorligʻiga oʻting "Kabinet" {"->"} "Hisoblar" hisob
+              raqamini tanlang va "To'lash" tugmasini bosing hisob", keyin taklif qilingan to'lov usullaridan "octo.uz"
               va tanlang to'lov tugmasini bosing...
             </p>
             <br />
@@ -111,11 +111,11 @@ const faq = [
           <>
             <p>
               For non-residents of Uzbekistan and cards issued not in banks of Uzbekistan - payment is available through
-              payment Freedom Pay and oson.uz systems
+              payment octo.uz systems
             </p>
             <p>
-              To make a payment via Freedom Pay, go to the tab "Account" {"->"} "Accounts" select the account number
-              and click the "Pay invoice" button, then select "Freedom Pay" from the offered payment methods and click on pay
+              To make a payment via octo.uz, go to the tab "Account" {"->"} "Accounts" select the account number
+              and click the "Pay invoice" button, then select "octo.uz" from the offered payment methods and click on pay
               button...
             </p>
             <br />
@@ -270,43 +270,43 @@ const faq = [
         ),
       },
     },
-    {
-      title: { ru: "UPAY.uz", uz: "UPAY.uz", en: "UPAY.uz" },
-      description: {
-        ru: (
-          <>
-            <p>
-              Зайдите с мобильного приложение UPAY.uz найдите нас в категории "Хостинг услуги" - AIRNET.uz хостинг, для
-              оплаты введите ваш ID клиента и сумму оплаты.
-            </p>
-            <img className="width-50" src="/payments/11.jpg" />
-            <img className="width-50" src="/payments/12.jpg" />
-            <p>
-              В биллинг панели выбрать способ оплаты через UPAY.uz и нажать на кнопку "Перейти на сайт UPAY" и вас
-              переведет на сайт платежной системы где нужно будет указать данные вашей карты для быстрой оплаты.
-            </p>
-            <br />
-            <img src="/payments/10.png" />
-          </>
-        ),
-        uz: (
-          <>
-            <p>
-              UPAY.uz mobil ilovasidan tizimga kiring, bizni turkumda toping "Xosting xizmatlari" - AIRNET.uz xostingi,
-              to'lash uchun shaxsingizni tasdiqlovchi hujjatni kiriting mijoz va to'lov miqdori.
-            </p>
-            <img className="width-50" src="/payments/11.jpg" />
-            <img className="width-50" src="/payments/12.jpg" />
-            <p>
-              Billing panelida UPAY.uz orqali to‘lov usulini tanlang va ustiga bosing "UPAY saytiga o'tish" tugmasini
-              bosing va siz to'lov saytiga o'tasiz karta ma'lumotlarini tezda kiritishingiz kerak bo'lgan tizim to'lov.
-            </p>
-            <br />
-            <img src="/payments/10.png" />
-          </>
-        ),
-      },
-    },
+    // {
+    //   title: { ru: "UPAY.uz", uz: "UPAY.uz", en: "UPAY.uz" },
+    //   description: {
+    //     ru: (
+    //       <>
+    //         <p>
+    //           Зайдите с мобильного приложение UPAY.uz найдите нас в категории "Хостинг услуги" - AIRNET.uz хостинг, для
+    //           оплаты введите ваш ID клиента и сумму оплаты.
+    //         </p>
+    //         <img className="width-50" src="/payments/11.jpg" />
+    //         <img className="width-50" src="/payments/12.jpg" />
+    //         <p>
+    //           В биллинг панели выбрать способ оплаты через UPAY.uz и нажать на кнопку "Перейти на сайт UPAY" и вас
+    //           переведет на сайт платежной системы где нужно будет указать данные вашей карты для быстрой оплаты.
+    //         </p>
+    //         <br />
+    //         <img src="/payments/10.png" />
+    //       </>
+    //     ),
+    //     uz: (
+    //       <>
+    //         <p>
+    //           UPAY.uz mobil ilovasidan tizimga kiring, bizni turkumda toping "Xosting xizmatlari" - AIRNET.uz xostingi,
+    //           to'lash uchun shaxsingizni tasdiqlovchi hujjatni kiriting mijoz va to'lov miqdori.
+    //         </p>
+    //         <img className="width-50" src="/payments/11.jpg" />
+    //         <img className="width-50" src="/payments/12.jpg" />
+    //         <p>
+    //           Billing panelida UPAY.uz orqali to‘lov usulini tanlang va ustiga bosing "UPAY saytiga o'tish" tugmasini
+    //           bosing va siz to'lov saytiga o'tasiz karta ma'lumotlarini tezda kiritishingiz kerak bo'lgan tizim to'lov.
+    //         </p>
+    //         <br />
+    //         <img src="/payments/10.png" />
+    //       </>
+    //     ),
+    //   },
+    // },
     {
       title: { ru: "Oson.uz", uz: "Oson.uz", en: "Oson.uz" },
       description: {
@@ -385,79 +385,79 @@ const faq = [
         ),
       },
     },
-    {
-      title: { ru: "Freedom Pay", uz: "Freedom Pay", en: "Freedom Pay" },
-      description: {
-        ru: (
-          <>
-            <p>
-              Перейдите в счета, выберите способ оплаты через "Freedom Pay", далее вас перебросит на сайт платежной
-              систему введите данные вашей карты и следуйте инструкциям на сайте платежной системы.
-            </p>
-            <img className="width-100" src="/payments/freedompay.png" />
-          </>
-        ),
-        uz: (
-          <>
-            <p>
-              Hisoblarga o'ting, "Freedom Pay" orqali to'lov usulini tanlang, keyin siz to'lov tizimining veb-saytiga
-              o'tasiz, kartangiz ma'lumotlarini kiritasiz va to'lov tizimi veb-saytidagi ko'rsatmalarga amal qiling.
-            </p>
-            <img className="width-100" src="/payments/freedompay.png" />
-          </>
-        ),
-        en: (
-          <>
-            <p>
-              Go to accounts, select the payment method via "Freedom Pay", then you will be transferred to the payment
-              system website, enter your card details and follow the instructions on the payment system website.
-            </p>
-            <img className="width-100" src="/payments/freedompay.png" />
-          </>
-        ),
-      },
-    },
-    {
-      title: { ru: "PAYZE.uz", uz: "PAYZE.uz", en: "PAYZE.uz" },
-      description: {
-        ru: (
-          <>
-            <p>
-              Перейдите в счета, выберите способ оплаты через "
-              PAYZE.uz
-              ", далее вас перебросит на сайт платежной систему выберите в корзину требуемую суммы оплаты и нажмите
-              "Оформить заказ", следуйте инструкциям на сайте платежной системы и в поле "Дополнительные комментарии"
-              введите номер оплачиваемого счета или ваш ID в нашей системе.
-            </p>
-            <img className="width-100" src="/payments/payze.uz.png" />
-          </>
-        ),
-        uz: (
-          <>
-            <p>
-              Hisoblarga o'ting, " orqali to'lov usulini tanlang "
-              PAYZE.uz
-              ", keyin siz to'lov tizimining saytiga o'tasiz, savatdagi kerakli to'lov miqdorini tanlang va bosing
-              "Buyurtma bering", to'lov tizimining veb-saytidagi va "Qo'shimcha sharhlar" maydonidagi ko'rsatmalarga
-              amal qiling. tizimimizga hisob raqamini yoki ID raqamingizni kiriting.
-            </p>
-            <img className="width-100" src="/payments/payze.uz.png" />
-          </>
-        ),
-        en: (
-          <>
-            <p>
-              Go to accounts, select payment method via "
-              PAYZE.uz
-              ", then you will be transferred to the site of the payment system, select the required payment amount in
-              the basket and click "Place an order", follow the instructions on the website of the payment system and in
-              the field "Additional comments" enter the billing account number or your ID in our system.
-            </p>
-            <img className="width-100" src="/payments/payze.uz.png" />
-          </>
-        ),
-      },
-    },
+    // {
+    //   title: { ru: "Freedom Pay", uz: "Freedom Pay", en: "Freedom Pay" },
+    //   description: {
+    //     ru: (
+    //       <>
+    //         <p>
+    //           Перейдите в счета, выберите способ оплаты через "Freedom Pay", далее вас перебросит на сайт платежной
+    //           систему введите данные вашей карты и следуйте инструкциям на сайте платежной системы.
+    //         </p>
+    //         <img className="width-100" src="/payments/freedompay.png" />
+    //       </>
+    //     ),
+    //     uz: (
+    //       <>
+    //         <p>
+    //           Hisoblarga o'ting, "Freedom Pay" orqali to'lov usulini tanlang, keyin siz to'lov tizimining veb-saytiga
+    //           o'tasiz, kartangiz ma'lumotlarini kiritasiz va to'lov tizimi veb-saytidagi ko'rsatmalarga amal qiling.
+    //         </p>
+    //         <img className="width-100" src="/payments/freedompay.png" />
+    //       </>
+    //     ),
+    //     en: (
+    //       <>
+    //         <p>
+    //           Go to accounts, select the payment method via "Freedom Pay", then you will be transferred to the payment
+    //           system website, enter your card details and follow the instructions on the payment system website.
+    //         </p>
+    //         <img className="width-100" src="/payments/freedompay.png" />
+    //       </>
+    //     ),
+    //   },
+    // },
+    // {
+    //   title: { ru: "PAYZE.uz", uz: "PAYZE.uz", en: "PAYZE.uz" },
+    //   description: {
+    //     ru: (
+    //       <>
+    //         <p>
+    //           Перейдите в счета, выберите способ оплаты через "
+    //           PAYZE.uz
+    //           ", далее вас перебросит на сайт платежной систему выберите в корзину требуемую суммы оплаты и нажмите
+    //           "Оформить заказ", следуйте инструкциям на сайте платежной системы и в поле "Дополнительные комментарии"
+    //           введите номер оплачиваемого счета или ваш ID в нашей системе.
+    //         </p>
+    //         <img className="width-100" src="/payments/payze.uz.png" />
+    //       </>
+    //     ),
+    //     uz: (
+    //       <>
+    //         <p>
+    //           Hisoblarga o'ting, " orqali to'lov usulini tanlang "
+    //           PAYZE.uz
+    //           ", keyin siz to'lov tizimining saytiga o'tasiz, savatdagi kerakli to'lov miqdorini tanlang va bosing
+    //           "Buyurtma bering", to'lov tizimining veb-saytidagi va "Qo'shimcha sharhlar" maydonidagi ko'rsatmalarga
+    //           amal qiling. tizimimizga hisob raqamini yoki ID raqamingizni kiriting.
+    //         </p>
+    //         <img className="width-100" src="/payments/payze.uz.png" />
+    //       </>
+    //     ),
+    //     en: (
+    //       <>
+    //         <p>
+    //           Go to accounts, select payment method via "
+    //           PAYZE.uz
+    //           ", then you will be transferred to the site of the payment system, select the required payment amount in
+    //           the basket and click "Place an order", follow the instructions on the website of the payment system and in
+    //           the field "Additional comments" enter the billing account number or your ID in our system.
+    //         </p>
+    //         <img className="width-100" src="/payments/payze.uz.png" />
+    //       </>
+    //     ),
+    //   },
+    // },
     {
       title: {
         ru: "Киоск самообслуживания",
@@ -625,11 +625,11 @@ export default function Payment({ language }) {
               <a href="#transfer-swift">Банковский перевод</a> (SWIFT) оплата по договору.
             </li>
             <li>
-              <a href="#transfer-card">Банковские карты</a> (UzCard, HUMO, VISA, MasterCard)
+              <a href="#transfer-card">Международные банковские карты VISA, MasterCard</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#transfer-freedompay">Международные банковские карты</a> VISA, MasterCard (Freedom Pay)
-            </li>
+            </li> */}
             <li>
               <a href="#transfer-paynet">PAYNET.uz</a>
             </li>
@@ -639,18 +639,18 @@ export default function Payment({ language }) {
             <li>
               <a href="#transfer-click">Click.uz</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#transfer-upay">UPAY.uz</a>
-            </li>
+            </li> */}
             <li>
               <a href="#transfer-oson">Oson.uz</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#transfer-freedompay">Freedom Pay</a>
             </li>
             <li>
               <a href="#transfer-payze">PAYZE.uz</a>
-            </li>
+            </li> */}
             <li>
               <a href="#transfer-bank">Киоск самообслуживания</a>
             </li>
@@ -672,9 +672,6 @@ export default function Payment({ language }) {
               <a href="#transfer-card">Bank kartasi</a> (UzCard, HUMO, VISA, MasterCard)
             </li>
             <li>
-              <a href="#transfer-freedompay">Halqaro o'tkazmalar</a> VISA, MasterCard (Freedom Pay)
-            </li>
-            <li>
               <a href="#transfer-paynet">PAYNET.uz</a>
             </li>
             <li>
@@ -683,9 +680,9 @@ export default function Payment({ language }) {
             <li>
               <a href="#transfer-click">Click.uz</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#transfer-upay">UPAY.uz</a>
-            </li>
+            </li> */}
             <li>
               <a href="#transfer-oson">Oson.uz</a>
             </li>
@@ -706,11 +703,11 @@ export default function Payment({ language }) {
             <li>
               <a href="#transfer-swift">Bank transfer</a> (SWIFT) payment under the contract.
             </li>
-            <li>
+            {/* <li>
               <a href="#transfer-card">Bank cards</a> (UzCard, HUMO, VISA, MasterCard)
-            </li>
+            </li> */}
             <li>
-              <a href="#transfer-freedompay">International bank cards</a> VISA, MasterCard (Freedom Pay)
+              <a href="#transfer-card">International bank cards</a> VISA, MasterCard
             </li>
             <li>
               <a href="#transfer-paynet">PAYNET.uz</a>
@@ -721,9 +718,9 @@ export default function Payment({ language }) {
             <li>
               <a href="#transfer-click">Click.uz</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#transfer-upay">UPAY.uz</a>
-            </li>
+            </li> */}
             <li>
               <a href="#transfer-oson">Oson.uz</a>
             </li>

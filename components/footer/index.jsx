@@ -104,10 +104,10 @@ export default function Footer({ language }) {
         link: "#",
         img: <img className="click" src="/payments/click.png" />,
       },
-      {
-        link: "#",
-        img: <img className="upay" src="/payments/upay.svg" />,
-      },
+      // {
+      //   link: "#",
+      //   img: <img className="upay" src="/payments/upay.svg" />,
+      // },
     ],
     payment2 = [
       {
