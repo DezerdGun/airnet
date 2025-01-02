@@ -1507,37 +1507,6 @@ export default function VDS({ language }) {
 
   const tarif = [
     {
-      title: { ru: "Nano", uz: "Nano", en: "Nano" },
-      // price: "400 000",
-      prices: [
-        {
-          price: "400 000",
-          dateOff: `1 ${langData.month[language]}`,
-          // date: langData.month[language],
-        },
-        {
-          price: "1 200 000",
-          dateOff: `3 ${langData.month[language]}`,
-          // date: langData.month[language],
-        },
-        {
-          price: "2 400 000",
-          dateOff: `6 ${langData.month[language]}`,
-          // date: langData.month[language],
-        },
-        {
-          price: "10% - 4 320 000",
-          dateOff: `12 ${langData.month[language]}`,
-          // date: langData.month[language],
-        },
-      ],
-      cpu: 4,
-      ram: 8,
-      ssd: 100,
-      net: 100,
-      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=49",
-    },
-    {
       title: { ru: "Advanced", uz: "Advanced", en: "Advanced" },
       // price: "550 000",
       prices: [
@@ -1565,7 +1534,7 @@ export default function VDS({ language }) {
       cpu: 6,
       ram: 10,
       ssd: 150,
-      net: 100,
+      net: 150,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
     },
     {
@@ -1596,7 +1565,7 @@ export default function VDS({ language }) {
       cpu: 6,
       ram: 12,
       ssd: 200,
-      net: 100,
+      net: 150,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
     },
     {
@@ -1627,12 +1596,9 @@ export default function VDS({ language }) {
       cpu: 8,
       ram: 16,
       ssd: 250,
-      net: 100,
+      net: 150,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
     },
-  ];
-
-  const tarif2 = [
     {
       title: { ru: "Tera", uz: "Tera", en: "Tera" },
       // price: '1 500 000',
@@ -1661,9 +1627,12 @@ export default function VDS({ language }) {
       cpu: 8,
       ram: 32,
       ssd: 300,
-      net: 100,
+      net: 150,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=53",
     },
+  ];
+
+  const tarif2 = [
     {
       title: { ru: "Peta", uz: "Peta", en: "Peta" },
       // price: '2 250 000',
@@ -1692,8 +1661,39 @@ export default function VDS({ language }) {
       cpu: 12,
       ram: 48,
       ssd: 500,
-      net: 100,
+      net: 200,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=61",
+    },
+    {
+      title: { ru: "Exa", uz: "Exa", en: "Exa" },
+      // price: '2 250 000',
+      prices: [
+        {
+          price: "2 700 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "8 100 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "16 200 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 29 160 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 12,
+      ram: 56,
+      ssd: 500,
+      net: 200,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=117",
     },
     {
       title: { ru: "Zeta", uz: "Zeta", en: "Zeta" },
@@ -1723,7 +1723,7 @@ export default function VDS({ language }) {
       cpu: 16,
       ram: 64,
       ssd: 500,
-      net: 100,
+      net: 200,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=62",
     },
     {
@@ -1754,44 +1754,44 @@ export default function VDS({ language }) {
       cpu: 22,
       ram: 128,
       ssd: 1000,
-      net: 100,
+      net: 200,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=112",
     },
   ];
 
   const tarif3 = [
-    {
-      title: { ru: "Platinum", uz: "Platinum", en: "Platinum" },
-      // price: '150 000',
-      prices: [
-        {
-          price: "150 000",
-          dateOff: `1 ${langData.month[language]}`,
-          // date: langData.month[language],
-        },
-        {
-          price: "450 000",
-          dateOff: `3 ${langData.month[language]}`,
-          // date: langData.month[language],
-        },
-        {
-          price: "900 000",
-          dateOff: `6 ${langData.month[language]}`,
-          // date: langData.month[language],
-        },
-        {
-          price: "10% - 1 620 000",
-          dateOff: `12 ${langData.month[language]}`,
-          // date: langData.month[language],
-        },
-      ],
-      cpu: 2,
-      ram: 2,
-      ssd: 25,
-      net: 100,
-      os: "Linux",
-      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=13",
-    },
+    // {
+    //   title: { ru: "Platinum", uz: "Platinum", en: "Platinum" },
+    //   // price: '150 000',
+    //   prices: [
+    //     {
+    //       price: "150 000",
+    //       dateOff: `1 ${langData.month[language]}`,
+    //       // date: langData.month[language],
+    //     },
+    //     {
+    //       price: "450 000",
+    //       dateOff: `3 ${langData.month[language]}`,
+    //       // date: langData.month[language],
+    //     },
+    //     {
+    //       price: "900 000",
+    //       dateOff: `6 ${langData.month[language]}`,
+    //       // date: langData.month[language],
+    //     },
+    //     {
+    //       price: "10% - 1 620 000",
+    //       dateOff: `12 ${langData.month[language]}`,
+    //       // date: langData.month[language],
+    //     },
+    //   ],
+    //   cpu: 2,
+    //   ram: 2,
+    //   ssd: 25,
+    //   net: 100,
+    //   os: "Linux",
+    //   link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=13",
+    // },
     {
       title: { ru: "Strong", uz: "Strong", en: "Strong" },
       // price: '200 000',
@@ -1884,6 +1884,37 @@ export default function VDS({ language }) {
       ssd: 100,
       net: 100,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16",
+    },
+    {
+      title: { ru: "Nano", uz: "Nano", en: "Nano" },
+      // price: "400 000",
+      prices: [
+        {
+          price: "400 000",
+          dateOff: `1 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "1 200 000",
+          dateOff: `3 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "2 400 000",
+          dateOff: `6 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+        {
+          price: "10% - 4 320 000",
+          dateOff: `12 ${langData.month[language]}`,
+          // date: langData.month[language],
+        },
+      ],
+      cpu: 4,
+      ram: 8,
+      ssd: 100,
+      net: 100,
+      link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=49",
     },
   ];
 
