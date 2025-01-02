@@ -613,7 +613,7 @@ export default function Footer({ language }) {
           </nav>
         </div>
         <div className={st.footer__bottom}>
-          <span>Copyright © 2018 — 2024 OOO «AIRNET»</span>
+          <span>Copyright © 2018 — 2025 OOO «AIRNET»</span>
           <Link href={checkLang(language) + LINKS.PRIVACY_POLICY}>
             <a>{langData.privacy[language]}</a>
           </Link>

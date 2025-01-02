@@ -13,12 +13,12 @@ const mainData = {
         <p>Шаблоны заявлений:</p>
         <ol>
           <li>
-            <a href="/documents/transfer-domain-yur.docx" target="_blank">
+            <a href="/documents/transfer-domain.docx" target="_blank">
               Заявление физического лица на передачу домена другому регистратору
             </a>
           </li>
           <li>
-            <a href="/documents/transfer-domain.docx" target="_blank">
+            <a href="/documents/transfer-domain-yur.docx" target="_blank">
               Заявление юридического лица на передачу домена другому регистратору
             </a>
           </li>
@@ -30,12 +30,12 @@ const mainData = {
         <p>Bayonnoma shablonlari:</p>
         <ol>
           <li>
-            <a href="/documents/transfer-domain-yur.docx" target="_blank">
+            <a href="/documents/transfer-domain.docx" target="_blank">
               Jismoniy shaxsning domenni boshqa registratorga o‘tkazish uchun arizasi
             </a>
           </li>
           <li>
-            <a href="/documents/transfer-domain.docx" target="_blank">
+            <a href="/documents/transfer-domain-yur.docx" target="_blank">
               Yuridik shaxsning domenni boshqa registratorga o‘tkazish uchun arizasi
             </a>
           </li>
@@ -47,12 +47,12 @@ const mainData = {
         <p>Statement templates:</p>
         <ol>
           <li>
-            <a href="/documents/transfer-domain-yur.docx" target="_blank">
+            <a href="/documents/transfer-domain.docx" target="_blank">
               Application by an individual to transfer a domain to another registrar
             </a>
           </li>
           <li>
-            <a href="/documents/transfer-domain.docx" target="_blank">
+            <a href="/documents/transfer-domain-yur.docx" target="_blank">
               Application by a legal entity to transfer a domain to another registrar
             </a>
           </li>

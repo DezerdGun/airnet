@@ -93,9 +93,9 @@ export default function CustomSwiper({ language }) {
 			),
 		},
 		slideText22: {
-			ru: 'Доступность в сети интернет от - 25 Мбит/с для всех клиентов AIRNET',
-			uz: 'Barcha AIRNET mijozlari uchun - 25 Mbit/s dan boshlab Internet mavjudligi',
-			en: 'Availability on the Internet from - 25 Mbps for all AIRNET clients',
+			ru: 'Доступность в сети интернет от - 100 Мбит/с для всех клиентов AIRNET',
+			uz: 'Barcha AIRNET mijozlari uchun - 100 Mbit/s dan boshlab Internet mavjudligi',
+			en: 'Availability on the Internet from - 100 Mbps for all AIRNET clients',
 		},
 		slideTitle3: {
 			ru: (
