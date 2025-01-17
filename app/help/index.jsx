@@ -25,6 +25,34 @@ const data = [
       ],
     },
     {
+      title: {
+        ru: "SSL-сертификаты",
+        uz: "SSL-sertifikatlari",
+        en: "SSL certificates",
+      },
+      link: "/help/ssl",
+      children: [
+        {
+          id: "ssl",
+          title: {
+            ru: "Общая информация",
+            uz: "Umumiy ma'lumotlar",
+            en: "General information",
+          },
+          children: [
+            {
+              title: {
+                ru: "Зачем нужен SSL-сертификат",
+                uz: "Nma uchun SSL-sertifikati kerak?",
+                en: "Why do I need an SSL certificate",
+              },
+              link: "/help/ssl/zachem-nuzhen-ssl-sertifikat",
+            },
+          ],
+        },
+      ],
+    },
+    {
       title: { ru: "Хостинг", uz: "Hosting", en: "Hosting" },
       link: "/help/hosting",
       children: [
@@ -44,53 +72,125 @@ const data = [
               },
               link: "/help/hosting/kak-perenesti-sajt-na-hosting-airnet",
             },
-          ],
-        },
-      ],
-    },
-    {
-      title: { ru: "Домены", uz: "Domenlar", en: "Domains" },
-      link: "/help/domain",
-      children: [
-        {
-          id: "domain",
-          title: {
-            ru: "Регистрация/продление доменов",
-            uz: "Domenlarni ro'yxatdan o'tkazish / yangilash",
-            en: "Registration/Renewal of Domains",
-          },
-          children: [
             {
               title: {
-                ru: "Наши DNS-записи",
-                uz: "Bizning DNS-yozuvlarimiz",
-                en: "Our DNS records",
+                ru: "Установлен ли у вас mod_rewrite?",
+                uz: "Sizda mod_rewrite o'rnatilganmi?",
+                en: "Do you have mod_rewrite installed?",
               },
-              link: "/help/domain/dns",
+              link: "/help/hosting/ustanovlen-li-u-vas-mod-rewrite",
             },
             {
               title: {
-                ru: "Как зарегистрировать домен?",
-                uz: "Domenlarni  qanday royxatdan otqazish ",
-                en: "How to register a domain?",
+                ru: "У вас установлен модуль ionCube?",
+                uz: "Sizda ionCube moduli o'rnatilganmi?",
+                en: "Do you have ionCube module installed?",
               },
-              link: "/help/domain/kak-zaregistrirovat-domen",
+              link: "/help/hosting/u-vas-ustanovlen-modul-ioncube",
             },
             {
               title: {
-                ru: "Рекомендации по выбору доменного имени",
-                uz: "Domen nomlarini tanlshdagi maslaxatlar",
-                en: "Recommendations for choosing a domain name",
+                ru: "Есть ли у вас бэкап (резервное копирование) данных, и как часто он производится?",
+                uz: "Ma'lumotlaringizning zaxira nusxasi bormi va u qanchalik tez-tez amalga oshiriladi?",
+                en: "Do you have a backup of your data and how often is it done?",
               },
-              link: "/help/domain/rekomendaczii-po-vyboru-domennogo-imeni",
+              link: "/help/hosting/est-li-u-vas-behkap-rezervnoe-kopirovanie-dannyh-i-kak-chasto-on-proizvoditsya",
             },
             {
               title: {
-                ru: "Нужно ли вводить данные паспорта для регистрации?",
-                uz: "Ro'yxatdan otish uchun pasport malumotlari kerakmi?",
-                en: "Do I need to enter passport data for registration?",
+                ru: "У вас есть поддержка mod_pagespeed?",
+                uz: "Sizda mod_pagespeed yordami bormi?",
+                en: "Do you have mod_pagespeed support?",
               },
-              link: "/help/domain/nuzhno-li-vvodit-dannye-pasporta-dlya-registraczii",
+              link: "/help/hosting/u-vas-est-podderzhka-mod-pagespeed",
+            },
+            {
+              title: {
+                ru: "Вы можете помочь перенести сайт со старого хостинга к вам?",
+                uz: "Veb-saytimni eski xostingimdan sizga o'tkazishimga yordam bera olasizmi?",
+                en: "Can you help me transfer my website from my old hosting to you?",
+              },
+              link: "/help/hosting/vy-mozhete-pomoch-perenesti-sajt-so-starogo-hostinga-k-vam",
+            },
+            {
+              title: {
+                ru: "Как разместить несколько сайтов на одном аккаунте?",
+                uz: "Bir hisobda bir nechta saytlarni qanday joylashtirish mumkin?",
+                en: "How to host multiple sites on one account?",
+              },
+              link: "/help/hosting/kak-razmestit-neskolko-sajtov-na-odnom-akkaunte",
+            },
+            {
+              title: {
+                ru: "Как считается количество сайтов на сервисе «Хостинг»?",
+                uz: "Xosting xizmatidagi saytlar soni qanday hisoblanadi?",
+                en: "How is the number of sites on the Hosting service calculated?",
+              },
+              link: "/help/hosting/kak-schitaetsya-kolichestvo-sajtov-na-servise-hosting",
+            },
+            {
+              title: {
+                ru: "Есть ли у вас SSH (Shell)?",
+                uz: "Sizda SSH (Shell) bormi?",
+                en: "Do you have SSH (Shell)?",
+              },
+              link: "/help/hosting/est-li-u-vas-ssh-shell",
+            },
+            {
+              title: {
+                ru: "Есть ли у вас ограничения по использованию трафика?",
+                uz: "Sizda trafikdan foydalanishda cheklovlar bormi?",
+                en: "Do you have any restrictions on traffic usage?",
+              },
+              link: "/help/hosting/est-li-u-vas-ogranicheniya-po-ispolzovaniyu-trafika",
+            },
+            {
+              title: {
+                ru: "Предоставляете ли вы выделенный IP для аккаунта?",
+                uz: "Hisob uchun maxsus IP taqdim qilasizmi?",
+                en: "Do you provide dedicated IP for account?",
+              },
+              link: "/help/hosting/predostavlyaete-li-vy-vydelennyj-ip-dlya-akkaunta",
+            },
+            {
+              title: {
+                ru: "Есть ли ограничение на количество соединений/подключений по FTP и HTTP?",
+                uz: "FTP va HTTP orqali ulanishlar soniga cheklov bormi?",
+                en: "Is there a limit on the number of connections via FTP and HTTP?",
+              },
+              link: "/help/hosting/est-li-ogranichenie-na-kolichestvo-soedinenij-podklyuchenij-po-ftp-i-http",
+            },
+            {
+              title: {
+                ru: "Видео: «Как ускорить сайт с помощью HTTP/2?»",
+                uz: "Video: «HTTP/2 yordamida veb-saytingizni qanday tezlashtirish mumkin?»",
+                en: "Video: «How to Speed ​​Up Your Website with HTTP/2?»",
+              },
+              link: "/help/hosting/video-kak-uskorit-sajt-s-pomoshchyu-http-2",
+            },
+            {
+              title: {
+                ru: "Как создать поддомен?",
+                uz: "Subdomenni qanday yaratish mumkin?",
+                en: "How to create a subdomain?",
+              },
+              link: "/help/hosting/kak-sozdat-poddomen",
+            },
+            {
+              title: {
+                ru: "Есть ли доступ к log-файлам? Где мне найти error_log и access_log?",
+                uz: "Jurnal fayllariga kirish imkoni bormi? error_log va access_logni qayerdan topsam bo'ladi?",
+                en: "Is there access to log files? Where can I find error_log and access_log?",
+              },
+              link: "/help/hosting/est-li-dostup-k-log-fajlam-gde-mne-najti-error-log-i-access-log",
+            },
+            {
+              title: {
+                ru: "Какие у вас тарифы?",
+                uz: "Narxlaringiz qanday?",
+                en: "What are your rates?",
+              },
+              link: "/help/hosting/kakie-u-vas-tarify",
             },
           ],
         },
@@ -188,33 +288,165 @@ const data = [
               },
               link: "/help/vds/windows",
             },
+            {
+              title: {
+                ru: "Есть ли лимит на число файлов?",
+                uz: "Fayllar sonida cheklov bormi?",
+                en: "Is there a limit on the number of files?",
+              },
+              link: "/help/vds/est-li-limit-na-chislo-fajlov",
+            },
+            {
+              title: {
+                ru: "Производится ли резервное копирование?",
+                uz: "Zaxira bormi?",
+                en: "Is there a backup?",
+              },
+              link: "/help/vds/proizvoditsya-li-rezervnoe-kopirovanie",
+            },
+            {
+              title: {
+                ru: "Как использовать 25 порт для отправки почты?",
+                uz: "Pochta yuborish uchun 25-portdan qanday foydalanish kerak?",
+                en: "How to use port 25 to send mail?",
+              },
+              link: "/help/vds/kak-ispolzovat-25-port-dlya-otpravki-pochty",
+            },
+            {
+              title: {
+                ru: "Как установить ОС или переустановить имеющуюся?",
+                uz: "OSni qanday o'rnatish yoki mavjudini qayta o'rnatish kerak?",
+                en: "How to install OS or reinstall existing one?",
+              },
+              link: "/help/vds/kak-ustanovit-os-ili-pereustanovit-imeyushchuyusya",
+            },
+            {
+              title: {
+                ru: "Как удалить сервер?",
+                uz: "Serverni qanday o'chirish mumkin?",
+                en: "How to delete a server?",
+              },
+              link: "/help/vds/kak-udalit-server",
+            },
+            {
+              title: {
+                ru: "Возможно ли увеличить объем предоставляемых ресурсов?",
+                uz: "Berilgan resurslar hajmini oshirish mumkinmi?",
+                en: "Is it possible to increase the volume of resources provided?",
+              },
+              link: "/help/vds/vozmozhno-li-uvelichit-obem-predostavlyaemyh-resursov",
+            },
           ],
         },
       ],
     },
     {
-      title: {
-        ru: "SSL-сертификаты",
-        uz: "SSL-sertifikatlari",
-        en: "SSL certificates",
-      },
-      link: "/help/ssl",
+      title: { ru: "Домены", uz: "Domenlar", en: "Domains" },
+      link: "/help/domain",
       children: [
         {
-          id: "ssl",
+          id: "domain",
           title: {
-            ru: "Общая информация",
-            uz: "Umumiy ma'lumotlar",
-            en: "General information",
+            ru: "Регистрация/продление доменов",
+            uz: "Domenlarni ro'yxatdan o'tkazish / yangilash",
+            en: "Registration/Renewal of Domains",
           },
           children: [
             {
               title: {
-                ru: "Зачем нужен SSL-сертификат",
-                uz: "Nma uchun SSL-sertifikati kerak?",
-                en: "Why do I need an SSL certificate",
+                ru: "Наши DNS-записи",
+                uz: "Bizning DNS-yozuvlarimiz",
+                en: "Our DNS records",
               },
-              link: "/help/ssl/zachem-nuzhen-ssl-sertifikat",
+              link: "/help/domain/dns",
+            },
+            {
+              title: {
+                ru: "Как зарегистрировать домен?",
+                uz: "Domenlarni  qanday royxatdan otqazish ",
+                en: "How to register a domain?",
+              },
+              link: "/help/domain/kak-zaregistrirovat-domen",
+            },
+            {
+              title: {
+                ru: "Рекомендации по выбору доменного имени",
+                uz: "Domen nomlarini tanlshdagi maslaxatlar",
+                en: "Recommendations for choosing a domain name",
+              },
+              link: "/help/domain/rekomendaczii-po-vyboru-domennogo-imeni",
+            },
+            {
+              title: {
+                ru: "Нужно ли вводить данные паспорта для регистрации?",
+                uz: "Ro'yxatdan otish uchun pasport malumotlari kerakmi?",
+                en: "Do I need to enter passport data for registration?",
+              },
+              link: "/help/domain/nuzhno-li-vvodit-dannye-pasporta-dlya-registraczii",
+            },
+            {
+              title: {
+                ru: "Сколько ждать обновления DNS?",
+                uz: "DNS-ni yangilash qancha vaqt oladi?",
+                en: "How long does it take to update DNS?",
+              },
+              link: "/help/domain/skolko-zhdat-obnovleniya-dns",
+            },
+            {
+              title: {
+                ru: "Можно ли сделать перерегистрацию домена в AIRNET?",
+                uz: "AIRNET da domenni qayta ro'yxatdan o'tkazish mumkinmi?",
+                en: "Is it possible to re-register a domain in AIRNET?",
+              },
+              link: "/help/domain/mozhno-li-sdelat-pereregistraciyu-domena-v-airnet",
+            },
+            {
+              title: {
+                ru: "Домен занят. Как я могу забронировать и с кем могу связаться?",
+                uz: "Domen olinadi. Qanday qilib bron qilishim mumkin va kimga murojaat qilishim mumkin?",
+                en: "The domain is taken. How can I reserve it and who can I contact?",
+              },
+              link: "/help/domain/domen-zanyat-kak-ya-mogu-zabronirovat-i-s-kem-mogu-svyazatsya",
+            },
+            {
+              title: {
+                ru: "Можно ли зарегистрировать домен в AIRNET, если нет 18 лет?",
+                uz: "18 yoshdan kichik bo'lsangiz, AIRNET da domenni ro'yxatdan o'tkazish mumkinmi?",
+                en: "Is it possible to register a domain in AIRNET if you are under 18 years old?",
+              },
+              link: "/help/domain/mozhno-li-zaregistrirovat-domen-v-airnet-esli-net-18-let",
+            },
+            {
+              title: {
+                ru: "Можно ли управлять A-записями без активных услуг?",
+                uz: "A-yozuvlarni faol xizmatlarsiz boshqarish mumkinmi?",
+                en: "Is it possible to manage A-records without active services?",
+              },
+              link: "/help/domain/mozhno-li-upravlyat-a-zapisyami-bez-aktivnyh-uslug",
+            },
+            {
+              title: {
+                ru: "Как посмотреть, кому принадлежит домен?",
+                uz: "Domen kimga tegishli ekanligini qanday ko'rish mumkin?",
+                en: "How to see who owns a domain?",
+              },
+              link: "/help/domain/kak-posmotret-komu-prinadlezhit-domen",
+            },
+            {
+              title: {
+                ru: "Как удалить домен?",
+                uz: "Domenni qanday o'chirish mumkin?",
+                en: "How to delete a domain?",
+              },
+              link: "/help/domain/kak-udalit-domen",
+            },
+            {
+              title: {
+                ru: "Можно ли зарегистрировать домен без приобретения услуг хостинга?",
+                uz: "Xosting xizmatlarini sotib olmasdan domenni ro'yxatdan o'tkazish mumkinmi?",
+                en: "Is it possible to register a domain without purchasing hosting services?",
+              },
+              link: "/help/domain/mozhno-li-zaregistrirovat-domen-bez-priobreteniya-uslug-hostinga",
             },
           ],
         },

@@ -80,6 +80,54 @@ const mainData = {
       },
       link: "/help/vds/backups-server",
     },
+	{
+	  title: {
+		ru: "Есть ли лимит на число файлов?",
+		uz: "Fayllar sonida cheklov bormi?",
+		en: "Is there a limit on the number of files?",
+	  },
+	  link: "/help/vds/est-li-limit-na-chislo-fajlov",
+	},
+	{
+	  title: {
+		ru: "Производится ли резервное копирование?",
+		uz: "Zaxira bormi?",
+		en: "Is there a backup?",
+	  },
+	  link: "/help/vds/proizvoditsya-li-rezervnoe-kopirovanie",
+	},
+	{
+	  title: {
+		ru: "Как использовать 25 порт для отправки почты?",
+		uz: "Pochta yuborish uchun 25-portdan qanday foydalanish kerak?",
+		en: "How to use port 25 to send mail?",
+	  },
+	  link: "/help/vds/kak-ispolzovat-25-port-dlya-otpravki-pochty",
+	},
+	{
+	  title: {
+		ru: "Как установить ОС или переустановить имеющуюся?",
+		uz: "OSni qanday o'rnatish yoki mavjudini qayta o'rnatish kerak?",
+		en: "How to install OS or reinstall existing one?",
+	  },
+	  link: "/help/vds/kak-ustanovit-os-ili-pereustanovit-imeyushchuyusya",
+	},
+	{
+	  title: {
+		ru: "Как удалить сервер?",
+		uz: "Serverni qanday o'chirish mumkin?",
+		en: "How to delete a server?",
+	  },
+	  link: "/help/vds/kak-udalit-server",
+	},
+	{
+	  title: {
+		ru: "Возможно ли увеличить объем предоставляемых ресурсов?",
+		uz: "Berilgan resurslar hajmini oshirish mumkinmi?",
+		en: "Is it possible to increase the volume of resources provided?",
+	  },
+	  link: "/help/vds/vozmozhno-li-uvelichit-obem-predostavlyaemyh-resursov",
+	},
   ],
   content: {
     ru: (
