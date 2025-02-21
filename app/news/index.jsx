@@ -11,6 +11,129 @@ export const news = [
 	{
 		img: "/news/1.jpg",
 		link: "/news/",
+		date: "20.02.2025",
+		title: {
+			ru: "Уважаемые абоненты!",
+			uz: "Hurmatli abonentlar!",
+			en: "Dear subscribers!",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+						В связи с плановыми работами по модернизации сети телекоммуникаций OOO «AIRNET», расширение пропускной способности, а также модернизации оборудования:  
+					</p>
+
+					<p>
+						Информируем Вас о том, что произойдет смена действующего IP-адреса вашего сервера на новый, старый IP будет переведен в архив и недоступен для подключения с с 01 апреля 2025 года.
+					</p>
+
+					<p>
+						<strong>IP: c 176.221.28.1 - 176.221.28.254</strong><br />
+						<strong>IP: c 176.221.29.1 - 176.221.29.254</strong>
+					</p>
+
+					<p>
+						Чтобы самостоятельно произвести изменения досрочно, необходимо в ответом письмо подтвердить смену IP адреса на новый адрес и наши специалисты произведут замену IP на вашем сервере без перезагрузки.
+					</p>
+
+					<p>
+						С Уважением,
+						Команда AIRNET.
+					</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+					"AIRNET" MChJ telekommunikatsiya tarmog'ini modernizatsiya qilish, o'tkazish qobiliyatini kengaytirish, shuningdek, uskunalarni modernizatsiya qilish bo'yicha rejalashtirilgan ishlar munosabati bilan:
+					</p>
+
+					<p>
+					Sizga shuni maʼlum qilamizki, serveringizning joriy IP manzili yangisiga oʻzgartiriladi, eski IP arxivlanadi va 2025-yil 1-apreldan boshlab ulanish uchun mavjud boʻlmaydi.
+					</p>
+
+					<p>
+					<strong>IP: dan 176.221.28.1 - 176.221.28.254</strong><br />
+					<strong>IP: dan 176.221.29.1 - 176.221.29.254</strong>
+					</p>
+
+					<p>
+					O'z-o'zidan muddatidan oldin o'zgartirishlar kiritish uchun javob xatida IP-manzilni yangi manzilga o'zgartirishni tasdiqlashingiz kerak va bizning mutaxassislarimiz qayta yuklamasdan serveringizdagi IP-ni almashtiradilar.
+					</p>
+
+					<p>
+					Hurmat bilan,
+					AIRNET jamoasi.
+					</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+					Due to the planned work on modernization of the telecommunications network of OOO "AIRNET", expansion of bandwidth, as well as modernization of equipment:
+					</p>
+
+					<p>
+					We inform you that the current IP address of your server will be changed to a new one, the old IP will be archived and unavailable for connection from April 01, 2025.
+					</p>
+
+					<p>
+					<strong>IP: c 176.221.28.1 - 176.221.28.254</strong><br />
+					<strong>IP: c 176.221.29.1 - 176.221.29.254</strong>
+					</p>
+
+					<p>
+					To independently make changes ahead of schedule, you must confirm the change of the IP address to a new address in the response letter and our specialists will replace the IP on your server without rebooting.
+					</p>
+
+					<p>
+					Sincerely,
+					AIRNET Team.
+					</p>
+				</>
+			),
+		},
+	},
+	{
+		img: "/news/2.jpg",
+		link: "/news/",
+		date: "17.02.2025",
+		title: {
+			ru: "Уважаемые абоненты!",
+			uz: "Hurmatli abonentlar!",
+			en: "Dear subscribers!",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+						Сообщаем вам об успешном подключении нашей компании к зоне UZ-IX (www.uz-ix.uz) на скорости 1Гб/с.
+					</p>
+					<p>Услуга доступна всем клиентам по умолчанию и на бесплатной основе.</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+					Sizga kompaniyamiz UZ-IX zonasiga (www.uz-ix.uz) 1Gb/s tezlikda muvaffaqiyatli ulanishi haqida xabar beramiz.
+					</p>
+					<p>Xizmat sukut bo'yicha va bepul barcha mijozlar uchun mavjud.</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+					We inform you about the successful connection of our company to the UZ-IX zone (www.uz-ix.uz) at a speed of 1Gb/s.
+					</p>
+					<p>The service is available to all customers by default and free of charge.</p>
+				</>
+			),
+		},
+	},
+	{
+		img: "/news/1.jpg",
+		link: "/news/",
 		date: "15.12.2024",
 		title: {
 			ru: "Уважаемые абоненты!",

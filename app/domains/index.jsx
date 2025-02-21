@@ -574,6 +574,27 @@ export default function Domains({ language }) {
           <a href="/domains/org" target="_blank">.ORG</a>
           <a href="/domains/in" target="_blank">.IN</a>
           <a href="/domains/su" target="_blank">.SU</a>
+          <a href="/domains/tg" target="_blank">.TG</a>
+          <a href="/domains/ae" target="_blank">.AE</a>
+          <a href="/domains/am" target="_blank">.AM</a>
+          <a href="/domains/az" target="_blank">.AZ</a>
+          <a href="/domains/be" target="_blank">.BE</a>
+          <a href="/domains/by" target="_blank">.BY</a>
+          <a href="/domains/cc" target="_blank">.CC</a>
+          <a href="/domains/cn" target="_blank">.CN</a>
+          <a href="/domains/cz" target="_blank">.CZ</a>
+          <a href="/domains/de" target="_blank">.DE</a>
+          <a href="/domains/eu" target="_blank">.EU</a>
+          <a href="/domains/io" target="_blank">.IO</a>
+          <a href="/domains/it" target="_blank">.IT</a>
+          <a href="/domains/kg" target="_blank">.KG</a>
+          <a href="/domains/me" target="_blank">.ME</a>
+          <a href="/domains/pw" target="_blank">.PW</a>
+          <a href="/domains/tk" target="_blank">.TK</a>
+          <a href="/domains/tr" target="_blank">.TR</a>
+          <a href="/domains/tv" target="_blank">.TV</a>
+          <a href="/domains/ua" target="_blank">.UA</a>
+          <a href="/domains/us" target="_blank">.US</a>
         </div>
         </>
       ),
@@ -599,6 +620,27 @@ export default function Domains({ language }) {
           <a href="/domains/org" target="_blank">.ORG</a>
           <a href="/domains/in" target="_blank">.IN</a>
           <a href="/domains/su" target="_blank">.SU</a>
+          <a href="/domains/tg" target="_blank">.TG</a>
+          <a href="/domains/ae" target="_blank">.AE</a>
+          <a href="/domains/am" target="_blank">.AM</a>
+          <a href="/domains/az" target="_blank">.AZ</a>
+          <a href="/domains/be" target="_blank">.BE</a>
+          <a href="/domains/by" target="_blank">.BY</a>
+          <a href="/domains/cc" target="_blank">.CC</a>
+          <a href="/domains/cn" target="_blank">.CN</a>
+          <a href="/domains/cz" target="_blank">.CZ</a>
+          <a href="/domains/de" target="_blank">.DE</a>
+          <a href="/domains/eu" target="_blank">.EU</a>
+          <a href="/domains/io" target="_blank">.IO</a>
+          <a href="/domains/it" target="_blank">.IT</a>
+          <a href="/domains/kg" target="_blank">.KG</a>
+          <a href="/domains/me" target="_blank">.ME</a>
+          <a href="/domains/pw" target="_blank">.PW</a>
+          <a href="/domains/tk" target="_blank">.TK</a>
+          <a href="/domains/tr" target="_blank">.TR</a>
+          <a href="/domains/tv" target="_blank">.TV</a>
+          <a href="/domains/ua" target="_blank">.UA</a>
+          <a href="/domains/us" target="_blank">.US</a>
         </div>
         </>
       ),
@@ -624,6 +666,27 @@ export default function Domains({ language }) {
           <a href="/domains/org" target="_blank">.ORG</a>
           <a href="/domains/in" target="_blank">.IN</a>
           <a href="/domains/su" target="_blank">.SU</a>
+          <a href="/domains/tg" target="_blank">.TG</a>
+          <a href="/domains/ae" target="_blank">.AE</a>
+          <a href="/domains/am" target="_blank">.AM</a>
+          <a href="/domains/az" target="_blank">.AZ</a>
+          <a href="/domains/be" target="_blank">.BE</a>
+          <a href="/domains/by" target="_blank">.BY</a>
+          <a href="/domains/cc" target="_blank">.CC</a>
+          <a href="/domains/cn" target="_blank">.CN</a>
+          <a href="/domains/cz" target="_blank">.CZ</a>
+          <a href="/domains/de" target="_blank">.DE</a>
+          <a href="/domains/eu" target="_blank">.EU</a>
+          <a href="/domains/io" target="_blank">.IO</a>
+          <a href="/domains/it" target="_blank">.IT</a>
+          <a href="/domains/kg" target="_blank">.KG</a>
+          <a href="/domains/me" target="_blank">.ME</a>
+          <a href="/domains/pw" target="_blank">.PW</a>
+          <a href="/domains/tk" target="_blank">.TK</a>
+          <a href="/domains/tr" target="_blank">.TR</a>
+          <a href="/domains/tv" target="_blank">.TV</a>
+          <a href="/domains/ua" target="_blank">.UA</a>
+          <a href="/domains/us" target="_blank">.US</a>
         </div>
         </>
       ),
