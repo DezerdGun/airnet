@@ -34,7 +34,7 @@ export const news = [
 					</p>
 
 					<p>
-						Чтобы самостоятельно произвести изменения досрочно, необходимо в ответом письмо подтвердить смену IP адреса на новый адрес и наши специалисты произведут замену IP на вашем сервере без перезагрузки.
+						Чтобы самостоятельно произвести изменения досрочно, необходимо подтвердить по тикету смену IP адреса на новый адрес и наши специалисты произведут замену IP на вашем сервере без перезагрузки.
 					</p>
 
 					<p>
@@ -59,7 +59,7 @@ export const news = [
 					</p>
 
 					<p>
-					O'z-o'zidan muddatidan oldin o'zgartirishlar kiritish uchun javob xatida IP-manzilni yangi manzilga o'zgartirishni tasdiqlashingiz kerak va bizning mutaxassislarimiz qayta yuklamasdan serveringizdagi IP-ni almashtiradilar.
+					O'zgartirishlarni muddatidan oldin amalga oshirish uchun chipta orqali IP-manzilni yangi manzilga o'zgartirishni tasdiqlashingiz kerak va bizning mutaxassislarimiz qayta yuklamasdan serveringizdagi IP-ni almashtiradilar.
 					</p>
 
 					<p>
@@ -84,7 +84,7 @@ export const news = [
 					</p>
 
 					<p>
-					To independently make changes ahead of schedule, you must confirm the change of the IP address to a new address in the response letter and our specialists will replace the IP on your server without rebooting.
+					To make changes ahead of schedule, you must confirm the change of IP address to a new address via ticket and our specialists will replace the IP on your server without rebooting.
 					</p>
 
 					<p>
