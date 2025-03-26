@@ -54,7 +54,7 @@ export default function BlogItem({ data, language, breadCrumbs }) {
 	return (
 		<div className="bg-gray">
 			<SEO
-				title={`${data.title[language]} | ${langData.title[language]}`}
+				title={`${data.title[language]}`}
 				desc={data.desc[language]}
 			/>
 			
