@@ -27,7 +27,11 @@ const data = {
     ...breadCrumbsHelp,
     {
       name: data.title,
-      link: mainData.url,
+      link: {
+        ru: "/help/documents",
+        uz: "/uz/help/documents",
+        en: "/en/help/documents",
+      },
     },
   ];
 

@@ -22,6 +22,36 @@ import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ProductDomain from "../../components/seo/productdomain";
 
+export const breadCrumbsDomain = [
+  {
+    name: {
+      ru: "Регистрация домена в зоне UZ",
+      uz: "Регистрация домена в зоне UZ",
+      en: "Регистрация домена в зоне UZ",
+    },
+    link: {
+      ru: "/domains",
+      uz: "/uz/domains",
+      en: "/en/domains",
+    },
+  },
+];
+export const breadCrumbsCom = [
+  ...breadCrumbsDomain,
+  {
+    name: {
+      ru: "Регистрация домена в зоне COM",
+      uz: "COM zonada domenni ro'yxatdan o'tkazish",
+      en: "Domain registration in the COM zone",
+    },
+    link: {
+      ru: "/domains/com",
+      uz: "/uz/domains/com",
+      en: "/en/domains/com",
+    },
+  },
+];
+
 const content = [
     {
       title: { ru: "Доверие", uz: "Ishonch", en: "Confidence" },
@@ -459,17 +489,6 @@ export const forContractArticlesData = {
     ],
   };
 
-export const breadCrumbsDomains = [
-  {
-    name: {
-      ru: "Регистрация домена в зоне COM",
-      uz: "COM zonasida domenni ro'yxatdan o'tkazish",
-      en: "Domain registration in COM zone",
-    },
-    link: "/domains",
-  },
-];
-
 export default function Domains({ language }) {
   const langData = {
     seoTitle: {
@@ -637,10 +656,10 @@ export default function Domains({ language }) {
       />
 
       <ProductDomain />
-      {breadCrumbsDomains && breadCrumbsDomains.length ? (
+      {breadCrumbsCom && breadCrumbsCom.length ? (
         <>
-          <BreadCrumbs data={breadCrumbsDomains} language={language} />
-          <PageBreadcrumb links={breadCrumbsDomains} language={language} />
+          <BreadCrumbs data={breadCrumbsCom} language={language} />
+          <PageBreadcrumb links={breadCrumbsCom} language={language} />
         </>
       ) : null}
 

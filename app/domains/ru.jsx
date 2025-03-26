@@ -22,6 +22,36 @@ import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ProductDomain from "../../components/seo/productdomain";
 
+export const breadCrumbsDomain = [
+  {
+    name: {
+      ru: "Регистрация домена в зоне UZ",
+      uz: "Регистрация домена в зоне UZ",
+      en: "Регистрация домена в зоне UZ",
+    },
+    link: {
+      ru: "/domains",
+      uz: "/uz/domains",
+      en: "/en/domains",
+    },
+  },
+];
+export const breadCrumbsRu = [
+  ...breadCrumbsDomain,
+  {
+    name: {
+      ru: "Регистрация домена в зоне RU",
+      uz: "RU zonada domenni ro'yxatdan o'tkazish",
+      en: "Domain registration in the RU zone",
+    },
+    link: {
+      ru: "/domains/ru",
+      uz: "/uz/domains/ru",
+      en: "/en/domains/ru",
+    },
+  },
+];
+
 const content = [
     {
       title: { ru: "Доверие", uz: "Ishonch", en: "Confidence" },
@@ -459,17 +489,6 @@ export const forContractArticlesData = {
     ],
   };
 
-export const breadCrumbsDomains = [
-  {
-    name: {
-      ru: "Регистрация домена в зоне RU",
-      uz: "RU zonasida domenni ro'yxatdan o'tkazish",
-      en: "Domain registration in RU zone",
-    },
-    link: "/domains",
-  },
-];
-
 export default function Domains({ language }) {
   const langData = {
     seoTitle: {
@@ -700,12 +719,15 @@ export default function Domains({ language }) {
       />
 
       <ProductDomain />
-      {breadCrumbsDomains && breadCrumbsDomains.length ? (
-        <>
-          <BreadCrumbs data={breadCrumbsDomains} language={language} />
-          <PageBreadcrumb links={breadCrumbsDomains} language={language} />
-        </>
-      ) : null}
+            
+            {breadCrumbsRu && breadCrumbsRu.length ? (
+              <>
+                <BreadCrumbs data={breadCrumbsRu} language={language} />
+                <PageBreadcrumb links={breadCrumbsRu} language={language} />
+              </>
+            ) : (
+              ""
+            )}
 
       <Container headTitle={langData.headTitle[language]}>
         <hr />

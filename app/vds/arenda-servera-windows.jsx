@@ -1173,7 +1173,11 @@ export default function VDS({ language }) {
         uz: "Windows server ijarasi",
         en: "Windows server rentals",
       },
-      link: "/vds/arenda-servera-windows",
+      link: {
+        ru: "/vds/arenda-servera-windows",
+        uz: "/uz/vds/arenda-servera-windows",
+        en: "/en/vds/arenda-servera-windows",
+      },
     },
   ];
 

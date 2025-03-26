@@ -30,7 +30,11 @@ const data = [
         uz: "SSL-sertifikatlari",
         en: "SSL certificates",
       },
-      link: "/help/ssl",
+      link: {
+        ru: "/help/ssl",
+        uz: "/uz/help/ssl",
+        en: "/en/help/ssl",
+      },
       children: [
         {
           id: "ssl",
@@ -919,7 +923,11 @@ const data = [
 export const breadCrumbsHelp = [
   {
     name: mainData.headTitle,
-    link: mainData.url,
+    link: {
+      ru: "/help",
+      uz: "/uz/help",
+      en: "/en/help",
+    },
   },
 ];
 

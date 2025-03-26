@@ -692,7 +692,11 @@ export const breadCrumbsVds = [
       uz: "Optimal VDS/VPS serverlari",
       en: "Optimal VDS/VPS servers",
     },
-    link: "/vds",
+    link: {
+      ru: "/vds",
+      uz: "/uz/vds",
+      en: "/en/vds",
+    },
   },
 ];
 

@@ -37,7 +37,7 @@ export default function PageBreadcrumb({ links, language }) {
               else
                 return (
                   <span itemprop="name">
-                    <Link href={`/${item.link}/`}>
+                    <Link href={`/${item.link[language]}/`}>
                       <a>{item.name[language]}</a>
                     </Link>
                     &raquo;

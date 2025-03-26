@@ -22,7 +22,11 @@ const data = {
     ...breadCrumbsHelp,
     {
       name: data.title,
-      link: mainData.url,
+      link: {
+        ru: "/help/ftp",
+        uz: "/uz/help/ftp",
+        en: "/en/help/ftp",
+      },
     },
   ];
 

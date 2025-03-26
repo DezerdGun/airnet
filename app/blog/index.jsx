@@ -1326,7 +1326,11 @@ export const breadCrumbsBlog = [
 		uz: "Blog",
 		en: "Blog",
 	  },
-	  link: "/blog",
+	  link: {
+		ru: "/blog",
+		uz: "/uz/blog",
+		en: "/en/blog",
+	  },
 	},
   ];
 

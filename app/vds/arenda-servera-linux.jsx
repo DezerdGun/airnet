@@ -1680,7 +1680,11 @@ export default function VDS({ language }) {
         uz: "Linux server ijarasi",
         en: "Linux server rentals",
       },
-      link: "/vds/arenda-servera-linux",
+      link: {
+        ru: "/vds/arenda-servera-linux",
+        uz: "/uz/vds/arenda-servera-linux",
+        en: "/en/vds/arenda-servera-linux",
+      },
     },
   ];
 

@@ -50,7 +50,11 @@ const data = {
     ...breadCrumbsHelp,
     {
       name: data.title,
-      link: mainData.url,
+      link: {
+        ru: "/help/billing",
+        uz: "/uz/help/billing",
+        en: "/en/help/billing",
+      },
     },
   ];
 

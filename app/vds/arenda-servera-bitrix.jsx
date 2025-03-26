@@ -1206,7 +1206,11 @@ export default function VDS({ language }) {
         uz: "Bitrix24 va 1C-Bitrix uchun VPS/VDS ijarasi",
         en: "VPS/VDS rental for Bitrix24 and 1C-Bitrix",
       },
-      link: "/vds/arenda-servera-bitrix",
+      link: {
+        ru: "/vds/arenda-servera-bitrix",
+        uz: "/uz/vds/arenda-servera-bitrix",
+        en: "/en/vds/arenda-servera-bitrix",
+      },
     },
   ];
 

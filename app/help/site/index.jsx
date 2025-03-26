@@ -30,7 +30,11 @@ const data = {
     ...breadCrumbsHelp,
     {
       name: data.title,
-      link: mainData.url,
+      link: {
+        ru: "/help/site",
+        uz: "/uz/help/site",
+        en: "/en/help/site",
+      },
     },
   ];
 

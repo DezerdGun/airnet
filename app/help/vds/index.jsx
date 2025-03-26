@@ -146,7 +146,11 @@ const data = {
     ...breadCrumbsHelp,
     {
       name: data.title,
-      link: mainData.url,
+      link: {
+        ru: "/help/vds",
+        uz: "/uz/help/vds",
+        en: "/en/help/vds",
+      },
     },
   ];
 

@@ -1169,7 +1169,11 @@ export default function VDS({ language }) {
         uz: "Intel server ijarasi",
         en: "Intel server rental",
       },
-      link: "/vds/arenda-servera-intel",
+      link: {
+        ru: "/vds/arenda-servera-intel",
+        uz: "/uz/vds/arenda-servera-intel",
+        en: "/en/vds/arenda-servera-intel",
+      },
     },
   ];
 

@@ -32,7 +32,11 @@ export const breadCrumbsDomain = [
       uz: "Регистрация домена в зоне UZ",
       en: "Регистрация домена в зоне UZ",
     },
-    link: "/domains",
+    link: {
+      ru: "/domains",
+      uz: "/uz/domains",
+      en: "/en/domains",
+    },
   },
 ];
 export const breadCrumbsIn = [
@@ -43,7 +47,11 @@ export const breadCrumbsIn = [
       uz: "In zonada domenni ro'yxatdan o'tkazish",
       en: "Domain registration in the in zone",
     },
-    link: "/domains/in",
+    link: {
+      ru: "/domains/in",
+      uz: "/uz/domains/in",
+      en: "/en/domains/in",
+    },
   },
 ];
 
