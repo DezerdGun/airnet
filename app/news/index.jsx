@@ -1,13 +1,92 @@
-import Container from "@/components/container"
-import SEO from "@/components/seo"
-import { checkLang } from "@/utils/checkLang"
+import Container from "@/components/container";
+import SEO from "@/components/seo";
+import { checkLang } from "@/utils/checkLang";
 import Image from "next/image"
-import Link from "next/link"
-import st from "./news.module.scss"
-import BreadCrumbs from "../../components/seo/breadCrumbs"
+import Link from "next/link";
+import st from "./news.module.scss";
+import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
 export const news = [
+	{
+		img: "/news/3.png",
+		link: "/news/",
+		date: "01.05.2025",
+		title: {
+			ru: "Дорогие Друзья!",
+			uz: "Дорогие Друзья!",
+			en: "Дорогие Друзья!",
+		},
+		description: {
+			ru: (				
+				<>
+					<p>
+						С радостью сообщаем о запуске нового направления в AIRNET.uz — теперь вы можете арендовать игровые серверы для популярных онлайн-игр!
+					</p>
+					<p>
+						🚀 Серверы загружены. Пора играть!<br />
+						Арендуйте свой игровой сервер уже сегодня — не упустите шанс ворваться первыми!
+					</p>
+					<p>
+						🎮 Подключайтесь к новым возможностям — сделайте игру комфортной и быстрой вместе с AIRNET.uz!
+					</p><br />
+					<Link href="/vds/arenda-servera-game">
+						<a>Перейти на страницу игровых серверов</a>
+					</Link>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+					"AIRNET" MChJ telekommunikatsiya tarmog'ini modernizatsiya qilish, o'tkazish qobiliyatini kengaytirish, shuningdek, uskunalarni modernizatsiya qilish bo'yicha rejalashtirilgan ishlar munosabati bilan:
+					</p>
+
+					<p>
+					Sizga shuni maʼlum qilamizki, serveringizning joriy IP manzili yangisiga oʻzgartiriladi, eski IP arxivlanadi va 2025-yil 1-apreldan boshlab ulanish uchun mavjud boʻlmaydi.
+					</p>
+
+					<p>
+					<strong>IP: dan 176.221.28.1 - 176.221.28.254</strong><br />
+					<strong>IP: dan 176.221.29.1 - 176.221.29.254</strong>
+					</p>
+
+					<p>
+					O'zgartirishlarni muddatidan oldin amalga oshirish uchun chipta orqali IP-manzilni yangi manzilga o'zgartirishni tasdiqlashingiz kerak va bizning mutaxassislarimiz qayta yuklamasdan serveringizdagi IP-ni almashtiradilar.
+					</p>
+
+					<p>
+					Hurmat bilan,
+					AIRNET jamoasi.
+					</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+					Due to the planned work on modernization of the telecommunications network of OOO "AIRNET", expansion of bandwidth, as well as modernization of equipment:
+					</p>
+
+					<p>
+					We inform you that the current IP address of your server will be changed to a new one, the old IP will be archived and unavailable for connection from April 01, 2025.
+					</p>
+
+					<p>
+					<strong>IP: c 176.221.28.1 - 176.221.28.254</strong><br />
+					<strong>IP: c 176.221.29.1 - 176.221.29.254</strong>
+					</p>
+
+					<p>
+					To make changes ahead of schedule, you must confirm the change of IP address to a new address via ticket and our specialists will replace the IP on your server without rebooting.
+					</p>
+
+					<p>
+					Sincerely,
+					AIRNET Team.
+					</p>
+				</>
+			),
+		},
+	},
 	{
 		img: "/news/1.jpg",
 		link: "/news/",
