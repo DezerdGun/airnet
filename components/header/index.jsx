@@ -58,6 +58,14 @@ export default function Header({ language }) {
           },
           {
             title: {
+              ru: "Аренда Игровых серверов",
+              uz: "O'yin serverlar ijaraga",
+              en: "Game servers",
+            },
+            link: LINKS.GAME_VDS,
+          },
+          {
+            title: {
               ru: "Аренда серверов intel",
               uz: "Intel server ijarasi",
               en: "Intel servers",
