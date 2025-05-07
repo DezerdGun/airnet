@@ -23,8 +23,8 @@ export const breadCrumbsDomain = [
   {
     name: {
       ru: "Регистрация домена в зоне UZ",
-      uz: "Регистрация домена в зоне UZ",
-      en: "Регистрация домена в зоне UZ",
+      uz: "UZ zonasida domenni ro'yxatdan o'tkazish",
+      en: "Domain registration in UZ zone",
     },
     link: {
       ru: "/domains",

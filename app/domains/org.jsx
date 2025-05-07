@@ -484,8 +484,8 @@ export default function Domains({ language }) {
     },
     whyBlockTitle: {
       ru: "Преимущества",
-      uz: "Преимущества",
-      en: "Преимущества",
+      uz: "Afzalliklar",
+      en: "Advantages",
     },
     headTitle: {
       ru: "Регистрация доменного имени",

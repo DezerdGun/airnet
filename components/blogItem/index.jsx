@@ -22,23 +22,23 @@ export default function BlogItem({ data, language, breadCrumbs }) {
 		},
 		added: {
 			ru: "Опубликовано",
-			uz: "Опубликовано",
-			en: "Опубликовано",
+			uz: "Chop etilgan",
+			en: "Published",
 		},
 		updated: {
 			ru: "Обновлено",
-			uz: "Обновлено",
-			en: "Обновлено",
+			uz: "Yangilangan",
+			en: "Updated",
 		},
 		read: {
 			ru: "Читать",
-			uz: "Читать",
-			en: "Читать",
+			uz: "O'qing",
+			en: "Read",
 		},
 		view: {
 			ru: "Статью прочитали",
-			uz: "Статью прочитали",
-			en: "Статью прочитали",
+			uz: "Maqola o'qildi",
+			en: "The article has been read",
 		},
 		prevPost: {
 			ru: "Предыдущий пост",
@@ -50,6 +50,37 @@ export default function BlogItem({ data, language, breadCrumbs }) {
 			uz: "Keyingi post",
 			en: "Next post",
 		},
+		author: {
+			ru: "Автор статьи:",
+			uz: "Maqola muallifi:",
+			en: "Author of the article:",
+		},
+		authorseo: {
+			ru: "Главный редактор",
+			uz: "Bosh muharrir",
+			en: "Editor-in-Chief",
+		},
+		authorname: {
+			ru: "Данаев Алмаз",
+			uz: "Danaev Almaz",
+			en: "Danaev Almaz",
+		},
+		sidetitle: {
+			ru: "Содержание",
+			uz: "Tarkib",
+			en: "Content",
+		},
+		sidecat: {
+			ru: "Категорий",
+			uz: "Kategoriyalar",
+			en: "Categories",
+		},
+		sidecatlinks: [
+			{ title: {ru: "Сервера", uz: "Serverlar", en: "Servers", slug: "/dedicated" }},
+			{ title: {ru: "Хостинг", uz: "Xosting", en: "Hosting", slug: "/hosting" }},
+			{ title: {ru: "Windows", uz: "Windows", en: "Windows", slug: "/vds/arenda-servera-windows" }},
+			{ title: {ru: "Linux", uz: "Linux", en: "Linux", slug: "/vds/arenda-servera-linux" }},
+		],
 	}
 	return (
 		<div className="bg-gray">
@@ -108,7 +139,7 @@ export default function BlogItem({ data, language, breadCrumbs }) {
 						</div>
 
 						<div className={st.blogItem__details__author}>
-							<h3>Автор статьи:</h3>
+							<h3>{langData.author[language]}</h3>
 							<Image
 								src="/favicon.png"
 								width={50}
@@ -117,8 +148,8 @@ export default function BlogItem({ data, language, breadCrumbs }) {
 								blurDataURL
 								placeholder="blur"
 							/>
-							<h4>Главный редактор</h4>
-							<p>Данаев Алмаз</p>
+							<h4>{langData.authorseo[language]}</h4>
+							<p>{langData.authorname[language]}</p>
 						</div>
 
 						<div className={st.blogItem__links}>
@@ -137,7 +168,7 @@ export default function BlogItem({ data, language, breadCrumbs }) {
 					</div>
 					<div className={st.blogItem__right}>
 						<div className={st.blogItem__right__text}>
-							<h3>Содержание</h3>
+							<h3>{langData.sidetitle[language]}</h3>
 							<ol>
 								{data.alinks.map((item) => (
 								<li key={item.slug}>
@@ -149,11 +180,14 @@ export default function BlogItem({ data, language, breadCrumbs }) {
 							</ol>
 						</div>
 						<div className={st.blogItem__right__category}>
-							<h3>Категорий</h3>
-							<span><a href="/dedicated">Сервера</a></span>
-							<span><a href="/hosting">Хостинг</a></span>
-							<span><a href="/vds/arenda-servera-windows">Windows</a></span>
-							<span><a href="/vds/arenda-servera-linux">Linux</a></span>
+							<h3>{langData.sidecat[language]}</h3>
+							{langData.sidecatlinks.map((item) => (
+								<span key={item.slug}>
+									<Link href={item.title.slug}>
+									<a>{item.title[language]}</a>
+									</Link>
+								</span>
+							))}
 						</div>
 					</div>
 				</div>

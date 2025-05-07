@@ -15,8 +15,8 @@ export const blog = [
 		date: "29.04.2025",
 		title: {
 			ru: "Настройка IP-телефонии в офисе — пошаговая инструкция",
-			uz: "Настройка IP-телефонии в офисе — пошаговая инструкция",
-			en: "Настройка IP-телефонии в офисе — пошаговая инструкция",
+			uz: "Ofisda IP telefoniyani sozlash - bosqichma-bosqich ko'rsatmalar",
+			en: "Setting up IP telephony in the office - step-by-step instructions",
 		},
 		description: {
 			ru: (
@@ -29,14 +29,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Пошаговая настройка IP-телефонии в офисе
+						Ofisda IP telefoniyani bosqichma-bosqich sozlash
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Пошаговая настройка IP-телефонии в офисе
+						Step-by-step setup of IP telephony in the office
 					</p>
 				</>
 			),

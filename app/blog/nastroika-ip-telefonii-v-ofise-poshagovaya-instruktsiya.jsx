@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "Настройка IP-телефонии в офисе — пошаговая инструкция",
-		uz: "Настройка IP-телефонии в офисе — пошаговая инструкция",
-		en: "Настройка IP-телефонии в офисе — пошаговая инструкция",
+		uz: "Ofisda IP telefoniyani sozlash - bosqichma-bosqich ko'rsatmalar",
+		en: "Setting up IP telephony in the office - step-by-step instructions",
 	},
 	title: {
 		ru: "Настройка ip телефонии в офисе - как сделать на предприятии",
-		uz: "Настройка ip телефонии в офисе - как сделать на предприятии",
-		en: "Настройка ip телефонии в офисе - как сделать на предприятии",
+		uz: "Ofisda IP-telefoniyani sozlash - uni korxonada qanday qilish kerak",
+		en: "Setting up IP telephony in the office - how to do it at the enterprise",
 	},
 	desc: {
 		ru: "Пошаговая настройка IP-телефонии в офисе: выбор оборудования, подключение и тонкая конфигурация.",
-		uz: "Пошаговая настройка IP-телефонии в офисе: выбор оборудования, подключение и тонкая конфигурация.",
-		en: "Пошаговая настройка IP-телефонии в офисе: выбор оборудования, подключение и тонкая конфигурация.",
+		uz: "Ofisda IP telefoniyani bosqichma-bosqich sozlash: uskunani tanlash, ulanish va nozik konfiguratsiya.",
+		en: "Step-by-step setup of IP telephony in the office: equipment selection, connection and fine configuration.",
 	},
 	date: "29.04.2025",
 	updated: "29.04.2025",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/office.png",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,17 +61,17 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Настройка IP-телефонии в офисе", uz: "Настройка IP-телефонии в офисе", en: "Настройка IP-телефонии в офисе", slug: "1" }},
-		{ title: {ru: "Понятие", uz: "Понятие", en: "Понятие", slug: "2" }},
-		{ title: {ru: "Преимущества", uz: "Преимущества", en: "Преимущества", slug: "3" }},
-		{ title: {ru: "Схемы IP-телефонии", uz: "Схемы IP-телефонии", en: "Схемы IP-телефонии", slug: "4" }},
-		{ title: {ru: "Компьютер-компьютер", uz: "Компьютер-компьютер", en: "Компьютер-компьютер", slug: "5" }},
-		{ title: {ru: "Компьютер-телефон", uz: "Компьютер-телефон", en: "Компьютер-телефон", slug: "6" }},
-		{ title: {ru: "Телефон-телефон", uz: "Телефон-телефон", en: "Телефон-телефон", slug: "7" }},
-		{ title: {ru: "АТС: офисная или виртуальная?", uz: "АТС: офисная или виртуальная?", en: "АТС: офисная или виртуальная?", slug: "8" }},
-		{ title: {ru: "Виртуальная АТС", uz: "Виртуальная АТС", en: "Виртуальная АТС", slug: "9" }},
-		{ title: {ru: "Алгоритм внедрения и настройки", uz: "Алгоритм внедрения и настройки", en: "Алгоритм внедрения и настройки", slug: "10" }},
-		{ title: {ru: "Подведение итогов", uz: "Подведение итогов", en: "Подведение итогов", slug: "11" }},
+		{ title: {ru: "Настройка IP-телефонии в офисе", uz: "Ofisda IP telefoniyani sozlash", en: "Setting up IP telephony in the office", slug: "1" }},
+		{ title: {ru: "Понятие", uz: "Kontseptsiya", en: "Concept", slug: "2" }},
+		{ title: {ru: "Преимущества", uz: "Afzalliklar", en: "Advantages", slug: "3" }},
+		{ title: {ru: "Схемы IP-телефонии", uz: "IP telefoniya sxemalari", en: "Schemy IP-telephony", slug: "4" }},
+		{ title: {ru: "Компьютер-компьютер", uz: "Kompyuter-kompyuter", en: "Computer-computer", slug: "5" }},
+		{ title: {ru: "Компьютер-телефон", uz: "Kompyuter-telefon", en: "Computer-phone", slug: "6" }},
+		{ title: {ru: "Телефон-телефон", uz: "Telefon-telefon", en: "Telephone-telephone", slug: "7" }},
+		{ title: {ru: "АТС: офисная или виртуальная?", uz: "PBX: ofis yoki virtualmi?", en: "ATS: office or virtual?", slug: "8" }},
+		{ title: {ru: "Виртуальная АТС", uz: "Virtual ATS", en: "Virtual PBX", slug: "9" }},
+		{ title: {ru: "Алгоритм внедрения и настройки", uz: "Amalga oshirish va sozlash algoritmi", en: "Implementation and configuration algorithm", slug: "10" }},
+		{ title: {ru: "Подведение итогов", uz: "Xulosa qilish", en: "Summing up", slug: "11" }},
 	],
 	content: {
 		ru: (
@@ -199,59 +199,247 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Ofisda IP telefoniyani sozlash
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Chatbotlarning rivojlanishiga, onlayn-do'konlarda va boshqa saytlarda mijozga operator bilan aloqa qilmasdan buyurtma berish va turli savollarga javob olish imkonini beruvchi maxsus aloqa shakllarining faol joriy etilishiga qaramay, ko'pchilik mijozlar "jonli" maslahatchilar bilan gaplashishni afzal ko'rishadi. 
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Potentsial mijozlarning raqobatchilarga ketishining oldini olish, daromadlarini yo'qotmaslik va obro'sini mustahkamlash uchun tashkilot ofisda IP telefoniyani joriy etish haqida o'ylashi kerak. Bu tizimdan unumli foydalanish, albatta, u to‘g‘ri sozlangan taqdirdagina mumkin bo‘ladi. Buni qanday qilish kerak? 
+				</p>
+				<a name="2"></a>
+				<h3>Tushuncha</h3>
+				<p>
+				IP telefoniya - bu Internet protokollari orqali ovozli qo'ng'iroqlarni amalga oshirish imkonini beruvchi texnologiya. U ikki tomonlama konvertatsiya qilish printsipiga asoslanadi: analog ovozli signal raqamli signalga aylanadi va qabul qiluvchi abonent qurilmasida - aksincha. 
 				</p>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				Ushbu aloqa usuli geografik cheklovlarni olib tashlaydi. Statsionar qurilmaga ulanish shart emas; istalgan joydan telefoniyadan foydalanishingiz mumkin, faqat maxsus dastur bilan internetga ulangan smartfon kerak bo'ladi. Albatta, ixtisoslashtirilgan IP telefonlar, shuningdek, universal, kompyuter va noutbuklar kabi boshqa apparat komponentlari asosida tizimni qurish mumkin. O'rnatishda ushbu fikrlarning barchasini hisobga olish kerak. 
+				</p>
+				<a name="3"></a>
+				<h3>Afzalliklar</h3>
+				<p>
+				Faoliyati foyda olishga qaratilgan ofis, tijorat tuzilmasi yoki boshqa korxona uchun Internet-telefoniyaning qiymati uning quyidagi afzalliklari bilan izohlanadi:
+				</p>
+				<ul>
+				<li>Qo'ng'iroqlarning minimal narxi. Aksariyat hollarda ular bepul, baʼzi hollarda esa standart telefon liniyalaridan foydalangandan koʻra pastroq boʻladi.</li>
+				<li>Mobillik. Xodimlar telefoniyadan nafaqat ish joyida, ofisida, balki yo'lda ham foydalanishlari mumkin. Asosiy shart - barqaror Internetga kirish. Mobillik - bu tashkilotni ko'chirishni sezilarli darajada osonlashtiradigan sifat. Mijozlar bazasini qayta shakllantirish, katta moliyaviy yo'qotishlarni ko'tarish, doimiy mijozlar va hamkorlarni raqamlar o'zgarishi haqida xabardor qilishning hojati yo'q, chunki ular o'zgarishsiz qoladi.</li>
+				<li>Kengaytirilgan imkoniyatlar. Internet-telefoniya biznes uchun foydali bo'lgan ko'plab funktsiyalarni qo'llab-quvvatlaydi. Misol uchun, agar bepul operatorlar bo'lmasa, qo'ng'iroq qiluvchi ovozli yordamchiga o'tkaziladi. CRM-ga yangi mijoz ma'lumotlarini avtomatik ravishda qo'shish, shuningdek, qo'ng'iroq qiluvchi haqidagi ma'lumotlarni ko'rsatish ham mavjud, shunda operator u kim bilan ishlayotganini darhol bilib oladi va suhbatdoshning ehtiyojlari va holatini keraksiz so'zlar va tushuntirishlarsiz tushunadi.</li>
+				</ul>
+				<a name="4"></a>
+				<h3>IP telefoniya sxemalari</h3>
+				<p>
+				Internet-telefoniyani o'rnatishning o'ziga xos xususiyatlari uning sxemasi va strukturaviy xususiyatlari bilan belgilanadi. Tijorat korxonangiz ko'lamiga, faoliyatining o'ziga xos xususiyatlariga, u taqdim etayotgan xizmatlarga va mijozlar bazasiga 100% mos keladigan yechimni tanlash imkonini beruvchi bir nechta variantlar mavjud. Sxemalarning har biri batafsilroq ko'rib chiqilishi kerak. 
+				</p>
+				<a name="5"></a>
+				<h3>Kompyuter-kompyuter</h3>
+				<p>
+				Bunday holda, ulanish ikkita shaxsiy kompyuter yoki noutbuk o'rtasida o'rnatiladi. Buni tarmoqqa barqaror kirish, kompyuterga ulangan eshitish vositasi va ovozli qo'ng'iroqlar, video qo'ng'iroqlarni amalga oshirish va qabul qilish hamda multimedia fayllarini yuborish imkonini beruvchi o'rnatilgan dastur, dasturiy telefon mavjud bo'lganda amalga oshirilishi mumkin. 
 				</p>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				Bu asosiy vazifalarni bajaradigan, ma'lumotlarni qayta ishlaydigan va uzatuvchi dasturiy ta'minot. Agar kerak bo'lsa, siz kompyuteringizdan boshqa abonent qurilmalariga, masalan, smartfonlarga ham ulanishingiz mumkin. 
+				</p>
+				<img src="/blog/office1.png" alt="SIP" />
+				<a name="6"></a>
+				<h3>Kompyuter-telefon</h3>
+				<p>
+				Eng keng tarqalgan sxemalardan biri. Buning ajablanarli joyi yo'q, chunki ko'pchilik mijozlar smartfonlar yordamida operatorlarga murojaat qilishni afzal ko'rishadi. Aloqa algoritmi quyidagicha ko'rinadi:
+				</p>
+				<ul>
+				<li>Kompyuterdan qo'ng'iroq IP telefoniya xizmatlarini ko'rsatuvchi tashkilotning SIP serveriga qabul qilinadi.</li>
+				<li>Telefon operatori tarmog'iga qo'ng'iroqni yo'naltirish.</li>
+				<li>Qo'ng'iroqlarni yo'naltirish, qo'ng'iroqni qabul qilgan operator xizmat ko'rsatuvchi abonentga yoki raqamga qarab boshqa mahalliy, mintaqaviy yoki xorijiy tashkilotga o'tkazish.</li>
+				</ul>
+				<p>
+				Agar qo'ng'iroq smartfondan boshlangan bo'lsa, teskari algoritm amalga oshiriladi. 
+				</p>
+				<a name="7"></a>
+				<h3>Telefon-telefon</h3>
+				<p>
+				Ofis operatorlari shlyuzlarga ulangan IP va standart telefonlardan foydalanadilar, bu ularga mobil va shahar raqamlariga qo'ng'iroq qilish imkonini beradi. Bunday tizimdan foydalanishning optimal varianti virtual telefoniyadan foydalanish bo'lib, u nafaqat qo'shni shaharlarga, viloyatlarga, balki minimal tariflarga ega mamlakatlarga ham qo'ng'iroq qilish imkonini beradi. Aloqa sifati eng yuqori darajada, kechikishlar yoki boshqa muammolar yo'q. 
+				</p>
+				<a name="8"></a>
+				<h3>PBX: ofis yoki virtualmi?</h3>
+				<p>
+				IP-telefoniyani o'rnatishning o'ziga xos xususiyatlari PBX xususiyatlari bilan belgilanadi. Standart variant - bu analog, raqamli va kombinatsiyalangan modifikatsiyalarda taqdim etilgan ofis stantsiyalari, shuningdek, vazifalari kompyuter yoki noutbukga yuklangan server. 
 				</p>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
+				ATSning ishlash printsipi uning xususiyatlariga bog'liq. Masalan, raqamli modellarda analog signalni raqamli signalga oldindan o'zgartirish sodir bo'ladi, gibrid modellarda esa bu talab qilinmaydi, bu har qanday telefon apparatlari, analog va tizimlar bilan kommutatsiyaning ko'p qirrali va qulayligini ta'minlaydi. 
+				</p>
+				<p>
+				Ofis ATSni o'rnatishda e'tiborga olish kerak bo'lgan asosiy fikrlar quyidagilardir:
+				</p>
+				<ul>
+				<li>Ulanish uchun bepul FXO portlarining mavjudligi. Oʻtishdan keyin qoʻngʻiroqlarni toʻgʻri taqsimlash uchun kerakli marshrutni belgilashingiz kerak.</li>
+				<li>Tegishli dasturiy ta'minotni o'rnatish. Kichkina ofislar uchun bepul dasturlar etarli bo'ladi, lekin yirik tashkilotlar kengaytirilgan funksionallik, ko'p kanalli raqamlarni qo'llab-quvvatlash va qo'ng'iroqlarni boshqa raqamga yo'naltirishni ulash qobiliyatiga ega pullik nashrlarga e'tibor qaratishlari kerak.</li>
+				<li>Raqamlarni to'g'ri belgilash. Bu qayta yo'naltirishning aniqligi va samaradorligi uchun zarur.</li>
+				</ul>
+				<a name="9"></a>
+				<h3>Virtual PBX</h3>
+				<p>
+				Virtual PBX ofisda IP-telefoniyani ulashning qulayroq variantidir. Kompaniya jihozlarga yoki vaqtga pul sarflashi shart emas; serverlar provayderlar tomonidan taqdim etiladi va xizmat ko'rsatadi. Sizga kerak bo'lgan yagona narsa bu telefonlar, ular dasturiy telefonlar, shaxsiy kompyuterda o'rnatilgan dasturlar yoki maxsus IP qurilmalari bo'lishi mumkin. 
+				</p>
+				<p>
+				Sxema barcha qo'ng'iroqlarni abonent qurilmalariga tarqatadigan bulutli server tomonidan qabul qilinishini nazarda tutadi. Nozik sozlash tafsilotlari provayder tomonidan taqdim etilgan imkoniyatlar bilan belgilanadi. Masalan, virtual PBX API interfeysi yordamida CRM va tashkilot tomonidan talab qilinadigan boshqa ilovalar va tizimlar bilan sinxronlash mumkin. Ko'p funktsionallikdan tashqari, virtual PBXning quyidagi afzalliklarini ta'kidlash kerak:
+				</p>
+				<ul>
+				<li>Ko'p kanalli, federal va esda qolarli va mijozlar ishonchini oshiradigan boshqa raqamlarni qo'llab-quvvatlash.</li>
+				<li>Provayderlar tomonidan taklif etilayotgan turli tarif rejalari, bu har bir kompaniyaga narx va xizmatlar assortimenti bo‘yicha muvozanatli variantni tanlash imkonini beradi.</li>
+				<li>Xizmat ko'rsatish qulayligi. Konfiguratsiya, boshqa xizmat operatsiyalari kabi, provayderning mas'uliyat sohasidir, shuning uchun tashkilot yuqori maosh oladigan ma'murlarni va ish haqini to'lashga majbur bo'lgan boshqa mutaxassislarni ishga olishi shart emas.</li>
+				</ul>
+				<img src="/blog/office2.png" alt="SIP" />
+				<a name="10"></a>
+				<h3>Amalga kiritish va sozlash algoritmi</h3>
+				<p>
+				Internet-telefoniyani tijorat tashkilotida yoki ofisda ulashda siz quyidagi algoritmga rioya qilishingiz kerak:
+				</p>
+				<ul>
+				<li>Internetga ulanish, aloqa xizmatlari uchun shartnoma tuzish. Shu bilan birga, kirish tezligi korxona faoliyatining haqiqiy ehtiyojlari va ko'lamiga mos kelishi kerak. Kichik kompaniya juda oddiy tarif rejasidan qoniqish hosil qiladi, yirik kompaniya esa maxsus optik tolali liniyadan foydalanadi.</li>
+				<li>Ofis ATSni o'rnatish yoki virtual telefon almashinuvi xizmatlarini ko'rsatuvchi kompaniya bilan shartnoma tuzish. Ikkinchi variant afzalroq, asosiysi - mavjud byudjet, rejalashtirilgan xarajatlar, IP telefoniyadan foydalanadigan operatorlar sonini hisobga olgan holda, uning obro'si, maqomi va tarif rejasidan kelib chiqqan holda to'g'ri provayderni tanlashdir.</li>
+				<li>Uskunani tanlash va sotib olish. To'plam PBX formati bilan belgilanadi. Ofis tizimidan foydalanganda, siz apparat uchun katta pul sarflashingiz kerak bo'ladi, lekin virtual tizimdan foydalanganda siz o'zingizni dasturiy ta'minot bilan cheklashingiz mumkin, bu esa xarajatlarni sezilarli darajada kamaytiradi.</li>
+				<li>Yakuniy sozlash, tashkilotning samarali ishlashi uchun zarur bo'lgan qo'shimcha funktsiyalarni ulash. Bu holatda ko'plab variantlar mavjud: CRM bilan sinxronlash, ovozli yordamchilardan foydalanish, qo'ng'iroqlarni yozishni avtomatlashtirish yoki hatto qo'ng'iroqlarni tahlil qiladigan, operatorlarning malakasini aniqlaydigan va xatolarni aniqlaydigan sun'iy intellekt tizimlarini joriy etish. Neyron tarmoqlar faol sur'atlarda rivojlanmoqda, shuning uchun yildan-yilga ularga ko'proq va ko'proq vazifalar qo'yilishi, operatorlarni odatiy harakatlarni bajarish zaruratidan ozod qilish va ularning vakolatlaridan samaraliroq foydalanish imkonini beradi.</li>
+				</ul>
+				<img src="/blog/office3.png" alt="SIP" />
+				<a name="11"></a>
+				<h3>Xulosa qilish</h3>
+				<p>
+				Ofisdagi IP-telefoniyaning afzalliklari har qanday tashkilot uchun, uning faoliyati ko'lamidan qat'i nazar, u kichik tijorat firmasi yoki o'n minglab mijozlar bazasiga ega yirik korxona uchun ochiqdir. SIP protokoli ushbu texnologiyadan nafaqat ovozli qo'ng'iroqlar uchun, balki multimedia fayllari, fotosuratlar, tasvirlar va videolarni uzatish uchun ham foydalanishga yordam beradi. 
+				</p>
+				<p>
+				Formatni klassik analog telefoniya bilan taqqoslash quyidagi afzalliklarni ko'rsatadi:
+				</p>
+				<ul>
+				<li>Qo'ng'iroqlarning minimal narxi;</li>
+				<li>Muayyan statsionar uskunaga bog'lanmagan;</li>
+				<li>Oson sozlash va o'rnatish;</li>
+				<li>Har xil imkoniyatlar, koʻp yordamchi funksiyalar.</li>
+				</ul>
+				<p>
+				Internet-telefoniyani amalga oshirishning eng oqilona varianti bulutga asoslangan virtual PBX hisoblanadi. Ushbu yondashuv sozlash va texnik xizmat ko'rsatishni soddalashtiradi, korxona resurslarini tejaydi va funksionallik, ishonchlilik va aloqa sifati bilan bog'liq har qanday muammolarni bartaraf qiladi. 
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Setting up IP telephony in the office
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				Despite the development of chatbots, the active implementation of special forms of communication in online stores and other sites that allow the client to place an order and get answers to various questions without interacting with an operator, most customers prefer talking to “live” consultants.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				In order to prevent potential clients from leaving for competitors, not to lose income, and to strengthen their reputation, an organization should think about implementing IP telephony in the office. Effective use of this system, of course, will be possible only if it is properly configured. How to do this?
+				</p>
+				<a name="2"></a>
+				<h3>Concept</h3>
+				<p>
+				IP telephony is a technology that allows you to make voice calls over Internet protocols. It is based on the principle of two-way conversion: the analog voice signal is transformed into a digital signal, and on the receiving subscriber's device - vice versa.
 				</p>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				This method of communication removes geographical restrictions. It is not supposed to be tied to a landline device, you can use telephony from anywhere, a smartphone connected to the Internet with a special program is enough. Of course, the system can also be built on the basis of other hardware components, both specialized IP phones and universal ones, computers, laptops. All these points must be taken into account when setting up.
+				</p>
+				<a name="3"></a>
+				<h3>Advantages</h3>
+				<p>
+				The value of Internet telephony for an office, commercial structure or other enterprise whose activities are aimed at making a profit is due to its following advantages:
+				</p>
+				<ul>
+				<li>Minimum cost of calls. In most cases, they are free, in some cases - orders of magnitude lower than when using standard telephone lines.</li>
+				<li>Mobility. Employees can use telephony not only directly at their workplace, in the office, but also on the road. The main condition is stable Internet access. Mobility is a quality that greatly simplifies the relocation of an organization. There is no need to re-form a client base, incur significant financial losses, notify regular customers and partners about changing numbers, since they remain the same.</li>
+				<li>Advanced capabilities. Internet telephony supports many functions useful for business. For example, if there are no free operators, the caller will be transferred to a voice assistant. Automatic addition of new client data to CRM is also available, as well as display of caller information so that the operator immediately knows who he is dealing with, and understands the needs and status of the interlocutor without unnecessary words and explanations.</li>
+				</ul>
+				<a name="4"></a>
+				<h3>IP telephony schemes</h3>
+				<p>
+				The specifics of setting up Internet telephony are determined by its scheme and structural features. Several options are available, which allows you to choose a solution that 100% corresponds to the scale of a commercial enterprise, the specifics of its activities, the services provided, and the client base. Each of the schemes should be considered in more detail.
+				</p>
+				<a name="5"></a>
+				<h3>Computer-to-computer</h3>
+				<p>
+				In this case, the connection is established between a PC, two, or laptops. This can be done provided that there is stable network access, a headset connected to the computer, and an installed program, a softphone, allowing you to make and receive voice calls, video calls, and send multimedia files.
 				</p>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				It is the software that performs the main tasks, processes and transmits information. If necessary, you can also contact other subscriber devices from the computer, such as smartphones.
+				</p>
+				<img src="/blog/office1.png" alt="SIP" />
+				<a name="6"></a>
+				<h3>Computer-phone</h3>
+				<p>
+				One of the most common schemes. It is not surprising, because most clients prefer to contact operators using smartphones. The communication algorithm is as follows:
+				</p>
+				<ul>
+				<li>A call is received from a PC to the SIP server of an organization providing IP telephony services.</li>
+				<li>Call forwarding to the telephone operator's network.</li>
+				<li>Call routing, transfer to the subscriber served by the operator who received the call, or to another organization, local, regional or foreign - depending on the number.</li>
+				</ul>
+				<p>
+				If the call is initiated from a smartphone, the reverse algorithm takes place.
+				</p>
+				<a name="7"></a>
+				<h3>Phone-phone</h3>
+				<p>
+				Office operators use IP and standard phones connected to gateways, which allows them to make calls to both mobile and landline city numbers. The best option for using such a system is to use virtual telephony, which allows you to call not only neighboring cities, regions, but also countries with minimal charges. The quality of communication is at the highest possible level, there are no delays or other problems.
+				</p>
+				<a name="8"></a>
+				<h3>PBX: office or virtual?</h3>
+				<p>
+				The specifics of setting up IP telephony are determined by the features of the PBX. The standard option is office stations, presented in analog, digital and combined modifications, as well as a server, the tasks of which are assigned to a computer or laptop.
 				</p>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
+				The principle of operation of the PBX depends on its characteristics. For example, in digital models, a preliminary transformation of the analog signal into a digital one occurs, in hybrid models, this is not required, which ensures versatility, ease of switching with any telephone sets, analog and system.
+				</p>
+				<p>
+				The main points to consider when setting up an office PBX are as follows:
+				</p>
+				<ul>
+				<li>Availability of free FXO ports for connection. After switching, you need to specify the necessary routing for correct call distribution.</li>
+				<li>Installation of suitable software. Free programs will be enough for small offices, but large organizations should pay attention to paid editions with advanced functionality, support for multi-channel numbers, and the ability to connect call forwarding.</li>
+				<li>Competent assignment of numbers. This is necessary for the accuracy and efficiency of redirection.</li>
+				</ul>
+				<a name="9"></a>
+				<h3>Virtual PBX</h3>
+				<p>
+				Virtual PBX is a more convenient option for connecting IP telephony in the office. The company does not have to spend money on equipment, waste time, servers are provided and maintained by providers. The only thing you need is phones, which can be either softphones, programs installed on a PC, or specialized IP devices.
+				</p>
+				<p>
+				The scheme assumes that all calls are received by a cloud server, which distributes them to subscriber devices. The subtleties of the settings are determined by the capabilities provided by the provider. For example, with the support of a virtual PBX API interface, synchronization with CRM and other applications, systems required by the organization is possible. In addition to multifunctionality, the following advantages of virtual PBX should be noted:
+				</p>
+				<ul>
+				<li>Support for multichannel, federal and other numbers, memorable, increasing the level of customer trust.</li>
+				<li>A variety of tariff plans offered by providers, which allows each company to choose an option that is balanced in price and range of services.</li>
+				<li>Ease of maintenance. Setup, like other service operations, is the provider's area of ​​responsibility, so the organization will not have to keep highly paid administrators and other specialists on staff, loading the payroll.</li>
+				</ul>
+				<img src="/blog/office2.png" alt="SIP" />
+				<a name="10"></a>
+				<h3>Implementation and configuration algorithm</h3>
+				<p>
+				When connecting Internet telephony in a commercial organization, office, you need to adhere to the following algorithm:
+				</p>
+				<ul>
+				<li>Internet connection, conclusion of a contract for communication services. At the same time, the access speed should correspond to the actual needs, the scale of the enterprise. A small company will be satisfied with a fairly modest tariff plan, a large one - a dedicated fiber-optic line is recommended.</li>
+				<li>Installation of an office PBX or conclusion of an agreement with a company providing virtual telephone exchange services. The second option is more preferable, the main thing is to choose the right provider, guided by its reputation, status, as well as the tariff plan - taking into account the available budget, planned expenses, the number of operators using IP telephony.</li>
+				<li>Selection and purchase of equipment. The kit is determined by the PBX format. When using an office system, you will have to spend a lot of money on hardware, while with a virtual system, you can limit yourself to softphones, which significantly reduces costs.</li>
+				<li>Final setup, connecting additional functions necessary for the efficient operation of the organization. There are many options in this case: synchronization with CRM, using voice assistants, automating call recording, or even implementing artificial intelligence systems that will analyze calls, determine the qualifications of operators, and detect errors. Neural networks are developing at an active pace, so that year after year they can be assigned more and more tasks, freeing operators from the need to perform routine actions, using their competencies more effectively.</li>
+				</ul>
+				<img src="/blog/office3.png" alt="SIP" />
+				<a name="11"></a>
+				<h3>Summing up</h3>
+				<p>
+				The advantages of IP telephony in the office are obvious for any organization, regardless of the scale of activity, be it a small commercial firm or a large enterprise whose client base is measured in tens of thousands of people. The SIP protocol will help to use this technology not only for voice calls, but also for transmitting multimedia files, photos, images, videos.
+				</p>
+				<p>
+				Comparison of the format with classic analog telephony shows the following advantages:
+				</p>
+				<ul>
+				<li>Minimum cost of calls;</li>
+				<li>Not tied to specific stationary equipment;</li>
+				<li>Easy setup and installation;</li>
+				<li>Variety of options, abundance of auxiliary functions.</li>
+				</ul>
+				<p>
+				The most rational option for implementing Internet telephony is a cloud, virtual PBX. This approach simplifies setup and maintenance, saves enterprise resources, while eliminating any problems associated with functionality, reliability, and quality of communication.
 				</p>
 			</>
 		),
