@@ -4,7 +4,7 @@ $white: #fff;
   &__block {
     display: flex;
     align-items: center;
-    height: 550px;
+    height: 650px;
     // filter: blur(2);
     background-size: cover !important;
     background-position: center !important;
@@ -20,8 +20,8 @@ $white: #fff;
         left: 0;
         height: 550px;
         // filter: brightness(50%);
-        opacity: 0.5;
-        background-color: black;
+        // opacity: 0.5;
+        // background-color: black;
       }
 
       h2,

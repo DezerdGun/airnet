@@ -100,34 +100,34 @@ export default function CustomSwiper({ language }) {
 		slideTitle3: {
 			ru: (
 				<>
-					Поздравляем AIRNET.uz<br /> с 6-летием! 🎉
+					Поздравляем AIRNET.uz<br /> с 7-летием! 🎉
 				</>
 			),
 			uz: (
 				<>
-					Поздравляем AIRNET.uz<br /> с 6-летием! 🎉
+					Поздравляем AIRNET.uz<br /> с 7-летием! 🎉
 				</>
 			),
 			en: (
 				<>
-					Поздравляем AIRNET.uz<br /> с 6-летием! 🎉
+					Поздравляем AIRNET.uz<br /> с 7-летием! 🎉
 				</>
 			),
 		},
 		slideText33: {
 			ru: (
 				<>
-					01.02.2024 наша компания празднует свой шестилетний юбилей,🎂✨ и мы хотели бы выразить огромную благодарность каждому из вас за вашу веру в нас и вашу лояльность. Благодаря вашей поддержке мы смогли достичь таких высот и стать ведущими провайдерами хостинг-услуг в Узбекистане.🚀
+					01.02.2025 наша компания празднует свой шестилетний юбилей,🎂✨ и мы хотели бы выразить огромную благодарность каждому из вас за вашу веру в нас и вашу лояльность. Благодаря вашей поддержке мы смогли достичь таких высот и стать ведущими провайдерами хостинг-услуг в Узбекистане.🚀
 				</>
 			),
 			uz: (
 				<>
-					01.02.2024 наша компания празднует свой шестилетний юбилей,🎂✨ и мы хотели бы выразить огромную благодарность каждому из вас за вашу веру в нас и вашу лояльность. Благодаря вашей поддержке мы смогли достичь таких высот и стать ведущими провайдерами хостинг-услуг в Узбекистане.🚀
+					01.02.2025 наша компания празднует свой шестилетний юбилей,🎂✨ и мы хотели бы выразить огромную благодарность каждому из вас за вашу веру в нас и вашу лояльность. Благодаря вашей поддержке мы смогли достичь таких высот и стать ведущими провайдерами хостинг-услуг в Узбекистане.🚀
 				</>
 			),
 			en: (
 				<>
-					01.02.2024 наша компания празднует свой шестилетний юбилей,🎂✨ и мы хотели бы выразить огромную благодарность каждому из вас за вашу веру в нас и вашу лояльность. Благодаря вашей поддержке мы смогли достичь таких высот и стать ведущими провайдерами хостинг-услуг в Узбекистане.🚀
+					01.02.2025 наша компания празднует свой шестилетний юбилей,🎂✨ и мы хотели бы выразить огромную благодарность каждому из вас за вашу веру в нас и вашу лояльность. Благодаря вашей поддержке мы смогли достичь таких высот и стать ведущими провайдерами хостинг-услуг в Узбекистане.🚀
 				</>
 			),
 		},
@@ -156,15 +156,15 @@ export default function CustomSwiper({ language }) {
 				<SwiperSlide>
 					<div
 						className={st.swiper__block}
-						style={{ background: `url('/banner.webp') no-repeat` }}
+						style={{ background: `url('/banner3.jpg') no-repeat` }}
 					>
 						<Container>
 							<div className={st.swiper__block__item}>
-								<h2>{langData.slideTitle1[language]}</h2>
-								<h4>{langData.slideText11[language]}</h4>
-								<br />
-								<h4>{langData.slideText12[language]}</h4>
-								<div className={st.swiper__block__item__bg}></div>
+								{/* <h2>{langData.slideTitle1[language]}</h2> */}
+								{/* <h4>{langData.slideText11[language]}</h4> */}
+								{/* <br /> */}
+								{/* <h4>{langData.slideText12[language]}</h4> */}
+								<a href='/vds'><div className={st.swiper__block__item__bg}></div></a>
 							</div>
 						</Container>
 					</div>
@@ -172,14 +172,14 @@ export default function CustomSwiper({ language }) {
 				<SwiperSlide>
 					<div
 						className={st.swiper__block}
-						style={{ background: `url('/banner2.webp') no-repeat` }}
+						style={{ background: `url('/banner1.jpg') no-repeat` }}
 					>
 						<Container>
 							<div className={st.swiper__block__item}>
-								<h2>{langData.slideTitle2[language]}</h2>
-								<h4>{langData.slideText21[language]}</h4>
-								<br />
-								<h4>{langData.slideText22[language]}</h4>
+								{/* <h2>{langData.slideTitle2[language]}</h2> */}
+								{/* <h4>{langData.slideText21[language]}</h4> */}
+								{/* <br /> */}
+								{/* <h4>{langData.slideText22[language]}</h4> */}
 								<div className={st.swiper__block__item__bg}></div>
 							</div>
 						</Container>

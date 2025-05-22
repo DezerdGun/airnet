@@ -52,6 +52,26 @@ export default function Dedicated({ language }) {
         herz: "2.6",
         ram: 256,
         ssd: {
+          ru: "4 x 1000 Гб SSD, RAID 5",
+          uz: "4 x 1000 GB SSD, RAID 5",
+          en: "4 x 1000 GB SSD, RAID 5",
+        },
+        settingsRam: 16,
+        settingsOther: {
+          ru: "12 шт. SSD",
+          uz: "12 ta. SSD",
+          en: "12 pcs. SSD",
+        },
+        price: "15 000 000",
+        link: "https://billing.airnet.uz/billing.php?do=order&vid=dedicated&tarif=113",
+      },
+      {
+        proc: "2 x Xeon",
+        procTitle: "E5-2690 v4",
+        core: { ru: "56 ядер", uz: "56 yadro", en: "56 cores" },
+        herz: "2.6",
+        ram: 256,
+        ssd: {
           ru: "6 x 1000 Гб SSD, RAID 5",
           uz: "6 x 1000 GB SSD, RAID 5",
           en: "6 x 1000 GB SSD, RAID 5",
@@ -67,26 +87,6 @@ export default function Dedicated({ language }) {
       },
       {
         proc: "2 x Xeon",
-        procTitle: "E5-2637 v2",
-        core: { ru: "16 ядер", uz: "16 yadro", en: "16 cores" },
-        herz: "3.5",
-        ram: 256,
-        ssd: {
-          ru: "12 x 1000 Гб SSD, RAID 5",
-          uz: "12 x 1000 GB SSD, RAID 5",
-          en: "12 x 1000 GB SSD, RAID 5",
-        },
-        settingsRam: 16,
-        settingsOther: {
-          ru: "12 шт. SSD",
-          uz: "12 ta. SSD",
-          en: "12 pcs. SSD",
-        },
-        price: "23 000 000",
-        link: "https://billing.airnet.uz/billing.php?do=order&vid=dedicated&tarif=113",
-      },
-      {
-        proc: "2 x Xeon",
         procTitle: "Intel Xeon Gold 6252",
         core: { ru: "48 ядер", uz: "48 yadro", en: "48 cores" },
         herz: "2.1",
@@ -95,6 +95,26 @@ export default function Dedicated({ language }) {
           ru: "6 x 1000 Гб SSD, RAID 5",
           uz: "6 x 1000 GB SSD, RAID 5",
           en: "6 x 1000 GB SSD, RAID 5",
+        },
+        settingsRam: 16,
+        settingsOther: {
+          ru: "6 шт. SSD",
+          uz: "6 ta. SSD",
+          en: "6 pcs. SSD",
+        },
+        price: "25 000 000",
+        link: "https://billing.airnet.uz/billing.php?do=order&vid=dedicated&tarif=113",
+      },
+      {
+        proc: "2 x Xeon",
+        procTitle: "Intel Xeon Gold 6152 ",
+        core: { ru: "88 ядер", uz: "88 yadro", en: "88 cores" },
+        herz: "2.1",
+        ram: 768,
+        ssd: {
+          ru: "10 x 1000 Гб SSD, RAID 5",
+          uz: "10 x 1000 GB SSD, RAID 5",
+          en: "10 x 1000 GB SSD, RAID 5",
         },
         settingsRam: 16,
         settingsOther: {
@@ -388,14 +408,14 @@ export default function Dedicated({ language }) {
                 <td>200 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
-                <td>5 000 000 сум/мес.</td>
+                <td>2 500 000 сум/мес.</td>
               </tr>
               <tr>
                 <td>Unlim 350M</td>
                 <td>350 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
-                <td>10 000 000 сум/мес.</td>
+                <td>5 000 000 сум/мес.</td>
               </tr>
             </tbody>
           </table>
@@ -415,32 +435,25 @@ export default function Dedicated({ language }) {
             </thead>
             <tbody>
               <tr>
-                <td>Unlim 50M</td>
-                <td>50 MB/s</td>
-                <td>1 Gbps</td>
-                <td>Cheksiz</td>
-                <td>Tekin</td>
-              </tr>
-              <tr>
                 <td>Unlim 100M</td>
                 <td>100 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
-                <td>2 000 000 so'm/oy.</td>
+                <td>Tekin</td>
               </tr>
               <tr>
                 <td>Unlim 200M</td>
                 <td>200 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
-                <td>5 000 000 so'm/oy.</td>
+                <td>2 500 000 so'm/oy.</td>
               </tr>
               <tr>
                 <td>Unlim 350M</td>
                 <td>350 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
-                <td>10 000 000 so'm/oy.</td>
+                <td>5 000 000 so'm/oy.</td>
               </tr>
             </tbody>
           </table>
@@ -460,32 +473,25 @@ export default function Dedicated({ language }) {
             </thead>
             <tbody>
               <tr>
-                <td>Unlim 50M</td>
-                <td>50 Mbps</td>
-                <td>1 Gbps</td>
-                <td>Unlimited</td>
-                <td>Free</td>
-              </tr>
-              <tr>
                 <td>Unlim 100M</td>
                 <td>100 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
-                <td>2 000 000 sum/mon.</td>
+                <td>Free</td>
               </tr>
               <tr>
                 <td>Unlim 200M</td>
                 <td>200 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
-                <td>5 000 000 sum/mon.</td>
+                <td>2 500 000 sum/mon.</td>
               </tr>
               <tr>
                 <td>Unlim 350M</td>
                 <td>350 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
-                <td>10 000 000 sum/mon.</td>
+                <td>5 000 000 sum/mon.</td>
               </tr>
             </tbody>
           </table>

@@ -11,7 +11,11 @@ import ProductDomain from "../../components/seo/productdomain";
 export const blog = [
 	{
 		img: "/blog/office.png",
-		link: "/blog/nastroika-ip-telefonii-v-ofise-poshagovaya-instruktsiya",
+		link: {
+			ru: "/blog/nastroika-ip-telefonii-v-ofise-poshagovaya-instruktsiya",
+			uz: "/blog/ofisda-ip-telefoniyani-sozlash-bosqichma-bosqich-korsatmalar",
+			en: "/blog/setting-up-ip-telephony-in-the-office-step-by-step-instructions",
+		},
 		date: "29.04.2025",
 		title: {
 			ru: "Настройка IP-телефонии в офисе — пошаговая инструкция",
@@ -44,12 +48,16 @@ export const blog = [
 	},
 	{
 		img: "/blog/settingvoip.png",
-		link: "/blog/kak-podklyuchit-sip-telefon-samostoyatelno",
+		link: {
+			ru: "/blog/kak-podklyuchit-sip-telefon-samostoyatelno",
+			uz: "/blog/telefonni-ozingizga-qanday-ulash-mumkin",
+			en: "/blog/how-to-connect-sip-phone-yourself",
+		},
 		date: "29.04.2025",
 		title: {
 			ru: "Как подключить SIP-телефон самостоятельно?",
-			uz: "Как подключить SIP-телефон самостоятельно?",
-			en: "Как подключить SIP-телефон самостоятельно?",
+			uz: "SIP telefonini o'zingiz qanday ulash mumkin?",
+			en: "How to connect a SIP phone yourself?",
 		},
 		description: {
 			ru: (
@@ -62,14 +70,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Простая инструкция по подключению SIP-телефона
+						SIP telefonini ulash bo'yicha oddiy ko'rsatmalar
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Простая инструкция по подключению SIP-телефона
+						Simple instructions for connecting a SIP phone
 					</p>
 				</>
 			),
@@ -77,12 +85,16 @@ export const blog = [
 	},
 	{
 		img: "/blog/sipvoip.png",
-		link: "/blog/chem-otlichaetsya-sip-telefoniya-ot-ip",
+		link: {
+			ru: "/blog/chem-otlichaetsya-sip-telefoniya-ot-ip",
+			uz: "/blog/sip-telefoniya-va-ip-ortasidagi-farq-nima",
+			en: "/blog/what-is-the-difference-between-sip-telephony-and-ip",
+		},
 		date: "29.04.2025",
 		title: {
 			ru: "Чем отличается SIP-телефония от IP?",
-			uz: "Чем отличается SIP-телефония от IP?",
-			en: "Чем отличается SIP-телефония от IP?",
+			uz: "SIP telefoniya va IP o'rtasidagi farq nima?",
+			en: "What is the difference between SIP telephony and IP?",
 		},
 		description: {
 			ru: (
@@ -95,14 +107,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Разбираем ключевые отличия SIP от IP-телефонии
+						Biz SIP va IP telefoniya o'rtasidagi asosiy farqlarni tahlil qilamiz
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Разбираем ключевые отличия SIP от IP-телефонии
+						We analyze the key differences between SIP and IP telephony
 					</p>
 				</>
 			),
@@ -110,12 +122,16 @@ export const blog = [
 	},
 	{
 		img: "/blog/sipip.png",
-		link: "/blog/kak-podklyuchit-ip-telefon-instruktsiya-dlya-novichkov",
+		link: {
+			ru: "/blog/kak-podklyuchit-ip-telefon-instruktsiya-dlya-novichkov",
+			uz: "/blog/yangi-boshlanuvchilar-uchun-ip-telefonga-qanday-ulanish-boyicha-korsatmala",
+			en: "/blog/how-to-connect-ip-phone-instructions-for-beginners",
+		},
 		date: "29.04.2025",
 		title: {
 			ru: "Как подключить IP-телефон — инструкция для новичков",
-			uz: "Как подключить IP-телефон — инструкция для новичков",
-			en: "Как подключить IP-телефон — инструкция для новичков",
+			uz: "IP telefonni qanday ulash mumkin - yangi boshlanuvchilar uchun ko'rsatmalar",
+			en: "How to connect an IP phone - instructions for beginners",
 		},
 		description: {
 			ru: (
@@ -128,14 +144,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Пошаговая инструкция по подключению IP-телефона
+						IP telefonni ulash bo'yicha bosqichma-bosqich ko'rsatmalar
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Пошаговая инструкция по подключению IP-телефона
+						Step-by-step instructions for connecting an IP phone
 					</p>
 				</>
 			),
@@ -143,12 +159,16 @@ export const blog = [
 	},
 	{
 		img: "/blog/voip.png",
-		link: "/blog/voip-chto-eto-takoe-i-kak-rabotaet",
+		link: {
+			ru: "/blog/voip-chto-eto-takoe-i-kak-rabotaet",
+			uz: "/blog/voip-nima-va-qanday-ishlaydi",
+			en: "/blog/voip-what-is-it-and-how-does-it-work",
+		},
 		date: "29.04.2025",
 		title: {
 			ru: "VoIP — что это такое и как работает?",
-			uz: "VoIP — что это такое и как работает?",
-			en: "VoIP — что это такое и как работает?",
+			uz: "VoIP - bu nima va u qanday ishlaydi?",
+			en: "VoIP - what is it and how does it work?",
 		},
 		description: {
 			ru: (
@@ -161,14 +181,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						VoIP — это передача голоса через интернет.
+						VoIP - bu Internet orqali ovoz uzatish.
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						VoIP — это передача голоса через интернет.
+						VoIP is voice transmission over the Internet.
 					</p>
 				</>
 			),
@@ -176,12 +196,16 @@ export const blog = [
 	},
 	{
 		img: "/blog/sip5.png",
-		link: "/blog/sip-telefoniya-chto-eto-takoe",
+		link: {
+			ru: "/blog/sip-telefoniya-chto-eto-takoe",
+			uz: "/blog/sip-telefoniya-bu-nima",
+			en: "/blog/sip-telephony-what-is-it",
+		},
 		date: "29.04.2025",
 		title: {
 			ru: "SIP-телефония — что это такое?",
-			uz: "SIP-телефония — что это такое?",
-			en: "SIP-телефония — что это такое?",
+			uz: "SIP telefoniya - bu nima?",
+			en: "SIP telephony - what is it?",
 		},
 		description: {
 			ru: (
@@ -194,14 +218,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Что такое SIP-телефония, как она работает и чем отличается от IP и VoIP?
+						SIP telefoniyasi nima, u qanday ishlaydi va IP va VoIP dan qanday farq qiladi?
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Что такое SIP-телефония, как она работает и чем отличается от IP и VoIP?
+						What is SIP telephony, how does it work and how does it differ from IP and VoIP?
 					</p>
 				</>
 			),
@@ -209,32 +233,36 @@ export const blog = [
 	},
 	{
 		img: "/blog/sip.png",
-		link: "/blog/ip-telefoniya-chto-eto-takoe-i-kak-ona-rabotaet",
+		link: {
+			ru: "/blog/ip-telefoniya-chto-eto-takoe-i-kak-ona-rabotaet",
+			uz: "/blog/ip-telefoniya-nima-va-u-qanday-ishlaydi",
+			en: "/blog/ip-telephony-what-is-it-and-how-does-it-work",
+		},
 		date: "28.04.2025",
 		title: {
 			ru: "IP-телефония — что это такое и как она работает?",
-			uz: "IP-телефония — что это такое и как она работает?",
-			en: "IP-телефония — что это такое и как она работает?",
+			uz: "IP telefoniya - bu nima va u qanday ishlaydi?",
+			en: "IP telephony - what is it and how does it work?",
 		},
 		description: {
 			ru: (
 				<>
 					<p>
-					Объясняем простыми словами, что такое IP-телефония, как она работает
+						Объясняем простыми словами, что такое IP-телефония, как она работает
 					</p>
 				</>
 			),
 			uz: (
 				<>
 					<p>
-					Объясняем простыми словами, что такое IP-телефония, как она работает
+						Biz IP telefoniya nima ekanligini va u qanday ishlashini sodda qilib tushuntiramiz
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-					Объясняем простыми словами, что такое IP-телефония, как она работает
+						We explain in simple terms what IP telephony is and how it works
 					</p>
 				</>
 			),
@@ -242,12 +270,16 @@ export const blog = [
 	},
 	{
 		img: "/blog/joomla.png",
-		link: "/blog/chto-takoye-joomla",
+		link: {
+			ru: "/blog/chto-takoye-joomla",
+			uz: "/blog/joomla-nima",
+			en: "/blog/what-is-joomla",
+		},
 		date: "20.03.2025",
 		title: {
 			ru: "Что такое Joomla?",
-			uz: "Что такое Joomla?",
-			en: "Что такое Joomla?",
+			uz: "Joomla nima?",
+			en: "What is Joomla?",
 		},
 		description: {
 			ru: (
@@ -260,14 +292,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Рассказываем о том, что такое Joomla, её преимуществах и особенностях.
+						Biz sizga Joomla nima ekanligini, uning afzalliklari va xususiyatlari haqida gapirib beramiz.
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Рассказываем о том, что такое Joomla, её преимуществах и особенностях.
+						We tell you about what Joomla is, its advantages and features.
 					</p>
 				</>
 			),
@@ -275,12 +307,16 @@ export const blog = [
 	},
 	{
 		img: "/blog/gitlab.png",
-		link: "/blog/chto-takoye-gitlab",
+		link: {
+			ru: "/blog/chto-takoye-gitlab",
+			uz: "/blog/gitlab-nima",
+			en: "/blog/what-is-gitlab",
+		},
 		date: "20.03.2025",
 		title: {
 			ru: "Что такое Gitlab?",
-			uz: "Что такое Gitlab?",
-			en: "Что такое Gitlab?",
+			uz: "Gitlab nima?",
+			en: "What is Gitlab?",
 		},
 		description: {
 			ru: (
@@ -293,14 +329,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Узнаем, что такое GitLab, какие задачи он решает и какую пользу может принести вашему проекту.
+						Keling, GitLab nima ekanligini, u qanday vazifalarni hal qilishini va loyihangizga qanday foyda keltirishini bilib olaylik.
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Узнаем, что такое GitLab, какие задачи он решает и какую пользу может принести вашему проекту.
+						Let's find out what GitLab is, what tasks it solves, and what benefits it can bring to your project.
 					</p>
 				</>
 			),
@@ -308,12 +344,16 @@ export const blog = [
 	},
 	{
 		img: "/blog/ispmanager.png",
-		link: "/blog/chto-takoye-ispmanager",
+		link: {
+			ru: "/blog/chto-takoye-ispmanager",
+			uz: "/blog/ispmanager-nima",
+			en: "/blog/what-is-ispmanager",
+		},
 		date: "20.03.2025",
 		title: {
 			ru: "Что такое ISPmanager?",
-			uz: "Что такое ISPmanager?",
-			en: "Что такое ISPmanager?",
+			uz: "ISPmanager nima?",
+			en: "What is ISPmanager?",
 		},
 		description: {
 			ru: (
@@ -326,14 +366,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Разбираемся с тем, что представляет собой ISPmanager, для чего он нужен и как использовать его возможности для управления хостингом.
+						Keling, ISPmanager nima ekanligini, u nima uchun kerakligini va hostingni boshqarish uchun uning imkoniyatlaridan qanday foydalanishni aniqlaymiz.
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Разбираемся с тем, что представляет собой ISPmanager, для чего он нужен и как использовать его возможности для управления хостингом.
+						Let's figure out what ISPmanager is, what it is needed for, and how to use its capabilities to manage hosting.
 					</p>
 				</>
 			),
@@ -341,12 +381,16 @@ export const blog = [
 	},
 	{
 		img: "/blog/hosting.png",
-		link: "/blog/kak-vybrat-server-dlya-khostinga-sayta",
+		link: {
+			ru: "/blog/kak-vybrat-server-dlya-khostinga-sayta",
+			uz: "/blog/veb-sayt-hosting-uchun-serverni-qanday-tanlash",
+			en: "/blog/how-to-choose-a-server-for-website-hosting",
+		},
 		date: "15.03.2025",
 		title: {
 			ru: "Как выбрать сервер для хостинга сайта?",
-			uz: "Как выбрать сервер для хостинга сайта?",
-			en: "Как выбрать сервер для хостинга сайта?",
+			uz: "Veb-saytlarni joylashtirish uchun serverni qanday tanlash mumkin?",
+			en: "How to choose a server for website hosting?",
 		},
 		description: {
 			ru: (
@@ -359,14 +403,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Шаг за шагом разберем процесс выбора сервера для хостинга:
+						Xosting uchun server tanlash jarayonini bosqichma-bosqich ko'rib chiqamiz:
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Шаг за шагом разберем процесс выбора сервера для хостинга:
+						Let's look at the process of choosing a server for hosting step by step:
 					</p>
 				</>
 			),
@@ -374,12 +418,16 @@ export const blog = [
 	},
 	{
 		img: "/blog/vds.png",
-		link: "/blog/kak-vybrat-vydelenniy-server",
+		link: {
+			ru: "/blog/kak-vybrat-vydelenniy-server",
+			uz: "/blog/bagishlangan-serverni-qanday-tanlash",
+			en: "/blog/how-to-choose-a-dedicated-server",
+		},
 		date: "15.03.2025",
 		title: {
 			ru: "Выбор выделенного сервера: рекомендации, правила, особенности",
-			uz: "Выбор выделенного сервера: рекомендации, правила, особенности",
-			en: "Выбор выделенного сервера: рекомендации, правила, особенности",
+			uz: "Ajratilgan serverni tanlash: tavsiyalar, qoidalar, xususiyatlar",
+			en: "Choosing a Dedicated Server: Recommendations, Rules, Features",
 		},
 		description: {
 			ru: (
@@ -392,14 +440,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Узнайте основные параметры выбора выделенного сервера для вашего сайта. Подробное руководство по определению необходимых характеристик и сравнению предложений от провайдеров.
+					Veb-saytingiz uchun ajratilgan serverni tanlashning asosiy parametrlarini bilib oling. Sizga kerak bo'lgan xususiyatlarni aniqlash va provayderlarning takliflarini solishtirish bo'yicha batafsil qo'llanma.
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Узнайте основные параметры выбора выделенного сервера для вашего сайта. Подробное руководство по определению необходимых характеристик и сравнению предложений от провайдеров.
+					Find out the main parameters for choosing a dedicated server for your website. A detailed guide to determining the necessary characteristics and comparing offers from providers.
 					</p>
 				</>
 			),
@@ -407,7 +455,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/web.png",
-		link: "/blog/chto-takoye-veb-interfeys",
+		link: {
+			ru: "/blog/chto-takoye-veb-interfeys",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "15.03.2025",
 		title: {
 			ru: "Что такое Веб-интерфейс?",
@@ -440,7 +492,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/404.jpg",
-		link: "/blog/chto-takoye-error-404",
+		link: {
+			ru: "/blog/chto-takoye-error-404",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "14.03.2025",
 		title: {
 			ru: "Что такое error 404?",
@@ -473,7 +529,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/csr.jpg",
-		link: "/blog/chto-takoye-csr-i-kak-ego-sozdat",
+		link: {
+			ru: "/blog/chto-takoye-csr-i-kak-ego-sozdat",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "14.03.2025",
 		title: {
 			ru: "Что такое CSR и как его создать?",
@@ -506,7 +566,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/apache.png",
-		link: "/blog/chto-takoe-apache-http-server",
+		link: {
+			ru: "/blog/chto-takoe-apache-http-server",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "14.12.2024",
 		title: {
 			ru: "Apache HTTP Server: основа современного веб-хостинга",
@@ -539,7 +603,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/ipv6.png",
-		link: "/blog/protocol-ipv6-chto-eto-takoe",
+		link: {
+			ru: "/blog/protocol-ipv6-chto-eto-takoe",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "14.12.2024",
 		title: {
 			ru: "IPv6: будущее интернет-адресации",
@@ -572,7 +640,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/sftp.png",
-		link: "/blog/protocol-sftp-chto-eto",
+		link: {
+			ru: "/blog/protocol-sftp-chto-eto",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "14.12.2024",
 		title: {
 			ru: "SFTP протокол: безопасный способ передачи файлов",
@@ -605,7 +677,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/mac.png",
-		link: "/blog/chto-takoe-mac-address",
+		link: {
+			ru: "/blog/chto-takoe-mac-address",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "14.12.2024",
 		title: {
 			ru: "MAC-адрес: что это и зачем он нужен?",
@@ -638,7 +714,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/ns.png",
-		link: "/blog/chto-takoe-name-server-ns",
+		link: {
+			ru: "/blog/chto-takoe-name-server-ns",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "14.12.2024",
 		title: {
 			ru: "Name-серверы (NS): ключевые элементы DNS-инфраструктуры",
@@ -671,7 +751,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/server.png",
-		link: "/blog/chto-takoe-vps-server",
+		link: {
+			ru: "/blog/chto-takoe-vps-server",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "14.12.2024",
 		title: {
 			ru: "VPS сервер: виртуальный выделенный сервер для ваших задач",
@@ -704,7 +788,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/vps.png",
-		link: "/blog/kak-zaschitit-vps-ot-vzloma",
+		link: {
+			ru: "/blog/kak-zaschitit-vps-ot-vzloma",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "14.12.2024",
 		title: {
 			ru: "Эффективные способы защиты VPS от кибератак",
@@ -737,7 +825,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/domain.png",
-		link: "/blog/raznitsa-mezhdu-hostingom-i-domenom",
+		link: {
+			ru: "/blog/raznitsa-mezhdu-hostingom-i-domenom",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "14.12.2024",
 		title: {
 			ru: "Хостинг и домен: ключевые различия и взаимодействие",
@@ -770,7 +862,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/dns.png",
-		link: "/blog/chto-takoe-dns-server",
+		link: {
+			ru: "/blog/chto-takoe-dns-server",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "14.12.2024",
 		title: {
 			ru: "DNS сервер: ключевой элемент работы интернета",
@@ -803,7 +899,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/host.png",
-		link: "/blog/chto-takoe-imya-hosta",
+		link: {
+			ru: "/blog/chto-takoe-imya-hosta",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "14.12.2024",
 		title: {
 			ru: "Что такое имя хоста и зачем оно нужно?",
@@ -836,7 +936,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/rdp.jpg",
-		link: "/blog/chto-takoye-rdp",
+		link: {
+			ru: "/blog/chto-takoye-rdp",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "21.11.2024",
 		title: {
 			ru: "Что такое RDP?",
@@ -869,7 +973,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/docker.png",
-		link: "/blog/chto-takoye-docker",
+		link: {
+			ru: "/blog/chto-takoye-docker",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "21.11.2024",
 		title: {
 			ru: "Что такое Docker?",
@@ -902,7 +1010,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/ipv4.png",
-		link: "/blog/chto-takoye-ip-address",
+		link: {
+			ru: "/blog/chto-takoye-ip-address",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "21.11.2024",
 		title: {
 			ru: "Что такое IP-адрес?",
@@ -935,7 +1047,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/nginx.webp",
-		link: "/blog/chto-takoye-nginx",
+		link: {
+			ru: "/blog/chto-takoye-nginx",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "21.11.2024",
 		title: {
 			ru: "NGINX: что это такое?",
@@ -968,7 +1084,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/smtp.webp",
-		link: "/blog/chto-takoye-smtp",
+		link: {
+			ru: "/blog/chto-takoye-smtp",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "20.11.2024",
 		title: {
 			ru: "Что такое SMTP (Simple Mail Transfer Protocol)?",
@@ -1001,7 +1121,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/domen.webp",
-		link: "/blog/kak-zaregistrirovat-domen",
+		link: {
+			ru: "/blog/kak-zaregistrirovat-domen",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "11.10.2024",
 		title: {
 			ru: "Как зарегистрировать домен?",
@@ -1034,7 +1158,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/ipv4.jpg",
-		link: "/blog/ipv4-chto-eto-takoye",
+		link: {
+			ru: "/blog/ipv4-chto-eto-takoye",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "11.10.2024",
 		title: {
 			ru: "IPv4: что это такое?",
@@ -1067,7 +1195,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/ssh.jpg",
-		link: "/blog/ssh-klyuchi-chto-eto-takoye",
+		link: {
+			ru: "/blog/ssh-klyuchi-chto-eto-takoye",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "11.10.2024",
 		title: {
 			ru: "SSH-ключи: что это такое",
@@ -1100,7 +1232,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/host.jpg",
-		link: "/blog/chto-takoye-host",
+		link: {
+			ru: "/blog/chto-takoye-host",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "11.10.2024",
 		title: {
 			ru: "Что такое host?",
@@ -1133,7 +1269,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/wordpress.png",
-		link: "/blog/chto-takoye-wordpress",
+		link: {
+			ru: "/blog/chto-takoye-wordpress",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "10.10.2024",
 		title: {
 			ru: "Что такое Wordpress:",
@@ -1166,7 +1306,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/root.jpg",
-		link: "/blog/chto-takoye-root-prava",
+		link: {
+			ru: "/blog/chto-takoye-root-prava",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "10.10.2024",
 		title: {
 			ru: "Что такое Root-права",
@@ -1199,7 +1343,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/cpu.avif",
-		link: "/blog/chto-takoye-tsentralniy-protsessor-tspu-cpu",
+		link: {
+			ru: "/blog/chto-takoye-tsentralniy-protsessor-tspu-cpu",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "10.10.2024",
 		title: {
 			ru: "Что такое центральный процессор (ЦПУ, CPU)?",
@@ -1232,7 +1380,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/subdomain.png",
-		link: "/blog/chto-takoye-poddomeny-i-zachem-oni-nuzhny",
+		link: {
+			ru: "/blog/chto-takoye-poddomeny-i-zachem-oni-nuzhny",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "10.10.2024",
 		title: {
 			ru: "Что такое поддомены и зачем они нужны",
@@ -1265,7 +1417,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/403.webp",
-		link: "/blog/oshibka-403-forbidden-chto-eto-znachit",
+		link: {
+			ru: "/blog/oshibka-403-forbidden-chto-eto-znachit",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "10.10.2024",
 		title: {
 			ru: "Ошибка 403 Forbidden: что это значит",
@@ -1298,7 +1454,11 @@ export const blog = [
 	},
 	{
 		img: "/blog/com.jpg",
-		link: "/blog/domen-com-chto-eto",
+		link: {
+			ru: "/blog/domen-com-chto-eto",
+			uz: "/blog/wwww",
+			en: "/blog/wwww",
+		},
 		date: "30.09.2024",
 		title: {
 			ru: "Домен .COM — что это такое, особенности и преимущества",
@@ -1600,7 +1760,7 @@ export function BlogBlock({ pagination, blog, language }) {
 					<div className={st.blog__block}>
 						{blog.map((item) => (
 							<div key={item.title[language]} className={st.blog__block__item}>
-								<Link href={checkLang(language) + item.link}>
+								<Link href={checkLang(language) + item.link[language]}>
 									<a>
 										<div className={st.blog__block__item__img}>
 											<Image src={item.img} width={560} height={300} blurDataURL placeholder="blur" />

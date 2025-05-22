@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "Как подключить SIP-телефон самостоятельно?",
-		uz: "Как подключить SIP-телефон самостоятельно?",
-		en: "Как подключить SIP-телефон самостоятельно?",
+		uz: "SIP telefonini o'zingiz qanday ulash mumkin?",
+		en: "How to connect a SIP phone yourself?",
 	},
 	title: {
 		ru: "SIP телефон как подключить: настройка сип телефона",
-		uz: "SIP телефон как подключить: настройка сип телефона",
-		en: "SIP телефон как подключить: настройка сип телефона",
+		uz: "SIP telefonni qanday ulash mumkin: sip telefonni sozlash",
+		en: "SIP phone how to connect: setting up a sip phone",
 	},
 	desc: {
 		ru: "Простая инструкция по подключению SIP-телефона: выбор провайдера, ввод данных и проверка связи.",
-		uz: "Простая инструкция по подключению SIP-телефона: выбор провайдера, ввод данных и проверка связи.",
-		en: "Простая инструкция по подключению SIP-телефона: выбор провайдера, ввод данных и проверка связи.",
+		uz: "SIP telefonini ulash bo'yicha oddiy ko'rsatmalar: provayderni tanlash, ma'lumotlarni kiritish va ulanishni tekshirish.",
+		en: "Simple instructions for connecting a SIP phone: choosing a provider, entering data and checking the connection.",
 	},
 	date: "29.04.2025",
 	updated: "29.04.2025",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/settingvoip.png",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,16 +61,16 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Как подключить SIP-телефон?", uz: "Как подключить SIP-телефон?", en: "Как подключить SIP-телефон?", slug: "1" }},
-		{ title: {ru: "Преимущества", uz: "Преимущества", en: "Преимущества", slug: "2" }},
-		{ title: {ru: "Классификация", uz: "Классификация", en: "Классификация", slug: "3" }},
-		{ title: {ru: "Рекомендации по выбору", uz: "Рекомендации по выбору", en: "Рекомендации по выбору", slug: "4" }},
-		{ title: {ru: "Подключение и настройка", uz: "Подключение и настройка", en: "Подключение и настройка", slug: "5" }},
-		{ title: {ru: "Подключение к интернету", uz: "Подключение к интернету", en: "Подключение к интернету", slug: "6" }},
-		{ title: {ru: "Настройка телефона", uz: "Настройка телефона", en: "Настройка телефона", slug: "7" }},
-		{ title: {ru: "Настройка виртуальной АТС", uz: "Настройка виртуальной АТС", en: "Настройка виртуальной АТС", slug: "8" }},
-		{ title: {ru: "Дополнительные функции", uz: "Дополнительные функции", en: "Дополнительные функции", slug: "9" }},
-		{ title: {ru: "Выбор номера", uz: "Выбор номера", en: "Выбор номера", slug: "10" }},
+		{ title: {ru: "Как подключить SIP-телефон?", uz: "SIP telefonini qanday ulash mumkin?", en: "How to connect a SIP phone?", slug: "1" }},
+		{ title: {ru: "Преимущества", uz: "Afzalliklar", en: "Advantages", slug: "2" }},
+		{ title: {ru: "Классификация", uz: "Tasniflash", en: "Classification", slug: "3" }},
+		{ title: {ru: "Рекомендации по выбору", uz: "Tanlash bo'yicha tavsiyalar", en: "Recommendations for selection", slug: "4" }},
+		{ title: {ru: "Подключение и настройка", uz: "Ulanish va sozlash", en: "Connection and setup", slug: "5" }},
+		{ title: {ru: "Подключение к интернету", uz: "Internetga ulanish", en: "Connecting to the Internet", slug: "6" }},
+		{ title: {ru: "Настройка телефона", uz: "Telefonni sozlash", en: "Phone setup", slug: "7" }},
+		{ title: {ru: "Настройка виртуальной АТС", uz: "Virtual PBXni sozlash", en: "Setting up a virtual PBX", slug: "8" }},
+		{ title: {ru: "Дополнительные функции", uz: "Qo'shimcha funktsiyalar", en: "Additional functions", slug: "9" }},
+		{ title: {ru: "Выбор номера", uz: "Raqamni tanlang", en: "Select number", slug: "10" }},
 	],
 	content: {
 		ru: (
@@ -181,59 +181,212 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				SIP telefonini qanday ulash mumkin? 
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Ma'muriy, tijorat va boshqa tashkilotlarning analog telefoniyadan Internet-telefoniyaga o'tishi o'rnatilgan tendentsiyadir. Ushbu aloqa formati ko'plab afzalliklarni beradi, biznesni samarali boshqarish va tijorat faoliyatini yaxshilash uchun sharoit yaratadi. Asosiysi, dasturiy ta'minot va apparatni to'g'ri tanlash va sozlash. SIP telefonini qanday ulash mumkin? Tanlashda qanday tavsiyalarga amal qilish kerak? 
+				</p>
+				<img src="/blog/settingvoip1.png" alt="SIP" />
+				<a name="2"></a>
+				<h3>Afzalliklar</h3>
+				<p>
+				Ulanish va sozlashning nozik tomonlarini o'rganishdan oldin siz innovatsion aloqa texnologiyasining afzalliklari bilan batafsilroq tanishishingiz kerak. Ular shunday ko'rinadi:
+				</p>
+				<ul>
+				<li>Xarajatlarni optimallashtirish. SIP narxi analog liniyalarga nisbatan ancha past. Farqi, ayniqsa, xalqaro muammolarni ko'rib chiqishda seziladi. Bitta tarmoqdagi abonentlar bilan aloqa o‘lchami yoki geografik joylashuvidan qat’iy nazar bepul.</li>
+				<li>Geografik ma'lumotlar yo'qligi. Tizimdan istalgan mintaqada foydalanish mumkin. Asosiy shart - barqaror Internet aloqasi, boshqa cheklovlar kutilmaydi.</li>
+				<li>Yuqori sifatli aloqa. Nutqni uzatish imkon qadar aniq, bosishlarsiz, xirillashlarsiz va analog liniyalarga xos boʻlgan boshqa nuqsonlarsiz.</li>
+				<li>Ulanish oson. Kilometrli simlarni tortib olish yoki ko'plab tarmoq komponentlarini o'rnatishning hojati yo'q. Umuman olganda, siz o'zingizni dasturiy ta'minotning analogi, shaxsiy kompyuter, noutbuk, planshet yoki smartfonda o'rnatilgan dasturiy telefon bilan cheklab, maxsus SIP telefonsiz qilishingiz mumkin.</li>
+				<li>Universallik. Usul nafaqat klassik ovozli qo'ng'iroqlar, balki video qo'ng'iroqlar, matn, multimedia fayllari, hujjatlar, fotosuratlar, videolarni uzatish uchun ham mos keladi.</li>
+				<li>Ko'p funksiyalilik. Zamonaviy SIP telefonlari biznes uchun foydali bo'lgan ko'plab funktsiyalarni qo'llab-quvvatlaydi. Ovozli yordamchilar, avtomashinalar, qo'ng'iroqlarni avtomatik yozib olish va hokazolardan foydalanish mumkin</li>
+				<li>Tarmoqning minimal yuklanishi. Yuqori tezlik, qimmat tarif rejalari talab qilinmaydi - ovozli aloqa uchun kamtarona 64 kilobit/sekund yetarli.</li>
+				</ul>
+				<p>
+				Jahon statistik agentliklarining hisobotlariga ko‘ra, SIP telefoniya bozori muttasil mustahkamlanib bormoqda, yillik aylanmasi 30 milliard dollarga yaqinlashmoqda. O'z biznes samaradorligini oshirish, mijozlar bazasini kengaytirish va raqobatchilardan oldinda qolishni istagan tashkilotlar texnologiyani qabul qilishlari kerak. 
+				</p>
+				<a name="3"></a>
+				<h3>Tasniflash</h3>
+				<p>
+				SIP telefonlari ikkita asosiy toifada taqdim etiladi: apparat va dasturiy ta'minot. Birinchi holda, biz an'anaviy statsionar qurilmalarga imkon qadar o'xshash modellar haqida gapiramiz. Ular kalitlar, quvurlar va boshqa xarakterli elementlar bilan jihozlangan. Bunday uskunalarning sinflari kichik menejerlarga mo'ljallangan cheklangan funksionallikka ega arzon byudjet versiyalaridan tortib, original dizayn va ilg'or imkoniyatlarga ega bo'lgan yuqori darajali versiyalarga qadar farqlanadi. 
+				</p>
+				<img src="/blog/settingvoip2.png" alt="SIP" />
+				<p>
+				Dasturiy ta'minot SIP telefonlari jismoniy timsolga ega emas. Asosan, ular Windows, Android, iOS va boshqa operatsion tizimlar uchun mo'ljallangan ilovalardir. Uskuna hamkasblari singari, ular pullik yoki bepul bo'lishi mumkin bo'lgan nashri, interfeys xususiyatlari va asosiy yoki yordamchi funktsiyalari bilan farqlanadi. 
+				</p>
+				<a name="4"></a>
+				<h3>Tanlash uchun tavsiyalar</h3>
+				<p>
+				SIP telefoni, albatta, dizayn va narx bo'yicha emas, balki funksionallik va asosiy xususiyatlar bo'yicha tanlanishi kerak, shunda ular butun tashkilotning va xususan, ma'lum bir foydalanuvchining ehtiyojlarini qondiradi. Eng muhim parametrlar quyidagilar:
+				</p>
+				<ul>
+				<li>Xotira kartasini qo'llab-quvvatlash. Bu keyingi oʻrganish va tahlil qilish uchun konferentsiyalar, suhbatlar va boshqa foydali maʼlumotlarni yozib olish, saqlash uchun zarur boʻlgan xotira zaxirasini olish imkonini beradi.</li>
+				<li>Ko'rsatish. Eng oddiy modellarda ekran yo'q. Bildirishnomalar uchun LED indikatori, boshqarish uchun esa jismoniy kalitlar ishlatiladi. Ular kichik menejerlar va cheklangan mas'uliyatli boshqa mutaxassislar uchun javob beradi. Murakkab qurilmalar ekranlar, rangli va monoxrom, standart va sensorli qurilmalar bilan jihozlangan bo‘lib, bu nazorat va kerakli ma’lumotlarni o‘qishni osonlashtiradi.</li>
+				<li>Telefon kitobi sig'imi. Saqlash uchun yuzlab yoki minglab raqamlar sonini belgilaydi.</li>
+				<li>Ovozni uzatish va takrorlash sifati. Agar bu juda muhim bo'lsa, shovqin va shovqinni bartaraf etadigan aqlli algoritm - Smart Noise Filtering kabi maxsus funksiyalarni qo'llab-quvvatlaydigan modellarni tanlashga arziydi.</li>
+				</ul>
+				<p>
+				Agar brendlar haqida gapiradigan bo'lsak, ular kam ma'lum bo'lgan analoglardan qimmatroq bo'lsa ham, tasdiqlangan brendlarning SIP telefonlarini tanlash yanada oqilona. Bunday holda, narx kompaniyaning tarmoq infratuzilmasini tashkil etuvchi boshqa IP-uskunalar bilan ishonchliligi va muvofiqligi bilan 100% qoplanadi. Simli SIP telefonlarini ulashni soddalashtirish uchun siz PoE texnologiyasini qo'llab-quvvatlaydigan modellarni tanlashingiz kerak, bu esa qo'shimcha elektr uzatish liniyalarini yotqizish zaruratini yo'q qiladi. Voltaj to'g'ridan-to'g'ri tarmoq kabeli orqali beriladi. 
+				</p>
+				<a name="5"></a>
+				<h3>Ulanish va sozlash</h3>
+				<p>
+				Maxsus ko'rsatmalar qurilmaning markasi va modeliga va dasturiy echimga qarab farqlanadi, lekin umuman olganda ular juda o'xshash. Ulanishni mustaqil ravishda, xatosiz va keraksiz vaqtni yo'qotmasdan amalga oshirish uchun asosiy bosqichlarni batafsil ko'rib chiqish kerak. 
+				</p>
+				<a name="6"></a>
+				<h3>Internetga ulanish</h3>
+				<p>
+				Avvalo, qurilma tarmoqqa ulangan bo'lishi kerak. Bir necha usullar mavjud:
+				</p>
+				<ul>
+				<li>Router yoki tarmoqqa kirish imkoniga ega boshqa qurilma yordamida sim orqali. Eng mashhur usul, signal uzatishning yuqori tezligini, uni tashqi yuklardan, elektromagnit maydonlardan, radio shovqinlardan himoya qilishni ta'minlaydi. Ulanishning buzilishi ehtimoli nolga teng va faqat jiddiy nosozliklar bilan bog'lanishi mumkin.</li>
+				<li>Wi-Fi orqali. Usulning asosiy afzalligi - harakatchanlik. SIP telefonini aloqa uzilishi xavfisiz ob'ekt bo'ylab ko'chirish mumkin.</li>
+				<li>Uyali tarmoq orqali. Hatto 3G tarmoqlari ham ovozli qo'ng'iroqlar uchun etarli bo'ladi. Muhim nuqta shundaki, uyali tarmoqqa to'g'ridan-to'g'ri ulanish ishlatilmaydi; SIP telefonlari SIM karta uyalari bilan jihozlanmagan. Aloqa qurilmasi va tarmoq o‘rtasidagi oraliq, vositachi aloqa vazifasini 3G, 4G, LTE router bajaradi.</li>
+				<li>Bulutli telefoniya orqali. Tegishli xizmat hozirda aloqa xizmatlariga ixtisoslashgan ko'plab kompaniyalar tomonidan taklif etilmoqda. Ko'p tarif rejalari mavjud, eng yaxshi echimni tanlash, narx, tezlik, qo'shimcha funktsiyalarda muvozanatli, muammo bo'lmaydi.</li>
+				</ul>
+				<a name="7"></a>
+				<h3>Telefonni sozlash</h3>
+				<p>
+				Ko'p konfiguratsiya variantlari mavjud, ammo foydalanilgan sxemadan qat'i nazar, birinchi navbatda asosiy fikrlarni aniqlash kerak. Ular shunday ko'rinadi:
+				</p>
+				<ul>
+				<li>SIP telefonni ulashda vositachi vazifasini bajaradigan server manzili. Bulutli yoki virtual telefoniyani tashkil qiluvchi tashkilot yoki tizim ma'muri tegishli ma'lumotlarni taqdim etishi kerak.</li>
+				<li>Uskunadan foydalanayotgan mijozning hisob nomi. Bu avtorizatsiya jarayonini muvaffaqiyatli yakunlash imkonini beruvchi individual identifikator.</li>
+				<li>Parol. Internet-telefoniya tizimi yoki uning tuzilishiga kiritilgan muayyan qurilma foydalanuvchisining vakolati va huquqlarini tasdiqlaydi.</li>
+				</ul>
+				<p>
+				Asosiy sozlamalarga qo'shimcha ravishda, muayyan ulanishga qarab qo'shimcha sozlamalar talab qilinishi mumkin. Misol uchun, agar kanalning tarmoqli kengligidan iloji boricha samarali foydalanish va uzatishdan oldin ma'lumotlarni siqish kerak bo'lsa, kodeklarni to'g'ri sozlash kerak. 
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				SIP telefon tomonidan ishlatiladigan transport protokoli, u TLS, TCP yoki UDP bo'ladimi, proksi-server va qo'shimcha identifikatorlar ham ko'rsatilgan. 
 				</p>
+				<a name="8"></a>
+				<h3>Virtual PBXni sozlash</h3>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				Avvalo, siz xodimning hisob qaydnomasini yaratishingiz, u avtorizatsiya qilish uchun foydalanadigan ma'lumotlarni ko'rsatishingiz va qo'ng'iroqlarni taqsimlashning o'ziga xos xususiyatlarini aniqlaydigan marshrutlash parametrlarini belgilashingiz kerak. 
 				</p>
+				<a name="9"></a>
+				<h3>Qo'shimcha funktsiyalar</h3>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				Aloqa uskunasini ulashdan oldin, biznes uchun foydali bo'lgan yordamchi funktsiyalar ro'yxatini aniq belgilash kerak. Eng mashhur va talabga ega bo'lganlar quyidagilar:
 				</p>
+				<ul>
+				<li>Javob berish mashinasi. Siz signal raqamini belgilashingiz mumkin, shundan so'ng u ishga tushadi. Kerakli mutaxassis bilan bog'lana olmagan mijoz tegishli bildirishnomani, shuningdek, bepul operatorga o'tkazish taklifini eshitadi yoki qayta qo'ng'iroq qilish uchun xabar qoldiradi.</li>
+				<li>Qora ro'yxat. Muayyan raqamlardan kiruvchi qo'ng'iroqlarni bloklaydi. Bu SIPning umumiy ishonchliligini oshiradi va kompaniyaning aloqa tizimini qo‘ng‘iroqlar bilan haddan tashqari yuklash orqali buzishga urinayotgan buzg‘unchilar va firibgarlarga qarshi kurashda faol vosita hisoblanadi.</li>
+				<li>Avtomatik terish. SIP telefonlari avtomatik ravishda mijozlar bilan bog‘lanadi, ularga yangi takliflar, maxsus aksiyalar va yaxshi chegirmalarga ega bo‘lgan mahsulotlar haqida xabar beradi.</li>
+				<li>Tahlil. Qurilmalar kiruvchi va chiquvchi qo‘ng‘iroqlar jurnalini yuritadi, mijozlar uchun eng dolzarb mavzularni hamda eng ommabop tovar va xizmatlarni aniqlaydi. Analytics tashkilotning mahsulot assortimentini talabni qondirish, kamchiliklarni bartaraf etish va moliyaviy natijalarni yaxshilash uchun moslashtirishga yordam beradi.</li>
+				</ul>
+				<img src="/blog/settingvoip3.png" alt="SIP" />
+				<a name="10"></a>
+				<h3>Raqam tanlash</h3>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
+				SIP telefonidan faqat tegishli raqamingiz bo'lsagina foydalanishingiz mumkin. Uning to'g'ri tanlovi butun telefoniya tizimining samaradorligining asoslaridan biridir. Masalan, kompaniyaning alohida mutaxassislari, bo'limlari o'rtasidagi aloqani tashkil qilish uchun siz qisqa raqamlardan foydalanishingiz mumkin, mijozlar ishonch darajasini oshirish, raqamli kombinatsiyalarni yaxshiroq eslab qolish - federal yoki "chiroyli", takroriy raqamlar bilan, ularning oyna tartibi. 
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				How to connect a SIP phone?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				The transition of administrative, commercial and other organizations from analog to Internet telephony is an established trend. This communication format provides many advantages, creates conditions for effective business management, improving commercial performance. The main thing is to choose and configure software and hardware correctly. How to connect a SIP phone? What recommendations should be followed when choosing?
+				</p>
+				<img src="/blog/settingvoip1.png" alt="SIP" />
+				<a name="2"></a>
+				<h3>Advantages</h3>
+				<p>
+				Before studying the intricacies of connection and configuration, you should familiarize yourself in more detail with the advantages of innovative communication technology. They look like this:
+				</p>
+				<ul>
+				<li>Cost optimization. The price of SIP is significantly lower in comparison with analog lines. The difference is especially noticeable if we consider international calls. Communication with subscribers from the same network is free, regardless of its scale or geographic location.</li>
+				<li>No geographic restrictions. The system can be used in any region. The main condition is a stable Internet connection, no other restrictions are assumed.</li>
+				<li>High quality communication. Speech transmission is as clear as possible, without clicks, wheezing and other defects typical of analog lines.</li>
+				<li>Ease of connection. No need to pull kilometers of wires, install numerous network components. In general, you can even do without a special SIP phone, limiting yourself to its software analogue, a softphone installed on a PC, laptop, tablet, smartphone.</li>
+				<li>Universality. The method is suitable not only for classic voice calls, but also for video calls, transfer of text, multimedia files, documents, photos, videos.</li>
+				<li>Multifunctionality. Modern SIP phones support a lot of functions useful for business. It is possible to use voice assistants, answering machines, automated call recording, etc.</li>
+				<li>Minimal network load. High speed, expensive tariff plans are not required - a modest 64 kilobits per second is enough for voice communication.</li>
+				</ul>
+				<p>
+				According to reports from global statistical agencies, the SIP telephony market is steadily strengthening, with annual turnover approaching $30 billion. Organizations that want to improve their commercial performance, expand their customer base, and get ahead of competitors should master the technology.
+				</p>
+				<a name="3"></a>
+				<h3>Classification</h3>
+				<p>
+				SIP phones are presented in two main categories, hardware and software. In the first case, we are talking about models that are as similar as possible to conventional stationary devices. They are equipped with keys, handsets, and other characteristic elements. The classes of such equipment are different, from inexpensive budget versions with limited functionality, aimed at junior managers, to premium ones - with an original design, advanced capabilities.
+				</p>
+				<img src="/blog/settingvoip2.png" alt="SIP" />
+				<p>
+				Software SIP phones do not have a physical embodiment. In fact, they are applications designed for Windows, Android, iOS and other operating systems. Like hardware counterparts, they differ in the edition, which can be paid or free, interface features, basic or auxiliary functions.
+				</p>
+				<a name="4"></a>
+				<h3>Recommendations for selection</h3>
+				<p>
+				Of course, you should choose a SIP phone not by design and price, but by functionality and basic characteristics so that they meet the needs of the organization as a whole, and a specific user in particular. The most significant parameters are as follows:
+				</p>
+				<ul>
+				<li>Memory card support. This allows you to get the memory reserve necessary for recording, storing conferences, conversations and other useful information for further study and analysis.</li>
+				<li>Display. The simplest models do not have a screen. LED indication is used for notifications, and physical keys are used for control. They are suitable for junior managers and other specialists with a limited range of responsibilities. Advanced devices are equipped with screens, color and monochrome, standard and touch, which simplifies control and reading the necessary information.</li>
+				<li>Phone book capacity. Determines the number of numbers stored, which can be measured in hundreds or thousands.</li>
+				<li>The quality of voice transmission and playback. If this is very important, it is worth choosing models that support special functions, for example, Smart Noise Filtering, an intelligent algorithm that eliminates interference and noise.</li>
+				</ul>
+				<p>
+				If we talk about brands, it is more rational to choose SIP phones of proven brands, even if they are more expensive than little-known analogues. The price in this case is 100% compensated by reliability, compatibility with other IP equipment that forms the company's network infrastructure. To simplify the connection of wired SIP phones, you should choose models that support PoE technology, eliminating the need to lay additional power lines. Voltage is supplied directly through the network wire. </p>
+				<a name="5"></a>
+				<h3>Connection and setup</h3>
+				<p>
+				Specific instructions are determined by the brand and model of the device, software solution, however, in a general sense, they are very similar. The main stages should be considered in detail in order to connect independently, without errors and unnecessary waste of time.
+				</p>
+				<a name="6"></a>
+				<h3>Connection to the Internet</h3>
+				<p>
+				First of all, the device needs to be connected to the network. There are several ways:
+				</p>
+				<ul>
+				<li>Via wire, using a router or other device with network access. The most popular method, providing high signal transmission speed, its protection from external loads, electromagnetic fields, radio interference. The probability of a connection failure tends to zero, can only be associated with particularly serious failures.</li>
+				<li>Via Wi-Fi. The main advantage of the method is mobility. A SIP phone can be moved around the facility without the risk of connection loss.</li>
+				<li>Via a cellular network. Even 3G networks are more than enough for voice calls. An important point is that a direct connection to a cellular network is not used; SIP phones are not equipped with SIM card slots. The function of an intermediate, intermediary link between the communication device and the network is performed by a 3G, 4G, or LTE router.</li>
+				<li>Via cloud telephony. This service is now offered by many companies specializing in communication services. There are many tariff plans, and choosing the best solution that is balanced in price, speed, and additional functions will not be a problem.</li>
+				</ul>
+				<a name="7"></a>
+				<h3>Configuring a phone</h3>
+				<p>
+				There are many configuration options, but regardless of the scheme used, you need to first outline the basic points. They look like this:
+				</p>
+				<ul>
+				<li>The address of the server that acts as an intermediary when connecting a SIP phone. The relevant information must be provided by the organization with the help of which cloud, virtual telephony is organized, or by the system administrator.</li>
+				<li>The name of the account, the client using the equipment. It is an individual identifier, allows you to successfully complete the authorization procedure.</li>
+				<li>Password. Confirms the powers and rights of the user of the Internet telephony system, or a specific device included in its structure.</li>
+				</ul>
+				<p>
+				In addition to the main ones, additional settings may be required, determined by a specific connection. For example, if it is necessary to use the channel bandwidth as rationally as possible, compress data before transmission, you need to correctly configure the codecs.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				The transport protocol used by the SIP phone is also indicated, be it TLS, TCP or UDP, a proxy server, additional identifiers.
 				</p>
+				<a name="8"></a>
+				<h3>Configuring a virtual PBX</h3>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				First of all, you need to create an employee account, specify the data that he will use for authorization, and specify the routing parameters that determine the specifics of call distribution.
 				</p>
+				<a name="9"></a>
+				<h3>Additional functions</h3>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				Before the communication equipment is connected, you need to clearly define the list of auxiliary functions that will be useful for the business. The most popular and in-demand ones are as follows:
 				</p>
+				<ul>
+				<li>Answering machine. You can specify the dial tone number after which it is triggered. A client who is unable to reach the required specialist will hear a corresponding notification, as well as an offer to transfer to a free operator, leave a message for a return call.</li>
+				<li>Black list. Blocks incoming calls from certain numbers. This increases the overall reliability of SIP and is an active tool in the fight against intruders and fraudsters who are trying to bring down a company's communication system by overloading it with calls.</li>
+				<li>Automatic dialing. SIP phones automatically contact customers, notify them of new offers, special offers, and products available at good discounts.</li>
+				<li>Analytics. The devices keep a log of incoming and outgoing calls, identify the most relevant topics for customers, and in-demand products and services. Analytics helps adjust the organization's product range to meet demand, eliminate shortages, and improve financial performance.</li>
+				</ul>
+				<img src="/blog/settingvoip3.png" alt="SIP" />
+				<a name="10"></a>
+				<h3>Number selection</h3>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
+				You can use a SIP phone only if you have the appropriate number. Choosing the right one is one of the foundations of the efficiency of the entire telephony system. For example, to organize communication between individual specialists, departments of the company, you can use short numbers to increase the level of trust from clients, better memorability of digital combinations - federal or “beautiful”, with repeating numbers, their mirror arrangement.
 				</p>
 			</>
 		),

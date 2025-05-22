@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "Как подключить IP-телефон — инструкция для новичков",
-		uz: "Как подключить IP-телефон — инструкция для новичков",
-		en: "Как подключить IP-телефон — инструкция для новичков",
+		uz: "IP telefonni qanday ulash mumkin - yangi boshlanuvchilar uchun ko'rsatmalar",
+		en: "How to connect an IP phone - instructions for beginners",
 	},
 	title: {
 		ru: "Как подключить IP-телефон — настройка ip телефонии, подключение",
-		uz: "Как подключить IP-телефон — настройка ip телефонии, подключение",
-		en: "Как подключить IP-телефон — настройка ip телефонии, подключение",
+		uz: "IP telefonni qanday ulash mumkin - IP telefoniyani sozlash, ulanish",
+		en: "How to connect an IP phone - IP telephony setup, connection",
 	},
 	desc: {
 		ru: "Пошаговая инструкция по подключению IP-телефона: настройка сети, регистрация SIP-аккаунта и тестирование связи.",
-		uz: "Пошаговая инструкция по подключению IP-телефона: настройка сети, регистрация SIP-аккаунта и тестирование связи.",
-		en: "Пошаговая инструкция по подключению IP-телефона: настройка сети, регистрация SIP-аккаунта и тестирование связи.",
+		uz: "IP telefonni ulash bo'yicha bosqichma-bosqich ko'rsatmalar: tarmoqni sozlash, SIP hisobini ro'yxatdan o'tkazish va ulanishni sinab ko'rish.",
+		en: "Step-by-step instructions for connecting an IP phone: setting up a network, registering a SIP account and testing the connection.",
 	},
 	date: "29.04.2025",
 	updated: "29.04.2025",
@@ -24,10 +24,10 @@ const data = {
 	view: "21",
 	img: "/blog/sipip.png",
     faqTitle: {
-      ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
-    },
+		ru: "Ответы на популярные вопросы",
+		uz: "Ommabop savollarga javoblar",
+		en: "Answers to popular questions",
+	  },
 	faq: [
 		{
 		  title: {
@@ -61,13 +61,13 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Как подключить IP-телефон?", uz: "Как подключить IP-телефон?", en: "Как подключить IP-телефон?", slug: "1" }},
-		{ title: {ru: "Преимущества", uz: "Преимущества", en: "Преимущества", slug: "2" }},
-		{ title: {ru: "Как подключиться к IP-телефонии?", uz: "Как подключиться к IP-телефонии?", en: "Как подключиться к IP-телефонии?", slug: "3" }},
-		{ title: {ru: "Выбор телефона", uz: "Выбор телефона", en: "Выбор телефона", slug: "4" }},
-		{ title: {ru: "Подключение и настройка", uz: "Подключение и настройка", en: "Подключение и настройка", slug: "5" }},
-		{ title: {ru: "Подключение к роутеру", uz: "Подключение к роутеру", en: "Подключение к роутеру", slug: "6" }},
-		{ title: {ru: "Подведение итогов", uz: "Подведение итогов", en: "Подведение итогов", slug: "7" }},
+		{ title: {ru: "Как подключить IP-телефон?", uz: "IP telefonni qanday ulash mumkin?", en: "How to connect an IP phone?", slug: "1" }},
+		{ title: {ru: "Преимущества", uz: "Afzalliklar", en: "Advantages", slug: "2" }},
+		{ title: {ru: "Как подключиться к IP-телефонии?", uz: "IP telefoniyaga qanday ulanish mumkin?", en: "How to connect to IP telephony?", slug: "3" }},
+		{ title: {ru: "Выбор телефона", uz: "Telefonni tanlash", en: "Selecting a phone", slug: "4" }},
+		{ title: {ru: "Подключение и настройка", uz: "Ulanish va sozlash", en: "Connection and setup", slug: "5" }},
+		{ title: {ru: "Подключение к роутеру", uz: "Routerga ulanish", en: "Connecting to a router", slug: "6" }},
+		{ title: {ru: "Подведение итогов", uz: "Xulosa qilish", en: "Summing up", slug: "7" }},
 	],
 	content: {
 		ru: (
@@ -154,59 +154,163 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				IP telefonni qanday ulash mumkin? 
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Mijozlar bilan o'zaro aloqalar, bo'limlar, mutaxassislar o'rtasidagi aloqalar, biznes sheriklar bilan muzokaralar - bularning barchasi har qanday korxonaning, uning ko'lami yoki faoliyat profilidan qat'i nazar, muvaffaqiyatli ishlashi uchun zarurdir. Aloqalarni tashkil qilishning klassik varianti analog telefon liniyalaridir, ammo yaqinda ular IP telefoniya bilan almashtirildi. 
+				</p>
+				<img src="/blog/sipip1.png" alt="SIP" />
+				<p>
+				Ushbu format ma'lumotlarni uzatish uchun nafaqat ixtisoslashgan qurilmalar, balki shaxsiy kompyuterlar, noutbuklar va smartfonlar kabi universal qurilmalardan ham foydalanishni nazarda tutadi. To'g'ri ishlashi va samarali ma'lumotlarni uzatish uchun ular to'g'ri o'rnatilishi va sozlanishi kerak. IP telefonni qanday ulash mumkin? Qanday nuanslarni hisobga olish kerak? 
+				</p>
+				<a name="2"></a>
+				<h3>Afzalliklar</h3>
+				<p>
+				IP telefoniyaga o'tish tashkilotga quyidagi afzalliklarni beradi:
+				</p>
+				<ul>
+				<li>Aloqa xarajatlarini kamaytirish, ayniqsa mintaqalararo va xalqaro;</li>
+				<li>Ovozning ravshanligi, tushunarliligi, mukammal eshitilishi;</li>
+				<li>Muzokaralarning maxfiyligi. Ovozli signal uzatishdan oldin shifrlangan, shuning uchun ushlash ma'nosizdir. Tijorat, shaxsiy va boshqa ma'lumotlarning o'g'irlanishi haqida tashvishlanishingiz shart emas, uchinchi shaxslarga kirishi mumkin emas;</li>
+				<li>Bir nechta raqamni bitta qurilmaga ulash imkoniyati.</li>
+				</ul>
+				<p>
+				Zamonaviy telefonlar juda funktsional bo'lib, nafaqat standart ovozli aloqani, balki konferentsiyalarni, multimedia fayllarini, rasmlarni, videolarni, matnlarni va boshqa hujjatlarni uzatishni ham qo'llab-quvvatlaydi. 
+				</p>
+				<a name="3"></a>
+				<h3>IP telefoniyaga qanday ulanish mumkin?</h3>
+				<p>
+				Faqat ovozli aloqaga muhtoj bo'lgan va ofislarida statsionar telefonlar o'rnatilgan korxonalar IP shlyuzlari yordamida telefoniyani ulashlari mumkin. Ushbu yechim ishonchli, samarali va qo'shimcha moliyaviy investitsiyalarni talab qilmaydi. 
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Yana bir tejamkor sxema - smartfonlar, noutbuklar, planshet kompyuterlar va dasturiy ta'minot dasturini o'rnatish kerak bo'lgan shunga o'xshash uskunalardan foydalanish. Investitsiyalarni kamaytirishdan tashqari, ushbu variant o'zining harakatchanligi tufayli jozibador. Hatto muntazam ravishda xizmat safarlariga borib, saytda ishlashga majbur bo'lgan xodimlar ham menejerlar, rahbariyat va mijozlar bilan doimiy aloqada bo'lishadi. 
 				</p>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				IP-telefoniyadan maksimal foyda olishni istagan yirik tashkilotlar ixtisoslashtirilgan qurilmalarni sotib olish, o'zlarining korporativ PBXlarini tashkil qilish yoki provayder tomonidan xizmat ko'rsatadigan virtual stantsiyaga ulanish haqida o'ylashlari kerak. 
+				</p>
+				<h3>Telefon tanlash</h3>
+				<p>
+				Telefoningizni ulashdan oldin uni to'g'ri tanlashingiz kerak. Quyidagi ko'rsatkichlar baholanadi:
+				</p>
+				<ul>
+				<li>Uskunalar. Bu ma'lum bir xodimning ehtiyojlari va uning mutaxassisligi bilan belgilanadi. Masalan, mijozlar va hamkorlar bilan muzokaralar olib borish vazifasi bo'lgan xodimlar uchun standart qurilmalar mos keladi. Agar mutaxassis nafaqat mijoz bilan gaplashishi, balki bir vaqtning o'zida ma'lumotlar bazasiga ma'lumotlarni kiritishi va klaviaturada yozishi kerak bo'lsa, qo'llarni bo'shashtiruvchi naushnikli qurilma foydali bo'ladi. Wi-Fi yoki Bluetooth moduli bilan jihozlangan simsiz telefon doimiy ravishda ofis atrofida harakatlanishi kerak bo'lgan mutaxassislarni aloqasiz qoldirmaydi.</li>
+				<li>Funktsionallik. Uskuna kabi, u mutaxassisning ehtiyojlarini qondirishi kerak. Texnik qo'llab-quvvatlash operatoriga faqat ovozli qo'ng'iroqlar uchun mo'ljallangan qurilma kerak bo'ladi, o'rta va yuqori darajali menejerlar va rahbarlarga esa konferentsiyalarni o'tkazish imkonini beruvchi kengaytirilgan funksiyalarga ega bo'lgan qurilma kerak bo'ladi. Alohida, mashhur messenjer dasturlari va ijtimoiy tarmoqlar orqali muloqotni qo'llab-quvvatlaydigan Android operatsion tizimiga asoslangan IP-telefonni alohida ta'kidlash joiz.</li>
+				<li>Texnik imkoniyatlar. Masalan, ulanishni soddalashtirish uchun PoE texnologiyasini qo'llab-quvvatlaydigan telefon mos keladi, buning natijasida quvvat qo'shimcha quvvat liniyasisiz o'ralgan juftlik orqali ta'minlanadi. RJ-45 portlari va qo'llab-quvvatlanadigan quvurlar soni ham muhim, shuning uchun bitta qurilmadan bir vaqtning o'zida bir nechta mutaxassis foydalanishi mumkin.</li>
+				</ul>
+				<img src="/blog/sipip2.png" alt="SIP" />
+				<a name="5"></a>
+				<h3>Ulanish va sozlash</h3>
+				<p>
+				IP-telefon tanlanganidan so'ng, u to'g'ri ulangan bo'lishi va mavjud funksiyalardan to'liq foydalanish va nosozliklar va mumkin bo'lgan operatsion muammolarni bartaraf etish uchun sozlanishi kerak. Nozik sozlash uchun mutaxassislar veb-interfeysdan foydalanishni tavsiya etadilar, buning uchun qurilma kompyuter yoki noutbukga sim, Wi-Fi yoki Bluetooth orqali ulanishi kerak. Standart algoritm quyidagicha ko'rinadi:
+				</p>
+				<ul>
+				<li>Quvvatni ulash. Agar telefon PoE texnologiyasini qo'llab-quvvatlasa, alohida qator kerak emas.</li>
+				<li>Telefon va bosh blok, shaxsiy kompyuter, noutbuk oʻrtasida oʻralgan juftlik yoki simsiz modulga asoslangan patch-shnur yordamida ulanishni oʻrnatish.</li>
+				<li>Telefon menyusida “IP manzil” qatorini ochish.</li>
+				<li>Bosh blokda brauzerni oching, yuqoridagi IP manzilni belgilang.</li>
+				<li>Ochilgan shakllarda IP telefoniya xizmatlarini taqdim etuvchi provayder ma'lumotlarini ko'rsatish. Minimal to'plam - foydalanuvchi nomi va parol, lekin siz server manzilini va ishlatiladigan protokol turini ham kiritishingiz kerak bo'lishi mumkin. Proksi-server orqali ulanish o'rnatilganda tegishli port ko'rsatiladi.</li>
+				</ul>
+				<p>
+				Veb-interfeys orqali sozlash tugallangandan so'ng, telefonni qayta ishga tushirish kerak, bu o'zgarishlarni qabul qilishni tasdiqlaydi. Shundan so'ng, qurilma foydalanishga tayyor. 
+				</p>
+				<a name="6"></a>
+				<h3>Routerga ulanish</h3>
+				<p>
+				Agar IP telefon router bilan birgalikda ishlatilsa, ikkinchisi tashkilot miqyosiga mos kelishi kerak. Kichik kompaniyalar oddiy uy-ro'zg'or modellaridan mamnun bo'lishadi, yirik kompaniyalar esa kengaytirilgan kanal sig'imi, nosozliklarga chidamli, signal uzatish bilan bog'liq muammolarni bartaraf etadigan professionallarga muhtoj. Saqlash qabul qilinishi mumkin emas; kompaniyaning obro'si va tijorat muvaffaqiyati ulanishning ishonchliligiga bog'liq. 
 				</p>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				Tarmoq manzilini belgilash odatda IP telefon routerga sim orqali ulangandan so'ng avtomatik ravishda DHCP serveri tomonidan amalga oshiriladi. Ba'zi modellar qo'lda ko'rsatish va o'zgartirishga ham ruxsat beradi. 
 				</p>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
+				Simsiz modelni ulash uchun avval parolni kiritish orqali Wi-Fi tarmog'ida ro'yxatdan o'tish kerak. Ulangandan so'ng, simsiz qurilmaga tayinlangan IP-manzil mavjud bo'ladi. Brauzeringizga ushbu manzilni kiritish qurilmangizdan samarali foydalanish uchun zarur bo'lgan to'liq sozlamalar to'plamini ochadi. 
+				</p>
+				<a name="7"></a>
+				<h3>Xulosa qilish</h3>
+				<p>
+				Umuman olganda, IP telefon hech qanday muammosiz ulanishi mumkin, barcha sozlamalar intuitivdir. Agar biron bir qiyinchilik yuzaga kelsa yoki uskuna to'g'ri ishlamasa, IP telefoniya xizmatlarini taqdim etuvchi provayderning texnik yordam xizmatiga murojaat qilish tavsiya etiladi. 
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				How to connect an IP phone?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				Interaction with clients, communications between departments, specialists, negotiations with business partners - all this is necessary for the successful operation of any enterprise, regardless of the scale, profile of activity. The classic version of organizing communication is analog telephone lines, however, recently they have been replaced by IP telephony.
+				</p>
+				<img src="/blog/sipip1.png" alt="SIP" />
+				<p>
+				This format assumes that when transmitting data, not only specialized devices are used, but also universal ones, for example, PCs, laptops, smartphones. For correct operation, effective data transfer, they must be correctly installed and configured. How to connect an IP phone? What nuances should be taken into account?
+				</p>
+				<a name="2"></a>
+				<h3>Advantages</h3>
+				<p>
+				The transition to IP telephony provides the following benefits to an organization:
+				</p>
+				<ul>
+				<li>Reduction in communication costs, especially interregional and international;</li>
+				<li>Clarity, intelligibility, perfect voice audibility;</li>
+				<li>Confidentiality of negotiations. The voice signal is encrypted before transmission, so its interception does not make sense. You do not have to worry about theft of commercial, personal and other data, the access of which to third parties is unacceptable;</li>
+				<li>The ability to link several numbers to one device.</li>
+				</ul>
+				<p>
+				Modern phones are highly functional, they support not only standard voice communication, but also holding conferences, transferring multimedia files, images, videos, text and other documents.
+				</p>
+				<a name="3"></a>
+				<h3>How to connect to IP telephony?</h3>
+				<p>
+				Enterprises that need only voice communication, in whose offices stationary devices are already installed, can connect telephony using IP gateways. This solution is reliable, effective, and does not involve additional financial investments.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				An economical scheme is also using smartphones, laptops, tablet computers and similar equipment on which you need to install a softphone application. In addition to reducing investments, this option is attractive due to its mobility. Even employees who have to regularly go on business trips, work on the road, constantly stay in touch with managers, management, clients.
 				</p>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				Large organizations that want to get the maximum benefits of IP telephony should think about purchasing specialized devices, organizing their own corporate PBX, or connecting to a virtual station serviced by a provider.
+				</p>
+				<h3>Choosing a phone</h3>
+				<p>
+				Before connecting a phone, it must be chosen correctly. The following indicators are assessed:
+				</p>
+				<ul>
+				<li>Equipment. Determined by the needs of a specific employee, his specialty. For example, standard devices are suitable for employees whose task is to negotiate with clients and partners. In the event that a specialist has to not only talk to a customer, but also simultaneously enter data into a database, type on a keyboard, a device with a headset, freeing his hands, will be useful. A wireless phone equipped with a Wi-Fi or Bluetooth module will not leave specialists who have to constantly move around the office without communication.</li>
+				<li>Functionality. Like the equipment, it must meet the needs of the specialist. A technical support operator will be satisfied with a device designed only for voice calls, middle and senior managers, and management - with advanced functionality that allows for conferences. Separately, it is worth mentioning the IP phone based on the Android operating system, which supports communication via popular instant messengers and social networks.</li>
+				<li>Technical capabilities. For example, to simplify the connection, a phone that supports PoE technology is suitable, thanks to which power is supplied via a twisted pair, without an additional power line. The number of RJ-45 ports and supported handsets is also important, so that one device can be used by several specialists at once.</li>
+				</ul>
+				<img src="/blog/sipip2.png" alt="SIP" />
+				<a name="5"></a>
+				<h3>Connection and setup</h3>
+				<p>
+				After the IP phone has been selected, it must be properly connected and configured in order to 100% use the available functionality, eliminate failures and possible operational problems. For fine-tuning, experts recommend using the web interface, for which the device must be connected to a computer or laptop via a wire, Wi-Fi or Bluetooth. The standard algorithm is as follows:
+				</p>
+				<ul>
+				<li>Connecting the power supply. If the phone supports PoE technology, a separate line is not required.</li>
+				<li>Establishing a connection between the telephone and the head unit, PC, laptop, using a patch cord based on a twisted pair or a wireless module.</li>
+				<li>Opening the “IP address” line in the telephone menu.</li>
+				<li>Opening a browser on the head unit, specifying the above IP address.</li>
+				<li>Specifying information from the provider providing IP telephony services in the opened forms. The minimum set is a username and password, but you may also need to enter the server address and the type of protocol used. When establishing a connection through a proxy server, the corresponding port is indicated.</li>
+				</ul>
+				<p>
+				Upon completion of the configuration via the web interface, the phone must be rebooted, which will confirm the acceptance of the changes. After that, the device is ready for use.
+				</p>
+				<a name="6"></a>
+				<h3>Connecting to a router</h3>
+				<p>
+				If an IP phone is used in combination with a router, the latter must match the scale of the organization. Small companies will be satisfied with ordinary household models, large ones need professional ones, with an expanded channel capacity, resistant to failures, eliminating problems with signal transmission. Saving is unacceptable, the reputation of the enterprise, its commercial success depends on the reliability of the connection.
 				</p>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				Assignment of a network address, as a rule, occurs automatically, due to the DHCP server, after the IP phone is connected to the router via a wire. Some models allow manual indication and change.
 				</p>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
+				To connect a wireless model, it is necessary to pre-register it in the Wi-Fi network by entering a password. After connection, the IP address assigned to the wireless device will be available. Entering this address in the browser opens a full set of settings necessary for the effective use of the device.
+				</p>
+				<a name="7"></a>
+				<h3>Summing up</h3>
+				<p>
+				Overall, the IP phone can be connected without any problems, all the settings are intuitive. If any difficulties arise, or the equipment does not work correctly, it is recommended to contact the technical support service of the provider providing IP telephony services.
 				</p>
 			</>
 		),

@@ -805,14 +805,14 @@ export default function VDS({ language }) {
                 <td>200 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
-                <td>5 000 000 сум/мес.</td>
+                <td>2 500 000 сум/мес.</td>
               </tr>
               <tr>
                 <td>Unlim 350M</td>
                 <td>350 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
-                <td>10 000 000 сум/мес.</td>
+                <td>5 000 000 сум/мес.</td>
               </tr>
             </tbody>
           </table>
@@ -850,14 +850,14 @@ export default function VDS({ language }) {
                 <td>200 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
-                <td>5 000 000 so'm/oy.</td>
+                <td>2 500 000 so'm/oy.</td>
               </tr>
               <tr>
                 <td>Unlim 350M</td>
                 <td>350 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
-                <td>10 000 000 so'm/oy.</td>
+                <td>5 000 000 so'm/oy.</td>
               </tr>
             </tbody>
           </table>
@@ -895,14 +895,14 @@ export default function VDS({ language }) {
                 <td>200 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
-                <td>5 000 000 sum/mon.</td>
+                <td>2 500 000 sum/mon.</td>
               </tr>
               <tr>
                 <td>Unlim 350M</td>
                 <td>350 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
-                <td>10 000 000 sum/mon.</td>
+                <td>5 000 000 sum/mon.</td>
               </tr>
             </tbody>
           </table>

@@ -23,15 +23,15 @@ export default function ForDatacenter({ data, language }) {
           {/* <img src={data.img} /> */}
           <div className={st.forDatacenter__blockup}>
             <span>{data.count}</span>
-            <p>{data.text}</p>
+            <p>{data.text[language]}</p>
           </div>
           <div className={st.forDatacenter__blockup}>
             <span>{data.count2}</span>
-            <p>{data.text2}</p>
+            <p>{data.text2[language]}</p>
           </div>
           <div className={st.forDatacenter__blockup}>
             <span>{data.count3}</span>
-            <p>{data.text3}</p>
+            <p>{data.text3[language]}</p>
           </div>
         </div>
       </div>

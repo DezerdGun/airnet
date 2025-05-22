@@ -416,11 +416,24 @@ export const forDatacenterVDSData = {
   },
   img: "/ddos-img.png",
   count: "99,98%",
-  text: "Средний uptime на наших серверах",
+  text: {
+    ru: <>Средний uptime на наших серверах</>,
+    uz: <>Serverlarimizdagi o'rtacha ish vaqti</>,
+    en: <>Average uptime on our servers</>,
+  },
+  // text: "Средний uptime на наших серверах",
   count2: "0,2 сек",
-  text2: "Среднее время загрузки сайтов на наших серверах",
-  count3: "10000 +",
-  text3: "Доменов размещено на нашей площадке",
+  text2: {
+    ru: <>Среднее время загрузки сайтов на наших серверах</>,
+    uz: <>Bizning serverlarimizda veb-saytlarni o'rtacha yuklash vaqti</>,
+    en: <>Average loading time of websites on our servers</>,
+  },
+  count3: "18 000 +",
+  text3: {
+    ru: <>Доменов размещено на нашей площадке</>,
+    uz: <>Bizning platformamizda joylashtirilgan domenlar</>,
+    en: <>Domains hosted on our platform</>,
+  },
   content: [
     {
       title: { ru: "TIER III", uz: "TIER III", en: "TIER III" },
@@ -835,14 +848,14 @@ export default function VDS({ language }) {
                 <td>200 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
-                <td>5 000 000 сум/мес.</td>
+                <td>2 500 000 сум/мес.</td>
               </tr>
               <tr>
                 <td>Unlim 350M</td>
                 <td>350 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
-                <td>10 000 000 сум/мес.</td>
+                <td>5 000 000 сум/мес.</td>
               </tr>
             </tbody>
           </table>
@@ -862,32 +875,25 @@ export default function VDS({ language }) {
             </thead>
             <tbody>
               <tr>
-                <td>Unlim 50M</td>
-                <td>50 MB/s</td>
-                <td>1 Gbps</td>
-                <td>Cheksiz</td>
-                <td>Tekin</td>
-              </tr>
-              <tr>
                 <td>Unlim 100M</td>
                 <td>100 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
-                <td>2 000 000 so'm/oy.</td>
+                <td>Tekin</td>
               </tr>
               <tr>
                 <td>Unlim 200M</td>
                 <td>200 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
-                <td>5 000 000 so'm/oy.</td>
+                <td>2 500 000 so'm/oy.</td>
               </tr>
               <tr>
                 <td>Unlim 350M</td>
                 <td>350 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
-                <td>10 000 000 so'm/oy.</td>
+                <td>5 000 000 so'm/oy.</td>
               </tr>
             </tbody>
           </table>
@@ -907,32 +913,25 @@ export default function VDS({ language }) {
             </thead>
             <tbody>
               <tr>
-                <td>Unlim 50M</td>
-                <td>50 Mbps</td>
-                <td>1 Gbps</td>
-                <td>Unlimited</td>
-                <td>Free</td>
-              </tr>
-              <tr>
                 <td>Unlim 100M</td>
                 <td>100 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
-                <td>2 000 000 sum/mon.</td>
+                <td>Free</td>
               </tr>
               <tr>
                 <td>Unlim 200M</td>
                 <td>200 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
-                <td>5 000 000 sum/mon.</td>
+                <td>2 500 000 sum/mon.</td>
               </tr>
               <tr>
                 <td>Unlim 350M</td>
                 <td>350 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
-                <td>10 000 000 sum/mon.</td>
+                <td>5 000 000 sum/mon.</td>
               </tr>
             </tbody>
           </table>
@@ -950,8 +949,8 @@ export default function VDS({ language }) {
     {
       title: {
         ru: "Что такое VDS/VPS сервер?",
-        uz: "Что такое VDS/VPS сервер?",
-        en: "Что такое VDS/VPS сервер?",
+        uz: "VDS/VPS server nima?",
+        en: "What is a VDS/VPS server?",
       },
       description: {
         ru: (
@@ -969,24 +968,19 @@ export default function VDS({ language }) {
         uz: (
           <>
             <p>
-              Аббревиатуры VPS и VDS можно назвать синонимичными. В первом
-              случае речь идет о виртуальных частных серверах, во втором – о
-              выделенных. Назначение идентично – они используются для хранения
-              информационных массивов, размещения сайтов, независимо от
-              спецификации, от коммерческих, интернет-магазинов, до
-              информационных.
+            VPS va VDS qisqartmalarini sinonim deb atash mumkin. Birinchisida
+            Bu holda biz virtual xususiy serverlar haqida gapiramiz, ikkinchi holatda biz gaplashamiz
+            ajratilgan. Maqsad bir xil - ular saqlash uchun ishlatiladi
+            axborot massivlari, veb-saytlarni joylashtirish, qat'i nazar
+            texnik xususiyatlar, tijorat, onlayn-do'konlardan tortib
+            axborot.
             </p>
           </>
         ),
         en: (
           <>
             <p>
-              Аббревиатуры VPS и VDS можно назвать синонимичными. В первом
-              случае речь идет о виртуальных частных серверах, во втором – о
-              выделенных. Назначение идентично – они используются для хранения
-              информационных массивов, размещения сайтов, независимо от
-              спецификации, от коммерческих, интернет-магазинов, до
-              информационных.
+              The abbreviations VPS and VDS can be called synonymous. In the first case, we are talking about virtual private servers, in the second - about dedicated ones. The purpose is identical - they are used to store information arrays, host sites, regardless of the specification, from commercial, online stores, to informational ones.
             </p>
           </>
         ),
@@ -995,8 +989,8 @@ export default function VDS({ language }) {
     {
       title: {
         ru: "Какие преимущества аренды VPS/VDS серверов?",
-        uz: "Какие преимущества аренды VPS/VDS серверов?",
-        en: "Какие преимущества аренды VPS/VDS серверов?",
+        uz: "VPS/VDS serverlarini ijaraga olishning qanday afzalliklari bor?",
+        en: "What are the advantages of renting VPS/VDS servers?",
       },
       description: {
         ru: (
@@ -1016,28 +1010,26 @@ export default function VDS({ language }) {
         uz: (
           <>
             <p>
-              Аренда – оптимальный вариант с точки зрения оптимизации расходов.
-              Физический сервер, арендованный или собственный, требует больших
-              вложений в покупку оборудования, усилий, направленных на
-              поддержание его функциональности, эффективности. С виртуальным
-              аналогом все гораздо проще: покупать ничего не нужно, достаточно
-              оплачивать исключительно используемые мощности. Специалисты нашей
-              компании обеспечат комплексную поддержку, помогут в решении
-              проблем, настройке.
+            Xarajatlarni optimallashtirish nuqtai nazaridan ijaraga olish eng yaxshi variant hisoblanadi. 
+            Ijaraga olingan yoki egalik qilingan jismoniy server ko'p narsani talab qiladi
+            uskunalar sotib olishga investitsiyalar, sa'y-harakatlarga qaratilgan
+            uning funksionalligi va samaradorligini saqlab qolish. Virtual bilan
+            analog bilan hamma narsa ancha sodda: siz hech narsa sotib olishingiz shart emas, bu etarli
+            faqat foydalanilgan quvvat uchun to'lash. Bizning mutaxassislarimiz
+            kompaniyalar har tomonlama yordam beradi va hal qilishda yordam beradi
+            muammolar, sozlash.
             </p>
           </>
         ),
         en: (
           <>
             <p>
-              Аренда – оптимальный вариант с точки зрения оптимизации расходов.
-              Физический сервер, арендованный или собственный, требует больших
-              вложений в покупку оборудования, усилий, направленных на
-              поддержание его функциональности, эффективности. С виртуальным
-              аналогом все гораздо проще: покупать ничего не нужно, достаточно
-              оплачивать исключительно используемые мощности. Специалисты нашей
-              компании обеспечат комплексную поддержку, помогут в решении
-              проблем, настройке.
+            Renting is the best option in terms of cost optimization.
+            A physical server, rented or owned, requires large investments in the purchase of equipment, efforts aimed at
+            maintaining its functionality and efficiency. With a virtual
+            analogue, everything is much simpler: you do not need to buy anything, you only need to pay for the
+            capacity used. The specialists of our company will provide comprehensive support, help in solving
+            problems, setting up.
             </p>
           </>
         ),
@@ -1046,8 +1038,8 @@ export default function VDS({ language }) {
     {
       title: {
         ru: "Можно ли изменить тарифный план после аренды?",
-        uz: "Можно ли изменить тарифный план после аренды?",
-        en: "Можно ли изменить тарифный план после аренды?",
+        uz: "Ijaraga olgandan keyin tarif rejasini o'zgartirish mumkinmi?",
+        en: "Is it possible to change the tariff plan after renting?",
       },
       description: {
         ru: (
@@ -1063,20 +1055,17 @@ export default function VDS({ language }) {
         uz: (
           <>
             <p>
-              Да, это вполне допустимо. Можно изменить конфигурацию,
-              скорректировать вычислительную мощность, получить дополнительный
-              объем SSD для хранения данных. Единственное условие – переход на
-              более высокий уровень.
+              Ha, bu juda maqbuldir. Siz konfiguratsiyani o'zgartirishingiz mumkin,
+              hisoblash quvvatini sozlang, qo'shimcha oling
+              SSD xotira hajmi. Yagona shart - bu o'tish
+              yuqori daraja.
             </p>
           </>
         ),
         en: (
           <>
             <p>
-              Да, это вполне допустимо. Можно изменить конфигурацию,
-              скорректировать вычислительную мощность, получить дополнительный
-              объем SSD для хранения данных. Единственное условие – переход на
-              более высокий уровень.
+              Yes, it is quite possible. You can change the configuration, adjust the computing power, get additional SSD storage. The only condition is to move to a higher level.
             </p>
           </>
         ),
@@ -1085,8 +1074,8 @@ export default function VDS({ language }) {
     {
       title: {
         ru: "Какие операционные системы поддерживаются на VPS/VDS серверах?",
-        uz: "Какие операционные системы поддерживаются на VPS/VDS серверах?",
-        en: "Какие операционные системы поддерживаются на VPS/VDS серверах?",
+        uz: "VPS/VDS serverlarida qanday operatsion tizimlar qo'llab-quvvatlanadi?",
+        en: "What operating systems are supported on VPS/VDS servers?",
       },
       description: {
         ru: (
@@ -1103,22 +1092,18 @@ export default function VDS({ language }) {
         uz: (
           <>
             <p>
-              Мы предлагаем как бесплатные, так и платные решения. Разнообразие
-              первых велико: Debian, Alma, Ubuntu и другие. Основная платная ОС
-              – Microsoft Windows Server, для оценки ее преимуществ, определения
-              рациональности покупки можно воспользоваться пробным 180-дневным
-              периодом.
+              Biz bepul va pullik echimlarni taklif qilamiz. Turli xillik
+              Birinchilari ajoyib: Debian, Alma, Ubuntu va boshqalar. Asosiy pullik OS
+              – Microsoft Windows Server, uning afzalliklarini baholash uchun, aniqlash
+              Xaridni yanada oqilona qilish uchun siz 180 kunlik sinovdan foydalanishingiz mumkin
+              davr.
             </p>
           </>
         ),
         en: (
           <>
             <p>
-              Мы предлагаем как бесплатные, так и платные решения. Разнообразие
-              первых велико: Debian, Alma, Ubuntu и другие. Основная платная ОС
-              – Microsoft Windows Server, для оценки ее преимуществ, определения
-              рациональности покупки можно воспользоваться пробным 180-дневным
-              периодом.
+              We offer both free and paid solutions. The variety of the former is great: Debian, Alma, Ubuntu and others. The main paid OS is Microsoft Windows Server, to evaluate its advantages, to determine the rationality of the purchase, you can use the 180-day trial period.
             </p>
           </>
         ),
@@ -1127,8 +1112,8 @@ export default function VDS({ language }) {
     {
       title: {
         ru: "Можно ли установить на VPS и VDS свой образ?",
-        uz: "Можно ли установить на VPS и VDS свой образ?",
-        en: "Можно ли установить на VPS и VDS свой образ?",
+        uz: "VPS va VDS da o'z rasmingizni o'rnatish mumkinmi?",
+        en: "Is it possible to install your own image on VPS and VDS?",
       },
       description: {
         ru: (
@@ -1144,20 +1129,17 @@ export default function VDS({ language }) {
         uz: (
           <>
             <p>
-              Да. Для этого необходимо создать образ сервера и его отправка
-              нашим специалистам. Отправить сообщение с соответствующим запросом
-              можно, воспользовавшись встроенным чатом на сайте. Мы
-              самостоятельно выполним все необходимые конвертации для запуска.
+              Ha. Buning uchun siz server tasvirini yaratishingiz va uni yuborishingiz kerak
+              mutaxassislarimizga. Tegishli so'rov bilan xabar yuboring
+              Siz veb-saytdagi o'rnatilgan chatdan foydalanishingiz mumkin. Biz
+              Biz ishga tushirish uchun barcha kerakli konvertatsiyalarni o'zimiz amalga oshiramiz.
             </p>
           </>
         ),
         en: (
           <>
             <p>
-              Да. Для этого необходимо создать образ сервера и его отправка
-              нашим специалистам. Отправить сообщение с соответствующим запросом
-              можно, воспользовавшись встроенным чатом на сайте. Мы
-              самостоятельно выполним все необходимые конвертации для запуска.
+              Yes. To do this, you need to create a server image and send it to our specialists. You can send a message with the corresponding request using the built-in chat on the site. We will independently perform all the necessary conversions for launch.
             </p>
           </>
         ),
@@ -1166,8 +1148,8 @@ export default function VDS({ language }) {
     {
       title: {
         ru: "Для чего нужны виртуальные серверы?",
-        uz: "Для чего нужны виртуальные серверы?",
-        en: "Для чего нужны виртуальные серверы?",
+        uz: "Virtual serverlar nima uchun ishlatiladi?",
+        en: "What are virtual servers used for?",
       },
       description: {
         ru: (
@@ -1187,28 +1169,28 @@ export default function VDS({ language }) {
         uz: (
           <>
             <p>
-              Виртуальный сервер может использоваться для размещения различных
-              сайтов, интернет-магазинов, площадок с объявлениями, новостных,
-              информационных порталов, хранения данных. По мере увеличения
-              потребностей проекта, расширения сайта, можно увеличивать
-              мощность, переходить на более высокие тарифные планы. Ограничения:
-              игровые серверы и сайты с видео-контентом. Мы не приветствуем
-              использование наших VPS для рассылки спама, запрещаем – для
-              действий, нарушающих законодательство!
+              Virtual server turli xil serverlarni joylashtirish uchun ishlatilishi mumkin
+              veb-saytlar, onlayn do'konlar, e'lonlar saytlari, yangiliklar,
+              axborot portallari, ma'lumotlarni saqlash. Oshgani sayin
+              loyihaning ehtiyojlari, saytni kengaytirish, oshirish mumkin
+              quvvat, yuqori tarif rejalariga o'ting. Cheklovlar:
+              o'yin serverlari va video kontentga ega saytlar. Xush kelibsiz
+              Biz spam yuborish uchun VPS-dan foydalanishni taqiqlaymiz - uchun
+              qonunni buzadigan harakatlar!
             </p>
           </>
         ),
         en: (
           <>
             <p>
-              Виртуальный сервер может использоваться для размещения различных
-              сайтов, интернет-магазинов, площадок с объявлениями, новостных,
-              информационных порталов, хранения данных. По мере увеличения
-              потребностей проекта, расширения сайта, можно увеличивать
-              мощность, переходить на более высокие тарифные планы. Ограничения:
-              игровые серверы и сайты с видео-контентом. Мы не приветствуем
-              использование наших VPS для рассылки спама, запрещаем – для
-              действий, нарушающих законодательство!
+              A virtual server can be used to host various
+              sites, online stores, classifieds sites, news,
+              information portals, data storage. As the
+              needs of the project increase, the site expands, you can increase
+              power, switch to higher tariff plans. Restrictions:
+              game servers and sites with video content. We do not welcome
+              using our VPS for sending spam, we prohibit - for
+              actions that violate the law!
             </p>
           </>
         ),
@@ -1217,8 +1199,8 @@ export default function VDS({ language }) {
     {
       title: {
         ru: "Есть ли возможность тестирования сервера перед арендой?",
-        uz: "Есть ли возможность тестирования сервера перед арендой?",
-        en: "Есть ли возможность тестирования сервера перед арендой?",
+        uz: "Serverni ijaraga olishdan oldin sinab ko'rish mumkinmi?",
+        en: "Is it possible to test the server before renting?",
       },
       description: {
         ru: (
@@ -1228,12 +1210,12 @@ export default function VDS({ language }) {
         ),
         uz: (
           <>
-            <p>Аренда не предполагает бесплатного периода использования VPS.</p>
+            <p>Ijara VPS-dan foydalanishning bepul davrini o'z ichiga olmaydi.</p>
           </>
         ),
         en: (
           <>
-            <p>Аренда не предполагает бесплатного периода использования VPS.</p>
+            <p>The rental does not include a free period of VPS use.</p>
           </>
         ),
       },
@@ -1241,8 +1223,8 @@ export default function VDS({ language }) {
     {
       title: {
         ru: "Какие дополнительные услуги доступны?",
-        uz: "Какие дополнительные услуги доступны?",
-        en: "Какие дополнительные услуги доступны?",
+        uz: "Qanday qo'shimcha xizmatlar mavjud?",
+        en: "What additional services are available?",
       },
       description: {
         ru: (
@@ -1261,26 +1243,24 @@ export default function VDS({ language }) {
         uz: (
           <>
             <p>
-              При необходимости мы выполним резервирование виртуального сервера,
-              создадим копии, позволяющие восстановить все данные при
-              критическом сбое. Это исключает потерю ценной информации,
-              обеспечивает общую надежность сервера. Также доступны услуги
-              профессионального администрирования, переноса сайта с физического
-              сервера, обновления PHP, MySQL, защиты от DDoS-атак и многие
-              другие!
+              Agar kerak bo'lsa, biz virtual server zahirasini amalga oshiramiz,
+              qachon barcha ma'lumotlarni qayta tiklashga imkon beradigan nusxalarni yaratamiz
+              kritik muvaffaqiyatsizlik. Bu qimmatli ma'lumotlarning yo'qolishini yo'q qiladi,
+              serverning umumiy ishonchliligini ta'minlaydi. Xizmatlar ham mavjud
+              professional ma'muriyat, saytni jismoniydan o'tkazish
+              serverlar, PHP yangilanishlari, MySQL, DDoS himoyasi va boshqalar
+              boshqa!
             </p>
           </>
         ),
         en: (
           <>
             <p>
-              При необходимости мы выполним резервирование виртуального сервера,
-              создадим копии, позволяющие восстановить все данные при
-              критическом сбое. Это исключает потерю ценной информации,
-              обеспечивает общую надежность сервера. Также доступны услуги
-              профессионального администрирования, переноса сайта с физического
-              сервера, обновления PHP, MySQL, защиты от DDoS-атак и многие
-              другие!
+              If necessary, we will perform a virtual server backup,
+              create copies that allow you to restore all data in the event of a critical failure. This eliminates the loss of valuable information,
+              ensures the overall reliability of the server. Also available are professional administration services, website transfer from a physical
+              server, PHP, MySQL updates, protection from DDoS attacks and many
+              others!
             </p>
           </>
         ),
