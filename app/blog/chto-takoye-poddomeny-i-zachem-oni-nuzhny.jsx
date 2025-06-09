@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "Что такое поддомены и зачем они нужны",
-		uz: "Что такое поддомены и зачем они нужны",
-		en: "Что такое поддомены и зачем они нужны",
+		uz: "Subdomenlar nima va ular nima uchun kerak?",
+		en: "What are subdomains and why are they needed?",
 	},
 	title: {
 		ru: "Что такое поддомены и зачем они нужны: простыми словами",
-		uz: "Что такое поддомены и зачем они нужны: простыми словами",
-		en: "Что такое поддомены и зачем они нужны: простыми словами",
+		uz: "Subdomenlar nima va ular nima uchun kerak?: oddiy so'zlar bilan",
+		en: "What are subdomains and why are they needed?: in simple words",
 	},
 	desc: {
 		ru: "Поддомены — это часть доменного имени, отделенная точкой🚫 Узнайте, как используются поддомены для организации веб-сайтов и структурирования контента.",
-		uz: "Поддомены — это часть доменного имени, отделенная точкой🚫 Узнайте, как используются поддомены для организации веб-сайтов и структурирования контента.",
-		en: "Поддомены — это часть доменного имени, отделенная точкой🚫 Узнайте, как используются поддомены для организации веб-сайтов и структурирования контента.",
+		uz: "Subdomenlar domen nomining nuqta bilan ajratilgan qismidir🚫 Subdomainlardan veb-saytlarni tartibga solish va tarkibni tuzishda qanday foydalanilishini bilib oling.",
+		en: "Subdomains are the portion of a domain name separated by a period🚫 Learn how subdomains are used to organize websites and structure content.",
 	},
 	date: "10.10.2024",
 	updated: "10.10.2024",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/subdomain.png",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,15 +61,15 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Что такое поддомен?", uz: "Что такое поддомен?", en: "Что такое поддомен?", slug: "1" }},
-		{ title: {ru: "Разбор понятия", uz: "Разбор понятия", en: "Разбор понятия", slug: "2" }},
-		{ title: {ru: "Классификация", uz: "Классификация", en: "Классификация", slug: "3" }},
-		{ title: {ru: "Необходимость поддоменов", uz: "Необходимость поддоменов", en: "Необходимость поддоменов", slug: "4" }},
-		{ title: {ru: "Поисковое продвижение", uz: "Поисковое продвижение", en: "Поисковое продвижение", slug: "5" }},
-		{ title: {ru: "Обеспечение удобства навигации", uz: "Обеспечение удобства навигации", en: "Обеспечение удобства навигации", slug: "6" }},
-		{ title: {ru: "Ускорение работы сетевого ресурса", uz: "Ускорение работы сетевого ресурса", en: "Ускорение работы сетевого ресурса", slug: "7" }},
-		{ title: {ru: "Обеспечение безопасности основного сайта", uz: "Обеспечение безопасности основного сайта", en: "Обеспечение безопасности основного сайта", slug: "8" }},
-		{ title: {ru: "Как создать поддомен?", uz: "Как создать поддомен?", en: "Как создать поддомен?", slug: "9" }},
+		{ title: {ru: "Что такое поддомен?", uz: "Subdomen nima?", en: "What is a subdomain?", slug: "1" }},
+		{ title: {ru: "Разбор понятия", uz: "Kontseptsiyani tahlil qilish", en: "Description", slug: "2" }},
+		{ title: {ru: "Классификация", uz: "Tasniflash", en: "Classification", slug: "3" }},
+		{ title: {ru: "Необходимость поддоменов", uz: "Subdomenlarga bo'lgan ehtiyoj", en: "Need for subdomains", slug: "4" }},
+		{ title: {ru: "Поисковое продвижение", uz: "Qidiruv tizimini reklama qilish", en: "Search engine promotion", slug: "5" }},
+		{ title: {ru: "Обеспечение удобства навигации", uz: "Navigatsiya qulayligini ta'minlash", en: "Ensuring ease of navigation", slug: "6" }},
+		{ title: {ru: "Ускорение работы сетевого ресурса", uz: "Tarmoq resursini tezlashtirish", en: "Speeding up the network resource", slug: "7" }},
+		{ title: {ru: "Обеспечение безопасности основного сайта", uz: "Asosiy sayt xavfsizligi", en: "Ensuring the security of the main site", slug: "8" }},
+		{ title: {ru: "Как создать поддомен?", uz: "Subdomenni qanday yaratish mumkin?", en: "How to create a subdomain?", slug: "9" }},
 	],
 	content: {
 		ru: (
@@ -163,71 +163,155 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Subdomen nima? 
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Subdomain - bu yuqori darajadagi domenning bir qismi bo'lgan domen. Ixtisoslashgan adabiyotlarda "subdomain" ta'rifi ham mavjud; bu atamalar sinonimdir. Ular qaysi sinflar bilan ifodalanadi? Ular nima uchun ishlatiladi? 
 				</p>
+				<a name="2"></a>
+				<h3>Tushuncha tahlili</h3>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Internet ko'plab saytlar, tarmoq resurslari tomonidan shakllantiriladi va ular tarkibiy tuzilishni, navigatsiya qulayligini, boshqaruvni va sozlashni ta'minlovchi qismlar, segmentlardir. Masalan, asosiy sayt "example.net" deb ataladi. U tashkilotning ish profilini tavsiflovchi eng muhim ma'lumotlarni o'z ichiga oladi. Ushbu saytda quyidagi subdomenlarni yaratish mumkin:
 				</p>
+				<ul>
+				<li>Forum.example.net – forum, foydalanuvchilar bilan muloqot, kompaniyaga oid yoki uchinchi tomon mavzuli masalalarni muhokama qilish uchun boʻlim.</li>
+				<li>Blog.example.net – mualliflari ham sayt ma'murlari, ham ro'yxatdan o'tgan foydalanuvchilar bo'lishi mumkin bo'lgan qiziqarli mavzuli maqolalar, sharhlarni nashr qilish bo'limi.</li>
+				<li>Region.example.net – yirik tashkilotning hududiy vakolatxonasi uchun bo‘lim.</li>
+				</ul>
+
+				<a name="3"></a>
+				<h3>Tasniflash</h3>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				Subdomenlar uchun asosiy tasniflash xususiyati maqsaddir. Mutaxassislar quyidagi asosiy turlarni aniqlaydilar:
 				</p>
+				<ul>
+				<li>Xizmat. Ularning vazifasi asosiy saytning funktsiyalarini ajratishdir. Masalan, yuqorida aytib o'tilgan forum. Shuningdek, alohida subdomenga onlayn-do'kon, xabarlar paneli, blog, qo'llab-quvvatlash xizmati, ma'murlar bilan aloqa shaklini ajratish mumkin. Xizmat subdomenlari guruhi, shuningdek, asosiy tashkilotning muayyan voqea, xizmat, mahsulot yoki tarkibiy boʻlinmasiga bagʻishlangan ochilish sahifalarini ham oʻz ichiga oladi.</li>
+				<li>Geografik. Agar biz turli shaharlarda, viloyatlarda va mamlakatlarda joylashgan keng ko'lamli tashkilot haqida gapiradigan bo'lsak, ular kerak. Bo'lim qidiruvni soddalashtiradi va faqat ma'lum bir geografik hududga tegishli bo'lgan takliflar, mahsulotlar va kontaktlarning aniqroq tuzilishiga imkon beradi. Muayyan mamlakatga xos boʻlgan milliy subdomen yaxshi mahalliylashtirishga ega boʻlishi kerak, shunda tashrif buyuruvchilar tarjimada qiyinchiliklarga duch kelmasligi kerak.</li>
+				<li>Mobil. Ular so'nggi paytlarda unchalik tez-tez ishlatilmayapti, bu moslashuvchan dizaynning rivojlanishi bilan izohlanadi, biroq ba'zi saytlar hali ham alohida mobil va ish stoli versiyalari bilan taqdim etiladi.</li>
+				<li>Sinov. Ular asosiy saytni yangilash, funksionalligi yoki dizaynini o'zgartirishda ishlatiladi. Subdomen bazani tashrif buyurish, buyurtma berish uchun ochiq qoldiradi, shu bilan birga ishlab chiquvchilar xotirjam ishlashlari mumkin, yangilangan dizayn tarmoq resursiga qanchalik mos kelishini, navigatsiya bilan bog‘liq muammolar bor-yo‘qligini, muayyan funksiyalar, yorliqlardan foydalanishni tekshiring.</li>
+				</ul>
+				<a name="4"></a>
+				<h3>Subdomainlarga bo'lgan ehtiyoj</h3>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				Subdomenlar asosan turli xil tovarlar va xizmatlarni taklif qiluvchi, mintaqaviy ofislarga ega bo'lgan va keng maqsadli auditoriya bilan o'zaro aloqada bo'lgan yirik tashkilotlar tomonidan qo'llaniladi. Mumkin bo'lgan funktsiyalarning har biri alohida ko'rib chiqilishi kerak. 
 				</p>
+				<a name="5"></a>
+				<h3>Qidiruv tizimini reklama qilish</h3>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
+				Yandex yoki Google uchun subdomain alohida resurs bo'lib, asosiy sayt uchun SEO samaradorligini oshiradi. Afzalliklari quyidagilardan iborat:
 				</p>
+				<ul>
+				<li>Qidiruv natijalarida yuqori o'rinlarga erishish, hatto raqobatbardosh bo'shliqlarda ham. Yordamchi domenlardan foydalanish yuqori chastotali kalit iboralarni bir tekis taqsimlash, qidiruv robotlari uchun asosiy domenning koʻrinishini oshirish, jalb qilingan trafik hajmini oshirish, cheklovlarni chetlab oʻtish va bloklanish xavfini bartaraf etish imkonini beradi.</li>
+				<li>Mintaqaviy reklama. Kompaniya vakili bo'lgan har bir shahar va mintaqa uchun subdomen saytning geografik joylashuvni hisobga olgan qidiruv robotlari bilan ishonchli o'zaro ta'sirini ta'minlaydi.</li>
+				</ul>
+				<a name="6"></a>
+				<h3>navigatsiya qulayligini ta'minlash</h3>
 				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				Saytning har bir bo'limi, mahsulot toifasi uchun siz alohida subdomen yaratishingiz mumkin, bu foydalanuvchiga kerakli element yoki ma'lumotni topishni osonlashtiradi. Masalan, avtomobil reklamalari bo'lgan veb-saytda siz mototsikllar, maxsus jihozlar va yengil avtomobillarni o'z ichiga olgan segmentlarni ajratib ko'rsatishingiz mumkin. 
+				</p>
+				<a name="7"></a>
+				<h3>Tarmoq resursini tezlashtirish</h3>
+				<p>
+				Asosiy sayt katta fayllar, masalan, videolar yoki yuqori aniqlikdagi fotosuratlar bilan haddan tashqari yuklangan bo'lsa, ta'sir eng aniq bo'ladi. Subdomenlardan foydalanib, siz ma'lumotni bir tekisda tarqatishingiz va sahifalar tezroq yuklanishi mumkin. Bu nafaqat tashrif buyuruvchilar, balki qidiruv tizimlari tomonidan ham qadrlanadi; qidiruv natijalaridagi pozitsiyalar yaxshilanadi, trafik va konversiya ortadi. 
+				</p>
+				<a name="8"></a>
+				<h3>Asosiy saytni himoya qilish</h3>
+				<p>
+				Agar siz tarmoq resursini modernizatsiya qilishni, uning dizaynini o'zgartirishni yoki yangi funktsiyalarni qo'shishni rejalashtirmoqchi bo'lsangiz, bu ayniqsa dolzarbdir. Subdomain barcha testlar va tekshiruvlarni o'tkazish uchun eng yaxshi variantdir. Hech kim xatolardan himoyalanmaydi, lekin ular asosiy portalning funksionalligiga ta'sir qilmaydi, trafikni, konversiyani yoki qidiruv natijalari ro'yxatidagi pozitsiyalarni yomonlashtirmaydi. 
+				</p>
+				<a name="9"></a>
+				<h3>Qanday qilib subdomen yaratiladi?</h3>
+				<p>
+				Subdomenlarning afzalliklarini 100% amalga oshirish, ularning funksionalligi, asosiy portalni ilgari surish samaradorligini ta'minlash uchun yaratishga mas'uliyat bilan yondashish zarur. Eng muhim talab - o'ziga xoslik, o'z dizaynining mavjudligi, mintaqaviy ma'lumotnomasi va semantik yadrosi. O'ziga xoslikni ta'minlash uchun siz bir nechta printsiplarga amal qilishingiz kerak:
+				</p>
+				<ul>
+				<li>Har bir subdomen uchun noyob kontent yaratish;</li>
+				<li>To'g'ri mintaqaviy bog'lanish;</li>
+				<li>Asosiy sayt bilan oʻzaro bogʻlanishni yaratish;</li>
+				<li>Google va Yandex tizimlarida veb-master huquqlarini tasdiqlash;</li>
+				<li>Targ'ib qilishda o'z semantik yadroingiz va noyob kalit so'zlaringizdan foydalaning.</li>
+				</ul>
+				<p>
+				Subdomain texnik tomondan yaxshi o'ylangan va xavfsiz bo'lishi kerak. Uni saqlab qolish uchun siz qo'shimcha mutaxassislar va ma'murlarni jalb qilishingiz, ma'lumotlarni dastlabki shifrlash, SSL sertifikatlari bilan uzatishni ta'minlaydigan xavfsiz HTTPS protokollaridan foydalanishingiz va jiddiy muammolarga olib kelishi mumkin bo'lgan zaifliklar va kichik nosozliklarni muntazam ravishda tekshirishingiz kerak. 
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				What is a subdomain?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				A subdomain is a domain that is part of a higher-level domain. In specialized literature, the definition of “subdomain” is also found; these terms are synonymous. What classes are they represented by? What are they used for?
 				</p>
+				<a name="2"></a>
+				<h3>Analysis of the concept</h3>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				The Internet is formed by many sites, network resources, and they are parts, segments that provide content structuring, ease of navigation, management and settings. For example, the main site is called “example.net”. It contains the most significant information characterizing the profile of the organization. The following subdomains can be created on this site:
 				</p>
+				<ul>
+				<li>Forum.example.net – a section for a forum, user communication, discussion of issues related to the company, or third-party, thematic ones.</li>
+				<li>Blog.example.net – a section for publishing interesting thematic articles, reviews, the authors of which can be both site administrators and registered users.</li>
+				<li>Region.example.net – a section for a regional representative office of a large organization.</li>
+				</ul>
+
+				<a name="3"></a>
+				<h3>Classification</h3>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				The main classification feature for subdomains is their purpose. Experts distinguish the following main types:
 				</p>
+				<ul>
+				<li>Service. Their purpose is to separate the functions of the main site. For example, the forum mentioned above. It is also permissible to allocate an online store, message board, blog, form for communication with the support service, administrators into a separate subdomain. The group of service subdomains also includes landing pages dedicated to a specific event, service, product, or structural division of the parent organization.</li>
+				<li>Geographical. They are necessary if we are talking about a large-scale organization represented in different cities, regions, and countries. Separation simplifies the search, allows for a clearer structuring of offers, products, and contacts that are relevant exclusively in a certain geographic area. A national subdomain related to a specific country should have good localization so that visitors do not encounter translation difficulties.</li>
+				<li>Mobile. They have not been used very often lately, which is explained by the development of adaptive design, however, some sites are still presented in separate mobile and desktop versions.</li>
+				<li>Test. They are used when upgrading, changing the functionality or design of the main site. The subdomain leaves the base accessible for visiting, placing orders, while developers can work calmly, check how well the updated design suits the network resource, whether there are any problems with navigation, using certain functions, tabs.</li>
+				</ul>
+				<a name="4"></a>
+				<h3>The need for subdomains</h3>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				Subdomains are mainly used by large organizations offering various goods and services, having regional offices interacting with a wide target audience. Each of the possible functions should be considered separately.
 				</p>
+				<a name="5"></a>
+				<h3>Search engine promotion</h3>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
+				For Yandex or Google, a subdomain is a separate resource, which increases the effectiveness of SEO for the main site. The advantages are as follows:
 				</p>
+				<ul>
+				<li>Achieving top positions in search results, even if we are talking about niches with high competition. Using auxiliary domains allows for a more even distribution of high-frequency key phrases, increases the visibility of the main domain for search robots, increases the volume of attracted traffic, bypasses restrictions, and eliminates the risk of being blocked.</li>
+				<li>Regional promotion. A subdomain for each city or region where the company is represented ensures confident interaction of the site with search robots that take into account geographic location.</li>
+				</ul>
+				<a name="6"></a>
+				<h3>Ensuring ease of navigation</h3>
 				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				For each section of the site, product category, you can create a separate subdomain, which will make it easier for the user to find the desired position, information. For example, on a site with car ads, you can highlight segments where motorcycles, special equipment, and cars are collected.
+				</p>
+				<a name="7"></a>
+				<h3>Acceleration of the network resource</h3>
+				<p>
+				The effect is most pronounced if the main site is overloaded with large files, such as videos or high-resolution photos. With the help of subdomains, you can distribute information more evenly, pages load much faster. This will be appreciated not only by visitors, but also by search engines, positions in the search results will improve, traffic and conversion will increase.
+				</p>
+				<a name="8"></a>
+				<h3>Maintaining the security of the main site</h3>
+				<p>
+				This is especially important if you plan to upgrade the network resource, change its design, add new functions. A subdomain is the best option for all tests and checks. No one is immune from errors, but they will not affect the functionality of the main portal, will not worsen traffic, conversion, positions in search results lists.
+				</p>
+				<a name="9"></a>
+				<h3>How to create a subdomain?</h3>
+				<p>
+				In order to 100% realize the benefits of subdomains, ensure their functionality, efficiency in promoting the main portal, it is necessary to take a responsible approach to creation. The most important requirement is uniqueness, the presence of its own design, binding by region, semantic core. To ensure uniqueness, you need to follow several principles:
+				</p>
+				<ul>
+				<li>Creating unique content for each subdomain;</li>
+				<li>Correct regional binding;</li>
+				<li>Creating cross-links with the main site;</li>
+				<li>Confirming webmaster rights in Google and Yandex systems;</li>
+				<li>Using your own semantic core and unique key queries when promoting.</li>
+				</ul>
+				<p>
+				The subdomain must be well thought out from the technical side and be secure. To service it, you should involve additional specialists, administrators, use secure HTTPS protocols that ensure data transfer with preliminary encryption, SSL certificates, regularly conduct checks for vulnerabilities and minor failures that can lead to serious problems.
 				</p>
 			</>
 		),

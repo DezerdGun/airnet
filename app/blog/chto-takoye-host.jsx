@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "Что такое host?",
-		uz: "Что такое host?",
-		en: "Что такое host?",
+		uz: "Xost nima?",
+		en: "What is host?",
 	},
 	title: {
 		ru: "Что такое host и как он работает?",
-		uz: "Что такое host и как он работает?",
-		en: "Что такое host и как он работает?",
+		uz: "Xost nima va u qanday ishlaydi?",
+		en: "What is host and how does it work?",
 	},
 	desc: {
 		ru: "Host (хост) — это сервер или компьютер, предоставляющий доступ к ресурсам в сети🌐 Узнайте, как работают хосты, их назначение и применение в интернете.",
-		uz: "Host (хост) — это сервер или компьютер, предоставляющий доступ к ресурсам в сети🌐 Узнайте, как работают хосты, их назначение и применение в интернете.",
-		en: "Host (хост) — это сервер или компьютер, предоставляющий доступ к ресурсам в сети🌐 Узнайте, как работают хосты, их назначение и применение в интернете.",
+		uz: "Xost – tarmoqdagi resurslarga kirishni taʼminlovchi server yoki kompyuter🌐 Xostlar qanday ishlashi, ularning maqsadi va Internetda qoʻllanilishi haqida bilib oling.",
+		en: "Host is a server or computer that provides access to resources on the network🌐 Find out how hosts work, their purpose and application on the Internet.",
 	},
 	date: "11.10.2024",
 	updated: "11.10.2024",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/host.jpg",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,10 +61,10 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Host: что это такое?", uz: "Host: что это такое?", en: "Host: что это такое?", slug: "1" }},
-		{ title: {ru: "Хост и интернет-маркетинг", uz: "Хост и интернет-маркетинг", en: "Хост и интернет-маркетинг", slug: "2" }},
-		{ title: {ru: "Зачем считать хосты?", uz: "Зачем считать хосты?", en: "Зачем считать хосты?", slug: "3" }},
-		{ title: {ru: "Подведение итогов", uz: "Подведение итогов", en: "Подведение итогов", slug: "4" }},
+		{ title: {ru: "Host: что это такое?", uz: "Xost: bu nima?", en: "Host: what is this?", slug: "1" }},
+		{ title: {ru: "Хост и интернет-маркетинг", uz: "Xost va Internet-marketing", en: "Host and Internet Marketing", slug: "2" }},
+		{ title: {ru: "Зачем считать хосты?", uz: "Nima uchun xostlarni sanash kerak?", en: "Why count hosts?", slug: "3" }},
+		{ title: {ru: "Подведение итогов", uz: "Xulosa qilish", en: "Summing up", slug: "4" }},
 	],
 	content: {
 		ru: (
@@ -130,71 +130,99 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Xost: bu nima? 
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Umumiy ma'noda xost - bu o'zining IP-manziliga ega bo'lgan, mahalliy tarmoq yoki Internetga ulangan shaxsiy kompyuter, noutbuk yoki boshqa qurilma bo'lib, u orqali u boshqa tarmoq uskunalari tomonidan aniqlanadi, ma'lumotlar va buyruqlar almashinadi. 
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Ushbu atamaning ikkinchi ma'nosi veb-saytni joylashtirish uchun mo'ljallangan platformadir. Har bir tarmoq resursi o'z xostiga ega. Biroq, bu vaziyatda "xosting" atamasidan foydalanish to'g'riroq, u o'xshaydi, lekin ko'rib chiqilayotgan atama bilan bir xil emas. Quyidagi talqinlarni maxsus adabiyotlarda ham topish mumkin:
+				</p>
+				<ul>
+				<li>Virtualizatsiya tizimlarida – virtual mashinalar ishlaydigan server;</li>
+				<li>DNS-da – IP-manzilni aniqlash imkonini beruvchi domen nomi;</li>
+				<li>Dasturlashda skriptlar sifatida saqlangan foydalanuvchi tomonidan belgilangan yoki avtomatik ravishda muayyan buyruqlarni bajaradigan qurilma yoki yordamchi dastur;</li>
+				<li>Ma'lumotlar bazalarida – axborot massivlari joylashgan serverlar.</li>
+				</ul>
+				<a name="2"></a>
+				<h3>Xost va Internet-marketing</h3>
+				<p>
+				"Xost" atamasi sotuvchilar va tarmoq tahlilchilari tomonidan eng faol qo'llaniladi. Ular uchun u muvaffaqiyatli identifikatsiya qilish uchun foydalanuvchiga tayinlangan IP-manzilni bildiradi. Statistik xizmatlar Internetga kirishni ta'minlovchi tashkilot tomonidan qo'llab-quvvatlanadigan serverdan kelgan noyob so'rovlar soni asosida saytning mashhurligi va trafigiga oid ma'lumotlarni taqdim etishi mumkin. Manzil faqat birinchi tashrif paytida qayd etiladi; takroriy tashriflar hisobga olinmaydi, bu statistik ma'lumotlarning to'g'riligini ta'minlaydi va faqat noyob tashrif buyuruvchilar haqida gapirishga imkon beradi. 
+				</p>
+				<a name="3"></a>
+				<h3>Nega xostlarni sanash kerak?</h3>
+				<p>
+				Zaruriyat quyidagilar bilan izohlanadi:
+				</p>
+				<ul>
+				<li>Davomat tahlili. Har bir xost noyob tashrif buyuruvchidir, shuning uchun ularning soni qancha ko'p bo'lsa, sayt shunchalik qiziqroq bo'lsa, joylashtirilgan ma'lumotlar o'quvchilarga shunchalik jozibali ko'rinadi.</li>
+				<li>Reklama kampaniyasi samaradorligini tahlil qilish. Agar kontekstli reklama, ijtimoiy tarmoqlar, ommaviy axborot vositalari orqali targ'ibotni yo'lga qo'ygandan so'ng, noyob tashrif buyuruvchilar soni ko'paygan bo'lsa, bu usul samarali ekanligini anglatadi, siz unga investitsiya qilishni davom ettirishingiz, byudjetni oshirishingiz mumkin. Agar ta'sir bo'lmasa, strategiyani o'zgartirish oqilonaroq.</li>
+				<li>Xulq-atvor ko'rsatkichlarini o'rganish. Tadqiqot nafaqat tashrif buyuruvchilar sonini, balki ularning saytdagi xatti-harakatlarini ham ko'rsatadi: ular ma'lum sahifalarni o'qishga qancha vaqt sarflashlari, qanday navigatsiya usullariga rioya qilishlari, kerakli yorliqga o'tish uchun qancha marta bosishlari.</li>
+				</ul>
+				<p>
+				Yuqoridagi barcha ma'lumotlar Internet-marketologlar uchun juda muhim bo'lib, eng arzon va samarali reklama kampaniyalarini o'tkazish, maqsadli bo'lmagan trafik manbalarini qayd etish va xarajatlarni optimallashtirish uchun ularni o'chirishga yordam beradi. 
 				</p>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				Eng aniq hisob-kitoblar Google Analytics yoki Yandex-dan shunga o'xshash ixtisoslashtirilgan analitik resurslar yordamida amalga oshirilishi mumkin. 
+				</p>
+				<a name="4"></a>
+				<h3>Xulosa qilish</h3>
+				<p>
+				Xost - bu mahalliy yoki global tarmoqqa ulangan, shaxsiy identifikatori, IP manzili bo'lgan qurilma. Siz uchinchi tomon xizmatlari, ko'rsatkichlar va tahlil vositalaridan foydalangan holda ushbu qurilmalar sonini aniqlashingiz mumkin. 
 				</p>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
-				</p>
-				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
-				</p>
-				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				Xost va xostingni, ya'ni tarmoq resursi joylashgan joyni farqlash muhimdir. Ikkinchi kontseptsiya ham Internet-marketingda juda muhim, chunki saytning barqarorligi, uning yuklanish tezligi, tashrif buyuruvchi uchun qulayligi, xavfsizlik muammolarining yo'qligi va boshqa muhim omillar hostingga bog'liq. 
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Host: what is it?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				In general, a host is a PC, laptop or other device connected to a local network or the Internet, with its own IP address, due to which it is detected by other network equipment, and data and commands are exchanged.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				The second meaning of the term is a platform intended for hosting a website. Each network resource has its own host. However, in this situation it is more correct to use the term “hosting”, it is close in sound, but is not identical to the term in question. The following interpretations can also be found in specialized literature:
+				</p>
+				<ul>
+				<li>In virtualization systems – a server where virtual machines operate;</li>
+				<li>In DNS – a domain name that allows you to determine the IP address;</li>
+				<li>In programming – equipment or a utility that executes certain commands, user or automatic, saved as scripts;</li>
+				<li>In databases – servers where information arrays are located.</li>
+				</ul>
+				<a name="2"></a>
+				<h3>Host and Internet Marketing</h3>
+				<p>
+				The concept of “host” is most actively used by marketers and network analysts. For them, it means the IP address assigned to the user for successful identification. Statistical services can provide data on the popularity and traffic of a site based on the number of unique requests from a server serviced by an organization providing Internet access. The address is recorded only during the first visit, repeat visits are not taken into account, which ensures the accuracy of statistics and allows us to talk exclusively about unique visitors.
+				</p>
+				<a name="3"></a>
+				<h3>Why count hosts?</h3>
+				<p>
+				The need is explained by the following:
+				</p>
+				<ul>
+				<li>Analysis of traffic. Each host is a unique visitor, accordingly, the higher the number, the more interesting the site is, the more attractive the information posted looks to readers.</li>
+				<li>Analysis of the effectiveness of the advertising campaign. If after the launch of contextual advertising, promotion through social networks, mass media, the number of unique visitors has increased, then the method is effective, you can continue to invest in it, increase the budget. If there is no effect, it is more rational to change the strategy.</li>
+				<li>Study of behavioral metrics. The study will show not only the number of visitors, but also their behavior on the site: how much time they spend reading certain pages, what navigation patterns they follow, how many clicks they make to go to the desired tab.</li>
+				</ul>
+				<p>
+				All of the data provided is extremely important for Internet marketers, it helps in conducting the least expensive and most effective advertising campaigns, recording sources of non-targeted traffic and disabling them to optimize costs.
 				</p>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				The most accurate calculations can be made using specialized analytical resources, such as Google Analytics or similar ones from Yandex.
+				</p>
+				<a name="4"></a>
+				<h3>Summing up</h3>
+				<p>
+				A host is a device connected to a network, local or global, with a personal identifier, IP address. You can determine the number of these devices using third-party services, metrics and analytics tools.
 				</p>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
-				</p>
-				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
-				</p>
-				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				It is important to differentiate between a host and a hosting, that is, the place where the network resource is located. The second concept is also extremely important in Internet marketing, because the stability of the site, its loading speed, convenience for the visitor, the absence of security problems and other significant factors depend on the hosting.
 				</p>
 			</>
 		),

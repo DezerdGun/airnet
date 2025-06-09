@@ -188,6 +188,22 @@ export default function CustomSwiper({ language }) {
 				<SwiperSlide>
 					<div
 						className={st.swiper__block}
+						style={{ background: `url('/banner4.jpg') no-repeat` }}
+					>
+						<Container>
+							<div className={st.swiper__block__item}>
+								{/* <h2>{langData.slideTitle2[language]}</h2> */}
+								{/* <h4>{langData.slideText21[language]}</h4> */}
+								{/* <br /> */}
+								{/* <h4>{langData.slideText22[language]}</h4> */}
+								<div className={st.swiper__block__item__bg}></div>
+							</div>
+						</Container>
+					</div>
+				</SwiperSlide>
+				<SwiperSlide>
+					<div
+						className={st.swiper__block}
 						style={{ background: `url('/happy6.webp') no-repeat` }}
 					>
 						<Container>

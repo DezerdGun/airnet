@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "Ошибка 403 Forbidden: что это значит",
-		uz: "Ошибка 403 Forbidden: что это значит",
-		en: "Ошибка 403 Forbidden: что это значит",
+		uz: "Xato 403 Taqiqlangan: bu nimani anglatadi",
+		en: "Error 403 Forbidden: What does it mean",
 	},
 	title: {
 		ru: "Ошибка 403 Forbidden — что это значит и как исправить",
-		uz: "Ошибка 403 Forbidden — что это значит и как исправить",
-		en: "Ошибка 403 Forbidden — что это значит и как исправить",
+		uz: "Xato 403 Taqiqlangan - bu nimani anglatadi va uni qanday tuzatish kerak",
+		en: "Error 403 Forbidden - What Does It Mean and How to Fix It",
 	},
 	desc: {
 		ru: "Ошибка 403 Forbidden — запрет доступа к веб-странице или ресурсу 🚫 Узнайте, что означает ошибка 403, почему она возникает и как решить эту проблему на стороне пользователя и администратора.",
-		uz: "Ошибка 403 Forbidden — запрет доступа к веб-странице или ресурсу 🚫 Узнайте, что означает ошибка 403, почему она возникает и как решить эту проблему на стороне пользователя и администратора.",
-		en: "Ошибка 403 Forbidden — запрет доступа к веб-странице или ресурсу 🚫 Узнайте, что означает ошибка 403, почему она возникает и как решить эту проблему на стороне пользователя и администратора.",
+		uz: "403-xato Taqiqlangan - veb-sahifa yoki manbaga kirish taqiqlangan 🚫 403-xato nimani anglatishini, nima uchun paydo bo'lishini va ushbu muammoni foydalanuvchi va administrator tomonidan qanday hal qilishni bilib oling.",
+		en: "Error 403 Forbidden - access to a web page or resource is prohibited 🚫 Find out what error 403 means, why it occurs and how to solve this problem on the user and administrator side.",
 	},
 	date: "10.10.2024",
 	updated: "10.10.2024",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/403.webp",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,16 +61,16 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Ошибка 403: понятие, особенности, методы исправления", uz: "Ошибка 403: понятие, особенности, методы исправления", en: "Ошибка 403: понятие, особенности, методы исправления", slug: "1" }},
-		{ title: {ru: "Общее понятие", uz: "Общее понятие", en: "Общее понятие", slug: "2" }},
-		{ title: {ru: "Вероятные причины", uz: "Вероятные причины", en: "Вероятные причины", slug: "3" }},
-		{ title: {ru: "Сбои на стороне пользователя", uz: "Сбои на стороне пользователя", en: "Сбои на стороне пользователя", slug: "4" }},
-		{ title: {ru: "Сбои на стороне администратора сайта", uz: "Сбои на стороне администратора сайта", en: "Сбои на стороне администратора сайта", slug: "5" }},
-		{ title: {ru: "Сбои на стороне провайдера", uz: "Сбои на стороне провайдера", en: "Сбои на стороне провайдера", slug: "6" }},
-		{ title: {ru: "Как устранить сбой?", uz: "Как устранить сбой?", en: "Как устранить сбой?", slug: "7" }},
-		{ title: {ru: "Инструкции для пользователя", uz: "Инструкции для пользователя", en: "Инструкции для пользователя", slug: "8" }},
-		{ title: {ru: "Инструкции для администратора", uz: "Инструкции для администратора", en: "Инструкции для администратора", slug: "9" }},
-		{ title: {ru: "Меры профилактики", uz: "Меры профилактики", en: "Меры профилактики", slug: "10" }},
+		{ title: {ru: "Ошибка 403: понятие, особенности, методы исправления", uz: "Xato 403: tushunchasi, xususiyatlari, tuzatish usullari", en: "Error 403: concept, features, methods of correction", slug: "1" }},
+		{ title: {ru: "Общее понятие", uz: "Umumiy tushuncha", en: "General concept", slug: "2" }},
+		{ title: {ru: "Вероятные причины", uz: "Mumkin sabablar", en: "Probable causes", slug: "3" }},
+		{ title: {ru: "Сбои на стороне пользователя", uz: "Foydalanuvchi tomonidagi nosozliklar", en: "Failures on the user side", slug: "4" }},
+		{ title: {ru: "Сбои на стороне администратора сайта", uz: "Sayt administratori tomonidagi nosozliklar", en: "Failures on the site administrator side", slug: "5" }},
+		{ title: {ru: "Сбои на стороне провайдера", uz: "Provayder tomonidagi muvaffaqiyatsizliklar", en: "Failures on the provider side", slug: "6" }},
+		{ title: {ru: "Как устранить сбой?", uz: "Avariyani qanday tuzatish mumkin?", en: "How to fix the failure?", slug: "7" }},
+		{ title: {ru: "Инструкции для пользователя", uz: "Foydalanuvchi ko'rsatmalari", en: "Instructions for the user", slug: "8" }},
+		{ title: {ru: "Инструкции для администратора", uz: "Administrator uchun ko'rsatmalar", en: "Instructions for the administrator", slug: "9" }},
+		{ title: {ru: "Меры профилактики", uz: "Profilaktik choralar", en: "Preventive measures", slug: "10" }},
 	],
 	content: {
 		ru: (
@@ -203,71 +203,233 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Xato 403: tushunchasi, xususiyatlari, tuzatish usullari
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Internet orqali sayohat qilish nafaqat foydali ma'lumotlarni o'rganish, qiziqarli maqolalarni o'qish va qiziqarli videolarni tomosha qilishdir. Ko'pincha foydalanuvchi muammolarga duch kelishi kerak. Ulardan biri 403 taqiqlangan server xatosi. Nima uchun paydo bo'ladi? Uning kod belgisi ortida nima yashiringan? Buni tuzatish uchun qanday choralar ko'rish kerak? 
+				</p>
+				<a name="2"></a>
+				<h3>Umumiy tushuncha</h3>
+				<p>
+				403 taqiqlangan kod foydalanuvchining ma'lum bir tarmoq resursiga kirish huquqiga ega emasligini ko'rsatadigan server javobidir. Bunday javob uchun juda ko'p sabablar bor va yo'q qilish faqat aniq vaziyatni tahlil qilgandan keyin mumkin; universal ko'rsatmalar mavjud emas. 
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Shuni ta'kidlash kerakki, ko'rib chiqilayotgan xato, umuman olganda, unchalik jiddiy emas. Ba'zan u vaqtinchalik va hech qanday qo'shimcha manipulyatsiyani talab qilmasdan, o'z-o'zidan yo'qoladi; boshqa hollarda oddiy harakatlar va sozlamalarni o'zgartirish talab qilinadi. 
+				</p>
+				<a name="3"></a>
+				<h3>Ehtimoliy sabablar</h3>
+				<p>
+				Ideal holda, 403 taqiqlangan server xatosi faqat tegishli huquqlarga ega bo'lmagan foydalanuvchi tarmoq resursiga kirishga harakat qilsa paydo bo'lishi kerak. Haqiqat, afsuski, idealdan uzoqdir va shuning uchun muvaffaqiyatsizlikning mumkin bo'lgan sabablari ro'yxati ancha kengroq va quyidagi toifalarni o'z ichiga oladi:
+				</p>
+				<ul>
+				<li>Foydalanuvchi qurilmasining noto'g'ri ishlashi;</li>
+				<li>Tarmoq resurslari komponentlarining noto'g'ri konfiguratsiyasi;</li>
+				<li>Tarmoqqa kirish xizmatlarini taqdim etuvchi tashkilot tomonidan o'rnatilgan cheklovlar.</li>
+				</ul>
+				<p>
+				Ro'yxatdagi toifalarning har biri batafsilroq o'rganishni talab qiladi. 
+				</p>
+				<a name="4"></a>
+				<h3>Foydalanuvchi tomonidagi nosozliklar</h3>
+				<p>
+				Yuqorida ta'kidlab o'tilganidek, xatoni ko'rsatishning "standart" stsenariysi serverning ma'lum sahifalarni, saytlarni yoki ulardagi fayllarni ko'rish huquqiga ega bo'lmagan tashrif buyuruvchining harakatlariga javobidir. Bu, masalan, faqat ma'murlar foydalanishi mumkin bo'lgan xizmat sahifalari bo'lishi mumkin. Quyidagi sabablar ham mumkin:
+				</p>
+				<ul>
+				<li>Avtorizatsiya, autentifikatsiya, avtorizatsiya yo'qligi. Ba'zi saytlar faqat shaxsiy ma'lumotlarning minimal to'plamini taqdim etgan va ism va parol yordamida tizimga kirgan ro'yxatdan o'tgan, vakolatli tashrif buyuruvchilar bilan ishlashga "rozi". Ular roʻyxatdan oʻtmagan mijozlar uchun yopiq.</li>
+				<li>Sahifa manzili noto‘g‘ri kiritildi. Xatolar odatda tafsilotlarda yashirinadi, shuning uchun havolani diqqat bilan o‘rganib chiqib, unda qo‘shimcha belgi bor-yo‘qligini bilishingiz kerak.</li>
+				<li>Antivirus dasturlari, xavfsizlik devorlarining ishlashi. Ehtimol, foydalanuvchining kompyuterida yoki smartfonida o‘rnatilgan antivirus saytni shubhali deb hisoblab, o‘tishni bloklaydi.</li>
+				<li>Siz tizimga kirgan qurilma toʻgʻri ishlamayapti. Eskirgan cookie fayllari, haddan tashqari yuklangan kesh, mobil maʼlumotlarni uzatish cheklovlari yoki smartfonlar uchun dolzarb boʻlgan trafikni tejash rejimini faollashtirish – koʻp variantlar mavjud.</li>
+				</ul>
+				<a name="5"></a>
+				<h3>Sayt administratori tomonidagi nosozliklar</h3>
+				<p>
+				Bunday holda, 403 xatosi quyidagi sabablarga ko'ra paydo bo'ladi:
+				</p>
+				<ul>
+				<li>Indeks fayl nomi etishmayotgan yoki noto'g'ri yozilgan. Odatda, biz php yoki html kengaytmali “indeks” fayli haqida bormoqda.</li>
+				<li>Tarmoq resurs fayllarini noto'g'ri joylashtirish. Ular ildiz papkasida joylashgan boʻlishi kerak, aks holda veb-server ularga toʻgʻridan-toʻgʻri kira olmaydi, natijada xatolik koʻrsatiladi.</li>
+				<li>Kataloglar va fayllarga kirish huquqi notoʻgʻri sozlangan, shu sababli server ular bilan oʻzaro aloqada boʻla olmaydi.</li>
+				<li>Plaginlar va kengaytmalarning noto'g'ri ishlashi. Bu, ayniqsa, mashhur WordPress platformasida yaratilgan saytlar uchun to'g'ri keladi. Administrator kengaytmalarni qidirishda ehtiyot bo‘lishi, ularni o‘z vaqtida yangilab turishi va qayta o‘rnatishi kerak.</li>
+				<li>Nomaqbul PHP nashrlari va saytni sozlash va boshqarish uchun zarur bo'lgan boshqa vositalardan foydalanish. Versiyalar eskirgan yoki serverda oʻrnatilgan dasturiy taʼminotga mos kelmasligi mumkin.</li>
+				</ul>
+				<a name="6"></a>
+				<h3>Provayder tomonidagi nosozliklar</h3>
+				<p>
+				Ushbu turkumda quyidagi 403 xatolik paydo bo'lishiga olib keladi:
+				</p>
+				<ul>
+				<li>Tarmoq resurslari xizmatini tugatish. Masalan, provayder sayt egasi o‘z majburiyatlarini bajarmaganligi, to‘lovni o‘z vaqtida olmagani yoki mualliflik huquqini buzuvchi kontentni joylashtirgani uchun kirishni bloklashi mumkin.</li>
+				<li>DNS server keshi o'z vaqtida yangilanmagan. 403-xato, agar DNS-server keshdagi eski ma'lumotlardan foydalanishda davom etsa, tarmoq resursi yaqinda yangi manzilga ko'chirilganda paydo bo'ladi.</li>
+				<li>Texnik nosozliklar. Asosiy server uskunasining ishdan chiqishi, aloqa liniyalaridagi uzilishlar, dasturiy ta'minotning noto'g'ri ishlashi.</li>
+				<li>Geografik cheklovlar. Ayrim saytlar ayrim mamlakatlardagi foydalanuvchilar uchun mavjud emas.</li>
+				</ul>
+				<a name="7"></a>
+				<h3>Avariyani qanday tuzatish mumkin?</h3>
+				<p>
+				Xatoni bartaraf etish algoritmi uning paydo bo'lishiga sabab bo'lgan sabablar bilan belgilanadi. Eng keng tarqalgan vaziyatlarni batafsil ko'rib chiqish kerak. 
+				</p>
+				<a name="8"></a>
+				<h3>Foydalanuvchi ko'rsatmalari</h3>
+				<p>
+				Muammoga duch kelgan foydalanuvchi quyidagilarni bajarishi kerak:
+				</p>
+				<ul>
+				<li>Kirish huquqlarini tekshiring. Kerakli sayt yoki sahifaga o'tish uchun unga bir necha soniya vaqt sarflab, tizimga kirish yoki ro'yxatdan o'tish kifoya. Kamdan kam hollarda siz sayt administratoriga xat yozishingiz kerak bo'ladi, shunda u noto'g'ri berilgan blokni olib tashlaydi yoki bu harakatni amalga oshirish mumkin emasligini ko'rsatib, sababini tushuntiradi.</li>
+				<li>Keshni va cookie-fayllarni tozalash. Bu brauzer sozlamalari orqali amalga oshiriladi.</li>
+				<li>Brauzer sozlamalarini tekshiring. Dasturiy ta'minotning so'nggi versiyasini o'rnatib, sayt tasodifan bloklanganlar ro'yxatiga tushmaganiga ishonch hosil qilish yaxshi bo'lardi.</li>
+				<li>VPNni o'chiring yoki aksincha faollashtiring.</li>
+				<li>Izlayotgan sahifaning imlosini tekshiring. Ehtimol, manzillar qatorida qo‘shimcha qavs yoki sezilmaydigan tinish belgisi bordir.</li>
+				<li>Boshqa qurilmani sinab ko'ring. Sayt noutbukdan ochilmaydimi? Smartfoningizdan tizimga kirishga urinib ko'ring.</li>
+				<li>Provayderingizga qo'ng'iroq qiling. Ehtimol, tarmoqqa kirish xizmatlarini taqdim etuvchi tashkilot 403 xatosi nima bilan bog'liqligini biladi va uni tezda bartaraf etishga qaratilgan chora-tadbirlar to'plamini allaqachon amalga oshirmoqda.</li>
+				<li>Antivirusingizni tekshiring. Sayt bloklangan bo'lishi mumkin. Agar uning xavfsiz ekanligiga ishonchingiz komil bo'lsa, uni o'chiring.</li>
+				<li>Boshqa tarmoq orqali ulaning. Agar sayt uy Wi-Fi orqali ochilmasa, unga umumiy tarmoqlardan biri yoki smartfoningizning mobil tarmog'i orqali kirishga urinib ko'rishingiz mumkin.</li>
+				</ul>
+				<a name="9"></a>
+				<h3>Administrator ko'rsatmalari</h3>
+				<p>
+				Agar 403 taqiqlangan xato foydalanuvchi tomoni bilan emas, balki administrator tomoni bilan bog'liq bo'lsa, unda quyidagi qadamlar yordam beradi:
+				</p>
+				<ul>
+				<li>Serverga kirish huquqi sozlamalari toʻgʻriligini tekshirish. Har bir foydalanuvchi guruhi oʻqish, sahifalarni oʻzgartirish, yangi fayllarni yuklash, yangiliklar, fotosuratlar, videolar va boshqa kontentni joylashtirish kabi oʻz huquqlariga ega boʻlishi kerak.</li>
+				<li>Asosiy server sozlamalari toʻgʻriligini tekshirish. Agar konfiguratsiyada xatolar bo'lsa, kirishda qiyinchiliklar muqarrar ravishda paydo bo'ladi. Avvalo, ".htaccess" kengaytmali fayllarni diqqat bilan o'rganishingiz kerak, ular tarmoq resursining ma'lum sohalariga kirish uchun javobgardir.</li>
+				<li>Xavfsizlik algoritmlari va dasturlarining to'g'ri ishlashini tekshirish. Ruxsatsiz kirishni istisno qilgan holda, ular avtomatik ravishda eng og'ir rejimga o'tadilar, bu holda yumshoqroq bo'lgan standart sozlamalarga "orqaga qaytish" kifoya qiladi.</li>
+				<li>Veb-server jurnallarini tahlil qilish. Tajribali administrator jurnallarni oʻrganib chiqib, xatolar yuzaga kelishiga bilvosita yoki bevosita taʼsir qilgan voqealarni osongina aniqlashi mumkin.</li>
+				<li>WordPress plaginlarini o'chirish. Yangi o'rnatilgan plaginlar saytga mos kelmasligi va uning normal ishlashiga xalaqit berishi mumkin. Muammo yangilanishlar o'z vaqtida bo'lmasa ham dolzarbdir.</li>
+				<li>Sayt fayllarini ildiz kataloglariga ko'chirish. Agar boshqacha joylashtirilsa, ular o'tib bo'lmaydi.</li>
+				</ul>
+				<a name="10"></a>
+				<h3>Profilaktik choralar</h3>
+				<p>
+				Ma'lumki, har qanday xatoning paydo bo'lishiga sabab bo'lgan sabablarni tezda bartaraf etishdan ko'ra uning oldini olish osonroqdir. Saytga tashrif buyuruvchilar va foydalanuvchilarni yoqimsiz "taqiqlangan" xabardan himoya qilishni istagan ma'murlar quyidagi tamoyillarga amal qilishlari kerak:
+				</p>
+				<ul>
+				<li>Kirish huquqlarini aniq sozlash. Bu tarmoq resursining to'g'ri ishlashi uchun asosdir. Ruxsatlarning to'g'ri ekanligiga ishonch hosil qilish uchun barcha fayllarni, kataloglarni va kataloglarni tekshirish kerak. Har bir foydalanuvchi, xoh oddiy tashrifchi, xoh marketolog yoki xoh mulk egasi, ma'lum huquqlarga ega bo'lishi kerak.</li>
+				<li>".htaccess" ruxsati bilan faylni to'g'ri konfiguratsiya qilish. Unda kirish amalga oshiriladigan asosiy tamoyillar saqlanib qolgan. Noto'g'ri belgilangan direktivalar butun tarmoq resursi yoki alohida toifalar yoki sahifalar mavjud bo'lmasligiga olib keladi. Fayl direktivalari saytning o'ziga xos xususiyatlariga va undan foydalanish xususiyatlariga mos kelishi kerak.</li>
+				<li>IP manzillar bo'yicha bloklash bundan mustasno. Kirishni cheklashning bu usuli samarali xavfsizlik chorasi hisoblanadi, lekin siz u bilan o'zingizni bezovta qilmasligingiz kerak. Noto'g'ri foydalanish 403 ta taqiqlangan xatoga olib keladi, hatto qonuniy, tasdiqlangan foydalanuvchi saytga kirishga harakat qilganda ham paydo bo'ladi. To'g'ri IP manzillardan kirish bloklanmaganligiga, tarmoq resursi xavfsizligini ta'minlaydigan xavfsizlik devorlari, antiviruslar va boshqa ilovalar to'g'ri ishlashiga ishonch hosil qilishingiz kerak.</li>
+				</ul>
+				<p>
+				Albatta, ma'murlar server dasturlarini yangilab turishlari kerak. Ushbu yondashuv nafaqat 403 xatolik xavfini bartaraf qiladi, balki xavfsizlikni kafolatlaydi va keraksiz xavf va zaifliklarni yo'q qiladi. Tajriba shuni ko'rsatadiki, hatto muhim va ahamiyatli bo'lmagan bir yangilanishning yo'qligi jiddiy xatolarga olib keladi. 
 				</p>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
-				</p>
-				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
-				</p>
-				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
-				</p>
-				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				Administratorlarning mas'uliyatli yondashuvi nafaqat xatolar yuzaga kelishini bartaraf qiladi, balki foydalanuvchilar tomonidan saytni umumiy qabul qilishiga ijobiy ta'sir ko'rsatadi, uning trafigining o'sishiga va reklama beruvchilar uchun jozibadorligiga hissa qo'shadi. 
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Error 403: concept, features, methods of correction
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				Traveling through the Internet is not only studying useful information, reading interesting articles and watching entertaining videos. Often, the user has to deal with troubles. One of them is the server error 403 forbidden. Why does it appear? What is hidden behind its code designation? What actions should be taken to eliminate it?
+				</p>
+				<a name="2"></a>
+				<h3>General concept</h3>
+				<p>
+				Code 403 forbidden is a server response indicating that the user does not have access rights to a certain network resource. There are many reasons for such a response, elimination is possible only after analyzing a specific situation, there are no universal instructions.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				It should be noted that this error is generally not very serious. Sometimes it is temporary, disappears on its own, without requiring additional manipulations, in other cases - the simplest actions, adjustments to the settings are required.
+				</p>
+				<a name="3"></a>
+				<h3>Probable causes</h3>
+				<p>
+				Ideally, the 403 forbidden server error should only appear if a user who does not have the appropriate rights tries to access a network resource. Reality, unfortunately, is far from ideal, and therefore the list of possible causes of the failure is much wider, including the following categories:
+				</p>
+				<ul>
+				<li>Incorrect operation of the user device;</li>
+				<li>Incorrect configuration of network resource components;</li>
+				<li>Restrictions established by the organization providing network access services.</li>
+				</ul>
+				<p>
+				Each of the listed categories requires a more detailed study.
+				</p>
+				<a name="4"></a>
+				<h3>User-side failures</h3>
+				<p>
+				As already noted, the “standard” error display scenario is the server’s response to the actions of a visitor who does not have the right to view certain pages, sites, or files hosted on them. Such pages may be, for example, service pages accessible only to administrators. The following reasons are also possible:
+				</p>
+				<ul>
+				<li>Lack of authorization, authentication, authorization. Some sites “agree” to work exclusively with registered, authorized visitors who have specified a minimum set of personal data and logged in using a name and password. They are closed to unregistered clients.</li>
+				<li>Incorrect entry of the page address. Errors are usually hidden in the details, so you need to carefully study the link – is there an extra character in it.</li>
+				<li>Operation of antivirus applications, firewalls. It is possible that the antivirus installed on the user's computer or smartphone considers the site suspicious and blocks the transition.</li>
+				<li>Incorrect operation of the device from which the login is performed. Outdated cookies, overloaded cache, restrictions on data transfer over a mobile network or activation of the traffic saving mode, which is relevant for smartphones - there are many options.</li>
+				</ul>
+				<a name="5"></a>
+				<h3>Failures on the site administrator's side</h3>
+				<p>
+				In this case, error 403 appears for the following reasons:
+				</p>
+				<ul>
+				<li>Absence, incorrect spelling of the index file name. As a rule, we are talking about the “index” file with the php or html extension.</li>
+				<li>Incorrect placement of network resource files. They must be in the root folder, other options exclude the possibility of direct access to them by the web server, which leads to the display of the error.</li>
+				<li>Incorrect configuration of access rights to directories and files, due to which the server cannot interact with them.</li>
+				<li>Incorrect operation of plugins and extensions. This is especially true for sites created on the popular WordPress platform. The administrator must be attentive to the search for extensions, update them in a timely manner, and reinstall them.</li>
+				<li>Using inappropriate PHP versions and other tools required for configuring and managing the site. The versions may be outdated or incompatible with the software installed on the server.</li>
+				</ul>
+				<a name="6"></a>
+				<h3>Provider-side failures</h3>
+				<p>
+				In this category, the following causes the 403 error to appear:
+				</p>
+				<ul>
+				<li>Termination of service to a network resource. For example, a provider may block access due to the site owner's failure to fulfill their obligations, lack of timely payment, or posting content that violates copyright.</li>
+				<li>Untimely update of the DNS server cache. Error 403 appears in the event of a recent move of a network resource to a new address, if the DNS server continues to use old information from the cache.</li>
+				<li>Technical failures. Failure of the main server equipment, communication line breaks, incorrect software operation.</li>
+				<li>Geographical restrictions. Some sites are unavailable to users from certain countries.</li>
+				</ul>
+				<a name="7"></a>
+				<h3>How to fix the failure?</h3>
+				<p>
+				The error troubleshooting algorithm is determined by the reasons that led to its occurrence. The most common situations need to be considered in detail.
+				</p>
+				<a name="8"></a>
+				<h3>User instructions</h3>
+				<p>
+				A user who encounters a problem needs to do the following:
+				</p>
+				<ul>
+				<li>Check access rights. It is quite possible that to go to the desired site or page, it is enough to go through authorization or register, spending a few seconds on this. In rare cases, you have to write to the site administrator so that he removes the block issued by mistake, or indicates the impossibility of this action, explaining the reason.</li>
+				<li>Clear the cache and cookies. This is done through the browser settings.</li>
+				<li>Check the browser settings. It would be a good idea to install the latest version of the software, make sure that the site was not mistakenly included in the block list.</li>
+				<li>Disable or, conversely, activate the VPN.</li>
+				<li>Check the spelling of the page you are looking for. Perhaps there was an extra bracket or an unnoticeable punctuation mark in the address bar.</li>
+				<li>Try another device. The site does not open from a laptop? You should try to log in from a smartphone.</li>
+				<li>Call the provider. Perhaps the organization providing network access services knows what the 403 error is associated with and is already taking a set of measures aimed at its speedy elimination.</li>
+				<li>Check the antivirus. Perhaps the site was included in the block lists. If you are sure it is safe, you should delete it.</li>
+				<li>Connect via another network. If the site does not open via home Wi-Fi, you can try to access it via one of the public networks, or via your smartphone's mobile network.</li>
+				</ul>
+				<a name="9"></a>
+				<h3>Administrator instructions</h3>
+				<p>
+				If the 403 forbidden error is not related to the user side, but to the administrator side, then the following actions will help:
+				</p>
+				<ul>
+				<li>Check the correctness of the server access rights settings. Each user group should have its own rights, whether it is reading, changing pages, uploading new files, posting news, photos, videos and other content.</li>
+				<li>Check the correctness of the main server settings. If errors have crept into the configuration, difficulties with access will inevitably arise. First of all, you need to carefully study the files with the “.htaccess” extension, they are responsible for access to certain areas of the network resource.</li>
+				<li>Check the correctness of the security algorithms and programs. Sometimes they automatically switch to the most severe mode, excluding unauthorized access, in which case it is enough to “roll back” to the default settings, which are more lenient.</li>
+				<li>Analysis of web server logs. An experienced administrator, having studied the logs, can easily identify events that indirectly or directly influenced the occurrence of errors.</li>
+				<li>Disabling WordPress plugins. Perhaps newly installed plugins are incompatible with the site and interfere with its normal operation. The problem is also relevant if updates are not timely.</li>
+				<li>Moving site files to root directories. If they are placed differently, they are inaccessible.</li>
+				</ul>
+				<a name="10"></a>
+				<h3>Preventive measures</h3>
+				<p>
+				As you know, any error is easier to prevent than to hastily eliminate the causes that provoked its occurrence. Administrators who want to protect visitors and users of the site from the unpleasant inscription "forbidden" should adhere to the following principles:
+				</p>
+				<ul>
+				<li>Fine-tuning access rights. This is the basis for the correct operation of the network resource. It is necessary to check all files, directories and catalogs, make sure that the permissions are correct. Each user, be it a simple visitor, a marketer or an owner, must have certain rights.</li>
+				<li>Correct configuration of the file with the permission ".htaccess". It is in it that the basic principles are saved, according to which access is carried out. Incorrect indication of directives leads to the fact that either the entire network resource as a whole, or its individual categories, pages are inaccessible. File directives must correspond to the specifics of the site, the features of its use.</li>
+				<li>Exclusion of blocking by IP addresses. This method of restricting access is an effective security measure, however, you should not get too carried away with it. Incorrect use leads to the fact that the 403 forbidden error appears even when a legal, verified user tries to enter the site. It is necessary to make sure that access from the correct IP addresses is not blocked, firewalls, antiviruses and other applications that ensure the security of the network resource function correctly.</li>
+				</ul>
+				<p>
+				Of course, administrators need to update server software in a timely manner. This approach will not only eliminate the risk of 403 errors, but also guarantee security, eliminate unnecessary risks and vulnerabilities. Practice shows that the absence of even one update that does not look important and significant leads to serious errors.
 				</p>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
-				</p>
-				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
-				</p>
-				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
-				</p>
-				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				A responsible approach by administrators not only eliminates errors, but also has a positive effect on the overall perception of the site by users, contributes to the growth of its traffic, attractiveness for advertisers.
 				</p>
 			</>
 		),

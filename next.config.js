@@ -446,6 +446,36 @@ module.exports = {
         destination: "/uz/vds#constructor",
         permanent: true,
       },
+      {
+        source: "/en/blog/nastroika-ip-telefonii-v-ofise-poshagovaya-instruktsiya",
+        destination: "/en/blog/setting-up-ip-telephony-in-the-office-step-by-step-instructions",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/nastroika-ip-telefonii-v-ofise-poshagovaya-instruktsiya",
+        destination: "/uz/blog/ofisda-ip-telefoniyani-sozlash-bosqichma-bosqich-korsatmalar",
+        permanent: true,
+      },
+      {
+        source: "/blog/ofisda-ip-telefoniyani-sozlash-bosqichma-bosqich-korsatmalar",
+        destination: "/uz/blog/nastroika-ip-telefonii-v-ofise-poshagovaya-instruktsiya",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/ofisda-ip-telefoniyani-sozlash-bosqichma-bosqich-korsatmalar",
+        destination: "/blog/ofisda-ip-telefoniyani-sozlash-bosqichma-bosqich-korsatmalar",
+        permanent: true,
+      },
+      {
+        source: "/blog/setting-up-ip-telephony-in-the-office-step-by-step-instructions",
+        destination: "/en/blog/setting-up-ip-telephony-in-the-office-step-by-step-instructions",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/setting-up-ip-telephony-in-the-office-step-by-step-instructions",
+        destination: "/en/blog/setting-up-ip-telephony-in-the-office-step-by-step-instructions",
+        permanent: true,
+      },
     ];
   },
 };

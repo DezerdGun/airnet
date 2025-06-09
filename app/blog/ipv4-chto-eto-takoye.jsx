@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "IPv4: что это такое?",
-		uz: "IPv4: что это такое?",
-		en: "IPv4: что это такое?",
+		uz: "IPv4: bu nima?",
+		en: "IPv4: What is it?",
 	},
 	title: {
 		ru: "IPv4: что это такое и как он работает?",
-		uz: "IPv4: что это такое и как он работает?",
-		en: "IPv4: что это такое и как он работает?",
+		uz: "IPv4: bu nima va u qanday ishlaydi?",
+		en: "IPv4: What is it and how does it work?",
 	},
 	desc: {
 		ru: "IPv4 — это протокол интернет-адресации🖥️ обеспечивающий уникальные IP-адреса для устройств в сети. Узнайте, как работает IPv4, его структура и особенности",
-		uz: "IPv4 — это протокол интернет-адресации🖥️ обеспечивающий уникальные IP-адреса для устройств в сети. Узнайте, как работает IPv4, его структура и особенности",
-		en: "IPv4 — это протокол интернет-адресации🖥️ обеспечивающий уникальные IP-адреса для устройств в сети. Узнайте, как работает IPv4, его структура и особенности",
+		uz: "IPv4 - bu tarmoqdagi qurilmalar uchun noyob IP-manzillarni taqdim qiluvchi Internet-manzillash protokoli🖥️. IPv4 qanday ishlashini, uning tuzilishi va xususiyatlarini bilib oling",
+		en: "IPv4 is an Internet addressing protocol🖥️ that provides unique IP addresses for devices on the network. Learn how IPv4 works, its structure and features",
 	},
 	date: "11.10.2024",
 	updated: "11.10.2024",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/ipv4.jpg",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,16 +61,16 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "IPv4: что это такое?", uz: "IPv4: что это такое?", en: "IPv4: что это такое?", slug: "1" }},
-		{ title: {ru: "Краткая история", uz: "Краткая история", en: "Краткая история", slug: "2" }},
-		{ title: {ru: "Принцип функционирования", uz: "Принцип функционирования", en: "Принцип функционирования", slug: "3" }},
-		{ title: {ru: "Состав IP-адреса", uz: "Состав IP-адреса", en: "Состав IP-адреса", slug: "4" }},
-		{ title: {ru: "Классификация адресов", uz: "Классификация адресов", en: "Классификация адресов", slug: "5" }},
-		{ title: {ru: "Режимы адресации", uz: "Режимы адресации", en: "Режимы адресации", slug: "6" }},
-		{ title: {ru: "Структура пакета IPv4", uz: "Структура пакета IPv4", en: "Структура пакета IPv4", slug: "7" }},
-		{ title: {ru: "Статус протокола в эталонной сетевой модели OSI", uz: "Статус протокола в эталонной сетевой модели OSI", en: "Статус протокола в эталонной сетевой модели OSI", slug: "8" }},
-		{ title: {ru: "Достоинства и недостатки", uz: "Достоинства и недостатки", en: "Достоинства и недостатки", slug: "9" }},
-		{ title: {ru: "Развитие технологии", uz: "Развитие технологии", en: "Развитие технологии", slug: "10" }},
+		{ title: {ru: "IPv4: что это такое?", uz: "IPv4: bu nima?", en: "IPv4: What is it?", slug: "1" }},
+		{ title: {ru: "Краткая история", uz: "Qisqacha tarix", en: "Brief history", slug: "2" }},
+		{ title: {ru: "Принцип функционирования", uz: "Ishlash printsipi", en: "Operating principle", slug: "3" }},
+		{ title: {ru: "Состав IP-адреса", uz: "IP manzilining tarkibi", en: "Composition of IP address", slug: "4" }},
+		{ title: {ru: "Классификация адресов", uz: "Manzil tasnifi", en: "Address classification", slug: "5" }},
+		{ title: {ru: "Режимы адресации", uz: "Manzillash rejimlari", en: "Addressing modes", slug: "6" }},
+		{ title: {ru: "Структура пакета IPv4", uz: "IPv4 paket tuzilishi", en: "IPv4 packet structure", slug: "7" }},
+		{ title: {ru: "Статус протокола в эталонной сетевой модели OSI", uz: "OSI tarmoq mos yozuvlar modelidagi protokol holati", en: "Protocol status in the OSI network reference model", slug: "8" }},
+		{ title: {ru: "Достоинства и недостатки", uz: "Afzalliklari va kamchiliklari", en: "Advantages and disadvantages", slug: "9" }},
+		{ title: {ru: "Развитие технологии", uz: "Texnologiyaning rivojlanishi", en: "Development of technology", slug: "10" }},
 	],
 	content: {
 		ru: (
@@ -210,71 +210,246 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				IPv4: bu nima? 
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Internet ma'lumotlar almashinuvi uchun mo'ljallangan tarmoqdir. Ensiklopedik maqolalar, musiqa, videolar, filmlarni qidirish, xabarlarni qabul qilish va yuborish - bularning barchasi ma'lumot almashish imkoniyatlari. Zamonaviy dunyoni Internetsiz tasavvur qilib bo'lmaydi, ammo har bir foydalanuvchi ham uning qanday ishlashi va tuzilishi haqida taxminiy tasavvurga ega emas. 
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Ma'lumotlar ma'lum bir qurilmaga, xoh u smartfon yoki kompyuterga muvaffaqiyatli etib borishi uchun maxsus protokollar qo'llaniladi, ulardan eng keng tarqalgani IPv4. U qanday va qachon paydo bo'lgan? Operatsion printsipi nima? Asosiy xususiyatlar qanday? 
+				</p>
+				<a name="2"></a>
+				<h3>Qisqacha tarix</h3>
+				<p>
+				Zamonaviy Internetning salafi ARPAnet bo'lib, uning tashabbuskori AQSh Mudofaa vazirligi edi. U 1969 yilda paydo bo'lgan, 4 ta xost o'rtasida ma'lumotlar almashinuvi amalga oshirilgan bo'lsa-da, 1981 yilga kelib ularning soni 213 taga etdi. Tarmoq kengaydi, guruhlar va segmentlarga bo'lindi, tuzilmaning murakkabligi barcha tuzilmalar o'rtasida samarali o'zaro aloqani o'rnatish yo'lini izlash tobora dolzarb bo'lib ketishiga olib keldi. 
 				</p>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				Mutaxassislarning asosiy vazifasi aniq formuladan iborat edi - ular bilan bog'langan mijozlarning samarali o'zaro ta'sirini ta'minlagan holda barcha tarmoqlarning boshlang'ich heterojenligini saqlab qolish. Yechim Vinton Serf va Robert Xon tomonidan taklif qilingan. Bu IPv4 protokoliga aylandi. 1981 yilda u tarqala boshladi va 1983 yilga kelib ARPAnet tarmog'ida qo'llaniladigan NCP ni siqib chiqardi. 
+				</p>
+				<a name="3"></a>
+				<h3>Ishlash printsipi</h3>
+				<p>
+				IPv4 - bu tarmoq va tarmoq qatlamlarida ishlaydigan protokol. Uning eng muhim vazifasi turli qurilmalar, serverlar, kompyuterlar bo'lgan ma'lumotlar paketlarini jo'natuvchilardan qabul qiluvchilarga uzatishdir. Agar kerak bo'lsa, protokol ikkilamchi vazifalarni ham bajaradi:
+				</p>
+				<ul>
+				<li>Axborotning parchalanishi;</li>
+				<li>Ma'lumotlarni siqish.</li>
+				</ul>
+				<p>
+				Kengaytirilgan funksionallik miqyosdan va ularga ulangan qurilmalardan qatʼi nazar, har qanday tarmoqlar oʻrtasida samarali oʻzaro aloqani oʻrnatish imkonini beradi. 
 				</p>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				Yuborilayotgan ma'lumotlar paketi bo'lgan datagramda noyob sarlavha va foydali yuk bo'lishi kerak. Sarlavha jo'natuvchi va oluvchi manzillarini shifrlash uchun kerak, foydali yuk esa asosiy ma'lumot sifatida tushuniladi. IPv4 ni to'g'ridan-to'g'ri aloqa protokollaridan ajratib turadigan xususiyat paketli uzatish usuli bo'lib, u hatto bitta kommutatsiya moduli ishlamay qolsa, ulanish uzilishini bartaraf etadi. Usul paketlarni yo'qotishga ham chidamli bo'lib, ularni qayta tiklash uchun takroriy so'rovlar uchun yordam ko'rsatiladi. 
 				</p>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
+				IPv4 protokoli bo'yicha ishlaydigan har bir qurilma o'ziga xos IP-manzilga ega bo'lib, u ma'lumot uzatishning aniqligini ta'minlaydi va kommutatsiyani sozlashda keraksiz asoratlar va kechikishlarni bartaraf etadi. Manzillar ikkita asosiy toifada taqdim etilgan: xususiy va ommaviy. Ommaviy bo'lganlar noyobdir va ko'p hollarda o'zgarmasdir, katta serverlarga tegishli, xususiylar tarmoqqa qayta ulanadigan har bir qurilmaga tayinlanadi va shuning uchun o'zgarishi mumkin, doimiy bog'lanish yo'q. 
+				</p>
+				<a name="4"></a>
+				<h3>IP-manzil tarkibi</h3>
+				<p>
+				IPv4 da manzil 32 bit ma'lumotdan iborat bo'lib, bu muvaffaqiyatli identifikatsiya qilish uchun etarli. Uning yozuvi 4 ta sonli guruh bo'lib, ularning har biri maksimal 3 ta raqam bilan tuzilishi mumkin. Yozishning aniq misoli "172.16.254.1." bo'lishi mumkin, minimal manzil nuqta bilan ajratilgan 4 ta nol, maksimal "255.255.255.255", ya'ni "255" raqamidan oshib ketish qabul qilinishi mumkin emas. 
+				</p>
+				<a name="5"></a>
+				<h3>Manzil tasnifi</h3>
+				<p>
+				IPv4 protokoli bo'yicha ishlaydigan tarmoqlarda bir nechta sinflarning manzillari qo'llaniladi:
+				</p>
+				<ul>
+				<li>A - mumkin bo'lgan qiymatlar - "0.0.0.0" dan "127.255.255.255" gacha. Bu turkum yirik tarmoqlarga qaratilgan.</li>
+				<li>B – yirik va oʻrta miqyosli tarmoqlar, qiymatlar – “128.0.0.0” dan “191.255.255.255” gacha.</li>
+				<li>C – ruxsat etilgan diapazon “192.0.0.0” dan “223.255.255.255” gacha, bu mahalliy tarmoqlar bilan ideal muvofiqlikni taʼminlaydi.</li>
+				</ul>
+				<p>
+				Shuningdek, maxsus D va E sinflari mavjud. Birinchisi, bir vaqtning o'zida bir nechta manzillarga paketlarni yuborishni o'z ichiga olgan dasturiy ta'minotga qaratilgan, ikkinchisi eksperimentaldir. 
+				</p>
+				<a name="6"></a>
+				<h3>Manzillash rejimlari</h3>
+				<p>
+				IPv4 protokoli bir nechta manzillash sxemalarini qo'llab-quvvatlaydi:
+				</p>
+				<ul>
+				<li>Unicast. Ushbu formatda axborot bitta tarmoq moduliga uzatiladi, u ham jo'natuvchi, ham qabul qiluvchi rolini o'ynashi mumkin. Aksariyat hollarda rejim ulanish protokoliga kirish jarayonida qo'llaniladi.</li>
+				<li>Efir. Ushbu sxema mos keladigan tarmoqqa ulangan har bir qurilma uzatiladigan ma'lumotlar paketlari bilan o'zaro aloqada bo'lishi mumkinligini anglatadi. Format maxsus identifikatsiya kodini qo'shish orqali amalga oshiriladi.</li>
+				<li>Multicast. Ushbu sxema yuqorida tavsiflangan formatlarni birlashtiradi va eng universal va funktsional hisoblanadi.</li>
+				</ul>
+				<a name="7"></a>
+				<h3>IPv4 paket tuzilishi</h3>
+				<p>
+				O'tkazilayotgan ma'lumotlar paketi nafaqat asosiy ma'lumotlar to'plamini, balki kommutatsiyaning aniqligini, barqarorligini, etkazib berish va jo'natishning o'z vaqtidaligini ta'minlaydigan yordamchi ma'lumotlarni ham o'z ichiga oladi. Eng muhim tarkibiy qismlar quyidagilardir:
+				</p>
+				<ul>
+				<li>Umr vaqti. U inglizcha "TTL" qisqartmasi bilan belgilanadi. To'g'ri belgilangan xizmat muddati paketning aylanishi va cheksiz uzatilishi xavfini yo'q qiladi. Bitta qurilma uni qabul qilishi TTLni bir marta kamaytiradi, u nolga yetganda, uzatish to‘xtaydi.</li>
+				<li>Internet protokoli. Ma'lumot IPv4 ko'lamini kengaytiradigan yuqori darajadagi protokolga ishora qiladi.</li>
+				<li>Yuborganning manzili. Paketni yaratgan qurilmaning noyob identifikatori.</li>
+				<li>Qabul qiluvchining manzili. Ma'lumot yetkazilishi kerak bo'lgan qurilma identifikatori. U tarqatish formatidan qat'iy nazar, unicastdan translyatsiyaga qadar tayinlanadi.</li>
+				<li>Ma'lumotlar. Yuboruvchi va qabul qiluvchi oʻrtasida uzatiladigan maʼlumotlarning asosiy toʻplami “Maʼlumotlar” atamasi bilan belgilanadi.</li>
+				</ul>
+				<a name="8"></a>
+				<h3>OSI tarmoq ma'lumot modelidagi protokol holati</h3>
+				<p>
+				OSI modeli tarmoqqa ulangan uskunalarning o'zaro ta'sirini aniq ifodalash uchun maxsus yaratilgan. U qat'iy ierarxiyaga asoslangan va jismoniydan tortib to amaliygacha bo'lgan 7 darajadan iborat. 
 				</p>
 				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				IPv4 protokoli umumiy ierarxik tuzilmada uchinchi o'rinni egallagan tarmoq qatlamiga tegishli. Ushbu darajaning asosiy vazifasi axborotni uzatishning optimal yo'nalishlarini aniqlash, maksimal tezlikni, etkazib berish barqarorligini ta'minlash, butun tarmoq va har bir alohida qurilmaning joriy yukini hisobga olgan holda, nosozliklar va ma'lumotlar yo'qolishini bartaraf etadi. 
+				</p>
+				<p>
+				Tarmoq darajasida tarjima bilan bog'liq vazifalar ham amalga oshiriladi; mantiqiy tarmoq manzillari jismoniy manzillarga aylantiriladi yoki teskari transformatsiya sodir bo'ladi. Uchinchi daraja - to'rtinchi darajadan ma'lumotlarni qabul qiluvchi, uni qismlarga ajratadigan va ikkinchi darajaga muvaffaqiyatli uzatish uchun yordamchi ma'lumotlarni qo'shadigan vositachi. 
+				</p>
+				<a name="9"></a>
+				<h3>Afzalliklar va kamchiliklar</h3>
+				<p>
+				IPv4 protokolining asosiy kuchli tomonlari quyidagilardan iborat:
+				</p>
+				<ul>
+				<li>Universallik, turli o'lchamdagi tarmoqlar bilan moslik, barcha tarmoq qurilmalarida, xoh marshrutizatorlar, xoh kompyuterlar, xoh smartfonlarda ishonchli ishlash.</li>
+				<li>Tarmoqni amalga oshirish, uni asosiy sozlash va keyingi boshqarish, konfiguratsiyani soddalashtiradigan topologiyaning soddaligi.</li>
+				<li>IP manzillarining qisqacha yozilishi, yozib olishni soddalashtirish. Agar kerak bo'lsa, siz hatto raqamlarni eslab qolishingiz mumkin; format mobil telefon raqamidan murakkabroq emas.</li>
+				<li>Ma'lumotlarni uzatish xavfsizligini oshiradigan shifrlash algoritmlarini qo'llab-quvvatlash, ushlashni foydasiz qiladi va kodlashni bilmasdan shifrni ochish mumkin emas.</li>
+				<li>Multicast qo'llab-quvvatlash, ayniqsa audio va video oqim xizmatlari uchun muhim.</li>
+				</ul>
+				<p>
+				IPv4 ning asosiy kamchiligi mavjud manzillar sonining cheklanganligidir. Ularning soni 4 milliarddan oshadi, ammo doimiy ravishda o'sib borayotgan obunachilar sonini hisobga olsak, bu etarli emasdek tuyuladi. Internet-kommunikatsiya sohasini ifodalovchi nufuzli tashkilotlar yaqin orada ushbu segmentda bepul manzillar qolmaydi degan fikrda bir ovozdan; yangi obunachilar nafaqat ularni sotib olishlari, balki ular mavjud bo'lishini kutishlari kerak. 
+				</p>
+				<p>
+				Ikkinchi salbiy nuqta - IPsec yordamining dastlabki etishmasligi. Faollashtirish mumkin, ammo uni yangi manzildan qilish ancha oson. 
+				</p>
+				<a name="10"></a>
+				<h3>Texnologiyani rivojlantirish</h3>
+				<p>
+				Internet protokolining IPv4 kamchiliklaridan xoli zamonaviyroq versiyasi IPv6 hisoblanadi. Uning yaratilishi 1995 yilga borib taqaladi. IPv6 doirasida mavjud manzillar soni mohiyatan cheksiz bo'lib, deyarli 80 oktillionni tashkil etadi, bu IPv4 ning asosiy kamchiligini – abonentlarning real ehtiyojlariga mos kelmaydigan identifikatorlar sonini hal qiladi. Yangilangan versiyaning boshqa afzalliklari quyidagilardan iborat:
+				</p>
+				<ul>
+				<li>Marshrutlash jadvali tuzilmasini soddalashtirish, umumiy barqarorlik, aniqlik va ishlash tezligini yaxshilash imkonini beruvchi marshrutlash samaradorligi ortdi.</li>
+				<li>Sarlavhalarni optimallashtirish hisobiga axborot paketlari bilan oʻzaro ishlash samaradorligini oshirish.</li>
+				<li>QoS texnologiyasi uchun asosiy yordam, ma'lumotlarni uzatishdagi kechikishlarni bartaraf etish.</li>
+				<li>IoT texnologiyasini qo'llab-quvvatlash. Soddalashtirilgan axborot tuzilmasi va paketlarni yanada samarali qayta ishlash tufayli yangi protokol kam hisoblash quvvati va kam energiya sarflaydigan tarmoq uskunalarini ulash uchun ko‘proq mos keladi.</li>
+				</ul>
+				<p>
+				IPv6 ning afzalliklariga qaramay, ko'p foydalanuvchilar IPv4 manzillarida qolishadi. Qabul qilish texnik va moliyaviy omillar bilan cheklangan, ammo yangi protokol uchun foydalaniladigan manzillar soni barqaror o'sib bormoqda. Kelajakda IPv4 to'liq 6-versiyaga almashtirilishini kutish mumkin. 
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				IPv4: what is it?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				The Internet is a network designed for data exchange. Searching for encyclopedic articles, music, videos, films, receiving and sending messages - all these are options for information exchange. It is impossible to imagine the modern world without the Internet, however, not every user has even a rough idea of ​​how it works and is arranged.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				In order for data to successfully arrive at a specific device, be it a smartphone or a computer, special protocols are used, the most common of which is IPv4. How and when did it appear? What is the principle of operation? What are the main features?
+				</p>
+				<a name="2"></a>
+				<h3>Brief history</h3>
+				<p>
+				The predecessor of the modern Internet was the ARPAnet network, the initiator of which was the US Department of Defense. It appeared in 1969, data exchange was carried out between 4 hosts, however, by 1981 the number had grown to 213. The network expanded, divided into groups and segments, the complexity of the structure led to the fact that the search for a way to establish effective interaction between all structures became increasingly relevant.
 				</p>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				The main task of specialists had a clear formulation - to preserve the initial heterogeneity of all networks while ensuring effective interaction of clients connected to them. The solution was proposed by Vinton Cerf and Robert Khan. It was the IPv4 protocol. In 1981, it began to spread, and by 1983 it had replaced NCP, used in the ARPAnet.
+				</p>
+				<a name="3"></a>
+				<h3>Principle of operation</h3>
+				<p>
+				IPv4 is a protocol that operates at the network and internetwork levels. Its most important function is to transmit data packets from senders to recipients, which are various devices, servers, computers. If necessary, the protocol can also handle secondary tasks:
+				</p>
+				<ul>
+				<li>Information fragmentation;</li>
+				<li>Data compression.</li>
+				</ul>
+				<p>
+				Extended functionality makes it possible to establish effective interaction between any networks, regardless of scale and devices connected to them.
 				</p>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				A datagram, a packet of sent data, must have a unique header and payload. The header is needed to encrypt the sender and recipient addresses, while the payload is understood to be the main information. A feature that distinguishes IPv4 from direct communication protocols is the packet transmission method, which eliminates the connection break if even one switching module fails. The method is also resistant to packet loss; support for repeated requests is provided for their recovery. </p>
+				<p>
+				Each device operating under the IPv4 protocol has a unique IP address, which ensures the accuracy of information transfer, eliminates unnecessary complications and delays when setting up switching. Addresses are presented in two large categories, private and public. Public ones are unique and, in most cases, unchangeable, belong to large servers, private ones are assigned to each device that reconnects to the network, and therefore can change, there is no permanent binding.
+				</p>
+				<a name="4"></a>
+				<h3>IP address composition</h3>
+				<p>
+				In the IPv4 version, the address consists of 32 bits of information, which is enough for successful identification. It is written - 4 numerical groups, each of which can be formed by a maximum of 3 digits. A clear example of writing can be “172.16.254.1.”, the minimum address is 4 zeros separated by dots, the maximum is “255.255.255.255”, that is, exceeding the number “255” is unacceptable.
+				</p>
+				<a name="5"></a>
+				<h3>Classification of addresses</h3>
+				<p>
+				In networks operating on the IPv4 protocol, addresses of several classes are used:
+				</p>
+				<ul>
+				<li>A – possible values ​​– from “0.0.0.0” to “127.255.255.255”. This category is focused on large-scale networks.</li>
+				<li>B – large-scale and medium-scale networks, values ​​– from “128.0.0.0” to “191.255.255.255”.</li>
+				<li>C – the permissible range is from “192.0.0.0” to “223.255.255.255”, which ensures ideal compatibility with local-scale networks.</li>
+				</ul>
+				<p>
+				There are also specialized classes, D and E. The first is focused on software whose operation involves sending packets to several addresses at once, the second is experimental.
+				</p>
+				<a name="6"></a>
+				<h3>Addressing modes</h3>
+				<p>
+				The IPv4 protocol supports several addressing schemes:
+				</p>
+				<ul>
+				<li>Unicast. In this format, information is transmitted to a single network module that can act as both a sender and a receiver. In most cases, the mode is used when accessing the connection protocol.</li>
+				<li>Broadcast. This scheme implies that each device connected to the corresponding network can interact with the transmitted data packets. The format is made possible by adding a special identification code.</li>
+				<li>Multicast. This scheme combines the formats described above, is the most universal and functional.</li>
+				</ul>
+				<a name="7"></a>
+				<h3>IPv4 packet structure</h3>
+				<p>
+				The transmitted data packet contains not only the main set of information, but also an auxiliary one, ensuring clarity, stability of switching, timely delivery and sending. The most significant structural parts are the following:
+				</p>
+				<ul>
+				<li>Time to live. It is designated by the English abbreviation “TTL”. Correctly set time to live eliminates the risk of looping, endless transmission of the packet. The fact of receipt by one device reduces the TTL by one, when it reaches zero, the transmission stops.</li>
+				<li>Internet protocol. The information indicates a higher-level protocol, which expands the scope of IPv4.</li>
+				<li>Sender address. A unique identifier of the device that generated the packet.</li>
+				<li>Recipient address. Identifier of the device to which the information should be delivered. It is assigned regardless of the sending format, from unicast to broadcast.</li>
+				<li>Data. The main set of data transmitted between the sender and the recipient is designated by the term “Data”.</li>
+				</ul>
+				<a name="8"></a>
+				<h3>Protocol status in the OSI reference network model</h3>
+				<p>
+				The OSI model was created specifically to clearly represent the interaction of equipment connected to the network. It is based on a strict hierarchy, consists of 7 levels, from physical to application.
 				</p>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
+				The IPv4 protocol belongs to the network layer, which occupies the third position in the general hierarchical structure. The main function of this level is to determine the optimal routes for information transmission, ensuring maximum speed, stability of delivery, taking into account the current load of the network as a whole and each individual device, which eliminates failures and loss of information.
 				</p>
 				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				The network layer also performs tasks related to translation, logical network addresses are transformed into physical ones, or the reverse transformation occurs. The third level is an intermediary that receives data from the fourth level, fragments it, adds auxiliary data for successful transmission to the second.
+				</p>
+				<a name="9"></a>
+				<h3>Advantages and disadvantages</h3>
+				<p>
+				The main strengths of the IPv4 protocol are as follows:
+				</p>
+				<ul>
+				<li>Universality, compatibility with networks of various sizes, confident operation on all network devices, be it routers, computers, smartphones.</li>
+				<li>Simplicity of topology, which simplifies the implementation of the network, its basic setup and further management, configuration.</li>
+				<li>Brief writing of IP addresses, simplifying the recording. If necessary, you can even remember the numbers, the format is no more complicated than a mobile phone number.</li>
+				<li>Support for encryption algorithms, which increases the security of data transfer, makes their interception useless, without knowledge of encodings, decryption is impossible.</li>
+				<li>Support for multicast, which is especially important for audio and video streaming services.</li>
+				</ul>
+				<p>
+				The main disadvantage of IPv4 is the limited number of available addresses. Their number is more than 4 billion, however, given the constantly increasing number of subscribers, it does not seem sufficient. Authoritative organizations representing the field of Internet communications are unanimous in the opinion that very soon there will be no free addresses left in this segment, new subscribers will have to not only buy them, but wait for them to become available.
+				</p>
+				<p>
+				The second negative point is the initial lack of IPsec support. Activation is possible, however, it is much easier to do this from a new address.
+				</p>
+				<a name="10"></a>
+				<h3>Technology development</h3>
+				<p>
+				A more modern version of the Internet protocol, devoid of the shortcomings of IPv4 is IPv6. Its creation dates back to 1995. The number of available addresses within IPv6 is essentially unlimited, amounting to almost 80 octillion, which solves the main disadvantage of IPv4 - the number of identifiers that does not correspond to the real needs of subscribers. Other advantages of the updated version are as follows:
+				</p>
+				<ul>
+				<li>Increased routing efficiency, which allows you to simplify the structure of the routing table, increase overall stability, accuracy, and speed.</li>
+				<li>Increased efficiency of interaction with information packets due to header optimization.</li>
+				<li>Basic support for QoS technology, eliminating delays in data transmission.</li>
+				<li>Support for IoT technology. Thanks to its simplified information structure and more efficient packet processing, the new protocol is better suited for connecting network equipment with low computing power and low energy consumption.</li>
+				</ul>
+				<p>
+				Despite the advantages of IPv6, many users remain on IPv4 addresses. Its prevalence is limited by both technical and financial factors, but the number of addresses used by the new protocol is steadily growing. In the future, it can be expected that IPv4 will be completely replaced by the sixth version.
 				</p>
 			</>
 		),

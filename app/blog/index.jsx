@@ -457,14 +457,14 @@ export const blog = [
 		img: "/blog/web.png",
 		link: {
 			ru: "/blog/chto-takoye-veb-interfeys",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/veb-interfeys-nima",
+			en: "/blog/what-is-a-web-interface",
 		},
 		date: "15.03.2025",
 		title: {
 			ru: "Что такое Веб-интерфейс?",
-			uz: "Что такое Веб-интерфейс?",
-			en: "Что такое Веб-интерфейс?",
+			uz: "Veb interfeysi nima?",
+			en: "What is Web Interface?",
 		},
 		description: {
 			ru: (
@@ -1086,14 +1086,14 @@ export const blog = [
 		img: "/blog/smtp.webp",
 		link: {
 			ru: "/blog/chto-takoye-smtp",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/smtp-nima",
+			en: "/blog/what-is-smtp",
 		},
 		date: "20.11.2024",
 		title: {
 			ru: "Что такое SMTP (Simple Mail Transfer Protocol)?",
-			uz: "Что такое SMTP (Simple Mail Transfer Protocol)?",
-			en: "Что такое SMTP (Simple Mail Transfer Protocol)?",
+			uz: "SMTP (oddiy pochta uzatish protokoli) nima?",
+			en: "What is SMTP (Simple Mail Transfer Protocol)?",
 		},
 		description: {
 			ru: (
@@ -1106,14 +1106,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						SMTP (Simple Mail Transfer Protocol) — стандартный протокол для отправки электронной почты 📧
+						SMTP (Simple Mail Transfer Protocol) elektron pochta xabarlarini yuborish uchun standart protokoldir 📧
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						SMTP (Simple Mail Transfer Protocol) — стандартный протокол для отправки электронной почты 📧
+						SMTP (Simple Mail Transfer Protocol) is a standard protocol for sending email 📧
 					</p>
 				</>
 			),
@@ -1123,14 +1123,14 @@ export const blog = [
 		img: "/blog/domen.webp",
 		link: {
 			ru: "/blog/kak-zaregistrirovat-domen",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/domenni-qanday-royxatdan-otkazish",
+			en: "/blog/how-to-register-a-domain",
 		},
 		date: "11.10.2024",
 		title: {
 			ru: "Как зарегистрировать домен?",
-			uz: "Как зарегистрировать домен?",
-			en: "Как зарегистрировать домен?",
+			uz: "Domenni qanday ro'yxatdan o'tkazish kerak?",
+			en: "How to register a domain?",
 		},
 		description: {
 			ru: (
@@ -1143,14 +1143,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Зарегистрируйте домен для сайта в несколько шагов 🌐
+						Bir necha bosqichda veb-saytingiz uchun domenni ro'yxatdan o'tkazing 🌐
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Зарегистрируйте домен для сайта в несколько шагов 🌐
+						Register a domain for your website in a few steps 🌐
 					</p>
 				</>
 			),
@@ -1160,14 +1160,14 @@ export const blog = [
 		img: "/blog/ipv4.jpg",
 		link: {
 			ru: "/blog/ipv4-chto-eto-takoye",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/ipv4-bu-nima",
+			en: "/blog/ipv4-what-is-this",
 		},
 		date: "11.10.2024",
 		title: {
 			ru: "IPv4: что это такое?",
-			uz: "IPv4: что это такое?",
-			en: "IPv4: что это такое?",
+			uz: "IPv4: bu nima?",
+			en: "IPv4: What is it?",
 		},
 		description: {
 			ru: (
@@ -1180,14 +1180,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						IPv4 — это протокол интернет-адресации🖥️ обеспечивающий уникальные IP-адреса для устройств в сети
+						IPv4 - bu tarmoqdagi qurilmalar uchun noyob IP-manzillarni taqdim qiluvchi Internet-manzillash protokoli🖥️
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						IPv4 — это протокол интернет-адресации🖥️ обеспечивающий уникальные IP-адреса для устройств в сети
+						IPv4 is an Internet addressing protocol🖥️ that provides unique IP addresses for devices on a network
 					</p>
 				</>
 			),
@@ -1197,14 +1197,14 @@ export const blog = [
 		img: "/blog/ssh.jpg",
 		link: {
 			ru: "/blog/ssh-klyuchi-chto-eto-takoye",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/ssh-keys-bu-nima",
+			en: "/blog/ssh-keys-what-is-this",
 		},
 		date: "11.10.2024",
 		title: {
 			ru: "SSH-ключи: что это такое",
-			uz: "SSH-ключи: что это такое",
-			en: "SSH-ключи: что это такое",
+			uz: "SSH kalitlari: ular nima",
+			en: "SSH keys: what are they",
 		},
 		description: {
 			ru: (
@@ -1217,14 +1217,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						SSH-ключи — это криптографические ключи для безопасного доступа к удаленным серверам🖥️
+						SSH kalitlari uzoq serverlarga xavfsiz kirish uchun kriptografik kalitlardir🖥️
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						SSH-ключи — это криптографические ключи для безопасного доступа к удаленным серверам🖥️
+						SSH keys are cryptographic keys for secure access to remote servers🖥️
 					</p>
 				</>
 			),
@@ -1234,14 +1234,14 @@ export const blog = [
 		img: "/blog/host.jpg",
 		link: {
 			ru: "/blog/chto-takoye-host",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/host-nima",
+			en: "/blog/what-is-a-host",
 		},
 		date: "11.10.2024",
 		title: {
 			ru: "Что такое host?",
-			uz: "Что такое host?",
-			en: "Что такое host?",
+			uz: "Xost nima?",
+			en: "What is host?",
 		},
 		description: {
 			ru: (
@@ -1254,14 +1254,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Host (хост) — это сервер или компьютер, предоставляющий доступ к ресурсам в сети🌐
+						Xost - bu tarmoqdagi resurslarga kirishni ta'minlovchi server yoki kompyuter🌐
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Host (хост) — это сервер или компьютер, предоставляющий доступ к ресурсам в сети🌐
+						Host is a server or computer that provides access to resources on the network🌐
 					</p>
 				</>
 			),
@@ -1271,14 +1271,14 @@ export const blog = [
 		img: "/blog/wordpress.png",
 		link: {
 			ru: "/blog/chto-takoye-wordpress",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/wordpress-nima",
+			en: "/blog/what-is-wordpress",
 		},
 		date: "10.10.2024",
 		title: {
 			ru: "Что такое Wordpress:",
-			uz: "Что такое Wordpress:",
-			en: "Что такое Wordpress:",
+			uz: "Wordpress nima:",
+			en: "What is Wordpress:",
 		},
 		description: {
 			ru: (
@@ -1291,14 +1291,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						WordPress — самая популярная система управления контентом (CMS) в мире
+						WordPress dunyodagi eng mashhur kontentni boshqarish tizimi (CMS) hisoblanadi.
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						WordPress — самая популярная система управления контентом (CMS) в мире
+						WordPress is the most popular content management system (CMS) in the world.
 					</p>
 				</>
 			),
@@ -1308,14 +1308,14 @@ export const blog = [
 		img: "/blog/root.jpg",
 		link: {
 			ru: "/blog/chto-takoye-root-prava",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/root-huquqlari-nima",
+			en: "/blog/what-is-root-rights",
 		},
 		date: "10.10.2024",
 		title: {
 			ru: "Что такое Root-права",
-			uz: "Что такое Root-права",
-			en: "Что такое Root-права",
+			uz: "Root huquqlari nima?",
+			en: "What is Root rights?",
 		},
 		description: {
 			ru: (
@@ -1328,14 +1328,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Root-права — это получение полного доступа к системе 📱
+						Root huquqlari - bu tizimga to'liq kirish imkoniyati 📱
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Root-права — это получение полного доступа к системе 📱
+						Root rights are the ability to gain full access to the system 📱
 					</p>
 				</>
 			),
@@ -1345,14 +1345,14 @@ export const blog = [
 		img: "/blog/cpu.avif",
 		link: {
 			ru: "/blog/chto-takoye-tsentralniy-protsessor-tspu-cpu",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/markaziy-protsessor-tspu-cpu-nima",
+			en: "/blog/what-is-a-central-processor-tspu-cpu",
 		},
 		date: "10.10.2024",
 		title: {
 			ru: "Что такое центральный процессор (ЦПУ, CPU)?",
-			uz: "Что такое центральный процессор (ЦПУ, CPU)?",
-			en: "Что такое центральный процессор (ЦПУ, CPU)?",
+			uz: "Markaziy protsessor (CPU) nima?",
+			en: "What is a central processing unit (CPU)?",
 		},
 		description: {
 			ru: (
@@ -1365,14 +1365,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Процессор (CPU) — главное "сердце" компьютера.
+						Protsessor (CPU) kompyuterning asosiy "yuragi" hisoblanadi.
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Процессор (CPU) — главное "сердце" компьютера.
+						The processor (CPU) is the main "heart" of the computer.
 					</p>
 				</>
 			),
@@ -1382,14 +1382,14 @@ export const blog = [
 		img: "/blog/subdomain.png",
 		link: {
 			ru: "/blog/chto-takoye-poddomeny-i-zachem-oni-nuzhny",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/subdomenlar-nima-va-ular-nima-uchun-kerak",
+			en: "/blog/what-are-subdomains-and-why-are-they-needed",
 		},
 		date: "10.10.2024",
 		title: {
 			ru: "Что такое поддомены и зачем они нужны",
-			uz: "Что такое поддомены и зачем они нужны",
-			en: "Что такое поддомены и зачем они нужны",
+			uz: "Subdomenlar nima va ular nima uchun kerak?",
+			en: "What are subdomains and why are they needed?",
 		},
 		description: {
 			ru: (
@@ -1402,14 +1402,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Поддомены — это часть доменного имени, отделенная точкой
+						Subdomenlar domen nomining nuqta bilan ajratilgan qismidir.
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Поддомены — это часть доменного имени, отделенная точкой
+						Subdomains are the portion of a domain name separated by a period.
 					</p>
 				</>
 			),
@@ -1419,14 +1419,14 @@ export const blog = [
 		img: "/blog/403.webp",
 		link: {
 			ru: "/blog/oshibka-403-forbidden-chto-eto-znachit",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/xato-403-taqiqlangan-bu-nimani-anglatadi",
+			en: "/blog/error-403-forbidden-what-does-this-mean",
 		},
 		date: "10.10.2024",
 		title: {
 			ru: "Ошибка 403 Forbidden: что это значит",
-			uz: "Ошибка 403 Forbidden: что это значит",
-			en: "Ошибка 403 Forbidden: что это значит",
+			uz: "Xato 403 Taqiqlangan: bu nimani anglatadi",
+			en: "Error 403 Forbidden: What does it mean",
 		},
 		description: {
 			ru: (
@@ -1439,14 +1439,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Ошибка 403 Forbidden — запрет доступа к веб-странице или ресурсу
+						Xato 403 Taqiqlangan - veb-sahifa yoki manbaga kirish taqiqlangan
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Ошибка 403 Forbidden — запрет доступа к веб-странице или ресурсу
+						Error 403 Forbidden - access to a web page or resource is prohibited
 					</p>
 				</>
 			),
@@ -1456,8 +1456,8 @@ export const blog = [
 		img: "/blog/com.jpg",
 		link: {
 			ru: "/blog/domen-com-chto-eto",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/domen-com-bu-nima",
+			en: "/blog/domain-com-what-is-this",
 		},
 		date: "30.09.2024",
 		title: {
@@ -1476,14 +1476,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Com – одна из наиболее узнаваемых интернет-пользователями доменных зон.
+						Com - Internet foydalanuvchilari orasida eng taniqli domen zonalaridan biri.
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Com – одна из наиболее узнаваемых интернет-пользователями доменных зон.
+						Com is one of the most recognizable domain zones among Internet users.
 					</p>
 				</>
 			),

@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "Как зарегистрировать домен?",
-		uz: "Как зарегистрировать домен?",
-		en: "Как зарегистрировать домен?",
+		uz: "Domenni qanday ro'yxatdan o'tkazish kerak?",
+		en: "How to register a domain?",
 	},
 	title: {
 		ru: "Как зарегистрировать домен: пошаговая инструкция",
-		uz: "Как зарегистрировать домен: пошаговая инструкция",
-		en: "Как зарегистрировать домен: пошаговая инструкция",
+		uz: "Domenni qanday ro'yxatdan o'tkazish kerak: bosqichma-bosqich ko'rsatmalar",
+		en: "How to Register a Domain: Step-by-Step Instructions",
 	},
 	desc: {
 		ru: "Зарегистрируйте домен для сайта в несколько шагов🌐 Узнайте, как выбрать доменное имя, выбрать доменную зону и зарегистрировать домен через регистраторов",
-		uz: "Зарегистрируйте домен для сайта в несколько шагов🌐 Узнайте, как выбрать доменное имя, выбрать доменную зону и зарегистрировать домен через регистраторов",
-		en: "Зарегистрируйте домен для сайта в несколько шагов🌐 Узнайте, как выбрать доменное имя, выбрать доменную зону и зарегистрировать домен через регистраторов",
+		uz: "Bir necha bosqichda veb-saytingiz uchun domenni ro'yxatdan o'tkazing🌐 Domen nomini qanday tanlash, domen zonasini tanlash va registratorlar orqali domenni ro'yxatdan o'tkazishni bilib oling",
+		en: "Register a domain for your website in a few steps🌐 Find out how to choose a domain name, select a domain zone and register a domain through registrars",
 	},
 	date: "11.10.2024",
 	updated: "11.10.2024",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/domen.webp",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,11 +61,11 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Как зарегистрировать домен?", uz: "Как зарегистрировать домен?", en: "Как зарегистрировать домен?", slug: "1" }},
-		{ title: {ru: "Общее понятие", uz: "Общее понятие", en: "Общее понятие", slug: "2" }},
-		{ title: {ru: "Правила подбора домена", uz: "Правила подбора домена", en: "Правила подбора домена", slug: "3" }},
-		{ title: {ru: "Какой выбрать уровень?", uz: "Какой выбрать уровень?", en: "Какой выбрать уровень?", slug: "4" }},
-		{ title: {ru: "Порядок регистрации", uz: "Порядок регистрации", en: "Порядок регистрации", slug: "5" }},
+		{ title: {ru: "Как зарегистрировать домен?", uz: "Domenni qanday ro'yxatdan o'tkazish kerak?", en: "How to register a domain?", slug: "1" }},
+		{ title: {ru: "Общее понятие", uz: "Umumiy tushuncha", en: "General concept", slug: "2" }},
+		{ title: {ru: "Правила подбора домена", uz: "Domen tanlash qoidalari", en: "Domain selection rules", slug: "3" }},
+		{ title: {ru: "Какой выбрать уровень?", uz: "Qaysi darajani tanlashim kerak?", en: "Which level should I choose?", slug: "4" }},
+		{ title: {ru: "Порядок регистрации", uz: "Ro'yxatdan o'tish tartibi", en: "Registration procedure", slug: "5" }},
 	],
 	content: {
 		ru: (
@@ -154,71 +154,145 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Domenni qanday ro'yxatdan o'tkazish kerak? 
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Tizim ma'murlari, ishi qandaydir tarzda Internet bilan bog'langan odamlar, ertami-kechmi domenni ro'yxatdan o'tkazish zarurati bilan duch kelishlari kerak. Darhol ta'kidlash kerakki, ro'yxatga olish tartibi mulk huquqini o'tkazishni nazarda tutmaydi; mohiyatan bir yildan ortiq muddatga ijara shartnomasini tuzishdir. 
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Ro'yxatdan o'tish tugallangandan so'ng, siz veb-saytni joylashtirish, uning asosida pochta xizmatini yaratish va boshqa muammolarni hal qilish uchun nomdan foydalanishingiz mumkin. Qanday bo'lmasin, egasi ICANN bo'lib qoladi, bu ko'plab domen nomlari va IP manzillarini nazorat qiluvchi korporatsiya. Domenni qanday ro'yxatdan o'tkazish kerak? Buning uchun nima talab qilinadi? 
+				</p>
+				<a name="2"></a>
+				<h3>Umumiy tushuncha</h3>
+				<p>
+				Domen atamasi tarmoq resursi joylashgan ramziy manzilga ishora qiladi, masalan, “google.com”. Alfavit belgilari raqamli belgilarga qaraganda ancha keng tarqalgan va ularni eslab qolish ancha oson. Agar to'g'ri tanlansa, ism samarali marketing vositasiga aylanadi va yangiliklar, axborot portali yoki onlayn-do'konning mashhurligi va trafigiga hissa qo'shadi. 
+				</p>
+				<a name="3"></a>
+				<h3>Domen tanlash qoidalari</h3>
+				<p>
+				Domen kamida ikkita asosiy texnik talablarga javob berishi kerak:
+				</p>
+				<ul>
+				<li>Maksimal uzunlik 255 belgi, jumladan nuqtalar va subdomenlar;</li>
+				<li>Maxsus belgilarning etishmasligi. Faqat harflar, raqamlar va defislarga ruxsat beriladi.</li>
+				</ul>
+				<p>
+				Ism rus va ingliz alifbolarining harflarini o'z ichiga olishi mumkin - tanlov vakili bo'lgan tashkilotning geografik joylashuviga va asosiy maqsadli auditoriyaning yashash joyiga bog'liq. Shunga o'xshash qoidalar ro'yxatga olish zonasi uchun ham tegishli, masalan, ruslar uchun ru zonasida joylashgan saytlar yanada tushunarli va jozibali, com va net xalqaro maydonlardir. 
 				</p>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				Albatta, domen nomi kompaniya nomiga mos kelishi yoki hech bo'lmaganda chalkashmaslik uchun imloda unga yaqin bo'lishi kerak. 
 				</p>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				Domenni tanlashda siz bir qator tavsiyalarga amal qilishingiz kerak:
+				</p>
+				<ul>
+				<li>Qisqalik. Manzil qanchalik qisqa bo'lsa, uni eslab qolish va qidirish satriga kiritish shunchalik oson bo'ladi.</li>
+				<li>Talaffuz qulayligi. Bu eslab qolishni osonlashtiradi va doʻstlaringiz bilan doʻstona suhbatlarda saytni baham koʻrish imkonini beradi.</li>
+				<li>Murakkab transliteratsiyalarning yo'qligi. Ingliz tilidagi imlosi o‘ta og‘ir va tushunarsiz bo‘lgan “sch”, “zh” yoki “pf” kabi tovushlarni ishlatmaslik yaxshiroqdir.</li>
+				<li>Raqamlar etishmayapti. Ular yozishni murakkablashtiradi va ortiqcha yuklaydi.</li>
+				<li>Tarmoq resursi mavzusiga, egasi tashkilot nomiga mos keladi.</li>
+				</ul>
+				<a name="4"></a>
+				<h3>Qaysi darajani tanlashim kerak?</h3>
+				<p>
+				Uchinchi darajali domen bepul mavjud, ammo bunday tejash mantiqiy emas - bu maqsadli auditoriya o'rtasida ishonchsizlikni keltirib chiqaradi, shuningdek qidiruv tizimlari tomonidan etarli darajada samarali indeksatsiya qilinmaydi; Qidiruv natijalari ro'yxatidagi yuqori o'rinlarga ishonish mumkin emas. 
 				</p>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
+				Ikkinchi daraja to'g'riroq variant bo'lib, bir nechta afzalliklarga ega:
 				</p>
+				<ul>
+				<li>Boshqaruv qulayligini ta'minlovchi kengaytirilgan funksionallik;</li>
+				<li>Tarmoq resursining o'ziga xos xususiyatlari va mazmunini to'liq aks ettiruvchi nomni tanlash imkoniyati;</li>
+				<li>Turli marketing strategiyalarini amalga oshirish, SEO vositalaridan foydalanish imkonini beruvchi qidiruv tizimlari tomonidan samarali indeksatsiya;</li>
+				<li>Maqsadli auditoriya ishonchini oshirish.</li>
+				</ul>
+				<a name="5"></a>
+				<h3>Ro'yxatdan o'tish tartibi</h3>
 				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				Domendan foydalanish va ro'yxatdan o'tish jarayonini muvaffaqiyatli yakunlash uchun siz maxsus xizmatlardan, zarur litsenziya va akkreditatsiyaga ega bo'lgan ixtisoslashgan tashkilotlarning xizmatlaridan foydalanishingiz kerak. Harakatlar algoritmi quyidagicha:
+				</p>
+				<ul>
+				<li>Tanlangan nom tekshirilmoqda. Bu nafaqat noyob, esda qolarli va saytning o'ziga xos xususiyatlariga mos kelishi, balki bepul bo'lishi kerak. Ko'paytirishga yo'l qo'yilmaydi. Tekshirish uchun ixtisoslashtirilgan xizmatlar ham qo'llaniladi.</li>
+				<li>So'rovnomani to'ldirish. Bu erda siz domendan kim foydalanishi, shaxsiy ma'lumotlar, huquqiy maqom, yakka tartibdagi tadbirkor, xususiy shaxs yoki jismoniy shaxs bo'ladimi, ko'rsatishingiz kerak. Ko'rsatilgan ma'lumotlar to'plami vositachi tashkilot talablariga qarab farq qilishi mumkin.</li>
+				<li>Xarid va to'lovni tasdiqlash. Qoidaga ko‘ra, siz domen uchun bank kartasi yoki elektron hamyon yordamida to‘lashingiz mumkin.</li>
+				<li>Yangi sotib olingan nomni saytga ulash.</li>
+				</ul>
+				<p>
+				Ro'yxatdan o'tishdan oldin siz uning davomiyligi haqida darhol qaror qabul qilishingiz kerak. Qoidaga ko'ra, muddat qancha uzoq bo'lsa, undan foydalanish shunchalik foydali bo'ladi. Shuningdek, siz domen uchun o'z vaqtida to'lashingiz kerak, ayniqsa tanlov muvaffaqiyatli bo'lsa, sayt yuqori trafikga ega bo'lsa, u yangi foydalanuvchilarni jalb qiladi va yaxshi konvertatsiya stavkalarini namoyish etadi. Agar to'lov o'z vaqtida amalga oshirilmasa, domen yana sotuvga qo'yilishi va yangi foydalanuvchi tomonidan ushlanishi mumkin. 
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				How to register a domain?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				System administrators, people whose work is somehow connected with the Internet, sooner or later have to deal with the need to register a domain. It should be noted right away that the registration procedure does not imply the transfer of ownership; in fact, it is the conclusion of a lease agreement for a period of more than a year.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				After the registration is completed, you can use the name to host a website, create a mail service on its basis, or solve other problems. In any case, the owner remains ICANN, a corporation that is responsible for numerous domain names and IP addresses. How to register a domain? What is required for this?
+				</p>
+				<a name="2"></a>
+				<h3>General concept</h3>
+				<p>
+				The term domain refers to the symbolic address on which a network resource is located, for example, “google.com”. Alphabetic characters have become more widespread than digital ones; they are much easier to remember. If chosen correctly, the name will become an effective marketing tool, will contribute to the popularity and traffic of the news, information portal or online store.
+				</p>
+				<a name="3"></a>
+				<h3>Domain selection rules</h3>
+				<p>
+				The domain must meet at least two basic technical requirements:
+				</p>
+				<ul>
+				<li>Maximum length - 255 characters, taking into account periods and subdomains;</li>
+				<li>Absence of specialized characters. Only letters, numbers, hyphens are allowed.</li>
+				</ul>
+				<p>
+				The name can contain letters of both the Russian and English alphabets - the choice depends on the geographical position of the organization represented, the place of residence of the main target audience. Similar rules are relevant for the registration zone, for example, for Russians, sites located in the ru zone are more understandable and attractive, com and net are international areas.
 				</p>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				Of course, the domain name should match the name of the company or, at least, be close to it in spelling to avoid confusion.
 				</p>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				When choosing a domain, you should follow a number of recommendations:
+				</p>
+				<ul>
+				<li>Brevity. The shorter the address, the easier it is to remember and enter it in the search bar.</li>
+				<li>Ease of pronunciation. This makes it easier to remember, allows you to share the site with friends in friendly conversations.</li>
+				<li>Absence of complex transliterations. It is better to exclude the use of hissing and other sounds, the English spelling of which is too cumbersome and non-obvious, looks like “sch”, “zh” or “pf”.</li>
+				<li>Absence of numbers. They complicate and overload the writing.</li>
+				<li>Coincidence with the topic of the network resource, the name of the owner organization.</li>
+				</ul>
+				<a name="4"></a>
+				<h3>Which level should I choose?</h3>
+				<p>
+				The third-level domain is available free of charge, however, such savings are irrational - it causes mistrust of the target audience, as well as insufficiently effective indexing by search engines, and one cannot count on high positions in the search results lists.
 				</p>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
+				The second level is a more correct option, providing several advantages:
 				</p>
+				<ul>
+				<li>Advanced functionality, providing ease of management;</li>
+				<li>The ability to select a name that most fully reflects the specifics, content of the network resource;</li>
+				<li>Efficient indexing by search engines, allowing you to implement various marketing strategies, use SEO tools;</li>
+				<li>Increased trust from the target audience.</li>
+				</ul>			
+				<a name="5"></a>
+				<h3>Registration procedure</h3>
 				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				To use a domain, successfully complete the registration procedure, you must use special services, services of specialized organizations that have the necessary license and accreditation. The algorithm of actions is as follows:
+				</p>
+				<ul>
+				<li>Checking the selected name. It should not only be unique, memorable, corresponding to the specifics of the site, but also free. Duplications are unacceptable. Specialized services are also used for verification.</li>
+				<li>Filling out the questionnaire. Here you need to indicate who will use the domain, personal data, legal status, whether it is an individual entrepreneur, private or natural person. The set of specified data may change depending on the requirements of the intermediary organization.</li>
+				<li>Confirmation of purchase and payment. As a rule, you can pay for a domain using a bank card or an e-wallet.</li>
+				<li>Linking a newly purchased name to a website.</li>
+				</ul>
+				<p>
+				Before registering, you should immediately decide on its duration. As a rule, the longer the term, the more profitable it is to use. You also need to pay for the domain in a timely manner, especially if the choice was successful, the site has high traffic, it attracts new users, and demonstrates good conversion rates. If you do not pay in a timely manner, the domain may be put up for sale again and intercepted by a new user.
 				</p>
 			</>
 		),

@@ -5,8 +5,8 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "Домен .COM — что это?",
-		uz: "Домен .COM — что это?",
-		en: "Домен .COM — что это?",
+		uz: ".COM domeni - bu nima?",
+		en: "Domain .COM - what is it?",
 	},
 	title: {
 		ru: "Домен .COM — что это такое, особенности и преимущества",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/com.jpg",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,11 +61,11 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Происхождение названия", uz: "Происхождение названия", en: "Происхождение названия", slug: "1" }},
-		{ title: {ru: "Немного истории", uz: "Немного истории", en: "Немного истории", slug: "2" }},
-		{ title: {ru: "Кому подойдет доменная зона com?", uz: "Кому подойдет доменная зона com?", en: "Кому подойдет доменная зона com?", slug: "3" }},
-		{ title: {ru: "Достоинства и недостатки", uz: "Достоинства и недостатки", en: "Достоинства и недостатки", slug: "4" }},
-		{ title: {ru: "Подведение итогов", uz: "Подведение итогов", en: "Подведение итогов", slug: "5" }},
+		{ title: {ru: "Происхождение названия", uz: "Ismning kelib chiqishi", en: "Origin of the name", slug: "1" }},
+		{ title: {ru: "Немного истории", uz: "Biroz tarix", en: "A bit of history", slug: "2" }},
+		{ title: {ru: "Кому подойдет доменная зона com?", uz: ".com domen zonasi kimga mos keladi?", en: "Who is the .com domain zone suitable for?", slug: "3" }},
+		{ title: {ru: "Достоинства и недостатки", uz: "Afzalliklari va kamchiliklari", en: "Advantages and disadvantages", slug: "4" }},
+		{ title: {ru: "Подведение итогов", uz: "Xulosa qilish", en: "Summing up", slug: "5" }},
 	],
 	content: {
 		ru: (
@@ -147,70 +147,128 @@ const data = {
 		uz: (
 			<>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Com - Internet foydalanuvchilari orasida eng taniqli domen zonalaridan biri. Uning asl maqsadi tijorat korxonalarini ro'yxatga olish edi, ammo 90-yillarning o'rtalarida bu cheklov o'z ahamiyatini yo'qotdi va zona tashkilotlar, xususiy tadbirkorlar va jismoniy shaxslar tomonidan ularning o'ziga xosligi va turidan qat'i nazar, har qanday veb-saytlarni joylashtirish uchun foydalanila boshlandi. 
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Belgilangan domen zonasi yirik yangiliklar portallarini, o'n minglab mahsulot nomlariga ega onlayn-do'konlarni va shaxsiy bloglarni o'z ichiga oladi. Mashhurlik ro'yxatga olish tartibining ochiqligi va mintaqaviy cheklovlarning yo'qligi bilan izohlanadi. Statistik ma'lumotlarga ko'ra, ro'yxatdan o'tgan tarmoq resurslarining umumiy soni ishonchli tarzda bir yuz ellik milliondan oshdi va ularning aksariyati ishlamoqda. 
+				</p>
+				<a name="1"></a>
+				<h3>Ismning kelib chiqishi</h3>
+				<p>
+				Com inglizcha "commercial" so'zining qisqartirilgan versiyasidir. Ushbu tanlovni hayratlanarli deb atash mumkin emas: yuqorida aytib o'tilganidek, zona dastlab faqat tijorat saytlari uchun ishlatilgan. Bundan tashqari, dekodlashning yana bir versiyasi mavjud - "umumiy", "umumiy", ammo bu noto'g'ri. Zonaning qisqartirilgan atamasi "dotcom" bo'lib, undan oddiy Internet foydalanuvchilari ham, mutaxassislar ham foydalanadilar. 
+				</p>
+				<a name="2"></a>
+				<h3>Kichik tarix</h3>
+				<p>
+				.com domenining paydo bo'lishi 1985 yilga to'g'ri keladi va u birinchilardan bo'lib yuqori darajaga kiradi. Ko'pgina boshqa zonalar singari, u dastlab AQSh Mudofaa vazirligi nazorati ostida edi, ammo 1991 yilda u GSIga o'tkazildi. 
 				</p>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				Domen zonasi, birinchi navbatda, fuqarolik korxonalari tomonidan talab qilingan; 1993 yilda u Milliy fan fondi nazoratiga o'tdi. Aynan uning tashabbusi bilan roʻyxatdan oʻtish va xizmat koʻrsatish toʻlovi 50 AQSh dollari tashkil etildi. 
 				</p>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				.com saytida muvaffaqiyatli ro'yxatdan o'tgan birinchi tashkilot Symbolic Incorporated bo'ldi, u kompyuter va elektron uskunalar ishlab chiqarish va dasturiy ta'minotni ishlab chiqishga ixtisoslashgan. Hozirda ushbu tarmoq resursi shaxsiy qo'llarda va uni sotib olishning iloji yo'q. 
 				</p>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
+				Uning paydo bo'lishidan so'ng darhol domen zonasi unchalik katta talabga ega emas edi. Ikki yil ichida tom ma'noda yuzta sayt ro'yxatga olindi, ammo 1995 yilga kelib ularning soni 18 mingga, 2011 yilga kelib - 100 millionga, 2021 yilga kelib - 150 taga etdi va faol o'sish bugungi kungacha davom etmoqda. 
+				</p>
+				<a name="3"></a>
+				<h3>.com domen zonasi kimga mos keladi?</h3>
+				<p>
+				O'tgan asrning 90-yillari o'rtalariga qadar zonada amalda bo'lgan cheklovlar o'z ahamiyatini yo'qotdi. Hozirda bu yerda quyidagi saytlar mavjud:
+				</p>
+				<ul>
+				<li>Ishlab chiqarish, moliya va boshqa sohalardagi korxonalarni ifodalovchi tijorat;</li>
+				<li>Yangilik platformalari, axborotga yoʻnaltirilgan portallar, yirik davlat, viloyat va shaharlardan tortib shaxsiy bloglargacha;</li>
+				<li>Onlayn do'konlar, tovarlarni sotish, turli xizmatlarni taklif qilish uchun mo'ljallangan boshqa platformalar;</li>
+				<li>Ko'ngilochar platformalar, audio va video oqimlari;</li>
+				<li>Ijtimoiy tarmoqlar;</li>
+				<li>Internet eshittirishini yoʻlga qoʻygan yirik radiostansiyalar va telekompaniyalarning tarmoq vakillari.</li>
+				</ul>
+				<a name="4"></a>
+				<h3>Afzalliklar va kamchiliklar</h3>
+				<p>
+				Domen zonasining asosiy afzalliklari quyidagilardan iborat:
+				</p>
+				<ul>
+				<li>Ro'yxatga olish tartibining ochiqligi. Hududda hech qanday cheklovlar yo'q, domen sotib olish yuridik shaxslar, yakka tartibdagi tadbirkorlar, jismoniy shaxslar sifatida ro'yxatdan o'tgan tashkilotlar uchun mavjud, shu bilan birga ishning tijorat xususiyatlari talab qilinmaydi.</li>
+				<li>Saytga ishonchni oshirish. Com eng taniqli, obro'li zonalar toifasiga kiradi, shuning uchun unda ro'yxatdan o'tgan tarmoq resursi foydalanuvchilar tomonidan ishonchli va ishonchli deb qabul qilinadi. Bu konversiya va trafikni oshiradi va sayt mavjudligining barcha bosqichlarida hatto com da roʻyxatdan oʻtgan yosh kompaniya ham tijorat muvaffaqiyatiga ishonishi mumkin.</li>
+				<li>Universallik. Domen zonasi miqyosi va diqqat markazidan qat'i nazar, ochilish sahifasi va kichik blogdan tortib ulkan onlayn-do'kongacha bo'lgan har qanday sayt uchun ishlatilishi mumkin. Tarmoq resursining o'ziga xosligi texnik yordam sifatiga yoki muvaffaqiyatli ro'yxatdan o'tish uchun zarur bo'lgan shartlarga ta'sir qilmaydi.</li>
+				<li>Geografik ma'lumot yo'qligi. Com ko'pincha foydalanuvchini chalkashtirib yuboradigan va maqsadli auditoriyani cheklaydigan ma'lum bir mamlakat bilan bog'lanishni istisno qiladi. Misol uchun, MDH mamlakatlari aholisi ko'pincha ru-segment veb-saytlariga buyurtma berishdan qochishadi, chunki ular faqat ruslar bilan ishlaydi. Com tarmoq resursining xalqaro holatini bildiradi, bu esa ushbu muammodan qochish imkonini beradi.</li>
+				</ul>
+				<p>
+				Zonaning kamchiliklari ro'yxatga olish narxini o'z ichiga oladi. Milliy segmentlar uchun odatda bir necha yuz rubl, com uchun - ikki marta, ba'zan uch baravar yuqori. Bu minus juda o'zboshimchalik bilan; hatto bunday farq bilan biz kichik miqdorlar haqida gapiramiz. Ikkinchi nuqta - mavjud nomlarning cheklangan soni. Misol uchun, 2000 yildan beri uch belgidan iborat nomni topishning iloji yo'q edi, 2007 yildan beri - to'rt belgidan iborat, domen zonasining mashhurligi tufayli ular tugaydi. Biroq, biroz o'ylab ko'rsangiz, esda qolarli ism topa olasiz. 
+				</p>
+				<a name="5"></a>
+				<h3>Xulosa qilish</h3>
+				<p>
+				Comning kuchli tomonlari soni zaif tomonlari sonidan aniq ustundir. Roʻyxatdan oʻtish toʻlovi 100% saytga boʻlgan ishonchning ortishi, trafik va konversiyaning ortishi, barqaror ishlash va har tomonlama texnik yordam bilan qoplanadi. 
 				</p>
 				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				Agar siz ko'rsatilgan zonada ro'yxatdan o'tishni xohlasangiz, uni amalga oshirishni kechiktirmang - mavjud nomlar soni kamaymoqda! 
 				</p>
 			</>
 		),
 		en: (
 			<>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				Com is one of the most recognizable domain zones among Internet users. Its original purpose was to register commercial enterprises, however, in the mid-90s this restriction lost its relevance, the zone began to be used by organizations, private entrepreneurs, individuals to host any sites, regardless of the specifics and type.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				In this domain zone, there are both large news portals, online stores with tens of thousands of product names, and private blogs. Its popularity is explained by the openness of the registration procedure, the absence of a regional binding. According to statistics, the total number of registered network resources has confidently exceeded one hundred and fifty million, and most of them are working.
+				</p>
+				<a name="1"></a>
+				<h3>Origin of the name</h3>
+				<p>
+				Com is an abbreviated version of the English word “commercial”. Such a choice cannot be called surprising: as already mentioned above, the zone was initially used exclusively for commercial sites. There is also another version of the decoding - “common”, “general”, however, it is erroneous. The abbreviated term for the zone is “dotcom”, it is used by both ordinary Internet users and specialists.
+				</p>
+				<a name="2"></a>
+				<h3>A little history</h3>
+				<p>
+				The appearance of the com domain dates back to 1985, it was among the first, belonging to the top level. Like many other zones, at first it was under the control of the US Department of Defense, however, in 1991 it was transferred to the GSI company.
 				</p>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				The domain zone turned out to be in demand, first of all, among civilian enterprises, in 1993 it came under the control of the National Science Foundation. It was on its initiative that a $50 fee for registration and maintenance was established.
 				</p>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				The first organization to successfully register in .com was Symbolic Incorporated, which specializes in the production of computer and electronic equipment, and software development. Now this network resource is in private hands, and its purchase is impossible.
 				</p>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
+				Immediately after its appearance, the domain zone was not in particularly high demand. Within two years, literally a hundred sites were registered, however, by 1995, the number had grown to 18 thousand, by 2011 - to 100 million, by 2021 - to 150, and the active increase continues to this day.
+				</p>
+				<a name="3"></a>
+				<h3>Who is the .com domain zone suitable for?</h3>
+				<p>
+				The restrictions that were in effect in the zone until the mid-90s of the last century have lost their relevance. The following sites are currently listed here:
+				</p>
+				<ul>
+				<li>Commercial, representing enterprises in the manufacturing, financial and other fields;</li>
+				<li>News platforms, information portals, from huge state, regional and city to private blogs;</li>
+				<li>Online stores, other platforms designed to sell goods, offer various services;</li>
+				<li>Entertainment platforms, audio and video streaming;</li>
+				<li>Social networks;</li>
+				<li>Online representative offices of large radio stations, television companies, which have established Internet broadcasting.</li>
+				</ul>
+				<a name="4"></a>
+				<h3>Advantages and disadvantages</h3>
+				<p>
+				The main advantages of the domain zone are as follows:
+				</p>
+				<ul>
+				<li>Openness of the registration procedure. There are no restrictions in the zone, the domain can be purchased by organizations registered as legal entities, individual entrepreneurs, and individuals, while the commercial specifics of the work are not required.</li>
+				<li>Increasing trust in the site. Com belongs to the category of the most famous, authoritative zones, so the network resource registered in it is perceived by users as reliable and trustworthy. This increases conversion and traffic, and at all stages of the site's existence, even a young company registered in com can count on commercial success.</li>
+				<li>Universality. The domain zone can be used for any site, regardless of scale and focus, from a landing page and a small blog to a huge online store. The specifics of the network resource do not affect the quality of technical support, the conditions necessary for successful registration.</li>
+				<li>Absence of geographic binding. Com excludes associations with a specific state, which often confuses the user, limits the target audience. For example, residents of the CIS countries often avoid placing orders on ru-segment websites, believing that they work exclusively with Russians. Com indicates the international status of the network resource, allowing you to avoid such a problem.</li>
+				</ul>
+				<p>
+				The disadvantages of the zone include the cost of registration. For national segments, it is usually several hundred rubles, for com - twice, sometimes three times higher. This disadvantage is quite conditional, even with such a difference we are talking about small amounts. The second point is the limited number of available names. For example, since 2000 it has been impossible to find a three-digit name, since 2007 - a four-digit name, due to the popularity of the domain zone, they simply ran out. However, if you think a little, you will be able to find a memorable name.
+				</p>
+				<a name="5"></a>
+				<h3>Summing up</h3>
+				<p>
+				The number of com's strengths confidently outweighs the number of its disadvantages. The registration fee is 100% compensated by increased trust in the site, increased traffic and conversion, stable operation, and comprehensive technical support.
 				</p>
 				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				If you want to register in the specified zone, do not delay its implementation - the number of free names is decreasing!
 				</p>
 			</>
 		),
