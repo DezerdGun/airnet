@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "Что такое RDP?",
-		uz: "Что такое RDP?",
-		en: "Что такое RDP?",
+		uz: "RDP nima?",
+		en: "What is RDP?",
 	},
 	title: {
 		ru: "RDP (Remote Desktop Protocol) — что это такое и как работает",
-		uz: "RDP (Remote Desktop Protocol) — что это такое и как работает",
-		en: "RDP (Remote Desktop Protocol) — что это такое и как работает",
+		uz: "RDP (Remote Desktop Protocol) - bu nima va u qanday ishlaydi",
+		en: "RDP (Remote Desktop Protocol) - what is it and how does it work",
 	},
 	desc: {
 		ru: "RDP — протокол удаленного рабочего стола от Microsoft 🖥️ Узнайте, что такое RDP, как он работает и для чего используется. Преимущества и риски использования удаленного доступа к компьютеру.",
-		uz: "RDP — протокол удаленного рабочего стола от Microsoft 🖥️ Узнайте, что такое RDP, как он работает и для чего используется. Преимущества и риски использования удаленного доступа к компьютеру.",
-		en: "RDP — протокол удаленного рабочего стола от Microsoft 🖥️ Узнайте, что такое RDP, как он работает и для чего используется. Преимущества и риски использования удаленного доступа к компьютеру.",
+		uz: "RDP - Microsoft-ning masofaviy ish stoli protokoli 🖥️ RDP nima ekanligini, u qanday ishlashini va nima uchun ishlatilishini bilib oling. Kompyuterga masofaviy kirishdan foydalanishning afzalliklari va xavflari.",
+		en: "RDP is Microsoft's Remote Desktop Protocol 🖥️ Find out what RDP is, how it works, and what it's used for. Benefits and risks of using remote access to a computer.",
 	},
 	date: "21.11.2024",
 	updated: "21.11.2024",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/rdp.jpg",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,17 +61,14 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Что такое RDP?", uz: "Что такое RDP?", en: "Что такое RDP?", slug: "1" }},
-		{ title: {ru: "Немного истории", uz: "Немного истории", en: "Немного истории", slug: "2" }},
-		{ title: {ru: "Структура и принцип действия", uz: "Структура и принцип действия", en: "Структура и принцип действия", slug: "3" }},
-		{ title: {ru: "Кому необходим Docker?", uz: "Кому необходим Docker?", en: "Кому необходим Docker?", slug: "4" }},
-		{ title: {ru: "Преимущества платформы", uz: "Преимущества платформы", en: "Преимущества платформы", slug: "5" }},
-		{ title: {ru: "К вопросу о недостатках", uz: "К вопросу о недостатках", en: "К вопросу о недостатках", slug: "6" }},
-		{ title: {ru: "Docker и хранение информации", uz: "Docker и хранение информации", en: "Docker и хранение информации", slug: "7" }},
-		{ title: {ru: "Практическое использование", uz: "Практическое использование", en: "Практическое использование", slug: "8" }},
-		{ title: {ru: "Установка Docker", uz: "Установка Docker", en: "Установка Docker", slug: "9" }},
-		{ title: {ru: "Работа с образом Docker", uz: "Работа с образом Docker", en: "Работа с образом Docker", slug: "10" }},
-		{ title: {ru: "Подведение итогов", uz: "Подведение итогов", en: "Подведение итогов", slug: "11" }},
+		{ title: {ru: "Что такое RDP?", uz: "RDP nima?", en: "What is RDP?", slug: "1" }},
+		{ title: {ru: "Немного истории", uz: "Biroz tarix", en: "A bit of history", slug: "2" }},
+		{ title: {ru: "Для чего используется RDP?", uz: "RDP nima uchun ishlatiladi?", en: "What is RDP used for?", slug: "3" }},
+		{ title: {ru: "Кому необходим протокол?", uz: "Protokol kimga kerak?", en: "Who needs a protocol?", slug: "4" }},
+		{ title: {ru: "Принцип работы", uz: "Ishlash printsipi", en: "Operating principle", slug: "5" }},
+		{ title: {ru: "К вопросу о безопасности", uz: "Xavfsizlik masalasida", en: "On the issue of security", slug: "6" }},
+		{ title: {ru: "Достоинства и недостатки", uz: "Afzalliklari va kamchiliklari", en: "Advantages and disadvantages", slug: "7" }},
+		{ title: {ru: "Инструкции по применению", uz: "Foydalanish bo'yicha ko'rsatmalar", en: "Instructions for use", slug: "8" }},
 	],
 	content: {
 		ru: (
@@ -194,71 +191,213 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				RDP nima?
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Kompyuterni masofadan boshqarish, ish stoliga ulanish - bularning barchasi bir necha usullar yordamida mumkin. Eng mashhur variant - bu RDP, ya'ni "masofaviy ish stoli protokoli". Ushbu texnologiyaning xususiyatlari qanday? Funktsional imkoniyatlar, afzalliklari va kamchiliklari qanday? Qanday qilib uni to'g'ri ishlatish kerak?
+				</p>
+				<a name="2"></a>
+				<h3>Kichik tarix</h3>
+				<p>
+				Masofaviy kirish texnologiyasini yaratish zarurati bir necha o'n yillar oldin paydo bo'lgan - potentsial afzalliklar aniq ko'rinardi. Administratorlar o'zlari xizmat ko'rsatadigan serverlardan minglab kilometr uzoqda bo'lishlari mumkin, shu bilan birga ularni iloji boricha aniq sozlash, ulardan samarali foydalanish, mavjud apparat imkoniyatlarini amalga oshirish.
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Biroq, texnik imkoniyatlar dastlab juda cheklangan edi, shuning uchun birinchi ishlanmalar o'tgan asrning 90-yillari boshlariga to'g'ri keladi. Kashshof Citrix edi, uning protokoli funktsional, o'rganish oson, maxsus talablarga ega bo'lgan ma'murlar uchun ham, oddiy foydalanuvchilar uchun ham mos bo'lib chiqdi.
 				</p>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				O'rganilayotgan sohada yutuq 90-yillarning oxirida, Microsoft RDP protokolini jamoat mulkiga chiqarganida yuz berdi. Citrix mahsuloti bilan solishtirganda mavjud funktsiyalar to'plami kengaytirildi, tezlik va ishlash sezilarli darajada oshdi.
 				</p>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				Microsoft mutaxassislari shu bilan to'xtamadilar, ular RDPni o'zgartirdilar, yangi funktsiyalarni joriy qildilar, xususan:
 				</p>
+				<ul>
+				<li>Audio, grafik fayllar, videolarni uzatish.</li>
+				<li>Nafaqat asosiy kompyuter uskunalari, balki tashqi qurilmalar, skanerlar, printerlar, tashqi xotira qurilmalari, flesh-kartalardan ham samarali foydalanish.</li>
+				</ul>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
+				2000-yillarning boshidan beri RDP barcha Windows foydalanuvchilari, xususiy va korporativ foydalanuvchilari uchun mavjud. Uning zamonaviy versiyasida u masofadan ishlash va konfiguratsiya bilan bog'liq muammolarni tez va samarali hal qilishga yordam beradi.
 				</p>
+				<a name="3"></a>
+				<h3>RDP nima uchun ishlatiladi?</h3>
 				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				Protokol quyidagi vazifalarni samarali hal qilish imkonini beradi:
+				</p>
+				<ul>
+				<li>IT infratuzilmasini boshqarish. Administratorlar serverlar ishini ularning geografik joylashuvidan qatʼiy nazar kuzatishi mumkin, bu esa yuzaga kelayotgan muammolarni tezda bartaraf etishga, tizim konfiguratsiyasini oʻzgartirishga, ilovalarni bevosita ishtirok etmasdan yangilashga yordam beradi.</li>
+				<li>Yordam xizmatining samarali ishlashi. Administrator mijozning so'rovini uning oldiga bormasdan ko'rib chiqishi mumkin. Ish stoliga masofadan kirish orqali diagnostika qilish, muammoning mohiyatini tushunish, sozlamalarni o‘zgartirish, yangilanishlarni o‘rnatish va boshqa usullar orqali uni tuzatish mumkin bo‘ladi.</li>
+				<li>Virtualizatsiya. RDP virtual ish joyiga kirish imkonini beradi, bu esa turli shaharlardagi va hattoki mamlakatlardagi hamkasblar oʻrtasida samarali hamkorlikni taʼminlaydi.</li>
+				<li>Xavfsizlik yaxshilandi. RDP ikki faktorli autentifikatsiya algoritmlarini, ma'lumotlarni shifrlashni qo'llab-quvvatlaydi, bu ma'lumotlarni uzatish paytida xavfsizlikni kafolatlaydi, uni ushlashni foydasiz qiladi, ko'pincha imkonsiz qiladi. Hatto maxfiy, tijorat ma'lumotlarini uzatishga ruxsat beriladi.</li>
+				</ul>
+				<a name="4"></a>
+				<h3>Protokol kimga kerak?</h3>
+				<p>
+				Ko'pincha RDP quyidagi idoralar, korxonalar va tashkilotlar tomonidan qo'llaniladi:
+				</p>
+				<ul>
+				<li>Xodimlarni masofaviy ishlashga o'tkazishga qaror qilgan kompaniyalar. Siz hatto jismoniy ofis, xizmat safarlari va boshqa xarajatlarsiz ham mehnat unumdorligiga, belgilangan vazifalarni hal qilish samaradorligiga zarar etkazmasdan qilishingiz mumkin. Bular nafaqat tijorat, balki ta'lim muassasalari ham bo'lishi mumkin, RDP ta'lim jarayonini tashkil qilish imkonini beradi.</li>
+				<li>Foydalanuvchilarni qo'llab-quvvatlash xizmatlari. Bunday provayderlar, uyali aloqa operatorlari, rivojlangan IT infratuzilmasi bo'lgan xususiy va davlat tashkilotlarida mavjud. Masofadan turib muammoni hal qilish administratorning to‘g‘ridan-to‘g‘ri foydalanuvchi kompyuterida bo‘lishi kabi samaralidir.</li>
+				<li>Turli mamlakatlardan mutaxassislarni ish bilan ta'minlaydigan ko'p millatli kompaniyalar. Protokol barcha xodimlarga maksimal samaradorlik bilan muloqot qilish imkonini beradi.</li>
+				</ul>
+				<a name="5"></a>
+				<h3>U qanday ishlaydi</h3>
+				<p>
+				Masofaviy ish stoliga kirish foydalanuvchi kompyuterini, mijozni serverga ulashni o'z ichiga oladi. Ulanish o'rnatilganda, shifrlash usullari va xavfsizlikni kafolatlaydigan boshqa algoritmlarni qo'llab-quvvatlash tekshiriladi. Keyingi harakatlar ketma-ketligi quyidagicha:
+				</p>
+				<ul>
+				<li>Avtorizatsiya. Standart variant mijoz nomi va parolni kiritishi mumkin, ammo xavfsizlik va maxfiylik talablari yuqori boʻlgan tizimlarda murakkabroq sxemalardan foydalanish mumkin.</li>
+				<li>Server tomonidan masofaviy aloqa seansini shakllantirish. Bunday holda, ish stoli barcha belgilar, menyu elementlari va elementlari bilan ko'rsatiladi. Uzatilgan grafik signalning sifati server yukiga, kanal o‘tkazish qobiliyatiga qarab sozlanadi, bu kechikishni minimal darajaga, to‘liq yo‘q bo‘lgunga qadar kamaytiradi.</li>
+				<li>Server bilan fikr-mulohaza bildirish. Mijoz kompyuteri bajarilgan harakatlar, sozlamalardagi o'zgarishlar, periferik qurilmalarning ulanishi va uzilishi haqida ma'lumotlarni yuboradi.</li>
+				</ul>
+				<a name="6"></a>
+				<h3>Xavfsizlik masalasida</h3>
+				<p>
+				RDP protokolidan foydalanishda xavfsizlik muammolarini bartaraf etish uchun quyidagi vositalardan foydalanish tavsiya etiladi:
+				</p>
+				<ul>
+				<li>Shifrlash. Axborot shifrlangan shaklda uzatiladi, shuning uchun hatto uni ushlash ham foydasizdir.</li>
+				<li>Murakkab autentifikatsiya usullari. Eng maqbuli ikki faktorli bo'lib, u nafaqat foydalanuvchi nomi va parolni, balki bir martalik kodni ham kiritishni o'z ichiga oladi.</li>
+				<li>Huquqlarni taqsimlash. Tasodifiy noto'g'ri yoki qasddan qilingan harakatlarni istisno qilish uchun foydalanuvchi huquqlari qat'iy chegaralangan bo'lishi kerak.</li>
+				<li>Ishonchli ishlab chiquvchilarning antivirus dasturidan foydalaning, ma'lumotlar bazasini o'z vaqtida yangilang.</li>
+				<li>Doimiy monitoring. Ruxsatsiz ulanishlar va shubhali harakatlarni darhol qayd etish uchun masofaviy aloqa seansini boshqarish kerak. Bundan tashqari, barcha hodisalarni ko'rsatadigan jurnalni saqlash tavsiya etiladi.</li>
+				<li>Dasturlarning joriy versiyalaridan foydalanish. Eng so'nggi nashrlar nafaqat funktsional, balki ishonchliroq. Ishlab chiquvchilar hatto tajovuzkorlar tomonidan ishlatilishi mumkin bo'lgan noaniq, potentsial zaifliklarni ham yo'q qilishga qaratilgan "yamalar" chiqaradilar.</li>
+				<li>Xavfsizlik devorini to'g'ri sozlang. Eng ishonchli variant - ruxsat etilgan IP manzillarni ro'yxatdan o'tkazish; roʻyxatda koʻrsatilmagan barcha boshqa shaxslardan kirish avtomatik ravishda bloklanadi.</li>
+				<li>Avtorizatsiyaga urinishlar sonini cheklash. Ushbu funktsiya parolni tanlash, mumkin bo'lgan kombinatsiyalarni ro'yxatlash orqali tizimga kirish imkoniyatini yo'q qiladi. Muvaffaqiyatsiz urinishlar soni belgilangan chegaradan oshib ketganda, foydalanuvchining vaqti yoki butun IP manzili vaqtincha bloklanadi.</li>
+				</ul>
+				<a name="7"></a>
+				<h3>Afzalliklar va kamchiliklar</h3>
+				<p>
+				RDP protokolining mashhurligi uning ko'plab afzalliklari bilan izohlanadi, ulardan eng muhimi quyidagilardir:
+				</p>
+				<ul>
+				<li>Maksimal qulaylik. Masofaviy ulanish protokoli tufayli mutaxassislar jismoniy ish joyida bo'lmasdan o'z vazifalarini bajarishlari mumkin, Internetga kirish etarli. Endi, ko'plab kompaniyalar xodimlarni masofaviy formatga o'tkazayotganda, bu afzallik ayniqsa dolzarb bo'lib bormoqda.</li>
+				<li>Xarajatlarni optimallashtirish. Birinchidan, transport, tizim ma'murlari, texnik yordam vakillari har bir mijoz so'rovi uchun tashqariga chiqishlari shart emas, ko'plab muammolarni masofadan turib hal qilish mumkin.</li>
+				<li>Xavfsizlik darajasi oshirildi. Ma'lumotlar shifrlangan formatda uzatiladi, bu noqonuniy ulanish va ruxsatsiz kirish xavfini yo'q qiladi.</li>
+				<li>Mashqlanishi va nazorat o'zgaruvchanligi. Protokol foydalanuvchilar sonini oʻzgartirishga, kerak boʻlganda kichik biznes va yirik tashkilotlarga mos keladigan yangi ish stantsiyalaridan foydalanish imkonini beradi.</li>
+				</ul>
+				<p>
+				Protokolning kamchiliklari juda kam va har bir yangi versiyada ularning soni kamayadi. Dastlabki versiyalarda ko'p sonli foydalanuvchilarning bir vaqtning o'zida ulanishi, past ulanish tezligi, administrator harakatlariga reaktsiyalar bilan bog'liq muammolar mavjud edi, ammo ular endi tuzatildi.
+				</p>
+				<a name="8"></a>
+				<h3>Foydalanish bo'yicha ko'rsatmalar</h3>
+				<p>
+				RDP odatda Windows operatsion tizimlarida qo'llaniladi. Harakatlar ketma-ketligi quyidagicha:
+				</p>
+				<ul>
+				<li>Protokol faollashtirilmoqda. Kerakli element “Tizim va xavfsizlik” bo‘limida va “Tizim” yorlig‘ida joylashgan.</li>
+				<li>VPN va boshqa shifrlash protokollaridan foydalangan holda xavfsizlik sozlamalarini sozlash, xavfsizlik devorini faollashtirish, istisnolar toifasiga 3389-portni qo‘shish.</li>
+				<li>Kirish huquqlarini sozlash. Tizimga ulanishi, huquqlarini ro'yxatdan o'tkazishi mumkin bo'lgan foydalanuvchilarni ko'rsatishingiz kerak.</li>
+				<li>Boshqarish tizimidan kompyuterda “Masofaviy ish stoliga ulanish” yordam dasturini ochish. Siz ulanishni rejalashtirayotgan qurilmaning xost yoki IP manzilini ko'rsatishingiz kerak.</li>
+				</ul>
+				<p>
+				RDP Microsoft muhandislarining ishlanmasi bo'lishiga qaramay, boshqa operatsion tizimlar uchun versiyalar mavjud. Masalan, macOS-da siz xususiy Remote Desktop ilovasidan foydalanishingiz mumkin. Bu holda sozlash va ulanish jarayoni Windows bilan bir xil.
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				What is RDP?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				Remote control of a computer, connection to a desktop - all this is possible using several methods. The most popular option is RDP, that is, “remote desktop protocol”. What are the features of this technology? What are the functional capabilities, advantages and disadvantages? How to use it correctly?
+				</p>
+				<a name="2"></a>
+				<h3>A little history</h3>
+				<p>
+				The need to create a remote access technology arose several decades ago - the potential advantages seemed obvious. Administrators could be thousands of kilometers away from the servers they serviced, while configuring them as accurately as possible, using them effectively, realizing the available hardware capacity.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				Technical capabilities, however, were initially very limited, so the first developments date back to the early 90s of the last century. The pioneer was Citrix, its protocol turned out to be functional, easy to learn, suitable for both administrators with special requirements and ordinary users.
 				</p>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				A breakthrough in the industry under study occurred in the late 90s, when Microsoft released the RDP protocol to the public domain. The set of available functions, in comparison with the Citrix product, was expanded, speed and performance increased significantly.
 				</p>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				Microsoft specialists did not stop there, they modified RDP, introduced new functions, in particular:
 				</p>
+				<ul>
+				<li>Transfer of audio, graphic files, video.</li>
+				<li>Efficient use of not only the main computer equipment, but also peripherals, scanners, printers, external storage devices, flash cards.</li>
+				</ul>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
+				Since the early 2000s, RDP has been available to all Windows users, private and corporate. In its modern version, it helps in prompt and effective resolution of issues related to remote work and configuration.
 				</p>
+				<a name="3"></a>
+				<h3>What is RDP used for?</h3>
 				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				The protocol allows you to effectively solve the following tasks:
+				</p>
+				<ul>
+				<li>IT infrastructure management. Administrators can monitor the operation of servers regardless of their geographic location, which helps to promptly eliminate emerging problems, change the system configuration, update applications without direct presence.</li>
+				<li>Efficient work of the support service. The administrator can process a client's request without going to him. Through remote access to the desktop, it will be possible to diagnose, understand the nature of the problem, fix it by changing settings, installing updates and other methods.</li>
+				<li>Virtualization. RDP makes it possible to provide access to a virtual workplace, which ensures effective interaction between colleagues from different cities and even countries.</li>
+				<li>Improved security. RDP supports two-factor authentication algorithms, data encryption, which guarantees security during data transfer, makes its interception useless, often impossible. Transfer of even confidential, commercial information is allowed.</li>
+				</ul>
+				<a name="4"></a>
+				<h3>Who needs the protocol?</h3>
+				<p>
+				Most often, RDP is used by the following departments, enterprises and organizations:
+				</p>
+				<ul>
+				<li>Companies that have decided to transfer employees to remote work. You can even do without a physical office, business trips and other expense items without harming labor productivity, the effectiveness of solving the assigned tasks. These can be not only commercial, but also educational institutions, RDP allows you to organize the educational process.</li>
+				<li>User support services. Such are available from providers, mobile operators, private and public organizations with a developed IT infrastructure. Remote problem solving is as effective as the administrator's direct presence at the user's computer who encountered it.</li>
+				<li>Multinational companies employing specialists from different countries. The protocol allows all employees to interact with maximum efficiency.</li>
+				</ul>
+				<a name="5"></a>
+				<h3>How it works</h3>
+				<p>
+				Remote desktop access involves a user computer, the client, connecting to a server. When a connection is established, support for encryption methods and other algorithms that guarantee security is checked. The further sequence of actions is as follows:
+				</p>
+				<ul>
+				<li>Authorization. The standard option is for the client to enter a name and password, however, in systems with higher security and confidentiality requirements, more complex schemes can be used.</li>
+				<li>Formation of a remote communication session by the server. In this case, the desktop is displayed with all icons, menu items and elements. The quality of the transmitted graphic signal is adjusted depending on the server load, channel bandwidth, which reduces the delay to a minimum, up to complete absence.</li>
+				<li>Providing feedback with the server. The client computer sends data on actions performed, changes in settings, connection and disconnection of peripheral devices.</li>
+				</ul>
+				<a name="6"></a>
+				<h3>On the issue of security</h3>
+				<p>
+				To eliminate security issues when using the RDP protocol, it is recommended to use the following tools:
+				</p>
+				<ul>
+				<li>Encryption. Information is transmitted in encrypted form, so that even its interception is useless.</li>
+				<li>Sophisticated authentication methods. The optimal one is two-factor, which involves entering not only the username and password, but also a one-time code.</li>
+				<li>Distribution of rights. User rights must be strictly delimited to exclude accidental erroneous or intentional actions.</li>
+				<li>Use antivirus software from trusted developers, timely database updates.</li>
+				<li>Continuous monitoring. It is necessary to control the remote communication session in order to immediately record unauthorized connections and suspicious actions. Additionally, it is recommended to keep a log indicating all events.</li>
+				<li>Using current versions of programs. The latest editions are not only more functional, but also more reliable. Developers release “patches” aimed at eliminating even non-obvious, potential vulnerabilities that can be exploited by intruders.</li>
+				<li>Properly configure the firewall. The most reliable option is to register allowed IP addresses; access from all others not specified in the list is automatically blocked.</li>
+				<li>Limiting the number of authorization attempts. This function eliminates the possibility of logging in by selecting a password, listing possible combinations. When the number of unsuccessful attempts exceeds the set limit, either the user's time or the entire IP address is temporarily blocked.</li>
+				</ul>
+				<a name="7"></a>
+				<h3>Advantages and disadvantages</h3>
+				<p>
+				The popularity of the RDP protocol is explained by its numerous advantages, the most significant of which are the following:
+				</p>
+				<ul>
+				<li>Maximum convenience. Thanks to the remote connection protocol, specialists can perform their duties without being at a physical workplace, access to the Internet is enough. Now, when many companies are transferring employees to a remote format, this advantage is becoming especially relevant.</li>
+				<li>Optimization of costs. First of all, transport, system administrators, technical support representatives do not have to go out for each client request, many problems can be solved remotely.</li>
+				<li>Increased security level. Data is transmitted in encrypted format, which eliminates the risk of illegal connection and unauthorized access.</li>
+				<li>Scalability and control variability. The protocol allows for changing the number of users, using new workstations as needed, suitable for both small businesses and large organizations.</li>
+				</ul>
+				<p>
+				The protocol has far fewer disadvantages, and their number is reduced with each new version. In early versions, there were problems with simultaneous connection of a large number of users, low connection speed, reactions to administrator actions, however, they have now been corrected.
+				</p>
+				<a name="8"></a>
+				<h3>Usage instructions</h3>
+				<p>
+				RDP is usually used on Windows operating systems. The sequence of actions is as follows:
+				</p>
+				<ul>
+				<li>Activating the protocol. The required item is in the “System and Security” section and the “System” tab.</li>
+				<li>Configuring security settings, activating the firewall, adding port 3389 to the exceptions category, using VPN and other encryption protocols.</li>
+				<li>Configuring access rights. You need to specify users who will be able to connect to the system, register their rights.</li>
+				<li>Opening the “Remote Desktop Connection” utility on the computer from the control system. You need to specify the host or IP address of the device to which you plan to connect.</li>
+				</ul>
+				<p>
+				Despite the fact that RDP is a development of Microsoft engineers, there are versions for other operating systems. For example, on macOS you can use the proprietary Remote Desktop application. The setup and connection process in this case is identical to Windows.
 				</p>
 			</>
 		),

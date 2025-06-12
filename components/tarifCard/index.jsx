@@ -59,10 +59,11 @@ export default function TarifCard({ index, tarif, show, setShow, language }) {
       en: "Gbps",
     },
     order: {
-      ru: "Заказать сервер",
-      uz: "Buyurtma berish",
-      en: "Order a server",
+      ru: "Заказать за 1 минуту",
+      uz: "1 daqiqada buyurtma bering",
+      en: "Order in 1 minute",
     },
+    topCard: { ru: "Популярный", uz: "Mashhur", en: "Popular" },
   };
 
   return (
@@ -137,6 +138,9 @@ export default function TarifCard({ index, tarif, show, setShow, language }) {
           {langData.order[language]}
         </a>
       </button>
+        <p className={st.tarifCard__topcard + ' ' + tarif.activeTop}>
+            <span>{langData.topCard[language]}</span>
+        </p>
     </div>
   );
 }

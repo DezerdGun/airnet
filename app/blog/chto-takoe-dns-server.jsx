@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "DNS сервер: ключевой элемент работы интернета",
-		uz: "DNS сервер: ключевой элемент работы интернета",
-		en: "DNS сервер: ключевой элемент работы интернета",
+		uz: "DNS server: Internetning asosiy elementi",
+		en: "DNS Server: A Key Element of the Internet",
 	},
 	title: {
 		ru: "DNS сервер: назначение, принцип работы и важность",
-		uz: "DNS сервер: назначение, принцип работы и важность",
-		en: "DNS сервер: назначение, принцип работы и важность",
+		uz: "DNS server: maqsadi, ishlash printsipi va ahamiyati",
+		en: "DNS server: purpose, principle of operation and importance",
 	},
 	desc: {
 		ru: "Подробное объяснение, что такое DNS сервер, как он работает и почему так важен для функционирования интернета.",
-		uz: "Подробное объяснение, что такое DNS сервер, как он работает и почему так важен для функционирования интернета.",
-		en: "Подробное объяснение, что такое DNS сервер, как он работает и почему так важен для функционирования интернета.",
+		uz: "DNS-server nima ekanligi, u qanday ishlashi va nima uchun Internetning ishlashi uchun juda muhimligi haqida batafsil tushuntirish.",
+		en: "A detailed explanation of what a DNS server is, how it works, and why it is so important for the functioning of the Internet.",
 	},
 	date: "14.12.2024",
 	updated: "14.12.2024",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/dns.png",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,15 +61,15 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "DNS-сервер: что это?", uz: "DNS-сервер: что это?", en: "DNS-сервер: что это?", slug: "1" }},
-		{ title: {ru: "Общее понятие", uz: "Общее понятие", en: "Общее понятие", slug: "2" }},
-		{ title: {ru: "Основные функции", uz: "Основные функции", en: "Основные функции", slug: "3" }},
-		{ title: {ru: "Алгоритм работы", uz: "Алгоритм работы", en: "Алгоритм работы", slug: "4" }},
-		{ title: {ru: "Классификация", uz: "Классификация", en: "Классификация", slug: "5" }},
-		{ title: {ru: "География корневых DNS-серверов", uz: "География корневых DNS-серверов", en: "География корневых DNS-серверов", slug: "6" }},
-		{ title: {ru: "Настройки и записи", uz: "Настройки и записи", en: "Настройки и записи", slug: "7" }},
-		{ title: {ru: "К вопросу о безопасности", uz: "К вопросу о безопасности", en: "К вопросу о безопасности", slug: "8" }},
-		{ title: {ru: "Подведение итогов", uz: "Подведение итогов", en: "Подведение итогов", slug: "9" }},
+		{ title: {ru: "DNS-сервер: что это?", uz: "DNS server: bu nima?", en: "DNS server: what is it?", slug: "1" }},
+		{ title: {ru: "Общее понятие", uz: "Umumiy tushuncha", en: "General concept", slug: "2" }},
+		{ title: {ru: "Основные функции", uz: "Asosiy funktsiyalari", en: "Main functions", slug: "3" }},
+		{ title: {ru: "Алгоритм работы", uz: "Ish algoritmi", en: "Algorithm of work", slug: "4" }},
+		{ title: {ru: "Классификация", uz: "Tasniflash", en: "Classification", slug: "5" }},
+		{ title: {ru: "География корневых DNS-серверов", uz: "Ildiz DNS serverlar geografiyasi", en: "Geography of root DNS servers", slug: "6" }},
+		{ title: {ru: "Настройки и записи", uz: "Sozlamalar va yozuvlar", en: "Settings and entries", slug: "7" }},
+		{ title: {ru: "К вопросу о безопасности", uz: "Xavfsizlik masalasida", en: "On the issue of security", slug: "8" }},
+		{ title: {ru: "Подведение итогов", uz: "Xulosa qilish", en: "Summing up", slug: "9" }},
 	],
 	content: {
 		ru: (
@@ -208,71 +208,243 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				DNS server: bu nima?
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Internet - bu doimiy aloqada bo'lgan milliardlab qurilmalar, smartfonlar, serverlar, noutbuklar, planshetlar va ish stoli kompyuterlari, routerlardan tashkil topgan tarmoq. Ma'lumotni aniq va tez almashish qobiliyati har bir qurilma uchun pochta manzili yoki telefon raqami bilan taqqoslanadigan shaxsiy IP-manzilning mavjudligi bilan ta'minlanadi.
+				</p>
+				<img src="/blog/dns1.png" alt="DNS server" />
+				<p>
+				IP-manzil nafaqat qurilmalar uchun, balki veb-saytlar uchun ham kerak. Uning klassik imlosi, bir nechta raqamlar guruhlari, nuqta, ikki nuqta, defis bilan ajratilgan harflarni eslab qolish qiyin, bu foydalanuvchilar uchun noqulay. Domen nomlari tizimi DNS ushbu muammoni hal qilish uchun mo'ljallangan bo'lib, har bir raqamli birikmaga yozish va eslash osonroq bo'lgan ma'lum harf nomini belgilaydi. Ushbu tizimning asosini DNS serverlari tashkil etadi. Ularning xususiyatlari qanday? Ular qanday funktsiyalarni bajaradilar?
+				</p>
+				<a name="2"></a>
+				<h3>Umumiy tushuncha</h3>
+				<p>
+				DNS tizimini telefon ma'lumotnomasi bilan solishtirish mumkin. Bir necha o'n yillar oldin siz obunachi nomi yoki tashkilot nomi bo'yicha kerakli telefon raqamini topish uchun ushbu kitobni ochishingiz kerak edi. Kerakli yozuvlar ham tizim serverlarida saqlanadi. Foydalanuvchiga manzil satrida ma'lum bir raqamni ko'rsatishga hojat yo'q, sayt nomi etarli, o'tish uchun zarur bo'lgan transformatsiyalar avtomatik ravishda amalga oshiriladi.
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				O'yin-kulgi uchun foydalanuvchi qatorga saytga mos keladigan aniq IP-manzilni kiritishi mumkin. Bunday holda, u ham muammosiz ochiladi, lekin o'nlab raqamli kombinatsiyalarni xotirada saqlash noqulay va ko'pincha imkonsizdir. Ismlar bilan hamma narsa ancha sodda va tushunarli. </p>
+				<img src="/blog/dns2.png" alt="DNS server" />
+				<p>
+				DNS-serverlar domen nomlari tizimidagi eng muhim havolalar bo'lib, veb-sayt manzillari haqidagi ma'lumotlarni saqlash uchun foydalaniladi, ularning soni yuzlab million va milliardlarni tashkil qiladi. Saqlashdan tashqari, ular batafsilroq tahlil qilishni talab qiladigan boshqa vazifalarni ham bajaradilar.
 				</p>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				DNS tizimi quyidagilar bilan tavsiflanadi:
+				</p>
+				<ul>
+				<li>Ma'lumotlarni boshqarish va saqlashni taqsimlash. Har bir qismga ma'lum bir korxona, server xizmat ko'rsatadi.</li>
+				<li>Ma'lumotlarni keshlash. Axborotni vaqtincha saqlash tizimdagi yukni kamaytirishga yordam beradi.</li>
+				<li>Zaxira. Bir nechta DNS-serverlar bir xil ma'lumotlarga kirish huquqiga ega, bu esa yo'qotishlarni, ulardan biri ishlamay qolganda o'zaro ta'sir o'tkaza olmaslikni bartaraf qiladi va butun tizimning barqaror ishlashini ta'minlaydi.</li>
+				</ul>
+				<a name="3"></a>
+				<h3>Asosiy funksiyalar</h3>
+				<p>
+				DNS-serverlar nafaqat ma'lumotlarni saqlaydi, balki keshlaydi. Keshlash algoritmi DNS ning umumiy tezligini oshiradi va yukni teng taqsimlashga yordam beradi. Serverlarning sig'imi cheksiz emas va shuning uchun barcha ma'lumotlarni bir joyda saqlash imkonsiz vazifadir. Foydalanuvchi ma'lum bir saytni ochishga harakat qilganda, tizim birinchi navbatda mahalliy tekshiruvni o'tkazadi, kompyuterda joylashgan "xostlar" faylini tekshiradi va u erda kerakli ma'lumotlarni topishga harakat qiladi. Natija salbiy bo'lsa, so'rov yuqori darajaga o'tkaziladi, provayder tomonidan xizmat ko'rsatadigan mahalliy DNS server.
+				</p>
+				<img src="/blog/dns3.png" alt="DNS server" />
+				<p>
+				Mahalliy DNS server odatda sayt joylashgan boshqa mahalliy resurslar bilan ma'lumotlarni almashadi. Kerakli ma'lumotlarni topgandan so'ng, foydalanuvchi brauzeri kerakli sahifalarni ochadi. Topilgan ma'lumotlar mahalliy serverlarda saqlanadi, bu esa uni ochishga keyingi urinishlarda uni qidirish va qayta yuklab olish zaruratini yo'q qiladi. Ushbu jarayon keshlash deb ataladi.
+				</p>
+				<a name="4"></a>
+				<h3>Ishlash algoritmi</h3>
+				<p>
+				Domen nomlari tizimining ishlash sxemasini quyidagicha ko'rsatish mumkin:
+				</p>
+				<ul>
+				<li>Brauzer tomonidan foydalanuvchi so'rovini qabul qilish. Ushbu so'rov tarmoq serveriga yuboriladi, uning vazifasi domen nomiga mos keladigan IP-manzilni topishdir. Agar javob topilsa, sahifa darhol ochiladi, aks holda qidiruv yuqoriroq yoki ildiz darajasida boshlanadi.</li>
+				<li>Ildiz server so'rovni birinchi darajaga, ikkinchi darajaga va undan keyingi darajaga yo'naltiradi, to domen nomi va IP manzili o'rtasida moslik topilmaguncha.</li>
+				<li>Qidirilgan sahifani brauzerda ko'rsatish.</li>
+				</ul>
+				<img src="/blog/dns4.png" alt="DNS server" />
+				<a name="5"></a>
+				<h3>Tasniflash</h3>
+				<p>
+				DNS tizimi turli toifadagi serverlarga asoslangan. Agar qidirilayotgan saytdagi ma'lumotlar "xostlar" faylida topilmasa, u holda mahalliy darajadagi resurs bo'lgan DNS-resolver ishga tushadi. Qoida tariqasida, bu hatto to'liq huquqli keng ko'lamli server emas, balki Internet-provayder tomonidagi kompyuter. Resolver foydalanuvchiga kerakli sayt nomini qayta ishlaydi va o'zining ma'lumotlar bazasiga kiradi. Agar mos keladigan bo'lsa, javob yuboriladi, sahifa ochiladi va qidiruv to'xtaydi. Agar hal qiluvchi kuchsiz bo'lsa, quyidagi DNS serverlari ishga tushadi:
+				</p>
+				<ul>
+				<li>Ildiz. Ingliz adabiyotida - ildiz. Dunyoda ulardan atigi 13 tasi bor, ammo ular juda keng ko'lamli, juda katta ishlashga ega va soniyada millionlab so'rovlarni bajara oladi. Ildiz DNS server unga kirishda kerakli IP-manzilni oshkor qilmaydi; uning vazifasi so'rovni keyingi uzatish marshrutini aniqlashdan iborat bo'lib, bu sizga kerakli ma'lumotlarni olish imkonini beradi.</li>
+				<li>Yuqori daraja. Ular ham TLDlardir. Ildiz DNS serverlari domen nomlarining manzillarini aniqlashtirish uchun qaysi TLD bilan bog'lanish kerakligi haqida ma'lumot beradi. Ushbu darajadagi har bir serverga domenga mos keladigan o'z "mas'uliyat sohasi" tayinlangan. Qizig'i shundaki, TLD ma'lum bir IP haqida ma'lumot bermaydi; u vakolatli funksiyalarni bajaradigan serverlarga ham yoʻnaltiradi.</li>
+				<li>Vakolatli. Aynan shu serverlarda IP-manzillarning ma'lum domen nomlariga mos kelishi haqidagi ma'lumotlar saqlanadi. Shunga ko'ra, ular hal qiluvchini kerakli ma'lumotlar bilan ta'minlaydi, foydalanuvchi kompyuterida kerakli sahifani ochishga yordam beradi.</li>
+				</ul>
+				<p>
+				DNS tuzilishi juda og'ir ko'rinadi, shu jumladan ko'plab serverlar va qurilmalar, ammo uning ishlashi, ko'rinadigan murakkabligiga qaramay, iloji boricha optimallashtirilgan. Uskuna komponentlari orasidagi o'zaro ta'sir soniyaning bir necha mingdan bir qismini oladi.
+				</p>
+				<a name="6"></a>
+				<h3>Ildiz DNS-serverlar geografiyasi</h3>
+				<p>
+				Ildiz DNS-serverlar soni 13 ta, ammo domen nomi tizimining barqarorligini, uning xavfsizligini va nosozliklarga chidamliligini ta'minlash uchun ularning soni 123 tani hisobga olgan holda ko'plab nusxalarga ega. Ularning tarqalish geografiyasi quyidagicha:
+				</p>
+				<ul>
+				<li>40 - AQSh va Kanada;</li>
+				<li>35 - Yevropa davlatlari;</li>
+				<li>6 - Janubiy Amerika mamlakatlari;</li>
+				<li>3 - Afrika mamlakatlari;</li>
+				<li>39 - dunyoning qolgan qismi.</li>
+				</ul>
+				<p>
+				Ushbu joylashtirish tasodifiy emas, u faol Internet foydalanuvchilari soniga va shunga mos ravishda so'rovlar hajmiga mos keladi. Rossiya Federatsiyasida ildiz DNS serverlarining 5 nusxasi ham ishlaydi, ular eng yirik shaharlar, Moskva, Sankt-Peterburg, Novosibirsk, Yekaterinburg va Rostov-na-Donuda joylashgan.
+				</p>
+				<a name="7"></a>
+				<h3>Sozlamalar va yozuvlar</h3>
+				<p>
+				DNS serverining to'g'ri ishlashini ta'minlash uchun uni to'g'ri sozlash va kerakli yozuvlarni kiritish kerak. Bu zarur, chunki bitta domen nomi ko'pincha turli manzillar bilan bog'lanadi, masalan, asosiy sayt, uning pochta serveri va ko'plab subdomenlar.
 				</p>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				Domen nomini ma'lum bir manzilga tayinlaydigan ma'lumotlar serverda, maxsus faylda saqlanadi. Ushbu faylni tahrirlash kerak va kerak bo'lganda unga yozuvlar qo'shilishi kerak. Asosiy yozuvlar ro'yxati quyidagicha ko'rinadi:
+				</p>
+				<ul>
+				<li>A – muayyan domen nomiga mos keladigan tarmoq resursining IP-manzili.</li>
+				<li>MX – pochta serveri bilan bog‘langan IP manzil.</li>
+				<li>CNAME – bir xil domen nomlari oʻrtasidagi munosabatni koʻrsatish uchun, koʻp hollarda subdomenlarni bogʻlash uchun kerak.</li>
+				<li>NS – boshqa manba yozuvlarini saqlaydigan DNS-serverlarning joylashuvini bildiradi.</li>
+				<li>TXT – domenga tegishli har qanday kerakli matn maʼlumotlarini oʻz ichiga oladi.</li>
+				<li>SPF – belgilangan domen nomidan pochta jo‘natmalarini boshqara oladigan serverlar haqidagi ma’lumotlarni o‘z ichiga oladi.</li>
+				<li>SOA – server haqidagi asosiy ma'lumotlarga ega yozuv.</li>
+				</ul>
+				<a name="8"></a>
+				<h3>Xavfsizlik masalasida</h3>
+				<p>
+				Ildiz serverlarining xavfsizligi juda muhim nuqta, butun domen nomi tizimining barqarorligi ularning ishlashiga bog'liq. Eng yirik hujumlardan biri 2002 yilning kuzida qayd etilgan. Xakerlar 13 ta root serverdan 10 tasining ishini bloklashga muvaffaq bo'lishgan. Butunjahon Internet tarmog'ida nosozliklar keltirib chiqaradigan, ba'zi saytlarga, birinchi navbatda, ijtimoiy tarmoqlarga kirishga ruxsat bermaydigan bunday faoliyat bugungi kunda ham uchraydi.
+				</p>
+				<img src="/blog/dns5.png" alt="DNS server" />
+				<p>
+				Biroq, xavfsizlik texnologiyalari 2002 yildan beri katta yutuqlarga erishdi, shuning uchun jiddiy oqibatlarsiz qilish mumkin. Quyidagi usullar eng ko'p qo'llaniladi:
+				</p>
+				<ul>
+				<li>uRPF. U qurilma ma'lum bir qabul qiluvchidan ma'lumotlar paketini qabul qila oladimi yoki yo'qligini aniqlash uchun tekshirishga asoslanadi. Agar natija salbiy bo'lsa, uzatish bloklanadi. Usul ancha samarali, ammo soxta trafikdan mutlaq himoyani ta'minlamaydi.</li>
+				<li>IP manba himoyasi. Oldingi usulni ishlab chiqish. Algoritmlar trafikni kuzatib boradi, tarmoq uskunasining IP-manzillarini aniqlaydi va axborot uzatish jadvallarini shakllantiradi. Agar ilgari tasdiqlangan manba birdan boshqa manzildan foydalana boshlasa, paketlar rad etiladi.</li>
+				<li>DNS-validator. DNS tizimida ma'lumotlar uzatishni boshqaradigan, so'rovlar va javoblarni taqqoslaydigan maxsus dastur. Agar nomuvofiqliklar aniqlansa, axborot almashinuvi bloklanadi yoki sozlamalarga qarab foydalanuvchi ogohlantirish xabarini oladi.</li>
+				</ul>
+				<a name="9"></a>
+				<h3>Xulosa qilish</h3>
+				<p>
+				DNS domen nomlari tizimi global tarmoq bo'yicha asosiy qo'llanma bo'lib, ularsiz brauzerlar va foydalanuvchilar kerakli saytlar va sahifalarga kira olmaydilar. DNS serverlari ushbu tizimning eng muhim komponentlari bo'lib, bu erda to'g'ri ishlash uchun zarur bo'lgan ma'lumotlar saqlanadi.
 				</p>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
-				</p>
-				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				DNS-ning paydo bo'lishi o'tgan asrning 80-yillariga to'g'ri keladi, ammo u faol rivojlanish va modernizatsiya qilishda davom etmoqda, bu esa unga zamon talablariga, tarmoq xavfsizligiga va doimiy ravishda o'sib borayotgan foydalanuvchilar soniga to'g'ri xizmat ko'rsatishga imkon beradi.
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				DNS server: what is it?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				The Internet is a network consisting of billions of devices, smartphones, servers, laptops, tablets and desktop computers, routers that are in constant communication. The ability to accurately and quickly exchange data is ensured by the presence of a personal IP address for each device, which can be compared either with a postal address or a phone number.
+				</p>
+				<img src="/blog/dns1.png" alt="DNS server" />
+				<p>
+				An IP address is needed not only for devices, but also for websites. Its classic spelling, several groups of numbers, letters separated by dots, colons, hyphens, however, is difficult to remember, which is inconvenient for users. The domain name system, DNS, is designed to solve this problem, assigning a specific letter name to each digital combination, which is easier to write and remember. The basis of this system is DNS servers. What are their features? What functions do they perform?
+				</p>
+				<a name="2"></a>
+				<h3>General concept</h3>
+				<p>
+				The DNS system can be compared to a telephone directory. Several decades ago, you had to open this book to find the desired phone number by the subscriber's name or the name of the organization. The necessary records are also stored on the system's servers. The user does not need to specify a specific number in the address bar, the name of the site is enough, the transformations necessary for the transition will be performed automatically.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				For fun, the user can enter the exact IP address corresponding to the site in the line. In this case, it will also open without problems, but keeping dozens of digital combinations in memory is inconvenient, and often impossible. With names, everything is much simpler and clearer. </p>
+				<img src="/blog/dns2.png" alt="DNS server" />
+				<p>
+				DNS servers are the most important links in the domain name system, used to store data about website addresses, the number of which is in the hundreds of millions and billions. In addition to storage, they also perform some other tasks that require a more detailed analysis.
 				</p>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				The DNS system is characterized by the following:
+				</p>
+				<ul>
+				<li>Distribution of data management and storage. Each part is serviced by a specific enterprise, server.</li>
+				<li>Data caching. Temporary storage of information helps reduce the load on the system.</li>
+				<li>Backup. Several DNS servers have access to the same data, which eliminates loss, the inability to interact if one of them fails, and ensures stable operation of the entire system.</li>
+				</ul>
+				<a name="3"></a>
+				<h3>Main functions</h3>
+				<p>
+				DNS servers not only store, but also cache information. The caching algorithm increases the overall speed of DNS and helps distribute the load evenly. The capacity of servers is not unlimited, and therefore storing all data in one place is an impossible task. When a user tries to open a specific site, the system will first conduct a local check, examine the “hosts” file located on the computer, and try to find the necessary data there. If the result is negative, the request is transferred to a higher level, the local DNS server serviced by the provider.
+				</p>
+				<img src="/blog/dns3.png" alt="DNS server" />
+				<p>
+				A local DNS server usually exchanges data with other local resources where the site is located. After finding the required information, the user's browser opens the required pages. The found data is stored on local servers, which eliminates the need to search for and download it again during subsequent attempts to open it. This process is called caching.
+				</p>
+				<a name="4"></a>
+				<h3>Working algorithm</h3>
+				<p>
+				The scheme of functioning of the domain name system can be presented as follows:
+				</p>
+				<ul>
+				<li>Receiving a user request by the browser. This request is sent to the network server, whose task is to find the IP address corresponding to the domain name. If an answer is found, the page is immediately opened, otherwise the search begins at higher or root levels.</li>
+				<li>The root server redirects the request to the first level, the second and further, until a match is found between the domain name and IP address.</li>
+				<li>Displaying the searched page in the browser.</li>
+				</ul>
+				<img src="/blog/dns4.png" alt="DNS server" />
+				<a name="5"></a>
+				<h3>Classification</h3>
+				<p>
+				The DNS system is based on servers of various categories. If the data on the site being searched for is not found in the “hosts” file, then the DNS resolver, a local-level resource, comes into play. As a rule, it is not even a full-fledged large-scale server, but a computer on the Internet provider’s side. The resolver processes the name of the site needed by the user and accesses its own database. If there is a match, a response is sent, the page opens, and the search stops. If the resolver is powerless, the following DNS servers come into play:
+				</p>
+				<ul>
+				<li>Root. In English literature - root. There are only 13 of them in the world, however, they are very large-scale, have enormous performance, and can handle millions of requests per second. The root DNS server does not disclose the required IP address when accessing it; its task is to determine the route for further transmission of the request, which allows you to obtain the required data.</li>
+				<li>Top level. They are also TLDs. The root DNS servers provide information about which TLD to contact to clarify the addresses of domain names. Each server of this level is assigned its own “area of ​​responsibility” corresponding to the domain. It is interesting that the TLD does not provide information about a specific IP; it also redirects to servers that perform authoritative functions.</li>
+				<li>Authoritative. It is on these servers that information about the correspondence of IP addresses to certain domain names is stored. Accordingly, they provide the resolver with the required data, help open the desired page on the user's computer.</li>
+				</ul>
+				<p>
+				The DNS structure looks quite cumbersome, including many servers and devices, however, its operation, despite the apparent complexity, is optimized as much as possible. Interaction between hardware components takes several thousandths of a second.
+				</p>
+				<a name="6"></a>
+				<h3>Geography of root DNS servers</h3>
+				<p>
+				The number of root DNS servers is 13, however, to ensure the stability of the domain name system, its security, and resilience to failures, they have many copies, taking into account which the number is 123. The geography of their distribution is as follows:
+				</p>
+				<ul>
+				<li>40 - USA and Canada;</li>
+				<li>35 - European countries;</li>
+				<li>6 - South American countries;</li>
+				<li>3 - African countries;</li>
+				<li>39 - the rest of the world.</li>
+				</ul>
+				<p>
+				This placement is not accidental, it corresponds to the number of active Internet users and, accordingly, the volume of requests. 5 copies of root DNS servers also function in the Russian Federation, they are located in the largest cities, Moscow, St. Petersburg, Novosibirsk, Yekaterinburg and Rostov-on-Don.
+				</p>
+				<a name="7"></a>
+				<h3>Settings and records</h3>
+				<p>
+				To ensure the correct operation of the DNS server, it must be configured correctly, and the necessary records must be entered. This is necessary because one domain name is often associated with different addresses, for example, the main site, its mail server and numerous subdomains.
 				</p>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				The data that assigns a domain name to a specific address is stored on the server, in a special file. This file should be edited, and records should be added to it as needed. The list of main records looks like this:
+				</p>
+				<ul>
+				<li>A – IP address of the network resource corresponding to a specific domain name.</li>
+				<li>MX – IP address associated with the mail server.</li>
+				<li>CNAME – is needed to indicate the relationship between identical domain names, in most cases – to associate subdomains.</li>
+				<li>NS – indicates the location of DNS servers storing other resource records.</li>
+				<li>TXT – contains any necessary text data related to the domain.</li>
+				<li>SPF – contains information about servers that can handle mailings on behalf of the designated domain.</li>
+				<li>SOA – a record with basic data about the server.</li>
+				</ul>
+				<a name="8"></a>
+				<h3>On the issue of security</h3>
+				<p>
+				The security of root servers is an extremely important point, the stability of the entire domain name system depends on their performance. One of the largest attacks was registered in the fall of 2002. Hackers managed to block the work of 10 out of 13 root servers. Such activity is still encountered today, which causes failures in the World Wide Web, does not allow access to some sites, primarily social networks.
+				</p>
+				<img src="/blog/dns5.png" alt="DNS server" />
+				<p>
+				However, security technologies have made great strides since 2002, so it is possible to do without serious consequences. The following methods are most widely used:
+				</p>
+				<ul>
+				<li>uRPF. It is based on a check to determine whether the device can receive a data packet from a specific recipient. If the result is negative, the transmission is blocked. The method is quite effective, but does not provide absolute protection against fake traffic.</li>
+				<li>IP Source Guard. Development of the previous method. Algorithms monitor traffic, determine IP addresses of network equipment, and form information transfer tables. If a previously verified source suddenly starts using a different address, the packets are rejected.</li>
+				<li>DNS-Validator. A special application that controls data transfer within the DNS system, comparing requests and responses. If discrepancies are detected, the exchange of information is blocked, or the user receives a warning notification, depending on the settings.</li>
+				</ul>
+				<a name="9"></a>
+				<h3>Summing Up</h3>
+				<p>
+				The DNS domain name system is the main guide through the global network, without which browsers and users would simply not be able to get to the necessary sites and pages. DNS servers are the most important components of this system, where the data necessary for correct operation is stored.
 				</p>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
-				</p>
-				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				The appearance of DNS dates back to the 80s of the last century, however, it continues to actively develop and modernize, which allows it to meet the requirements of the time, network security, and correctly serve a steadily increasing number of users.
 				</p>
 			</>
 		),

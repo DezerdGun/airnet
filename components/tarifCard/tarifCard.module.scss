@@ -13,6 +13,22 @@ $red: #f00;
   padding: 15px;
   border: 1px solid $light_gray;
 
+  &__topcard {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    transform: rotate(30deg);
+    background-color: #f00;
+    border-radius: 5px;
+
+      span {
+        display: block;
+        color: $white;
+        padding: 5px;
+      }
+  }
+
   &__header {
     padding: 25px 10px;
     border-radius: 8px;

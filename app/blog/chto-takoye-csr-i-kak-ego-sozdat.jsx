@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "Что такое CSR и как его создать?",
-		uz: "Что такое CSR и как его создать?",
-		en: "Что такое CSR и как его создать?",
+		uz: "CSR nima va uni qanday yaratish kerak?",
+		en: "What is a CSR and how to create one?",
 	},
 	title: {
 		ru: "Что такое CSR и как его создать?",
-		uz: "Что такое CSR и как его создать?",
-		en: "Что такое CSR и как его создать?",
+		uz: "CSR nima va uni qanday yaratish kerak?",
+		en: "What is a CSR and how to create one?",
 	},
 	desc: {
 		ru: "Узнайте, что такое CSR (Certificate Signing Request), для чего он используется при создании SSL-сертификатов, и как его правильно создать. Пошаговая инструкция и практические рекомендации.",
-		uz: "Узнайте, что такое CSR (Certificate Signing Request), для чего он используется при создании SSL-сертификатов, и как его правильно создать. Пошаговая инструкция и практические рекомендации.",
-		en: "Узнайте, что такое CSR (Certificate Signing Request), для чего он используется при создании SSL-сертификатов, и как его правильно создать. Пошаговая инструкция и практические рекомендации.",
+		uz: "CSR (Sertifikat imzolash so'rovi) nima ekanligini, SSL sertifikatlarini yaratishda u nima uchun ishlatilishini va uni qanday qilib to'g'ri yaratishni bilib oling. Bosqichma-bosqich ko'rsatmalar va amaliy tavsiyalar.",
+		en: "Find out what a CSR (Certificate Signing Request) is, what it is used for when creating SSL certificates, and how to create one correctly. Step-by-step instructions and practical recommendations.",
 	},
 	date: "14.03.2025",
 	updated: "14.03.2025",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/csr.jpg",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,15 +61,15 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Что такое CSR и как его создать?", uz: "Что такое CSR и как его создать?", en: "Что такое CSR и как его создать?", slug: "1" }},
-		{ title: {ru: "Общее понятие", uz: "Общее понятие", en: "Общее понятие", slug: "2" }},
-		{ title: {ru: "Структура CSR", uz: "Структура CSR", en: "Структура CSR", slug: "3" }},
-		{ title: {ru: "Как подписать сертификат?", uz: "Как подписать сертификат?", en: "Как подписать сертификат?", slug: "4" }},
-		{ title: {ru: "Создание CSL-запроса: способы и инструкции", uz: "Создание CSL-запроса: способы и инструкции", en: "Создание CSL-запроса: способы и инструкции", slug: "5" }},
-		{ title: {ru: "Создание приватного ключа", uz: "Создание приватного ключа", en: "Создание приватного ключа", slug: "6" }},
-		{ title: {ru: "Подготовка запроса", uz: "Подготовка запроса", en: "Подготовка запроса", slug: "7" }},
-		{ title: {ru: "Указание информации", uz: "Указание информации", en: "Указание информации", slug: "8" }},
-		{ title: {ru: "Что нужно учитывать?", uz: "Что нужно учитывать?", en: "Что нужно учитывать?", slug: "9" }},
+		{ title: {ru: "Что такое CSR и как его создать?", uz: "CSR nima va uni qanday yaratish kerak?", en: "What is a CSR and how to create one?", slug: "1" }},
+		{ title: {ru: "Общее понятие", uz: "Umumiy tushuncha", en: "General concept", slug: "2" }},
+		{ title: {ru: "Структура CSR", uz: "CSR tuzilishi", en: "CSR structure", slug: "3" }},
+		{ title: {ru: "Как подписать сертификат?", uz: "Sertifikatni qanday imzolash kerak?", en: "How to sign a certificate?", slug: "4" }},
+		{ title: {ru: "Создание CSL-запроса: способы и инструкции", uz: "CSL so'rovini yaratish: usullar va ko'rsatmalar", en: "Creating a CSL Request: Methods and Instructions", slug: "5" }},
+		{ title: {ru: "Создание приватного ключа", uz: "Shaxsiy kalitni yaratish", en: "Generate a private key", slug: "6" }},
+		{ title: {ru: "Подготовка запроса", uz: "So'rovni tayyorlash", en: "Preparing a request", slug: "7" }},
+		{ title: {ru: "Указание информации", uz: "Ma'lumot berish", en: "Providing information", slug: "8" }},
+		{ title: {ru: "Что нужно учитывать?", uz: "Nimani hisobga olish kerak?", en: "What should be taken into account?", slug: "9" }},
 	],
 	content: {
 		ru: (
@@ -177,59 +177,205 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				KSS nima va uni qanday yaratish kerak?
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Xavfsizlik raqamli dunyoning eng muhim tamoyillaridan biridir. Unga rioya qilish ma'lumotlarning xavfsizligini ta'minlaydi, uchinchi shaxslar tomonidan ushlanishini istisno qiladi. Barcha ma'lumotlar faqat xavfsiz ulanishlar orqali, shifrlangan shaklda uzatilishi kerak, ular uchun SSL sertifikatlari qo'llaniladi. Biroq, ularni qabul qilishdan oldin, siz maxsus so'rov, CSR yaratishingiz kerak. Ushbu qisqartma ortida nima yashiringan? Qanday qilib so'rovni to'g'ri yaratish kerak?
+				</p>
+				<img src="/blog/csr1.png" alt="SSLni ochish" />
+				<a name="2"></a>
+				<h3>Umumiy tushuncha</h3>
+				<p>
+				CSR qisqartmasi "sertifikatni imzolash so'rovi" degan ma'noni anglatadi, ya'ni sertifikat uchun raqamli imzo so'rovi. U domen nomi, sertifikatdan foydalanishni rejalashtirayotgan korxona haqidagi ma'lumotlarni o'z ichiga olishi kerak.
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				SSL protokoli mijoz va server o'rtasidagi aloqa seansining xavfsizligini kafolatlaydi, barcha ma'lumotlar shifrlangan va shuning uchun hatto ularni ushlash ham ma'nosiz bo'ladi. Barcha qimmatli ma'lumotlar, masalan, bank kartasi tafsilotlari, hisob qaydnomalariga kirish uchun parollar buzg'unchilar uchun mavjud bo'lmaydi.
 				</p>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				SSL sertifikatining yo'qligi saytga bo'lgan ishonch darajasini keskin pasaytiradi, bundan tashqari, ko'plab brauzerlar ularga o'tishni avtomatik ravishda bloklaydi, foydalanuvchini ishonchsizlik, ulanishning ishonchsizligi, maxfiy ma'lumotlarni yo'qotish xavfi haqida ogohlantiradi.
+				</p>
+				<a name="3"></a>
+				<h3>KSS tuzilishi</h3>
+				<p>
+				CSR quyidagi elementlardan iborat:
+				</p>
+				<ul>
+				<li>Shaxsiy kalit. CSR bilan birgalikda yaratilgan maxsus kalit, uning asosiy vazifasi uzatilgan axborotni shifrlashdir.</li>
+				<li>Ochiq kalit. Oldingi so'rov asosida tuzilgan, so'rovga birlashtirilgan.</li>
+				<li>Korxona haqidagi ma'lumotlar. Jismoniy shaxsning nomi, foydalanuvchi tashkilotining nomi, hududiy, davlatga mansubligi.</li>
+				<li>Domen nomi.</li>
+				</ul>
+				<img src="/blog/csr2.png" alt="SSL" />
+				<a name="4"></a>
+				<h3>Sertifikatni qanday imzolash kerak?</h3>
+				<p>
+				SSL sertifikatini imzolash uchun siz nafaqat CSR so'rovini yaratishingiz, balki uni sertifikatlashtirish markaziga ko'rib chiqish uchun yuborishingiz kerak. Markazning vazifasi ko'rsatilgan ma'lumotlarni tekshirish, ularning to'g'riligiga ishonch hosil qilish va SSLni berishdir. Avvalo, tashkilot quyidagilarni tekshiradi:
+				</p>
+				<ul>
+				<li>Domenning qonuniyligi. Buning uchun DNS yozuvlari tahlil qilinadi yoki boshqa usullardan foydalaniladi.</li>
+				<li>Kompaniya yoki jismoniy shaxs tomonidan taqdim etilgan hujjatlar. Bu har doim ham bajarilmaydi, lekin faqat yuqori darajadagi EV SSL uchun ariza topshirilganda amalga oshiriladi.</li>
+				<li>Tashkilot faoliyati. OV SSL uchun tegishli.</li>
+				</ul>
+				<a name="5"></a>
+				<h3>CSL so'rovini yaratish: usullar va ko'rsatmalar</h3>
+				<p>
+				KSS yaratishning eng oddiy usuli hosting xizmatlarini taqdim etuvchi provayderga murojaat qilishdir. Bu keraksiz qiyinchiliklarni bartaraf qiladi, tezda sertifikat olish, uni o'rnatish va undan foydalanishni boshlash imkonini beradi.
 				</p>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				Ikkinchi variant mustaqil, OpenSSL yordamida. Ushbu usul universal bo'lib, jarayonni mutlaq nazorat ostida ushlab turishga, barcha serverlar va platformalarga 100% mos keladigan natijaga erishishga imkon beradi. OpenSSL-ning muqobil variantlari bor, ammo bu dastur funktsional va samarali, qo'shimcha ravishda keraksiz xarajatlarni bartaraf etib, bepul tarqatiladi.
 				</p>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
+				Kerakli sertifikatni yaratish uchun dasturni server yoki shaxsiy kompyuterga o'rnatishingiz kerak. Eng oson yo'li - uni rasmiy veb-saytdan yuklab olish. Keyingi harakatlar yanada murakkab va shuning uchun batafsil tahlilni talab qiladi.
+				</p>
+				<a name="6"></a>
+				<h3>Shaxsiy kalit yaratish</h3>
+				<p>
+				Bu buyruq qatori yordamida, “openssl genrsa -out private.key 2048” buyrug'ini bajarish orqali amalga oshiriladi. Ushbu buyruqning har bir qismi qat'iy belgilangan ma'noga ega:
+				</p>
+				<ul>
+				<li>Genrsa - avlodni boshlaydigan asosiy buyruq;</li>
+				<li>-out private.key - kalitni saqlashni rejalashtirgan fayl nomini bildiradi;</li>
+				<li>2048 – fayl hajmi, bitlarda ifodalangan. 2048 - tavsiya etilgan minimal qiymat, etarli darajadagi xavfsizlikni ta'minlaydi. Iloji bo'lsa, kattaroq fayllardan foydalanish tavsiya etiladi.</li>
+				</ul>
+				<a name="7"></a>
+				<h3>So'rov tayyorlanmoqda</h3>
+				<p>
+				Kalit yaratilgandan so'ng, "openssl req -new -key private.key -out domain.csr" buyrug'i yordamida so'rovni shakllantirishga o'tishingiz mumkin. Oldingi holatda bo'lgani kabi, buyruqning har bir komponenti o'z vazifalariga ega:
+				</p>
+				<ul>
+				<li>req –new – CSRni tayyorlashni faollashtiruvchi asosiy qism;</li>
+				<li>-key private.key - oldingi bosqichda qilingan kalitga yo'lni ko'rsatadi;</li>
+				<li>-out domain.csr – siz CSR saqlashni rejalashtirgan fayl.</li>
+				</ul>
+				<a name="8"></a>
+				<h3>Ma'lumotni ko'rsatish</h3>
+				<p>
+				Ilgari ko'rsatilgan buyruqni bajargandan so'ng, dastur batafsil ko'rsatilishi kerak bo'lgan xususiyatlar ro'yxatini chiqaradi:
+				</p>
+				<ul>
+				<li>Mamlakat. Domen ro'yxatdan o'tgan davlat. Masalan, Qo'shma Shtatlar uchun "US" qisqartmasi, Buyuk Britaniya uchun esa "Buyuk Britaniya" ko'rsatilgan.</li>
+				<li>Shtat yoki viloyat. Korxona ro'yxatdan o'tgan hudud, jismoniy shaxs ro'yxatga olingan.</li>
+				<li>Mahalla nomi. Korxona ro'yxatga olingan joy, jismoniy shaxs ro'yxatga olingan.</li>
+				<li>Tashkilot nomi. Ushbu ustunda siz hujjatlardagi kabi qisqartmalarsiz korxonaning to'liq nomini yoki jismoniy shaxsning to'liq ismini ko'rsatishingiz kerak.</li>
+				<li>Tashkiliy birlik. Sertifikatdan foydalanadigan korxona ichidagi bo'limning nomi.</li>
+				<li>Umumiy ism. Domen nomi. Qisqartmalarsiz va qisqartmalarsiz toʻliq koʻrsating.</li>
+				<li>Elektron pochta. Texnik muammolar va muammolarni hal qilish uchun administrator bilan tezda bog'lanishingiz mumkin bo'lgan elektron pochta manziliga murojaat qiling.</li>
+				</ul>
+				<img src="/blog/csr3.png" alt="Https" />
+				<a name="9"></a>
+				<h3>Nimaga e'tibor berish kerak?</h3>
+				<p>
+				CSR so'rovini yaratish yoki SSL sertifikatini ro'yxatdan o'tkazishdan oldin siz bir nechta muhim fikrlarni hisobga olishingiz kerak. Masalan, kalit o'lchami. Xavfsizlik haqida tashvishlanmaslik imkonini beruvchi minimal tavsiya etilgan qiymat 2048 bit. Agar maksimal ishonchlilik talab etilsa, kalitni 4096 bitgacha oshirish tavsiya etiladi.
+				</p>
+				<p>
+				Albatta, agar uchinchi shaxslar unga kirish huquqiga ega bo'lsa, hatto eng ishonchli kalit ham foydasiz bo'ladi. Uni noto'g'ri qo'llarga o'tkazish, shuningdek, himoyalanmagan saqlash vositalarida saqlash qabul qilinishi mumkin emas.
+				</p>
+				<p>
+				KSSdan bir martalik foydalanish haqida unutmasligimiz kerak. Agar sertifikatni yangilash yoki qayta rasmiylashtirish zarur bo'lsa, yangi kalit va CSR yaratilishi kerak. Ushbu yondashuv zaiflik bilan bog'liq xavflarni yo'q qiladi.
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				What is a CSR and how to create it?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				Security is one of the most important principles of the digital world. Following it ensures the safety of data, excludes its interception by third parties. All information must be transmitted exclusively through secure connections, in encrypted form, for which SSL certificates are used. Before receiving them, however, you need to create a special request, CSR. What is hidden behind this abbreviation? How to generate a request correctly?
+				</p>
+				<img src="/blog/csr1.png" alt="Open SSL" />
+				<a name="2"></a>
+				<h3>General concept</h3>
+				<p>
+				The abbreviation CSR stands for “certificate signing request”, that is, a request for a digital signature for a certificate. It must contain information about the domain name, the enterprise planning to use the certificate.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				The SSL protocol guarantees the security of the communication session between the client and the server, all data is encrypted, and therefore even their probable interception will be meaningless. All valuable information, for example, bank card details, passwords for logging into accounts, will not be available to intruders.
 				</p>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				The absence of an SSL certificate dramatically reduces the level of trust in the site, moreover, many browsers automatically block the transition to them, warning the user about the insecurity, insecurity of the connection, the risk of losing confidential information.
+				</p>
+				<a name="3"></a>
+				<h3>CSR structure</h3>
+				<p>
+				A CSR consists of the following elements:
+				</p>
+				<ul>
+				<li>Private key. A special key created together with the CSR, the main function of which is to encrypt the transmitted information.</li>
+				<li>Public key. Formed on the basis of the previous one, integrated into the request.</li>
+				<li>Data about the enterprise. Name of the individual, name of the user organization, regional, state affiliation.</li>
+				<li>Domain name.</li>
+				</ul>
+				<img src="/blog/csr2.png" alt="SSL" />
+				<a name="4"></a>
+				<h3>How to sign a certificate?</h3>
+				<p>
+				To sign an SSL certificate, you need to not only create a CSR request, but also send it for review to the certification center. The task of the center is to check the specified data, make sure it is correct and issue the SSL. First of all, the organization checks the following:
+				</p>
+				<ul>
+				<li>The legitimacy of the domain. For this, DNS records are analyzed or other methods are used.</li>
+				<li>Documents provided by the company or individual. This is not always done, but only when applying for high-level EV SSL.</li>
+				<li>Organization activities. Relevant for OV SSL.</li>
+				</ul>
+				<a name="5"></a>
+				<h3>Creating a CSL request: methods and instructions</h3>
+				<p>
+				The simplest way to generate a CSR is to contact a provider that provides hosting services. This eliminates unnecessary difficulties, allows you to quickly obtain a certificate, install it and start using it.
 				</p>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				The second option is independent, using OpenSSL. This method is universal, makes it possible to keep the process under absolute control, to obtain a result that is 100% consistent with all servers and platforms. OpenSSL has alternatives, however, this program is functional and effective, in addition, it is distributed free of charge, eliminating unnecessary expenses.
 				</p>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
+				To create the required certificate, you need to install the program on the server or PC. The easiest way is to download it from the official website. Further actions are more complicated, and therefore require a more detailed analysis.
+				</p>
+				<a name="6"></a>
+				<h3>Creating a private key</h3>
+				<p>
+				This is done using the command line, by executing the command “openssl genrsa -out private.key 2048”. Each part of this command has a strictly defined meaning:
+				</p>
+				<ul>
+				<li>Genrsa is the main command that starts generation;</li>
+				<li>-out private.key – indicates the name of the file where you plan to store the key;</li>
+				<li>2048 – file size, expressed in bits. 2048 is the minimum recommended value, providing a sufficient level of security. It is recommended to use larger files if possible.</li>
+				</ul>
+				<a name="7"></a>
+				<h3>Preparing a request</h3>
+				<p>
+				Once the key has been created, you can proceed to forming a request using the command “openssl req -new -key private.key -out domain.csr”. As in the previous case, each component of the command has its own tasks:
+				</p>
+				<ul>
+				<li>req –new – the basic part that activates the preparation of the CSR;</li>
+				<li>-key private.key – indicates the path to the key made in the previous step;</li>
+				<li>-out domain.csr – the file where you plan to store the CSR.</li>
+				</ul>
+				<a name="8"></a>
+				<h3>Specifying information</h3>
+				<p>
+				After executing the command specified earlier, the program will issue a list of characteristics that should be specified in detail:
+				</p>
+				<ul>
+				<li>Country. The state where the domain is registered. For example, for the United States, the abbreviation “US” is indicated, and for Great Britain, “UK”.</li>
+				<li>State or Province. The region where the enterprise is registered, the individual is registered.</li>
+				<li>Locality Name. The locality where the enterprise is registered, the individual is registered.</li>
+				<li>Organization Name. In this column, you must specify the full name of the enterprise, without abbreviations, the same as in the documents, or the full name of the individual.</li>
+				<li>Organization Unit. The name of the department within the enterprise that will use the certificate.</li>
+				<li>Common Name. Domain name. Specify in full, without abbreviations and acronyms.</li>
+				<li>E-mail. Contact e-mail, with which you can quickly contact the administrator to resolve technical issues and problems.</li>
+				</ul>
+				<img src="/blog/csr3.png" alt="Https" />
+				<a name="9"></a>
+				<h3>What should be taken into account?</h3>
+				<p>
+				Before creating a CSR request, or registering an SSL certificate, you need to take into account several important points. For example, the key size. The minimum recommended value, which allows you not to worry about security, is 2048 bits. If maximum reliability is required, it is recommended to increase the key to 4096 bits.
+				</p>
+				<p>
+				Of course, even the most reliable key will be useless if third parties gain access to it. Transferring it into the wrong hands, as well as storing it on unprotected storage media, is unacceptable.
+				</p>
+				<p>
+				We must not forget about the one-time use of CSR. If it is necessary to renew or reissue the certificate, a new key and CSR must be generated. This approach eliminates the risks associated with vulnerability.
 				</p>
 			</>
 		),

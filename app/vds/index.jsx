@@ -36,6 +36,7 @@ import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ProductVDS from "../../components/seo/productvds";
 import Calculator from "@/components/calculator";
+import ru from "@/pages/domains/ru";
 
 export const forFreeVDSData = {
   title: {
@@ -747,7 +748,7 @@ export default function VDS({ language }) {
       en: "Budget VDS/VPS | Hosting TAS-IX in Tashkent, Uzbekistan",
     },
     headTitleC: {
-      ru: "Собери свой виртуальные сервер на базе быстрых SSD-дисков",
+      ru: "Собери свой виртуальный сервер на базе быстрых SSD-дисков",
       uz: "Tez SSD drayverlarga asoslangan shaxsiy virtual serveringiz",
       en: "Your own virtual server based on fast SSD drives",
     },
@@ -767,26 +768,26 @@ export default function VDS({ language }) {
       en: "Tariff",
     },
     endText: {
-      ru: "Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2-х рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации оборудования после оплаты - 1-2 часа. Мы делаем всё возможное, чтобы уменьшить время ожидания.",
-      uz: "Buyurtma va to'lovni amalga oshirgandan so'ng serverni o'rnatish vaqti 30 daqiqadan boshlanadi zarur serverlar va yuk mavjudligiga qarab 2 ish kunigacha texnik xodimlar. To'lovdan keyin uskunani faollashtirishning o'rtacha vaqti - 1-2 soat. Biz kutish vaqtini kamaytirish uchun qo'limizdan kelganini qilamiz.",
-      en: "Server installation time, after placing an order and payment, is from 30 minutes to 2 business days, depending on the availability of the necessary servers and the workload of technical personnel. The average equipment activation time after payment is 1-2 hours. We do our best to to reduce waiting time.",
+      ru: "Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2 рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации оборудования после оплаты - 1-2 часа. Мы стремимся сократить время ожидания.",
+      uz: "Buyurtma va to'lovni amalga oshirgandan so'ng serverni o'rnatish muddati zarur serverlarning mavjudligi va texnik xodimlarning ish yukiga qarab 30 daqiqadan 2 ish kunigacha. To'lovdan so'ng uskunani o'rtacha faollashtirish vaqti 1-2 soat. Biz kutish vaqtini qisqartirishga harakat qilamiz.",
+      en: "The server installation period, after placing an order and payment, is from 30 minutes to 2 business days, depending on the availability of the necessary servers and the workload of technical personnel. The average activation time of the equipment after payment is 1-2 hours. We strive to reduce the waiting time.",
     },
     timeW: {
       ru: (
         <p>
           Срок действия услуги начнется с момента её активации.
-          <br /> Не предоставляется для{" "}
+          <br /><br />{" "}
           <span className="strong">
-            игровых серверов и видео-контент сайтов!
+            «VDS запускается за 30 минут», «Аптайм 99.98%»
           </span>
         </p>
       ),
       uz: (
         <p>
           Xizmatning amal qilish muddati u yoqilgan paytdan boshlanadi.
-          <br />{" "}
+          <br /><br />{" "}
           <span className="strong">
-            oʻyin serverlari va video kontent saytlari uchun taqdim etilmaydi!
+            "VDS 12 daqiqada boshlanadi", "Uptime 99,98%"
           </span>
         </p>
       ),
@@ -794,8 +795,8 @@ export default function VDS({ language }) {
         <p>
           The validity period of the service will begin from the moment of its
           activation.
-          <br /> Not provided for{" "}
-          <span className="strong">game servers and video content sites!</span>
+          <br /><br />{" "}
+          <span className="strong">"VDS starts in 12 minutes", "Uptime 99.98%"</span>
         </p>
       ),
     },
@@ -1271,84 +1272,51 @@ export default function VDS({ language }) {
   const whyBlock = [
     {
       title: {
-        ru: "Мгновенная активация",
-        uz: "Bir zumdayoq ulanish",
-        en: "Instant activation",
+        ru: "Защита DDoS & BackUp",
+        uz: "DDoS himoyasi va zaxira nusxasi",
+        en: "DDoS Protection & BackUp",
       },
       description: {
         ru: (
           <>
             <p>
-              Активация VDS выполняется от 5 минут до 4-х часов, в зависимости
-              от количества заказов и наличия свободного оборудования.
+              Серверы защищены от DDoS, бэкапы доступны по запросу (услуга резервирование копирование Платная)
             </p>
-            <button>
-              <a
-                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Стать клиентом и заказать VDS
-              </a>
-            </button>
           </>
         ),
         uz: (
           <>
             <p>
-              VDSni faollashtirish buyurtmalar soniga qarab 5 daqiqadan 4
-              soatgacha davom etadi va bepul jihozlarning mavjudligi.
+              Serverlar DDoS dan himoyalangan, so'rov bo'yicha zaxira nusxalari mavjud (zaxira nusxa ko'chirish xizmati to'lanadi)
             </p>
-            <button>
-              <a
-                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Mijoz bo'ling va VDSga buyurtma bering
-              </a>
-            </button>
           </>
         ),
         en: (
           <>
             <p>
-              VDS activation takes from 5 minutes to 4 hours, depending on the
-              number of orders and availability free equipment.
+              Servers are protected from DDoS, backups are available upon request (backup copying service is paid)
             </p>
-            <button>
-              <a
-                href="https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=12"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Become a client and order VDS
-              </a>
-            </button>
           </>
         ),
       },
       icon: clockIcon,
     },
     {
-      title: { ru: "Запрещается", uz: "Taqiqlanadi", en: "Forbidden" },
+      title: { ru: "Гарантии и безопасность", uz: "Kafolat va xavfsizlik", en: "Guarantees and security" },
       description: {
         ru: (
           <p>
-            Не предоставляется для <strong>"игровых"</strong> серверов и{" "}
-            <strong>"видео-контент"</strong> сайтов!
+              100% возврат в течение 7 дней, если не понравится
           </p>
         ),
         uz: (
           <p>
-            <strong>O'yin</strong> serverlari va <strong>video kontent</strong>{" "}
-            saytlari uchun mavjud emas!
+              Agar sizga yoqmasa, 7 kun ichida 100% qaytarib beriladi
           </p>
         ),
         en: (
           <p>
-            Not available for <strong>game</strong> servers and{" "}
-            <strong>video</strong> content sites!
+              100% refund within 7 days if you don't like it
           </p>
         ),
       },
@@ -1546,6 +1514,7 @@ export default function VDS({ language }) {
           // date: langData.month[language],
         },
       ],
+      activeTop: "activeTop",
       cpu: 6,
       ram: 12,
       ssd: 200,
@@ -1863,6 +1832,7 @@ export default function VDS({ language }) {
           // date: langData.month[language],
         },
       ],
+      activeTop: "activeTop",
       cpu: 4,
       ram: 6,
       ssd: 100,

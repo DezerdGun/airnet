@@ -614,21 +614,17 @@ export default function VDS({ language }) {
           <p>
             Взятые у нас в аренду сервера Intel работают стабильно и не
             ломаются. Это хорошо для вашего проекта. Благодаря качеству сервера
-            Intel минимизируется риск сбоев.
+            Intel минимизируется риск сбоев, что повышает стабильность проекта.
           </p>
         ),
         uz: (
           <p>
-            Bizdan ijaraga olingan Intel serverlari barqaror ishlaydi va
-            buzilmaydi. Bu sizning loyihangiz uchun yaxshi. Intel serverining
-            sifati tufayli ishdan chiqish xavfi minimallashtiriladi.
+            Bizdan ijaraga olingan Intel serverlari barqaror ishlaydi va buzilmaydi. Bu sizning loyihangiz uchun yaxshi. Intel serverining sifati tufayli nosozliklar xavfi minimallashtiriladi, bu esa loyihaning barqarorligini oshiradi.
           </p>
         ),
         en: (
           <p>
-            Intel servers rented from us work stably and do not break down. This
-            is good for your project. Thanks to the quality of the Intel server,
-            the risk of failure is minimized.
+            The Intel servers rented from us work stably and do not break down. This is good for your project. Thanks to the quality of the Intel server, the risk of failures is minimized, which increases the stability of the project.
           </p>
         ),
       },
@@ -874,6 +870,7 @@ export default function VDS({ language }) {
           // date: langData.month[language],
         },
       ],
+      activeTop: "activeTop",
       cpu: 4,
       ram: 6,
       ssd: 100,
@@ -967,6 +964,7 @@ export default function VDS({ language }) {
           // date: langData.month[language],
         },
       ],
+      activeTop: "activeTop",
       cpu: 6,
       ram: 12,
       ssd: 200,

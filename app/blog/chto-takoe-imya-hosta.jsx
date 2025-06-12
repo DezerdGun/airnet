@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "Что такое имя хоста и зачем оно нужно?",
-		uz: "Что такое имя хоста и зачем оно нужно?",
-		en: "Что такое имя хоста и зачем оно нужно?",
+		uz: "Xost nomi nima va u nima uchun kerak?",
+		en: "What is a host name and why is it needed?",
 	},
 	title: {
 		ru: "Что такое имя хоста hostname: простое объяснение",
-		uz: "Что такое имя хоста hostname: простое объяснение",
-		en: "Что такое имя хоста hostname: простое объяснение",
+		uz: "Xost nomi nima: oddiy tushuntirish",
+		en: "What is a hostname: A simple explanation",
 	},
 	desc: {
 		ru: "Узнайте, что такое имя хоста, его функции и значение в сетевых коммуникациях. Простое объяснение понятия хоста для начинающих.",
-		uz: "Узнайте, что такое имя хоста, его функции и значение в сетевых коммуникациях. Простое объяснение понятия хоста для начинающих.",
-		en: "Узнайте, что такое имя хоста, его функции и значение в сетевых коммуникациях. Простое объяснение понятия хоста для начинающих.",
+		uz: "Xost nomi nima ekanligini, uning funktsiyalari va tarmoq aloqalarida ahamiyatini bilib oling. Yangi boshlanuvchilar uchun xost tushunchasini oddiy tushuntirish.",
+		en: "Learn what a host name is, its functions and importance in network communications. A simple explanation of the concept of a host for beginners.",
 	},
 	date: "14.12.2024",
 	updated: "14.12.2024",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/host.png",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,10 +61,10 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Что такое имя хоста?", uz: "Что такое имя хоста?", en: "Что такое имя хоста?", slug: "1" }},
-		{ title: {ru: "Определение и функции", uz: "Определение и функции", en: "Определение и функции", slug: "2" }},
-		{ title: {ru: "Связь с доменным именем", uz: "Связь с доменным именем", en: "Связь с доменным именем", slug: "3" }},
-		{ title: {ru: "Выбор и безопасность", uz: "Выбор и безопасность", en: "Выбор и безопасность", slug: "4" }},
+		{ title: {ru: "Что такое имя хоста?", uz: "Xost nomi nima?", en: "What is a host name?", slug: "1" }},
+		{ title: {ru: "Определение и функции", uz: "Ta'rif va funktsiyalar", en: "Definition and functions", slug: "2" }},
+		{ title: {ru: "Связь с доменным именем", uz: "Domen nomiga havola", en: "Link to domain name", slug: "3" }},
+		{ title: {ru: "Выбор и безопасность", uz: "Tanlov va xavfsizlik", en: "Choice and safety", slug: "4" }},
 	],
 	content: {
 		ru: (
@@ -121,71 +121,81 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Xost nomi nima?
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Internet murakkab tizim bo'lib, uning asosiy vazifasi axborotni uzatishdir. Siz uni, masalan, pochta yoki kurerlik xizmati bilan solishtirishingiz mumkin. Xat yoki posilkani aniq yetkazib berish uchun kurer oluvchining manzilini bilishi kerak. Internet muhitida uning ekvivalenti xost nomi, ma'lum bir qurilma yoki tarmoq resursiga ishora qiluvchi identifikator hisoblanadi. Ushbu kontseptsiyaning xususiyatlari qanday? U domen nomidan qanday farq qiladi?
 				</p>
+				<a name="2"></a>
+				<h3>Tanrif va funksiyalar</h3>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Xost nomi - bu global yoki mahalliy tarmoq ichida ma'lum bir qurilmani aniq tanib olish imkonini beruvchi harflar va raqamlardan iborat identifikator. Xost nomisiz quyidagi amallarni bajarib bo'lmaydi:
 				</p>
+				<ul>
+				<li>Veb-saytlarni ochish. Bu brauzerga tarmoq resursi qaysi serverda joylashganligini aniqlash imkonini beruvchi identifikatordir.</li>
+				<li>Elektron pochta almashish. Xost nomi jo‘natuvchi va qabul qiluvchi o‘rtasida tez va aniq yo‘nalish yaratish imkonini beradi.</li>
+				<li>Masofaviy ish stolini boshqarish, fayl tizimi bilan o'zaro aloqa. Individual identifikatorsiz ulanish o'rnatib bo'lmaydi.</li>
+				</ul>
+				<a name="3"></a>
+				<h3>Domen nomi bilan ulanish</h3>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				Domen nomi o'zaro bog'liq tushunchadir, lekin sinonim yoki bir xil emas. Mahalliy tarmoq ichida xost nomi ma'lum bir kompyuter yoki boshqa qurilmaga, global tarmoq ichida esa veb-saytga ulanadi. Domen nomi deganda IP-manzilga bog'langan tarmoq resursi, veb-sayt yoki dastur nomi tushuniladi.
 				</p>
+				<a name="4"></a>
+				<h3>Tanlash va xavfsizlik</h3>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				Xost nomini oqilona tanlashingiz kerak. Ushbu vazifaning ko'rinadigan soddaligiga qaramay, unga bir nechta printsiplarga amal qilgan holda mas'uliyat bilan yondashish kerak:
 				</p>
+				<ul>
+				<li>Qisqalik. Identifikator qanchalik qisqa bo'lsa, foydalanuvchi uni eslab qolishini osonlashtiradi.</li>
+				<li>Tushunuvchanlik. Xost nomi qurilmaning funktsiyalarini, u ko'rsatadigan tarmoq resursining o'ziga xos xususiyatlarini ko'rsatishi kerak. Masalan, “fayl serveri” fayl serveri uchun eng yaxshi variant hisoblanadi.</li>
+				<li>O'ziga xoslik. Chalkashmaslik uchun identifikator uning domenida yoki mahalliy tarmog'ida takrorlanmasligi kerak.</li>
+				</ul>
+				<img src="/blog/host1.png" alt="Xost nomi" />
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
-				</p>
-				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				Afsuski, xost nomidan nafaqat qonunga bo'ysunuvchi foydalanuvchilar, balki buzg'unchilar ham foydalanishlari mumkin, ular uchun bu qurilma yoki butun tarmoq uchun o'ziga xos "kalit", hujumni amalga oshirish uchun vositadir. Xakerni chalkashtirib yuborish uchun "admin" kabi aniq identifikatorlardan qochish tavsiya etiladi. Murakkab parollarni o'rnatish, ularni vaqti-vaqti bilan o'zgartirish, dasturiy ta'minotning faqat yangi, so'nggi versiyalaridan foydalanish va uni o'z vaqtida yangilashni o'z ichiga olgan umumiy xavfsizlik qoidalari ham muhimdir.
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				What is a host name?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				The Internet is a complex system whose main function is to transmit information. You can compare it, for example, with a postal or courier service. To accurately deliver a letter or parcel, the courier must know the recipient's address. In the Internet environment, its equivalent is a host name, an identifier that points to a specific device or network resource. What are the features of this concept? How does it differ from a domain name?
 				</p>
+				<a name="2"></a>
+				<h3>Definition and functions</h3>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				A host name is an identifier consisting of letters and numbers that allows you to accurately recognize a specific device within a global or local network. Without a host name, the following actions would be impossible:
 				</p>
+				<ul>
+				<li>Opening websites. It is the identifier that allows the browser to determine which server the network resource is located on.</li>
+				<li>Exchange of emails. The host name allows you to create a quick and accurate route between the sender and the recipient.</li>
+				<li>Remote desktop management, interaction with the file system. Without an individual identifier, it will not be possible to establish a connection.</li>
+				</ul>
+				<a name="3"></a>
+				<h3>Connection with a domain name</h3>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				A domain name is a related concept, but not synonymous or identical. Within a local network, a host name is linked to a specific computer or other device, and within a global network, to a website. A domain name is understood to be the name of a network resource, website, or application linked to an IP address.
 				</p>
+				<a name="4"></a>
+				<h3>Choice and security</h3>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				You need to choose a host name wisely. Despite the apparent simplicity of this task, it is necessary to approach it responsibly, guided by several principles:
 				</p>
+				<ul>
+				<li>Brevity. The shorter the identifier, the easier it is for the user to remember it.</li>
+				<li>Understandability. The host name should indicate the functions of the device, the specifics of the network resource it represents. For example, “fileserver” is the best option for a file server.</li>
+				<li>Uniqueness. The identifier should not be repeated within its domain or local network, to avoid confusion.</li>
+				</ul>
+				<img src="/blog/host1.png" alt="Hostname" />
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
-				</p>
-				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				Unfortunately, the host name can be used not only by law-abiding users, but also by intruders, for whom it is a kind of “key” to the device or the entire network, a tool for carrying out an attack. In order to confuse the hacker, it is recommended to avoid obvious identifiers like “admin”. Also important are general security rules, which include setting complex passwords, changing them periodically, using only fresh, up-to-date versions of software, and updating it in a timely manner.
 				</p>
 			</>
 		),

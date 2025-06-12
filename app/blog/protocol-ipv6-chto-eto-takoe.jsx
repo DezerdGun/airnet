@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "IPv6: будущее интернет-адресации",
-		uz: "IPv6: будущее интернет-адресации",
-		en: "IPv6: будущее интернет-адресации",
+		uz: "IPv6: Internet-manzillashning kelajagi",
+		en: "IPv6: The Future of Internet Addressing",
 	},
 	title: {
 		ru: "IPv6: новое поколение интернет-протокола",
-		uz: "IPv6: новое поколение интернет-протокола",
-		en: "IPv6: новое поколение интернет-протокола",
+		uz: "IPv6: Internet protokolining keyingi avlodi",
+		en: "IPv6: The Next Generation of Internet Protocol",
 	},
 	desc: {
 		ru: "Подробное объяснение протокола IPv6, его отличий от IPv4, преимуществ и необходимости перехода на новую версию.",
-		uz: "Подробное объяснение протокола IPv6, его отличий от IPv4, преимуществ и необходимости перехода на новую версию.",
-		en: "Подробное объяснение протокола IPv6, его отличий от IPv4, преимуществ и необходимости перехода на новую версию.",
+		uz: "IPv6 protokoli, uning IPv4 dan farqlari, afzalliklari va yangi versiyaga yangilash zarurati haqida batafsil tushuntirish.",
+		en: "A detailed explanation of the IPv6 protocol, its differences from IPv4, its advantages and the need to upgrade to the new version.",
 	},
 	date: "14.12.2024",
 	updated: "14.12.2024",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/ipv6.png",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,14 +61,14 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Протокол IPv6: что это?", uz: "Протокол IPv6: что это?", en: "Протокол IPv6: что это?", slug: "1" }},
-		{ title: {ru: "Причины появления", uz: "Причины появления", en: "Причины появления", slug: "2" }},
-		{ title: {ru: "Написание", uz: "Написание", en: "Написание", slug: "3" }},
-		{ title: {ru: "Структура заголовка", uz: "Структура заголовка", en: "Структура заголовка", slug: "4" }},
-		{ title: {ru: "Классификация адресов", uz: "Классификация адресов", en: "Классификация адресов", slug: "5" }},
-		{ title: {ru: "Преимущества", uz: "Преимущества", en: "Преимущества", slug: "6" }},
-		{ title: {ru: "Проблемы и решения", uz: "Проблемы и решения", en: "Проблемы и решения", slug: "7" }},
-		{ title: {ru: "Подведение итогов", uz: "Подведение итогов", en: "Подведение итогов", slug: "8" }},
+		{ title: {ru: "Протокол IPv6: что это?", uz: "IPv6 protokoli: bu nima?", en: "IPv6 Protocol: What is it?", slug: "1" }},
+		{ title: {ru: "Причины появления", uz: "Ko'rinish sabablari", en: "Reasons for the appearance", slug: "2" }},
+		{ title: {ru: "Написание", uz: "Yozish", en: "Writing", slug: "3" }},
+		{ title: {ru: "Структура заголовка", uz: "Sarlavha tuzilishi", en: "Header structure", slug: "4" }},
+		{ title: {ru: "Классификация адресов", uz: "Manzil tasnifi", en: "Address classification", slug: "5" }},
+		{ title: {ru: "Преимущества", uz: "Afzalliklari", en: "Advantages", slug: "6" }},
+		{ title: {ru: "Проблемы и решения", uz: "Muammolar va yechimlar", en: "Problems and solutions", slug: "7" }},
+		{ title: {ru: "Подведение итогов", uz: "Xulosa qilish", en: "Summing up", slug: "8" }},
 	],
 	content: {
 		ru: (
@@ -193,71 +193,217 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				IPv6 protokoli: bu nima?
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Xatlar, posilkalar, paketlar, kommunal to'lovlarni jo'natish va qabul qilish - bularning barchasi pochta manzillarisiz mumkin emas. Xuddi shu narsa Internetga ham tegishli, u erda faqat pochta manzillari o'rniga IP-manzillar qo'llaniladi. "IP" qisqartmasi "Internet Protocol" degan ma'noni anglatadi, ya'ni algoritmlar va vositalar to'plami, buning yordamida mahalliy va global tarmoqlar, qurilmalar, noutbuklar, kompyuterlar, routerlar, modemlar, serverlar bir-biri bilan o'zaro aloqada bo'lgan ma'lumotlar almashinuvi amalga oshiriladi.
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Protokolning eng mashhur versiyasi IPv4 bo'lib qolmoqda, ammo u asta-sekin IPv6 bilan almashtirilmoqda. Uning xususiyatlari qanday? Qanday afzalliklari bor?
+				</p>
+				<a name="2"></a>
+				<h3>Uning paydo bo'lish sabablari</h3>
+				<p>
+				IPv4 o'tgan asrning 80-yillarida paydo bo'lgan. U 32 bitli yozish formatini qabul qiladi, shuning uchun mavjud kombinatsiyalar soni taxminan 4 milliard 300 millionni tashkil qiladi. Albatta, paydo bo'lgan yillarda bu raqam barcha foydalanuvchilarning ehtiyojlarini qondirish uchun etarli bo'lib tuyuldi, chunki Internet juda keng tarqalgan va foydalanish mumkin bo'lgan texnologiya emas edi.
 				</p>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				Zamon o'zgardi. Sayyora aholisi 8 milliardga yaqinlashmoqda, aksariyatining cho'ntagida smartfon, portfel yoki ryukzakda noutbuk va uyda kompyuter bor. Ushbu qurilmalarning har biri Internetga kirishi mumkin va shuning uchun o'z IP manziliga muhtoj. IPv4 talablarni qondirish uchun juda etarli emas.
+				</p>
+				<img src="/blog/ipv61.png" alt="IPV6" />
+				<p>
+				IPv6 protokoli 32-bitli yozishdan ko'ra 128-bitni ishlatadi, bu mavjud manzillar birikmalarining sonini mutlaqo astronomik ko'rsatkichga aylantiradi - 3,4 x 10^38. Bu nafaqat yillardagi, balki o'nlab yillar va asrlar davomidagi ehtiyojlarni qoplaydi.
 				</p>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				IPv6 ning rasmiy jahon debyut sanasi 2012-yil 6-iyun, garchi birinchi sinovlar va sinovlar ancha oldin boshlangan. Har yili zamonaviy tarmoq uskunalari, marshrutizatorlar, marshrutizatorlar, 4G va undan yuqori formatda ishlaydigan uyali aloqa tayanch stantsiyalari tomonidan qo'llab-quvvatlanadigan versiya tobora kengayib bormoqda.
 				</p>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
+				Statistik ma'lumotlarga ko'ra, IPv6 bilan bog'liq jahon trafikining umumiy hajmi hali ham yarmidan kam, taxminan 35-40 foizni tashkil etadi, ammo u barqaror o'sib bormoqda.
+				</p>
+				<a name="3"></a>
+				<h3>Yozish</h3>
+				<p>
+				Yuqorida aytib o'tilganidek, IPv6 manzilining uzunligi 128 bit. Yozuv ikki nuqta bilan ajratilgan o'n oltilik formatda 4 ta raqamdan iborat 8 ta guruh bilan ifodalanadi. Yozish misoli "2001: 0db8: abf2: 29ea: 5298: ad71: 2ca0: 4ff1". Qulaylik uchun ba'zi qoidalar joriy etildi:
+				</p>
+				<ul>
+				<li>Yozishda boshlang'ich nollarni o'tkazib yuborish imkoniyati. Masalan, “0db8” guruhi “db8”ga aylanadi.</li>
+				<li>Faqat nol bilan tuzilgan ketma-ket guruhlarni almashtirish uchun ikki nuqtadan foydalanish.</li>
+				<li>Lotin harflari katta emas, kichik harflardan foydalanish.</li>
+				</ul>
+				<img src="/blog/ipv62.png" alt="IPV6" />
+				<a name="4"></a>
+				<h3>Sarlavha tuzilishi</h3>
+				<p>
+				Axborot paketi nafaqat etkazib beriladigan asosiy ma'lumotni, balki etkazib berishning samaradorligi va aniqligini belgilaydigan sarlavhani ham o'z ichiga oladi. IPv6-da manzil hajmi to'rt baravar, 32 dan 128 bitgacha oshdi, lekin sarlavha faqat ikki baravar ko'paydi, bu uning yaxshi optimallashtirilganligini ko'rsatadi.
 				</p>
 				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				Sarlavhaning belgilangan qismida marshrutlash uchun zarur bo'lgan barcha ma'lumotlar mavjud:
+				</p>
+				<ul>
+				<li>Protokol versiyasi. Bunday holda, IPv6.</li>
+				<li>Trafik klassi. Bu ma'lum bir paketni qanchalik zudlik bilan etkazib berish kerakligini aniqlaydi. Sinf bilan birga yetkazib berish ustuvorligi ham ortadi.</li>
+				<li>Oqim yorlig'i. Uning qabul qiluvchilari marshrutizatorlardir. Unda ma'lum bir axborot oqimida paketlarni uzatishning o'ziga xos xususiyatlari, tartibi to'g'risidagi ma'lumotlar mavjud.</li>
+				<li>Yuklash uzunligi. Foydali yukdagi paket hajmini aniqlaydi.</li>
+				<li>Manzillar. Paketni yuborgan qurilmaning IP manzillarini va uning manzilini yozib oling.</li>
+				</ul>
+				<p>
+				Boshqa ma'lumotlar ham sarlavhaning belgilangan qismidan tashqarida joylashgan bo'lishi mumkin, shu jumladan shifrlashni faollashtirish zarurati to'g'risidagi ma'lumotlar, tranzit uzatish paytida yordamchi qurilmalar, autentifikatsiya.
+				</p>
+				<a name="5"></a>
+				<h3>Manzillar tasnifi</h3>
+				<p>
+				IPv6 protokoli quyidagi turdagi manzillardan foydalanadi:
+				</p>
+				<ul>
+				<li>Unicast. Ular IPv6 da ishlaydigan tugun interfeysini aniq tanib olish uchun kerak.</li>
+				<li>Multicast. Ular bir vaqtning o'zida bir nechta manzillarga ma'lumotlarni yuborish imkonini beradi. Oldingi versiyaga xos keng polosali manzillarning analoglari.</li>
+				<li>Har qanday translatsiya. Bunday manzillar bir vaqtning o'zida bir nechta qurilmalarga tayinlanadi, biroq paket eng yaqin manzilga yetib boradi.</li>
+				</ul>
+				<img src="/blog/ipv63.png" alt="IPV6" />
+				<p>
+				Unicast manzillarni ham bir necha toifalarga bo'lish mumkin:
+				</p>
+				<ul>
+				<li>Global. Ommaviy. Aslida, bu IPv4-dagi bir xil manzillarning analoglari. Tarmoq uskunalari ma'lumotlarni samarali uzatish uchun ularga to'liq yo'l qurishi mumkin. Bu manzillar noyob va takrorlanmaydi va ularni ham statik, ham dinamik tarzda sozlash mumkin.</li>
+				<li>Noyob mahalliy. IP protokolining 4-versiyasidagi ularning analoglari shaxsiydir. Ular global marshrutlash uchun ishlatilmaydi, lekin kichik o'lchamli xususiy tarmoqlarda qo'llaniladi.</li>
+				<li>Mahalliy havola. IPv6 dagi bu manzillar quyi darajaga tegishli. Ularning tayinlanishi avtomatlashtirilgan, jarayon uy egasi tomonidan nazorat qilinadi va boshqariladi. Global tarmoqda marshrutlash mumkin emas, qo'llash doirasi manzil yaratilgan kanal bilan cheklangan. Yagonalik ixtiyoriy.</li>
+				</ul>
+				<a name="6"></a>
+				<h3>Afzalliklar</h3>
+				<p>
+				IPv6 protokoli o'zidan oldingisidan nafaqat mumkin bo'lgan manzillarning maksimal soni, balki boshqa afzalliklari bilan ham farq qiladi. Eng muhimlari quyidagilar:
+				</p>
+				<ul>
+				<li>Kengaytirilgan marshrutlash algoritmlari. Jarayon tezroq va samaraliroq bo'lib, bu tarmoqning umumiy ishonchliligi, barqarorligiga ijobiy ta'sir ko'rsatadi va axborot uzatishni tezlashtiradi. Afzallik optik tolali liniyalar va yuqori tezlikdagi uyali aloqa standartlari, LTE, 4G, 5G tarqalishi bilan tobora dolzarb va sezilarli bo'lib bormoqda. Bu tezlik, albatta, onlayn o'yinlar va kinoteatrlar muxlislari tomonidan qadrlanadi. Ping kamayadi.</li>
+				<li>Keraksiz ma'lumotlarni o'z ichiga olmaydigan soddalashtirilgan sarlavhalar. Bu shuningdek, axborot almashish tezligini oshiradi, bundan tashqari, tarmoq uskunalariga yukni kamaytiradi.</li>
+				<li>Maksimal xavfsizlik. IPv6 protokoli ma'lumotni ushlashdan himoya qiluvchi funktsiyalarni qo'llab-quvvatlaydi, ularning shifrlangan shaklda uzatilishini ta'minlaydi va ushlashni foydasiz qiladi. Misol uchun, IPSec qo'llab-quvvatlanadi, ya'ni qo'shimcha dasturiy ta'minot va apparat vositalarisiz ham siz xakerlik hujumlari, tarmoqni buzish, o'g'irlik yoki ma'lumotlarga qasddan zarar yetkazishdan xavotir olmasdan yuqori darajadagi xavfsizlikka erishishingiz mumkin.</li>
+				<li>Yangi texnologiyalar bilan moslik. Cheklangan manzil maydoni va eng yaxshi marshrutlash algoritmlari emasligi sababli IPv4 da hamma innovatsion ishlanmalardan foydalanish mumkin emas. IPv6 muammoni hal qiladi, IoT, narsalar interneti, bulutli hisoblash, mashinani o'rganish va boshqa texnologiyalar imkoniyatlarini to'liq ochib berishga imkon beradi.</li>
+				<li>Tezlik pasayishlariga eng sezgir bo'lgan ma'lumotlar paketlarini yozib olish imkonini beruvchi QoS funksiyasini qo'llab-quvvatlash, ularni uzatish birinchi navbatda amalga oshirilishi kerak.</li>
+				</ul>
+				<img src="/blog/ipv64.png" alt="IPV6" />
+				<a name="7"></a>
+				<h3>Muammolar va yechimlar</h3>
+				<p>
+				IPv6 ning aniq afzalliklariga qaramay, uning tarqalishiga to'sqinlik qiladigan ba'zi muammolar mavjud. Xususan, quyidagi cheklovchi omillarga e'tibor qaratish lozim:
+				</p>
+				<ul>
+				<li>Protokolning mos kelmasligi. IPv4-ni qo'llab-quvvatlaydigan qurilma IPv6-da ishlaydigan analogga ulana olmaydi. Vositachi tarmoq komponentlarini modernizatsiya qilish yoki ulardan foydalanish talab qilinadi, ikkala holatda ham siz qo‘shimcha xarajatlarga duch kelishingiz kerak bo‘ladi.</li>
+				<li>Cheklangan ilovalar, dasturiy ta'minot. Hamma dasturlar hali IPv6 bilan samarali o'zaro ishlashga imkon bermaydi. Muammoni hal qilish avvalgisiga o'xshaydi, modernizatsiya, yangilash, joriy versiyalarga o'tish talab qilinadi.</li>
+				<li>Foydalanuvchining xabardorligi yetarli emas. Professionallar IPv6 ning afzalliklarini uzoq vaqtdan beri bilishadi, buni faqat 4-versiyasi mavjud bo'lgan dunyoda yashashni davom ettiradigan oddiy foydalanuvchilar haqida aytib bo'lmaydi. Internet-korporatsiyalar, provayderlar yangi versiyani faolroq targ‘ib qilishlari kerak.</li>
+				</ul>
+				<a name="8"></a>
+				<h3>Xulosa</h3>
+				<p>
+				Tarqatishni cheklaydigan qiyinchiliklarga qaramay, kelajak IPv6 protokoliga tegishli ekanligi aniq. Gap nafaqat bepul IPv4 manzillari yetkazib berishning tugashi, balki yangi versiyaning texnik afzalliklari, uning maʼlumotlarni yuqori tezlikda uzatish qobiliyati, himoya va xavfsizlikni taʼminlovchi funksiyalarni qoʻllab-quvvatlash haqida ham bormoqda. Tarmoq qurilmalarini sotib olayotganda, u marshrutizatorlar, marshrutizatorlar, tarmoq kartalari, modemlar bo'lsin, ularning IPv6 qo'llab-quvvatlashiga e'tibor qaratish lozim.
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				IPv6 Protocol: What is it?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				Sending and receiving letters, parcels, packages, utility bills – all this would be impossible without postal addresses. The same applies to the Internet, only instead of postal addresses, IP addresses are used there. The abbreviation “IP” stands for “Internet Protocol”, that is, a set of algorithms and tools, thanks to which data is exchanged within local and global networks, devices, laptops, computers, routers, modems, servers interact with each other.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				The most popular version of the protocol continues to be IPv4, however, it is gradually being replaced by IPv6. What are its features? What are the advantages?
+				</p>
+				<a name="2"></a>
+				<h3>Reasons for its appearance</h3>
+				<p>
+				IPv4 appeared back in the 80s of the last century. It assumes a 32-bit writing format, so the number of available combinations is about 4 billion 300 million. Of course, in the years of its appearance, the number seemed quite sufficient to meet the needs of all users, because the Internet was not a very widespread and accessible technology.
 				</p>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				Times have changed. The population of the planet is approaching 8 billion, the vast majority have a smartphone in their pocket, a laptop in their briefcase or backpack, and a computer at home. Each of these devices can access the Internet, and therefore needs its own IP address. IPv4 is critically insufficient to meet the needs.
+				</p>
+				<img src="/blog/ipv61.png" alt="IPV6" />
+				<p>
+				The IPv6 protocol uses 128-bit rather than 32-bit writing, which makes the number of available address combinations an absolutely astronomical figure - 3.4 x 10^38. This more than covers the needs not just for years, but for decades and centuries to come.
 				</p>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				The official world debut date of IPv6 is June 6, 2012, although the first tests and trials began much earlier. Every year, the version becomes more and more widespread, supported by modern network equipment, routers, routers, base stations of cellular communications, operating in 4G format and higher.
 				</p>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
+				According to statistics, the total volume of world traffic related to IPv6 is still less than half, about 35-40 percent, but it is growing steadily.
+				</p>
+				<a name="3"></a>
+				<h3>Writing</h3>
+				<p>
+				As noted above, the length of an IPv6 address is 128 bits. The entry is represented by 8 groups of 4 digits in hexadecimal format, separated by colons. An example of writing is “2001:0db8:abf2:29ea:5298:ad71:2ca0:4ff1”. For greater convenience, some rules were introduced:
+				</p>
+				<ul>
+				<li>Possibility of omitting initial zeros when writing. For example, the group “0db8” will become “db8”.</li>
+				<li>Using double colons to replace consecutive groups formed exclusively by zeros.</li>
+				<li>Using lowercase, not uppercase, Latin characters.</li>
+				</ul>
+				<img src="/blog/ipv62.png" alt="IPV6" />
+				<a name="4"></a>
+				<h3>Header structure</h3>
+				<p>
+				The information packet contains not only the main information to be delivered, but also a header that determines the efficiency and accuracy of delivery. The size of the address in IPv6 has increased fourfold, from 32 to 128 bits, but the header has only doubled, which indicates its good optimization.
 				</p>
 				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				The fixed part of the header contains all the information required for routing:
+				</p>
+				<ul>
+				<li>Protocol version. In this case, IPv6.</li>
+				<li>Traffic class. It determines how urgently a specific packet should be delivered. Along with the class, the delivery priority also increases.</li>
+				<li>Flow label. Its recipients are routers. It contains data on the specifics, the order of transmission of packets in a certain information flow.</li>
+				<li>Payload length. Determines the size of the packet in the payload.</li>
+				<li>Addresses. Record the IP addresses of the device that sent the packet and its destination.</li>
+				</ul>
+				<p>
+				Other data may also be located outside the fixed part of the header, including information on the need to activate encryption, auxiliary devices during transit transmission, authentication.
+				</p>
+				<a name="5"></a>
+				<h3>Classification of addresses</h3>
+				<p>
+				The IPv6 protocol uses the following types of addresses:
+				</p>
+				<ul>
+				<li>Unicast. They are needed for precise recognition of the interface of a node operating on IPv6.</li>
+				<li>Multicast. They allow sending data to several addresses at once. Analogues of broadband addresses typical of the previous version.</li>
+				<li>Anycast. Such addresses are assigned to several devices at once, however, the packet arrives at the nearest one.</li>
+				</ul>
+				<img src="/blog/ipv63.png" alt="IPV6" />
+				<p>
+				Unicast addresses can also be divided into several categories:
+				</p>
+				<ul>
+				<li>Global. Public. In fact, these are analogues of the same addresses in IPv4. Network equipment can build a full path to them for efficient data transmission. These addresses are unique and unrepeatable, and can be configured both statically and dynamically.</li>
+				<li>Unique local. Their analogues in the 4th version of the IP protocol are private. They are not used for global routing, but are used in small-scale private networks.</li>
+				<li>Link local. These addresses in IPv6 belong to the lower level. Their assignment is automated, the process is controlled and managed by the host. Routing in the global network is impossible, the scope of application is limited to the channel in which the address is generated. Uniqueness is optional.</li>
+				</ul>
+				<a name="6"></a>
+				<h3>Advantages</h3>
+				<p>
+				The IPv6 protocol differs from its predecessor for the better not only in the maximum number of possible addresses, but also in other advantages. The most significant are as follows:
+				</p>
+				<ul>
+				<li>Advanced routing algorithms. The process is faster and more efficient, which has a positive effect on the overall reliability, stability of the network, and accelerates the transfer of information. The advantage is becoming increasingly relevant and tangible with the spread of fiber optic lines and high-speed cellular standards, LTE, 4G, 5G. This speed will definitely be appreciated by fans of online games and cinemas. Ping will decrease.</li>
+				<li>Simplified headers that do not contain unnecessary data. This also increases the speed of information exchange, in addition, reduces the load on network equipment.</li>
+				<li>Maximum security. The IPv6 protocol provides support for functions that protect information from interception, ensuring their transmission in encrypted form, making interception useless. For example, IPSec is supported, which means that even without additional software and hardware, you can achieve a high level of security, without worrying about hacker attacks, network break-ins, theft or deliberate damage to information.</li>
+				<li>Compatibility with new technologies. Not all innovative developments can be used on IPv4, due to the limited address space and not the best routing algorithms. IPv6 solves the problem, allows to fully reveal the potential of IoT, Internet of Things, cloud computing, machine learning and other technologies.</li>
+				<li>Support for QoS function, which allows to record information packets, which are most sensitive to speed drops, the transmission of which should be carried out first.</li>
+				</ul>
+				<img src="/blog/ipv64.png" alt="IPV6" />
+				<a name="7"></a>
+				<h3>Problems and solutions</h3>
+				<p>
+				Despite the obvious advantages of IPv6, there are some problems that hinder its distribution. In particular, the following limiting factors should be noted:
+				</p>
+				<ul>
+				<li>Protocol incompatibility. A device supporting IPv4 cannot connect to an analog running on IPv6. Modernization or use of intermediary network components is required, in both cases you will have to face additional costs.</li>
+				<li>Limited applications, software. Not all programs yet allow you to effectively interact with IPv6. The solution to the problem is similar to the previous one, modernization, updating, switching to current versions is required.</li>
+				<li>Insufficient user awareness. Professionals have long known the advantages of IPv6, which cannot be said about ordinary users who continue to live in a world where only the 4th version exists. Internet corporations, providers need to more actively promote the new version.</li>
+				</ul>
+				<a name="8"></a>
+				<h3>Summary</h3>
+				<p>
+				Despite the difficulties that limit distribution, it is clear that the future belongs to the IPv6 protocol. It is not only about the exhaustion of the supply of free IPv4 addresses, but also about the technical advantages of the new version, its ability to transmit data at a higher speed, support for functions that ensure protection and security. When purchasing network devices, be it routers, routers, network cards, modems, it is worth paying attention to their IPv6 support.
 				</p>
 			</>
 		),

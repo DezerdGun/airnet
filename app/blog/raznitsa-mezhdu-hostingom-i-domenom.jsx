@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "Хостинг и домен: ключевые различия и взаимодействие",
-		uz: "Хостинг и домен: ключевые различия и взаимодействие",
-		en: "Хостинг и домен: ключевые различия и взаимодействие",
+		uz: "Xosting va domen: asosiy farqlar va o'zaro ta'sirlar",
+		en: "Hosting and Domain: Key Differences and Interactions",
 	},
 	title: {
 		ru: "Хостинг и Домен: в чем разница и как они взаимодействуют",
-		uz: "Хостинг и Домен: в чем разница и как они взаимодействуют",
-		en: "Хостинг и Домен: в чем разница и как они взаимодействуют",
+		uz: "Xosting va domen: farq nima va ular qanday o'zaro ta'sir qiladi",
+		en: "Hosting and Domain: What is the Difference and How They Interact",
 	},
 	desc: {
 		ru: "Разберемся в отличиях между хостингом и доменом, их функциях и взаимосвязи при создании веб-сайта.",
-		uz: "Разберемся в отличиях между хостингом и доменом, их функциях и взаимосвязи при создании веб-сайта.",
-		en: "Разберемся в отличиях между хостингом и доменом, их функциях и взаимосвязи при создании веб-сайта.",
+		uz: "Keling, veb-sayt yaratishda xosting va domen o'rtasidagi farqlarni, ularning vazifalari va o'zaro bog'liqligini ko'rib chiqaylik.",
+		en: "Let's look at the differences between hosting and domain, their functions and interrelationships when creating a website.",
 	},
 	date: "14.12.2024",
 	updated: "14.12.2024",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/domain.png",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,15 +61,15 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Домен и хостинг: в чем разница между ними?", uz: "Домен и хостинг: в чем разница между ними?", en: "Домен и хостинг: в чем разница между ними?", slug: "1" }},
-		{ title: {ru: "Краткий разбор", uz: "Краткий разбор", en: "Краткий разбор", slug: "2" }},
-		{ title: {ru: "Что такое домен?", uz: "Что такое домен?", en: "Что такое домен?", slug: "3" }},
-		{ title: {ru: "Классификация доменов", uz: "Классификация доменов", en: "Классификация доменов", slug: "4" }},
-		{ title: {ru: "Что такое хостинг?", uz: "Что такое хостинг?", en: "Что такое хостинг?", slug: "5" }},
-		{ title: {ru: "Классификация хостингов", uz: "Классификация хостингов", en: "Классификация хостингов", slug: "6" }},
-		{ title: {ru: "Управление хостингом", uz: "Управление хостингом", en: "Управление хостингом", slug: "7" }},
-		{ title: {ru: "Рекомендации по выбору", uz: "Рекомендации по выбору", en: "Рекомендации по выбору", slug: "8" }},
-		{ title: {ru: "Подведение итогов", uz: "Подведение итогов", en: "Подведение итогов", slug: "9" }},
+		{ title: {ru: "Домен и хостинг: в чем разница между ними?", uz: "Domen va xosting: ular orasidagi farq nima?", en: "Domain and hosting: what is the difference between them?", slug: "1" }},
+		{ title: {ru: "Краткий разбор", uz: "Qisqacha tahlil", en: "Brief analysis", slug: "2" }},
+		{ title: {ru: "Что такое домен?", uz: "Domen nima?", en: "What is domain?", slug: "3" }},
+		{ title: {ru: "Классификация доменов", uz: "Domen tasnifi", en: "Domain classification", slug: "4" }},
+		{ title: {ru: "Что такое хостинг?", uz: "Xosting nima?", en: "What is hosting?", slug: "5" }},
+		{ title: {ru: "Классификация хостингов", uz: "Xosting tasnifi", en: "Hosting calssification", slug: "6" }},
+		{ title: {ru: "Управление хостингом", uz: "Xosting boshqaruvi", en: "Hosting Management", slug: "7" }},
+		{ title: {ru: "Рекомендации по выбору", uz: "Tanlash bo'yicha tavsiyalar", en: "Recommendations for selection", slug: "8" }},
+		{ title: {ru: "Подведение итогов", uz: "Xulosa qilish", en: "Summing up", slug: "9" }},
 	],
 	content: {
 		ru: (
@@ -198,71 +198,225 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Domen va xosting: ular orasidagi farq nima?
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Internet nafaqat ma'lumot, o'yin-kulgi yoki aloqa izlash, balki tijorat faoliyatini amalga oshirish, biznes yuritish uchun vositadir. O'z veb-saytiga ega bo'lmagan zamonaviy muvaffaqiyatli kompaniyani tasavvur qilib bo'lmaydi. Bu maqsadli auditoriyani kengaytirish, tashkilotning obro'sini mustahkamlash, real so'rovlar, savdo va buyurtmalar sonini ko'paytirishga yordam beradigan veb-sayt.
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Domen va xosting - bu sayt bilan uzviy bog'langan tushunchalar. Bu atamalar ortida nima yashiringan? Qanday farqlar bor?
+				</p>
+				<a name="2"></a>
+				<h3>Qisqacha tahlil</h3>
+				<p>
+				Birinchidan, ikkala ta'rifni ham qisqacha ko'rib chiqishimiz kerak. Xosting - bu doimiy mavjud bo'lishi kerak bo'lgan hisoblash quvvati ijarasini ro'yxatdan o'tkazishni o'z ichiga olgan maxsus xizmat bo'lib, matnlardan tortib yuqori aniqlikdagi videolargacha bo'lgan turli xil fayllarni saqlash, dasturlar va ilovalarni ishga tushirish uchun ishlatilishi mumkin.
 				</p>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				Domen nomi - bu foydalanuvchiga kerakli saytni topish imkonini beruvchi alifbo, raqamli va grafik belgilar to'plami.
+				</p>
+				<a name="3"></a>
+				<h3>Domen nima?</h3>
+				<p>
+				Endi biz shartlar bilan batafsilroq tanishishimiz kerak. Demak, domen tarmoq resursini aniq aniqlash imkonini beruvchi noyob manzildir. U quyidagi algoritmga muvofiq ishlaydi:
+				</p>
+				<ul>
+				<li>Foydalanuvchi manzillar qatoriga tarmoq resursining ma'lum nomini kiritadi.</li>
+				<li>Brauzer DNS domen nomi tizimiga so'rov yuboradi.</li>
+				<li>Tizim nomi qaysi haqiqiy IP-manzilga mos kelishini aniqlaydi.</li>
+				<li>Agar qidiruv natijasi ijobiy boʻlsa, qidiruv qilingan sahifalarni ochish uchun u brauzerga yuboriladi.</li>
+				</ul>
+				<p>
+				Domen nomi o'rniga manzil satriga ma'lum bir IP-ni kiritishingiz mumkin, ammo bu parametr juda kamdan-kam qo'llaniladi. Tarmoq resursining o'ziga xosligi va mansubligini to'liq aks ettiruvchi qisqa nomlardan farqli o'laroq, ko'plab raqamlar va nuqta va nuqtalar bilan ajratilgan boshqa belgilarning kombinatsiyasini eslab qolish juda qiyin.
+				</p>
+				<a name="4"></a>
+				<h3>Domen tasnifi</h3>
+				<p>
+				Domenlar ko'plab sinflar bilan ifodalanadi, ular tanlashda e'tiborga olinishi kerak, saytga 100% muvofiqligi, uning yo'nalishi, axborot, ko'ngilochar yoki tijorat. Asosiy toifalar quyidagilar:
+				</p>
+				<ul>
+				<li>Yuqori daraja. TLD. Global, masalan, “.com” yoki “.net”.</li>
+				<li>Holat identifikatorli yuqori darajali, ccTLD. Identifikator ma'lum bir joy yoki mamlakatga havola beradi, masalan, Rossiya uchun bu ".ru" yoki kirillcha ".rf", Qozog'iston uchun ".kz", O'zbekiston uchun ".uz", Belarus uchun ".by".</li>
+				<li>Yuqori darajali, umumiy, gTLD. Hech qanday aniq geografik havola yo'q, bunga misol sifatida avval aytib o'tilgan “.net” va “.com” ni ko'rib chiqishimiz mumkin.</li>
+				<li>Yuqori daraja, yangi, NTLD. Ular birinchi marta faqat 2012 yilda, Internetning faol tijoratlashuvi, ko'plab onlayn-do'konlarning paydo bo'lishi davrida paydo bo'lgan. Bu guruhga, masalan, “.shop” domenlari kiradi.</li>
+				</ul>
+				<img src="/blog/domain1.png" alt="Domen" />
+				<p>
+				To'g'ridan-to'g'ri tarmoq manbasiga ishora qiluvchi nuqtadan oldin joylashgan ikkinchi darajali domenlar ham mavjud. Masalan, “test.uz” nomida “test” ikkinchi daraja, “.uz” esa birinchi darajadir. Saytning o'ziga xos xususiyatlari, eslab qolish qulayligi, yozish va boshqa fikrlarni hisobga olgan holda siz ularni o'zingiz topishingiz mumkin.
 				</p>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				Domenni ro'yxatdan o'tkazish tegishli litsenziyaga ega bo'lgan vakolatli korxonalar tomonidan amalga oshiriladi. Bu jismoniy va yuridik shaxslar tomonidan amalga oshirilishi mumkin, buning uchun xizmat uchun haq to'lash va tegishli hujjatlarni, xoh u pasport, xoh kompaniyani ro'yxatdan o'tkazish faktini tasdiqlovchi hujjatlarni taqdim etish kifoya.
+				</p>
+				<a name="5"></a>
+				<h3>Xosting nima?</h3>
+				<p>
+				Albatta, veb-saytning samarali, barqaror ishlashi uchun faqat domenning o'zi etarli emas. Sizga xosting, barcha fayllar saqlanadigan joy, matn, grafik, ovoz kerak. Qoida tariqasida, xosting provayderdan, tegishli xizmatni taqdim etuvchi tashkilotdan ijaraga olinadi. Yirik kompaniyalar, albatta, ijaraga olingan emas, balki o'zlarining apparat imkoniyatlaridan foydalanishlari, butun server xonalarini jihozlashlari mumkin, ammo bu yondashuv katta moddiy investitsiyalar, uskunaning ishlashini nazorat qiluvchi, nosozliklarni tezda qayd etadigan va bartaraf etadigan mutaxassislarni jalb qilishni talab qiladi.
+				</p>
+				<img src="/blog/domain2.png" alt="Domen" />
+				<p>
+				Ijaraga olingan xosting bunday muammolarni bartaraf qiladi. Ijarachi faqat tarif rejasiga muvofiq xizmat haqini o'z vaqtida to'lashi kerak, qolgan barcha masalalar provayderning zimmasidadir, u texnik muammolarni hal qiladi, kerak bo'lganda serverlar va kompyuterlarni modernizatsiya qilish, ta'mirlashga sarmoya kiritadi.
+				</p>
+				<a name="6"></a>
+				<h3>Xosting tasnifi</h3>
+				<p>
+				Xostinglarni turli ko'rsatkichlar bo'yicha tasniflash mumkin. Masalan, spetsifikatsiya nuqtai nazaridan ular ma'lumotlar bazasigacha bo'lgan katta ma'lumotlar massivlarini, matnlardan 4K videogacha bo'lgan har xil turdagi fayllarni saqlashga, o'yin va pochta serverlarining ishlashini ta'minlashga qaratilgan bo'lishi mumkin.
 				</p>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
+				Biroq, eng mashhurlari veb-saytlarni joylashtiradigan hostinglardir. Ular quyidagi turlar bilan ifodalanadi:
+				</p>
+				<ul>
+				<li>Umumiy. Eng keng tarqalgan format, ijarachilar uchun eng qulay. Uskunalar nozik sozlangan va eng kichik detallarigacha tuzatilgan, zamonaviy dasturiy ta'minot qo'llaniladi. Yagona salbiy nuqta shundaki, xizmat ko'rsatilayotgan barcha saytlar bitta serverda joylashgan bo'lib, bu nazariy jihatdan ishlash muammolariga va apparatdagi nosozliklar yuzaga kelganda ko'plab tarmoq resurslarining qulashiga olib kelishi mumkin. Biroq, ishonchli provayderlar bilan bunday xavflar minimallashtiriladi; ular tasdiqlangan texnologiyadan foydalanadilar va ko'pincha zaxira funksiyalarini ta'minlaydilar.</li>
+				<li>VPS. Mijoz dasturiy ta'minot va apparat bilan o'zaro aloqada bo'ladi, eng qulay va tushunarli operatsion tizimni tanlashi, kerakli funktsiyalarni faollashtirishi va keraksizlarini o'chirishi, uzoq muddatli yoki qisqa muddatli saqlash uchun ma'lumotlarni yuklab olishi mumkin. Biroq, aslida, bu resurslar virtual deb tasniflanadi, bu esa provayderga quvvatlarni taqsimlashda maksimal moslashuvchanlikni beradi, ulardan 100% foydalanish imkonini beradi va xarajatlarni optimallashtiradi.</li>
+				<li>VDS. Maxsus server. Mijozga virtualizatsiya yoki boshqa zahiralarsiz yolg'iz foydalanadigan butun server beriladi. Albatta, apparat sig‘imlari ijaraga olingan bo‘lib, mulk sifatida ro‘yxatdan o‘tkazilmaydi, lekin format maksimal darajada samarali va hatto ma’lumotlar muntazam yangilanib turishi kerak bo‘lgan yirik veb-saytlar, kataloglar, onlayn-do‘konlarni joylashtirish uchun ham mos keladi.</li>
+				<li>Joylashuv. Mijozning o'zi server uskunasini sotib olganida format, uni mulk sifatida ro'yxatdan o'tkazadi, ammo uni o'z binosida emas, balki uzluksiz elektr ta'minoti, barqaror ishlash, xavfsizlik, o'z vaqtida texnik xizmat ko'rsatishni ta'minlashi kerak bo'lgan provayder hududida joylashtiradi. Albatta, bu xizmatlarning barchasi to‘lovni ham nazarda tutadi.</li>
+				<li>Bulut. Aslida, ushbu toifadagi hostinglarni VPS ning o'zgartirilgan versiyalari deb atash mumkin. VPS xarajatlarni kamaytirish uchun egasi tomonidan apparatni optimallashtirishni nazarda tutadi, "bulut" - maksimal o'zgaruvchanlik, agar kerak bo'lsa, ish faoliyatini yaxshilash uchun ajratilgan quvvatni har doim oshirish mumkin. Bulutli xosting nafaqat kichik loyihalarni, balki yirik saytlarni ham muvaffaqiyatli boshqarishi mumkin.</li>
+				</ul>
+				<img src="/blog/domain3.png" alt="Domen" />
+				<a name="7"></a>
+				<h3>Xosting boshqaruvi</h3>
+				<p>
+				Xostingni tanlashda siz o'zaro ta'sir qilish qulayligini, mavjud funktsiyalar arsenalini va o'zgaruvchanlikni belgilaydigan boshqaruv qurilgan tizimga e'tibor berishingiz kerak. Quyidagi yechimlar mavjud:
+				</p>
+				<ul>
+				<li>UNIX yoki Linux yadrosida. Asosiy afzalligi shundaki, operatsion tizimlar bepul. Ushbu tarqatish formatiga qaramay, ular funktsional, samarali va xavfsiz, tarmoq hujumlariga chidamli va ma'lumotlarning zaxira nusxasini qo'llab-quvvatlaydi.</li>
+				<li>Windows. Microsoft-dan operatsion tizimning server versiyalari to'lanadi, ammo bu ularning mashhurligiga ta'sir qilmaydi. Ko‘pchilik foydalanuvchilar ularni tanish interfeysi, barqarorligi va katta axborot massivlari bilan ishlash samaradorligi hamda yuqori darajadagi xavfsizlik uchun tanlaydi.</li>
+				<li>CMS tizimlari. Ularning ko'pi bor. Agar siz tezda, keraksiz muammolar va harakatlarsiz, hostingga kichik saytni joylashtirishingiz kerak bo'lsa, CMS-dan foydalanishga arziydi, xayriyatki, ular orasida ko'p funktsiyali, shu bilan birga intuitiv boshqaruv panellari bo'lgan bepul versiyalar ham mavjud. Ular yirik saytlar bilan ishlashda mos keladi, lekin pullik variantni tanlash yaxshidir.</li>
+				</ul>
+				<img src="/blog/domain4.png" alt="Domen" />
+				<a name="8"></a>
+				<h3>Tanlash uchun tavsiyalar</h3>
+				<p>
+				Domen va xostingni tanlashda, ijarani ro'yxatdan o'tkazish uchun qaysi provayderga murojaat qilishni aniqlashda siz bir nechta mezonlarga amal qilishingiz kerak:
+				</p>
+				<ul>
+				<li>Ma'lumotlar markazlarining joylashuvi. Rusiyzabon auditoriyaga yoʻnaltirilgan saytlar uchun Rossiya Federatsiyasi yoki MDH mamlakatlarida joylashgan maʼlumotlar markazlari butun dunyo uchun – Yevropa yoki AQShda optimal hisoblanadi.</li>
+				<li>Obro'. Provayder bozorda qancha vaqt ishlasa, uning auditoriyasi qanchalik keng bo'lsa, shuncha yaxshi bo'ladi. Yirik tashkilotlar o'z mijozlarini qadrlashadi va ular erishgan yuqori mavqeini saqlab qolishadi.</li>
+				<li>Imkoniyatlar va imkoniyatlar. Xosting unumdorligi barcha funksiyalarning to‘g‘ri ishlashi uchun yetarli bo‘lishi uchun siz joylashtirilgan saytning o‘ziga xos xususiyatlarini, uning trafigini va boshqa tafsilotlarni darhol aniqlashingiz kerak.</li>
+				<li>Narx. To'g'ridan-to'g'ri arzonlikka intilish noto'g'ri qarordir. Yuqori sifatli xizmatlar har doim tegishli to'lovni nazarda tutadi, shuning uchun o'rtacha bozor qiymatlariga e'tibor qaratish yanada oqilona.</li>
+				</ul>
+				<a name="9"></a>
+				<h3>Xulosa qilish</h3>
+				<p>
+				Domen va xosting turli tushunchalardir, ammo ular doimo bir-biri bilan birgalikda ishlaydi. Faqat birgalikda foydalanish bilan barqaror, informatsion, yuklash muammolari va xavfsizlik darajasini pasaytiradigan zaifliklarsiz sayt yaratish mumkin bo'ladi.
 				</p>
 				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				Domen nomi - bu foydalanuvchi kerakli sahifani ochish uchun brauzerning tegishli qatoriga kiritishi kerak bo'lgan manzil bo'lib, hosting - bu sayt bilan bog'liq barcha ma'lumotlar saqlanadigan, tashrif buyuruvchi uchun mavjud bo'lgan funktsiyalarni ochish, himoya qilish va amalga oshirish bo'yicha operatsiyalar amalga oshiriladigan dasturiy va apparat imkoniyatlari majmuasi.
+				</p>
+				<p>
+				Taqqoslash uchun misol sifatida biz turar-joy binosini ko'rib chiqishimiz mumkin. Bunday holda, hosting - bu binoning o'zi, uning barcha kommunikatsiyalari, muhandislik tizimlari va domen nomi uy raqami va ko'cha nomi bilan manzil belgisidir.
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Domain and hosting: what is the difference between them?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				The Internet is a tool not only for searching for information, entertainment or communication, but also for carrying out commercial activities, running a business. It is impossible to imagine a modern successful company that would not have its own website. It is the website that helps to expand the target audience, strengthen the authority of the organization, increase the number of real requests, sales and orders.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				Domain and hosting are concepts that are inextricably linked with the site. What is hidden behind these terms? What are the differences?
+				</p>
+				<a name="2"></a>
+				<h3>A brief analysis</h3>
+				<p>
+				First, we should briefly consider both definitions. Hosting is a special service that involves the registration of the lease of computing power, which must be constantly available, can be used to store various files, from texts to high-resolution video, launch programs and applications.
 				</p>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				A domain name is a set of alphabetic, numeric, and graphic symbols that allows the user to find the desired site.
+				</p>
+				<a name="3"></a>
+				<h3>What is a domain?</h3>
+				<p>
+				Now we need to get acquainted with the terms in more detail. So, a domain is a unique address that allows you to accurately identify a network resource. It functions according to the following algorithm:
+				</p>
+				<ul>
+				<li>The user enters a known name of a network resource in the address bar.</li>
+				<li>The browser sends a request to the domain name system, DNS.</li>
+				<li>The system determines which actual IP address the name corresponds to.</li>
+				<li>If the search result is positive, it is sent to the browser to open the searched pages.</li>
+				</ul>
+				<p>
+				Instead of a domain name, you can enter a specific IP in the address bar, however, this option is used extremely rarely. Combinations of many numbers and other symbols separated by colons and periods are very difficult to remember, unlike short names that fully reflect the specifics and affiliation of the network resource.
+				</p>
+				<a name="4"></a>
+				<h3>Domain Classification</h3>
+				<p>
+				Domains are represented by many classes, which must be taken into account when choosing, for 100% compliance with the site, its focus, informational, entertainment or commercial. The main categories are as follows:
+				</p>
+				<ul>
+				<li>Top-level. TLD. Global, for example, “.com” or “.net”.</li>
+				<li>Top-level with a state identifier, ccTLD. The identifier provides a link to a specific location or country, for example, for Russia it is “.ru” or the Cyrillic “.рф”, for Kazakhstan – “.kz”, for Uzbekistan – “.uz”, Belarus – “.by”.</li>
+				<li>Top-level, general, gTLD. There is no specific geographic link, as examples we can consider the previously mentioned “.net” and “.com”.</li>
+				<li>Top-level, new, NTLD. They first appeared only in 2012, during the period of active commercialization of the Internet, the emergence of numerous online stores. This group includes, for example, the domains “.shop”.</li>
+				</ul>
+				<img src="/blog/domain1.png" alt="Domain" />
+				<p>
+				There are also second-level domains located before the dot, pointing directly to the network resource. For example, in the name “test.uz”, “test” is the second level, and “.uz” is the first. You can come up with them yourself, guided by the specifics of the site, ease of memorization, writing and other points.
 				</p>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				Domain registration is carried out by authorized enterprises that have the appropriate licenses. It can be carried out by both private individuals and legal entities, it is enough to pay for the service and provide the relevant documents, be it a passport, papers confirming the fact of company registration.
+				</p>
+				<a name="5"></a>
+				<h3>What is hosting?</h3>
+				<p>
+				Of course, a domain alone is not enough for the effective, stable operation of a website. You need hosting, a place where all the files will be stored, text, graphic, sound. As a rule, hosting is rented from a provider, an organization that provides the relevant service. Large companies, of course, can use not rented, but their own hardware capacity, equip entire server rooms, however, this approach requires significant material investments, the involvement of specialists who will monitor the operation of the equipment, promptly record and eliminate failures.
+				</p>
+				<img src="/blog/domain2.png" alt="Domain" />
+				<p>
+				Rented hosting eliminates such problems. The tenant only needs to pay for the service on time in accordance with the tariff plan, and all other issues are the responsibility of the provider, it is he who solves technical problems, invests in modernization, repair of servers and computers, if necessary.
+				</p>
+				<a name="6"></a>
+				<h3>Classification of hosting</h3>
+				<p>
+				Hostings can be classified by various indicators. For example, from the point of view of specification, they can be focused on storing large information arrays, up to a database, files of various types, from texts to 4K video, ensuring the operation of gaming and mail servers.
 				</p>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
+				The most popular, however, are hostings that host websites. They are represented by the following types:
+				</p>
+				<ul>
+				<li>General. The most common format, most convenient for tenants. The equipment is fine-tuned and debugged to the smallest detail, modern software is used. The only negative point is that all the sites being served are hosted on one server, which, in theory, can lead to performance issues and the collapse of many network resources in the event of a hardware failure. However, with reliable providers, such risks are minimized; they use proven technology and often provide backup functions.</li>
+				<li>VPS. The client interacts with the software and hardware themselves, can choose the most convenient and understandable operating system, activate the necessary functions and disable unnecessary ones, download information for long-term or short-term storage. In fact, however, these resources are classified as virtual, which gives the provider maximum flexibility in distributing capacities, allows them to be used at 100%, and optimize costs.</li>
+				<li>VDS. Dedicated server. The client is given an entire server, which he uses alone, without virtualization or other reservations. Of course, the hardware capacities remain rented, not registered as property, but the format is maximally efficient and is suitable for hosting even large websites, catalogs, online stores, where information will have to be updated regularly.</li>
+				<li>Colocation. The format when the client himself buys the server equipment, registers it as property, however, places it not on his premises, but on the territory of the provider, who must ensure uninterrupted power supply, stable operation, security, timely maintenance. Of course, all these services also imply payment.</li>
+				<li>Cloud. In fact, hostings of this category can be called modified versions of VPS. VPS implies optimization of the hardware by the owner to reduce costs, “cloud” – maximum variability, if necessary, the allocated capacity can always be increased to improve performance. Cloud hosting can successfully handle not only small projects, but also large sites.</li>
+				</ul>
+				<img src="/blog/domain3.png" alt="Domain" />
+				<a name="7"></a>
+				<h3>Hosting management</h3>
+				<p>
+				When choosing a hosting, you need to pay attention to the system on which the management is built, which determines the ease of interaction, the arsenal of available functions, and variability. The following solutions are available:
+				</p>
+				<ul>
+				<li>On the UNIX or Linux kernel. The main advantage is that the operating systems are free. Despite this distribution format, they are functional, productive and safe, resistant to network attacks, and support backup of information.</li>
+				<li>Windows. Server versions of the operating system from Microsoft are paid, however, this does not affect their popularity. Many users choose them for their familiar interface, stability and efficiency of working with large information arrays, and a high level of security.</li>
+				<li>CMS systems. There are many of them. If you need to quickly, without unnecessary problems and efforts, place a small site on the hosting, it is worth using CMS, fortunately, among them there are also free versions with multifunctional, at the same time, intuitive control panels. They are appropriate when working with large sites, but it is better to choose a paid option.</li>
+				</ul>
+				<img src="/blog/domain4.png" alt="Domain" />
+				<a name="8"></a>
+				<h3>Recommendations for selection</h3>
+				<p>
+				When choosing a domain and hosting, determining which provider to contact for registration of rent, you should be guided by several criteria:
+				</p>
+				<ul>
+				<li>Location of data centers. For sites focused on Russian-speaking audiences, data centers located in the Russian Federation or the CIS countries are optimal, for the whole world - in Europe or the USA.</li>
+				<li>Reputation. The longer the provider has been operating on the market, the wider its audience, the better. Large organizations value their clients and maintain the high status they have achieved.</li>
+				<li>Capabilities and capacities. You need to immediately determine the specifics of the site being hosted, its traffic and other details so that the hosting performance is sufficient for the correct operation of all functions.</li>
+				<li>Price. An outright pursuit of cheapness is a bad decision. High-quality services always imply appropriate payment, so it is more rational to focus on average market values.</li>
+				</ul>
+				<a name="9"></a>
+				<h3>Summing up</h3>
+				<p>
+				A domain and hosting are different concepts, however, they always work in conjunction with each other. Only with combined use will it be possible to create a site that would be stable, informative, without loading problems and vulnerabilities that reduce the level of security.
 				</p>
 				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				A domain name is an address that the user will have to enter in the appropriate line of the browser to open the desired page, while hosting is a complex of software and hardware capacities, where all data related to the site is stored, operations are performed to open, protect, and implement functions available to the visitor.
+				</p>
+				<p>
+				As an example of comparison, we can consider a residential building. In this case, hosting is the building itself, with all its communications, engineering systems, and the domain name is an address plate with the house number and street name.
 				</p>
 			</>
 		),

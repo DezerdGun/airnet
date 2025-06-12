@@ -494,14 +494,14 @@ export const blog = [
 		img: "/blog/404.jpg",
 		link: {
 			ru: "/blog/chto-takoye-error-404",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/nima-xato-404",
+			en: "/blog/what-is-error-404",
 		},
 		date: "14.03.2025",
 		title: {
 			ru: "Что такое error 404?",
-			uz: "Что такое error 404?",
-			en: "Что такое error 404?",
+			uz: "404 xato nima?",
+			en: "What is error 404?",
 		},
 		description: {
 			ru: (
@@ -514,14 +514,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Что означает ошибка 404, почему она появляется, и как устранить эту проблему на вашем сайте?
+						404 xatosi nimani anglatadi, nima uchun u paydo bo'ladi va veb-saytingizda bu muammoni qanday hal qilish mumkin?
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Что означает ошибка 404, почему она появляется, и как устранить эту проблему на вашем сайте?
+						What does error 404 mean, why does it appear, and how can you fix this problem on your website?
 					</p>
 				</>
 			),
@@ -531,14 +531,14 @@ export const blog = [
 		img: "/blog/csr.jpg",
 		link: {
 			ru: "/blog/chto-takoye-csr-i-kak-ego-sozdat",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/csr-nima-va-uni-qanday-yaratish-kerak",
+			en: "/blog/what-is-the-csr-and-how-to-create-it",
 		},
 		date: "14.03.2025",
 		title: {
 			ru: "Что такое CSR и как его создать?",
-			uz: "Что такое CSR и как его создать?",
-			en: "Что такое CSR и как его создать?",
+			uz: "CSR nima va uni qanday yaratish kerak?",
+			en: "What is a CSR and how to create one?",
 		},
 		description: {
 			ru: (
@@ -551,14 +551,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Узнайте, что такое CSR (Certificate Signing Request), для чего он используется при создании SSL-сертификатов
+						CSR (Sertifikat imzolash so'rovi) nima ekanligini va u SSL sertifikatlarini yaratishda nima uchun ishlatilishini bilib oling
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Узнайте, что такое CSR (Certificate Signing Request), для чего он используется при создании SSL-сертификатов
+						Find out what a CSR (Certificate Signing Request) is and why it is used when creating SSL certificates
 					</p>
 				</>
 			),
@@ -568,14 +568,14 @@ export const blog = [
 		img: "/blog/apache.png",
 		link: {
 			ru: "/blog/chto-takoe-apache-http-server",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/apache-http-server-nima",
+			en: "/blog/what-is-apache-http-server",
 		},
 		date: "14.12.2024",
 		title: {
 			ru: "Apache HTTP Server: основа современного веб-хостинга",
-			uz: "Apache HTTP Server: основа современного веб-хостинга",
-			en: "Apache HTTP Server: основа современного веб-хостинга",
+			uz: "Apache HTTP Server: Zamonaviy veb-xosting asosi",
+			en: "Apache HTTP Server: The Foundation of Modern Web Hosting",
 		},
 		description: {
 			ru: (
@@ -588,14 +588,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Узнайте о Apache HTTP Server, его функциях
+						Apache HTTP Server, uning xususiyatlari haqida bilib oling
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Узнайте о Apache HTTP Server, его функциях
+						Learn about Apache HTTP Server, its features
 					</p>
 				</>
 			),
@@ -605,14 +605,14 @@ export const blog = [
 		img: "/blog/ipv6.png",
 		link: {
 			ru: "/blog/protocol-ipv6-chto-eto-takoe",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/protokol-ipv6-bu-nima",
+			en: "/blog/protocol-ipv6-what-is-this",
 		},
 		date: "14.12.2024",
 		title: {
 			ru: "IPv6: будущее интернет-адресации",
-			uz: "IPv6: будущее интернет-адресации",
-			en: "IPv6: будущее интернет-адресации",
+			uz: "IPv6: Internet-manzillashning kelajagi",
+			en: "IPv6: The Future of Internet Addressing",
 		},
 		description: {
 			ru: (
@@ -625,14 +625,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Подробное объяснение протокола IPv6, его отличий от IPv4
+						IPv6 protokoli va uning IPv4 dan farqlari haqida batafsil tushuntirish
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Подробное объяснение протокола IPv6, его отличий от IPv4
+						A detailed explanation of IPv6 protocol and its differences from IPv4
 					</p>
 				</>
 			),
@@ -642,14 +642,14 @@ export const blog = [
 		img: "/blog/sftp.png",
 		link: {
 			ru: "/blog/protocol-sftp-chto-eto",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/protokol-sftp-bu-nima",
+			en: "/blog/protocol-sftp-what-is-this",
 		},
 		date: "14.12.2024",
 		title: {
 			ru: "SFTP протокол: безопасный способ передачи файлов",
-			uz: "SFTP протокол: безопасный способ передачи файлов",
-			en: "SFTP протокол: безопасный способ передачи файлов",
+			uz: "SFTP protokoli: fayllarni uzatishning xavfsiz usuli",
+			en: "SFTP Protocol: A Secure Way to Transfer Files",
 		},
 		description: {
 			ru: (
@@ -662,14 +662,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Разберемся, что такое протокол SFTP
+						Keling, SFTP protokoli nima ekanligini aniqlaylik
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Разберемся, что такое протокол SFTP
+						Let's figure out what the SFTP protocol is
 					</p>
 				</>
 			),
@@ -679,14 +679,14 @@ export const blog = [
 		img: "/blog/mac.png",
 		link: {
 			ru: "/blog/chto-takoe-mac-address",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/mac-address-nima",
+			en: "/blog/what-is-mas-address",
 		},
 		date: "14.12.2024",
 		title: {
 			ru: "MAC-адрес: что это и зачем он нужен?",
-			uz: "MAC-адрес: что это и зачем он нужен?",
-			en: "MAC-адрес: что это и зачем он нужен?",
+			uz: "MAC manzili: bu nima va u nima uchun kerak?",
+			en: "MAC address: what is it and why is it needed?",
 		},
 		description: {
 			ru: (
@@ -699,14 +699,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Узнайте, что такое MAC-адрес
+						MAC manzili nima ekanligini bilib oling
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Узнайте, что такое MAC-адрес
+						Find out what a MAC address is
 					</p>
 				</>
 			),
@@ -716,14 +716,14 @@ export const blog = [
 		img: "/blog/ns.png",
 		link: {
 			ru: "/blog/chto-takoe-name-server-ns",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/server-nomi-nima",
+			en: "/blog/what-is-name-server-ns",
 		},
 		date: "14.12.2024",
 		title: {
 			ru: "Name-серверы (NS): ключевые элементы DNS-инфраструктуры",
-			uz: "Name-серверы (NS): ключевые элементы DNS-инфраструктуры",
-			en: "Name-серверы (NS): ключевые элементы DNS-инфраструктуры",
+			uz: "Nom serverlari (NS): DNS infratuzilmasining asosiy elementlari",
+			en: "Name Servers (NS): Key Elements of DNS Infrastructure",
 		},
 		description: {
 			ru: (
@@ -736,14 +736,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Разберемся, что такое name-серверы
+						Keling, nom serverlari nima ekanligini aniqlaylik
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Разберемся, что такое name-серверы
+						Let's figure out what name servers are
 					</p>
 				</>
 			),
@@ -753,14 +753,14 @@ export const blog = [
 		img: "/blog/server.png",
 		link: {
 			ru: "/blog/chto-takoe-vps-server",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/vps-server-nima",
+			en: "/blog/what-is-a-vps-server",
 		},
 		date: "14.12.2024",
 		title: {
 			ru: "VPS сервер: виртуальный выделенный сервер для ваших задач",
-			uz: "VPS сервер: виртуальный выделенный сервер для ваших задач",
-			en: "VPS сервер: виртуальный выделенный сервер для ваших задач",
+			uz: "VPS server: vazifalaringiz uchun virtual ajratilgan server",
+			en: "VPS server: virtual dedicated server for your tasks",
 		},
 		description: {
 			ru: (
@@ -773,14 +773,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Подробное объяснение понятия VPS сервера
+						VPS server kontseptsiyasini batafsil tushuntirish
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Подробное объяснение понятия VPS сервера
+						Detailed explanation of the concept of VPS server
 					</p>
 				</>
 			),
@@ -790,14 +790,14 @@ export const blog = [
 		img: "/blog/vps.png",
 		link: {
 			ru: "/blog/kak-zaschitit-vps-ot-vzloma",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/vps-ni-xakerlikdan-qanday-himoya-qilish-kerak",
+			en: "/blog/how-to-protect-vps-from-hacking",
 		},
 		date: "14.12.2024",
 		title: {
 			ru: "Эффективные способы защиты VPS от кибератак",
-			uz: "Эффективные способы защиты VPS от кибератак",
-			en: "Эффективные способы защиты VPS от кибератак",
+			uz: "VPS-ni kiberhujumlardan himoya qilishning samarali usullari",
+			en: "Effective Ways to Protect VPS from Cyber Attacks",
 		},
 		description: {
 			ru: (
@@ -810,14 +810,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Узнайте о лучших практиках и инструментах для надежной защиты вашего VPS сервера
+						VPS serveringizni himoya qilish uchun eng yaxshi amaliyotlar va vositalar haqida bilib oling
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Узнайте о лучших практиках и инструментах для надежной защиты вашего VPS сервера
+						Learn about best practices and tools to secure your VPS server
 					</p>
 				</>
 			),
@@ -827,14 +827,14 @@ export const blog = [
 		img: "/blog/domain.png",
 		link: {
 			ru: "/blog/raznitsa-mezhdu-hostingom-i-domenom",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/xosting-va-domen-ortasidagi-farq",
+			en: "/blog/difference-between-hosting-and-domain",
 		},
 		date: "14.12.2024",
 		title: {
 			ru: "Хостинг и домен: ключевые различия и взаимодействие",
-			uz: "Хостинг и домен: ключевые различия и взаимодействие",
-			en: "Хостинг и домен: ключевые различия и взаимодействие",
+			uz: "Xosting va domen: asosiy farqlar va o'zaro ta'sirlar",
+			en: "Hosting and Domain: Key Differences and Interactions",
 		},
 		description: {
 			ru: (
@@ -847,14 +847,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Разберемся в отличиях между хостингом и доменом
+						Keling, xosting va domen o'rtasidagi farqlarni ko'rib chiqaylik
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Разберемся в отличиях между хостингом и доменом
+						Let's look at the differences between hosting and domain
 					</p>
 				</>
 			),
@@ -864,14 +864,14 @@ export const blog = [
 		img: "/blog/dns.png",
 		link: {
 			ru: "/blog/chto-takoe-dns-server",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/dns-server-nima",
+			en: "/blog/what-is-a-dns-server",
 		},
 		date: "14.12.2024",
 		title: {
 			ru: "DNS сервер: ключевой элемент работы интернета",
-			uz: "DNS сервер: ключевой элемент работы интернета",
-			en: "DNS сервер: ключевой элемент работы интернета",
+			uz: "DNS server: Internetning asosiy elementi",
+			en: "DNS Server: A Key Element of the Internet",
 		},
 		description: {
 			ru: (
@@ -884,14 +884,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Подробное объяснение, что такое DNS сервер
+						DNS server nima ekanligini batafsil tushuntirish
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Подробное объяснение, что такое DNS сервер
+						A detailed explanation of what a DNS server is
 					</p>
 				</>
 			),
@@ -901,14 +901,14 @@ export const blog = [
 		img: "/blog/host.png",
 		link: {
 			ru: "/blog/chto-takoe-imya-hosta",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/xost-nomi-nima",
+			en: "/blog/what-is-a-host-name",
 		},
 		date: "14.12.2024",
 		title: {
 			ru: "Что такое имя хоста и зачем оно нужно?",
-			uz: "Что такое имя хоста и зачем оно нужно?",
-			en: "Что такое имя хоста и зачем оно нужно?",
+			uz: "Xost nomi nima va u nima uchun kerak?",
+			en: "What is a host name and why is it needed?",
 		},
 		description: {
 			ru: (
@@ -921,14 +921,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Узнайте, что такое имя хоста, его функции и значение в сетевых коммуникациях.
+						Xost nomi nima ekanligini, uning funktsiyalari va tarmoq aloqalarida ahamiyatini bilib oling.
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Узнайте, что такое имя хоста, его функции и значение в сетевых коммуникациях.
+						Learn what a host name is, its functions and importance in network communications.
 					</p>
 				</>
 			),
@@ -938,14 +938,14 @@ export const blog = [
 		img: "/blog/rdp.jpg",
 		link: {
 			ru: "/blog/chto-takoye-rdp",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/nima-rdp",
+			en: "/blog/what-is-rdp",
 		},
 		date: "21.11.2024",
 		title: {
 			ru: "Что такое RDP?",
-			uz: "Что такое RDP?",
-			en: "Что такое RDP?",
+			uz: "RDP nima?",
+			en: "What is RDP?",
 		},
 		description: {
 			ru: (
@@ -958,14 +958,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						RDP — протокол удаленного рабочего стола от Microsoft 🖥️
+						RDP - bu Microsoft-ning masofaviy ish stoli protokoli 🖥️
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						RDP — протокол удаленного рабочего стола от Microsoft 🖥️
+						RDP is Microsoft's Remote Desktop Protocol 🖥️
 					</p>
 				</>
 			),
@@ -975,14 +975,14 @@ export const blog = [
 		img: "/blog/docker.png",
 		link: {
 			ru: "/blog/chto-takoye-docker",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/docker-nima",
+			en: "/blog/what-is-docker",
 		},
 		date: "21.11.2024",
 		title: {
 			ru: "Что такое Docker?",
-			uz: "Что такое Docker?",
-			en: "Что такое Docker?",
+			uz: "Docker nima?",
+			en: "What is Docker?",
 		},
 		description: {
 			ru: (
@@ -995,14 +995,14 @@ export const blog = [
 			uz: (
 				<>
 					<p>
-						Docker — платформа для разработки, доставки и запуска приложений 📦
+						Docker - bu ilovalarni ishlab chiqish, yetkazib berish va ishga tushirish uchun platforma 📦
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-						Docker — платформа для разработки, доставки и запуска приложений 📦
+						Docker is a platform for developing, delivering and running applications 📦
 					</p>
 				</>
 			),
@@ -1012,34 +1012,34 @@ export const blog = [
 		img: "/blog/ipv4.png",
 		link: {
 			ru: "/blog/chto-takoye-ip-address",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/ip-manzil-nima",
+			en: "/blog/what-is-ip-address",
 		},
 		date: "21.11.2024",
 		title: {
 			ru: "Что такое IP-адрес?",
-			uz: "Что такое IP-адрес?",
-			en: "Что такое IP-адрес?",
+			uz: "IP manzil nima?",
+			en: "What is an IP address?",
 		},
 		description: {
 			ru: (
 				<>
 					<p>
-					IP-адрес — уникальный идентификатор устройства в сети 🖥️
+						IP-адрес — уникальный идентификатор устройства в сети 🖥️
 					</p>
 				</>
 			),
 			uz: (
 				<>
 					<p>
-					IP-адрес — уникальный идентификатор устройства в сети 🖥️
+						IP manzil - tarmoqdagi qurilmaning noyob identifikatori 🖥️
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-					IP-адрес — уникальный идентификатор устройства в сети 🖥️
+						IP address is a unique identifier of a device on the network 🖥️
 					</p>
 				</>
 			),
@@ -1049,34 +1049,34 @@ export const blog = [
 		img: "/blog/nginx.webp",
 		link: {
 			ru: "/blog/chto-takoye-nginx",
-			uz: "/blog/wwww",
-			en: "/blog/wwww",
+			uz: "/blog/nginx-nima",
+			en: "/blog/what-is-nginx",
 		},
 		date: "21.11.2024",
 		title: {
 			ru: "NGINX: что это такое?",
-			uz: "NGINX: что это такое?",
-			en: "NGINX: что это такое?",
+			uz: "NGINX: Bu nima?",
+			en: "NGINX: What is it?",
 		},
 		description: {
 			ru: (
 				<>
 					<p>
-					Nginx — популярный веб-сервер и обратный прокси-сервер 🌐
+						Nginx — популярный веб-сервер и обратный прокси-сервер 🌐
 					</p>
 				</>
 			),
 			uz: (
 				<>
 					<p>
-					Nginx — популярный веб-сервер и обратный прокси-сервер 🌐
+						Nginx mashhur veb-server va teskari proksi-server 🌐
 					</p>
 				</>
 			),
 			en: (
 				<>
 					<p>
-					Nginx — популярный веб-сервер и обратный прокси-сервер 🌐
+						Nginx is a popular web server and reverse proxy 🌐
 					</p>
 				</>
 			),

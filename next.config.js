@@ -458,7 +458,7 @@ module.exports = {
       },
       {
         source: "/blog/ofisda-ip-telefoniyani-sozlash-bosqichma-bosqich-korsatmalar",
-        destination: "/uz/blog/nastroika-ip-telefonii-v-ofise-poshagovaya-instruktsiya",
+        destination: "/blog/nastroika-ip-telefonii-v-ofise-poshagovaya-instruktsiya",
         permanent: true,
       },
       {

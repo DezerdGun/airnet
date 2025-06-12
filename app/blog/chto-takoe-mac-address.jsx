@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "MAC-адрес: что это и зачем он нужен?",
-		uz: "MAC-адрес: что это и зачем он нужен?",
-		en: "MAC-адрес: что это и зачем он нужен?",
+		uz: "MAC manzili: bu nima va u nima uchun kerak?",
+		en: "MAC address: what is it and why is it needed?",
 	},
 	title: {
 		ru: "MAC-адрес: уникальный идентификатор сетевого устройства",
-		uz: "MAC-адрес: уникальный идентификатор сетевого устройства",
-		en: "MAC-адрес: уникальный идентификатор сетевого устройства",
+		uz: "MAC manzili: tarmoq qurilmasi uchun noyob identifikator",
+		en: "MAC address: a unique identifier for a network device",
 	},
 	desc: {
 		ru: "Узнайте, что такое MAC-адрес, его структуру, назначение и роль в сетевых коммуникациях.",
-		uz: "Узнайте, что такое MAC-адрес, его структуру, назначение и роль в сетевых коммуникациях.",
-		en: "Узнайте, что такое MAC-адрес, его структуру, назначение и роль в сетевых коммуникациях.",
+		uz: "MAC manzili nima ekanligini, uning tuzilishi, maqsadi va tarmoq aloqalaridagi rolini bilib oling.",
+		en: "Find out what a MAC address is, its structure, purpose and role in network communications.",
 	},
 	date: "14.12.2024",
 	updated: "14.12.2024",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/mac.png",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,11 +61,11 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "MAC-адрес: что это?", uz: "MAC-адрес: что это?", en: "MAC-адрес: что это?", slug: "1" }},
-		{ title: {ru: "Общее понятие", uz: "Общее понятие", en: "Общее понятие", slug: "2" }},
-		{ title: {ru: "Разбор структуры", uz: "Разбор структуры", en: "Разбор структуры", slug: "3" }},
-		{ title: {ru: "Классификация", uz: "Классификация", en: "Классификация", slug: "4" }},
-		{ title: {ru: "Функции ", uz: "Функции ", en: "Функции ", slug: "5" }},
+		{ title: {ru: "MAC-адрес: что это?", uz: "MAC manzili: bu nima?", en: "MAC address: what is it?", slug: "1" }},
+		{ title: {ru: "Общее понятие", uz: "Umumiy tushuncha", en: "General concept", slug: "2" }},
+		{ title: {ru: "Разбор структуры", uz: "Strukturani tahlil qilish", en: "Analysis of the structure", slug: "3" }},
+		{ title: {ru: "Классификация", uz: "Tasniflash", en: "Classification", slug: "4" }},
+		{ title: {ru: "Функции ", uz: "Функции ", en: "Functions ", slug: "5" }},
 	],
 	content: {
 		ru: (
@@ -137,71 +137,111 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				MAC manzili: bu nima?
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Global yoki mahalliy tarmoqda ishlaydigan qurilmalar o'rtasida ma'lumotlar almashinuvi ularning har biriga ma'lum bir manzilni belgilash orqali mumkin. Ixtisoslashgan adabiyotlarda siz ko'pincha IP manzillarining ta'rifini topishingiz mumkin, ammo MAC manzilini ham ajratib ko'rsatishingiz kerak. Uning xususiyatlari qanday? U qanday funktsiyalarni bajaradi?
+				</p>
+				<a name="2"></a>
+				<h3>Umumiy tushuncha</h3>
+				<p>
+				"MAC" - "Media Access Control" qisqartmasini tushuntirish. Bu raqamli va alifbo belgilar to'plami sifatida belgilangan tarmoq qurilmasining jismoniy joylashishini ko'rsatadi. Eng keng tarqalgan yozish formati "00-50-B6-5B-CA-6A", ammo boshqa variantlar ham mumkin, kichik harflar bilan CISCO kompaniyasiga xos bo'lgan, ikki nuqta bilan ajratilgan, Linux yadrosidagi operatsion tizimlarda qo'llaniladi. Kompyuter yoki boshqa qurilmaning o'rnatilgan xotirasida bunday raqam 48 bitni egallaydi.
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				MAC manzilini pasport bilan solishtirish mumkin. Agar siz tarmoqni ko'p qavatli uy sifatida tasavvur qilsangiz, u holda pasport ma'lum bir abonent uchun eng yaxshi identifikator hisoblanadi. Rezidentlarning ismlari va hatto familiyalari takrorlanishi mumkin, ammo pasport noyobdir, bu sizga oluvchi yoki jo'natuvchini aniq aniqlash imkonini beradi.
 				</p>
+				<a name="3"></a>
+				<h3>Tuzilishni tahlil qilish</h3>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				MACdagi raqamlar va harflar tasodifiy yaratilmaydi, ular ma'lum qoidalar va talablarga bog'liq, buning natijasida ulardagi muhim ma'lumotlarni shifrlash mumkin. Strukturani ikki qismga bo'lish mumkin:
 				</p>
+				<ul>
+				<li>Birinchi belgilar ishlab chiqaruvchining kodini kodlaydi, bu sizga qurilmani kim, tarmoq kartasi yoki modem bo'ladimi, aniq aniqlash imkonini beradi. Masalan, Google “3C:5A:B4”, Xitoy konserni Huawei esa “00:9A:CD” kombinatsiyasidan foydalanadi.</li>
+				<li>Quyidagi raqamlar va harflar individual identifikator hisoblanadi. Ushbu qism uchun tasodifiy yaratishga ruxsat beriladi; bu, masalan, Qualcomm va MediaTek tomonidan qo'llaniladigan algoritm.</li>
+				</ul>
+				<img src="/blog/mac1.png" alt="Mac manzili" />
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				Qurilmangiz manzilini aniqlashtirish, uning tuzilishini o'rganish uchun siz operatsion tizim tomonidan taqdim etilgan uchinchi tomon ilovalari va funktsiyalaridan foydalanishingiz mumkin. Birinchi variant Android-dagi smartfonlar yoki planshetlar uchun ko'proq mos keladi, Windows operatsion tizimida kerakli ma'lumotlarni "ipconfig" buyrug'i bilan, Linux va Mac-da esa "ifconfig" yordamida olish mumkin.
 				</p>
+				<a name="4"></a>
+				<h3>Tasniflash</h3>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
+				MAC manzili ikkita asosiy toifa bilan ifodalanadi:
 				</p>
+				<ul>
+				<li>Mahalliy. Global foydalanishga emas, balki ichki foydalanishga qaratilgan kichik xususiy tarmoqlardagi qurilmalarni aniqlash uchun foydalaniladi. Oddiy misol - uy simsiz Wi-Fi tarmog'i, bu erda markaziy havola smartfonlar, planshetlar, ish stoli kompyuterlari va noutbuklar ulangan router hisoblanadi.</li>
+				<li>Global. Bunday holda, MAC manzili qurilma chiqarilgandan so'ng tayinlanadi, ma'lum talablarga javob berishi va Internetda yagona bo'lishi kerak, bu xatosiz identifikatsiya qilish uchun zarurdir. Manzillarni tayinlash vakolatli tashkilot IEEE tomonidan qat'iy nazorat qilinadi.</li>
+				</ul>
+				<img src="/blog/mac2.png" alt="Mac manzili" />
+				<a name="5"></a>
+				<h3>Funksiyalar</h3>
 				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				Manzillarni bilish tarmoqqa kiritilgan qurilmalar haqida ma'lumotlarni to'plashni sezilarli darajada osonlashtiradi. Ularning har biri shaxsiy identifikator bo'lib, qaysi asbob-uskunalar faol ekanligini, boshqa uskunalar bilan qanday aloqada bo'lishini, qanday ma'lumot almashishini ko'rsatadi. MAC manzillari nafaqat qurilmalar o'rtasida ma'lumotlar almashinuvining to'g'riligini kafolatlaydi, noto'g'ri qabul qiluvchiga paketlarni yuborish xavfini yo'q qiladi, trafikni kuzatish va tarmoqni qayta sozlashda yordam beradi, balki boshqa ko'plab muammolarni hal qiladi:
+				</p>
+				<ul>
+				<li>Tarmoq xavfsizligi darajasini oshirish. Masalan, simsiz Wi-Fi router uchun siz manzillarning "oq ro'yxatini" o'rnatishingiz mumkin. Agar smartfon yoki noutbuk bo‘lsin, qurilma identifikatori ushbu ro‘yxatda bo‘lmasa, ulanish muvaffaqiyatsiz bo‘ladi, urinish avtomatik ravishda bloklanadi.</li>
+				<li>Tarmoqni tiklashni soddalashtirish. Dasturiy diagnostika ishlamay qolgan va ta'mirlanishi yoki almashtirilishi kerak bo'lgan uskunaning MAC manzilini tezda aniqlaydi. Ushbu algoritm imkon qadar tezroq ta'mirlashni amalga oshirishga yordam beradi, murakkab diagnostika operatsiyalariga ehtiyojni yo'q qiladi, barcha apparat komponentlarini ketma-ket sinovdan o'tkazadi.</li>
+				<li>Filtrlarni sozlash. Ba'zi manzillarni tarmoqqa kirishni butunlay blokirovka qilish shart emas. Siz o'zingizni yanada yumshoq cheklovlar bilan cheklashingiz mumkin, masalan, tezlik yoki kirish vaqti. Bu aloqa kanallarining ortiqcha yuklanishi va boshqa salbiy hodisalarni bartaraf etadi.</li>
+				</ul>
+				<p>
+				MAC manzili ham qimmatli tijorat vositasiga aylanishi mumkin. Masalan, umumiy Wi-Fi tarmog'iga ega kafeda u statistik hisobotlar uchun asos bo'lib, davomatni aniq qayd etish, eng band davrlarni aniqlash imkonini beradi. Bunday statistik ma'lumotlar reklama kampaniyalarining samaradorligini aniqlashda yordam beradi, agar bunday kampaniyalardan keyin noyob MAClar soni ko'paygan bo'lsa, ish to'g'ri bajarilgan bo'lsa.
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				MAC address: what is it?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				Data exchange between devices operating in a global or local network is possible by assigning a specific address to each of them. In specialized literature, you can often find a definition of IP addresses, however, you also need to highlight the MAC address. What are its features? What functions does it perform?
+				</p>
+				<a name="2"></a>
+				<h3>General concept</h3>
+				<p>
+				Explanation of the abbreviation “MAC” – “Media Access Control”. It indicates the physical location of the network device, designated as a set of numeric and alphabetic characters. The most common writing format is “00-50-B6-5B-CA-6A”, however, other options are possible, with lowercase letters, which is typical for the CISCO company, separated by colons, used in operating systems on the Linux kernel. In the built-in memory of a computer or other device, such a number takes up 48 bits.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				The MAC address can be compared to a passport. If you imagine a network as an apartment building, then the passport is the best identifier for a specific subscriber. The names and even surnames of residents can be repeated, but the passport is unique, allowing you to unambiguously identify the recipient or sender.
 				</p>
+				<a name="3"></a>
+				<h3>Parsing the structure</h3>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				The numbers and letters in the MAC are not generated randomly, they depend on certain rules and requirements, due to which it is possible to encrypt important information in them. The structure can be divided into two parts:
 				</p>
+				<ul>
+				<li>The first characters encode the manufacturer's code, which allows you to accurately determine who exactly made the device, be it a network card or a modem. For example, Google uses the combination “3C:5A:B4”, and the Chinese concern Huawei uses “00:9A:CD”.</li>
+				<li>The following numbers and letters are an individual identifier. Random generation is allowed for this part; this is the algorithm used, for example, by Qualcomm and MediaTek.</li>
+				</ul>
+				<img src="/blog/mac1.png" alt="Mac address" />
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				To clarify the address of your device, study its structure, you can use both third-party applications and functions originally provided by the operating system. The first option is better suited for smartphones or tablets on Android, in Windows OS the necessary data can be obtained with the command “ipconfig”, and in Linux and Mac - “ifconfig”.
 				</p>
+				<a name="4"></a>
+				<h3>Classification</h3>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
+				The MAC address is represented by two main categories:
 				</p>
+				<ul>
+				<li>Local. Used to identify devices in small private networks, focused on internal rather than global use. A typical example is a home wireless Wi-Fi network, where the central link is a router to which smartphones, tablets, desktop computers, and laptops are connected.</li>
+				<li>Global. In this case, the MAC address is assigned upon release of the device, must meet certain requirements and be unique throughout the Internet, which is necessary for error-free identification. The assignment of addresses is strictly controlled by an authorized organization, IEEE.</li>
+				</ul>
+				<img src="/blog/mac2.png" alt="Mac address" />
+				<a name="5"></a>
+				<h3>Functions</h3>
 				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				Knowledge of addresses greatly simplifies the collection of data about devices included in the network. Each of them is a personal identifier showing which equipment is active, how it interacts with other equipment, how it exchanges information. MAC addresses not only guarantee the accuracy of data exchange between devices, eliminate the risk of sending packets to the wrong recipient, help track traffic and reconfigure the network, but also solve many other problems:
+				</p>
+				<ul>
+				<li>Increasing the level of network security. For example, for a wireless Wi-Fi router, you can set a “white list” of addresses. If the identifier of the device, be it a smartphone or a laptop, is not on this list, the connection will fail, the attempt will be automatically blocked.</li>
+				<li>Simplifying network recovery. Software diagnostics will quickly determine the MAC address of equipment that has failed and needs to be repaired or replaced. This algorithm will help to carry out repairs as quickly as possible, eliminate the need for complex diagnostic operations, sequential testing of all hardware components.</li>
+				<li>Configuring filters. It is not necessary to completely block certain addresses from accessing the network. You can limit yourself to more lenient restrictions, for example, on speed or access time. This will eliminate overloading of communication channels and other negative phenomena.</li>
+				</ul>
+				<p>
+				The MAC address can also become a valuable commercial tool. For example, in a cafe with a public Wi-Fi network, it becomes the basis for statistical reports, allows you to accurately record attendance, determine the busiest periods. Such statistics will help in determining the effectiveness of advertising campaigns, if the number of unique MACs after such campaigns has increased, the work was done correctly.
 				</p>
 			</>
 		),

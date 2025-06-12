@@ -70,31 +70,30 @@ export default function Home({ language }) {
       ru: (
         <>
           <p>
-            Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2-х рабочих дней, в
+            Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2 рабочих дней, в
             зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации
-            оборудования после оплаты - 1-2 часа. Мы делам всё возможное, чтобы уменьшить время ожидания.
+            оборудования после оплаты - 1-2 часа. Мы стремимся сократить время ожидания.
           </p>
           <p>Срок действия услуги начнется с момента её активации.</p>
+          <p>«VDS запускается за 30 минут», «Аптайм 99.98%»</p>
         </>
       ),
       uz: (
         <>
           <p>
-            Buyurtma va to'lovni amalga oshirgandan so'ng serverni o'rnatish vaqti 30 daqiqadan 2 daqiqagacha zarur
-            serverlarning mavjudligi va texnik yukga qarab ish kunlari xodimlar. To'lovdan so'ng uskunani
-            faollashtirishning o'rtacha vaqti 1-2 soat. Biz hamma narsani qilamiz kutish vaqtini qisqartirish mumkin.
+            Buyurtma va to'lovni amalga oshirgandan so'ng serverni o'rnatish muddati zarur serverlarning mavjudligi va texnik xodimlarning ish yukiga qarab 30 daqiqadan 2 ish kunigacha. To'lovdan so'ng uskunani o'rtacha faollashtirish vaqti 1-2 soat. Biz kutish vaqtini qisqartirishga harakat qilamiz.
           </p>
           <p>Xizmat u yoqilgan paytdan boshlab ishga tushadi.</p>
+          <p>"VDS 30 daqiqadan so'ng boshlanadi", "Ish vaqti 99,98%"</p>
         </>
       ),
       en: (
         <>
           <p>
-            Server installation time, after placing an order and payment, is from 30 minutes to 2 working days,
-            depending on the availability of the necessary servers and the load of the technical personnel. Average
-            equipment activation time after payment is 1-2 hours. We do everything possible to reduce the waiting time.
+            The server installation period, after placing an order and payment, is from 30 minutes to 2 business days, depending on the availability of the necessary servers and the workload of technical personnel. The average activation time of the equipment after payment is 1-2 hours. We strive to reduce the waiting time.
           </p>
           <p>The service will start from the moment it is activated.</p>
+          <p>"VDS starts in 30 minutes", "Uptime 99.98%"</p>
         </>
       ),
     },
@@ -425,6 +424,7 @@ export default function Home({ language }) {
             // date: langData.month[language],
           },
         ],
+        activeTop: "activeTop",
         cpu: 4,
         ram: 6,
         ssd: 100,
@@ -485,6 +485,7 @@ export default function Home({ language }) {
             // date: langData.month[language],
           },
         ],
+        activeTop: "activeTop",
         cpu: 6,
         ram: 12,
         ssd: 200,
@@ -765,19 +766,19 @@ export default function Home({ language }) {
         description: {
           ru: (
             <p>
-              В случае возникновения каких-либо вопросов, Вы всегда можете рассчитывать на нашу квалифицированную помощь, по телефону, e-mail, telegram, а также в онлайн чате - в любое время суток 24/7!
+              В случае возникновения каких-либо вопросов, Вы всегда можете рассчитывать на нашу квалифицированную помощь, по телефону, e-mail, telegram, а также в онлайн чате - в любое время суток!
             </p>
           ),
           uz: (
             <p>
               Savollaringiz bo'lsa, siz har doim bizning malakali yordamimizga individual yondashish orqali, telefon,
-              elektron pochta, telegram orqali, shuningdek, kunning istalgan vaqtida ishonishingiz mumkin 24/7!
+              elektron pochta, telegram orqali, shuningdek, kunning istalgan vaqtida ishonishingiz mumkin!
             </p>
           ),
           en: (
             <p>
               If you have any questions, you can always count on our qualified assistance with an individual approach,
-              by phone, e-mail, telegram, as well as in online chat - at any time of the day 24/7!
+              by phone, e-mail, telegram, as well as in online chat - at any time of the day!
             </p>
           ),
         },
@@ -825,21 +826,21 @@ export default function Home({ language }) {
         description: {
           ru: (
             <p>
-              Мы предоставляем услуги по самым "низким" ценам в Узбекистане, наше преимущество в том, что мы оказываем
+              Мы предоставляем услуги по самым <strong>низким</strong> ценам в Узбекистане, наше преимущество в том, что мы оказываем
               максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а
               не тратиться.
             </p>
           ),
           uz: (
             <p>
-              Biz O'zbekistonda 'eng past' narxlarda xizmatlar ko'rsatamiz, bizning afzalligimiz shundaki, biz eng
+              Biz O'zbekistonda <strong>eng past</strong> narxlarda xizmatlar ko'rsatamiz, bizning afzalligimiz shundaki, biz eng
               yuqori sifatli xizmatlarni imkon qadar arzon narxlarda taqdim etamiz. Shunday qilib, biz sizga sarflashga
               emas, pul ishlashingizga yordam beramiz.
             </p>
           ),
           en: (
             <p>
-              We provide services at the "lowest" prices in Uzbekistan, our advantage is that we provide the highest
+              We provide services at the <strong>lowest</strong> prices in Uzbekistan, our advantage is that we provide the highest
               quality services for the lowest possible prices. Thus, we will help you to earn, not to spend.
             </p>
           ),
@@ -856,7 +857,7 @@ export default function Home({ language }) {
           ru: (
             <p>
               Мы предоставляем услуги по собственной BGP протоколу (Border Gateway Protocol) для всех блоков IP-адресов.
-              Подключенныe напрямую к автономной системе (AS) АК "Узтелеком", а также являемся участниками зоны TAS-IX.
+              Подключенныe напрямую к автономной системе (AS) АК "Узтелеком", и также являемся участниками зоны TAS-IX.
             </p>
           ),
           uz: (

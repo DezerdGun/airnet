@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "Name-серверы (NS): ключевые элементы DNS-инфраструктуры",
-		uz: "Name-серверы (NS): ключевые элементы DNS-инфраструктуры",
-		en: "Name-серверы (NS): ключевые элементы DNS-инфраструктуры",
+		uz: "Nom serverlari (NS): DNS infratuzilmasining asosiy elementlari",
+		en: "Name Servers (NS): Key Elements of DNS Infrastructure",
 	},
 	title: {
 		ru: "Name-серверы (NS): роль и значение в DNS-системе",
-		uz: "Name-серверы (NS): роль и значение в DNS-системе",
-		en: "Name-серверы (NS): роль и значение в DNS-системе",
+		uz: "Nom serverlari (NS): DNS tizimidagi roli va ahamiyati",
+		en: "Name Servers (NS): Role and Importance in the DNS System",
 	},
 	desc: {
 		ru: "Разберемся, что такое name-серверы, их функции в системе доменных имен и почему они важны для работы сайтов.",
-		uz: "Разберемся, что такое name-серверы, их функции в системе доменных имен и почему они важны для работы сайтов.",
-		en: "Разберемся, что такое name-серверы, их функции в системе доменных имен и почему они важны для работы сайтов.",
+		uz: "Keling, nom serverlari nima ekanligini, ularning domen nomlari tizimidagi funktsiyalarini va nima uchun ular veb-saytlarning ishlashi uchun muhimligini aniqlaymiz.",
+		en: "Let's figure out what name servers are, their functions in the domain name system and why they are important for the operation of websites.",
 	},
 	date: "14.12.2024",
 	updated: "14.12.2024",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/ns.png",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,12 +61,12 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Name-серверы: что это?", uz: "Name-серверы: что это?", en: "Name-серверы: что это?", slug: "1" }},
-		{ title: {ru: "Общее понятие", uz: "Общее понятие", en: "Общее понятие", slug: "2" }},
-		{ title: {ru: "Основные функции", uz: "Основные функции", en: "Основные функции", slug: "3" }},
-		{ title: {ru: "Классификация серверов", uz: "Классификация серверов", en: "Классификация серверов", slug: "4" }},
-		{ title: {ru: "Что такое дочерние NS-серверы?", uz: "Что такое дочерние NS-серверы?", en: "Что такое дочерние NS-серверы?", slug: "5" }},
-		{ title: {ru: "Настройки NS-сервера", uz: "Настройки NS-сервера", en: "Настройки NS-сервера", slug: "6" }},
+		{ title: {ru: "Name-серверы: что это?", uz: "Nom serverlari: ular nima?", en: "Name servers: what are they?", slug: "1" }},
+		{ title: {ru: "Общее понятие", uz: "Umumiy tushuncha", en: "General concept", slug: "2" }},
+		{ title: {ru: "Основные функции", uz: "Asosiy funktsiyalari", en: "Main functions", slug: "3" }},
+		{ title: {ru: "Классификация серверов", uz: "Server tasnifi", en: "Server classification", slug: "4" }},
+		{ title: {ru: "Что такое дочерние NS-серверы?", uz: "Bola NS serverlari nima?", en: "What are child NS servers?", slug: "5" }},
+		{ title: {ru: "Настройки NS-сервера", uz: "NS server sozlamalari", en: "NS server settings", slug: "6" }},
 	],
 	content: {
 		ru: (
@@ -157,71 +157,149 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Nom serverlari: bu nima?
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				Lotin yoki kirill alifbosida yozilgan veb-sayt domen nomi foydalanuvchilar uchun juda qulay – uni eslab qolish va manzillar qatoriga yozish oson. Biroq, texnologiya harflar bilan emas, balki raqamlar bilan ifodalangan boshqa manzilni talab qiladi. Maxsus nom serverlari real vaqtda konvertatsiya qilishni amalga oshiradi. Ushbu kontseptsiya ortida nima bor? Ular qanday funktsiyalarni bajaradilar? Ular qanday ishlaydi?
+				</p>
+				<a name="2"></a>
+				<h3>Umumiy tushuncha</h3>
+				<p>
+				Adabiyotda ko'pincha "NS" qisqartmasi bilan ataladigan nom serveri manzillar panelida foydalanuvchilar tomonidan ko'rsatilgan domen nomlarini kompyuter va tarmoq uskunalari o'rtasidagi o'zaro ta'sir uchun zarur bo'lgan raqamli IP manzillarga aylantirish uchun ishlatiladi. To'g'ridan-to'g'ri va teskari konvertatsiya qo'llab-quvvatlanadi.
+				</p>
+				<a name="3"></a>
+				<h3>Asosiy funksiyalar</h3>
+				<p>
+				Domen nomlarini IP manzillarga o'zgartirish asosiy vazifaga qo'shimcha ravishda, NS serveri qo'shimcha vazifalarni ham bajaradi:
+				</p>
+				<ul>
+				<li>Noto'g'ri, mavjud bo'lmagan manzilni kiritishda xatolik haqida bildirishnoma yuborish.</li>
+				<li>Subdomenlar joylashgan server haqida ma'lumot berish.</li>
+				<li>Ma'lumotlarni keshlash, bu ularni Internetdan qayta yuklab olish zaruratini yo'q qiladi, sahifalarni ochish tezligini oshiradi.</li>
+				</ul>
+				<p>
+				Birinchi tashrifingizda siz saytning ochilishini ancha uzoq kutishingiz mumkin, ammo keyingi tashriflarda keshlash tufayli muammo bartaraf etiladi.
+				</p>
+				<img src="/blog/ns1.png" alt="Server" />
+				<a name="4"></a>
+				<h3>Server tasnifi</h3>
+				<p>
+				Saytlarni ochishning yuqori tezligini, maksimal foydalanuvchi qulayligini ta'minlash - bularning barchasi turli nom serverlaridan foydalanish orqali mumkin. Ular uchta asosiy toifada ifodalanadi:
+				</p>
+				<ul>
+				<li>Asosiy. Foydalanuvchilarning barcha so'rovlariga javob beradigan asosiylari.</li>
+				<li>Ikkinchi darajali. Ular asosiy server mavjud bo'lmaganda yoki uning haddan tashqari yuklanishida javob berishadi, shu sababli u so'rovlarni o'z vaqtida qayta ishlashga dosh berolmaydi.</li>
+				<li>Keshlash. Ushbu nom serveri avvalgi ikkitasining tezligini oshirishga yordam beradi, ularni maksimal foydalanuvchi faolligi davrida tushirishga yordam beradi.</li>
+				</ul>
+				<p>
+				Serverlarni tasniflashda siz ulardan foydalanish shartlariga ham e'tibor qaratishingiz mumkin. Quyidagi variantlar mavjud:
+				</p>
+				<ul>
+				<li>Domen nomini ro'yxatdan o'tkazgan kompaniya tomonidan taqdim etilgan. Bunday holatda, undan foydalanishni boshlash uchun saytning IP manzilini ko'rsatish kifoya.</li>
+				<li>Bepul. Ushbu nom serveri hamma uchun mavjud, kirish ochiq. Ushbu formatning afzalligi shundaki, u bepul, kamchilik - ishonchlilik va xavfsizlikning past darajasi.</li>
+				<li>Ixtisoslashgan tashkilotlar tomonidan taqdim etilgan pullik. Aslida, bu sxema nom serveridan ijara shartnomasi bo‘yicha foydalanilishini nazarda tutadi.</li>
+				<li>Xosting xizmatlarini taqdim etuvchi provayder tomonidan taqdim etilgan. Eng keng tarqalgan va ommabop kategoriya, deyarli barcha kompaniyalar mijozning iltimosiga binoan nom serverini chiqarishga tayyor.</li>
+				</ul>
+				<a name="5"></a>
+				<h3>Bola NS serverlari nima?</h3>
+				<p>
+				Serverlar odatda hosting xizmatlarini ko'rsatuvchi provayderlarga tegishli. Bunday holda, ijara shartnomasini tuzishda siz nafaqat asosiy, balki yordamchi uy egasiga ham ega bo'lishingiz mumkin. U asosiy domen asosida shakllanadi va shunga mos ravishda asosiy serverda joylashgan bo'lib, bu bepul foydalanish imkonini beradi.
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Ilgari domen sotib olingan "mahalliy" xostingda nom yozuvlarini o'rnatishda siz nomlarni belgilash va tahrirlarni saqlash bilan cheklanishingiz mumkin. Qoida tariqasida, ularning kirishi avtomatlashtirilgan, saytni ro'yxatdan o'tkazish bilan darhol qo'shimcha manipulyatsiyalarsiz sodir bo'ladi.
 				</p>
+				<img src="/blog/ns2.png" alt="Server" />
+				<a name="6"></a>
+				<h3>NS server sozlamalari</h3>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				Nomlar serveri to'g'ri ishlashi uchun u to'g'ri sozlangan bo'lishi kerak, tegishli yozuvlarni ko'rsating, birinchi navbatda, quyidagilar:
 				</p>
+				<ul>
+				<li>NS – domen nomiga tayinlangan manzillarni aniqlash uchun zarur boʻlgan eng muhim yozuv.</li>
+				<li>A - saytni IPv4 standartiga mos keladigan ma'lum bir IP-manzilga bog'lash. Bu turdagi bir nechta yozuvlarni bir vaqtning o'zida kiritish, turli manzillarga bog'lash mumkin.</li>
+				<li>AAAA – avvalgisiga o'xshash rekord, ammo IPv6 protokoliga yo'naltirilgan.</li>
+				<li>MX - asosiy domen nomi uchun elektron pochta xabarini olishi kerak bo'lgan server nomini yozadi. Shuningdek, bunday yozuvlar bir nechta boʻlishi mumkin va ularning ustuvorligidagi farqlari qabul qilinadi.</li>
+				<li>TXT – foydalanuvchi maʼlumotlari kabi har qanday maʼlumot ushbu yozuvda nom serverida saqlanishi mumkin.</li>
+				<li>SOA - xizmat ma'lumotlarini, xususan, so'nggi o'zgarishlar va yangilanishlarni saqlash uchun mo'ljallangan yozuv.</li>
+				</ul>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
-				</p>
-				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
-				</p>
-				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				Saytning barqarorligi va marketing va reklama bilan bog'liq strategiyalarni amalga oshirish samaradorligi nom serveri qanchalik to'g'ri tuzilganiga bog'liq. Masalan, to'g'ri kiritilgan MX yozuvlari pochta xizmatlaridan faol foydalanishda obro'ni mustahkamlashga yordam beradi; yuqori ehtimollik bilan yuborilgan xat spam guruhiga tushmaydi. TXT yozuvlari, o'z navbatida, tizim ma'murlari, optimallashtirish bilan shug'ullanadigan mutaxassislar tomonidan uchinchi tomon monitoringi va tahliliy vositalaridan faol foydalanishi kerak.
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Name servers: what is it?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				A website domain name written in Latin or Cyrillic is extremely convenient for users – it is easy to remember and write in the address bar. However, technology requires a different address, expressed not in letters, but in numbers. Special name servers perform real-time conversion. What is behind this concept? What functions do they perform? How do they work?
+				</p>
+				<a name="2"></a>
+				<h3>General concept</h3>
+				<p>
+				A name server, often referred to in the literature by the abbreviation “NS”, is used to convert domain names specified by users in the address bar into digital IP addresses necessary for interaction between computer and network equipment. Both direct and reverse conversion are supported.
+				</p>
+				<a name="3"></a>
+				<h3>Main functions</h3>
+				<p>
+				In addition to the main task, transforming domain names into IP addresses, the NS server also performs some additional ones:
+				</p>
+				<ul>
+				<li>Submitting an error notification when entering an incorrect, non-existent address.</li>
+				<li>Issuing data about the server where the subdomains are located.</li>
+				<li>Caching data, which eliminates the need to re-download them from the Internet, increases the speed of opening pages.</li>
+				</ul>
+				<p>
+				On your first visit, you may encounter a rather long wait for the site to open, however, on subsequent visits, the problem is eliminated due to caching.
+				</p>
+				<img src="/blog/ns1.png" alt="Server" />
+				<a name="4"></a>
+				<h3>Server Classification</h3>
+				<p>
+				Ensuring high speed of opening sites, maximum user convenience - all this is possible through the use of various name servers. They are represented by three main categories:
+				</p>
+				<ul>
+				<li>Primary. The main ones that respond to all user requests.</li>
+				<li>Secondary. They respond in case of unavailability of the main server, or its overload, due to which it cannot cope with timely processing of requests.</li>
+				<li>Caching. This name server helps to increase the speed of the two previous ones, unload them during periods of maximum user activity.</li>
+				</ul>
+				<p>
+				When classifying servers, you can also focus on the conditions of their use. The following options are available:
+				</p>
+				<ul>
+				<li>Provided by the company that registered the domain name. In this situation, to start using it, it is enough to indicate the IP address of the site.</li>
+				<li>Free. This name server is available to anyone, access is open. The advantage of this format is that it is free, the disadvantage is low levels of reliability and security.</li>
+				<li>Paid, provided by specialized organizations. In fact, this scheme assumes that the name server is used under a lease agreement.</li>
+				<li>Provided by the provider providing hosting services. The most common and popular category, almost all companies are ready to issue a name server upon the client's request.</li>
+				</ul>
+				<a name="5"></a>
+				<h3>What are child NS servers?</h3>
+				<p>
+				Servers are usually owned by providers providing hosting services. In this case, when arranging a lease, you can get at your disposal not only the main, but also an auxiliary host. It is formed on the basis of the base domain and, accordingly, is located on the main server, which allows for free use.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				When setting up name records on the “native” hosting, where the domain purchase was previously made, you can limit yourself to specifying names and saving edits. As a rule, their entry is automated, occurs without additional manipulations immediately with the registration of the site.
 				</p>
+				<img src="/blog/ns2.png" alt="Server" />
+				<a name="6"></a>
+				<h3>NS server settings</h3>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				For the name server to function correctly, it must be properly configured, specify the appropriate records, first of all, the following:
 				</p>
+				<ul>
+				<li>NS – the most important record, necessary for determining the addresses assigned to the domain name.</li>
+				<li>A – binding the site to a specific IP address that complies with the IPv4 standard. It is allowed to enter several records of this type at once, to bind to different addresses.</li>
+				<li>AAAA – a record identical to the previous one, however, oriented to the IPv6 protocol.</li>
+				<li>MX – records the name of the server that should receive e-mail for the main domain name. There may also be several of these records, and their differences in priority are acceptable.</li>
+				<li>TXT – any data, such as user data, can be saved in this record on the name server.</li>
+				<li>SOA – a record designed to save service information, in particular – the latest changes and updates.</li>
+				</ul>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
-				</p>
-				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
-				</p>
-				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				The stability of the site and the effectiveness of the implementation of strategies related to marketing and promotion depend on how correctly the name server is configured. For example, correctly entered MX records help to strengthen the reputation when actively using mail services; with a high probability, the sent letter will not end up in the spam group. TXT records, in turn, should be made by system administrators, specialists involved in optimization, actively using third-party monitoring and analytical tools.
 				</p>
 			</>
 		),

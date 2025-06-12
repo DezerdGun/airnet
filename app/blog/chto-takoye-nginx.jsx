@@ -5,18 +5,18 @@ import { breadCrumbsBlog } from "@/app/blog";
 const data = {
 	headTitle: {
 		ru: "NGINX: что это такое?",
-		uz: "NGINX: что это такое?",
-		en: "NGINX: что это такое?",
+		uz: "NGINX: Bu nima?",
+		en: "NGINX: What is it?",
 	},
 	title: {
 		ru: "Nginx — что это такое и зачем нужен веб-сервер",
-		uz: "Nginx — что это такое и зачем нужен веб-сервер",
-		en: "Nginx — что это такое и зачем нужен веб-сервер",
+		uz: "Nginx - bu nima va nima uchun sizga veb-server kerak",
+		en: "Nginx - what is it and why do you need a web server",
 	},
 	desc: {
 		ru: "Nginx — популярный веб-сервер и обратный прокси-сервер 🌐 Узнайте, что такое Nginx, как он работает и для чего используется. Преимущества Nginx по сравнению с другими веб-серверами.",
-		uz: "Nginx — популярный веб-сервер и обратный прокси-сервер 🌐 Узнайте, что такое Nginx, как он работает и для чего используется. Преимущества Nginx по сравнению с другими веб-серверами.",
-		en: "Nginx — популярный веб-сервер и обратный прокси-сервер 🌐 Узнайте, что такое Nginx, как он работает и для чего используется. Преимущества Nginx по сравнению с другими веб-серверами.",
+		uz: "Nginx mashhur veb-server va teskari proksi-server 🌐 Nginx nima ekanligini, u qanday ishlashini va nima uchun ishlatilishini bilib oling. Nginx ning boshqa veb-serverlarga nisbatan afzalliklari.",
+		en: "Nginx is a popular web server and reverse proxy 🌐 Learn what Nginx is, how it works, and what it is used for. Advantages of Nginx over other web servers.",
 	},
 	date: "21.11.2024",
 	updated: "21.11.2024",
@@ -25,8 +25,8 @@ const data = {
 	img: "/blog/nginx.webp",
     faqTitle: {
       ru: "Ответы на популярные вопросы",
-      uz: "Ответы на популярные вопросы",
-      en: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
     },
 	faq: [
 		{
@@ -61,14 +61,14 @@ const data = {
 		},
 	],
 	alinks: [
-		{ title: {ru: "Что такое Nginx?", uz: "Что такое Nginx?", en: "Что такое Nginx?", slug: "1" }},
-		{ title: {ru: "Принцип функционирования", uz: "Принцип функционирования", en: "Принцип функционирования", slug: "2" }},
-		{ title: {ru: "Преимущества", uz: "Преимущества", en: "Преимущества", slug: "3" }},
-		{ title: {ru: "Совместимость с операционными системами", uz: "Совместимость с операционными системами", en: "Совместимость с операционными системами", slug: "4" }},
-		{ title: {ru: "Сравнение с Apache", uz: "Сравнение с Apache", en: "Сравнение с Apache", slug: "5" }},
-		{ title: {ru: "Вероятные ошибки", uz: "Вероятные ошибки", en: "Вероятные ошибки", slug: "6" }},
-		{ title: {ru: "Установка и настройка Nginx", uz: "Установка и настройка Nginx", en: "Установка и настройка Nginx", slug: "7" }},
-		{ title: {ru: "Подведение итогов", uz: "Подведение итогов", en: "Подведение итогов", slug: "8" }},
+		{ title: {ru: "Что такое Nginx?", uz: "Nginx nima?", en: "What is Nginx?", slug: "1" }},
+		{ title: {ru: "Принцип функционирования", uz: "Ishlash printsipi", en: "Operating principle", slug: "2" }},
+		{ title: {ru: "Преимущества", uz: "Afzalliklar", en: "Advantages", slug: "3" }},
+		{ title: {ru: "Совместимость с операционными системами", uz: "Operatsion tizimlar bilan moslik", en: "Compatibility with operating systems", slug: "4" }},
+		{ title: {ru: "Сравнение с Apache", uz: "Apache bilan taqqoslash", en: "Comparison with Apache", slug: "5" }},
+		{ title: {ru: "Вероятные ошибки", uz: "Mumkin bo'lgan xatolar", en: "Possible errors", slug: "6" }},
+		{ title: {ru: "Установка и настройка Nginx", uz: "Nginx-ni o'rnatish va sozlash", en: "Installing and Configuring Nginx", slug: "7" }},
+		{ title: {ru: "Подведение итогов", uz: "Xulosa qilish", en: "Summing up", slug: "8" }},
 	],
 	content: {
 		ru: (
@@ -200,71 +200,229 @@ const data = {
 		),
 		uz: (
 			<>
+				<a name="1"></a>
+				<h3>
+				Nginx nima?
+				</h3>
 				<p>
-					Polshaning CD Projekt Red studiyasining iqtiboslari fonida keskin tushib ketdi Sony do'konidan Cyberpunk 2077
-					o'yinini olib tashlandi.
+				"Enginx" yoki "eNGINe X" nomi bilan ham tanilgan Nginx - bu keraksiz asoratlarsiz veb-server yaratish imkonini beruvchi dastur. Dastur universal bo'lib, pochta yoki proksi-server sifatida foydalanish mumkin.
 				</p>
 				<p>
-					Varshava fond birjasidagi savdo paytida CD Projekt Red aksiyalari, Cyberpunk 2077 o'yinini ishlab chiqqanlar
-					20% ga kamaydi. Bu haqida bozor ma'lumotlari. Iqtibosning pastki qismida 247 PLN ga tushdi. Payshanba qog'oz
-					savdo sessiyasi 309,2 zł atrofida yakunlandi, deb yozadi RBC.
+				Nginx - bu rus ishlanmasi, uning muallifi Igor Sysoev, Rambler kompaniyasining etakchi mutaxassislaridan biri. Dastur 2002 yilda paydo bo'lgan va uni yaratish zarurati server yukini oshirishda ishlash bilan bog'liq muammolar bilan bog'liq edi. 2004 yilda yordamchi dastur nafaqat Rambler tomonidan, balki uchinchi tomon tashkilotlari tomonidan ham qo'llanila boshlandi, 2011 yildan boshlab - Sysoevga tegishli kompaniya modernizatsiya va qo'llab-quvvatlashga e'tibor qaratdi. Endi dastur bir nechta versiyalarda, shu jumladan pullik, rivojlangan funksionallik bilan taqdim etilgan. </p>
+				<a name="2"></a>
+				<h3>Ishlash printsipi</h3>
+				<p>
+				Nginx operatsion algoritmini klassik server bilan solishtirish mumkin, u mijoz so'rovlarini qabul qilish, ularni qayta ishlash va kerakli sahifani to'g'ri ko'rsatish uchun zarur bo'lgan kerakli fayllar, kodlar, grafikalar, matn, video va boshqa narsalarni yuborishni o'z ichiga oladi.
 				</p>
 				<p>
-					Qo'shtirnoqlarning tushishi Cyberpunk 2077-ning o'chirilishi haqidagi xabarlar fonida sodir bo'ldi o'yinning
-					muvaffaqiyatsiz ishga tushirilishi tufayli Sony PlayStation do'konidan. Da kompaniya allaqachon sotib olgan
-					o'yinchilarga pulni qaytarishga va'da berdi Cyberpunk 2077.
+				Farqi shundaki, Nginx hodisaga yo'naltirilgan so'rovni qayta ishlash sxemasi bilan asinxron ishlaydi. Ushbu xususiyat tufayli dastur kirish va chiqishni bloklamasdan bir nechta ulanishlarni qo'llab-quvvatlaydi. Bunday tavsif juda murakkab ko'rinadi, yaxshiroq tushunish uchun siz misolni tahlil qilishingiz kerak:
+				</p>
+				<ul>
+				<li>Mijozning katta hajmdagi faylni, masalan, yuqori aniqlikdagi formatdagi videoni yuborish haqidagi soʻrovini olish;</li>
+				<li>O'tkazishni faollashtirish;</li>
+				<li>So'rovni qayta ishlash to'plamini chiqarish. Bu boshqa kiruvchi so'rovlar bilan o'zaro ishlash imkonini beruvchi asosiy xususiyatdir;</li>
+				<li>Fayl uzatishni yakunlash;</li>
+				<li>Natijalarni yakuniy qayta ishlash, boshqa operatsiyalarni qayta boshlash.</li>
+				</ul>
+				<p>
+				Klassik serverning ishlash algoritmi ma'lumotlarni kiritish va chiqarish bilan bog'liq barcha operatsiyalar tugaguniga qadar yangi so'rovlarni qayta ishlashni bloklashni o'z ichiga oladi, Nginx bilan bu istisno. Ushbu xususiyat tufayli server bir vaqtning o'zida ko'plab so'rovlar bilan ishlaydi, bu mavjud resurslardan samaraliroq foydalanish imkonini beradi, uzatish kechikishlarini va boshqa muammolarni bartaraf etadi.
 				</p>
 				<p>
-					Cyberpunk 2077 10 dekabrda chiqarildi, uning chiqarilishi bir vaqtning o'zida bo'lib o'tdi bir nechta
-					platformalar. Ba'zi foydalanuvchilar texnik muammolardan shikoyat qilishdi o'yindagi muammolar va buzilishlar.
-					Masalan, oldingi konsollarning egalari avlodlar - PlayStation 4 va Xbox One - past piksellar soniga duch keldi
-					720p, tushiriladigan teksturalar va kadrlar tezligi 15 V gacha tushadi menga bir soniya bering.
+				Nginx nafaqat standart serverning funktsiyalari bilan shug'ullanadi. Dasturdan quyidagi vazifalarni hal qilish uchun foydalanish mumkin:
+				</p>
+				<ul>
+				<li>Proksi-serverlar yaratish. Katta hajmdagi kiruvchi so'rovlar bilan ishlash etarli emas. Bunday vaziyatda u proksi-server funktsiyalarini ishga tushiradi, mijoz so'rovlarini qabul qiladi, ularni qayta ishlashni amalga oshiradigan kuchliroq tarmoq resurslariga o'tkazadi va foydalanuvchiga javoblarni yuboradi.</li>
+				<li>SSL va TLSni tugatish. Dastur ikkala protokol bilan samarali o'zaro ta'sir qiladi, ma'lumotlarni shifrlashi va shifrini ochishi mumkin. Bu funksiya sizga vositachi funksiyalarni amalga oshirish, foydalanuvchi kirayotgan asosiy serverdan yukning bir qismini olib tashlash imkonini beradi.</li>
+				</ul>
+				<a name="3"></a>
+				<h3>Afzalliklar</h3>
+				<p>
+				Nginx ning asosiy afzalliklari quyidagilardan iborat:
+				</p>
+				<ul>
+				<li>Yuqori tezlik. Ushbu afzallik muntazam yangilanishni talab qilmaydigan statik sayt mazmuni bilan o'zaro aloqada bo'lganda eng aniq namoyon bo'ladi. Sahifani yuklashda Nginx serveri maʼlumotlarni keshlaydi, shuning uchun keyingi soʻrovlar keshdan yuklanadi, bunday operatsiya bir zumda amalga oshiriladi.</li>
+				<li>Universallik. Dastur maksimal moslashuvchanlik va sozlash qulayligini ta'minlaydi, spetsifikatsiya, masshtab va talablardan qat'i nazar, muayyan tizimga moslashish oson.</li>
+				<li>RAMga minimal yuk. Nginx o'zining xotira segmentidan "hovuz" dan foydalanadi. Uning hajmi yukga mos ravishda avtomatik ravishda o'zgaradi, bu tezlikni ta'minlaydi va mavjud resurslardan eng oqilona foydalanish imkonini beradi.</li>
+				<li>Har tomonlama qo'llab-quvvatlash. Nginx dasturiy ta'minoti talabga ega va ommabop, ixtisoslashgan saytlarda, tematik jamoalarda siz qiziqtirgan savollarga osongina javob topishingiz mumkin, bu esa texnik muammolarni samarali hal qilishga yordam beradi. Bundan tashqari, rasmiy yordam mavjud va barcha ko'rsatmalar, hujjatlar rus tilida mavjud, ular tarjima va mahalliylashtirishni talab qilmaydi. </li>
+				<li>Moslashuvchanlik. Dastur nafaqat pullik, balki bepul nashrlarda ham mavjud. Dastur kodining ochiqligi o'zaro aloqani soddalashtiradi, har bir foydalanuvchi uni shaxsiy ehtiyojlariga to'liq mos ravishda sozlashi mumkin. </li>
+				</ul>
+				<a name="4"></a>
+				<h3>Operatsion tizimlar bilan moslik</h3>
+				<p>
+				Nginx-ning o'ziga xos xususiyati uning ko'p platformali tabiati bo'lib, u turli xil operatsion muhitlarda ishlatilishi mumkin. Ko'pincha u quyidagi operatsion tizimlarda qo'llaniladi:
+				</p>
+				<ul>
+				<li>Linux. Biz mashhur Ubuntu va Debian-dan Fedoragacha Linux yadrosiga asoslangan barcha platformalar haqida gapiramiz. </li>
+				<li>Unix. Oldingi holatda bo'lgani kabi, barcha Unix-ga o'xshash operatsion tizimlar bilan muvofiqligi ta'minlanadi.</li>
+				<li>macOS. Agar to'g'ridan-to'g'ri o'rnatish imkoni bo'lmasa, muammoni maxsus paket menejerlari yordamida osongina hal qilish mumkin.</li>
+				<li>Windows. Microsoft ishlanmalari uchun shunga o'xshash funksiyalarga ega bo'lgan boshqa echimlar ham mavjud, biroq Nginx rasmiy yordamga ega mashhur variant hisoblanadi.</li>
+				</ul>
+				<p>U nafaqat kompyuterda, balki bulutda, masalan, GCP yoki AWS da oʻrnatilgan tizimlarda ham qoʻllanilishi mumkin. Tegishli kutubxonalar va kompilyatorlar mavjud boʻlsa, undan boshqa OTlarda ham foydalanish mumkin.</p>
+				<a name="5"></a>
+				<h3>Apache bilan solishtirish</h3>
+				<p>
+				Ishlab chiquvchining so‘zlariga ko‘ra, Nginx dasturi avval hamma joyda qo‘llanilgan Apache platformasiga muqobil bo‘lishi kerak edi. Amaliyot shuni ko'rsatdiki, yangi dasturiy ta'minot veb-saytning statik kontenti bilan o'zaro aloqada bo'lganda ancha muvaffaqiyatli bo'ladi, serverga yuk minimaldir va ishlashda hech qanday muammo yo'q. Afzallik, ayniqsa, mahsulot kartalari, tashrif qog'ozlari, bloglarni o'z ichiga olgan statik tarkib bilan tavsiflangan veb-saytlarda sezilarli.
 				</p>
 				<p>
-					Cyberpunk 2077-ning chiqarilishi o'yindagi eng kutilgan voqealardan biri bo'ldi 2020 yilda sanoat. O'yinning
-					chiqarilishi bir necha bor qoldirildi. Deyarli darhol ishga tushirilgandan so'ng, bir vaqtning o'zida
-					Cyberpunk 2077 o'ynaydigan odamlar soni faqat Steam platformasida 1 milliondan oshdi, bu esa rekorddir yagona
-					foydalanuvchi loyihalari.
+				Taqqoslashda siz quyidagi omillarni ham hisobga olishingiz kerak:
+				</p>
+				<ul>
+				<li>Ishlash muhiti. Linux-ga o'xshash tizimlarda unumdorlik taxminan teng, ammo Windows-da Apache ma'lum bir afzalliklarga ega. </li>
+				<li>Texnik yordam. Nginx rus ishlanmasi bo'lganligi sababli, u yanada ilg'or, malakali va tezkor texnik yordamni taklif qiladi. </li>
+				<li>Sozlash qulayligi. Nginx-ni sozlash osonroq, Apache-da siz bir vaqtning o'zida bir nechta OS darajalaridan foydalanishingiz kerak, .htaccess fayllari uchun ma'lumotlarni diqqat bilan ro'yxatdan o'tkazishingiz kerak. </li>
+				<li>Modullilik. Apache Nginx ga qaraganda ko'proq modullarni taklif qiladi.</li>
+				<li>Virtual xostlar uchun yordam. Tenglik, ikkala holatda ham ularning konfiguratsiyasi bilan bog'liq muammolar yo'q.</li>
+				</ul>
+				<a name="6"></a>
+				<h3>Mumkin xatolar</h3>
+				<p>
+				Nginx-ni sozlash va ishlatish odatda yuqori malakani talab qilmaydi, hatto unchalik tajribali bo'lmagan ma'murlar ham vazifalarni bajara olmaydi, ammo ba'zida muvaffaqiyatsizliklar yuzaga keladi. Statistikaga ko'ra, quyidagilar eng keng tarqalgan:
+				</p>
+				<ul>
+				<li>502 Bad Gateway. Ushbu bildirishnoma xizmat ko'rsatilayotgan xizmatlardan to'liq javob yo'qligini ko'rsatadi. Buning sababi odatda oddiy - aloqa yo'q.</li>
+				<li>504 Gateway vaqti tugashi. Bunday holda, javob keladi, lekin kutish juda uzoq. Siz sozlamalarga o'tishingiz va kutish vaqtini oshirishingiz kerak.</li>
+				<li>413 So'rov juda katta. Yuklab olingan fayllar juda katta bo'lsa, xato paydo bo'ladi. Yechim sozlamalarni o'zgartirishdir. Asosiy qiymat megabayt, siz uni oshirishingiz kerak.</li>
+				</ul>
+				<a name="7"></a>
+				<h3>Nginx-ni o'rnatish va sozlash</h3>
+				<p>
+				Linuxga o'xshash tizimda o'rnatish vaqtida siz ikkita texnologiyadan, oldindan tuzilgan paketdan yoki koddan foydalanishingiz mumkin. Paket oddiyroq usul, ammo kod ko'proq imkoniyatlarni ochadi, yordamchi modullarni o'rnatishga imkon beradi. Biroq, uning murakkabligi foydalanishni cheklaydi, shuning uchun paket texnologiyasi afzalroqdir. Microsoft Windows holatida siz Win32 API interfeysidan foydalanishingiz kerak bo'ladi.
 				</p>
 				<p>
-					Manba'a uchun link{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						Spot
-					</a>
+				Linux-ga paketdan o'rnatish "sudo apt-get updatesudo apt-get install nginx" buyrug'i bilan faollashtiriladi. Barcha keyingi sozlamalar “/etc/nginx/” papkasi orqali amalga oshiriladi, uning asosiy fayli nginx.conf.
+				</p>
+				<p>
+				Konfiguratsiya jarayonida siz quyidagi parametrlarga alohida e'tibor berishingiz kerak:
+				</p>
+				<ul>
+				<li>Ishchi_jarayonlar - server tomonidan ishlatiladigan ishchi jarayonlar soni. Bu protsessor yadrolari soni bilan bir xil bo'lishi kerak.</li>
+				<li>Ishchi_ulanishlari - har bir jarayon uchun ulanish chegarasi. Parametr oshgani sayin, bir vaqtning o'zida xizmat ko'rsatuvchi foydalanuvchilar soni ortadi.</li>
+				<li>Gzip_comp_level - siqish ko'rsatkichi. 1 - minimal siqish, 10 - maksimal. Qoidaga ko'ra, o'rtacha qiymat 6 etarli.</li>
+				</ul>
+				<p>
+				Nginx-ning fayllar bilan ishonchli o'zaro ta'siri uchun siz "/etc/nginx/sites-enabled" katalogiga ulanishingiz kerak. Ulanish tufayli siz saytlarni ishga tushirishni tezlashtirishingiz mumkin, ular ochilgandan keyin ma'lumotlar o'chirilmaydi.
+				</p>
+				<a name="8"></a>
+				<h3>Xulosa qilish</h3>
+				<p>
+				Nginx - bu standart yoki proksi-serverni tashkil qilish bilan bog'liq ko'plab muammolarni hal qilish imkonini beruvchi qulay, samarali yechim. Ba'zi jihatlari bo'yicha u Apache'dan oshib ketadi, kamroq hisoblash quvvatini talab qiladi, protsessor va operativ xotirani yuklamaydi va bir vaqtning o'zida bir nechta ulanishlar bilan o'zaro ta'sir o'tkazishga qodir.
+				</p>
+				<p>
+				Nginx-ning ko'p qirraliligi dasturni chop etilgan tipologiya va kontentdan qat'i nazar, turli saytlar bilan moslashtiradi. Ayniqsa qiyin vaziyatlarda siz Nginx-ni Apache bilan birgalikda ishlatishingiz mumkin, ammo ko'p hollarda uning asosiy imkoniyatlari etarli.
 				</p>
 			</>
 		),
 		en: (
 			<>
+				<a name="1"></a>
+				<h3>
+				What is Nginx?
+				</h3>
 				<p>
-					Prices of Polish studio CD Projekt Red fell sharply amid the removal of Cyberpunk 2077 from the store Sony.
+				Nginx, also known as “Enginx” or “eNGIne X”, is a software that allows you to create a web server without unnecessary complications. The program is universal, can be used as a mail or proxy server.
 				</p>
 				<p>
-					Shares of CD Projekt Red studio, which developed the Cyberpunk 2077 game, fell during trading on the Warsaw
-					Stock Exchange by 20%. This is evidenced by the data of the trading platform. At the minimum, quotes fell to
-					247 Polish zł. The paper ended the trading session on Thursday at 309.2 zł, writes RBC.
+				Nginx is a Russian development, its author is Igor Sysoev, one of the leading specialists of the Rambler company. The program appeared in 2002, and the need for its creation was due to problems with performance when increasing the server load. In 2004, the utility began to be used not only by Rambler, but also by third-party organizations, since 2011 - a company owned by Sysoev has focused on modernization and support. Now the program is presented in several versions, including paid ones, with advanced functionality. </p>
+				<a name="2"></a>
+				<h3>Operating principle</h3>
+				<p>
+				The Nginx operating algorithm can be compared to a classic server, it involves receiving client requests, processing them and sending the required files, code, graphics, text, video and other things that are required to correctly display the desired page.
 				</p>
 				<p>
-					The fall in quotes comes amid news about the removal of Cyberpunk 2077 from the Sony PlayStation Store due to
-					an unsuccessful launch of the game. At the same time, the company promised to return the money to players who
-					have already purchased Cyberpunk 2077.
+				The difference is that Nginx operates asynchronously with an event-oriented request processing scheme. Due to this feature, the program supports multiple connections without blocking input and output. Such a description looks quite complicated, for a better understanding, you should analyze the example:
+				</p>
+				<ul>
+				<li>Receipt of a client request to send a large file, for example, a video in high definition format;</li>
+				<li>Activation of transfer;</li>
+				<li>Release of the request processing thread. This is a key feature that allows interaction with other incoming requests;</li>
+				<li>File transfer completion;</li>
+				<li>Final processing of results, resumption of other operations.</li>
+				</ul>
+				<p>
+				The classic server operation algorithm involves blocking the processing of new requests until all operations related to input and output of data are completed, with Nginx this is excluded. Due to this feature, the server simultaneously works with many requests, which allows more efficient use of available resources, eliminates transmission delays and other problems.
 				</p>
 				<p>
-					Cyberpunk 2077 was released on December 10, its release took place simultaneously on several platforms. Some
-					users complained about technical issues and game crashes. For example, owners of the consoles of the previous
-					generations - PlayStation 4 and Xbox One - are experiencing low 720p resolution, textures that won't load, and
-					frame rate drops up to 15 per second.
+				Nginx copes with the functions of not only a standard server. It is possible to use the program to solve the following tasks:
+				</p>
+				<ul>
+				<li>Creating proxy servers. With large volumes of incoming requests, the performance is insufficient. In such a situation, it starts proxy functions, accepts client requests, passes them to more powerful network resources that perform processing, and sends responses to the user.</li>
+				<li>SSL and TLS termination. The program effectively interacts with both protocols, can both encrypt and decrypt information. This function allows you to implement intermediary functions, remove some of the load from the main server that the user is accessing.</li>
+				</ul>
+				<a name="3"></a>
+				<h3>Advantages</h3>
+				<p>
+				The main advantages of Nginx are as follows:
+				</p>
+				<ul>
+				<li>High speed. This advantage is most pronounced when interacting with static site content that does not require regular updating. When loading a page, the Nginx server caches data, so that subsequent requests are loaded from the cache, such an operation is performed instantly.</li>
+				<li>Universality. The program provides maximum flexibility and ease of configuration, it is easy to adapt to a specific system, regardless of the specification, scale and requirements.</li>
+				<li>Minimal load on RAM. Nginx uses a “pool”, its own memory segment. Its volume changes automatically, in accordance with the load, which ensures speed and allows the most rational use of available resources.</li>
+				<li>Comprehensive support. Nginx software is in demand and popular, on specialized sites, in thematic communities you can easily find answers to questions of interest, which will help to effectively solve technical problems. In addition, there is official support, and all instructions, documents are available in Russian, they do not require translation and localization. </li>
+				<li>Adaptability. The program is available not only in paid, but also in free editions. The openness of the program code simplifies interaction, each user can customize it in full accordance with personal needs. </li>
+				</ul>
+				<a name="4"></a>
+				<h3>Compatibility with operating systems</h3>
+				<p>
+				A distinctive feature of Nginx is its multiplatform nature, it can be used in various operating environments. Most often, it is used on the following OS:
+				</p>
+				<ul>
+				<li>Linux. We are talking about all platforms based on the Linux kernel, from the popular Ubuntu and Debian to Fedora. </li>
+				<li>Unix. As in the previous case, compatibility with all Unix-like OS is ensured.</li>
+				<li>macOS. If direct installation is not possible, the problem can be easily solved using special package managers.</li>
+				<li>Windows. There are other solutions with similar functionality for Microsoft development, however, Nginx is a popular option with official support.</li>
+				</ul>
+				<p>It can be used on systems not only installed directly on the computer, but also in the cloud, for example, on GCP or AWS. It can also be used on other OS, provided that suitable libraries and compilers are available.</p>
+				<a name="5"></a>
+				<h3>Comparison with Apache</h3>
+				<p>
+				According to the developer, the Nginx program was supposed to become an alternative to Apache, a platform that was previously used everywhere. Practice has shown that the new software is much more successful when interacting with static website content, the load on the server is minimal, and there are no problems with performance. The advantage is especially noticeable on websites that are characterized by static content, which include product cards, business cards, blogs.
 				</p>
 				<p>
-					The release of Cyberpunk 2077 has been one of the most anticipated events in the gaming industry in 2020. Game
-					release multiple times endured. Almost immediately after launch, the number of people simultaneously playing
-					Cyberpunk 2077 is only Steam platform exceeded 1 million, which was a record for single-player projects.
+				When making a comparison, you also need to consider the following factors:
+				</p>
+				<ul>
+				<li>Operating environment. On Linux-like systems, the performance is approximately equal, but on Windows, Apache has a certain advantage. </li>
+				<li>Technical support. Due to the fact that Nginx is a Russian development, it offers more advanced, qualified and prompt technical support. </li>
+				<li>Ease of setup. Nginx is easier to set up, in the case of Apache, you have to use several OS levels at once, carefully register information for .htaccess files. </li>
+				<li>Modularity. Apache offers more modules than Nginx.</li>
+				<li>Support for virtual hosts. Equality, in both cases there are no problems with their configuration.</li>
+				</ul>
+				<a name="6"></a>
+				<h3>Possible errors</h3>
+				<p>
+				Configuring and using Nginx generally does not require high qualifications, even not very experienced administrators can cope with the tasks, however, sometimes failures occur. According to statistics, the following are the most common:
+				</p>
+				<ul>
+				<li>502 Bad Gateway. This notification shows a complete lack of responses from the services being served. The reason is usually banal - no connection.</li>
+				<li>504 Gateway Time-Out. In this case, the response comes, but the wait is too long. You need to go to the settings and increase the timeout.</li>
+				<li>413 Request Entire Too Large. The error appears if the downloaded files are too large. The solution is to change the settings. The base value is a megabyte, you should increase it.</li>
+				</ul>
+				<a name="7"></a>
+				<h3>Installing and configuring Nginx</h3>
+				<p>
+				During installation on a Linux-like system, you can use two technologies, a pre-built package or code. The package is a simpler method, however, the code opens up more opportunities, allows you to install auxiliary modules. However, its complexity limits its use, so the package technology is preferable. In the case of Microsoft Windows, you will have to use the Win32 API interface.
 				</p>
 				<p>
-					Link to source{" "}
-					<a href="https://www.spot.uz/ru" target="_blank" rel="noreferrer noopener">
-						spot
-					</a>
+				Installation on Linux from the package is activated by the command “sudo apt-get updatesudo apt-get install nginx”. All further settings are carried out through the “/etc/nginx/” folder, the main file of which is nginx.conf.
+				</p>
+				<p>
+				During the configuration process, you should pay special attention to the following parameters:
+				</p>
+				<ul>
+				<li>Worker_processes – the number of worker processes used by the server. It should be identical to the number of CPU cores.</li>
+				<li>Worker_connections – the connection limit for each process. As the parameter increases, the number of simultaneously served users increases.</li>
+				<li>Gzip_comp_level – compression indicator. 1 – minimum compression, 10 – maximum. As a rule, the average value, 6, is enough.</li>
+				</ul>
+				<p>
+				For reliable interaction of Nginx with files, you need to link with the directory “/etc/nginx/sites-enabled”. Thanks to linking, you can speed up the launch of sites, after they are opened, data will not be deleted.
+				</p>
+				<a name="8"></a>
+				<h3>Summing up</h3>
+				<p>
+				Nginx is a convenient, effective solution that allows you to solve a lot of issues related to the organization of a standard or proxy server. In some respects, it surpasses Apache, requires less computing power, does not load the processor and RAM, and is capable of interacting with several connections at the same time.
+				</p>
+				<p>
+				The versatility of Nginx makes the program compatible with various sites, regardless of the typology and content posted. In particularly difficult situations, you can use Nginx in combination with Apache, however, in most cases, its basic capabilities are sufficient.
 				</p>
 			</>
 		),
