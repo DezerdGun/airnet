@@ -847,11 +847,6 @@ module.exports = {
         permanent: true,
       },
       {
-        source: "/uzhttps:/ru.trustpilot.com/review/airnet.uz",
-        destination: "/",
-        permanent: true,
-      },
-      {
         source: "/uz/en/blog/v-kitae-reshili-otkazatsya-ot-3g",
         destination: "/blog/v-kitae-reshili-otkazatsya-ot-3g",
         permanent: true,
