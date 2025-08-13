@@ -1896,21 +1896,6 @@ module.exports = {
         destination: "/contacts",
         permanent: true,
       },
-      {
-        source: "www",
-        destination: "www",
-        permanent: true,
-      },
-      {
-        source: "www",
-        destination: "www",
-        permanent: true,
-      },
-      {
-        source: "www",
-        destination: "www",
-        permanent: true,
-      },
     ];
   },
 };
