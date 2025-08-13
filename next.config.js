@@ -567,11 +567,6 @@ module.exports = {
         permanent: true,
       },
       {
-        source: "/https:/airnet.uz",
-        destination: "/",
-        permanent: true,
-      },
-      {
         source: "/uz/en/vds",
         destination: "/uz/vds",
         permanent: true,
