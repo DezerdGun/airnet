@@ -13,6 +13,7 @@ export const LINKS = {
   LINUX_VDS: "/vds/arenda-servera-linux",
   WINDOWS_VDS: "/vds/arenda-servera-windows",
   BITRIX_VDS: "/vds/arenda-servera-bitrix",
+  COMMERCIAL: "/AIRNET-Presentation-2025.pdf",
   VDS_1C: "/",
   VDS_STORAGE: "/",
   VDS_WINDOWS: "/",

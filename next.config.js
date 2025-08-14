@@ -1886,6 +1886,206 @@ module.exports = {
         destination: "/contacts",
         permanent: true,
       },
+      {
+        source: "/blog/dns-server-nima",
+        destination: "/uz/blog/dns-server-nima",
+        permanent: true,
+      },
+      {
+        source: "/blog/domen-com-bu-nima",
+        destination: "/uz/blog/domen-com-bu-nima",
+        permanent: true,
+      },
+      {
+        source: "/blog/ip-manzil-nima",
+        destination: "/uz/blog/ip-manzil-nima",
+        permanent: true,
+      },
+      {
+        source: "/blog/ip-telefoniya-nima-va-u-qanday-ishlaydi",
+        destination: "/uz/blog/ip-telefoniya-nima-va-u-qanday-ishlaydi",
+        permanent: true,
+      },
+      {
+        source: "/blog/ip-telephony-what-is-it-and-how-does-it-work",
+        destination: "/en/blog/ip-telephony-what-is-it-and-how-does-it-work",
+        permanent: true,
+      },
+      {
+        source: "/blog/joomla-nima",
+        destination: "/uz/blog/joomla-nima",
+        permanent: true,
+      },
+      {
+        source: "/blog/markaziy-protsessor-tspu-cpu-nima",
+        destination: "/uz/blog/markaziy-protsessor-tspu-cpu-nima",
+        permanent: true,
+      },
+      {
+        source: "/blog/nima-xato-404",
+        destination: "/uz/blog/nima-xato-404",
+        permanent: true,
+      },
+      {
+        source: "/blog/root-huquqlari-nima",
+        destination: "/uz/blog/root-huquqlari-nima",
+        permanent: true,
+      },
+      {
+        source: "/blog/subdomenlar-nima-va-ular-nima-uchun-kerak",
+        destination: "/uz/blog/subdomenlar-nima-va-ular-nima-uchun-kerak",
+        permanent: true,
+      },
+      {
+        source: "/blog/vps-ni-xakerlikdan-qanday-himoya-qilish-kerak",
+        destination: "/uz/blog/vps-ni-xakerlikdan-qanday-himoya-qilish-kerak",
+        permanent: true,
+      },
+      {
+        source: "/blog/what-is-nginx",
+        destination: "/en/blog/what-is-nginx",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/chto-takoe-dns-server",
+        destination: "/blog/chto-takoe-dns-server",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/chto-takoe-name-server-ns",
+        destination: "/blog/chto-takoe-name-server-ns",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/chto-takoye-docker",
+        destination: "/blog/chto-takoye-docker",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/chto-takoye-error-404",
+        destination: "/blog/chto-takoye-error-404",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/chto-takoye-gitlab",
+        destination: "/blog/chto-takoye-gitlab",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/chto-takoye-ispmanager",
+        destination: "/blog/chto-takoye-ispmanager",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/chto-takoye-smtp",
+        destination: "/blog/chto-takoye-smtp",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/chto-takoye-wordpress",
+        destination: "/blog/chto-takoye-wordpress",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/docker-nima",
+        destination: "/uz/blog/docker-nima",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/gitlab-nima",
+        destination: "/uz/blog/gitlab-nima",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/kak-vybrat-vydelenniy-server",
+        destination: "/blog/kak-vybrat-vydelenniy-server",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/kak-zaregistrirovat-domen",
+        destination: "/blog/kak-zaregistrirovat-domen",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/mac-address-nima",
+        destination: "/uz/blog/mac-address-nima",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/protocol-sftp-chto-eto",
+        destination: "/blog/protocol-sftp-chto-eto",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/smtp-nima",
+        destination: "/uz/blog/smtp-nima",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/xost-nomi-nima",
+        destination: "/uz/blog/xost-nomi-nima",
+        permanent: true,
+      },
+      {
+        source: "/en/help/billing/restore",
+        destination: "/help/billing/restore",
+        permanent: true,
+      },
+      {
+        source: "/enundefined",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/help/billing/account/delete",
+        destination: "/help/billing/delete",
+        permanent: true,
+      },
+      {
+        source: "/undefined",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/chto-takoye-csr-i-kak-ego-sozdat",
+        destination: "/blog/chto-takoye-csr-i-kak-ego-sozdat",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/chto-takoye-gitlab",
+        destination: "/blog/chto-takoye-gitlab",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/chto-takoye-joomla",
+        destination: "/blog/chto-takoye-joomla",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/ip-telephony-what-is-it-and-how-does-it-work",
+        destination: "/en/blog/ip-telephony-what-is-it-and-how-does-it-work",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/kak-vybrat-server-dlya-khostinga-sayta",
+        destination: "/blog/kak-vybrat-server-dlya-khostinga-sayta",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/kak-vybrat-vydelenniy-server",
+        destination: "/blog/kak-vybrat-vydelenniy-server",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/what-is-apache-http-server",
+        destination: "/en/blog/what-is-apache-http-server",
+        permanent: true,
+      },
+      {
+        source: "/uzundefined",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
 };

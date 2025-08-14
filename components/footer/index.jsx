@@ -96,18 +96,18 @@ export default function Footer({ language }) {
         link: "#",
         img: <img src="/payments/payme.svg" />,
       },
-      {
-        link: "#",
-        img: <img className="oson" src="/payments/oson.png" />,
-      },
+      // {
+      //   link: "#",
+      //   img: <img className="oson" src="/payments/oson.png" />,
+      // },
       {
         link: "#",
         img: <img className="click" src="/payments/click.png" />,
       },
-      // {
-      //   link: "#",
-      //   img: <img className="upay" src="/payments/upay.svg" />,
-      // },
+      {
+        link: "#",
+        img: <img className="upay" src="/payments/upay.svg" />,
+      },
     ],
     payment2 = [
       {
@@ -196,6 +196,14 @@ export default function Footer({ language }) {
             ru: "Аренда сервера Windows 1C",
             uz: "Windows 1C serverlarini ijaraga olish",
             en: "Windows 1C server rental",
+          },
+        },
+        {
+          link: LINKS.COMMERCIAL,
+          title: {
+            ru: "Коммерческое предложение 2025",
+            uz: "Tijorat taklifi 2025",
+            en: "Commercial offer 2025",
           },
         },
       ],
