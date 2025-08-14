@@ -7,6 +7,7 @@ import WhyBlock from "@/components/whyBlock";
 import { serversIcon } from "shared/icons/serversIcon";
 import { tagIcon } from "shared/icons/tagIcon";
 import Reviews from "@/components/reviews";
+import SEO from "@/components/seo";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
@@ -71,6 +72,16 @@ const content = [
 
 export default function Reseller({ language }) {
   const langData = {
+		seo: {
+			ru: "Реселлер, партнерская программа от AIRNET в Ташкенте",
+			uz: "Toshkentdagi AIRNET kompaniyasidan sotuvchi, hamkorlik dasturi",
+			en: "Reseller, affiliate program from AIRNET in Tashkent",
+		},
+		desc: {
+			ru: "Реселлер, партнерская программа от AIRNET в Ташкенте",
+			uz: "Toshkentdagi AIRNET kompaniyasidan sotuvchi, hamkorlik dasturi",
+			en: "Reseller, affiliate program from AIRNET in Tashkent",
+		},
     headTitle: {
       ru: "Кто может стать реселлером?",
       uz: "Kim reseller bola oladi?",
@@ -117,6 +128,8 @@ export default function Reseller({ language }) {
   return (
     <>
       <div className={st.reseller}>
+      
+      <SEO title={langData.seo[language]} desc={langData.desc[language]} />
 
       {breadCrumbs && breadCrumbs.length ? (
       <>

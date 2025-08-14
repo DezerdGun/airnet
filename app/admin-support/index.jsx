@@ -8,6 +8,7 @@ import st from "./adminSupport.module.scss";
 import { questionIcon } from "shared/icons/questionIcon";
 import { notificationIcon } from "shared/icons/notificationIcon";
 import Reviews from "@/components/reviews";
+import SEO from "@/components/seo";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
@@ -113,6 +114,16 @@ const content = [
 
 export default function AdminSupport({ language }) {
   const langData = {
+		seo: {
+			ru: "Администрирование виртуальных серверов (VPS и VDS) в Узбекистане",
+			uz: "O'zbekistonda virtual serverlar (VPS va VDS) ma'muriyati",
+			en: "Administration of virtual servers (VPS and VDS) in Uzbekistan",
+		},
+		desc: {
+			ru: "Администрирование серверов VPS/VDS - ⚡от 100000 сум. ✔️Выделенный VPS-сервер в Узбекистане ✔️Тестовый период ✔️Установка ОС",
+			uz: "VPS/VDS serverlarini ma'muriyati - ⚡100 000 so'mdan. ✔️O'zbekistonda maxsus VPS server ✔️Sinov muddati ✔️OTni o'rnatish",
+			en: "Administration of VPS/VDS servers - ⚡from 100,000 sum. ✔️Dedicated VPS server in Uzbekistan ✔️Test period ✔️OS installation",
+		},
     title: {
       ru: "Администрирование и доп. услуги",
       uz: "Ma'muriyat va boshqalar xizmatlar",
@@ -373,6 +384,8 @@ export default function AdminSupport({ language }) {
 
   return (
     <div className={st.adminSupport}>
+      
+    <SEO title={langData.seo[language]} desc={langData.desc[language]} />
 
     {breadCrumbs && breadCrumbs.length ? (
     <>

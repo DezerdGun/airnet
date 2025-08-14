@@ -1,6 +1,7 @@
 import Container from "@/components/container";
 import { checkLang } from "@/utils/checkLang";
 import Link from "next/link";
+import SEO from "@/components/seo";
 import BreadCrumbs from "../components/seo/breadCrumbs"
 import PageBreadcrumb from "../components/seo/pageBreadCrumbs";
 
@@ -675,6 +676,16 @@ const Linker = ({ link, i, language }) => {
 
 const Sitemap = ({ language }) => {
   const langData = {
+		seo: {
+			ru: "Карта сайта AIRNET",
+			uz: "AIRNET sayt xaritasi",
+			en: "AIRNET Sitemap",
+		},
+		desc: {
+			ru: "Карта сайта AIRNET",
+			uz: "AIRNET sayt xaritasi",
+			en: "AIRNET Sitemap",
+		},
     headTitle: {
       ru: "Карта сайта",
       uz: "Sayt xaritasi",
@@ -697,6 +708,7 @@ const Sitemap = ({ language }) => {
     <>
     {breadCrumbs && breadCrumbs.length ? (
     <>
+      <SEO title={langData.seo[language]} desc={langData.desc[language]} />
       <BreadCrumbs data={breadCrumbs} language={language} />
       <PageBreadcrumb links={breadCrumbs} language={language} />
     </>

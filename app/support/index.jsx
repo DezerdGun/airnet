@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useIMask } from "react-imask";
 import st from "./support.module.scss";
 import Reviews from "@/components/reviews";
+import SEO from "@/components/seo";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
@@ -66,6 +67,16 @@ export default function Support({ language }) {
     }
   };
   const langData = {
+		seo: {
+			ru: "Круглосуточная техническая поддержка клиентов хостинга AIRNET в Ташкенте",
+			uz: "Toshkentda AIRNET hosting mijozlari uchun 24/7 texnik yordam",
+			en: "24/7 technical support for AIRNET hosting clients in Tashkent",
+		},
+		desc: {
+			ru: "Круглосуточная техническая поддержка клиентов осуществляется через тикет систему 24/7",
+			uz: "Mijozlarga 24/7 texnik yordam chipta tizimi orqali 24/7 taqdim etiladi",
+			en: "24/7 technical support for customers is provided through a ticket system 24/7",
+		},
     title: {
       ru: "Поддержка клиентов",
       uz: "Mijozlarni qo'llash",
@@ -429,6 +440,8 @@ export default function Support({ language }) {
   return (
     <>
       <div className={st.support}>
+            
+      <SEO title={langData.seo[language]} desc={langData.desc[language]} />
 
       {breadCrumbs && breadCrumbs.length ? (
       <>

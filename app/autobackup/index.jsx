@@ -12,6 +12,7 @@ import { cloudsIcon } from "shared/icons/cloudsIcon.js";
 import { BeautyNum, CalcBlock, CalcHeader, CalcInput, CalcSelect } from "@/components/calculator/index.jsx";
 import { useState } from "react";
 import Reviews from "@/components/reviews";
+import SEO from "@/components/seo";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
@@ -97,6 +98,16 @@ export default function Autobackup({ language }) {
   ];
 
   const langData = {
+		seo: {
+			ru: "Автоматическое резервное копирование в Узбекистане в TAS-IX",
+			uz: "O‘zbekistonda TAS-IX da avtomatik zahira",
+			en: "Automatic backup in Uzbekistan in TAS-IX",
+		},
+		desc: {
+			ru: "Ежедневное автоматическое резервное копирование виртуальных серверов и хостинга в Узбекистане",
+			uz: "O'zbekistonda virtual serverlar va xostinglarning kunlik avtomatik zahira nusxasi",
+			en: "Daily automatic backup of virtual servers and hosting in Uzbekistan",
+		},
     title: {
       ru: "Преимущества автобэкапов",
       uz: "Autobackupning avfzalliklari",
@@ -173,6 +184,8 @@ export default function Autobackup({ language }) {
 
   return (
     <div className={st.autobackup}>
+    
+    <SEO title={langData.seo[language]} desc={langData.desc[language]} />
 
     {breadCrumbs && breadCrumbs.length ? (
     <>

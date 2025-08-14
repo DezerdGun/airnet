@@ -1587,6 +1587,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: "/blog/ispmanager-nima",
+        destination: "/blog/chto-takoye-ispmanager",
+        permanent: true,
+      },
+      {
         source: "/en/vds/arenda-servera-game",
         destination: "/vds/arenda-servera-game",
         permanent: true,
@@ -2084,6 +2089,26 @@ module.exports = {
       {
         source: "/uzundefined",
         destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/kak-podklyuchit-sip-telefon-samostoyatelno",
+        destination: "/blog/kak-podklyuchit-sip-telefon-samostoyatelno",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/kak-podklyuchit-sip-telefon-samostoyatelno",
+        destination: "/blog/kak-podklyuchit-sip-telefon-samostoyatelno",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/ip-telefoniya-chto-eto-takoe-i-kak-ona-rabotaet",
+        destination: "/blog/ip-telefoniya-chto-eto-takoe-i-kak-ona-rabotaet",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/ip-telefoniya-chto-eto-takoe-i-kak-ona-rabotaet",
+        destination: "/blog/ip-telefoniya-chto-eto-takoe-i-kak-ona-rabotaet",
         permanent: true,
       },
     ];

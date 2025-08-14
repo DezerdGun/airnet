@@ -5,7 +5,6 @@ import FAQ from "@/components/faq";
 import Partners from "@/components/partners";
 import Howworks from "@/components/howworks";
 import { LINKS } from "@/components/requirements";
-import SEO from "@/components/seo";
 import TarifCard from "@/components/tarifCard";
 import TarifMaket from "@/components/tarifMaket";
 import WhyBlock from "@/components/whyBlock";
@@ -36,6 +35,7 @@ import ForSupport from "@/components/forSupport";
 import { forSupportVDSData } from "../vds";
 import ForDatacenter from "@/components/forDatacenter";
 import { forDatacenterVDSData } from "../vds";
+import SEO from "@/components/seo";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 

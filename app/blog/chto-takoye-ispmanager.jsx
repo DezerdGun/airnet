@@ -10,8 +10,8 @@ const data = {
 	},
 	title: {
 		ru: "Что такое ISPmanager и как им пользоваться?",
-		uz: "Что такое ISPmanager и как им пользоваться?",
-		en: "Что такое ISPmanager и как им пользоваться?",
+		uz: "ISPmanager nima va undan qanday foydalanish kerak?",
+		en: "What is ISPmanager and how to use it?",
 	},
 	desc: {
 		ru: "Разбираемся с тем, что представляет собой ISPmanager, для чего он нужен и как использовать его возможности для управления хостингом. Полезные советы для начинающих пользователей.",
