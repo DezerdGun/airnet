@@ -11,12 +11,12 @@ export default function Cookies({ language }) {
 			en: "By using our site, you agree to our use of cookies",
 		},
 		close: {
-			ru: "ЗАКРЫТЬ",
+			ru: "Закрыть",
 			uz: "YOPISH",
 			en: "CLOSE",
 		},
 		apply: {
-			ru: "ПРИНЯТЬ",
+			ru: "Принять",
 			uz: "QABUL QILISH",
 			en: "ACCEPT",
 		},
