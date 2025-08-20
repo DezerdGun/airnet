@@ -18,18 +18,18 @@ const calcSpeed = [
   //   price: 0,
   // },
   {
-    id: "unlim-100",
-    title: "Unlim 100M",
+    id: "unlim-250",
+    title: "Unlim 250",
     price: 0,
   },
   {
-    id: "unlim-200",
-    title: "Unlim 200M",
-    price: 5000000,
+    id: "unlim-350",
+    title: "Unlim 350",
+    price: 4000000,
   },
   {
-    id: "unlim-350",
-    title: "Unlim 350M",
+    id: "unlim-500",
+    title: "Unlim 500",
     price: 10000000,
   },
 ];
@@ -227,9 +227,9 @@ export default function Calculator({ language }) {
       en: "Processor and Memory",
     },
     title: {
-      ru: "Количество ядер процессора (от 2,6 до 3,4 ГГц)",
-      uz: "Protsessor yadrolari soni (2,6 - 3,4 GGZ gacha)",
-      en: "Number of processor cores (2,6 up to 3.4 GHz)",
+      ru: "Количество ядер процессора (от 2,6 до 3,5 ГГц)",
+      uz: "Protsessor yadrolari soni (2,6 - 3,5 GGZ gacha)",
+      en: "Number of processor cores (2,6 up to 3.5 GHz)",
     },
     yadro: {
       ru: "ядра",
@@ -545,7 +545,7 @@ export default function Calculator({ language }) {
               <div className="d-flex">
                 <CalcSelect title="SSD" isChecked={true} />
                 <div title="Под заказ">
-                  <CalcSelect title="NVME - СКОРО" isChecked={false} />
+                  <CalcSelect title="NVME - Под заказ" isChecked={false} />
                 </div>
               </div>
               <CalcHeader
