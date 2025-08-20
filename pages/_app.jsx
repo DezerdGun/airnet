@@ -112,7 +112,7 @@ function MyApp({ Component, pageProps, url }) {
         </noscript>
 
         {/* <!-- /Yandex.Metrika counter --> */}
-
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="Fu5ZI8/blKtMubhk03NIBQ" async></script>
         {/* ------------- Organization ------------- */}
 
         <script

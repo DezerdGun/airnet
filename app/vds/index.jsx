@@ -723,9 +723,9 @@ export default function VDS({ language }) {
       en: "Virtual server (VPS and VDS), rent in Uzbekistan",
     },
     desc: {
-      ru: "Аренда серверов VPS/VDS - ⚡от 150000 сум. Мгновенная активация ✔️Выделенный VPS-сервер в Узбекистане ✔️Тестовый период ✔️Установка ОС",
-      uz: "VPS/VDS serverlar ijarasi - ⚡150 000 so'mdan. Bir zumda faollashtirish ✔️O'zbekistonda maxsus VPS server ✔️Sinov muddati ✔️OTni o'rnatish",
-      en: "Rent of VPS/VDS servers - ⚡from 150,000 sum. Instant activation ✔️Dedicated VPS server in Uzbekistan ✔️Test period ✔️OS installation",
+      ru: "Аренда серверов VPS/VDS - ⚡от 200 000 сум. Мгновенная активация ✔️Выделенный VPS-сервер в Узбекистане ✔️Тестовый период ✔️Установка ОС",
+      uz: "VPS/VDS serverlar ijarasi - ⚡200 000 so'mdan. Bir zumda faollashtirish ✔️O'zbekistonda maxsus VPS server ✔️Sinov muddati ✔️OTni o'rnatish",
+      en: "Rent of VPS/VDS servers - ⚡from 200,000 sum. Instant activation ✔️Dedicated VPS server in Uzbekistan ✔️Test period ✔️OS installation",
     },
     whyBlockTitle: {
       ru: "Преимущества",

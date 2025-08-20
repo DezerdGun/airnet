@@ -572,9 +572,9 @@ export default function VDS({ language }) {
       en: "Renting a Linux server - virtual VPS server on Linux",
     },
     desc: {
-      ru: "Аренда сервера на базе linux (линукс) - ⚡от 150000 сум ✔️Бесплатно 1 выделенный IP-адрес ✔️Тестовый период ✔️Установка ОС",
-      uz: "Linux (Linux) asosidagi server ijarasi - ⚡150 000 so'mdan ✔️Bepul 1 ta ajratilgan IP manzil ✔️Sinov muddati ✔️OS o'rnatish",
-      en: "Rent a server based on linux (Linux) - ⚡from 150,000 sum ✔️Free 1 dedicated IP address ✔️Test period ✔️OS installation",
+      ru: "Аренда сервера на базе linux (линукс) - ⚡от 200 000 сум ✔️Бесплатно 1 выделенный IP-адрес ✔️Тестовый период ✔️Установка ОС",
+      uz: "Linux (Linux) asosidagi server ijarasi - ⚡200 000 so'mdan ✔️Bepul 1 ta ajratilgan IP manzil ✔️Sinov muddati ✔️OS o'rnatish",
+      en: "Rent a server based on linux (Linux) - ⚡from 200,000 sum ✔️Free 1 dedicated IP address ✔️Test period ✔️OS installation",
     },
     whyBlockTitle: {
       ru: "Преимущества",
