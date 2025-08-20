@@ -164,6 +164,7 @@ export const forContractVDSData = {
         uz: "Hujjatlarni pochta yoki EDI orqali hisobot berish",
         en: "Reporting documents by mail or via EDI",
       },
+      link: '/help/edo',
       img: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -183,6 +184,7 @@ export const forContractVDSData = {
         uz: "Biz elektron hujjat aylanishini qo'llab-quvvatlaymiz",
         en: "We support electronic document management",
       },
+      link: '/help/electronic-document',
       img: (
         <svg
           id="Layer_1"
@@ -202,6 +204,7 @@ export const forContractVDSData = {
         uz: "Taklif shartnomasi yoki individual kelishuv",
         en: "Offer agreement or individual agreement",
       },
+      link: '/help/offer',
       img: (
         <svg
           id="Layer_1"
@@ -221,6 +224,7 @@ export const forContractVDSData = {
         uz: "Naqd pulsiz to'lovlar",
         en: "Non-cash payments",
       },
+      link: '/help/non-cash',
       img: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -240,6 +244,7 @@ export const forContractVDSData = {
         uz: "xarid.uzex.uz birjasi orqali ishlash",
         en: "Work through the exchange xarid.uzex.uz",
       },
+      link: '/help/uzex',
       img: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -320,6 +325,7 @@ export const forSupportVDSData = {
         uz: "Video yordam",
         en: "Video reference",
       },
+      link: 'https://www.youtube.com/@airnetuz',
       img: (
         <svg
           id="Layer_1"

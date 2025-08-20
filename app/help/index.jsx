@@ -20,7 +20,48 @@ const data = [
             uz: "Xizmat ko'rsatish qoidalari va cheklovlar",
             en: "Rules for the provision of services and restrictions",
           },
-          link: "#",
+          children: [
+            {
+              title: {
+                ru: "Отчетные документы на почту или по ЭДО",
+                uz: "Hujjatlarni pochta yoki EDI orqali hisobot qilish",
+                en: "Reporting documents by mail or via EDI",
+              },
+              link: "#",
+            },
+            {
+              title: {
+                ru: "Поддерживаем электронный документооборот",
+                uz: "Biz elektron hujjat aylanishini qo'llab-quvvatlaymiz",
+                en: "We support electronic document management",
+              },
+              link: "#",
+            },
+            {
+              title: {
+                ru: "Договор оферты или индивидуальный договор",
+                uz: "Taklif shartnomasi yoki individual kelishuv",
+                en: "Offer agreement or individual agreement",
+              },
+              link: "#",
+            },
+            {
+              title: {
+                ru: "Безналичные платежи",
+                uz: "Naqd pulsiz to'lovlar",
+                en: "Non-cash payments",
+              },
+              link: "#",
+            },
+            {
+              title: {
+                ru: "Работа через биржу xarid.uzex.uz",
+                uz: "xarid.uzex.uz birjasi orqali ishlash",
+                en: "Work through the exchange xarid.uzex.uz",
+              },
+              link: "#",
+            },
+          ],
         },
       ],
     },

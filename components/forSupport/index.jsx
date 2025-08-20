@@ -15,7 +15,7 @@ export default function ForSupport({ data, language }) {
             {data.content.map((item) => (
               <li key={item.title}>
                 <span>
-                  <a href={item.link}>{item.img} {item.title[language]}</a>
+                  <a href={item.link} target="_blank" >{item.img} {item.title[language]}</a>
                 </span>{" "}
                 {item.children}
               </li>
