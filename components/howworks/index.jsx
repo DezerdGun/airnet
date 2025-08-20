@@ -55,7 +55,7 @@ export default function Howworks({ language }) {
           {content.map((item) => (
             <SwiperSlide key={item.title}>
               <div className={`${st.howworks__block} swiper-zoom-container`}>
-                <img width="100%" height="auto" src={item} />
+                <img width="100%" height="auto" src={item} alt="Screenshots Admin panel AIRNET" />
               </div>
             </SwiperSlide>
           ))}

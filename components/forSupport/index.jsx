@@ -6,7 +6,7 @@ export default function ForSupport({ data, language }) {
     <Container>
       <div className={st.forSupport}>
         <div className={st.forSupport__img}>
-          <img src={data.img} />
+          <img src={data.img} alt="Infographics img" />
         </div>
         <div className={st.forSupport__block}>
           <h2>{data.title[language]}</h2>

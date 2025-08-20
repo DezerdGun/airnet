@@ -20,7 +20,7 @@ export default function ForContract({ data, language }) {
           </ul>
         </div>
         <div className={st.forContract__img}>
-          <img src={data.img} />
+          <img src={data.img} alt="Infographics img" />
         </div>
       </div>
     </Container>

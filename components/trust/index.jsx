@@ -7,13 +7,13 @@ import st from "./trust.module.scss";
 
 const content = [
   "/trust/2025-1.png",
-  "/trust/tmz.png",
+  "/trust/tmz.webp",
   "/trust/ravnaqbank.png",
-  "/trust/2025-2.png",
+  "/trust/2025-2.webp",
   "/trust/cybernet.jpg",
-  "/trust/coca.jpg",
+  "/trust/coca.webp",
   // "/trust/FED.png",
-  "/trust/ipoteka.jpg",
+  "/trust/ipoteka.webp",
   "/trust/2025-3.png",
   "/trust/leader-school.jpg",
   "/trust/paynet.jpg",
@@ -25,15 +25,15 @@ const content = [
   "/trust/2025-5.png",
   "/trust/ttz.jpg",
   "/trust/universal-bank.jpg",
-  "/trust/uzb-abroad.jpg",
+  "/trust/uzb-abroad.webp",
   "/trust/2025-6.png",
   "/trust/yapona-mama.jpg",
   "/trust/reikardz.jpg",
   "/trust/lerna.jpg",
   // "/trust/PAYZE.jpg",
   // "/trust/paybox.png",
-  "/trust/PAYGINE.jpg",
-  "/trust/2025-7.png",
+  "/trust/PAYGINE.webp",
+  "/trust/2025-7.webp",
   "/trust/NADESK.png",
   // "/trust/UZDJTSU Nukus filiali.jpg",
   "/trust/terra.jpg",
@@ -60,6 +60,7 @@ export default function Trust({ language }) {
           slidesPerView={2}
           navigation
           loop={true}
+          lazy={true}
           speed={4000}
           autoplay={{
             delay: 0,
@@ -84,7 +85,7 @@ export default function Trust({ language }) {
           {content.map((item) => (
             <SwiperSlide key={item.title}>
               <div className={st.trust__block}>
-                <img width="130" height="auto" src={item} />
+                <img width="130" height="auto" src={item} alt="Trust Partners Logo" />
               </div>
             </SwiperSlide>
           ))}

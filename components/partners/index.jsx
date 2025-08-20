@@ -37,6 +37,7 @@ export default function Partners({ language }) {
           slidesPerView={2}
           navigation
           loop={true}
+          lazy={true}
           speed={4000}
           autoplay={{
             delay: 0,
@@ -61,7 +62,7 @@ export default function Partners({ language }) {
           {content.map((item) => (
             <SwiperSlide key={item.title}>
               <div className={st.partners__block}>
-                <img src={item} />
+                <img src={item} alt="Logo Partners" />
               </div>
             </SwiperSlide>
           ))}

@@ -94,7 +94,7 @@ export default function Footer({ language }) {
     payment = [
       {
         link: "#",
-        img: <img src="/payments/payme.svg" />,
+        img: <img src="/payments/payme.svg" alt="Payme Logo" />,
       },
       // {
       //   link: "#",
@@ -102,11 +102,11 @@ export default function Footer({ language }) {
       // },
       {
         link: "#",
-        img: <img className="click" src="/payments/click.png" />,
+        img: <img className="click" src="/payments/click.png" alt="Click Logo" />,
       },
       {
         link: "#",
-        img: <img className="upay" src="/payments/upay.svg" />,
+        img: <img className="upay" src="/payments/upay.svg" alt="Upay Logo" />,
       },
     ],
     payment2 = [
@@ -128,7 +128,7 @@ export default function Footer({ language }) {
       },
       {
         link: "#",
-        img: <img className="paynet" src="/payments/paynet.png" />,
+        img: <img className="paynet" src="/payments/paynet.png" alt="Paynet Logo" />,
       },
     ],
     vps_vds = {

@@ -41,7 +41,7 @@ export default function Hosting({ language }) {
 
   const langData = {
     seoTitle: {
-      ru: "Хостинг для сайта - купить виртуальный хостинг в Узбекистане, тарифы, цены",
+      ru: "Дешевый хостинг - купить виртуальный хостинг в Узбекистане, тарифы, цены",
       uz: "Veb-sayt hosting - O'zbekistonda virtual xosting sotib olish, tariflar, narxlar",
       en: "Website hosting - buy virtual hosting in Uzbekistan, tariffs, prices",
     },
