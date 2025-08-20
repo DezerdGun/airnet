@@ -988,7 +988,7 @@ export default function Home({ language }) {
               slidesPerView: 3,
             },
             500: {
-              slidesPerView: 2,
+              slidesPerView: 0,
             },
           }}
           className="tarifSwiper"
