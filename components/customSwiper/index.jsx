@@ -205,6 +205,7 @@ export default function CustomSwiper({ language }) {
 					<div
 						className={st.swiper__block}
 						style={{ background: `url('/happy6.webp') no-repeat` }}
+						fetchpriority='high'
 					>
 						<Container>
 							<div className={st.swiper__block__item}>
