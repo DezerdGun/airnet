@@ -20,7 +20,7 @@ $red: #f00;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  max-width: 820px;
+  max-width: 850px;
 
   &__block {
     display: flex;
@@ -31,7 +31,7 @@ $red: #f00;
     }
 
     button {
-      font-size: 14px;
+      font-size: 18px;
       border-radius: 5px;
       border: 1px solid #000;
       // border: none;
@@ -42,12 +42,12 @@ $red: #f00;
       background-color: #fff;
 
       &:first-child {
-        color: red;
+        // color: red;
         margin-left: 50px;
       }
 
       &:last-child {
-        color: #006a4d;
+        // color: #006a4d;
       }
     }
     &:first-child {

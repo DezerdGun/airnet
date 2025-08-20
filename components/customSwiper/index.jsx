@@ -105,29 +105,29 @@ export default function CustomSwiper({ language }) {
 			),
 			uz: (
 				<>
-					Поздравляем AIRNET.uz<br /> с 7-летием! 🎉
+					AIRNET.uz<br />ni 7 yilligi bilan tabriklaymiz! 🎉
 				</>
 			),
 			en: (
 				<>
-					Поздравляем AIRNET.uz<br /> с 7-летием! 🎉
+					Congratulations to AIRNET.uz<br /> on its 7th anniversary! 🎉
 				</>
 			),
 		},
 		slideText33: {
 			ru: (
 				<>
-					01.02.2025 наша компания празднует свой шестилетний юбилей,🎂✨ и мы хотели бы выразить огромную благодарность каждому из вас за вашу веру в нас и вашу лояльность. Благодаря вашей поддержке мы смогли достичь таких высот и стать ведущими провайдерами хостинг-услуг в Узбекистане.🚀
+					01.02.2025 наша компания празднует свой семилетний юбилей,🎂✨ и мы хотели бы выразить огромную благодарность каждому из вас за вашу веру в нас и вашу лояльность. Благодаря вашей поддержке мы смогли достичь таких высот и стать ведущими провайдерами хостинг-услуг в Узбекистане.🚀
 				</>
 			),
 			uz: (
 				<>
-					01.02.2025 наша компания празднует свой шестилетний юбилей,🎂✨ и мы хотели бы выразить огромную благодарность каждому из вас за вашу веру в нас и вашу лояльность. Благодаря вашей поддержке мы смогли достичь таких высот и стать ведущими провайдерами хостинг-услуг в Узбекистане.🚀
+					01.02.2025 kompaniyamiz yetti yilligini nishonlamoqda,🎂✨ va har biringizga bizga bo'lgan ishonchingiz va sodiqligingiz uchun chuqur minnatdorchiligimizni bildiramiz. Sizning qo'llab-quvvatlashingiz tufayli biz shunday cho'qqilarni zabt etishga muvaffaq bo'ldik va O'zbekistondagi yetakchi hosting provayderiga aylandik.🚀
 				</>
 			),
 			en: (
 				<>
-					01.02.2025 наша компания празднует свой шестилетний юбилей,🎂✨ и мы хотели бы выразить огромную благодарность каждому из вас за вашу веру в нас и вашу лояльность. Благодаря вашей поддержке мы смогли достичь таких высот и стать ведущими провайдерами хостинг-услуг в Узбекистане.🚀
+					01.02.2025 our company celebrates its seventh anniversary,🎂✨ and we would like to express our deep gratitude to each of you for your faith in us and your loyalty. Thanks to your support, we were able to reach such heights and become the leading hosting service providers in Uzbekistan.🚀
 				</>
 			),
 		},

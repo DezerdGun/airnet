@@ -548,38 +548,40 @@ export default function Footer({ language }) {
                   ))}
                 </ul>
               </li>
-              <div className={st.footer__block__nav__ul__div}>
-                <li className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__div__clients}`}>
-                  <span>{clients.title[language]}</span>
-                  <ul>
-                    {clients.children.map((i) => (
-                      <li key={i.link}>
-                        {i.blank ? (
-                          <a target="_blank" href={i.link}>
-                            {i.title[language]}
-                          </a>
-                        ) : (
+              <li className={st.footer__block__nav__ul__div}>
+                <ul>
+                  <li className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__div__clients}`}>
+                    <span>{clients.title[language]}</span>
+                    <ul>
+                      {clients.children.map((i) => (
+                        <li key={i.link}>
+                          {i.blank ? (
+                            <a target="_blank" href={i.link}>
+                              {i.title[language]}
+                            </a>
+                          ) : (
+                            <Link href={checkLang(language) + i.link}>
+                              <a>{i.title[language]}</a>
+                            </Link>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                  <li className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__div__partners}`}>
+                    <span>{partners.title[language]}</span>
+                    <ul>
+                      {partners.children.map((i) => (
+                        <li key={i.link}>
                           <Link href={checkLang(language) + i.link}>
                             <a>{i.title[language]}</a>
                           </Link>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-                <li className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__div__partners}`}>
-                  <span>{partners.title[language]}</span>
-                  <ul>
-                    {partners.children.map((i) => (
-                      <li key={i.link}>
-                        <Link href={checkLang(language) + i.link}>
-                          <a>{i.title[language]}</a>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                </ul>
+              </li>
               <li className={`${st.footer__block__nav__ul__li} ${st.footer__block__nav__ul__li__help}`}>
                 <span>{help.title[language]}</span>
                 <ul>
