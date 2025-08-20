@@ -145,10 +145,10 @@ function MyApp({ Component, pageProps, url }) {
             height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         }}
       ></noscript>
-      <link
+      {/* <link
         href="/fonts/css2.css?family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet"
-      />
+      /> */}
       <Header language={language} />
       <div className="app">
         <Component {...pageProps} language={language} />
