@@ -108,7 +108,7 @@ export default function TarifCard2({ index, tarif, show, setShow, language }) {
 					<td>TAS-IX</td>
 				</tr>
 				<tr>
-					<th>100 {langData.speed[language]}</th>
+					<th>250 {langData.speed[language]}</th>
 					<th>1 {langData.gigSpeed[language]}</th>
 				</tr>
 			</table>

@@ -2111,6 +2111,96 @@ module.exports = {
         destination: "/blog/ip-telefoniya-chto-eto-takoe-i-kak-ona-rabotaet",
         permanent: true,
       },
+      {
+        source: "/en/blog/chto-takoe-tas-ix",
+        destination: "/blog/chto-takoe-tas-ix",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/chto-takoe-tas-ix",
+        destination: "/blog/chto-takoe-tas-ix",
+        permanent: true,
+      },
+      {
+        source: "/blog/what-is-a-tas-ix",
+        destination: "/en/blog/what-is-a-tas-ix",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/what-is-a-tas-ix",
+        destination: "/en/blog/what-is-a-tas-ix",
+        permanent: true,
+      },
+      {
+        source: "/blog/tas-ix-nima-bu",
+        destination: "/uz/blog/tas-ix-nima-bu",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/tas-ix-nima-bu",
+        destination: "/uz/blog/tas-ix-nima-bu",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/nastroyka-ubuntu",
+        destination: "/blog/nastroyka-ubuntu",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/nastroyka-ubuntu",
+        destination: "/blog/nastroyka-ubuntu",
+        permanent: true,
+      },
+      {
+        source: "/blog/ubuntu-setup",
+        destination: "/en/blog/ubuntu-setup",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/ubuntu-setup",
+        destination: "/en/blog/ubuntu-setup",
+        permanent: true,
+      },
+      {
+        source: "/blog/ubuntu-sozlash",
+        destination: "/uz/blog/ubuntu-sozlash",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/ubuntu-sozlash",
+        destination: "/uz/blog/ubuntu-sozlash",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/vibrat-hosting-2025",
+        destination: "/blog/vibrat-hosting-2025",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/vibrat-hosting-2025",
+        destination: "/blog/vibrat-hosting-2025",
+        permanent: true,
+      },
+      {
+        source: "/blog/choose-hosting-2025",
+        destination: "/en/blog/choose-hosting-2025",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/choose-hosting-2025",
+        destination: "/en/blog/choose-hosting-2025",
+        permanent: true,
+      },
+      {
+        source: "/blog/hosting-2025",
+        destination: "/uz/blog/hosting-2025",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/hosting-2025",
+        destination: "/uz/blog/hosting-2025",
+        permanent: true,
+      },
     ];
   },
 };

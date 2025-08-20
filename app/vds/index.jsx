@@ -838,25 +838,25 @@ export default function VDS({ language }) {
                 <td>Бесплатно</td>
               </tr> */}
               <tr>
-                <td>Unlim 100M</td>
-                <td>100 мбит/с</td>
+                <td>Unlim 250M</td>
+                <td>250 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
                 <td>Бесплатно</td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td>Unlim 200M</td>
                 <td>200 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
                 <td>2 500 000 сум/мес.</td>
-              </tr>
+              </tr> */}
               <tr>
                 <td>Unlim 350M</td>
                 <td>350 мбит/с</td>
                 <td>1 Гбит/с</td>
                 <td>Без ограничений</td>
-                <td>5 000 000 сум/мес.</td>
+                <td>4 000 000 сум/мес.</td>
               </tr>
             </tbody>
           </table>
@@ -876,25 +876,25 @@ export default function VDS({ language }) {
             </thead>
             <tbody>
               <tr>
-                <td>Unlim 100M</td>
-                <td>100 MB/s</td>
+                <td>Unlim 250M</td>
+                <td>250 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
                 <td>Tekin</td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td>Unlim 200M</td>
                 <td>200 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
                 <td>2 500 000 so'm/oy.</td>
-              </tr>
+              </tr> */}
               <tr>
                 <td>Unlim 350M</td>
                 <td>350 MB/s</td>
                 <td>1 Gbps</td>
                 <td>Cheksiz</td>
-                <td>5 000 000 so'm/oy.</td>
+                <td>4 000 000 so'm/oy.</td>
               </tr>
             </tbody>
           </table>
@@ -914,25 +914,25 @@ export default function VDS({ language }) {
             </thead>
             <tbody>
               <tr>
-                <td>Unlim 100M</td>
-                <td>100 Mbps</td>
+                <td>Unlim 250M</td>
+                <td>250 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
                 <td>Free</td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td>Unlim 200M</td>
                 <td>200 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
                 <td>2 500 000 sum/mon.</td>
-              </tr>
+              </tr> */}
               <tr>
                 <td>Unlim 350M</td>
                 <td>350 Mbps</td>
                 <td>1 Gbps</td>
                 <td>Unlimited</td>
-                <td>5 000 000 sum/mon.</td>
+                <td>4 000 000 sum/mon.</td>
               </tr>
             </tbody>
           </table>
@@ -1437,19 +1437,19 @@ export default function VDS({ language }) {
         ru: (
           <p>
             Нет ограничений по входящему и исходящему объёму данных на всех
-            тарифных планах с каналом от 100 Мбит/с.
+            тарифных планах с каналом от 250 Мбит/с.
           </p>
         ),
         uz: (
           <p>
-            100 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi
+            250 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi
             va chiquvchi maʼlumotlar hajmiga cheklovlar yoʻq.
           </p>
         ),
         en: (
           <p>
             There are no restrictions on incoming and outgoing data volume on
-            all tariff plans with a channel of 100 Mbps or more.
+            all tariff plans with a channel of 250 Mbps or more.
           </p>
         ),
       },
@@ -1486,7 +1486,7 @@ export default function VDS({ language }) {
       cpu: 6,
       ram: 10,
       ssd: 150,
-      net: 150,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
     },
     {
@@ -1518,7 +1518,7 @@ export default function VDS({ language }) {
       cpu: 6,
       ram: 12,
       ssd: 200,
-      net: 150,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
     },
     {
@@ -1549,7 +1549,7 @@ export default function VDS({ language }) {
       cpu: 8,
       ram: 16,
       ssd: 250,
-      net: 150,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
     },
     {
@@ -1580,7 +1580,7 @@ export default function VDS({ language }) {
       cpu: 8,
       ram: 32,
       ssd: 300,
-      net: 150,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=53",
     },
   ];
@@ -1614,7 +1614,7 @@ export default function VDS({ language }) {
       cpu: 12,
       ram: 48,
       ssd: 500,
-      net: 200,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=61",
     },
     {
@@ -1645,7 +1645,7 @@ export default function VDS({ language }) {
       cpu: 12,
       ram: 56,
       ssd: 500,
-      net: 200,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=117",
     },
     {
@@ -1676,7 +1676,7 @@ export default function VDS({ language }) {
       cpu: 16,
       ram: 64,
       ssd: 500,
-      net: 200,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=62",
     },
     {
@@ -1707,7 +1707,7 @@ export default function VDS({ language }) {
       cpu: 22,
       ram: 128,
       ssd: 1000,
-      net: 200,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=112",
     },
   ];
@@ -1741,7 +1741,7 @@ export default function VDS({ language }) {
     //   cpu: 2,
     //   ram: 2,
     //   ssd: 25,
-    //   net: 100,
+    //   net: 250,
     //   os: "Linux",
     //   link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=13",
     // },
@@ -1773,7 +1773,7 @@ export default function VDS({ language }) {
       cpu: 2,
       ram: 4,
       ssd: 50,
-      net: 100,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14",
     },
     {
@@ -1804,7 +1804,7 @@ export default function VDS({ language }) {
       cpu: 4,
       ram: 4,
       ssd: 75,
-      net: 100,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=15",
     },
     {
@@ -1836,7 +1836,7 @@ export default function VDS({ language }) {
       cpu: 4,
       ram: 6,
       ssd: 100,
-      net: 100,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16",
     },
     {
@@ -1867,7 +1867,7 @@ export default function VDS({ language }) {
       cpu: 4,
       ram: 8,
       ssd: 100,
-      net: 100,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=49",
     },
   ];

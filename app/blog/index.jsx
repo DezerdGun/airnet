@@ -10,6 +10,117 @@ import ProductDomain from "../../components/seo/productdomain";
 
 export const blog = [
 	{
+		img: "/blog/ecommerce.jpg",
+		link: {
+			ru: "/blog/vibrat-hosting-2025",
+			uz: "/blog/hosting-2025",
+			en: "/blog/choose-hosting-2025",
+		},
+		date: "19.08.2025",
+		title: {
+			ru: "Как выбрать хостинг для интернет-магазина в 2025 году",
+			uz: "2025 yilda onlayn-do'kon uchun hostingni qanday tanlash mumkin",
+			en: "How to Choose Hosting for an Online Store in 2025",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+						Производительность, безопасность, TAS-IX и поддержка для eCommerce в Узбекистане.
+					</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+						Ishlash, xavfsizlik, TAS-IX va O‘zbekistonda elektron tijoratni qo‘llab-quvvatlash.
+					</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+						Performance, Security, TAS-IX and Support for eCommerce in Uzbekistan.
+					</p>
+				</>
+			),
+		},
+	},
+	{
+		img: "/blog/ubuntu.jpg",
+		link: {
+			ru: "/blog/nastroyka-ubuntu",
+			uz: "/blog/ubuntu-sozlash",
+			en: "/blog/ubuntu-setup",
+		},
+		date: "19.08.2025",
+		title: {
+			ru: "Пошаговая настройка VPS на Ubuntu 22.04 для сайта",
+			uz: "Veb-sayt uchun Ubuntu 22.04 da VPS-ni bosqichma-bosqich sozlash",
+			en: "Step-by-step setup of VPS on Ubuntu 22.04 for a website",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+						Ubuntu 22.04: пошаговое руководство с командами, настройкой домена и SSL.
+					</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+						Ubuntu 22.04: Buyruqlar, domenni sozlash va SSL bilan bosqichma-bosqich qo'llanma.
+					</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+						Ubuntu 22.04: Step-by-step guide with commands, domain setup, and SSL.
+					</p>
+				</>
+			),
+		},
+	},
+	{
+		img: "/blog/tas-ix.jpg",
+		link: {
+			ru: "/blog/chto-takoe-tas-ix",
+			uz: "/blog/tas-ix-nima-bu",
+			en: "/blog/what-is-a-tas-ix",
+		},
+		date: "19.08.2025",
+		title: {
+			ru: "Что такое TAS-IX и почему он важен для хостинга",
+			uz: "TAS-IX nima va u nima uchun hosting uchun muhim",
+			en: "What is TAS-IX and why is it important for hosting",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+						Объяснение принципов работы TAS-IX и его преимущества
+					</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+						TAS-IX ning ishlash tamoyillari va uning afzalliklarini tushuntirish
+					</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+						Explanation of the working principles of TAS-IX and its advantages
+					</p>
+				</>
+			),
+		},
+	},
+	{
 		img: "/blog/office.png",
 		link: {
 			ru: "/blog/nastroika-ip-telefonii-v-ofise-poshagovaya-instruktsiya",

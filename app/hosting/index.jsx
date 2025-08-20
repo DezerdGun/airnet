@@ -46,7 +46,7 @@ export default function Hosting({ language }) {
       en: "Website hosting - buy virtual hosting in Uzbekistan, tariffs, prices",
     },
     seoDesc: {
-      ru: "Купить виртуальный хостинг для сайта - ⚡от 10000 сум. Дата центр в Ташкенте. Скорость в TAS-IX — 1 Gbps. ✔️ Мгновенная активация ✔️Безлимитный трафик",
+      ru: "Купить виртуальный хостинг для сайта - ⚡от 10 000 сум. Дата центр в Ташкенте. Скорость в TAS-IX — 1 Gbps. ✔️ Мгновенная активация ✔️Безлимитный трафик",
       uz: "Veb-sayt uchun virtual xosting sotib oling - ⚡10 000 so'mdan. Toshkentdagi Data-markaz. TAS-IX da tezlik 1 Gbit/s. ✔️ Tezkor faollashtirish ✔️ Cheksiz trafik",
       en: "Buy virtual hosting for a website - ⚡from 10,000 sum. Data center in Tashkent. Speed ​​in TAS-IX is 1 Gbps. ✔️ Instant activation ✔️ Unlimited traffic",
     },
@@ -663,17 +663,17 @@ export default function Hosting({ language }) {
         title: {
           ru: (
             <p>
-              <strong>Скорость в Интернет</strong> — 100 Mbps
+              <strong>Скорость в Интернет</strong> — 250 Mbps
             </p>
           ),
           uz: (
             <p>
-              <strong>Internet tezligi</strong> — 100 Mbit/s
+              <strong>Internet tezligi</strong> — 250 Mbit/s
             </p>
           ),
           en: (
             <p>
-              <strong>Internet speed</strong> — 100 Mbps
+              <strong>Internet speed</strong> — 250 Mbps
             </p>
           ),
         },
