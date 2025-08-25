@@ -27,7 +27,7 @@ const data = [
                 uz: "Hujjatlarni pochta yoki EDI orqali hisobot qilish",
                 en: "Reporting documents by mail or via EDI",
               },
-              link: "#",
+              link: "/help/edo",
             },
             {
               title: {
@@ -35,7 +35,7 @@ const data = [
                 uz: "Biz elektron hujjat aylanishini qo'llab-quvvatlaymiz",
                 en: "We support electronic document management",
               },
-              link: "#",
+              link: "/help/electronic-document",
             },
             {
               title: {
@@ -43,7 +43,7 @@ const data = [
                 uz: "Taklif shartnomasi yoki individual kelishuv",
                 en: "Offer agreement or individual agreement",
               },
-              link: "#",
+              link: "/help/offer",
             },
             {
               title: {
@@ -51,7 +51,7 @@ const data = [
                 uz: "Naqd pulsiz to'lovlar",
                 en: "Non-cash payments",
               },
-              link: "#",
+              link: "/help/non-cash",
             },
             {
               title: {
@@ -59,7 +59,7 @@ const data = [
                 uz: "xarid.uzex.uz birjasi orqali ishlash",
                 en: "Work through the exchange xarid.uzex.uz",
               },
-              link: "#",
+              link: "/help/xarid",
             },
           ],
         },

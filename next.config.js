@@ -2436,6 +2436,11 @@ module.exports = {
         destination: "/blog/kak-zaschitit-vps-ot-vzloma",
         permanent: true,
       },
+      {
+        source: "/help/uzex",
+        destination: "/help/xarid",
+        permanent: true,
+      },
     ];
   },
 };

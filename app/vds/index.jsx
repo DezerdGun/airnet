@@ -244,7 +244,7 @@ export const forContractVDSData = {
         uz: "xarid.uzex.uz birjasi orqali ishlash",
         en: "Work through the exchange xarid.uzex.uz",
       },
-      link: '/help/uzex',
+      link: '/help/xarid',
       img: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
