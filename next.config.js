@@ -2201,6 +2201,236 @@ module.exports = {
         destination: "/uz/blog/hosting-2025",
         permanent: true,
       },
+      {
+        source: "/uz/blog/kak-podklyuchit-ip-telefon-instruktsiya-dlya-novichkov",
+        destination: "/blog/kak-podklyuchit-ip-telefon-instruktsiya-dlya-novichkov",
+        permanent: true,
+      },
+      {
+        source: "/blog/how-to-register-a-domain",
+        destination: "/en/blog/how-to-register-a-domain",
+        permanent: true,
+      },
+      {
+        source: "/blog/what-is-a-host",
+        destination: "/en/blog/what-is-a-host",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/chto-takoye-host",
+        destination: "/blog/chto-takoye-host",
+        permanent: true,
+      },
+      {
+        source: "/blog/what-is-wordpress",
+        destination: "/en/blog/what-is-wordpress",
+        permanent: true,
+      },
+      {
+        source: "/blog/error-403-forbidden-what-does-this-mean",
+        destination: "/en/blog/error-403-forbidden-what-does-this-mean",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/ipv4-what-is-this",
+        destination: "/en/blog/ipv4-what-is-this",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/chto-takoe-mac-address",
+        destination: "/blog/chto-takoe-mac-address",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/chem-otlichaetsya-sip-telefoniya-ot-ip ",
+        destination: "/blog/chem-otlichaetsya-sip-telefoniya-ot-ip ",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/wordpress-nima",
+        destination: "/uz/blog/wordpress-nima",
+        permanent: true,
+      },
+      {
+        source: "/blog/ssh-keys-bu-nima",
+        destination: "/uz/blog/ssh-keys-bu-nima",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/how-to-choose-a-server-for-website-hosting",
+        destination: "/en/blog/how-to-choose-a-server-for-website-hosting",
+        permanent: true,
+      },
+      {
+        source: "/blog/page/undefined",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/chto-takoe-name-server-ns",
+        destination: "/blog/chto-takoe-name-server-ns",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/sip-telefoniya-chto-eto-takoe",
+        destination: "/blog/sip-telefoniya-chto-eto-takoe",
+        permanent: true,
+      },
+      {
+        source: "/blog/what-is-a-host-name",
+        destination: "/en/blog/what-is-a-host-name",
+        permanent: true,
+      },
+      {
+        source: "/blog/what-is-root-rights",
+        destination: "/en/blog/what-is-root-rights",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/what-are-subdomains-and-why-are-they-needed",
+        destination: "/en/blog/what-are-subdomains-and-why-are-they-needed",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/what-is-a-host",
+        destination: "/en/blog/what-is-a-host",
+        permanent: true,
+      },
+      {
+        source: "/blog/what-is-a-web-interface",
+        destination: "/en/blog/what-is-a-web-interface",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/csr-nima-va-uni-qanday-yaratish-kerak",
+        destination: "/uz/blog/csr-nima-va-uni-qanday-yaratish-kerak",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/chto-takoe-imya-hosta",
+        destination: "/blog/chto-takoe-imya-hosta",
+        permanent: true,
+      },
+      {
+        source: "/blog/veb-interfeys-nima",
+        destination: "/uz/blog/veb-interfeys-nima",
+        permanent: true,
+      },
+      {
+        source: "/blog/domain-com-what-is-this",
+        destination: "/en/blog/domain-com-what-is-this",
+        permanent: true,
+      },
+      {
+        source: "/blog/protocol-sftp-what-is-this",
+        destination: "/en/blog/protocol-sftp-what-is-this",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/sip-telefoniya-chto-eto-takoe",
+        destination: "/blog/sip-telefoniya-chto-eto-takoe",
+        permanent: true,
+      },
+      {
+        source: "/blog/xost-nomi-nima",
+        destination: "/uz/blog/xost-nomi-nima",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/voip-chto-eto-takoe-i-kak-rabotaet",
+        destination: "/blog/voip-chto-eto-takoe-i-kak-rabotaet",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/what-is-name-server-ns",
+        destination: "/en/blog/what-is-name-server-ns",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/vps-server-nima",
+        destination: "/uz/blog/vps-server-nima",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/voip-what-is-it-and-how-does-it-work",
+        destination: "/en/blog/voip-what-is-it-and-how-does-it-work",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/what-is-a-central-processor-tspu-cpu",
+        destination: "/en/blog/what-is-a-central-processor-tspu-cpu",
+        permanent: true,
+      },
+      {
+        source: "/blog/vps-server-nima",
+        destination: "/uz/blog/vps-server-nima",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/server-nomi-nima",
+        destination: "/uz/blog/server-nomi-nima",
+        permanent: true,
+      },
+      {
+        source: "/blog/ipv4-what-is-this",
+        destination: "/en/blog/ipv4-what-is-this",
+        permanent: true,
+      },
+      {
+        source: "/blog/what-is-a-central-processor-tspu-cpu",
+        destination: "/en/blog/what-is-a-central-processor-tspu-cpu",
+        permanent: true,
+      },
+      {
+        source: "/blog/smtp-nima",
+        destination: "/uz/blog/smtp-nima",
+        permanent: true,
+      },
+      {
+        source: "/blog/ssh-keys-what-is-this",
+        destination: "/en/blog/ssh-keys-what-is-this",
+        permanent: true,
+      },
+      {
+        source: "/blog/ssh-keys-what-is-this",
+        destination: "/en/blog/ssh-keys-what-is-this",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/nima-rdp",
+        destination: "/uz/blog/nima-rdp",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/error-403-forbidden-what-does-this-mean",
+        destination: "/en/blog/error-403-forbidden-what-does-this-mean",
+        permanent: true,
+      },
+      {
+        source: "/blog/what-are-subdomains-and-why-are-they-needed",
+        destination: "/en/blog/what-are-subdomains-and-why-are-they-needed",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/what-is-error-404",
+        destination: "/en/blog/what-is-error-404",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/ssh-keys-what-is-this",
+        destination: "/en/blog/ssh-keys-what-is-this",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/sip-telefoniya-va-ip-ortasidagi-farq-nima",
+        destination: "/uz/blog/sip-telefoniya-va-ip-ortasidagi-farq-nima",
+        permanent: true,
+      },
+      {
+        source: "/blog/voip-what-is-it-and-how-does-it-work",
+        destination: "/en/blog/voip-what-is-it-and-how-does-it-work",
+        permanent: true,
+      },
     ];
   },
 };
