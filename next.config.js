@@ -2242,8 +2242,8 @@ module.exports = {
         permanent: true,
       },
       {
-        source: "/uz/blog/chem-otlichaetsya-sip-telefoniya-ot-ip ",
-        destination: "/blog/chem-otlichaetsya-sip-telefoniya-ot-ip ",
+        source: "/uz/blog/chem-otlichaetsya-sip-telefoniya-ot-ip",
+        destination: "/blog/chem-otlichaetsya-sip-telefoniya-ot-ip",
         permanent: true,
       },
       {
