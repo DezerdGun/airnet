@@ -2431,6 +2431,11 @@ module.exports = {
         destination: "/en/blog/voip-what-is-it-and-how-does-it-work",
         permanent: true,
       },
+      {
+        source: "/uz/blog/kak-zaschitit-vps-ot-vzloma",
+        destination: "/blog/kak-zaschitit-vps-ot-vzloma",
+        permanent: true,
+      },
     ];
   },
 };
