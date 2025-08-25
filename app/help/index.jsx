@@ -71,11 +71,7 @@ const data = [
         uz: "SSL-sertifikatlari",
         en: "SSL certificates",
       },
-      link: {
-        ru: "/help/ssl",
-        uz: "/uz/help/ssl",
-        en: "/en/help/ssl",
-      },
+      link: "/help/ssl",
       children: [
         {
           id: "ssl",
