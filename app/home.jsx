@@ -221,7 +221,7 @@ export default function Home({ language }) {
               </p>
 
               <p>
-                Для <strong>SSD</strong> [требуется перезагрузка]
+                Для <strong>SSD</strong> [без перезагрузки]
               </p>
 
               <p>
@@ -238,7 +238,7 @@ export default function Home({ language }) {
               </p>
 
               <p>
-                <strong>SSD</strong> uchun [qayta yuklash kerak]
+                <strong>SSD</strong> uchun [qayta yuklanmaydi]
               </p>
 
               <p>
@@ -255,7 +255,7 @@ export default function Home({ language }) {
               </p>
 
               <p>
-                For <strong>SSD</strong> [reboot required]
+                For <strong>SSD</strong> [no reboot]
               </p>
 
               <p>

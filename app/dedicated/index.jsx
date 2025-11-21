@@ -145,9 +145,9 @@ export default function Dedicated({ language }) {
       },
       {
         title: {
-          ru: "Все сервера подключаются к порту 10 Gbps, интернет на скорости до 100 Mbit/s без ограничений и 1 Gbps в зоне TAS-IX.",
-          uz: "Barcha serverlar 10 Gbit/s portga ulangan, internet yoqilgan cheklovsiz 100 Mbit/s gacha tezlik va TAS-IX zonasida 1 Gbit/s gacha.",
-          en: "All servers are connected to a 10 Gbps port, Internet at speeds up to 100 Mbit/s without restrictions and 1 Gbps in the TAS-IX zone.",
+          ru: "Все сервера подключаются к порту 10 Gbps, интернет на скорости до 250 Mbit/s без ограничений и 1 Gbps в зоне TAS-IX.",
+          uz: "Barcha serverlar 10 Gbit/s portga ulangan, internet yoqilgan cheklovsiz 250 Mbit/s gacha tezlik va TAS-IX zonasida 1 Gbit/s gacha.",
+          en: "All servers are connected to a 10 Gbps port, Internet at speeds up to 250 Mbit/s without restrictions and 1 Gbps in the TAS-IX zone.",
         },
         img: checkedCircle,
       },
@@ -295,7 +295,7 @@ export default function Dedicated({ language }) {
           </li>
           <li>
             <span>{checkedCircle}</span>Все сервера подключаются к порту 10
-            Gbps, интернет на скорости до 100 Mbit/s без ограничений и 1 Gbps в
+            Gbps, интернет на скорости до 250 Mbit/s без ограничений и 1 Gbps в
             зоне TAS-IX.
           </li>
           <li>
@@ -320,7 +320,7 @@ export default function Dedicated({ language }) {
           </li>
           <li>
             <span>{checkedCircle}</span>Barcha serverlar 10 Gbit/s portga
-            ulangan, internet yoqilgan cheklovsiz 100 Mbit/s gacha tezlik va
+            ulangan, internet yoqilgan cheklovsiz 250 Mbit/s gacha tezlik va
             TAS-IX zonasida 1 Gbit/s gacha.
           </li>
           <li>
@@ -345,7 +345,7 @@ export default function Dedicated({ language }) {
           </li>
           <li>
             <span>{checkedCircle}</span>All servers are connected to a 10 Gbps
-            port, Internet at speeds up to 100 Mbit/s without restrictions and 1
+            port, Internet at speeds up to 250 Mbit/s without restrictions and 1
             Gbps in the TAS-IX zone.
           </li>
           <li>
@@ -1205,7 +1205,7 @@ export default function Dedicated({ language }) {
 											<td>{item.proc}</td>
 											<td>{item.ram} Гб</td>
 											<td>{item.ssd}</td>
-											<td>100 Mbit/s., неограниченный</td>
+											<td>250 Mbit/s., неограниченный</td>
 											<td>Ташкент</td>
 											<td>Ожидается</td>
 										</tr>
@@ -1234,7 +1234,7 @@ export default function Dedicated({ language }) {
                       {langData.gb[language]}
                     </td>
                     <td className="text-center">{item.ssd[language]}</td>
-                    {/* <td>100 Mbit/s., неограниченный</td> */}
+                    {/* <td>250 Mbit/s., неограниченный</td> */}
                     {/* <td>Ташкент</td> */}
                     <td className="text-center">
                       <div className="def-price">

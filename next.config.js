@@ -2441,6 +2441,36 @@ module.exports = {
         destination: "/help/xarid",
         permanent: true,
       },
+      {
+        source: "/en/blog/chto-takoye-localhost",
+        destination: "/blog/chto-takoye-localhost",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/chto-takoye-localhost",
+        destination: "/blog/chto-takoye-localhost",
+        permanent: true,
+      },
+      {
+        source: "/blog/what-is-localhost",
+        destination: "/en/blog/what-is-localhost",
+        permanent: true,
+      },
+      {
+        source: "/uz/blog/what-is-localhost",
+        destination: "/en/blog/what-is-localhost",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/localhost-nima",
+        destination: "/uz/blog/localhost-nima",
+        permanent: true,
+      },
+      {
+        source: "/blog/localhost-nima",
+        destination: "/uz/blog/localhost-nima",
+        permanent: true,
+      },
     ];
   },
 };

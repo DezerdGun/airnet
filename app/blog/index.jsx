@@ -10,6 +10,80 @@ import ProductDomain from "../../components/seo/productdomain";
 
 export const blog = [
 	{
+		img: "/blog/localhost.png",
+		link: {
+			ru: "/blog/chto-takoye-localhost",
+			uz: "/blog/localhost-nima",
+			en: "/blog/what-is-localhost",
+		},
+		date: "21.11.2025",
+		title: {
+			ru: "Что такое Localhost?",
+			uz: "Localhost nima?",
+			en: "What is Localhost?",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+						Что такое Localhost: простыми словами для будущих разработчиков
+					</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+						Localhost nima: Kelajakdagi dasturchilar uchun oddiy qo'llanma
+					</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+						What is Localhost: A Simple Guide for Future Developers
+					</p>
+				</>
+			),
+		},
+	},
+	{
+		img: "/blog/ecommerce1.webp",
+		link: {
+			ru: "/blog/hosting-dlya-sayta-2025",
+			uz: "/blog/hosting-saytga-2025",
+			en: "/blog/hosting-website-2025",
+		},
+		date: "15.10.2025",
+		title: {
+			ru: "Как выбрать хостинг для сайта в 2025 году",
+			uz: "2025-yilda veb-sayt xostingini qanday tanlash mumkin",
+			en: "How to choose website hosting in 2025",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+						Выбор хостинга — один из самых важных стартовых шагов при создании сайта.
+					</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+						Veb-sayt yaratishda xosting provayderini tanlash eng muhim dastlabki qadamlardan biridir.
+					</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+						Choosing a hosting provider is one of the most important initial steps when creating a website.
+					</p>
+				</>
+			),
+		},
+	},
+	{
 		img: "/blog/ecommerce.jpg",
 		link: {
 			ru: "/blog/vibrat-hosting-2025",

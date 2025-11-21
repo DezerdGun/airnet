@@ -26,6 +26,9 @@ $red: #f00;
       font-size: 17px;
       line-height: 28px !important;
     }
+    td, th {
+      border: 1px solid #000;
+    }
   }
   &__right{
     width: 25%;

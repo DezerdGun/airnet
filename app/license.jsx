@@ -36,6 +36,11 @@ export default function License({ language }) {
 			uz: "Xosting xizmatlari litsenziyasi | Airnet",
 			en: "License to provide hosting services | Airnet",
 		},
+		seoD: {
+			ru: "Лицензии и сертификаты компании OOO AIRNET",
+			uz: "Mchj AIRNET litsenziyalari va sertifikatlari",
+			en: "Licenses and certificates of AIRNET LLC",
+		},
 		headTitle: {
 			ru: "Лицензии и сертификаты на предоставление услуг хостинга",
 			uz: "Xosting xizmatlarini ko'rsatish uchun litsenziyalar va sertifikatlar",
@@ -56,7 +61,7 @@ export default function License({ language }) {
 
 	return (
 		<>
-			<SEO title={langDate.seoT[language]} desc="" />
+			<SEO title={langDate.seoT[language]} desc={langDate.seoD[language]} />
 
 			{breadCrumbs && breadCrumbs.length ? (
 			<>
