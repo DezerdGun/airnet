@@ -8,6 +8,7 @@ import st from "./howworks.module.scss";
 
 export default function Howworks({ language }) {
   const content = [
+    "/work/vds-0.webp",
     "/work/vds-1.webp",
     "/work/vds-2.webp",
     "/work/vds-3.webp",

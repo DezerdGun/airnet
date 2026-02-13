@@ -10,6 +10,43 @@ import ProductDomain from "../../components/seo/productdomain";
 
 export const blog = [
 	{
+		img: "/blog/live.png",
+		link: {
+			ru: "/blog/vds-monitor",
+			uz: "/blog/vds-monitoringi",
+			en: "/blog/vds-monitoring",
+		},
+		date: "12.02.2026",
+		title: {
+			ru: "Мониторинг VDS/VPS",
+			uz: "VDS/VPS monitoringi",
+			en: "VDS/VPS monitoring",
+		},
+		description: {
+			ru: (
+				<>
+					<p>
+						В биллинговой панели AIRNET появилась новая функция — мониторинг VDS/VPS в реальном времени
+					</p>
+				</>
+			),
+			uz: (
+				<>
+					<p>
+						AIRNET hisob-kitob paneli endi yangi funksiyaga ega: real vaqt rejimida VDS/VPS monitoringi.
+					</p>
+				</>
+			),
+			en: (
+				<>
+					<p>
+						The AIRNET billing panel now has a new feature: real-time VDS/VPS monitoring.
+					</p>
+				</>
+			),
+		},
+	},
+	{
 		img: "/blog/localhost.png",
 		link: {
 			ru: "/blog/chto-takoye-localhost",
