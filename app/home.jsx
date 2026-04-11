@@ -36,6 +36,7 @@ import { walletIcon } from "shared/icons/walletIcon";
 import { ethernetIcon } from "shared/icons/ethernetIcon";
 import { databaseIcon } from "shared/icons/databaseIcon";
 import { serversIcon } from "shared/icons/serversIcon";
+import { ssdIcon } from "shared/icons/ssdIcon";
 import ProductHome from "@/components/seo/producthome"
 
 export default function Home({ language }) {
@@ -57,43 +58,57 @@ export default function Home({ language }) {
       en: "Why choose AIRNET?",
     },
     tarifMaketHomeTitle: {
-      ru: "Популярные тарифы - Виртуальный сервер в Ташкенте",
+      ru: "Популярные тарифы - виртуальный сервер в Ташкенте",
       uz: "Ommabop tariflar - Toshkentdagi virtual server",
-      en: "Popular tariffs - Virtual server in Tashkent",
+      en: "Popular tariffs - virtual server in Tashkent",
     },
     tarifMaketHomeDesc: {
-      ru: "Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости до 1 Gbps",
-      uz: "Bizning serverlarimiz O‘zbekiston hududida (Toshkent) TAS-IX tarmog‘ida 1 Gbit/s gacha tezlikda joylashgan.",
-      en: "Our servers are located on the territory of Uzbekistan (Tashkent), in the TAS-IX network at speeds up to 1 Gbps",
+      ru: "Сервера в Узбекистане (Ташкент)",
+      uz: "O'zbekistondagi serverlar (Toshkent)",
+      en: "Servers in Uzbekistan (Tashkent)",
+    },
+    tarifMaketHomeDesc2: {
+      ru: "Подключение к TAS-IX",
+      uz: "TAS-IX ga ulanmoqda",
+      en: "Connecting to TAS-IX",
+    },
+    tarifMaketHomeDesc3: {
+      ru: "Скорость до 1 Гбит/с",
+      uz: "1 Gbit/s gacha tezlik",
+      en: "Speed ​​up to 1 Gbps",
     },
     tarifMaketHomeEnd: {
       ru: (
         <>
+          <p>Быстрый запуск без ожидания</p>
           <p>
-            Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2 рабочих дней, в
-            зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации
-            оборудования после оплаты - 1-2 часа. Мы стремимся сократить время ожидания.
+            VDS-сервер готов к работе уже через 30 минут после оплаты.<br />
+            В большинстве случаев активация занимает 1–2 часа — вы получаете доступ практически сразу.
           </p>
-          <p>Срок действия услуги начнется с момента её активации.</p>
-          <p>«VDS запускается за 30 минут», «Аптайм 99.98%»</p>
+          <p>Даже при высокой загрузке или нестандартной конфигурации срок развёртывания не превышает 2 рабочих дней.</p>
+          <p>Мы оптимизировали процессы так, чтобы вы начинали работу без задержек.</p>
         </>
       ),
       uz: (
         <>
+          <p>Kutishsiz tezkor ishga tushirish</p>
           <p>
-            Buyurtma va to'lovni amalga oshirgandan so'ng serverni o'rnatish muddati zarur serverlarning mavjudligi va texnik xodimlarning ish yukiga qarab 30 daqiqadan 2 ish kunigacha. To'lovdan so'ng uskunani o'rtacha faollashtirish vaqti 1-2 soat. Biz kutish vaqtini qisqartirishga harakat qilamiz.
+            VDS serveri to'lovdan keyin 30 daqiqa ichida foydalanishga tayyor.<br />
+            Ko'pgina hollarda, faollashtirish 1-2 soat davom etadi, bu sizga deyarli darhol kirish imkonini beradi.
           </p>
-          <p>Xizmat u yoqilgan paytdan boshlab ishga tushadi.</p>
-          <p>"VDS 30 daqiqadan so'ng boshlanadi", "Ish vaqti 99,98%"</p>
+          <p>Yuqori yuklanish yoki nostandart konfiguratsiya bilan ham, joylashtirish vaqti 2 ish kunidan oshmaydi.</p>
+          <p>Biz jarayonlarni optimallashtirdik, shuning uchun siz kechikishsiz boshlashingiz mumkin.</p>
         </>
       ),
       en: (
         <>
+          <p>Quick start-up without waiting</p>
           <p>
-            The server installation period, after placing an order and payment, is from 30 minutes to 2 business days, depending on the availability of the necessary servers and the workload of technical personnel. The average activation time of the equipment after payment is 1-2 hours. We strive to reduce the waiting time.
+            The VDS server is ready to use within 30 minutes of payment.<br />
+            In most cases, activation takes 1-2 hours, giving you access almost immediately.
           </p>
-          <p>The service will start from the moment it is activated.</p>
-          <p>"VDS starts in 30 minutes", "Uptime 99.98%"</p>
+          <p>Even with high load or a non-standard configuration, deployment time does not exceed 2 business days.</p>
+          <p>We've optimized processes so you can get started without delays.</p>
         </>
       ),
     },
@@ -372,6 +387,7 @@ export default function Home({ language }) {
     tarif = [
       {
         title: { ru: "Strong", uz: "Strong", en: "Strong" },
+        workstxt: { ru: "Для старта", uz: "Boshlash uchun", en: "To start" },
         prices: [
           {
             price: "200 000",
@@ -397,11 +413,12 @@ export default function Home({ language }) {
         cpu: 2,
         ram: 4,
         ssd: 50,
-        net: 100,
+        net: 250,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14",
       },
       {
         title: { ru: "VIP+", uz: "VIP+", en: "VIP+" },
+        workstxt: { ru: "Для интернет магазинов", uz: "Onlayn do'konlar uchun", en: "For online stores" },
         prices: [
           {
             price: "300 000",
@@ -428,11 +445,12 @@ export default function Home({ language }) {
         cpu: 4,
         ram: 6,
         ssd: 100,
-        net: 100,
+        net: 250,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=16",
       },
       {
         title: { ru: "Advanced", uz: "Advanced", en: "Advanced" },
+        workstxt: { ru: "Для сайтов и приложений", uz: "Veb-saytlar va ilovalar uchun", en: "For websites and applications" },
         prices: [
           {
             price: "550 000",
@@ -458,11 +476,12 @@ export default function Home({ language }) {
         cpu: 6,
         ram: 10,
         ssd: 100,
-        net: 100,
+        net: 250,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=50",
       },
       {
         title: { ru: "Mega", uz: "Mega", en: "Mega" },
+        workstxt: { ru: "Для CRM / 1С", uz: "CRM / 1С uchun", en: "For CRM / 1С" },
         prices: [
           {
             price: "800 000",
@@ -489,11 +508,12 @@ export default function Home({ language }) {
         cpu: 6,
         ram: 12,
         ssd: 200,
-        net: 100,
+        net: 250,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=51",
       },
       {
         title: { ru: "Ultra", uz: "Ultra", en: "Ultra" },
+        workstxt: { ru: "Для бизнеса", uz: "Biznes uchun", en: "For business" },
         prices: [
           {
             price: "1 000 000",
@@ -519,7 +539,7 @@ export default function Home({ language }) {
         cpu: 8,
         ram: 16,
         ssd: 250,
-        net: 100,
+        net: 250,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=52",
       },
     ],
@@ -606,6 +626,7 @@ export default function Home({ language }) {
             // date: langData.month[language],
           },
         ],
+        activeTop: "activeTop",
         ssd: "1 000",
         sites: 15,
         link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=33",
@@ -664,6 +685,7 @@ export default function Home({ language }) {
             // date: langData.month[language],
           },
         ],
+        activeTop: "activeTop",
         ssd: "5 000",
         sites: "∞",
         link: "https://billing.airnet.uz/billing.php?do=order&vid=hosting&tarif=37",
@@ -759,89 +781,75 @@ export default function Home({ language }) {
     whyBlockData = [
       {
         title: {
-          ru: "Служба поддержки 24/7",
-          uz: "Qo'llab-quvvatlash xizmati 24/7",
-          en: "24/7 support service",
+          ru: "Поддержка 24/7",
+          uz: "24/7 qo'llab-quvvatlash",
+          en: "24/7 support",
         },
         description: {
           ru: (
             <p>
-              В случае возникновения каких-либо вопросов, Вы всегда можете рассчитывать на нашу квалифицированную помощь, по телефону, e-mail, telegram, а также в онлайн чате - в любое время суток!
+              Наша техническая поддержка доступна круглосуточно без выходных.<br />
+              Вы получаете оперативную помощь через удобные каналы связи: телефон, e-mail, Telegram и онлайн-чат.
             </p>
           ),
           uz: (
             <p>
-              Savollaringiz bo'lsa, siz har doim bizning malakali yordamimizga individual yondashish orqali, telefon,
-              elektron pochta, telegram orqali, shuningdek, kunning istalgan vaqtida ishonishingiz mumkin!
+              Bizning texnik yordamimiz haftasiga 7 kun, 24/7 rejimida mavjud.<br />
+              Siz qulay aloqa kanallari: telefon, elektron pochta, Telegram va onlayn chat orqali tezkor yordam olasiz.
             </p>
           ),
           en: (
             <p>
-              If you have any questions, you can always count on our qualified assistance with an individual approach,
-              by phone, e-mail, telegram, as well as in online chat - at any time of the day!
+              Our technical support is available 24/7, 7 days a week.<br />
+              You receive prompt assistance through convenient communication channels: phone, email, Telegram, and online chat.
             </p>
           ),
         },
         icon: phoneIcon,
       },
       {
-        title: { ru: "Стабильность", uz: "Barqarorlik", en: "Stability" },
+        title: { ru: "Стабильность и надежность", uz: "Barqarorlik va ishonchlilik", en: "Stability and reliability" },
         description: {
           ru: (
             <p>
-              Мы обеспечиваем гарантированную доступность сервиса 99%. Круглосуточно, за всеми системами следят наши
-              высококвалифицированные сотрудники. А оборудование размещаем в высокотехнологичном, современном, надёжном{" "}
-              <Link href={checkLang(language) + "/dc"}>
-                <a>Дата-Центре</a>
-              </Link>{" "}
-              TIER-III, в г.Ташкенте.
+              Мы обеспечиваем высокий уровень доступности сервисов — до 99.9%.<br />
+              Оборудование размещено в современном дата-центре уровня TIER III в Ташкенте.
             </p>
           ),
           uz: (
             <p>
-              Biz 99% kafolatlangan xizmat mavjudligini ta'minlaymiz. Kecha-kunduz, hamma uchun tizimlar bizning yuqori
-              malakali xodimlarimiz tomonidan nazorat qilinadi. Biz jihozlarni joylashtiramiz yuqori texnologiyali,
-              zamonaviy, ishonchli{" "}
-              <Link href={checkLang(language) + "/dc"}>
-                <a>Ma'lumotlar markazi</a>
-              </Link>{" "}
-              TIER-III, Toshkent shahrida.
+              Biz yuqori darajadagi xizmat ko'rsatish imkoniyatini ta'minlaymiz — 99,9% gacha.<br />
+              Uskunalar Toshkentdagi zamonaviy TIER III ma'lumotlar markazida joylashgan.
             </p>
           ),
           en: (
             <p>
-              We provide guaranteed service availability of 99%. Around the clock, for everyone systems are supervised
-              by our highly qualified staff. We place the equipment in high-tech, modern, reliable{" "}
-              <Link href={checkLang(language) + "/dc"}>
-                <a>Data Center</a>
-              </Link>{" "}
-              TIER-III, in Tashkent.
+              We provide a high level of service availability—up to 99.9%.<br />
+              The equipment is housed in a modern TIER III data center in Tashkent.
             </p>
           ),
         },
         icon: searchIcon,
       },
       {
-        title: { ru: "Низкая цена", uz: "Past narx", en: "Low price" },
+        title: { ru: "Оптимальная стоимость", uz: "Optimal narx", en: "Optimal price" },
         description: {
           ru: (
             <p>
-              Мы предоставляем услуги по самым <strong>низким</strong> ценам в Узбекистане, наше преимущество в том, что мы оказываем
-              максимально качественные услуги за максимально низкие цены. Таким образом, мы поможем Вам зарабатывать, а
-              не тратиться.
+              Мы предлагаем конкурентные цены без компромиссов в качестве.<br />
+              Оптимизация инфраструктуры и прямые подключения позволяют снижать издержки — это напрямую отражается на стоимости для клиентов.
             </p>
           ),
           uz: (
             <p>
-              Biz O'zbekistonda <strong>eng past</strong> narxlarda xizmatlar ko'rsatamiz, bizning afzalligimiz shundaki, biz eng
-              yuqori sifatli xizmatlarni imkon qadar arzon narxlarda taqdim etamiz. Shunday qilib, biz sizga sarflashga
-              emas, pul ishlashingizga yordam beramiz.
+              Biz sifatga putur yetkazmasdan raqobatbardosh narxlarni taklif qilamiz.<br />
+              Infratuzilmani optimallashtirish va to'g'ridan-to'g'ri aloqalar bizga xarajatlarni kamaytirish imkonini beradi, bu esa mijozlarimiz uchun qiymatga bevosita ta'sir qiladi.
             </p>
           ),
           en: (
             <p>
-              We provide services at the <strong>lowest</strong> prices in Uzbekistan, our advantage is that we provide the highest
-              quality services for the lowest possible prices. Thus, we will help you to earn, not to spend.
+              We offer competitive prices without compromising quality.<br />
+              Infrastructure optimization and direct connections allow us to reduce costs, which directly impacts the value for our clients.
             </p>
           ),
         },
@@ -849,29 +857,30 @@ export default function Home({ language }) {
       },
       {
         title: {
-          ru: "Собственные ip-адреса",
-          uz: "O'z IP manzillari",
-          en: "Own ip-addresses",
+          ru: "Собственная IP-инфраструктура",
+          uz: "O'z IP infratuzilmasi",
+          en: "Own IP infrastructure",
         },
         description: {
           ru: (
             <p>
-              Мы предоставляем услуги по собственной BGP протоколу (Border Gateway Protocol) для всех блоков IP-адресов.
-              Подключенныe напрямую к автономной системе (AS) АК "Узтелеком", и также являемся участниками зоны TAS-IX.
+              Мы используем собственные IP-адреса и работаем по протоколу BGP.<br />
+              Прямое подключение к автономной системе обеспечивает стабильную маршрутизацию и независимость от сторонних операторов.
+              Также мы являемся участниками TAS-IX и UZ-IX, что гарантирует локальную доступность ресурсов.
             </p>
           ),
           uz: (
             <p>
-              Biz barcha IP-manzillar bloklari uchun o'z BGP protokolimiz (Chegara shlyuzi protokoli) yordamida
-              xizmatlarni taqdim etamiz. “O‘ztelekom” AK avtonom tizimiga (AS) bevosita ulangan va biz ham TAS-IX zonasi
-              a’zolarimiz.
+              Biz o'z IP-manzillarimizdan foydalanamiz va BGP protokoli yordamida ishlaymiz.<br />
+              Avtonom tizimga to'g'ridan-to'g'ri ulanish barqaror marshrutizatsiya va uchinchi tomon operatorlaridan mustaqillikni ta'minlaydi.
+              Biz shuningdek, mahalliy resurslarning mavjudligini kafolatlaydigan TAS-IX va UZ-IX a'zolarimiz.
             </p>
           ),
           en: (
             <p>
-              We provide services on our own BGP protocol (Border Gateway Protocol) for all blocks of IP addresses.
-              Connected directly to the autonomous system (AS) of JSC "Uztelecom", and we are also members of the TAS-IX
-              zone.
+              We use our own IP addresses and operate using the BGP protocol.<br />
+              Direct connection to the autonomous system ensures stable routing and independence from third-party operators.
+              We are also members of TAS-IX and UZ-IX, which guarantees local resource availability.
             </p>
           ),
         },
@@ -879,29 +888,41 @@ export default function Home({ language }) {
       },
       {
         title: {
-          ru: "Серверы в Ташкенте",
-          uz: "Toshkentdagi serverlar",
-          en: "Servers in Tashkent",
+          ru: "Локальное размещение в Ташкенте",
+          uz: "Toshkentdagi mahalliy turar joy",
+          en: "Local accommodation in Tashkent",
         },
         description: {
-          ru: <p>Хранение и обработка данных происходит на территории Узбекистана и в зоне TAS-IX.</p>,
-          uz: <p>Ma'lumotlarni saqlash va qayta ishlash O'zbekiston hududida va TAS-IX zonasida amalga oshiriladi.</p>,
-          en: <p>Data storage and processing takes place on the territory of Uzbekistan and in the TAS-IX zone.</p>,
+          ru: <p>Все данные обрабатываются и хранятся на территории Узбекистана.<br />
+              Это обеспечивает минимальные задержки, высокую скорость доступа и соответствие локальным требованиям к данным.
+              Прямое подключение к TAS-IX и UZ-IX дает дополнительное преимущество в скорости внутри страны.</p>,
+          uz: <p>Barcha ma'lumotlar O'zbekiston ichida qayta ishlanadi va saqlanadi.<br />
+              Bu minimal kechikish, yuqori kirish tezligi va mahalliy ma'lumotlar talablariga muvofiqlikni ta'minlaydi.
+              TAS-IX va UZ-IX ga to'g'ridan-to'g'ri ulanish mamlakat ichida qo'shimcha tezlik afzalligini beradi.</p>,
+          en: <p>All data is processed and stored within Uzbekistan.<br />
+              This ensures minimal latency, high access speeds, and compliance with local data requirements.
+              Direct connection to TAS-IX and UZ-IX provides an additional speed advantage within the country.</p>
         },
         icon: serversIcon,
       },
       {
         title: {
-          ru: "Скорость",
-          uz: "Tezlik",
-          en: "Speed",
+          ru: "Высокая производительность",
+          uz: "Yuqori samaradorlik",
+          en: "High performance",
         },
         description: {
-          ru: <p>Максимальная скорость работы сайтов благодаря SSD дискам и скорости доступа по сети интернет и TAS-IX.</p>,
-          uz: <p>SSD drayvlar tufayli veb-saytning maksimal tezligi.</p>,
-          en: <p>Maximum website speed thanks to SSD drives.</p>,
+          ru: <p>Использование SSD накопителей и современных серверных решений обеспечивает быструю загрузку и стабильную работу проектов.
+              Сетевая инфраструктура оптимизирована для высокой пропускной способности и минимальных задержек.
+              Ваши сервисы работают быстро даже при высокой нагрузке.</p>,
+          uz: <p>SSD disklar va zamonaviy server yechimlaridan foydalanish loyihalarning tez yuklanishini va barqaror ishlashini ta'minlaydi.
+              Tarmoq infratuzilmasi yuqori o'tkazuvchanlik va minimal kechikish uchun optimallashtirilgan.
+              Xizmatlaringiz hatto og'ir yuk ostida ham tez ishlaydi.</p>,
+          en: <p>The use of SSD drives and modern server solutions ensures fast loading and stable operation of projects.
+              The network infrastructure is optimized for high throughput and minimal latency.
+              Your services run quickly even under heavy load.</p>
         },
-        icon: databaseIcon,
+        icon: ssdIcon,
       },
     ];
 
@@ -927,7 +948,7 @@ export default function Home({ language }) {
       <WhyBlock title={langData.whyBlockTitle[language]} content={whyBlockData} language={language} />
       <TarifMaketHome
         title={langData.tarifMaketHomeTitle[language]}
-        description={<p>{langData.tarifMaketHomeDesc[language]}</p>}
+        description={<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>{langData.tarifMaketHomeDesc[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M303.69-144q-34.69 0-64.19-15T182-205q-40.94-45.32-63.97-108.11T95-442q0-77.2 30.5-145.1Q156-655 208.5-706t122.46-80.5q69.96-29.5 149.5-29.5t149.04 30q69.5 30 122 82T834-582.5q30 69.5 30 148.3 0 71.38-24.4 133.49-24.39 62.11-69.28 104.75Q743-170 713.94-157q-29.06 13-59.06 13-16.88 0-34.88-4.5-18-4.5-35-12.5l-57-28q-11-5-21.5-7.5T483-199q-15 0-30.23 3.5T424-185l-49 24q-17 8-35 12.5t-36.31 4.5Zm.31-71q10 0 19.5-2.5T343-225l48-25q20-11 43.16-16 23.16-5 46.84-5 22 0 41.57 4.29Q542.13-262.43 560-253l56 28q11 5 19.5 7.5T654-215q17 0 33.5-7.5T721-246q35-32 53-79.5T792-429q0-132-90.54-223.5t-221-91.5Q350-744 258.5-653.21T167-433q0 56 18.5 104.5T238-247q17 17.3 33 24.65 16 7.35 33 7.35Zm176-265Zm51 86.85q21-21.15 21-50.85 0-8-1.75-16T545-476l53-69q12 14 19.88 30.08Q625.75-498.85 631-480h73q-14-84-77.19-138T480-672q-85 0-148 54.5T256-480h72.6q12.4-53 54.97-86.5t96.04-33.5q16.83 0 31.68 3 14.85 3 28.71 9l-54.85 72H480.2q-29.79 0-50.99 21.21-21.21 21.21-21.21 51T429.21-393q21.21 21 51 21T531-393.15Z"/></svg>{langData.tarifMaketHomeDesc2[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="m437-249 183-231H471l26-221-173 269h146l-33 183ZM336-96l48-264H192l324-504h72l-36 312h216L408-96h-72Zm136-379Z"/></svg>{langData.tarifMaketHomeDesc3[language]}</p>}
         endText={<div className="text-white text-center mt-2">{langData.tarifMaketHomeEnd[language]}</div>}
       >
         <Swiper
@@ -966,7 +987,7 @@ export default function Home({ language }) {
       <RegDomain language={language} />
       <TarifMaketHome
         title={langData.tarifMaketHomeTitle2[language]}
-        description={<p>{langData.tarifMaketHomeDesc[language]}</p>}
+        description={<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>{langData.tarifMaketHomeDesc[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M303.69-144q-34.69 0-64.19-15T182-205q-40.94-45.32-63.97-108.11T95-442q0-77.2 30.5-145.1Q156-655 208.5-706t122.46-80.5q69.96-29.5 149.5-29.5t149.04 30q69.5 30 122 82T834-582.5q30 69.5 30 148.3 0 71.38-24.4 133.49-24.39 62.11-69.28 104.75Q743-170 713.94-157q-29.06 13-59.06 13-16.88 0-34.88-4.5-18-4.5-35-12.5l-57-28q-11-5-21.5-7.5T483-199q-15 0-30.23 3.5T424-185l-49 24q-17 8-35 12.5t-36.31 4.5Zm.31-71q10 0 19.5-2.5T343-225l48-25q20-11 43.16-16 23.16-5 46.84-5 22 0 41.57 4.29Q542.13-262.43 560-253l56 28q11 5 19.5 7.5T654-215q17 0 33.5-7.5T721-246q35-32 53-79.5T792-429q0-132-90.54-223.5t-221-91.5Q350-744 258.5-653.21T167-433q0 56 18.5 104.5T238-247q17 17.3 33 24.65 16 7.35 33 7.35Zm176-265Zm51 86.85q21-21.15 21-50.85 0-8-1.75-16T545-476l53-69q12 14 19.88 30.08Q625.75-498.85 631-480h73q-14-84-77.19-138T480-672q-85 0-148 54.5T256-480h72.6q12.4-53 54.97-86.5t96.04-33.5q16.83 0 31.68 3 14.85 3 28.71 9l-54.85 72H480.2q-29.79 0-50.99 21.21-21.21 21.21-21.21 51T429.21-393q21.21 21 51 21T531-393.15Z"/></svg>{langData.tarifMaketHomeDesc2[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="m437-249 183-231H471l26-221-173 269h146l-33 183ZM336-96l48-264H192l324-504h72l-36 312h216L408-96h-72Zm136-379Z"/></svg>{langData.tarifMaketHomeDesc3[language]}</p>}
         endText={<p className="text-white text-center mt-2">{langData.tarifMaketHomeEnd2[language]}</p>}
       >
         <Swiper

@@ -112,51 +112,67 @@ export default function Header({ language }) {
           },
           {
             title: {
+              ru: "Доменная зона .UZ",
+              uz: ".UZ domen zonasi",
+              en: "The .UZ domain zone",
+            },
+            link: LINKS.DOMAINS,
+          },
+          {
+            title: {
               ru: "Доменная зона .ru",
-              uz: "Доменная зона .ru",
-              en: "Доменная зона .ru",
+              uz: ".ru domen zonasi",
+              en: "The .ru domain zone",
             },
             link: LINKS.DOMAINS_RU,
           },
           {
             title: {
               ru: "Доменная зона .com",
-              uz: "Доменная зона .com",
-              en: "Доменная зона .com",
+              uz: ".com domen zonasi",
+              en: "The .com domain zone",
             },
             link: LINKS.DOMAINS_COM,
           },
           {
             title: {
               ru: "Доменная зона .net",
-              uz: "Доменная зона .net",
-              en: "Доменная зона .net",
+              uz: ".net domen zonasi",
+              en: "The .net domain zone",
             },
             link: LINKS.DOMAINS_NET,
           },
           {
             title: {
               ru: "Доменная зона .org",
-              uz: "Доменная зона .org",
-              en: "Доменная зона .org",
+              uz: ".org domen zonasi",
+              en: "The .org domain zone",
             },
             link: LINKS.DOMAINS_ORG,
           },
           {
             title: {
               ru: "Доменная зона .in",
-              uz: "Доменная зона .in",
-              en: "Доменная зона .in",
+              uz: ".in domen zonasi",
+              en: "The .in domain zone",
             },
             link: LINKS.DOMAINS_IN,
           },
           {
             title: {
               ru: "Доменная зона .su",
-              uz: "Доменная зона .su",
-              en: "Доменная зона .su",
+              uz: ".su domen zonasi",
+              en: "The .su domain zone",
             },
             link: LINKS.DOMAINS_SU,
+          },
+          {
+            title: {
+              ru: "Все доменные зоны",
+              uz: "Barcha domen zonalari",
+              en: "All domain zones",
+            },
+            link: LINKS.DOMAINS,
           },
         ],
       },

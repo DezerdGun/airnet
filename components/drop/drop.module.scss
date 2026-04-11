@@ -16,10 +16,10 @@ $red: #f00;
   &__ul {
     position: absolute;
     width: 100%;
-    background-color: $white;
-    box-shadow: 0 10px 5px $light_gray;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    background-color: #f2f5f7;
+    // box-shadow: 0 10px 5px $light_gray;
+    // border-bottom-left-radius: 10px;
+    // border-bottom-right-radius: 10px;
     list-style: none;
     padding: 0;
     transform: translateY(-1rem);
@@ -28,7 +28,7 @@ $red: #f00;
     transition: all 0.3s ease;
 
     li {
-      padding: 15px;
+      padding: 10px 15px;
       border-bottom: 1px solid $light_gray;
       cursor: pointer;
 
@@ -75,7 +75,8 @@ $red: #f00;
         flex-direction: column;
         align-items: center;
         margin-left: 8px;
-        font-size: 13px;
+        font-size: 12px;
+        color: #666;
 
         hr {
           width: 20px;
@@ -83,11 +84,6 @@ $red: #f00;
           color: $black;
           margin: 3px 0 0;
         }
-      }
-
-      svg {
-        margin-left: 5px;
-        fill: $white;
       }
     }
   }
@@ -100,15 +96,15 @@ $red: #f00;
 
       div {
         white-space: nowrap;
-        font-size: 18px;
+        font-size: 26px;
         justify-content: flex-end;
       }
 
-      div,
-      span,
-      hr {
-        color: white;
-      }
+      // div,
+      // span,
+      // hr {
+      //   color: white;
+      // }
 
       span {
         font-weight: 500;
@@ -116,10 +112,10 @@ $red: #f00;
     }
 
     ul {
-      min-width: 210px;
-      margin-top: 10px;
-      text-align: right;
-      right: -10px;
+      min-width: 296px;
+      margin-top: 0px;
+      // text-align: right;
+      left: -15px;
     }
   }
 }

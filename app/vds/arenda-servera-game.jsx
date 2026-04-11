@@ -310,68 +310,77 @@ export default function VDS({ language }) {
     whyBlockDescription: {
       ru: (
         <p>
-          Просмотрите наши тарифы на сервера Intel ниже. Выберите нужный вам.
-          <br /> Если вы выберете нашу услугу аренды сервера Intel Xeon, вы
-          получите много преимуществ:
+          Выберите оптимальную конфигурацию серверов на базе Intel под задачи вашего проекта.<br />
+          При аренде серверов вы получаете стабильную инфраструктуру, гибкость настройки и профессиональную поддержку.
         </p>
       ),
       uz: (
         <p>
-          Quyida Intel serverimiz narxlarini koʻring. Sizga kerak bo'lganini
-          tanlang.
-          <br />
-          Agar siz bizning Intel Xeon serverlarini ijaraga olish xizmatimizni
-          tanlasangiz, siz ko'plab imtiyozlarga ega bo'lasiz:
+          Loyihangiz ehtiyojlari uchun optimal Intel asosidagi server konfiguratsiyasini tanlang.<br />
+          Serverlarni ijaraga olganingizda, siz barqaror infratuzilma, moslashuvchan konfiguratsiya va professional yordam olasiz.
         </p>
       ),
       en: (
         <p>
-          View our Intel server rates below. Choose the one you need.
-          <br />
-          If you choose our Intel Xeon server rental service, you will receive
-          many benefits:
+          Choose the optimal Intel-based server configuration for your project's needs.<br />
+          When you rent servers, you receive a stable infrastructure, flexible configuration, and professional support.
         </p>
       ),
     },
     headTitle: {
-      ru: "Аренда игровых серверов",
-      uz: "O'yin serverlarini ijaraga olish",
-      en: "Rent game server",
+      ru: "Аренда игровых серверов для Геймеров",
+      uz: "O'yinchilar uchun o'yin serverlarini ijaraga olish",
+      en: "Game Server Rentals for Gamers",
     },
+    // dsc: {
+    //   ru: (
+    //     <p>
+    //       Мы продаем мощные серверы Intel. Они работают быстро и надежно.
+    //       <br />
+    //       Это хорошо для вашего бизнеса. Наши специалисты следят за серверами
+    //       круглосуточно.
+    //       <br />
+    //       Они помогают, чтобы все работало без сбоев. Вы можете арендовать
+    //       сервер Intel на территории Узбекистана уже сегодня!
+    //     </p>
+    //   ),
+    //   uz: (
+    //     <p>
+    //       Biz kuchli Intel serverlarini sotamiz. Ular tez va ishonchli ishlaydi.
+    //       <br />
+    //       Bu sizning biznesingiz uchun yaxshi. Mutaxassislarimiz serverlarni
+    //       kechayu kunduz kuzatib boradilar.
+    //       <br />
+    //       Ular hamma narsani muammosiz bajarishga yordam beradi. Bugun
+    //       O'zbekistonda Intel serverini ijaraga olishingiz mumkin!
+    //     </p>
+    //   ),
+    //   en: (
+    //     <p>
+    //       We sell powerful Intel servers. They work quickly and reliably.
+    //       <br />
+    //       It's good for your business. Our specialists monitor the servers
+    //       around the clock.
+    //       <br />
+    //       They help keep everything running smoothly. You can rent an Intel
+    //       server in Uzbekistan today!
+    //     </p>
+    //   ),
+    // },
     dsc: {
-      ru: (
-        <p>
-          Мы продаем мощные серверы Intel. Они работают быстро и надежно.
-          <br />
-          Это хорошо для вашего бизнеса. Наши специалисты следят за серверами
-          круглосуточно.
-          <br />
-          Они помогают, чтобы все работало без сбоев. Вы можете арендовать
-          сервер Intel на территории Узбекистана уже сегодня!
-        </p>
-      ),
-      uz: (
-        <p>
-          Biz kuchli Intel serverlarini sotamiz. Ular tez va ishonchli ishlaydi.
-          <br />
-          Bu sizning biznesingiz uchun yaxshi. Mutaxassislarimiz serverlarni
-          kechayu kunduz kuzatib boradilar.
-          <br />
-          Ular hamma narsani muammosiz bajarishga yordam beradi. Bugun
-          O'zbekistonda Intel serverini ijaraga olishingiz mumkin!
-        </p>
-      ),
-      en: (
-        <p>
-          We sell powerful Intel servers. They work quickly and reliably.
-          <br />
-          It's good for your business. Our specialists monitor the servers
-          around the clock.
-          <br />
-          They help keep everything running smoothly. You can rent an Intel
-          server in Uzbekistan today!
-        </p>
-      ),
+      ru: "Сервера в Узбекистане (Ташкент)",
+      uz: "O'zbekistondagi serverlar (Toshkent)",
+      en: "Servers in Uzbekistan (Tashkent)",
+    },
+    dsc2: {
+      ru: "Подключение к TAS-IX",
+      uz: "TAS-IX ga ulanmoqda",
+      en: "Connecting to TAS-IX",
+    },
+    dsc3: {
+      ru: "Скорость до 1 Гбит/с",
+      uz: "1 Gbit/s gacha tezlik",
+      en: "Speed ​​up to 1 Gbps",
     },
     txt: {
       ru: (
@@ -601,30 +610,27 @@ export default function VDS({ language }) {
   const whyBlock = [
     {
       title: {
-        ru: "Качественные сервера Intel.",
-        uz: "Yuqori sifatli Intel serverlari.",
-        en: "High-quality Intel servers.",
+        ru: "Надёжная серверная инфраструктура",
+        uz: "Ishonchli server infratuzilmasi",
+        en: "Reliable server infrastructure",
       },
       description: {
         ru: (
           <p>
-            Взятые у нас в аренду сервера Intel работают стабильно и не
-            ломаются. Это хорошо для вашего проекта. Благодаря качеству сервера
-            Intel минимизируется риск сбоев.
+            Серверы на базе Intel обеспечивают стабильную работу и предсказуемую производительность.
+            Минимизация сбоев и высокая отказоустойчивость позволяют вашим сервисам работать без перебоев.
           </p>
         ),
         uz: (
           <p>
-            Bizdan ijaraga olingan Intel serverlari barqaror ishlaydi va
-            buzilmaydi. Bu sizning loyihangiz uchun yaxshi. Intel serverining
-            sifati tufayli ishdan chiqish xavfi minimallashtiriladi.
+            Intel asosidagi serverlar barqaror ishlashni va oldindan aytib bo'ladigan ishlashni ta'minlaydi.
+            Minimallashtirilgan nosozliklar va yuqori nosozliklarga chidamlilik xizmatlaringizning uzluksiz ishlashiga imkon beradi.
           </p>
         ),
         en: (
           <p>
-            Intel servers rented from us work stably and do not break down. This
-            is good for your project. Thanks to the quality of the Intel server,
-            the risk of failure is minimized.
+            Intel-based servers ensure stable operation and predictable performance.
+            Minimized failures and high fault tolerance allow your services to run without interruption.
           </p>
         ),
       },
@@ -632,28 +638,27 @@ export default function VDS({ language }) {
     },
     {
       title: {
-        ru: "Удобные планы и настройки.",
-        uz: "Qulay rejalar va sozlamalar.",
-        en: "Convenient plans and settings.",
+        ru: "Гибкие тарифы и конфигурации",
+        uz: "Moslashuvchan tariflar va konfiguratsiyalar",
+        en: "Flexible tariffs and configurations",
       },
       description: {
         ru: (
           <p>
-            Мы предлагаем разные планы и настройки серверов. При аренде серверов
-            Intel вы сможете выбрать то, что вам нужно.
+            Доступны различные варианты конфигураций под любые задачи — от базовых до высоконагруженных.
+            Выбирайте ресурсы, которые соответствуют требованиям вашего проекта, без переплаты.
           </p>
         ),
         uz: (
           <p>
-            Biz turli xil rejalar va server sozlamalarini taklif qilamiz. Intel
-            serverlarini ijaraga olayotganda siz o'zingizga kerakli narsani
-            tanlashingiz mumkin.
+            Oddiydan tortib, og'ir yuklamagacha bo'lgan har qanday vazifaga mos keladigan turli xil konfiguratsiyalar mavjud.
+            Loyihangiz talablariga javob beradigan resurslarni ortiqcha to'lovsiz tanlang.
           </p>
         ),
         en: (
           <p>
-            We offer different plans and server settings. When renting Intel
-            servers, you can choose what you need.
+            A variety of configurations are available to suit any task, from basic to high-load.
+            Choose the resources that meet your project's requirements without overpaying.
           </p>
         ),
       },
@@ -661,27 +666,27 @@ export default function VDS({ language }) {
     },
     {
       title: {
-        ru: "Поддержка 24/7.",
-        uz: "24/7 qo'llab-quvvatlash.",
-        en: "Support 24/7.",
+        ru: "Круглосуточная техническая поддержка",
+        uz: "24/7 texnik yordam",
+        en: "24/7 technical support",
       },
       description: {
         ru: (
           <p>
-            У нас есть команда, которая помогает круглосуточно. Вы всегда можете
-            получить удаленную помощь с сервером или арендой.
+            Инженеры поддержки доступны 24/7.
+            Оперативно помогаем с настройкой, администрированием и устранением инцидентов.
           </p>
         ),
         uz: (
           <p>
-            Bizda kechayu kunduz yordam beradigan jamoamiz bor. Siz har doim
-            server yoki ijara bo'yicha masofaviy yordam olishingiz mumkin.
+            Bizning qo'llab-quvvatlash muhandislarimiz 24/7 xizmatingizda.
+            Biz sozlash, boshqarish va noxush holatlarni hal qilishda tezkor yordam ko'rsatamiz.
           </p>
         ),
         en: (
           <p>
-            We have a team that helps around the clock. You can always get
-            remote help with a server or rental.
+            Our support engineers are available 24/7.
+            We provide prompt assistance with setup, administration, and incident resolution.
           </p>
         ),
       },
@@ -689,28 +694,27 @@ export default function VDS({ language }) {
     },
     {
       title: {
-        ru: "Сохранность конфиденциальности.",
-        uz: "Maxfiylikni saqlash.",
-        en: "Maintaining confidentiality.",
+        ru: "Защита данных и безопасность",
+        uz: "Ma'lumotlarni himoya qilish va xavfsizlik",
+        en: "Data protection and security",
       },
       description: {
         ru: (
           <p>
-            Ваши данные будут в безопасности на наших серверах Intel. Мы защитим
-            их от любых угроз во время аренды.
+            Инфраструктура построена с учётом современных требований к безопасности.
+            Ваши данные защищены от внешних угроз и несанкционированного доступа.
           </p>
         ),
         uz: (
           <p>
-            Sizning ma'lumotlaringiz bizning Intel serverlarimizda xavfsiz
-            bo'ladi. Biz ijara vaqtida ularni har qanday tahdidlardan himoya
-            qilamiz.
+            Infratuzilma zamonaviy xavfsizlik talablarini hisobga olgan holda qurilgan.
+            Ma'lumotlaringiz tashqi tahdidlar va ruxsatsiz kirishdan himoyalangan.
           </p>
         ),
         en: (
           <p>
-            Your data will be safe on our Intel servers. We will protect them
-            from any threats during the rental.
+            The infrastructure is built with modern security requirements in mind.
+            Your data is protected from external threats and unauthorized access.
           </p>
         ),
       },
@@ -718,35 +722,27 @@ export default function VDS({ language }) {
     },
     {
       title: {
-        ru: "Масштабируемость и гибкость.",
-        uz: "Masshtablilik va moslashuvchanlik.",
-        en: "Scalability and flexibility.",
+        ru: "Масштабируемость под рост проекта",
+        uz: "Loyiha o'sishiga moslashish uchun masshtablash imkoniyati",
+        en: "Scalability to accommodate project growth",
       },
       description: {
         ru: (
           <p>
-            Наши серверы Intel можно масштабировать. Если ваш бизнес вырастет,
-            мы поможем адаптироваться.
-            <br />
-            Арендованные серверы Intel экономят энергию. Это снижает ваши
-            расходы.
+            Ресурсы можно увеличивать по мере роста нагрузки.
+            Вы не ограничены текущими параметрами и можете развивать проект без смены инфраструктуры.
           </p>
         ),
         uz: (
           <p>
-            Bizning Intel serverlarimiz kengaytirilishi mumkin. Biznesingiz
-            o'sishi bilan biz sizga moslashishga yordam beramiz.
-            <br />
-            Ijaraga olingan Intel serverlari energiyani tejaydi. Bu sizning
-            xarajatlaringizni kamaytiradi.
+            Ish hajmi oshgani sayin resurslar kengaytirilishi mumkin.
+            Siz joriy parametrlar bilan cheklanmaysiz va infratuzilmani o'zgartirmasdan loyihani ishlab chiqishingiz mumkin.
           </p>
         ),
         en: (
           <p>
-            Our Intel servers are scalable. As your business grows, we can help
-            you adapt.
-            <br />
-            Rented Intel servers save energy. This reduces your costs.
+            Resources can be expanded as the workload grows.
+            You're not limited by current parameters and can develop the project without changing the infrastructure.
           </p>
         ),
       },
@@ -754,27 +750,27 @@ export default function VDS({ language }) {
     },
     {
       title: {
-        ru: "Обновления и инновации.",
-        uz: "Yangilanishlar va innovatsiyalar.",
-        en: "Updates and innovations.",
+        ru: "Современные технологии",
+        uz: "Zamonaviy texnologiyalar",
+        en: "Modern technologies",
       },
       description: {
         ru: (
           <p>
-            Мы работаем с Intel и знаем все о новых серверных технологиях. Это
-            делает вашу работу лучше.
+            Используем актуальные серверные решения и регулярно обновляем инфраструктуру.
+            Это обеспечивает стабильную производительность и соответствие современным требованиям.
           </p>
         ),
         uz: (
           <p>
-            Biz Intel bilan ishlaymiz va yangi server texnologiyalari haqida
-            hamma narsani bilamiz. Bu sizning ishingizni yaxshilaydi.
+            Biz eng zamonaviy server yechimlaridan foydalanamiz va infratuzilmamizni muntazam ravishda yangilab boramiz. 
+            Bu barqaror ishlash va zamonaviy talablarga muvofiqlikni ta'minlaydi.
           </p>
         ),
         en: (
           <p>
-            We work with Intel and know everything about new server
-            technologies. It makes your work better.
+            We use up-to-date server solutions and regularly update our infrastructure.
+            This ensures stable performance and compliance with modern requirements.
           </p>
         ),
       },
@@ -785,6 +781,7 @@ export default function VDS({ language }) {
   const tarif = [
     {
       title: { ru: "GAME-1", uz: "GAME-1", en: "GAME-1" },
+      workstxt: { ru: "Базовый уровень", uz: "Asosiy daraja", en: "Basic level" },
       // price: '300 000',
       prices: [
         {
@@ -808,15 +805,15 @@ export default function VDS({ language }) {
           // date: langData.month[language],
         },
       ],
-      activeTop: "activeTop",
       cpu: 4,
       ram: 6,
       ssd: 100,
-      net: 100,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=119",
     },
     {
       title: { ru: "GAME-2", uz: "GAME-2", en: "GAME-2" },
+      workstxt: { ru: "Стабильный старт", uz: "Barqaror boshlanish", en: "Stable start" },
       // price: "400 000",
       prices: [
         {
@@ -840,14 +837,16 @@ export default function VDS({ language }) {
           // date: langData.month[language],
         },
       ],
+      activeTop: "activeTop",
       cpu: 4,
       ram: 8,
       ssd: 100,
-      net: 100,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=120",
     },
     {
       title: { ru: "GAME-3", uz: "GAME-3", en: "GAME-3" },
+      workstxt: { ru: "Нагрузка и онлайн", uz: "Yuklab oling va onlayn qiling", en: "Load and online" },
       // price: "550 000",
       prices: [
         {
@@ -874,11 +873,12 @@ export default function VDS({ language }) {
       cpu: 6,
       ram: 10,
       ssd: 150,
-      net: 150,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=121",
     },
     {
       title: { ru: "GAME-4", uz: "GAME-4", en: "GAME-4" },
+      workstxt: { ru: "Максимальная нагрузка", uz: "Maksimal yuk", en: "Maximum load" },
       // price: "800 000",
       prices: [
         {
@@ -902,10 +902,11 @@ export default function VDS({ language }) {
           // date: langData.month[language],
         },
       ],
+      activeTop: "activeTop",
       cpu: 6,
       ram: 12,
       ssd: 200,
-      net: 150,
+      net: 250,
       link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=122",
     },
   ];
@@ -961,7 +962,8 @@ export default function VDS({ language }) {
             // bgImg={'/servers-2.jpg'}
             // headTitle={langData.headTitle[language]}
             title="Тарифы"
-            description={<p>{langData.dsc[language]}</p>}
+            // description={<p>{langData.dsc[language]}</p>}
+            description={<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>{langData.dsc[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M303.69-144q-34.69 0-64.19-15T182-205q-40.94-45.32-63.97-108.11T95-442q0-77.2 30.5-145.1Q156-655 208.5-706t122.46-80.5q69.96-29.5 149.5-29.5t149.04 30q69.5 30 122 82T834-582.5q30 69.5 30 148.3 0 71.38-24.4 133.49-24.39 62.11-69.28 104.75Q743-170 713.94-157q-29.06 13-59.06 13-16.88 0-34.88-4.5-18-4.5-35-12.5l-57-28q-11-5-21.5-7.5T483-199q-15 0-30.23 3.5T424-185l-49 24q-17 8-35 12.5t-36.31 4.5Zm.31-71q10 0 19.5-2.5T343-225l48-25q20-11 43.16-16 23.16-5 46.84-5 22 0 41.57 4.29Q542.13-262.43 560-253l56 28q11 5 19.5 7.5T654-215q17 0 33.5-7.5T721-246q35-32 53-79.5T792-429q0-132-90.54-223.5t-221-91.5Q350-744 258.5-653.21T167-433q0 56 18.5 104.5T238-247q17 17.3 33 24.65 16 7.35 33 7.35Zm176-265Zm51 86.85q21-21.15 21-50.85 0-8-1.75-16T545-476l53-69q12 14 19.88 30.08Q625.75-498.85 631-480h73q-14-84-77.19-138T480-672q-85 0-148 54.5T256-480h72.6q12.4-53 54.97-86.5t96.04-33.5q16.83 0 31.68 3 14.85 3 28.71 9l-54.85 72H480.2q-29.79 0-50.99 21.21-21.21 21.21-21.21 51T429.21-393q21.21 21 51 21T531-393.15Z"/></svg>{langData.dsc2[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="m437-249 183-231H471l26-221-173 269h146l-33 183ZM336-96l48-264H192l324-504h72l-36 312h216L408-96h-72Zm136-379Z"/></svg>{langData.dsc3[language]}</p>}
             txt={<p>{langData.txt[language]}</p>}
             className="mt-0 px-0"
             endText={

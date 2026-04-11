@@ -597,6 +597,7 @@ export default function Calculator({ language }) {
                     dateOff: `1 мес`,
                   },
                 ],
+                workstxt: { ru: "Соберите свой тариф", uz: "O'z rejangizni yarating", en: "Create your own plan" },
                 cpu: state.core,
                 ram: state.ram,
                 ssd: state.ssd,

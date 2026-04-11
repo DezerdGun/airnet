@@ -53,71 +53,68 @@ export default function TarifCard2({ index, tarif, show, setShow, language }) {
 			uz: "Buyurtma berish",
 			en: "Order hosting",
 		},
+    	topCard: { ru: "Рекомендуем", uz: "Biz tavsiya qilamiz", en: "We recommend" },
 	}
 
 	return (
 		<div className={st.tarifCard}>
 			<div className={st.tarifCard__header}>
 				<h3>{tarif.title[language]}</h3>
-				<div className={st.tarifCard__header__price}>
-					<Drop
-						index={index}
-						item={tarif.prices}
-						isTarifCard={true}
-						show={show}
-						setShow={setShow}
-						language={language}
-					/>
-				</div>
+        		{/* <span>{tarif.works[language]}</span> */}
+			</div>
+			<div className={st.tarifCard__header__price}>
+				<Drop
+					index={index}
+					item={tarif.prices}
+					isTarifCard={true}
+					show={show}
+					setShow={setShow}
+					language={language}
+				/>
 			</div>
 			<table>
 				<tr>
-					<td>SSD</td>
-					<td>{langData.count[language]}</td>
+					<td><svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 -960 960 960" width="17px" fill="#0d5446"><path d="M160-280h640v-240H160v240Zm562.5-77.5Q740-375 740-400t-17.5-42.5Q705-460 680-460t-42.5 17.5Q620-425 620-400t17.5 42.5Q655-340 680-340t42.5-17.5ZM880-600H767l-80-80H273l-80 80H80l137-137q11-11 25.5-17t30.5-6h414q16 0 30.5 6t25.5 17l137 137ZM160-200q-33 0-56.5-23.5T80-280v-320h800v320q0 33-23.5 56.5T800-200H160Z"/></svg> SSD</td>
+					<td>{tarif.ssd} {langData.mb[language]}</td>
 				</tr>
 				<tr>
-					<th>
-						{tarif.ssd} {langData.mb[language]}
-					</th>
-					<th>{tarif.sites}</th>
+					<td><svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 -960 960 960" width="17px" fill="#0d5446"><path d="M325-111.5q-73-31.5-127.5-86t-86-127.5Q80-398 80-480.5t31.5-155q31.5-72.5 86-127t127.5-86Q398-880 480.5-880t155 31.5q72.5 31.5 127 86t86 127Q880-563 880-480.5T848.5-325q-31.5 73-86 127.5t-127 86Q563-80 480.5-80T325-111.5ZM480-162q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"/></svg> {langData.count[language]}
+					</td>
+					<td>{tarif.sites}</td>
+				</tr>
+				<tr>
+					<td><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M480-96q-135-33-223.5-152.84Q168-368.69 168-515v-229l312-120 312 120v229q0 146.31-88.5 266.16Q615-129 480-96Zm0-75q104-32.25 172-129t68-215v-180l-240-92-240 92v180q0 118.25 68 215t172 129Zm0-308Z"/></svg> SSL</td>
+					<td>{langData.free[language]}</td>
+				</tr>
+				<tr>
+					<td><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M168-192q-29.7 0-50.85-21.16Q96-234.32 96-264.04v-432.24Q96-726 117.15-747T168-768h624q29.7 0 50.85 21.16Q864-725.68 864-695.96v432.24Q864-234 842.85-213T792-192H168Zm0-72h624v-360H168v360Zm270-40L302-440l51-51 85 85 169-170 51 51-220 221Zm-270 40v-432 432Z"/></svg> {langData.domen[language]}</td>
+					<td>{langData.present[language]}*</td>
+				</tr>
+				{/* <tr>
+					<td><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="m315-336 106-107 72 72 131-130v69h72v-192H504v72h69l-80 80-72-72-157 157 51 51Zm-99 192q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h528q29.7 0 50.85 21.15Q816-773.7 816-744v528q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm0-72h528v-528H216v528Zm0-528v528-528Z"/></svg> {langData.obyom[language]}</td>
+					<td>∞</td>
+				</tr> */}
+				{/* <tr>
+					<td><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M666-163 475-354q-20 8-43.5 12.5T384-337q-99 0-169.5-70T144-576q0-37.78 9.5-71.89T182-711l144 144 70-70-144-144q29-17 62.5-26t69.5-9q100 0 170 71t70 170.19q0 22.81-4.5 42.31Q615-513 607-493l195 194q14 14.35 14 34.67Q816-244 802-230l-68 67q-14.09 14-34.04 14Q680-149 666-163Zm34-68 35-34-215-213q20-24 26-52.5t6-44.5q0-66.85-47.5-116.42Q457-741 390-744l82 81q11 11.18 11 26.09t-11.29 26.12L351.29-491.21Q340-480 325.82-480T301-491l-85-85q0 69 49.5 118T384-409q17 0 47-7t56-28l213 213ZM476-488Z"/></svg> SitePad</td>
+					<td>{langData.free[language]}</td>
+				</tr> */}
+				<tr>
+					<td><svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 -960 960 960" width="17px" fill="#0d5446"><path d="M475.67-307.83q41.66-1.17 61-30.84l218.66-338L420-456q-29 19.33-30.83 61-1.84 41.67 21.5 65 23.33 23.33 65 22.17Zm3-491.5q57.66 0 117.16 17.83t113.5 58.83l-60 40.67q-41-25.67-87.16-38.17-46.17-12.5-83.52-12.5-137.98 0-234.98 97.98t-97 237.35q0 44.01 12.16 88.34 12.17 44.33 34.5 82.33h570q22.34-36.66 34.5-82.33Q810-354.67 810-400q0-40-11.17-83.67-11.16-43.66-38.16-81.66l42-60Q838-572.33 856.5-517t20.17 112.33q1.66 59-12.34 111.67t-41 98.33q-11.66 21.34-27 28Q781-160 760.67-160H196q-18.33 0-35.67-9Q143-178 134-194.67q-26-47-40-96.83T80-397.33q0-83 31.5-156.17 31.5-73.17 85.67-127.67 54.16-54.5 126.95-86.33t154.55-31.83Zm-3.67 325Z"/></svg> {langData.channel[language]}</td>
+					<td>{tarif.net} 250 {langData.speed[language]}</td>
+				</tr>
+				<tr>
+					<td><svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 -960 960 960" width="17px" fill="#0d5446"><path d="M303.69-144q-34.69 0-64.19-15T182-205q-40.94-45.32-63.97-108.11T95-442q0-77.2 30.5-145.1Q156-655 208.5-706t122.46-80.5q69.96-29.5 149.5-29.5t149.04 30q69.5 30 122 82T834-582.5q30 69.5 30 148.3 0 71.38-24.4 133.49-24.39 62.11-69.28 104.75Q743-170 713.94-157q-29.06 13-59.06 13-16.88 0-34.88-4.5-18-4.5-35-12.5l-57-28q-11-5-21.5-7.5T483-199q-15 0-30.23 3.5T424-185l-49 24q-17 8-35 12.5t-36.31 4.5Zm.31-71q10 0 19.5-2.5T343-225l48-25q20-11 43.16-16 23.16-5 46.84-5 22 0 41.57 4.29Q542.13-262.43 560-253l56 28q11 5 19.5 7.5T654-215q17 0 33.5-7.5T721-246q35-32 53-79.5T792-429q0-132-90.54-223.5t-221-91.5Q350-744 258.5-653.21T167-433q0 56 18.5 104.5T238-247q17 17.3 33 24.65 16 7.35 33 7.35Zm176-265Zm51 86.85q21-21.15 21-50.85 0-8-1.75-16T545-476l53-69q12 14 19.88 30.08Q625.75-498.85 631-480h73q-14-84-77.19-138T480-672q-85 0-148 54.5T256-480h72.6q12.4-53 54.97-86.5t96.04-33.5q16.83 0 31.68 3 14.85 3 28.71 9l-54.85 72H480.2q-29.79 0-50.99 21.21-21.21 21.21-21.21 51T429.21-393q21.21 21 51 21T531-393.15Z"/></svg> TAS-IX / UZ-IX</td>
+					<td>1 {langData.gigSpeed[language]}</td>
 				</tr>
 			</table>
-			<table>
-				<tr>
-					<td>SSL</td>
-					<td>{langData.domen[language]}</td>
-				</tr>
-				<tr>
-					<th>{langData.free[language]}</th>
-					<th>{langData.present[language]}*</th>
-				</tr>
-			</table>
-			<table>
-				<tr>
-					<td>{langData.obyom[language]}</td>
-					<td>SitePad</td>
-				</tr>
-				<tr>
-					<th>∞</th>
-					<th>{langData.free[language]}</th>
-				</tr>
-			</table>
-			<table>
-				<tr>
-					<td>{langData.channel[language]}</td>
-					<td>TAS-IX</td>
-				</tr>
-				<tr>
-					<th>250 {langData.speed[language]}</th>
-					<th>1 {langData.gigSpeed[language]}</th>
-				</tr>
-			</table>
-			<hr />
 			<button>
 				<a href={tarif.link} target="_blank" rel="noopener noreferrer">
-					{langData.order[language]}
+					{langData.order[language]} <svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 -960 960 960" width="17px" fill="#fff"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
 				</a>
 			</button>
+			<p className={st.tarifCard__topcard + ' ' + tarif.activeTop}>
+				<span><svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 -960 960 960" width="17px" fill="#fcdd44"><path d="M264-384q0 46 19.5 87.5T338-223q-1-5-1.5-10t-.5-10q0-27 10-50.5t27-42.5l107-120 107 120q17 20 27 43.5t10 49.5q0 5-.5 10.5T622-222q35-29 54.5-71.5T696-384q0-51-17.5-100.5T628-576q-17 11-35.5 17t-40.5 6q-52 0-91.5-32T411-668q-36 33-63 67.5T302-530q-19 36-28.5 73t-9.5 73Zm216 36-53 60q-9 11-14 22.5t-5 25.5q0 30 21 51t51 21q30 0 51-21t21-51q0-14-5-26t-14-22l-53-60Zm0-468v119q0 30 21 51t51 21q17 0 31.5-7t24.5-20l16-20q64 38 104 118.5T768-384q0 120-84 204T480-96q-120 0-204-84t-84-204q0-112 76-226.5T480-816Z"/></svg> {langData.topCard[language]}</span>
+			</p>
 		</div>
 	)
 }

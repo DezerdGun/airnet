@@ -1,6 +1,7 @@
 import st from "./stock.module.scss";
 import WhyBlock from "../whyBlock/index.jsx";
 import { presentIcon } from "shared/icons/presentIcon";
+import { presentIcon2 } from "shared/icons/presentIcon2";
 import { clockIcon } from "shared/icons/clockIcon";
 import { settingsIcon } from "shared/icons/settingsIcon";
 import { usersIcon } from "shared/icons/usersIcon";
@@ -10,28 +11,30 @@ export default function Stock({ language }) {
   const whyBlockStock = [
     {
       title: {
-        ru: "Подарки при оплате на длительный срок",
-        uz: "Uzoq muddatli to'lovlar uchun sovg'alar",
-        en: "Gifts when paid for a long time",
+        ru: "Бонусы при оплате за год",
+        uz: "Yillik to'lov uchun bonuslar",
+        en: "Bonuses for annual payment",
       },
       description: {
         ru: (
           <p>
-            Закажите любой тариф виртуального хостинга на 1 год и получите в подарок домен в зоне .UZ: Помощь в переносе
-            сайтов; SSL-сертификаты на каждый Ваш домен; Приоритетный уровень обслуживания;
+            Оплатите хостинг на 12 месяцев и получите больше за те же деньги:<br />
+            домен в зоне .UZ, SSL-сертификаты для ваших сайтов и приоритетную поддержку.
+            Максимум выгоды при долгосрочном размещении.
           </p>
         ),
         uz: (
           <p>
-            1 yilga istalgan virtual hosting rejasiga buyurtma bering va .UZ zonasida domenni sovg'a sifatida oling:
-            Saytlarni uzatishda yordam bering; Har bir domeningiz uchun SSL sertifikatlari; Xizmat ko'rsatishning
-            ustuvor darajasi;
+            12 oylik xosting uchun to'lovni amalga oshiring va bir xil narxda ko'proq narsaga ega bo'ling:<br />
+            .UZ domeni, saytlaringiz uchun SSL sertifikatlari va ustuvor qo'llab-quvvatlash.
+            Uzoq muddatli xosting bilan maksimal qiymat.
           </p>
         ),
         en: (
           <p>
-            Order any virtual hosting plan for 1 year and get a domain in the .UZ zone as a gift: Assistance in site
-            migration; SSL certificates for each of your domains; Priority level of service;
+            Pay for 12 months of hosting and get more for the same price:<br />
+            a .UZ domain, SSL certificates for your sites, and priority support.
+            Maximum value with long-term hosting.
           </p>
         ),
       },
@@ -39,77 +42,101 @@ export default function Stock({ language }) {
     },
     {
       title: {
-        ru: "Хостинг в подарок, при переезде от другого провайдера",
-        uz: "Boshqa provayderdan ko'chib o'tishda sovg'a sifatida xosting",
-        en: "Hosting as a gift, when moving from another provider",
+        ru: "Переезд без затрат",
+        uz: "Xarajatlarsiz ko'chib o'tish",
+        en: "Moving without expenses",
       },
       description: {
         ru: (
           <p>
-            Вы переезжаете к нам от другого хостинг-провайдера? Тогда мы подарим один месяц виртуального хостинга, по
-            выбранному Вами тарифу, более того, выполним бесплатный перенос всех сайтов!
+            Переходите от другого провайдера — мы сделаем всё за вас.<br />
+            Бесплатно перенесём сайты и подарим 1 месяц хостинга.
+            Без простоев, без рисков, без лишних действий с вашей стороны.
           </p>
         ),
         uz: (
           <p>
-            Siz boshqa hosting provayderidan bizga ko'chyapsizmi? Shunda biz siz tanlagan tarif bo'yicha bir oylik
-            virtual xosting beramiz, bundan tashqari barcha saytlarni bepul o'tkazamiz!
+            Boshqa provayderdan o'ting — biz siz uchun hamma narsani qilamiz.<br />
+            Biz veb-saytlaringizni bepul o'tkazamiz va sizga bir oylik xosting xizmatini taqdim etamiz.
+            Hech qanday uzilishlar, xavflar va siz tomondan qo'shimcha harakatlar yo'q.
           </p>
         ),
         en: (
           <p>
-            Are you moving to us from another hosting provider? Then we will give you one month of virtual hosting at
-            the rate you choose, moreover, we will transfer all sites for free!
+            Switch from another provider—we'll do everything for you.<br />
+            We'll transfer your websites for free and give you one month of hosting.
+            No downtime, no risks, and no extra steps on your part.
           </p>
         ),
       },
-      icon: presentIcon,
+      icon: presentIcon2,
     },
     {
-      title: { ru: "Тестовый период", uz: "Sinov davri", en: "Test period" },
+      title: { ru: "Тестовый доступ", uz: "Sinovga kirish", en: "Test access" },
       description: {
-        ru: <p>Некоторые наши услуги Вы можете тестировать до 3-х дней.</p>,
-        uz: <p>Ba'zi xizmatlarimizni 3 kungacha sinab ko'rishingiz mumkin.</p>,
-        en: <p>Some of our services you can test up to 3 days.</p>,
+        ru: <p>Попробуйте сервис до оплаты.<br />
+              Доступ к тестированию до 3 дней, чтобы оценить скорость и стабильность на практике.
+              Решение принимаете на основе реального опыта, а не обещаний.</p>,
+        uz: <p>To'lovni amalga oshirishdan oldin xizmatni sinab ko'ring.<br />
+              Amalda tezlik va barqarorlikni baholash uchun uni 3 kungacha sinab ko'ring.
+              Sizning qaroringiz va'dalarga emas, balki haqiqiy tajribaga asoslangan.</p>,
+        en: <p>Try the service before paying.<br />
+              Test it for up to 3 days to evaluate the speed and stability in practice.
+              Your decision is based on real experience, not promises.</p>,
       },
       icon: clockIcon,
     },
     {
       title: {
-        ru: "Помощь при переезде",
-        uz: "Ko'chirishda yordam bering",
-        en: "Help with moving",
+        ru: "Полное сопровождение при переносе",
+        uz: "O'tkazish paytida to'liq qo'llab-quvvatlash",
+        en: "Full support during the transfer",
       },
       description: {
-        ru: <p>Сделаем все сами, в кратчайшие сроки.</p>,
-        uz: <p>Biz hamma narsani o'zimiz qilamiz, eng qisqa vaqt ichida.</p>,
-        en: <p>We will do everything ourselves, in the shortest possible time.</p>,
+        ru: <p>Берём на себя весь процесс миграции: от копирования данных до настройки.<br />
+              Минимум вашего участия — максимум результата.<br />
+              Запуск без ошибок и потерь.</p>,
+        uz: <p>Biz butun migratsiya jarayonini boshqaramiz: ma'lumotlarni nusxalashdan tortib konfiguratsiya qilishgacha.<br />
+              Sizning minimal ishtirokingiz - maksimal natijalar.<br />
+              Xatosiz va yo'qotishsiz ishga tushirish.</p>,
+        en: <p>We handle the entire migration process: from data copying to configuration.<br />
+              Minimal involvement on your part – maximum results.<br />
+              Error-free and loss-free launch.</p>,
       },
       icon: settingsIcon,
     },
     {
       title: {
-        ru: "Приведите друга!",
-        uz: "Do'stingizni olib keling!",
-        en: "Bring a friend!",
+        ru: "Приведи друга — получи бонус",
+        uz: "Do'stingizni tavsiya qiling - bonus oling",
+        en: "Refer a friend - get a bonus",
       },
       description: {
-        ru: <p>Подарим Вам бесплатный месяц веб-хостинга, по Вашему тарифному плану.</p>,
-        uz: <p>Biz sizga tarif rejangizga muvofiq bir oylik bepul veb-xosting beramiz.</p>,
-        en: <p>We will give you a free month of web hosting, according to your tariff plan.</p>,
+        ru: <p>Рекомендуйте AIRNET и получайте бесплатный месяц хостинга.<br />
+              Простая схема: вы делитесь — мы начисляем бонус.<br />
+              Выгодно для вас и ваших партнёров.</p>,
+        uz: <p>AIRNETni tavsiya qiling va bir oylik bepul xostingga ega bo'ling.<br />
+              Bu juda oddiy: siz ulashasiz va biz sizga bonus beramiz.<br />
+              Bu siz va hamkorlaringiz uchun foydali.</p>,
+        en: <p>Recommend AIRNET and get a free month of hosting.<br />
+              It's simple: you share, and we'll give you a bonus.<br />
+              It's beneficial for you and your partners.</p>,
       },
       icon: usersIcon,
     },
     {
       title: {
-        ru: "Бесплатно доменное имя!",
-        uz: "Bepul domen nomi!",
-        en: "Free domain name!",
+        ru: "Домен в подарок",
+        uz: "Sovg'a sifatida domen",
+        en: "Domain as a gift",
       },
       description: {
-        ru: <p>При заказе виртуального хостинга от 1 года.</p>,
-        uz: <p>1 yildan boshlab virtual xostingga buyurtma berishda.</p>,
-        en: <p>When ordering a virtual hosting from 1 year.</p>,
+        ru: <p>При заказе хостинга на год — домен бесплатно.<br />
+              Экономия на старте и быстрый запуск проекта без дополнительных затрат.</p>,
+        uz: <p>Bir yilga xostingga buyurtma bering va bepul domenga ega bo'ling.<br />
+              Startupda pulni tejang va qo'shimcha xarajatlarsiz loyihangizni tezda ishga tushiring.</p>,
+        en: <p>Order hosting for a year and get a free domain.<br />
+              Save money on your start-up and launch your project quickly without additional costs.</p>,
       },
       icon: globalIcon,
     },

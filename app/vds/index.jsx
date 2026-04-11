@@ -445,16 +445,7 @@ export const forDatacenterVDSData = {
     {
       title: { ru: "TIER III", uz: "TIER III", en: "TIER III" },
       img: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          id="Layer_1"
-          data-name="Layer 1"
-          viewBox="0 0 24 24"
-          width="512"
-          height="512"
-        >
-          <path d="M18,0H6C3.24,0,1,2.24,1,5v14c0,2.76,2.24,5,5,5h12c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM6,2h12c1.65,0,3,1.35,3,3V15H3V5c0-1.65,1.35-3,3-3Zm12,20H6c-1.65,0-3-1.35-3-3v-2H21v2c0,1.65-1.35,3-3,3Zm2-2.5c0,.83-.67,1.5-1.5,1.5s-1.5-.67-1.5-1.5,.67-1.5,1.5-1.5,1.5,.67,1.5,1.5Zm-4,0c0,.83-.67,1.5-1.5,1.5s-1.5-.67-1.5-1.5,.67-1.5,1.5-1.5,1.5,.67,1.5,1.5Z" />
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#0d5446"><path d="M120-160v-152h720v152H120Zm66.67-38.67h74.66v-74.66h-74.66v74.66ZM120-648v-152h720v152H120Zm66.67-38.67h74.66v-74.66h-74.66v74.66ZM120-404v-152h720v152H120Zm66.67-38.67h74.66v-74.66h-74.66v74.66Z"/></svg>
       ),
     },
   ],
@@ -763,10 +754,25 @@ export default function VDS({ language }) {
       uz: "Bizning serverlarimiz O'zbekiston hududida (Toshkent) TAS-IX tarmog'ida joylashgan tezligi 1 Gbps",
       en: "Our servers are located on the territory of Uzbekistan (Tashkent), in the TAS-IX network at a speed of 1 Gbps",
     },
+    // dsc: {
+    //   ru: "Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости 1 Gbps",
+    //   uz: "Bizning serverlarimiz O'zbekiston hududida (Toshkent) TAS-IX tarmog'ida joylashgan tezligi 1 Gbps",
+    //   en: "Our servers are located on the territory of Uzbekistan (Tashkent), in the TAS-IX network at a speed of 1 Gbps",
+    // },
     dsc: {
-      ru: "Наши сервера расположены на территории Узбекистана (Ташкент), в сети TAS-IX на скорости 1 Gbps",
-      uz: "Bizning serverlarimiz O'zbekiston hududida (Toshkent) TAS-IX tarmog'ida joylashgan tezligi 1 Gbps",
-      en: "Our servers are located on the territory of Uzbekistan (Tashkent), in the TAS-IX network at a speed of 1 Gbps",
+      ru: "Сервера в Узбекистане (Ташкент)",
+      uz: "O'zbekistondagi serverlar (Toshkent)",
+      en: "Servers in Uzbekistan (Tashkent)",
+    },
+    dsc2: {
+      ru: "Подключение к TAS-IX",
+      uz: "TAS-IX ga ulanmoqda",
+      en: "Connecting to TAS-IX",
+    },
+    dsc3: {
+      ru: "Скорость до 1 Гбит/с",
+      uz: "1 Gbit/s gacha tezlik",
+      en: "Speed ​​up to 1 Gbps",
     },
     txt: {
       ru: "Тариф",
@@ -782,10 +788,10 @@ export default function VDS({ language }) {
       ru: (
         <p>
           Срок действия услуги начнется с момента её активации.
-          <br /><br />{" "}
+          {/* <br /><br />{" "}
           <span className="strong">
             «VDS запускается за 30 минут», «Аптайм 99.98%»
-          </span>
+          </span> */}
         </p>
       ),
       uz: (
@@ -1278,29 +1284,32 @@ export default function VDS({ language }) {
   const whyBlock = [
     {
       title: {
-        ru: "Защита DDoS & BackUp",
-        uz: "DDoS himoyasi va zaxira nusxasi",
-        en: "DDoS Protection & BackUp",
+        ru: "Защита и резервирование данных",
+        uz: "Ma'lumotlarni himoya qilish va zaxiralash",
+        en: "Data protection and backup",
       },
       description: {
         ru: (
           <>
             <p>
-              Серверы защищены от DDoS, бэкапы доступны по запросу (услуга резервирование копирование Платная)
+              Серверы защищены от DDoS-атак на уровне сети.<br />
+              Резервное копирование доступно по запросу — вы сохраняете контроль над своими данными и снижаете риски потерь.
             </p>
           </>
         ),
         uz: (
           <>
             <p>
-              Serverlar DDoS dan himoyalangan, so'rov bo'yicha zaxira nusxalari mavjud (zaxira nusxa ko'chirish xizmati to'lanadi)
+              Bizning serverlarimiz tarmoq darajasida DDoS hujumlaridan himoyalangan.<br />
+              Zaxira nusxalari so'rov bo'yicha mavjud bo'lib, bu sizga ma'lumotlaringizni nazorat qilish va yo'qotish xavfini kamaytirish imkonini beradi.
             </p>
           </>
         ),
         en: (
           <>
             <p>
-              Servers are protected from DDoS, backups are available upon request (backup copying service is paid)
+              Our servers are protected from DDoS attacks at the network level.<br />
+              Backups are available upon request, allowing you to maintain control over your data and reduce the risk of loss.
             </p>
           </>
         ),
@@ -1312,17 +1321,20 @@ export default function VDS({ language }) {
       description: {
         ru: (
           <p>
-              100% возврат в течение 7 дней, если не понравится
+              Мы уверены в качестве услуг — предоставляем 100% возврат средств в течение 7 дней.
+              Вы тестируете сервис без риска.
           </p>
         ),
         uz: (
           <p>
-              Agar sizga yoqmasa, 7 kun ichida 100% qaytarib beriladi
+            Biz xizmatlarimiz sifatiga aminmiz — 7 kun ichida 100% pulni qaytarib berish kafolatini taqdim etamiz.
+            Siz xizmatni xavfsiz sinab ko'rishingiz mumkin.
           </p>
         ),
         en: (
           <p>
-              100% refund within 7 days if you don't like it
+              We're confident in the quality of our services—we offer a 100% money-back guarantee within 7 days.
+              You can test the service risk-free.
           </p>
         ),
       },
@@ -1330,16 +1342,16 @@ export default function VDS({ language }) {
     },
     {
       title: {
-        ru: "Поддержка круглосуточно",
-        uz: "24/7 qo'llab quvvatlash",
-        en: "Support 24/7",
+        ru: "Круглосуточная поддержка",
+        uz: "24/7 qo'llab-quvvatlash",
+        en: "24/7 support",
       },
       description: {
         ru: (
           <>
             <p>
-              В любое время суток, Вы можете к нам обратиться за помощью или
-              советом, мы ответим максимально быстро.
+              Техническая команда доступна 24/7.
+              Оперативно помогаем с настройкой, решением инцидентов и консультациями по инфраструктуре.
             </p>
             <button>
               <Link href={checkLang(language) + LINKS.CONTACTS}>
@@ -1351,8 +1363,8 @@ export default function VDS({ language }) {
         uz: (
           <>
             <p>
-              Kunning istalgan vaqtida yordam yoki maslahat uchun biz bilan
-              bog'lanishingiz mumkin, biz imkon qadar tezroq javob beramiz .
+              Bizning texnik guruhimiz 24/7 xizmatingizda.
+              Biz o'rnatish, noxush hodisalarni bartaraf etish va infratuzilma bo'yicha maslahatlar berishda tezkor yordam ko'rsatamiz.
             </p>
             <button>
               <Link href={checkLang(language) + LINKS.CONTACTS}>
@@ -1364,8 +1376,8 @@ export default function VDS({ language }) {
         en: (
           <>
             <p>
-              At any time of the day, you can contact us for help or advice, we
-              will respond as quickly as possible.
+              Our technical team is available 24/7.
+              We provide prompt assistance with setup, incident resolution, and infrastructure consultations.
             </p>
             <button>
               <Link href={checkLang(language) + LINKS.CONTACTS}>
@@ -1379,27 +1391,27 @@ export default function VDS({ language }) {
     },
     {
       title: {
-        ru: "Гибкая настройка",
-        uz: "O'zgaruvchan qurulmalar",
-        en: "Flexible setup",
+        ru: "Гибкая конфигурация",
+        uz: "Moslashuvchan konfiguratsiya",
+        en: "Flexible configuration",
       },
       description: {
         ru: (
           <p>
-            Вы можете изменить количество CPU и RAM в любой момент, а также
-            увеличить объём SSD
+            Масштабируйте ресурсы под задачи проекта:<br />
+            увеличивайте CPU, RAM и объём диска без сложных миграций и простоев.
           </p>
         ),
         uz: (
           <p>
-            Siz istalgan vaqtda protsessor va operativ xotira miqdorini
-            o'zgartirishingiz, shuningdek, SSD hajmini oshirishingiz mumkin
+            Loyiha ehtiyojlarini qondirish uchun resurslarni masshtablash:<br />
+            Murakkab migratsiyalar yoki ishlamay qolishlarsiz protsessor, operativ xotira va disk maydonini oshiring.
           </p>
         ),
         en: (
           <p>
-            You can change the amount of CPU and RAM at any time, as well as
-            increase the amount of SSD
+            Scale resources to meet project needs:<br />
+            Increase CPU, RAM, and disk space without complex migrations or downtime.
           </p>
         ),
       },
@@ -1407,27 +1419,27 @@ export default function VDS({ language }) {
     },
     {
       title: {
-        ru: "Управление по VNC",
+        ru: "Управление через VNC",
         uz: "VNC orqali boshqarish",
         en: "Control via VNC",
       },
       description: {
         ru: (
           <p>
-            Предоставляем доступ к VPS/VDS северам по протоколу удаленного
-            доступа VNC.
+            Полный удалённый доступ к серверу через VNC.<br />
+            Контроль на уровне консоли — независимо от состояния операционной системы.
           </p>
         ),
         uz: (
           <p>
-            VPS/VDS serverlariga VNC masofaviy kirish protokoli orqali kirishni
-            ta'minlaymiz.
+            VNC orqali serverga to'liq masofaviy kirish.<br />
+            Konsol darajasidagi boshqaruv – operatsion tizim holatidan qat'i nazar.
           </p>
         ),
         en: (
           <p>
-            We provide access to VPS/VDS servers via the VNC remote access
-            protocol.
+            Full remote access to the server via VNC.<br />
+            Console-level control – regardless of the operating system state.
           </p>
         ),
       },
@@ -1442,20 +1454,23 @@ export default function VDS({ language }) {
       description: {
         ru: (
           <p>
-            Нет ограничений по входящему и исходящему объёму данных на всех
-            тарифных планах с каналом от 250 Мбит/с.
+            Отсутствие ограничений на входящий и исходящий трафик.
+            Стабильная работа сервисов при любой нагрузке и скорости канала до 250 Мбит/с*.<br />
+            <span className="font-size-10">*не допускать 100% нагрузку на канал в течении длительного времени, для киносайтов и ТВ каналы по согласованию.</span>
           </p>
         ),
         uz: (
           <p>
-            250 Mbit/s yoki undan ortiq kanalli barcha tarif rejalarida kiruvchi
-            va chiquvchi maʼlumotlar hajmiga cheklovlar yoʻq.
+            Kiruvchi va chiquvchi trafikka cheklovlar yo'q.
+            Har qanday yuk ostida barqaror xizmat ko'rsatish va 250 Mbit/s gacha bo'lgan kanal tezligi*.<br />
+            <span className="font-size-10">*uzoq vaqt davomida 100% kanal yuklanishidan saqlaning; kino saytlari va telekanallar uchun, iltimos, muhokama qiling.</span>
           </p>
         ),
         en: (
           <p>
-            There are no restrictions on incoming and outgoing data volume on
-            all tariff plans with a channel of 250 Mbps or more.
+            No restrictions on incoming and outgoing traffic.
+            Stable service operation under any load and channel speeds up to 250 Mbps*.<br />
+            <span className="font-size-10">*avoid 100% channel load for extended periods; for movie sites and TV channels, please discuss.</span>
           </p>
         ),
       },
@@ -1466,6 +1481,7 @@ export default function VDS({ language }) {
   const tarif = [
     {
       title: { ru: "Advanced", uz: "Advanced", en: "Advanced" },
+      workstxt: { ru: "Для сайтов и приложений", uz: "Veb-saytlar va ilovalar uchun", en: "For websites and applications" },
       // price: "550 000",
       prices: [
         {
@@ -1497,6 +1513,7 @@ export default function VDS({ language }) {
     },
     {
       title: { ru: "Mega", uz: "Mega", en: "Mega" },
+      workstxt: { ru: "Для CRM / 1С", uz: "CRM / 1С uchun", en: "For CRM / 1С" },
       // price: "800 000",
       prices: [
         {
@@ -1529,6 +1546,7 @@ export default function VDS({ language }) {
     },
     {
       title: { ru: "Ultra", uz: "Ultra", en: "Ultra" },
+      workstxt: { ru: "Для бизнеса", uz: "Biznes uchun", en: "For business" },
       // price: "1 000 000",
       prices: [
         {
@@ -1560,6 +1578,7 @@ export default function VDS({ language }) {
     },
     {
       title: { ru: "Tera", uz: "Tera", en: "Tera" },
+      workstxt: { ru: "Для высоконагруженных сайтов", uz: "Yuqori yuklangan joylar uchun", en: "For high-load sites" },
       // price: '1 500 000',
       prices: [
         {
@@ -1594,6 +1613,7 @@ export default function VDS({ language }) {
   const tarif2 = [
     {
       title: { ru: "Peta", uz: "Peta", en: "Peta" },
+      workstxt: { ru: "Для растущих проектов", uz: "Rivojlanayotgan loyihalar uchun", en: "For growing projects" },
       // price: '2 250 000',
       prices: [
         {
@@ -1625,6 +1645,7 @@ export default function VDS({ language }) {
     },
     {
       title: { ru: "Exa", uz: "Exa", en: "Exa" },
+      workstxt: { ru: "Для стабильного бизнеса", uz: "Barqaror biznes uchun", en: "For a stable business" },
       // price: '2 250 000',
       prices: [
         {
@@ -1656,6 +1677,7 @@ export default function VDS({ language }) {
     },
     {
       title: { ru: "Zeta", uz: "Zeta", en: "Zeta" },
+      workstxt: { ru: "Для highload", uz: "Yuqori yuklanish uchun", en: "For highload" },
       // price: '3 000 000',
       prices: [
         {
@@ -1687,6 +1709,7 @@ export default function VDS({ language }) {
     },
     {
       title: { ru: "Yotta", uz: "Yotta", en: "Yotta" },
+        workstxt: { ru: "Для enterprise", uz: "Korxona uchun", en: "For enterprise" },
       // price: "7 500 000",
       prices: [
         {
@@ -1721,6 +1744,7 @@ export default function VDS({ language }) {
   const tarif3 = [
     // {
     //   title: { ru: "Platinum", uz: "Platinum", en: "Platinum" },
+          // workstxt: { ru: "", uz: "", en: "" },
     //   // price: '150 000',
     //   prices: [
     //     {
@@ -1753,6 +1777,7 @@ export default function VDS({ language }) {
     // },
     {
       title: { ru: "Strong", uz: "Strong", en: "Strong" },
+      workstxt: { ru: "Для старта", uz: "Boshlash uchun", en: "To start" },
       // price: '200 000',
       prices: [
         {
@@ -1784,6 +1809,7 @@ export default function VDS({ language }) {
     },
     {
       title: { ru: "VIP", uz: "VIP", en: "VIP" },
+      workstxt: { ru: "Для телеграм ботов", uz: "Telegram botlari uchun", en: "For Telegram bots" },
       // price: '250 000',
       prices: [
         {
@@ -1815,6 +1841,7 @@ export default function VDS({ language }) {
     },
     {
       title: { ru: "VIP+", uz: "VIP+", en: "VIP+" },
+      workstxt: { ru: "Для интернет магазинов", uz: "Onlayn do'konlar uchun", en: "For online stores" },
       // price: '300 000',
       prices: [
         {
@@ -1847,6 +1874,7 @@ export default function VDS({ language }) {
     },
     {
       title: { ru: "Nano", uz: "Nano", en: "Nano" },
+      workstxt: { ru: "Для сайтов", uz: "Veb-saytlar uchun", en: "For websites" },
       // price: "400 000",
       prices: [
         {
@@ -1913,8 +1941,8 @@ export default function VDS({ language }) {
 
           <Container className={"head-top"}>
             <h1>{langData.headTitle[language]}</h1>
-            <p>{langData.dsc[language]}</p>
-            <h2>{langData.txt[language]}</h2>
+            {/* <p>{langData.dsc[language]}</p> */}
+            {/* <h2>{langData.txt[language]}</h2> */}
 
             {/* <ul className="tabs-button">
               <li className={toggle === 1 ? "active" : ""}>
@@ -1939,8 +1967,9 @@ export default function VDS({ language }) {
             <TarifMaket
               // bgImg={'/servers-2.jpg'}
               headTitle={langData.headTitle3[language]}
-              title="Тарифы"
-              description={<p>{langData.dsc[language]}</p>}
+              // title="Тарифы"
+              // description={<p>{langData.dsc[language]}</p>}
+              description={<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>{langData.dsc[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M303.69-144q-34.69 0-64.19-15T182-205q-40.94-45.32-63.97-108.11T95-442q0-77.2 30.5-145.1Q156-655 208.5-706t122.46-80.5q69.96-29.5 149.5-29.5t149.04 30q69.5 30 122 82T834-582.5q30 69.5 30 148.3 0 71.38-24.4 133.49-24.39 62.11-69.28 104.75Q743-170 713.94-157q-29.06 13-59.06 13-16.88 0-34.88-4.5-18-4.5-35-12.5l-57-28q-11-5-21.5-7.5T483-199q-15 0-30.23 3.5T424-185l-49 24q-17 8-35 12.5t-36.31 4.5Zm.31-71q10 0 19.5-2.5T343-225l48-25q20-11 43.16-16 23.16-5 46.84-5 22 0 41.57 4.29Q542.13-262.43 560-253l56 28q11 5 19.5 7.5T654-215q17 0 33.5-7.5T721-246q35-32 53-79.5T792-429q0-132-90.54-223.5t-221-91.5Q350-744 258.5-653.21T167-433q0 56 18.5 104.5T238-247q17 17.3 33 24.65 16 7.35 33 7.35Zm176-265Zm51 86.85q21-21.15 21-50.85 0-8-1.75-16T545-476l53-69q12 14 19.88 30.08Q625.75-498.85 631-480h73q-14-84-77.19-138T480-672q-85 0-148 54.5T256-480h72.6q12.4-53 54.97-86.5t96.04-33.5q16.83 0 31.68 3 14.85 3 28.71 9l-54.85 72H480.2q-29.79 0-50.99 21.21-21.21 21.21-21.21 51T429.21-393q21.21 21 51 21T531-393.15Z"/></svg>{langData.dsc2[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="m437-249 183-231H471l26-221-173 269h146l-33 183ZM336-96l48-264H192l324-504h72l-36 312h216L408-96h-72Zm136-379Z"/></svg>{langData.dsc3[language]}</p>}
               className="mt-0 px-0"
               endText={
                 <div className="text-white text-center mt-2">
@@ -1994,7 +2023,8 @@ export default function VDS({ language }) {
               // bgImg={'/servers-2.jpg'}
               headTitle={langData.headTitle[language]}
               title="Тарифы"
-              description={<p>{langData.dsc[language]}</p>}
+              // description={<p>{langData.dsc[language]}</p>}
+              description={<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>{langData.dsc[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M303.69-144q-34.69 0-64.19-15T182-205q-40.94-45.32-63.97-108.11T95-442q0-77.2 30.5-145.1Q156-655 208.5-706t122.46-80.5q69.96-29.5 149.5-29.5t149.04 30q69.5 30 122 82T834-582.5q30 69.5 30 148.3 0 71.38-24.4 133.49-24.39 62.11-69.28 104.75Q743-170 713.94-157q-29.06 13-59.06 13-16.88 0-34.88-4.5-18-4.5-35-12.5l-57-28q-11-5-21.5-7.5T483-199q-15 0-30.23 3.5T424-185l-49 24q-17 8-35 12.5t-36.31 4.5Zm.31-71q10 0 19.5-2.5T343-225l48-25q20-11 43.16-16 23.16-5 46.84-5 22 0 41.57 4.29Q542.13-262.43 560-253l56 28q11 5 19.5 7.5T654-215q17 0 33.5-7.5T721-246q35-32 53-79.5T792-429q0-132-90.54-223.5t-221-91.5Q350-744 258.5-653.21T167-433q0 56 18.5 104.5T238-247q17 17.3 33 24.65 16 7.35 33 7.35Zm176-265Zm51 86.85q21-21.15 21-50.85 0-8-1.75-16T545-476l53-69q12 14 19.88 30.08Q625.75-498.85 631-480h73q-14-84-77.19-138T480-672q-85 0-148 54.5T256-480h72.6q12.4-53 54.97-86.5t96.04-33.5q16.83 0 31.68 3 14.85 3 28.71 9l-54.85 72H480.2q-29.79 0-50.99 21.21-21.21 21.21-21.21 51T429.21-393q21.21 21 51 21T531-393.15Z"/></svg>{langData.dsc2[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="m437-249 183-231H471l26-221-173 269h146l-33 183ZM336-96l48-264H192l324-504h72l-36 312h216L408-96h-72Zm136-379Z"/></svg>{langData.dsc3[language]}</p>}
               className="mt-0 px-0"
             >
               <Swiper
@@ -2041,7 +2071,8 @@ export default function VDS({ language }) {
               // bgImg={'/servers-2.jpg'}
               headTitle={langData.headTitle2[language]}
               title="Тарифы"
-              description={<p>{langData.dsc[language]}</p>}
+              // description={<p>{langData.dsc[language]}</p>}
+              description={<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>{langData.dsc[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M303.69-144q-34.69 0-64.19-15T182-205q-40.94-45.32-63.97-108.11T95-442q0-77.2 30.5-145.1Q156-655 208.5-706t122.46-80.5q69.96-29.5 149.5-29.5t149.04 30q69.5 30 122 82T834-582.5q30 69.5 30 148.3 0 71.38-24.4 133.49-24.39 62.11-69.28 104.75Q743-170 713.94-157q-29.06 13-59.06 13-16.88 0-34.88-4.5-18-4.5-35-12.5l-57-28q-11-5-21.5-7.5T483-199q-15 0-30.23 3.5T424-185l-49 24q-17 8-35 12.5t-36.31 4.5Zm.31-71q10 0 19.5-2.5T343-225l48-25q20-11 43.16-16 23.16-5 46.84-5 22 0 41.57 4.29Q542.13-262.43 560-253l56 28q11 5 19.5 7.5T654-215q17 0 33.5-7.5T721-246q35-32 53-79.5T792-429q0-132-90.54-223.5t-221-91.5Q350-744 258.5-653.21T167-433q0 56 18.5 104.5T238-247q17 17.3 33 24.65 16 7.35 33 7.35Zm176-265Zm51 86.85q21-21.15 21-50.85 0-8-1.75-16T545-476l53-69q12 14 19.88 30.08Q625.75-498.85 631-480h73q-14-84-77.19-138T480-672q-85 0-148 54.5T256-480h72.6q12.4-53 54.97-86.5t96.04-33.5q16.83 0 31.68 3 14.85 3 28.71 9l-54.85 72H480.2q-29.79 0-50.99 21.21-21.21 21.21-21.21 51T429.21-393q21.21 21 51 21T531-393.15Z"/></svg>{langData.dsc2[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="m437-249 183-231H471l26-221-173 269h146l-33 183ZM336-96l48-264H192l324-504h72l-36 312h216L408-96h-72Zm136-379Z"/></svg>{langData.dsc3[language]}</p>}
               className="mt-0 px-0"
             >
               <Swiper

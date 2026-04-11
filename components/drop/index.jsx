@@ -6,9 +6,9 @@ const Drop = ({ item, index, show, setShow, isTarifCard, language }) => {
 
 	const langData = {
 		sum: {
-			ru: "сум",
-			uz: "so'm",
-			en: "sum",
+			ru: "сум / ",
+			uz: "so'm / ",
+			en: "sum / ",
 		},
 		sumV: {
 			ru: "сум",
@@ -30,26 +30,10 @@ const Drop = ({ item, index, show, setShow, isTarifCard, language }) => {
 				<div className="tarif_drop">
 					{item[checked].price}
 					<span className="tarif_drop">
-						{langData.sum[language]}
-						<hr />
-						{item[checked].dateOff}
+						{langData.sum[language]}{item[checked].dateOff}
 					</span>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="12"
-						height="8"
-						viewBox="0 0 12 8"
-						fill="black"
-						className="tarif_drop"
-					>
-						<path
-							className="tarif_drop"
-							d="M11.3359 1.33366L6.0026 6.66699L0.669271 1.33366"
-							stroke="#F8F8F8"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-						></path>
-					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0d5446" className="tarif_drop">
+					<path className="tarif_drop" d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
 				</div>
 			</div>
 			<ul
@@ -68,15 +52,14 @@ const Drop = ({ item, index, show, setShow, isTarifCard, language }) => {
 						<strong>
 							{el.price} {langData.sumV[language]}
 							{el.date}
-						</strong>
-						<br />
+						</strong> /
 						<span>
 							{language == "uz" ? (
 								<>{el.dateOff} ga to'lov</>
 							) : language == "en" ? (
-								<>when paying for {el.dateOff}</>
+								<> {el.dateOff}</>
 							) : (
-								<>при оплате за {el.dateOff}</>
+								<> {el.dateOff}</>
 							)}
 						</span>
 					</li>
