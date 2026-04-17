@@ -44,9 +44,9 @@ export default function TarifCard({ index, tarif, show, setShow, language }) {
       en: "1 address",
     },
     channel: {
-      ru: "Канал",
-      uz: "Kanal",
-      en: "Channel",
+      ru: "Интернет",
+      uz: "Internet",
+      en: "Internet",
     },
     speed: {
       ru: "Мбит/сек",
