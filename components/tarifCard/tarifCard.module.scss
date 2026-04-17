@@ -141,6 +141,24 @@ $red: #f00;
         line-height: 20px !important;
       }
     }
+    tr:nth-child(1) {
+      td:last-child {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    tr:nth-child(2) {
+      td:last-child {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    tr:nth-child(3) {
+      td:last-child {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
     tr {
       border-bottom: 1px solid #f1f2f6;
       // margin-left: 10px;
@@ -171,7 +189,7 @@ $red: #f00;
       td:last-child {
         color: $black;
         text-align: right;
-        font-weight: 600;
+        // font-weight: 600;
       }
     }
   }
@@ -194,7 +212,7 @@ $red: #f00;
       display: inline-block;
       align-items: center;
       justify-content: center;
-      font-size: 16px;
+      font-size: 18px;
       // text-transform: uppercase;
       color: inherit;
       width: 265px;

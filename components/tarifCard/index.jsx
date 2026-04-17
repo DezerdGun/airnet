@@ -59,9 +59,9 @@ export default function TarifCard({ index, tarif, show, setShow, language }) {
       en: "Gbps",
     },
     order: {
-      ru: "Запустить сервер",
-      uz: "Serverni ishga tushiring",
-      en: "Start the server",
+      ru: "Заказать сервер",
+      uz: "Serverga buyurtma bering",
+      en: "Order a server",
     },
     topCard: { ru: "Рекомендуем", uz: "Biz tavsiya qilamiz", en: "We recommend" },
   };
