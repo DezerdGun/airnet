@@ -40,7 +40,7 @@ import { serversIcon } from "shared/icons/serversIcon";
 import { ssdIcon } from "shared/icons/ssdIcon";
 import ProductHome from "@/components/seo/producthome"
 
-export default function Home({ language }) {
+export default function Home({ language, apiNewsServer }) {
   const [show, setShow] = useState(-1);
   const langData = {
     seoTitle: {
@@ -1041,7 +1041,7 @@ export default function Home({ language }) {
       <ForDatacenter data={forDatacenterVDSData} language={language} />
       
       <Partners language={language} />
-      <HomeNews language={language} />
+      <HomeNews language={language} apiNewsServer={apiNewsServer} />
       <Reviews language={language} />
     </>
   );

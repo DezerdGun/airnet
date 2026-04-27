@@ -19,15 +19,16 @@ const labels = {
   read: { ru: "Читать →", uz: "O'qish →", en: "Read →" },
 };
 
-export default function HomeNews({ language = "ru" }) {
-  const [items, setItems] = useState([]);
+export default function HomeNews({ language = "ru", apiNewsServer }) {
+  const [items, setItems] = useState(Array.isArray(apiNewsServer) ? apiNewsServer : []);
 
   useEffect(() => {
+    if (Array.isArray(apiNewsServer) && apiNewsServer.length) return;
     fetch(NEWS_API + "?limit=10&lang=" + encodeURIComponent(language || "ru"))
       .then((r) => (r.ok ? r.json() : null))
       .then((j) => { if (j && j.ok && Array.isArray(j.data)) setItems(j.data); })
       .catch(() => {});
-  }, [language]);
+  }, [language, apiNewsServer]);
 
   if (!items.length) return null;
 
@@ -72,9 +73,7 @@ export default function HomeNews({ language = "ru" }) {
                   </div>
                   <h3 className="home-news__title">{n.title}</h3>
                   <p className="home-news__excerpt">{n.excerpt}</p>
-                  <Link href={checkLang(language) + "/news"}>
-                    <a className="home-news__link">{labels.read[language]}</a>
-                  </Link>
+                  <a className="home-news__link" href={"https://billing.airnet.uz/billing.php?do=news&id=" + n.id} target="_blank" rel="noopener noreferrer">{labels.read[language]}</a>
                 </div>
               </article>
             </SwiperSlide>

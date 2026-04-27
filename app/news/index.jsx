@@ -705,7 +705,12 @@ export function NewsBlock({ pagination, news, language, showApi = true, apiNewsS
 					<div className={st.news__block}>
 						{apiNews.map((item) => (
 							<div key={"api-" + item.id} className={st.news__block__item}>
-								<a>
+								<a href={"https://billing.airnet.uz/billing.php?do=news&id=" + item.id} target="_blank" rel="noopener noreferrer">
+									{item.image ? (
+										<div className={st.news__block__item__img}>
+											<img src={item.image} alt="" style={{ width: "100%", height: "auto", display: "block" }} loading="lazy" />
+										</div>
+									) : null}
 									<div className={st.news__block__item__content}>
 										<div className={st.news__block__item__content__header}>
 											<h2>{item.title}</h2>
