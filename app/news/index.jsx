@@ -591,7 +591,7 @@ export const news = [
 	},
 ]
 
-export default function News({ language }) {
+export default function News({ language, apiNewsServer }) {
 	const pagination = {
 		ru: (
 			<>
@@ -646,18 +646,19 @@ export default function News({ language }) {
 		),
 	}
 
-	return <NewsBlock pagination={pagination} news={news} language={language} />
+	return <NewsBlock pagination={pagination} news={news} language={language} apiNewsServer={apiNewsServer} />
 }
 
-export function NewsBlock({ pagination, news, language, showApi = true }) {
-	const [apiNews, setApiNews] = useState([]);
+export function NewsBlock({ pagination, news, language, showApi = true, apiNewsServer }) {
+	const [apiNews, setApiNews] = useState(Array.isArray(apiNewsServer) ? apiNewsServer : []);
 	useEffect(() => {
 		if (!showApi) return;
+		if (Array.isArray(apiNewsServer) && apiNewsServer.length) return;
 		fetch(NEWS_API + "?limit=20&lang=" + encodeURIComponent(language || "ru"))
 			.then((r) => (r.ok ? r.json() : null))
 			.then((j) => { if (j && j.ok && Array.isArray(j.data)) setApiNews(j.data); })
 			.catch(() => {});
-	}, [language, showApi]);
+	}, [language, showApi, apiNewsServer]);
 
 	const langData = {
 		seoT: {
