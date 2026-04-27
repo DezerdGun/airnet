@@ -7,6 +7,7 @@ import Notifications from "@/components/notifications";
 import Partners from "@/components/partners";
 import RegDomain from "@/components/regDomain";
 import Reviews from "@/components/reviews";
+import HomeNews from "@/components/homeNews";
 import SEO from "@/components/seo";
 // import Product from "@/components/seo/product";
 import Sitepad from "@/components/sitepad";
@@ -1040,6 +1041,7 @@ export default function Home({ language }) {
       <ForDatacenter data={forDatacenterVDSData} language={language} />
       
       <Partners language={language} />
+      <HomeNews language={language} />
       <Reviews language={language} />
     </>
   );
