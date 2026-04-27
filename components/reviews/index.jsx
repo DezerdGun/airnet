@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { Autoplay, Navigation } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -5,7 +6,8 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import Container from '../container/index.jsx'
 import st from './reviews.module.scss'
 
-const data = [
+const TESTIM_API = "https://billing.airnet.uz/testimonials_api.php"
+const fallbackData = [
 	{
 		name: 'Сардор',
 		surname: '',
@@ -50,7 +52,30 @@ const data = [
 	},
 ]
 
+function mapApi(r) {
+	let parts = (r.name || '').trim().split(/\s+/)
+	return {
+		name: parts[0] || 'Клиент',
+		surname: parts.slice(1).join(' '),
+		date: r.date ? new Date(r.date).toLocaleDateString('ru-RU') : '',
+		text: r.message || '',
+	}
+}
+
 export default function Reviews({ language }) {
+	const [apiData, setApiData] = useState(null)
+	useEffect(() => {
+		fetch(TESTIM_API + '?limit=5')
+			.then((r) => (r.ok ? r.json() : null))
+			.then((j) => {
+				if (j && j.ok && Array.isArray(j.data) && j.data.length) {
+					setApiData(j.data.map(mapApi))
+				}
+			})
+			.catch(() => {})
+	}, [])
+	const data = apiData || fallbackData
+
 	const langData = {
 		title: {
 			ru: 'Отзывы о нас',

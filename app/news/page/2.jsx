@@ -411,5 +411,5 @@ export default function News({ language }) {
 		),
 	}
 
-	return <NewsBlock pagination={pagination} news={news} language={language} />
+	return <NewsBlock pagination={pagination} news={news} language={language} showApi={false} />
 }
