@@ -1,6 +1,7 @@
 import { checkLang } from "@/utils/checkLang.js";
 import Link from "next/dist/client/link";
 import Container from "../container/index.jsx";
+import FooterNews from "../footerNews";
 import { LINKS } from "../requirements";
 import { LOGO } from "../utils";
 import st from "./footer.module.scss";
@@ -629,6 +630,9 @@ export default function Footer({ language }) {
               </li>
             </ul>
           </nav>
+          <div style={{ marginTop: "20px", paddingTop: "20px", borderTop: "1px solid rgba(255,255,255,0.1)" }}>
+            <FooterNews language={language} />
+          </div>
         </div>
         <div className={st.footer__bottom}>
           <span>Copyright © 2018 — 2026 OOO «AIRNET»</span>

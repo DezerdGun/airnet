@@ -3,9 +3,12 @@ import SEO from "@/components/seo";
 import { checkLang } from "@/utils/checkLang";
 import Image from "next/image"
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import st from "./news.module.scss";
 import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+
+export const NEWS_API = "https://billing.airnet.uz/news_api.php";
 
 export const news = [
 	{
@@ -646,7 +649,16 @@ export default function News({ language }) {
 	return <NewsBlock pagination={pagination} news={news} language={language} />
 }
 
-export function NewsBlock({ pagination, news, language }) {
+export function NewsBlock({ pagination, news, language, showApi = true }) {
+	const [apiNews, setApiNews] = useState([]);
+	useEffect(() => {
+		if (!showApi) return;
+		fetch(NEWS_API + "?limit=20&lang=" + encodeURIComponent(language || "ru"))
+			.then((r) => (r.ok ? r.json() : null))
+			.then((j) => { if (j && j.ok && Array.isArray(j.data)) setApiNews(j.data); })
+			.catch(() => {});
+	}, [language, showApi]);
+
 	const langData = {
 		seoT: {
 			ru: "Новости | Airnet",
@@ -690,6 +702,19 @@ export function NewsBlock({ pagination, news, language }) {
 			<Container headTitle={langData.headTitle[language]} clNTitle="text-center">
 				<div className={st.news}>
 					<div className={st.news__block}>
+						{apiNews.map((item) => (
+							<div key={"api-" + item.id} className={st.news__block__item}>
+								<a>
+									<div className={st.news__block__item__content}>
+										<div className={st.news__block__item__content__header}>
+											<h2>{item.title}</h2>
+											<span>{item.date ? new Date(item.date).toLocaleDateString("ru-RU") : ""}</span>
+										</div>
+										<p>{item.excerpt}</p>
+									</div>
+								</a>
+							</div>
+						))}
 						{news.map((item) => (
 							<div key={item.title[language]} className={st.news__block__item}>
 								<Link href={checkLang(language) + item.link}>

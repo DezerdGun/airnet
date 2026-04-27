@@ -37,8 +37,8 @@ const calcSpeed = [
 export default function Calculator({ language }) {
   const [state, setState] = useState({
       core: 2,
-      ram: 2,
-      ssd: 100,
+      ram: 4,
+      ssd: 50,
       os: "Ubuntu",
       osVersion: "18.04",
       speed: calcSpeed[0].title,
@@ -46,162 +46,14 @@ export default function Calculator({ language }) {
     }),
     [show, setShow] = useState(null),
     [calcOS, setCalcOS] = useState([
-      {
-        id: "ubuntu",
-        selected: true,
-        title: "Ubuntu",
-        img: "/",
-        versions: [
-          {
-            selected: true,
-            title: "18.04",
-            po: ["not", "lamp", "lemp", "django", "isp6lite", "isp6pro", "isp6host", "openvpn", "team", "tomcat"],
-          },
-          {
-            title: "20.04",
-            po: ["not", "lamp", "lemp", "isp6lite", "isp6pro", "isp6host", "openvpn"],
-          },
-          {
-            title: "22.04",
-            po: ["not", "isp6lite", "isp6pro", "isp6host"],
-          },
-        ],
-      },
-      {
-        id: "centos",
-        selected: false,
-        title: "CentOS",
-        img: "/",
-        versions: [
-          {
-            selected: true,
-            title: "7",
-            po: [
-              "not",
-              "lamp",
-              "1c",
-              "django",
-              "isp6lite",
-              "isp6pro",
-              "isp6host",
-              "openvpn",
-              "team",
-              "tomcat",
-              "bitrix24",
-            ],
-          },
-        ],
-      },
-      {
-        id: "alma",
-        selected: false,
-        title: "Alma",
-        img: "/",
-        versions: [
-          {
-            selected: true,
-            title: "8",
-            po: [
-              "not",
-              "lamp",
-              "lemp",
-              "django",
-              "isp6lite",
-              "isp6pro",
-              "isp6host",
-              "openvpn",
-              "redmine",
-              "team",
-              "tomcat",
-            ],
-          },
-          {
-            title: "9",
-            po: ["not"],
-          },
-        ],
-      },
-      {
-        id: "rocky",
-        selected: false,
-        title: "Rocky",
-        img: "/",
-        versions: [
-          {
-            selected: true,
-            title: "8",
-            po: ["not", "lamp", "lemp", "django", "openvpn", "redmine", "team", "tomcat"],
-          },
-          {
-            title: "9",
-            po: ["not"],
-          },
-        ],
-      },
-      {
-        id: "oracle",
-        selected: false,
-        title: "Oracle",
-        img: "/",
-        versions: [
-          {
-            selected: true,
-            title: "8",
-            po: ["not", "lamp", "lemp", "django", "openvpn", "redmine", "team", "tomcat"],
-          },
-        ],
-      },
-      {
-        id: "debian",
-        selected: false,
-        title: "Debian",
-        img: "/",
-        versions: [
-          {
-            selected: true,
-            title: "10",
-            po: ["not", "lamp", "lemp", "isp6lite", "isp6pro", "isp6host", "openvpn", "redmine", "team", "tomcat"],
-          },
-          {
-            title: "11",
-            po: ["not", "lamp", "lemp", "isp6lite", "isp6pro", "isp6host", "openvpn", "team", "tomcat"],
-          },
-        ],
-      },
-      {
-        id: "free",
-        selected: false,
-        title: "FreeBSD",
-        img: "/",
-        versions: [
-          {
-            selected: true,
-            title: "12",
-            po: ["not"],
-          },
-          {
-            title: "13",
-            po: ["not"],
-          },
-        ],
-      },
-      {
-        id: "windows",
-        selected: false,
-        title: "Windows",
-        img: "/",
-        versions: [
-          {
-            selected: true,
-            title: "2019",
-            po: ["not"],
-          },
-          {
-            title: "2022",
-            po: ["not"],
-          },
-        ],
-      },
+      { id: "ubuntu",    title: "Ubuntu",         letter: "U", color: "#e95420", versions: ["18.04", "22.04", "24.04"] },
+      { id: "debian",    title: "Debian",         letter: "D", color: "#a80030", versions: ["10.0", "11", "12"] },
+      { id: "centos",    title: "CentOS",         letter: "C", color: "#932279", versions: ["7.0", "9", "10"] },
+      { id: "alma",      title: "AlmaLinux",      letter: "A", color: "#0d597f", versions: ["8.9", "9.5"] },
+      { id: "windows",   title: "Windows Server", letter: "W", color: "#0078d4", versions: ["2016", "2019", "2022", "2025"] },
+      { id: "freepbx",   title: "FreePBX",        letter: "P", color: "#34a853", versions: ["15", "16"] },
+      { id: "pfsense",   title: "pfSense",        letter: "F", color: "#212121", versions: [""] },
+      { id: "other",     title: "Other",          letter: "?", color: "#6b7280", versions: [""] },
     ]),
     [isFixed, setIsFixed] = useState(false);
 
@@ -533,7 +385,7 @@ export default function Calculator({ language }) {
               <CalcInput
                 text={langData.GB[language]}
                 step={2}
-                min={2}
+                min={4}
                 max={256}
                 name="ram"
                 state={state}
@@ -555,19 +407,19 @@ export default function Calculator({ language }) {
               />
               <CalcInput
                 text={langData.GB[language]}
-                step={20}
-                min={100}
+                step={10}
+                min={50}
                 max={10000}
                 name="ssd"
                 state={state}
                 setState={setState}
               />
             </CalcBlock>
-            {/* <CalcBlock number={3} title={langData.sistem[language]}>
+            <CalcBlock number={3} title={langData.sistem[language]}>
               <CalcHeader title={langData.oS[language]} price={0} sum={langData.sum[language]} />
-              <CalcSystem data={calcOS} setData={setCalcOS} state={state} setState={setState} language={language} />
-            </CalcBlock> */}
-            <CalcBlock number={3} title={langData.chanel[language]}>
+              <CalcOsGrid data={calcOS} state={state} setState={setState} />
+            </CalcBlock>
+            <CalcBlock number={4} title={langData.chanel[language]}>
               <CalcHeader
                 title={langData.wChanel[language]}
                 price={BeautyNum(calcSpeed.find((item) => item.title === state.speed).price)}
@@ -575,39 +427,62 @@ export default function Calculator({ language }) {
               />
               <CalcSpeed data={calcSpeed} state={state} setState={setState} />
             </CalcBlock>
-            <CalcBlock number={4} title={langData.adm[language]}>
+            <CalcBlock number={5} title={langData.adm[language]}>
               <CalcHeader title={langData.paket[language]} price={0} sum={langData.sum[language]} />
               <CalcSwitcher state={state} setState={setState} language={language} />
             </CalcBlock>
             <div className={st.calculator__block__item__category__content__footer}>{langData.br[language]}</div>
           </div>
           <div className={st.calculator__block__result}>
-            <TarifCard
-              index={1}
-              tarif={{
-                title: { ru: langData.VDS[language], uz: langData.VDS[language], en: langData.VDS[language] },
-                prices: [
-                  {
-                    price: BeautyNum(
-                      state.core * 30000 +
-                        state.ram * 35000 +
-                        state.ssd * 1000 +
-                        calcSpeed.find((item) => item.title === state.speed).price
-                    ),
-                    dateOff: `1 мес`,
-                  },
-                ],
-                workstxt: { ru: "Соберите свой тариф", uz: "O'z rejangizni yarating", en: "Create your own plan" },
-                cpu: state.core,
-                ram: state.ram,
-                ssd: state.ssd,
-                net: state.speed,
-                link: "https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=14",
-              }}
-              show={show}
-              setShow={setShow}
-              language={language}
-            />
+            {(() => {
+              const presetParams = new URLSearchParams({
+                do: "order",
+                vid: "vds",
+                tarif: "27",
+                preset_cpu: state.core,
+                preset_ram: state.ram,
+                preset_ssd: state.ssd,
+                preset_channel: state.speed,
+                preset_os: state.os,
+                preset_os_ver: state.osVersion,
+                preset_adm: state.administration,
+                preset_price:
+                  state.core * 30000 +
+                  state.ram * 35000 +
+                  state.ssd * 1000 +
+                  calcSpeed.find((item) => item.title === state.speed).price,
+                preset_source: "constructor",
+              });
+              const billingLink = `https://billing.airnet.uz/billing.php?${presetParams.toString()}`;
+              return (
+                <TarifCard
+                  index={1}
+                  tarif={{
+                    title: { ru: langData.VDS[language], uz: langData.VDS[language], en: langData.VDS[language] },
+                    prices: [
+                      {
+                        price: BeautyNum(
+                          state.core * 30000 +
+                            state.ram * 35000 +
+                            state.ssd * 1000 +
+                            calcSpeed.find((item) => item.title === state.speed).price
+                        ),
+                        dateOff: `1 мес`,
+                      },
+                    ],
+                    workstxt: { ru: "Соберите свой тариф", uz: "O'z rejangizni yarating", en: "Create your own plan" },
+                    cpu: state.core,
+                    ram: state.ram,
+                    ssd: state.ssd,
+                    net: state.speed,
+                    link: billingLink,
+                  }}
+                  show={show}
+                  setShow={setShow}
+                  language={language}
+                />
+              );
+            })()}
 
             {/* <div className={st.calculator__block__result__header}>
               <div>{langData.VDS[language]}</div>
@@ -721,97 +596,90 @@ export const CalcInput = ({ text, step, min, max, name, state, setState }) => {
   );
 };
 
-const CalcSystem = ({ data, setData, state, setState, language }) => {
-  const [show, setShow] = useState({ index: 0, show: false, ver: 0 }),
-    [ver, setVer] = useState(Array(data.length));
+const CalcOsGrid = ({ data, state, setState }) => {
+  const tiles = [];
+  data.forEach((fam) => {
+    fam.versions.forEach((ver) => {
+      tiles.push({ famId: fam.id, famTitle: fam.title, letter: fam.letter, color: fam.color, ver });
+    });
+  });
 
-  return (
-    <div className={st.calculator__block__item__category__content__system}>
-      {data.map((item, i) => (
-        <div
-          key={item.id}
-          className={`${st.calculator__block__item__category__content__system__item} ${
-            state.os === item.title ? st.calculator__block__item__category__content__system__item__active : ""
-          }`}
-        >
-          <div
-            className={st.calculator__block__item__category__content__system__item__title}
-            onClick={() => {
-              if (!show.show || show.index !== i) {
-                setShow((prev) => ({ ...prev, index: i, show: false }));
-                setState((prev) => ({
-                  ...prev,
-                  os: item.title,
-                  osVersion: item.versions[show.ver].title,
-                }));
-              }
-            }}
-          >
-            {item.title}
-          </div>
-          <div
-            className={st.calculator__block__item__category__content__system__item__content}
-            onClick={() => {
-              (!show.show || show.index !== i) &&
-                setShow((prev) => (prev.index === i ? { ...prev, show: !prev.show } : { index: i, show: true }));
-            }}
-          >
-            <CalcSystemVersions
-              index={i}
-              show={show}
-              setShow={setShow}
-              state={state}
-              setState={setState}
-              data={item}
-              setData={setData}
-              language={language}
-            />
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-};
-
-const CalcSystemVersions = ({ index, show, setShow, state, setState, data, setData, language }) => {
-  const langData = {
-    noChecked: {
-      ru: "Не выбрано",
-      uz: "Tanlanmagan",
-      en: "Not chosen",
-    },
-  };
   return (
     <>
-      {data.versions.find((item) => item?.selected).title}
-      {show.index === index && show.show && (
-        <ul>
-          {data.versions.map((el, i) => (
-            <li
-              onClick={() => {
-                setData((prev) => {
-                  const temp = data.versions.map((key, index) => {
-                    key.selected = index == i;
-                    return key;
-                  });
-                  prev[index] = { ...prev[index], versions: temp };
-                  return [...prev];
-                });
-                setState((prev) => ({
-                  ...prev,
-                  os: data.title,
-                  osVersion: data.versions[i].title,
-                  ver: i,
-                  po: langData.noChecked[language],
-                }));
-                setShow((prev) => ({ ...prev, show: false, ver: i }));
-              }}
+      <div className="calcOsGrid">
+        {tiles.map((t) => {
+          const active = state.os === t.famTitle && state.osVersion === t.ver;
+          const label = t.ver ? `${t.famTitle} ${t.ver}` : t.famTitle;
+          return (
+            <button
+              type="button"
+              key={`${t.famId}-${t.ver}`}
+              className={`calcOsTile${active ? " active" : ""}`}
+              onClick={() => setState((prev) => ({ ...prev, os: t.famTitle, osVersion: t.ver }))}
+              title={label}
             >
-              {el.title}
-            </li>
-          ))}
-        </ul>
-      )}
+              <span className="calcOsBadge" style={{ background: t.color }}>
+                {t.letter}
+              </span>
+              <span className="calcOsLabel">{label}</span>
+            </button>
+          );
+        })}
+      </div>
+      <style jsx>{`
+        .calcOsGrid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+          gap: 6px;
+          margin-top: 6px;
+        }
+        .calcOsTile {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 6px 8px;
+          border: 1.5px solid #e5e7eb;
+          border-radius: 8px;
+          background: #fff;
+          cursor: pointer;
+          transition: all 0.12s ease;
+          font-size: 11.5px;
+          color: #1f2937;
+          text-align: left;
+          min-height: 34px;
+        }
+        .calcOsTile:hover {
+          border-color: #cbd5e1;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        .calcOsTile.active {
+          border-color: #0d5446;
+          background: #f0faf6;
+          color: #0d5446;
+          box-shadow: 0 0 0 2px rgba(13, 84, 70, 0.08);
+        }
+        .calcOsBadge {
+          flex: 0 0 auto;
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          color: #fff;
+          font-weight: 700;
+          font-size: 11px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 1;
+        }
+        .calcOsLabel {
+          flex: 1 1 auto;
+          font-weight: 500;
+          line-height: 1.2;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      `}</style>
     </>
   );
 };

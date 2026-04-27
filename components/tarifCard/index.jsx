@@ -1,6 +1,30 @@
 import Drop from "../drop";
 import st from "./tarifCard.module.scss";
 
+const BILLING_ORIGIN = "https://billing.airnet.uz";
+function buildPresetLink(base, tarif) {
+  if (!base) return base;
+  try {
+    const src = new URL(base, BILLING_ORIGIN);
+    const url = new URL(src.pathname + src.search, BILLING_ORIGIN);
+    if (url.searchParams.get("preset_source") === "constructor") return url.toString();
+    if (tarif?.cpu) url.searchParams.set("preset_cpu", tarif.cpu);
+    if (tarif?.ram) url.searchParams.set("preset_ram", tarif.ram);
+    if (tarif?.ssd) url.searchParams.set("preset_ssd", tarif.ssd);
+    if (tarif?.net) {
+      const chan = String(tarif.net);
+      url.searchParams.set("preset_channel", chan.startsWith("Unlim") ? chan : `Unlim ${chan}`);
+    }
+    url.searchParams.set("preset_os", "Other");
+    url.searchParams.set("preset_os_ver", "");
+    url.searchParams.set("preset_adm", "Нет");
+    url.searchParams.set("preset_source", "constructor");
+    return url.toString();
+  } catch (_) {
+    return base;
+  }
+}
+
 export default function TarifCard({ index, tarif, show, setShow, language }) {
   const langData = {
     yader: {
@@ -125,7 +149,7 @@ export default function TarifCard({ index, tarif, show, setShow, language }) {
         </tr>
       </table>
       <button>
-        <a href={tarif.link} target="_blank" rel="noopener noreferrer">
+        <a href={buildPresetLink(tarif.link, tarif)} target="_blank" rel="noopener noreferrer">
           {langData.order[language]} <svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 -960 960 960" width="17px" fill="#fff"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
         </a>
       </button>
