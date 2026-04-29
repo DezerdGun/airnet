@@ -73,7 +73,9 @@ export default function HomeNews({ language = "ru", apiNewsServer }) {
                   </div>
                   <h3 className="home-news__title">{n.title}</h3>
                   <p className="home-news__excerpt">{n.excerpt}</p>
-                  <a className="home-news__link" href={"https://billing.airnet.uz/billing.php?do=news&id=" + n.id} target="_blank" rel="noopener noreferrer">{labels.read[language]}</a>
+                  <Link href={checkLang(language) + "/news/" + (n.slug || n.id)}>
+                    <a className="home-news__link">{labels.read[language]}</a>
+                  </Link>
                 </div>
               </article>
             </SwiperSlide>

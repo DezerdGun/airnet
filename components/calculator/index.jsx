@@ -385,7 +385,7 @@ export default function Calculator({ language }) {
               <CalcInput
                 text={langData.GB[language]}
                 step={2}
-                min={4}
+                min={2}
                 max={256}
                 name="ram"
                 state={state}

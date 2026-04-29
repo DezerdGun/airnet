@@ -26,12 +26,14 @@ export default function FooterNews({ language = "ru" }) {
       <ul className="footer-news__list">
         {items.map((n) => (
           <li key={n.id}>
-            <a href={"https://billing.airnet.uz/billing.php?do=news&id=" + n.id} target="_blank" rel="noopener noreferrer">
-              <span className="footer-news__date">
-                {n.date ? new Date(n.date).toLocaleDateString("ru-RU") : ""}
-              </span>
-              <span className="footer-news__head">{n.title}</span>
-            </a>
+            <Link href={checkLang(language) + "/news/" + (n.slug || n.id)}>
+              <a>
+                <span className="footer-news__date">
+                  {n.date ? new Date(n.date).toLocaleDateString("ru-RU") : ""}
+                </span>
+                <span className="footer-news__head">{n.title}</span>
+              </a>
+            </Link>
           </li>
         ))}
       </ul>

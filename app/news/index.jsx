@@ -8,7 +8,7 @@ import st from "./news.module.scss";
 import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 
-export const NEWS_API = "https://billing.airnet.uz/news_api.php";
+export const NEWS_API = process.env.NEWS_API_URL || "https://billing.airnet.uz/news_api.php";
 
 export const news = [
 	{
@@ -705,20 +705,22 @@ export function NewsBlock({ pagination, news, language, showApi = true, apiNewsS
 					<div className={st.news__block}>
 						{apiNews.map((item) => (
 							<div key={"api-" + item.id} className={st.news__block__item}>
-								<a href={"https://billing.airnet.uz/billing.php?do=news&id=" + item.id} target="_blank" rel="noopener noreferrer">
-									{item.image ? (
-										<div className={st.news__block__item__img}>
-											<img src={item.image} alt="" style={{ width: "100%", height: "auto", display: "block" }} loading="lazy" />
+								<Link href={checkLang(language) + "/news/" + (item.slug || item.id)}>
+									<a>
+										{item.image ? (
+											<div className={st.news__block__item__img}>
+												<img src={item.image} alt="" style={{ width: "100%", height: "auto", display: "block" }} loading="lazy" />
+											</div>
+										) : null}
+										<div className={st.news__block__item__content}>
+											<div className={st.news__block__item__content__header}>
+												<h2>{item.title}</h2>
+												<span>{item.date ? new Date(item.date).toLocaleDateString("ru-RU") : ""}</span>
+											</div>
+											<p>{item.excerpt}</p>
 										</div>
-									) : null}
-									<div className={st.news__block__item__content}>
-										<div className={st.news__block__item__content__header}>
-											<h2>{item.title}</h2>
-											<span>{item.date ? new Date(item.date).toLocaleDateString("ru-RU") : ""}</span>
-										</div>
-										<p>{item.excerpt}</p>
-									</div>
-								</a>
+									</a>
+								</Link>
 							</div>
 						))}
 						{news.map((item) => (
