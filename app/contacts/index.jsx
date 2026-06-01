@@ -53,24 +53,29 @@ export default function Contacts({ language }) {
       en: "Airnet contact information",
     },
     headTitle: {
-      ru: "Прием звонков с 10:00 до 19:00",
-      uz: "Soat 10:00 dan 19:00 gacha qo'ng'iroqlarni qabul qilamiz",
-      en: "Receiving calls from 10:00 to 19:00",
+      ru: "Прием звонков с 09:00 до 20:00",
+      uz: "Soat 09:00 dan 20:00 gacha qo'ng'iroqlarni qabul qilamiz",
+      en: "Receiving calls from 09:00 to 20:00",
     },
-    callNumber: {
-      ru: "Абонентский отдел",
-      uz: "Mijozlar honasi",
-      en: "Subscriber department",
+    generalQuestions: {
+      ru: "Общие вопросы",
+      uz: "Umumiy savollar",
+      en: "General questions",
     },
-    language: {
-      ru: "Абонентский отдел",
-      uz: "Mijozlar honasi",
-      en: "Subscriber department",
+    contractsDept: {
+      ru: "Отдел по договорам (счет-фактуры и домена)",
+      uz: "Shartnomalar bo'limi (hisob-fakturalar va domenlar)",
+      en: "Contracts department (invoices and domains)",
     },
-    tex: {
-      ru: "Техническая поддержка",
-      uz: "Texnik yordam",
-      en: "Technical support",
+    techVds: {
+      ru: "Техническая поддержка (VDS/VPS)",
+      uz: "Texnik yordam (VDS/VPS)",
+      en: "Technical support (VDS/VPS)",
+    },
+    techHosting: {
+      ru: "Техническая поддержка (хостинг/SSL/Почта)",
+      uz: "Texnik yordam (hosting/SSL/Pochta)",
+      en: "Technical support (hosting/SSL/Mail)",
     },
     telegram: {
       ru: "телеграм",
@@ -130,15 +135,29 @@ export default function Contacts({ language }) {
         <Container title={langData.headTitle[language]} clNTitle="text-center" className="mt-0 pb-0">
           <div className={st.contacts__phones}>
             <div className={st.contacts__phones__item}>
-              <span>{langData.callNumber[language]}</span>
-              <h3>{phone}+998 (71) 202-87-00</h3>
-              <p>{langData.language[language]}</p>
+              <span>{langData.generalQuestions[language]}</span>
+              <h3>
+                <a href="tel:+998712008700">{phone}+998 (71) 200-87-00</a>
+              </h3>
             </div>
             <div className={st.contacts__phones__item}>
-              <span>{langData.tex[language]}</span>
-              <h3>{phone}+998 (71) 200-87-00</h3>
-              <h3>{phone}+998 (90) 324-30-80</h3>
-              <p>{langData.telegram[language]}</p>
+              <span>{langData.techVds[language]}</span>
+              <h3>
+                <a href="tel:+998903248700">{phone}+998 (90) 324-87-00</a>{" "}
+                <small>({langData.telegram[language]})</small>
+              </h3>
+            </div>
+            <div className={st.contacts__phones__item}>
+              <span>{langData.contractsDept[language]}</span>
+              <h3>
+                <a href="tel:+998712028700">{phone}+998 (71) 202-87-00</a>
+              </h3>
+            </div>
+            <div className={st.contacts__phones__item}>
+              <span>{langData.techHosting[language]}</span>
+              <h3>
+                <a href="tel:+998903243080">{phone}+998 (90) 324-30-80</a>
+              </h3>
             </div>
           </div>
         </Container>

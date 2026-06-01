@@ -242,11 +242,20 @@ export default function Header({ language }) {
           },
           {
             title: {
-              ru: "+998(90) 324-30-80 (телеграм)",
-              uz: "+998(90) 324-30-80 (telegram)",
-              en: "+998(90) 324-30-80 (telegram)",
+              ru: "+998(90) 324-87-00 (телеграм)",
+              uz: "+998(90) 324-87-00 (telegram)",
+              en: "+998(90) 324-87-00 (telegram)",
             },
             link: LINKS.TELEGRAM,
+            isHref: true,
+          },
+          {
+            title: {
+              ru: "+998(90) 324-30-80",
+              uz: "+998(90) 324-30-80",
+              en: "+998(90) 324-30-80",
+            },
+            link: "tel:+998903243080",
             isHref: true,
           },
         ],
