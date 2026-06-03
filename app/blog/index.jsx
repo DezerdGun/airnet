@@ -1911,7 +1911,6 @@ function _apiPostsToBlog(apiPosts) {
 			title,
 			description,
 			_fromApi: true,
-			_noLangPrefix: true,
 			_publishedAtRaw: ru.published_at || "",
 		});
 	});
@@ -2029,7 +2028,7 @@ export function BlogBlock({ pagination, blog, language }) {
 					<div className={st.blog__block}>
 						{blog.map((item) => (
 							<div key={item.title[language]} className={st.blog__block__item}>
-								<Link href={item._noLangPrefix ? item.link[language] : checkLang(language) + item.link[language]}>
+								<Link href={checkLang(language) + item.link[language]}>
 									<a>
 										<div className={st.blog__block__item__img}>
 											<Image src={item.img} width={560} height={300} blurDataURL placeholder="blur" />
