@@ -1,3 +1,4 @@
+import Head from "next/head";
 import BlogItem from "@/components/blogItem";
 import { breadCrumbsBlog } from "@/app/blog";
 
@@ -9,23 +10,35 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   try {
+    const slug = params.slug;
+    const r = await fetch(
+      `${API}?slug=${encodeURIComponent(slug)}&lang=ru`,
+      { headers: { Accept: "application/json" } }
+    );
+    if (!r.ok) return { notFound: true, revalidate: 60 };
+    const j = await r.json();
+    if (!j || !j.ok || !j.data) return { notFound: true, revalidate: 60 };
+    const rec = j.data;
+    const slugs = rec.slugs || {};
+    let postLang = "ru";
+    if (slugs.uz === slug) postLang = "uz";
+    else if (slugs.en === slug) postLang = "en";
+    else if (slugs.ru === slug) postLang = "ru";
+
+    // Подтянуть контент в нужном языке
     const langs = ["ru", "uz", "en"];
     const results = await Promise.all(
       langs.map(async (lng) => {
-        const r = await fetch(
-          `${API}?slug=${encodeURIComponent(params.slug)}&lang=${lng}`,
-          { headers: { Accept: "application/json" } }
-        );
-        if (!r.ok) return null;
-        const j = await r.json();
-        return j && j.ok && j.data ? j.data : null;
+        const rr = await fetch(`${API}?id=${rec.id}&lang=${lng}`, { headers: { Accept: "application/json" } });
+        if (!rr.ok) return null;
+        const jj = await rr.json();
+        return jj && jj.ok && jj.data ? jj.data : null;
       })
     );
-    const found = results.find(Boolean);
-    if (!found) return { notFound: true, revalidate: 60 };
     return {
       props: {
-        post: { ru: results[0], uz: results[1], en: results[2], _fallback: found },
+        post: { ru: results[0], uz: results[1], en: results[2], _fallback: rec },
+        postLang,
       },
       revalidate: 60,
     };
@@ -104,27 +117,38 @@ const defaultFaq = [
   },
 ];
 
-export default function BlogDynamic({ language, post }) {
+export default function BlogDynamic({ post, postLang }) {
   if (!post) return null;
   const pickLang = (lng) => post[lng] || post._fallback;
   const ru = pickLang("ru");
   const uz = pickLang("uz");
   const en = pickLang("en");
+  const language = postLang || "ru";
   const cur = pickLang(language);
   if (!cur) return null;
 
+  const slugs = cur.slugs || {
+    ru: ru?.slug || "",
+    uz: uz?.slug || "",
+    en: en?.slug || "",
+  };
+  const urlRu = slugs.ru ? `https://airnet.uz/blog/${slugs.ru}` : null;
+  const urlUz = slugs.uz ? `https://airnet.uz/blog/${slugs.uz}` : null;
+  const urlEn = slugs.en ? `https://airnet.uz/blog/${slugs.en}` : null;
+  const canonical = `https://airnet.uz/blog/${cur.slug}`;
+
   const dateStr = fmtDate(cur.published_at);
-  const ruHtml = injectAnchors(ru.content || "");
-  const uzHtml = injectAnchors(uz.content || "");
-  const enHtml = injectAnchors(en.content || "");
+  const ruHtml = injectAnchors(ru?.content || "");
+  const uzHtml = injectAnchors(uz?.content || "");
+  const enHtml = injectAnchors(en?.content || "");
 
   const data = {
-    title: { ru: ru.title, uz: uz.title, en: en.title },
-    headTitle: { ru: ru.title, uz: uz.title, en: en.title },
+    title: { ru: ru?.title || "", uz: uz?.title || "", en: en?.title || "" },
+    headTitle: { ru: ru?.title || "", uz: uz?.title || "", en: en?.title || "" },
     desc: {
-      ru: ru.meta_description || (ru.content_text ? ru.content_text.slice(0, 160) : ""),
-      uz: uz.meta_description || (uz.content_text ? uz.content_text.slice(0, 160) : ""),
-      en: en.meta_description || (en.content_text ? en.content_text.slice(0, 160) : ""),
+      ru: ru?.meta_description || (ru?.content_text ? ru.content_text.slice(0, 160) : ""),
+      uz: uz?.meta_description || (uz?.content_text ? uz.content_text.slice(0, 160) : ""),
+      en: en?.meta_description || (en?.content_text ? en.content_text.slice(0, 160) : ""),
     },
     date: dateStr,
     updated: dateStr,
@@ -148,10 +172,21 @@ export default function BlogDynamic({ language, post }) {
   const breadCrumbs = [
     ...breadCrumbsBlog,
     {
-      name: { ru: ru.title, uz: uz.title, en: en.title },
+      name: { ru: ru?.title || cur.title, uz: uz?.title || cur.title, en: en?.title || cur.title },
       link: `/blog/${cur.slug}`,
     },
   ];
 
-  return <BlogItem data={data} language={language} breadCrumbs={breadCrumbs} />;
+  return (
+    <>
+      <Head>
+        <link rel="canonical" href={canonical} />
+        {urlRu && <link rel="alternate" hrefLang="ru" href={urlRu} />}
+        {urlUz && <link rel="alternate" hrefLang="uz" href={urlUz} />}
+        {urlEn && <link rel="alternate" hrefLang="en" href={urlEn} />}
+        {urlRu && <link rel="alternate" hrefLang="x-default" href={urlRu} />}
+      </Head>
+      <BlogItem data={data} language={language} breadCrumbs={breadCrumbs} />
+    </>
+  );
 }

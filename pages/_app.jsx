@@ -8,7 +8,9 @@ import "../styles/globals.scss";
 
 function MyApp({ Component, pageProps, url }) {
   const router = useRouter(),
-    language = router.asPath.includes("/uz")
+    language = pageProps?.postLang
+      ? pageProps.postLang
+      : router.asPath.includes("/uz")
       ? "uz"
       : router.asPath.includes("/en")
       ? "en"
@@ -18,6 +20,9 @@ function MyApp({ Component, pageProps, url }) {
     const languagePrefixRegex = /^\/(uz|ru|en)/;
     return url.replace(languagePrefixRegex, "");
   }
+
+  const realPath = (router.asPath || "/").split("?")[0].split("#")[0];
+  const isBlogDetail = /^\/(?:uz\/|en\/)?blog\/[^/]+/.test(realPath);
 
   return (
     <>
@@ -44,32 +49,36 @@ function MyApp({ Component, pageProps, url }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
 
-        <link
-          rel="alternate"
-          hrefLang="uz-ru"
-          href={`https://airnet.uz${removeLanguagePrefix(router.pathname)}`}
-        />
-        <link
-          rel="alternate"
-          hrefLang="uz-en"
-          href={`https://airnet.uz${
-            `/en` + removeLanguagePrefix(router.pathname)
-          }`}
-        />
-        <link
-          rel="alternate"
-          hrefLang="uz"
-          href={`https://airnet.uz${
-            `/uz` + (url ?? removeLanguagePrefix(router.pathname))
-          }`}
-        />
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://airnet.uz${
-            `/uz` + (url ?? removeLanguagePrefix(router.pathname))
-          }`}
-        />
+        {!isBlogDetail && (
+          <>
+            <link
+              rel="alternate"
+              hrefLang="uz-ru"
+              href={`https://airnet.uz${removeLanguagePrefix(realPath)}`}
+            />
+            <link
+              rel="alternate"
+              hrefLang="uz-en"
+              href={`https://airnet.uz${
+                `/en` + removeLanguagePrefix(realPath)
+              }`}
+            />
+            <link
+              rel="alternate"
+              hrefLang="uz"
+              href={`https://airnet.uz${
+                `/uz` + (url ?? removeLanguagePrefix(realPath))
+              }`}
+            />
+            <link
+              rel="alternate"
+              hrefLang="x-default"
+              href={`https://airnet.uz${
+                `/uz` + (url ?? removeLanguagePrefix(realPath))
+              }`}
+            />
+          </>
+        )}
         <meta name="referrer" content="strict-origin" />
 
         <script
