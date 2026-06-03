@@ -1,9 +1,5 @@
-import SEO from "@/components/seo";
-import Container from "@/components/container";
-import BreadCrumbs from "@/components/seo/breadCrumbs";
-import PageBreadcrumb from "@/components/seo/pageBreadCrumbs";
-import Link from "next/link";
-import { checkLang } from "@/utils/checkLang";
+import BlogItem from "@/components/blogItem";
+import { breadCrumbsBlog } from "@/app/blog";
 
 const API = process.env.BLOG_API_URL || "https://billing.airnet.uz/blog_api.php";
 
@@ -46,65 +42,116 @@ function fmtDate(s) {
   return `${pad(d.getDate())}.${pad(d.getMonth() + 1)}.${d.getFullYear()}`;
 }
 
+function readMinutes(text) {
+  const words = (text || "").split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 180));
+}
+
+function extractHeadings(html, language) {
+  if (!html) return [];
+  const re = /<h2[^>]*>([\s\S]*?)<\/h2>/gi;
+  const out = [];
+  let i = 0;
+  let m;
+  while ((m = re.exec(html)) !== null) {
+    const txt = m[1].replace(/<[^>]+>/g, "").trim();
+    if (!txt) continue;
+    i += 1;
+    out.push({
+      slug: `${i}`,
+      title: { ru: txt, uz: txt, en: txt, slug: `${i}` },
+    });
+  }
+  return out;
+}
+
+function injectAnchors(html) {
+  if (!html) return "";
+  let i = 0;
+  return html.replace(/<h2([^>]*)>/gi, (m, attrs) => {
+    i += 1;
+    return `<a name="${i}"></a><h2${attrs}>`;
+  });
+}
+
+const defaultFaq = [
+  {
+    title: {
+      ru: "Как скоро можно начать пользоваться услугой?",
+      uz: "Xizmatdan qanchalik tez foydalanishni boshlashim mumkin?",
+      en: "How soon can I start using the service?",
+    },
+    description: {
+      ru: (
+        <>
+          <p>Пользовательский аккаунт открывается сразу после подачи заявки.</p>
+          <p>Сразу после произведения оплаты, вы можете начать сразу же пользоваться услугой.</p>
+        </>
+      ),
+      uz: (
+        <>
+          <p>Foydalanuvchi hisobi ariza topshirilgandan so‘ng darhol ochiladi.</p>
+          <p>To‘lovni amalga oshirganingizdan so‘ng darhol xizmatdan foydalanishni boshlashingiz mumkin.</p>
+        </>
+      ),
+      en: (
+        <>
+          <p>The user account is opened immediately upon application.</p>
+          <p>You can start using the service immediately after payment.</p>
+        </>
+      ),
+    },
+  },
+];
+
 export default function BlogDynamic({ language, post }) {
   if (!post) return null;
-  const p = post[language] || post._fallback;
-  if (!p) return null;
+  const pickLang = (lng) => post[lng] || post._fallback;
+  const ru = pickLang("ru");
+  const uz = pickLang("uz");
+  const en = pickLang("en");
+  const cur = pickLang(language);
+  if (!cur) return null;
+
+  const dateStr = fmtDate(cur.published_at);
+  const ruHtml = injectAnchors(ru.content || "");
+  const uzHtml = injectAnchors(uz.content || "");
+  const enHtml = injectAnchors(en.content || "");
+
+  const data = {
+    title: { ru: ru.title, uz: uz.title, en: en.title },
+    headTitle: { ru: ru.title, uz: uz.title, en: en.title },
+    desc: {
+      ru: ru.meta_description || (ru.content_text ? ru.content_text.slice(0, 160) : ""),
+      uz: uz.meta_description || (uz.content_text ? uz.content_text.slice(0, 160) : ""),
+      en: en.meta_description || (en.content_text ? en.content_text.slice(0, 160) : ""),
+    },
+    date: dateStr,
+    updated: dateStr,
+    read: readMinutes(cur.content_text),
+    view: cur.views || 0,
+    img: cur.image || "/blog/live.png",
+    faqTitle: {
+      ru: "Ответы на популярные вопросы",
+      uz: "Ommabop savollarga javoblar",
+      en: "Answers to popular questions",
+    },
+    faq: defaultFaq,
+    alinks: extractHeadings(cur.content || "", language),
+    content: {
+      ru: <div dangerouslySetInnerHTML={{ __html: ruHtml }} />,
+      uz: <div dangerouslySetInnerHTML={{ __html: uzHtml }} />,
+      en: <div dangerouslySetInnerHTML={{ __html: enHtml }} />,
+    },
+  };
 
   const breadCrumbs = [
+    ...breadCrumbsBlog,
     {
-      name: { ru: "Блог", uz: "Blog", en: "Blog" },
-      link: { ru: "/blog", uz: "/uz/blog", en: "/en/blog" },
-    },
-    {
-      name: { ru: p.title, uz: p.title, en: p.title },
-      link: `/blog/${p.slug}`,
+      name: { ru: ru.title, uz: uz.title, en: en.title },
+      link: `/blog/${cur.slug}`,
     },
   ];
 
-  return (
-    <div className="bg-gray">
-      <SEO
-        title={`${p.title} | Airnet`}
-        desc={p.meta_description || (p.content_text ? p.content_text.slice(0, 160) : "")}
-      />
-
-      <BreadCrumbs data={breadCrumbs} language={language} />
-      <PageBreadcrumb links={breadCrumbs} language={language} />
-
-      <Container>
-        <article style={{ maxWidth: 820, margin: "0 auto", padding: "20px 12px" }}>
-          {p.image && (
-            <img
-              src={p.image}
-              alt={p.title}
-              style={{ width: "100%", height: "auto", borderRadius: 12, marginBottom: 24 }}
-            />
-          )}
-
-          <h1 style={{ fontSize: 32, lineHeight: 1.25, margin: "0 0 12px" }}>{p.title}</h1>
-
-          <div style={{ color: "#888", fontSize: 14, marginBottom: 28, display: "flex", gap: 14, flexWrap: "wrap" }}>
-            {p.published_at && <span>{fmtDate(p.published_at)}</span>}
-            {p.author_name && <span>· {p.author_name}</span>}
-            {p.views > 0 && <span>· {p.views} просмотров</span>}
-            {Array.isArray(p.tags) && p.tags.length > 0 && (
-              <span>· {p.tags.map((t) => `#${t}`).join(" ")}</span>
-            )}
-          </div>
-
-          <div
-            style={{ fontSize: 16, lineHeight: 1.7 }}
-            dangerouslySetInnerHTML={{ __html: p.content || "" }}
-          />
-
-          <div style={{ marginTop: 40, paddingTop: 20, borderTop: "1px solid #ddd" }}>
-            <Link href={checkLang(language) + "/blog"}>
-              <a>&laquo; Все записи</a>
-            </Link>
-          </div>
-        </article>
-      </Container>
-    </div>
-  );
+  return <BlogItem data={data} language={language} breadCrumbs={breadCrumbs} />;
 }

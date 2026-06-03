@@ -134,9 +134,11 @@ export default function BlogItem({ data, language, breadCrumbs }) {
 
 						{data.content[language]}
 						
-						<div className={st.blogItem__faqblock}>
-							<FAQ faq={data.faq} title={data.faqTitle[language]} language={language} />
-						</div>
+						{Array.isArray(data.faq) && data.faq.length > 0 && (
+							<div className={st.blogItem__faqblock}>
+								<FAQ faq={data.faq} title={data.faqTitle[language]} language={language} />
+							</div>
+						)}
 
 						<div className={st.blogItem__details__author}>
 							<h3>{langData.author[language]}</h3>
@@ -167,18 +169,20 @@ export default function BlogItem({ data, language, breadCrumbs }) {
 						
 					</div>
 					<div className={st.blogItem__right}>
-						<div className={st.blogItem__right__text}>
-							<h3>{langData.sidetitle[language]}</h3>
-							<ol>
-								{data.alinks.map((item) => (
-								<li key={item.slug}>
-									<Link href={`#${item.title.slug}`}>
-									<a>{item.title[language]}</a>
-									</Link>
-								</li>
-								))}
-							</ol>
-						</div>
+						{Array.isArray(data.alinks) && data.alinks.length > 0 && (
+							<div className={st.blogItem__right__text}>
+								<h3>{langData.sidetitle[language]}</h3>
+								<ol>
+									{data.alinks.map((item) => (
+									<li key={item.slug}>
+										<Link href={`#${item.title.slug}`}>
+										<a>{item.title[language]}</a>
+										</Link>
+									</li>
+									))}
+								</ol>
+							</div>
+						)}
 						<div className={st.blogItem__right__category}>
 							<h3>{langData.sidecat[language]}</h3>
 							{langData.sidecatlinks.map((item) => (
