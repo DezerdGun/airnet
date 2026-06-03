@@ -10,15 +10,16 @@ export async function getStaticPaths() {
 
 export async function fetchPost(slug, urlLang) {
   try {
-    // Тянем контент на всех 3 языках по id (для hreflang альтернатив)
+    const strictRes = await fetch(
+      `${API}?slug=${encodeURIComponent(slug)}&lang=${urlLang}&strict=1`,
+      { headers: { Accept: "application/json" } }
+    );
+    if (!strictRes.ok) return { notFound: true, revalidate: 60 };
+    const strictJ = await strictRes.json();
+    if (!strictJ || !strictJ.ok || !strictJ.data) return { notFound: true, revalidate: 60 };
+    const id = strictJ.data.id;
+    // Тянем контент во всех 3 языках для hreflang
     const langs = ["ru", "uz", "en"];
-    const first = await fetch(`${API}?slug=${encodeURIComponent(slug)}&lang=${urlLang}`, {
-      headers: { Accept: "application/json" },
-    });
-    if (!first.ok) return { notFound: true, revalidate: 60 };
-    const firstJ = await first.json();
-    if (!firstJ || !firstJ.ok || !firstJ.data) return { notFound: true, revalidate: 60 };
-    const id = firstJ.data.id;
     const results = await Promise.all(
       langs.map(async (lng) => {
         const rr = await fetch(`${API}?id=${id}&lang=${lng}`, { headers: { Accept: "application/json" } });
@@ -29,7 +30,7 @@ export async function fetchPost(slug, urlLang) {
     );
     return {
       props: {
-        post: { ru: results[0], uz: results[1], en: results[2], _fallback: firstJ.data },
+        post: { ru: results[0], uz: results[1], en: results[2], _fallback: strictJ.data },
       },
       revalidate: 60,
     };
@@ -109,7 +110,6 @@ const defaultFaq = [
   },
 ];
 
-// language приходит из _app.jsx (по URL префиксу: /uz/ → uz, /en/ → en, иначе ru)
 export default function BlogDynamic({ post, language }) {
   if (!post) return null;
   const lang = language || "ru";
@@ -120,12 +120,15 @@ export default function BlogDynamic({ post, language }) {
   const cur = pickLang(lang);
   if (!cur) return null;
 
-  const slug = cur.slug;
-  const urlRu = `https://airnet.uz/blog/${slug}`;
-  const urlUz = `https://airnet.uz/uz/blog/${slug}`;
-  const urlEn = `https://airnet.uz/en/blog/${slug}`;
-  const canonical =
-    lang === "uz" ? urlUz : lang === "en" ? urlEn : urlRu;
+  const slugs = cur.slugs || {
+    ru: ru?.slug || "",
+    uz: uz?.slug || "",
+    en: en?.slug || "",
+  };
+  const urlRu = slugs.ru ? `https://airnet.uz/blog/${slugs.ru}` : null;
+  const urlUz = slugs.uz ? `https://airnet.uz/uz/blog/${slugs.uz}` : null;
+  const urlEn = slugs.en ? `https://airnet.uz/en/blog/${slugs.en}` : null;
+  const canonical = lang === "uz" ? urlUz : lang === "en" ? urlEn : urlRu;
 
   const dateStr = fmtDate(cur.published_at);
   const ruHtml = injectAnchors(ru?.content || "");
@@ -163,18 +166,18 @@ export default function BlogDynamic({ post, language }) {
     ...breadCrumbsBlog,
     {
       name: { ru: ru?.title || cur.title, uz: uz?.title || cur.title, en: en?.title || cur.title },
-      link: `/blog/${slug}`,
+      link: `/blog/${cur.slug}`,
     },
   ];
 
   return (
     <>
       <Head>
-        <link rel="canonical" href={canonical} />
-        <link rel="alternate" hrefLang="ru" href={urlRu} />
-        <link rel="alternate" hrefLang="uz" href={urlUz} />
-        <link rel="alternate" hrefLang="en" href={urlEn} />
-        <link rel="alternate" hrefLang="x-default" href={urlRu} />
+        {canonical && <link rel="canonical" href={canonical} />}
+        {urlRu && <link rel="alternate" hrefLang="ru" href={urlRu} />}
+        {urlUz && <link rel="alternate" hrefLang="uz" href={urlUz} />}
+        {urlEn && <link rel="alternate" hrefLang="en" href={urlEn} />}
+        {urlRu && <link rel="alternate" hrefLang="x-default" href={urlRu} />}
       </Head>
       <BlogItem data={data} language={lang} breadCrumbs={breadCrumbs} />
     </>
