@@ -1874,7 +1874,53 @@ export const blog = [
 	},
 ]
 
-export default function Blog({ language }) {
+function _fmtDate(s) {
+	if (!s) return "";
+	const d = new Date(s.replace(" ", "T"));
+	if (isNaN(d)) return s;
+	const pad = (n) => (n < 10 ? "0" + n : "" + n);
+	return `${pad(d.getDate())}.${pad(d.getMonth() + 1)}.${d.getFullYear()}`;
+}
+
+function _apiPostsToBlog(apiPosts) {
+	const langs = ["ru", "uz", "en"];
+	const byId = new Map();
+	langs.forEach((lng) => {
+		(apiPosts?.[lng] || []).forEach((p) => {
+			if (!byId.has(p.id)) byId.set(p.id, { id: p.id, perLang: {} });
+			byId.get(p.id).perLang[lng] = p;
+		});
+	});
+	const items = [];
+	byId.forEach(({ perLang }) => {
+		const ru = perLang.ru || perLang.uz || perLang.en;
+		if (!ru) return;
+		const link = {};
+		const title = {};
+		const description = {};
+		langs.forEach((lng) => {
+			const p = perLang[lng] || ru;
+			link[lng] = `/blog/${p.slug || ru.slug}`;
+			title[lng] = p.title || ru.title || "";
+			description[lng] = <p>{p.excerpt || ""}</p>;
+		});
+		items.push({
+			img: ru.image || "/blog/live.png",
+			link,
+			date: _fmtDate(ru.published_at),
+			title,
+			description,
+			_fromApi: true,
+			_publishedAtRaw: ru.published_at || "",
+		});
+	});
+	items.sort((a, b) => (a._publishedAtRaw < b._publishedAtRaw ? 1 : -1));
+	return items;
+}
+
+export default function Blog({ language, apiPosts }) {
+	const apiItems = _apiPostsToBlog(apiPosts);
+	const mergedBlog = [...apiItems, ...blog];
 	const pagination = {
 		ru: (
 			<>
@@ -1929,7 +1975,7 @@ export default function Blog({ language }) {
 		),
 	}
 
-	return <BlogBlock pagination={pagination} blog={blog} language={language} />
+	return <BlogBlock pagination={pagination} blog={mergedBlog} language={language} />
 }
 
 export const breadCrumbsBlog = [

@@ -10,6 +10,12 @@ const nextConfig = {
 module.exports = nextConfig;
 
 module.exports = {
+  reactStrictMode: true,
+  eslint: { ignoreDuringBuilds: true },
+  experimental: { esmExternals: true },
+  images: {
+    domains: ["billing.airnet.uz", "localhost"],
+  },
   redirects: async () => {
     return [
       {
