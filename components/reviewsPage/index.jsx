@@ -1,4 +1,5 @@
 
+import { useEffect, useState } from 'react'
 import { Autoplay, Navigation } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -6,52 +7,31 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import Container from '../container/index.jsx'
 import st from './reviewsPage.module.scss'
 
-const data = [
-	{
-		name: 'Сардор',
-		surname: '',
-		date: '19.12.2023',
-		text: 'Отличный хостинг, очень радует тех поддержка, гибкие тарифы и при надобности возможно сделать тариф под себя, рекомендую!',
-	},
-	{
-		name: 'Александр',
-		surname: '',
-		date: '16.12.2023',
-		text: 'Отличный хостинг, очень быстрая скорость работы. Поддержка и специалисты отвечают быстро и помогают в решении возникших проблем в кратчайшие сроки. Цена на тариф приятная',
-	},
-	{
-		name: 'Нариман',
-		surname: '',
-		date: '03.12.2023',
-		text: 'Я пользуюсь хостингом AIRNET 2 года и очень доволен. У них отличный VPS, работает быстро и стабильно. Не было никаких перебоев, за это я их ценю. Техническая поддержка клиентов всегда готова помочь, она работает 24/7, Всем  рекомендую!',
-	},
-	{
-		name: 'Amir',
-		surname: '',
-		date: '02.06.2022',
-		text: 'Airnet так держать! Скорость Tasix и внешнего интернета это просто мощь! Всем доволен',
-	},
-	{
-		name: 'Sadriddin',
-		surname: '',
-		date: '18.05.2022',
-		text: 'Мне нравится этот хостинг. Ну и самое главное стабильная работа хостинга, даже при высоких нагрузках.',
-	},
-	{
-		name: 'Ахмадбек',
-		surname: '',
-		date: '24.09.2021',
-		text: 'Хостинг отличный! Тех поддержка на высшем уровне.',
-	},
-	{
-		name: 'Melisa',
-		surname: '',
-		date: '16.09.2021',
-		text: 'Вот уже почти год пользуемся хостингом Airnet. Отвечают и работают оперативно. Довольны!',
-	},
-]
+const TESTIM_API = "https://billing.airnet.uz/testimonials_api.php"
+
+function mapApi(r) {
+	let parts = (r.name || '').trim().split(/\s+/)
+	return {
+		name: parts[0] || 'Клиент',
+		surname: parts.slice(1).join(' '),
+		date: r.date ? new Date(r.date).toLocaleDateString('ru-RU') : '',
+		text: r.message || '',
+	}
+}
 
 export default function ReviewsPage({ language }) {
+	const [data, setData] = useState([])
+	useEffect(() => {
+		fetch(TESTIM_API + '?limit=50')
+			.then((r) => (r.ok ? r.json() : null))
+			.then((j) => {
+				if (j && j.ok && Array.isArray(j.data)) {
+					setData(j.data.map(mapApi))
+				}
+			})
+			.catch(() => {})
+	}, [])
+
 	const langData = {
 		title: {
 			ru: 'Отзывы о нас',
