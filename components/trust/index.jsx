@@ -56,7 +56,7 @@ export default function Trust({ language }) {
       <Container title={langData.title[language]} clNTitle="text-center">
         <Swiper
           modules={[Autoplay, Navigation]}
-          spaceBetween={0}
+          spaceBetween={18}
           slidesPerView={2}
           navigation
           loop={true}
@@ -69,15 +69,19 @@ export default function Trust({ language }) {
           breakpoints={{
             550: {
               slidesPerView: 3,
+              spaceBetween: 18,
             },
             660: {
               slidesPerView: 4,
+              spaceBetween: 18,
             },
             990: {
               slidesPerView: 5,
+              spaceBetween: 20,
             },
             1100: {
               slidesPerView: 6,
+              spaceBetween: 20,
             },
           }}
           className={st.swiper__swiper}

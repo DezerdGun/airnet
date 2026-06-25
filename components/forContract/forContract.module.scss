@@ -1,69 +1,139 @@
 $white: #fff;
-$black: #000;
-$green: #006a4d;
-$dark_green: #00402e;
-$gray: #c2c2c2;
-$dark_gray: #666;
-$light_gray: #f8f8f8;
-$red: #f00;
+$ink: #1f2937;
+$muted: #6b7280;
+$green: #0d5446;
+$greenLight: #14b885;
+$border: #e5e7eb;
 
 .forContract {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 40px 0;
 
   &__block {
     width: 50%;
 
     h2 {
       font-size: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 12px;
+      color: $ink;
+      letter-spacing: -0.3px;
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 48px;
+        height: 3px;
+        background: linear-gradient(90deg, $green 0%, $greenLight 100%);
+        border-radius: 2px;
+        margin-top: 14px;
+      }
     }
+
     p {
-      font-size: 18px;
-      font-weight: 500;
+      font-size: 16px;
+      font-weight: 400;
+      color: $muted;
       margin-bottom: 30px;
+      line-height: 1.6;
     }
+
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
 
       li {
-        margin-bottom: 20px;
-        font-size: 20px;
+        margin: 0;
+        font-size: 15px;
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 14px;
+        padding: 14px 18px;
+        background: $white;
+        border: 1px solid $border;
+        border-radius: 12px;
+        transition: all 0.25s ease;
+
+        &:hover {
+          border-color: rgba(13, 84, 70, 0.3);
+          box-shadow: 0 6px 18px rgba(13, 84, 70, 0.08);
+          transform: translateX(4px);
+
+          span svg {
+            transform: scale(1.1);
+          }
+        }
 
         span {
-          font-size: 20px;
+          font-size: 15px;
           display: flex;
           align-items: center;
           text-align: left;
-          gap: 10px;
+          gap: 12px;
+          flex: 1;
+          color: $ink;
+          font-weight: 500;
 
           a {
-            font-size: 20px;
+            font-size: 15px;
+            color: $ink;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: color 0.2s ease;
+
+            &:hover {
+              color: $green;
+            }
           }
 
           svg {
-            width: 25px;
-            height: 25px;
-            min-width: 25px;
+            width: 22px;
+            height: 22px;
+            min-width: 22px;
             fill: $green;
+            transition: transform 0.25s ease;
           }
         }
       }
     }
   }
 
+  &__img {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 992px) {
+    gap: 40px;
+
+    &__block h2 {
+      font-size: 26px;
+    }
+
+    &__img img {
+      width: 320px;
+    }
+  }
+
   @media (max-width: 770px) {
-    &__img {
-      img {
-        width: 250px;
-      }
+    &__img img {
+      width: 260px;
     }
   }
 
@@ -72,45 +142,54 @@ $red: #f00;
       h2 {
         font-size: 22px;
       }
+
       p {
-        font-size: 16px;
+        font-size: 15px;
       }
-      ul {
-        display: inline-block;
 
-        li {
-          font-size: 18px;
+      ul li {
+        padding: 12px 14px;
+        font-size: 14px;
 
-          span {
-            svg {
-              width: 20px;
-            }
+        span {
+          font-size: 14px;
+
+          a {
+            font-size: 14px;
+          }
+
+          svg {
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
           }
         }
       }
     }
 
     &__img {
-      img {
-        display: none;
-        width: 200px;
-      }
+      display: none;
     }
   }
 
   @media (max-width: 550px) {
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
 
-    &__block,
-    &__img {
+    &__block {
       width: 100%;
 
-      ul {
-        li {
-          font-size: 17px;
+      h2 {
+        text-align: center;
+
+        &::after {
+          margin-left: auto;
+          margin-right: auto;
         }
+      }
+
+      p {
+        text-align: center;
       }
     }
   }
