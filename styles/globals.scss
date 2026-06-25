@@ -396,6 +396,7 @@ h6 {
 
 /* Tariff + Reviews — buttons centered on sides, INSIDE swiper edges (no clipping) */
 .tarifSlider,
+.tarifSwiper,
 .reviews-swiper {
   position: relative;
 
@@ -430,7 +431,13 @@ h6 {
   }
 }
 
-.tarifSwiper,
+.tarifSwiper {
+  .swiper-wrapper {
+    padding-top: 32px;
+    padding-bottom: 10px;
+  }
+}
+
 .reviews-swiper {
   .swiper-wrapper {
     padding-top: 10px;
