@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import ChatLiveWidget from "../components/chatlive/index.jsx";
 import Cookies from "../components/cookies/index.jsx";
 import Footer from "../components/footer";
 import Header from "../components/header";
@@ -162,14 +163,7 @@ function MyApp({ Component, pageProps, url }) {
         <Cookies language={language} />
       </div>
       <Footer language={language} />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `window.replainSettings = { id: '5f7300e1-1747-4afc-ae3f-6b8478c6ce3e' };
-						(function(u){var s=document.createElement('script');s.async=true;s.src=u;
-						var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-						})('https://widget.replain.cc/dist/client.js')`,
-        }}
-      ></script>
+      <ChatLiveWidget language={language} />
     </>
   );
 }
