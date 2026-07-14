@@ -124,13 +124,20 @@ const IMG_EXT_RE = /\.(png|jpe?g|gif|webp|bmp|svg)(\?[^\s]*)?$/i;
 function absUrl(u) {
   if (!u) return "";
   if (/^https?:\/\//i.test(u) || /^data:/i.test(u)) return u;
-  if (u.charAt(0) === "/") return "https://billing.airnet.uz" + u;
-  return "https://billing.airnet.uz/" + u;
+  let base = "https://billing.airnet.uz";
+  try {
+    const m = String(API_URL).match(/^(https?:\/\/[^\/]+)/i);
+    if (m) base = m[1];
+  } catch (e) {}
+  if (u.charAt(0) === "/") return base + u;
+  return base + "/" + u;
 }
 
 function getImageUrl(m) {
   if (!m) return "";
-  const fields = [m.attachment, m.image, m.image_url, m.file_url, m.file, m.photo, m.url, m.media];
+  if (m.attachment_is_image && m.attachment_url) return absUrl(m.attachment_url);
+  if (typeof m.attachment_mime === "string" && /^image\//i.test(m.attachment_mime) && m.attachment_url) return absUrl(m.attachment_url);
+  const fields = [m.attachment_url, m.attachment, m.image, m.image_url, m.file_url, m.file, m.photo, m.url, m.media];
   for (const f of fields) {
     if (typeof f === "string" && f && (IMG_EXT_RE.test(f) || /^data:image\//i.test(f))) return absUrl(f);
   }
@@ -398,6 +405,13 @@ export default function ChatLiveWidget({ language = "ru" }) {
                                 <img src={imgUrl} alt="" className={st.msgImg} loading="lazy" />
                               </a>
                               {caption ? <span className={st.msgText}>{caption}</span> : null}
+                            </>
+                          ) : m.attachment_url ? (
+                            <>
+                              <a href={absUrl(m.attachment_url)} target="_blank" rel="noreferrer" className={st.msgText}>
+                                📎 {m.attachment_name || "файл"}
+                              </a>
+                              {m.message ? <span className={st.msgText}>{m.message}</span> : null}
                             </>
                           ) : (
                             <span className={st.msgText}>{m.message}</span>
