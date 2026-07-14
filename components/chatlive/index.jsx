@@ -29,6 +29,7 @@ const L = {
     errBlocked: "Чат недоступен — обратитесь по телефону 78 150 15 15",
     you: "Вы",
     op: "AIRNET",
+    manager: "Менеджер",
     poweredBy: "AIRNET Live Chat",
     back: "Сменить данные",
     close: "Свернуть",
@@ -54,6 +55,7 @@ const L = {
     errBlocked: "Chat mavjud emas — 78 150 15 15 raqamiga qo'ng'iroq qiling",
     you: "Siz",
     op: "AIRNET",
+    manager: "Menejer",
     poweredBy: "AIRNET Live Chat",
     back: "Ma'lumotlarni o'zgartirish",
     close: "Yopish",
@@ -79,6 +81,7 @@ const L = {
     errBlocked: "Chat unavailable — please call 78 150 15 15",
     you: "You",
     op: "AIRNET",
+    manager: "Manager",
     poweredBy: "AIRNET Live Chat",
     back: "Change info",
     close: "Close",
@@ -114,6 +117,32 @@ function fmtTime(iso) {
   const hh = String(d.getHours()).padStart(2, "0");
   const mm = String(d.getMinutes()).padStart(2, "0");
   return hh + ":" + mm;
+}
+
+const IMG_EXT_RE = /\.(png|jpe?g|gif|webp|bmp|svg)(\?[^\s]*)?$/i;
+
+function absUrl(u) {
+  if (!u) return "";
+  if (/^https?:\/\//i.test(u) || /^data:/i.test(u)) return u;
+  if (u.charAt(0) === "/") return "https://billing.airnet.uz" + u;
+  return "https://billing.airnet.uz/" + u;
+}
+
+function getImageUrl(m) {
+  if (!m) return "";
+  const fields = [m.attachment, m.image, m.image_url, m.file_url, m.file, m.photo, m.url, m.media];
+  for (const f of fields) {
+    if (typeof f === "string" && f && (IMG_EXT_RE.test(f) || /^data:image\//i.test(f))) return absUrl(f);
+  }
+  if (typeof m.attachment_type === "string" && /image/i.test(m.attachment_type) && (m.attachment_url || m.url)) {
+    return absUrl(m.attachment_url || m.url);
+  }
+  const txt = typeof m.message === "string" ? m.message.trim() : "";
+  if (txt) {
+    const match = txt.match(/https?:\/\/[^\s]+/i);
+    if (match && IMG_EXT_RE.test(match[0])) return match[0];
+  }
+  return "";
 }
 
 async function apiPost(action, params) {
@@ -355,11 +384,24 @@ export default function ChatLiveWidget({ language = "ru" }) {
                   <div className={st.dayLabel}><span>{g.label}</span></div>
                   {g.items.map((m) => {
                     const mine = m.sender_type === "user";
+                    const imgUrl = m.deleted ? "" : getImageUrl(m);
+                    const caption = imgUrl && typeof m.message === "string" && m.message.trim() !== imgUrl ? m.message.trim() : "";
                     return (
                       <div key={m.id} className={`${st.msgRow} ${mine ? st.msgRowMine : st.msgRowThem}`}>
                         <div className={`${st.bubble} ${mine ? st.bubbleMine : st.bubbleThem}`}>
-                          {!mine ? <div className={st.senderName}>{m.sender_name || t.op}</div> : null}
-                          {m.deleted ? <span className={st.deleted}>—</span> : <span className={st.msgText}>{m.message}</span>}
+                          {!mine ? <div className={st.senderName}>{t.manager}</div> : null}
+                          {m.deleted ? (
+                            <span className={st.deleted}>—</span>
+                          ) : imgUrl ? (
+                            <>
+                              <a href={imgUrl} target="_blank" rel="noreferrer" className={st.imgLink}>
+                                <img src={imgUrl} alt="" className={st.msgImg} loading="lazy" />
+                              </a>
+                              {caption ? <span className={st.msgText}>{caption}</span> : null}
+                            </>
+                          ) : (
+                            <span className={st.msgText}>{m.message}</span>
+                          )}
                           <span className={st.time}>{fmtTime(m.created)}{m.edited ? " · ✎" : ""}</span>
                         </div>
                       </div>
