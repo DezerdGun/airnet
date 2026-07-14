@@ -180,10 +180,18 @@ export default function ChatLiveWidget({ language = "ru" }) {
   const [sending, setSending] = useState(false);
   const [err, setErr] = useState("");
   const [ready, setReady] = useState(false);
+  const [lightbox, setLightbox] = useState(null);
   const boxRef = useRef(null);
   const pollTimerRef = useRef(null);
   const pollDelayRef = useRef(POLL_MIN);
   const lastMsgIdRef = useRef(0);
+
+  useEffect(() => {
+    if (!lightbox) return;
+    const onKey = (e) => { if (e.key === "Escape") setLightbox(null); };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [lightbox]);
 
   useEffect(() => {
     const s = loadState();
@@ -401,16 +409,42 @@ export default function ChatLiveWidget({ language = "ru" }) {
                             <span className={st.deleted}>—</span>
                           ) : imgUrl ? (
                             <>
-                              <a href={imgUrl} target="_blank" rel="noreferrer" className={st.imgLink}>
-                                <img src={imgUrl} alt="" className={st.msgImg} loading="lazy" />
-                              </a>
+                              <button
+                                type="button"
+                                className={st.imgLink}
+                                onClick={() => setLightbox(imgUrl)}
+                                aria-label="Открыть изображение"
+                              >
+                                <img
+                                  src={imgUrl}
+                                  alt=""
+                                  className={st.msgImg}
+                                  loading="lazy"
+                                  draggable={false}
+                                  onContextMenu={(e) => e.preventDefault()}
+                                />
+                              </button>
                               {caption ? <span className={st.msgText}>{caption}</span> : null}
                             </>
                           ) : m.attachment_url ? (
                             <>
-                              <a href={absUrl(m.attachment_url)} target="_blank" rel="noreferrer" className={st.msgText}>
+                              <button
+                                type="button"
+                                className={st.msgText}
+                                style={{ background: "none", border: "none", padding: 0, cursor: "pointer", textAlign: "left" }}
+                                onClick={() => {
+                                  const url = absUrl(m.attachment_url);
+                                  const a = document.createElement("a");
+                                  a.href = url;
+                                  a.download = m.attachment_name || "file";
+                                  a.rel = "noreferrer";
+                                  document.body.appendChild(a);
+                                  a.click();
+                                  document.body.removeChild(a);
+                                }}
+                              >
                                 📎 {m.attachment_name || "файл"}
-                              </a>
+                              </button>
                               {m.message ? <span className={st.msgText}>{m.message}</span> : null}
                             </>
                           ) : (
@@ -454,6 +488,30 @@ export default function ChatLiveWidget({ language = "ru" }) {
             </div>
           </>
         )}
+        {lightbox ? (
+          <div
+            className={st.lightbox}
+            onClick={() => setLightbox(null)}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Просмотр изображения"
+          >
+            <button
+              type="button"
+              className={st.lightboxClose}
+              onClick={(e) => { e.stopPropagation(); setLightbox(null); }}
+              aria-label="Закрыть"
+            >×</button>
+            <img
+              src={lightbox}
+              alt=""
+              className={st.lightboxImg}
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        ) : null}
       </div>
     </>
   );

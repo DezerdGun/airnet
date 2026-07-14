@@ -404,6 +404,14 @@ $shadow: 0 24px 48px -12px rgba(15, 23, 42, 0.22), 0 6px 20px -8px rgba(15, 23, 
   line-height: 0;
   border-radius: 12px;
   overflow: hidden;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: zoom-in;
+  -webkit-user-drag: none;
+  user-select: none;
+  &:focus, &:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(13,84,70,.35); }
 }
 .msgImg {
   display: block;
@@ -415,7 +423,57 @@ $shadow: 0 24px 48px -12px rgba(15, 23, 42, 0.22), 0 6px 20px -8px rgba(15, 23, 
   object-fit: cover;
   background: #eef2f5;
   transition: opacity 0.15s;
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
   &:hover { opacity: 0.94; }
+}
+.lightbox {
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 15, 24, 0.92);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: lbFade 0.15s ease;
+  cursor: zoom-out;
+}
+.lightboxImg {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  cursor: default;
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: auto;
+}
+.lightboxClose {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff !important;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+  z-index: 11;
+  &:hover { background: rgba(255, 255, 255, 0.28); }
+}
+@keyframes lbFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 .deleted {
   color: $muted;
