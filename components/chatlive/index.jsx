@@ -34,6 +34,12 @@ const L = {
     back: "Сменить данные",
     close: "Свернуть",
     online: "онлайн",
+    actReply: "Ответить",
+    actEdit: "Редактировать",
+    actDelete: "Удалить у себя",
+    editingLabel: "Редактирование сообщения",
+    replyingLabel: "Ответ",
+    confirmDelete: "Удалить сообщение у себя? Оператор увидит, что вы удалили.",
   },
   uz: {
     launcherTitle: "Bizga yozing",
@@ -181,17 +187,37 @@ export default function ChatLiveWidget({ language = "ru" }) {
   const [err, setErr] = useState("");
   const [ready, setReady] = useState(false);
   const [lightbox, setLightbox] = useState(null);
+  const [isFs, setIsFs] = useState(false);
+  const [replyTo, setReplyTo] = useState(null);
+  const [editingId, setEditingId] = useState(0);
   const boxRef = useRef(null);
+  const lightboxRef = useRef(null);
   const pollTimerRef = useRef(null);
   const pollDelayRef = useRef(POLL_MIN);
   const lastMsgIdRef = useRef(0);
 
   useEffect(() => {
     if (!lightbox) return;
-    const onKey = (e) => { if (e.key === "Escape") setLightbox(null); };
+    const onKey = (e) => {
+      if (e.key === "Escape" && !document.fullscreenElement) setLightbox(null);
+    };
+    const onFs = () => setIsFs(!!document.fullscreenElement);
     document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
+    document.addEventListener("fullscreenchange", onFs);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("fullscreenchange", onFs);
+      if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+    };
   }, [lightbox]);
+
+  const toggleFullscreen = useCallback(() => {
+    if (document.fullscreenElement) {
+      document.exitFullscreen().catch(() => {});
+    } else if (lightboxRef.current && lightboxRef.current.requestFullscreen) {
+      lightboxRef.current.requestFullscreen().catch(() => {});
+    }
+  }, []);
 
   useEffect(() => {
     const s = loadState();
@@ -295,17 +321,29 @@ export default function ChatLiveWidget({ language = "ru" }) {
 
   const sendMessage = async () => {
     if (!session || !text.trim() || sending) return;
-    if (blocked) { setErr(t.errBlocked); return; }
+    if (blocked && !editingId) { setErr(t.errBlocked); return; }
     setSending(true);
     setErr("");
     const msg = text.trim();
     try {
-      const r = await apiPost("guest_send", { token: session.token, thread_id: session.thread_id, message: msg });
-      if (r && r.error === "thread_blocked") { setBlocked(true); setErr(t.errBlocked); return; }
-      if (r && r.error) { setErr(r.detail || t.errNet); return; }
-      if (r && r.message) {
-        setMessages((prev) => [...prev, r.message]);
-        lastMsgIdRef.current = r.message.id;
+      if (editingId) {
+        const r = await apiPost("guest_edit", { token: session.token, thread_id: session.thread_id, message_id: editingId, message: msg });
+        if (r && r.error) { setErr(r.detail || t.errNet); return; }
+        if (r && r.message) {
+          setMessages((prev) => prev.map((m) => m.id === r.message.id ? r.message : m));
+        }
+        setEditingId(0);
+      } else {
+        const params = { token: session.token, thread_id: session.thread_id, message: msg };
+        if (replyTo && replyTo.id) params.reply_to_id = replyTo.id;
+        const r = await apiPost("guest_send", params);
+        if (r && r.error === "thread_blocked") { setBlocked(true); setErr(t.errBlocked); return; }
+        if (r && r.error) { setErr(r.detail || t.errNet); return; }
+        if (r && r.message) {
+          setMessages((prev) => [...prev, r.message]);
+          lastMsgIdRef.current = r.message.id;
+        }
+        setReplyTo(null);
       }
       setText("");
     } catch (e) {
@@ -313,6 +351,31 @@ export default function ChatLiveWidget({ language = "ru" }) {
     } finally {
       setSending(false);
     }
+  };
+
+  const startEdit = (m) => {
+    if (!m || m.sender_type !== "user" || m.deleted) return;
+    setEditingId(m.id);
+    setText(m.message || "");
+    setReplyTo(null);
+  };
+  const cancelEdit = () => { setEditingId(0); setText(""); };
+  const startReply = (m) => {
+    if (!m || m.deleted) return;
+    setReplyTo({ id: m.id, name: m.sender_name || (m.sender_type === "user" ? (t.you || "Вы") : t.manager), text: m.message || "" });
+    setEditingId(0);
+  };
+  const cancelReply = () => setReplyTo(null);
+  const deleteMessage = async (m) => {
+    if (!m || m.sender_type !== "user" || m.deleted) return;
+    if (!confirm(t.confirmDelete || "Удалить это сообщение?")) return;
+    try {
+      const r = await apiPost("guest_delete", { token: session.token, thread_id: session.thread_id, message_id: m.id });
+      if (r && r.error) { setErr(r.detail || t.errNet); return; }
+      setMessages((prev) => prev.filter((x) => x.id !== m.id));
+      if (editingId === m.id) cancelEdit();
+      if (replyTo && replyTo.id === m.id) cancelReply();
+    } catch (e) { setErr(t.errNet); }
   };
 
   const onLauncherClick = () => {
@@ -401,10 +464,17 @@ export default function ChatLiveWidget({ language = "ru" }) {
                     const mine = m.sender_type === "user";
                     const imgUrl = m.deleted ? "" : getImageUrl(m);
                     const caption = imgUrl && typeof m.message === "string" && m.message.trim() !== imgUrl ? m.message.trim() : "";
+                    const replyPreview = m.reply_to_id ? messages.find((x) => x.id === m.reply_to_id) : null;
                     return (
                       <div key={m.id} className={`${st.msgRow} ${mine ? st.msgRowMine : st.msgRowThem}`}>
                         <div className={`${st.bubble} ${mine ? st.bubbleMine : st.bubbleThem}`}>
                           {!mine ? <div className={st.senderName}>{t.manager}</div> : null}
+                          {replyPreview ? (
+                            <div className={st.replyQuote}>
+                              <b>{replyPreview.sender_type === "user" ? (t.you || "Вы") : t.manager}:</b>{" "}
+                              {(replyPreview.message || "").slice(0, 80)}{(replyPreview.message || "").length > 80 ? "…" : ""}
+                            </div>
+                          ) : null}
                           {m.deleted ? (
                             <span className={st.deleted}>—</span>
                           ) : imgUrl ? (
@@ -451,6 +521,23 @@ export default function ChatLiveWidget({ language = "ru" }) {
                             <span className={st.msgText}>{m.message}</span>
                           )}
                           <span className={st.time}>{fmtTime(m.created)}{m.edited ? " · ✎" : ""}</span>
+                          {!m.deleted ? (
+                            <div className={st.msgActions}>
+                              <button type="button" title={t.actReply || "Ответить"} onClick={() => startReply(m)} aria-label="reply">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 17 4 12 9 7"/><path d="M20 18v-2a4 4 0 0 0-4-4H4"/></svg>
+                              </button>
+                              {mine && !imgUrl && !m.attachment_url ? (
+                                <button type="button" title={t.actEdit || "Редактировать"} onClick={() => startEdit(m)} aria-label="edit">
+                                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                                </button>
+                              ) : null}
+                              {mine ? (
+                                <button type="button" title={t.actDelete || "Удалить"} onClick={() => deleteMessage(m)} aria-label="delete">
+                                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
+                                </button>
+                              ) : null}
+                            </div>
+                          ) : null}
                         </div>
                       </div>
                     );
@@ -460,6 +547,20 @@ export default function ChatLiveWidget({ language = "ru" }) {
             </div>
             {blocked ? <div className={st.blockedBanner}>🔒 {t.errBlocked}</div> : null}
             {err ? <div className={st.errInline}>{err}</div> : null}
+            {editingId ? (
+              <div className={st.composeChip}>
+                <div className={st.composeChipTitle}>{t.editingLabel || "Редактирование сообщения"}</div>
+                <button type="button" className={st.composeChipClose} onClick={cancelEdit} aria-label="cancel">×</button>
+              </div>
+            ) : replyTo ? (
+              <div className={st.composeChip}>
+                <div className={st.composeChipTitle}>
+                  {t.replyingLabel || "Ответ"} <b>{replyTo.name}</b>
+                </div>
+                <div className={st.composeChipText}>{(replyTo.text || "").slice(0, 100)}{(replyTo.text || "").length > 100 ? "…" : ""}</div>
+                <button type="button" className={st.composeChipClose} onClick={cancelReply} aria-label="cancel">×</button>
+              </div>
+            ) : null}
             <div className={st.inputBar}>
               <textarea
                 value={text}
@@ -490,18 +591,46 @@ export default function ChatLiveWidget({ language = "ru" }) {
         )}
         {lightbox ? (
           <div
+            ref={lightboxRef}
             className={st.lightbox}
             onClick={() => setLightbox(null)}
             role="dialog"
             aria-modal="true"
             aria-label="Просмотр изображения"
           >
-            <button
-              type="button"
-              className={st.lightboxClose}
-              onClick={(e) => { e.stopPropagation(); setLightbox(null); }}
-              aria-label="Закрыть"
-            >×</button>
+            <div className={st.lightboxToolbar} onClick={(e) => e.stopPropagation()}>
+              <button
+                type="button"
+                className={st.lightboxBtn}
+                onClick={toggleFullscreen}
+                aria-label={isFs ? "Свернуть" : "На весь экран"}
+                title={isFs ? "Свернуть" : "На весь экран"}
+              >
+                {isFs ? (
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M8 3v4a1 1 0 0 1-1 1H3M21 8h-4a1 1 0 0 1-1-1V3M3 16h4a1 1 0 0 1 1 1v4M16 21v-4a1 1 0 0 1 1-1h4"/>
+                  </svg>
+                ) : (
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 8V5a2 2 0 0 1 2-2h3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M21 16v3a2 2 0 0 1-2 2h-3"/>
+                  </svg>
+                )}
+              </button>
+              <button
+                type="button"
+                className={st.lightboxBtn}
+                onClick={() => {
+                  if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+                  setLightbox(null);
+                }}
+                aria-label="Закрыть"
+                title="Закрыть"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+              </button>
+            </div>
             <img
               src={lightbox}
               alt=""
@@ -509,6 +638,7 @@ export default function ChatLiveWidget({ language = "ru" }) {
               draggable={false}
               onContextMenu={(e) => e.preventDefault()}
               onClick={(e) => e.stopPropagation()}
+              onDoubleClick={(e) => { e.stopPropagation(); toggleFullscreen(); }}
             />
           </div>
         ) : null}
