@@ -1,20 +1,49 @@
 .pageBreadcrumb {
 	max-width: 1250px;
-	padding: 40px 0 0px;
 	margin: 0 auto;
+	padding: 26px 20px 0;
 
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	gap: 2px;
 
-		span{
-			margin-left: 10px;
+	font-size: 14px;
+	color: #6b7d74;
+
+	span {
+		margin-left: 8px;
+		color: #1d2b24;
+		font-weight: 500;
+	}
+
+	a {
+		margin: 0 8px 0 0;
+		color: #0e6a4e;
+		text-decoration: none;
+		font-size: 14px;
+
+		span {
+			margin-left: 0;
+			color: #0e6a4e;
+			font-weight: 400;
 		}
-		a {
-			margin: 0 10px;
-			color: #342647;
+
+		&:hover {
 			text-decoration: underline;
-			font-size: 17px;
-			// text-transform: capitalize;
 		}
+	}
+
+	@media (max-width: 1270px) {
+		max-width: 1150px;
+	}
+	@media (max-width: 880px) {
+		padding-top: 18px;
+		font-size: 13px;
+
+		a,
+		span {
+			font-size: 13px;
+		}
+	}
 }

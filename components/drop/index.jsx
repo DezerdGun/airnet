@@ -61,6 +61,9 @@ const Drop = ({ item, index, show, setShow, isTarifCard, language }) => {
 							) : (
 								<> {el.dateOff}</>
 							)}
+							{el.discount && (
+								<em className="periodDisc">{el.discount}</em>
+							)}
 						</span>
 					</li>
 				))}

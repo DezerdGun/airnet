@@ -2,9 +2,10 @@ import { useCallback, useEffect, useState } from "react";
 // import InputRange from 'react-input-range';
 import Container from "@/components/container";
 import st from "./calculator.module.scss";
+import cs from "./constructor.module.scss";
+import CIcon from "./icons.jsx";
 // import 'react-input-range/lib/css/index.css';
 import { Range } from "react-range";
-import TarifCard from "../tarifCard";
 
 const calcSpeed = [
   // {
@@ -250,9 +251,44 @@ export default function Calculator({ language }) {
       ),
     },
     VDS: {
-      ru: "VDS",
-      uz: "VDS",
-      en: "VDS",
+      ru: "Ваш сервер",
+      uz: "Sizning serveringiz",
+      en: "Your server",
+    },
+    workstxt: {
+      ru: "Конфигурация обновляется в реальном времени",
+      uz: "Konfiguratsiya real vaqtda yangilanadi",
+      en: "Configuration updates in real time",
+    },
+    perMonth: {
+      ru: "сум / мес",
+      uz: "so'm / oy",
+      en: "sum / mo.",
+    },
+    order: {
+      ru: "Заказать сервер",
+      uz: "Serverga buyurtma berish",
+      en: "Order a server",
+    },
+    incStart: {
+      ru: "Запуск от 30 минут",
+      uz: "30 daqiqada ishga tushirish",
+      en: "Launch in 30 minutes",
+    },
+    incUptime: {
+      ru: "Uptime 99.98% · DDoS защита",
+      uz: "Uptime 99.98% · DDoS himoya",
+      en: "Uptime 99.98% · DDoS protection",
+    },
+    incRefund: {
+      ru: "Возврат средств 7 дней",
+      uz: "7 kun ichida pulni qaytarish",
+      en: "7-day money back",
+    },
+    incSupport: {
+      ru: "Поддержка 24/7",
+      uz: "24/7 qo'llab-quvvatlash",
+      en: "Support 24/7",
     },
     send: {
       ru: "Поделиться",
@@ -337,188 +373,350 @@ export default function Calculator({ language }) {
   //   }
   // }, []);
 
+  const cpuPrice = state.core * 30000;
+  const ramPrice = state.ram * 35000;
+  const ssdPrice = state.ssd * 1000;
+  const netPrice = calcSpeed.find((i) => i.title === state.speed).price;
+  const total = cpuPrice + ramPrice + ssdPrice + netPrice;
+
+  const presetParams = new URLSearchParams({
+    do: "order",
+    vid: "vds",
+    tarif: "27",
+    preset_cpu: state.core,
+    preset_ram: state.ram,
+    preset_ssd: state.ssd,
+    preset_channel: state.speed,
+    preset_os: state.os,
+    preset_os_ver: state.osVersion,
+    preset_adm: state.administration,
+    preset_price: total,
+    preset_source: "constructor",
+  });
+  const billingLink = `https://billing.airnet.uz/billing.php?${presetParams.toString()}`;
+
+  const plus = (v) => (v > 0 ? `+${BeautyNum(v)} ${langData.sum[language]}` : `+0 ${langData.sum[language]}`);
+
+  const osTiles = [];
+  calcOS.forEach((fam) => {
+    fam.versions.forEach((ver) =>
+      osTiles.push({ famId: fam.id, famTitle: fam.title, letter: fam.letter, color: fam.color, ver })
+    );
+  });
+
   return (
     <div className={st.calculator}>
       <Container className="position-relative">
-        <div className={st.calculator__block}>
-          <div id="content" className={st.calculator__block__item}>
-            <div className={st.calculator__block__item__info}>
-              <div className={st.calculator__block__item__info__item}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path d="M0 416C0 398.3 14.33 384 32 384H86.66C99 355.7 127.2 336 160 336C192.8 336 220.1 355.7 233.3 384H480C497.7 384 512 398.3 512 416C512 433.7 497.7 448 480 448H233.3C220.1 476.3 192.8 496 160 496C127.2 496 99 476.3 86.66 448H32C14.33 448 0 433.7 0 416V416zM192 416C192 398.3 177.7 384 160 384C142.3 384 128 398.3 128 416C128 433.7 142.3 448 160 448C177.7 448 192 433.7 192 416zM352 176C384.8 176 412.1 195.7 425.3 224H480C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H425.3C412.1 316.3 384.8 336 352 336C319.2 336 291 316.3 278.7 288H32C14.33 288 0 273.7 0 256C0 238.3 14.33 224 32 224H278.7C291 195.7 319.2 176 352 176zM384 256C384 238.3 369.7 224 352 224C334.3 224 320 238.3 320 256C320 273.7 334.3 288 352 288C369.7 288 384 273.7 384 256zM480 64C497.7 64 512 78.33 512 96C512 113.7 497.7 128 480 128H265.3C252.1 156.3 224.8 176 192 176C159.2 176 131 156.3 118.7 128H32C14.33 128 0 113.7 0 96C0 78.33 14.33 64 32 64H118.7C131 35.75 159.2 16 192 16C224.8 16 252.1 35.75 265.3 64H480zM160 96C160 113.7 174.3 128 192 128C209.7 128 224 113.7 224 96C224 78.33 209.7 64 192 64C174.3 64 160 78.33 160 96z" />
-                </svg>
-                {langData.gN[language]}
-              </div>
-              <div className={st.calculator__block__item__info__item}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path d="M160 352h192V160H160V352zM448 176h48C504.8 176 512 168.8 512 160s-7.162-16-16-16H448V128c0-35.35-28.65-64-64-64h-16V16C368 7.164 360.8 0 352 0c-8.836 0-16 7.164-16 16V64h-64V16C272 7.164 264.8 0 256 0C247.2 0 240 7.164 240 16V64h-64V16C176 7.164 168.8 0 160 0C151.2 0 144 7.164 144 16V64H128C92.65 64 64 92.65 64 128v16H16C7.164 144 0 151.2 0 160s7.164 16 16 16H64v64H16C7.164 240 0 247.2 0 256s7.164 16 16 16H64v64H16C7.164 336 0 343.2 0 352s7.164 16 16 16H64V384c0 35.35 28.65 64 64 64h16v48C144 504.8 151.2 512 160 512c8.838 0 16-7.164 16-16V448h64v48c0 8.836 7.164 16 16 16c8.838 0 16-7.164 16-16V448h64v48c0 8.836 7.164 16 16 16c8.838 0 16-7.164 16-16V448H384c35.35 0 64-28.65 64-64v-16h48c8.838 0 16-7.164 16-16s-7.162-16-16-16H448v-64h48C504.8 272 512 264.8 512 256s-7.162-16-16-16H448V176zM384 368c0 8.836-7.162 16-16 16h-224C135.2 384 128 376.8 128 368v-224C128 135.2 135.2 128 144 128h224C376.8 128 384 135.2 384 144V368z" />
-                </svg>
-                {langData.speed[language]}
-              </div>
-              <div className={st.calculator__block__item__info__item}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path d="M480 288H32c-17.62 0-32 14.38-32 32v128c0 17.62 14.38 32 32 32h448c17.62 0 32-14.38 32-32v-128C512 302.4 497.6 288 480 288zM352 408c-13.25 0-24-10.75-24-24s10.75-24 24-24s24 10.75 24 24S365.3 408 352 408zM416 408c-13.25 0-24-10.75-24-24s10.75-24 24-24s24 10.75 24 24S429.3 408 416 408zM480 32H32C14.38 32 0 46.38 0 64v128c0 17.62 14.38 32 32 32h448c17.62 0 32-14.38 32-32V64C512 46.38 497.6 32 480 32zM352 152c-13.25 0-24-10.75-24-24S338.8 104 352 104S376 114.8 376 128S365.3 152 352 152zM416 152c-13.25 0-24-10.75-24-24S402.8 104 416 104S440 114.8 440 128S429.3 152 416 152z" />
-                </svg>
-                {langData.hard[language]}
-              </div>
-            </div>
-            <CalcBlock number={1} title={langData.hardProccer[language]}>
-              <CalcHeader
-                title={langData.title[language]}
-                price={BeautyNum(state.core * 30000)}
-                sum={langData.sum[language]}
-              />
-              <CalcInput
-                text={langData.yadro[language]}
-                step={2}
-                min={2}
-                max={42}
-                name="core"
-                state={state}
-                setState={setState}
-              />
-              <CalcHeader
-                title={langData.ozu[language]}
-                price={BeautyNum(state.ram * 35000)}
-                sum={langData.sum[language]}
-              />
-              <CalcInput
-                text={langData.GB[language]}
-                step={2}
-                min={2}
-                max={256}
-                name="ram"
-                state={state}
-                setState={setState}
-              />
-            </CalcBlock>
-            <CalcBlock number={2} title={langData.hard[language]}>
-              <CalcHeader title={langData.hardS[language]} sum={langData.sum[language]} />
-              <div className="d-flex">
-                <CalcSelect title="SSD" isChecked={true} />
-                <div title="Под заказ">
-                  <CalcSelect title="NVME - Под заказ" isChecked={false} />
+        <div className={cs.wrap}>
+          <div className={cs.builder} id="content">
+            <section className={cs.card}>
+              <div className={cs.card__head}>
+                <div className={cs.card__title}>
+                  <span className={cs.card__num}>1</span>
+                  <CIcon name="cpu" size={16} />
+                  {langData.hardProccer[language]}
                 </div>
+                <span className={cs.card__price}>{plus(cpuPrice + ramPrice)}</span>
               </div>
-              <CalcHeader
-                title={langData.wHard[language]}
-                price={BeautyNum(state.ssd * 1000)}
-                sum={langData.sum[language]}
-              />
-              <CalcInput
-                text={langData.GB[language]}
-                step={10}
-                min={50}
-                max={10000}
-                name="ssd"
-                state={state}
-                setState={setState}
-              />
-            </CalcBlock>
-            <CalcBlock number={3} title={langData.sistem[language]}>
-              <CalcHeader title={langData.oS[language]} price={0} sum={langData.sum[language]} />
-              <CalcOsGrid data={calcOS} state={state} setState={setState} />
-            </CalcBlock>
-            <CalcBlock number={4} title={langData.chanel[language]}>
-              <CalcHeader
-                title={langData.wChanel[language]}
-                price={BeautyNum(calcSpeed.find((item) => item.title === state.speed).price)}
-                sum={langData.sum[language]}
-              />
-              <CalcSpeed data={calcSpeed} state={state} setState={setState} />
-            </CalcBlock>
-            <CalcBlock number={5} title={langData.adm[language]}>
-              <CalcHeader title={langData.paket[language]} price={0} sum={langData.sum[language]} />
-              <CalcSwitcher state={state} setState={setState} language={language} />
-            </CalcBlock>
-            <div className={st.calculator__block__item__category__content__footer}>{langData.br[language]}</div>
-          </div>
-          <div className={st.calculator__block__result}>
-            {(() => {
-              const presetParams = new URLSearchParams({
-                do: "order",
-                vid: "vds",
-                tarif: "27",
-                preset_cpu: state.core,
-                preset_ram: state.ram,
-                preset_ssd: state.ssd,
-                preset_channel: state.speed,
-                preset_os: state.os,
-                preset_os_ver: state.osVersion,
-                preset_adm: state.administration,
-                preset_price:
-                  state.core * 30000 +
-                  state.ram * 35000 +
-                  state.ssd * 1000 +
-                  calcSpeed.find((item) => item.title === state.speed).price,
-                preset_source: "constructor",
-              });
-              const billingLink = `https://billing.airnet.uz/billing.php?${presetParams.toString()}`;
-              return (
-                <TarifCard
-                  index={1}
-                  tarif={{
-                    title: { ru: langData.VDS[language], uz: langData.VDS[language], en: langData.VDS[language] },
-                    prices: [
-                      {
-                        price: BeautyNum(
-                          state.core * 30000 +
-                            state.ram * 35000 +
-                            state.ssd * 1000 +
-                            calcSpeed.find((item) => item.title === state.speed).price
-                        ),
-                        dateOff: `1 мес`,
-                      },
-                    ],
-                    workstxt: { ru: "Соберите свой тариф", uz: "O'z rejangizni yarating", en: "Create your own plan" },
-                    cpu: state.core,
-                    ram: state.ram,
-                    ssd: state.ssd,
-                    net: state.speed,
-                    link: billingLink,
-                  }}
-                  show={show}
-                  setShow={setShow}
-                  language={language}
+              <div className={cs.card__body}>
+                <CalcSlider
+                  name="core"
+                  label={langData.title[language]}
+                  unit={langData.yadro[language]}
+                  min={2}
+                  max={42}
+                  step={2}
+                  state={state}
+                  setState={setState}
                 />
-              );
-            })()}
+                <CalcSlider
+                  name="ram"
+                  label={langData.ozu[language]}
+                  unit={langData.GB[language]}
+                  min={2}
+                  max={256}
+                  step={2}
+                  state={state}
+                  setState={setState}
+                />
+              </div>
+            </section>
 
-            {/* <div className={st.calculator__block__result__header}>
-              <div>{langData.VDS[language]}</div>
+            <section className={cs.card}>
+              <div className={cs.card__head}>
+                <div className={cs.card__title}>
+                  <span className={cs.card__num}>2</span>
+                  <CIcon name="ssd" size={16} />
+                  {langData.hard[language]}
+                </div>
+                <span className={cs.card__price}>{plus(ssdPrice)}</span>
+              </div>
+              <div className={cs.card__body}>
+                <div>
+                  <div className={cs.slider__name} style={{ marginBottom: 8 }}>
+                    {langData.hardS[language]}
+                  </div>
+                  <div className={cs.chips}>
+                    <button type="button" className={`${cs.chip} ${cs.chip_on}`}>
+                      <CIcon name="ssd" size={14} />
+                      SSD
+                    </button>
+                    <button type="button" className={`${cs.chip} ${cs.chip_off}`} title="Под заказ" disabled>
+                      <CIcon name="bolt" size={14} />
+                      NVMe <small>Под заказ</small>
+                    </button>
+                  </div>
+                </div>
+                <CalcSlider
+                  name="ssd"
+                  label={langData.wHard[language]}
+                  unit={langData.GB[language]}
+                  min={50}
+                  max={10000}
+                  step={10}
+                  state={state}
+                  setState={setState}
+                />
+              </div>
+            </section>
+
+            <section className={cs.card}>
+              <div className={cs.card__head}>
+                <div className={cs.card__title}>
+                  <span className={cs.card__num}>3</span>
+                  <CIcon name="os" size={16} />
+                  {langData.sistem[language]}
+                </div>
+                <span className={`${cs.card__price} ${cs.card__price_zero}`}>+0 {langData.sum[language]}</span>
+              </div>
+              <div className={cs.card__body}>
+                <div className={cs.os}>
+                  {osTiles.map((t) => {
+                    const active = state.os === t.famTitle && state.osVersion === t.ver;
+                    const label = t.ver ? `${t.famTitle} ${t.ver}` : t.famTitle;
+                    return (
+                      <button
+                        type="button"
+                        key={`${t.famId}-${t.ver}`}
+                        title={label}
+                        className={`${cs.os__tile} ${active ? cs.os__tile_on : ""}`}
+                        onClick={() => setState((prev) => ({ ...prev, os: t.famTitle, osVersion: t.ver }))}
+                      >
+                        <span className={cs.os__badge} style={{ background: t.color }}>
+                          {t.letter}
+                        </span>
+                        <span className={cs.os__label}>{label}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </section>
+
+            <section className={cs.card}>
+              <div className={cs.card__head}>
+                <div className={cs.card__title}>
+                  <span className={cs.card__num}>4</span>
+                  <CIcon name="wifi" size={16} />
+                  {langData.chanel[language]}
+                </div>
+                <span className={`${cs.card__price} ${netPrice ? "" : cs.card__price_zero}`}>{plus(netPrice)}</span>
+              </div>
+              <div className={cs.card__body}>
+                <div className={cs.chips}>
+                  {calcSpeed.map((item) => (
+                    <button
+                      type="button"
+                      key={item.title}
+                      className={`${cs.chip} ${item.title === state.speed ? cs.chip_on : ""}`}
+                      onClick={() => setState((prev) => ({ ...prev, speed: item.title }))}
+                    >
+                      <CIcon name="network" size={14} />
+                      {item.title}
+                      {item.price > 0 && <small>+{BeautyNum(item.price)}</small>}
+                    </button>
+                  ))}
+                </div>
+                <div className={cs.note}>
+                  <CIcon name="info" size={13} />
+                  TAS-IX / UZ-IX — 1 Гбит/с включён во все тарифы бесплатно
+                </div>
+              </div>
+            </section>
+
+            <section className={cs.card}>
+              <div className={cs.card__head}>
+                <div className={cs.card__title}>
+                  <span className={cs.card__num}>5</span>
+                  <CIcon name="settings" size={16} />
+                  {langData.adm[language]}
+                </div>
+                <span className={`${cs.card__price} ${cs.card__price_zero}`}>+0 {langData.sum[language]}</span>
+              </div>
+              <div className={cs.card__body}>
+                <div className={cs.optRow}>
+                  <div className={cs.optRow__info}>
+                    {langData.adm[language]}
+                    <small>{langData.paket[language]}</small>
+                  </div>
+                  <div className={cs.seg}>
+                    <span className={`${cs.seg__item} ${state.administration === "Нет" ? cs.seg__item_on : ""}`}>
+                      {language === "uz" ? "Yo'q" : language === "en" ? "No" : "Нет"}
+                    </span>
+                    <span className={`${cs.seg__item} ${state.administration === "Да" ? cs.seg__item_on : ""}`}>
+                      {language === "uz" ? "Ha" : language === "en" ? "Yes" : "Да"}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div className={st.calculator__block__item__category__content__footer}>
+              {langData.br[language]}
             </div>
-            <div className={st.calculator__block__result__content}>
-              <CalcInfo title="CPU" value={`${state.core} ${langData.yadro[language]}`} />
-              <div className="d-flex">
-                <div className="me-4">
-                  <CalcInfo title="RAM" value={`${state.ram} ${langData.GB[language]}`} />
-                </div>
-                <CalcInfo title="SSD" value={`${state.ssd} ${langData.GB[language]}`} />
-              </div>
-              <CalcInfo title={langData.operationSystem[language]} value={`${state.os} ${state.osVersion}`} />
-              <CalcInfo title={langData.chanel[language]} value={`${state.speed}`} />
-              <CalcInfo title={langData.limits[language]} value={`32 ${langData.addresses[language]}`} />
-              <CalcInfo title={langData.adm[language]} value={state.administration} />
-
-              <div className={st.calculator__block__result__content__footer}>
-                <div className="def-price">
-                  {BeautyNum(
-                    state.core * 30000 +
-                      state.ram * 35000 +
-                      state.ssd * 1000 +
-                      calcSpeed.find((item) => item.title === state.speed).price
-                  )}{" "}
-                  {langData.MnS[language]}
-                </div>
-                {/* <a href="#">{langData.kor[language]}</a> 
-              </div>
-            </div> */}
           </div>
+
+          <aside className={cs.summary} id="result">
+            <div className={cs.summary__head}>
+              <h3>{langData.VDS[language]}</h3>
+              <p>{langData.workstxt[language]}</p>
+            </div>
+
+            <div className={cs.summary__body}>
+              <div className={cs.summary__row}>
+                <span className={cs.summary__label}>
+                  <CIcon name="cpu" size={14} />
+                  CPU
+                </span>
+                <span className={cs.summary__value}>
+                  {state.core} {langData.yadro[language]}
+                </span>
+              </div>
+              <div className={cs.summary__row}>
+                <span className={cs.summary__label}>
+                  <CIcon name="ram" size={14} />
+                  RAM
+                </span>
+                <span className={cs.summary__value}>
+                  {state.ram} {langData.GB[language]}
+                </span>
+              </div>
+              <div className={cs.summary__row}>
+                <span className={cs.summary__label}>
+                  <CIcon name="ssd" size={14} />
+                  SSD
+                </span>
+                <span className={cs.summary__value}>
+                  {state.ssd} {langData.GB[language]}
+                </span>
+              </div>
+              <div className={cs.summary__row}>
+                <span className={cs.summary__label}>
+                  <CIcon name="wifi" size={14} />
+                  {langData.chanel[language]}
+                </span>
+                <span className={cs.summary__value}>{state.speed}</span>
+              </div>
+              <div className={cs.summary__row}>
+                <span className={cs.summary__label}>
+                  <CIcon name="network" size={14} />
+                  TAS-IX / UZ-IX
+                </span>
+                <span className={cs.summary__value}>1 Гбит/с</span>
+              </div>
+              <div className={cs.summary__row}>
+                <span className={cs.summary__label}>
+                  <CIcon name="os" size={14} />
+                  {langData.operationSystem[language]}
+                </span>
+                <span className={cs.summary__value}>
+                  {state.os} {state.osVersion}
+                </span>
+              </div>
+              <div className={cs.summary__row}>
+                <span className={cs.summary__label}>
+                  <CIcon name="pin" size={14} />
+                  IP
+                </span>
+                <span className={cs.summary__value}>1</span>
+              </div>
+            </div>
+
+            <div className={cs.summary__footer}>
+              <div className={cs.summary__price}>
+                <b>{BeautyNum(total)}</b>
+                <span>{langData.perMonth[language]}</span>
+              </div>
+              <a className={cs.summary__btn} href={billingLink} target="_blank" rel="noopener noreferrer">
+                {langData.order[language]}
+                <CIcon name="arrowRight" size={16} />
+              </a>
+              <div className={cs.summary__includes}>
+                <span className={cs.summary__inc}>
+                  <CIcon name="clock" size={13} />
+                  {langData.incStart[language]}
+                </span>
+                <span className={cs.summary__inc}>
+                  <CIcon name="shield" size={13} />
+                  {langData.incUptime[language]}
+                </span>
+                <span className={cs.summary__inc}>
+                  <CIcon name="refresh" size={13} />
+                  {langData.incRefund[language]}
+                </span>
+                <span className={cs.summary__inc}>
+                  <CIcon name="headset" size={13} />
+                  {langData.incSupport[language]}
+                </span>
+              </div>
+            </div>
+          </aside>
         </div>
       </Container>
     </div>
   );
 }
+
+const CalcSlider = ({ name, label, unit, min, max, step, state, setState }) => {
+  const value = state[name];
+  const pct = ((value - min) / (max - min)) * 100;
+
+  return (
+    <div className={cs.slider}>
+      <div className={cs.slider__label}>
+        <span className={cs.slider__name}>{label}</span>
+        <span className={cs.slider__val}>
+          <b>{value}</b>
+          <em>{unit}</em>
+        </span>
+      </div>
+      <Range
+        step={step}
+        min={min}
+        max={max}
+        values={[Math.min(Math.max(value, min), max)]}
+        onChange={(values) => setState((prev) => ({ ...prev, [name]: values[0] }))}
+        renderTrack={({ props, children }) => (
+          <div
+            {...props}
+            className={cs.slider__track}
+            style={{
+              ...props.style,
+              background: `linear-gradient(to right, #176a4f 0%, #176a4f ${pct}%, #d0e8d9 ${pct}%, #d0e8d9 100%)`,
+            }}
+          >
+            {children}
+          </div>
+        )}
+        renderThumb={({ props }) => <div {...props} className={cs.slider__thumb} style={{ ...props.style }} />}
+      />
+      <div className={cs.slider__marks}>
+        <span>{min}</span>
+        <span>{max}</span>
+      </div>
+    </div>
+  );
+};
 
 export const CalcBlock = ({ number, title, children }) => {
   return (
@@ -576,7 +774,7 @@ export const CalcInput = ({ text, step, min, max, name, state, setState }) => {
                 ...props.style,
                 height: "24px",
                 width: "24px",
-                border: "8px solid #006a4d",
+                border: "8px solid #0e6a4e",
                 borderRadius: "50%",
                 backgroundColor: "#fff",
               }}
@@ -596,148 +794,6 @@ export const CalcInput = ({ text, step, min, max, name, state, setState }) => {
   );
 };
 
-const CalcOsGrid = ({ data, state, setState }) => {
-  const tiles = [];
-  data.forEach((fam) => {
-    fam.versions.forEach((ver) => {
-      tiles.push({ famId: fam.id, famTitle: fam.title, letter: fam.letter, color: fam.color, ver });
-    });
-  });
-
-  return (
-    <>
-      <div className="calcOsGrid">
-        {tiles.map((t) => {
-          const active = state.os === t.famTitle && state.osVersion === t.ver;
-          const label = t.ver ? `${t.famTitle} ${t.ver}` : t.famTitle;
-          return (
-            <button
-              type="button"
-              key={`${t.famId}-${t.ver}`}
-              className={`calcOsTile${active ? " active" : ""}`}
-              onClick={() => setState((prev) => ({ ...prev, os: t.famTitle, osVersion: t.ver }))}
-              title={label}
-            >
-              <span className="calcOsBadge" style={{ background: t.color }}>
-                {t.letter}
-              </span>
-              <span className="calcOsLabel">{label}</span>
-            </button>
-          );
-        })}
-      </div>
-      <style jsx>{`
-        .calcOsGrid {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
-          gap: 6px;
-          margin-top: 6px;
-        }
-        .calcOsTile {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-          padding: 6px 8px;
-          border: 1.5px solid #e5e7eb;
-          border-radius: 8px;
-          background: #fff;
-          cursor: pointer;
-          transition: all 0.12s ease;
-          font-size: 11.5px;
-          color: #1f2937;
-          text-align: left;
-          min-height: 34px;
-        }
-        .calcOsTile:hover {
-          border-color: #cbd5e1;
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-        }
-        .calcOsTile.active {
-          border-color: #0d5446;
-          background: #f0faf6;
-          color: #0d5446;
-          box-shadow: 0 0 0 2px rgba(13, 84, 70, 0.08);
-        }
-        .calcOsBadge {
-          flex: 0 0 auto;
-          width: 22px;
-          height: 22px;
-          border-radius: 50%;
-          color: #fff;
-          font-weight: 700;
-          font-size: 11px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          line-height: 1;
-        }
-        .calcOsLabel {
-          flex: 1 1 auto;
-          font-weight: 500;
-          line-height: 1.2;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
-      `}</style>
-    </>
-  );
-};
-
-const CalcSpeed = ({ data, state, setState }) => {
-  return (
-    <div className={st.calculator__block__item__category__content__po}>
-      {data.map((item) => (
-        <div
-          className={`${st.calculator__block__item__category__content__po__item} ${
-            item.title === state.speed ? st.calculator__block__item__category__content__po__item__active : ""
-          }`}
-          key={item.title}
-          onClick={() => setState((prev) => ({ ...prev, speed: item.title }))}
-        >
-          {item.title}
-        </div>
-      ))}
-    </div>
-  );
-};
-
-const CalcSwitcher = ({ state, setState, language }) => {
-  const langData = {
-    yes: {
-      ru: "Да",
-      uz: "Ha",
-      en: "Yes",
-    },
-    no: {
-      ru: "Нет",
-      uz: "Yoq",
-      en: "No",
-    },
-  };
-
-  return (
-    <div className={st.calculator__block__item__category__content__switcher}>
-      <div
-        className={`${st.calculator__block__item__category__content__switcher__item} ${
-          state.administration == "Да" ? st.calculator__block__item__category__content__switcher__item__active : ""
-        }`}
-        // onClick={() => setState((prev) => ({ ...prev, administration: 'Нет' }))}>
-      >
-        {langData.no[language]}
-      </div>
-      <div
-        className={`${st.calculator__block__item__category__content__switcher__item} ${
-          state.administration == "Нет" ? st.calculator__block__item__category__content__switcher__item__active : ""
-        }`}
-        // onClick={() => setState((prev) => ({ ...prev, administration: 'Да' }))}>
-      >
-        {langData.yes[language]}
-      </div>
-    </div>
-  );
-};
-
 export const CalcSelect = ({ title, isChecked, setChecked }) => {
   return (
     <div
@@ -747,15 +803,6 @@ export const CalcSelect = ({ title, isChecked, setChecked }) => {
       onClick={setChecked}
     >
       {title}
-    </div>
-  );
-};
-
-const CalcInfo = ({ title, value }) => {
-  return (
-    <div className={st.calculator__block__result__content__info}>
-      <div className={st.calculator__block__result__content__info__title}>{title}</div>
-      <div className={st.calculator__block__result__content__info__value}>{value}</div>
     </div>
   );
 };

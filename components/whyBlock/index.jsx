@@ -6,7 +6,7 @@ export default function WhyBlock({ title, description, content, language }) {
   return (
     <div className={styles.whyBlock}>
       <Container title={title} clNTitle="text-center">
-        <p className="text-center">{description}</p>
+        {description && <p className="text-center">{description}</p>}
         <div className={styles.whyBlock__block}>
           {content.map((item) => (
             <WhyCard key={item.title} content={item} language={language} />

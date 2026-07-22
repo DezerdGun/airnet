@@ -7,7 +7,7 @@ export default function ForContract({ data, language }) {
       <div className={st.forContract}>
         <div className={st.forContract__block}>
           <h2>{data.title[language]}</h2>
-          <p>{data.desc[language]}</p>
+          {data.desc?.[language] && <p>{data.desc[language]}</p>}
           <ul>
             {data.content.map((item) => (
               <li key={item.title}>

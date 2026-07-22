@@ -1,0 +1,38 @@
+$g600: #0e6a4e;
+$g500: #176a4f;
+$white: #fff;
+
+.features {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	background: linear-gradient(135deg, $g600 0%, $g500 100%);
+	color: $white;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.3;
+	padding: 7px 14px;
+	border-radius: 999px;
+	white-space: nowrap;
+	box-shadow: 0 2px 8px rgba(27, 107, 58, 0.2);
+
+	svg,
+	svg path {
+		fill: $white;
+		flex-shrink: 0;
+	}
+
+	@media (max-width: 550px) {
+		font-size: 12px;
+		padding: 6px 11px;
+		white-space: normal;
+	}
+}

@@ -6,7 +6,7 @@ import { checkLang } from "@/utils/checkLang";
 
 const globeIcon = (
   <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="48" height="48" rx="24" fill="#006A4D"></rect>
+    <rect width="48" height="48" rx="24" fill="#0e6a4e"></rect>
     <g clip-path="url(#clip0_315_6359)">
       <path
         d="M24 33C28.9706 33 33 28.9706 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33Z"
@@ -47,7 +47,7 @@ const globeIcon = (
 
 const serverIcon = (
   <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="48" height="48" rx="24" fill="#006A4D"></rect>
+    <rect width="48" height="48" rx="24" fill="#0e6a4e"></rect>
     <g clip-path="url(#clip0_315_6365)">
       <path d="M27 19.125H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
       <path d="M27 22.875H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>

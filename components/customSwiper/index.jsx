@@ -139,7 +139,7 @@ export default function CustomSwiper({ language }) {
 	}
 
 	return (
-		<div className={`${st.swiper} head-swiper`}>
+		<div className={[st.swiper, 'head-swiper'].filter(Boolean).join(' ')}>
 			<Swiper
 				cssMode={true}
 				modules={[Autoplay, Navigation]}

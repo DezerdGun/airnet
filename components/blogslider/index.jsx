@@ -56,7 +56,7 @@ export default function Blogslider({ language }) {
           className={st.swiper__swiper}
         >
           {content.map((item) => (
-            <SwiperSlide key={item.title}>
+            <SwiperSlide key={item}>
               <div className={`${st.blogslider__block} swiper-zoom-container`}>
                 <img width="100%" height="auto" src={item} />
               </div>

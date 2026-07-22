@@ -87,7 +87,7 @@ export default function Trust({ language }) {
           className={st.swiper__swiper}
         >
           {content.map((item) => (
-            <SwiperSlide key={item.title}>
+            <SwiperSlide key={item}>
               <div className={st.trust__block}>
                 <img width="130" height="auto" src={item} alt="Trust Partners Logo" />
               </div>
