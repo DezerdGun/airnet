@@ -9,7 +9,9 @@ import ForFreeBlock from "@/components/forFreeBlock";
 import FAQ from "@/components/faq";
 import Partners from "@/components/partners";
 import Howworks from "@/components/howworks";
+import PeriodSwitcher from "@/components/periodSwitcher";
 import TarifCard from "@/components/tarifCard";
+import TarifFeatures from "@/components/tarifFeatures";
 import WhyBlock from "@/components/whyBlock";
 import { checkLang } from "@/utils/checkLang";
 import { LINKS } from "@/components/requirements";
@@ -43,6 +45,7 @@ import ProductCheap from "../../components/seo/productcheap"
 
 export default function CheapVds({ language }) {
   const [show, setShow] = useState(-1);
+  const [period, setPeriod] = useState(0);
 
   const langData = {
     seoTitle: {
@@ -564,6 +567,7 @@ export default function CheapVds({ language }) {
               </div>
             }
           >
+            <PeriodSwitcher value={period} onChange={setPeriod} language={language} />
             <Swiper
               cssMode={true}
               modules={[Autoplay, Navigation]}
@@ -590,7 +594,7 @@ export default function CheapVds({ language }) {
               {tarif.map((item, index) => (
                 <SwiperSlide key={item.title}>
                   <div className="w-95">
-                    <TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} />
+                    <TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} period={period} />
                   </div>
                 </SwiperSlide>
               ))}

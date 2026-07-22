@@ -290,6 +290,21 @@ export default function Calculator({ language }) {
       uz: "24/7 qo'llab-quvvatlash",
       en: "Support 24/7",
     },
+    onOrder: {
+      ru: "Под заказ",
+      uz: "Buyurtma asosida",
+      en: "On request",
+    },
+    tasixFree: {
+      ru: "{langData.tasixFree[language]}",
+      uz: "TAS-IX / UZ-IX — 1 Gbit/s barcha tariflarga bepul kiritilgan",
+      en: "TAS-IX / UZ-IX — 1 Gbps included in every plan for free",
+    },
+    gbit: {
+      ru: "1 Гбит/с",
+      uz: "1 Gbit/s",
+      en: "1 Gbps",
+    },
     send: {
       ru: "Поделиться",
       uz: "Tarqatish",
@@ -461,9 +476,9 @@ export default function Calculator({ language }) {
                       <CIcon name="ssd" size={14} />
                       SSD
                     </button>
-                    <button type="button" className={`${cs.chip} ${cs.chip_off}`} title="Под заказ" disabled>
+                    <button type="button" className={`${cs.chip} ${cs.chip_off}`} title={langData.onOrder[language]} disabled>
                       <CIcon name="bolt" size={14} />
-                      NVMe <small>Под заказ</small>
+                      NVMe <small>{langData.onOrder[language]}</small>
                     </button>
                   </div>
                 </div>
@@ -539,7 +554,7 @@ export default function Calculator({ language }) {
                 </div>
                 <div className={cs.note}>
                   <CIcon name="info" size={13} />
-                  TAS-IX / UZ-IX — 1 Гбит/с включён во все тарифы бесплатно
+                  {langData.tasixFree[language]}
                 </div>
               </div>
             </section>
@@ -622,7 +637,7 @@ export default function Calculator({ language }) {
                   <CIcon name="network" size={14} />
                   TAS-IX / UZ-IX
                 </span>
-                <span className={cs.summary__value}>1 Гбит/с</span>
+                <span className={cs.summary__value}>{langData.gbit[language]}</span>
               </div>
               <div className={cs.summary__row}>
                 <span className={cs.summary__label}>

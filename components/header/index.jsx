@@ -147,11 +147,6 @@ export default function Header({ language }) {
         ],
       },
       {
-        title: { ru: "Серверы", uz: "Serverlar", en: "Servers" },
-        link: LINKS.SERVERS,
-        icon: "database",
-      },
-      {
         title: { ru: "Домены", uz: "Domenlar", en: "Domains" },
         link: LINKS.DOMAINS,
         icon: "world",

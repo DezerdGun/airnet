@@ -6,7 +6,9 @@ import Partners from "@/components/partners";
 import Howworks from "@/components/howworks";
 import { LINKS } from "@/components/requirements";
 import SEO from "@/components/seo";
+import PeriodSwitcher from "@/components/periodSwitcher";
 import TarifCard from "@/components/tarifCard";
+import TarifFeatures from "@/components/tarifFeatures";
 import Link from "next/link";
 
 import ForFreeBlock from "@/components/forFreeBlock";
@@ -43,6 +45,7 @@ import ProductBIG from "../components/seo/productbig"
 
 export default function BigVDS({ language }) {
   const [show, setShow] = useState(-1);
+  const [period, setPeriod] = useState(0);
 
   const langData = {
     seoT: {
@@ -623,6 +626,7 @@ export default function BigVDS({ language }) {
               </div>
             }
           >
+            <PeriodSwitcher value={period} onChange={setPeriod} language={language} />
             <Swiper
               cssMode={true}
               modules={[Autoplay, Navigation]}
@@ -650,7 +654,7 @@ export default function BigVDS({ language }) {
               {tarif.map((item, index) => (
                 <SwiperSlide key={item.title}>
                   <div className="w-95">
-                    <TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} />
+                    <TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} period={period} />
                   </div>
                 </SwiperSlide>
               ))}

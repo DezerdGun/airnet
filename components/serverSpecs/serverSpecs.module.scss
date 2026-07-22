@@ -14,22 +14,15 @@ $cta: #176a4f;
 $ctaHover: #1c8460;
 
 .wrap {
-	width: 1250px;
-	max-width: 100%;
+	width: 100%;
+	max-width: 980px;
 	margin: 0 auto;
-	padding: 40px 0;
+	padding: 40px 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
 
-	@media (max-width: 1270px) {
-		width: 1150px;
-	}
-	@media (max-width: 1170px) {
-		width: 1000px;
-	}
 	@media (max-width: 1040px) {
-		width: 100%;
 		padding: 20px;
 	}
 }
