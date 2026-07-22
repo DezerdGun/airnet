@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import st from "./hosting.module.scss";
-import ForFreeBlock from "@/components/forFreeBlock";
+import ServerSpecs from "@/components/serverSpecs";
 import WhyBlock from "@/components/whyBlock";
 import { calendarIcon } from "shared/icons/calendarIcon";
 import { supportIcon } from "shared/icons/supportIcon";
@@ -80,11 +80,6 @@ export default function Hosting({ language }) {
       uz: "*Xosting uchun 12 oy to'laganda!",
       en: "*When paying for hosting for 12 months!",
     },
-    confTitle: {
-      ru: "Ваш хостинг будет размещен на сервере с конфигурацией:",
-      uz: "Sizning xostingingiz quyidagi konfiguratsiyaga ega serverda joylashtiriladi:",
-      en: "Your hosting will be hosted on a server with the following configuration:",
-    },
     wordpressTitle: {
       ru: "Быстрая установка Wordpress и популярных CMS в 1 клик!",
       uz: "1 marta bosishda Wordpress va mashhur CMS-ni tez o'rnatish!",
@@ -131,45 +126,7 @@ export default function Hosting({ language }) {
     },
   };
 
-  const block = [
-      {
-        title: { ru: "Жесткие диски", uz: "Qattiq disklar", en: "Hard drives" },
-        description: {
-          ru: "12 x 1ТB SSD",
-          uz: "12 x 1ТB SSD",
-          en: "12 x 1ТB SSD",
-        },
-        img: "/hosting/ssd.png",
-      },
-      {
-        title: { ru: "Оперативная память", uz: "Operativ xotira", en: "RAM" },
-        description: {
-          ru: "256 GB DDR4 ECC",
-          uz: "256 GB DDR4 ECC",
-          en: "256 GB DDR4 ECC",
-        },
-        img: "/hosting/ram.png",
-      },
-      {
-        title: { ru: "Процессор", uz: "Protsessor", en: "CPU" },
-        description: {
-          ru: "2 x Intel Xeon",
-          uz: "2 x Intel Xeon",
-          en: "2 x Intel Xeon",
-        },
-        img: "/hosting/processor.png",
-      },
-      {
-        title: { ru: "Массив RAID", uz: "RAID massivi", en: "RAID Array" },
-        description: {
-          ru: "Аппаратный RAID5",
-          uz: "RAID5 apparati",
-          en: "Hardware RAID5",
-        },
-        img: "/hosting/raid.png",
-      },
-    ],
-    cms = [
+  const cms = [
       { ru: "Блоги", uz: "Bloglar", en: "Blogs" },
       { ru: "Порталы и CMS", uz: "Portallar va CMS", en: "Portals and CMS" },
       { ru: "Форумы", uz: "Forumlar", en: "Forums" },
@@ -203,7 +160,7 @@ export default function Hosting({ language }) {
           fillRule="evenodd"
           clipRule="evenodd"
           d="M12 1C5.925 1 1 5.925 1 12C1 18.075 5.925 23 12 23C18.075 23 23 18.075 23 12C23 5.925 18.075 1 12 1ZM16.768 10.14C16.8558 10.0396 16.9226 9.92274 16.9646 9.79617C17.0065 9.6696 17.0227 9.53591 17.0123 9.40298C17.0018 9.27005 16.9648 9.14056 16.9036 9.02213C16.8423 8.90369 16.758 8.79871 16.6555 8.71334C16.5531 8.62798 16.4346 8.56396 16.3071 8.52506C16.1796 8.48616 16.0455 8.47316 15.9129 8.48683C15.7802 8.50049 15.6517 8.54055 15.5347 8.60463C15.4178 8.66872 15.3149 8.75554 15.232 8.86L10.932 14.019L8.707 11.793C8.5184 11.6108 8.2658 11.51 8.0036 11.5123C7.7414 11.5146 7.49059 11.6198 7.30518 11.8052C7.11977 11.9906 7.0146 12.2414 7.01233 12.5036C7.01005 12.7658 7.11084 13.0184 7.293 13.207L10.293 16.207C10.3913 16.3052 10.5089 16.3818 10.6384 16.4321C10.7679 16.4823 10.9065 16.505 11.0453 16.4986C11.184 16.4923 11.32 16.4572 11.4444 16.3954C11.5688 16.3337 11.6791 16.2467 11.768 16.14L16.768 10.14Z"
-          fill="#006a4d"
+          fill="#0e6a4e"
         />
       </svg>
     ),
@@ -632,164 +589,6 @@ export default function Hosting({ language }) {
       },
     ];
 
-  const forFreeData = {
-    title: {
-      ru: "На всех тарифных планах",
-      uz: "Barcha tarif rejalarida",
-      en: "On all tariff plans",
-    },
-    img: "/hosting/unlim.png",
-    content: [
-      {
-        title: {
-          ru: (
-            <p>
-              <strong>Безлимитный трафик</strong> — никаких ограничений на
-              соотношение входящего / исходящего трафика.
-            </p>
-          ),
-          uz: (
-            <p>
-              <strong>Cheksiz trafik</strong> - kiruvchi / kirish nisbatida
-              cheklovlar yo'q. chiquvchi trafik.
-            </p>
-          ),
-          en: (
-            <p>
-              <strong>Unlimited traffic</strong> - no limits on the ratio of
-              incoming / outgoing traffic.
-            </p>
-          ),
-        },
-        img: (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="1em"
-            viewBox="0 0 640 512"
-          >
-            <path d="M0 241.1C0 161 65 96 145.1 96c38.5 0 75.4 15.3 102.6 42.5L320 210.7l72.2-72.2C419.5 111.3 456.4 96 494.9 96C575 96 640 161 640 241.1v29.7C640 351 575 416 494.9 416c-38.5 0-75.4-15.3-102.6-42.5L320 301.3l-72.2 72.2C220.5 400.7 183.6 416 145.1 416C65 416 0 351 0 270.9V241.1zM274.7 256l-72.2-72.2c-15.2-15.2-35.9-23.8-57.4-23.8C100.3 160 64 196.3 64 241.1v29.7c0 44.8 36.3 81.1 81.1 81.1c21.5 0 42.2-8.5 57.4-23.8L274.7 256zm90.5 0l72.2 72.2c15.2 15.2 35.9 23.8 57.4 23.8c44.8 0 81.1-36.3 81.1-81.1V241.1c0-44.8-36.3-81.1-81.1-81.1c-21.5 0-42.2 8.5-57.4 23.8L365.3 256z" />
-          </svg>
-        ),
-      },
-      {
-        title: {
-          ru: (
-            <p>
-              <strong>Скорость в Интернет</strong> — 250 Mbps
-            </p>
-          ),
-          uz: (
-            <p>
-              <strong>Internet tezligi</strong> — 250 Mbit/s
-            </p>
-          ),
-          en: (
-            <p>
-              <strong>Internet speed</strong> — 250 Mbps
-            </p>
-          ),
-        },
-        img: (
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M256 464a208 208 0 1 0 0-416 208 208 0 1 0 0 416zM256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zm32 112a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM256 408c-30.9 0-56-25.1-56-56s25.1-56 56-56c10.3 0 19.9 2.8 28.2 7.6l110.2-75.4c10.9-7.5 25.9-4.7 33.4 6.3s4.7 25.9-6.3 33.4L311.3 343.2c.4 2.9 .7 5.8 .7 8.8c0 30.9-25.1 56-56 56zM384 160a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM112 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm80-64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0z" />
-          </svg>
-        ),
-      },
-      {
-        title: {
-          ru: (
-            <p>
-              <strong>Скорость в TAS-IX</strong> — 1 Gbps
-            </p>
-          ),
-          uz: (
-            <p>
-              <strong>TAS-IX da tezlik</strong> — 1 Gbit/s
-            </p>
-          ),
-          en: (
-            <p>
-              <strong>Speed in TAS-IX</strong> — 1 Gbps
-            </p>
-          ),
-        },
-        img: (
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M256 464a208 208 0 1 0 0-416 208 208 0 1 0 0 416zM256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zm32 112a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM256 408c-30.9 0-56-25.1-56-56s25.1-56 56-56c10.3 0 19.9 2.8 28.2 7.6l110.2-75.4c10.9-7.5 25.9-4.7 33.4 6.3s4.7 25.9-6.3 33.4L311.3 343.2c.4 2.9 .7 5.8 .7 8.8c0 30.9-25.1 56-56 56zM384 160a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM112 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm80-64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0z" />
-          </svg>
-        ),
-      },
-      {
-        title: {
-          ru: (
-            <p>
-              <strong>Безлимитные FTP-аккаунты</strong> — для своего удобства
-              работы с файлами, Вы можете создавать неограниченное количество
-              FTP-аккаунтов, например, для каждого проекта - отдельный доступ.
-            </p>
-          ),
-          uz: (
-            <p>
-              <strong>Cheksiz FTP hisoblari</strong> — fayllar bilan ishlash
-              qulayligi uchun siz cheksiz miqdordagi FTP hisoblarini
-              yaratishingiz mumkin, masalan, har bir loyiha uchun - alohida
-              kirish.
-            </p>
-          ),
-          en: (
-            <p>
-              <strong>Unlimited FTP accounts</strong> — for your convenience of
-              working with files, you you can create an unlimited number of FTP
-              accounts, for example, for each project - separate access.
-            </p>
-          ),
-        },
-        img: (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="1em"
-            viewBox="0 0 640 512"
-          >
-            <path d="M0 241.1C0 161 65 96 145.1 96c38.5 0 75.4 15.3 102.6 42.5L320 210.7l72.2-72.2C419.5 111.3 456.4 96 494.9 96C575 96 640 161 640 241.1v29.7C640 351 575 416 494.9 416c-38.5 0-75.4-15.3-102.6-42.5L320 301.3l-72.2 72.2C220.5 400.7 183.6 416 145.1 416C65 416 0 351 0 270.9V241.1zM274.7 256l-72.2-72.2c-15.2-15.2-35.9-23.8-57.4-23.8C100.3 160 64 196.3 64 241.1v29.7c0 44.8 36.3 81.1 81.1 81.1c21.5 0 42.2-8.5 57.4-23.8L274.7 256zm90.5 0l72.2 72.2c15.2 15.2 35.9 23.8 57.4 23.8c44.8 0 81.1-36.3 81.1-81.1V241.1c0-44.8-36.3-81.1-81.1-81.1c-21.5 0-42.2 8.5-57.4 23.8L365.3 256z" />
-          </svg>
-        ),
-      },
-      {
-        title: {
-          ru: (
-            <p>
-              <strong>Без жестких ограничений ресурсов</strong> — у нас нет
-              жестких лимитов аппаратных ресурсов. Если вдруг на Ваш сайт придет
-              большое количество человек, то все они увидят Ваш сайт.
-              Гарантировано посещение - 2500 человек в сутки.
-            </p>
-          ),
-          uz: (
-            <p>
-              <strong>Qattiq resurs cheklovlari yo'q</strong> - bizda apparat
-              uchun qattiq cheklovlar yo'q resurslar. Agar to'satdan saytingizga
-              juda ko'p odamlar kirsa, ular hammasi ko'radi Sizning
-              veb-saytingiz. Kafolatlangan tashrif - kuniga 2500 kishi.
-            </p>
-          ),
-          en: (
-            <p>
-              <strong>No hard resource limits</strong> - we don't have hard
-              limits on hardware resources. If suddenly a large number of people
-              come to your site, then they will all see Your website. Guaranteed
-              visit - 2500 people per day.
-            </p>
-          ),
-        },
-        img: (
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M64 80c-8.8 0-16 7.2-16 16V258c5.1-1.3 10.5-2 16-2H448c5.5 0 10.9 .7 16 2V96c0-8.8-7.2-16-16-16H64zM48 320v96c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V320c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16zM0 320V96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V320v96c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320zm280 48a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zm120-24a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
-          </svg>
-        ),
-      },
-    ],
-  };
-
   const whyBlockHosting = [
     {
       title: {
@@ -1155,28 +954,7 @@ const forContractArticlesData = {
           language={language}
         />
 
-        <Container title={langData.confTitle[language]} clNTitle="text-center">
-          <div className={st.hosting__block}>
-            {block.map((item) => (
-              <div
-                key={item.title[language]}
-                className={st.hosting__block__item}
-              >
-                <div className={st.hosting__block__item__img}>
-                  <img src={item.img} />
-                </div>
-                <div className={st.hosting__block__item__content}>
-                  <h6>{item.title[language]}</h6>
-                  <p>{item.description[language]}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-
-        <div className={`bg-gray`}>
-          <ForFreeBlock data={forFreeData} language={language} />
-        </div>
+        <ServerSpecs language={language} />
 
         <Container
           title={langData.wordpressTitle[language]}

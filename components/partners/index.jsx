@@ -60,7 +60,7 @@ export default function Partners({ language }) {
           className={st.swiper__swiper}
         >
           {content.map((item) => (
-            <SwiperSlide key={item.title}>
+            <SwiperSlide key={item}>
               <div className={st.partners__block}>
                 <img src={item} alt="Logo Partners" />
               </div>

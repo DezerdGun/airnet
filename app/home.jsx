@@ -15,6 +15,7 @@ import Stock from "@/components/stock";
 import TarifCard from "@/components/tarifCard";
 import TarifCard2 from "@/components/tarifCard2";
 import TarifMaketHome from "@/components/tarifMaketHome";
+import PeriodSwitcher from "@/components/periodSwitcher";
 import Trust from "@/components/trust";
 import WhyBlock from "@/components/whyBlock";
 
@@ -42,6 +43,7 @@ import ProductHome from "@/components/seo/producthome"
 
 export default function Home({ language, apiNewsServer }) {
   const [show, setShow] = useState(-1);
+  const [period, setPeriod] = useState(0);
   const langData = {
     seoTitle: {
       ru: "Airnet.uz - Виртуальный хостинг в TAS-IX, домена, VDS-сервера, Ташкент",
@@ -408,6 +410,7 @@ export default function Home({ language, apiNewsServer }) {
           {
             price: "10% - 2 160 000",
             dateOff: `12 ${langData.month[language]}`,
+            discount: "−10%",
             // date: langData.month[language],
           },
         ],
@@ -439,6 +442,7 @@ export default function Home({ language, apiNewsServer }) {
           {
             price: "10% - 3 240 000",
             dateOff: `12 ${langData.month[language]}`,
+            discount: "−10%",
             // date: langData.month[language],
           },
         ],
@@ -471,6 +475,7 @@ export default function Home({ language, apiNewsServer }) {
           {
             price: "10% - 5 940 000",
             dateOff: `12 ${langData.month[language]}`,
+            discount: "−10%",
             // date: langData.month[language],
           },
         ],
@@ -502,6 +507,7 @@ export default function Home({ language, apiNewsServer }) {
           {
             price: "10% - 8 640 000",
             dateOff: `12 ${langData.month[language]}`,
+            discount: "−10%",
             // date: langData.month[language],
           },
         ],
@@ -534,6 +540,7 @@ export default function Home({ language, apiNewsServer }) {
           {
             price: "10% - 10 800 000",
             dateOff: `12 ${langData.month[language]}`,
+            discount: "−10%",
             // date: langData.month[language],
           },
         ],
@@ -566,6 +573,7 @@ export default function Home({ language, apiNewsServer }) {
           {
             price: "10% - 108 000",
             dateOff: `12 ${langData.month[language]}`,
+            discount: "−10%",
             // date: langData.month[language],
           },
         ],
@@ -595,6 +603,7 @@ export default function Home({ language, apiNewsServer }) {
           {
             price: "10% - 162 000",
             dateOff: `12 ${langData.month[language]}`,
+            discount: "−10%",
             // date: langData.month[language],
           },
         ],
@@ -624,6 +633,7 @@ export default function Home({ language, apiNewsServer }) {
           {
             price: "10% - 270 000",
             dateOff: `12 ${langData.month[language]}`,
+            discount: "−10%",
             // date: langData.month[language],
           },
         ],
@@ -654,6 +664,7 @@ export default function Home({ language, apiNewsServer }) {
           {
             price: "10% - 648 000",
             dateOff: `12 ${langData.month[language]}`,
+            discount: "−10%",
             // date: langData.month[language],
           },
         ],
@@ -683,6 +694,7 @@ export default function Home({ language, apiNewsServer }) {
           {
             price: "10% - 972 000",
             dateOff: `12 ${langData.month[language]}`,
+            discount: "−10%",
             // date: langData.month[language],
           },
         ],
@@ -713,6 +725,7 @@ export default function Home({ language, apiNewsServer }) {
           {
             price: "10% - 1 620 000",
             dateOff: `12 ${langData.month[language]}`,
+            discount: "−10%",
             // date: langData.month[language],
           },
         ],
@@ -742,6 +755,7 @@ export default function Home({ language, apiNewsServer }) {
           {
             price: "10% - 2 700 000",
             dateOff: `12 ${langData.month[language]}`,
+            discount: "−10%",
             // date: langData.month[language],
           },
         ],
@@ -771,6 +785,7 @@ export default function Home({ language, apiNewsServer }) {
           {
             price: "10% - 3 780 000",
             dateOff: `12 ${langData.month[language]}`,
+            discount: "−10%",
             // date: langData.month[language],
           },
         ],
@@ -952,6 +967,7 @@ export default function Home({ language, apiNewsServer }) {
         description={<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>{langData.tarifMaketHomeDesc[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M303.69-144q-34.69 0-64.19-15T182-205q-40.94-45.32-63.97-108.11T95-442q0-77.2 30.5-145.1Q156-655 208.5-706t122.46-80.5q69.96-29.5 149.5-29.5t149.04 30q69.5 30 122 82T834-582.5q30 69.5 30 148.3 0 71.38-24.4 133.49-24.39 62.11-69.28 104.75Q743-170 713.94-157q-29.06 13-59.06 13-16.88 0-34.88-4.5-18-4.5-35-12.5l-57-28q-11-5-21.5-7.5T483-199q-15 0-30.23 3.5T424-185l-49 24q-17 8-35 12.5t-36.31 4.5Zm.31-71q10 0 19.5-2.5T343-225l48-25q20-11 43.16-16 23.16-5 46.84-5 22 0 41.57 4.29Q542.13-262.43 560-253l56 28q11 5 19.5 7.5T654-215q17 0 33.5-7.5T721-246q35-32 53-79.5T792-429q0-132-90.54-223.5t-221-91.5Q350-744 258.5-653.21T167-433q0 56 18.5 104.5T238-247q17 17.3 33 24.65 16 7.35 33 7.35Zm176-265Zm51 86.85q21-21.15 21-50.85 0-8-1.75-16T545-476l53-69q12 14 19.88 30.08Q625.75-498.85 631-480h73q-14-84-77.19-138T480-672q-85 0-148 54.5T256-480h72.6q12.4-53 54.97-86.5t96.04-33.5q16.83 0 31.68 3 14.85 3 28.71 9l-54.85 72H480.2q-29.79 0-50.99 21.21-21.21 21.21-21.21 51T429.21-393q21.21 21 51 21T531-393.15Z"/></svg>{langData.tarifMaketHomeDesc2[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="m437-249 183-231H471l26-221-173 269h146l-33 183ZM336-96l48-264H192l324-504h72l-36 312h216L408-96h-72Zm136-379Z"/></svg>{langData.tarifMaketHomeDesc3[language]}</p>}
         endText={<div className="text-white text-center mt-2">{langData.tarifMaketHomeEnd[language]}</div>}
       >
+        <PeriodSwitcher value={period} onChange={setPeriod} language={language} />
         <Swiper
           cssMode={true}
           modules={[Autoplay, Navigation]}
@@ -979,7 +995,7 @@ export default function Home({ language, apiNewsServer }) {
           {tarif.map((item, index) => (
             <SwiperSlide key={item.title}>
               <div className="w-95">
-                <TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} />
+                <TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} period={period} />
               </div>
             </SwiperSlide>
           ))}

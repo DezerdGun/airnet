@@ -1,6 +1,6 @@
 $white: #fff;
 $black: #000;
-$green: #006a4d;
+$green: #0e6a4e;
 $dark_green: #00402e;
 $gray: #c2c2c2;
 $bg_gray: #f8f8f8;
@@ -141,6 +141,26 @@ $red: #f00;
         width: 100%;
         margin-bottom: 10px;
       }
+    }
+  }
+}
+.tarifNote {
+  max-width: 760px;
+  margin: 24px auto 0;
+  padding: 14px 20px;
+  background: #fff;
+  border: 1px solid #d0e8d9;
+  border-radius: 12px;
+  text-align: center;
+
+  p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #3d5c48;
+
+    + p {
+      margin-top: 6px;
     }
   }
 }

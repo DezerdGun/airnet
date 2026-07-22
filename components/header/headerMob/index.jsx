@@ -20,7 +20,7 @@ export default function HeaderMob({ isOpen, setIsOpen, menu, language, router })
   }, []);
 
   return (
-    <div className={`${st.headerMob} ${isOpen ? st.headerMob__active : null}`}>
+    <div className={`${st.headerMob} ${isOpen ? st.headerMob__active : ""}`}>
       <ul>
         {menu.map((item) =>
           item?.children ? (

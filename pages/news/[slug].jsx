@@ -135,7 +135,7 @@ const globalStyles = `
   }
   .news-details__right-cat h3 { font-size: 26px; margin-bottom: 20px; color: #1f2937; }
   .news-details__right-cat span { display: inline-block; width: 100%; margin-bottom: 10px; }
-  .news-details__right-cat span a { font-size: 18px; color: #006a4d; text-decoration: none; }
+  .news-details__right-cat span a { font-size: 18px; color: #0e6a4e; text-decoration: none; }
   .news-details__right-cat span a:hover { text-decoration: underline; }
 
   .news-details__main-img { margin-bottom: 20px; }
@@ -156,9 +156,9 @@ const globalStyles = `
   .news-details__content { font-size: 17px; line-height: 1.65; color: #1f2937; }
   .news-details__content p { font-size: 17px; line-height: 28px; margin-bottom: 14px; }
   .news-details__content h1, .news-details__content h2, .news-details__content h3 {
-    color: #006a4d; margin: 24px 0 12px; font-size: 24px;
+    color: #0e6a4e; margin: 24px 0 12px; font-size: 24px;
   }
-  .news-details__content a { color: #006a4d; text-decoration: underline; }
+  .news-details__content a { color: #0e6a4e; text-decoration: underline; }
   .news-details__content img { width: 100%; height: auto; margin: 14px 0; border-radius: 12px; display: block; }
   .news-details__content ul { list-style: none; padding: 0; margin: 0 0 14px; }
   .news-details__content ul li {
@@ -167,12 +167,12 @@ const globalStyles = `
   }
   .news-details__content ul li::before {
     content: ""; position: absolute; top: 10px; left: 0;
-    width: 10px; height: 10px; border-radius: 50%; background-color: #006a4d;
+    width: 10px; height: 10px; border-radius: 50%; background-color: #0e6a4e;
   }
   .news-details__content ol { margin: 0 0 14px 24px; }
   .news-details__content ol li { font-size: 17px; line-height: 28px; margin-bottom: 8px; }
   .news-details__content blockquote {
-    border-left: 4px solid #006a4d; padding: 8px 16px; margin: 16px 0;
+    border-left: 4px solid #0e6a4e; padding: 8px 16px; margin: 16px 0;
     background: #f8fdfa; color: #1f2937;
   }
   .news-details__content code {
@@ -203,7 +203,7 @@ const globalStyles = `
   }
 
   .news-details__back-wrap { margin-top: 20px; padding-top: 20px; border-top: 1px solid #f8f8f8; }
-  .news-details__back { color: #006a4d; font-weight: 600; text-decoration: none; font-size: 16px; }
+  .news-details__back { color: #0e6a4e; font-weight: 600; text-decoration: none; font-size: 16px; }
   .news-details__back:hover { text-decoration: underline; }
 
   .news-details--notfound .news-details__center { width: 100%; text-align: center; padding: 60px 35px; }

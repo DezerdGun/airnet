@@ -1,6 +1,6 @@
 $white: #fff;
 $black: #000;
-$green: #006a4d;
+$green: #0e6a4e;
 $dark_green: #00402e;
 $gray: #c2c2c2;
 $bg_gray: #f8f8f8;
@@ -53,7 +53,7 @@ body {
 
     a {
       color: #fff;
-      background-color: #006a4d;
+      background-color: #0e6a4e;
     }
   }
 }
@@ -209,9 +209,15 @@ h6 {
 }
 
 .app {
-  padding-top: 85px;
+  padding-top: 96px;
   min-height: calc(100vh - 300px);
   position: relative;
+}
+
+@media (max-width: 1170px) {
+  .app {
+    padding-top: 62px;
+  }
 }
 
 .text-red {
@@ -454,7 +460,7 @@ h6 {
   a{
     display: inline-block;
     width: 350px;
-    background-color: #006a4d;
+    background-color: #0e6a4e;
     color: #fff;
     padding: 10px;
     border-radius: 10px;
@@ -574,7 +580,7 @@ h6 {
 
 @media (max-width: 1040px) {
   .app {
-    padding-top: 70px;
+    padding-top: 62px;
   }
 
   .whyBlock-swiper,
@@ -592,7 +598,7 @@ h6 {
 
 @media (max-width: 880px) {
   .app {
-    padding-top: 70px;
+    padding-top: 62px;
   }
 
   .head-swiper {
@@ -700,4 +706,16 @@ h6 {
   .swiper .swiper-wrapper {
     transition-timing-function: linear !important;
   }
+}
+
+.periodDisc {
+	margin-left: 6px;
+	padding: 1px 6px;
+	border-radius: 20px;
+	background: #d4f0e0;
+	color: #0e6a4e;
+	font-size: 10px;
+	font-weight: 700;
+	font-style: normal;
+	white-space: nowrap;
 }

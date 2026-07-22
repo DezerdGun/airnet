@@ -1,0 +1,92 @@
+$g600: #0e6a4e;
+$g500: #176a4f;
+$muted: #3d5c48;
+$light: #6b9478;
+$border: #d0e8d9;
+$white: #fff;
+
+.wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	flex-wrap: wrap;
+	margin-bottom: 1.75rem;
+	padding-top: 10px;
+}
+
+.label {
+	font-size: 13px;
+	color: $muted;
+	font-weight: 500;
+}
+
+.switcher {
+	display: flex;
+	background: $white;
+	border: 1px solid $border;
+	border-radius: 10px;
+	padding: 3px;
+	gap: 3px;
+	flex-wrap: wrap;
+}
+
+.slot {
+	position: relative;
+	display: flex;
+}
+
+.btn {
+	font-size: 13px;
+	padding: 7px 18px;
+	border: none;
+	background: transparent;
+	border-radius: 7px;
+	cursor: pointer;
+	color: $muted;
+	font-weight: 500;
+	font-family: inherit;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	white-space: nowrap;
+	transition: background 0.15s ease, color 0.15s ease;
+
+	&:hover {
+		color: $g600;
+		background: #f0faf4;
+	}
+
+	@media (max-width: 550px) {
+		padding: 7px 12px;
+		font-size: 12px;
+	}
+}
+
+.btn_on {
+	background: $g600;
+	color: $white;
+
+	&:hover {
+		background: $g500;
+		color: $white;
+	}
+}
+
+.disc {
+	position: absolute;
+	top: -13px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: $g600;
+	color: $white;
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 1;
+	padding: 3px 8px;
+	border-radius: 999px;
+	white-space: nowrap;
+	pointer-events: none;
+	box-shadow: 0 2px 6px rgba(14, 106, 78, 0.28);
+	z-index: 1;
+}

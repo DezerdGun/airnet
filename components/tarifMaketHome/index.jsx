@@ -18,7 +18,7 @@ export default function TarifMaketHome({
 			<Container>
 				{headTitle && <h1 className={st.container__headTitle}>{headTitle}</h1>}
 				{title && <h2 className={st.container__title}>{title}</h2>}
-				<div className={`${st.tarifMaketHome__item} ${className}`}>
+				<div className={[st.tarifMaketHome__item, className].filter(Boolean).join(' ')}>
 					{description}
 				</div>
 				<div className={`${st.tarifMaketHome__children} tarifSlider`}>

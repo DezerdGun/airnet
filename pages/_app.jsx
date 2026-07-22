@@ -46,7 +46,7 @@ function MyApp({ Component, pageProps, url }) {
         <meta name="yandex-verification" content="e5fe79390705ede1" />
         <link rel="shortcut icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
         {!isBlogDetail && (
           <>
