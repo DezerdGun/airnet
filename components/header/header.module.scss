@@ -129,7 +129,7 @@ $navH-sm: 62px;
 	&__menu {
 		display: flex;
 		align-items: center;
-		gap: 0;
+		gap: 6px;
 		flex: 1;
 		min-width: 0;
 	}
@@ -141,10 +141,10 @@ $navH-sm: 62px;
 	&__link {
 		display: flex;
 		align-items: center;
-		gap: 4px;
-		padding: 0 8px;
+		gap: 6px;
+		padding: 0 12px;
 		height: $navH;
-		font-size: 12px;
+		font-size: 14px;
 		color: rgba(255, 255, 255, 0.82);
 		text-decoration: none;
 		white-space: nowrap;
@@ -194,9 +194,9 @@ $navH-sm: 62px;
 
 	@media (max-width: 1270px) {
 		&__link {
-			padding: 0 6px;
-			font-size: 11.5px;
-			gap: 3px;
+			padding: 0 9px;
+			font-size: 13px;
+			gap: 5px;
 		}
 		&__inner {
 			width: 1150px;
