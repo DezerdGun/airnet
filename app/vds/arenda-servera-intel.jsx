@@ -37,6 +37,7 @@ import ForSupport from "@/components/forSupport";
 import ForDatacenter from "@/components/forDatacenter";
 import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import ServerHero from "@/components/serverHero";
 import ProductVDSIntel from "../../components/seo/productvdsintel";
 import { breadCrumbsVds } from "./index";
 import { forFreeVDSData } from "../vds";
@@ -1223,9 +1224,7 @@ export default function VDS({ language }) {
             </>
           ) : null}
           
-          <Container className={"head-top"}>
-            <h1>{langData.headTitle[language]}</h1>
-          </Container>
+          <ServerHero title={langData.headTitle[language]} language={language} />
 
           <TarifMaket
             // bgImg={'/servers-2.jpg'}

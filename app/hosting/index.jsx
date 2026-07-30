@@ -4,6 +4,8 @@ import Partners from "@/components/partners";
 import Howworks from "@/components/howworks";
 import SEO from "@/components/seo";
 import TarifCard2 from "@/components/tarifCard2";
+import PeriodSwitcher from "@/components/periodSwitcher";
+import TarifFeatures from "@/components/tarifFeatures";
 import TarifMaket from "@/components/tarifMaket";
 import { useEffect, useState } from "react";
 
@@ -14,6 +16,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import st from "./hosting.module.scss";
 import ServerSpecs from "@/components/serverSpecs";
+import CmsInstall from "@/components/cmsInstall";
 import WhyBlock from "@/components/whyBlock";
 import { calendarIcon } from "shared/icons/calendarIcon";
 import { supportIcon } from "shared/icons/supportIcon";
@@ -38,6 +41,7 @@ import ProductCpanel from "../../components/seo/productcpanel";
 
 export default function Hosting({ language }) {
   const [show, setShow] = useState(-1);
+  const [period, setPeriod] = useState(0);
 
   const langData = {
     seoTitle: {
@@ -80,40 +84,6 @@ export default function Hosting({ language }) {
       uz: "*Xosting uchun 12 oy to'laganda!",
       en: "*When paying for hosting for 12 months!",
     },
-    wordpressTitle: {
-      ru: "Быстрая установка Wordpress и популярных CMS в 1 клик!",
-      uz: "1 marta bosishda Wordpress va mashhur CMS-ni tez o'rnatish!",
-      en: "Quick installation of Wordpress and popular CMS in 1 click!",
-    },
-    wordpressDesc: {
-      ru: (
-        <>
-          <p>Установка CMS-установщика в 1 клик</p>
-          <p>
-            Вашему вниманию предлагаются более <strong>100 БЕСПЛАТНЫХ</strong>
-          </p>
-          <p>CMS-установщиков различных категорий от Softaculous:</p>
-        </>
-      ),
-      uz: (
-        <>
-          <p>Bir marta bosish bilan CMS oʻrnatuvchisi</p>
-          <p>
-            <strong>100 dan ortiq BEPUL</strong>
-          </p>
-          <p>Softaculous-dan turli toifadagi CMS o'rnatuvchilari:</p>
-        </>
-      ),
-      en: (
-        <>
-          <p>One-click CMS installer</p>
-          <p>
-            More than <strong>100 FREE</strong>
-          </p>
-          <p>CMS installers of various categories from Softaculous:</p>
-        </>
-      ),
-    },
     faqTitle: {
       ru: "Часто задаваемые вопросы",
       uz: "Ko'p so'raladigan savollar",
@@ -148,22 +118,6 @@ export default function Hosting({ language }) {
       },
       { ru: "Файловые менеджеры", uz: "Fayl menejerlari", en: "File Managers" },
     ],
-    checkedCircle = (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M12 1C5.925 1 1 5.925 1 12C1 18.075 5.925 23 12 23C18.075 23 23 18.075 23 12C23 5.925 18.075 1 12 1ZM16.768 10.14C16.8558 10.0396 16.9226 9.92274 16.9646 9.79617C17.0065 9.6696 17.0227 9.53591 17.0123 9.40298C17.0018 9.27005 16.9648 9.14056 16.9036 9.02213C16.8423 8.90369 16.758 8.79871 16.6555 8.71334C16.5531 8.62798 16.4346 8.56396 16.3071 8.52506C16.1796 8.48616 16.0455 8.47316 15.9129 8.48683C15.7802 8.50049 15.6517 8.54055 15.5347 8.60463C15.4178 8.66872 15.3149 8.75554 15.232 8.86L10.932 14.019L8.707 11.793C8.5184 11.6108 8.2658 11.51 8.0036 11.5123C7.7414 11.5146 7.49059 11.6198 7.30518 11.8052C7.11977 11.9906 7.0146 12.2414 7.01233 12.5036C7.01005 12.7658 7.11084 13.0184 7.293 13.207L10.293 16.207C10.3913 16.3052 10.5089 16.3818 10.6384 16.4321C10.7679 16.4823 10.9065 16.505 11.0453 16.4986C11.184 16.4923 11.32 16.4572 11.4444 16.3954C11.5688 16.3337 11.6791 16.2467 11.768 16.14L16.768 10.14Z"
-          fill="#0e6a4e"
-        />
-      </svg>
-    ),
     tarif2 = [
       {
         title: { ru: "Старт", uz: "Start", en: "Start" },
@@ -900,13 +854,14 @@ const forContractArticlesData = {
             // bgImg={'/servers-2.jpg'}
             // headTitle={langData.tarifTitle[language]}
             title="Тарифы"
-            description={<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>{langData.tarifDesc[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="M303.69-144q-34.69 0-64.19-15T182-205q-40.94-45.32-63.97-108.11T95-442q0-77.2 30.5-145.1Q156-655 208.5-706t122.46-80.5q69.96-29.5 149.5-29.5t149.04 30q69.5 30 122 82T834-582.5q30 69.5 30 148.3 0 71.38-24.4 133.49-24.39 62.11-69.28 104.75Q743-170 713.94-157q-29.06 13-59.06 13-16.88 0-34.88-4.5-18-4.5-35-12.5l-57-28q-11-5-21.5-7.5T483-199q-15 0-30.23 3.5T424-185l-49 24q-17 8-35 12.5t-36.31 4.5Zm.31-71q10 0 19.5-2.5T343-225l48-25q20-11 43.16-16 23.16-5 46.84-5 22 0 41.57 4.29Q542.13-262.43 560-253l56 28q11 5 19.5 7.5T654-215q17 0 33.5-7.5T721-246q35-32 53-79.5T792-429q0-132-90.54-223.5t-221-91.5Q350-744 258.5-653.21T167-433q0 56 18.5 104.5T238-247q17 17.3 33 24.65 16 7.35 33 7.35Zm176-265Zm51 86.85q21-21.15 21-50.85 0-8-1.75-16T545-476l53-69q12 14 19.88 30.08Q625.75-498.85 631-480h73q-14-84-77.19-138T480-672q-85 0-148 54.5T256-480h72.6q12.4-53 54.97-86.5t96.04-33.5q16.83 0 31.68 3 14.85 3 28.71 9l-54.85 72H480.2q-29.79 0-50.99 21.21-21.21 21.21-21.21 51T429.21-393q21.21 21 51 21T531-393.15Z"/></svg>{langData.tarifDesc2[language]}   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#0d5446"><path d="m437-249 183-231H471l26-221-173 269h146l-33 183ZM336-96l48-264H192l324-504h72l-36 312h216L408-96h-72Zm136-379Z"/></svg>{langData.tarifDesc3[language]}</p>}
+            description={<TarifFeatures items={[langData.tarifDesc[language], langData.tarifDesc2[language], langData.tarifDesc3[language]]} />}
             endText={
               <p className="text-white text-center mt-2">
                 {langData.tarifEnd[language]}
               </p>
             }
           >
+            <PeriodSwitcher value={period} onChange={setPeriod} language={language} />
             <Swiper
               cssMode={true}
               modules={[Autoplay, Navigation]}
@@ -940,6 +895,7 @@ const forContractArticlesData = {
                       show={show}
                       setShow={setShow}
                       language={language}
+                      period={period}
                     />
                   </div>
                 </SwiperSlide>
@@ -956,20 +912,7 @@ const forContractArticlesData = {
 
         <ServerSpecs language={language} />
 
-        <Container
-          title={langData.wordpressTitle[language]}
-          description={langData.wordpressDesc[language]}
-          className="text-center"
-        >
-          <div className={st.hosting__cms}>
-            {cms.map((item) => (
-              <div key={item[language]} className={st.hosting__cms__item}>
-                {checkedCircle}
-                <p>{item[language]}</p>
-              </div>
-            ))}
-          </div>
-        </Container>
+        <CmsInstall language={language} items={cms} />
 
         <AvailablePO language={language} />
 

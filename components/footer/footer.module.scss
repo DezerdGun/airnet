@@ -270,16 +270,21 @@ $inner: 1250px;
 
 		&::before {
 			content: "";
-			width: 4px;
-			height: 4px;
+			width: 5px;
+			height: 5px;
 			border-radius: 50%;
-			background: $g500;
+			background: $g300;
 			flex-shrink: 0;
+			transition: transform 0.15s ease, background 0.15s ease;
 		}
 
 		&:hover {
 			color: $g300;
 			text-decoration: none;
+
+			&::before {
+				transform: scale(1.4);
+			}
 		}
 	}
 

@@ -36,6 +36,8 @@ import ForSupport from "@/components/forSupport";
 import ForDatacenter from "@/components/forDatacenter";
 import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import ServerHero from "@/components/serverHero";
+import ManageFeatures from "@/components/manageFeatures";
 import ProductVDS from "../../components/seo/productvds";
 import Calculator from "@/components/calculator";
 import ru from "@/pages/domains/ru";
@@ -769,37 +771,21 @@ export default function VDS({ language }) {
       uz: "Tarif",
       en: "Tariff",
     },
-    endText: {
-      ru: "Срок установки сервера, после оформления заказа и оплаты, составляет от 30 минут до 2 рабочих дней, в зависимости от наличия необходимых серверов и загрузки технического персонала. Среднее время активации оборудования после оплаты - 1-2 часа. Мы стремимся сократить время ожидания.",
-      uz: "Buyurtma va to'lovni amalga oshirgandan so'ng serverni o'rnatish muddati zarur serverlarning mavjudligi va texnik xodimlarning ish yukiga qarab 30 daqiqadan 2 ish kunigacha. To'lovdan so'ng uskunani o'rtacha faollashtirish vaqti 1-2 soat. Biz kutish vaqtini qisqartirishga harakat qilamiz.",
-      en: "The server installation period, after placing an order and payment, is from 30 minutes to 2 business days, depending on the availability of the necessary servers and the workload of technical personnel. The average activation time of the equipment after payment is 1-2 hours. We strive to reduce the waiting time.",
-    },
-    timeW: {
+    installNote: {
       ru: (
-        <p>
-          Срок действия услуги начнется с момента её активации.
-          {/* <br /><br />{" "}
-          <span className="strong">
-            «VDS запускается за 30 минут», «Аптайм 99.98%»
-          </span> */}
-        </p>
+        <>
+          <strong>Срок установки</strong> — от 30 минут до 2 рабочих дней после оплаты, в зависимости от загрузки. Среднее время активации — <strong>1–2 часа</strong>. Срок действия услуги начинается с момента активации.
+        </>
       ),
       uz: (
-        <p>
-          Xizmatning amal qilish muddati u yoqilgan paytdan boshlanadi.
-          <br /><br />{" "}
-          <span className="strong">
-            "VDS 12 daqiqada boshlanadi", "Uptime 99,98%"
-          </span>
-        </p>
+        <>
+          <strong>O'rnatish muddati</strong> — to'lovdan so'ng 30 daqiqadan 2 ish kunigacha, yuklamaga qarab. O'rtacha faollashtirish vaqti — <strong>1–2 soat</strong>. Xizmatning amal qilish muddati faollashtirilgan paytdan boshlanadi.
+        </>
       ),
       en: (
-        <p>
-          The validity period of the service will begin from the moment of its
-          activation.
-          <br /><br />{" "}
-          <span className="strong">"VDS starts in 12 minutes", "Uptime 99.98%"</span>
-        </p>
+        <>
+          <strong>Installation time</strong> — from 30 minutes to 2 business days after payment, depending on the load. Average activation time — <strong>1–2 hours</strong>. The service term begins from the moment of activation.
+        </>
       ),
     },
     faqTitle: {
@@ -1929,29 +1915,7 @@ export default function VDS({ language }) {
             </>
           ) : null}
 
-          <Container className={"head-top"}>
-            <h1>{langData.headTitle[language]}</h1>
-            {/* <p>{langData.dsc[language]}</p> */}
-            {/* <h2>{langData.txt[language]}</h2> */}
-
-            {/* <ul className="tabs-button">
-              <li className={toggle === 1 ? "active" : ""}>
-                <a href="#" onClick={() => updateToggle(1)}>
-                  Оптимальные
-                </a>
-              </li>
-              <li className={toggle === 2 ? "active" : ""}>
-                <a href="#" onClick={() => updateToggle(2)}>
-                  Мощные
-                </a>
-              </li>
-              <li className={toggle === 3 ? "active" : ""}>
-                <a href="#" onClick={() => updateToggle(3)}>
-                  Бюджетные
-                </a>
-              </li>
-            </ul> */}
-          </Container>
+          <ServerHero title={langData.headTitle[language]} language={language} />
 
           <div className={toggle === 1 ? "show-content" : "none"}>
             <TarifMaket
@@ -1963,8 +1927,7 @@ export default function VDS({ language }) {
               className="mt-0 px-0"
               endText={
                 <div className={st.tarifNote}>
-                  <p>{langData.endText[language]}</p>
-                  <p>{langData.timeW[language]}</p>
+                  {langData.installNote[language]}
                 </div>
               }
             >
@@ -2020,8 +1983,7 @@ export default function VDS({ language }) {
               className="mt-0 px-0"
               endText={
                 <div className={st.tarifNote}>
-                  <p>{langData.endText[language]}</p>
-                  <p>{langData.timeW[language]}</p>
+                  {langData.installNote[language]}
                 </div>
               }
             >
@@ -2076,8 +2038,7 @@ export default function VDS({ language }) {
               className="mt-0 px-0"
               endText={
                 <div className={st.tarifNote}>
-                  <p>{langData.endText[language]}</p>
-                  <p>{langData.timeW[language]}</p>
+                  {langData.installNote[language]}
                 </div>
               }
             >
@@ -2162,25 +2123,7 @@ export default function VDS({ language }) {
 
         <Howworks language={language} />
 
-        <Container className="one-text">
-          <p>
-            Активация виртуального сервера на нашем сайте занимает считанные
-            минуты, управление и администрирование не требует особых знаний и
-            времени. Мы предлагаем гибкие возможности настройки VPS, при первой
-            необходимости можно скорректировать производительность, добавить
-            процессоры и оперативную память, задействовать новые SSD.
-          </p>
-          <p>
-            Управление сервером осуществляется по VNC-протоколам, максимально
-            безопасным и быстрым, при возникновении проблем на помощь готовы
-            прийти специалисты службы поддержки, доступной в круглосуточном
-            режиме.
-          </p>
-          <p>
-            Все функции собраны в одной панели, откуда можно отправить команду
-            на перезагрузку, сброс настроек и выполнение других действий.
-          </p>
-        </Container>
+        <ManageFeatures language={language} />
 
         <ForContract data={forContractVDSData} language={language} />
         <ForSupport data={forSupportVDSData} language={language} />

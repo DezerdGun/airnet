@@ -13,6 +13,7 @@ import { forSupportVDSData } from "../vds";
 import { forDatacenterVDSData } from "../vds";
 import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import ServerHero from "@/components/serverHero";
 import ProductDedicated from "../../components/seo/productdedicated";
 import WhyBlock from "@/components/whyBlock";
 import { serversIcon } from "shared/icons/serversIcon";
@@ -1176,11 +1177,12 @@ export default function Dedicated({ language }) {
         </>
       ) : null}
 
+      <ServerHero title={langData.headTitle[language]} language={language} />
+
       <div className={st.dedicated}>
         <Container
           className="mt-0 text-center"
           // style={{ background: "url('/servers.jpg') no-repeat" }}
-          headTitle={langData.headTitle[language]}
           description={<p>{langData.description[language]}</p>}
           clNTitle="mb-4"
         >
