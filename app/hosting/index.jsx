@@ -838,14 +838,14 @@ const forContractArticlesData = {
 					</div>
 				</Container> */}
 
-        <div className={"bg_gray"}>
+        <div>
           {breadCrumbs && breadCrumbs.length ? (
             <>
               <BreadCrumbs data={breadCrumbs} language={language} />
               <PageBreadcrumb links={breadCrumbs} language={language} />
             </>
           ) : null}
-          
+
           <Container className={"head-top"}>
             <h1>{langData.tarifTitle[language]}</h1>
           </Container>

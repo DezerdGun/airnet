@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -27,6 +27,8 @@ export default function Howworks({ language }) {
   };
 
   const [openIndex, setOpenIndex] = useState(null);
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
   useEffect(() => {
     if (openIndex === null) return;
@@ -50,7 +52,11 @@ export default function Howworks({ language }) {
           modules={[Autoplay, Navigation, Pagination]}
           spaceBetween={20}
           slidesPerView={1}
-          navigation={true}
+          navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
+          onBeforeInit={(swiper) => {
+            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.nextEl = nextRef.current;
+          }}
           pagination={{ clickable: true, type: "bullets" }}
           loop={true}
           autoplay={{ delay: 5500, disableOnInteraction: false, pauseOnMouseEnter: true }}
@@ -86,6 +92,27 @@ export default function Howworks({ language }) {
           ))}
         </Swiper>
       </Container>
+
+      <button
+        ref={prevRef}
+        type="button"
+        className={`${st.nav} ${st.nav_prev}`}
+        aria-label="Previous"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </button>
+      <button
+        ref={nextRef}
+        type="button"
+        className={`${st.nav} ${st.nav_next}`}
+        aria-label="Next"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </button>
 
       {openIndex !== null && (
         <div

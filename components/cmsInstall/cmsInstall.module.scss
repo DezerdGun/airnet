@@ -87,8 +87,20 @@ $border: #d0e8d9;
 
 	&__icon {
 		display: flex;
+		align-items: center;
+		justify-content: center;
 		flex-shrink: 0;
+		width: 32px;
+		height: 32px;
+		border-radius: 9px;
+		background: $g600;
 		line-height: 0;
+
+		svg {
+			color: #fff;
+			stroke: #fff;
+			fill: none;
+		}
 	}
 
 	&__name {

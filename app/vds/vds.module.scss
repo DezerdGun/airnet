@@ -9,6 +9,8 @@ $light_gray: #f8f8f8;
 $red: #f00;
 
 .vds {
+  margin-top: 24px;
+
   &__block {
     display: flex;
     justify-content: space-between;
@@ -156,6 +158,15 @@ $red: #f00;
   font-size: 14px;
   line-height: 1.7;
   color: #4a6b55;
+
+  p {
+    margin: 0 0 10px;
+    color: #4a6b55 !important;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   strong {
     color: #0f1e16;

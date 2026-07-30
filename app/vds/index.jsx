@@ -38,6 +38,7 @@ import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ServerHero from "@/components/serverHero";
 import ManageFeatures from "@/components/manageFeatures";
+import InfraChannel from "@/components/infraChannel";
 import ProductVDS from "../../components/seo/productvds";
 import Calculator from "@/components/calculator";
 import ru from "@/pages/domains/ru";
@@ -774,17 +775,20 @@ export default function VDS({ language }) {
     installNote: {
       ru: (
         <>
-          <strong>Срок установки</strong> — от 30 минут до 2 рабочих дней после оплаты, в зависимости от загрузки. Среднее время активации — <strong>1–2 часа</strong>. Срок действия услуги начинается с момента активации.
+          <p><strong>Срок установки</strong> — от 30 минут до 2 рабочих дней после оплаты, в зависимости от загрузки.</p>
+          <p>Среднее время активации — <strong>1–2 часа</strong>. Срок действия услуги начинается с момента активации.</p>
         </>
       ),
       uz: (
         <>
-          <strong>O'rnatish muddati</strong> — to'lovdan so'ng 30 daqiqadan 2 ish kunigacha, yuklamaga qarab. O'rtacha faollashtirish vaqti — <strong>1–2 soat</strong>. Xizmatning amal qilish muddati faollashtirilgan paytdan boshlanadi.
+          <p><strong>O'rnatish muddati</strong> — to'lovdan so'ng 30 daqiqadan 2 ish kunigacha, yuklamaga qarab.</p>
+          <p>O'rtacha faollashtirish vaqti — <strong>1–2 soat</strong>. Xizmatning amal qilish muddati faollashtirilgan paytdan boshlanadi.</p>
         </>
       ),
       en: (
         <>
-          <strong>Installation time</strong> — from 30 minutes to 2 business days after payment, depending on the load. Average activation time — <strong>1–2 hours</strong>. The service term begins from the moment of activation.
+          <p><strong>Installation time</strong> — from 30 minutes to 2 business days after payment, depending on the load.</p>
+          <p>Average activation time — <strong>1–2 hours</strong>. The service term begins from the moment of activation.</p>
         </>
       ),
     },
@@ -2103,17 +2107,7 @@ export default function VDS({ language }) {
         <ForFreeBlock data={forFreeVDSData} language={language} />
 
         <AvailableOS language={language} />
-        <VirtualServers language={language} />
-
-        <Container
-          className="text-center"
-          title={langData.cT[language]}
-          description={langData.cD[language]}
-        >
-          <div className={st.vds__table}>
-            <CustomTable table={langData.table[language]} />
-          </div>
-        </Container>
+        <InfraChannel language={language} />
 
         <FAQ
           faq={faq2}
