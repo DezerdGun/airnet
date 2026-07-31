@@ -201,6 +201,12 @@ export default function PopularSert({ language }) {
           {data.map((item, index) => (
             <div key={item.title[language]} className={st.popularSert__block__item}>
               <div className={st.popularSert__block__item__top}>
+                <span className={st.popularSert__block__item__badge}>
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M12 3l7 3v5c0 4.5-3 8-7 10c-4-2-7-5.5-7-10V6Z" />
+                    <path d="m9 12 2 2 4-4" />
+                  </svg>
+                </span>
                 <div>{item.title[language]}</div>
                 <p>{item.description[language]}</p>
                 <ul>
@@ -248,7 +254,10 @@ export default function PopularSert({ language }) {
               <div className={st.popularSert__block__item__footer}>
                 <Drop index={index} item={item.prices} show={show} setShow={setShow} language={language} />
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  <button>{langData.buy[language]}</button>
+                  <button>
+                    {langData.buy[language]}
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                  </button>
                 </a>
               </div>
             </div>
