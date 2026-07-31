@@ -444,6 +444,58 @@ h6 {
   }
 }
 
+.tarifSwiper {
+  padding-left: 52px !important;
+  padding-right: 52px !important;
+
+  @media (max-width: 550px) {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 !important;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba(13, 84, 70, 0.18);
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+
+  .swiper-button-prev {
+    left: 2px !important;
+    right: unset !important;
+  }
+
+  .swiper-button-next {
+    right: 2px !important;
+    left: unset !important;
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 15px !important;
+    font-weight: 800;
+    color: $green !important;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background: #14b885;
+    transform: translateY(-50%) scale(1.06) !important;
+
+    &:after {
+      color: #fff !important;
+    }
+  }
+
+  .swiper-button-disabled {
+    opacity: 0.35;
+  }
+}
+
 .reviews-swiper {
   .swiper-wrapper {
     padding-top: 10px;

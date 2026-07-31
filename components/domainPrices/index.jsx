@@ -40,10 +40,6 @@ export default function DomainPrices({ language = "ru" }) {
     { zone: ".org", price: "88 000", tags: [], cat: { ru: "Организации", uz: "Tashkilotlar", en: "Organizations" } },
     { zone: ".info", price: "72 000", tags: [], cat: { ru: "Информация", uz: "Axborot", en: "Information" } },
     { zone: ".biz", price: "95 000", tags: ["business"], cat: { ru: "Бизнес", uz: "Biznes", en: "Business" } },
-    { zone: ".co.uz", price: "27 000", tags: ["uz", "business"], cat: { ru: "Узбекистан", uz: "O'zbekiston", en: "Uzbekistan" } },
-    { zone: ".com.uz", price: "27 000", tags: ["uz", "business"], cat: { ru: "Узбекистан", uz: "O'zbekiston", en: "Uzbekistan" } },
-    { zone: ".org.uz", price: "27 000", tags: ["uz"], cat: { ru: "Узбекистан", uz: "O'zbekiston", en: "Uzbekistan" } },
-    { zone: ".name.uz", price: "27 000", tags: ["uz"], cat: { ru: "Узбекистан", uz: "O'zbekiston", en: "Uzbekistan" } },
     { zone: ".io", price: "290 000", tags: [], cat: { ru: "Технологии", uz: "Texnologiya", en: "Technology" } },
   ];
 

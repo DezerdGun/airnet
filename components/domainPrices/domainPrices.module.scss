@@ -52,8 +52,9 @@ $border: #d0e8d9;
 	transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
 
 	&:hover {
-		border-color: $g300;
-		color: $g600;
+		border-color: $g600;
+		background: $g600;
+		color: $white;
 	}
 }
 .filter_on {

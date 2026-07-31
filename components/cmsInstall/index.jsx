@@ -49,14 +49,20 @@ export default function CmsInstall({ language = "ru", items }) {
         </div>
 
         <div className={st.grid}>
-          {list.map((item, i) => (
-            <div key={item[language]} className={st.item}>
-              <span className={st.item__icon}>
-                <Ico i={i} />
-              </span>
-              <span className={st.item__name}>{item[language]}</span>
-            </div>
-          ))}
+          {list.map((item, i) => {
+            const name = item.name ? item.name[language] : item[language];
+            return (
+              <div key={name} className={st.item}>
+                <span className={st.item__icon}>
+                  <Ico i={i} />
+                </span>
+                <div className={st.item__body}>
+                  <span className={st.item__name}>{name}</span>
+                  {item.desc ? <span className={st.item__desc}>{item.desc}</span> : null}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </Container>
     </div>

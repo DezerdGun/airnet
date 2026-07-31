@@ -97,26 +97,14 @@ export default function Hosting({ language }) {
   };
 
   const cms = [
-      { ru: "Блоги", uz: "Bloglar", en: "Blogs" },
-      { ru: "Порталы и CMS", uz: "Portallar va CMS", en: "Portals and CMS" },
-      { ru: "Форумы", uz: "Forumlar", en: "Forums" },
-      {
-        ru: "Галереи изображений",
-        uz: "Rasmlar galereyasi",
-        en: "Image Galleries",
-      },
-      { ru: "Социальные сети", uz: "Ijtimoiy tarmoqlar", en: "Social media" },
-      {
-        ru: "Голосования и опросы",
-        uz: "So'rovlar va so'rovlar",
-        en: "Voting and Polls",
-      },
-      {
-        ru: "Интернет-магазины",
-        uz: "Internet do'konlari",
-        en: "Internet stores",
-      },
-      { ru: "Файловые менеджеры", uz: "Fayl menejerlari", en: "File Managers" },
+      { name: { ru: "Блоги", uz: "Bloglar", en: "Blogs" }, desc: "WordPress, Ghost, Typecho и другие" },
+      { name: { ru: "Порталы и CMS", uz: "Portallar va CMS", en: "Portals and CMS" }, desc: "Joomla, Drupal, Bitrix, MODX" },
+      { name: { ru: "Форумы", uz: "Forumlar", en: "Forums" }, desc: "phpBB, MyBB, Discourse" },
+      { name: { ru: "Галереи изображений", uz: "Rasmlar galereyasi", en: "Image Galleries" }, desc: "Piwigo, Coppermine, Gallery" },
+      { name: { ru: "Социальные сети", uz: "Ijtimoiy tarmoqlar", en: "Social media" }, desc: "Elgg, BuddyPress, Dolphin" },
+      { name: { ru: "Голосования и опросы", uz: "So'rovlar va so'rovlar", en: "Voting and Polls" }, desc: "LimeSurvey, YOP Poll" },
+      { name: { ru: "Интернет-магазины", uz: "Internet do'konlari", en: "Internet stores" }, desc: "WooCommerce, OpenCart, PrestaShop" },
+      { name: { ru: "Файловые менеджеры", uz: "Fayl menejerlari", en: "File Managers" }, desc: "NextCloud, ownCloud, Seafile" },
     ],
     tarif2 = [
       {
@@ -856,9 +844,9 @@ const forContractArticlesData = {
             title="Тарифы"
             description={<TarifFeatures items={[langData.tarifDesc[language], langData.tarifDesc2[language], langData.tarifDesc3[language]]} />}
             endText={
-              <p className="text-white text-center mt-2">
+              <div className={st.tarifNote}>
                 {langData.tarifEnd[language]}
-              </p>
+              </div>
             }
           >
             <PeriodSwitcher value={period} onChange={setPeriod} language={language} />

@@ -151,6 +151,7 @@ $border: #d0e8d9;
 		gap: 7px;
 		color: $muted;
 		white-space: nowrap;
+		font-size: 14px;
 
 		svg {
 			color: $g400;
@@ -163,6 +164,7 @@ $border: #d0e8d9;
 		color: $text;
 		text-align: right;
 		white-space: nowrap;
+		font-size: 16px;
 	}
 	&__val_hl {
 		color: $g600;
