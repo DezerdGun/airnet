@@ -561,7 +561,7 @@ export default function CheapVds({ language }) {
             description={<p>{langData.description[language]}</p>}
             className="mt-0 px-0"
             endText={
-              <div className="text-white text-center mt-2">
+              <div className={st.tarifNote}>
                 <p>{langData.endText1[language]}</p>
                 <p>{langData.endText2[language]}</p>
               </div>

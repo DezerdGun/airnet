@@ -125,11 +125,11 @@ export default function ServerSpecs({ language = "ru" }) {
     {
       icon: "refresh",
       tone: "rose",
-      title: { ru: "Возврат средств 7 дней", uz: "7 kun ichida pulni qaytarish", en: "7-day money back" },
+      title: { ru: "Возврат средств 3 дня", uz: "3 kun ichida pulni qaytarish", en: "3-day money back" },
       text: {
-        ru: "Если не понравится — вернём 100% оплаты без вопросов в течение первых 7 дней.",
-        uz: "Yoqmasa — birinchi 7 kun ichida to'lovni 100% qaytaramiz.",
-        en: "Not satisfied? Full refund within the first 7 days, no questions asked.",
+        ru: "Если не понравится — вернём 100% оплаты без вопросов в течение первых 3 дней.",
+        uz: "Yoqmasa — birinchi 3 kun ichida to'lovni 100% qaytaramiz.",
+        en: "Not satisfied? Full refund within the first 3 days, no questions asked.",
       },
     },
   ];

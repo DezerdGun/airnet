@@ -122,12 +122,12 @@ $red: #ef4444;
       border: none;
       cursor: pointer;
       letter-spacing: 0.3px;
-      box-shadow: 0 6px 18px rgba(13, 84, 70, 0.25);
+      box-shadow: none;
       transition: all 0.25s ease;
 
       &:hover {
         transform: translateY(-1px);
-        box-shadow: 0 10px 26px rgba(13, 84, 70, 0.32);
+        box-shadow: none;
       }
 
       &:active {

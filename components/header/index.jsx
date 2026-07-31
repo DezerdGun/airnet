@@ -142,7 +142,7 @@ export default function Header({ language }) {
         tags: [
           { icon: "clock", label: { ru: "Запуск от 30 мин", uz: "30 daqiqada ishga tushirish", en: "Launch in 30 min" } },
           { icon: "shield", label: { ru: "Uptime 99.98%", uz: "Uptime 99.98%", en: "Uptime 99.98%" } },
-          { icon: "refresh", label: { ru: "Возврат 7 дней", uz: "7 kun ichida qaytarish", en: "7-day refund" } },
+          { icon: "refresh", label: { ru: "Возврат 3 дня", uz: "3 kun ichida qaytarish", en: "3-day refund" } },
           { icon: "network", label: { ru: "TAS-IX 1 Гбит/с", uz: "TAS-IX 1 Gbit/s", en: "TAS-IX 1 Gbps" } },
         ],
       },

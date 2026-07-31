@@ -1276,15 +1276,19 @@ export default function VDS({ language }) {
           
           <ServerHero title={langData.headTitle[language]} language={language} />
 
+          <div className={`${st.tarifNote} ${st.tarifNoteDark}`}>{langData.dsc[language]}</div>
+
           <TarifMaket
             // bgImg={'/servers-2.jpg'}
             // headTitle={langData.headTitle[language]}
             // title="Тарифы"
-            description={<TarifFeatures items={[langData.dsc[language], langData.dsc3[language], langData.dsc4[language], langData.dsc5[language]]} />}
+            description={
+              <TarifFeatures items={[langData.dsc3[language], langData.dsc4[language], langData.dsc5[language]]} />
+            }
             // txt={<p>{langData.txt[language]}</p>}
             className="mt-0 px-0"
             endText={
-              <div className="text-white text-center mt-2">
+              <div className={st.tarifNote}>
                 {/* <p>{langData.endText[language]}</p> */}
                 <p>{langData.timeW[language]}</p>
               </div>

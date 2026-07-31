@@ -20,7 +20,7 @@ const DEFAULT_PILLS = [
   { icon: <IconServer />, label: { ru: "VMware виртуализация", uz: "VMware virtualizatsiya", en: "VMware virtualization" } },
   { icon: <IconNet />, label: { ru: "TAS-IX 1 Гбит/с", uz: "TAS-IX 1 Gbit/s", en: "TAS-IX 1 Gbps" } },
   { icon: <IconShield />, label: { ru: "DDoS защита", uz: "DDoS himoya", en: "DDoS protection" } },
-  { icon: <IconRefresh />, label: { ru: "Возврат 7 дней", uz: "7 kun ichida qaytarish", en: "7-day refund" } },
+  { icon: <IconRefresh />, label: { ru: "Возврат 3 дня", uz: "3 kun ichida qaytarish", en: "3-day refund" } },
   { icon: <IconWin />, label: { ru: "Windows / Linux", uz: "Windows / Linux", en: "Windows / Linux" } },
 ];
 

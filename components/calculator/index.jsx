@@ -281,9 +281,9 @@ export default function Calculator({ language }) {
       en: "Uptime 99.98% · DDoS protection",
     },
     incRefund: {
-      ru: "Возврат средств 7 дней",
-      uz: "7 kun ichida pulni qaytarish",
-      en: "7-day money back",
+      ru: "Возврат средств 3 дня",
+      uz: "3 kun ichida pulni qaytarish",
+      en: "3-day money back",
     },
     incSupport: {
       ru: "Поддержка 24/7",

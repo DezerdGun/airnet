@@ -8,6 +8,7 @@ import styles from "./payment.module.scss";
 import Reviews from "@/components/reviews";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import PaymentMethods from "../../components/paymentMethods";
 
 const faq = [
     {
@@ -765,21 +766,9 @@ export default function Payment({ language }) {
       </>
       ) : null}
 
-      <Container headTitle={langData.headTitle[language]}>
-        <div className={styles.payment__info}>
-          <div className={styles.payment__info__content}>{langData.payment[language]}</div>
-          <div className={styles.payment__info__img}>
-            <img src="/payment-img.png" />
-          </div>
-        </div>
-      </Container>
+      <PaymentMethods language={language} />
 
-      {/* <Container
-				style={{ background: "url('/servers-2.jpg') no-repeat" }}
-				title="Конструктор сайтов SitePad"
-				className="my-0">
-			</Container> */}
-      <Container className="px-3">
+      <Container className="px-3" style={{ display: "none" }}>
         {langData.table[language]}
 
         {/* <h2 id="transfer-swift">Банковский перевод</h2>

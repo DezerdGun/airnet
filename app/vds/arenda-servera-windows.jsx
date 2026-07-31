@@ -1237,7 +1237,7 @@ export default function VDS({ language }) {
             // txt={<p>{langData.txt[language]}</p>}
             className="mt-0 px-0"
             endText={
-              <div className="text-white text-center mt-2">
+              <div className={st.tarifNote}>
                 <p>{langData.endText[language]}</p>
                 <p>{langData.timeW[language]}</p>
               </div>

@@ -2,6 +2,7 @@ import Container from "@/components/container";
 import Partners from "@/components/partners";
 import SEO from "@/components/seo";
 import { HelpItemBlock } from "@/components/helpItem";
+import KnowledgeBase from "@/components/knowledgeBase";
 import Reviews from "@/components/reviews";
 import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
@@ -142,16 +143,14 @@ export default function Documents({ language }) {
         language={language}
       />
 
-      <Container headTitle={langData.headTitle[language]}>
-        <hr />
-
-        <p>
-          {langData.cT[language]}
-          <br />
-          {langData.cTend[language]}
-        </p>
-      </Container>
-      <HelpItemBlock data={{ content: data }} language={language} />
+      <KnowledgeBase
+        data={data}
+        language={language}
+        eyebrow={{ ru: "Документы и шаблоны", uz: "Hujjatlar va shablonlar", en: "Documents & templates" }}
+        title={{ ru: "Документы и", uz: "Hujjatlar va", en: "Documents &" }}
+        brand={{ ru: "договоры", uz: "shartnomalar", en: "contracts" }[language]}
+        sub={langData.cT[language]}
+      />
       <Partners language={language} />
       <Reviews language={language} />
     </>

@@ -1,4 +1,5 @@
 import HelpItem from "@/components/helpItem";
+import KnowledgeBase from "@/components/knowledgeBase";
 import SEO from "@/components/seo";
 import Image from "next/image";
 import st from "./help.module.scss";
@@ -990,7 +991,7 @@ export default function Help({ language }) {
         <BreadCrumbs data={breadCrumbsHelp} language={language} />
         <PageBreadcrumb links={breadCrumbsHelp} language={language} />
 
-        <HelpItem data={mainData} language={language} />
+        <KnowledgeBase data={data} language={language} />
       </div>
     </>
   );

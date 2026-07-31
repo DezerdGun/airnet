@@ -1301,19 +1301,19 @@ export default function VDS({ language }) {
       description: {
         ru: (
           <p>
-              Мы уверены в качестве услуг — предоставляем 100% возврат средств в течение 7 дней.
+              Мы уверены в качестве услуг — предоставляем 100% возврат средств в течение 3 дней.
               Вы тестируете сервис без риска.
           </p>
         ),
         uz: (
           <p>
-            Biz xizmatlarimiz sifatiga aminmiz — 7 kun ichida 100% pulni qaytarib berish kafolatini taqdim etamiz.
+            Biz xizmatlarimiz sifatiga aminmiz — 3 kun ichida 100% pulni qaytarib berish kafolatini taqdim etamiz.
             Siz xizmatni xavfsiz sinab ko'rishingiz mumkin.
           </p>
         ),
         en: (
           <p>
-              We're confident in the quality of our services—we offer a 100% money-back guarantee within 7 days.
+              We're confident in the quality of our services—we offer a 100% money-back guarantee within 3 days.
               You can test the service risk-free.
           </p>
         ),
