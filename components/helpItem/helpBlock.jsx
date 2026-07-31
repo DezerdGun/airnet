@@ -81,6 +81,11 @@ export default function HelpBlock({ data, language, breadCrumbs }) {
     },
   ];
 
+  const hasRelated = data.related && data.related.length > 0;
+
+  const relatedTitle = { ru: "Похожие статьи", uz: "O'xshash maqolalar", en: "Related articles" };
+  const backTitle = { ru: "База знаний", uz: "Bilimlar bazasi", en: "Knowledge base" };
+
   return (
     <>
       <SEO
@@ -88,54 +93,66 @@ export default function HelpBlock({ data, language, breadCrumbs }) {
         desc={data?.desc?.[language]}
       />
 
-      <div style={{ backgroundColor: "#f8f8f8" }}>
-        {breadCrumbs && breadCrumbs.length ? (
-          <>
-            <BreadCrumbs data={breadCrumbs} language={language} />
-            <PageBreadcrumb links={breadCrumbs} language={language} />
-          </>
-        ) : null}
+      {breadCrumbs && breadCrumbs.length ? (
+        <>
+          <BreadCrumbs data={breadCrumbs} language={language} />
+          <PageBreadcrumb links={breadCrumbs} language={language} />
+        </>
+      ) : null}
 
-        <Container headTitle={data.headTitle[language]} clNTitle="mb-3">
-          <div className={st.author}>
-            <img src="/author/almaz-danaev.png" />
-            <span>
-              ALMAZ DANAEV <br /> CEO
-            </span>
+      <div className={st.hero}>
+        <div className={st.hero__inner}>
+          <Link href={checkLang(language) + LINKS.HELP}>
+            <a className={st.hero__back}>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 6-6 6 6 6" /></svg>
+              {backTitle[language]}
+            </a>
+          </Link>
+          <h1 className={st.hero__title}>{data.headTitle[language]}</h1>
+          <div className={st.hero__meta}>
+            <img src="/author/almaz-danaev.png" alt="Almaz Danaev" />
+            <span>Almaz Danaev · CEO</span>
           </div>
-          <div className={st.helpBlock}>
-            <div className={st.helpBlock__related}>
-              <div className={st.helpBlock__related__title}>Похожие статьи</div>
-              <ul className={st.helpBlock__related__links}>
-                {data.related.map((item) => (
-                  <li key={item.link}>
-                    <Link href={checkLang(language) + item.link}>
-                      <a>{item.title[language]}</a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className={st.helpBlock__content}>
-              {data.content[language]}
-            </div>
-          </div>
-          <p>{langData.goToDB[language]}</p>
-          <p>
-            {langData.phoneSupport[language]}{" "}
-            <a href="tel:+998712028700">+998(71) 202-87-00</a>
-          </p>
-        </Container>
-        {data?.afterContent}
-        {data?.faq && (
-          <FAQ
-            faq={data.faq}
-            title={langData.faq[language]}
-            language={language}
-          />
-        )}
-        <Partners language={language} />
+        </div>
       </div>
+
+      <div className={`${st.wrap} ${hasRelated ? "" : st.wrap_full}`}>
+        <article className={st.article}>
+          <div className={st.article__content}>{data.content[language]}</div>
+          <div className={st.article__foot}>
+            <p>{langData.goToDB[language]}</p>
+            <p>
+              {langData.phoneSupport[language]}{" "}
+              <a href="tel:+998712028700">+998 (71) 202-87-00</a>
+            </p>
+          </div>
+        </article>
+
+        {hasRelated && (
+          <aside className={st.aside}>
+            <div className={st.aside__title}>{relatedTitle[language]}</div>
+            <ul className={st.aside__links}>
+              {data.related.map((item) => (
+                <li key={item.link}>
+                  <Link href={checkLang(language) + item.link}>
+                    <a>{item.title[language]}</a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        )}
+      </div>
+
+      {data?.afterContent}
+      {data?.faq && (
+        <FAQ
+          faq={data.faq}
+          title={langData.faq[language]}
+          language={language}
+        />
+      )}
+      <Partners language={language} />
     </>
   );
 }

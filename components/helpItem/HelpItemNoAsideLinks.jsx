@@ -33,7 +33,18 @@ export default function HelpItemNoAsideLinks({ data, language, breadCrumbs }) {
       ) : (
         ""
       )}
-      <HelpItemBlock data={data} language={language} />
+      <div className={st.hero}>
+        <div className={st.hero__inner}>
+          <Link href={checkLang(language) + LINKS.HELP}>
+            <a className={st.hero__back}>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 6-6 6 6 6" /></svg>
+              {{ ru: "База знаний", uz: "Bilimlar bazasi", en: "Knowledge base" }[language]}
+            </a>
+          </Link>
+          <h1 className={st.hero__title}>{data.headTitle?.[language]}</h1>
+        </div>
+      </div>
+      <HelpItemBlock data={data} language={language} hideTitle />
       {data?.afterContent}
       {data?.faq && (
         <FAQ
@@ -47,7 +58,7 @@ export default function HelpItemNoAsideLinks({ data, language, breadCrumbs }) {
   );
 }
 
-export const HelpItemBlock = ({ data, language }) => {
+export const HelpItemBlock = ({ data, language, hideTitle }) => {
   const [isFixed, setIsFixed] = useState(false);
   const langData = {
     menu: {
@@ -89,7 +100,7 @@ export const HelpItemBlock = ({ data, language }) => {
   };
 
   return (
-    <Container headTitle={data.headTitle?.[language]}>
+    <Container headTitle={hideTitle ? undefined : data.headTitle?.[language]}>
       <div className={st.helpItem}>
         <div className={st.helpItem__block2}>
           <div id="content" className={st.helpItem__block__content}>

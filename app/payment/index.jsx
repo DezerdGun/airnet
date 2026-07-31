@@ -822,7 +822,6 @@ export default function Payment({ language }) {
 				</p> */}
       </Container>
       {image && <ImageFullScreen image={image} setImage={setImage} />}
-      <FAQ faq={faq} title={langData.title[language]} language={language} />
 
       <Partners language={language} />
       <Reviews language={language} />

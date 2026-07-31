@@ -176,12 +176,16 @@ $bg: #f4fbf6;
 /* ── MAIN LAYOUT ── */
 .main {
 	display: grid;
-	grid-template-columns: 240px 1fr;
-	gap: 16px;
-	max-width: 980px;
+	grid-template-columns: 260px 1fr;
+	gap: 20px;
+	width: 1250px;
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 2rem 20px;
 
+	@media (max-width: 1270px) { width: 1150px; }
+	@media (max-width: 1170px) { width: 1000px; }
+	@media (max-width: 1040px) { width: 100%; }
 	@media (max-width: 760px) { grid-template-columns: 1fr; }
 }
 
@@ -307,7 +311,7 @@ $bg: #f4fbf6;
 	justify-content: center;
 	flex-shrink: 0;
 }
-.popTitle { font-size: 13px; color: $text; font-weight: 500; flex: 1; }
+.popTitle { font-size: 14px; color: $text; font-weight: 500; flex: 1; }
 .popCat { font-size: 10px; color: $light; background: $bg; border: 1px solid $border; padding: 2px 7px; border-radius: 5px; white-space: nowrap; }
 
 /* Category card */
@@ -378,7 +382,7 @@ $bg: #f4fbf6;
 	svg { color: $g400; stroke: $g400; fill: none; flex-shrink: 0; margin-top: 2px; }
 }
 .articleText {
-	font-size: 13px;
+	font-size: 14px;
 	color: $text;
 	line-height: 1.45;
 	font-weight: 500;
