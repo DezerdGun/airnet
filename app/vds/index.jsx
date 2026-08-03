@@ -457,6 +457,7 @@ export const forDatacenterVDSData = {
 };
 
 export const forContractArticlesData = {
+  variant: "articles",
   title: {
     ru: <>Полезные статьи</>,
     uz: <>Foydali maqolalar</>,
