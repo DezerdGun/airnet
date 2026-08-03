@@ -75,12 +75,12 @@ export default function PaymentMethods({ language = "ru" }) {
 
   const methods = [
     {
-      id: "payme", logo: "/payments/payme.svg", name: "Payme.uz", tag: "instant",
+      id: "payme", logo: "/payments/payme.svg", name: "Payme.uz", tag: null,
       desc: { ru: "Оплата через мобильное приложение или сайт Payme. Мгновенное зачисление на баланс.", uz: "Payme ilovasi yoki sayti orqali to'lov. Balansga bir zumda tushadi.", en: "Pay via the Payme app or website. Instant balance top-up." },
       body: { ru: <>Откройте приложение <strong>Payme</strong> → «Оплата» → найдите <strong>AIRNET</strong> → введите лицевой счёт (ID вашего аккаунта) → укажите сумму и подтвердите. Средства поступят мгновенно.</>, uz: <>Payme ilovasini oching → «To'lov» → <strong>AIRNET</strong>ni toping → shaxsiy hisob (akkaunt ID) kiriting → summani kiriting va tasdiqlang. Mablag' bir zumda tushadi.</>, en: <>Open <strong>Payme</strong> → “Payment” → find <strong>AIRNET</strong> → enter your account ID → set the amount and confirm. Funds arrive instantly.</> },
     },
     {
-      id: "click", logo: "/payments/click.png", name: "Click.uz", tag: "instant",
+      id: "click", logo: "/payments/click.png", name: "Click.uz", tag: null,
       desc: { ru: "Быстрая оплата через Click — популярный сервис онлайн-платежей в Узбекистане.", uz: "Click orqali tez to'lov — O'zbekistonda mashhur onlayn-to'lov xizmati.", en: "Fast payment via Click — a popular online payment service in Uzbekistan." },
       body: { ru: <>Откройте приложение <strong>Click</strong> → «Интернет-провайдеры» → выберите <strong>AIRNET</strong> → введите ID аккаунта → укажите сумму и оплатите. Зачисление — мгновенно.</>, uz: <>Click ilovasini oching → «Internet-provayderlar» → <strong>AIRNET</strong>ni tanlang → akkaunt ID kiriting → summani kiriting va to'lang. Hisobga bir zumda tushadi.</>, en: <>Open <strong>Click</strong> → “Internet providers” → choose <strong>AIRNET</strong> → enter your account ID → set the amount and pay. Instant credit.</> },
     },
@@ -90,9 +90,9 @@ export default function PaymentMethods({ language = "ru" }) {
       body: { ru: <>Через <strong>приложение</strong>: Paynet → «Телекоммуникации» → AIRNET → введите ID → оплатите. Через <strong>терминал</strong>: найдите ближайший терминал Paynet → «Интернет» → AIRNET → введите ID и внесите наличные. Зачисление до 15 минут.</>, uz: <><strong>Ilova</strong> orqali: Paynet → «Telekommunikatsiya» → AIRNET → ID kiriting → to'lang. <strong>Terminal</strong> orqali: eng yaqin Paynet terminalini toping → «Internet» → AIRNET → ID kiriting va naqd pul soling. 15 daqiqagacha tushadi.</>, en: <>Via <strong>app</strong>: Paynet → “Telecom” → AIRNET → enter ID → pay. Via <strong>terminal</strong>: find a Paynet terminal → “Internet” → AIRNET → enter ID and insert cash. Credited within 15 min.</> },
     },
     {
-      id: "oson", logo: "/payments/oson.png", name: "Oson.uz", tag: "min15",
-      desc: { ru: "Мобильный сервис оплаты услуг. Удобно для тех, кто платит со смартфона.", uz: "Xizmatlarni to'lash uchun mobil xizmat. Smartfondan to'lovchilar uchun qulay.", en: "Mobile bill-payment service. Handy for those who pay from a phone." },
-      body: { ru: <>Откройте <strong>Oson</strong> → «Интернет» → AIRNET → введите лицевой счёт (ID аккаунта) → укажите сумму и подтвердите. Зачисление — до 15 минут.</>, uz: <><strong>Oson</strong>ni oching → «Internet» → AIRNET → shaxsiy hisob (akkaunt ID) kiriting → summani kiriting va tasdiqlang. 15 daqiqagacha tushadi.</>, en: <>Open <strong>Oson</strong> → “Internet” → AIRNET → enter your account ID → set the amount and confirm. Credited within 15 min.</> },
+      id: "ipakyuli", icon: "bank", name: "Ipak Yo'li", tag: null,
+      desc: { ru: "Оплата через интернет-банк и мобильное приложение Ipak Yo'li.", uz: "Ipak Yo'li internet-bank va mobil ilova orqali to'lov.", en: "Payment via Ipak Yo'li internet bank and mobile app." },
+      body: { ru: <>В приложении <strong>Ipak Yo'li</strong> → «Платежи» → «Интернет-провайдеры» → <strong>AIRNET</strong> → введите ID аккаунта → укажите сумму и оплатите.</>, uz: <><strong>Ipak Yo'li</strong> ilovasida → «To'lovlar» → «Internet-provayderlar» → <strong>AIRNET</strong> → akkaunt ID kiriting → summani kiriting va to'lang.</>, en: <>In the <strong>Ipak Yo'li</strong> app → “Payments” → “Internet providers” → <strong>AIRNET</strong> → enter your account ID → set the amount and pay.</> },
     },
     {
       id: "kiosk", icon: "store", name: { ru: "Киоск самообслуживания", uz: "O'z-o'ziga xizmat kioski", en: "Self-service kiosk" }, tag: "offline",
@@ -100,7 +100,7 @@ export default function PaymentMethods({ language = "ru" }) {
       body: { ru: <>Найдите ближайший терминал (банки, торговые центры) → «Интернет-услуги» → <strong>AIRNET</strong> → введите <strong>ID аккаунта</strong> → внесите наличные. Чек сохраните. Зачисление — до 30 минут.</>, uz: <>Eng yaqin terminalni toping (banklar, savdo markazlari) → «Internet-xizmatlar» → <strong>AIRNET</strong> → <strong>akkaunt ID</strong> kiriting → naqd pul soling. Chekni saqlang. 30 daqiqagacha tushadi.</>, en: <>Find a terminal (banks, malls) → “Internet services” → <strong>AIRNET</strong> → enter <strong>account ID</strong> → insert cash. Keep the receipt. Credited within 30 min.</> },
     },
     {
-      id: "visa", icon: "card", name: "VISA / MasterCard", tag: "instant",
+      id: "visa", icon: "card", name: "VISA / MasterCard", tag: null,
       desc: { ru: "Международные банковские карты. Оплата напрямую через защищённую форму.", uz: "Xalqaro bank kartalari. Himoyalangan forma orqali to'g'ridan-to'g'ri to'lov.", en: "International bank cards. Pay directly via a secure form." },
       body: { ru: <>В Личном кабинете: <strong>«Счета» → «Пополнить»</strong> → «Банковская карта» → введите данные карты в защищённой форме → подтвердите через 3D-Secure. Зачисление — мгновенно.</>, uz: <>Shaxsiy kabinetda: <strong>«Hisoblar» → «To'ldirish»</strong> → «Bank kartasi» → karta ma'lumotlarini himoyalangan formaga kiriting → 3D-Secure orqali tasdiqlang. Bir zumda tushadi.</>, en: <>In your dashboard: <strong>“Invoices” → “Top up”</strong> → “Bank card” → enter card details in the secure form → confirm via 3D-Secure. Instant credit.</> },
     },
@@ -151,24 +151,24 @@ export default function PaymentMethods({ language = "ru" }) {
           </div>
           <div className={st.grid}>
             {methods.map((m) => (
-              <button key={m.id} className={st.card} onClick={() => toggle(m.id)} type="button">
+              <div key={m.id} className={st.card}>
                 <span className={`${st.card__icon} ${m.logo ? st.card__icon_logo : ""}`}>
                   {m.logo ? <img src={m.logo} alt={tr(m.name)} /> : m.emoji ? m.emoji : <Ico n={m.icon} />}
                 </span>
                 <span className={st.card__name}>{tr(m.name)}</span>
                 <span className={st.card__desc}>{m.desc[language]}</span>
-                <span className={`${st.tag} ${tagCls[m.tag]}`}><Ico n={tagIcon[m.tag]} size={12} />{tagLabel[m.tag][language]}</span>
-                <span className={st.card__btn}><Ico n="arrow" size={13} />{t.instruction[language]}</span>
-              </button>
+                {m.tag && (
+                  <span className={`${st.tag} ${tagCls[m.tag]}`}><Ico n={tagIcon[m.tag]} size={12} />{tagLabel[m.tag][language]}</span>
+                )}
+              </div>
             ))}
-            <button className={`${st.card} ${st.card_wide}`} onClick={() => toggle(swift.id)} type="button">
+            <div className={`${st.card} ${st.card_wide}`}>
               <span className={st.card__icon}><Ico n={swift.icon} /></span>
               <span className={st.wideText}>
                 <span className={st.wideText__title}>{swift.title[language]}</span>
                 <span className={st.wideText__desc}>{swift.desc[language]}</span>
               </span>
-              <span className={st.card__btn}><Ico n="file" size={13} />{t.requisites[language]}</span>
-            </button>
+            </div>
           </div>
         </div>
       </section>
@@ -188,33 +188,6 @@ export default function PaymentMethods({ language = "ru" }) {
                 <div className={st.step__desc}>{s.desc[language]}</div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ACCORDION */}
-      <section className={st.accord}>
-        <div className={st.wrap}>
-          <div className={st.head}>
-            <h2>{t.acHead[language]}</h2>
-            <p>{t.acSub[language]}</p>
-          </div>
-          <div className={st.acList}>
-            {accItems.map((m) => {
-              const isOpen = open === m.id;
-              return (
-                <div key={m.id} className={`${st.ac} ${isOpen ? st.ac_open : ""}`}>
-                  <button className={st.ac__row} onClick={() => toggle(m.id)} type="button">
-                    <span className={`${st.ac__icon} ${m.logo ? st.ac__icon_logo : ""}`}>
-                      {m.logo ? <img src={m.logo} alt={tr(m.name)} /> : <Ico n={m.icon || "mobile"} size={17} />}
-                    </span>
-                    <span className={st.ac__title}>{tr(m.title || m.name)}</span>
-                    <span className={st.ac__arr}><Ico n="chevron" size={16} /></span>
-                  </button>
-                  {isOpen && <div className={st.ac__body}>{m.body[language]}</div>}
-                </div>
-              );
-            })}
           </div>
         </div>
       </section>

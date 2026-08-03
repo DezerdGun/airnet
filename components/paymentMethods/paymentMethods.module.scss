@@ -490,7 +490,8 @@ $bg: #f4fbf6;
 	width: 1250px;
 	max-width: calc(100% - 40px);
 	margin: 0 auto;
-	background: linear-gradient(120deg, $g800 0%, $g700 60%, $g600 100%);
+	background: $bg;
+	border: 1.5px solid $border;
 	border-radius: 20px;
 	padding: 2rem 2.5rem;
 	display: flex;
@@ -510,15 +511,15 @@ $bg: #f4fbf6;
 		width: 200px;
 		height: 200px;
 		border-radius: 50%;
-		border: 1px solid rgba(255, 255, 255, 0.05);
+		border: 1px solid rgba(27, 107, 58, 0.06);
 	}
 
 	&__text {
 		position: relative;
 		z-index: 1;
 
-		h3 { font-size: 20px; font-weight: 700; color: $white; margin: 0 0 4px; }
-		p { font-size: 13px; color: rgba(255, 255, 255, 0.55); margin: 0; }
+		h3 { font-size: 20px; font-weight: 700; color: $text; margin: 0 0 4px; }
+		p { font-size: 13px; color: $muted; margin: 0; }
 	}
 
 	&__btns {
@@ -552,16 +553,16 @@ $bg: #f4fbf6;
 		display: inline-flex;
 		align-items: center;
 		gap: 6px;
-		background: rgba(255, 255, 255, 0.08);
-		border: 1.5px solid rgba(255, 255, 255, 0.15);
-		color: $white;
+		background: $white;
+		border: 1.5px solid $border;
+		color: $g700;
 		padding: 10px 18px;
 		border-radius: 10px;
 		font-size: 13px;
 		text-decoration: none;
-		transition: background 0.15s ease;
+		transition: background 0.15s ease, border-color 0.15s ease;
 
-		svg { color: $white; stroke: $white; fill: none; }
-		&:hover { background: rgba(255, 255, 255, 0.14); color: $white; text-decoration: none; }
+		svg { color: $g700; stroke: $g700; fill: none; }
+		&:hover { background: $g50; border-color: $g100; color: $g700; text-decoration: none; }
 	}
 }
