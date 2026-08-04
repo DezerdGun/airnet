@@ -20,7 +20,7 @@ const Ico = ({ n, size = 16 }) => (
   <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{I[n]}</svg>
 );
 
-const BILLING = "https://billing.airnet.uz/billing.php";
+const ORDER = "https://billing.airnet.uz/billing.php?do=tarifs&vid=vds";
 
 export default function ForFreeBlock({ data, language = "ru" }) {
   const tr = (v) => (typeof v === "string" ? v : v?.[language]);
@@ -85,8 +85,8 @@ export default function ForFreeBlock({ data, language = "ru" }) {
             ))}
           </div>
           <div className={st.bottom__btns}>
-            <a className={st.btnSec} href="#tarif"><Ico n="list" size={14} />{t.tarifs[language]}</a>
-            <a className={st.btnMain} href={BILLING} target="_blank" rel="noopener noreferrer"><Ico n="arrow" size={15} />{t.order[language]}</a>
+            <a className={st.btnSec} href="/vds"><Ico n="list" size={14} />{t.tarifs[language]}</a>
+            <a className={st.btnMain} href={ORDER} target="_blank" rel="noopener noreferrer"><Ico n="arrow" size={15} />{t.order[language]}</a>
           </div>
         </div>
       </div>
