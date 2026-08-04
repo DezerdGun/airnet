@@ -274,7 +274,7 @@ export const forSupportVDSData = {
   desc: {
     ru: (
       <>
-        Служба поддержки быстро поможет с любым вопросом по хостингу. 80% заявок
+        Служба поддержки быстро поможет с любым вопросом по хостингу. 95% заявок
         решается за 1 час. Компетентные и дружелюбные специалисты разберутся
         даже с самой сложной ситуацией.
         <br />
@@ -285,7 +285,7 @@ export const forSupportVDSData = {
     ),
     uz: ( 
       <>
-        Qo'llab-quvvatlash jamoasi har qanday hosting savolida sizga tezda yordam beradi. Ilovalarning 80%
+        Qo'llab-quvvatlash jamoasi har qanday hosting savolida sizga tezda yordam beradi. Ilovalarning 95%
         1 soat ichida hal qilinadi. Vakolatli va do'stona mutaxassislar buni hal qilishadi
         hatto eng qiyin vaziyatda ham.
         <br />
@@ -296,7 +296,7 @@ export const forSupportVDSData = {
     ),
     en:  ( 
       <>
-        The support service will quickly help with any question about hosting. 80% of requests
+        The support service will quickly help with any question about hosting. 95% of requests
         are resolved within 1 hour. Competent and friendly specialists will deal
         with even the most difficult situation.
         <br />

@@ -33,7 +33,7 @@ export default function ForSupport({ data, language = "ru" }) {
     phoneDesc: { ru: "Звонок принимается круглосуточно", uz: "Qo'ng'iroq kunu-tun qabul qilinadi", en: "Calls accepted 24/7" },
   };
   const stats = [
-    { num: "80%", lbl: { ru: "заявок за 1 час", uz: "so'rov 1 soatda", en: "requests in 1 hr" } },
+    { num: "95%", lbl: { ru: "заявок за 1 час", uz: "so'rov 1 soatda", en: "requests in 1 hr" } },
     { num: "24/7", lbl: { ru: "круглосуточно", uz: "kunu-tun", en: "round the clock" } },
     { num: "100+", lbl: { ru: "статей в базе знаний", uz: "bilimlar bazasida maqola", en: "articles in KB" } },
   ];

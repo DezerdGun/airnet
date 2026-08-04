@@ -38,8 +38,8 @@ export default function ForContract({ data, language = "ru" }) {
     call: { ru: "Позвонить", uz: "Qo'ng'iroq", en: "Call" },
   };
   const stats = [
-    { num: "7+", suf: { ru: " лет", uz: " yil", en: " yrs" }, lbl: { ru: "На рынке IT-услуг Узбекистана", uz: "O'zbekiston IT-xizmatlari bozorida", en: "On the Uzbek IT market" } },
-    { num: "1 000+", lbl: { ru: "Корпоративных клиентов", uz: "Korporativ mijozlar", en: "Corporate clients" } },
+    { num: "8+", suf: { ru: " лет", uz: " yil", en: " yrs" }, lbl: { ru: "На рынке IT-услуг Узбекистана", uz: "O'zbekiston IT-xizmatlari bozorida", en: "On the Uzbek IT market" } },
+    { num: "2 800", lbl: { ru: "Корпоративных клиентов", uz: "Korporativ mijozlar", en: "Corporate clients" } },
     { num: "99.98%", lbl: { ru: "Uptime по SLA", uz: "SLA bo'yicha uptime", en: "Uptime by SLA" } },
     { num: "24/7", lbl: { ru: "Поддержка и сопровождение", uz: "Qo'llab-quvvatlash", en: "Support & maintenance" } },
   ];
