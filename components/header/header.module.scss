@@ -653,6 +653,12 @@ $navH-sm: 62px;
 	justify-content: center;
 	transition: background 0.15s ease;
 
+	svg {
+		color: $white;
+		stroke: $white;
+		fill: none;
+	}
+
 	&:hover {
 		background: rgba(255, 255, 255, 0.13);
 	}
