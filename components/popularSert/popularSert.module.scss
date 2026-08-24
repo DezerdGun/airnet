@@ -28,7 +28,6 @@ $bg: #f4fbf6;
 
     &__item {
       position: relative;
-      overflow: hidden;
       background-color: $white;
       padding: 1.5rem;
       border-radius: 18px;
@@ -45,6 +44,7 @@ $bg: #f4fbf6;
         left: 0;
         right: 0;
         height: 3px;
+        border-radius: 18px 18px 0 0;
         background: linear-gradient(90deg, $g400, $g300);
         opacity: 0;
         transition: opacity 0.25s ease;
