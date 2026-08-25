@@ -199,7 +199,7 @@ export default function PopularSert({ language }) {
       <Container title={langData.title[language]} clNTitle="text-center">
         <div className={st.popularSert__block}>
           {data.map((item, index) => (
-            <div key={item.title[language]} className={st.popularSert__block__item}>
+            <div key={item.title[language]} className={`${st.popularSert__block__item} ${show === index ? st.popularSert__block__item__open : ""}`}>
               <div className={st.popularSert__block__item__top}>
                 <span className={st.popularSert__block__item__badge}>
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

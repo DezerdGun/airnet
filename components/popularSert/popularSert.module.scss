@@ -37,6 +37,10 @@ $bg: #f4fbf6;
       border: 1.5px solid $border;
       transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
 
+      &__open {
+        z-index: 40;
+      }
+
       &::before {
         content: "";
         position: absolute;
