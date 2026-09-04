@@ -39,12 +39,12 @@ import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ServerHero from "@/components/serverHero";
 import ProductVDSIntel from "../../components/seo/productvdsintel";
-import { breadCrumbsVds } from "./index";
-import { forFreeVDSData } from ".";
-import { forContractVDSData } from ".";
-import { forSupportVDSData } from ".";
-import { forDatacenterVDSData } from ".";
-import { forContractArticlesData } from ".";
+import { breadCrumbsVds } from "./data";
+import { forFreeVDSData } from "./data";
+import { forContractVDSData } from "./data";
+import { forSupportVDSData } from "./data";
+import { forDatacenterVDSData } from "./data";
+import { forContractArticlesData } from "./data";
 
 export const ForIntelVDSData = {
   title: {
@@ -971,7 +971,7 @@ export default function VDS({ language }) {
             endText={
               <div className={st.tarifNote}>
                 <p>{langData.endText[language]}</p>
-                <p>{langData.timeW[language]}</p>
+                {langData.timeW[language]}
               </div>
             }
           >
@@ -1000,7 +1000,7 @@ export default function VDS({ language }) {
               className="tarifSwiper"
             >
               {tarif.map((item, index) => (
-                <SwiperSlide key={item.title} language={language}>
+                <SwiperSlide key={index} language={language}>
                   <div className="w-95">
                     <TarifCard
                       index={index}

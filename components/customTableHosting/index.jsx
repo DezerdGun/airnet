@@ -174,7 +174,7 @@ export default function CustomTableHosting({ table, language }) {
 				<tr>
 					<td>{langData.main[language]}:</td>
 					{table.map((item, i) => (
-						<td className="p-0" key={item.title}>
+						<td className="p-0" key={i}>
 							<div className={st.customTableHosting__head}>
 								<h6>Cpanel - {item.title}</h6>
 								<span>

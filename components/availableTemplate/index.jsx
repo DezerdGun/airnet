@@ -7,8 +7,8 @@ const AvailableTemplate = ({ title, data, language }) => {
     <section className={styles.availableTemplate}>
       <Container title={title} clNTitle="text-center">
         <ul>
-          {data.map((item) => (
-            <li key={item.title}>
+          {data.map((item, idx) => (
+            <li key={idx}>
               <Image src={item.img} width={70} height={70} alt={item.title} />
               <div>{item.title}</div>
             </li>

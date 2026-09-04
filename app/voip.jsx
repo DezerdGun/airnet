@@ -440,7 +440,7 @@ export default function SSL({ language }) {
       <Container>
         {ssl.map((item, index) => (
           <SslComponent
-            key={item.title}
+            key={index}
             index={index}
             item={item}
             show={show}

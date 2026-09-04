@@ -1,11 +1,19 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap-reboot.min.css";
 import Head from "next/head";
+import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
-import ChatLiveWidget from "../components/chatlive/index.jsx";
-import Cookies from "../components/cookies/index.jsx";
 import Footer from "../components/footer";
 import Header from "../components/header";
+import Analytics from "../components/analytics";
+import "../styles/utilities.scss";
 import "../styles/globals.scss";
+
+const ChatLiveWidget = dynamic(() => import("../components/chatlive/index.jsx"), {
+  ssr: false,
+});
+const Cookies = dynamic(() => import("../components/cookies/index.jsx"), {
+  ssr: false,
+});
 
 function MyApp({ Component, pageProps, url }) {
   const router = useRouter(),
@@ -22,6 +30,7 @@ function MyApp({ Component, pageProps, url }) {
 
   const realPath = (router.asPath || "/").split("?")[0].split("#")[0];
   const isBlogDetail = /^\/(?:uz\/|en\/)?blog\/[^/]+/.test(realPath);
+  const isHome = /^\/(?:uz|en)?\/?$/.test(realPath);
 
   return (
     <>
@@ -45,8 +54,14 @@ function MyApp({ Component, pageProps, url }) {
         />
         <meta name="yandex-verification" content="e5fe79390705ede1" />
         <link rel="shortcut icon" href="/favicon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {isHome && (
+          <link
+            rel="preload"
+            as="image"
+            href="/banner3.webp"
+            fetchpriority="high"
+          />
+        )}
 
         {!isBlogDetail && (
           <>
@@ -80,35 +95,8 @@ function MyApp({ Component, pageProps, url }) {
         )}
         <meta name="referrer" content="strict-origin" />
 
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-				})(window,document,'script','dataLayer','GTM-N4WXM93');`,
-          }}
-        ></script>
-
         {/* <!-- Yandex.Metrika counter --> */}
 
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-				m[i].l=1*new Date();
-				for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-				k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-				(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-				ym(50412993, "init", {
-						clickmap:true,
-						trackLinks:true,
-						accurateTrackBounce:true,
-						webvisor:true
-				});`,
-          }}
-        ></script>
         <noscript>
           <div>
             <img
@@ -120,7 +108,6 @@ function MyApp({ Component, pageProps, url }) {
         </noscript>
 
         {/* <!-- /Yandex.Metrika counter --> */}
-        <script src="https://analytics.ahrefs.com/analytics.js" data-key="Fu5ZI8/blKtMubhk03NIBQ" async></script>
         {/* ------------- Organization ------------- */}
 
         <script
@@ -153,10 +140,7 @@ function MyApp({ Component, pageProps, url }) {
             height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         }}
       ></noscript>
-      {/* <link
-        href="/fonts/css2.css?family=PT+Sans:wght@400;700&display=swap"
-        rel="stylesheet"
-      /> */}
+      <Analytics />
       <Header language={language} />
       <div className="app">
         <Component {...pageProps} language={language} />

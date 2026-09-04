@@ -267,8 +267,8 @@ export default function Create({ language }) {
 			</Container>
 			<Container title={langData.title[language]} clNTitle="text-center">
 				<div className={ft.hosting__block}>
-					{block.map((item) => (
-						<div key={item.title} className={ft.hosting__block__item}>
+					{block.map((item, idx) => (
+						<div key={idx} className={ft.hosting__block__item}>
 							<div className={ft.hosting__block__item__img}>
 								<img src={item.img} />
 							</div>

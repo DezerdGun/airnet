@@ -23,11 +23,11 @@ import WhyBlock from "@/components/whyBlock";
 import Howworks from "@/components/howworks";
 import ForContract from "@/components/forContract";
 import ForFreeBlock from "@/components/forFreeBlock";
-import { forContractVDSData, forFreeVDSData } from "./vds";
+import { forContractVDSData, forFreeVDSData } from "./vds/data";
 import ForSupport from "@/components/forSupport";
-import { forSupportVDSData } from "./vds";
+import { forSupportVDSData } from "./vds/data";
 import ForDatacenter from "@/components/forDatacenter";
-import { forDatacenterVDSData } from "./vds";
+import { forDatacenterVDSData } from "./vds/data";
 
 import { checkLang } from "@/utils/checkLang";
 import { Autoplay, Navigation } from "swiper";
@@ -999,7 +999,7 @@ export default function Home({ language, apiNewsServer }) {
           className="tarifSwiper"
         >
           {tarif.map((item, index) => (
-            <SwiperSlide key={item.title}>
+            <SwiperSlide key={index}>
               <div className="w-95">
                 <TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} period={period} />
               </div>
@@ -1040,7 +1040,7 @@ export default function Home({ language, apiNewsServer }) {
           className="tarifSwiper"
         >
           {tarif2.map((item, index) => (
-            <SwiperSlide key={item.title}>
+            <SwiperSlide key={index}>
               <div className="w-95">
                 <TarifCard2
                   index={index + tarif2.length}

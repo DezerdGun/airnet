@@ -164,8 +164,8 @@ export default function Contacts({ language }) {
         <div className={st.contacts__questions}>
           <Container title={langData.cT[language]} clNTitle="text-center">
             <div className={st.contacts__questions__block}>
-              {content.map((item) => (
-                <div className={st.contacts__questions__block__item} key={item.title}>
+              {content.map((item, idx) => (
+                <div className={st.contacts__questions__block__item} key={idx}>
                   <h6>{item.title[language]}</h6>
                   <p>{item.description}</p>
                 </div>

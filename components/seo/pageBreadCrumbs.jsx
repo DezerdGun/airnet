@@ -7,6 +7,11 @@ const Chevron = () => (
   </svg>
 );
 
+// Значения link во всех наборах breadCrumbs уже начинаются со слэша,
+// поэтому шаблон `/${...}/` давал "//vds/". Next такой href чинил сам, но
+// на каждый рендер писал в консоль "Invalid href passed to next/router".
+const crumbHref = (link) => "/" + String(link || "").replace(/^\/+/, "");
+
 export default function PageBreadcrumb({ links, language }) {
   const homeTitle = { ru: "Главная", uz: "Bosh bo'lim", en: "Home" };
 
@@ -16,19 +21,19 @@ export default function PageBreadcrumb({ links, language }) {
     <div className={st.bar}>
       <div
         className={st.pageBreadcrumb}
-        itemscope
-        itemtype="https://schema.org/BreadcrumbList"
+        itemScope
+        itemType="https://schema.org/BreadcrumbList"
       >
         <div
-          itemprop="itemListElement"
-          itemscope
-          itemtype="https://schema.org/ListItem"
+          itemProp="itemListElement"
+          itemScope
+          itemType="https://schema.org/ListItem"
           className={st.crumb}
         >
-          <meta itemprop="position" content="1" />
+          <meta itemProp="position" content="1" />
           <Link href="/">
-            <a itemprop="item" href="https://airnet.uz/" className={st.link}>
-              <span itemprop="name">{homeTitle[language]}</span>
+            <a itemProp="item" href="https://airnet.uz/" className={st.link}>
+              <span itemProp="name">{homeTitle[language]}</span>
             </a>
           </Link>
         </div>
@@ -38,21 +43,21 @@ export default function PageBreadcrumb({ links, language }) {
           return (
             <div
               key={item.name[language]}
-              itemprop="itemListElement"
-              itemscope
-              itemtype="https://schema.org/ListItem"
+              itemProp="itemListElement"
+              itemScope
+              itemType="https://schema.org/ListItem"
               className={st.crumb}
             >
               <Chevron />
-              <meta itemprop="position" content={String(i + 2)} />
+              <meta itemProp="position" content={String(i + 2)} />
               {last ? (
-                <span itemprop="name" className={st.current}>
+                <span itemProp="name" className={st.current}>
                   {item.name[language]}
                 </span>
               ) : (
-                <Link href={`/${item.link[language]}/`}>
+                <Link href={crumbHref(item.link[language])}>
                   <a className={st.link}>
-                    <span itemprop="name">{item.name[language]}</span>
+                    <span itemProp="name">{item.name[language]}</span>
                   </a>
                 </Link>
               )}

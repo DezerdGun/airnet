@@ -13,12 +13,12 @@ import { gamepadIcon } from "shared/icons/gamepadIcon";
 import { usersIcon } from "shared/icons/usersIcon";
 import Reviews from "@/components/reviews";
 import ForContract from "@/components/forContract";
-import { forContractVDSData } from "../vds";
+import { forContractVDSData } from "../vds/data";
 import ForSupport from "@/components/forSupport";
 import ForInfo from "@/components/forInfo";
-import { forSupportVDSData } from "../vds";
+import { forSupportVDSData } from "../vds/data";
 import ForDatacenter from "@/components/forDatacenter";
-import { forDatacenterVDSData } from "../vds";
+import { forDatacenterVDSData } from "../vds/data";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ProductDomain from "../../components/seo/productdomain"
@@ -620,7 +620,7 @@ export default function Domains({ language }) {
           <Container
             // headTitle={langData.headTitle[language]}
             clNTitle="mb-3 center"
-            description={<p>{langData.description[language]}</p>}
+            description={langData.description[language]}
           >
             <div className={st.domains__head__block}>
               {/* <h3>Введите название доменного имени и нажмите на кнопку &quot;Проверить&quot;.</h3> */}

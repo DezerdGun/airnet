@@ -30,11 +30,11 @@ import { LINKS } from "@/components/requirements";
 import AvailablePO from "@/components/availablePO";
 import Reviews from "@/components/reviews";
 import ForContract from "@/components/forContract";
-import { forContractVDSData } from "../vds";
+import { forContractVDSData } from "../vds/data";
 import ForSupport from "@/components/forSupport";
-import { forSupportVDSData } from "../vds";
+import { forSupportVDSData } from "../vds/data";
 import ForDatacenter from "@/components/forDatacenter";
-import { forDatacenterVDSData } from "../vds";
+import { forDatacenterVDSData } from "../vds/data";
 import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ProductCpanel from "../../components/seo/productcpanel";
@@ -875,7 +875,7 @@ const forContractArticlesData = {
               className="tarifSwiper"
             >
               {tarif2.map((item, index) => (
-                <SwiperSlide key={item.title}>
+                <SwiperSlide key={index}>
                   <div className="w-95">
                     <TarifCard2
                       index={index}

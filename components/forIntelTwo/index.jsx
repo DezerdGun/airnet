@@ -12,8 +12,8 @@ export default function forIntelTwo({ data, language }) {
           <h2>{data.title[language]}</h2>
           <p>{data.desc[language]}</p>
           <ul>
-            {data.content.map((item) => (
-              <li key={item.title}>
+            {data.content.map((item, idx) => (
+              <li key={idx}>
                 <span>
                   {item.img} {item.title[language]}
                 </span>{" "}

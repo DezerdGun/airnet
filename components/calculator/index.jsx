@@ -539,10 +539,10 @@ export default function Calculator({ language }) {
               </div>
               <div className={cs.card__body}>
                 <div className={cs.chips}>
-                  {calcSpeed.map((item) => (
+                  {calcSpeed.map((item, idx) => (
                     <button
                       type="button"
-                      key={item.title}
+                      key={idx}
                       className={`${cs.chip} ${item.title === state.speed ? cs.chip_on : ""}`}
                       onClick={() => setState((prev) => ({ ...prev, speed: item.title }))}
                     >

@@ -47,7 +47,7 @@ export default function FAQ({ faq, title, language }) {
 					<div className={st.faq__item}>
 						<div className={st.faq__items}>
 							{faq.map((item, i) => (
-								<div key={item.title} className={st.faq__items__block}>
+								<div key={i} className={st.faq__items__block}>
 									<div className={st.faq__items__block__heading} onClick={() => active(i)}>
 										<h3>{item.title[language]}</h3>
 										<span>

@@ -20,7 +20,7 @@ import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { forFreeVDSData } from "../vds";
+import { forFreeVDSData } from "../vds/data";
 import { serversIcon } from "shared/icons/serversIcon";
 import { lesssonIcon } from "shared/icons/lessonIcon";
 import { databaseIcon } from "shared/icons/databaseIcon";
@@ -34,11 +34,11 @@ import AvailableOS from "@/components/availableOS";
 import VirtualServers from "@/components/virtualServers";
 import Reviews from "@/components/reviews";
 import ForContract from "@/components/forContract";
-import { forContractVDSData } from "../vds";
+import { forContractVDSData } from "../vds/data";
 import ForSupport from "@/components/forSupport";
-import { forSupportVDSData } from "../vds";
+import { forSupportVDSData } from "../vds/data";
 import ForDatacenter from "@/components/forDatacenter";
-import { forDatacenterVDSData } from "../vds";
+import { forDatacenterVDSData } from "../vds/data";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ProductCheap from "../../components/seo/productcheap"
@@ -592,7 +592,7 @@ export default function CheapVds({ language }) {
               className="tarifSwiper"
             >
               {tarif.map((item, index) => (
-                <SwiperSlide key={item.title}>
+                <SwiperSlide key={index}>
                   <div className="w-95">
                     <TarifCard index={index} tarif={item} show={show} setShow={setShow} language={language} period={period} />
                   </div>
@@ -661,8 +661,8 @@ export default function CheapVds({ language }) {
 						}}
 						className="tarifSwiper"
 					>
-						{tarif.map((item) => (
-							<SwiperSlide key={item.title}>
+						{tarif.map((item, idx) => (
+							<SwiperSlide key={idx}>
 								<div className="w-95">
 									<TarifCard tarif={item} />
 								</div>

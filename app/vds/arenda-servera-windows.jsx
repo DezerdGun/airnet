@@ -40,11 +40,11 @@ import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ServerHero from "@/components/serverHero";
 import ProductVDSIntel from "../../components/seo/productvdsintel";
-import { breadCrumbsVds } from "./index";
-import { forFreeVDSData } from "../vds";
-import { forContractVDSData } from "../vds";
-import { forSupportVDSData } from "../vds";
-import { forDatacenterVDSData } from "../vds";
+import { breadCrumbsVds } from "./data";
+import { forFreeVDSData } from "../vds/data";
+import { forContractVDSData } from "../vds/data";
+import { forSupportVDSData } from "../vds/data";
+import { forDatacenterVDSData } from "../vds/data";
 import Calculator from "@/components/calculator";
 
 export const ForLinuxVDSData = {
@@ -106,25 +106,25 @@ export const ForLinuxVDS2Data = {
   },
   desc: {
     ru: (
-      <p>
+      <>
         Понятия VPS и VDS очень близки, однако, не равнозначны. В первом случае речь идет о динамическом разделении доступных мощностей между пользователями, что обеспечивает гибкость настройки, повышает общую эффективность работы, дает возможно рационально использовать ресурсы, во втором – каждый пользователь получает изначально фиксированную мощность, динамическое перераспределение не предполагается.
         <br /><br />
         Выделенный сервер – более продвинутое решение, разделение между пользователями неактуально, каждый клиент получает всю доступную мощность. Это дороже, однако, надежнее, подходит для решения самых ответственных задач, размещения высоконагруженных сайтов.
-      </p>
+      </>
     ),
     uz: (
-      <p>
+      <>
         VPS va VDS tushunchalari juda yaqin, ammo ular ekvivalent emas. Birinchi holda, biz foydalanuvchilar o'rtasida mavjud imkoniyatlarning dinamik bo'linishi haqida gapiramiz, bu konfiguratsiyaning moslashuvchanligini ta'minlaydi, umumiy ish samaradorligini oshiradi va ikkinchidan, har bir foydalanuvchi dastlab belgilangan quvvatni oladi; qayta taqsimlanishi kutilmaydi.
         <br /><br />
         Ajratilgan server - bu yanada rivojlangan yechim, foydalanuvchilar o'rtasida bo'linish muhim emas, har bir mijoz mavjud bo'lgan barcha quvvatni oladi. Bu qimmatroq, ammo ishonchliroq, eng muhim vazifalarni hal qilish va yuqori yuklangan saytlarni joylashtirish uchun javob beradi.
-      </p>
+      </>
     ),
     en: (
-      <p>
+      <>
         The concepts of VPS and VDS are very close, however, they are not equivalent. In the first case, we are talking about the dynamic division of available capacities between users, which ensures flexibility of settings, increases overall efficiency, makes it possible to rationally use resources, in the second case, each user initially receives fixed capacity, dynamic redistribution is not assumed.
         <br /><br />
         A dedicated server is a more advanced solution, division between users is irrelevant, each client receives all available capacity. It is more expensive, however, more reliable, suitable for solving the most important tasks, hosting high-load sites.
-      </p>
+      </>
     ),
   },
   descbottom: {
@@ -1239,7 +1239,7 @@ export default function VDS({ language }) {
             endText={
               <div className={st.tarifNote}>
                 <p>{langData.endText[language]}</p>
-                <p>{langData.timeW[language]}</p>
+                {langData.timeW[language]}
               </div>
             }
           >
@@ -1268,7 +1268,7 @@ export default function VDS({ language }) {
               className="tarifSwiper"
             >
               {tarif.map((item, index) => (
-                <SwiperSlide key={item.title} language={language}>
+                <SwiperSlide key={index} language={language}>
                   <div className="w-95">
                     <TarifCard
                       index={index}

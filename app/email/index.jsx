@@ -13,11 +13,11 @@ import { calendarIcon } from "shared/icons/calendarIcon";
 import { supportIcon } from "shared/icons/supportIcon";
 import Reviews from "@/components/reviews";
 import ForContract from "@/components/forContract";
-import { forContractVDSData } from "../vds";
+import { forContractVDSData } from "../vds/data";
 import ForSupport from "@/components/forSupport";
-import { forSupportVDSData } from "../vds";
+import { forSupportVDSData } from "../vds/data";
 import ForDatacenter from "@/components/forDatacenter";
-import { forDatacenterVDSData } from "../vds";
+import { forDatacenterVDSData } from "../vds/data";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ProductMail from "../../components/seo/productmail"

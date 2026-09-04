@@ -10,8 +10,8 @@ export default function ForInfoTxt({ data, language }) {
         </div>
         <div className={st.forInfotxt__block}>
           <ul>
-            {data.content.map((item) => (
-              <li key={item.title}>
+            {data.content.map((item, idx) => (
+              <li key={idx}>
                 <span>
                   {item.img} {item.title[language]}
                 </span>{" "}

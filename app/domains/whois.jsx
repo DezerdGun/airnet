@@ -721,7 +721,7 @@ export default function WhoIs({ language }) {
       <div className={st.domains__head}>
         <Container clNTitle="mb-3">
           {/* <hr /> */}
-          <p>{langData.description[language]}</p>
+          {langData.description[language]}
           <div className={st.domains__head__block}>
             <div className={st.domains__head__block__item}>
               <RegDomainBlock language={language} showDomains={false} setWhoIs={setWhoIs} />

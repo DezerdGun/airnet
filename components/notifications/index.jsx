@@ -4,6 +4,7 @@ import "swiper/css/navigation"
 import { Swiper, SwiperSlide } from "swiper/react"
 import Container from "../container/index.jsx"
 import st from "./notifications.module.scss"
+import { useSwiperLoop } from "@/utils/useSwiperLoop";
 
 const content = [
 	{
@@ -141,6 +142,7 @@ const content = [
 ]
 
 export default function Notifications({ language }) {
+  const swiperLoop = useSwiperLoop();
 	const langData = {
 		title: {
 			ru: "Оповещения",
@@ -158,7 +160,8 @@ export default function Notifications({ language }) {
 					spaceBetween={0}
 					slidesPerView={1}
 					navigation
-					loop={true}
+					key={swiperLoop.key}
+					loop={swiperLoop.enabled}
 					autoplay={{
 						delay: 1000000,
 						disableOnInteraction: false,
@@ -176,8 +179,8 @@ export default function Notifications({ language }) {
 					}}
 					className={st.swiper__swiper}
 				>
-					{content.map((item) => (
-						<SwiperSlide key={item.title}>
+					{content.map((item, idx) => (
+						<SwiperSlide key={idx}>
 							<div className={st.notifications__block}>
 								<div className={st.notifications__block__item}>
 									<div className={st.notifications__block__item__header}>

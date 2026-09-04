@@ -1,9 +1,29 @@
+import { useEffect, useState } from 'react'
 import { Autoplay, Navigation } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Container from '../container/index.jsx'
 import st from './customSwiper.module.scss'
+
+function useDeferredSlides() {
+	const [ready, setReady] = useState(false)
+	useEffect(() => {
+		let timer = null
+		const go = () => {
+			timer = setTimeout(() => setReady(true), 300)
+		}
+		if (document.readyState === 'complete') go()
+		else window.addEventListener('load', go, { once: true })
+		return () => {
+			window.removeEventListener('load', go)
+			if (timer) clearTimeout(timer)
+		}
+	}, [])
+	return ready
+}
+
+const bg = (src) => ({ background: `url('${src}') no-repeat` })
 
 export default function CustomSwiper({ language }) {
 	const langData = {
@@ -138,6 +158,8 @@ export default function CustomSwiper({ language }) {
 		},
 	}
 
+	const slidesReady = useDeferredSlides()
+
 	return (
 		<div className={[st.swiper, 'head-swiper'].filter(Boolean).join(' ')}>
 			<Swiper
@@ -156,7 +178,7 @@ export default function CustomSwiper({ language }) {
 				<SwiperSlide>
 					<div
 						className={st.swiper__block}
-						style={{ background: `url('/banner3.webp') no-repeat` }}
+						style={bg('/banner3.webp')}
 					>
 						<Container>
 							<div className={st.swiper__block__item}>
@@ -172,7 +194,7 @@ export default function CustomSwiper({ language }) {
 				<SwiperSlide>
 					<div
 						className={st.swiper__block}
-						style={{ background: `url('/banner1.webp') no-repeat` }}
+						style={slidesReady ? bg('/banner1.webp') : undefined}
 					>
 						<Container>
 							<div className={st.swiper__block__item}>
@@ -188,7 +210,7 @@ export default function CustomSwiper({ language }) {
 				<SwiperSlide>
 					<div
 						className={st.swiper__block}
-						style={{ background: `url('/banner4.webp') no-repeat` }}
+						style={slidesReady ? bg('/banner4.webp') : undefined}
 					>
 						<Container>
 							<div className={st.swiper__block__item}>
@@ -204,8 +226,7 @@ export default function CustomSwiper({ language }) {
 				<SwiperSlide>
 					<div
 						className={st.swiper__block}
-						style={{ background: `url('/happy6.webp') no-repeat` }}
-						fetchpriority='high'
+						style={slidesReady ? bg('/happy6.webp') : undefined}
 					>
 						<Container>
 							<div className={st.swiper__block__item}>

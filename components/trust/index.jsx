@@ -4,6 +4,7 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Container from "../container/index.jsx";
 import st from "./trust.module.scss";
+import { useSwiperLoop } from "@/utils/useSwiperLoop";
 
 const content = [
   "/trust/2025-1.png",
@@ -43,6 +44,7 @@ const content = [
 ];
 
 export default function Trust({ language }) {
+  const swiperLoop = useSwiperLoop();
   const langData = {
     title: {
       ru: "Нам доверяют",
@@ -59,7 +61,8 @@ export default function Trust({ language }) {
           spaceBetween={18}
           slidesPerView={2}
           navigation
-          loop={true}
+          key={swiperLoop.key}
+          loop={swiperLoop.enabled}
           lazy={true}
           speed={4000}
           autoplay={{

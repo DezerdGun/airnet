@@ -16,11 +16,11 @@ import { calendarIcon } from "shared/icons/calendarIcon";
 import { supportIcon } from "shared/icons/supportIcon";
 import Reviews from "@/components/reviews";
 import ForContract from "@/components/forContract";
-import { forContractVDSData } from "../vds";
+import { forContractVDSData } from "../vds/data";
 import ForSupport from "@/components/forSupport";
-import { forSupportVDSData } from "../vds";
+import { forSupportVDSData } from "../vds/data";
 import ForDatacenter from "@/components/forDatacenter";
-import { forDatacenterVDSData } from "../vds";
+import { forDatacenterVDSData } from "../vds/data";
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ProductSSL from "../../components/seo/productssl"
@@ -557,7 +557,7 @@ export default function SSL({ language }) {
       <Container>
         {ssl.map((item, index) => (
           <SslComponent
-            key={item.title}
+            key={index}
             index={index}
             item={item}
             show={show}

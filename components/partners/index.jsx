@@ -4,8 +4,10 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Container from "../container/index.jsx";
 import st from "./partners.module.scss";
+import { useSwiperLoop } from "@/utils/useSwiperLoop";
 
 export default function Partners({ language }) {
+  const swiperLoop = useSwiperLoop();
   const content = [
     "/partners/bitrix.svg",
     "/partners/cloudlinux.png",
@@ -36,7 +38,8 @@ export default function Partners({ language }) {
           spaceBetween={0}
           slidesPerView={2}
           navigation
-          loop={true}
+          key={swiperLoop.key}
+          loop={swiperLoop.enabled}
           lazy={true}
           speed={4000}
           autoplay={{

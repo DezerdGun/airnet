@@ -6,8 +6,10 @@ import "swiper/css/zoom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Container from "../container/index.jsx";
 import st from "./blogslider.module.scss";
+import { useSwiperLoop } from "@/utils/useSwiperLoop";
 
 export default function Blogslider({ language }) {
+  const swiperLoop = useSwiperLoop();
   const content = [
     "/blog/cyberpunk.jpg",
     "/blog/spacex.jpg",
@@ -32,7 +34,8 @@ export default function Blogslider({ language }) {
           spaceBetween={0}
           slidesPerView={1}
           navigation={true}
-          loop={true}
+          key={swiperLoop.key}
+          loop={swiperLoop.enabled}
           zoom={true}
           speed={10000}
           autoplay={false}

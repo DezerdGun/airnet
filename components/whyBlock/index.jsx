@@ -6,10 +6,15 @@ export default function WhyBlock({ title, description, content, language }) {
   return (
     <div className={styles.whyBlock}>
       <Container title={title} clNTitle="text-center">
-        {description && <p className="text-center">{description}</p>}
+        {/* div, а не p: часть страниц передаёт в description готовый <p>,
+            и получалось невалидное <p> внутри <p>. mb-3 повторяет отступ,
+            который давал абзац. */}
+        {description && (
+          <div className="text-center mb-3">{description}</div>
+        )}
         <div className={styles.whyBlock__block}>
-          {content.map((item) => (
-            <WhyCard key={item.title} content={item} language={language} />
+          {content.map((item, idx) => (
+            <WhyCard key={idx} content={item} language={language} />
           ))}
         </div>
       </Container>

@@ -1,21 +1,26 @@
-// /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  experimental: { esmExternals: true },
-};
-
-module.exports = nextConfig;
-
+/** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
   eslint: { ignoreDuringBuilds: true },
   experimental: { esmExternals: true },
+  swcMinify: true,
+  poweredByHeader: false,
   images: {
     domains: ["billing.airnet.uz", "localhost"],
+    formats: ["image/avif", "image/webp"],
   },
+  headers: async () => [
+    {
+      source:
+        "/:all*(svg|jpg|jpeg|png|webp|avif|gif|ico|woff|woff2|ttf|otf|eot|mp4|pdf)",
+      headers: [
+        {
+          key: "Cache-Control",
+          value: "public, max-age=2592000, stale-while-revalidate=86400",
+        },
+      ],
+    },
+  ],
   redirects: async () => {
     return [
       {

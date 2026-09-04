@@ -40,11 +40,11 @@ import BreadCrumbs from "../../components/seo/breadCrumbs";
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
 import ServerHero from "@/components/serverHero";
 import ProductVDSIntel from "../../components/seo/productvdsintel";
-import { breadCrumbsVds } from "./index";
-import { forFreeVDSData } from "../vds";
-import { forContractVDSData } from "../vds";
-import { forSupportVDSData } from "../vds";
-import { forDatacenterVDSData } from "../vds";
+import { breadCrumbsVds } from "./data";
+import { forFreeVDSData } from "../vds/data";
+import { forContractVDSData } from "../vds/data";
+import { forSupportVDSData } from "../vds/data";
+import { forDatacenterVDSData } from "../vds/data";
 import Calculator from "@/components/calculator";
 
 export const ForLinuxVDSData = {
@@ -109,19 +109,19 @@ export const ForLinuxVDS2Data = {
   },
   desc: {
     ru: (
-      <p>
+      <>
         Мы предлагаем виртуальный сервер, на 100% подготовленный к работе с Битрикс, оптимизированный и настроенный для достижения максимальной производительности, исключения ошибок, программных и аппаратных сбоев.
-      </p>
+      </>
     ),
     uz: (
-      <p>
+      <>
         Biz Bitrix bilan ishlashga 100% tayyorlangan, optimallashtirilgan va maksimal ishlashga erishish, xatolar, dasturiy va apparat nosozliklarini bartaraf etish uchun sozlangan virtual serverni taklif etamiz.
-      </p>
+      </>
     ),
     en: (
-      <p>
+      <>
         We offer a virtual server that is 100% prepared to work with Bitrix, optimized and configured to achieve maximum performance, eliminating errors, software and hardware failures.
-      </p>
+      </>
     ),
   },
   descbottom: {
@@ -1290,7 +1290,7 @@ export default function VDS({ language }) {
             endText={
               <div className={st.tarifNote}>
                 {/* <p>{langData.endText[language]}</p> */}
-                <p>{langData.timeW[language]}</p>
+                {langData.timeW[language]}
               </div>
             }
           >
@@ -1319,7 +1319,7 @@ export default function VDS({ language }) {
               className="tarifSwiper"
             >
               {tarif.map((item, index) => (
-                <SwiperSlide key={item.title} language={language}>
+                <SwiperSlide key={index} language={language}>
                   <div className="w-95">
                     <TarifCard
                       index={index}

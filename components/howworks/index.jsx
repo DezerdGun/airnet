@@ -6,8 +6,10 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Container from "../container/index.jsx";
 import st from "./howworks.module.scss";
+import { useSwiperLoop } from "@/utils/useSwiperLoop";
 
 export default function Howworks({ language }) {
+  const swiperLoop = useSwiperLoop();
   const content = [
     "/work/vds-0.webp",
     "/work/vds-1.webp",
@@ -58,7 +60,8 @@ export default function Howworks({ language }) {
             swiper.params.navigation.nextEl = nextRef.current;
           }}
           pagination={{ clickable: true, type: "bullets" }}
-          loop={true}
+          key={swiperLoop.key}
+          loop={swiperLoop.enabled}
           autoplay={{ delay: 5500, disableOnInteraction: false, pauseOnMouseEnter: true }}
           speed={650}
           breakpoints={{
