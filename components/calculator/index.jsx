@@ -296,7 +296,7 @@ export default function Calculator({ language }) {
       en: "On request",
     },
     tasixFree: {
-      ru: "{langData.tasixFree[language]}",
+      ru: "TAS-IX / UZ-IX — 1 Гбит/с бесплатно включён во все тарифы",
       uz: "TAS-IX / UZ-IX — 1 Gbit/s barcha tariflarga bepul kiritilgan",
       en: "TAS-IX / UZ-IX — 1 Gbps included in every plan for free",
     },
