@@ -41,7 +41,7 @@ export default function NewsItem({ data, language }) {
 				desc={data.desc[language]}
 			/>
 			
-			<PageBreadcrumb links={[{ name: data.title[language] }]} />
+			<PageBreadcrumb links={[{ name: data.title }]} language={language} />
 
 			<Container>
 				<div className={st.newsItem}>
