@@ -22,6 +22,87 @@ $red: #f00;
     border-radius: 20px;
     overflow: hidden;
 
+    :global(.notice) {
+      margin: 16px 0;
+      padding: 14px 18px;
+      background: #f1f7f4;
+      color: #12372b;
+      border: 1px solid #d3e6dd;
+      border-left: 4px solid #0b6b4f;
+      border-radius: 8px;
+      overflow-wrap: anywhere;
+
+      > p:first-child {
+        margin-top: 0;
+      }
+
+      > p:last-child {
+        margin-bottom: 0;
+      }
+
+      strong, p, li {
+        color: inherit;
+      }
+
+      &:global(.notice-warning) {
+        background: #fff8e8;
+        color: #604512;
+        border-color: #efdfb5;
+        border-left-color: #a36b08;
+      }
+
+      &:global(.notice-danger) {
+        background: #fff2f2;
+        color: #702525;
+        border-color: #efd0d0;
+        border-left-color: #b83a3a;
+      }
+    }
+
+    pre {
+      max-width: 100%;
+      margin: 16px 0;
+      padding: 14px 18px;
+      background: #f1f7f4;
+      color: #12372b;
+      border: 1px solid #d3e6dd;
+      border-radius: 8px;
+      border-left: 4px solid #0b6b4f;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 14px;
+      line-height: 1.55 !important;
+
+      &[data-copy-label] {
+        cursor: pointer;
+
+        &::before {
+          content: attr(data-copy-label);
+          display: block;
+          margin-bottom: 8px;
+          color: #0b6b4f;
+          font: 12px/1.5 sans-serif;
+        }
+
+        &:focus-visible {
+          outline: 2px solid #0b6b4f;
+          outline-offset: 3px;
+        }
+      }
+
+      code {
+        display: block;
+        padding: 0;
+        background: transparent;
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit !important;
+        white-space: pre;
+      }
+    }
+
     p {
       font-size: 17px;
       line-height: 28px !important;
@@ -232,4 +313,18 @@ $red: #f00;
       margin: 10px 0;
     }
   }
+}
+
+.copyStatus:not(:empty) {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  max-width: 90vw;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: #12372b;
+  color: #fff;
+  pointer-events: none;
 }

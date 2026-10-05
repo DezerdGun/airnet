@@ -4,6 +4,7 @@ import Link from "next/link"
 import Container from "../container/index.jsx"
 import SEO from "../seo"
 import st from "./blogItem.module.scss"
+import CopyableContent from "./copyableContent"
 import FAQ from "@/components/faq";
 import PageBreadcrumb from "@/components/seo/pageBreadCrumbs";
 import BreadCrumbs from "@/components/seo/breadCrumbs.jsx";
@@ -132,7 +133,9 @@ export default function BlogItem({ data, language, breadCrumbs }) {
 						</div>
 						<h1>{data.headTitle[language]}</h1>
 
-						{data.content[language]}
+						<CopyableContent language={language}>
+							{data.content[language]}
+						</CopyableContent>
 						
 						{Array.isArray(data.faq) && data.faq.length > 0 && (
 							<div className={st.blogItem__faqblock}>

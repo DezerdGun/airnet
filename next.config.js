@@ -24,6 +24,11 @@ module.exports = {
   redirects: async () => {
     return [
       {
+        source: "/kak-smenit-rdp-port-3389",
+        destination: "/blog/kak-smenit-rdp-port-3389",
+        permanent: true,
+      },
+      {
         source: "/cheap_vds",
         destination: "/cheap-vds",
         permanent: true,
