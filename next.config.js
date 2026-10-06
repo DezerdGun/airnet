@@ -11,6 +11,14 @@ module.exports = {
   },
   headers: async () => [
     {
+      source: "/geofeed.csv",
+      headers: [
+        { key: "Content-Type", value: "text/csv; charset=utf-8" },
+        { key: "Content-Disposition", value: "inline" },
+        { key: "Cache-Control", value: "public, max-age=300" },
+      ],
+    },
+    {
       source:
         "/:all*(svg|jpg|jpeg|png|webp|avif|gif|ico|woff|woff2|ttf|otf|eot|mp4|pdf)",
       headers: [
