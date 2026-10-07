@@ -11,6 +11,53 @@ $red: #f00;
 .app {
   background: #f8f8f8;
 }
+.categoryBar {
+  margin-bottom: 40px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.categories {
+  display: flex;
+  width: 100%;
+  padding: 3px;
+  background: #efefef;
+  border-radius: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  button {
+    flex: 1 0 auto;
+    min-height: 50px;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #303238;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 150ms ease, color 150ms ease;
+
+    &:hover { background: #e0e9e4; }
+    &[aria-pressed="true"] { background: $green; color: #fff; }
+    &:focus-visible { outline: 2px solid $dark_green; outline-offset: -3px; }
+  }
+
+  @media (max-width: 660px) {
+    button {
+      flex-grow: 0;
+      padding: 10px 16px;
+    }
+  }
+}
+
+.empty {
+  padding: 32px 16px;
+  text-align: center;
+}
+
 .blog {
   &__block {
     display: flex;

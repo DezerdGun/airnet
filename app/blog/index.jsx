@@ -1,4 +1,5 @@
 import Container from "@/components/container"
+import { useState } from "react"
 import SEO from "@/components/seo"
 import { checkLang } from "@/utils/checkLang"
 import Image from "next/image"
@@ -1905,6 +1906,7 @@ function _apiPostsToBlog(apiPosts) {
 			description[lng] = <p>{p.excerpt || ""}</p>;
 		});
 		items.push({
+			categoryId: ru.category_id,
 			img: ru.image || "/blog/live.png",
 			link,
 			date: _fmtDate(ru.published_at),
@@ -1918,9 +1920,18 @@ function _apiPostsToBlog(apiPosts) {
 	return items;
 }
 
-export default function Blog({ language, apiPosts }) {
+export default function Blog({ language, apiPosts, apiCategories }) {
+	const [selectedCategory, setSelectedCategory] = useState("");
+	const categories = apiCategories?.[language] || [];
+	const activeCategory = categories.some((item) => String(item.id) === selectedCategory) ? selectedCategory : "";
 	const apiItems = _apiPostsToBlog(apiPosts);
 	const mergedBlog = [...apiItems, ...blog];
+	const visibleBlog = activeCategory ? apiItems.filter((item) => String(item.categoryId) === activeCategory) : mergedBlog;
+	const labels = {
+		ru: { all: "Все", categories: "Категории блога", empty: "В этой категории пока нет статей." },
+		uz: { all: "Barchasi", categories: "Blog kategoriyalari", empty: "Bu kategoriyada hozircha maqolalar yo‘q." },
+		en: { all: "All", categories: "Blog categories", empty: "There are no articles in this category yet." },
+	}[language || "ru"];
 	const pagination = {
 		ru: (
 			<>
@@ -1975,7 +1986,25 @@ export default function Blog({ language, apiPosts }) {
 		),
 	}
 
-	return <BlogBlock pagination={pagination} blog={mergedBlog} language={language} />
+	return <BlogBlock
+		pagination={activeCategory ? null : pagination}
+		blog={visibleBlog}
+		language={language}
+		emptyMessage={labels.empty}
+		filters={categories.length > 0 && (
+			<div className={st.categoryBar}>
+			<div className={st.categories} role="group" aria-label={labels.categories}>
+				{[{ id: "", name: labels.all }, ...categories].map((category) => (
+					<button key={category.id} type="button"
+						aria-pressed={activeCategory === String(category.id)}
+						onClick={() => setSelectedCategory(String(category.id))}>
+						{category.name}
+					</button>
+				))}
+			</div>
+			</div>
+		)}
+	/>
 }
 
 export const breadCrumbsBlog = [
@@ -1993,7 +2022,7 @@ export const breadCrumbsBlog = [
 	},
   ];
 
-export function BlogBlock({ pagination, blog, language }) {
+export function BlogBlock({ pagination, blog, language, filters, emptyMessage }) {
 	const langData = {
 		seoT: {
 			ru: "Блог | Airnet",
@@ -2025,6 +2054,8 @@ export function BlogBlock({ pagination, blog, language }) {
 
 			<Container headTitle={langData.headTitle[language]} clNTitle="text-center">
 				<div className={st.blog}>
+					{filters}
+					{blog.length === 0 && <p role="status" className={st.empty}>{emptyMessage}</p>}
 					<div className={st.blog__block}>
 						{blog.map((item) => (
 							<div key={item.title[language]} className={st.blog__block__item}>
@@ -2045,7 +2076,7 @@ export function BlogBlock({ pagination, blog, language }) {
 							</div>
 						))}
 					</div>
-					<div className={st.blog__links}>{pagination[language]}</div>
+					{pagination && <div className={st.blog__links}>{pagination[language]}</div>}
 				</div>
 			</Container>
 		</div>
