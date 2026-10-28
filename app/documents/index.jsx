@@ -1,158 +1,45 @@
-import Container from "@/components/container";
-import Partners from "@/components/partners";
-import SEO from "@/components/seo";
-import { HelpItemBlock } from "@/components/helpItem";
-import KnowledgeBase from "@/components/knowledgeBase";
-import Reviews from "@/components/reviews";
-import BreadCrumbs from "../../components/seo/breadCrumbs";
-import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import { useState } from 'react';
+import Link from 'next/link';
+import SEO from '@/components/seo';
+import KnowledgeBase from '@/components/knowledgeBase';
+import { checkLang } from '@/utils/checkLang';
+import { content } from './content';
+import st from './documents.module.scss';
 
-export default function Documents({ language }) {
-  const data = [
-    {
-      title: {
-        ru: "Шаблоны заявлений на передачу прав другому владельцу",
-        uz: "Huquqlarni boshqa egasiga o'tkazish uchun arizalar uchun shablonlar",
-        en: "Templates for applications for the transfer of rights to another owner",
-      },
-      link: "/documents/transfer-owner",
-      children: [
-        {
-          id: "domain to another owner",
-          title: {
-            ru: "Шаблоны заявлений на передачу домена другому владельцу",
-            uz: "Domenni boshqa egasiga o'tkazish uchun dastur shablonlari",
-            en: "Application templates for transferring a domain to another owner",
-          },
-          link: "/documents/transfer-owner/domain-owner",
-        },
-        {
-          id: "server to another owner",
-          title: {
-            ru: "Шаблоны заявлений на передачу сервера другому владельцу",
-            uz: "Serverni boshqa egasiga o'tkazish uchun ilovalar shablonlari",
-            en: "Templates of applications for the transfer of the server to another owner",
-          },
-          link: "/documents/transfer-owner/server-owner",
-        },
-        {
-          id: "account to another owner",
-          title: {
-            ru: "Шаблоны заявлений на передачу хостингового аккаунта другому владельцу",
-            uz: "Xosting hisobini boshqa egasiga o'tkazish uchun shablonlar",
-            en: "Templates for transferring a hosting account to another owner",
-          },
-          link: "/documents/transfer-owner/hosting-owner",
-        },
-      ],
-    },
-    {
-      title: {
-        ru: "Трансфер домена другому регистратору",
-        uz: "Domenni boshqa registratorga o'tkazish",
-        en: "Transferring a domain to another registrar",
-      },
-      link: "/documents/transfer-registrar",
-      children: [
-        {
-          id: "transfer to another registrar",
-          title: {
-            ru: "Шаблоны заявлений на передачу домена другому регистратору",
-            uz: "Domenni boshqa ro'yxatga oluvchiga o'tkazish uchun ariza shablonlari",
-            en: "Application templates for domain transfer to another registrar",
-          },
-          link: "/documents/transfer-registrar/domain-transfer-registrar",
-        },
-      ],
-    },
-    {
-      title: {
-        ru: "Изменить контактный е-мейл",
-        uz: "Kontakt elektron pochta manzilini o'zgartirish",
-        en: "Change contact email",
-      },
-      link: "/documents/change-contact-email",
-      children: [
-        {
-          id: "changing the contact e-mail box",
-          title: {
-            ru: "Шаблоны заявлений на смену контактного электронного почтового ящика",
-            uz: "Kontakt elektron pochta qutisini o'zgartirish uchun dastur shablonlari",
-            en: "Application templates for changing the contact e-mail box",
-          },
-          link: "/documents/change-contact-email/e-mail",
-        },
-      ],
-    },
-    {
-      title: {
-        ru: "Договоры на оказание услуг",
-        uz: "Xizmat shartnomalari",
-        en: "Service contracts",
-      },
-      link: "/documents/contract",
-      children: [
-        {
-          id: "contract",
-          title: {
-            ru: "Договоры на оказание услуг",
-            uz: "Xizmat shartnomalari",
-            en: "Service contracts",
-          },
-          link: "/documents/contract/contract",
-        },
-      ],
-    },
-  ];
-
-  const langData = {
-    seoTitle: {
-      ru: "Документы и договора | Airnet",
-      uz: "Hujjatlar va shartnomalar | havo tarmog'i",
-      en: "Documents and contracts | Airnet",
-    },
-    desc: {
-      ru: "Информация о договорах Airnet",
-      uz: "Airnet shartnomalari haqida ma'lumot",
-      en: "Information about Airnet contracts",
-    },
-    headTitle: {
-      ru: "О документах и договорах",
-      uz: "Hujjatlar va shartnomalar to'g'risida",
-      en: "About documents and contracts",
-    },
-    cT: {
-      ru: "Деятельность проекта AIRNET осуществляется от имени юридического лица OOO «AIRNET».",
-      uz: "AIRNET loyihasi faoliyati yuridik shaxs “AIRNET” MChJ nomidan amalga oshiriladi.",
-      en: "The activities of the AIRNET project are carried out on behalf of the legal entity AIRNET LLC.",
-    },
-    cTend: {
-      ru: "Все условия и правила предоставления услуг регламентируются публичным договором-офертой, размещённом на сайте проекта.",
-      uz: "Xizmatlarni taqdim etishning barcha shartlari va shartlari ommaviy oferta shartnomasi bilan tartibga solinadi, loyiha veb-saytida joylashtirilgan.",
-      en: "All conditions and rules for the provision of services are regulated by a public offer agreement posted on the project website.",
-    },
-  };
-
-  return (
-    <>
-      <SEO title={langData.seoTitle[language]} desc={langData.desc[language]} />
-
-      <BreadCrumbs data={[{ name: langData.headTitle }]} language={language} />
-      <PageBreadcrumb
-        links={[{ name: langData.headTitle }]}
-        language={language}
-      />
-
-      <KnowledgeBase
-        data={data}
-        language={language}
-        eyebrow={{ ru: "Документы и шаблоны", uz: "Hujjatlar va shablonlar", en: "Documents & templates" }}
-        title={{ ru: "Документы и", uz: "Hujjatlar va", en: "Documents &" }}
-        brand={{ ru: "договоры", uz: "shartnomalar", en: "contracts" }[language]}
-        sub={langData.cT[language]}
-      />
-      <Partners language={language} />
-      <Reviews language={language} />
-    </>
-  );
+function Icon({ download = false }) {
+  return <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={download ? 'M12 4v11M7 10l5 5 5-5M5 20h14' : 'M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 13h6M9 17h4'} /></svg>;
+}
+function Choice({ label, options, value, onChange }) {
+  return <div className={st.choice} role="group" aria-label={label}>{['fiz', 'yur'].map((key, i) => <button key={key} type="button" aria-pressed={value === key} onClick={() => onChange(key)}>{options[i]}</button>)}</div>;
+}
+export default function Documents({ language = 'ru' }) {
+  const t = content[language] || content.ru;
+  const prefix = checkLang(language);
+  const [who, setWho] = useState('fiz');
+  const [to, setTo] = useState('fiz');
+  const person = key => t.people[key === 'fiz' ? 0 : 1];
+  const popularKeys = ['domain-owner', 'server-owner', 'hosting-owner', 'domain-transfer-registrar', 'change-contact-email'];
+  const popularDocs = popularKeys.map((key, i) => ({ title: { [language]: t.popular[i] }, link: `#${key}` }));
+  return <>
+    <SEO title={`${t.title} | AIRNET`} desc={t.intro} />
+    <div className={st.breadcrumbBar}>
+      <nav className={st.breadcrumb} aria-label={t.title}><Link href={prefix || '/'}><a>{t.home}</a></Link><span aria-hidden="true">/</span><span aria-current="page">{t.title}</span></nav>
+    </div>
+    <KnowledgeBase heroOnly showPopular={false} language={language} title={t.title} brand="" eyebrow={t.forms} sub={t.companyIntro} data={[{ title: { [language]: t.forms }, children: popularDocs }]} />
+    <main className={st.page}><div className={st.inner}>
+      <div className={st.heading}><p>{t.intro}</p></div>
+      <section className={st.contract} aria-labelledby="contract-heading">
+        <div className={st.contractBody}><div className={st.icon}><Icon /></div><div><span className={st.eyebrow}>{t.main}</span><h2 id="contract-heading">{t.contract}</h2><p>{t.terms}</p><div className={st.links}>{['/oferta', '/details', '/privacy-policy'].map((url, i) => <Link href={prefix + url} key={url}><a>{t.links[i]}</a></Link>)}</div></div></div>
+        <div className={st.contractActions}><Link href={prefix + '/oferta'}><a className={st.primary}>{t.individualOffer}</a></Link><a className={st.primary} href="/documents/Agreement-№-XXXX.pdf" download><Icon download />{t.companyPdf}</a></div>
+      </section>
+      <h2 className={st.sectionTitle}>{t.forms}</h2><p className={st.sub}>{t.find}</p>
+      <div className={st.filter}><strong>{t.who}</strong><Choice label={t.who} options={t.people} value={who} onChange={setWho} /><span>{t.current}</span></div>
+      {t.groups.map((group, index) => <section className={st.group} key={group.title} aria-labelledby={`document-group-${index}`}>
+        <header><h3 id={`document-group-${index}`}>{group.title}</h3><p>{group.hint}</p>{index === 0 && <div className={st.recipient}><strong>{t.to}</strong><Choice label={t.to} options={t.recipients} value={to} onChange={setTo} /></div>}</header>
+        {group.docs.map(([key, name, hint]) => <div className={st.row} id={key} key={key}><Icon /><div className={st.description}><h4>{name}</h4><p>{hint}</p></div><span className={st.fileType}>DOCX · {person(who)}{index === 0 && ` → ${person(to)}`}</span><a className={st.download} href={`/downloads/applications/${key}-${who}${index === 0 ? '-' + to : ''}.docx`} download aria-label={`${t.download}: ${name} (${person(who)}${index === 0 ? ' → ' + person(to) : ''})`}><Icon download />{t.download}</a></div>)}
+      </section>)}
+      <section className={st.instructions} aria-labelledby="submit-heading"><h2 id="submit-heading">{t.submit}</h2><ol>{t.steps.map(([title, description], i) => <li key={title}><span className={st.number}>{i + 1}</span><h3>{title}</h3><p>{description}</p></li>)}</ol></section>
+      <section className={st.support}><div><h2>{t.help}</h2><p>{t.helpText}</p></div><div className={st.supportLinks}><a href="https://t.me/airnetuzb" target="_blank" rel="noopener noreferrer">{t.telegram}</a><a href="https://billing.airnet.uz/billing.php?do=tickets" target="_blank" rel="noopener noreferrer">{t.ticket}</a><a href="tel:+998712028700">+998 71 202-87-00</a></div></section>
+    </div></main>
+  </>;
 }

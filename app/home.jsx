@@ -85,35 +85,20 @@ export default function Home({ language, apiNewsServer }) {
     tarifMaketHomeEnd: {
       ru: (
         <>
-          <p>Быстрый запуск без ожидания</p>
-          <p>
-            VDS-сервер готов к работе уже через 30 минут после оплаты.<br />
-            В большинстве случаев активация занимает 1–2 часа — вы получаете доступ практически сразу.
-          </p>
-          <p>Даже при высокой загрузке или нестандартной конфигурации срок развёртывания не превышает 2 рабочих дней.</p>
-          <p>Мы оптимизировали процессы так, чтобы вы начинали работу без задержек.</p>
+          <p><strong>Срок установки</strong> — от 30 минут до 2 рабочих дней после оплаты, в зависимости от загрузки.</p>
+          <p>Среднее время активации — <strong>1–2 часа</strong>. Срок действия услуги начинается с момента активации.</p>
         </>
       ),
       uz: (
         <>
-          <p>Kutishsiz tezkor ishga tushirish</p>
-          <p>
-            VDS serveri to'lovdan keyin 30 daqiqa ichida foydalanishga tayyor.<br />
-            Ko'pgina hollarda, faollashtirish 1-2 soat davom etadi, bu sizga deyarli darhol kirish imkonini beradi.
-          </p>
-          <p>Yuqori yuklanish yoki nostandart konfiguratsiya bilan ham, joylashtirish vaqti 2 ish kunidan oshmaydi.</p>
-          <p>Biz jarayonlarni optimallashtirdik, shuning uchun siz kechikishsiz boshlashingiz mumkin.</p>
+          <p><strong>O'rnatish muddati</strong> — to'lovdan so'ng 30 daqiqadan 2 ish kunigacha, yuklamaga qarab.</p>
+          <p>O'rtacha faollashtirish vaqti — <strong>1–2 soat</strong>. Xizmatning amal qilish muddati faollashtirilgan paytdan boshlanadi.</p>
         </>
       ),
       en: (
         <>
-          <p>Quick start-up without waiting</p>
-          <p>
-            The VDS server is ready to use within 30 minutes of payment.<br />
-            In most cases, activation takes 1-2 hours, giving you access almost immediately.
-          </p>
-          <p>Even with high load or a non-standard configuration, deployment time does not exceed 2 business days.</p>
-          <p>We've optimized processes so you can get started without delays.</p>
+          <p><strong>Installation time</strong> — from 30 minutes to 2 business days after payment, depending on the load.</p>
+          <p>Average activation time — <strong>1–2 hours</strong>. The service term begins from the moment of activation.</p>
         </>
       ),
     },

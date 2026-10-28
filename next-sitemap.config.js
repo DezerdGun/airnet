@@ -13,6 +13,7 @@ const siteUrl = 'https://airnet.uz',
 module.exports = {
   siteUrl,
   generateRobotsTxt: true,
+  exclude: ['/documents/*', '/en/documents/*', '/uz/documents/*'],
   sitemapBaseFileName: 'sitemap',
   priority: NaN,
   robotsTxtOptions: {

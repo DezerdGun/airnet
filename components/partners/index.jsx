@@ -24,9 +24,9 @@ export default function Partners({ language }) {
 
   const langData = {
     title: {
-      ru: "Наши партнеры",
-      uz: "Bizning hamkorlarimiz",
-      en: "Our partners",
+      ru: "Технологии и партнёры",
+      uz: "Texnologiyalar va hamkorlar",
+      en: "Technologies and partners",
     },
   };
 

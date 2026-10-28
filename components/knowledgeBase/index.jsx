@@ -69,7 +69,7 @@ function collectArticles(node, lang, acc) {
   if (node.children) collectArticles(node.children, lang, acc);
 }
 
-export default function KnowledgeBase({ data = [], language = "ru", eyebrow, title, sub, brand = "AIRNET" }) {
+export default function KnowledgeBase({ data = [], language = "ru", eyebrow, title, sub, brand = "AIRNET", heroOnly = false, showPopular = true }) {
   const [query, setQuery] = useState("");
   const [active, setActive] = useState("all");
   const trOpt = (v, fb) => (v == null ? fb : typeof v === "string" ? v : v[language] || fb);
@@ -133,7 +133,10 @@ export default function KnowledgeBase({ data = [], language = "ru", eyebrow, tit
           <h1 className={st.hero__title}>{trOpt(title, t.h1a[language])} {brand ? <em>{brand}</em> : null}</h1>
           <p className={st.hero__sub}>{trOpt(sub, t.sub[language])}</p>
 
-          <div className={st.searchBox}>
+          <form className={st.searchBox} onSubmit={(event) => {
+            event.preventDefault();
+            if (heroOnly && results[0]?.link.startsWith('#')) window.location.hash = results[0].link;
+          }}>
             <div className={st.searchWrap}>
               <input
                 className={st.searchInp}
@@ -141,8 +144,9 @@ export default function KnowledgeBase({ data = [], language = "ru", eyebrow, tit
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder={t.placeholder[language]}
+                aria-label={t.placeholder[language]}
               />
-              <button className={st.searchBtn} type="button"><Ico n="search" size={16} />{t.find[language]}</button>
+              <button className={st.searchBtn} type="submit"><Ico n="search" size={16} />{t.find[language]}</button>
             </div>
             {results.length > 0 && (
               <div className={st.results}>
@@ -153,13 +157,14 @@ export default function KnowledgeBase({ data = [], language = "ru", eyebrow, tit
                 ))}
               </div>
             )}
-          </div>
+            {heroOnly && query.trim().length >= 2 && results.length === 0 && <div className={st.results} role="status">{t.nothing[language]}</div>}
+          </form>
 
-          {popularChips.length > 0 && (
+          {showPopular && popularChips.length > 0 && (
             <div className={st.popChips}>
               <span className={st.popLabel}>{t.popularLabel[language]}</span>
               {popularChips.map((c, i) => (
-                <button key={i} className={st.popChip} type="button" onClick={() => setQuery(c)}>{c}</button>
+                heroOnly ? <a key={i} className={st.popChip} href={allArticles[i].link}>{c}</a> : <button key={i} className={st.popChip} type="button" onClick={() => setQuery(c)}>{c}</button>
               ))}
             </div>
           )}
@@ -167,7 +172,7 @@ export default function KnowledgeBase({ data = [], language = "ru", eyebrow, tit
       </section>
 
       {/* MAIN */}
-      <div className={st.main}>
+      {!heroOnly && <div className={st.main}>
         <aside className={st.sidebar}>
           <div className={st.sbLabel}>{t.sections[language]}</div>
           <button className={`${st.sbCat} ${active === "all" ? st.sbCat_active : ""}`} type="button" onClick={() => setActive("all")}>
@@ -224,7 +229,7 @@ export default function KnowledgeBase({ data = [], language = "ru", eyebrow, tit
             );
           })}
         </div>
-      </div>
+      </div>}
     </div>
   );
 }

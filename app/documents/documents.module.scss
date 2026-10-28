@@ -1,0 +1,57 @@
+.page {
+  background: #f6f8f7; color: #1a2420; line-height: 1.5;
+  * { box-sizing: border-box; color: inherit; }
+  a { text-decoration: none; } a:hover { text-decoration: underline; }
+  a:focus-visible, button:focus-visible { outline: 3px solid #54a98a; outline-offset: 4px; }
+  svg { display: block; flex-shrink: 0; color: inherit; }
+  h1, h2, h3, h4, p { margin: 0; }
+}
+.inner { max-width: 1170px; margin: 0 auto; padding: 24px 24px 64px; }
+.breadcrumbBar { background: #f6f8f7; }
+.breadcrumb { max-width: 1170px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; gap: 10px; font-size: 14px; color: #56645e; a, span { color: inherit; } a { text-decoration: none; } a:hover { text-decoration: underline; } }
+@media (max-width: 700px) { .breadcrumb { padding: 16px; } }
+.heading { padding: 32px 0 28px; h1 { font-size: 40px; line-height: 1.15; font-weight: 800; margin-bottom: 12px; } p { max-width: 680px; font-size: 18px; color: #3d4a44; } }
+.contract { background: white; border: 1px solid #dde7e2; border-radius: 18px; padding: 28px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
+.contractBody { display: flex; gap: 20px; flex: 1 1 480px; min-width: 0; h2 { font-size: 24px; font-weight: 700; margin-bottom: 8px; } p { font-size: 15px; color: #3d4a44; margin-bottom: 12px; } }
+.icon { width: 56px; height: 56px; border-radius: 14px; background: #e3f1ea; display: grid; place-items: center; flex-shrink: 0; }
+.eyebrow { display: block; font-size: 13px; font-weight: 700; color: #17694a; text-transform: uppercase; letter-spacing: .6px; margin-bottom: 6px; }
+.links { display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; font-weight: 600; color: #17694a; }
+.contractActions { display: flex; flex-direction: column; gap: 10px; }
+.primary, .download { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 10px; font-weight: 700; font-size: 15px; min-height: 44px; }
+.page .primary { background: #17694a; color: white; min-height: 48px; padding: 12px 20px; svg { color: inherit; } }
+.sectionTitle { margin: 48px 0 6px !important; font-size: 26px; font-weight: 800; }
+.sub { margin-bottom: 20px !important; color: #56645e; }
+.filter { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; background: white; border: 1px solid #dde7e2; border-radius: 14px; padding: 14px 18px; margin-bottom: 20px; > span { font-size: 14px; color: #56645e; } }
+.choice { display: inline-flex; flex-wrap: wrap; background: #eef3f0; border-radius: 10px; padding: 4px; gap: 4px; button { border: 0; border-radius: 8px; padding: 10px 16px; min-height: 44px; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; background: transparent; } button[aria-pressed='true'] { background: #17694a; color: white; } }
+.group { background: white; border: 1px solid #dde7e2; border-radius: 18px; margin-bottom: 20px; overflow: hidden; > header { padding: 20px 28px; border-bottom: 1px solid #e8efeb; background: #fafcfb; } h3 { font-size: 19px; font-weight: 700; margin-bottom: 4px; } p { font-size: 14px; color: #56645e; } }
+.recipient { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 14px; font-size: 14px; }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 18px 28px; border-bottom: 1px solid #eef3f0; &:last-child { border: 0; } }
+.description { flex: 1 1 300px; min-width: 0; h4 { font-size: 16px; font-weight: 600; } p { margin-top: 2px; } }
+.row { scroll-margin-top: 130px; &:target { background: #edf7f1; } }
+.fileType { font-size: 13px; color: #56645e; }
+.page .download { border: 1.5px solid #17694a; color: #17694a; }
+.instructions { margin-top: 40px; h2 { font-size: 26px; font-weight: 800; margin-bottom: 20px; } ol { padding: 0; margin: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; } li { background: white; border: 1px solid #dde7e2; border-radius: 16px; padding: 22px; } h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; } p { font-size: 14px; color: #3d4a44; } }
+.number { width: 36px; height: 36px; border-radius: 50%; background: #17694a; color: white; font-weight: 800; display: grid; place-items: center; margin-bottom: 14px; }
+.support { margin-top: 40px; background: #0f3d2c; color: white; border-radius: 18px; padding: 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; > div:first-child { flex: 1 1 380px; } h2 { font-size: 24px; font-weight: 800; margin-bottom: 8px; } p { color: #d2e6dc; } }
+.supportLinks { display: flex; flex-wrap: wrap; gap: 12px; a { display: inline-flex; align-items: center; min-height: 46px; padding: 12px 16px; font-weight: 700; border-radius: 12px; } a:first-child { background: white; color: #0f3d2c; } a:nth-child(2) { border: 1.5px solid white; } }
+.icon { color: #17694a; svg { width: 28px; height: 28px; } }
+.row > svg { width: 22px; height: 22px; color: #17694a; }
+.primary svg, .download svg { width: 20px; height: 20px; }
+.page .primary, .page .download, .choice button, .supportLinks a {
+  transition: background-color .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.page .primary:hover, .page .download:hover, .supportLinks a:hover { text-decoration: none; }
+@media (hover: hover) {
+  .page .primary:hover { background: #105139; color: #fff; box-shadow: 0 4px 12px #17694a26; }
+  .page .download:hover { background: #17694a; border-color: #17694a; color: #fff; }
+  .choice button:hover { background: #dcebe3; color: #124f39; }
+  .choice button[aria-pressed='true']:hover { background: #105139; color: #fff; }
+  .supportLinks a:first-child:hover { background: #e3f1ea; color: #0f3d2c; }
+  .supportLinks a:nth-child(2):hover { background: #fff; color: #0f3d2c; }
+  .supportLinks a:last-child:hover { background: #ffffff14; color: #fff; }
+  .links a:hover, .breadcrumb a:hover { color: #105139; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page .primary, .page .download, .choice button, .supportLinks a { transition: none; }
+}
+@media (max-width: 700px) { .inner { padding: 20px 16px 40px; } .heading h1 { font-size: 32px; } .contract, .support { padding: 22px; } .contractBody { gap: 12px; } .icon { width: 42px; height: 42px; } .contractActions { width: 100%; } .group > header, .row { padding: 20px; } .description { flex-basis: calc(100% - 40px); } .instructions ol { grid-template-columns: 1fr; } .row .download { margin-left: auto; } }

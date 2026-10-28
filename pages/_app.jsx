@@ -30,7 +30,6 @@ function MyApp({ Component, pageProps, url }) {
 
   const realPath = (router.asPath || "/").split("?")[0].split("#")[0];
   const isBlogDetail = /^\/(?:uz\/|en\/)?blog\/[^/]+/.test(realPath);
-  const isHome = /^\/(?:uz|en)?\/?$/.test(realPath);
 
   return (
     <>
@@ -54,14 +53,6 @@ function MyApp({ Component, pageProps, url }) {
         />
         <meta name="yandex-verification" content="e5fe79390705ede1" />
         <link rel="shortcut icon" href="/favicon.png" />
-        {isHome && (
-          <link
-            rel="preload"
-            as="image"
-            href="/banner3.webp"
-            fetchpriority="high"
-          />
-        )}
 
         {!isBlogDetail && (
           <>

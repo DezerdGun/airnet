@@ -31,6 +31,11 @@ module.exports = {
   ],
   redirects: async () => {
     return [
+      ...['', '/en', '/uz'].map((prefix) => ({
+        source: `${prefix}/documents/:path((?!.*\\.(?:pdf|docx)$).+)`,
+        destination: `${prefix}/documents`,
+        statusCode: 301,
+      })),
       {
         source: "/kak-smenit-rdp-port-3389",
         destination: "/blog/kak-smenit-rdp-port-3389",
