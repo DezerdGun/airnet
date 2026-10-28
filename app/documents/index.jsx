@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import SEO from '@/components/seo';
-import KnowledgeBase from '@/components/knowledgeBase';
 import { checkLang } from '@/utils/checkLang';
 import { content } from './content';
 import st from './documents.module.scss';
@@ -18,16 +17,13 @@ export default function Documents({ language = 'ru' }) {
   const [who, setWho] = useState('fiz');
   const [to, setTo] = useState('fiz');
   const person = key => t.people[key === 'fiz' ? 0 : 1];
-  const popularKeys = ['domain-owner', 'server-owner', 'hosting-owner', 'domain-transfer-registrar', 'change-contact-email'];
-  const popularDocs = popularKeys.map((key, i) => ({ title: { [language]: t.popular[i] }, link: `#${key}` }));
   return <>
     <SEO title={`${t.title} | AIRNET`} desc={t.intro} />
     <div className={st.breadcrumbBar}>
       <nav className={st.breadcrumb} aria-label={t.title}><Link href={prefix || '/'}><a>{t.home}</a></Link><span aria-hidden="true">/</span><span aria-current="page">{t.title}</span></nav>
     </div>
-    <KnowledgeBase heroOnly showPopular={false} language={language} title={t.title} brand="" eyebrow={t.forms} sub={t.companyIntro} data={[{ title: { [language]: t.forms }, children: popularDocs }]} />
     <main className={st.page}><div className={st.inner}>
-      <div className={st.heading}><p>{t.intro}</p></div>
+      <header className={st.heading}><h1>{t.title}</h1><p>{t.intro}</p></header>
       <section className={st.contract} aria-labelledby="contract-heading">
         <div className={st.contractBody}><div className={st.icon}><Icon /></div><div><span className={st.eyebrow}>{t.main}</span><h2 id="contract-heading">{t.contract}</h2><p>{t.terms}</p><div className={st.links}>{['/oferta', '/details', '/privacy-policy'].map((url, i) => <Link href={prefix + url} key={url}><a>{t.links[i]}</a></Link>)}</div></div></div>
         <div className={st.contractActions}><Link href={prefix + '/oferta'}><a className={st.primary}>{t.individualOffer}</a></Link><a className={st.primary} href="/documents/Agreement-№-XXXX.pdf" download><Icon download />{t.companyPdf}</a></div>
