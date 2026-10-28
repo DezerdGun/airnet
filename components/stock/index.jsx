@@ -2,7 +2,6 @@ import st from "./stock.module.scss";
 import WhyBlock from "../whyBlock/index.jsx";
 import { presentIcon } from "shared/icons/presentIcon";
 import { presentIcon2 } from "shared/icons/presentIcon2";
-import { clockIcon } from "shared/icons/clockIcon";
 import { settingsIcon } from "shared/icons/settingsIcon";
 import { usersIcon } from "shared/icons/usersIcon";
 import { globalIcon } from "shared/icons/globalIcon";
@@ -70,21 +69,6 @@ export default function Stock({ language }) {
         ),
       },
       icon: presentIcon2,
-    },
-    {
-      title: { ru: "Тестовый доступ", uz: "Sinovga kirish", en: "Test access" },
-      description: {
-        ru: <p>Попробуйте сервис до оплаты.<br />
-              Доступ к тестированию до 3 дней, чтобы оценить скорость и стабильность на практике.
-              Решение принимаете на основе реального опыта, а не обещаний.</p>,
-        uz: <p>To'lovni amalga oshirishdan oldin xizmatni sinab ko'ring.<br />
-              Amalda tezlik va barqarorlikni baholash uchun uni 3 kungacha sinab ko'ring.
-              Sizning qaroringiz va'dalarga emas, balki haqiqiy tajribaga asoslangan.</p>,
-        en: <p>Try the service before paying.<br />
-              Test it for up to 3 days to evaluate the speed and stability in practice.
-              Your decision is based on real experience, not promises.</p>,
-      },
-      icon: clockIcon,
     },
     {
       title: {

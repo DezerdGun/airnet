@@ -103,29 +103,6 @@
     &:focus-visible { outline: 2px solid #a9e7ca; outline-offset: -2px; }
   }
 }
-.trialFields {
-  display: grid;
-  gap: 12px;
-  min-width: 0;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  input, select {
-    width: 100%;
-    min-width: 0;
-    min-height: 54px;
-    padding: 14px 16px;
-    border: 1px solid #d9e4df;
-    border-radius: 12px;
-    background: #fff;
-    color: #60736a;
-    font: inherit;
-    -webkit-text-fill-color: #60736a;
-    opacity: 1;
-  }
-  :disabled { cursor: not-allowed; }
-  button:disabled { opacity: .65; box-shadow: none; transform: none; }
-}
 .cardDescription { margin: 0; color: #5b6f66; font-size: 15px; }
 .checks { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px;
   li { display: flex; gap: 12px; }

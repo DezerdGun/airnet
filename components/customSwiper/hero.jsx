@@ -6,8 +6,8 @@ import st from './hero.module.scss'
 
 const plans = {
   0: { name: 'VIP+', price: '300 000', annual: '270 000', cpu: 4, ram: 6, disk: 100, tariff: 16, badge: 'popular' },
-  5: { name: 'Strong', price: '200 000', annual: '180 000', cpu: 2, ram: 4, disk: 50, tariff: 14, badge: 'start' },
-  6: { name: 'Mega', price: '800 000', annual: '720 000', cpu: 6, ram: 12, disk: 200, tariff: 51, badge: 'crm' },
+  4: { name: 'Strong', price: '200 000', annual: '180 000', cpu: 2, ram: 4, disk: 50, tariff: 14, badge: 'start' },
+  5: { name: 'Mega', price: '800 000', annual: '720 000', cpu: 6, ram: 12, disk: 200, tariff: 51, badge: 'crm' },
 }
 const orderUrl = (tariff) => `https://billing.airnet.uz/billing.php?do=order&vid=vds&tarif=${tariff}`
 
@@ -37,16 +37,6 @@ function Card({ index, text, prefix }) {
     {action(support, text.request)}<p className={st.annual}>{text.reply}</p>
   </div>
   if (index === 3) return <div className={st.card}>
-    <div className={st.cardHeader}><strong>{text.trial}</strong><span>{text.free}</span></div>
-    <fieldset className={st.trialFields} disabled aria-label={text.trial}>
-      <input type="text" placeholder={text.trialName} aria-label={text.trialName} disabled />
-      <input type="tel" placeholder="+998 __ ___-__-__" aria-label={text.trialPhone} disabled />
-      <select aria-label={text.trialPurpose} defaultValue="" disabled><option value="">{text.trialPurpose}</option></select>
-      <button className={st.order} type="button" disabled>{text.trialAction}</button>
-    </fieldset>
-    <p className={st.annual}>{text.trialContact}</p>
-  </div>
-  if (index === 4) return <div className={st.card}>
     <div className={st.cardHeader}><strong>{text.migration}</strong><span>{text.migrationFree}</span></div>
     <ol className={st.steps}>{text.steps.map(([title, description]) => <li key={title}><b>{title}</b><span>{description}</span></li>)}</ol>
     <p className={st.gift}>{text.gift}</p>{action(support, text.migrate)}
@@ -64,8 +54,8 @@ export default function Hero({ language }) {
   const prefix = checkLang(language)
   const vds = `${prefix}/vds`
   const support = `${prefix}/support`
-  const primary = [vds, vds, vds, support, support, orderUrl(14), `${prefix}/vds/arenda-servera-bitrix`, vds]
-  const secondary = [support, support, `${prefix}/details`, vds, 'https://t.me/airnetuzb', vds, 'tel:+998712028700', support]
+  const primary = [vds, vds, vds, support, orderUrl(14), `${prefix}/vds/arenda-servera-bitrix`, vds]
+  const secondary = [null, null, `${prefix}/details`, 'https://t.me/airnetuzb', vds, 'tel:+998712028700', null]
   const selectWithKeyboard = (event, index) => {
     let next
     if (event.key === 'ArrowRight') next = (index + 1) % text.tabs.length
@@ -88,7 +78,7 @@ export default function Hero({ language }) {
           <p className={st.description}>{text.descriptions[index]}</p>
           <div className={st.actions}>
             <Link href={primary[index]}><a className={st.primary}>{text.primary[index]} <span aria-hidden="true">→</span></a></Link>
-            <Link href={secondary[index]}><a className={st.secondary}>{text.secondary[index]}</a></Link>
+            {text.secondary[index] && <Link href={secondary[index]}><a className={st.secondary}>{text.secondary[index]}</a></Link>}
           </div>
           <div className={st.stats}>{text.stats.map(([value, caption]) => <div key={caption}><strong>{value}</strong><span>{caption}</span></div>)}</div>
         </div>
