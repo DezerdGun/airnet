@@ -74,7 +74,7 @@ export default function Hero({ language }) {
       {active === index && <div className={st.inner}>
         <div className={st.copy}>
           <div className={st.badges}>{text.pills[index].map((pill) => <span key={pill}>{pill}</span>)}</div>
-          <h2>{text.titles[index]}</h2>
+          <h2>{index === 1 && language === 'ru' ? <>VDS-серверы в Ташкенте с TAS-IX<br /><span style={{ whiteSpace: 'nowrap' }}>1 Гбит/с</span></> : text.titles[index]}</h2>
           <p className={st.description}>{text.descriptions[index]}</p>
           <div className={st.actions}>
             <Link href={primary[index]}><a className={st.primary}>{text.primary[index]} <span aria-hidden="true">→</span></a></Link>
