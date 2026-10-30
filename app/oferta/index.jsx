@@ -3,8 +3,10 @@ import SEO from "../../components/seo"
 import st from "./oferta.module.scss"
 import BreadCrumbs from "../../components/seo/breadCrumbs"
 import PageBreadcrumb from "../../components/seo/pageBreadCrumbs";
+import DocumentPage from './document';
 
 export default function Oferta({ language }) {
+  if (!language || language === 'ru') return <DocumentPage />;
 	const langData = {
 		seoT: {
 			ru: "Публичная оферта | Airnet",
